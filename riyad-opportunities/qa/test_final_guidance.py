@@ -36,5 +36,7 @@ class FinalGuidance(unittest.TestCase):
   p=json.loads((ROOT/'data/projects.json').read_text())
   self.assertEqual(len(p),641)
   self.assertEqual(sum(('رفييرا 51' in (x.get('n') or '') or 'ريفييرا 51' in (x.get('n') or '')) for x in p),2)
-  self.assertIn('sameProjectNameTypo',(ROOT/'assets/app.js').read_text())
+  s=(ROOT/'assets/app.js').read_text()
+  self.assertIn('sameProjectNameTypo',s)
+  self.assertIn('Math.abs(a.length - b.length) !== 1',s)
 if __name__=='__main__':unittest.main(verbosity=2)

@@ -34,15 +34,16 @@
   function sameProjectNameTypo(a, b) {
     a = norm(a); b = norm(b);
     var numsA = (a.match(/\d+/g) || []).join(','), numsB = (b.match(/\d+/g) || []).join(',');
-    if (numsA !== numsB || Math.abs(a.length - b.length) > 1) return false;
-    var i = 0, j = 0, edits = 0;
-    while (i < a.length && j < b.length) {
-      if (a[i] === b[j]) { i++; j++; continue; }
-      if (++edits > 1) return false;
-      if (a.length > b.length) i++; else if (b.length > a.length) j++; else { i++; j++; }
+    if (numsA !== numsB || Math.abs(a.length - b.length) !== 1) return false;
+    var shortName = a.length < b.length ? a : b, longName = a.length < b.length ? b : a;
+    var i = 0, j = 0, insertions = 0;
+    while (i < shortName.length && j < longName.length) {
+      if (shortName[i] === longName[j]) { i++; j++; continue; }
+      if (++insertions > 1) return false;
+      j++;
     }
-    if (i < a.length || j < b.length) edits++;
-    return edits <= 1;
+    if (j < longName.length) insertions++;
+    return insertions === 1;
   }
   function cityKey(s) {
     var k = norm(s).replace(/[.,،()\-–_]/g, ' ').replace(/\s+/g, ' ').trim();
@@ -98,7 +99,7 @@
   function getJSON(path) {
     // Version query prevents a stale Pages/CDN copy of a corrected JSON file from breaking startup.
     var sep = path.indexOf('?') === -1 ? '?' : '&';
-    return fetch(path + sep + 'v=20261007-6', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
+    return fetch(path + sep + 'v=20261007-7', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
   }
   function boot() {
     var cfgEl = document.getElementById('site-config');
