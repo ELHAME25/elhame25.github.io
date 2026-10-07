@@ -4,7 +4,7 @@ class El { constructor(id){this.id=id;this.innerHTML='';this.textContent='';this
 const els={};const document={title:'',body:{appendChild(){}},getElementById(id){if(id==='site-config')return null;return els[id]||(els[id]=new El(id));},querySelector(){return null;},querySelectorAll(){return [];},addEventListener(){},createElement(){return new El('new');}};
 const location={hash:'',pathname:'/',search:''};const localStorage={getItem(){return null},setItem(){},removeItem(){}};const window={location,scrollTo(){},addEventListener(){}};
 const fetch=async u=>{const p=path.join(root,u.split('?')[0]);return {ok:fs.existsSync(p),json:async()=>JSON.parse(fs.readFileSync(p,'utf8'))}};
-let src=fs.readFileSync(path.join(root,'assets/app.js'),'utf8').replace('  boot();',`  window.__t={selectBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,employeeGreeting,cities,sameCity,radiusApplies,setScope:(x,r)=>{S.scope=x;S.radius=r||15;return compute()},data:()=>D,state:()=>S}; boot();`);
+let src=fs.readFileSync(path.join(root,'assets/app.js'),'utf8').replace('  boot();',`  window.__t={selectBranch,itemsFor,rawItems,nearbyItems,unlocatedItemsFor,nearestBranch,employeeGreeting,cities,sameCity,radiusApplies,setScope:(x,r)=>{S.scope=x;S.radius=r||15;return compute()},data:()=>D,state:()=>S}; boot();`);
 vm.runInNewContext(src,{document,window,location,history:{replaceState(){}},localStorage,navigator:{},fetch,setTimeout,clearTimeout,console,URL,Blob});
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 (async()=>{await sleep(300);const A=window.__t,D=A.data(), kinds=['projects','opps','nhc','selfbuild','companies','offices','cars'];
@@ -22,6 +22,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  result.checks.push({check:'اختيارات 5/10/15 كم ظاهرة',ok:[5,10,15,20].every(x=>els.app.innerHTML.includes('أقرب '+x+' كم'))});
  result.checks.push({check:'لا تظهر لوحة أو أعداد للموقع غير المحدد',ok:!els.content.innerHTML.includes('موقع غير محدد')&&!els.content.innerHTML.includes('unlocated-panel')});
  result.checks.push({check:'أسماء الأحساء والهفوف والمبرز توحدت دون دمج المدن المستقلة',ok:A.sameCity('الأحساء','الهفوف')&&A.sameCity('الأحساء','المبرز')&&A.cities().length===77&&A.sameCity(D.branchByCode['273'].city,'بريدة')&&A.sameCity(D.branchByCode['405'].city,'الوجه')&&A.sameCity(D.branchByCode['271'].city,'الدرعية')&&A.sameCity(D.branchByCode['215'].city,'ليلى'),count:A.cities().length});
+ A.selectBranch('271',true);const nearbyRadius=[5,10,15,20].map(r=>{A.setScope('branch',r);const xs=A.nearbyItems();return {radius:r,ok:xs.every(x=>x.d==null||x.d<=r),outside:xs.filter(x=>x.d!=null&&x.d>r).length}});result.checks.push({check:'فرص المدن المجاورة تحترم مسافة النطاق',ok:nearbyRadius.every(x=>x.ok),radii:nearbyRadius});
  const nearest=A.nearestBranch({lat:b243.lat,lon:b243.lon});result.checks.push({check:'أقرب فرع 243',ok:nearest&&nearest.c==='243'});
  const rakez=A.itemsFor('companies','').find(x=>x.o.n.includes('راكز'));result.checks.push({check:'راكز تحفظ القطاعات الخمسة',ok:!!rakez&&rakez.o.sectors.length===5});
  const companies=[['cp-ee28fb1fee','بريدة'],['cp-8ece8e6ede','الرياض'],['cp-c55e51e166','الدمام'],['cp-ebb24055cf','جدة'],['cp-df5fe89eac','صفوى'],['cp-fb2d83ba98','الدمام'],['cp-1b41c1ed02','مكة المكرمة'],['cp-c566adf828','جدة'],['cp-d0bacbed29','بريدة'],['cp-0912454315','مكة المكرمة'],['cp-4737529953','خميس مشيط']];
