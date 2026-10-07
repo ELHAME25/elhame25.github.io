@@ -44,6 +44,7 @@ class FinalGuidance(unittest.TestCase):
   self.assertIn('صورة توضيحية',app)
   self.assertIn('img.src = GENERIC_PROPERTY_IMAGE',app)
   self.assertIn('displayImage(kind, o)',app)
+  self.assertIn("id === 'P284'",app)
   self.assertIn('developerSite(o)',app)
   self.assertIn('poster|banner|brochure',app)
  def test_shared_unverified_whatsapp_destinations_removed(self):
