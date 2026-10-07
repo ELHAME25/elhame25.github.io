@@ -26,11 +26,19 @@ class FinalGuidance(unittest.TestCase):
   self.assertTrue(all(o.get('lat') is None and o.get('lon') is None for o in shifa))
  def test_location_conflicts_are_not_used_and_images_have_local_fallback(self):
   branches=json.loads((ROOT/'data/branches.json').read_text())
-  for code in ['323','345']:
-   b=next(x for x in branches if x['c']==code)
-   self.assertIsNone(b.get('lat')); self.assertIsNone(b.get('lon'))
-   self.assertEqual(b.get('officialMapStatus'),'held')
-   self.assertEqual(b.get('candidateCoordinates',{}).get('status'),'REVIEW_REQUIRED')
+  by_code={b['c']:b for b in branches}
+  # Correct the former 323 candidate using the approved directory row keyed by branch code.
+  self.assertEqual((by_code['323']['lat'],by_code['323']['lon']),(27.067676,49.537495))
+  self.assertNotEqual((by_code['323']['lat'],by_code['323']['lon']),(by_code['308']['lat'],by_code['308']['lon']))
+  self.assertEqual(by_code['323'].get('officialMapStatus'),'reviewed')
+  # Code 345 is in Qatif; the matched bank place is in Qatif, not Dammam.
+  self.assertEqual(by_code['345']['city'],'القطيف')
+  self.assertAlmostEqual(by_code['345']['lat'],26.5664014)
+  self.assertAlmostEqual(by_code['345']['lon'],50.0116137)
+  # Keep unresolved coordinates hidden where the matched directory still conflicts or has none.
+  for code in ['307','176']:
+   self.assertIsNone(by_code[code].get('lat')); self.assertIsNone(by_code[code].get('lon'))
+   self.assertEqual(by_code[code].get('officialMapStatus'),'held')
   self.assertTrue((ROOT/'assets/images/real-estate-illustrative-villa.jpg').exists())
   app=(ROOT/'assets/app.js').read_text()
   self.assertIn('صورة توضيحية',app)
