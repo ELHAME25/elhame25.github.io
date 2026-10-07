@@ -1,9 +1,10 @@
 /* دليل فرص المملكة — تطبيق ثابت بلا إطار عمل. يقرأ config/site.json ثم data/*.json
    منطق العرض:
-   - الفرع نقطة مرجعية لنطاق فعلي 5/10/15/20 كم؛ توسيع المدينة اختيار صريح.
-   - قطاعات المدن الكبرى نطاقات صريحة مستقلة؛ وتُرتب الوجهات حسب قربها من الفرع.
-   - العناصر بلا إحداثيات تبقى ظاهرة بعد العناصر ذات المسافة الموثقة؛ ولا تُنسب لها مسافة تقديرية.
-   - وجهات NHC والبناء الذاتي تخدم المدينة كلها. فرع وحيد في مدينته: نطاقه المدينة كلها.
+   - نطاق المدن الكبيرة يقبل تصفح الفرع أو القطاع أو المدينة، وتبدأ النتائج الأقرب.
+   - في المدن الأخرى تُعرض المشاريع والوجهات والفرص والشركات على مستوى المدينة؛ يقتصر نطاق الفرع على المكاتب والمعارض.
+   - سجلات السيارات تستبعد الشركات والوكالات وموزعي العلامات التجارية، وتزيل تكرار المعرض داخل المدينة.
+   - العناصر بلا إحداثيات تبقى ظاهرة دون مسافة مختلقة.
+   - وجهات NHC والبناء الذاتي تخدم المدينة كلها.
    - الأرقام أعلى الصفحة تتبع العناصر المعروضة.
    - قسم واحد يُعرض في كل مرة. */
 (function () {
@@ -141,8 +142,9 @@
       });
       D.officeById = {}; D.offices.forEach(function (o) { D.officeById[o.id] = o; });
       D.branchByCode = {}; D.branchCount = {}; D.branches.forEach(function (b) { D.branchByCode[b.c] = b; var bk = cityKey(b.city); D.branchCount[bk] = (D.branchCount[bk] || 0) + 1; });
-      D.cityCount = {};
       D.opps = D.opportunities || [];
+      D.cars = dedupeCars(D.cars || []).filter(function (o) { return !excludedCarReportRecord(o); });
+      D.cityCount = {};
       ['projects', 'opps', 'nhc', 'selfbuild', 'companies', 'offices', 'cars'].forEach(function (k) {
         D.cityCount[k] = {}; D[k].forEach(function (o) {
           var cityList = k === 'companies' && o.coverageCities && o.coverageCities.length ? o.coverageCities : [o.city], citySeen = {};
@@ -305,11 +307,33 @@
   var companyProjectCache = {};
   function nearScope() { return !!S.branch && (S.scope === 'branch' || S.scope === 'sector'); }
   var CITY_LEVEL = { nhc: 1, selfbuild: 1 };   // الوجهات والمخططات تخدم المدينة كلها
+  var BRANCH_LOCAL = { offices: 1, cars: 1 };
+  function branchScopedKind(kind) {
+    if (!S.branch || !kind || kind === 'nearby' || CITY_LEVEL[kind]) return false;
+    return sectorCity(S.branch.city) || !!BRANCH_LOCAL[kind];
+  }
   function radiusApplies(kind, scope) {
     scope = scope || S.scope;
     var anchor = S.origin || S.branch;
-    return !!(S.branch && anchor && anchor.lat != null && anchor.lon != null && !CITY_LEVEL[kind] && kind !== 'nearby' &&
-      scope === 'branch');
+    return !!(branchScopedKind(kind) && anchor && anchor.lat != null && anchor.lon != null && scope === 'branch');
+  }
+  function excludedCarReportRecord(o) {
+    // دليل المعارض يعرض المعارض المستقلة فقط؛ الشركات والوكالات وموزعو العلامات لهم أدلة أخرى.
+    return /(?:^|\s)(?:شركة|الشركة|مؤسسة)(?:\s|$)|وكالة|التوكيلات|محمد يوسف ناغي|عبد\s*اللطيف جميل|المجدوعي|شانجان|changan|جينيسيس|genesis|هيونداي|hyundai|تويوتا|toyota|كيا|kia|مازدا|mazda|شيري|chery|جيتور|jetour|دونغ\s*فينغ|dongfeng|موزع\s+جيلي/i.test(String(o && o.n || ''));
+  }
+  function dedupeCars(rows) {
+    var groups = {}, keys = [];
+    rows.forEach(function (o) { var key = cityKey(o.city) + '|' + norm(o.n); if (!groups[key]) { groups[key] = []; keys.push(key); } groups[key].push(o); });
+    return keys.map(function (key) {
+      var list = groups[key].slice().sort(function (a, b) {
+        function score(o) { return (o.web ? 4 : 0) + (o.maps ? 3 : 0) + (o.lat != null && o.lon != null ? 4 : 0) + (o.nb ? 1 : 0) + ((o.phones || []).length); }
+        return score(b) - score(a);
+      });
+      var base = Object.assign({}, list[0]), phones = [];
+      list.forEach(function (o) { (o.phones || []).forEach(function (p) { if (p && phones.indexOf(p) < 0) phones.push(p); }); });
+      if (phones.length) base.phones = phones;
+      return base;
+    });
   }
 
   function cityCompanyRecords(city) {
@@ -437,7 +461,7 @@
       });
     }
     // نطاق الفرع الذي لا يملك دبوسًا يعتمد الحي المطابق، ثم القطاع عند غياب الحي.
-    if (scope === 'branch' && S.branch.lat == null && S.branch.lon == null && !CITY_LEVEL[kind]) {
+    if (scope === 'branch' && S.branch.lat == null && S.branch.lon == null && branchScopedKind(kind)) {
       var branchNb = norm(S.branch.nb || ''), branchSec = S.branch.sec || '';
       var hasNeighborhoodMatch = branchNb && out.some(function (x) { return norm(x.o.nb || '') === branchNb; });
       out = out.filter(function (x) {
@@ -515,11 +539,12 @@
     }).join('');
     var hasBranchPin = b.lat != null && b.lon != null;
     function btn(scope, label, on) { return '<button data-scope="' + scope + '" aria-pressed="' + on + '">' + label + '</button>'; }
+    var showBranchScope = branchScopedKind(S.tab);
     var ctl = '<div class="seg" role="group" aria-label="النطاق">' +
-      (hasBranchPin ? btn('branch', S.origin ? 'حول موقعي' : 'نطاق الفرع', S.scope === 'branch') : '') +
-      (sc ? SECTORS.map(function (sector) { return '<button data-explore="' + esc(sector) + '" aria-pressed="' + (S.scope === 'sector' && S.explore === sector) + '">كامل ' + esc(sector) + ' ' + esc(b.city) + '</button>'; }).join('') : '') +
-      btn('city', 'كل ' + esc(b.city), S.scope === 'city' || !hasBranchPin) + '</div>';
-    if (hasBranchPin && S.scope === 'branch') ctl += '<label class="explore distance-control">المسافة<select id="radius" aria-label="مسافة الفرص من نقطة المرجع">' + [5, 10, 15, 20].map(function (r) { return '<option value="' + r + '"' + (Number(S.radius) === r ? ' selected' : '') + '>أقرب ' + fmt(r) + ' كم</option>'; }).join('') + '</select></label>';
+      (showBranchScope ? btn('branch', S.origin ? 'حول موقعي' : 'نطاق الفرع', S.scope === 'branch') : '') +
+      (sc ? SECTORS.map(function (sector) { return '<button data-explore="' + esc(sector) + '" aria-pressed="' + (S.scope === 'sector' && S.explore === sector) + '">' + esc(sector) + ' ' + esc(b.city) + '</button>'; }).join('') : '') +
+      btn('city', 'كل ' + esc(b.city), S.scope === 'city' || !showBranchScope) + '</div>';
+    if (showBranchScope && S.scope === 'branch') ctl += '<label class="explore distance-control">المسافة<select id="radius" aria-label="مسافة الفرص من نقطة المرجع">' + [5, 10, 15, 20].map(function (r) { return '<option value="' + r + '"' + (Number(S.radius) === r ? ' selected' : '') + '>أقرب ' + fmt(r) + ' كم</option>'; }).join('') + '</select></label>';
     app.innerHTML =
       '<section class="b-hero"><div class="wrap"><div class="b-top"><div class="b-id">' +
       '<p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : 'فرص الفرع') + '</p>' +
@@ -577,7 +602,7 @@
   function widen(k, c) {
     var b = S.branch, h = '';
     
-    if (sectorCity(b.city) && b.sec && S.scope !== 'sector') h += '<button class="btn" data-scope="sector">قطاع ' + esc(b.sec) + ' · <span class="num">' + fmt(itemsFor(k, b.sec, 'sector').length) + '</span></button>';
+    if (sectorCity(b.city) && b.sec && S.scope !== 'sector') h += '<button class="btn" data-explore="' + esc(b.sec) + '">' + esc(b.sec) + ' ' + esc(b.city) + ' · <span class="num">' + fmt(itemsFor(k, b.sec, 'sector').length) + '</span></button>';
     h += '<button class="btn primary" data-scope="city">كل ' + esc(b.city) + ' · <span class="num">' + fmt(c[k].total) + '</span></button>';
     return '<div class="more-row">' + h + '</div>';
   }
@@ -602,7 +627,7 @@
         var nextRadius = [5, 10, 15, 20].filter(function (r) { return r > Number(S.radius); })[0];
         if (nextRadius) h += '<button class="btn" data-radius="' + nextRadius + '">وسّع البحث إلى ' + fmt(nextRadius) + ' كم</button>';
       }
-      if (sectorCity(b.city) && b.sec) h += '<button class="btn" data-explore="' + esc(b.sec) + '">كامل ' + esc(b.sec) + ' ' + esc(b.city) + '</button>';
+      if (sectorCity(b.city) && b.sec) h += '<button class="btn" data-explore="' + esc(b.sec) + '">' + esc(b.sec) + ' ' + esc(b.city) + '</button>';
     }
     return h + '<button class="btn primary" data-scope="city">كل ' + esc(b.city) + ' · <span class="num">' + fmt(c[k].total) + '</span></button></div></div>';
   }
