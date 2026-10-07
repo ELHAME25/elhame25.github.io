@@ -605,7 +605,8 @@
   function displayImage(kind, o) {
     var url = String(o && o.img || ''), id = String(o && o.id || ''), decoded = url;
     try { decoded = decodeURIComponent(url); } catch (e) { /* keep the source URL */ }
-    if ((kind === 'projects' && id === 'P519') || (kind === 'nhc' && o && o.n === 'الدار')) return '';
+    // P284's official hero image visibly contains a baked-in project logo/title; use the clean local illustration instead.
+    if ((kind === 'projects' && (id === 'P519' || id === 'P284')) || (kind === 'nhc' && o && o.n === 'الدار')) return '';
     if (/poster|banner|brochure|flyer|licen[cs]e|permit|screenshot|لقطة.?الشاشة/i.test(decoded)) return '';
     return url;
   }
