@@ -45,6 +45,7 @@ class FinalGuidance(unittest.TestCase):
   self.assertIn('img.src = GENERIC_PROPERTY_IMAGE',app)
   self.assertIn('displayImage(kind, o)',app)
   self.assertIn("id === 'P284'",app)
+  self.assertIn("id === 'P125'",app)
   self.assertIn('developerSite(o)',app)
   self.assertIn('poster|banner|brochure',app)
  def test_shared_unverified_whatsapp_destinations_removed(self):
@@ -75,4 +76,9 @@ class FinalGuidance(unittest.TestCase):
    self.assertIn(number,byid[pid]['phones'])
    self.assertEqual(byid[pid]['waVerifiedSource'],'الصفحة الرسمية للشركة تعرض الرقم نفسه كرابط WhatsApp.')
    self.assertTrue(byid[pid]['wa'].startswith('https://wa.me/'))
+ def test_rakez_project_page_is_not_misrepresented_as_developer_site(self):
+  p=json.loads((ROOT/'data/projects.json').read_text())
+  x=next(x for x in p if x.get('id')=='P519')
+  self.assertEqual(x.get('page'),'https://rakez.sa/ar/project/60285/')
+  self.assertEqual(x.get('dsite'),'')
 if __name__=='__main__':unittest.main(verbosity=2)
