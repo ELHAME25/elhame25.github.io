@@ -31,6 +31,19 @@
   /* ---------------- helpers ---------------- */
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function norm(s) { return String(s || '').replace(/[ً-ْـ]/g, '').replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي').toLowerCase().replace(/\s+/g, ' ').trim(); }
+  function sameProjectNameTypo(a, b) {
+    a = norm(a); b = norm(b);
+    var numsA = (a.match(/\d+/g) || []).join(','), numsB = (b.match(/\d+/g) || []).join(',');
+    if (numsA !== numsB || Math.abs(a.length - b.length) > 1) return false;
+    var i = 0, j = 0, edits = 0;
+    while (i < a.length && j < b.length) {
+      if (a[i] === b[j]) { i++; j++; continue; }
+      if (++edits > 1) return false;
+      if (a.length > b.length) i++; else if (b.length > a.length) j++; else { i++; j++; }
+    }
+    if (i < a.length || j < b.length) edits++;
+    return edits <= 1;
+  }
   function cityKey(s) {
     var k = norm(s).replace(/[.,،()\-–_]/g, ' ').replace(/\s+/g, ' ').trim();
     // الهفوف والمبرز تسميتان موضعيتان ضمن نطاق الأحساء؛ نجمعها للبحث والعد مع إبقاء اسم الفرع الأصلي.
@@ -85,7 +98,7 @@
   function getJSON(path) {
     // Version query prevents a stale Pages/CDN copy of a corrected JSON file from breaking startup.
     var sep = path.indexOf('?') === -1 ? '?' : '&';
-    return fetch(path + sep + 'v=20261007-5', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
+    return fetch(path + sep + 'v=20261007-6', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
   }
   function boot() {
     var cfgEl = document.getElementById('site-config');
@@ -100,13 +113,17 @@
           return getJSON(CFG.dataBase + n + '.json').then(function (v) { D[n] = v; });
         }));
     }).then(function () {
-      // Collapse only exact same project pages with matching location and type; spelling variants must not render twice.
-      var seenProjectPages = Object.create(null);
+      // Collapse only exact duplicate records; distinct phases sharing a developer page remain visible.
+      var seenProjectPages = Object.create(null), keptProjectRecords = [];
       D.projects = D.projects.filter(function (p) {
         if (!p.page) return true;
         var identity = [cityKey(p.city), norm(p.dev), norm(p.page).replace(/\/$/, ''), norm(p.type), norm(p.nb), String(p.lat || ''), String(p.lon || '')].join('|');
-        if (seenProjectPages[identity]) return false;
-        seenProjectPages[identity] = true;
+        var signature = JSON.stringify(Object.keys(p).filter(function (k) { return k !== 'id' && k !== 'n' && k !== 'mapsQ'; }).sort().map(function (k) { return p[k]; }));
+        var prior = seenProjectPages[identity] || [];
+        for (var i = 0; i < prior.length; i++) {
+          if (prior[i].signature === signature && sameProjectNameTypo(prior[i].name, p.n)) return false;
+        }
+        prior.push({ signature: signature, name: p.n }); seenProjectPages[identity] = prior;
         return true;
       });
       D.officeById = {}; D.offices.forEach(function (o) { D.officeById[o.id] = o; });
