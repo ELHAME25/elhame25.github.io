@@ -459,7 +459,8 @@
   function nearbyItems() {
     var g = nearbyInfo(); if (!g) return [];
     var c = g.support, out = [];
-    function pts(src) { return src.filter(function (o) { return sameCity(o.city, c); }).map(function (o) { return { o: o, d: dist(o) }; }).sort(byDist); }
+    function pts(src) { return src.filter(function (o) { return sameCity(o.city, c); }).map(function (o) { return { o: o, d: dist(o) }; })
+      .filter(function (x) { return x.d == null || x.d <= Number(S.radius || 15); }).sort(byDist); }
     if (g.need.nhc) pts(D.nhc).forEach(function (x) { out.push({ k: 'nhc', o: x.o, d: x.d }); });
     if (g.need.projects) pts(D.projects).slice(0, 8).forEach(function (x) { out.push({ k: 'projects', o: x.o, d: x.d }); });
     if (g.need.projects) pts(D.opps).slice(0, 8).forEach(function (x) { out.push({ k: 'opps', o: x.o, d: x.d }); });
