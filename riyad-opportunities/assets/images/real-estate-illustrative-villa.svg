@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">مشهد توضيحي لمساكن عصرية</title>
+  <desc id="desc">فلل سكنية حديثة وسط أشجار ونخيل عند ضوء الغروب</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dce9f0"/><stop offset="1" stop-color="#fff0d9"/></linearGradient>
+    <linearGradient id="sunset" x2="0" y2="1"><stop stop-color="#f3c18e" stop-opacity="0"/><stop offset="1" stop-color="#f3c18e" stop-opacity=".65"/></linearGradient>
+    <linearGradient id="house" x2="0" y2="1"><stop stop-color="#f8f7f2"/><stop offset="1" stop-color="#d7dedb"/></linearGradient>
+    <linearGradient id="glass" x2="0" y2="1"><stop stop-color="#5f8491"/><stop offset="1" stop-color="#314e5c"/></linearGradient>
+    <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#b7c7b5"/><stop offset="1" stop-color="#6c927e"/></linearGradient>
+    <pattern id="windows" width="126" height="150" patternUnits="userSpaceOnUse"><rect x="26" y="21" width="52" height="83" rx="3" fill="url(#glass)"/><path d="M52 21v83M26 62h52" stroke="#d9e5df" stroke-width="4"/><path d="M31 28h42" stroke="#d8c5a7" stroke-width="4" opacity=".65"/></pattern>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1200v700H0z"/><path fill="url(#sunset)" d="M0 330h1200v370H0z"/>
+  <circle cx="940" cy="180" r="72" fill="#fff9e9" opacity=".8"/>
+  <path fill="#bac9c2" d="M0 406 130 330l107 76 155-106 139 106 129-73 131 73 139-99 125 99 145-66v128H0z" opacity=".55"/>
+  <path fill="url(#house)" stroke="#c8d3cf" stroke-width="5" d="M80 333h313v229H80zM394 293h428v269H394zM823 343h292v219H823z"/>
+  <path fill="#e9e9df" d="M55 326 236 251l181 75v19H55zM368 286l240-104 240 104v20H368zM800 337l169-73 169 73v17H800z"/>
+  <path fill="url(#windows)" d="M97 364h280v197H97zM424 327h366v234H424zM850 373h238v188H850z"/>
+  <g fill="#f1ddad" opacity=".92"><rect x="112" y="384" width="12" height="55"/><rect x="242" y="384" width="12" height="55"/><rect x="460" y="348" width="13" height="57"/><rect x="588" y="348" width="13" height="57"/><rect x="716" y="348" width="13" height="57"/><rect x="874" y="392" width="12" height="52"/><rect x="1000" y="392" width="12" height="52"/></g>
+  <path fill="#7b6b5d" d="M180 489h72v73h-72zM559 476h91v86h-91zM923 490h67v72h-67z"/><path fill="#d9c8aa" d="M174 485h84v9h-84zM552 470h105v10H552zM916 485h81v9h-81z"/>
+  <path fill="url(#ground)" d="M0 561h1200v139H0z"/><path fill="#d6c8b0" d="M350 700 510 561h207l176 139z"/>
+  <path stroke="#efe8dc" stroke-width="8" d="m453 700 103-139m226 139L662 561" opacity=".7"/>
+  <g fill="#557c68"><circle cx="72" cy="550" r="41"/><circle cx="1127" cy="551" r="52"/><circle cx="311" cy="568" r="30"/><circle cx="861" cy="568" r="33"/></g>
+  <g fill="#3f6d5d"><path d="M48 568h47v78H48zM1102 565h46v90h-46z"/><path d="M72 340c-44 4-64 24-70 44 33-5 52-4 70 4-38 9-56 28-58 46 35-11 59-10 80 0-30 20-39 40-34 54 35-18 63-23 88-17-23-23-34-50-34-74 12-24 36-40 67-48-26-16-57-14-83-7 9-25 31-45 62-60-39-3-72 15-94 36 0-28 12-55 35-80-38 14-61 44-69 76-16-19-23-44-18-73-24 27-30 63-18 98-20-12-35-34-43-62-9 35 1 68 27 91-24-2-48-15-70-38 12 35 38 58 73 63z"/><path d="M1124 350c-28-27-62-39-99-34 25 16 44 36 55 60-30-19-61-25-94-18 30 11 51 28 64 52-35-12-67-9-98 9 35 3 63 14 84 34-37-4-68 7-95 32 38-7 70-3 99 10-33 12-57 33-72 64 33-20 65-29 98-27 23 5 43 14 60 27z"/></g>
+  <path fill="#fbf5e8" d="M0 645h1200v55H0z" opacity=".14"/>
+</svg>
