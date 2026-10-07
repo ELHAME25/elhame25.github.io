@@ -548,7 +548,7 @@
       head += '<div class="car-zone-cards" role="group" aria-label="معارض الرياض">' +
       '<button class="car-zone-card" data-car-area="shifa" aria-pressed="' + ((S.carArea || (S.scope === 'city' ? '' : defaultCarArea(S.branch))) === 'shifa') + '"><span>معارض الشفا</span><strong>' + fmt(shifaCount) + '</strong></button>' +
       '<button class="car-zone-card" data-car-area="qadisiyah" aria-pressed="' + ((S.carArea || (S.scope === 'city' ? '' : defaultCarArea(S.branch))) === 'qadisiyah') + '"><span>معارض القادسية</span><strong>' + fmt(qadisiyahCount) + '</strong></button>' +
-      '<button class="car-zone-card car-zone-all" data-car-area="all" aria-pressed="' + (S.carArea === 'all' || S.scope === 'city' && !S.carArea) + '"><span>كل معارض الرياض</span><strong>' + fmt((D.cityCount.cars || {}).الرياض || 0) + '</strong></button></div>' + head;
+      '<button class="car-zone-card car-zone-all" data-car-area="all" aria-pressed="' + (S.carArea === 'all' || S.scope === 'city' && !S.carArea) + '"><span>كل معارض الرياض</span><strong>' + fmt((D.cityCount.cars || {}).الرياض || 0) + '</strong></button></div>';
     }
     var body;
     if (!all.length) body = emptyState(k, c);
