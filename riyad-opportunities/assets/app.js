@@ -451,7 +451,7 @@
     app.innerHTML =
       '<section class="b-hero"><div class="wrap"><div class="b-top"><div class="b-id">' +
       '<p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : 'فرص الفرع') + '</p>' +
-      '<h1>دليل الفرص — مركز مبيعات ' + esc(b.n) + '</h1><div class="b-meta"><span class="pill code num">' + esc(b.c) + '</span><span class="pill">' + esc(b.city) + '</span>' +
+      '<h1>دليل الفرص — ' + esc(b.n) + '</h1><div class="b-meta"><span class="pill code num">' + esc(b.c) + '</span><span class="pill">' + esc(b.city) + '</span>' +
       (sc && b.sec ? '<span class="pill sec">' + esc(b.sec) + ' ' + esc(b.city) + '</span>' : '') + (b.nb ? '<span class="pill">حي ' + esc(b.nb) + '</span>' : '') +
       (S.origin ? '<span class="pill geo-pill">أقرب فرع محدد الموقع · ' + distTag(S.nearestBranchDistance, {}) + '</span><a class="pill geo-map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=' + esc(b.lat + ',' + b.lon) + '">خريطة الفرع</a>' : '') + '</div></div>' +
       '<button class="btn ghost" data-act="change">' + ICON.swap + 'تغيير الفرع</button></div>' +
