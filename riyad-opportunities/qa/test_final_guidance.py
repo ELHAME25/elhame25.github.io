@@ -2,26 +2,42 @@ import json,re,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 class FinalGuidance(unittest.TestCase):
- def test_picker_order_cities_and_no_auto_branch(self):
+ def test_picker_order_code_city_go_and_live_greeting(self):
   s=(ROOT/'assets/app.js').read_text()
   start=s[s.index('function renderStart()'):s.index('/* ---------------- branch & state ---------------- */')]
-  self.assertLess(start.index('for="q-emp"'),start.index('for="q-city"'))
-  self.assertLess(start.index('for="q-city"'),start.index('for="q-branch"'))
-  self.assertIn('cities().map',start)
-  self.assertIn('disabled></div>',start)
-  self.assertIn('renderStart();',s)
+  self.assertLess(start.index('for="q-emp"'),start.index('for="q-branch"'))
+  self.assertLess(start.index('for="q-branch"'),start.index('for="q-city"'))
+  self.assertIn('كل المدن',start)
+  self.assertIn('id="go-branch"',start)
+  self.assertIn('id="greet"',start)
+  self.assertIn("qe.addEventListener('input'",start)
+  self.assertNotIn('id="q-branch" class="input" type="search" autocomplete="off" placeholder="أدخل رمز الفرع أو ابحث باسمه" disabled',start)
+  self.assertIn("go.addEventListener('click'",start)
+  self.assertIn('استخدم موقعي — أقرب فرع',start)
   self.assertNotIn('var code = m ? m[1] : store',s)
  def test_curated_shaffa_and_qadisiyah_records(self):
   cars=json.loads((ROOT/'data/cars.json').read_text())
-  phones=['0507218678','0540998075','0539444885','0537031513','0536623945','0510686130','0500781804','0547777703','0561047060','0557004484','0554715999','0555299169','0554444604']
-  by_phone={p:[o for o in cars if p in o.get('phones',[])] for p in phones}
-  self.assertTrue(all(len(v)==1 for v in by_phone.values()))
-  self.assertEqual(sum(o.get('zone')=='shifa' for o in cars),13)
-  self.assertEqual(sum(o.get('zone')=='qadisiyah' for o in cars),30)
-  for p in phones:
-   o=by_phone[p][0]
-   self.assertTrue(o['maps'].startswith('https://www.google.com/maps/search/'))
-   self.assertIsNone(o['lat']); self.assertIsNone(o['lon'])
+  shifa=[o for o in cars if o.get('zone')=='shifa']
+  qadisiyah=[o for o in cars if o.get('zone')=='qadisiyah']
+  self.assertEqual(len(shifa),13)
+  self.assertEqual(len(qadisiyah),30)
+  self.assertEqual(sum(not o.get('zone') for o in cars if o.get('city')=='الرياض'),8)
+  self.assertTrue(all(o.get('maps','').startswith('https://www.google.com/maps/search/') for o in shifa))
+  self.assertTrue(all(o.get('lat') is None and o.get('lon') is None for o in shifa))
+ def test_location_conflicts_are_not_used_and_images_have_local_fallback(self):
+  branches=json.loads((ROOT/'data/branches.json').read_text())
+  for code in ['323','345']:
+   b=next(x for x in branches if x['c']==code)
+   self.assertIsNone(b.get('lat')); self.assertIsNone(b.get('lon'))
+   self.assertEqual(b.get('officialMapStatus'),'held')
+   self.assertEqual(b.get('candidateCoordinates',{}).get('status'),'REVIEW_REQUIRED')
+  self.assertTrue((ROOT/'assets/images/real-estate-illustrative-villa.jpg').exists())
+  app=(ROOT/'assets/app.js').read_text()
+  self.assertIn('صورة توضيحية',app)
+  self.assertIn('img.src = GENERIC_PROPERTY_IMAGE',app)
+  self.assertIn('displayImage(kind, o)',app)
+  self.assertIn('developerSite(o)',app)
+  self.assertIn('poster|banner|brochure',app)
  def test_shared_unverified_whatsapp_destinations_removed(self):
   for kind in ['companies','projects','opportunities','nhc']:
    records=json.loads((ROOT/f'data/{kind}.json').read_text())

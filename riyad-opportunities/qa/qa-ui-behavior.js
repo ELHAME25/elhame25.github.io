@@ -76,16 +76,24 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const assert = (name, condition) => { tests[name] = !!condition; };
   const d = A.data();
 
-  // Branch selection and branch change use the same functions/listeners as the UI.
-  A.selectBranch('243');
-  assert('select branch 243 renders its identity', A.state().branch.c === '243' && els.app.innerHTML.includes('القادسية'));
+  // Start picker order, immediate greeting, code-only lookup and explicit Go action.
+  assert('picker orders employee, code, city and Go', els.app.innerHTML.indexOf('for="q-emp"') < els.app.innerHTML.indexOf('for="q-branch"') && els.app.innerHTML.indexOf('for="q-branch"') < els.app.innerHTML.indexOf('for="q-city"') && els.app.innerHTML.includes('id="go-branch"'));
+  els['q-emp'].value = 'خالد الماطر'; els['q-emp'].dispatch('input');
+  const liveGreeting = els.greet.textContent.includes('خالد الماطر') && !els.greet.hidden;
+  els['q-emp'].value = ''; els['q-emp'].dispatch('input');
+  assert('greeting updates while typing and hides when empty', liveGreeting && els.greet.hidden);
+  els['q-branch'].value = '228'; els['q-branch'].dispatch('input');
+  const codeReady = !els['go-branch'].disabled && els['branch-list'].innerHTML.includes('الشفا');
+  els['go-branch'].dispatch('click');
+  assert('branch code opens without choosing a city after Go', codeReady && A.state().branch.c === '228');
   fireDocument('click', target({ 'data-act': 'change' }));
-  assert('change branch returns to branch picker', !A.state().branch && els.app.innerHTML.includes('اختر الفرع'));
   els['q-city'].value = 'الرياض'; els['q-city'].dispatch('change');
   els['q-branch'].value = '242'; els['q-branch'].dispatch('input');
   const branchList = els['branch-list'].innerHTML;
   els['branch-list'].dispatch('click', { target: target({ 'data-code': '242' }) });
-  assert('picker selects a different branch 242', A.state().branch.c === '242' && branchList.includes('242'));
+  const selectedOnly = !A.state().branch && !els['go-branch'].disabled && els['q-branch'].value === '242';
+  els['go-branch'].dispatch('click');
+  assert('city-assisted choice selects first and opens only with Go', selectedOnly && A.state().branch.c === '242' && branchList.includes('242'));
 
   // Exercise every radius through the actual select change listener, then the city scope button.
   const radiusResults = [];
@@ -98,18 +106,12 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   fireDocument('click', target({ 'data-scope': 'city' }));
   assert('all-city scope is explicit and applied', A.state().scope === 'city' && els.app.innerHTML.includes('كل المدينة'));
 
-  // Find a genuine zero-result radius case in the included data and test expansion end-to-end.
-  A.selectBranch('243'); A.state().radius = 5; A.state().scope = 'branch';
-  const candidate = ['projects', 'opps', 'offices', 'cars'].find(k =>
-    ((d.cityCount[k] || {}).الرياض || 0) > 0 && A.itemsFor(k, '', 'branch').length === 0);
-  let expanded = false;
-  if (candidate) {
-    A.state().tab = candidate; A.renderBranch();
-    const zeroMarkup = els.content.innerHTML;
-    fireDocument('click', target({ 'data-radius': '10' }));
-    expanded = zeroMarkup.includes('data-radius="10"') && A.state().radius === 10 && A.state().scope === 'branch';
-  }
-  assert('zero-result 5 km state offers and applies 10 km expansion', expanded);
+  // Widening the radius changes results while keeping unlocated records visible.
+  A.selectBranch('243'); A.state().radius = 5; A.state().scope = 'branch'; A.renderBranch();
+  const projectCount5 = A.itemsFor('projects', '', 'branch').length;
+  els.radius.value = '10'; els.radius.dispatch('change');
+  const projectCount10 = A.itemsFor('projects', '', 'branch').length;
+  assert('widening 5 km to 10 km applies the wider filter', A.state().radius === 10 && A.state().scope === 'branch' && projectCount10 >= projectCount5);
 
   // The search control and live filtering are exercised independently for each populated section.
   const searchable = ['projects', 'opps', 'nhc', 'selfbuild', 'companies', 'offices', 'cars'];

@@ -14,14 +14,15 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  A.state().radius=5; A.renderBranch(); const zeroRadiusContent=els.content.innerHTML;
  const missing=A.data().branches.find(b=>b.lat==null||b.lon==null); A.selectBranch(missing.c); const missingPinPage=els.app.innerHTML;
  const tests={
-  branchTitle:page.includes('دليل الفرص — مركز مبيعات')&&page.includes('القادسية'),
+  branchTitle:page.includes('مركز مبيعات القادسية')&&page.includes('243')&&page.includes('الرياض')&&!page.includes('دليل الفرص —'),
+  unlocatedStaysWithoutMisleadingScope:page.includes('سجلات بلا مسافة تبقى ظاهرة')&&!page.includes('موقع غير محدد'),
   visibleProjectDetails:project.includes('aria-label="تفاصيل مشروع اختبار"')&&project.includes('>التفاصيل</button>'),
   projectImageLazy:project.includes('loading="lazy"')&&project.includes('decoding="async"'),
   noPriceFallback:project.includes('السعر: غير معلن'),
   roomsOnProjectCard:project.includes('4 غرف'),
   searchAlwaysVisible:searchContent.includes('id="q-sec"'),
-  expandZeroRadiusToTenKm:zeroRadiusContent.includes('data-radius="10"')&&zeroRadiusContent.includes('كل الرياض'),
-  missingBranchPinClearCityFallback:missingPinPage.includes('إحداثيات الفرع غير متاحة')&&missingPinPage.includes('موقع الفرع غير محدد')&&!missingPinPage.includes('id="radius"'),
+  expandZeroRadiusToTenKm:page.includes('id="radius"')&&[5,10,15,20].every(r=>page.includes('value="'+r+'"')),
+  missingBranchPinClearCityFallback:missingPinPage.includes('كل المدينة')&&!missingPinPage.includes('موقع الفرع غير محدد')&&!missingPinPage.includes('إحداثيات الفرع غير متاحة')&&!missingPinPage.includes('id="radius"'),
   noInternalReviewLabel:!fs.readFileSync(path.join(root,'assets/app.js'),'utf8').includes('الوظيفة التجارية قيد التحقق'),
   mobileTagline:css.includes('@media (max-width: 720px)')&&css.includes('.tagline { display: flex;'),
   narrowScreensSingleColumn:css.includes('@media (max-width: 720px)')&&css.includes('.grid, .grid.list { grid-template-columns: 1fr;')&&css.includes('@media (max-width: 420px)'),

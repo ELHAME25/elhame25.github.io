@@ -63,6 +63,9 @@ h1, h2, h3, h4 { font-family: var(--font-head); color: var(--navy); }
 .geo-btn { width: 100%; margin: 16px 0 0; min-height: 50px; }
 .geo-btn svg { width: 19px; height: 19px; }
 .geo-btn:disabled { opacity: .7; cursor: progress; }
+.go-branch { width: 100%; min-height: 50px; margin: 0 0 2px; }
+.go-branch:disabled { opacity: .45; cursor: not-allowed; }
+.start-greet { min-height: 28px; margin: -6px 0 12px; }
 .greet { font-family: var(--font-head); color: var(--teal); font-weight: 700; margin: 0 0 6px; }
 .field { margin-bottom: 14px; }
 .field label { display: block; font-weight: 700; font-size: .92rem; color: var(--navy); margin-bottom: 6px; }
@@ -75,6 +78,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); color: var(--navy); }
 .branch-item { display: flex; align-items: center; gap: 12px; width: 100%; text-align: right; background: #fff; border: 0; border-bottom: 1px solid var(--line-2); padding: 12px 14px; cursor: pointer; }
 .branch-item:last-child { border-bottom: 0; }
 .branch-item:hover, .branch-item.is-match { background: var(--mint); }
+.branch-item.selected { background: #e7f5f2; box-shadow: inset -3px 0 0 var(--teal); }
 .branch-item .code { font-weight: 700; color: var(--teal); min-width: 3.2ch; }
 .branch-item .bn { font-weight: 700; color: var(--navy); flex: 1; }
 .branch-item .bc { color: var(--ink-3); font-size: .85rem; }
@@ -335,6 +339,15 @@ button, select { cursor: pointer; }
 .vcard:hover { transform: translateY(-3px); border-color: #c9dcdd; box-shadow: var(--shadow); }
 .vcard .media { aspect-ratio: 16 / 10; border-radius: 13px; background: #edf5f4; }
 .vcard .media img { transition: transform .28s ease; }
+.vcard .media { height: auto; aspect-ratio: auto; display: flex; flex-direction: column; overflow: hidden; }
+.vcard .media img { position: relative; inset: auto; display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.vcard .media img[data-generic="1"]:has(~ .official-image) { display: none; }
+.image-caption { display: block; padding: 4px 9px; background: #f7f9fb; color: #586a7b; font-size: .72rem; line-height: 1.35; }
+.image-caption[hidden] { display: none !important; }
+.d-media { height: auto; aspect-ratio: auto; display: flex; flex-direction: column; overflow: hidden; }
+.d-media img { position: relative; inset: auto; display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; flex: 0 0 auto; }
+.d-media img[data-generic="1"]:has(~ .official-image) { display: none; }
+.d-media .image-caption { flex: 0 0 auto; }
 .vcard .body { flex: 1; padding: 0 7px 7px; }
 .vcard h3 { color: var(--navy); font-size: 1rem; line-height: 1.55; }
 .vcard .dev, .vcard .where { line-height: 1.65; }
