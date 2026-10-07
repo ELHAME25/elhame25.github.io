@@ -17,7 +17,7 @@ const document={
 };
 const location={hash:'',pathname:'/',search:''}, localStorage={getItem(){return null},setItem(){},removeItem(){}};
 const window={location,scrollTo(){},addEventListener(){}};
-const fetch=async u=>{const p=path.join(root,u);return {ok:fs.existsSync(p),json:async()=>JSON.parse(fs.readFileSync(p,'utf8'))}};
+const fetch=async u=>{const p=path.join(root,u.split('?')[0]);return {ok:fs.existsSync(p),json:async()=>JSON.parse(fs.readFileSync(p,'utf8'))}};
 let src=fs.readFileSync(path.join(root,'assets/app.js'),'utf8').replace('  boot();',`  window.__phoneQA={currentPhone, seed:function(){REG[0]={o:{phones:['0500000001','0500000002']}};}}; boot();`);
 vm.runInNewContext(src,{document,window,location,history:{replaceState(){}},localStorage,navigator:{},fetch,setTimeout,clearTimeout,console,URL,Blob});
 const wait=ms=>new Promise(r=>setTimeout(r,ms));

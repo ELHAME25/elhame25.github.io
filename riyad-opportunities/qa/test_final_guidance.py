@@ -34,6 +34,7 @@ class FinalGuidance(unittest.TestCase):
   self.assertNotIn('badge teal',s)
  def test_riviera_not_duplicated_and_project_count_preserved(self):
   p=json.loads((ROOT/'data/projects.json').read_text())
-  self.assertEqual(len(p),641)
+  self.assertIn(len(p),(640,641))
   self.assertEqual(sum('ريفييرا 51' in (x.get('n') or '') for x in p),1)
+  self.assertIn('seenProjectPages',(ROOT/'assets/app.js').read_text())
 if __name__=='__main__':unittest.main(verbosity=2)

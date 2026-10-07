@@ -38,7 +38,7 @@ const location = { hash: '', pathname: '/', search: '' };
 const localStorage = { getItem() { return null; }, setItem() {}, removeItem() {} };
 const window = { location, scrollTo() {}, addEventListener() {} };
 const fetch = async u => {
-  const p = path.join(root, u);
+  const p = path.join(root, u.split('?')[0]);
   return { ok: fs.existsSync(p), json: async () => JSON.parse(fs.readFileSync(p, 'utf8')) };
 };
 let src = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');

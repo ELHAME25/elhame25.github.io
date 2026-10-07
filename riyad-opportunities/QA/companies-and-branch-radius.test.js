@@ -24,7 +24,7 @@ const location = {hash:'', pathname:'/', search:''};
 const localStorage = {getItem(){return null;},setItem(){},removeItem(){}};
 const window = {location, scrollTo(){}, addEventListener(){}};
 const fetch = async url => {
-  const file = path.join(root, url);
+  const file = path.join(root, url.split('?')[0]);
   return {ok:fs.existsSync(file), json:async()=>JSON.parse(fs.readFileSync(file,'utf8'))};
 };
 const jsFile = path.join(root, 'assets/app.js');
