@@ -192,6 +192,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); color: var(--navy); }
 .lcard .head { display: flex; gap: 12px; align-items: flex-start; }
 .avatar { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; background: var(--mint); color: var(--navy); flex: none; font-family: var(--font-head); font-weight: 700; }
 .avatar svg { width: 22px; height: 22px; }
+.avatar.company-avatar { object-fit: cover; border: 1px solid var(--line); }
 .lcard h3 { margin: 0; font-size: 1rem; line-height: 1.5; color: var(--ink); }
 .lcard .sub { color: var(--ink-3); font-size: .86rem; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
