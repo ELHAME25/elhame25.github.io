@@ -59,8 +59,19 @@ class FinalGuidance(unittest.TestCase):
  def test_riviera_not_duplicated_and_project_count_preserved(self):
   p=json.loads((ROOT/'data/projects.json').read_text())
   self.assertEqual(len(p),641)
+  # Four approved bank project codes are merged into their matching project cards.
+  aliases={a:x['id'] for x in p for a in x.get('alsoIds',[])}
+  self.assertEqual(aliases,{'P121':'P120','P645':'P138','P349':'P338','P363':'P351'})
+  self.assertEqual(len(p)+len(aliases),645)
   self.assertEqual(sum(('رفييرا 51' in (x.get('n') or '') or 'ريفييرا 51' in (x.get('n') or '')) for x in p),2)
   s=(ROOT/'assets/app.js').read_text()
   self.assertIn('sameProjectNameTypo',s)
   self.assertIn('Math.abs(a.length - b.length) !== 1',s)
+ def test_verified_whatsapp_destinations_have_matching_published_numbers(self):
+  p=json.loads((ROOT/'data/projects.json').read_text())
+  byid={x['id']:x for x in p}
+  for pid,number in {'P158':'0566800151','P159':'0566800151','P250':'0500654888','P284':'0500654888','P300':'0500654888'}.items():
+   self.assertIn(number,byid[pid]['phones'])
+   self.assertEqual(byid[pid]['waVerifiedSource'],'الصفحة الرسمية للشركة تعرض الرقم نفسه كرابط WhatsApp.')
+   self.assertTrue(byid[pid]['wa'].startswith('https://wa.me/'))
 if __name__=='__main__':unittest.main(verbosity=2)
