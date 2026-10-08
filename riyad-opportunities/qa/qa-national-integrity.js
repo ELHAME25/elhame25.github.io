@@ -10,7 +10,9 @@ const meta=read('meta'), branches=read('branches'), projects=read('projects'), n
 const norm=s=>String(s||'').replace(/[أإآ]/g,'ا').replace(/[ىي]/g,'ي').replace(/ة/g,'ه').replace(/\s+/g,' ').trim();
 const cityAliases={ 'الهفوف':'الأحساء','المبرز':'الأحساء' };
 const cities=[...new Set(branches.map(b=>cityAliases[b.city]||b.city).map(norm))];
-check('عدد خيارات المدينة يطابق البيانات والواجهة', cities.length===77 && meta.cityChoiceCount===cities.length, {actual:cities.length,meta:meta.cityChoiceCount});
+const carOnlyCities=[...new Set(cars.map(o=>cityAliases[o.city]||o.city).map(norm))].filter(c=>!cities.includes(c));
+const allCityChoices=new Set([...cities,...carOnlyCities]);
+check('خيارات الفروع تبقى كاملة مع إتاحة مدن المعارض بلا فرع', cities.length===77 && meta.branchCityChoiceCount===77 && carOnlyCities.length===4 && meta.cityChoiceCount===allCityChoices.size, {branchCities:cities.length,cityOnlyCities:carOnlyCities,allChoices:allCityChoices.size,meta:meta.cityChoiceCount});
 check('إجمالي الفروع يطابق metadata',branches.length===meta.counts.branches,{branches:branches.length,meta:meta.counts.branches});
 const noCoords=branches.filter(b=>b.lat==null||b.lon==null).map(b=>String(b.c));
 check('الفروع بلا إحداثيات نشطة محصورة في 176 و307',JSON.stringify(noCoords.sort())===JSON.stringify(['176','307']),noCoords);
