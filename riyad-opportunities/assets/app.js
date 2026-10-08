@@ -341,6 +341,7 @@
   function cityCompanyRecords(city) {
     var groups = {};
     (D.companies || []).forEach(function (o) {
+      if (requiresReview(o.commercialAuditStatus)) return;
       var local = sameCity(o.city, city);
       var covered = (o.coverageCities || []).some(function (c) { return sameCity(c, city); });
       if (!local && !covered) return;
@@ -401,6 +402,7 @@
     return 'all';
   }
   function carAreaOf(o) { return o && (o.zone === 'shifa' || o.zone === 'qadisiyah') ? o.zone : ''; }
+  function requiresReview(value) { return String(value || '').trim().toUpperCase() === 'REVIEW_REQUIRED'; }
   function rawItems(kind) {
     var b = S.branch, links = {};
     if (kind === 'offices') (D.office_links[b.c] || []).forEach(function (l) { links[l[0]] = l[1]; });
@@ -414,6 +416,8 @@
     });
     return (D[kind] || []).filter(function (o) {
       if (!sameCity(o.city, b.city)) return false;
+      if (kind === 'cars' && requiresReview(o.activityReviewStatus)) return false;
+      if (kind === 'selfbuild' && requiresReview(o.availabilityStatus)) return false;
       if (kind === 'cars' && sameCity(b.city, 'الرياض')) {
         var area = S.carArea || (S.scope === 'city' ? 'all' : defaultCarArea(b));
         var zone = carAreaOf(o);
