@@ -112,7 +112,7 @@
   function getJSON(path) {
     // Version query prevents a stale Pages/CDN copy of a corrected JSON file from breaking startup.
     var sep = path.indexOf('?') === -1 ? '?' : '&';
-    return fetch(path + sep + 'v=20261008-02', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
+    return fetch(path + sep + 'v=20261008-03', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
   }
   function boot() {
     var cfgEl = document.getElementById('site-config');
@@ -147,7 +147,7 @@
       D.cityCount = {};
       ['projects', 'opps', 'nhc', 'selfbuild', 'companies', 'offices', 'cars'].forEach(function (k) {
         D.cityCount[k] = {}; D[k].forEach(function (o) {
-          var cityList = (k === 'companies' || k === 'cars') && o.coverageCities && o.coverageCities.length ? o.coverageCities.concat([o.city]) : [o.city], citySeen = {};
+          var cityList = k === 'companies' && o.coverageCities && o.coverageCities.length ? o.coverageCities : [o.city], citySeen = {};
           cityList.forEach(function (city) {
             var ck = cityKey(city);
             if (citySeen[ck]) return;
@@ -246,7 +246,7 @@
   function selectBranch(code, fromBoot, origin) {
     var b = D.branchByCode[code]; if (!b) return;
     // تصفير كامل: لا يبقى أي اختيار أو نتيجة من الفرع السابق
-    S = fresh(); S.branch = b; S.scope = 'branch'; S.origin = origin || null;
+    S = fresh(); S.branch = b; S.scope = (!sectorCity(b.city) && (b.lat == null || b.lon == null)) ? 'city' : 'branch'; S.origin = origin || null;
     S.nearestBranchDistance = origin ? km(origin.lat, origin.lon, b.lat, b.lon) : null;
     store('rog.branch', b.c);
     try { if (location.hash !== '#b' + b.c) location.hash = 'b' + b.c; } catch (e) { /* ignore */ }
@@ -547,7 +547,7 @@
     }).join('');
     var hasBranchPin = b.lat != null && b.lon != null;
     function btn(scope, label, on) { return '<button data-scope="' + scope + '" aria-pressed="' + on + '">' + label + '</button>'; }
-    var showBranchScope = branchScopedKind(S.tab);
+    var showBranchScope = branchScopedKind(S.tab) && (hasBranchPin || sectorCity(b.city));
     var ctl = '<div class="seg" role="group" aria-label="النطاق">' +
       (showBranchScope ? btn('branch', S.origin ? 'حول موقعي' : 'نطاق الفرع', S.scope === 'branch') : '') +
       (sc ? SECTORS.map(function (sector) { return '<button data-explore="' + esc(sector) + '" aria-pressed="' + (S.scope === 'sector' && S.explore === sector) + '">' + esc(sector) + ' ' + esc(b.city) + '</button>'; }).join('') : '') +
