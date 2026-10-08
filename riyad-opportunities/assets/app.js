@@ -112,7 +112,7 @@
   function getJSON(path) {
     // Version query prevents a stale Pages/CDN copy of a corrected JSON file from breaking startup.
     var sep = path.indexOf('?') === -1 ? '?' : '&';
-    return fetch(path + sep + 'v=20261008-01', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
+    return fetch(path + sep + 'v=20261008-02', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
   }
   function boot() {
     var cfgEl = document.getElementById('site-config');
@@ -423,6 +423,8 @@
       return true;
     }).map(function (o) {
       var d = dist(o), rankD = d, source = 'coordinates';
+      var routeDistance = o.branchRoadDistancesKm && Number(o.branchRoadDistancesKm[String(b.c)]);
+      if (isFinite(routeDistance) && routeDistance > 0) { d = routeDistance; rankD = routeDistance; source = 'google-maps-driving'; }
       if (d == null && links[o.id] != null) { d = links[o.id]; rankD = d; source = 'verified-office-link'; }
       return { o: o, d: d, rankD: rankD, distanceSource: source };
     });
@@ -472,6 +474,10 @@
         if (kind === 'companies') sameSector = sameSector || x.linkedProjects.some(function (p) { return sectorsOf(p).indexOf(branchSec) >= 0; });
         return hasNeighborhoodMatch ? exactNeighborhood : sameSector;
       });
+    }
+    // نطاق فرع المدن الكبرى يقتصر على قطاع الفرع؛ لا يخلط مشاريع الشمال أو الوسط بنتائج فرع الشرق.
+    if (scope === 'branch' && sectorCity(S.branch.city) && S.branch.sec && (kind === 'projects' || kind === 'opps')) {
+      out = out.filter(function (x) { var sectors = sectorsOf(x.o); return !sectors.length || sectors.indexOf(S.branch.sec) >= 0; });
     }
     // اختيار القطاع نطاق كامل مستقل؛ لا يطبق عليه نصف قطر الفرع.
     if (scope === 'sector' && sectorCity(S.branch.city) && (sec || S.explore)) {
