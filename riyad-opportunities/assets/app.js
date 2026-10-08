@@ -698,11 +698,18 @@
   }
   function distTag(d, o) { return d != null ? '<span class="tag dist num">' + (o && o.loc === 'nb' ? '~' : '') + (d < 1 ? fmt(Math.round(d * 1000)) + ' m' : fmt(Math.round(d * 10) / 10) + ' km') + '</span>' : ''; }
 
+  function projectAreaLabel(value) {
+    var area = String(value || '').trim();
+    if (!area) return '';
+    if (/^(?:حي|مخطط|وجهة)(?:\s|$)/.test(area)) return area;
+    return 'حي ' + area;
+  }
+
   function card(kind, o, d, showCity, unknown, item) {
     var id = reg(kind, o);
     var unknownTag = unknown ? '<span class="tag loc-unknown">الموقع غير محدد</span>' : '';
     if (kind === 'projects') {
-      var where = [o.nb ? 'حي ' + o.nb : '', o.city].filter(Boolean).join('، ');
+      var where = [projectAreaLabel(o.nb), o.city].filter(Boolean).join('، ');
       var projectImage = displayImage(kind, o);
       return '<article class="vcard" data-detail="' + id + '" tabindex="0"><div class="media">' + ph(o.n, [o.type, o.city].filter(Boolean).join(' · '), kind, o) +
         (projectImage ? '<img class="property-image official-image" loading="lazy" decoding="async" alt="صورة المشروع" data-src="' + esc(projectImage) + '">' : '') + '</div>' +
@@ -784,7 +791,7 @@
       rows = [['المدينة', o.city], ['الموقع', o.dir], ['مرجع دبوس الخريطة', o.geoBasis]];
       if (o.url) links += '<a class="btn primary" target="_blank" rel="noopener" href="' + esc(o.url) + '">' + ICON.web + 'صفحة الوجهة في NHC</a>';
     } else {
-      rows = [['المطور', o.dev], ['الحي', o.nb], ['المدينة', o.city], ['نوع الوحدات', o.type], ['الغرف', o.rooms], ['عدد الوحدات', o.units], ['حالة العرض', o.status], ['رقم التواصل', o.phoneLevel === 'dev' && o.phones && o.phones[0] ? 'رقم المطور' : '']];
+      rows = [['المطور', o.dev], ['الموقع', o.nb], ['المدينة', o.city], ['نوع الوحدات', o.type], ['الغرف', o.rooms], ['عدد الوحدات', o.units], ['حالة العرض', o.status], ['رقم التواصل', o.phoneLevel === 'dev' && o.phones && o.phones[0] ? 'رقم المطور' : '']];
       if (o.page) links += '<a class="btn primary" target="_blank" rel="noopener" href="' + esc(o.page) + '">' + ICON.web + 'صفحة المشروع</a>';
       var devSite = developerSite(o);
       if (devSite && devSite !== o.page) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(devSite) + '">' + ICON.companies + 'موقع المطور</a>';
