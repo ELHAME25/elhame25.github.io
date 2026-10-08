@@ -756,7 +756,7 @@
     }
     return '<article class="lcard"><div class="head"><span class="avatar">' + ICON[kind === 'cars' ? 'cars' : 'offices'] + '</span><div><h3>' + esc(o.n) + '</h3>' +
       (o.nb ? '<div class="sub">' + esc(o.nb) + '</div>' : '') + '</div></div>' +
-      '<div class="tags">' + (o.originCity && !sameCity(o.originCity, o.city) ? '<span class="tag city">' + esc(o.originCity) + '</span><span class="tag">قريب من ' + esc(o.city) + '</span>' : (showCity ? '<span class="tag city">' + esc(o.city) + '</span>' : '')) + (o.sec ? '<span class="tag">' + esc(sectorsOf(o).join(' / ')) + '</span>' : '') + distTag(d, o) + unknownTag + '</div>' +
+      '<div class="tags">' + (o.regionalServiceArea ? '<span class="tag city">نطاق مشترك: ' + esc(o.regionalServiceArea) + '</span>' : (o.originCity && !sameCity(o.originCity, o.city) ? '<span class="tag city">' + esc(o.originCity) + '</span><span class="tag">قريب من ' + esc(o.city) + '</span>' : (showCity ? '<span class="tag city">' + esc(o.city) + '</span>' : ''))) + (o.sec ? '<span class="tag">' + esc(sectorsOf(o).join(' / ')) + '</span>' : '') + distTag(d, o) + unknownTag + '</div>' +
       phoneLine(o.phones, id) + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
   }
   function bindImages(root) {
