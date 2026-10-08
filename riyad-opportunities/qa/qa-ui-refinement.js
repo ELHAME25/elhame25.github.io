@@ -11,6 +11,9 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  await sleep(250); const A=window.__t; A.selectBranch('243'); A.state().tab='projects'; A.renderBranch(); const page=els.app.innerHTML; const searchContent=els.content.innerHTML;
  const css=fs.readFileSync(path.join(root,'assets/app.css'),'utf8');
  const project=A.card('projects',{n:'مشروع اختبار',city:'الرياض',nb:'القادسية',dev:'مطوّر تجريبي',type:'فلل',rooms:'4',price:null,img:'https://example.com/p.jpg'},2,false,false,{});
+ const districtProject=A.card('projects',{n:'اختبار حي',city:'سيهات',nb:'حي قرطبة',dev:'',type:'شقق'},null,false,false,{});
+ const planProject=A.card('projects',{n:'اختبار مخطط',city:'المدينة المنورة',nb:'مخطط المكيمن',dev:'',type:'شقق'},null,false,false,{});
+ const destinationProject=A.card('projects',{n:'اختبار وجهة',city:'المدينة المنورة',nb:'وجهة الغروب، الدعيثة',dev:'',type:'شقق'},null,false,false,{});
  A.state().radius=5; A.renderBranch(); const zeroRadiusContent=els.content.innerHTML;
  const missing=A.data().branches.find(b=>(b.lat==null||b.lon==null)&&!A.data().meta.sectorCities.includes(b.city)); A.selectBranch(missing.c); A.state().tab='offices'; A.renderBranch(); const missingPinPage=els.app.innerHTML;
  A.selectBranch('243'); const defaultCars=A.itemsFor('cars').length; A.state().tab='cars'; A.renderBranch(); const carsMarkup=els.content.innerHTML; A.state().carArea='shifa'; const westCars=A.itemsFor('cars').length; A.state().carArea='qadisiyah'; const qadisiyahCars=A.itemsFor('cars').length; A.state().scope='city'; A.state().carArea='all'; const cityCars=A.itemsFor('cars','','city').length; A.state().scope='branch'; A.state().carArea='qadisiyah'; A.state().tab='cars'; A.renderBranch(); const noDistanceControl=!els.app.innerHTML.includes('id="radius"'); A.state().tab='nhc'; A.renderBranch(); const nhc=A.itemsFor('nhc'), nearestNHC=nhc.length?nhc[0]:null;
@@ -19,6 +22,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
   showroomGroups:defaultCars===24&&qadisiyahCars===24&&westCars===13&&cityCars===44&&carsMarkup.includes('معارض القادسية')&&carsMarkup.includes('معارض الشفا')&&noDistanceControl,
   destinationRankingAndReason:!!nearestNHC&&nhc.every((x,i)=>!i||nhc[i-1].d==null||x.d==null||nhc[i-1].d<=x.d)&&els.content.innerHTML.includes(nearestNHC.o.n),
   visibleProjectDetails:project.includes('aria-label="تفاصيل مشروع اختبار"')&&project.includes('>التفاصيل</button>'),
+  projectLocationLabels:districtProject.includes('حي قرطبة، سيهات')&&!districtProject.includes('حي حي قرطبة')&&planProject.includes('مخطط المكيمن، المدينة المنورة')&&!planProject.includes('حي مخطط')&&destinationProject.includes('وجهة الغروب، الدعيثة، المدينة المنورة')&&fs.readFileSync(path.join(root,'assets/app.js'),'utf8').includes("['الموقع', o.nb]"),
   projectImageLazy:project.includes('loading="lazy"')&&project.includes('decoding="async"'),
   noPriceFallback:project.includes('السعر: غير معلن'),
   roomsOnProjectCard:project.includes('4 غرف'),
