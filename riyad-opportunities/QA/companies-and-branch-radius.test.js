@@ -46,7 +46,10 @@ function check(name, fn) {
     Q.selectBranch('607', true); // الرس: فرع واحد، بإحداثيات موثقة
     assert.equal(Q.radiusApplies('offices','branch'), true);
     assert.equal(Q.radiusApplies('cars','branch'), true);
-    assert(els.app.innerHTML.includes('id="radius"'), 'radius selector is absent');
+    Q.state().tab='offices'; Q.renderBranch();
+    assert(els.app.innerHTML.includes('id="radius"'), 'office radius selector is absent');
+    Q.state().tab='cars'; Q.renderBranch();
+    assert(els.app.innerHTML.includes('id="radius"'), 'car radius selector is absent');
     return {branch:'607', city:D.branchByCode['607'].city};
   });
 
