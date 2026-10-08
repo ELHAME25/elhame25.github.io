@@ -174,6 +174,11 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     });
   });
   assert('review-required cars, self-build and companies stay out of public results', reviewExclusion.every(Boolean));
+  const hail = d.branches.find(x => A.sameCity(x.city, 'حائل'));
+  A.selectBranch(hail.c, true); A.state().tab = 'selfbuild'; A.state().scope = 'branch'; A.renderBranch();
+  const filteredCityTotal = A.compute().selfbuild.total;
+  A.state().scope = 'city'; A.renderBranch();
+  assert('city expansion count matches filtered public self-build results', filteredCityTotal === 1 && A.compute().selfbuild.items.length === filteredCityTotal);
 
   const failed = Object.entries(tests).filter(([, ok]) => !ok).map(([name]) => name);
   console.log(JSON.stringify({ suite: 'VM UI behavior regression', tests, passed: Object.values(tests).filter(Boolean).length, total: Object.keys(tests).length, failed }, null, 2));
