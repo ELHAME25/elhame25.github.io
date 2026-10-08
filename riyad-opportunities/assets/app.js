@@ -112,7 +112,7 @@
   function getJSON(path) {
     // Version query prevents a stale Pages/CDN copy of a corrected JSON file from breaking startup.
     var sep = path.indexOf('?') === -1 ? '?' : '&';
-    return fetch(path + sep + 'v=20261007-11', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
+    return fetch(path + sep + 'v=20261008-01', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
   }
   function boot() {
     var cfgEl = document.getElementById('site-config');
@@ -147,7 +147,7 @@
       D.cityCount = {};
       ['projects', 'opps', 'nhc', 'selfbuild', 'companies', 'offices', 'cars'].forEach(function (k) {
         D.cityCount[k] = {}; D[k].forEach(function (o) {
-          var cityList = k === 'companies' && o.coverageCities && o.coverageCities.length ? o.coverageCities : [o.city], citySeen = {};
+          var cityList = (k === 'companies' || k === 'cars') && o.coverageCities && o.coverageCities.length ? o.coverageCities.concat([o.city]) : [o.city], citySeen = {};
           cityList.forEach(function (city) {
             var ck = cityKey(city);
             if (citySeen[ck]) return;
@@ -723,7 +723,7 @@
     }
     return '<article class="lcard"><div class="head"><span class="avatar">' + ICON[kind === 'cars' ? 'cars' : 'offices'] + '</span><div><h3>' + esc(o.n) + '</h3>' +
       (o.nb ? '<div class="sub">' + esc(o.nb) + '</div>' : '') + '</div></div>' +
-      '<div class="tags">' + (showCity ? '<span class="tag city">' + esc(o.city) + '</span>' : '') + (o.sec ? '<span class="tag">' + esc(sectorsOf(o).join(' / ')) + '</span>' : '') + distTag(d, o) + unknownTag + '</div>' +
+      '<div class="tags">' + (o.originCity && !sameCity(o.originCity, o.city) ? '<span class="tag city">' + esc(o.originCity) + '</span><span class="tag">قريب من ' + esc(o.city) + '</span>' : (showCity ? '<span class="tag city">' + esc(o.city) + '</span>' : '')) + (o.sec ? '<span class="tag">' + esc(sectorsOf(o).join(' / ')) + '</span>' : '') + distTag(d, o) + unknownTag + '</div>' +
       phoneLine(o.phones, id) + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
   }
   function bindImages(root) {
