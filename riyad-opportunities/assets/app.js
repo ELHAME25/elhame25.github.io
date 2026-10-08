@@ -112,7 +112,7 @@
   function getJSON(path) {
     // Version query prevents a stale Pages/CDN copy of a corrected JSON file from breaking startup.
     var sep = path.indexOf('?') === -1 ? '?' : '&';
-    return fetch(path + sep + 'v=20261008-03', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
+    return fetch(path + sep + 'v=20261008-04', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
   }
   function boot() {
     var cfgEl = document.getElementById('site-config');
@@ -423,6 +423,7 @@
       return true;
     }).map(function (o) {
       var d = dist(o), rankD = d, source = 'coordinates';
+      if (kind === 'cars' && o.loc !== 'pt' && o.loc !== 'nb') { d = null; rankD = null; }
       var routeDistance = o.branchRoadDistancesKm && Number(o.branchRoadDistancesKm[String(b.c)]);
       if (isFinite(routeDistance) && routeDistance > 0) { d = routeDistance; rankD = routeDistance; source = 'google-maps-driving'; }
       if (d == null && links[o.id] != null) { d = links[o.id]; rankD = d; source = 'verified-office-link'; }
@@ -513,8 +514,8 @@
   function nearbyItems() {
     var g = nearbyInfo(); if (!g) return [];
     var c = g.support, out = [];
-    function pts(src) { return src.filter(function (o) { return sameCity(o.city, c); }).map(function (o) { return { o: o, d: dist(o) }; })
-      .filter(function (x) { return x.d == null || x.d <= Number(S.radius || 15); }).sort(byDist); }
+    function pts(src) { return src.filter(function (o) { return sameCity(o.city, c); }).map(function (o) { return { o: o, d: src === D.cars && o.loc !== 'pt' && o.loc !== 'nb' ? null : dist(o) }; })
+      .filter(function (x) { return x.d != null && x.d <= Number(S.radius || 15); }).sort(byDist); }
     if (g.need.nhc) pts(D.nhc).forEach(function (x) { out.push({ k: 'nhc', o: x.o, d: x.d }); });
     if (g.need.projects) pts(D.projects).slice(0, 8).forEach(function (x) { out.push({ k: 'projects', o: x.o, d: x.d }); });
     if (g.need.projects) pts(D.opps).slice(0, 8).forEach(function (x) { out.push({ k: 'opps', o: x.o, d: x.d }); });
@@ -648,8 +649,14 @@
   var REG = [];
   function reg(kind, o) { REG.push({ k: kind, o: o }); return REG.length - 1; }
   var GENERIC_PROPERTY_IMAGE = 'assets/images/real-estate-illustrative-villa.svg';
-  function ph(title, sub) {
-    return '<img class="property-image" loading="lazy" decoding="async" alt="صورة توضيحية لعقار" data-generic="1" data-src="' + GENERIC_PROPERTY_IMAGE + '"><span class="image-caption">صورة توضيحية</span>';
+  var PROPERTY_ILLUSTRATIONS = [GENERIC_PROPERTY_IMAGE, 'assets/images/real-estate-illustrative-apartments.svg', 'assets/images/real-estate-illustrative-townhomes.svg', 'assets/images/real-estate-illustrative-courtyard.svg'];
+  function imageFallback(kind, o) {
+    var key = String(o && (o.id || o.n) || kind || ''), hash = 0;
+    for (var i = 0; i < key.length; i++) hash = (hash * 31 + key.charCodeAt(i)) >>> 0;
+    return PROPERTY_ILLUSTRATIONS[hash % PROPERTY_ILLUSTRATIONS.length];
+  }
+  function ph(title, sub, kind, o) {
+    return '<img class="property-image" loading="lazy" decoding="async" alt="صورة توضيحية لعقار" data-generic="1" data-src="' + esc(imageFallback(kind, o)) + '"><span class="image-caption">صورة توضيحية</span>';
   }
   function displayImage(kind, o) {
     var url = String(o && o.img || ''), id = String(o && o.id || ''), decoded = url;
@@ -673,7 +680,12 @@
   function actions(id, o, cls) {
     var ph = (o.phones || [])[0] || '', wa = o.wa || '';
     var map = o.maps || o.sales || o.mapsQ, site = o.web || o.page || o.site || o.dsite || o.url || o.contactUrl, h = '';
-    if (map) h += '<a class="' + cls + '" title="' + (o.maps || o.sales ? 'Google Maps' : 'بحث في Google Maps') + '" aria-label="الخريطة" target="_blank" rel="noopener" href="' + esc(map) + '">' + ICON.map + (cls === 'btn' ? 'الخريطة' : '') + '</a>';
+    if (map) {
+      var mapHost = ''; try { mapHost = new URL(map, window.location.href).hostname.toLowerCase(); } catch (e) { /* validated separately */ }
+      var mapIsGoogle = mapHost.indexOf('google.') >= 0 || mapHost === 'maps.app.goo.gl' || mapHost === 'goo.gl';
+      var mapLabel = mapHost.indexOf('waze.com') >= 0 ? 'Waze' : mapHost.indexOf('yango.com') >= 0 ? 'Yango Maps' : mapIsGoogle ? (map.indexOf('/maps/search') >= 0 || /[?&]query=/.test(map) ? 'بحث في Google Maps' : 'Google Maps') : 'الخريطة';
+      h += '<a class="' + cls + '" title="' + mapLabel + '" aria-label="' + mapLabel + '" target="_blank" rel="noopener" href="' + esc(map) + '">' + ICON.map + (cls === 'btn' ? 'الخريطة' : '') + '</a>';
+    }
     if (ph) h += '<a class="' + cls + '" title="اتصال" aria-label="اتصال" data-call="' + id + '" href="' + esc(telHref(ph)) + '">' + ICON.phone + (cls === 'btn' ? 'اتصال' : '') + '</a>';
     if (wa && waMatchesPhone(o)) h += '<a class="' + cls + ' wa" title="واتساب" aria-label="واتساب" data-wa="' + id + '" target="_blank" rel="noopener" href="' + esc(wa) + '">' + ICON.wa + (cls === 'btn' ? 'واتساب' : '') + '</a>';
     if (site) h += '<a class="' + cls + '" title="الموقع" aria-label="الموقع الإلكتروني" target="_blank" rel="noopener" href="' + esc(site) + '">' + ICON.web + (cls === 'btn' ? 'الموقع' : '') + '</a>';
@@ -689,7 +701,7 @@
     if (kind === 'projects') {
       var where = [o.nb ? 'حي ' + o.nb : '', o.city].filter(Boolean).join('، ');
       var projectImage = displayImage(kind, o);
-      return '<article class="vcard" data-detail="' + id + '" tabindex="0"><div class="media">' + ph(o.n, [o.type, o.city].filter(Boolean).join(' · ')) +
+      return '<article class="vcard" data-detail="' + id + '" tabindex="0"><div class="media">' + ph(o.n, [o.type, o.city].filter(Boolean).join(' · '), kind, o) +
         (projectImage ? '<img class="property-image official-image" loading="lazy" decoding="async" alt="صورة المشروع" data-src="' + esc(projectImage) + '">' : '') + '</div>' +
       '<div class="body"><h3>' + esc(o.n) + '</h3><div class="where">' + esc([where, o.type, o.rooms ? roomText(o.rooms) : ''].filter(Boolean).join(' · ')) + '</div><div class="dev">' + esc(o.dev) + '</div>' + priceLine(o) +
         '<div class="foot"><button class="btn primary" data-detail="' + id + '" aria-label="تفاصيل ' + esc(o.n) + '">التفاصيل</button><div class="tags">' + (showCity ? '<span class="tag city">' + esc(o.city) + '</span>' : '') + (d != null ? distTag(d, o) : '') + unknownTag + '</div></div></div></article>';
@@ -712,13 +724,14 @@
       var nhcImage = displayImage(kind, o);
       var dirSectors = ['شرق', 'شمال', 'جنوب', 'غرب', 'وسط'].filter(function (v) { return norm(o.dir || '').indexOf(norm(v)) >= 0; });
       var directionReason = dirSectors.length ? dirSectors.join(' / ') : (sectorsOf(o).length ? sectorsOf(o).join(' / ') : (o.dir || o.city));
-      return '<article class="vcard" data-detail="' + id + '" tabindex="0"><div class="media">' + ph('وجهة ' + o.n, o.city) +
+      return '<article class="vcard" data-detail="' + id + '" tabindex="0"><div class="media">' + ph('وجهة ' + o.n, o.city, kind, o) +
         (nhcImage ? '<img class="property-image official-image" loading="lazy" decoding="async" alt="صورة الوجهة" data-src="' + esc(nhcImage) + '">' : '') + '</div>' +
         '<div class="body"><h3>' + esc(o.n) + '</h3><div class="where">' + esc(o.dir || o.city) + '</div>' +
         '<div class="foot"><button class="btn primary" data-detail="' + id + '">التفاصيل</button><div class="tags"><span class="tag">' + esc(directionReason) + '</span>' + (showCity ? '<span class="tag city">' + esc(o.city) + '</span>' : '') + (d != null ? distTag(d, o) : '') + unknownTag + '</div></div></div></article>';
     }
     if (kind === 'companies') {
-      var companyAvatar = o.img ? '<img class="avatar company-avatar" src="' + esc(o.img) + '" alt="' + esc(o.imgAlt || ('صورة ' + o.n)) + '" loading="lazy" decoding="async">' : '<span class="avatar">' + esc((o.n.replace(/^(الشركة|شركة|مؤسسة|مكتب)\s+/, '') || o.n).charAt(0)) + '</span>';
+      var companyInitial = (o.n.replace(/^(الشركة|شركة|مؤسسة|مكتب)\s+/, '') || o.n).charAt(0);
+      var companyAvatar = o.img ? '<img class="avatar company-avatar" data-src="' + esc(o.img) + '" data-initial="' + esc(companyInitial) + '" alt="' + esc(o.imgAlt || ('شعار ' + o.n)) + '" loading="lazy" decoding="async">' : '<span class="avatar">' + esc(companyInitial) + '</span>';
       return '<article class="lcard"><div class="head">' + companyAvatar + '<div><h3>' + esc(o.n) + '</h3>' +
         '<div class="sub">' + esc(o.kind) + ' · ' + esc(o.coverageCities && !sameCity(S.branch.city, o.city) ? ('تغطية: ' + o.coverageCities.join('، ')) : o.scope) + '</div></div></div>' +
         '<div class="tags">' + (showCity ? '<span class="tag city">' + esc(o.coverageCities && o.coverageCities.some(function (city) { return sameCity(city, S.branch.city); }) ? S.branch.city : o.city) + '</span>' : '') + ((sameCity(S.branch.city, o.city) && sectorsOf(o).length) ? '<span class="tag">' + esc(sectorsOf(o).join(' / ')) + '</span>' : '') + (item && item.serviceMatch ? '<span class="tag">تخدم هذا النطاق</span>' : '') +
@@ -743,10 +756,14 @@
       img.setAttribute('data-bound', '1');
       img.addEventListener('error', function () {
         if (img.dataset && img.dataset.generic === '1') return;
-        img.classList.remove('official-image'); img.classList.add('property-image');
-        img.alt = 'صورة توضيحية لعقار'; img.dataset.generic = '1'; img.src = GENERIC_PROPERTY_IMAGE;
-        var oldGeneric = img.parentElement && img.parentElement.querySelector('img[data-generic="1"]'); if (oldGeneric && oldGeneric !== img) oldGeneric.remove();
-        var caption = img.parentElement && img.parentElement.querySelector('.image-caption'); if (caption) caption.hidden = false;
+        if (img.classList.contains('company-avatar')) {
+          var avatar = document.createElement('span'); avatar.className = 'avatar'; avatar.textContent = img.dataset.initial || 'ع';
+          if (img.parentElement) img.parentElement.replaceChild(avatar, img);
+          return;
+        }
+        var media = img.parentElement;
+        if (img.classList.contains('official-image')) img.remove();
+        var caption = media && media.querySelector('.image-caption'); if (caption) caption.hidden = false;
       });
       img.src = img.getAttribute('data-src');
     });
@@ -773,7 +790,7 @@
     }
     rows = rows.filter(function (r) { return r[1]; });
     dlg.innerHTML = '<div class="d-media"><button class="close-x" data-close aria-label="إغلاق">' + ICON.x + '</button>' +
-      ph(k === 'nhc' ? 'وجهة ' + o.n : o.n, [o.type, o.city].filter(Boolean).join(' · ')) + (displayImage(k, o) ? '<img class="property-image official-image" alt="صورة المشروع" data-src="' + esc(displayImage(k, o)) + '">' : '') + '</div>' +
+      ph(k === 'nhc' ? 'وجهة ' + o.n : o.n, [o.type, o.city].filter(Boolean).join(' · '), k, o) + (displayImage(k, o) ? '<img class="property-image official-image" alt="صورة المشروع" data-src="' + esc(displayImage(k, o)) + '">' : '') + '</div>' +
       '<div class="d-body"><h2>' + esc(o.n) + '</h2>' + (k === 'projects' || k === 'opps' ? priceLine(o) : '') +
       (o.desc ? '<p style="margin:0;color:var(--ink-2)">' + esc(o.desc) + '</p>' : '') +
       '<dl class="kv">' + rows.map(function (r) { return '<dt>' + esc(r[0]) + '</dt><dd>' + esc(r[1]) + '</dd>'; }).join('') + '</dl>' +
