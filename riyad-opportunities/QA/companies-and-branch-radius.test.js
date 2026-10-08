@@ -29,7 +29,7 @@ const fetch = async url => {
 };
 const jsFile = path.join(root, 'assets/app.js');
 let source = fs.readFileSync(jsFile, 'utf8').replace('  boot();',
-  "  window.__qa={selectBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,companyKey,radiusApplies,card,data:()=>D,state:()=>S,setScope:(scope,radius)=>{S.scope=scope;if(radius)S.radius=radius;return compute();}}; boot();");
+  "  window.__qa={selectBranch,renderBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,companyKey,radiusApplies,card,data:()=>D,state:()=>S,setScope:(scope,radius)=>{S.scope=scope;if(radius)S.radius=radius;return compute();}}; boot();");
 vm.runInNewContext(source, {document,window,location,history:{replaceState(){}},localStorage,navigator:{},fetch,setTimeout,clearTimeout,console,URL,Blob,Intl,Date});
 const sleep = ms => new Promise(resolve=>setTimeout(resolve,ms));
 const results=[];
