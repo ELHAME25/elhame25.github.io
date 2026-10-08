@@ -112,7 +112,7 @@
   function getJSON(path) {
     // Version query prevents a stale Pages/CDN copy of a corrected JSON file from breaking startup.
     var sep = path.indexOf('?') === -1 ? '?' : '&';
-    return fetch(path + sep + 'v=20261008-05', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
+    return fetch(path + sep + 'v=20261008-06', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
   }
   function boot() {
     var cfgEl = document.getElementById('site-config');
@@ -321,11 +321,12 @@
   }
   function excludedCarReportRecord(o) {
     // دليل المعارض يعرض المعارض المستقلة فقط؛ الشركات والوكالات وموزعو العلامات لهم أدلة أخرى.
+    if (o && o.pdfShowroomVerified === true) return false;
     return /(?:^|\s)(?:شركة|الشركة|مؤسسة)(?:\s|$)|وكالة|التوكيلات|محمد يوسف ناغي|عبد\s*اللطيف جميل|المجدوعي|شانجان|changan|جينيسيس|genesis|هيونداي|hyundai|تويوتا|toyota|كيا|kia|مازدا|mazda|شيري|chery|جيتور|jetour|دونغ\s*فينغ|dongfeng|موزع\s+جيلي/i.test(String(o && o.n || ''));
   }
   function dedupeCars(rows) {
     var groups = {}, keys = [];
-    rows.forEach(function (o) { var key = cityKey(o.city) + '|' + norm(o.n); if (!groups[key]) { groups[key] = []; keys.push(key); } groups[key].push(o); });
+    rows.forEach(function (o) { var phones = (o.phones || []).slice().filter(Boolean).sort().join(','); var place = [norm(o.nb), o.lat == null ? '' : String(o.lat), o.lon == null ? '' : String(o.lon), norm(o.maps || o.sales || o.mapsQ)].join('|'); var key = [cityKey(o.city), norm(o.n), phones, place].join('|'); if (!groups[key]) { groups[key] = []; keys.push(key); } groups[key].push(o); });
     return keys.map(function (key) {
       var list = groups[key].slice().sort(function (a, b) {
         function score(o) { return (o.web ? 4 : 0) + (o.maps ? 3 : 0) + (o.lat != null && o.lon != null ? 4 : 0) + (o.nb ? 1 : 0) + ((o.phones || []).length); }
