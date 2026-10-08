@@ -12,6 +12,8 @@ const shared=cars.filter(x=>x.regionalServiceArea==='أبها–خميس مشي�
 const shifa=cars.filter(x=>x.city==='الرياض'&&x.zone==='shifa');
 const qadi=cars.filter(x=>x.city==='الرياض'&&x.zone==='qadisiyah');
 const validClone=(x)=>{const r=byId.get(x.regionalListingOf);return !!r&&x.n===r.n&&JSON.stringify(x.phones||[])===JSON.stringify(r.phones||[])&&x.maps===r.maps&&x.mapsQ===r.mapsQ&&x.lat===r.lat&&x.lon===r.lon&&x.originCity;};
+const reviewRequiredIds=['entity-cb0ac77da252','phase5-google-2049951513340009758','phase6-google-7740940609020663943','phase6-cars-75dfdefd60deba','phase6-google-7593477781153902425','phase6-google-14514093740487545178','national-car-00d7bc837202eb','national-car-da080928d404e3','national-car-7749faab1f6281','phase6-cars-93b8851dbd48d9','phase6-cars-0c9ff285bc9877','phase6-cars-4d2fa54d2074e9','phase6-google-4044662082393491158','national-car-d41509abbbaa06'].sort();
+const actualReviewRequiredIds=cars.filter(x=>x.activityReviewStatus==='REVIEW_REQUIRED').map(x=>x.id).sort();
 const tests={
  'PDF inventory total and metadata match':cars.length===1058&&meta.counts.cars===1058,
  'all record IDs remain unique':ids.size===cars.length,
@@ -22,7 +24,7 @@ const tests={
  'Abha–Khamis records appear in both cities without invented pins':shared.length===42&&shared.filter(x=>!x.regionalListing).length===21&&shared.filter(x=>x.regionalListing).length===21&&shared.every(x=>x.lat==null&&x.lon==null&&x.mapsQ),
  'unlocated PDF records use search links rather than guessed coordinates':newRoots.every(x=>x.lat==null&&x.lon==null&&x.maps===''&&x.mapsQ&&x.mapReview),
  'PDF sourced company and brand showrooms are explicitly retained':newRoots.every(x=>x.pdfShowroomVerified===true),
- 'review-required source conflicts remain flagged':cars.filter(x=>x.activityReviewStatus==='REVIEW_REQUIRED').length===15,
+ 'review-required source conflicts remain flagged':JSON.stringify(actualReviewRequiredIds)===JSON.stringify(reviewRequiredIds),
  'Riyadh Shifa and Qadisiyah group inventory remains intact':shifa.length===15&&qadi.length===30
 };
 const failed=Object.entries(tests).filter(([,v])=>!v).map(([k])=>k);

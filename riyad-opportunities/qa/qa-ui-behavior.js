@@ -191,7 +191,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   // City-only showroom records stay selectable without inventing a branch.
   fireDocument('click', target({ 'data-act': 'change' }));
   const cityOptions = els.app.innerHTML;
-  els['q-city'].value = 'بيش'; els['q-city'].dispatch('change');
+  els['q-branch'].value = ''; els['q-city'].value = 'بيش'; els['q-city'].dispatch('change');
   const cityOnlyReady = cityOptions.includes('بيش') && !els['go-branch'].disabled && els['branch-list'].innerHTML.includes('data-city-only=\"بيش\"');
   els['go-branch'].dispatch('click');
   const cityOnlyCars = A.itemsFor('cars', '', 'city');
