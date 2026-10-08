@@ -112,7 +112,7 @@
   function getJSON(path) {
     // Version query prevents a stale Pages/CDN copy of a corrected JSON file from breaking startup.
     var sep = path.indexOf('?') === -1 ? '?' : '&';
-    return fetch(path + sep + 'v=20261008-06', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
+    return fetch(path + sep + 'v=20261008-07', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
   }
   function boot() {
     var cfgEl = document.getElementById('site-config');
@@ -182,7 +182,10 @@
   /* ---------------- start ---------------- */
   function cities() {
     var seen = {}, out = [];
-    D.branches.forEach(function (b) { var k = cityKey(b.city); if (!seen[k]) { seen[k] = 1; out.push(cityLabel(b.city)); } });
+    function add(city) { var k = cityKey(city); if (!seen[k]) { seen[k] = 1; out.push(cityLabel(city)); } }
+    D.branches.forEach(function (b) { add(b.city); });
+    // المدن التي لا تملك فرعًا تظل قابلة للاختيار إذا كان لها سجل معرض موثق.
+    (D.cars || []).forEach(function (o) { add(o.city); });
     return out.sort(function (a, b) { return a.localeCompare(b, 'ar'); });
   }
   function renderStart() {
@@ -209,11 +212,19 @@
         selectBranch(nearest.c, false, origin);
       }, function () { button.disabled = false; button.textContent = 'استخدم موقعي — أقرب فرع'; toast('تعذّر تحديد موقعك. يمكنك اختيار الفرع يدويًا.'); }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 });
     });
-    var selectedCode = '';
+    var selectedCode = '', selectedCityOnly = '';
+    function selectCityOnly(city) {
+      if (!city) return;
+      S = fresh();
+      S.branch = { c: '', n: 'معارض ' + city, city: city, lat: null, lon: null, sec: '', cityOnly: true };
+      S.scope = 'city'; S.tab = 'cars';
+      renderBranch(compute());
+      window.scrollTo(0, 0);
+    }
     function list() {
       var raw = qb.value.trim(), q = norm(raw), city = qc.value;
       qb.disabled = false;
-      if (!city && !q) { selectedCode = ''; go.disabled = true; document.getElementById('branch-list').innerHTML = ''; return; }
+      if (!city && !q) { selectedCode = ''; selectedCityOnly = ''; go.disabled = true; document.getElementById('branch-list').innerHTML = ''; return; }
       var items = D.branches.filter(function (b) {
         if (city && !sameCity(b.city, city)) return false;
         if (!q) return true;
@@ -222,18 +233,21 @@
       var exact = D.branchByCode[raw];
       selectedCode = exact && (!city || sameCity(exact.city, city)) ? exact.c : '';
       var shown = items.slice(0, 80);
+      selectedCityOnly = !items.length && city && (D.cars || []).some(function (o) { return sameCity(o.city, city); }) ? city : '';
+      var cityOnlyItem = selectedCityOnly ? '<button class="branch-item city-only-item" type="button" role="listitem" aria-pressed="true" data-city-only="' + esc(city) + '"><span class="code">مدينة</span><span class="bn">عرض معارض المدينة</span><span class="bc">' + esc(city) + ' · لا يوجد فرع مسجل</span></button>' : '';
       document.getElementById('branch-list').innerHTML = shown.map(function (b) {
         return '<button class="branch-item' + (selectedCode === b.c ? ' selected' : '') + '" type="button" role="listitem" aria-pressed="' + (selectedCode === b.c) + '" data-code="' + esc(b.c) + '"><span class="code num">' + esc(b.c) + '</span><span class="bn">' + esc(b.n) + '</span><span class="bc">' + esc(b.city) + (b.sec ? ' · ' + esc(b.sec) : '') + '</span></button>';
-      }).join('') + (!shown.length ? '<p class="list-note">لا يوجد فرع مطابق</p>' : '');
-      go.disabled = !selectedCode;
+      }).join('') + cityOnlyItem + (!shown.length && !cityOnlyItem ? '<p class="list-note">لا يوجد فرع مطابق</p>' : '');
+      go.disabled = !(selectedCode || selectedCityOnly);
     }
     qb.addEventListener('input', list);
     qc.addEventListener('change', list);
-    qb.addEventListener('keydown', function (e) { if (e.key === 'Enter' && selectedCode) selectBranch(selectedCode); });
-    go.addEventListener('click', function () { if (selectedCode) selectBranch(selectedCode); });
+    qb.addEventListener('keydown', function (e) { if (e.key === 'Enter' && selectedCode) selectBranch(selectedCode); else if (e.key === 'Enter' && selectedCityOnly) selectCityOnly(selectedCityOnly); });
+    go.addEventListener('click', function () { if (selectedCode) selectBranch(selectedCode); else if (selectedCityOnly) selectCityOnly(selectedCityOnly); });
     qe.addEventListener('input', function () { S.employee = qe.value.trim(); var g = document.getElementById('greet'); if (g) { g.textContent = employeeGreeting(S.employee); g.hidden = !S.employee; } });
     var greeting = document.getElementById('greet'); greeting.textContent = employeeGreeting(S.employee); greeting.hidden = !S.employee;
     document.getElementById('branch-list').addEventListener('click', function (e) {
+      var only = e.target.closest('[data-city-only]'); if (only) { selectedCityOnly = only.dataset.cityOnly; go.focus(); return; }
       var b = e.target.closest('[data-code]'); if (!b) return;
       selectedCode = b.dataset.code; qb.value = selectedCode; list(); go.focus();
     });
@@ -561,8 +575,8 @@
     if (showBranchScope && radiusApplies(S.tab, 'branch') && S.scope === 'branch') ctl += '<label class="explore distance-control">المسافة<select id="radius" aria-label="مسافة الفرص من نقطة المرجع">' + [5, 10, 15, 20].map(function (r) { return '<option value="' + r + '"' + (Number(S.radius) === r ? ' selected' : '') + '>أقرب ' + fmt(r) + ' كم</option>'; }).join('') + '</select></label>';
     app.innerHTML =
       '<section class="b-hero"><div class="wrap"><div class="b-top"><div class="b-id">' +
-      '<p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : 'فرص الفرع') + '</p>' +
-      '<h1>' + esc(b.n) + '</h1><div class="b-meta"><span class="pill code num">' + esc(b.c) + '</span><span class="pill">' + esc(b.city) + '</span>' +
+      '<p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : (b.cityOnly ? 'عرض المدينة دون فرع' : 'فرص الفرع')) + '</p>' +
+      '<h1>' + esc(b.n) + '</h1><div class="b-meta">' + (b.cityOnly ? '' : '<span class="pill code num">' + esc(b.c) + '</span>') + '<span class="pill">' + esc(b.city) + '</span>' +
       (sc && b.sec ? '<span class="pill sec">' + esc(b.sec) + ' ' + esc(b.city) + '</span>' : '') + (b.nb ? '<span class="pill">حي ' + esc(b.nb) + '</span>' : '') +
       (S.origin ? '<span class="pill geo-pill">أقرب فرع محدد الموقع · ' + distTag(S.nearestBranchDistance, {}) + '</span><a class="pill geo-map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=' + esc(b.lat + ',' + b.lon) + '">خريطة الفرع</a>' : '') + '</div></div>' +
       '<button class="btn ghost" data-act="change">' + ICON.swap + 'تغيير الفرع</button></div>' +
@@ -873,4 +887,5 @@
 
   boot();
 })();
+
 
