@@ -518,7 +518,7 @@
   function nearbyItems() {
     var g = nearbyInfo(); if (!g) return [];
     var c = g.support, out = [];
-    function pts(src) { return src.filter(function (o) { return sameCity(o.city, c); }).map(function (o) { return { o: o, d: src === D.cars && o.loc !== 'pt' && o.loc !== 'nb' ? null : dist(o) }; })
+    function pts(src) { return src.filter(function (o) { return !(src === D.cars && requiresReview(o.activityReviewStatus)) && sameCity(o.city, c); }).map(function (o) { return { o: o, d: src === D.cars && o.loc !== 'pt' && o.loc !== 'nb' ? null : dist(o) }; })
       .filter(function (x) { return x.d != null && x.d <= Number(S.radius || 15); }).sort(byDist); }
     if (g.need.nhc) pts(D.nhc).forEach(function (x) { out.push({ k: 'nhc', o: x.o, d: x.d }); });
     if (g.need.projects) pts(D.projects).slice(0, 8).forEach(function (x) { out.push({ k: 'projects', o: x.o, d: x.d }); });
@@ -532,7 +532,7 @@
     var sec = activeSector(), out = {};
     SECTIONS.forEach(function (k) {
       if (k === 'nearby') { var n = nearbyItems(); out[k] = { items: n, total: n.length }; return; }
-      out[k] = { items: itemsFor(k, sec), total: (D.cityCount[k] || {})[cityKey(S.branch.city)] || 0 };
+      out[k] = { items: itemsFor(k, sec), total: itemsFor(k, sec, 'city').length };
     });
     return out;
   }
