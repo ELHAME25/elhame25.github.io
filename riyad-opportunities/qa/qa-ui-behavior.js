@@ -43,7 +43,7 @@ const fetch = async u => {
 };
 let src = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');
   src = src.replace('  boot();', `  window.__behavior = {
-    selectBranch, renderBranch, renderStart, renderSection, compute, itemsFor,
+    selectBranch, renderBranch, renderStart, renderSection, compute, itemsFor, rawItems,
     emptyState, card, openDetail, closeDlg, sameCity, data: () => D, state: () => S
   }; boot();`);
 vm.runInNewContext(src, {
@@ -157,6 +157,23 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     }
   }
   assert('multiple numbers remain selectable on card and in details', multiPhone);
+
+  // Do not present unresolved availability or activity reviews as public records.
+  const reviewGroups = [
+    ['cars', 'activityReviewStatus'],
+    ['selfbuild', 'availabilityStatus'],
+    ['companies', 'commercialAuditStatus']
+  ];
+  const reviewExclusion = reviewGroups.map(([kind, field]) => {
+    const records = (d[kind] || []).filter(x => String(x[field] || '').toUpperCase() === 'REVIEW_REQUIRED');
+    return records.every(record => {
+      const b = d.branches.find(x => A.sameCity(x.city, record.city));
+      if (!b) return true;
+      A.selectBranch(b.c, true);
+      return !A.rawItems(kind).some(x => (x.o || x).id === record.id);
+    });
+  });
+  assert('review-required cars, self-build and companies stay out of public results', reviewExclusion.every(Boolean));
 
   const failed = Object.entries(tests).filter(([, ok]) => !ok).map(([name]) => name);
   console.log(JSON.stringify({ suite: 'VM UI behavior regression', tests, passed: Object.values(tests).filter(Boolean).length, total: Object.keys(tests).length, failed }, null, 2));
