@@ -104,7 +104,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   }
   assert('5/10/15/20 km controls update branch scope', radiusResults.every(Boolean));
   fireDocument('click', target({ 'data-scope': 'city' }));
-  assert('all-city scope is explicit and applied', A.state().scope === 'city' && els.app.innerHTML.includes('كل المدينة'));
+  assert('all-city scope is explicit and applied', A.state().scope === 'city' && els.app.innerHTML.includes('كل ' + A.state().branch.city));
 
   // Widening the radius changes results while keeping unlocated records visible.
   A.selectBranch('243'); A.state().radius = 5; A.state().scope = 'branch'; A.renderBranch();
