@@ -174,6 +174,14 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     });
   });
   assert('review-required cars, self-build and companies stay out of public results', reviewExclusion.every(Boolean));
+  const alwateed = d.cars.filter(x => x.n === 'معرض الوتيد للسيارات');
+  const duplicateCityBlocked = alwateed.length === 2 && alwateed.every(x => x.activityReviewStatus === 'REVIEW_REQUIRED') &&
+    alwateed.every(x => {
+      const b = d.branches.find(y => A.sameCity(y.city, x.city));
+      A.selectBranch(b.c, true);
+      return !A.rawItems('cars').some(y => y.o.id === x.id);
+    });
+  assert('same-name showroom with conflicting city is retained for review and hidden in both cities', duplicateCityBlocked);
   const hail = d.branches.find(x => A.sameCity(x.city, 'حائل'));
   A.selectBranch(hail.c, true); A.state().tab = 'selfbuild'; A.state().scope = 'branch'; A.renderBranch();
   const filteredCityTotal = A.compute().selfbuild.total;
