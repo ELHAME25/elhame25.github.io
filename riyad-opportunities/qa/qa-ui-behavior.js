@@ -44,7 +44,7 @@ const fetch = async u => {
 let src = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');
   src = src.replace('  boot();', `  window.__behavior = {
     selectBranch, renderBranch, renderStart, renderSection, compute, itemsFor, rawItems,
-    emptyState, card, openDetail, closeDlg, sameCity, data: () => D, state: () => S
+    emptyState, card, openDetail, closeDlg, sameCity, cities, data: () => D, state: () => S
   }; boot();`);
 vm.runInNewContext(src, {
   document, window, location, history: { replaceState() {} }, localStorage,
@@ -187,6 +187,15 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const filteredCityTotal = A.compute().selfbuild.total;
   A.state().scope = 'city'; A.renderBranch();
   assert('city expansion count matches filtered public self-build results', filteredCityTotal === 1 && A.compute().selfbuild.items.length === filteredCityTotal);
+
+  // City-only showroom records stay selectable without inventing a branch.
+  fireDocument('click', target({ 'data-act': 'change' }));
+  const cityOptions = els.app.innerHTML;
+  els['q-city'].value = 'بيش'; els['q-city'].dispatch('change');
+  const cityOnlyReady = cityOptions.includes('بيش') && !els['go-branch'].disabled && els['branch-list'].innerHTML.includes('data-city-only=\"بيش\"');
+  els['go-branch'].dispatch('click');
+  const cityOnlyCars = A.itemsFor('cars', '', 'city');
+  assert('cities without branches open their verified showroom list directly', cityOnlyReady && A.state().branch && A.state().branch.cityOnly === true && A.state().branch.city === 'بيش' && A.state().scope === 'city' && cityOnlyCars.length === 3 && !els.app.innerHTML.includes('pill code'));
 
   const failed = Object.entries(tests).filter(([, ok]) => !ok).map(([name]) => name);
   console.log(JSON.stringify({ suite: 'VM UI behavior regression', tests, passed: Object.values(tests).filter(Boolean).length, total: Object.keys(tests).length, failed }, null, 2));
