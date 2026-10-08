@@ -112,7 +112,7 @@
   function getJSON(path) {
     // Version query prevents a stale Pages/CDN copy of a corrected JSON file from breaking startup.
     var sep = path.indexOf('?') === -1 ? '?' : '&';
-    return fetch(path + sep + 'v=20261008-04', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
+    return fetch(path + sep + 'v=20261008-05', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
   }
   function boot() {
     var cfgEl = document.getElementById('site-config');
@@ -651,7 +651,10 @@
   var GENERIC_PROPERTY_IMAGE = 'assets/images/real-estate-illustrative-villa.svg';
   var PROPERTY_ILLUSTRATIONS = [GENERIC_PROPERTY_IMAGE, 'assets/images/real-estate-illustrative-apartments.svg', 'assets/images/real-estate-illustrative-townhomes.svg', 'assets/images/real-estate-illustrative-courtyard.svg'];
   function imageFallback(kind, o) {
-    var key = String(o && (o.id || o.n) || kind || ''), hash = 0;
+    var type = String(o && o.type || ''), key = String(o && (o.id || o.n) || kind || ''), hash = 0;
+    if (/شقق|استديو/i.test(type)) return PROPERTY_ILLUSTRATIONS[1];
+    if (/تاون|دوبلكس|متصل/i.test(type)) return PROPERTY_ILLUSTRATIONS[2];
+    if (/فلل|فيلا/i.test(type)) return PROPERTY_ILLUSTRATIONS[0];
     for (var i = 0; i < key.length; i++) hash = (hash * 31 + key.charCodeAt(i)) >>> 0;
     return PROPERTY_ILLUSTRATIONS[hash % PROPERTY_ILLUSTRATIONS.length];
   }
