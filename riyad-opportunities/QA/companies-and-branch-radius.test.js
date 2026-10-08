@@ -136,7 +136,8 @@ function check(name, fn) {
     const jeddah=Q.itemsFor('companies','','city').filter(x=>Q.companyKey(x.o.n)==='محمد الحبيب');
     assert.equal(jeddah.length,1);
     const jp=Array.from(jeddah[0].o.projects||[]);
-    for (const expected of ['ايال الاصالة','ايال جدة هايتس','ايال سدايم']) assert(jp.includes(expected), 'lost local Jeddah project '+expected);
+    // Two source variants are audit-pending and must not be exposed through the company card.
+    for (const expected of ['ايال سدايم']) assert(jp.includes(expected), 'lost verified local Jeddah project '+expected);
     assert(!jp.includes('ايال الفرسان'),'Riyadh project leaked to Jeddah');
     const r=D.branches.find(x=>x.city==='الرياض'); Q.selectBranch(r.c,true); Q.setScope('city');
     const rp=Q.itemsFor('companies','','city').filter(x=>Q.companyKey(x.o.n)==='محمد الحبيب');
