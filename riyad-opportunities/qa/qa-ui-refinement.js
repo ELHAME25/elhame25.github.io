@@ -14,7 +14,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  const districtProject=A.card('projects',{n:'اختبار حي',city:'سيهات',nb:'حي قرطبة',dev:'',type:'شقق'},null,false,false,{});
  const planProject=A.card('projects',{n:'اختبار مخطط',city:'المدينة المنورة',nb:'مخطط المكيمن',dev:'',type:'شقق'},null,false,false,{});
  const destinationProject=A.card('projects',{n:'اختبار وجهة',city:'المدينة المنورة',nb:'وجهة الغروب، الدعيثة',dev:'',type:'شقق'},null,false,false,{});
- A.state().radius=5; A.renderBranch(); const zeroRadiusContent=els.content.innerHTML;
+ A.selectBranch('222'); A.state().tab='projects'; A.state().radius=5; A.renderBranch(); const zeroRadiusContent=els.content.innerHTML;
  const missing=A.data().branches.find(b=>(b.lat==null||b.lon==null)&&!A.data().meta.sectorCities.includes(b.city)); A.selectBranch(missing.c); A.state().tab='offices'; A.renderBranch(); const missingPinPage=els.app.innerHTML;
  A.selectBranch('243'); const defaultCars=A.itemsFor('cars').length; A.state().tab='cars'; A.renderBranch(); const carsMarkup=els.content.innerHTML; A.state().carArea='shifa'; const westCars=A.itemsFor('cars').length; A.state().carArea='qadisiyah'; const qadisiyahCars=A.itemsFor('cars').length; A.state().scope='city'; A.state().carArea='all'; const cityCars=A.itemsFor('cars','','city').length; A.state().scope='branch'; A.state().carArea='qadisiyah'; A.state().tab='cars'; A.renderBranch(); const noDistanceControl=!els.app.innerHTML.includes('id="radius"'); A.state().tab='nhc'; A.renderBranch(); const nhc=A.itemsFor('nhc'), nearestNHC=nhc.length?nhc[0]:null;
  const tests={
@@ -28,7 +28,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
   roomsOnProjectCard:project.includes('4 غرف'),
   searchAlwaysVisible:searchContent.includes('id="q-sec"'),
   expandZeroRadiusToTenKm:zeroRadiusContent.includes('data-radius="10"')&&zeroRadiusContent.includes('كل الرياض'),
-  missingBranchPinClearCityFallback:!!missing&&!missingPinPage.includes('نطاق الفرع')&&missingPinPage.includes('كل '+missing.city)&&!missingPinPage.includes('id="radius"')&&!missingPinPage.includes('إحداثيات الفرع غير متاحة'),
+  missingBranchPinClearCityFallback:!!missing&&!missingPinPage.includes('نطاق الفرع')&&!missingPinPage.includes('data-scope="city"')&&!missingPinPage.includes('id="radius"')&&!missingPinPage.includes('إحداثيات الفرع غير متاحة'),
   noInternalReviewLabel:!fs.readFileSync(path.join(root,'assets/app.js'),'utf8').includes('الوظيفة التجارية قيد التحقق'),
   mobileTagline:css.includes('@media (max-width: 720px)')&&css.includes('.tagline { display: flex;'),
   narrowScreensSingleColumn:css.includes('@media (max-width: 720px)')&&css.includes('.grid, .grid.list { grid-template-columns: 1fr;')&&css.includes('@media (max-width: 420px)'),

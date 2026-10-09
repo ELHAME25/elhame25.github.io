@@ -211,11 +211,17 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   A.state().explore = 'شمال';
   const northCars = A.itemsFor('cars', 'شمال', 'sector');
   const northMapped = northCars.length > 0 && northCars.every(x => x.o.zone === 'qadisiyah');
+  A.state().explore = 'شرق'; A.state().scope = 'sector'; A.state().tab = 'projects'; A.renderBranch();
+  const eastNorthActive = els.app.innerHTML.includes('data-explore="شرق" aria-pressed="true"') && els.app.innerHTML.includes('data-explore="شمال" aria-pressed="true"');
+  const eastNorthProjects = A.itemsFor('projects', 'شرق', 'sector');
+  const eastNorthUnion = new Set(A.itemsFor('projects', 'شرق', 'sector').concat(A.itemsFor('projects', 'شمال', 'sector')).map(x => x.o.id || x.o.n));
+  const eastNorthMerged = eastNorthProjects.length === eastNorthUnion.size;
   A.state().explore = 'وسط';
   const nhcCity = A.itemsFor('nhc', '', 'city').map(x => x.o.id).sort().join('|');
   const nhcCenter = A.itemsFor('nhc', 'وسط', 'sector').map(x => x.o.id).sort().join('|');
   assert('Riyadh central shows Shifa first and both validated showroom groups', centerHasBothGroups);
   assert('Riyadh west routes showrooms to Shifa and north to Qadisiyah', westMapped && northMapped);
+  assert('Riyadh East activates North and combines both project sectors', eastNorthActive && eastNorthMerged);
   assert('NHC destinations remain city-wide when a sector is selected', nhcCity === nhcCenter);
   A.state().tab = 'cars'; A.renderBranch();
   const centralControls = els.content.innerHTML.includes('data-car-area="shifa" aria-pressed="true"') &&
@@ -230,6 +236,10 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const rassCityCars = A.itemsFor('cars', '', 'city').map(x => x.o.id).sort().join('|');
   const noSmallCityCarRadius = !els.content.innerHTML.includes('id="radius"');
   assert('small-city showrooms stay city-wide with no branch radius control', rassCars === rassCityCars && noSmallCityCarRadius);
+  const noSmallCityScopeToggle = !els.app.innerHTML.includes('data-scope="city"') && !els.content.innerHTML.includes('data-scope="city"');
+  A.state().tab = 'offices'; A.renderBranch();
+  const smallCityOfficeBranchScope = els.app.innerHTML.includes('data-scope="branch"') && !els.app.innerHTML.includes('data-scope="city"');
+  assert('small cities hide the all-city option while offices retain branch scope', noSmallCityScopeToggle && smallCityOfficeBranchScope);
   const buraydahCodes = ['602', '249', '273'];
   const buraydahCars = buraydahCodes.map(code => {
     const b = d.branchByCode[code]; if (!b || !A.sameCity(b.city, 'بريدة')) return null;
@@ -241,3 +251,4 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   console.log(JSON.stringify({ suite: 'VM UI behavior regression', tests, passed: Object.values(tests).filter(Boolean).length, total: Object.keys(tests).length, failed }, null, 2));
   if (failed.length) process.exitCode = 1;
 })().catch(err => { console.error(err.stack || err); process.exitCode = 1; });
+

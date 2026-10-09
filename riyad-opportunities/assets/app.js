@@ -150,7 +150,7 @@
       D.officeById = {}; D.offices.forEach(function (o) { D.officeById[o.id] = o; });
       D.branchByCode = {}; D.branchCount = {}; D.branches.forEach(function (b) { D.branchByCode[b.c] = b; var bk = cityKey(b.city); D.branchCount[bk] = (D.branchCount[bk] || 0) + 1; });
       D.opps = D.opportunities || [];
-      D.cars = dedupeCars(D.cars || []).filter(function (o) { return !excludedCarReportRecord(o); });
+      D.cars = dedupeCars((D.cars || []).filter(function (o) { return !o.duplicateOf; })).filter(function (o) { return !excludedCarReportRecord(o); });
       D.cityCount = {};
       ['projects', 'opps', 'nhc', 'selfbuild', 'companies', 'offices', 'cars'].forEach(function (k) {
         D.cityCount[k] = {}; D[k].forEach(function (o) {
@@ -308,6 +308,10 @@
   function soleBranch() { return (D.branchCount[cityKey(S.branch.city)] || 0) <= 1; }
   // قطاع العرض الحالي: الاستكشاف اليدوي إن وُجد، وإلا قطاع الفرع المعتمد. لا يغيّر أي منهما قيمة branch.sec
   function activeSector() { return S.scope === 'sector' && sectorCity(S.branch.city) ? (S.explore || '') : ''; }
+  function selectedSectors(sec) {
+    var selected = sec || S.explore || '';
+    return sameCity(S.branch && S.branch.city, 'الرياض') && selected === 'شرق' ? ['شرق', 'شمال'] : (selected ? [selected] : []);
+  }
   function sectorsOf(o) { return o.sectors && o.sectors.length ? o.sectors : (o.sec ? [o.sec] : []); }
   // Remove generic legal/activity words only; the remaining brand name is the city-level dedupe key.
   function companyKey(name) {
@@ -568,14 +572,19 @@
     // اختيار القطاع نطاق كامل مستقل؛ لا يطبق عليه نصف قطر الفرع.
     if (scope === 'sector' && sectorCity(S.branch.city) && (sec || S.explore)) {
       var selectedSector = sec || S.explore;
+      var selectedSet = selectedSectors(selectedSector);
       if (kind === 'companies') {
-        out = out.filter(function (x) { return x.cityOnly || x.explicitCityCoverage || sectorsOf(x.o).indexOf(selectedSector) >= 0 || x.linkedProjects.some(function (p) { return sectorsOf(p).indexOf(selectedSector) >= 0; }); });
+        out = out.filter(function (x) { return x.cityOnly || x.explicitCityCoverage || sectorsOf(x.o).some(function (s) { return selectedSet.indexOf(s) >= 0; }) || x.linkedProjects.some(function (p) { return sectorsOf(p).some(function (s) { return selectedSet.indexOf(s) >= 0; }); }); });
       } else if (kind !== 'selfbuild' && kind !== 'nhc' && !(kind === 'cars' && sameCity(S.branch.city, 'الرياض'))) {
-        out = out.filter(function (x) { return sectorsOf(x.o).indexOf(selectedSector) >= 0; });
+        out = out.filter(function (x) { return sectorsOf(x.o).some(function (s) { return selectedSet.indexOf(s) >= 0; }); });
       }
-      var anchor = sectorAnchor(S.branch.city, selectedSector, S.origin || S.branch);
-      if (anchor) {
+      var anchors = {};
+      selectedSet.forEach(function (s) { anchors[s] = sectorAnchor(S.branch.city, s, S.origin || S.branch); });
+      if (selectedSet.some(function (s) { return !!anchors[s]; })) {
         out = out.map(function (x) {
+          var itemSector = sectorsOf(x.o).filter(function (s) { return selectedSet.indexOf(s) >= 0; })[0] || selectedSector;
+          var anchor = anchors[itemSector] || anchors[selectedSector];
+          if (!anchor) return x;
           var d = distanceFromBranch(x.o, anchor);
           if (kind === 'cars' && x.o.loc !== 'pt' && x.o.loc !== 'nb') d = null;
           if (kind === 'companies') {
@@ -655,8 +664,8 @@
     var showBranchScope = branchScopedKind(S.tab) && (hasBranchPin || sectorCity(b.city));
     var ctl = '<div class="seg" role="group" aria-label="النطاق">' +
       (showBranchScope ? btn('branch', S.origin ? 'حول موقعي' : 'نطاق الفرع', S.scope === 'branch') : '') +
-      (sc ? SECTORS.map(function (sector) { return '<button data-explore="' + esc(sector) + '" aria-pressed="' + (S.scope === 'sector' && S.explore === sector) + '">' + esc(sector) + ' ' + esc(b.city) + '</button>'; }).join('') : '') +
-      btn('city', 'كل ' + esc(b.city), S.scope === 'city' || !showBranchScope) + '</div>';
+      (sc ? SECTORS.map(function (sector) { return '<button data-explore="' + esc(sector) + '" aria-pressed="' + (S.scope === 'sector' && selectedSectors().indexOf(sector) >= 0) + '">' + esc(sector) + ' ' + esc(b.city) + '</button>'; }).join('') : '') +
+      (sc ? btn('city', 'كل ' + esc(b.city), S.scope === 'city' || !showBranchScope) : '') + '</div>';
     if (showBranchScope && radiusApplies(S.tab, 'branch') && S.scope === 'branch') ctl += '<label class="explore distance-control">المسافة<select id="radius" aria-label="مسافة الفرص من نقطة المرجع">' + [5, 10, 15, 20].map(function (r) { return '<option value="' + r + '"' + (Number(S.radius) === r ? ' selected' : '') + '>أقرب ' + fmt(r) + ' كم</option>'; }).join('') + '</select></label>';
     app.innerHTML =
       '<section class="b-hero"><div class="wrap"><div class="b-top"><div class="b-id">' +
@@ -716,7 +725,7 @@
     var b = S.branch, h = '';
     
     if (sectorCity(b.city) && b.sec && S.scope !== 'sector') h += '<button class="btn" data-explore="' + esc(b.sec) + '">' + esc(b.sec) + ' ' + esc(b.city) + ' · <span class="num">' + fmt(itemsFor(k, b.sec, 'sector').length) + '</span></button>';
-    h += '<button class="btn primary" data-scope="city">كل ' + esc(b.city) + ' · <span class="num">' + fmt(c[k].total) + '</span></button>';
+    if (sectorCity(b.city)) h += '<button class="btn primary" data-scope="city">كل ' + esc(b.city) + ' · <span class="num">' + fmt(c[k].total) + '</span></button>';
     return '<div class="more-row">' + h + '</div>';
   }
   function intro(k, n) {
@@ -742,7 +751,8 @@
       }
       if (sectorCity(b.city) && b.sec) h += '<button class="btn" data-explore="' + esc(b.sec) + '">' + esc(b.sec) + ' ' + esc(b.city) + '</button>';
     }
-    return h + '<button class="btn primary" data-scope="city">كل ' + esc(b.city) + ' · <span class="num">' + fmt(c[k].total) + '</span></button></div></div>';
+    if (sectorCity(b.city)) h += '<button class="btn primary" data-scope="city">كل ' + esc(b.city) + ' · <span class="num">' + fmt(c[k].total) + '</span></button>';
+    return h + '</div></div>';
   }
   function filterQuery(k, items) {
     var q = norm(S.q[k] || ''); if (!q) return items;
@@ -973,5 +983,6 @@
 
   boot();
 })();
+
 
 

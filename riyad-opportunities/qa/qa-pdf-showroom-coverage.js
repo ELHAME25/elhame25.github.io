@@ -16,6 +16,7 @@ const reviewRequiredIds=['entity-cb0ac77da252','phase5-google-204995151334000975
 const actualReviewRequiredIds=cars.filter(x=>x.activityReviewStatus==='REVIEW_REQUIRED').map(x=>x.id).sort();
 const tests={
  'PDF inventory total and metadata match':cars.length===1058&&meta.counts.cars===1058,
+ 'verified Khobar duplicate is retained as source data and linked to its canonical listing':byId.get('pdf-smalltown-024')?.duplicateOf==='national-car-0cd777a68d1394'&&byId.get('national-car-0cd777a68d1394')?.phones?.includes('0138990676'),
  'all record IDs remain unique':ids.size===cars.length,
  'every PDF neighboring-city clone retains its source details':pdfClones.length===251&&pdfClones.every(x=>validClone(x)||x.regionalServiceArea==='أبها–خميس مشيط'),
  'new unambiguous city overlaps were added':pdfClones.filter(x=>x.id.includes('regional-pdf-')).length===251,
