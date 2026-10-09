@@ -373,7 +373,7 @@
   var companyProjectCache = {};
   function nearScope() { return !!S.branch && (S.scope === 'branch' || S.scope === 'sector'); }
   var CITY_LEVEL = { nhc: 1, selfbuild: 1 };   // الوجهات والمخططات تخدم المدينة كلها
-  var BRANCH_LOCAL = { offices: 1, cars: 1 };
+  var BRANCH_LOCAL = { offices: 1 };
   function branchScopedKind(kind) {
     if (!S.branch || !kind || kind === 'nearby' || CITY_LEVEL[kind]) return false;
     return sectorCity(S.branch.city) || !!BRANCH_LOCAL[kind];

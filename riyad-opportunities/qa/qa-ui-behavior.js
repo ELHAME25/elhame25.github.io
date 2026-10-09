@@ -223,6 +223,20 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     els.content.innerHTML.includes('data-car-area="all" aria-pressed="false"');
   assert('central showroom controls show both groups active and All Riyadh inactive', centralControls);
 
+
+  // Non-metro cities keep showroom inventory at city level across branch/radius choices.
+  A.selectBranch('607', true); A.state().tab = 'cars'; A.state().scope = 'branch'; A.renderBranch();
+  const rassCars = A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|');
+  const rassCityCars = A.itemsFor('cars', '', 'city').map(x => x.o.id).sort().join('|');
+  const noSmallCityCarRadius = !els.content.innerHTML.includes('id="radius"');
+  assert('small-city showrooms stay city-wide with no branch radius control', rassCars === rassCityCars && noSmallCityCarRadius);
+  const buraydahCodes = ['602', '249', '273'];
+  const buraydahCars = buraydahCodes.map(code => {
+    const b = d.branchByCode[code]; if (!b || !A.sameCity(b.city, 'بريدة')) return null;
+    A.selectBranch(code, true); return A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|');
+  });
+  assert('small-city showroom list stays identical across Buraidah branches', buraydahCars.every(Boolean) && new Set(buraydahCars).size === 1);
+
   const failed = Object.entries(tests).filter(([, ok]) => !ok).map(([name]) => name);
   console.log(JSON.stringify({ suite: 'VM UI behavior regression', tests, passed: Object.values(tests).filter(Boolean).length, total: Object.keys(tests).length, failed }, null, 2));
   if (failed.length) process.exitCode = 1;

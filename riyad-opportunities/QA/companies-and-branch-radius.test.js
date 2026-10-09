@@ -42,14 +42,15 @@ function check(name, fn) {
   const Q=window.__qa, D=Q.data();
   assert(Q && D.branches.length, 'app did not initialize');
 
-  check('Radius applies to one-branch cities with branch coordinates', () => {
+  check('Office radius applies in small cities while showroom records remain city-wide', () => {
     Q.selectBranch('607', true); // الرس: فرع واحد، بإحداثيات موثقة
     assert.equal(Q.radiusApplies('offices','branch'), true);
-    assert.equal(Q.radiusApplies('cars','branch'), true);
+    assert.equal(Q.radiusApplies('cars','branch'), false);
     Q.state().tab='offices'; Q.renderBranch();
     assert(els.app.innerHTML.includes('id="radius"'), 'office radius selector is absent');
     Q.state().tab='cars'; Q.renderBranch();
-    assert(els.app.innerHTML.includes('id="radius"'), 'car radius selector is absent');
+    assert(!els.app.innerHTML.includes('id="radius"'), 'small-city showrooms must not expose a branch radius');
+    assert.deepEqual(Q.itemsFor('cars','','branch').map(x=>x.o.id).sort(), Q.itemsFor('cars','','city').map(x=>x.o.id).sort(), 'small-city showrooms should be city-wide');
     return {branch:'607', city:D.branchByCode['607'].city};
   });
 
@@ -157,6 +158,16 @@ function check(name, fn) {
       coverage.push(sector);
     }
     return coverage;
+  });
+
+
+  check('Buraidah showrooms are identical for branches 602, 249 and 273', () => {
+    const lists=['602','249','273'].map(code => {
+      const b=D.branchByCode[code]; assert(b&&b.city==='بريدة','unexpected branch/city '+code);
+      Q.selectBranch(code,true); return Q.itemsFor('cars','','branch').map(x=>x.o.id).sort();
+    });
+    assert.deepEqual(lists[1],lists[0]); assert.deepEqual(lists[2],lists[0]);
+    return {codes:['602','249','273'],cars:lists[0].length};
   });
 
   const failures=results.filter(x=>!x.pass);
