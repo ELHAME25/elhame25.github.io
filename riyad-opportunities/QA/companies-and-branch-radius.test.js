@@ -42,31 +42,32 @@ function check(name, fn) {
   const Q=window.__qa, D=Q.data();
   assert(Q && D.branches.length, 'app did not initialize');
 
-  check('Office radius applies in small cities while showroom records remain city-wide', () => {
+  check('Small-city offices and showrooms remain city-wide for every branch', () => {
     Q.selectBranch('607', true); // الرس: فرع واحد، بإحداثيات موثقة
-    assert.equal(Q.radiusApplies('offices','branch'), true);
+    assert.equal(Q.radiusApplies('offices','branch'), false);
     assert.equal(Q.radiusApplies('cars','branch'), false);
     Q.state().tab='offices'; Q.renderBranch();
-    assert(els.app.innerHTML.includes('id="radius"'), 'office radius selector is absent');
-    Q.state().tab='cars'; Q.renderBranch();
-    assert(!els.app.innerHTML.includes('id="radius"'), 'small-city showrooms must not expose a branch radius');
-    assert.deepEqual(Q.itemsFor('cars','','branch').map(x=>x.o.id).sort(), Q.itemsFor('cars','','city').map(x=>x.o.id).sort(), 'small-city showrooms should be city-wide');
-    return {branch:'607', city:D.branchByCode['607'].city};
+    assert(!els.app.innerHTML.includes('id="radius"'), 'small cities must not expose a branch radius');
+    const officeCity=Q.itemsFor('offices','','city').map(x=>x.o.id).sort();
+    const officeBranch=Q.itemsFor('offices','','branch').map(x=>x.o.id).sort();
+    const carCity=Q.itemsFor('cars','','city').map(x=>x.o.id).sort();
+    const carBranch=Q.itemsFor('cars','','branch').map(x=>x.o.id).sort();
+    assert.deepEqual(officeBranch,officeCity,'small-city offices should be city-wide');
+    assert.deepEqual(carBranch,carCity,'small-city showrooms should be city-wide');
+    return {branch:'607', city:D.branchByCode['607'].city, offices:officeCity.length, cars:carCity.length};
   });
 
-  check('5/10/15/20 km are real filters and city expansion is explicit', () => {
+  check('Branch scope never hides records in non-sector cities', () => {
     Q.selectBranch('607', true);
-    const raw=Q.rawItems('offices');
     const counts=[5,10,15,20].map(r=>{
       Q.setScope('branch',r);
-      const shown=Q.itemsFor('offices');
-      assert(shown.every(x=>x.rankD!=null&&x.rankD<=r), 'office outside selected radius');
-      return shown.length;
+      return {offices:Q.itemsFor('offices').map(x=>x.o.id).sort(),cars:Q.itemsFor('cars').map(x=>x.o.id).sort()};
     });
-    assert(counts.every((n,i)=>i===0||n>=counts[i-1]), 'counts should be non-decreasing');
+    assert(counts.every(x=>JSON.stringify(x.offices)===JSON.stringify(counts[0].offices)), 'office results changed with radius in a city-wide mode');
+    assert(counts.every(x=>JSON.stringify(x.cars)===JSON.stringify(counts[0].cars)), 'car results changed with radius in a city-wide mode');
     Q.setScope('city',20);
-    assert.equal(Q.itemsFor('offices').length, raw.length, 'city scope must explicitly restore full city');
-    return {branch:'607', counts, cityCount:raw.length};
+    assert.deepEqual(Q.itemsFor('offices').map(x=>x.o.id).sort(),counts[0].offices,'city scope must match branch scope outside sector cities');
+    return {branch:'607', offices:counts[0].offices.length, cars:counts[0].cars.length};
   });
 
   check('Central Safa row does not overwrite local Jeddah data and is deduplicated', () => {
@@ -161,17 +162,16 @@ function check(name, fn) {
   });
 
 
-  check('Buraidah showrooms use each branch radius and retain city expansion', () => {
+  check('Buraidah showroom results remain complete and identical across branches', () => {
     const lists=['602','249','273'].map(code => {
       const b=D.branchByCode[code]; assert(b&&b.city==='بريدة','unexpected branch/city '+code);
       Q.selectBranch(code,true); Q.setScope('branch',5);
-      const near=Q.itemsFor('cars','','branch'), city=Q.itemsFor('cars','','city');
-      assert(near.every(x=>x.rankD==null||x.rankD<=5),'out-of-radius showroom for '+code);
-      assert(near.every(x=>city.some(y=>y.o.id===x.o.id)),'branch result missing from city inventory '+code);
-      return {ids:near.map(x=>x.o.id).sort(),city:city.length};
+      const branchCars=Q.itemsFor('cars','','branch'), cityCars=Q.itemsFor('cars','','city');
+      assert.deepEqual(branchCars.map(x=>x.o.id).sort(),cityCars.map(x=>x.o.id).sort(),'Buraidah branch must show the full city inventory for '+code);
+      return {ids:branchCars.map(x=>x.o.id).sort(),city:cityCars.length};
     });
-    assert(new Set(lists.map(x=>x.ids.join('|'))).size>1,'branch showroom results did not change');
-    return {codes:['602','249','273'],near:lists.map(x=>x.ids.length),city:lists.map(x=>x.city)};
+    assert(new Set(lists.map(x=>x.ids.join('|'))).size===1,'Buraidah branch selection changed the city showroom inventory');
+    return {codes:['602','249','273'],counts:lists.map(x=>x.ids.length)};
   });
 
   const failures=results.filter(x=>!x.pass);

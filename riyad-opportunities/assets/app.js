@@ -402,20 +402,15 @@
   var companyProjectCache = {};
   function nearScope() { return !!S.branch && (S.scope === 'branch' || S.scope === 'sector'); }
   var CITY_LEVEL = { nhc: 1, selfbuild: 1 };   // الوجهات والمخططات تخدم المدينة كلها
-  var BRANCH_LOCAL = { offices: 1 };
-  var LARGE_CITY_BRANCH_SCOPE = ['مكة المكرمة', 'الخبر', 'القطيف', 'الجبيل', 'المدينة المنورة', 'الأحساء', 'بريدة', 'الطائف', 'تبوك', 'حائل', 'خميس مشيط', 'جازان', 'أبها', 'ينبع'];
-  var DAMMAM_NEIGHBOR_CITIES = ['الخبر', 'الظهران', 'القطيف', 'الجبيل', 'سيهات', 'أم الحمام'];
+  var DAMMAM_NEIGHBOR_CITIES = [];
   function easternNeighborCity(city) { return DAMMAM_NEIGHBOR_CITIES.some(function (name) { return sameCity(name, city); }); }
   function isDammamBranch() { return !!S.branch && sameCity(S.branch.city, 'الدمام'); }
-  function localRadiusCity(city) { return LARGE_CITY_BRANCH_SCOPE.some(function (name) { return sameCity(name, city); }); }
+  // الفرع يحدد القطاع والنطاق في الرياض وجدة؛ بقية المدن تعرض فرص المدينة كاملة.
   function branchScopedKind(kind) {
     if (!S.branch || !kind || kind === 'nearby' || CITY_LEVEL[kind]) return false;
-    var city = S.branch.city;
-    if (sameCity(city, 'المدينة المنورة') && (kind === 'cars' || kind === 'offices')) return false;
-    if (sameCity(city, 'الأحساء') && (kind === 'cars' || kind === 'projects' || kind === 'opps')) return false;
-    return sectorCity(city) || localRadiusCity(city) || !!BRANCH_LOCAL[kind];
+    return sectorCity(S.branch.city);
   }
-  function cityScopeAvailable(kind) { return !!S.branch && (sectorCity(S.branch.city) || (localRadiusCity(S.branch.city) && branchScopedKind(kind))); }
+  function cityScopeAvailable(kind) { return !!S.branch && sectorCity(S.branch.city) && branchScopedKind(kind); }
   function radiusApplies(kind, scope) {
     scope = scope || S.scope;
     var anchor = S.origin || S.branch;
