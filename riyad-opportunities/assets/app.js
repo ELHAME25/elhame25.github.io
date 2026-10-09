@@ -333,9 +333,11 @@
   function soleBranch() { return (D.branchCount[cityKey(S.branch.city)] || 0) <= 1; }
   // قطاع العرض الحالي: الاستكشاف اليدوي إن وُجد، وإلا قطاع الفرع المعتمد. لا يغيّر أي منهما قيمة branch.sec
   function activeSector() { return S.scope === 'sector' && sectorCity(S.branch.city) ? (S.explore || '') : ''; }
+  // Sector buttons are exclusive: choosing East must never activate North implicitly.
+  // Shared showroom groups are handled separately by car-area routing.
   function selectedSectors(sec) {
     var selected = sec || S.explore || '';
-    return sameCity(S.branch && S.branch.city, 'الرياض') && selected === 'شرق' ? ['شرق', 'شمال'] : (selected ? [selected] : []);
+    return selected ? [selected] : [];
   }
   function sectorsOf(o) { return o.sectors && o.sectors.length ? o.sectors : (o.sec ? [o.sec] : []); }
   // Remove generic legal/activity words only; the remaining brand name is the city-level dedupe key.

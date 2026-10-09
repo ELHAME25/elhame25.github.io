@@ -32,6 +32,20 @@ const server=http.createServer((req,res)=>{
    const section=async k=>{await page.locator('[data-tab="'+k+'"]').click();await page.locator('#q-sec').waitFor();};
    await open('243');
    assert((await page.locator('h1').innerText()).includes('القادسية'));
+   // A single sector click must activate exactly that sector in Riyadh and Jeddah.
+   const assertExclusiveSector=async sector=>{
+    await page.locator('.seg button[data-explore="'+sector+'"]').click();
+    assert.equal(await page.locator('.seg button[data-explore][aria-pressed="true"]').count(),1,'multiple sectors activated in '+sector);
+    assert.equal(await page.locator('.seg button[data-explore="'+sector+'"]').getAttribute('aria-pressed'),'true');
+   };
+   await assertExclusiveSector('شرق');
+   assert.equal(await page.locator('.seg button[data-explore="شمال"]').getAttribute('aria-pressed'),'false');
+   await assertExclusiveSector('شمال');
+   assert.equal(await page.locator('.seg button[data-explore="شرق"]').getAttribute('aria-pressed'),'false');
+   await open('110'); // Jeddah, Hamdaniyah
+   await assertExclusiveSector('شرق');
+   await assertExclusiveSector('شمال');
+   await open('243');
    await section('projects');
    const before=await page.locator('[data-detail]').count();assert(before>0);
    await page.locator('#q-sec').fill('__qa_no_such_record__');
