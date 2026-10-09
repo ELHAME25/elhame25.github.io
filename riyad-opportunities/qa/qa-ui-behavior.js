@@ -315,9 +315,9 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const carCard = A.card('cars', eliteMakkah, null, true, false, {});
   assert('Makkah showroom phone matches its address and exposes the published listing source', eliteMakkah.phones.includes('0555555112') && carCard.includes('مصدر رقم التواصل') && carCard.includes('bizmideast.com'));
 
-  const aiProjects = ['P001','P002','P003','P004'].map(id => d.projects.find(x => x.id === id));
+  const aiProjects = ['P001','P002','P003','P004','P005','P006','P007'].map(id => d.projects.find(x => x.id === id));
   const aiProjectCards = aiProjects.map(x => x && A.card('projects', x, null, true, false, {}));
-  assert('Four AI-generated project concept images are unique, assigned and clearly labeled on cards', aiProjects.every((x,i) => x && x.img.startsWith('data:image/webp;base64,') && x.imageType.includes('مولّدة بالذكاء الاصطناعي') && aiProjectCards[i].includes('صورة مفاهيمية مولّدة بالذكاء الاصطناعي') && d.projects.filter(y => y.img === x.img).length === 1) && new Set(aiProjects.map(x=>x.img)).size===4);
+  assert('Seven AI-generated project concept images are unique, assigned and clearly labeled on cards', aiProjects.every((x,i) => x && x.img.startsWith('data:image/webp;base64,') && x.imageType.includes('مولّدة بالذكاء الاصطناعي') && aiProjectCards[i].includes('صورة مفاهيمية مولّدة بالذكاء الاصطناعي') && d.projects.filter(y => y.img === x.img).length === 1) && new Set(aiProjects.map(x=>x.img)).size===7);
   A.selectBranch('176', true);
   assert('Jeddah branch without a verified pin opens city data without fake zero-distance scope', A.state().scope === 'city' && !els.app.innerHTML.includes('id="radius"') && els.app.innerHTML.includes('لا تتوفر إحداثيات موثوقة لهذا الفرع'));
   A.selectBranch('307', true); const rasTanuraDefaultScope = A.state().scope; A.state().tab = 'offices'; A.renderBranch();
