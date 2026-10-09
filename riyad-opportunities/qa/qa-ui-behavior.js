@@ -279,6 +279,10 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   A.selectBranch('111'); A.state().tab = 'offices'; A.state().radius = 15; A.state().scope = 'branch'; A.renderBranch();
   const yanbu15 = A.itemsFor('offices', '', 'branch'); A.state().radius = 20; const yanbu20 = A.itemsFor('offices', '', 'branch');
   assert('Yanbu uses branch radius without being split into sectors', yanbu20.length >= yanbu15.length && yanbu20.every(x => x.rankD == null || x.rankD <= 20) && els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-explore='));
+  const companySource = d.companies.find(x => x.id === 'cp-1046304230');
+  A.selectBranch('243');
+  const companyCard = A.card('companies', companySource, null, true, false, {});
+  assert('verified developer contact source appears on company cards', companySource.phones.includes('920004077') && companySource.phoneSource === 'https://darwaemaar.com/contact/' && companySource.kind === 'تطوير وبيع مباشر' && companyCard.includes('مصدر رقم التواصل') && companyCard.includes('darwaemaar.com/contact'));
 
   const failed = Object.entries(tests).filter(([, ok]) => !ok).map(([name]) => name);
   console.log(JSON.stringify({ suite: 'VM UI behavior regression', tests, passed: Object.values(tests).filter(Boolean).length, total: Object.keys(tests).length, failed }, null, 2));
