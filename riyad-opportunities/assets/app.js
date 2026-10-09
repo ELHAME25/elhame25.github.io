@@ -77,13 +77,6 @@
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
   function toast(msg) { var t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status'); t.textContent = msg; document.body.appendChild(t); setTimeout(function () { t.remove(); }, 2200); }
   function copy(text, ok) { try { navigator.clipboard.writeText(text).then(function () { toast(ok || 'تم النسخ'); }, function () { toast(text); }); } catch (e) { toast(text); } }
-  function waLink(p) {
-    var d = String(p || '').replace(/[^\d+]/g, '');
-    if (/^05\d{8}$/.test(d)) return 'https://wa.me/966' + d.slice(1);
-    if (/^\+?9665\d{8}$/.test(d)) return 'https://wa.me/' + d.replace('+', '');
-    if (/^5\d{8}$/.test(d)) return 'https://wa.me/966' + d;
-    return '';
-  }
   function normalizeContactNumber(p) {
     var d = String(p || '').replace(/\D/g, '');
     if (d.indexOf('00966') === 0) d = d.slice(2);
