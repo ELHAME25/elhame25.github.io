@@ -55,6 +55,7 @@ const server=http.createServer((req,res)=>{
    await page.locator('#detail').waitFor({state:'visible'});
    await page.locator('#detail [data-close]').click();
    await section('cars');
+   assert(!(await page.locator('#content').innerText()).includes('مصدر رقم التواصل'));
    assert(await page.locator('[data-call]').count()>0);
    const phone=await page.locator('[data-call]').first().getAttribute('href');assert(/^tel:[+\d]+$/.test(phone));
    const mapLinks=await page.locator('a[href*="google.com/maps"],a[href*="maps.app.goo.gl"],a[href*="goo.gl/maps"]').count();assert(mapLinks>0);
