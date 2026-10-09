@@ -311,6 +311,8 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const closedOffice = d.offices.find(x => x.id === 'national-ejar-office-202402');
   A.selectBranch('403', true); A.state().tab = 'offices'; A.state().scope = 'city';
   assert('permanently closed office remains in source data but is excluded from active results', closedOffice && closedOffice.activityReviewStatus === 'closed_permanently' && !A.itemsFor('offices', '', 'city').some(x => x.o.id === closedOffice.id));
+  const unverifiedEjarOffice = d.offices.find(x => x.id === 'national-ejar-office-195881');
+  assert('Ejar placeholder phone is suppressed instead of publishing an unverified directory number', !!unverifiedEjarOffice && unverifiedEjarOffice.phoneVerificationStatus === 'unverified' && unverifiedEjarOffice.phones.length === 0 && !unverifiedEjarOffice.phoneSource);
   const eliteMakkah = d.cars.find(x => x.id === 'entity-66efa1d00757');
   const carCard = A.card('cars', eliteMakkah, null, true, false, {});
   assert('Makkah showroom phone matches its address and exposes the published listing source', eliteMakkah.phones.includes('0555555112') && carCard.includes('مصدر رقم التواصل') && carCard.includes('bizmideast.com'));
