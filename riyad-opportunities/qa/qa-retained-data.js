@@ -4,7 +4,7 @@ const baseline=JSON.parse(fs.readFileSync(path.join(__dirname,'retained-data-bas
 let retained=0,phones=0;
 for(const [kind,rows] of Object.entries(baseline.records)){
  const current=JSON.parse(fs.readFileSync(path.join(root,'data',kind+'.json'),'utf8'));
- const byId=new Map(current.map(x=>[x.id,x]));
+ const byId=new Map(current.map(x=>[kind==='nhc'?x.n+'\u0000'+x.city:x.id,x]));
  assert.equal(byId.size,current.length,kind+' duplicate IDs');
  for(const prior of rows){
   const now=byId.get(prior.id);assert(now,kind+' missing '+prior.id);retained++;
