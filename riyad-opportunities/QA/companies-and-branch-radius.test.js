@@ -198,6 +198,7 @@ function check(name, fn) {
   check('All non-metro branches show complete city inventory across every section', () => {
     const kinds=['projects','opps','nhc','selfbuild','companies','offices','cars'];
     const metroCities=new Set(['الرياض','جدة']);
+    const sameCityForAudit=(a,b)=>{const norm=v=>String(v||'').replace(/[أإآ]/g,'ا').replace(/ة/g,'ه').replace(/ى/g,'ي');const key=v=>['الاحساء','الهفوف','المبرز'].includes(norm(v))?'الاحساء':norm(v);return key(a)===key(b);};
     const cities=[...new Set(D.branches.map(b=>b.city).filter(city=>!metroCities.has(city)))];
     const failures=[];
     for(const city of cities){
@@ -215,6 +216,8 @@ function check(name, fn) {
         if(els.app.innerHTML.includes('data-scope="city"')) failures.push({city,branch:b.c,error:'city-wide button exposed'});
         for(const kind of kinds){
           const actual=Q.itemsFor(kind,'','branch').map(x=>x.o.id).sort();
+          const foreign=Q.itemsFor(kind,'','branch').filter(x=>kind!=='companies' && (!Q.state().branch || (x.o.originCity && !sameCityForAudit(x.o.originCity,Q.state().branch.city))));
+          if(foreign.length) failures.push({city,branch:b.c,kind,error:'neighboring-city source records leaked',ids:foreign.map(x=>x.o.id)});
           if(JSON.stringify(actual)!==JSON.stringify(expected[kind])) failures.push({
             city,branch:b.c,kind,expected:expected[kind].length,actual:actual.length
           });

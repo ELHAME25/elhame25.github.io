@@ -1,7 +1,7 @@
 /* دليل فرص المملكة — تطبيق ثابت بلا إطار عمل. يقرأ config/site.json ثم data/*.json
    منطق العرض:
    - نطاق المدن الكبيرة يقبل تصفح الفرع أو القطاع أو المدينة، وتبدأ النتائج الأقرب.
-   - في المدن الأخرى تُعرض المشاريع والوجهات والفرص والشركات على مستوى المدينة؛ يقتصر نطاق الفرع على المكاتب والمعارض.
+   - في المدن الأخرى تُعرض جميع الفئات على مستوى المدينة دون خلط المدن المتجاورة.
    - سجلات السيارات تستبعد الشركات والوكالات وموزعي العلامات التجارية، وتزيل تكرار المعرض داخل المدينة.
    - العناصر بلا إحداثيات تبقى ظاهرة دون مسافة مختلقة.
    - وجهات NHC والبناء الذاتي تخدم المدينة كلها.
@@ -150,8 +150,7 @@
       D.projects.forEach(function (p) {
         var image = DECORATIVE_PROJECT_IMAGES[p.id];
         if (!image) return;
-        if (!p.img) p.img = image[0];
-        p.imageSourceUrl = image[1];
+        if (!p.img) { p.img = image[0]; if (!p.imageSourceUrl) p.imageSourceUrl = image[1]; }
       });
       D.offices.forEach(function (o) {
         if (o.id !== 'national-ejar-office-195881') return;
@@ -179,6 +178,7 @@
       D.cityCount = {};
       ['projects', 'opps', 'nhc', 'selfbuild', 'companies', 'offices', 'cars'].forEach(function (k) {
         D.cityCount[k] = {}; D[k].forEach(function (o) {
+          if (o.regionalListingOf && !sameCity(o.originCity || o.city, o.city)) return;
           var cityList = k === 'companies' && o.coverageCities && o.coverageCities.length ? o.coverageCities : [o.city], citySeen = {};
           cityList.forEach(function (city) {
             var ck = cityKey(city);
@@ -546,6 +546,7 @@
     return (D[kind] || []).filter(function (o) {
       var sameBranchCity = sameCity(o.city, b.city);
       var sourceCity = o.regionalListingOf ? (o.originCity || o.city) : o.city;
+      if (o.regionalListingOf && !sameCity(sourceCity, b.city)) return false;
       var easternCrossCity = scope === 'branch' && !CITY_LEVEL[kind] && isDammamBranch() && easternNeighborCity(sourceCity);
       if (!sameBranchCity && !easternCrossCity) return false;
       if (easternCrossCity && o.lat == null && o.lon == null && links[o.id] == null && !(Number(o.branchRoadDistancesKm && o.branchRoadDistancesKm[String(b.c)]) > 0)) return false;
