@@ -289,15 +289,15 @@
       var items = D.branches.filter(function (b) {
         if (city && !sameCity(b.city, city)) return false;
         if (!q) return true;
-        return String(b.c).indexOf(raw) >= 0 || norm(b.n).indexOf(q) >= 0 || (b.nb && norm(b.nb).indexOf(q) >= 0);
+        return (b.codeStatus !== 'local_internal_reference' && String(b.c).indexOf(raw) >= 0) || norm(b.n).indexOf(q) >= 0 || (b.nb && norm(b.nb).indexOf(q) >= 0);
       });
       var exact = D.branchByCode[raw];
-      selectedCode = exact && (!city || sameCity(exact.city, city)) ? exact.c : '';
+      selectedCode = exact && exact.codeStatus !== 'local_internal_reference' && (!city || sameCity(exact.city, city)) ? exact.c : '';
       var shown = items.slice(0, 80);
       selectedCityOnly = !items.length && cityOnlyAvailable(city, q) ? city : '';
       var cityOnlyItem = selectedCityOnly ? '<button class="branch-item city-only-item" type="button" role="listitem" aria-pressed="true" data-city-only="' + esc(city) + '"><span class="code">مدينة</span><span class="bn">عرض فرص المدينة</span><span class="bc">' + esc(city) + ' · لا يوجد فرع مسجل</span></button>' : ''; 
       document.getElementById('branch-list').innerHTML = shown.map(function (b) {
-        return '<button class="branch-item' + (selectedCode === b.c ? ' selected' : '') + '" type="button" role="listitem" aria-pressed="' + (selectedCode === b.c) + '" data-code="' + esc(b.c) + '"><span class="code num">' + esc(b.c) + '</span><span class="bn">' + esc(b.n) + '</span><span class="bc">' + esc(b.city) + (b.sec ? ' · ' + esc(b.sec) : '') + '</span></button>';
+        return '<button class="branch-item' + (selectedCode === b.c ? ' selected' : '') + '" type="button" role="listitem" aria-pressed="' + (selectedCode === b.c) + '" data-code="' + esc(b.c) + '"><span class="code num">' + (b.codeStatus === 'local_internal_reference' ? 'مرجع داخلي' : esc(b.c)) + '</span><span class="bn">' + esc(b.n) + '</span><span class="bc">' + esc(b.city) + (b.sec ? ' · ' + esc(b.sec) : '') + '</span></button>';
       }).join('') + cityOnlyItem + (!shown.length && !cityOnlyItem ? '<p class="list-note">لا يوجد فرع مطابق</p>' : '');
       go.disabled = !(selectedCode || selectedCityOnly);
     }
@@ -413,6 +413,8 @@
   function cityScopeAvailable(kind) { return !!S.branch && sectorCity(S.branch.city) && branchScopedKind(kind); }
   function radiusApplies(kind, scope) {
     scope = scope || S.scope;
+    // الفرع بلا دبوس مؤكد يعرض نطاق المدينة.
+    if (S.branch && (typeof S.branch.lat !== 'number' || !isFinite(S.branch.lat) || typeof S.branch.lon !== 'number' || !isFinite(S.branch.lon))) return false;
     var anchor = S.origin || S.branch;
     // معارض الرياض تتبع بطاقة الشفا أو القادسية المختارة؛ إظهار المجموعة كاملة أهم من نصف قطر نقطة الفرع.
     if (kind === 'cars' && S.branch && sameCity(S.branch.city, 'الرياض')) return false;
@@ -734,7 +736,7 @@
     app.innerHTML =
       '<section class="b-hero"><div class="wrap"><div class="b-top"><div class="b-id">' +
       '<p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : (b.cityOnly ? 'عرض المدينة دون فرع' : 'فرص الفرع')) + '</p>' +
-      '<h1>' + esc(b.n) + '</h1><div class="b-meta">' + (b.cityOnly ? '' : '<span class="pill code num">' + esc(b.c) + '</span>') + '<span class="pill">' + esc(b.city) + '</span>' +
+      '<h1>' + esc(b.n) + '</h1><div class="b-meta">' + (b.cityOnly ? '' : '<span class="pill code num">' + (b.codeStatus === 'local_internal_reference' ? 'مرجع داخلي ' : '') + esc(b.c) + '</span>') + '<span class="pill">' + esc(b.city) + '</span>' +
       (sc && b.sec ? '<span class="pill sec">' + esc(b.sec) + ' ' + esc(b.city) + '</span>' : '') + (b.nb ? '<span class="pill">حي ' + esc(b.nb) + '</span>' : '') +
       (S.origin ? '<span class="pill geo-pill">أقرب فرع محدد الموقع · ' + distTag(S.nearestBranchDistance, {}) + '</span><a class="pill geo-map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=' + esc(b.lat + ',' + b.lon) + '">خريطة الفرع</a>' : '') + '</div>' + ((!hasBranchPin && !b.cityOnly) ? '<p class="location-note" role="status">لا تتوفر إحداثيات موثوقة لهذا الفرع؛ لم تُختلق مسافة. يعرض الدليل بيانات المدينة أو القطاع الموثق، ولا يحسب نطاقًا محليًا حتى يتوفر دبوس صحيح.</p>' : '') + '</div>' +
       '<button class="btn ghost" data-act="change">' + ICON.swap + 'تغيير الفرع</button></div>' +
@@ -832,15 +834,14 @@
   /* ---------------- cards ---------------- */
   var REG = [];
   function reg(kind, o) { REG.push({ k: kind, o: o }); return REG.length - 1; }
-  var GENERIC_PROPERTY_IMAGE = 'assets/images/real-estate-illustrative-villa.svg';
-  var PROPERTY_ILLUSTRATIONS = [GENERIC_PROPERTY_IMAGE, 'assets/images/real-estate-illustrative-apartments.svg', 'assets/images/real-estate-illustrative-townhomes.svg', 'assets/images/real-estate-illustrative-courtyard.svg'];
+  var GENERIC_PROPERTY_IMAGE = 'assets/images/real-estate-illustrative-apartments.svg';
+  var PROPERTY_ILLUSTRATIONS = [GENERIC_PROPERTY_IMAGE, 'assets/images/real-estate-illustrative-townhomes.svg', 'assets/images/real-estate-illustrative-courtyard.svg', 'assets/images/real-estate-illustrative-villa.svg'];
   function imageFallback(kind, o) {
-    var type = String(o && o.type || ''), key = String(o && (o.id || o.n) || kind || ''), hash = 0;
-    if (/شقق|استديو/i.test(type)) return PROPERTY_ILLUSTRATIONS[1];
-    if (/تاون|دوبلكس|متصل/i.test(type)) return PROPERTY_ILLUSTRATIONS[2];
-    if (/فلل|فيلا/i.test(type)) return PROPERTY_ILLUSTRATIONS[0];
-    for (var i = 0; i < key.length; i++) hash = (hash * 31 + key.charCodeAt(i)) >>> 0;
-    return PROPERTY_ILLUSTRATIONS[hash % PROPERTY_ILLUSTRATIONS.length];
+    var type = String(o && o.type || '');
+    if (/شقق|استديو/i.test(type)) return PROPERTY_ILLUSTRATIONS[0];
+    if (/تاون|دوبلكس|متصل/i.test(type)) return PROPERTY_ILLUSTRATIONS[1];
+    if (/فلل|فيلا/i.test(type)) return PROPERTY_ILLUSTRATIONS[3];
+    return GENERIC_PROPERTY_IMAGE;
   }
   function ph(title, sub, kind, o) {
     return '<img class="property-image" loading="lazy" decoding="async" alt="' + esc(title || 'صورة') + '"' + (o && o.img ? '' : ' data-generic="1"') + ' data-src="' + esc(o && o.img || imageFallback(kind, o)) + '">';
