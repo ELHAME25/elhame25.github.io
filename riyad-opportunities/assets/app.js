@@ -460,6 +460,12 @@
           rows.forEach(function (r) { (r[field] || []).forEach(function (v) { if (v && vals.indexOf(v) < 0) vals.push(v); }); });
           if (vals.length) base[field] = vals;
         });
+        var phoneOwners = {};
+        rows.forEach(function (r) { (r.phones || []).forEach(function (p, i) {
+          var owner = (r.phoneContacts || [])[i] || (i === 0 ? r.contact : '');
+          if (owner && !phoneOwners[p]) phoneOwners[p] = owner;
+        }); });
+        if (Object.keys(phoneOwners).length) base.phoneContacts = (base.phones || []).map(function (p) { return phoneOwners[p] || ''; });
         var localSectors = [];
         rows.forEach(function (r) { sectorsOf(r).forEach(function (v) { if (v && localSectors.indexOf(v) < 0) localSectors.push(v); }); });
         if (localSectors.length) { base.sectors = localSectors; delete base.sec; }

@@ -29,7 +29,7 @@ const fetch = async url => {
 };
 const jsFile = path.join(root, 'assets/app.js');
 let source = fs.readFileSync(jsFile, 'utf8').replace('  boot();',
-  "  window.__qa={selectBranch,renderBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,companyKey,radiusApplies,card,phoneLine,data:()=>D,state:()=>S,setScope:(scope,radius)=>{S.scope=scope;if(radius)S.radius=radius;return compute();}}; boot();");
+  "  window.__qa={selectBranch,renderBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,companyKey,radiusApplies,card,phoneLine,cityCompanyRecords,data:()=>D,state:()=>S,setScope:(scope,radius)=>{S.scope=scope;if(radius)S.radius=radius;return compute();}}; boot();");
 vm.runInNewContext(source, {document,window,location,history:{replaceState(){}},localStorage,navigator:{},fetch,setTimeout,clearTimeout,console,URL,Blob,Intl,Date});
 const sleep = ms => new Promise(resolve=>setTimeout(resolve,ms));
 const results=[];
@@ -182,6 +182,17 @@ function check(name, fn) {
     assert(html.includes('0567600585')&&html.includes('عبدالعزيز الراشد'));
     assert(html.includes('0555866799')&&html.includes('عبدالعزيز الدامغ'));
     return {phones:x.phones,contacts:x.phoneContacts};
+  });
+
+  check('Merged company phones retain the correct named sales contacts', () => {
+    const row=Q.cityCompanyRecords('الرياض').find(x=>Q.companyKey(x.record.n)==='دار واعمار');
+    assert(row,'Dar & Emaar Riyadh record missing');
+    const o=row.record, i=o.phones.indexOf('0540401113');
+    assert(i>=0,'manager phone missing after city merge');
+    assert.equal(o.phoneContacts[i],'عبدالله الجبير','manager name detached from phone after merge');
+    const d=o.phones.indexOf('0552629774');
+    assert(d>=0&&o.phoneContacts[d]==='دلال العنزي','sales representative name detached from phone');
+    return {phones:o.phones,contacts:o.phoneContacts};
   });
 
   const failures=results.filter(x=>!x.pass);
