@@ -315,13 +315,13 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const carCard = A.card('cars', eliteMakkah, null, true, false, {});
   assert('Makkah showroom phone matches its address and exposes the published listing source', eliteMakkah.phones.includes('0555555112') && carCard.includes('مصدر رقم التواصل') && carCard.includes('bizmideast.com'));
 
-  const aiProject = d.projects.find(x => x.id === 'P001');
-  const aiProjectCard = aiProject && A.card('projects', aiProject, null, true, false, {});
-  assert('AI-generated project concept image is unique and clearly labeled on card', !!aiProject && aiProject.img.startsWith('data:image/webp;base64,') && aiProject.imageType.includes('مولّدة بالذكاء الاصطناعي') && aiProjectCard.includes('صورة مفاهيمية مولّدة بالذكاء الاصطناعي') && d.projects.filter(x => x.img === aiProject.img).length === 1);
+  const aiProjects = ['P001','P002','P003','P004'].map(id => d.projects.find(x => x.id === id));
+  const aiProjectCards = aiProjects.map(x => x && A.card('projects', x, null, true, false, {}));
+  assert('Four AI-generated project concept images are unique, assigned and clearly labeled on cards', aiProjects.every((x,i) => x && x.img.startsWith('data:image/webp;base64,') && x.imageType.includes('مولّدة بالذكاء الاصطناعي') && aiProjectCards[i].includes('صورة مفاهيمية مولّدة بالذكاء الاصطناعي') && d.projects.filter(y => y.img === x.img).length === 1) && new Set(aiProjects.map(x=>x.img)).size===4);
   A.selectBranch('176', true);
   assert('Jeddah branch without a verified pin opens city data without fake zero-distance scope', A.state().scope === 'city' && !els.app.innerHTML.includes('id="radius"') && els.app.innerHTML.includes('لا تتوفر إحداثيات موثوقة لهذا الفرع'));
-  A.selectBranch('307', true); A.state().tab = 'offices'; A.state().scope = 'branch'; A.renderBranch();
-  assert('Ras Tanura missing pin explains that nearby offices cannot be measured', !els.app.innerHTML.includes('data-scope="branch"') && els.content.innerHTML.includes('تعذر تحديد مكاتب العقار القريبة'));
+  A.selectBranch('307', true); const rasTanuraDefaultScope = A.state().scope; A.state().tab = 'offices'; A.renderBranch();
+  assert('Ras Tanura missing pin explains that nearby offices cannot be measured', rasTanuraDefaultScope === 'branch' && !els.app.innerHTML.includes('data-scope="branch"') && els.content.innerHTML.includes('تعذر تحديد مكاتب عقار القريبة'));
 
   const failed = Object.entries(tests).filter(([, ok]) => !ok).map(([name]) => name);
   console.log(JSON.stringify({ suite: 'VM UI behavior regression', tests, passed: Object.values(tests).filter(Boolean).length, total: Object.keys(tests).length, failed }, null, 2));
