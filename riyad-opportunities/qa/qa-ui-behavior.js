@@ -75,7 +75,21 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const tests = {};
   const assert = (name, condition) => { tests[name] = !!condition; };
   const d = A.data();
-
+  const areemNHC = d.projects.find(x => x.id === 'P344');
+  const areemSumou = d.projects.find(x => x.id === 'P362');
+  const lamarya = d.projects.find(x => x.id === 'P572');
+  const munsiyah = d.projects.find(x => x.id === 'P625');
+  const sourcedCars = ['phase6-cars-01497558f1e82f', 'regional-pdf-pdf-smalltown-011-045', 'regional-pdf-pdf-smalltown-013-045', 'regional-pdf-pdf-smalltown-017-045', 'regional-pdf-pdf-smalltown-019-045'];
+  const appMarkup = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');
+  assert('verified areas, project status, official render and contact sources are exposed', !!areemNHC && areemNHC.area.includes('89,905.67 م²') && areemNHC.areaSource && !!areemSumou && areemSumou.area.startsWith('231,637.22 م²') && !!lamarya && lamarya.status.includes('تم البيع') && lamarya.phones.includes('0556388388') && !!munsiyah && !munsiyah.loc && munsiyah.img.includes('clusters.sa/_next/image') && munsiyah.imageType.includes('تصميم معماري') && sourcedCars.every(id => { const o = d.cars.find(x => x.id === id); return o && o.phones.length && o.phoneSource; }) && appMarkup.includes("['المساحة', o.area]") && appMarkup.includes('مصدر رقم التواصل') && appMarkup.includes('o.imageSourceUrl'));
+  const renderCard = A.card('projects', munsiyah, null, true, false, {}), renderId = renderCard.match(/data-detail="(\d+)"/);
+  if (renderId) A.openDetail(Number(renderId[1]));
+  const renderCaption = !!renderId && !els.detail.innerHTML.includes('تصميم معماري رسمي من المطور') && !els.detail.innerHTML.includes('image-note');
+  const sourceCar = d.cars.find(x => x.id === sourcedCars[0]);
+  const sourceCard = A.card('cars', sourceCar, null, true, false, {});
+  const phoneSourceMarkup = sourceCard.includes('مصدر رقم التواصل') && sourceCard.includes('dalilmadina.com');
+  assert('official project image is shown without a descriptive caption', renderCaption);
+  assert('showroom phone source appears in contact details', phoneSourceMarkup);
   // Start picker order, immediate greeting, code-only lookup and explicit Go action.
   assert('picker orders employee, code, city and Go', els.app.innerHTML.indexOf('for="q-emp"') < els.app.innerHTML.indexOf('for="q-branch"') && els.app.innerHTML.indexOf('for="q-branch"') < els.app.innerHTML.indexOf('for="q-city"') && els.app.innerHTML.includes('id="go-branch"'));
   els['q-emp'].value = 'خالد الماطر'; els['q-emp'].dispatch('input');
@@ -85,7 +99,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   els['q-branch'].value = '228'; els['q-branch'].dispatch('input');
   const codeReady = !els['go-branch'].disabled && els['branch-list'].innerHTML.includes('الشفا');
   els['go-branch'].dispatch('click');
-  assert('branch code opens without choosing a city after Go', codeReady && A.state().branch.c === '228');
+  assert('branch code opens without choosing a city after Go and writes its direct link', codeReady && A.state().branch.c === '228' && location.hash.replace(/^#/, '') === 'b228');
   fireDocument('click', target({ 'data-act': 'change' }));
   els['q-city'].value = 'الرياض'; els['q-city'].dispatch('change');
   els['q-branch'].value = '242'; els['q-branch'].dispatch('input');
@@ -125,6 +139,15 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     return A.state().q[k] === '__qa_no_such_record__' && els.content.innerHTML.includes('لا نتائج مطابقة');
   });
   assert(`search works in each of ${searchable.length} sections using a city with data`, searchResults.every(Boolean));
+  A.selectBranch('243', true); A.state().scope = 'branch'; A.state().tab = 'projects'; A.state().q.projects = ''; A.renderBranch();
+  const counterRows = A.itemsFor('projects', '', 'branch');
+  const unknownCount = counterRows.filter(x => x.rankD == null).length;
+  const approximateCount = counterRows.filter(x => x.rankD != null && x.o.loc === 'nb').length;
+  const exactCount = counterRows.length - unknownCount - approximateCount;
+  const branchCounter = counterRows.length > 0 && exactCount > 0 && unknownCount > 0 &&
+    els.content.innerHTML.includes(counterRows.length + ' مشروعًا لنطاق الفرع: ' + exactCount + ' بإحداثيات، ' + approximateCount + ' بمسافة تقريبية، ' + unknownCount + ' موقع غير محدد');
+  els['q-sec'].value = '__qa_no_such_record__'; els['q-sec'].dispatch('input');
+  assert('Riyadh branch project count splits exact, approximate and unknown locations and follows search', branchCounter && els.content.innerHTML.includes('0 مشروعًا لنطاق الفرع: 0 بإحداثيات، 0 بمسافة تقريبية، 0 موقع غير محدد') && els.content.innerHTML.includes('لا نتائج مطابقة'));
 
   // Open details from the card's delegated click, close with its close control, and open by Enter.
   A.state().q = {}; A.state().scope = 'city'; A.state().tab = 'projects'; A.renderBranch();
@@ -211,11 +234,17 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   A.state().explore = 'شمال';
   const northCars = A.itemsFor('cars', 'شمال', 'sector');
   const northMapped = northCars.length > 0 && northCars.every(x => x.o.zone === 'qadisiyah');
+  A.state().explore = 'شرق'; A.state().scope = 'sector'; A.state().tab = 'projects'; A.renderBranch();
+  const eastNorthActive = els.app.innerHTML.includes('data-explore="شرق" aria-pressed="true"') && els.app.innerHTML.includes('data-explore="شمال" aria-pressed="true"');
+  const eastNorthProjects = A.itemsFor('projects', 'شرق', 'sector');
+  const eastNorthUnion = new Set(A.itemsFor('projects', 'شرق', 'sector').concat(A.itemsFor('projects', 'شمال', 'sector')).map(x => x.o.id || x.o.n));
+  const eastNorthMerged = eastNorthProjects.length === eastNorthUnion.size;
   A.state().explore = 'وسط';
   const nhcCity = A.itemsFor('nhc', '', 'city').map(x => x.o.id).sort().join('|');
   const nhcCenter = A.itemsFor('nhc', 'وسط', 'sector').map(x => x.o.id).sort().join('|');
   assert('Riyadh central shows Shifa first and both validated showroom groups', centerHasBothGroups);
   assert('Riyadh west routes showrooms to Shifa and north to Qadisiyah', westMapped && northMapped);
+  assert('Riyadh East activates North and combines both project sectors', eastNorthActive && eastNorthMerged);
   assert('NHC destinations remain city-wide when a sector is selected', nhcCity === nhcCenter);
   A.state().tab = 'cars'; A.renderBranch();
   const centralControls = els.content.innerHTML.includes('data-car-area="shifa" aria-pressed="true"') &&
@@ -224,20 +253,104 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   assert('central showroom controls show both groups active and All Riyadh inactive', centralControls);
 
 
-  // Non-metro cities keep showroom inventory at city level across branch/radius choices.
+  // Small-city showrooms remain city-level; large regional cities use the selected branch radius.
   A.selectBranch('607', true); A.state().tab = 'cars'; A.state().scope = 'branch'; A.renderBranch();
   const rassCars = A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|');
   const rassCityCars = A.itemsFor('cars', '', 'city').map(x => x.o.id).sort().join('|');
   const noSmallCityCarRadius = !els.content.innerHTML.includes('id="radius"');
   assert('small-city showrooms stay city-wide with no branch radius control', rassCars === rassCityCars && noSmallCityCarRadius);
+  const noSmallCityScopeToggle = !els.app.innerHTML.includes('data-scope="city"') && !els.content.innerHTML.includes('data-scope="city"') && !els.app.innerHTML.includes('<div class="controls">');
+  A.state().tab = 'offices'; A.renderBranch();
+  const smallCityOfficeBranchScope = !els.app.innerHTML.includes('data-scope="branch"') && !els.app.innerHTML.includes('data-scope="city"') && !els.app.innerHTML.includes('id="radius"') && A.itemsFor('offices', '', 'branch').map(x=>x.o.id).sort().join('|') === A.itemsFor('offices', '', 'city').map(x=>x.o.id).sort().join('|');
+  assert('small-city offices show the complete city without redundant scope controls', noSmallCityScopeToggle && smallCityOfficeBranchScope);
   const buraydahCodes = ['602', '249', '273'];
   const buraydahCars = buraydahCodes.map(code => {
     const b = d.branchByCode[code]; if (!b || !A.sameCity(b.city, 'بريدة')) return null;
-    A.selectBranch(code, true); return A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|');
+    A.selectBranch(code, true); A.state().radius = 15; A.state().scope = 'branch';
+    const near = A.itemsFor('cars', '', 'branch');
+    return { ids: near.map(x => x.o.id).sort().join('|'), city: A.itemsFor('cars', '', 'city').length,
+      validDistances: near.every(x => A.sameCity(x.o.city, 'بريدة')), hasCityExpansion: !els.app.innerHTML.includes('data-scope="city"') };
   });
-  assert('small-city showroom list stays identical across Buraidah branches', buraydahCars.every(Boolean) && new Set(buraydahCars).size === 1);
+  assert('Buraidah showrooms show the same complete city inventory across branches', buraydahCars.every(x => x && x.validDistances && x.hasCityExpansion && x.ids.split('|').length === x.city) && new Set(buraydahCars.map(x => x.ids)).size === 1);
+
+  A.selectBranch('189'); A.state().radius = 15; A.state().scope = 'branch'; A.state().tab = 'projects'; A.renderBranch();
+  const makkahBranch = A.itemsFor('projects', '', 'branch'), makkahCity = A.itemsFor('projects', '', 'city');
+  assert('Makkah projects show the full city without radius controls', makkahBranch.length > 0 && makkahBranch.map(x=>x.o.id).sort().join('|') === makkahCity.map(x=>x.o.id).sort().join('|') && makkahBranch.every(x => A.sameCity(x.o.city,'مكة المكرمة')) && !els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-scope="city"'));
+  A.selectBranch('105'); const medinaCars = A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|'); const medinaOffices = A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|');
+  A.selectBranch('168');
+  assert('Medina showrooms and offices remain city-level across branches', medinaCars === A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|') && medinaOffices === A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|'));
+  A.selectBranch('304'); const ahsaCityCars = A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|'); const ahsaProjects = A.itemsFor('projects', '', 'branch').map(x => x.o.id).sort().join('|'); const ahsaOffices = A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|');
+  A.selectBranch('324');
+  assert('Ahsa showrooms, projects and offices stay city-wide across branches', ahsaCityCars === A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|') && ahsaProjects === A.itemsFor('projects', '', 'branch').map(x => x.o.id).sort().join('|') && ahsaOffices === A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|'));
+  A.selectBranch('161'); A.state().tab = 'offices'; A.state().radius = 5; A.state().scope = 'branch'; A.renderBranch();
+  const abha5 = A.itemsFor('offices', '', 'branch'); A.state().radius = 10; const abha10 = A.itemsFor('offices', '', 'branch');
+  assert('Abha remains city-wide without radius or sector controls', abha10.length > 0 && abha10.map(x=>x.o.id).sort().join('|') === abha5.map(x=>x.o.id).sort().join('|') && abha10.every(x => A.sameCity(x.o.city,'أبها')) && !els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-explore='));
+  A.selectBranch('111'); A.state().tab = 'offices'; A.state().radius = 15; A.state().scope = 'branch'; A.renderBranch();
+  const yanbu15 = A.itemsFor('offices', '', 'branch'); A.state().radius = 20; const yanbu20 = A.itemsFor('offices', '', 'branch');
+  assert('Yanbu remains city-wide without radius or sector controls', yanbu20.length > 0 && yanbu20.map(x=>x.o.id).sort().join('|') === yanbu15.map(x=>x.o.id).sort().join('|') && yanbu20.every(x => A.sameCity(x.o.city,'ينبع')) && !els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-explore='));
+  A.selectBranch('302', true); A.state().radius = 15; A.state().scope = 'branch';
+  const dammamProject = A.itemsFor('projects', '', 'branch').find(x => x.o.id === 'P128');
+  const dammamOffice = A.itemsFor('offices', '', 'branch').find(x => x.o.id === 'national-ejar-office-201861');
+  const dammamCar = A.itemsFor('cars', '', 'branch').find(x => x.o.id === 'national-car-c80e0cb5068ed3');
+  const dammamSihaatProject = A.itemsFor('projects', '', 'branch').find(x => x.o.id === 'P206');
+  const dammamCityProjects = A.itemsFor('projects', '', 'city');
+  A.state().radius = 5;
+  const dammamProjectAtFive = A.itemsFor('projects', '', 'branch').some(x => x.o.id === 'P128');
+  assert('Dammam excludes adjacent-city projects, offices and showrooms at every radius',
+    !dammamProject && !dammamOffice && !dammamCar && !dammamSihaatProject && !dammamProjectAtFive &&
+    dammamCityProjects.length > 0 && dammamCityProjects.every(x=>A.sameCity(x.o.city,'الدمام')) &&
+    ['projects','opps','offices','cars'].every(kind=>A.itemsFor(kind,'','branch').every(x=>A.sameCity(x.o.city,'الدمام'))));
+  A.selectBranch('343', true); A.state().radius = 15; A.state().scope = 'branch'; A.state().tab = 'offices';
+  const hammamOffice = A.itemsFor('offices', '', 'branch').find(x => x.o.id === 'national-google-office-ChIJb4iRjgoANj4RbrlqN2zXyVY');
+  assert('Dammam Badr excludes Umm Al-Hamam offices while preserving them in source data', !hammamOffice && d.offices.some(x=>x.id==='national-google-office-ChIJb4iRjgoANj4RbrlqN2zXyVY' && x.city==='أم الحمام'));
+  const companySource = d.companies.find(x => x.id === 'cp-1046304230');
+  A.selectBranch('243');
+  const companyCard = A.card('companies', companySource, null, true, false, {});
+  assert('verified developer contact source appears on company cards', companySource.phones.includes('920004077') && companySource.phoneSource === 'https://darwaemaar.com/contact/' && companySource.kind === 'تطوير وبيع مباشر' && companyCard.includes('مصدر رقم التواصل') && companyCard.includes('darwaemaar.com/contact'));
+  const sourcedDevelopers = ['cp-f6aebb8ded', 'cp-48cf823418', 'cp-4aeeb21c92'].map(id => d.companies.find(x => x.id === id));
+  assert('newly verified developer phone sources and types are retained', sourcedDevelopers.every(x => x && x.phones.length && x.phoneSource && x.kind === 'تطوير وبيع مباشر'));
+  const nhcProject = d.projects.find(x => x.id === 'P585');
+  const nhcCardMarkup = A.card('projects', nhcProject, null, true, false, {});
+  const nhcDetailId = (nhcCardMarkup.match(/data-detail="([^"]+)/) || [])[1];
+  A.openDetail(nhcDetailId);
+  assert('official NHC project contact is labeled as developer contact with its source', nhcProject.phones.includes('920033499') && nhcProject.phoneLevel === 'dev' && nhcProject.phoneSource === 'https://www.nhc.sa/contact/' && els.detail.innerHTML.includes('رقم المطور') && els.detail.innerHTML.includes('nhc.sa/contact'));
+  const akariaProject = d.projects.find(x => x.id === 'P386');
+  assert('official Al Akaria project contact is labeled as developer contact', akariaProject.phones.includes('920003938') && akariaProject.phoneLevel === 'dev' && akariaProject.phoneSource === 'https://www.al-akaria.com/contact/');
+  const etqaan = d.offices.find(x => x.id === 'national-ejar-office-202414');
+  A.selectBranch('301');
+  const officeCard = A.card('offices', etqaan, null, true, false, {});
+  assert('verified Khobar office phone and source appear on the office card', etqaan.phones.includes('0138949444') && etqaan.phoneSource === 'https://etqaan.com.sa/' && officeCard.includes('مصدر رقم التواصل') && officeCard.includes('etqaan.com.sa'));
+  const closedOffice = d.offices.find(x => x.id === 'national-ejar-office-202402');
+  A.selectBranch('403', true); A.state().tab = 'offices'; A.state().scope = 'city';
+  assert('permanently closed office remains in source data but is excluded from active results', closedOffice && closedOffice.activityReviewStatus === 'closed_permanently' && !A.itemsFor('offices', '', 'city').some(x => x.o.id === closedOffice.id));
+  const unverifiedEjarOffice = d.offices.find(x => x.id === 'national-ejar-office-195881');
+  assert('Ejar placeholder phone is suppressed instead of publishing an unverified directory number', !!unverifiedEjarOffice && unverifiedEjarOffice.phoneVerificationStatus === 'unverified' && unverifiedEjarOffice.phones.length === 0 && !unverifiedEjarOffice.phoneSource);
+  const eliteMakkah = d.cars.find(x => x.id === 'entity-66efa1d00757');
+  const carCard = A.card('cars', eliteMakkah, null, true, false, {});
+  assert('Makkah showroom phone matches its address and exposes the published listing source', eliteMakkah.phones.includes('0555555112') && carCard.includes('مصدر رقم التواصل') && carCard.includes('bizmideast.com'));
+
+  const aiProjects = ['P001','P002','P003','P004','P005','P006','P007','P009','P010','P011'].map(id => d.projects.find(x => x.id === id));
+  const aiProjectCards = aiProjects.map(x => x && A.card('projects', x, null, true, false, {}));
+  assert('Ten AI-generated project images are unique and displayed without image-description text', aiProjects.every((x,i) => x && x.img.startsWith('data:image/webp;base64,') && x.imageType.includes('مولّدة بالذكاء الاصطناعي') && !aiProjectCards[i].includes('صورة مفاهيمية مولّدة بالذكاء الاصطناعي') && !aiProjectCards[i].includes('صورة توضيحية') && d.projects.filter(y => y.img === x.img).length === 1) && new Set(aiProjects.map(x=>x.img)).size===10);
+  const nhcIllustrations = ['P013','P585'].map(id => d.projects.find(x => x.id === id));
+  const nhcIllustrationCard = nhcIllustrations[0] && A.card('projects', nhcIllustrations[0], null, true, false, {});
+  const nhcIllustrationDetailId = nhcIllustrationCard && (nhcIllustrationCard.match(/data-detail="([^\"]+)/) || [])[1];
+  if (nhcIllustrationDetailId) A.openDetail(nhcIllustrationDetailId);
+  assert('Modern NHC images have source links and no visible image-description text', nhcIllustrations.every(x => x && x.img.startsWith('https://ruh-s3.bluvalt.com/') && x.imageSourceUrl === x.page && x.page.includes('nhc.sa')) && !nhcIllustrationCard.includes('صورة من صفحة NHC الرسمية') && nhcIllustrationDetailId && els.detail.innerHTML.includes('47490'));
+  const curatedProjectImages = ['P013','P369','P394','P395','P425','P426','P446','P460','P474','P490','P546','P585'].map(id => d.projects.find(x => x.id === id));
+  assert('Twelve decorative project images load from developer/company pages with distinct image URLs', curatedProjectImages.every(x => x && x.img && x.imageSourceUrl && /^https:\/\//.test(x.img) && /^https:\/\//.test(x.imageSourceUrl)) && new Set(curatedProjectImages.map(x => x.img)).size === curatedProjectImages.length);
+  const areem = d.projects.find(x => x.id === 'P344');
+  const areemMarkup = areem && A.card('projects', areem, null, true, false, {});
+  const areemDetailId = areemMarkup && (areemMarkup.match(/data-detail="([^"]+)/) || [])[1];
+  if (areemDetailId) A.openDetail(areemDetailId);
+  assert('Areem area preserves the primary NHC statement and exposes its internal official-source discrepancy', !!areem && areem.area.includes('89,905.67') && areem.areaNote.includes('105,827') && areemDetailId && els.detail.innerHTML.includes('تفصيل المساحة') && els.detail.innerHTML.includes('مصدر المساحة') && els.detail.innerHTML.includes('231,637.22'));
+  A.selectBranch('176', true);
+  assert('Jeddah branch without a verified pin opens city data without fake zero-distance scope', A.state().scope === 'city' && !els.app.innerHTML.includes('id="radius"') && els.app.innerHTML.includes('لا تتوفر إحداثيات موثوقة لهذا الفرع'));
+  A.selectBranch('307', true); const rasTanuraDefaultScope = A.state().scope; A.state().tab = 'offices'; A.renderBranch();
+  assert('Ras Tanura missing pin still opens full city offices without invented radius', rasTanuraDefaultScope === 'branch' && !els.app.innerHTML.includes('data-scope="branch"') && !els.app.innerHTML.includes('id="radius"') && A.itemsFor('offices','','branch').map(x=>x.o.id).sort().join('|') === A.itemsFor('offices','','city').map(x=>x.o.id).sort().join('|'));
 
   const failed = Object.entries(tests).filter(([, ok]) => !ok).map(([name]) => name);
   console.log(JSON.stringify({ suite: 'VM UI behavior regression', tests, passed: Object.values(tests).filter(Boolean).length, total: Object.keys(tests).length, failed }, null, 2));
   if (failed.length) process.exitCode = 1;
 })().catch(err => { console.error(err.stack || err); process.exitCode = 1; });
+

@@ -29,7 +29,7 @@ const fetch = async url => {
 };
 const jsFile = path.join(root, 'assets/app.js');
 let source = fs.readFileSync(jsFile, 'utf8').replace('  boot();',
-  "  window.__qa={selectBranch,renderBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,companyKey,radiusApplies,card,data:()=>D,state:()=>S,setScope:(scope,radius)=>{S.scope=scope;if(radius)S.radius=radius;return compute();}}; boot();");
+  "  window.__qa={selectBranch,renderBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,companyKey,radiusApplies,card,phoneLine,cityCompanyRecords,data:()=>D,state:()=>S,setScope:(scope,radius)=>{S.scope=scope;if(radius)S.radius=radius;return compute();}}; boot();");
 vm.runInNewContext(source, {document,window,location,history:{replaceState(){}},localStorage,navigator:{},fetch,setTimeout,clearTimeout,console,URL,Blob,Intl,Date});
 const sleep = ms => new Promise(resolve=>setTimeout(resolve,ms));
 const results=[];
@@ -42,31 +42,32 @@ function check(name, fn) {
   const Q=window.__qa, D=Q.data();
   assert(Q && D.branches.length, 'app did not initialize');
 
-  check('Office radius applies in small cities while showroom records remain city-wide', () => {
+  check('Small-city offices and showrooms remain city-wide for every branch', () => {
     Q.selectBranch('607', true); // الرس: فرع واحد، بإحداثيات موثقة
-    assert.equal(Q.radiusApplies('offices','branch'), true);
+    assert.equal(Q.radiusApplies('offices','branch'), false);
     assert.equal(Q.radiusApplies('cars','branch'), false);
     Q.state().tab='offices'; Q.renderBranch();
-    assert(els.app.innerHTML.includes('id="radius"'), 'office radius selector is absent');
-    Q.state().tab='cars'; Q.renderBranch();
-    assert(!els.app.innerHTML.includes('id="radius"'), 'small-city showrooms must not expose a branch radius');
-    assert.deepEqual(Q.itemsFor('cars','','branch').map(x=>x.o.id).sort(), Q.itemsFor('cars','','city').map(x=>x.o.id).sort(), 'small-city showrooms should be city-wide');
-    return {branch:'607', city:D.branchByCode['607'].city};
+    assert(!els.app.innerHTML.includes('id="radius"'), 'small cities must not expose a branch radius');
+    const officeCity=Q.itemsFor('offices','','city').map(x=>x.o.id).sort();
+    const officeBranch=Q.itemsFor('offices','','branch').map(x=>x.o.id).sort();
+    const carCity=Q.itemsFor('cars','','city').map(x=>x.o.id).sort();
+    const carBranch=Q.itemsFor('cars','','branch').map(x=>x.o.id).sort();
+    assert.deepEqual(officeBranch,officeCity,'small-city offices should be city-wide');
+    assert.deepEqual(carBranch,carCity,'small-city showrooms should be city-wide');
+    return {branch:'607', city:D.branchByCode['607'].city, offices:officeCity.length, cars:carCity.length};
   });
 
-  check('5/10/15/20 km are real filters and city expansion is explicit', () => {
+  check('Branch scope never hides records in non-sector cities', () => {
     Q.selectBranch('607', true);
-    const raw=Q.rawItems('offices');
     const counts=[5,10,15,20].map(r=>{
       Q.setScope('branch',r);
-      const shown=Q.itemsFor('offices');
-      assert(shown.every(x=>x.rankD!=null&&x.rankD<=r), 'office outside selected radius');
-      return shown.length;
+      return {offices:Q.itemsFor('offices').map(x=>x.o.id).sort(),cars:Q.itemsFor('cars').map(x=>x.o.id).sort()};
     });
-    assert(counts.every((n,i)=>i===0||n>=counts[i-1]), 'counts should be non-decreasing');
+    assert(counts.every(x=>JSON.stringify(x.offices)===JSON.stringify(counts[0].offices)), 'office results changed with radius in a city-wide mode');
+    assert(counts.every(x=>JSON.stringify(x.cars)===JSON.stringify(counts[0].cars)), 'car results changed with radius in a city-wide mode');
     Q.setScope('city',20);
-    assert.equal(Q.itemsFor('offices').length, raw.length, 'city scope must explicitly restore full city');
-    return {branch:'607', counts, cityCount:raw.length};
+    assert.deepEqual(Q.itemsFor('offices').map(x=>x.o.id).sort(),counts[0].offices,'city scope must match branch scope outside sector cities');
+    return {branch:'607', offices:counts[0].offices.length, cars:counts[0].cars.length};
   });
 
   check('Central Safa row does not overwrite local Jeddah data and is deduplicated', () => {
@@ -161,15 +162,124 @@ function check(name, fn) {
   });
 
 
-  check('Buraidah showrooms are identical for branches 602, 249 and 273', () => {
+  check('Buraidah showroom results remain complete and identical across branches', () => {
     const lists=['602','249','273'].map(code => {
       const b=D.branchByCode[code]; assert(b&&b.city==='بريدة','unexpected branch/city '+code);
-      Q.selectBranch(code,true); return Q.itemsFor('cars','','branch').map(x=>x.o.id).sort();
+      Q.selectBranch(code,true); Q.setScope('branch',5);
+      const branchCars=Q.itemsFor('cars','','branch'), cityCars=Q.itemsFor('cars','','city');
+      assert.deepEqual(branchCars.map(x=>x.o.id).sort(),cityCars.map(x=>x.o.id).sort(),'Buraidah branch must show the full city inventory for '+code);
+      return {ids:branchCars.map(x=>x.o.id).sort(),city:cityCars.length};
     });
-    assert.deepEqual(lists[1],lists[0]); assert.deepEqual(lists[2],lists[0]);
-    return {codes:['602','249','273'],cars:lists[0].length};
+    assert(new Set(lists.map(x=>x.ids.join('|'))).size===1,'Buraidah branch selection changed the city showroom inventory');
+    return {codes:['602','249','273'],counts:lists.map(x=>x.ids.length)};
   });
 
+  check('Ajdan sales contacts stay attached to the correct phone numbers', () => {
+    const x=D.companies.find(y=>y.id==='cp-95466ce573'); assert(x,'Ajdan company row missing');
+    assert.deepEqual(Array.from(x.phones),['0567600585','0555866799']);
+    assert.deepEqual(Array.from(x.phoneContacts),['عبدالعزيز الراشد','عبدالعزيز الدامغ']);
+    const html=Q.phoneLine(x.phones,'ajdan',x.phoneContacts);
+    assert(html.includes('0567600585')&&html.includes('عبدالعزيز الراشد'));
+    assert(html.includes('0555866799')&&html.includes('عبدالعزيز الدامغ'));
+    return {phones:x.phones,contacts:x.phoneContacts};
+  });
+
+  check('Merged company phones retain the correct named sales contacts', () => {
+    const row=Q.cityCompanyRecords('الرياض').find(x=>Q.companyKey(x.record.n)==='دار واعمار');
+    assert(row,'Dar & Emaar Riyadh record missing');
+    const o=row.record, i=o.phones.indexOf('0540401113');
+    assert(i>=0,'manager phone missing after city merge');
+    assert.equal(o.phoneContacts[i],'عبدالله الجبير','manager name detached from phone after merge');
+    const d=o.phones.indexOf('0552629774');
+    assert(d>=0&&o.phoneContacts[d]==='دلال العنزي','sales representative name detached from phone');
+    return {phones:o.phones,contacts:o.phoneContacts};
+  });
+
+  check('All non-metro branches show complete city inventory across every section', () => {
+    const kinds=['projects','opps','nhc','selfbuild','companies','offices','cars'];
+    const metroCities=new Set(['الرياض','جدة']);
+    const sameCityForAudit=(a,b)=>{const norm=v=>String(v||'').replace(/[أإآ]/g,'ا').replace(/ة/g,'ه').replace(/ى/g,'ي');const key=v=>['الاحساء','الهفوف','المبرز'].includes(norm(v))?'الاحساء':norm(v);return key(a)===key(b);};
+    const cities=[...new Set(D.branches.map(b=>b.city).filter(city=>!metroCities.has(city)))];
+    const failures=[];
+    for(const city of cities){
+      const branches=D.branches.filter(b=>b.city===city);
+      assert(branches.length,'no branch for '+city);
+      Q.selectBranch(branches[0].c,true);
+      const expected=Object.fromEntries(kinds.map(kind=>[
+        kind,Q.itemsFor(kind,'','city').map(x=>x.o.id).sort()
+      ]));
+      for(const b of branches){
+        Q.selectBranch(b.c,true);
+        Q.state().tab='offices';
+        Q.setScope('branch',15);
+        Q.renderBranch();
+        if(els.app.innerHTML.includes('data-scope="city"')) failures.push({city,branch:b.c,error:'city-wide button exposed'});
+        for(const kind of kinds){
+          const actual=Q.itemsFor(kind,'','branch').map(x=>x.o.id).sort();
+          const foreign=Q.itemsFor(kind,'','branch').filter(x=>kind!=='companies' && (!Q.state().branch || (x.o.originCity && !sameCityForAudit(x.o.originCity,Q.state().branch.city))));
+          if(foreign.length) failures.push({city,branch:b.c,kind,error:'neighboring-city source records leaked',ids:foreign.map(x=>x.o.id)});
+          if(JSON.stringify(actual)!==JSON.stringify(expected[kind])) failures.push({
+            city,branch:b.c,kind,expected:expected[kind].length,actual:actual.length
+          });
+        }
+      }
+    }
+    assert.deepEqual(failures,[],'non-metro branches must show all records in their own city');
+    for(const city of metroCities){
+      const b=D.branches.find(x=>x.city===city); assert(b,'missing metro branch '+city);
+      Q.selectBranch(b.c,true); Q.state().tab='offices'; Q.renderBranch();
+      assert(els.app.innerHTML.includes('data-scope="city"'),city+' should retain its city-scope control');
+    }
+    return {cities: cities.length, branches:D.branches.filter(b=>!metroCities.has(b.city)).length, sections:kinds, metroCityControls:[...metroCities]};
+  });
+
+  check('Qadisiyah showroom reps retain their own numbers beside the showroom line', () => {
+    const expected=[
+      ['prior-qadisiyya-30','0536131396','رقم المعرض','0542409897','هيثم'],
+      ['prior-qadisiyya-31','0506973877','رقم المعرض','0537408887','أحمد أبو جبل'],
+      ['prior-qadisiyya-34','0566415653','رقم المعرض','0544772189','أحمد حافظ'],
+      ['prior-qadisiyya-35','0533490871','رقم المعرض','0568234608','السيد الشافعي'],
+      ['prior-qadisiyya-36','0536123588','رقم المعرض','0575359779','هادي'],
+      ['prior-qadisiyya-41','0590838966','رقم المعرض','0506475183','أبو أسامة']
+    ];
+    for(const [id,main,mainOwner,rep,repName] of expected){
+      const x=D.cars.find(row=>row.id===id); assert(x,'missing qadisiyah showroom '+id);
+      assert.deepEqual(Array.from(x.phones),[main,rep],id+' lost or reordered a report number');
+      assert((x.phoneContacts[0]||'').startsWith(mainOwner)&&x.phoneContacts[1]===repName,id+' contact labels detached from phone numbers');
+    }
+    return {showrooms:expected.length, source:'مراكز المبيعات 2026.pdf، الصفحات 17–19'};
+  });
+  check('Sales-center report opportunities have reachable company or project lines', () => {
+    const expected=[
+      ['op-center-riyadh-yaqut-a','الرياض','0543127343'],
+      ['op-center-riyadh-yaqut-14','الرياض','0593700800'],
+      ['op-center-riyadh-makeen-66','الرياض','920033366'],
+      ['op-center-riyadh-makeen-80','الرياض','920033366'],
+      ['op-center-riyadh-makeen-68','الرياض','920033366'],
+      ['op-center-riyadh-makeen-71','الرياض','920033366'],
+      ['op-center-riyadh-refah-57','الرياض','920017431'],
+      ['op-center-buraidah-bastatin-villas','بريدة','0558388064'],
+      ['op-center-buraidah-mughna-58','بريدة','920010224'],
+      ['op-center-buraidah-majalat-73','بريدة','920015171'],
+      ['op-center-buraidah-majalat-74','بريدة','920015171'],
+      ['op-center-buraidah-samaya','بريدة','920015527'],
+      ['op-center-buraidah-hazm-deluxe','بريدة','0533282222'],
+      ['op-center-buraidah-awad-deluxe-residence','بريدة','0533282222'],
+      ['op-center-buraidah-dar-buraidah','بريدة','920015001'],
+      ['op-center-buraidah-safa-86','بريدة','920001912'],
+      ['op-center-jeddah-jeddah-heights','جدة','0563219995'],    ];
+    for(const [id,city,phone] of expected){
+      const x=D.opportunities.find(row=>row.id===id); assert(x,'missing report opportunity '+id);
+      assert.equal(x.city,city,id+' city mismatch');
+      assert((x.phones||[]).includes(phone),id+' contact phone missing');
+      assert((x.maps||x.sales||x.mapsQ),id+' map/search link missing');
+      assert(((x.pageSource||'')+' '+(x.pageEvidence||'')).includes('مراكز المبيعات 2026.pdf'),id+' report source missing');
+    }
+    const live=['op-center-riyadh-aljamee-40','op-center-riyadh-aljamee-45','op-center-riyadh-aljamee-50'];
+    for(const id of live){const x=D.opportunities.find(row=>row.id===id);assert(x&&x.page&&x.maps&&x.phones.includes('920017431'),'official Hima project contact/map missing '+id);}
+    const refah=D.opportunities.find(row=>row.id==='op-center-riyadh-refah-57');assert(refah&&refah.phoneContacts[0]==='تسويق وحجز — همه العقارية','Refah contact attribution wrong');
+    return {reportOpportunities:expected.length,officiallyVerifiedHimaProjects:live.length,source:'مراكز المبيعات 2026.pdf + official Hima pages'};
+  });
   const failures=results.filter(x=>!x.pass);
   console.log(JSON.stringify({root,passed:results.length-failures.length,total:results.length,results},null,2));
   if (failures.length) process.exitCode=1;
