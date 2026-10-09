@@ -929,10 +929,11 @@
       if (devSite && devSite !== o.page) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(devSite) + '">' + ICON.companies + 'موقع المطور</a>';
       if (o.sales) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.sales) + '">' + ICON.map + 'مركز المبيعات</a>';
       if (o.contactUrl) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.contactUrl) + '">' + ICON.phone + 'التواصل</a>';
+      if (o.phoneSource) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.phoneSource) + '">' + ICON.web + 'مصدر رقم التواصل</a>';
     }
     rows = rows.filter(function (r) { return r[1]; });
     dlg.innerHTML = '<div class="d-media"><button class="close-x" data-close aria-label="إغلاق">' + ICON.x + '</button>' +
-      ph(k === 'nhc' ? 'وجهة ' + o.n : o.n, [o.type, o.city].filter(Boolean).join(' · '), k, o) + (displayImage(k, o) ? '<img class="property-image official-image" alt="صورة المشروع" data-src="' + esc(displayImage(k, o)) + '">' : '') + '</div>' +
+      ph(k === 'nhc' ? 'وجهة ' + o.n : o.n, [o.type, o.city].filter(Boolean).join(' · '), k, o) + (displayImage(k, o) ? '<img class="property-image official-image" alt="صورة المشروع" data-src="' + esc(displayImage(k, o)) + '">' : '') + (o.imageType ? '<p class="image-note" style="margin:8px 12px;color:var(--ink-2)">' + esc(o.imageType) + '</p>' : '') + '</div>' +
       '<div class="d-body"><h2>' + esc(o.n) + '</h2>' + (k === 'projects' || k === 'opps' ? priceLine(o) : '') +
       (o.desc ? '<p style="margin:0;color:var(--ink-2)">' + esc(o.desc) + '</p>' : '') +
       '<dl class="kv">' + rows.map(function (r) { return '<dt>' + esc(r[0]) + '</dt><dd>' + esc(r[1]) + '</dd>'; }).join('') + '</dl>' +
