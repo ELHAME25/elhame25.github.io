@@ -246,6 +246,35 @@ function check(name, fn) {
     }
     return {showrooms:expected.length, source:'مراكز المبيعات 2026.pdf، الصفحات 17–19'};
   });
+  check('Sales-center report opportunities have reachable company or project lines', () => {
+    const expected=[
+      ['op-center-riyadh-yaqut-a','الرياض','0543127343']
+      ['op-center-riyadh-yaqut-14','الرياض','0593700800']
+      ['op-center-riyadh-makeen-66','الرياض','920033366']
+      ['op-center-riyadh-makeen-80','الرياض','920033366']
+      ['op-center-riyadh-makeen-68','الرياض','920033366']
+      ['op-center-riyadh-makeen-71','الرياض','920033366']
+      ['op-center-riyadh-refah-57','الرياض','920017431']
+      ['op-center-buraidah-bastatin-villas','بريدة','0558388064']
+      ['op-center-buraidah-mughna-58','بريدة','920010224']
+      ['op-center-buraidah-majalat-73','بريدة','920015171']
+      ['op-center-buraidah-majalat-74','بريدة','920015171']
+      ['op-center-buraidah-samaya','بريدة','920015527']
+      ['op-center-buraidah-hazm-deluxe','بريدة','0533282222']
+      ['op-center-buraidah-awad-deluxe-residence','بريدة','0533282222']
+      ['op-center-buraidah-dar-buraidah','بريدة','920015001']
+      ['op-center-buraidah-safa-86','بريدة','920001912']
+      ['op-center-jeddah-jeddah-heights','جدة','0563219995']
+    ];
+    for(const [id,city,phone] of expected){
+      const x=D.opportunities.find(row=>row.id===id); assert(x,'missing report opportunity '+id);
+      assert.equal(x.city,city,id+' city mismatch');
+      assert((x.phones||[]).includes(phone),id+' contact phone missing');
+      assert((x.maps||x.sales||x.mapsQ),id+' map/search link missing');
+      assert((x.pageEvidence||'').includes('مراكز المبيعات 2026.pdf'),id+' report source missing');
+    }
+    return {opportunities:expected.length,source:'مراكز المبيعات 2026.pdf'};
+  });
   const failures=results.filter(x=>!x.pass);
   console.log(JSON.stringify({root,passed:results.length-failures.length,total:results.length,results},null,2));
   if (failures.length) process.exitCode=1;
