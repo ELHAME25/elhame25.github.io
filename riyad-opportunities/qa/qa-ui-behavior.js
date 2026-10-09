@@ -235,16 +235,25 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const northCars = A.itemsFor('cars', 'شمال', 'sector');
   const northMapped = northCars.length > 0 && northCars.every(x => x.o.zone === 'qadisiyah');
   A.state().explore = 'شرق'; A.state().scope = 'sector'; A.state().tab = 'projects'; A.renderBranch();
-  const eastNorthActive = els.app.innerHTML.includes('data-explore="شرق" aria-pressed="true"') && els.app.innerHTML.includes('data-explore="شمال" aria-pressed="true"');
-  const eastNorthProjects = A.itemsFor('projects', 'شرق', 'sector');
-  const eastNorthUnion = new Set(A.itemsFor('projects', 'شرق', 'sector').concat(A.itemsFor('projects', 'شمال', 'sector')).map(x => x.o.id || x.o.n));
-  const eastNorthMerged = eastNorthProjects.length === eastNorthUnion.size;
+  const eastOnlyActive = els.app.innerHTML.includes('data-explore="شرق" aria-pressed="true"') && els.app.innerHTML.includes('data-explore="شمال" aria-pressed="false"');
+  const eastProjects = A.itemsFor('projects', 'شرق', 'sector');
+  const eastSectorOnly = eastProjects.every(x => {
+    const sectors = x.o.sectors && x.o.sectors.length ? x.o.sectors : (x.o.sec ? [x.o.sec] : []);
+    return sectors.includes('شرق');
+  });
+  A.state().explore = 'شمال'; A.renderBranch();
+  const northOnlyActive = els.app.innerHTML.includes('data-explore="شمال" aria-pressed="true"') && els.app.innerHTML.includes('data-explore="شرق" aria-pressed="false"');
+  const northProjects = A.itemsFor('projects', 'شمال', 'sector');
+  const northSectorOnly = northProjects.every(x => {
+    const sectors = x.o.sectors && x.o.sectors.length ? x.o.sectors : (x.o.sec ? [x.o.sec] : []);
+    return sectors.includes('شمال');
+  });
   A.state().explore = 'وسط';
   const nhcCity = A.itemsFor('nhc', '', 'city').map(x => x.o.id).sort().join('|');
   const nhcCenter = A.itemsFor('nhc', 'وسط', 'sector').map(x => x.o.id).sort().join('|');
   assert('Riyadh central shows Shifa first and both validated showroom groups', centerHasBothGroups);
   assert('Riyadh west routes showrooms to Shifa and north to Qadisiyah', westMapped && northMapped);
-  assert('Riyadh East activates North and combines both project sectors', eastNorthActive && eastNorthMerged);
+  assert('Riyadh East and North are independently selected and filtered', eastOnlyActive && northOnlyActive && eastSectorOnly && northSectorOnly && eastProjects.length > 0 && northProjects.length > 0);
   assert('NHC destinations remain city-wide when a sector is selected', nhcCity === nhcCenter);
   A.state().tab = 'cars'; A.renderBranch();
   const centralControls = els.content.innerHTML.includes('data-car-area="shifa" aria-pressed="true"') &&
