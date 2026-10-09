@@ -273,7 +273,7 @@ function check(name, fn) {
       assert.equal(x.city,city,id+' city mismatch');
       assert((x.phones||[]).includes(phone),id+' contact phone missing');
       assert((x.maps||x.sales||x.mapsQ),id+' map/search link missing');
-      assert((x.pageEvidence||'').includes('مراكز المبيعات 2026.pdf'),id+' report source missing');
+      assert(((x.pageSource||'')+' '+(x.pageEvidence||'')).includes('مراكز المبيعات 2026.pdf'),id+' report source missing');
     }
     const live=['op-center-riyadh-aljamee-40','op-center-riyadh-aljamee-45','op-center-riyadh-aljamee-50'];
     for(const id of live){const x=D.opportunities.find(row=>row.id===id);assert(x&&x.page&&x.maps&&x.phones.includes('920017431'),'official Hima project contact/map missing '+id);}
