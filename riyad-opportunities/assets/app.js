@@ -385,7 +385,7 @@
   var CITY_LEVEL = { nhc: 1, selfbuild: 1 };   // الوجهات والمخططات تخدم المدينة كلها
   var BRANCH_LOCAL = { offices: 1 };
   var LARGE_CITY_BRANCH_SCOPE = ['مكة المكرمة', 'الخبر', 'القطيف', 'الجبيل', 'المدينة المنورة', 'الأحساء', 'بريدة', 'الطائف', 'تبوك', 'حائل', 'خميس مشيط', 'جازان', 'أبها', 'ينبع'];
-  var DAMMAM_NEIGHBOR_CITIES = ['الخبر', 'الظهران', 'القطيف', 'الجبيل'];
+  var DAMMAM_NEIGHBOR_CITIES = ['الخبر', 'الظهران', 'القطيف', 'الجبيل', 'سيهات', 'أم الحمام'];
   function easternNeighborCity(city) { return DAMMAM_NEIGHBOR_CITIES.some(function (name) { return sameCity(name, city); }); }
   function isDammamBranch() { return !!S.branch && sameCity(S.branch.city, 'الدمام'); }
   function localRadiusCity(city) { return LARGE_CITY_BRANCH_SCOPE.some(function (name) { return sameCity(name, city); }); }
@@ -525,9 +525,14 @@
     }
     return (D[kind] || []).filter(function (o) {
       var sameBranchCity = sameCity(o.city, b.city);
-      var easternCrossCity = scope === 'branch' && !CITY_LEVEL[kind] && isDammamBranch() && easternNeighborCity(o.city);
+      var sourceCity = o.regionalListingOf ? (o.originCity || o.city) : o.city;
+      var easternCrossCity = scope === 'branch' && !CITY_LEVEL[kind] && isDammamBranch() && easternNeighborCity(sourceCity);
       if (!sameBranchCity && !easternCrossCity) return false;
+      // Keep the canonical showroom row for cross-city Eastern results; neighboring-city clones
+      // share the same map pin and number and would otherwise be counted more than once.
+      if (easternCrossCity && kind === 'cars' && o.regionalListingOf) return false;
       if (kind === 'cars' && requiresReview(o.activityReviewStatus)) return false;
+      if (kind === 'offices' && o.activityReviewStatus === 'closed_permanently') return false;
       if (kind === 'selfbuild' && requiresReview(o.availabilityStatus)) return false;
       if (kind === 'cars' && sameCity(b.city, 'الرياض')) {
         var selectedSector = S.scope === 'sector' ? S.explore : '';
