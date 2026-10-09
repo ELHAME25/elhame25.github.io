@@ -139,6 +139,10 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     return A.state().q[k] === '__qa_no_such_record__' && els.content.innerHTML.includes('لا نتائج مطابقة');
   });
   assert(`search works in each of ${searchable.length} sections using a city with data`, searchResults.every(Boolean));
+  A.selectBranch('243', true); A.state().scope = 'branch'; A.state().tab = 'projects'; A.state().q.projects = ''; A.renderBranch();
+  const branchCounter = els.content.innerHTML.includes('162 مشروعًا لنطاق الفرع: 1 بإحداثيات، 3 بمسافة تقريبية، 158 موقع غير محدد');
+  els['q-sec'].value = '__qa_no_such_record__'; els['q-sec'].dispatch('input');
+  assert('Riyadh branch project count splits exact, approximate and unknown locations and follows search', branchCounter && els.content.innerHTML.includes('0 مشروعًا لنطاق الفرع: 0 بإحداثيات، 0 بمسافة تقريبية، 0 موقع غير محدد') && els.content.innerHTML.includes('لا نتائج مطابقة'));
 
   // Open details from the card's delegated click, close with its close control, and open by Enter.
   A.state().q = {}; A.state().scope = 'city'; A.state().tab = 'projects'; A.renderBranch();
