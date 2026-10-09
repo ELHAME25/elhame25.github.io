@@ -860,7 +860,7 @@
     if (/غرف\s+فأكثر$/.test(text)) return text;
     return text.replace(/\s*غرف\s*$/,'').trim() + ' غرف';
   }
-  function priceLine(o) { return o.price ? '<div class="price">تبدأ من ' + sar(o.price) + '</div>' : '<div class="price na">السعر: غير معلن</div>'; }
+  function priceLine(o) { return o.price ? '<div class="price">تبدأ من ' + sar(o.price) + (o.priceBasis ? ' (' + esc(o.priceBasis) + ')' : '') + '</div>' : '<div class="price na">السعر: غير معلن</div>'; }
   function phoneLine(phones, id) {
     if (!phones || !phones.length) return '';
     if (phones.length === 1) return '<div class="phone"><span class="num">' + esc(phones[0]) + '</span></div>';
