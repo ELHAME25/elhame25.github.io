@@ -234,7 +234,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   assert('central showroom controls show both groups active and All Riyadh inactive', centralControls);
 
 
-  // Non-metro cities keep showroom inventory at city level across branch/radius choices.
+  // Small-city showrooms remain city-level; large regional cities use the selected branch radius.
   A.selectBranch('607', true); A.state().tab = 'cars'; A.state().scope = 'branch'; A.renderBranch();
   const rassCars = A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|');
   const rassCityCars = A.itemsFor('cars', '', 'city').map(x => x.o.id).sort().join('|');
@@ -247,9 +247,12 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const buraydahCodes = ['602', '249', '273'];
   const buraydahCars = buraydahCodes.map(code => {
     const b = d.branchByCode[code]; if (!b || !A.sameCity(b.city, 'بريدة')) return null;
-    A.selectBranch(code, true); return A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|');
+    A.selectBranch(code, true); A.state().radius = 15; A.state().scope = 'branch';
+    const near = A.itemsFor('cars', '', 'branch');
+    return { ids: near.map(x => x.o.id).sort().join('|'), city: A.itemsFor('cars', '', 'city').length,
+      validDistances: near.every(x => x.rankD == null || x.rankD <= 15), hasCityExpansion: els.app.innerHTML.includes('كل بريدة') };
   });
-  assert('small-city showroom list stays identical across Buraidah branches', buraydahCars.every(Boolean) && new Set(buraydahCars).size === 1);
+  assert('large-city Buraidah showrooms follow branch radius with a city expansion', buraydahCars.every(x => x && x.validDistances && x.hasCityExpansion && x.ids.split('|').length <= x.city) && new Set(buraydahCars.map(x => x.ids)).size > 1);
 
   A.selectBranch('189'); A.state().radius = 15; A.state().scope = 'branch'; A.state().tab = 'projects'; A.renderBranch();
   const makkahBranch = A.itemsFor('projects', '', 'branch'), makkahCity = A.itemsFor('projects', '', 'city');
