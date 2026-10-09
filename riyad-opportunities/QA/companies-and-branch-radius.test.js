@@ -202,6 +202,8 @@ function check(name, fn) {
     const failures=[];
     for(const city of cities){
       const branches=D.branches.filter(b=>b.city===city);
+      assert(branches.length,'no branch for '+city);
+      Q.selectBranch(branches[0].c,true);
       const expected=Object.fromEntries(kinds.map(kind=>[
         kind,Q.itemsFor(kind,'','city').map(x=>x.o.id).sort()
       ]));
