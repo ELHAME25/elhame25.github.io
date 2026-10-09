@@ -302,7 +302,7 @@
   function selectBranch(code, fromBoot, origin) {
     var b = D.branchByCode[code]; if (!b) return;
     // تصفير كامل: لا يبقى أي اختيار أو نتيجة من الفرع السابق
-    S = fresh(); S.branch = b; S.scope = (b.lat == null || b.lon == null) ? 'city' : 'branch'; S.origin = origin || null;
+    S = fresh(); S.branch = b; S.scope = (b.lat == null || b.lon == null) && sectorCity(b.city) ? 'city' : 'branch'; S.origin = origin || null;
     S.nearestBranchDistance = origin ? km(origin.lat, origin.lon, b.lat, b.lon) : null;
     store('rog.branch', b.c);
     try { if (location.hash !== '#b' + b.c) location.hash = 'b' + b.c; } catch (e) { /* ignore */ }
@@ -528,6 +528,7 @@
       var sourceCity = o.regionalListingOf ? (o.originCity || o.city) : o.city;
       var easternCrossCity = scope === 'branch' && !CITY_LEVEL[kind] && isDammamBranch() && easternNeighborCity(sourceCity);
       if (!sameBranchCity && !easternCrossCity) return false;
+      if (easternCrossCity && o.lat == null && o.lon == null && links[o.id] == null && !(Number(o.branchRoadDistancesKm && o.branchRoadDistancesKm[String(b.c)]) > 0)) return false;
       // Keep the canonical showroom row for cross-city Eastern results; neighboring-city clones
       // share the same map pin and number and would otherwise be counted more than once.
       if (easternCrossCity && kind === 'cars' && o.regionalListingOf) return false;
