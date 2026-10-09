@@ -80,6 +80,15 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const lamarya = d.projects.find(x => x.id === 'P572');
   const munsiyah = d.projects.find(x => x.id === 'P625');
   assert('verified areas and project status are exposed without conflating sources', !!areemNHC && areemNHC.area === '89,905.67 م² (المساحة المنشورة لدى NHC)' && !!areemSumou && areemSumou.area.startsWith('231,637.22 م²') && !!lamarya && lamarya.status.includes('تم البيع') && lamarya.phones.includes('0556388388') && !!munsiyah && !munsiyah.loc && fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8').includes("['المساحة', o.area]"));
+  A.selectBranch('189'); A.state().radius = 15; A.state().scope = 'branch'; A.state().tab = 'projects'; A.renderBranch();
+  const makkahBranch = A.itemsFor('projects', '', 'branch'), makkahCity = A.itemsFor('projects', '', 'city');
+  assert('Makkah projects scope to the selected branch and offer explicit city expansion', makkahBranch.length < makkahCity.length && makkahBranch.every(x => x.rankD == null || x.rankD <= 15) && els.app.innerHTML.includes('نطاق الفرع') && els.app.innerHTML.includes('كل مكة المكرمة'));
+  A.selectBranch('105'); const medinaCars = A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|'); const medinaOffices = A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|');
+  A.selectBranch('168');
+  assert('Medina showrooms and offices remain city-level across branches', medinaCars === A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|') && medinaOffices === A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|'));
+  A.selectBranch('304'); const ahsaCityCars = A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|'); const ahsaProjects = A.itemsFor('projects', '', 'branch').map(x => x.o.id).sort().join('|'); const ahsaOffices = A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|');
+  A.selectBranch('324');
+  assert('Ahsa showrooms and projects are city-level while offices follow the branch', ahsaCityCars === A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|') && ahsaProjects === A.itemsFor('projects', '', 'branch').map(x => x.o.id).sort().join('|') && ahsaOffices !== A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|'));
 
   // Start picker order, immediate greeting, code-only lookup and explicit Go action.
   assert('picker orders employee, code, city and Go', els.app.innerHTML.indexOf('for="q-emp"') < els.app.innerHTML.indexOf('for="q-branch"') && els.app.innerHTML.indexOf('for="q-branch"') < els.app.innerHTML.indexOf('for="q-city"') && els.app.innerHTML.includes('id="go-branch"'));
