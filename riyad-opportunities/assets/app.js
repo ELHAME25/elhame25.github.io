@@ -815,8 +815,7 @@
     return PROPERTY_ILLUSTRATIONS[hash % PROPERTY_ILLUSTRATIONS.length];
   }
   function ph(title, sub, kind, o) {
-    var caption = o && o.imageType ? o.imageType : 'صورة توضيحية';
-    return '<img class="property-image" loading="lazy" decoding="async" alt="' + esc(caption) + '"' + (o && o.img ? '' : ' data-generic="1"') + ' data-src="' + esc(o && o.img || imageFallback(kind, o)) + '"><span class="image-caption">' + esc(caption) + '</span>';
+    return '<img class="property-image" loading="lazy" decoding="async" alt="' + esc(title || 'صورة') + '"' + (o && o.img ? '' : ' data-generic="1"') + ' data-src="' + esc(o && o.img || imageFallback(kind, o)) + '">';
   }
   function displayImage(kind, o) {
     var url = String(o && o.img || ''), id = String(o && o.id || ''), decoded = url;
@@ -964,7 +963,7 @@
     }
     rows = rows.filter(function (r) { return r[1]; });
     dlg.innerHTML = '<div class="d-media"><button class="close-x" data-close aria-label="إغلاق">' + ICON.x + '</button>' +
-      ph(k === 'nhc' ? 'وجهة ' + o.n : o.n, [o.type, o.city].filter(Boolean).join(' · '), k, o) + (displayImage(k, o) ? '<img class="property-image official-image" alt="صورة المشروع" data-src="' + esc(displayImage(k, o)) + '">' : '') + (o.imageType ? '<p class="image-note" style="margin:8px 12px;color:var(--ink-2)">' + esc(o.imageType) + '</p>' : '') + '</div>' +
+      ph(k === 'nhc' ? 'وجهة ' + o.n : o.n, [o.type, o.city].filter(Boolean).join(' · '), k, o) + (displayImage(k, o) ? '<img class="property-image official-image" alt="' + esc(o.n || 'صورة') + '" data-src="' + esc(displayImage(k, o)) + '">' : '') + '</div>' +
       '<div class="d-body"><h2>' + esc(o.n) + '</h2>' + (k === 'projects' || k === 'opps' ? priceLine(o) : '') +
       (o.desc ? '<p style="margin:0;color:var(--ink-2)">' + esc(o.desc) + '</p>' : '') +
       '<dl class="kv">' + rows.map(function (r) { return '<dt>' + esc(r[0]) + '</dt><dd>' + esc(r[1]) + '</dd>'; }).join('') + '</dl>' +
