@@ -273,7 +273,10 @@ function check(name, fn) {
       assert((x.maps||x.sales||x.mapsQ),id+' map/search link missing');
       assert((x.pageEvidence||'').includes('مراكز المبيعات 2026.pdf'),id+' report source missing');
     }
-    return {opportunities:expected.length,source:'مراكز المبيعات 2026.pdf'};
+    const live=['op-center-riyadh-aljamee-40','op-center-riyadh-aljamee-45','op-center-riyadh-aljamee-50'];
+    for(const id of live){const x=D.opportunities.find(row=>row.id===id);assert(x&&x.page&&x.maps&&x.phones.includes('920017431'),'official Hima project contact/map missing '+id);}
+    const refah=D.opportunities.find(row=>row.id==='op-center-riyadh-refah-57');assert(refah&&refah.phoneContacts[0]==='تسويق وحجز — همه العقارية','Refah contact attribution wrong');
+    return {reportOpportunities:expected.length,officiallyVerifiedHimaProjects:live.length,source:'مراكز المبيعات 2026.pdf + official Hima pages'};
   });
   const failures=results.filter(x=>!x.pass);
   console.log(JSON.stringify({root,passed:results.length-failures.length,total:results.length,results},null,2));
