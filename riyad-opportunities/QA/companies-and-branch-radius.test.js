@@ -195,25 +195,37 @@ function check(name, fn) {
     return {phones:o.phones,contacts:o.phoneContacts};
   });
 
-  check('Small cities hide the city-wide button while all sections remain city-wide', () => {
-    const b=D.branchByCode['607']; assert(b&&b.city==='الرس','expected the documented Ras branch');
-    Q.selectBranch('607',true); Q.state().tab='offices'; Q.setScope('branch',15); Q.renderBranch();
-    assert(!els.app.innerHTML.includes('data-scope="city"'),'small cities must not expose a city-wide button');
+  check('All non-metro branches show complete city inventory across every section', () => {
     const kinds=['projects','opps','nhc','selfbuild','companies','offices','cars'];
-    const counts={};
-    for(const kind of kinds){
-      const city=Q.itemsFor(kind,'','city').map(x=>x.o.id).sort();
-      const branch=Q.itemsFor(kind,'','branch').map(x=>x.o.id).sort();
-      assert.deepEqual(branch,city,kind+' must show the full city inventory');
-      counts[kind]=city.length;
+    const metroCities=new Set(['الرياض','جدة']);
+    const cities=[...new Set(D.branches.map(b=>b.city).filter(city=>!metroCities.has(city)))];
+    const failures=[];
+    for(const city of cities){
+      const branches=D.branches.filter(b=>b.city===city);
+      const expected=Object.fromEntries(kinds.map(kind=>[
+        kind,Q.itemsFor(kind,'','city').map(x=>x.o.id).sort()
+      ]));
+      for(const b of branches){
+        Q.selectBranch(b.c,true);
+        Q.state().tab='offices';
+        Q.setScope('branch',15);
+        Q.renderBranch();
+        if(els.app.innerHTML.includes('data-scope="city"')) failures.push({city,branch:b.c,error:'city-wide button exposed'});
+        for(const kind of kinds){
+          const actual=Q.itemsFor(kind,'','branch').map(x=>x.o.id).sort();
+          if(JSON.stringify(actual)!==JSON.stringify(expected[kind])) failures.push({
+            city,branch:b.c,kind,expected:expected[kind].length,actual:actual.length
+          });
+        }
+      }
     }
-    for(const city of ['الرياض','جدة']){
-      const metro=D.branches.find(x=>x.city===city);
-      assert(metro,'missing metro branch '+city); Q.selectBranch(metro.c,true);
-      Q.state().tab='offices'; Q.renderBranch();
+    assert.deepEqual(failures,[],'non-metro branches must show all records in their own city');
+    for(const city of metroCities){
+      const b=D.branches.find(x=>x.city===city); assert(b,'missing metro branch '+city);
+      Q.selectBranch(b.c,true); Q.state().tab='offices'; Q.renderBranch();
       assert(els.app.innerHTML.includes('data-scope="city"'),city+' should retain its city-scope control');
     }
-    return {smallCity:b.city,counts,metroCityControls:['الرياض','جدة']};
+    return {cities: cities.length, branches:D.branches.filter(b=>!metroCities.has(b.city)).length, sections:kinds, metroCityControls:[...metroCities]};
   });
 
   const failures=results.filter(x=>!x.pass);
