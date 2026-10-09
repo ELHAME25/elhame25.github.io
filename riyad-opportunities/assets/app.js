@@ -897,6 +897,16 @@
     return 'حي ' + area;
   }
 
+  function compactLocation(o) {
+    var city = String(o.city || '').trim();
+    var parts = String(o.nb || '').split(/[،,]+/).map(function (part) {
+      return (city ? part.split(city).join('') : part)
+        .replace(/المملكة العربية السعودية|المملكة|السعودية|Saudi Arabia/gi, '')
+        .replace(/[0-9٠-٩۰-۹]+/g, '').replace(/\s+/g, ' ').trim();
+    }).filter(function (part, i, all) { return part && all.indexOf(part) === i; });
+    return parts.concat(city ? [city] : []).join('، ');
+  }
+
   function card(kind, o, d, showCity, unknown, item) {
     var id = reg(kind, o);
     var unknownTag = unknown ? '<span class="tag loc-unknown">الموقع غير محدد</span>' : '';
@@ -940,12 +950,12 @@
         
         (o.contact ? '<span class="tag">المسؤول: ' + esc(o.contact) + '</span>' : '') + unknownTag + '</div>' +
         (o.projects && o.projects.length ? '<p class="sub" style="margin:0">' + esc(o.projects.slice(0, 4).join('، ')) + (o.projects.length > 4 ? '…' : '') + '</p>' : '') +
-        phoneLine(o.phones, id, o.phoneContacts) + (o.phoneSource ? '<p class="sub"><a target="_blank" rel="noopener" href="' + esc(o.phoneSource) + '">مصدر رقم التواصل</a></p>' : '') + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
+        phoneLine(o.phones, id, o.phoneContacts) + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
     }
     return '<article class="lcard"><div class="head"><span class="avatar">' + ICON[kind === 'cars' ? 'cars' : 'offices'] + '</span><div><h3>' + esc(o.n) + '</h3>' +
-      (o.nb ? '<div class="sub">' + esc(o.nb) + '</div>' : '') + '</div></div>' +
+      (compactLocation(o) ? '<div class="sub">' + esc(compactLocation(o)) + '</div>' : '') + '</div></div>' +
       '<div class="tags">' + (o.regionalServiceArea ? '<span class="tag city">نطاق مشترك: ' + esc(o.regionalServiceArea) + '</span>' : (o.originCity && !sameCity(o.originCity, o.city) ? '<span class="tag city">' + esc(o.originCity) + '</span><span class="tag">قريب من ' + esc(o.city) + '</span>' : (showCity ? '<span class="tag city">' + esc(o.city) + '</span>' : ''))) + (o.sec ? '<span class="tag">' + esc(sectorsOf(o).join(' / ')) + '</span>' : '') + distTag(d, o) + unknownTag + '</div>' +
-      phoneLine(o.phones, id, o.phoneContacts) + (o.phoneSource ? '<p class="sub"><a target="_blank" rel="noopener" href="' + esc(o.phoneSource) + '">مصدر رقم التواصل</a></p>' : '') + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
+      phoneLine(o.phones, id, o.phoneContacts) + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
   }
   function bindImages(root) {
     root.querySelectorAll('details.unlocated-panel').forEach(function (panel) {
@@ -991,7 +1001,6 @@
       if (devSite && devSite !== o.page) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(devSite) + '">' + ICON.companies + 'موقع المطور</a>';
       if (o.sales) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.sales) + '">' + ICON.map + 'مركز المبيعات</a>';
       if (o.contactUrl) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.contactUrl) + '">' + ICON.phone + 'التواصل</a>';
-      if (o.phoneSource) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.phoneSource) + '">' + ICON.web + 'مصدر رقم التواصل</a>';
     }
     rows = rows.filter(function (r) { return r[1]; });
     dlg.innerHTML = '<div class="d-media"><button class="close-x" data-close aria-label="إغلاق">' + ICON.x + '</button>' +
