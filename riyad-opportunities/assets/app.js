@@ -384,7 +384,7 @@
   function nearScope() { return !!S.branch && (S.scope === 'branch' || S.scope === 'sector'); }
   var CITY_LEVEL = { nhc: 1, selfbuild: 1 };   // الوجهات والمخططات تخدم المدينة كلها
   var BRANCH_LOCAL = { offices: 1 };
-  var LARGE_CITY_BRANCH_SCOPE = ['مكة المكرمة', 'الخبر', 'القطيف', 'الجبيل', 'المدينة المنورة', 'الأحساء', 'بريدة', 'الطائف', 'تبوك', 'حائل', 'خميس مشيط', 'جازان'];
+  var LARGE_CITY_BRANCH_SCOPE = ['مكة المكرمة', 'الخبر', 'القطيف', 'الجبيل', 'المدينة المنورة', 'الأحساء', 'بريدة', 'الطائف', 'تبوك', 'حائل', 'خميس مشيط', 'جازان', 'أبها', 'ينبع'];
   function localRadiusCity(city) { return LARGE_CITY_BRANCH_SCOPE.some(function (name) { return sameCity(name, city); }); }
   function branchScopedKind(kind) {
     if (!S.branch || !kind || kind === 'nearby' || CITY_LEVEL[kind]) return false;
