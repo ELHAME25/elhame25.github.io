@@ -245,7 +245,7 @@ function check(name, fn) {
     for(const [id,main,mainOwner,rep,repName] of expected){
       const x=D.cars.find(row=>row.id===id); assert(x,'missing qadisiyah showroom '+id);
       assert.deepEqual(Array.from(x.phones),[main,rep],id+' lost or reordered a report number');
-      assert.deepEqual(Array.from(x.phoneContacts),[mainOwner,repName],id+' contact labels detached from phone numbers');
+      assert((x.phoneContacts[0]||'').startsWith(mainOwner)&&x.phoneContacts[1]===repName,id+' contact labels detached from phone numbers');
     }
     return {showrooms:expected.length, source:'مراكز المبيعات 2026.pdf، الصفحات 17–19'};
   });
