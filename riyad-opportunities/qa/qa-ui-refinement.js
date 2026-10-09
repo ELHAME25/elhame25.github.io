@@ -20,7 +20,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  A.selectBranch('243'); const defaultCars=A.itemsFor('cars').length; A.state().tab='cars'; A.renderBranch(); const carsMarkup=els.content.innerHTML; A.state().carArea='shifa'; const westCars=A.itemsFor('cars').length; A.state().carArea='qadisiyah'; const qadisiyahCars=A.itemsFor('cars').length; A.state().scope='city'; A.state().carArea='all'; const cityCars=A.itemsFor('cars','','city').length; A.state().scope='branch'; A.state().carArea='qadisiyah'; A.state().tab='cars'; A.renderBranch(); const noDistanceControl=!els.app.innerHTML.includes('id="radius"'); A.state().tab='nhc'; A.renderBranch(); const nhc=A.itemsFor('nhc'), nearestNHC=nhc.length?nhc[0]:null;
  const tests={
   branchTitle:page.includes('<h1>مركز مبيعات القادسية</h1>')&&!page.includes('دليل الفرص — مركز مبيعات'),
-  showroomGroups:defaultCars===30&&qadisiyahCars===30&&westCars===15&&cityCars===52&&carsMarkup.includes('معارض القادسية')&&carsMarkup.includes('معارض الشفا')&&noDistanceControl,
+  showroomGroups:defaultCars===33&&qadisiyahCars===33&&westCars===15&&cityCars===55&&carsMarkup.includes('معارض القادسية')&&carsMarkup.includes('معارض الشفا')&&noDistanceControl,
   activeShowroomFilterUsesNavyOnly:css.includes('.car-zone-card[aria-pressed="true"] { background: var(--navy);')&&css.includes('.car-zone-card[aria-pressed="true"] strong { color: var(--navy);'),
   destinationRankingAndReason:!!nearestNHC&&nhc.every((x,i)=>!i||nhc[i-1].d==null||x.d==null||nhc[i-1].d<=x.d)&&els.content.innerHTML.includes(nearestNHC.o.n),
   visibleProjectDetails:project.includes('aria-label="تفاصيل مشروع اختبار"')&&project.includes('>التفاصيل</button>'),
