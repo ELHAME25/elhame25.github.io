@@ -667,6 +667,7 @@
       (sc ? SECTORS.map(function (sector) { return '<button data-explore="' + esc(sector) + '" aria-pressed="' + (S.scope === 'sector' && selectedSectors().indexOf(sector) >= 0) + '">' + esc(sector) + ' ' + esc(b.city) + '</button>'; }).join('') : '') +
       (sc ? btn('city', 'كل ' + esc(b.city), S.scope === 'city' || !showBranchScope) : '') + '</div>';
     if (showBranchScope && radiusApplies(S.tab, 'branch') && S.scope === 'branch') ctl += '<label class="explore distance-control">المسافة<select id="radius" aria-label="مسافة الفرص من نقطة المرجع">' + [5, 10, 15, 20].map(function (r) { return '<option value="' + r + '"' + (Number(S.radius) === r ? ' selected' : '') + '>أقرب ' + fmt(r) + ' كم</option>'; }).join('') + '</select></label>';
+    var controlsMarkup = /data-(?:scope|explore)|<select id="radius"/.test(ctl) ? '<div class="controls"><div class="wrap"><div class="ctl-row">' + ctl + '</div></div></div>' : '';
     app.innerHTML =
       '<section class="b-hero"><div class="wrap"><div class="b-top"><div class="b-id">' +
       '<p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : (b.cityOnly ? 'عرض المدينة دون فرع' : 'فرص الفرع')) + '</p>' +
@@ -675,7 +676,7 @@
       (S.origin ? '<span class="pill geo-pill">أقرب فرع محدد الموقع · ' + distTag(S.nearestBranchDistance, {}) + '</span><a class="pill geo-map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=' + esc(b.lat + ',' + b.lon) + '">خريطة الفرع</a>' : '') + '</div></div>' +
       '<button class="btn ghost" data-act="change">' + ICON.swap + 'تغيير الفرع</button></div>' +
       '<div class="stats" role="group" aria-label="ملخص">' + stats + '</div></div></section>' +
-      '<div class="controls"><div class="wrap"><div class="ctl-row">' + ctl + '</div></div></div>' +
+      controlsMarkup +
       '<main class="content wrap" id="content"></main>';
     var radius = document.getElementById('radius');
     if (radius) radius.addEventListener('change', function () { S.radius = Number(radius.value) || 15; S.scope = 'branch'; S.explore = ''; S.carArea = ''; S.q = {}; S.limit = {}; renderBranch(); });
@@ -787,7 +788,11 @@
     if (o && o.id === 'P519' && /(^|\.)rakez\.sa$/i.test(host)) return '';
     return o && o.dsite || '';
   }
-  function roomText(value) { return String(value || '').replace(/\s*غرف\s*$/,'').trim() + ' غرف'; }
+  function roomText(value) {
+    var text = String(value || '').trim();
+    if (/غرف\s+فأكثر$/.test(text)) return text;
+    return text.replace(/\s*غرف\s*$/,'').trim() + ' غرف';
+  }
   function priceLine(o) { return o.price ? '<div class="price">تبدأ من ' + sar(o.price) + '</div>' : '<div class="price na">السعر: غير معلن</div>'; }
   function phoneLine(phones, id) {
     if (!phones || !phones.length) return '';

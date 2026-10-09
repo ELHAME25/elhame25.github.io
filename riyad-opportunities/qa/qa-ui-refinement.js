@@ -11,6 +11,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  await sleep(250); const A=window.__t; A.selectBranch('243'); A.state().tab='projects'; A.renderBranch(); const page=els.app.innerHTML; const searchContent=els.content.innerHTML;
  const css=fs.readFileSync(path.join(root,'assets/app.css'),'utf8');
  const project=A.card('projects',{n:'مشروع اختبار',city:'الرياض',nb:'القادسية',dev:'مطوّر تجريبي',type:'فلل',rooms:'4',price:null,img:'https://example.com/p.jpg'},2,false,false,{});
+ const roomsUpper=A.card('projects',{n:'مشروع اختبار الغرف',city:'الرياض',nb:'القادسية',type:'شقق',rooms:'3 غرف فأكثر'},2,false,false,{});
  const districtProject=A.card('projects',{n:'اختبار حي',city:'سيهات',nb:'حي قرطبة',dev:'',type:'شقق'},null,false,false,{});
  const planProject=A.card('projects',{n:'اختبار مخطط',city:'المدينة المنورة',nb:'مخطط المكيمن',dev:'',type:'شقق'},null,false,false,{});
  const destinationProject=A.card('projects',{n:'اختبار وجهة',city:'المدينة المنورة',nb:'وجهة الغروب، الدعيثة',dev:'',type:'شقق'},null,false,false,{});
@@ -20,12 +21,13 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  const tests={
   branchTitle:page.includes('<h1>مركز مبيعات القادسية</h1>')&&!page.includes('دليل الفرص — مركز مبيعات'),
   showroomGroups:defaultCars===30&&qadisiyahCars===30&&westCars===15&&cityCars===52&&carsMarkup.includes('معارض القادسية')&&carsMarkup.includes('معارض الشفا')&&noDistanceControl,
+  activeShowroomFilterUsesNavyOnly:css.includes('.car-zone-card[aria-pressed="true"] { background: var(--navy);')&&css.includes('.car-zone-card[aria-pressed="true"] strong { color: var(--navy);'),
   destinationRankingAndReason:!!nearestNHC&&nhc.every((x,i)=>!i||nhc[i-1].d==null||x.d==null||nhc[i-1].d<=x.d)&&els.content.innerHTML.includes(nearestNHC.o.n),
   visibleProjectDetails:project.includes('aria-label="تفاصيل مشروع اختبار"')&&project.includes('>التفاصيل</button>'),
   projectLocationLabels:districtProject.includes('حي قرطبة، سيهات')&&!districtProject.includes('حي حي قرطبة')&&planProject.includes('مخطط المكيمن، المدينة المنورة')&&!planProject.includes('حي مخطط')&&destinationProject.includes('وجهة الغروب، الدعيثة، المدينة المنورة')&&fs.readFileSync(path.join(root,'assets/app.js'),'utf8').includes("['الموقع', o.nb]"),
   projectImageLazy:project.includes('loading="lazy"')&&project.includes('decoding="async"'),
   noPriceFallback:project.includes('السعر: غير معلن'),
-  roomsOnProjectCard:project.includes('4 غرف'),
+  roomsOnProjectCard:project.includes('4 غرف')&&roomsUpper.includes('3 غرف فأكثر')&&!roomsUpper.includes('3 غرف فأكثر غرف'),
   searchAlwaysVisible:searchContent.includes('id="q-sec"'),
   expandZeroRadiusToTenKm:zeroRadiusContent.includes('data-radius="10"')&&zeroRadiusContent.includes('كل الرياض'),
   missingBranchPinClearCityFallback:!!missing&&!missingPinPage.includes('نطاق الفرع')&&!missingPinPage.includes('data-scope="city"')&&!missingPinPage.includes('id="radius"')&&!missingPinPage.includes('إحداثيات الفرع غير متاحة'),
