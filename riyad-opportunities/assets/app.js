@@ -856,10 +856,11 @@
     return text.replace(/\s*غرف\s*$/,'').trim() + ' غرف';
   }
   function priceLine(o) { return o.price ? '<div class="price">تبدأ من ' + sar(o.price) + (o.priceBasis ? ' (' + esc(o.priceBasis) + ')' : '') + '</div>' : '<div class="price na">السعر: غير معلن</div>'; }
-  function phoneLine(phones, id) {
+  function phoneLine(phones, id, contacts) {
     if (!phones || !phones.length) return '';
-    if (phones.length === 1) return '<div class="phone"><span class="num">' + esc(phones[0]) + '</span></div>';
-    return '<div class="phone"><select data-phonesel="' + id + '" aria-label="اختر الرقم">' + phones.map(function (p, i) { return '<option value="' + i + '">' + esc(p) + '</option>'; }).join('') + '</select></div>';
+    function label(i) { return contacts && contacts[i] ? ' — ' + esc(contacts[i]) : ''; }
+    if (phones.length === 1) return '<div class="phone"><span class="num">' + esc(phones[0]) + '</span>' + (contacts && contacts[0] ? '<span class="sub">' + label(0) + '</span>' : '') + '</div>';
+    return '<div class="phone"><select data-phonesel="' + id + '" aria-label="اختر الرقم">' + phones.map(function (p, i) { return '<option value="' + i + '">' + esc(p) + label(i) + '</option>'; }).join('') + '</select></div>';
   }
   function actions(id, o, cls) {
     var ph = (o.phones || [])[0] || '', wa = o.wa || '';
@@ -908,7 +909,7 @@
     if (kind === 'selfbuild') {
       return '<article class="lcard"><div class="head"><span class="avatar">' + ICON.selfbuild + '</span><div><h3>' + esc(o.n) + '</h3><div class="sub">' + esc([o.loc, o.city].filter(Boolean).join('، ')) + '</div></div></div>' +
         (d != null ? '<div class="tags">' + distTag(d, o) + '</div>' : '') +
-        (o.details ? '<p class="sub" style="margin:0">' + esc(o.details) + '</p>' : '') + phoneLine(o.phones, id) +
+        (o.details ? '<p class="sub" style="margin:0">' + esc(o.details) + '</p>' : '') + phoneLine(o.phones, id, o.phoneContacts) +
         '<div class="acts">' + actions(id, { phones: o.phones, url: o.url, mapsQ: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(o.n + ' ' + o.city), n: o.n }, 'ibtn') + '</div></article>';
     }
     if (kind === 'nhc') {
@@ -929,12 +930,12 @@
         
         (o.contact ? '<span class="tag">المسؤول: ' + esc(o.contact) + '</span>' : '') + unknownTag + '</div>' +
         (o.projects && o.projects.length ? '<p class="sub" style="margin:0">' + esc(o.projects.slice(0, 4).join('، ')) + (o.projects.length > 4 ? '…' : '') + '</p>' : '') +
-        phoneLine(o.phones, id) + (o.phoneSource ? '<p class="sub"><a target="_blank" rel="noopener" href="' + esc(o.phoneSource) + '">مصدر رقم التواصل</a></p>' : '') + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
+        phoneLine(o.phones, id, o.phoneContacts) + (o.phoneSource ? '<p class="sub"><a target="_blank" rel="noopener" href="' + esc(o.phoneSource) + '">مصدر رقم التواصل</a></p>' : '') + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
     }
     return '<article class="lcard"><div class="head"><span class="avatar">' + ICON[kind === 'cars' ? 'cars' : 'offices'] + '</span><div><h3>' + esc(o.n) + '</h3>' +
       (o.nb ? '<div class="sub">' + esc(o.nb) + '</div>' : '') + '</div></div>' +
       '<div class="tags">' + (o.regionalServiceArea ? '<span class="tag city">نطاق مشترك: ' + esc(o.regionalServiceArea) + '</span>' : (o.originCity && !sameCity(o.originCity, o.city) ? '<span class="tag city">' + esc(o.originCity) + '</span><span class="tag">قريب من ' + esc(o.city) + '</span>' : (showCity ? '<span class="tag city">' + esc(o.city) + '</span>' : ''))) + (o.sec ? '<span class="tag">' + esc(sectorsOf(o).join(' / ')) + '</span>' : '') + distTag(d, o) + unknownTag + '</div>' +
-      phoneLine(o.phones, id) + (o.phoneSource ? '<p class="sub"><a target="_blank" rel="noopener" href="' + esc(o.phoneSource) + '">مصدر رقم التواصل</a></p>' : '') + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
+      phoneLine(o.phones, id, o.phoneContacts) + (o.phoneSource ? '<p class="sub"><a target="_blank" rel="noopener" href="' + esc(o.phoneSource) + '">مصدر رقم التواصل</a></p>' : '') + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
   }
   function bindImages(root) {
     root.querySelectorAll('details.unlocated-panel').forEach(function (panel) {
@@ -988,7 +989,7 @@
       '<div class="d-body"><h2>' + esc(o.n) + '</h2>' + (k === 'projects' || k === 'opps' ? priceLine(o) : '') +
       (o.desc ? '<p style="margin:0;color:var(--ink-2)">' + esc(o.desc) + '</p>' : '') +
       '<dl class="kv">' + rows.map(function (r) { return '<dt>' + esc(r[0]) + '</dt><dd>' + esc(r[1]) + '</dd>'; }).join('') + '</dl>' +
-      phoneLine(o.phones, id) + (links ? '<div class="d-acts">' + links + '</div>' : '') +
+      phoneLine(o.phones, id, o.phoneContacts) + (links ? '<div class="d-acts">' + links + '</div>' : '') +
       '<div class="d-acts">' + actions(id, { phones: o.phones, wa: o.wa, maps: o.maps, mapsQ: o.mapsQ }, 'btn') + '</div>' +
       '</div>';
     bindImages(dlg);

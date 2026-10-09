@@ -29,7 +29,7 @@ const fetch = async url => {
 };
 const jsFile = path.join(root, 'assets/app.js');
 let source = fs.readFileSync(jsFile, 'utf8').replace('  boot();',
-  "  window.__qa={selectBranch,renderBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,companyKey,radiusApplies,card,data:()=>D,state:()=>S,setScope:(scope,radius)=>{S.scope=scope;if(radius)S.radius=radius;return compute();}}; boot();");
+  "  window.__qa={selectBranch,renderBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,companyKey,radiusApplies,card,phoneLine,data:()=>D,state:()=>S,setScope:(scope,radius)=>{S.scope=scope;if(radius)S.radius=radius;return compute();}}; boot();");
 vm.runInNewContext(source, {document,window,location,history:{replaceState(){}},localStorage,navigator:{},fetch,setTimeout,clearTimeout,console,URL,Blob,Intl,Date});
 const sleep = ms => new Promise(resolve=>setTimeout(resolve,ms));
 const results=[];
@@ -172,6 +172,16 @@ function check(name, fn) {
     });
     assert(new Set(lists.map(x=>x.ids.join('|'))).size===1,'Buraidah branch selection changed the city showroom inventory');
     return {codes:['602','249','273'],counts:lists.map(x=>x.ids.length)};
+  });
+
+  check('Ajdan sales contacts stay attached to the correct phone numbers', () => {
+    const x=D.companies.find(y=>y.id==='cp-95466ce573'); assert(x,'Ajdan company row missing');
+    assert.deepEqual(Array.from(x.phones),['0567600585','0555866799']);
+    assert.deepEqual(Array.from(x.phoneContacts),['عبدالعزيز الراشد','عبدالعزيز الدامغ']);
+    const html=Q.phoneLine(x.phones,'ajdan',x.phoneContacts);
+    assert(html.includes('0567600585')&&html.includes('عبدالعزيز الراشد'));
+    assert(html.includes('0555866799')&&html.includes('عبدالعزيز الدامغ'));
+    return {phones:x.phones,contacts:x.phoneContacts};
   });
 
   const failures=results.filter(x=>!x.pass);
