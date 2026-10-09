@@ -228,6 +228,22 @@ function check(name, fn) {
     return {cities: cities.length, branches:D.branches.filter(b=>!metroCities.has(b.city)).length, sections:kinds, metroCityControls:[...metroCities]};
   });
 
+  check('Qadisiyah showroom reps retain their own numbers beside the showroom line', () => {
+    const expected=[
+      ['prior-qadisiyya-30','0536131396','رقم المعرض','0542409897','هيثم'],
+      ['prior-qadisiyya-31','0506973877','رقم المعرض','0537408887','أحمد أبو جبل'],
+      ['prior-qadisiyya-34','0566415653','رقم المعرض','0544772189','أحمد حافظ'],
+      ['prior-qadisiyya-35','0533490871','رقم المعرض','0568234608','السيد الشافعي'],
+      ['prior-qadisiyya-36','0536123588','رقم المعرض','0575359779','هادي'],
+      ['prior-qadisiyya-41','0590838966','رقم المعرض','0506475183','أبو أسامة']
+    ];
+    for(const [id,main,mainOwner,rep,repName] of expected){
+      const x=D.cars.find(row=>row.id===id); assert(x,'missing qadisiyah showroom '+id);
+      assert.deepEqual(Array.from(x.phones),[main,rep],id+' lost or reordered a report number');
+      assert.deepEqual(Array.from(x.phoneContacts),[mainOwner,repName],id+' contact labels detached from phone numbers');
+    }
+    return {showrooms:expected.length, source:'مراكز المبيعات 2026.pdf، الصفحات 17–19'};
+  });
   const failures=results.filter(x=>!x.pass);
   console.log(JSON.stringify({root,passed:results.length-failures.length,total:results.length,results},null,2));
   if (failures.length) process.exitCode=1;
