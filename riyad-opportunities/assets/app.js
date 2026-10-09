@@ -880,7 +880,7 @@
         
         (o.contact ? '<span class="tag">المسؤول: ' + esc(o.contact) + '</span>' : '') + unknownTag + '</div>' +
         (o.projects && o.projects.length ? '<p class="sub" style="margin:0">' + esc(o.projects.slice(0, 4).join('، ')) + (o.projects.length > 4 ? '…' : '') + '</p>' : '') +
-        phoneLine(o.phones, id) + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
+        phoneLine(o.phones, id) + (o.phoneSource ? '<p class="sub"><a target="_blank" rel="noopener" href="' + esc(o.phoneSource) + '">مصدر رقم التواصل</a></p>' : '') + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
     }
     return '<article class="lcard"><div class="head"><span class="avatar">' + ICON[kind === 'cars' ? 'cars' : 'offices'] + '</span><div><h3>' + esc(o.n) + '</h3>' +
       (o.nb ? '<div class="sub">' + esc(o.nb) + '</div>' : '') + '</div></div>' +
