@@ -86,9 +86,8 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   if (renderId) A.openDetail(Number(renderId[1]));
   const renderCaption = !!renderId && els.detail.innerHTML.includes('تصميم معماري رسمي من المطور');
   const sourceCar = d.cars.find(x => x.id === sourcedCars[0]);
-  const sourceCard = A.card('cars', sourceCar, null, true, false, {}), sourceId = sourceCard.match(/data-detail="([0-9]+)"/);
-  if (sourceId) A.openDetail(Number(sourceId[1]));
-  const phoneSourceMarkup = !!sourceId && els.detail.innerHTML.includes('مصدر رقم التواصل') && els.detail.innerHTML.includes('dalilmadina.com');
+  const sourceCard = A.card('cars', sourceCar, null, true, false, {});
+  const phoneSourceMarkup = sourceCard.includes('مصدر رقم التواصل') && sourceCard.includes('dalilmadina.com');
   assert('official render caption appears in project details', renderCaption);
   assert('showroom phone source appears in contact details', phoneSourceMarkup);
   // Start picker order, immediate greeting, code-only lookup and explicit Go action.
