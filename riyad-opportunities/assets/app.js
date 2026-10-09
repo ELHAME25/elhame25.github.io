@@ -385,6 +385,9 @@
   var CITY_LEVEL = { nhc: 1, selfbuild: 1 };   // الوجهات والمخططات تخدم المدينة كلها
   var BRANCH_LOCAL = { offices: 1 };
   var LARGE_CITY_BRANCH_SCOPE = ['مكة المكرمة', 'الخبر', 'القطيف', 'الجبيل', 'المدينة المنورة', 'الأحساء', 'بريدة', 'الطائف', 'تبوك', 'حائل', 'خميس مشيط', 'جازان', 'أبها', 'ينبع'];
+  var DAMMAM_NEIGHBOR_CITIES = ['الخبر', 'الظهران', 'القطيف', 'الجبيل'];
+  function easternNeighborCity(city) { return DAMMAM_NEIGHBOR_CITIES.some(function (name) { return sameCity(name, city); }); }
+  function isDammamBranch() { return !!S.branch && sameCity(S.branch.city, 'الدمام'); }
   function localRadiusCity(city) { return LARGE_CITY_BRANCH_SCOPE.some(function (name) { return sameCity(name, city); }); }
   function branchScopedKind(kind) {
     if (!S.branch || !kind || kind === 'nearby' || CITY_LEVEL[kind]) return false;
@@ -495,19 +498,35 @@
     return area === 'all' ? (current === 'all' || !current) : current === area;
   }
   function requiresReview(value) { return String(value || '').trim().toUpperCase() === 'REVIEW_REQUIRED'; }
-  function rawItems(kind) {
-    var b = S.branch, links = {};
+  function rawItems(kind, scope) {
+    var b = S.branch, links = {}; scope = scope || S.scope;
     if (kind === 'offices') (D.office_links[b.c] || []).forEach(function (l) { links[l[0]] = l[1]; });
-    if (kind === 'companies') return cityCompanyRecords(b.city).map(function (entry) {
+    if (kind === 'companies') {
+      var companyEntries = cityCompanyRecords(b.city);
+      // فروع الدمام تستوعب الشركات من المدن الشرقية المجاورة فقط بوجود دبوس فعلي داخل النطاق.
+      if (scope === 'branch' && isDammamBranch()) DAMMAM_NEIGHBOR_CITIES.forEach(function (city) {
+        (D.companies || []).filter(function (o) {
+          if (!sameCity(o.city, city) || requiresReview(o.commercialAuditStatus) || o.lat == null || o.lon == null) return false;
+          var companyDistance = dist(o), maxRadius = Number(S.radius || 15);
+          return companyDistance != null && companyDistance <= maxRadius;
+        }).forEach(function (o) {
+          companyEntries.push({ record: o, cityCovered: true, cityOnly: false, explicitCityCoverage: false, key: companyKey(o.n) + '|' + cityKey(o.city) });
+        });
+      });
+      return companyEntries.map(function (entry) {
       var o = entry.record, d = entry.cityOnly ? null : dist(o), rankD = d, source = 'coordinates';
       var linkedProjects = companyProjects(o, b);
       var linkedDistances = linkedProjects.map(function (p) { return dist(p); }).filter(function (x) { return x != null; }).sort(function (x, y) { return x - y; });
       if (d == null && linkedDistances.length) { rankD = linkedDistances[0]; source = 'linked-project'; }
       return { o: o, d: d, rankD: rankD, distanceSource: source, linkedProjects: linkedProjects, linkedDistances: linkedDistances,
-        companyKey: entry.key, cityCovered: entry.cityCovered, cityOnly: entry.cityOnly, explicitCityCoverage: entry.explicitCityCoverage };
-    });
+        companyKey: entry.key, cityCovered: entry.cityCovered, cityOnly: entry.cityOnly, explicitCityCoverage: entry.explicitCityCoverage,
+        easternCrossCity: isDammamBranch() && !sameCity(o.city, b.city) };
+      });
+    }
     return (D[kind] || []).filter(function (o) {
-      if (!sameCity(o.city, b.city)) return false;
+      var sameBranchCity = sameCity(o.city, b.city);
+      var easternCrossCity = scope === 'branch' && !CITY_LEVEL[kind] && isDammamBranch() && easternNeighborCity(o.city);
+      if (!sameBranchCity && !easternCrossCity) return false;
       if (kind === 'cars' && requiresReview(o.activityReviewStatus)) return false;
       if (kind === 'selfbuild' && requiresReview(o.availabilityStatus)) return false;
       if (kind === 'cars' && sameCity(b.city, 'الرياض')) {
@@ -524,7 +543,7 @@
       return true;
     }).map(function (o) {
       var d = dist(o), rankD = d, source = 'coordinates';
-      if (kind === 'cars' && o.loc !== 'pt' && o.loc !== 'nb') { d = null; rankD = null; }
+      if ((kind === 'cars' || !sameCity(o.city, b.city)) && o.loc !== 'pt' && o.loc !== 'nb' && !(o.lat != null && o.lon != null)) { d = null; rankD = null; }
       var routeDistance = o.branchRoadDistancesKm && Number(o.branchRoadDistancesKm[String(b.c)]);
       if (isFinite(routeDistance) && routeDistance > 0) { d = routeDistance; rankD = routeDistance; source = 'google-maps-driving'; }
       if (d == null && links[o.id] != null) { d = links[o.id]; rankD = d; source = 'verified-office-link'; }
@@ -537,13 +556,13 @@
     if (companyProjectCache[cacheKey]) return companyProjectCache[cacheKey];
     var names = (o.projects || []).map(norm), developer = devKey(o.n);
     companyProjectCache[cacheKey] = (D.projects || []).concat(D.opps || []).filter(function (p) {
-      return sameCity(p.city, b.city) && ((developer && devKey(p.dev) === developer) || names.indexOf(norm(p.n)) >= 0);
+      return (sameCity(p.city, b.city) || (isDammamBranch() && nearScope() && easternNeighborCity(p.city))) && ((developer && devKey(p.dev) === developer) || names.indexOf(norm(p.n)) >= 0);
     });
     return companyProjectCache[cacheKey];
   }
   function itemsFor(kind, sec, scope) {
     scope = scope || S.scope;
-    var out = rawItems(kind);
+    var out = rawItems(kind, scope);
     // سجلات بلا موقع تبقى ضمن النتائج بلا مسافة؛ النطاق يرشح المواقع المعروفة فقط.
     if (radiusApplies(kind, scope)) {
       var radius = Number(S.radius || 15);
@@ -555,8 +574,9 @@
           var companySector = !!targetSector && sectorsOf(x.o).indexOf(targetSector) >= 0;
           var projectSector = !!targetSector && x.linkedProjects.some(function (p) { return sectorsOf(p).indexOf(targetSector) >= 0; });
           var projectNear = x.linkedDistances.some(function (d) { return d <= radius; });
-          var cityCoverage = x.cityOnly || x.explicitCityCoverage || (!sectorsOf(x.o).length && x.linkedProjects.length > 0);
+          var cityCoverage = !x.easternCrossCity && (x.cityOnly || x.explicitCityCoverage || (!sectorsOf(x.o).length && x.linkedProjects.length > 0));
           var serviceMatch = !officeNear && (cityCoverage || companySector || projectSector || projectNear);
+          if (x.easternCrossCity) serviceMatch = !officeNear && projectNear;
           return Object.assign({}, x, { serviceMatch: serviceMatch, displayD: officeNear ? x.d : null,
             coverageMatchReason: cityCoverage ? 'city-coverage' : companySector ? 'company-sector' : projectSector ? 'project-sector' : projectNear ? 'project-radius' : '' });
         }).filter(function (x) { return x.d == null || x.d <= radius || x.serviceMatch; });
@@ -579,6 +599,8 @@
     }
     // نطاق فرع المدن الكبرى يقتصر على قطاع الفرع؛ لا يخلط مشاريع الشمال أو الوسط بنتائج فرع الشرق.
     if (scope === 'branch' && sectorCity(S.branch.city) && S.branch.sec && (kind === 'projects' || kind === 'opps')) {
+      if (isDammamBranch()) out = out.filter(function (x) { if (easternNeighborCity(x.o.city)) return true; var sectors = sectorsOf(x.o); return !sectors.length || sectors.indexOf(S.branch.sec) >= 0; });
+      else
       out = out.filter(function (x) { var sectors = sectorsOf(x.o); return !sectors.length || sectors.indexOf(S.branch.sec) >= 0; });
     }
     // اختيار القطاع نطاق كامل مستقل؛ لا يطبق عليه نصف قطر الفرع.
@@ -885,7 +907,7 @@
     return '<article class="lcard"><div class="head"><span class="avatar">' + ICON[kind === 'cars' ? 'cars' : 'offices'] + '</span><div><h3>' + esc(o.n) + '</h3>' +
       (o.nb ? '<div class="sub">' + esc(o.nb) + '</div>' : '') + '</div></div>' +
       '<div class="tags">' + (o.regionalServiceArea ? '<span class="tag city">نطاق مشترك: ' + esc(o.regionalServiceArea) + '</span>' : (o.originCity && !sameCity(o.originCity, o.city) ? '<span class="tag city">' + esc(o.originCity) + '</span><span class="tag">قريب من ' + esc(o.city) + '</span>' : (showCity ? '<span class="tag city">' + esc(o.city) + '</span>' : ''))) + (o.sec ? '<span class="tag">' + esc(sectorsOf(o).join(' / ')) + '</span>' : '') + distTag(d, o) + unknownTag + '</div>' +
-      phoneLine(o.phones, id) + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
+      phoneLine(o.phones, id) + (o.phoneSource ? '<p class="sub"><a target="_blank" rel="noopener" href="' + esc(o.phoneSource) + '">مصدر رقم التواصل</a></p>' : '') + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
   }
   function bindImages(root) {
     root.querySelectorAll('details.unlocated-panel').forEach(function (panel) {
