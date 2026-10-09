@@ -197,6 +197,32 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const cityOnlyCars = A.itemsFor('cars', '', 'city');
   assert('cities without branches open their verified showroom list directly', cityOnlyReady && A.state().branch && A.state().branch.cityOnly === true && A.state().branch.city === 'بيش' && A.state().scope === 'city' && cityOnlyCars.length === 3 && !els.app.innerHTML.includes('pill code'));
 
+
+  // Riyadh sector routing must use both valid city showroom groups in Central,
+  // and must preserve NHC's city-wide visibility and a sector-local distance anchor.
+  A.selectBranch('243', true);
+  A.state().scope = 'sector'; A.state().explore = 'وسط'; A.state().carArea = 'all'; A.state().tab = 'cars';
+  const centerCars = A.itemsFor('cars', 'وسط', 'sector');
+  const centerHasBothGroups = centerCars.length > 0 && centerCars[0].o.zone === 'shifa' &&
+    centerCars.some(x => x.o.zone === 'qadisiyah') && centerCars.every(x => x.o.zone === 'shifa' || x.o.zone === 'qadisiyah');
+  A.state().explore = 'غرب';
+  const westCars = A.itemsFor('cars', 'غرب', 'sector');
+  const westMapped = westCars.length > 0 && westCars.every(x => x.o.zone === 'shifa');
+  A.state().explore = 'شمال';
+  const northCars = A.itemsFor('cars', 'شمال', 'sector');
+  const northMapped = northCars.length > 0 && northCars.every(x => x.o.zone === 'qadisiyah');
+  A.state().explore = 'وسط';
+  const nhcCity = A.itemsFor('nhc', '', 'city').map(x => x.o.id).sort().join('|');
+  const nhcCenter = A.itemsFor('nhc', 'وسط', 'sector').map(x => x.o.id).sort().join('|');
+  assert('Riyadh central shows Shifa first and both validated showroom groups', centerHasBothGroups);
+  assert('Riyadh west routes showrooms to Shifa and north to Qadisiyah', westMapped && northMapped);
+  assert('NHC destinations remain city-wide when a sector is selected', nhcCity === nhcCenter);
+  A.state().tab = 'cars'; A.renderBranch();
+  const centralControls = els.content.innerHTML.includes('data-car-area="shifa" aria-pressed="true"') &&
+    els.content.innerHTML.includes('data-car-area="qadisiyah" aria-pressed="true"') &&
+    els.content.innerHTML.includes('data-car-area="all" aria-pressed="false"');
+  assert('central showroom controls show both groups active and All Riyadh inactive', centralControls);
+
   const failed = Object.entries(tests).filter(([, ok]) => !ok).map(([name]) => name);
   console.log(JSON.stringify({ suite: 'VM UI behavior regression', tests, passed: Object.values(tests).filter(Boolean).length, total: Object.keys(tests).length, failed }, null, 2));
   if (failed.length) process.exitCode = 1;

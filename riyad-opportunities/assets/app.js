@@ -169,7 +169,9 @@
           });
         });
       });
-      renderStart();
+      var bootHash = /^#b([0-9A-Za-z]+)$/.exec(location.hash || '');
+      if (bootHash && D.branchByCode[bootHash[1]]) selectBranch(bootHash[1], true);
+      else renderStart();
       renderFooter();
     }).catch(function (e) {
       app.innerHTML = '<div class="loading">تعذّر تحميل البيانات. شغّل الموقع عبر خادم ويب.<br><small>' + esc(e.message) + '</small></div>';
@@ -337,6 +339,22 @@
     var ad = a.rankD === undefined ? a.d : a.rankD, bd = b.rankD === undefined ? b.d : b.rankD;
     if (ad == null && bd == null) return 0; if (ad == null) return 1; if (bd == null) return -1; return ad - bd;
   }
+  function sectorAnchor(city, sec, origin) {
+    var candidates = D.branches.filter(function (b) {
+      return sameCity(b.city, city) && norm(b.sec || '') === norm(sec || '') && b.lat != null && b.lon != null;
+    }).map(function (b) { return { b: b, d: origin ? km(origin.lat, origin.lon, b.lat, b.lon) : null }; });
+    candidates.sort(function (a, b) {
+      if (a.d == null && b.d == null) return String(a.b.c).localeCompare(String(b.b.c));
+      if (a.d == null) return 1; if (b.d == null) return -1; return a.d - b.d;
+    });
+    return candidates.length ? candidates[0].b : null;
+  }
+  function distanceFromBranch(item, branch) {
+    if (!item || !branch) return null;
+    var route = item.branchRoadDistancesKm && Number(item.branchRoadDistancesKm[String(branch.c)]);
+    if (isFinite(route) && route > 0) return route;
+    return km(branch.lat, branch.lon, item.lat, item.lon);
+  }
   function fallbackCompare(a, b, sec) {
     var nb = norm(S.branch && S.branch.nb), an = nb && norm(a.o.nb) === nb, bn = nb && norm(b.o.nb) === nb;
     if (an !== bn) return an ? -1 : 1;
@@ -451,6 +469,15 @@
     return 'all';
   }
   function carAreaOf(o) { return o && (o.zone === 'shifa' || o.zone === 'qadisiyah') ? o.zone : ''; }
+  function carAreaSelected(area) {
+    if (sameCity(S.branch && S.branch.city, 'الرياض') && S.scope === 'sector') {
+      if (S.explore === 'وسط') return area === 'shifa' || area === 'qadisiyah';
+      if (S.explore === 'شرق' || S.explore === 'شمال') return area === 'qadisiyah';
+      if (S.explore === 'غرب' || S.explore === 'جنوب') return area === 'shifa';
+    }
+    var current = S.carArea || (S.scope === 'city' ? '' : defaultCarArea(S.branch));
+    return area === 'all' ? (current === 'all' || !current) : current === area;
+  }
   function requiresReview(value) { return String(value || '').trim().toUpperCase() === 'REVIEW_REQUIRED'; }
   function rawItems(kind) {
     var b = S.branch, links = {};
@@ -468,10 +495,15 @@
       if (kind === 'cars' && requiresReview(o.activityReviewStatus)) return false;
       if (kind === 'selfbuild' && requiresReview(o.availabilityStatus)) return false;
       if (kind === 'cars' && sameCity(b.city, 'الرياض')) {
-        var area = S.carArea || (S.scope === 'city' ? 'all' : defaultCarArea(b));
+        var selectedSector = S.scope === 'sector' ? S.explore : '';
+        var area = selectedSector === 'وسط' ? 'combined' :
+          (selectedSector === 'شرق' || selectedSector === 'شمال' ? 'qadisiyah' :
+          (selectedSector === 'غرب' || selectedSector === 'جنوب' ? 'shifa' :
+          (S.carArea || (S.scope === 'city' ? 'all' : defaultCarArea(b)))));
         var zone = carAreaOf(o);
+        if (area === 'combined') return zone === 'shifa' || zone === 'qadisiyah';
         if (area === 'all') return true;
-        return area === 'all' || zone === area;
+        return zone === area;
       }
       return true;
     }).map(function (o) {
@@ -538,13 +570,32 @@
       var selectedSector = sec || S.explore;
       if (kind === 'companies') {
         out = out.filter(function (x) { return x.cityOnly || x.explicitCityCoverage || sectorsOf(x.o).indexOf(selectedSector) >= 0 || x.linkedProjects.some(function (p) { return sectorsOf(p).indexOf(selectedSector) >= 0; }); });
-      } else if (kind !== 'selfbuild') {
+      } else if (kind !== 'selfbuild' && kind !== 'nhc' && !(kind === 'cars' && sameCity(S.branch.city, 'الرياض'))) {
         out = out.filter(function (x) { return sectorsOf(x.o).indexOf(selectedSector) >= 0; });
+      }
+      var anchor = sectorAnchor(S.branch.city, selectedSector, S.origin || S.branch);
+      if (anchor) {
+        out = out.map(function (x) {
+          var d = distanceFromBranch(x.o, anchor);
+          if (kind === 'cars' && x.o.loc !== 'pt' && x.o.loc !== 'nb') d = null;
+          if (kind === 'companies') {
+            var linked = (x.linkedProjects || []).map(function (p) { return distanceFromBranch(p, anchor); }).filter(function (v) { return v != null; }).sort(function (a, b) { return a - b; });
+            return Object.assign({}, x, { d: x.cityOnly ? null : d, rankD: x.cityOnly ? null : (d == null && linked.length ? linked[0] : d),
+              linkedDistances: linked, distanceSource: d == null && linked.length ? 'linked-project' : 'sector-branch' });
+          }
+          return Object.assign({}, x, { d: d, rankD: d, distanceSource: 'sector-branch' });
+        });
       }
     }
     if (kind === 'projects' || kind === 'opps') {
       out.sort(function (x, y) { return byDist(x, y) || fallbackCompare(x, y, sec) || (!!y.o.img - !!x.o.img) || (!!y.o.price - !!x.o.price) || ((TIER[x.o.tier] || 0) - (TIER[y.o.tier] || 0)) || x.o.n.localeCompare(y.o.n, 'ar'); });
-    } else out.sort(function (x, y) { return byDist(x, y) || fallbackCompare(x, y, sec) || x.o.n.localeCompare(y.o.n, 'ar'); });
+    } else out.sort(function (x, y) {
+      if (kind === 'cars' && sec === 'وسط' && sameCity(S.branch.city, 'الرياض')) {
+        var zx = carAreaOf(x.o) === 'shifa' ? 0 : 1, zy = carAreaOf(y.o) === 'shifa' ? 0 : 1;
+        if (zx !== zy) return zx - zy;
+      }
+      return byDist(x, y) || fallbackCompare(x, y, sec) || x.o.n.localeCompare(y.o.n, 'ar');
+    });
     return out;
   }
   function unlocatedItemsFor(kind) {
@@ -633,9 +684,9 @@
       var shifaCount = (D.cars || []).filter(function (o) { return carAreaOf(o) === 'shifa'; }).length;
       var qadisiyahCount = (D.cars || []).filter(function (o) { return carAreaOf(o) === 'qadisiyah'; }).length;
       head += '<div class="car-zone-cards" role="group" aria-label="معارض الرياض">' +
-      '<button class="car-zone-card" data-car-area="shifa" aria-pressed="' + ((S.carArea || (S.scope === 'city' ? '' : defaultCarArea(S.branch))) === 'shifa') + '"><span>معارض الشفا</span><strong>' + fmt(shifaCount) + '</strong></button>' +
-      '<button class="car-zone-card" data-car-area="qadisiyah" aria-pressed="' + ((S.carArea || (S.scope === 'city' ? '' : defaultCarArea(S.branch))) === 'qadisiyah') + '"><span>معارض القادسية</span><strong>' + fmt(qadisiyahCount) + '</strong></button>' +
-      '<button class="car-zone-card car-zone-all" data-car-area="all" aria-pressed="' + (S.carArea === 'all' || S.scope === 'city' && !S.carArea) + '"><span>كل معارض الرياض</span><strong>' + fmt((D.cityCount.cars || {}).الرياض || 0) + '</strong></button></div>';
+      '<button class="car-zone-card" data-car-area="shifa" aria-pressed="' + carAreaSelected('shifa') + '"><span>معارض الشفا</span><strong>' + fmt(shifaCount) + '</strong></button>' +
+      '<button class="car-zone-card" data-car-area="qadisiyah" aria-pressed="' + carAreaSelected('qadisiyah') + '"><span>معارض القادسية</span><strong>' + fmt(qadisiyahCount) + '</strong></button>' +
+      '<button class="car-zone-card car-zone-all" data-car-area="all" aria-pressed="' + carAreaSelected('all') + '"><span>كل معارض الرياض</span><strong>' + fmt((D.cityCount.cars || {}).الرياض || 0) + '</strong></button></div>';
     }
     var body;
     if (!all.length) body = emptyState(k, c);
@@ -891,12 +942,12 @@
   document.addEventListener('click', function (e) {
     var t = e.target.closest('[data-act],[data-tab],[data-scope],[data-radius],[data-explore],[data-car-area],[data-more],[data-share],[data-vcard],[data-close],[data-call],[data-wa],[data-detail]');
     if (!t) { if (e.target === document.getElementById('detail')) closeDlg(); return; }
-    if (t.hasAttribute('data-act')) { e.preventDefault(); try { localStorage.removeItem('rog.branch'); } catch (x) { /* ignore */ } renderStart(); window.scrollTo(0, 0); return; }
+    if (t.hasAttribute('data-act')) { e.preventDefault(); try { localStorage.removeItem('rog.branch'); } catch (x) { /* ignore */ } history.replaceState(null, '', location.pathname + location.search); renderStart(); window.scrollTo(0, 0); return; }
     if (t.hasAttribute('data-tab')) { S.tab = t.dataset.tab; renderBranch(); var c = document.querySelector('.controls'); if (c && window.scrollY > c.offsetTop) window.scrollTo(0, c.offsetTop); return; }
     if (t.hasAttribute('data-scope')) { S.scope = t.dataset.scope; S.explore = ''; S.carArea = ''; S.q = {}; S.limit = {}; renderBranch(); return; }
     if (t.hasAttribute('data-radius')) { S.radius = Number(t.dataset.radius) || S.radius; S.scope = 'branch'; S.carArea = ''; S.explore = ''; S.q = {}; S.limit = {}; renderBranch(); return; }
     if (t.hasAttribute('data-explore')) { S.explore = t.dataset.explore; S.scope = 'sector'; S.carArea = sameCity(S.branch.city, 'الرياض') ? (['شرق', 'شمال'].indexOf(S.explore) >= 0 ? 'qadisiyah' : (['جنوب', 'غرب'].indexOf(S.explore) >= 0 ? 'shifa' : 'all')) : ''; S.q = {}; S.limit = {}; renderBranch(); return; }
-    if (t.hasAttribute('data-car-area')) { S.carArea = t.dataset.carArea; S.tab = 'cars'; S.q = {}; S.limit = {}; renderBranch(); return; }
+    if (t.hasAttribute('data-car-area')) { S.carArea = t.dataset.carArea; S.scope = 'city'; S.explore = ''; S.tab = 'cars'; S.q = {}; S.limit = {}; renderBranch(); return; }
     if (t.hasAttribute('data-more')) { var k = t.dataset.more; S.limit[k] = (S.limit[k] || CFG.pageSize) + CFG.pageSize; renderSection(); return; }
     if (t.hasAttribute('data-share')) { shareItem(+t.dataset.share, t); return; }
     if (t.hasAttribute('data-vcard')) { vcard(+t.dataset.vcard, t); return; }
@@ -917,6 +968,7 @@
   window.addEventListener('hashchange', function () {
     var m = /^#b([0-9A-Za-z]+)$/.exec(location.hash || '');
     if (m && D.branchByCode && D.branchByCode[m[1]] && (!S.branch || S.branch.c !== m[1])) selectBranch(m[1]);
+    else if (!location.hash && S.branch) renderStart();
   });
 
   boot();
