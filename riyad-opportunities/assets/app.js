@@ -384,10 +384,16 @@
   function nearScope() { return !!S.branch && (S.scope === 'branch' || S.scope === 'sector'); }
   var CITY_LEVEL = { nhc: 1, selfbuild: 1 };   // الوجهات والمخططات تخدم المدينة كلها
   var BRANCH_LOCAL = { offices: 1 };
+  var LARGE_CITY_BRANCH_SCOPE = ['مكة المكرمة', 'الخبر', 'القطيف', 'الجبيل', 'المدينة المنورة', 'الأحساء'];
+  function localRadiusCity(city) { return LARGE_CITY_BRANCH_SCOPE.some(function (name) { return sameCity(name, city); }); }
   function branchScopedKind(kind) {
     if (!S.branch || !kind || kind === 'nearby' || CITY_LEVEL[kind]) return false;
-    return sectorCity(S.branch.city) || !!BRANCH_LOCAL[kind];
+    var city = S.branch.city;
+    if (sameCity(city, 'المدينة المنورة') && (kind === 'cars' || kind === 'offices')) return false;
+    if (sameCity(city, 'الأحساء') && (kind === 'cars' || kind === 'projects' || kind === 'opps')) return false;
+    return sectorCity(city) || localRadiusCity(city) || !!BRANCH_LOCAL[kind];
   }
+  function cityScopeAvailable(kind) { return !!S.branch && (sectorCity(S.branch.city) || (localRadiusCity(S.branch.city) && branchScopedKind(kind))); }
   function radiusApplies(kind, scope) {
     scope = scope || S.scope;
     var anchor = S.origin || S.branch;
@@ -668,10 +674,11 @@
     var hasBranchPin = b.lat != null && b.lon != null;
     function btn(scope, label, on) { return '<button data-scope="' + scope + '" aria-pressed="' + on + '">' + label + '</button>'; }
     var showBranchScope = branchScopedKind(S.tab) && (hasBranchPin || sectorCity(b.city));
+    var showCityScope = cityScopeAvailable(S.tab);
     var ctl = '<div class="seg" role="group" aria-label="النطاق">' +
       (showBranchScope ? btn('branch', S.origin ? 'حول موقعي' : 'نطاق الفرع', S.scope === 'branch') : '') +
       (sc ? SECTORS.map(function (sector) { return '<button data-explore="' + esc(sector) + '" aria-pressed="' + (S.scope === 'sector' && selectedSectors().indexOf(sector) >= 0) + '">' + esc(sector) + ' ' + esc(b.city) + '</button>'; }).join('') : '') +
-      (sc ? btn('city', 'كل ' + esc(b.city), S.scope === 'city' || !showBranchScope) : '') + '</div>';
+      (showCityScope ? btn('city', 'كل ' + esc(b.city), S.scope === 'city' || !showBranchScope) : '') + '</div>';
     if (showBranchScope && radiusApplies(S.tab, 'branch') && S.scope === 'branch') ctl += '<label class="explore distance-control">المسافة<select id="radius" aria-label="مسافة الفرص من نقطة المرجع">' + [5, 10, 15, 20].map(function (r) { return '<option value="' + r + '"' + (Number(S.radius) === r ? ' selected' : '') + '>أقرب ' + fmt(r) + ' كم</option>'; }).join('') + '</select></label>';
     var controlsMarkup = /data-(?:scope|explore)|<select id="radius"/.test(ctl) ? '<div class="controls"><div class="wrap"><div class="ctl-row">' + ctl + '</div></div></div>' : '';
     app.innerHTML =
@@ -731,8 +738,8 @@
   function widen(k, c) {
     var b = S.branch, h = '';
     
-    if (sectorCity(b.city) && b.sec && S.scope !== 'sector') h += '<button class="btn" data-explore="' + esc(b.sec) + '">' + esc(b.sec) + ' ' + esc(b.city) + ' · <span class="num">' + fmt(itemsFor(k, b.sec, 'sector').length) + '</span></button>';
-    if (sectorCity(b.city)) h += '<button class="btn primary" data-scope="city">كل ' + esc(b.city) + ' · <span class="num">' + fmt(c[k].total) + '</span></button>';
+    if (cityScopeAvailable(k) && sectorCity(b.city) && b.sec && S.scope !== 'sector') h += '<button class="btn" data-explore="' + esc(b.sec) + '">' + esc(b.sec) + ' ' + esc(b.city) + ' · <span class="num">' + fmt(itemsFor(k, b.sec, 'sector').length) + '</span></button>';
+    if (cityScopeAvailable(k)) h += '<button class="btn primary" data-scope="city">كل ' + esc(b.city) + ' · <span class="num">' + fmt(c[k].total) + '</span></button>';
     return '<div class="more-row">' + h + '</div>';
   }
   function intro(k, n) {
