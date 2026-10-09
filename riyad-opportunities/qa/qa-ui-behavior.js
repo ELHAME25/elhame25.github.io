@@ -88,7 +88,9 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const sourceCar = d.cars.find(x => x.id === sourcedCars[0]);
   const sourceCard = A.card('cars', sourceCar, null, true, false, {}), sourceId = sourceCard.match(/data-detail="([0-9]+)"/);
   if (sourceId) A.openDetail(Number(sourceId[1]));
-  assert('project render caption and showroom phone source appear in detail', renderCaption && !!sourceId && els.detail.innerHTML.includes('مصدر رقم التواصل') && els.detail.innerHTML.includes('dalilmadina.com'));
+  const phoneSourceMarkup = !!sourceId && els.detail.innerHTML.includes('مصدر رقم التواصل') && els.detail.innerHTML.includes('dalilmadina.com');
+  assert('official render caption appears in project details', renderCaption);
+  assert('showroom phone source appears in contact details', phoneSourceMarkup);
   // Start picker order, immediate greeting, code-only lookup and explicit Go action.
   assert('picker orders employee, code, city and Go', els.app.innerHTML.indexOf('for="q-emp"') < els.app.innerHTML.indexOf('for="q-branch"') && els.app.innerHTML.indexOf('for="q-branch"') < els.app.innerHTML.indexOf('for="q-city"') && els.app.innerHTML.includes('id="go-branch"'));
   els['q-emp'].value = 'خالد الماطر'; els['q-emp'].dispatch('input');
