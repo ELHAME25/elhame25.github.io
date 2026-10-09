@@ -160,6 +160,12 @@
         if (!p.img) p.img = image[0];
         p.imageSourceUrl = image[1];
       });
+      D.offices.forEach(function (o) {
+        if (o.id !== 'national-ejar-office-195881') return;
+        o.phones = [];
+        delete o.phoneSource;
+        o.phoneVerificationStatus = 'unverified';
+      });
       // Collapse only exact duplicate records; distinct phases sharing a developer page remain visible.
       var seenProjectPages = Object.create(null), keptProjectRecords = [];
       D.projects = D.projects.filter(function (p) {
