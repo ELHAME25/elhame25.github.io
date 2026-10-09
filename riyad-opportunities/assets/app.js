@@ -127,6 +127,20 @@
     var sep = path.indexOf('?') === -1 ? '?' : '&';
     return fetch(path + sep + 'v=20261008-14', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
   }
+  var DECORATIVE_PROJECT_IMAGES = {
+    P013: ['https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-01/351x562_0.png', 'https://www.nhc.sa/ar/real-estate-development/projects/47490'],
+    P369: ['https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-01/Artboard%201%20copy%2021.png', 'https://nhc.sa/en/real-estate-development/communities/47502/'],
+    P394: ['https://etmaam-public.almajdiah.com/site/gallery/xdgQ5Ias0OinoLLMgv5AxCJ9zAWX6Snr9P9vcsFf.jpg', 'https://almajdiah.com/projects/108'],
+    P395: ['https://etmaam-public.almajdiah.com/site/gallery/PgHnQqWM0qFhXT3hQTA2OK6FfbLG07GPs3pxv900.jpg', 'https://almajdiah.com/projects/156'],
+    P425: ['https://tamkean.sa/wp-content/uploads/2023/12/site-03-300x167.jpg', 'https://tamkean.sa/en/reem/'],
+    P426: ['https://tilalre.com/wp-content/uploads/2025/11/Fursan1.png', 'https://tilalre.com/ar/'],
+    P446: ['https://tilalre.com/wp-content/uploads/2025/11/Narjis1.png', 'https://tilalre.com/ar/'],
+    P460: ['https://thabatre.sa/wp-content/uploads/2024/12/%D9%85%D8%A8%D8%A7%D8%B9-01.png', 'https://thabatre.sa/al-muhanadeya/'],
+    P474: ['https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/styles/800x500/public/2024-11/RAWAA%20desktop.png?h=0c8c25d9&itok=M3TZx9FT', 'https://www.nhc.sa/en/real-estate-development/projects-page/'],
+    P490: ['https://assets-diriyahco.diriyah.me/51401548b1074f73b701388154736c0b?format=webp&quality=80&transform=true&width=1920', 'https://www.diriyahcompany.sa/en/diriyah-living/our-residences/ritz-carlton'],
+    P546: ['https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-05/WEB-news-04.png', 'https://nhc.sa/media-center/news/47580/'],
+    P585: ['https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-07/W351%20x%20H562%20%D8%B5%D9%88%D8%B1%D8%A9%20%D8%B9%D8%B1%D8%B6%20%D9%84%D9%84%D8%AC%D9%88%D8%A7%D9%84.png', 'https://www.nhc.sa/ar/real-estate-development/projects/47614']
+  };
   function boot() {
     var cfgEl = document.getElementById('site-config');
     var cfgP = cfgEl ? Promise.resolve(JSON.parse(cfgEl.textContent)) : getJSON('config/site.json').catch(function () { return {}; });
@@ -140,6 +154,12 @@
           return getJSON(CFG.dataBase + n + '.json').then(function (v) { D[n] = v; });
         }));
     }).then(function () {
+      D.projects.forEach(function (p) {
+        var image = DECORATIVE_PROJECT_IMAGES[p.id];
+        if (!image) return;
+        if (!p.img) p.img = image[0];
+        p.imageSourceUrl = image[1];
+      });
       // Collapse only exact duplicate records; distinct phases sharing a developer page remain visible.
       var seenProjectPages = Object.create(null), keptProjectRecords = [];
       D.projects = D.projects.filter(function (p) {
