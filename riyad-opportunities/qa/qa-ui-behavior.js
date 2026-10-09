@@ -79,7 +79,9 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const areemSumou = d.projects.find(x => x.id === 'P362');
   const lamarya = d.projects.find(x => x.id === 'P572');
   const munsiyah = d.projects.find(x => x.id === 'P625');
-  assert('verified areas and project status are exposed without conflating sources', !!areemNHC && areemNHC.area === '89,905.67 م² (المساحة المنشورة لدى NHC)' && !!areemSumou && areemSumou.area.startsWith('231,637.22 م²') && !!lamarya && lamarya.status.includes('تم البيع') && lamarya.phones.includes('0556388388') && !!munsiyah && !munsiyah.loc && fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8').includes("['المساحة', o.area]"));
+  const sourcedCars = ['phase6-cars-01497558f1e82f', 'regional-pdf-pdf-smalltown-011-045', 'regional-pdf-pdf-smalltown-013-045', 'regional-pdf-pdf-smalltown-017-045', 'regional-pdf-pdf-smalltown-019-045'];
+  const appMarkup = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');
+  assert('verified areas, project status, official render and contact sources are exposed', !!areemNHC && areemNHC.area === '89,905.67 م² (المساحة المنشورة لدى NHC)' && !!areemSumou && areemSumou.area.startsWith('231,637.22 م²') && !!lamarya && lamarya.status.includes('تم البيع') && lamarya.phones.includes('0556388388') && !!munsiyah && !munsiyah.loc && munsiyah.img.includes('clusters.sa/_next/image') && munsiyah.imageType.includes('تصميم معماري') && sourcedCars.every(id => { const o = d.cars.find(x => x.id === id); return o && o.phones.length && o.phoneSource; }) && appMarkup.includes("['المساحة', o.area]") && appMarkup.includes('مصدر رقم التواصل') && appMarkup.includes('o.imageType'));
   // Start picker order, immediate greeting, code-only lookup and explicit Go action.
   assert('picker orders employee, code, city and Go', els.app.innerHTML.indexOf('for="q-emp"') < els.app.innerHTML.indexOf('for="q-branch"') && els.app.innerHTML.indexOf('for="q-branch"') < els.app.innerHTML.indexOf('for="q-city"') && els.app.innerHTML.includes('id="go-branch"'));
   els['q-emp'].value = 'خالد الماطر'; els['q-emp'].dispatch('input');
