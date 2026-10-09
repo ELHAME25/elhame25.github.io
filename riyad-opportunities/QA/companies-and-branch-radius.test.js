@@ -195,6 +195,27 @@ function check(name, fn) {
     return {phones:o.phones,contacts:o.phoneContacts};
   });
 
+  check('Small cities hide the city-wide button while all sections remain city-wide', () => {
+    const b=D.branchByCode['607']; assert(b&&b.city==='الرس','expected the documented Ras branch');
+    Q.selectBranch('607',true); Q.state().tab='offices'; Q.setScope('branch',15); Q.renderBranch();
+    assert(!els.app.innerHTML.includes('data-scope="city"'),'small cities must not expose a city-wide button');
+    const kinds=['projects','opps','nhc','selfbuild','companies','offices','cars'];
+    const counts={};
+    for(const kind of kinds){
+      const city=Q.itemsFor(kind,'','city').map(x=>x.o.id).sort();
+      const branch=Q.itemsFor(kind,'','branch').map(x=>x.o.id).sort();
+      assert.deepEqual(branch,city,kind+' must show the full city inventory');
+      counts[kind]=city.length;
+    }
+    for(const city of ['الرياض','جدة']){
+      const metro=D.branches.find(x=>x.city===city);
+      assert(metro,'missing metro branch '+city); Q.selectBranch(metro.c,true);
+      Q.state().tab='offices'; Q.renderBranch();
+      assert(els.app.innerHTML.includes('data-scope="city"'),city+' should retain its city-scope control');
+    }
+    return {smallCity:b.city,counts,metroCityControls:['الرياض','جدة']};
+  });
+
   const failures=results.filter(x=>!x.pass);
   console.log(JSON.stringify({root,passed:results.length-failures.length,total:results.length,results},null,2));
   if (failures.length) process.exitCode=1;
