@@ -161,13 +161,17 @@ function check(name, fn) {
   });
 
 
-  check('Buraidah showrooms are identical for branches 602, 249 and 273', () => {
+  check('Buraidah showrooms use each branch radius and retain city expansion', () => {
     const lists=['602','249','273'].map(code => {
       const b=D.branchByCode[code]; assert(b&&b.city==='بريدة','unexpected branch/city '+code);
-      Q.selectBranch(code,true); return Q.itemsFor('cars','','branch').map(x=>x.o.id).sort();
+      Q.selectBranch(code,true); Q.setScope('branch',5);
+      const near=Q.itemsFor('cars','','branch'), city=Q.itemsFor('cars','','city');
+      assert(near.every(x=>x.rankD==null||x.rankD<=5),'out-of-radius showroom for '+code);
+      assert(near.every(x=>city.some(y=>y.o.id===x.o.id)),'branch result missing from city inventory '+code);
+      return {ids:near.map(x=>x.o.id).sort(),city:city.length};
     });
-    assert.deepEqual(lists[1],lists[0]); assert.deepEqual(lists[2],lists[0]);
-    return {codes:['602','249','273'],cars:lists[0].length};
+    assert(new Set(lists.map(x=>x.ids.join('|'))).size>1,'branch showroom results did not change');
+    return {codes:['602','249','273'],near:lists.map(x=>x.ids.length),city:lists.map(x=>x.city)};
   });
 
   const failures=results.filter(x=>!x.pass);
