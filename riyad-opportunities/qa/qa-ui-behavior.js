@@ -273,6 +273,12 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   A.selectBranch('304'); const ahsaCityCars = A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|'); const ahsaProjects = A.itemsFor('projects', '', 'branch').map(x => x.o.id).sort().join('|'); const ahsaOffices = A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|');
   A.selectBranch('324');
   assert('Ahsa showrooms and projects are city-level while offices follow the branch', ahsaCityCars === A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|') && ahsaProjects === A.itemsFor('projects', '', 'branch').map(x => x.o.id).sort().join('|') && ahsaOffices !== A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|'));
+  A.selectBranch('161'); A.state().tab = 'offices'; A.state().radius = 5; A.state().scope = 'branch'; A.renderBranch();
+  const abha5 = A.itemsFor('offices', '', 'branch'); A.state().radius = 10; const abha10 = A.itemsFor('offices', '', 'branch');
+  assert('Abha uses radius controls without directional sectors', abha10.length >= abha5.length && abha10.every(x => x.rankD == null || x.rankD <= 10) && els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-explore='));
+  A.selectBranch('111'); A.state().tab = 'offices'; A.state().radius = 15; A.state().scope = 'branch'; A.renderBranch();
+  const yanbu15 = A.itemsFor('offices', '', 'branch'); A.state().radius = 20; const yanbu20 = A.itemsFor('offices', '', 'branch');
+  assert('Yanbu uses branch radius without being split into sectors', yanbu20.length >= yanbu15.length && yanbu20.every(x => x.rankD == null || x.rankD <= 20) && els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-explore='));
 
   const failed = Object.entries(tests).filter(([, ok]) => !ok).map(([name]) => name);
   console.log(JSON.stringify({ suite: 'VM UI behavior regression', tests, passed: Object.values(tests).filter(Boolean).length, total: Object.keys(tests).length, failed }, null, 2));
