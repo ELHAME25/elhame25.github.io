@@ -43,7 +43,6 @@ const server=http.createServer((req,res)=>{
    await section('cars');
    assert(await page.locator('[data-call]').count()>0);
    const phone=await page.locator('[data-call]').first().getAttribute('href');assert(/^tel:[+\d]+$/.test(phone));
-   const map=await page.locator('a[aria-label*="خرائط"],a[title*="خرائط"]').first().getAttribute('href').catch(()=>null);
    const mapLinks=await page.locator('a[href*="google.com/maps"],a[href*="maps.app.goo.gl"],a[href*="goo.gl/maps"]').count();assert(mapLinks>0);
    const downloaded=page.waitForEvent('download');
    await page.locator('[data-vcard]').first().click();
@@ -66,7 +65,7 @@ const server=http.createServer((req,res)=>{
    await open('176');assert(!await page.locator('#radius').count());
    // Seven independent search controls: Riyadh's six categories and Hail self-build.
    let searchSections=0;
-   for(const [code,k] of [['243','projects'],['243','opps'],['243','nhc'],['243','companies'],['243','offices'],['243','cars'],['403','selfbuild']]){
+   for(const [code,k] of [['243','projects'],['243','opps'],['243','nhc'],['243','companies'],['243','offices'],['243','cars'],['610','selfbuild']]){
     await open(code);await section(k);await page.locator('#q-sec').fill('__qa_no_such_record__');
     await page.getByText('لا نتائج مطابقة',{exact:false}).waitFor();searchSections++;
    }
