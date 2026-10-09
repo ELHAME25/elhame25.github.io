@@ -30,8 +30,9 @@ check('كل سجلات المعارض الخام لها رابط خرائط قا
 check('الأصول المفاهيمية المولدة موسومة وفريدة لكل مشروع مسند إليها',(()=>{const xs=projects.filter(p=>p.imageType&&p.imageType.includes('مولّدة بالذكاء الاصطناعي'));return xs.length===10&&xs.every(p=>p.img.startsWith('data:image/webp;base64,')&&projects.filter(q=>q.img===p.img).length===1)})(),projects.filter(p=>p.imageType&&p.imageType.includes('مولّدة بالذكاء الاصطناعي')).map(p=>p.id));
 check('كل صور fallback المشار إليها موجودة',['real-estate-illustrative-villa.svg','real-estate-illustrative-apartments.svg','real-estate-illustrative-townhomes.svg','real-estate-illustrative-courtyard.svg'].every(x=>fs.existsSync(path.join(root,'assets/images',x))));
 check('تحديث ملفات البيانات متوافق مع أعداد metadata',projects.length===meta.counts.projects&&nhc.length===meta.counts.nhc&&opps.length===meta.counts.opportunities&&companies.length===meta.counts.companies&&cars.length===meta.counts.cars&&offices.length===meta.counts.offices,{projects:projects.length,nhc:nhc.length,opportunities:opps.length,companies:companies.length,cars:cars.length,offices:offices.length,meta:meta.counts});
-const imageUrls=projects.filter(p=>p.img).map(p=>p.img);
-check('كل صورة مشروع غير فارغة فريدة ولا تتكرر بين السجلات',new Set(imageUrls).size===imageUrls.length,{images:imageUrls.length,unique:new Set(imageUrls).size,duplicates:imageUrls.length-new Set(imageUrls).size});
 const result={ok:failures.length===0,branches:branches.length,canonicalCities:cities.length,urlFieldsValidated:urlCount,carRecordsWithMapSearch:cars.length,failures};
 console.log(JSON.stringify(result,null,2));if(failures.length)process.exit(1);
 
+
+const imageUrls=projects.filter(p=>p.img).map(p=>p.img);
+check('كل صورة مشروع غير فارغة فريدة ولا تتكرر بين السجلات',new Set(imageUrls).size===imageUrls.length,{images:imageUrls.length,unique:new Set(imageUrls).size,duplicates:imageUrls.length-new Set(imageUrls).size});
