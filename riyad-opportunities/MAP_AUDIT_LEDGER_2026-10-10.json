@@ -17082,7 +17082,7 @@
       "category": "cars",
       "name": "معرض الجنوب للسيارات",
       "city": "جدة",
-      "status": "map_matched_official_site_added",
+      "status": "excluded_official_authorized_dealer",
       "current_map": "https://www.google.com/maps/?cid=7087001253077961591",
       "checked_at": "2026-10-10",
       "map_check": {
@@ -17093,9 +17093,10 @@
       },
       "source_urls": [
         "https://www.google.com/maps/?cid=7087001253077961591",
-        "https://aljanobauto.com/ar"
+        "https://aljanobauto.com/ar",
+        "https://aljanob.sa/ar"
       ],
-      "evidence_note": "فُتح الموقع الرسمي وأثبت فرع جدة ورقم 0538888778 ورابط واتساب 966538888778. تم حفظ رابط الموقع فقط واختباره بفتح الصفحة الرسمية. تعذر فتح وجهة واتساب بسبب حظر سياسة المتصفح؛ لم يضف رابط واتساب إلى السجل.",
+      "evidence_note": "موقع الشركة الرسمي يعلن صفتها كوكيل معتمد ويقدم السيارات الجديدة بضمان رسمي. بطاقة Maps كانت تطابق معرض الجنوب للسيارات في الجوهرة جدة ورقم 0538888778؛ الاستبعاد سببه صفة الموزع الرسمي وليس خطأ الموقع.",
       "field_checks": {
         "phone": {
           "status": "verified_match_maps_and_official"
@@ -17106,6 +17107,23 @@
         "whatsapp": {
           "status": "official_link_visible_but_target_blocked"
         }
+      },
+      "decision": "excluded_official_dealer",
+      "archiveReason": "الموقع الرسمي يعلن أن الجنوب للسيارات وكيل معتمد؛ مستبعد حسب شرط المعارض المستقلة. أُرشف السجل قبل الحذف.",
+      "archivedRecord": {
+        "id": "phase5-car-967ca3e04664",
+        "n": "معرض الجنوب للسيارات",
+        "city": "جدة",
+        "nb": "الجوهرة منطقة المعارض",
+        "phones": [
+          "0538888778"
+        ],
+        "web": "https://aljanobauto.com/ar",
+        "maps": "https://www.google.com/maps/?cid=7087001253077961591",
+        "lat": 21.43173,
+        "lon": 39.25161,
+        "sec": "جنوب",
+        "loc": "nb"
       }
     },
     {
