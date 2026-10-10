@@ -505,32 +505,31 @@
       "name": "روافد نخبة المنار",
       "city": "بيش",
       "locality": "الثلاثين",
-      "status": "exact_pin_found_pending_retest",
-      "current_map": "Maps query opened named place",
+      "status": "verified_corrected_exact_pin_retested",
+      "current_map": "https://www.google.com/maps/place/مكتب+روافد+نخبة+المنار+للخدمات+العقارية%E2%80%AD/@17.3783809,42.5347065,1066m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e2cbde9f6f7b8f:0x580b61624ec062a4!8m2!3d17.3783809!4d42.5347065!16s%2Fg%2F11z7g9t_k2",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "status": "exact_pin_found_pending_retest",
-        "notes": "Named Maps result at 17.3783809,42.5347065; exact address and phone 0554446255. Official site fails TLS/502."
+        "status": "verified_corrected_exact_pin_retested",
+        "notes": "Post-edit Maps card shows exact name, address الثلاثين، بيش 87311, phone +966554446255 and plus code 9GHM+9V matching record."
       },
       "field_checks": {
         "phone": {
-          "status": "partially_source_checked",
-          "notes": "Named Maps result at 17.3783809,42.5347065; exact address and phone 0554446255. Official site fails TLS/502."
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Post-edit Maps card shows exact name, address الثلاثين، بيش 87311, phone +966554446255 and plus code 9GHM+9V matching record."
         },
         "whatsapp": {
-          "status": "not_independently_checked_or_not_present",
-          "notes": "Named Maps result at 17.3783809,42.5347065; exact address and phone 0554446255. Official site fails TLS/502."
+          "status": "not_independently_verified"
         },
         "website": {
-          "status": "source_checked_or_noted"
+          "status": "checked_or_noted"
         }
       },
       "source_urls": [
         "https://ralmanar.com/",
-        "Maps query opened named place"
+        "https://www.google.com/maps/place/مكتب+روافد+نخبة+المنار+للخدمات+العقارية%E2%80%AD/@17.3783809,42.5347065,1066m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e2cbde9f6f7b8f:0x580b61624ec062a4!8m2!3d17.3783809!4d42.5347065!16s%2Fg%2F11z7g9t_k2"
       ],
-      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
     },
     {
       "id": "entity-29771352cb30",
@@ -8028,34 +8027,33 @@
       "id": "entity-66efa1d00757",
       "category": "cars",
       "name": "معرض النخبة",
-      "city": "مكة",
+      "city": "مكة المكرمة",
       "locality": "ولي العهد",
-      "status": "unresolved_wrong_cid_search_ambiguous",
-      "current_map": "https://www.google.com/maps?cid=12367209978963868837",
+      "status": "unresolved_search_opened_results_not_exact",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%86%D8%AE%D8%A8%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B7%D8%B1%D9%8A%D9%82%20%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%84%20%D9%88%D9%84%D9%8A%20%D8%A7%D9%84%D8%B9%D9%87%D8%AF%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "status": "unresolved_wrong_cid_search_ambiguous",
-        "notes": "Current CID opened USA; alternate full name/street query had multiple nonmatching businesses. Old coordinates 21.30171,39.74656 unsupported."
+        "status": "unresolved_search_opened_results_not_exact",
+        "notes": "Post-edit final search opened; five results were nearby but none matched معرض النخبة. Corrected away from US CID, but still unresolved."
       },
       "field_checks": {
         "phone": {
-          "status": "partially_source_checked",
-          "notes": "Current CID opened USA; alternate full name/street query had multiple nonmatching businesses. Old coordinates 21.30171,39.74656 unsupported."
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Post-edit final search opened; five results were nearby but none matched معرض النخبة. Corrected away from US CID, but still unresolved."
         },
         "whatsapp": {
-          "status": "not_independently_checked_or_not_present",
-          "notes": "Current CID opened USA; alternate full name/street query had multiple nonmatching businesses. Old coordinates 21.30171,39.74656 unsupported."
+          "status": "not_independently_verified"
         },
         "website": {
-          "status": "source_checked_or_noted"
+          "status": "checked_or_noted"
         }
       },
       "source_urls": [
         "https://www.aljazeeramaps.com/listing/معرض-النخبة",
-        "https://www.google.com/maps?cid=12367209978963868837"
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%86%D8%AE%D8%A8%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B7%D8%B1%D9%8A%D9%82%20%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%84%20%D9%88%D9%84%D9%8A%20%D8%A7%D9%84%D8%B9%D9%87%D8%AF%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9"
       ],
-      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
     },
     {
       "id": "entity-42c1a1b88330",
@@ -8447,6 +8445,972 @@
         "https://www.nhc.sa/"
       ],
       "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "P020",
+      "category": "projects",
+      "name": "برج روض الخزامى السكني الثاني",
+      "city": "الدمام",
+      "locality": "—",
+      "status": "opened_unresolved_phase_identity",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%B1%D8%AC%20%D8%B1%D9%88%D8%B6%20%D8%A7%D9%84%D8%AE%D8%B2%D8%A7%D9%85%D9%89%20%D8%A7%D9%84%D8%B3%D9%83%D9%86%D9%8A%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B1%D9%88%D8%B6%20%D8%A7%D9%84%D8%AE%D8%B2%D8%A7%D9%85%D9%89%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "opened_unresolved_phase_identity",
+        "notes": "Maps search showed residential tower in Dammam and separate office tower; second-phase pin not established."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Maps search showed residential tower in Dammam and separate office tower; second-phase pin not established."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://sakani.sa/app/offplan-projects/1581"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "P028",
+      "category": "projects",
+      "name": "جي برايم 2",
+      "city": "الخبر",
+      "locality": "—",
+      "status": "opened_developer_only_project_location_unresolved",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%AC%D9%8A%20%D8%A8%D8%B1%D8%A7%D9%8A%D9%85%202%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AC%D9%86%D8%A7%D9%86%20%D9%81%D8%AF%D9%83%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "opened_developer_only_project_location_unresolved",
+        "notes": "Maps returned developer office, not project; official developer page about singular G Prime states Saihat, but not proven same project."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Maps returned developer office, not project; official developer page about singular G Prime states Saihat, but not proven same project."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://jinanfadak.sa/1868"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "P046",
+      "category": "projects",
+      "name": "نساج تاون الفرسان 2",
+      "city": "الرياض",
+      "locality": "الفرسان",
+      "status": "opened_unresolved_project_identity",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%86%D8%B3%D8%A7%D8%AC%20%D8%AA%D8%A7%D9%88%D9%86%20%D8%A7%D9%84%D9%81%D8%B1%D8%B3%D8%A7%D9%86%202%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B1%D8%AA%D8%A7%D9%84%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%85%D8%B1%D8%A7%D9%86%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "opened_unresolved_project_identity",
+        "notes": "Maps card did not complete; official Retal distinguishes Nesaj Al-Fursan 2 Riyadh from Nesaj Town II Dammam."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Maps card did not complete; official Retal distinguishes Nesaj Al-Fursan 2 Riyadh from Nesaj Town II Dammam."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://retal.com.sa/properties/nesaj-lazurde/"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "entity-852df93f9758",
+      "category": "cars",
+      "name": "معرض الحنيني للسيارات",
+      "city": "حائل",
+      "locality": "الملك عبدالعزيز",
+      "status": "verified_exact",
+      "current_map": "https://www.google.com/maps/?cid=9177322994304214622",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_exact",
+        "notes": "Map name/address/phone exact."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Map name/address/phone exact."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=9177322994304214622"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "phase5-car-34768af6371d",
+      "category": "cars",
+      "name": "يوسف الركبي",
+      "city": "بريدة",
+      "locality": "الجزيرة",
+      "status": "unresolved_search_no_card",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=معرض%20يوسف%20الركبي%20للسيارات%20بريدة",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_search_no_card",
+        "notes": "Search opened but no card; external directory supports name/city/phone, not pin."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Search opened but no card; external directory supports name/city/phone, not pin."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "phase5-car-92f3ec4ef0df",
+      "category": "cars",
+      "name": "أحدث السيارات فرع الدمام",
+      "city": "الدمام",
+      "locality": "ضاحية الملك فهد",
+      "status": "unresolved_search_no_card",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=معرض%20أحدث%20السيارات%20فرع%20الدمام",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_search_no_card",
+        "notes": "Maps search blank; Kandal supports phone but no exact pin."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Maps search blank; Kandal supports phone but no exact pin."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "phase5-google-15571274114565729231",
+      "category": "cars",
+      "name": "كلاس للسيارات",
+      "city": "الدمام",
+      "locality": "ضاحية الملك فهد",
+      "status": "verified_exact",
+      "current_map": "https://www.google.com/maps/?cid=15571274114565729231",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_exact",
+        "notes": "Map exact place/address/phone and official classcars.sa."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Map exact place/address/phone and official classcars.sa."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://classcars.sa/",
+        "https://www.google.com/maps/?cid=15571274114565729231"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "phase5-google-9712514117385590297",
+      "category": "cars",
+      "name": "الفاروق للسيارات",
+      "city": "سبت العلاية",
+      "locality": "الخالدية",
+      "status": "verified_exact",
+      "current_map": "https://www.google.com/maps/place/معرض+الفاروق",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_exact",
+        "notes": "Maps exact name/city/phone."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Maps exact name/city/phone."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/place/معرض+الفاروق"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "phase6-google-10142441659998788437",
+      "category": "cars",
+      "name": "جزى هليل الخلاف",
+      "city": "تبوك",
+      "locality": "منطقة المعارض",
+      "status": "unresolved_phone_conflict",
+      "current_map": "https://www.google.com/maps/?cid=10142441659998788437",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_phone_conflict",
+        "notes": "Map blank; secondary source shows two phone variants."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Map blank; secondary source shows two phone variants."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "phase6-cars-7b5880f3dce5f8",
+      "category": "cars",
+      "name": "أضواء خميس مشيط للسيارات – جازان",
+      "city": "جازان",
+      "locality": "طريق الملك عبدالعزيز / شارع الوكالات conflict",
+      "status": "unresolved_address_conflict",
+      "current_map": "https://www.google.com/maps/place/شركة+اضواء+خميس+مشيط+للسيارات+جازان",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_address_conflict",
+        "notes": "Maps blank; ads support branch phone but street conflicts."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Maps blank; ads support branch phone but street conflicts."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "national-car-8c5f8021ce8d16",
+      "category": "cars",
+      "name": "الوسام المضيء",
+      "city": "طريف",
+      "locality": "—",
+      "status": "unresolved_cid_no_card",
+      "current_map": "https://www.google.com/maps/?cid=4235436313888503050",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_cid_no_card",
+        "notes": "CID opened blank; directories support city/phone only."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "CID opened blank; directories support city/phone only."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "national-car-55fc2fe7df1733",
+      "category": "cars",
+      "name": "صقر جاسم البوحسين",
+      "city": "الجبيل",
+      "locality": "ميناء الملك فهد الصناعي",
+      "status": "unresolved_cid_no_card",
+      "current_map": "https://www.google.com/maps/?cid=13791619581874310402",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_cid_no_card",
+        "notes": "CID opened blank; Cybo supports name/address/phone."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "CID opened blank; Cybo supports name/address/phone."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "entity-ede39ec11bd6",
+      "category": "business",
+      "name": "جازان وطن",
+      "city": "جازان",
+      "locality": "السويس",
+      "status": "unresolved_pin_coordinate_conflict",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%AC%D8%A7%D8%B2%D8%A7%D9%86%20%D9%88%D8%B7%D9%86%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%AC%D8%A7%D8%B2%D8%A7%D9%86%20%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%B3",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_pin_coordinate_conflict",
+        "notes": "Map card 16.8484987,42.591845; record pin 16.86227,42.59703 ~1.6km away. Official site gives same district/road and phone."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Map card 16.8484987,42.591845; record pin 16.86227,42.59703 ~1.6km away. Official site gives same district/road and phone."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://jazwtn.sa/اتصل-بنا/"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "entity-e82cfda6e8a7",
+      "category": "business",
+      "name": "مازال العقارية",
+      "city": "حائل",
+      "locality": "الخزامى",
+      "status": "unresolved_pin_distance",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A7%D8%B2%D8%A7%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%AD%D8%A7%D8%A6%D9%84%20%D8%A7%D9%84%D8%AE%D8%B2%D8%A7%D9%85%D9%89",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_pin_distance",
+        "notes": "Official address confirms city/district and phone/WA; Maps pin ~1km away, not proven."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Official address confirms city/district and phone/WA; Maps pin ~1km away, not proven."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://mazal.sa/"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "entity-eb6a252fffd5",
+      "category": "business",
+      "name": "شرق أبها",
+      "city": "أبها",
+      "locality": "المنسك vs المروج",
+      "status": "unresolved_official_district_conflict",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%82%20%D8%A3%D8%A8%D9%87%D8%A7%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A3%D8%A8%D9%87%D8%A7%20%D8%A7%D9%84%D9%85%D9%86%D8%B3%D9%83",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_official_district_conflict",
+        "notes": "Official contact says Al-Muruj and phone; record says Al-Mansak."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Official contact says Al-Muruj and phone; record says Al-Mansak."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://eastabha.sa/contact-us"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "entity-d9171026a8d0",
+      "category": "business",
+      "name": "مكتب العبيد العقاري",
+      "city": "حائل",
+      "locality": "الوسيطاء",
+      "status": "current_map_wrong_unresolved",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B9%D8%A8%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%AD%D8%A7%D8%A6%D9%84",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "current_map_wrong_unresolved",
+        "notes": "Current Maps returned architectural contractor, not real-estate office."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Current Maps returned architectural contractor, not real-estate office."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://alobidoffice.com"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "entity-30e6808c384f",
+      "category": "business",
+      "name": "الناصع للعقارات",
+      "city": "الرياض",
+      "locality": "عريض",
+      "status": "unresolved_search_no_card",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%86%D8%A7%D8%B5%D8%B9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%B9%D8%B1%D9%8A%D8%B6",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_search_no_card",
+        "notes": "Map search result existed, card not opened."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Map search result existed, card not opened."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "cp-3b5ace92c4",
+      "category": "business",
+      "name": "السليمان العقارية",
+      "city": "الرياض",
+      "locality": "القيروان + other branches",
+      "status": "website_phone_verified_map_absent",
+      "current_map": "",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "website_phone_verified_map_absent",
+        "notes": "Official company page confirms headquarters/branches, 920003511; no map in record."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Official company page confirms headquarters/branches, 920003511; no map in record."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://alsoliman.com.sa/ar/contact"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "cp-9aadba3f11",
+      "category": "business",
+      "name": "رتال",
+      "city": "الخبر/الرياض/جدة",
+      "locality": "multiple offices",
+      "status": "company_phone_partial_whatsapp_unresolved",
+      "current_map": "",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "company_phone_partial_whatsapp_unresolved",
+        "notes": "Official page supports 8003030888; other recorded mobiles/WA not verified."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Official page supports 8003030888; other recorded mobiles/WA not verified."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://retal.com.sa/contact-us"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "cp-da8cabf976",
+      "category": "business",
+      "name": "الماجدية",
+      "city": "—",
+      "locality": "—",
+      "status": "website_verified_phone_unresolved",
+      "current_map": "",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "website_verified_phone_unresolved",
+        "notes": "Official site identity; recorded mobile numbers unverified."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Official site identity; recorded mobile numbers unverified."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://almajdiah.com/contact-us"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "cp-95466ce573",
+      "category": "business",
+      "name": "أجدان",
+      "city": "—",
+      "locality": "—",
+      "status": "website_whatsapp_unresolved",
+      "current_map": "",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "website_whatsapp_unresolved",
+        "notes": "Page extractor blank; stored WA tied to Retal shortlink but unproven."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "Page extractor blank; stored WA tied to Retal shortlink but unproven."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://ajdan.com/reach-us"
+      ],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "cp-1a1786accf",
+      "category": "business",
+      "name": "الخلجان الثلاثة",
+      "city": "تبوك",
+      "locality": "—",
+      "status": "no_links_to_verify",
+      "current_map": "",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "no_links_to_verify",
+        "notes": "No contact/map/web present in row; link not provided in available sources."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "checked_or_conflict_as_noted",
+          "notes": "No contact/map/web present in row; link not provided in available sources."
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Research agent opened available map and official/secondary sources; limitations preserved."
+    },
+    {
+      "id": "500",
+      "category": "branches",
+      "name": "فرع أبها الرئيسي",
+      "city": "أبها",
+      "locality": "العزيزي",
+      "status": "unresolved_maps_no_card_official_branch_name_only",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=18.212646,42.49931",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_maps_no_card_official_branch_name_only",
+        "notes": "Google Maps coordinate search opened, but no map place card could be extracted; do not count the pin as matched. العزيزي"
+      },
+      "field_checks": {
+        "phone": {
+          "status": "not_branch_specific_in_data"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "official_branch_locator_partial"
+        }
+      },
+      "source_urls": [
+        "https://www.riyadbank.com/ar/personal-banking/digital-banking-channels/riyad-self-service",
+        "https://www.google.com/maps/search/?api=1&query=18.212646,42.49931"
+      ]
+    },
+    {
+      "id": "520",
+      "category": "branches",
+      "name": "فرع أبو عريش",
+      "city": "أبو عريش",
+      "locality": "الربيع",
+      "status": "unresolved_no_official_exact_locator",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=16.975386,42.828153",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_no_official_exact_locator",
+        "notes": "Google Maps coordinate search opened, but no map place card could be extracted; do not count the pin as matched. الربيع"
+      },
+      "field_checks": {
+        "phone": {
+          "status": "not_branch_specific_in_data"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "official_branch_locator_partial"
+        }
+      },
+      "source_urls": [
+        "https://www.riyadbank.com/ar/personal-banking/digital-banking-channels/riyad-self-service",
+        "https://www.google.com/maps/search/?api=1&query=16.975386,42.828153"
+      ]
+    },
+    {
+      "id": "305",
+      "category": "branches",
+      "name": "فرع المبرز",
+      "city": "الأحساء",
+      "locality": "البستان vs official الحزم",
+      "status": "unresolved_bank_address_conflict",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=25.402853,49.581683",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_bank_address_conflict",
+        "notes": "Google Maps coordinate search opened, but no map place card could be extracted; do not count the pin as matched. البستان vs official الحزم"
+      },
+      "field_checks": {
+        "phone": {
+          "status": "not_branch_specific_in_data"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "official_branch_locator_partial"
+        }
+      },
+      "source_urls": [
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+        "https://www.google.com/maps/search/?api=1&query=25.402853,49.581683"
+      ]
+    },
+    {
+      "id": "323",
+      "category": "branches",
+      "name": "فرع الجبيل الصناعية",
+      "city": "الجبيل",
+      "locality": "المنطقة الصناعية الثانية vs official الصناعية",
+      "status": "unresolved_locality_mismatch",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=27.067676,49.537495",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_locality_mismatch",
+        "notes": "Google Maps coordinate search opened, but no map place card could be extracted; do not count the pin as matched. المنطقة الصناعية الثانية vs official الصناعية"
+      },
+      "field_checks": {
+        "phone": {
+          "status": "not_branch_specific_in_data"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "official_branch_locator_partial"
+        }
+      },
+      "source_urls": [
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+        "https://www.google.com/maps/search/?api=1&query=27.067676,49.537495"
+      ]
+    },
+    {
+      "id": "301",
+      "category": "branches",
+      "name": "فرع الخبر الرئيسي",
+      "city": "الخبر vs official المزروعية/الدمام",
+      "locality": "unresolved_major_name_city_conflict",
+      "status": "26.281134,50.211735",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "26.281134,50.211735",
+        "notes": "Google Maps coordinate search opened, but no map place card could be extracted; do not count the pin as matched. unresolved_major_name_city_conflict"
+      },
+      "field_checks": {
+        "phone": {
+          "status": "not_branch_specific_in_data"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "official_branch_locator_partial"
+        }
+      },
+      "source_urls": [
+        null,
+        "https://www.google.com/maps/search/?api=1&query=https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-"
+      ]
+    },
+    {
+      "id": "415",
+      "category": "branches",
+      "name": "فرع خيبر",
+      "city": "خيبر",
+      "locality": "الفيصلية",
+      "status": "official_branch_area_match_map_no_card",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=25.70491,39.28935",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "official_branch_area_match_map_no_card",
+        "notes": "Google Maps coordinate search opened, but no map place card could be extracted; do not count the pin as matched. الفيصلية"
+      },
+      "field_checks": {
+        "phone": {
+          "status": "not_branch_specific_in_data"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "official_branch_locator_partial"
+        }
+      },
+      "source_urls": [
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+        "https://www.google.com/maps/search/?api=1&query=25.70491,39.28935"
+      ]
+    },
+    {
+      "id": "618",
+      "category": "branches",
+      "name": "فرع رياض الخبراء",
+      "city": "رياض الخبراء",
+      "locality": "التعاون",
+      "status": "unresolved_no_exact_official_locator",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=26.046785,43.559965",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_no_exact_official_locator",
+        "notes": "Google Maps coordinate search opened, but no map place card could be extracted; do not count the pin as matched. التعاون"
+      },
+      "field_checks": {
+        "phone": {
+          "status": "not_branch_specific_in_data"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "official_branch_locator_partial"
+        }
+      },
+      "source_urls": [
+        "https://www.riyadbank.com/ar/personal-banking/digital-banking-channels/riyad-self-service",
+        "https://www.google.com/maps/search/?api=1&query=26.046785,43.559965"
+      ]
+    },
+    {
+      "id": "508",
+      "category": "branches",
+      "name": "فرع نجران",
+      "city": "نجران",
+      "locality": "أبا السعود",
+      "status": "official_branch_area_match_map_no_card",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=17.489317,44.133369",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "official_branch_area_match_map_no_card",
+        "notes": "Google Maps coordinate search opened, but no map place card could be extracted; do not count the pin as matched. أبا السعود"
+      },
+      "field_checks": {
+        "phone": {
+          "status": "not_branch_specific_in_data"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "official_branch_locator_partial"
+        }
+      },
+      "source_urls": [
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+        "https://www.google.com/maps/search/?api=1&query=17.489317,44.133369"
+      ]
+    },
+    {
+      "id": "sb-b0ec99bd45",
+      "category": "selfbuild",
+      "name": "مشروع المدائن",
+      "city": "حائل",
+      "locality": "جنوب حائل",
+      "status": "unresolved_sakani_url_identity_mismatch",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=مشروع+المدائن+حائل",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_search_no_exact_pin",
+        "notes": "Maps search is broad and no pin verified. Existing Sakani land-project path 239 failed to identify correct project; official Sakani units/890798 supports project name/city and south Hail, but page identity differs."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "not_present"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "official_source_supports_name_city_only"
+        }
+      },
+      "source_urls": [
+        "https://sakani.sa/app/land-projects/239",
+        "https://sakani.sa/app/units/890798"
+      ]
+    },
+    {
+      "id": "sb-4ff6a29617",
+      "category": "selfbuild",
+      "name": "إسكان الشنان",
+      "city": "الشنان",
+      "locality": "شرق الشنان",
+      "status": "official_project_location_text_map_pin_unresolved",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=إسكان+الشنان+حائل",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_search_no_exact_pin",
+        "notes": "Official Sakani path /land-projects/398 supports project name and east-of-Shanan location; no phone/WA or precise map pin verified."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "not_present"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "official_source_supports_name_locality"
+        }
+      },
+      "source_urls": [
+        "https://sakani.sa/app/land-projects/398"
+      ]
     }
   ],
   "browser_spot_checks": [
@@ -8469,7 +9433,7 @@
       "tested_at": "2026-10-10"
     }
   ],
-  "last_verified_head": "ee545662908bd2a15b89a502c37b22cd16854910",
+  "last_verified_head": "728617273e4486a5a7108487d7e0517ee6be6c44",
   "last_batch": {
     "checked_maps": 20,
     "verified_correct": 14,
@@ -8477,5 +9441,35 @@
     "unresolved": 6,
     "not_inspected": 4056,
     "notes": "20 new record-linked map URLs externally opened; 14 verified at supported identity/location level and 6 unresolved. Elite wrong CID replaced with tested but ambiguous search; exact pin unresolved."
-  }
+  },
+  "followup_batches": [
+    {
+      "date": "2026-10-10",
+      "head": "728617273e4486a5a7108487d7e0517ee6be6c44",
+      "new_project_targets": 3,
+      "project_maps_opened": 3,
+      "project_cards_complete": 2,
+      "project_target_pin_matches": 0,
+      "project_unresolved": 3,
+      "new_car_targets": 9,
+      "car_links_opened": 9,
+      "car_exact_pin_matches": 3,
+      "car_unresolved": 6,
+      "repeat_checks": 1,
+      "notes": "Car agent opened 10 records including one previously inspected record entity-c952299863b7. Five office map records opened from office research; separate business/website checks have no saved map field for most companies."
+    },
+    {
+      "date": "2026-10-10",
+      "head": "728617273e4486a5a7108487d7e0517ee6be6c44",
+      "branch_records_opened": 8,
+      "branch_map_cards_matched": 0,
+      "branch_official_partial": 4,
+      "branch_conflict": 2,
+      "selfbuild_records": 2,
+      "selfbuild_official_text_supported": 1,
+      "selfbuild_pins_matched": 0,
+      "notes": "No branch pin is counted as correct because Google Maps did not yield a place card. Branch codes are stored as IDs as used in this audit. No self-build exact pin confirmed. Office currentMap links reflect Maps URLs generated from mapsQ/coordinates because rows have no explicit maps URL.",
+      "office_map_links_opened": 5
+    }
+  ]
 }
