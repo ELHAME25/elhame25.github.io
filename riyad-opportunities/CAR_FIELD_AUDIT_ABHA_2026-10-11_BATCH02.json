@@ -4,14 +4,14 @@
   "repository": "ELHAME25/elhame25.github.io",
   "branch": "fix/scope-counts-nhc-20261010",
   "source_head": "8f98a7a06bbde07f0a193b6b81ac183bcbe9392d",
-  "scope": "Joint Abha-Khamis Mushait cluster, first ten remaining records after existing Batch01; do not split or reassign cities based only on the linked-city relationship",
+  "scope": "Linked Abha–Khamis Mushait regional audit scope; keep both cities together and do not reassign records based only on which city a source mentions.",
   "count": 10,
-  "note": "Abha and Khamis Mushait are one linked audit scope per user instruction. A source naming either city does not by itself make the other-city representation erroneous. This is an evidence ledger only; no cars.json fields changed and no city reassignment is proposed. Unconfirmed means adequate field-level direct evidence was not obtained. Updated three linked Abha–Khamis entries from direct business-directory and seller sources; conflicting phone and unverified map states remain explicit. No cars.json values changed.",
+  "note": "Abha and Khamis Mushait are one linked audit scope per user instruction. A source naming either city does not by itself make the other-city representation erroneous. This is an evidence ledger only; no cars.json fields changed and no city reassignment is proposed. Unconfirmed means adequate field-level direct evidence was not obtained. Updated three linked Abha–Khamis entries from direct business-directory and seller sources; conflicting phone and unverified map states remain explicit. No cars.json values changed. Scope labels normalized to the user-required linked Abha–Khamis audit group; no cars.json fields changed.",
   "entries": [
     {
       "id": "regional-car-phase6-cars-ad77d20fffff8b-1",
       "name": "معرض الخليج للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "partially_verified",
@@ -52,7 +52,7 @@
     {
       "id": "regional-car-phase6-cars-feb7624f1d8a77-2",
       "name": "معرض القصيم للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "conflict",
@@ -95,7 +95,7 @@
     {
       "id": "regional-car-phase6-cars-60b2a1f2bb33e2-3",
       "name": "معرض سالم فلاح الشهرانى للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "verified",
@@ -144,7 +144,7 @@
     {
       "id": "regional-car-phase6-cars-f1b277c1fcff81-4",
       "name": "معرض القمة ون للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "unconfirmed",
@@ -181,7 +181,7 @@
     {
       "id": "regional-car-phase6-cars-5f20efffc47dfc-5",
       "name": "معرض سعود للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "unconfirmed",
@@ -218,7 +218,7 @@
     {
       "id": "regional-car-phase6-cars-b2f589b3cbaf76-6",
       "name": "معرض أبودبيل الدولي للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "partially_verified",
@@ -261,7 +261,7 @@
     {
       "id": "regional-car-phase6-cars-2e0a62d93d79bd-7",
       "name": "معرض ال جلاله للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "verified",
@@ -304,7 +304,7 @@
     {
       "id": "regional-pdf-entity-90e0b0e360dd-011",
       "name": "معرض خميس مشيط",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "verified_directory_only",
@@ -347,7 +347,7 @@
     {
       "id": "regional-pdf-entity-83b787c12cb5-011",
       "name": "معرض سعيد ظافر القحطاني للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "verified",
@@ -395,7 +395,7 @@
     {
       "id": "regional-pdf-entity-ba4bc778cc25-011",
       "name": "معرض بن هيف للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "verified_directory_only",
