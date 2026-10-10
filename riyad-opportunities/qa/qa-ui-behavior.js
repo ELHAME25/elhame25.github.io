@@ -268,12 +268,12 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     return sectors.includes('شمال');
   });
   A.state().explore = 'وسط';
-  const nhcCity = A.itemsFor('nhc', '', 'city').map(x => x.o.id).sort().join('|');
-  const nhcCenter = A.itemsFor('nhc', 'وسط', 'sector').map(x => x.o.id).sort().join('|');
+  const nhcCity = A.itemsFor('nhc', '', 'city').map(x => x.o.n);
+  const nhcCenter = A.itemsFor('nhc', 'وسط', 'sector').map(x => x.o.n);
   assert('Riyadh central shows Shifa first and both validated showroom groups', centerHasBothGroups);
   assert('Riyadh west routes showrooms to Shifa and north to Qadisiyah', westMapped && northMapped);
   assert('Riyadh East and North are independently selected and filtered', eastOnlyActive && northOnlyActive && eastSectorOnly && northSectorOnly && eastProjects.length > 0 && northProjects.length > 0);
-  assert('NHC destinations remain city-wide when a sector is selected', nhcCity === nhcCenter);
+  assert('NHC destinations are filtered by sector while city view retains all', nhcCity.length === 5 && nhcCenter.length === 0);
   A.state().tab = 'cars'; A.renderBranch();
   const centralControls = els.content.innerHTML.includes('data-car-area="shifa" aria-pressed="true"') &&
     els.content.innerHTML.includes('data-car-area="qadisiyah" aria-pressed="true"') &&
