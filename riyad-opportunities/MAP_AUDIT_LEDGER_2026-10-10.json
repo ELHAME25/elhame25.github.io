@@ -17789,14 +17789,14 @@
       "category": "cars",
       "name": "معرض أنوار الخليج للسيارات",
       "city": "الأحساء",
-      "status": "address_corrected_retest_unreadable",
+      "status": "corrected_approved_google_maps_retest",
       "current_map": "https://www.google.com/maps/?cid=481399525153096393",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
         "matched": true,
-        "status": "address_corrected_retest_unreadable",
-        "notes": "قبل التعديل طابقت البطاقة الاسم والهاتف +966504920939 والعنوان CF58+WCR، المنطقة الصناعية، المبرز. أضفت Plus Code إلى العنوان؛ إعادة فتح CID بعد الحفظ لم تعرض تفاصيل قابلة للقراءة، لذلك أعيد الاختبار غير حاسم."
+        "status": "corrected_approved_google_maps_retest",
+        "notes": "إعادة فحص Google Maps CID بعد التصحيح نجحت: معرض أنوار الخليج السيارات، تاجر سيارات مستعملة، CF58+WCR المنطقة الصناعية بالمبرز، الهاتف +966504920939، ساعات اليوم حتى 8م. رابط الاتصال tel:+966504920939 ظاهر بالبطاقة. لا يوجد موقع إلكتروني أو واتساب مستقل مدرجان."
       },
       "source_urls": [
         "https://www.google.com/maps/?cid=481399525153096393"
@@ -17804,15 +17804,36 @@
       "evidence_note": "قبل التعديل طابقت البطاقة الاسم والهاتف +966504920939 والعنوان CF58+WCR، المنطقة الصناعية، المبرز. أضفت Plus Code إلى العنوان؛ إعادة فتح CID بعد الحفظ لم تعرض تفاصيل قابلة للقراءة، لذلك أعيد الاختبار غير حاسم.",
       "field_checks": {
         "phone": {
-          "status": "verified_match_google_maps"
+          "status": "matched",
+          "value": "0504920939",
+          "tested_link": "tel:+966504920939"
         },
         "website": {
-          "status": "not_present"
+          "status": "none_listed"
         },
         "whatsapp": {
-          "status": "not_present"
+          "status": "none_listed"
+        },
+        "name": {
+          "status": "matched",
+          "source": "Google Maps",
+          "value": "معرض انوار الخليج السيارات"
+        },
+        "activity": {
+          "status": "active",
+          "source": "Google Maps",
+          "value": "تاجر سيارات مستعملة"
+        },
+        "city_locality": {
+          "status": "matched",
+          "value": "CF58+WCR المنطقة الصناعية، المبرز"
+        },
+        "map": {
+          "status": "opened_and_matched",
+          "value": "https://www.google.com/maps/?cid=481399525153096393"
         }
-      }
+      },
+      "decision": "corrected_and_retained"
     },
     {
       "id": "phase5-car-a3cb87108886",
