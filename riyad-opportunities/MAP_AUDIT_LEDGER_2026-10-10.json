@@ -2,8 +2,8 @@
   "schema": "map-audit-ledger-v1",
   "branch": "fix/scope-counts-nhc-20261010",
   "base_commit": "bffa7fe0a4f2c8515335b4853cc942c507e7aeae",
-  "generated_at": "2026-10-10T16:07:11.295Z",
-  "note": "This ledger records safe Google Maps search fallbacks, not a claim that every resulting pin was opened or verified. It preserves record identifiers and prior links for reversibility. جولة الأحساء الإضافية: طابقت بطاقتا فهد مسفر الدوسري والمبارك الاسم والعنوان والهاتف؛ لم يتغير السجل. فُتحت خمسة دبابيس أخرى وتعذرت قراءة تفاصيلها؛ سجلت غير محسومة. This update archives and excludes 15 unresolved regional city copies from display in non-origin cities; original-city records are not changed. Two Abha official dealer records (Universal Motors Agencies/Chevrolet and SMOU/Changan) were archived then excluded from display based on official operator/brand sources. Ten further records already marked authorizedDealer=true were archived for removal as official dealerships/distributors.",
+  "generated_at": "2026-10-10T16:08:41.160Z",
+  "note": "This ledger records safe Google Maps search fallbacks, not a claim that every resulting pin was opened or verified. It preserves record identifiers and prior links for reversibility. جولة الأحساء الإضافية: طابقت بطاقتا فهد مسفر الدوسري والمبارك الاسم والعنوان والهاتف؛ لم يتغير السجل. فُتحت خمسة دبابيس أخرى وتعذرت قراءة تفاصيلها؛ سجلت غير محسومة. This update archives and excludes 15 unresolved regional city copies from display in non-origin cities; original-city records are not changed. Two Abha official dealer records (Universal Motors Agencies/Chevrolet and SMOU/Changan) were archived then excluded from display based on official operator/brand sources. Ten further records already marked authorizedDealer=true were archived for removal as official dealerships/distributors. معرض فيصل الدوسري بالأحساء: اعتمد رقما التواصل الظاهرين في إعلانات حراج النشطة للمعرض نفسه بعد حفظ الرقم القديم وتعارض رقم خرائط Google في السجل.",
   "entries": [
     {
       "id": "P003",
@@ -12284,7 +12284,7 @@
       "name": "معرض فيصل الدوسري للسيارات",
       "city": "الأحساء",
       "locality": "الصناعية الأحساء",
-      "status": "verified_maps_name_location_phone_conflict",
+      "status": "corrected_active_haraj_contacts_maps_phone_conflict_retained",
       "current_map": "https://www.google.com/maps/?cid=14209315490390253109",
       "checked_at": "2026-10-10",
       "map_check": {
@@ -12305,9 +12305,45 @@
         }
       },
       "source_urls": [
-        "https://gulfmap.net/place/معرض-فيصل-الدوسري-للسيارات"
+        "https://gulfmap.net/place/معرض-فيصل-الدوسري-للسيارات",
+        "https://haraj.com.sa/11188475685/لكزس_LS_3_50/",
+        "https://haraj.com.sa/11189544249/جيب_لكزس_2024_Bb/"
       ],
-      "evidence_note": "Named Maps place in Ahsa industrial area; Maps phone 0580601406 conflicts with stored 0565000056 and GulfMap phone/WA 0565000056. Keep stored field pending authoritative resolution."
+      "evidence_note": "Active Haraj listings posted within the last few weeks identify the same seller/showroom and display 0558221936 and 0550569211. The same recent listing for the showroom location says Al-Ahsa Industrial Area. Google Maps/GulfMap phone differs (0580601406 vs prior stored 0565000056); the two active seller contacts are used for customer contact while map-number discrepancy remains recorded.",
+      "history": [
+        {
+          "status": "verified_maps_name_location_phone_conflict",
+          "source_urls": [
+            "https://gulfmap.net/place/معرض-فيصل-الدوسري-للسيارات"
+          ],
+          "evidence_note": "Named Maps place in Ahsa industrial area; Maps phone 0580601406 conflicts with stored 0565000056 and GulfMap phone/WA 0565000056. Keep stored field pending authoritative resolution."
+        }
+      ],
+      "decision": "corrected_and_retained",
+      "archivedRecord": {
+        "id": "entity-db4c196b303d",
+        "n": "معرض فيصل الدوسري للسيارات",
+        "city": "الأحساء",
+        "nb": "الصناعية الأحساء",
+        "phones": [
+          "0565000056"
+        ],
+        "web": "https://www.mideastarchives.biz/SA/faisal-al-dosari-motor-show",
+        "maps": "https://www.google.com/maps/?cid=14209315490390253109",
+        "lat": 25.4076,
+        "lon": 49.47213,
+        "sec": "",
+        "loc": "nb"
+      },
+      "archiveReason": "Original phone field archived before correction. Recent Haraj listings by the same showroom seller show active contact numbers 0558221936 and 0550569211. Google Maps card has a different phone 0580601406, retained as an unresolved third-party discrepancy.",
+      "correctedRecord": {
+        "phones": [
+          "0558221936",
+          "0550569211"
+        ],
+        "phoneSource": "Active Haraj vehicle listings by معرض فيصل الدوسري",
+        "mapsPhoneConflict": "0580601406"
+      }
     },
     {
       "id": "entity-078be72a5e01",
