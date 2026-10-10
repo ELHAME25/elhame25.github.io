@@ -2,7 +2,7 @@
   "schema": "map-audit-ledger-v1",
   "branch": "fix/scope-counts-nhc-20261010",
   "base_commit": "bffa7fe0a4f2c8515335b4853cc942c507e7aeae",
-  "generated_at": "2026-10-10T16:52:00Z",
+  "generated_at": "2026-10-10",
   "note": "This ledger records safe Google Maps search fallbacks, not a claim that every resulting pin was opened or verified. It preserves record identifiers and prior links for reversibility. جولة الأحساء الإضافية: طابقت بطاقتا فهد مسفر الدوسري والمبارك الاسم والعنوان والهاتف؛ لم يتغير السجل. فُتحت خمسة دبابيس أخرى وتعذرت قراءة تفاصيلها؛ سجلت غير محسومة. This update archives and excludes 15 unresolved regional city copies from display in non-origin cities; original-city records are not changed. Two Abha official dealer records (Universal Motors Agencies/Chevrolet and SMOU/Changan) were archived then excluded from display based on official operator/brand sources. Ten further records already marked authorizedDealer=true were archived for removal as official dealerships/distributors. معرض فيصل الدوسري بالأحساء: اعتمد رقما التواصل الظاهرين في إعلانات حراج النشطة للمعرض نفسه بعد حفظ الرقم القديم وتعارض رقم خرائط Google في السجل.",
   "entries": [
     {
@@ -20048,6 +20048,71 @@
         "sec": "",
         "loc": "nb"
       }
+    },
+    {
+      "id": "v9-car-3345b57e5e59",
+      "category": "cars",
+      "name": "معرض جزيرة وربة للسيارات",
+      "city": "الدوادمي",
+      "locality": "الصناعية، الدوادمي 17436",
+      "status": "unresolved_no_opened_google_place_card",
+      "decision": "retained_location_and_phone_secondary_sources_google_pin_unverified",
+      "search_phrase": "معرض جزيرة وربة للسيارات الصناعية الدوادمي",
+      "previous_map": "",
+      "current_map": "",
+      "search_fallback": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9%20%D9%88%D8%B1%D8%A8%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AF%D9%85%D9%8A",
+      "field_checks": {
+        "name_activity": {
+          "status": "supported_by_independent_directories",
+          "note": "أدلة نشاط تجاري تصنفه معرض/تاجر سيارات؛ لم يُعثر على موقع رسمي مستقل."
+        },
+        "city_locality": {
+          "status": "supported_by_independent_directories",
+          "value": "الصناعية، الدوادمي 17436",
+          "sources": [
+            "https://www.cybo.com/SA/dawadmi/new-car-dealers/",
+            "https://albaraka.ma/cat/تاجر-سيارات-الدوادمي/"
+          ]
+        },
+        "phone": {
+          "status": "matched_independent_directories",
+          "value": "0531090603",
+          "sources": [
+            "https://www.cybo.com/SA/dawadmi/new-car-dealers/",
+            "https://albaraka.ma/cat/تاجر-سيارات-الدوادمي/"
+          ]
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        },
+        "google_maps_pin": {
+          "status": "unresolved_not_opened",
+          "note": "لم تظهر بطاقة مكان قابلة للتحقق؛ رابط البحث عام ولا يُعد دبوسًا مؤكدًا."
+        }
+      },
+      "source_urls": [
+        "https://www.cybo.com/SA/dawadmi/new-car-dealers/",
+        "https://albaraka.ma/cat/تاجر-سيارات-الدوادمي/"
+      ],
+      "evidence_note": "إحداثيات السجل السابقة (16.95703,42.85548) تقع خارج الدوادمي ولا تطابق العنوان. أزيلت الإحداثيات بدل نسب معرض إلى موقع خاطئ. الاسم والحي والهاتف تؤيدها أدلة مستقلة، لكن دبوس Google وواتساب والموقع الرسمي غير مثبتة.",
+      "archiveRecord": {
+        "id": "v9-car-3345b57e5e59",
+        "n": "معرض جزيرة وربة للسيارات",
+        "city": "الدوادمي",
+        "nb": "الصناعية، الدوادمي",
+        "phones": [
+          "0531090603"
+        ],
+        "lat": 16.95703,
+        "lon": 42.85548,
+        "sec": "",
+        "loc": "nb",
+        "pdfShowroomVerified": true
+      },
+      "checked_at": "2026-10-10"
     }
   ],
   "browser_spot_checks": [
@@ -20070,8 +20135,8 @@
       "tested_at": "2026-10-10"
     }
   ],
-  "last_verified_head": "f1d87f3b890cdad9a489d0490d2f3871e2d616df",
-  "last_batch": "تم توثيق إعادة الاختبار بعد الحفظ للقوس والأصالة الراقية والعز؛ وأضيفت أدلة حديثة لفيض الخيرات والشلبى ومحمد الجهني ودرر التاج مع إبقائها غير محسومة حيث تعذر مطابقة الدبوس/العنوان.",
+  "last_verified_head": "238d0e09db2feea913fd3e1c8147e6b6b45672ad",
+  "last_batch": "دوادمي: معرض جزيرة وربة؛ تصحيح إحداثيات لا تطابق المدينة، وإبقاء الدبوس غير مؤكد بعد مطابقة اسم/حي/هاتف من دليلين مستقلين.",
   "followup_batches": [
     {
       "date": "2026-10-10",
