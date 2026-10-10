@@ -17898,6 +17898,45 @@
           "status": "not_verified"
         }
       }
+    },
+    {
+      "id": "phase5-car-0e5c5645c5bb",
+      "category": "cars",
+      "name": "معرض الحزام الذهبي للسيارات",
+      "city": "الدمام",
+      "locality": "92X6+XPJ، ضاحية الملك فهد، الدمام 32313",
+      "status": "unresolved_no_exact_pin",
+      "current_map": "",
+      "search_fallback": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B2%D8%A7%D9%85%20%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%2092X6%2BXPJ%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": false,
+        "matched": false,
+        "status": "unresolved_no_exact_pin",
+        "notes": "رابط البحث الحالي لا يثبت بطاقة أو دبوسًا؛ فتحت بدائل بيانات Cybo وإعلان حراج حديث لتثبيت العنوان النصي ورقم الاتصال فقط."
+      },
+      "source_urls": [
+        "https://yellowpages-ar.cybo.com/SA-biz/معرض-الحزام-الذهبي-للسيارات",
+        "https://haraj.com.sa/11185999199/لكزس_ls500_موديل_2018/"
+      ],
+      "evidence_note": "Cybo يطابق الاسم والعنوان 92X6+XPJ ورقم الهاتف؛ إعلان حراج حديث يطابق الاسم والرقم، ويذكر التواصل عبر WhatsApp. لم يُتحقق من وجهة WhatsApp مستقلة ولا من دبوس Maps؛ أبقيا غير محسومين.",
+      "field_checks": {
+        "phone": {
+          "status": "verified_by_current_listing",
+          "sources": [
+            "https://haraj.com.sa/11185999199/لكزس_ls500_موديل_2018/"
+          ]
+        },
+        "website": {
+          "status": "not_verified"
+        },
+        "whatsapp": {
+          "status": "available_via_listing_number_destination_not_independently_tested"
+        },
+        "map_pin": {
+          "status": "unresolved_no_exact_pin"
+        }
+      }
     }
   ],
   "browser_spot_checks": [
@@ -18007,6 +18046,14 @@
         "entity-65cb7cddce51"
       ],
       "result": "إضافة mapReviewStatus وmapReviewNote، وإضافة mapsQ بحثي صريح غير مؤكد؛ لم يُنشأ دبوس ولا أُعد الفحص."
+    },
+    {
+      "checked_at": "2026-10-10",
+      "scope": "الدمام؛ تصحيح عنوان معرض الحزام الذهبي وتوثيق حقول الاتصال",
+      "record_ids": [
+        "phase5-car-0e5c5645c5bb"
+      ],
+      "result": "تحديث العنوان إلى 92X6+XPJ المدعوم بدليل اسم/عنوان وهاتف؛ تثبيت الهاتف من إعلان حراج حديث؛ لا دبوس مؤكد ولا وجهة WhatsApp مستقلة."
     }
   ],
   "audit_counts": {
