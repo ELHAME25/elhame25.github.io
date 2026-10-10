@@ -525,7 +525,7 @@
       // Keep the canonical showroom row for cross-city Eastern results; neighboring-city clones
       // share the same map pin and number and would otherwise be counted more than once.
       if (easternCrossCity && kind === 'cars' && o.regionalListingOf) return false;
-      if (kind === 'cars' && requiresReview(o.activityReviewStatus)) return false;
+      if (kind === 'cars' && o.authorizedDealer === true) return false;\n      if (kind === 'cars' && requiresReview(o.activityReviewStatus)) return false;
       if (kind === 'offices' && o.activityReviewStatus === 'closed_permanently') return false;
       if (kind === 'selfbuild' && requiresReview(o.availabilityStatus)) return false;
       if (kind === 'cars' && sameCity(b.city, 'الرياض')) {
