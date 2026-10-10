@@ -2,8 +2,8 @@
   "schema": "map-audit-ledger-v1",
   "branch": "fix/scope-counts-nhc-20261010",
   "base_commit": "bffa7fe0a4f2c8515335b4853cc942c507e7aeae",
-  "generated_at": "2026-10-10T13:51:18.032Z",
-  "note": "This ledger records safe Google Maps search fallbacks, not a claim that every resulting pin was opened or verified. It preserves record identifiers and prior links for reversibility. جولة الأحساء الإضافية: طابقت بطاقتا فهد مسفر الدوسري والمبارك الاسم والعنوان والهاتف؛ لم يتغير السجل. فُتحت خمسة دبابيس أخرى وتعذرت قراءة تفاصيلها؛ سجلت غير محسومة.",
+  "generated_at": "2026-10-10T16:03:34.996Z",
+  "note": "This ledger records safe Google Maps search fallbacks, not a claim that every resulting pin was opened or verified. It preserves record identifiers and prior links for reversibility. جولة الأحساء الإضافية: طابقت بطاقتا فهد مسفر الدوسري والمبارك الاسم والعنوان والهاتف؛ لم يتغير السجل. فُتحت خمسة دبابيس أخرى وتعذرت قراءة تفاصيلها؛ سجلت غير محسومة. This update archives and excludes 15 unresolved regional city copies from display in non-origin cities; original-city records are not changed.",
   "entries": [
     {
       "id": "P003",
@@ -277,6 +277,31 @@
         "matched": false,
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
+      },
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from الثقبة: regional copy's recorded originCity is الخبر, and prior map audit found no verified city-specific pin for الثقبة. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in الخبر.",
+      "archivedRecord": {
+        "id": "regional-pdf-national-car-9e7346b3ca3e8f-072",
+        "n": "معرض الغصاب للسيارات",
+        "city": "الثقبة",
+        "nb": "شارع الرياض،الإسكان،الخبر34626،السعودية",
+        "phones": [
+          "0566944266"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "loc": "nb",
+        "regionalListing": true,
+        "regionalListingOf": "national-car-9e7346b3ca3e8f",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "الخبر",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "الرابط السابق https://www.waze.com/ar/live-map/directions/sa/almntqh-alshrqyh/alkhbr/mardh-alghsab-llsyarat?to=place.ChIJ-wTj9L3CST4R7VGW9hV0Pq4 يوجّه إلى موقع في الخبر؛ لا يثبت فرعًا في الثقبة. أزيل الدبوس وأضيف بحث Google Maps بالاسم والمدينة فقط. نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة.",
+        "mapsQ": ""
       }
     },
     {
@@ -300,6 +325,30 @@
         "matched": false,
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
+      },
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from الثقبة: regional copy's recorded originCity is الخبر, and prior map audit found no verified city-specific pin for الثقبة. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in الخبر.",
+      "archivedRecord": {
+        "id": "regional-pdf-national-car-mas-khobar-072",
+        "n": "شركة ماس الشرقية للسيارات",
+        "city": "الثقبة",
+        "nb": "",
+        "phones": [
+          "0596861943"
+        ],
+        "web": "https://mascars.net/",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "regionalListing": true,
+        "regionalListingOf": "national-car-mas-khobar",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "الخبر",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "الرابط السابق https://www.google.com/maps/?cid=8051062329967731745 يوجّه إلى موقع في الخبر؛ لا يثبت فرعًا في الثقبة. أزيل الدبوس وأضيف بحث Google Maps بالاسم والمدينة فقط. نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة.",
+        "mapsQ": ""
       }
     },
     {
@@ -343,7 +392,31 @@
           ]
         }
       },
-      "search_fallback": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%B7%D9%84%D9%82%20%D8%A2%D9%84%20%D9%85%D9%84%D8%AD%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AF%D9%84%D9%85"
+      "search_fallback": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%B7%D9%84%D9%82%20%D8%A2%D9%84%20%D9%85%D9%84%D8%AD%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AF%D9%84%D9%85",
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from الدلم: regional copy's recorded originCity is الخرج, and prior map audit found no verified city-specific pin for الدلم. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in الخرج.",
+      "archivedRecord": {
+        "id": "regional-pdf-national-car-4835e5d99e640e-073",
+        "n": "معرض مطلق آل ملحم للسيارات",
+        "city": "الدلم",
+        "nb": "الخرج، منطقة الرياض، السعودية؛ الشارع غير منشور",
+        "phones": [
+          "0555102170"
+        ],
+        "web": "",
+        "maps": "",
+        "sec": "",
+        "regionalListing": true,
+        "regionalListingOf": "national-car-4835e5d99e640e",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "الخرج",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "دبوس الموقع في الخرج لا يطابق مدينة الإدراج الدلم؛ لم يُثبت موقع محلي. نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة.",
+        "mapsQ": "",
+        "lat": null,
+        "lon": null
+      }
     },
     {
       "id": "regional-pdf-national-car-9e7346b3ca3e8f-074",
@@ -457,6 +530,30 @@
         "matched": false,
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
+      },
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from دومة الجندل: regional copy's recorded originCity is سكاكا, and prior map audit found no verified city-specific pin for دومة الجندل. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in سكاكا.",
+      "archivedRecord": {
+        "id": "regional-pdf-national-car-a73435a12ccdae-059",
+        "n": "معرض الحيزان للسيارات 2",
+        "city": "دومة الجندل",
+        "nb": "طريق الأمير عبدالإله بن عبدالعزيز، Second Industrial, Sakaka 72342, Saudi Arabia، سكاكا، منطقة الجوف",
+        "phones": [
+          "0550717211"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "regionalListing": true,
+        "regionalListingOf": "national-car-a73435a12ccdae",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "سكاكا",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "الرابط السابق https://www.google.com/maps/?cid=6111654092087325284 يوجّه إلى موقع في سكاكا؛ لا يثبت فرعًا في دومة الجندل. أزيل الدبوس وأضيف بحث Google Maps بالاسم والمدينة فقط. نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة.",
+        "mapsQ": ""
       }
     },
     {
@@ -478,6 +575,31 @@
         "matched": false,
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
+      },
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from رأس تنورة: regional copy's recorded originCity is القطيف, and prior map audit found no verified city-specific pin for رأس تنورة. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in القطيف.",
+      "archivedRecord": {
+        "id": "regional-pdf-national-car-47a94fd0602614-075",
+        "n": "معرض آل إبراهيم للسيارات",
+        "city": "رأس تنورة",
+        "nb": "HX9W+V9J، الحسين، القطيف 32641، السعودية",
+        "phones": [
+          "0503852098"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "loc": "nb",
+        "regionalListing": true,
+        "regionalListingOf": "national-car-47a94fd0602614",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "القطيف",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "الرابط السابق https://www.google.com/maps/?cid=2068688951169834247 يوجّه إلى موقع في القطيف؛ لا يثبت فرعًا في رأس تنورة. أزيل الدبوس وأضيف بحث Google Maps بالاسم والمدينة فقط. نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة.",
+        "mapsQ": ""
       }
     },
     {
@@ -501,6 +623,31 @@
         "matched": false,
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
+      },
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from رأس تنورة: regional copy's recorded originCity is القطيف, and prior map audit found no verified city-specific pin for رأس تنورة. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in القطيف.",
+      "archivedRecord": {
+        "id": "regional-pdf-national-car-e2d5530a674676-075",
+        "n": "معرض الماس الشرقية للسيارات — فرع القطيف",
+        "city": "رأس تنورة",
+        "nb": "شارع أحد، حي الشهباء، القطيف 32656",
+        "phones": [
+          "0539488199"
+        ],
+        "web": "https://almascars.com/",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "loc": "nb",
+        "regionalListing": true,
+        "regionalListingOf": "national-car-e2d5530a674676",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "القطيف",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "الرابط السابق https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%85%D8%A7%D8%B3+%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9&query_place_id=ChIJoUhS3OX-NT4R5xau6bEikGw يوجّه إلى موقع في القطيف؛ لا يثبت فرعًا في رأس تنورة. أزيل الدبوس وأضيف بحث Google Maps بالاسم والمدينة فقط. نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة.",
+        "mapsQ": ""
       }
     },
     {
@@ -538,7 +685,32 @@
           ]
         }
       },
-      "search_fallback": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A2%D9%84%20%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B3%D9%8A%D9%87%D8%A7%D8%AA"
+      "search_fallback": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A2%D9%84%20%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B3%D9%8A%D9%87%D8%A7%D8%AA",
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from سيهات: regional copy's recorded originCity is القطيف, and prior map audit found no verified city-specific pin for سيهات. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in القطيف.",
+      "archivedRecord": {
+        "id": "regional-pdf-national-car-47a94fd0602614-036",
+        "n": "معرض آل إبراهيم للسيارات",
+        "city": "سيهات",
+        "nb": "HX9W+V9J، الحسين، القطيف 32641، السعودية",
+        "phones": [
+          "0503852098"
+        ],
+        "web": "",
+        "maps": "",
+        "sec": "",
+        "loc": "nb",
+        "regionalListing": true,
+        "regionalListingOf": "national-car-47a94fd0602614",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "القطيف",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "الرابط السابق  يوجّه إلى موقع في القطيف؛ لا يثبت فرعًا في سيهات. أزيل الدبوس وأضيف بحث Google Maps بالاسم والمدينة فقط. نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة.",
+        "lat": null,
+        "lon": null,
+        "mapsQ": ""
+      }
     },
     {
       "id": "regional-pdf-national-car-e2d5530a674676-036",
@@ -561,6 +733,31 @@
         "matched": false,
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
+      },
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from سيهات: regional copy's recorded originCity is القطيف, and prior map audit found no verified city-specific pin for سيهات. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in القطيف.",
+      "archivedRecord": {
+        "id": "regional-pdf-national-car-e2d5530a674676-036",
+        "n": "معرض الماس الشرقية للسيارات — فرع القطيف",
+        "city": "سيهات",
+        "nb": "شارع أحد، حي الشهباء، القطيف 32656",
+        "phones": [
+          "0539488199"
+        ],
+        "web": "https://almascars.com/",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "loc": "nb",
+        "regionalListing": true,
+        "regionalListingOf": "national-car-e2d5530a674676",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "القطيف",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "الرابط السابق https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%85%D8%A7%D8%B3+%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9&query_place_id=ChIJoUhS3OX-NT4R5xau6bEikGw يوجّه إلى موقع في القطيف؛ لا يثبت فرعًا في سيهات. أزيل الدبوس وأضيف بحث Google Maps بالاسم والمدينة فقط. نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة.",
+        "mapsQ": ""
       }
     },
     {
@@ -582,6 +779,31 @@
         "matched": false,
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
+      },
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from صفوى: regional copy's recorded originCity is القطيف, and prior map audit found no verified city-specific pin for صفوى. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in القطيف.",
+      "archivedRecord": {
+        "id": "regional-pdf-national-car-47a94fd0602614-047",
+        "n": "معرض آل إبراهيم للسيارات",
+        "city": "صفوى",
+        "nb": "HX9W+V9J، الحسين، القطيف 32641، السعودية",
+        "phones": [
+          "0503852098"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "loc": "nb",
+        "regionalListing": true,
+        "regionalListingOf": "national-car-47a94fd0602614",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "القطيف",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "الرابط السابق https://www.google.com/maps/?cid=2068688951169834247 يوجّه إلى موقع في القطيف؛ لا يثبت فرعًا في صفوى. أزيل الدبوس وأضيف بحث Google Maps بالاسم والمدينة فقط. نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة.",
+        "mapsQ": ""
       }
     },
     {
@@ -605,6 +827,31 @@
         "matched": false,
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
+      },
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from صفوى: regional copy's recorded originCity is القطيف, and prior map audit found no verified city-specific pin for صفوى. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in القطيف.",
+      "archivedRecord": {
+        "id": "regional-pdf-national-car-e2d5530a674676-047",
+        "n": "معرض الماس الشرقية للسيارات — فرع القطيف",
+        "city": "صفوى",
+        "nb": "شارع أحد، حي الشهباء، القطيف 32656",
+        "phones": [
+          "0539488199"
+        ],
+        "web": "https://almascars.com/",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "loc": "nb",
+        "regionalListing": true,
+        "regionalListingOf": "national-car-e2d5530a674676",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "القطيف",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "الرابط السابق https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%85%D8%A7%D8%B3+%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9&query_place_id=ChIJoUhS3OX-NT4R5xau6bEikGw يوجّه إلى موقع في القطيف؛ لا يثبت فرعًا في صفوى. أزيل الدبوس وأضيف بحث Google Maps بالاسم والمدينة فقط. نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة.",
+        "mapsQ": ""
       }
     },
     {
@@ -18176,6 +18423,30 @@
         "matched": false,
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
+      },
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from أبها: regional copy's recorded originCity is خميس مشيط, and prior map audit found no verified city-specific pin for أبها. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in خميس مشيط.",
+      "archivedRecord": {
+        "id": "regional-pdf-entity-dee18ad48246-011",
+        "n": "معرض الوادعي لبيع السيارات",
+        "city": "أبها",
+        "nb": "هجلة",
+        "phones": [
+          "0507733999"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "regionalListing": true,
+        "regionalListingOf": "entity-dee18ad48246",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "خميس مشيط",
+        "pdfShowroomVerified": true,
+        "mapsQ": "",
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة."
       }
     },
     {
@@ -18206,6 +18477,30 @@
         "matched": false,
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
+      },
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from أبو عريش: regional copy's recorded originCity is أحد المسارحة, and prior map audit found no verified city-specific pin for أبو عريش. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in أحد المسارحة.",
+      "archivedRecord": {
+        "id": "regional-pdf-entity-06d7d733538f-053",
+        "n": "معرض الدغارير للسيارات",
+        "city": "أبو عريش",
+        "nb": "",
+        "phones": [
+          "0503769662"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "mapsQ": "",
+        "regionalListing": true,
+        "regionalListingOf": "entity-06d7d733538f",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "أحد المسارحة",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة."
       }
     },
     {
@@ -18236,6 +18531,30 @@
         "matched": false,
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
+      },
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from جازان: regional copy's recorded originCity is أحد المسارحة, and prior map audit found no verified city-specific pin for جازان. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in أحد المسارحة.",
+      "archivedRecord": {
+        "id": "regional-pdf-entity-06d7d733538f-013",
+        "n": "معرض الدغارير للسيارات",
+        "city": "جازان",
+        "nb": "",
+        "phones": [
+          "0503769662"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "mapsQ": "",
+        "regionalListing": true,
+        "regionalListingOf": "entity-06d7d733538f",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "أحد المسارحة",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة."
       }
     },
     {
@@ -18266,6 +18585,30 @@
         "matched": false,
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
+      },
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from صامطة: regional copy's recorded originCity is أحد المسارحة, and prior map audit found no verified city-specific pin for صامطة. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in أحد المسارحة.",
+      "archivedRecord": {
+        "id": "regional-pdf-entity-06d7d733538f-056",
+        "n": "معرض الدغارير للسيارات",
+        "city": "صامطة",
+        "nb": "",
+        "phones": [
+          "0503769662"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "mapsQ": "",
+        "regionalListing": true,
+        "regionalListingOf": "entity-06d7d733538f",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "أحد المسارحة",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة."
       }
     },
     {
@@ -18296,6 +18639,30 @@
         "matched": false,
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
+      },
+      "decision": "excluded_from_unverified_city_alias",
+      "archiveReason": "Archived before removal from صبيا: regional copy's recorded originCity is أحد المسارحة, and prior map audit found no verified city-specific pin for صبيا. This exclusion applies only to the unverified city copy; it does not assert that the original business is closed or invalid in أحد المسارحة.",
+      "archivedRecord": {
+        "id": "regional-pdf-entity-06d7d733538f-008",
+        "n": "معرض الدغارير للسيارات",
+        "city": "صبيا",
+        "nb": "",
+        "phones": [
+          "0503769662"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "mapsQ": "",
+        "regionalListing": true,
+        "regionalListingOf": "entity-06d7d733538f",
+        "regionalListingSource": "قائمة_معارض_المدن_الصغيرة.pdf (2026-10-07): أُدرج السجل في المدينة المجاورة كما ورد بالمصدر؛ حُفظت بيانات الأصل ودبوسه دون تعديل.",
+        "originCity": "أحد المسارحة",
+        "pdfShowroomVerified": true,
+        "mapReviewStatus": "no_verified_local_pin",
+        "mapReviewNote": "نسخة مدرجة لمدينة مجاورة؛ لم يُثبت دبوس مستقل لهذه المدينة. أزيل رابط CID/بحث غير محلي أو عام كي لا يظهر كدبوس؛ تبقى المدينة الأصلية والعنوان/الهاتف وبيانات المصدر محفوظة."
       }
     },
     {
