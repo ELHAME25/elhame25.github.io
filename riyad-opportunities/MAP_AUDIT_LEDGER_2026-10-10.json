@@ -15326,7 +15326,7 @@
     }
   ],
   "audit_counts": {
-    "as_of_commit": "7286f1f7c23925cdfd16422d60cd30b996c80cb8",
+    "as_of_commit": "c0fbeafd74878405bff401f8efcd0484e1da12f1",
     "map_target_actions": 4059,
     "opened_and_tied_to_unique_record": 232,
     "verified_correct": 77,
@@ -15406,7 +15406,12 @@
       "P023",
       "P027",
       "P029",
-      "cp-karden-asir"
+      "cp-karden-asir",
+      "entity-cb0ac77da252",
+      "entity-a80e0faa1f92",
+      "entity-83b787c12cb5",
+      "entity-b4bef84d2797",
+      "entity-ba4bc778cc25"
     ],
     "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field. Added 4 office records from Maps card opens: three matching Cards, one record where Maps title appeared but details could not be read; 3 marked correct, 1 unresolved. Official site/WhatsApp checks separated. Denominator reconciled to deduplicated baseline 4,059; previous checkpoints had incorrectly increased the denominator when logging existing dataset rows. All logged IDs were already represented in baseline target count. Before the removed-link re-audit, Maps had 215 opened, 71 verified matches, and 144 unresolved (counts corrected for P029). P029 corrected and post-edit tested: city fixed to Seihat and direct Google Maps card pin now matches project name, Ghadeer district, city; counts updated (+1 correct and corrected/retested, -1 unresolved). Tested and updated project search fallbacks after editing: P016 still returns no result/world center; P021 yields only Mutrafiyah area; P024 yields two similar but unverified candidates. All remain unresolved; none counted correct. Removed-link re-audit: opened 3 regional car searches and 3 company searches; Karden official HQ pin was post-edit tested, adding one verified and corrected/retested record. The other five remain unresolved and retained. Current totals: 4,059 targets; 221 opened; 72 correct; 7 corrected/retested; 149 unresolved; 3,838 unopened. New maps audit: five additional showroom records were opened; all five cards matched record name and locality. One showroom phone conflicts with its Maps listing and another lists two numbers; these are independent field states. Six Riyad Bank coordinate links were opened with no readable branch cards; official sources partially support names/locations and reveal that code 304 has two distinct addresses, so no pin/district correction was made. Updated cumulative totals: 232 opened, 77 proven correct, 7 corrected/retested, 155 unresolved, 3,827 not opened of 4,059 targets."
   }
