@@ -123,12 +123,15 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   fireDocument('click', target({ 'data-scope': 'city' }));
   assert('all-city scope is explicit and applied', A.state().scope === 'city' && els.app.innerHTML.includes('كل ' + A.state().branch.city));
 
-  // Widening the radius changes results while keeping unlocated records visible.
+  // Branch totals include only geographically verifiable projects; city view retains unlocated projects.
   A.selectBranch('243'); A.state().radius = 5; A.state().scope = 'branch'; A.renderBranch();
-  const projectCount5 = A.itemsFor('projects', '', 'branch').length;
+  const projectCount5 = A.itemsFor('projects', '', 'branch');
+  const cityProjectCount = A.itemsFor('projects', '', 'city');
+  const unknownInBranch = projectCount5.filter(x => x.rankD == null).length;
+  const unknownInCity = cityProjectCount.filter(x => x.rankD == null).length;
   els.radius.value = '10'; els.radius.dispatch('change');
   const projectCount10 = A.itemsFor('projects', '', 'branch').length;
-  assert('widening 5 km to 10 km applies the wider filter', A.state().radius === 10 && A.state().scope === 'branch' && projectCount10 >= projectCount5);
+  assert('branch radius excludes unlocated records while city view retains them', A.state().radius === 10 && A.state().scope === 'branch' && projectCount10 >= projectCount5.length && unknownInBranch === 0 && unknownInCity > 0);
 
   // The search control and live filtering are exercised independently for each populated section.
   const searchable = ['projects', 'opps', 'nhc', 'selfbuild', 'companies', 'offices', 'cars'];
@@ -147,11 +150,26 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const unknownCount = counterRows.filter(x => x.rankD == null).length;
   const approximateCount = counterRows.filter(x => x.rankD != null && x.o.loc === 'nb').length;
   const exactCount = counterRows.length - unknownCount - approximateCount;
-  const branchCounter = counterRows.length > 0 && exactCount > 0 && unknownCount > 0 &&
-    els.content.innerHTML.includes(counterRows.length + ' مشروعًا لنطاق الفرع: ' + exactCount + ' بإحداثيات، ' + approximateCount + ' بمسافة تقريبية، ' + unknownCount + ' موقع غير محدد');
+  const cityUnknownCount = A.itemsFor('projects', '', 'city').filter(x => x.rankD == null).length;
+  const branchCounter = counterRows.length > 0 && exactCount > 0 && unknownCount === 0 &&
+    els.content.innerHTML.includes(counterRows.length + ' مشروعًا داخل نطاق الفرع: ' + exactCount + ' بإحداثيات، ' + approximateCount + ' بمواقع تقريبية.');
   els['q-sec'].value = '__qa_no_such_record__'; els['q-sec'].dispatch('input');
-  assert('Riyadh branch project count splits exact, approximate and unknown locations and follows search', branchCounter && els.content.innerHTML.includes('0 مشروعًا لنطاق الفرع: 0 بإحداثيات، 0 بمسافة تقريبية، 0 موقع غير محدد') && els.content.innerHTML.includes('لا نتائج مطابقة'));
+  assert('Riyadh branch count excludes unknown location and city view preserves those projects', branchCounter && cityUnknownCount > 0 && els.content.innerHTML.includes('0 مشروعًا داخل نطاق الفرع: 0 بإحداثيات، 0 بمواقع تقريبية.') && els.content.innerHTML.includes('المشاريع غير محددة الموقع متاحة عند اختيار كل الرياض') && els.content.innerHTML.includes('لا نتائج مطابقة'));
 
+  // NHC destinations stay separate from project rows and follow the selected sector.
+  A.selectBranch('243', true); A.state().scope = 'branch'; A.state().tab = 'nhc';
+  const eastBranchDestinations = A.itemsFor('nhc', '', 'branch');
+  A.state().scope = 'sector'; A.state().explore = 'شرق';
+  const eastDestinations = A.itemsFor('nhc', 'شرق', 'sector');
+  A.state().explore = 'شمال';
+  const northDestinations = A.itemsFor('nhc', 'شمال', 'sector');
+  const allDestinations = A.itemsFor('nhc', '', 'city');
+  A.state().explore = 'شرق'; A.state().tab = 'nhc'; A.renderBranch();
+  assert('NHC destinations are sector-specific, independently counted, and city view retains all destinations',
+    eastBranchDestinations.length === 3 && eastDestinations.length === 3 &&
+    eastDestinations.every(x => (x.o.sectors || []).includes('شرق')) &&
+    northDestinations.length === 1 && allDestinations.length === 5 &&
+    els.app.innerHTML.includes('وجهات NHC') && els.app.innerHTML.includes('data-tab="nhc"'));
   // Open details from the card's delegated click, close with its close control, and open by Enter.
   A.state().q = {}; A.state().scope = 'city'; A.state().tab = 'projects'; A.renderBranch();
   const detailIdMatch = els.content.innerHTML.match(/data-detail="(\d+)"/);
