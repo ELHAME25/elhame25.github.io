@@ -14598,33 +14598,35 @@
       "id": "P029",
       "category": "projects",
       "name": "جي برايم 1",
-      "city": "الخبر",
-      "locality": "",
-      "status": "unresolved_maps_developer_office_official_city_conflict",
-      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%AC%D9%8A%20%D8%A8%D8%B1%D8%A7%D9%8A%D9%85%201%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AC%D9%86%D8%A7%D9%86%20%D9%81%D8%AF%D9%83%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "city": "سيهات",
+      "locality": "الغدير",
+      "status": "verified_project_pin_city_district_and_post_edit_retested",
+      "current_map": "https://www.google.com/maps/place/%D9%85%D8%AC%D9%85%D8%B9+%D8%AC%D9%8A+%D8%A8%D8%B1%D8%A7%D9%8A%D9%85+1+%D8%A7%D9%84%D8%B3%D9%83%D9%86%D9%8A+%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%E2%80%AD/@26.4946581,50.0531614,1999m/data=!3m1!1e3!4m10!1m2!2m1!1z2KzZiiDYqNix2KfZitmFIDEg2LPZitmH2KfYqiDYp9mE2YLYt9mK2YE!3m6!1s0x3e49ff006ffaacb9:0xf763db2c4f556374!8m2!3d26.4946581!4d50.0441492!15sCinYrNmKINio2LHYp9mK2YUgMSDYs9mK2YfYp9iqINin2YTZgti32YrZgZIBEWFwYXJ0bWVudF9jb21wbGV44AEA!16s%2Fg%2F11wfk4z5bl!5m1!1e2?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
       "map_check": {
         "opened": true,
-        "matched": false,
-        "status": "unresolved_maps_developer_office_official_city_conflict",
-        "notes": "Maps current result is developer office, not project. Sakani places this project in Seihat (Qatif), contradicting current dataset city Khobar; site confirms developer, not project pin. Correct city field pending edit; no matching project pin."
+        "matched": true,
+        "status": "verified_project_pin_city_district_and_post_edit_retested",
+        "notes": "Post-edit retest on Google Maps displayed the exact card «مجمع جي برايم 1 السكني التجاري», type residential compound, Plus Code F2VV+VM6 and address Khaleej Rd, Al-Ghadeer, Seihat 32451; 4.6/9 reviews. Official Sakani identifies Ji Prime 1 in Seihat; Sobra report identifies Al-Ghadeer and its Maps shortlink resolves within about 10m of the card pin. The prior mapsQ led to developer office and was replaced by this direct project card. Stored city corrected from Al-Khobar to Seihat."
       },
       "field_checks": {
         "phone": {
-          "status": "not_present_in_record"
+          "status": "official_developer_contact_not_project_specific",
+          "value": "+966594027240"
         },
         "whatsapp": {
-          "status": "not_present_in_record"
+          "status": "no_project_specific_whatsapp_verified"
         },
         "website": {
-          "status": "not_present_in_record"
+          "status": "official_developer_website",
+          "value": "https://jinanfadak.sa/"
         }
       },
       "source_urls": [
         "https://sakani.sa/app/offplan-projects/1088",
-        "https://jinanfadak.sa/",
-        "https://bsf.sa/arabic/personal/finance/home-finance-products/off-plan-product"
+        "https://www.sobranews.com/sobra/221863/",
+        "https://jinanfadak.sa/"
       ],
-      "evidence_note": "Maps current result is developer office, not project. Sakani places this project in Seihat (Qatif), contradicting current dataset city Khobar; site confirms developer, not project pin. Correct city field pending edit; no matching project pin."
+      "evidence_note": "Post-edit retest on Google Maps displayed the exact card «مجمع جي برايم 1 السكني التجاري», type residential compound, Plus Code F2VV+VM6 and address Khaleej Rd, Al-Ghadeer, Seihat 32451; 4.6/9 reviews. Official Sakani identifies Ji Prime 1 in Seihat; Sobra report identifies Al-Ghadeer and its Maps shortlink resolves within about 10m of the card pin. The prior mapsQ led to developer office and was replaced by this direct project card. Stored city corrected from Al-Khobar to Seihat."
     },
     {
       "id": "P030",
@@ -14762,9 +14764,9 @@
     "as_of_commit": "pending",
     "map_target_actions": 4059,
     "opened_and_tied_to_unique_record": 215,
-    "verified_correct": 70,
-    "corrected_and_retested": 5,
-    "unresolved_after_open": 145,
+    "verified_correct": 71,
+    "corrected_and_retested": 6,
+    "unresolved_after_open": 144,
     "not_opened": 3844,
     "method": "Deduplicated record IDs; map target action per app row uses maps||mapsQ, branch coordinates (246), and generated selfbuild search (10). Correct requires directly opened target and positive name/location/purpose evidence; unresolved and merely opened are excluded. Phone, WhatsApp and website status stays field-specific.",
     "verified_correct_ids": [
@@ -14837,8 +14839,9 @@
       "phase5-office-7100bfbe2905",
       "phase5-office-1800d7dacf5f",
       "P023",
-      "P027"
+      "P027",
+      "P029"
     ],
-    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field. Added 4 office records from Maps card opens: three matching Cards, one record where Maps title appeared but details could not be read; 3 marked correct, 1 unresolved. Official site/WhatsApp checks separated. Denominator reconciled to deduplicated baseline 4,059; previous checkpoints had incorrectly increased the denominator when logging existing dataset rows. All logged IDs were already represented in baseline target count. Maps currently opened 215, with 70 verified matching results and 145 unresolved."
+    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field. Added 4 office records from Maps card opens: three matching Cards, one record where Maps title appeared but details could not be read; 3 marked correct, 1 unresolved. Official site/WhatsApp checks separated. Denominator reconciled to deduplicated baseline 4,059; previous checkpoints had incorrectly increased the denominator when logging existing dataset rows. All logged IDs were already represented in baseline target count. Maps currently opened 215, with 70 verified matching results and 145 unresolved. P029 corrected and post-edit tested: city fixed to Seihat and direct Google Maps card pin now matches project name, Ghadeer district, city; counts updated (+1 correct and corrected/retested, -1 unresolved)."
   }
 }
