@@ -1,0 +1,533 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "aef9217380a4abfb2e63eed937598a0a043ede17",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "سكاكا، الدفعة 01، أول عشرة سجلات؛ فحص روابط Google Maps الفعلية، وأرقام الهواتف الظاهرة ببطاقات Maps.",
+  "count": 10,
+  "note": "تطابق Google Maps أو اختلافه موثق كما ظهر في البطاقة؛ لم تتوفر مصادر مستقلة ثانية كافية لتأكيد الهواتف أو واتساب. رابطا Waze وYango لا يُحسبان رابط Google Maps. لم يتغير cars.json.",
+  "entries": [
+    {
+      "id": "national-car-711e34151620f3",
+      "name": "معرض الحيزان للسيارات",
+      "evidence": "Google Maps غير متوفر في السجل؛ الرابط المحفوظ Waze فقط ولا يثبت رابط Google Maps.",
+      "sources": [
+        "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps غير متوفر في السجل؛ الرابط المحفوظ Waze فقط ولا يثبت رابط Google Maps.",
+          "sources": [
+            "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps غير متوفر في السجل؛ الرابط المحفوظ Waze فقط ولا يثبت رابط Google Maps.",
+          "sources": [
+            "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps غير متوفر في السجل؛ الرابط المحفوظ Waze فقط ولا يثبت رابط Google Maps.",
+          "sources": [
+            "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُتحقق من رابط واتساب مباشر مستقل.",
+          "sources": [
+            "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+          ]
+        },
+        "google_maps": {
+          "status": "wrong_provider",
+          "evidence": "Google Maps غير متوفر في السجل؛ الرابط المحفوظ Waze فقط ولا يثبت رابط Google Maps.",
+          "sources": [
+            "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي مستقل من البطاقة المباشرة.",
+          "sources": [
+            "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-2816f6e8e14766",
+      "name": "معرض المعاضب للسيارات",
+      "evidence": "بطاقة Maps تطابق الاسم والعنوان ورقم الهاتف المخزن.",
+      "sources": [
+        "https://www.google.com/maps/?cid=8080332964048608699"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "google_maps_observed",
+          "evidence": "بطاقة Maps تطابق الاسم والعنوان ورقم الهاتف المخزن.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8080332964048608699"
+          ]
+        },
+        "city_locality": {
+          "status": "google_maps_observed",
+          "evidence": "بطاقة Maps تطابق الاسم والعنوان ورقم الهاتف المخزن.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8080332964048608699"
+          ]
+        },
+        "phone": {
+          "status": "google_maps_match",
+          "evidence": "بطاقة Maps تطابق الاسم والعنوان ورقم الهاتف المخزن.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8080332964048608699"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُتحقق من رابط واتساب مباشر مستقل.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8080332964048608699"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_listing",
+          "evidence": "بطاقة Maps تطابق الاسم والعنوان ورقم الهاتف المخزن.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8080332964048608699"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي مستقل من البطاقة المباشرة.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8080332964048608699"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-209a262ace4a89",
+      "name": "معرض ساري ستار للسيارات",
+      "evidence": "الموجود رابط Yango فقط؛ لا يثبت رابط Google Maps.",
+      "sources": [
+        "https://maps.yango.com/ar-sa/org/122776213387/"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "الموجود رابط Yango فقط؛ لا يثبت رابط Google Maps.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/122776213387/"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "الموجود رابط Yango فقط؛ لا يثبت رابط Google Maps.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/122776213387/"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "الموجود رابط Yango فقط؛ لا يثبت رابط Google Maps.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/122776213387/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُتحقق من رابط واتساب مباشر مستقل.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/122776213387/"
+          ]
+        },
+        "google_maps": {
+          "status": "wrong_provider",
+          "evidence": "الموجود رابط Yango فقط؛ لا يثبت رابط Google Maps.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/122776213387/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي مستقل من البطاقة المباشرة.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/122776213387/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-4b1dc24ee3c0ba",
+      "name": "شركة السعدون للسيارات",
+      "evidence": "بطاقة Google تعرض 0506195164 بدل الرقم المخزن 0539929994.",
+      "sources": [
+        "https://www.google.com/maps/?cid=2621385342235769310"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "google_maps_observed",
+          "evidence": "بطاقة Google تعرض 0506195164 بدل الرقم المخزن 0539929994.",
+          "sources": [
+            "https://www.google.com/maps/?cid=2621385342235769310"
+          ]
+        },
+        "city_locality": {
+          "status": "google_maps_observed",
+          "evidence": "بطاقة Google تعرض 0506195164 بدل الرقم المخزن 0539929994.",
+          "sources": [
+            "https://www.google.com/maps/?cid=2621385342235769310"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "بطاقة Google تعرض 0506195164 بدل الرقم المخزن 0539929994.",
+          "sources": [
+            "https://www.google.com/maps/?cid=2621385342235769310"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُتحقق من رابط واتساب مباشر مستقل.",
+          "sources": [
+            "https://www.google.com/maps/?cid=2621385342235769310"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_conflict",
+          "evidence": "بطاقة Google تعرض 0506195164 بدل الرقم المخزن 0539929994.",
+          "sources": [
+            "https://www.google.com/maps/?cid=2621385342235769310"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي مستقل من البطاقة المباشرة.",
+          "sources": [
+            "https://www.google.com/maps/?cid=2621385342235769310"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-246f7e80198729",
+      "name": "Automotive Exhibition Cavalry Abdul Wahid Al-Ghannam",
+      "evidence": "صفحة CID لم تعرض بطاقة قابلة للتحقق؛ غير مؤكد.",
+      "sources": [
+        "https://www.google.com/maps/?cid=9046313807519607327"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "صفحة CID لم تعرض بطاقة قابلة للتحقق؛ غير مؤكد.",
+          "sources": [
+            "https://www.google.com/maps/?cid=9046313807519607327"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "صفحة CID لم تعرض بطاقة قابلة للتحقق؛ غير مؤكد.",
+          "sources": [
+            "https://www.google.com/maps/?cid=9046313807519607327"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "صفحة CID لم تعرض بطاقة قابلة للتحقق؛ غير مؤكد.",
+          "sources": [
+            "https://www.google.com/maps/?cid=9046313807519607327"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُتحقق من رابط واتساب مباشر مستقل.",
+          "sources": [
+            "https://www.google.com/maps/?cid=9046313807519607327"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "صفحة CID لم تعرض بطاقة قابلة للتحقق؛ غير مؤكد.",
+          "sources": [
+            "https://www.google.com/maps/?cid=9046313807519607327"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي مستقل من البطاقة المباشرة.",
+          "sources": [
+            "https://www.google.com/maps/?cid=9046313807519607327"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-9d3dce7b723cb9",
+      "name": "معرض اسيا للسيارات",
+      "evidence": "بطاقة Maps تطابق الاسم والعنوان والرقم.",
+      "sources": [
+        "https://www.google.com/maps/?cid=13469919869683530200"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "google_maps_observed",
+          "evidence": "بطاقة Maps تطابق الاسم والعنوان والرقم.",
+          "sources": [
+            "https://www.google.com/maps/?cid=13469919869683530200"
+          ]
+        },
+        "city_locality": {
+          "status": "google_maps_observed",
+          "evidence": "بطاقة Maps تطابق الاسم والعنوان والرقم.",
+          "sources": [
+            "https://www.google.com/maps/?cid=13469919869683530200"
+          ]
+        },
+        "phone": {
+          "status": "google_maps_match",
+          "evidence": "بطاقة Maps تطابق الاسم والعنوان والرقم.",
+          "sources": [
+            "https://www.google.com/maps/?cid=13469919869683530200"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُتحقق من رابط واتساب مباشر مستقل.",
+          "sources": [
+            "https://www.google.com/maps/?cid=13469919869683530200"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_listing",
+          "evidence": "بطاقة Maps تطابق الاسم والعنوان والرقم.",
+          "sources": [
+            "https://www.google.com/maps/?cid=13469919869683530200"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي مستقل من البطاقة المباشرة.",
+          "sources": [
+            "https://www.google.com/maps/?cid=13469919869683530200"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-2f415413f39a6f",
+      "name": "معرض دروب الشمال للسيارات _ سكاكا _ الجوف",
+      "evidence": "صفحة CID لم تعرض بطاقة قابلة للتحقق؛ غير مؤكد.",
+      "sources": [
+        "https://www.google.com/maps/?cid=12614325780751697104"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "صفحة CID لم تعرض بطاقة قابلة للتحقق؛ غير مؤكد.",
+          "sources": [
+            "https://www.google.com/maps/?cid=12614325780751697104"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "صفحة CID لم تعرض بطاقة قابلة للتحقق؛ غير مؤكد.",
+          "sources": [
+            "https://www.google.com/maps/?cid=12614325780751697104"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "صفحة CID لم تعرض بطاقة قابلة للتحقق؛ غير مؤكد.",
+          "sources": [
+            "https://www.google.com/maps/?cid=12614325780751697104"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُتحقق من رابط واتساب مباشر مستقل.",
+          "sources": [
+            "https://www.google.com/maps/?cid=12614325780751697104"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "صفحة CID لم تعرض بطاقة قابلة للتحقق؛ غير مؤكد.",
+          "sources": [
+            "https://www.google.com/maps/?cid=12614325780751697104"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي مستقل من البطاقة المباشرة.",
+          "sources": [
+            "https://www.google.com/maps/?cid=12614325780751697104"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-35bb74bba41c9a",
+      "name": "معرض الشلال للسيارات",
+      "evidence": "بطاقة Maps تطابق الاسم والمنطقة ورقم الهاتف.",
+      "sources": [
+        "https://www.google.com/maps/?cid=18113135626771219717"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "google_maps_observed",
+          "evidence": "بطاقة Maps تطابق الاسم والمنطقة ورقم الهاتف.",
+          "sources": [
+            "https://www.google.com/maps/?cid=18113135626771219717"
+          ]
+        },
+        "city_locality": {
+          "status": "google_maps_observed",
+          "evidence": "بطاقة Maps تطابق الاسم والمنطقة ورقم الهاتف.",
+          "sources": [
+            "https://www.google.com/maps/?cid=18113135626771219717"
+          ]
+        },
+        "phone": {
+          "status": "google_maps_match",
+          "evidence": "بطاقة Maps تطابق الاسم والمنطقة ورقم الهاتف.",
+          "sources": [
+            "https://www.google.com/maps/?cid=18113135626771219717"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُتحقق من رابط واتساب مباشر مستقل.",
+          "sources": [
+            "https://www.google.com/maps/?cid=18113135626771219717"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_listing",
+          "evidence": "بطاقة Maps تطابق الاسم والمنطقة ورقم الهاتف.",
+          "sources": [
+            "https://www.google.com/maps/?cid=18113135626771219717"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي مستقل من البطاقة المباشرة.",
+          "sources": [
+            "https://www.google.com/maps/?cid=18113135626771219717"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-a73435a12ccdae",
+      "name": "معرض الحيزان للسيارات 2",
+      "evidence": "الاسم/النشاط قريب لكن الهاتف لا يطابق؛ قد تكون نسخة/فرعًا آخر، فلا يُصحح آليًا.",
+      "sources": [
+        "https://www.google.com/maps/?cid=6111654092087325284"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "google_maps_observed",
+          "evidence": "الاسم/النشاط قريب لكن الهاتف لا يطابق؛ قد تكون نسخة/فرعًا آخر، فلا يُصحح آليًا.",
+          "sources": [
+            "https://www.google.com/maps/?cid=6111654092087325284"
+          ]
+        },
+        "city_locality": {
+          "status": "google_maps_observed",
+          "evidence": "الاسم/النشاط قريب لكن الهاتف لا يطابق؛ قد تكون نسخة/فرعًا آخر، فلا يُصحح آليًا.",
+          "sources": [
+            "https://www.google.com/maps/?cid=6111654092087325284"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "الاسم/النشاط قريب لكن الهاتف لا يطابق؛ قد تكون نسخة/فرعًا آخر، فلا يُصحح آليًا.",
+          "sources": [
+            "https://www.google.com/maps/?cid=6111654092087325284"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُتحقق من رابط واتساب مباشر مستقل.",
+          "sources": [
+            "https://www.google.com/maps/?cid=6111654092087325284"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_conflict",
+          "evidence": "الاسم/النشاط قريب لكن الهاتف لا يطابق؛ قد تكون نسخة/فرعًا آخر، فلا يُصحح آليًا.",
+          "sources": [
+            "https://www.google.com/maps/?cid=6111654092087325284"
+          ]
+        },
+        "website": {
+          "status": "google_maps_observed",
+          "evidence": "بطاقة Maps تعرض رابط حراج legacy.haraj.com.sa؛ الرابط المخزن يشير إلى haraj.com.sa ويحتاج مراجعة حداثته.",
+          "sources": [
+            "https://www.google.com/maps/?cid=6111654092087325284"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-40e9f76b92325e",
+      "name": "معرض العسكر للسيارات",
+      "evidence": "رابط place_id لم يعرض بطاقة واضحة في القراءة؛ غير مؤكد.",
+      "sources": [
+        "https://www.google.com/maps/place/?q=place_id:ChIJd5r-08y-chURGJs_NYqygi0"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "رابط place_id لم يعرض بطاقة واضحة في القراءة؛ غير مؤكد.",
+          "sources": [
+            "https://www.google.com/maps/place/?q=place_id:ChIJd5r-08y-chURGJs_NYqygi0"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "رابط place_id لم يعرض بطاقة واضحة في القراءة؛ غير مؤكد.",
+          "sources": [
+            "https://www.google.com/maps/place/?q=place_id:ChIJd5r-08y-chURGJs_NYqygi0"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "رابط place_id لم يعرض بطاقة واضحة في القراءة؛ غير مؤكد.",
+          "sources": [
+            "https://www.google.com/maps/place/?q=place_id:ChIJd5r-08y-chURGJs_NYqygi0"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُتحقق من رابط واتساب مباشر مستقل.",
+          "sources": [
+            "https://www.google.com/maps/place/?q=place_id:ChIJd5r-08y-chURGJs_NYqygi0"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "رابط place_id لم يعرض بطاقة واضحة في القراءة؛ غير مؤكد.",
+          "sources": [
+            "https://www.google.com/maps/place/?q=place_id:ChIJd5r-08y-chURGJs_NYqygi0"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي مستقل من البطاقة المباشرة.",
+          "sources": [
+            "https://www.google.com/maps/place/?q=place_id:ChIJd5r-08y-chURGJs_NYqygi0"
+          ]
+        }
+      }
+    }
+  ]
+}
