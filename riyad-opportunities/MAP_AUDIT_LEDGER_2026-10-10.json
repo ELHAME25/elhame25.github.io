@@ -2,7 +2,7 @@
   "schema": "map-audit-ledger-v1",
   "branch": "fix/scope-counts-nhc-20261010",
   "base_commit": "bffa7fe0a4f2c8515335b4853cc942c507e7aeae",
-  "generated_at": "2026-10-10T14:50:00+03:00",
+  "generated_at": "2026-10-10T18:55:00+03:00",
   "note": "This ledger records safe Google Maps search fallbacks, not a claim that every resulting pin was opened or verified. It preserves record identifiers and prior links for reversibility.",
   "entries": [
     {
@@ -788,13 +788,13 @@
       "name": "جنان فدك",
       "city": "سيهات",
       "locality": "قرطبة/المنتزه",
-      "status": "exact_official_pin_city_corrected_pending_retest",
+      "status": "verified_corrected_exact_pin_retested",
       "current_map": "https://www.google.com/maps/place/جنان+فدك+للتطوير+والاستثمار+العقاري%E2%80%AD/@26.4951384,50.0423299,779m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e49ff0045e54d07:0x6d99f5f7b5f17032!8m2!3d26.4951384!4d50.0423299!16s%2Fg%2F11w9zmp7mp",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "status": "exact_official_pin_city_corrected_pending_retest",
-        "notes": "Official exact map place at 26.4951384,50.0423299; official HQ Seihat address/phone 594027240. City label corrected Dammam→Seihat, retained Dammam/Safwa coverage. WA not verified."
+        "status": "verified_corrected_exact_pin_retested",
+        "notes": "Post-commit exact URL reopened. Google Maps card named the company and showed Khaleej Rd, Al-Muntazah, Seihat 32453, F2WR+8V, phone 0594027240 and jinanfadak.sa. WA not separately verified."
       },
       "field_checks": {
         "phone": {
@@ -811,7 +811,10 @@
       "source_urls": [
         "https://jinanfadak.sa/contact",
         "https://www.google.com/maps/place/جنان+فدك+للتطوير+والاستثمار+العقاري%E2%80%AD/@26.4951384,50.0423299,779m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e49ff0045e54d07:0x6d99f5f7b5f17032!8m2!3d26.4951384!4d50.0423299!16s%2Fg%2F11w9zmp7mp"
-      ]
+      ],
+      "corrected_from": {
+        "map": "https://www.google.com/maps/place/جنان+فدك+للتطوير+والاستثمار+العقاري%E2%80%AD/@26.4951384,50.0423299,779m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e49ff0045e54d07:0x6d99f5f7b5f17032!8m2!3d26.4951384!4d50.0423299!16s%2Fg%2F11w9zmp7mp"
+      }
     },
     {
       "id": "cp-cced7c77d3",
@@ -7534,12 +7537,12 @@
       "city": "الطائف",
       "locality": "",
       "status": "unresolved_pin_not_opened",
-      "current_map": "generated:مخطط مسرة الطائف الطائف",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%AE%D8%B7%D8%B7%20%D9%85%D8%B3%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": false,
         "status": "unresolved_pin_not_opened",
-        "notes": "Haraj listing confirms plan name/area only; no official project pin. Generated UI Maps search was not independently opened."
+        "notes": "Haraj listing confirms plan name/area only; no official project pin. Generated UI Maps search was not independently opened. Current map target is the app-generated name+city search; it was not opened during this audit."
       },
       "field_checks": {
         "phone": {
@@ -7564,12 +7567,12 @@
       "city": "الطائف",
       "locality": "شمال الطائف/طريق السيل",
       "status": "unresolved_pin_not_opened",
-      "current_map": "generated:ديار الورود الطائف",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D9%8A%D8%A7%D8%B1%20%D8%A7%D9%84%D9%88%D8%B1%D9%88%D8%AF%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": false,
         "status": "unresolved_pin_not_opened",
-        "notes": "Developer site supports north Taif/Sail road/near airport and university; official map redirects failed HTTP 500. No exact project pin; generated UI search not opened."
+        "notes": "Developer site supports north Taif/Sail road/near airport and university; official map redirects failed HTTP 500. No exact project pin; generated UI search not opened. Current map target is the app-generated name+city search; it was not opened during this audit."
       },
       "field_checks": {
         "phone": {
@@ -7594,12 +7597,12 @@
       "city": "الطائف",
       "locality": "الوسام",
       "status": "unresolved_pin_not_opened",
-      "current_map": "generated:مخطط نخبة الوسام 2 الطائف",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%AE%D8%B7%D8%B7%20%D9%86%D8%AE%D8%A8%D8%A9%20%D8%A7%D9%84%D9%88%D8%B3%D8%A7%D9%85%202%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": false,
         "status": "unresolved_pin_not_opened",
-        "notes": "Developer site returned 502; secondary LinkedIn supports Taif project only. No exact pin; generated UI search not opened."
+        "notes": "Developer site returned 502; secondary LinkedIn supports Taif project only. No exact pin; generated UI search not opened. Current map target is the app-generated name+city search; it was not opened during this audit."
       },
       "field_checks": {
         "phone": {
@@ -10223,13 +10226,13 @@
       "name": "سدم",
       "city": "خميس مشيط",
       "locality": "",
-      "status": "official_city_confirmed_map_pin_unresolved",
+      "status": "official_city_confirmed_query_retested_exact_pin_unresolved",
       "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D8%AF%D9%85%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AF%D9%89%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "status": "official_city_confirmed_map_pin_unresolved",
-        "notes": "Current Maps query opened but did not yield a named exact project card. Official MADC and REGA identify Sudum in Khamis Mushait; row city corrected. Location pin unresolved."
+        "status": "official_city_confirmed_query_retested_exact_pin_unresolved",
+        "notes": "Final query retested; results show MADC in Jazan and وجهة السديم in Khamis Mushait, but no exact Sudum project card. Location remains unresolved."
       },
       "field_checks": {
         "phone": {
@@ -10247,7 +10250,11 @@
         "https://madc.sa/project/sudum/",
         "https://rega.gov.sa/rega-services/platforms/wafi-off-plan-sales-and-lease/?currentPage=26&tabActive=Wafi"
       ],
-      "evidence_note": "Current Maps query opened but did not yield a named exact project card. Official MADC and REGA identify Sudum in Khamis Mushait; row city corrected. Location pin unresolved."
+      "evidence_note": "Current Maps query opened but did not yield a named exact project card. Official MADC and REGA identify Sudum in Khamis Mushait; row city corrected. Location pin unresolved.",
+      "corrected_from": {
+        "city": "الباحة",
+        "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D8%AF%D9%85%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AF%D9%89%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9"
+      }
     },
     {
       "id": "P004",
@@ -10552,6 +10559,11 @@
         },
         "website": {
           "status": "official_project_source_checked"
+        },
+        "booking": {
+          "status": "link_reopened_sakani_spa_cookie_screen_no_project_content",
+          "previous": "https://sakani.sa/app/offplan-projects/1123",
+          "value": "https://sakani.sa/app/offplan-projects/1665"
         }
       },
       "source_urls": [
@@ -10559,7 +10571,10 @@
         "https://www.nhc.sa/real-estate-development/communities/47489/",
         "https://sakani.sa/app/offplan-projects/1665"
       ],
-      "evidence_note": "Maps showed Al-Worood sales center and field office, not project pin. Sakani page /1665 identified in official search as Rahab Al-Worood; current saved booking /1123 is reported as Mad Qamrah and likely wrong. Correction needs independent retest."
+      "evidence_note": "Maps showed Al-Worood sales center and field office, not project pin. Sakani page /1665 identified in official search as Rahab Al-Worood; current saved booking /1123 is reported as Mad Qamrah and likely wrong. Correction needs independent retest. Post-save URL /1665 opened only Sakani's cookie screen; no project identity visible, so not verified.",
+      "corrected_from": {
+        "booking": "https://sakani.sa/app/offplan-projects/1123"
+      }
     },
     {
       "id": "الربى|الرياض",
@@ -11690,6 +11705,506 @@
         "https://www.google.com/maps/?cid=17047360134837639727"
       ],
       "evidence_note": "Maps card name/address/Al-Zahra/Hofuf/phone 0504924416 match; Maps categorizes place as association/organization, not real-estate agency. Place link matches but activity type remains disputed."
+    },
+    {
+      "id": "entity-18e13fd7696f",
+      "category": "cars",
+      "name": "معرض الشرق للسيارات",
+      "city": "الأحساء",
+      "locality": "الصناعية الأحساء",
+      "status": "unresolved_maps_similar_name_unrelated_external_site",
+      "current_map": "https://www.google.com/maps/?cid=8971711842953861436",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_maps_similar_name_unrelated_external_site",
+        "notes": "CID opens إبداعات الشرق in Ahsa industrial area, similar but not same record name; external Maps listing itself has an unrelated Turkey clinic website, but repository web field was already blank and was not changed. Exact entity unresolved."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_only",
+          "notes": "CID opens معرض ابداعات الشرق للسيارات in Ahsa industrial area, not exact row name معرض الشرق. Phone 0540611166 on Maps only. Maps website points to unrelated Turkish hair clinic and was removed from displayed web field; old value retained in ledger."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "no_repository_site_value; maps_card_external_url_unrelated",
+          "old_repository_value": ""
+        }
+      },
+      "source_urls": [
+        "https://directmap.com.sa/"
+      ],
+      "evidence_note": "CID opens معرض ابداعات الشرق للسيارات in Ahsa industrial area, not exact row name معرض الشرق. Phone 0540611166 on Maps only. Maps website points to unrelated Turkish hair clinic and was removed from displayed web field; old value retained in ledger."
+    },
+    {
+      "id": "entity-db4c196b303d",
+      "category": "cars",
+      "name": "معرض فيصل الدوسري للسيارات",
+      "city": "الأحساء",
+      "locality": "الصناعية الأحساء",
+      "status": "verified_maps_name_location_phone_conflict",
+      "current_map": "https://www.google.com/maps/?cid=14209315490390253109",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_maps_name_location_phone_conflict",
+        "notes": "Named Maps place in Ahsa industrial area; Maps phone 0580601406 conflicts with stored 0565000056 and GulfMap phone/WA 0565000056. Keep stored field pending authoritative resolution."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "conflicting_maps_gulfmap_and_stored_number",
+          "notes": "Named Maps place in Ahsa industrial area; Maps phone 0580601406 conflicts with stored 0565000056 and GulfMap phone/WA 0565000056. Keep stored field pending authoritative resolution."
+        },
+        "whatsapp": {
+          "status": "directory_target_seen_not_official"
+        },
+        "website": {
+          "status": "not_present_or_not_verified"
+        }
+      },
+      "source_urls": [
+        "https://gulfmap.net/place/معرض-فيصل-الدوسري-للسيارات"
+      ],
+      "evidence_note": "Named Maps place in Ahsa industrial area; Maps phone 0580601406 conflicts with stored 0565000056 and GulfMap phone/WA 0565000056. Keep stored field pending authoritative resolution."
+    },
+    {
+      "id": "entity-078be72a5e01",
+      "category": "cars",
+      "name": "معرض الحصين للسيارات",
+      "city": "الطائف",
+      "locality": "حي المعارض",
+      "status": "verified_maps_card_name_address_phone_wa_secondary",
+      "current_map": "https://www.google.com/maps/?cid=11505333252710358494",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_maps_card_name_address_phone_wa_secondary",
+        "notes": "Maps card exact name, Taif, address/plus code FG23+95 and phone 0557769222. GulfMap supports address/phone/WA target; StriveME supports Taif/Hawiya. Maps card lists Snapchat, not separate web site."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_and_secondary_match",
+          "notes": "Maps card exact name, Taif, address/plus code FG23+95 and phone 0557769222. GulfMap supports address/phone/WA target; StriveME supports Taif/Hawiya. Maps card lists Snapchat, not separate web site."
+        },
+        "whatsapp": {
+          "status": "secondary_directory_number_not_separately_owned"
+        },
+        "website": {
+          "status": "maps_social_snapchat_not_official_site"
+        }
+      },
+      "source_urls": [
+        "https://gulfmap.net/place/معرض-الحصين-للسيارات",
+        "https://striveme.com/article/محركات/معارض-السيارات-في-الحوية"
+      ],
+      "evidence_note": "Maps card exact name, Taif, address/plus code FG23+95 and phone 0557769222. GulfMap supports address/phone/WA target; StriveME supports Taif/Hawiya. Maps card lists Snapchat, not separate web site."
+    },
+    {
+      "id": "entity-0203c46c9759",
+      "category": "cars",
+      "name": "معرض بن صعيب للسيارات",
+      "city": "الطائف",
+      "locality": "مثملة",
+      "status": "opened_unreadable_card_unresolved",
+      "current_map": "https://www.google.com/maps/?cid=2450742426125124072",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "opened_unreadable_card_unresolved",
+        "notes": "Maps CID opened but only phone surfaced; name/address could not be read. Seller Haraj supports existence in Taif; no pin/phone independent confirmation."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "unresolved",
+          "notes": "Maps CID opened but only phone surfaced; name/address could not be read. Seller Haraj supports existence in Taif; no pin/phone independent confirmation."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present_or_not_verified"
+        }
+      },
+      "source_urls": [
+        "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/",
+        "https://haraj.com.sa/11179296497/كامري_E/"
+      ],
+      "evidence_note": "Maps CID opened but only phone surfaced; name/address could not be read. Seller Haraj supports existence in Taif; no pin/phone independent confirmation."
+    },
+    {
+      "id": "entity-c458a9f70bef",
+      "category": "cars",
+      "name": "معرض الشاطري للسيارات",
+      "city": "الطائف",
+      "locality": "الحوية",
+      "status": "opened_maps_blank_official_linktree_location_unresolved",
+      "current_map": "https://www.google.com/maps/?cid=8468293270224232567",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "opened_maps_blank_official_linktree_location_unresolved",
+        "notes": "Maps page blank, did not verify current CID. Business Linktree gives a Google Maps link/plus code FG33+H3W and WA/social destinations, but not proven to be stored CID. Directory lists phone 0555050025 only."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "unresolved",
+          "notes": "Maps page blank, did not verify current CID. Business Linktree gives a Google Maps link/plus code FG33+H3W and WA/social destinations, but not proven to be stored CID. Directory lists phone 0555050025 only."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present_or_not_verified"
+        }
+      },
+      "source_urls": [
+        "https://linktr.ee/srhd2030",
+        "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025"
+      ],
+      "evidence_note": "Maps page blank, did not verify current CID. Business Linktree gives a Google Maps link/plus code FG33+H3W and WA/social destinations, but not proven to be stored CID. Directory lists phone 0555050025 only."
+    },
+    {
+      "id": "entity-d978a4293026",
+      "category": "cars",
+      "name": "معرض عتل عسيلان للسيارات",
+      "city": "الطائف",
+      "locality": "الحوية",
+      "status": "verified_maps_card_identity_location_phone_maps_only",
+      "current_map": "https://www.google.com/maps/?cid=16699779179536211914",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_maps_card_identity_location_phone_maps_only",
+        "notes": "Maps card exact name, FG22+QC Taif, phone 0555559176. No independent phone source, website or WA."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_only",
+          "notes": "Maps card exact name, FG22+QC Taif, phone 0555559176. No independent phone source, website or WA."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present_or_not_verified"
+        }
+      },
+      "source_urls": [
+        "https://directoryksa.com/"
+      ],
+      "evidence_note": "Maps card exact name, FG22+QC Taif, phone 0555559176. No independent phone source, website or WA."
+    },
+    {
+      "id": "entity-12cc657e7ebd",
+      "category": "cars",
+      "name": "مؤسسة النور التجارية للسيارات",
+      "city": "الطائف",
+      "locality": "نخب/شارع المعارض",
+      "status": "unresolved_maps_name_variant_relationship",
+      "current_map": "https://www.google.com/maps/?cid=16460637458132405357",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_maps_name_variant_relationship",
+        "notes": "Maps shows مؤسسة النور للسيارات in Taif 7C4V+P5 and phone 0530641511; not enough evidence that this is the row's مؤسسة النور التجارية. Keep both names/data pending."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "unresolved_identity",
+          "notes": "Maps shows مؤسسة النور للسيارات in Taif 7C4V+P5 and phone 0530641511; not enough evidence that this is the row's مؤسسة النور التجارية. Keep both names/data pending."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present_or_not_verified"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Maps shows مؤسسة النور للسيارات in Taif 7C4V+P5 and phone 0530641511; not enough evidence that this is the row's مؤسسة النور التجارية. Keep both names/data pending."
+    },
+    {
+      "id": "entity-319946b8b2c3",
+      "category": "cars",
+      "name": "سلطان الطائف للسيارات",
+      "city": "الطائف",
+      "locality": "حي المعارض",
+      "status": "verified_corrected_exact_pin_retested",
+      "current_map": "https://www.google.com/maps/?cid=3520678864337785550",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_corrected_exact_pin_retested",
+        "notes": "Prior CID opened generic blank map. Search result displayed exact named business, Al-Maarid, Taif and phone 0555702299; directly opened place CID 3520678864337785550 and read card, address, phone, Plus Code 7C5R+4H. Exact pin corrected and post-edit tested."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_and_secondary_match",
+          "notes": "Prior CID opened generic blank map. Search result displayed exact named business, Al-Maarid, Taif and phone 0555702299; directly opened place CID 3520678864337785550 and read card, address, phone, Plus Code 7C5R+4H. Exact pin corrected and post-edit tested."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present_or_not_verified"
+        }
+      },
+      "source_urls": [
+        "https://gulfmap.net/place/سلطان-الطائف-للسيارات",
+        "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299"
+      ],
+      "evidence_note": "Prior CID opened generic blank map. Search result displayed exact named business, Al-Maarid, Taif and phone 0555702299; directly opened place CID 3520678864337785550 and read card, address, phone, Plus Code 7C5R+4H. Exact pin corrected and post-edit tested.",
+      "corrected_from": {
+        "map": "https://www.google.com/maps/?cid=9693361693972244990",
+        "checked_after_edit": "https://www.google.com/maps/?cid=3520678864337785550"
+      }
+    },
+    {
+      "id": "phase5-office-483d36251674",
+      "category": "offices",
+      "name": "شركة علامات العقارية",
+      "city": "المدينة المنورة",
+      "locality": "الخالدية",
+      "status": "verified_maps_card_official_site_phone",
+      "current_map": "https://www.google.com/maps/?cid=16124762063103036112",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_maps_card_official_site_phone",
+        "notes": "Maps exact name, Khalidiyah/Medina, plus FM29+Q32. Official website confirms address and phones 0544447445, 920015487, 0148672174. No WA."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "officially_verified",
+          "notes": "Maps exact name, Khalidiyah/Medina, plus FM29+Q32. Official website confirms address and phones 0544447445, 920015487, 0148672174. No WA."
+        },
+        "whatsapp": {
+          "status": "not_present_or_not_separately_verified"
+        },
+        "website": {
+          "status": "official_address_verified"
+        }
+      },
+      "source_urls": [
+        "https://alamat.sa/",
+        "https://alamat.sa/home/تواصل-معنا/",
+        "https://x.com/AlamatAqar"
+      ],
+      "evidence_note": "Maps exact name, Khalidiyah/Medina, plus FM29+Q32. Official website confirms address and phones 0544447445, 920015487, 0148672174. No WA."
+    },
+    {
+      "id": "phase5-office-e42486eb4fd5",
+      "category": "offices",
+      "name": "الضحيان للاستثمارات العقارية",
+      "city": "بريدة",
+      "locality": "النقع الغربية",
+      "status": "verified_maps_card_business_location_official_site_mismatch",
+      "current_map": "https://www.google.com/maps/?cid=7249379111381142048",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_maps_card_business_location_official_site_mismatch",
+        "notes": "Maps card matches business name/locality/Buraidah, phone 0564000017. Website aldahyan.com identifies a Riyadh FAL establishment and phone/WA 0564000016, not this local office. Maps pin correct, website and phone relation to this entity unresolved."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "officially_verified",
+          "notes": "Maps card matches business name/locality/Buraidah, phone 0564000017. Website aldahyan.com identifies a Riyadh FAL establishment and phone/WA 0564000016, not this local office. Maps pin correct, website and phone relation to this entity unresolved."
+        },
+        "whatsapp": {
+          "status": "wrong_entity_website_whatsapp_not_assigned"
+        },
+        "website": {
+          "status": "wrong_entity_mismatch"
+        }
+      },
+      "source_urls": [
+        "https://www.aldahyan.com/"
+      ],
+      "evidence_note": "Maps card matches business name/locality/Buraidah, phone 0564000017. Website aldahyan.com identifies a Riyadh FAL establishment and phone/WA 0564000016, not this local office. Maps pin correct, website and phone relation to this entity unresolved."
+    },
+    {
+      "id": "phase5-office-dfcc7d37ac18",
+      "category": "offices",
+      "name": "مكتب الدكلة العقاري",
+      "city": "بريدة",
+      "locality": "الملك خالد",
+      "status": "verified_maps_card_phone_malformed_website",
+      "current_map": "https://www.google.com/maps/?cid=12491944970465174265",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_maps_card_phone_malformed_website",
+        "notes": "Maps matching card at King Khalid, Buraidah 52383, phone 0555130033. Maps website text is malformed email-like dkla155hotmail.com, not valid website."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_card_observation",
+          "notes": "Maps matching card at King Khalid, Buraidah 52383, phone 0555130033. Maps website text is malformed email-like dkla155hotmail.com, not valid website."
+        },
+        "whatsapp": {
+          "status": "not_present_or_not_separately_verified"
+        },
+        "website": {
+          "status": "malformed_not_valid_url"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Maps matching card at King Khalid, Buraidah 52383, phone 0555130033. Maps website text is malformed email-like dkla155hotmail.com, not valid website."
+    },
+    {
+      "id": "phase5-office-6fa1c875aab0",
+      "category": "offices",
+      "name": "وثيقة المستقبل للخدمات العقارية",
+      "city": "بريدة",
+      "locality": "الرحاب/قرطبة",
+      "status": "verified_maps_card_name_location_phone",
+      "current_map": "https://www.google.com/maps/?cid=991760027283007227",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_maps_card_name_location_phone",
+        "notes": "Full Maps card matches name, Qurtubah/Al-Rihab, Buraidah 52379, phone 0500952466. No site/WA."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_card_observation",
+          "notes": "Full Maps card matches name, Qurtubah/Al-Rihab, Buraidah 52379, phone 0500952466. No site/WA."
+        },
+        "whatsapp": {
+          "status": "not_present_or_not_separately_verified"
+        },
+        "website": {
+          "status": "not_present_or_not_verified"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Full Maps card matches name, Qurtubah/Al-Rihab, Buraidah 52379, phone 0500952466. No site/WA."
+    },
+    {
+      "id": "phase5-office-7350091f3d8c",
+      "category": "offices",
+      "name": "بيت اليسر للعقارات",
+      "city": "بريدة",
+      "locality": "السالمية",
+      "status": "verified_maps_card_name_location_phone",
+      "current_map": "https://www.google.com/maps/?cid=16403523012582450862",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_maps_card_name_location_phone",
+        "notes": "Maps card matches Salmiyah, Buraidah 52335 and phone 0550009301. No site/WA."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_card_observation",
+          "notes": "Maps card matches Salmiyah, Buraidah 52335 and phone 0550009301. No site/WA."
+        },
+        "whatsapp": {
+          "status": "not_present_or_not_separately_verified"
+        },
+        "website": {
+          "status": "not_present_or_not_verified"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Maps card matches Salmiyah, Buraidah 52335 and phone 0550009301. No site/WA."
+    },
+    {
+      "id": "phase5-office-0c6d0e32c965",
+      "category": "offices",
+      "name": "إعمار الدالة العقارية",
+      "city": "جدة",
+      "locality": "السنابل",
+      "status": "verified_maps_card_name_location_phone_secondary_support",
+      "current_map": "https://www.google.com/maps/?cid=3039818975087822553",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_maps_card_name_location_phone_secondary_support",
+        "notes": "Maps card in Sanabel/Jeddah, phone 0556003838. Secondary ads support number and activity in the Jeddah area; no official site/WA."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_card_observation",
+          "notes": "Maps card in Sanabel/Jeddah, phone 0556003838. Secondary ads support number and activity in the Jeddah area; no official site/WA."
+        },
+        "whatsapp": {
+          "status": "not_present_or_not_separately_verified"
+        },
+        "website": {
+          "status": "not_present_or_not_verified"
+        }
+      },
+      "source_urls": [
+        "https://de.mtgr.com/11172074137/ارض_للبيع_حي_السنابل_و_حي_الاجاويد",
+        "https://dealapp.sa/ad-details/588662?cityName=Jeddah&districtName=Al+Ajaweed+Dist.&page=1"
+      ],
+      "evidence_note": "Maps card in Sanabel/Jeddah, phone 0556003838. Secondary ads support number and activity in the Jeddah area; no official site/WA."
+    },
+    {
+      "id": "phase5-office-3aafaa0309d4",
+      "category": "offices",
+      "name": "مكتب الهدى",
+      "city": "جدة",
+      "locality": "الأجاويد/السنابل",
+      "status": "unresolved_maps_identity_phone_conflict",
+      "current_map": "https://www.google.com/maps/?cid=15159283663424947940",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_maps_identity_phone_conflict",
+        "notes": "Maps composite name/area conflict. Phone 0554647316 is associated with another office, Habr Al-Waraq, so neither identity nor phone is confirmed for this record."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "identity_conflict_unresolved",
+          "notes": "Maps composite name/area conflict. Phone 0554647316 is associated with another office, Habr Al-Waraq, so neither identity nor phone is confirmed for this record."
+        },
+        "whatsapp": {
+          "status": "not_present_or_not_separately_verified"
+        },
+        "website": {
+          "status": "not_present_or_not_verified"
+        }
+      },
+      "source_urls": [
+        "https://www.bayut.sa/العقار/تفاصيل-87993372.html",
+        "https://www.bayut.sa/الشركات-العقارية/habr-alwaraq-office-1720197822/",
+        "https://wasalt.sa/property/rent/عمارة-400-متر-مربع-واجهة-غربية-5876379"
+      ],
+      "evidence_note": "Maps composite name/area conflict. Phone 0554647316 is associated with another office, Habr Al-Waraq, so neither identity nor phone is confirmed for this record."
+    },
+    {
+      "id": "phase5-office-59b80113287f",
+      "category": "offices",
+      "name": "مكتب الغانمي العقاري",
+      "city": "جدة",
+      "locality": "السنابل",
+      "status": "verified_maps_card_name_location_phone_operation_unconfirmed",
+      "current_map": "https://www.google.com/maps/?cid=14501058796044055705",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_maps_card_name_location_phone_operation_unconfirmed",
+        "notes": "Maps card matches Al-Sanabel/Jeddah, phone 0567888710. One review questions active office operation; location link matches but operation status not confirmed."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_card_observation",
+          "notes": "Maps card matches Al-Sanabel/Jeddah, phone 0567888710. One review questions active office operation; location link matches but operation status not confirmed."
+        },
+        "whatsapp": {
+          "status": "not_present_or_not_separately_verified"
+        },
+        "website": {
+          "status": "not_present_or_not_verified"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Maps card matches Al-Sanabel/Jeddah, phone 0567888710. One review questions active office operation; location link matches but operation status not confirmed."
     }
   ],
   "browser_spot_checks": [
@@ -11714,12 +12229,12 @@
   ],
   "last_verified_head": "69c11a72b30a8ae84dcc1f1cd539f5198ab61337",
   "last_batch": {
-    "checked_maps": 42,
-    "verified_correct": 20,
-    "corrected_and_retested": 0,
-    "unresolved": 22,
-    "not_inspected": 3939,
-    "notes": "42 new current Maps targets directly opened: 6 projects, 6 NHC opportunities, 6 bank branches, 16 offices, 8 car dealers. 20 destination links matched record name/address/city (one business-category concern separately noted); 22 unresolved. No erroneous map pin replaced and retested in these rounds."
+    "checked_maps": 58,
+    "verified_correct": 31,
+    "corrected_and_retested": 1,
+    "unresolved": 27,
+    "not_inspected": 3923,
+    "notes": "58 direct current map opens total across the latest three rounds. 7 more matches from office batch (8 opened, one identity/phone conflict); cumulative matches in latest batches 31. Two map fixes post-tested currently (cp-df and Sultan) and current batch correction metric 1. Website/contact checks remain separate."
   },
   "followup_batches": [
     {
@@ -11736,9 +12251,10 @@
       "car_unresolved": 6,
       "repeat_checks": 1,
       "notes": "Car agent opened 10 records including one previously inspected record entity-c952299863b7. Five office map records opened from office research; separate business/website checks have no saved map field for most companies. A subsequent eight-office round added eight Maps card/address matches; one listing's place category conflicts with its claimed office type.",
-      "direct_maps_opened": 42,
-      "exact_place_matches": 20,
-      "unresolved_or_no_readable_card": 22
+      "direct_maps_opened": 58,
+      "exact_place_matches": 31,
+      "unresolved_or_no_readable_card": 27,
+      "corrected_map_pin_retested": 3
     },
     {
       "date": "2026-10-10",
@@ -11761,5 +12277,73 @@
       "business_records": 7,
       "notes": "Project exact/related result distinction and car origin-city semantics are saved per ID. Roshn entry retest was post-save and confirmed."
     }
-  ]
+  ],
+  "audit_counts": {
+    "as_of_commit": "pending",
+    "map_target_actions": 4059,
+    "opened_and_tied_to_unique_record": 136,
+    "verified_correct": 55,
+    "corrected_and_retested": 3,
+    "unresolved_after_open": 81,
+    "not_opened": 3923,
+    "method": "Deduplicated record IDs; map target action per app row uses maps||mapsQ, branch coordinates (246), and generated selfbuild search (10). Correct requires directly opened target and positive name/location/purpose evidence; unresolved and merely opened are excluded. Phone, WhatsApp and website status stays field-specific.",
+    "verified_correct_ids": [
+      "entity-96716f5db346",
+      "P008",
+      "entity-c952299863b7",
+      "entity-c9530fddb070",
+      "entity-66da99c79421",
+      "phase6-office-d36fbccef562",
+      "P343",
+      "P389",
+      "entity-ab3b6af0f40d",
+      "entity-42c1a1b88330",
+      "entity-0f6b1be97a66",
+      "entity-df152bc53422",
+      "الفرسان|الرياض",
+      "بوابة مكة|مكة المكرمة",
+      "المشرقية|الرياض",
+      "entity-852df93f9758",
+      "phase5-google-15571274114565729231",
+      "phase5-google-9712514117385590297",
+      "phase5-car-b4aeb4edf7b8",
+      "phase5-google-2604452144150166554",
+      "phase6-google-15901674051955793565",
+      "phase6-google-8821589655719132477",
+      "phase6-google-8339575344558130197",
+      "cp-df5fe89eac",
+      "op-nhc-47317",
+      "entity-d206eae500b8",
+      "entity-bd9121973107",
+      "entity-947efe20e1ce",
+      "entity-2f014406f0a6",
+      "entity-1ed81a45cba8",
+      "entity-dfb3611b03e5",
+      "entity-aa778894ee57",
+      "entity-56fe5894d60d",
+      "entity-a9435a28a84f",
+      "entity-12fdbf4749a7",
+      "entity-fc7767edf13e",
+      "entity-c03de6d5c825",
+      "entity-aedb2f4e1585",
+      "entity-b9b320bc53c2",
+      "entity-264a4480ae2f",
+      "entity-d940a5fb455b",
+      "entity-8bafc5e0effb",
+      "entity-aa1b43280948",
+      "entity-8dc4911d8200",
+      "entity-db4c196b303d",
+      "entity-078be72a5e01",
+      "entity-d978a4293026",
+      "entity-319946b8b2c3",
+      "phase5-office-483d36251674",
+      "phase5-office-e42486eb4fd5",
+      "phase5-office-dfcc7d37ac18",
+      "phase5-office-6fa1c875aab0",
+      "phase5-office-7350091f3d8c",
+      "phase5-office-0c6d0e32c965",
+      "phase5-office-59b80113287f"
+    ],
+    "notes": "Map metrics only. IDs are unique in verified_correct_ids; each positive ID has an individual ledger entry. Map pins fixed and retested: Roshn (prior entry), Jenan Fadak, Sultan Taif."
+  }
 }
