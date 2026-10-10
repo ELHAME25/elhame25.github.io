@@ -1,0 +1,492 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "1568b690a3e10eb16e0cafacd8200271f0593f51",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "صبيا، الدفعة 01 من السجلات المنسوبة لصبيا. ثمانية من أول عشرة سجلات نسخ لسجلات جازان مع عناوينها الأصلية في جازان؛ رُبطت بنتائج التدقيق المحفوظة لتجنب إعادة البحث. النتائج لا تشمل خميس مشيط/أبها.",
+  "count": 10,
+  "note": "لم يتغير cars.json. تعارض مدينة السجلات المنسوخة موثق، وتصحيحه معلق بسبب رفض مسار cars.json السابق. سجل معرض القصيم بلا رابط ومصدر مستقل، ومركبة الرؤية طابقت بطاقة Maps لكن الرابط ما زال استعلاماً لا دبوساً مباشراً.",
+  "entries": [
+    {
+      "id": "entity-781752dff6d0",
+      "name": "معرض القصيم",
+      "evidence": "No Google Maps URL or independent direct listing was established for this record in this pass. Stored phone 0502425105 and showroom identity remain unconfirmed.",
+      "sources": [],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No independent direct evidence found.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "No direct location evidence found.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored number not independently corroborated.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No WhatsApp destination verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "missing",
+          "evidence": "Record has no Google Maps link and no direct pin captured.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase6-cars-8e1ef9c80a327c",
+      "name": "معرض مركبة الرؤية للسيارات",
+      "evidence": "Direct Google Maps search result matches معرض مركبة الرؤية للسيارات, العام، صبيا 85297, phone +966502849827, Plus Code 5QM3+R4. Record data match; phone has only this Maps source so independent phone corroboration remains open.",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=17.1845319%2C42.7528181&query_place_id=ChIJb8kCjIVF_RURcSUFAERUgzk"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_google_maps_only",
+          "evidence": "Direct Google Maps search result matches معرض مركبة الرؤية للسيارات, العام، صبيا 85297, phone +966502849827, Plus Code 5QM3+R4. Record data match; phone has only this Maps source so independent phone corroboration remains open.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=17.1845319%2C42.7528181&query_place_id=ChIJb8kCjIVF_RURcSUFAERUgzk"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_maps_only",
+          "evidence": "Direct Google Maps search result matches معرض مركبة الرؤية للسيارات, العام، صبيا 85297, phone +966502849827, Plus Code 5QM3+R4. Record data match; phone has only this Maps source so independent phone corroboration remains open.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=17.1845319%2C42.7528181&query_place_id=ChIJb8kCjIVF_RURcSUFAERUgzk"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_maps_only",
+          "evidence": "Direct Google Maps search result matches معرض مركبة الرؤية للسيارات, العام، صبيا 85297, phone +966502849827, Plus Code 5QM3+R4. Record data match; phone has only this Maps source so independent phone corroboration remains open.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=17.1845319%2C42.7528181&query_place_id=ChIJb8kCjIVF_RURcSUFAERUgzk"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=17.1845319%2C42.7528181&query_place_id=ChIJb8kCjIVF_RURcSUFAERUgzk"
+          ]
+        },
+        "google_maps": {
+          "status": "listing_verified_link_pending",
+          "evidence": "Google Maps resolves the listing from stored search+place_id URL, but it is not a canonical direct place URL; keep as pending map link.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=17.1845319%2C42.7528181&query_place_id=ChIJb8kCjIVF_RURcSUFAERUgzk"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website shown.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=17.1845319%2C42.7528181&query_place_id=ChIJb8kCjIVF_RURcSUFAERUgzk"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-entity-0f6b1be97a66-008",
+      "name": "معرض العالمية للسيارات",
+      "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-0f6b1be97a66 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+      "source_record": "entity-0f6b1be97a66",
+      "sources": [],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-0f6b1be97a66 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-0f6b1be97a66 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-0f6b1be97a66 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-0f6b1be97a66 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-0f6b1be97a66 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-0f6b1be97a66 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-entity-ce43a7dc2866-008",
+      "name": "معرض موتور وان للسيارات",
+      "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-ce43a7dc2866 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+      "source_record": "entity-ce43a7dc2866",
+      "sources": [
+        "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-017-322-2205",
+        "https://ksa.motory.com/ar/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84/%D8%B4%D8%B1%D9%83%D8%A9/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+        "https://ksa.icartea.com/car-service/provider/motor-one-car-showroom"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-ce43a7dc2866 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-017-322-2205",
+            "https://ksa.motory.com/ar/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84/%D8%B4%D8%B1%D9%83%D8%A9/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://ksa.icartea.com/car-service/provider/motor-one-car-showroom"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-ce43a7dc2866 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-017-322-2205",
+            "https://ksa.motory.com/ar/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84/%D8%B4%D8%B1%D9%83%D8%A9/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://ksa.icartea.com/car-service/provider/motor-one-car-showroom"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-ce43a7dc2866 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-017-322-2205",
+            "https://ksa.motory.com/ar/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84/%D8%B4%D8%B1%D9%83%D8%A9/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://ksa.icartea.com/car-service/provider/motor-one-car-showroom"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-ce43a7dc2866 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-017-322-2205",
+            "https://ksa.motory.com/ar/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84/%D8%B4%D8%B1%D9%83%D8%A9/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://ksa.icartea.com/car-service/provider/motor-one-car-showroom"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-ce43a7dc2866 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-017-322-2205",
+            "https://ksa.motory.com/ar/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84/%D8%B4%D8%B1%D9%83%D8%A9/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://ksa.icartea.com/car-service/provider/motor-one-car-showroom"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس entity-ce43a7dc2866 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-017-322-2205",
+            "https://ksa.motory.com/ar/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84/%D8%B4%D8%B1%D9%83%D8%A9/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D9%88%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://ksa.icartea.com/car-service/provider/motor-one-car-showroom"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-f68610bf3d6644-008",
+      "name": "القصيم للسيارات",
+      "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f68610bf3d6644 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+      "source_record": "phase6-cars-f68610bf3d6644",
+      "sources": [
+        "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%AC%D8%A7%D8%B2%D8%A7%D9%86",
+        "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85_19-050-242-5105"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "conflict",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f68610bf3d6644 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%AC%D8%A7%D8%B2%D8%A7%D9%86",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85_19-050-242-5105"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f68610bf3d6644 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%AC%D8%A7%D8%B2%D8%A7%D9%86",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85_19-050-242-5105"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f68610bf3d6644 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%AC%D8%A7%D8%B2%D8%A7%D9%86",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85_19-050-242-5105"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f68610bf3d6644 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%AC%D8%A7%D8%B2%D8%A7%D9%86",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85_19-050-242-5105"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f68610bf3d6644 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%AC%D8%A7%D8%B2%D8%A7%D9%86",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85_19-050-242-5105"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f68610bf3d6644 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%AC%D8%A7%D8%B2%D8%A7%D9%86",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85_19-050-242-5105"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-00e3bc16bfad3d-008",
+      "name": "معرض نايف للسيارات",
+      "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-00e3bc16bfad3d ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+      "source_record": "phase6-cars-00e3bc16bfad3d",
+      "sources": [],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-00e3bc16bfad3d ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-00e3bc16bfad3d ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-00e3bc16bfad3d ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-00e3bc16bfad3d ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-00e3bc16bfad3d ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-00e3bc16bfad3d ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-7b5880f3dce5f8-008",
+      "name": "شركة اضواء خميس مشيط للسيارات جازان",
+      "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-7b5880f3dce5f8 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+      "source_record": "phase6-cars-7b5880f3dce5f8",
+      "sources": [],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-7b5880f3dce5f8 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-7b5880f3dce5f8 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-7b5880f3dce5f8 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-7b5880f3dce5f8 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-7b5880f3dce5f8 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-7b5880f3dce5f8 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-a3d330066c2da4-008",
+      "name": "لوكار للسيارات فرع جيزان",
+      "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-a3d330066c2da4 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+      "source_record": "phase6-cars-a3d330066c2da4",
+      "sources": [
+        "https://locar.sa/ar/",
+        "https://x.com/locar_ksa?lang=en",
+        "https://haraj.com.sa/users/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%84%D9%88%D9%83%D8%A7%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_official",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-a3d330066c2da4 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://locar.sa/ar/",
+            "https://x.com/locar_ksa?lang=en",
+            "https://haraj.com.sa/users/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%84%D9%88%D9%83%D8%A7%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-a3d330066c2da4 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://locar.sa/ar/",
+            "https://x.com/locar_ksa?lang=en",
+            "https://haraj.com.sa/users/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%84%D9%88%D9%83%D8%A7%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+          ]
+        },
+        "phone": {
+          "status": "verified_official",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-a3d330066c2da4 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://locar.sa/ar/",
+            "https://x.com/locar_ksa?lang=en",
+            "https://haraj.com.sa/users/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%84%D9%88%D9%83%D8%A7%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+          ]
+        },
+        "whatsapp": {
+          "status": "verified_brand_channel",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-a3d330066c2da4 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://locar.sa/ar/",
+            "https://x.com/locar_ksa?lang=en",
+            "https://haraj.com.sa/users/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%84%D9%88%D9%83%D8%A7%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-a3d330066c2da4 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://locar.sa/ar/",
+            "https://x.com/locar_ksa?lang=en",
+            "https://haraj.com.sa/users/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%84%D9%88%D9%83%D8%A7%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+          ]
+        },
+        "website": {
+          "status": "verified_official",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-a3d330066c2da4 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": [
+            "https://locar.sa/ar/",
+            "https://x.com/locar_ksa?lang=en",
+            "https://haraj.com.sa/users/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%84%D9%88%D9%83%D8%A7%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-f8d6bc714bbda0-008",
+      "name": "شيخ المعارض",
+      "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f8d6bc714bbda0 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+      "source_record": "phase6-cars-f8d6bc714bbda0",
+      "sources": [],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f8d6bc714bbda0 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f8d6bc714bbda0 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f8d6bc714bbda0 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f8d6bc714bbda0 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f8d6bc714bbda0 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-f8d6bc714bbda0 ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-812be51786f8aa-008",
+      "name": "شركة إكسون للسيارات",
+      "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-812be51786f8aa ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+      "source_record": "phase6-cars-812be51786f8aa",
+      "sources": [],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-812be51786f8aa ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-812be51786f8aa ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-812be51786f8aa ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-812be51786f8aa ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-812be51786f8aa ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "سجل مستنسخ ضمن مدينة صبيا بينما حقل الحي في السجل يحدد جيزان/مدينة جازان. سبق تدقيق معرض الأساس phase6-cars-812be51786f8aa ضمن نطاق جازان؛ استُخدم الدليل المحفوظ بدل إعادة بحثه. تصنيف المدينة الحالية تعارض مثبت، وبقية حقول الأساس تشير إلى تدقيق جازان المحفوظ.",
+          "sources": []
+        }
+      }
+    }
+  ]
+}
