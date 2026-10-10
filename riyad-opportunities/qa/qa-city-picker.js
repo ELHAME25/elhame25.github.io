@@ -40,6 +40,7 @@ const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  const branchCities=[...new Set(D.branches.map(b=>b.city).filter(Boolean))].sort();
  assert(branchCities.length>50,'national test must cover the nationwide branch-city set');
  for(const city of branchCities){
+   citySelect.value='';
    const rows=D.branches.filter(b=>Q.sameCity(b.city,city));
    branchSearch.value=city; branchSearch.handlers.input();
    for(const b of rows)assert(els['branch-list'].innerHTML.includes('data-code="'+b.c+'"'),`typing city ${city} must list branch ${b.c}`);
