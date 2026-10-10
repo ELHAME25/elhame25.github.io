@@ -2,7 +2,7 @@
   "schema": "map-audit-ledger-v1",
   "branch": "fix/scope-counts-nhc-20261010",
   "base_commit": "bffa7fe0a4f2c8515335b4853cc942c507e7aeae",
-  "generated_at": "2026-10-10T16:40:00Z",
+  "generated_at": "2026-10-10T16:52:00Z",
   "note": "This ledger records safe Google Maps search fallbacks, not a claim that every resulting pin was opened or verified. It preserves record identifiers and prior links for reversibility. جولة الأحساء الإضافية: طابقت بطاقتا فهد مسفر الدوسري والمبارك الاسم والعنوان والهاتف؛ لم يتغير السجل. فُتحت خمسة دبابيس أخرى وتعذرت قراءة تفاصيلها؛ سجلت غير محسومة. This update archives and excludes 15 unresolved regional city copies from display in non-origin cities; original-city records are not changed. Two Abha official dealer records (Universal Motors Agencies/Chevrolet and SMOU/Changan) were archived then excluded from display based on official operator/brand sources. Ten further records already marked authorizedDealer=true were archived for removal as official dealerships/distributors. معرض فيصل الدوسري بالأحساء: اعتمد رقما التواصل الظاهرين في إعلانات حراج النشطة للمعرض نفسه بعد حفظ الرقم القديم وتعارض رقم خرائط Google في السجل.",
   "entries": [
     {
@@ -17161,7 +17161,7 @@
       "category": "cars",
       "name": "معرض فيض الخيرات للسيارات",
       "city": "جدة",
-      "status": "verified_waze_location_contact_map_cid_unreadable",
+      "status": "identity_contact_supported_pin_unreadable",
       "current_map": "https://www.google.com/maps/?cid=11436154795590947396",
       "checked_at": "2026-10-10",
       "map_check": {
@@ -17174,21 +17174,23 @@
         "https://www.google.com/maps/?cid=11436154795590947396",
         "https://www.waze.com/ar/live-map/directions/sa/mkh-almkrmh/jdh/mardh-fydh-alkhyrat-llsyarat-jdh-fayd-al-khayraat-car-show-room?to=place.ChIJ58P2s4DLwxURRBKU-zFitZ4"
       ],
-      "evidence_note": "بطاقة Waze المطابقة للاسم تعرض الجوهرة، شارع أحمد ذاكر إدريس، جدة 22417، ورقم 0550761199 والموقع faydalkhayrat.com. تم تحديث العنوان والموقع؛ أبقيت Google CID الحالي دون ادعاء قراءة بطاقته.",
+      "evidence_note": "بطاقة Waze المطابقة للاسم تعرض الجوهرة، شارع أحمد ذاكر إدريس، جدة 22417، ورقم 0550761199 والموقع faydalkhayrat.com. تم تحديث العنوان والموقع؛ أبقيت Google CID الحالي دون ادعاء قراءة بطاقته. بحث محدث يؤيد الاسم والنشاط والهاتف 0550761199 والعنوان حي الجوهرة/شارع أحمد ذاكر إدريس، ومصدر دليل الأعمال يربط رقم واتساب. لكن CID الموجود فُتح دون بطاقة مقروءة؛ لا أعتمد دبوسه حتى ربطه بدليل خرائط مباشر.",
       "field_checks": {
         "phone": {
-          "status": "verified_match_waze",
-          "notes": "0550761199"
+          "status": "supported_external_sources_not_retested_maps",
+          "note": "تفاصيل المرجع في evidence_note"
         },
         "website": {
           "status": "verified_match_waze",
           "notes": "faydalkhayrat.com"
         },
         "whatsapp": {
-          "status": "not_present"
+          "status": "listed_by_business_directory_not_directly_tested"
         }
       },
-      "locality": "الجوهرة، معارض السيارات، شارع أحمد ذاكر إدريس، جدة 22417"
+      "locality": "الجوهرة، معارض السيارات، شارع أحمد ذاكر إدريس، جدة 22417",
+      "decision": "pending",
+      "final_status": "غير محسوم"
     },
     {
       "id": "phase5-car-5bf4ff1d69f2",
@@ -17588,7 +17590,7 @@
       "category": "cars",
       "name": "معرض الشلبى للسيارات المستوردة",
       "city": "جدة",
-      "status": "verified_waze_location_contact_map_cid_unreadable",
+      "status": "identity_contact_supported_pin_unreadable",
       "current_map": "https://www.google.com/maps/?cid=16071483024594392341",
       "checked_at": "2026-10-10",
       "map_check": {
@@ -17601,21 +17603,23 @@
         "https://www.google.com/maps/?cid=16071483024594392341",
         "https://www.waze.com/ar/live-map/directions/sa/mkh-almkrmh/jdh/mardh-alshlba-llsyarat-almstwrdh?to=place.ChIJARSQ3vPLwxURFVWrFqlgCd8"
       ],
-      "evidence_note": "بطاقة Waze المطابقة للاسم تعرض C7M3+F86، الجوهرة، جدة 22417، ورقم 0555611699 ورابط الحساب twitter.com/shalabicars. تم تحديث العنوان والرابط؛ أبقيت Google CID الحالي دون ادعاء قراءة بطاقته.",
+      "evidence_note": "بطاقة Waze المطابقة للاسم تعرض C7M3+F86، الجوهرة، جدة 22417، ورقم 0555611699 ورابط الحساب twitter.com/shalabicars. تم تحديث العنوان والرابط؛ أبقيت Google CID الحالي دون ادعاء قراءة بطاقته. نتائج Waze حديثة تعرض الاسم والنشاط والعنوان C7M3+F86 والرقم 0555611699، ومصدر محلي يثبت واتساب. CID المسجل لم يعرض بطاقة عند إعادة الفتح؛ يبقى دبوس السجل غير محسوم.",
       "field_checks": {
         "phone": {
-          "status": "verified_match_waze",
-          "notes": "0555611699"
+          "status": "supported_external_sources_not_retested_maps",
+          "note": "تفاصيل المرجع في evidence_note"
         },
         "website": {
           "status": "verified_social_link_waze",
           "notes": "twitter.com/shalabicars"
         },
         "whatsapp": {
-          "status": "not_present"
+          "status": "listed_by_business_directory_not_directly_tested"
         }
       },
-      "locality": "C7M3+F86، الجوهرة، جدة 22417"
+      "locality": "C7M3+F86، الجوهرة، جدة 22417",
+      "decision": "pending",
+      "final_status": "غير محسوم"
     },
     {
       "id": "phase5-car-39d4cad0d586",
@@ -20066,8 +20070,8 @@
       "tested_at": "2026-10-10"
     }
   ],
-  "last_verified_head": "0b304597ef0e90e689f3cf15c886cbed23b3c26e",
-  "last_batch": "إعادة اختبار القوس بعد الحفظ، وقراءة بطاقة Google للأصالة الراقية، وإعادة اختبار هاتف العز من CID مع مطابقة مصادر محلية.",
+  "last_verified_head": "f1d87f3b890cdad9a489d0490d2f3871e2d616df",
+  "last_batch": "تم توثيق إعادة الاختبار بعد الحفظ للقوس والأصالة الراقية والعز؛ وأضيفت أدلة حديثة لفيض الخيرات والشلبى ومحمد الجهني ودرر التاج مع إبقائها غير محسومة حيث تعذر مطابقة الدبوس/العنوان.",
   "followup_batches": [
     {
       "date": "2026-10-10",
