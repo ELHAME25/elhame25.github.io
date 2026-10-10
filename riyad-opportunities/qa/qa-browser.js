@@ -53,7 +53,8 @@ const server=http.createServer((req,res)=>{
    await page.locator('#q-sec').fill('');await page.locator('[data-detail]').first().waitFor();
    await page.locator('.vcard [data-detail]').first().click();
    await page.locator('#detail').waitFor({state:'visible'});
-   await page.locator('#detail [data-close]').click();
+   await page.locator('#detail .btn[data-close]').click();
+    await page.locator('#detail').waitFor({state:'hidden'});
    await section('cars');
    assert(!(await page.locator('#content').innerText()).includes('مصدر رقم التواصل'));
    assert(await page.locator('[data-call]').count()>0);
