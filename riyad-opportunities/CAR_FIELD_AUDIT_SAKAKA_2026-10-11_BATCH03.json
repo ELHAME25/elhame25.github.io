@@ -1,0 +1,255 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "c1e915acc62a3cbec28b6a7c617577a2653ae50b",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "سكاكا، الدفعة 03، السجلات 21–25. يشمل آخر ثلاثة سجلات أصلية والنسخ الإقليمية، دون إعادة بحث للنسخ المطابقة.",
+  "count": 5,
+  "note": "المؤكد والخلافات موثقة من بطاقات Google Maps المباشرة. السجلان المتعلقان بالغنام/الفرسان يحتاجان مصدرًا مستقلًا للحسم. لم يتغير cars.json.",
+  "entries": [
+    {
+      "id": "national-car-654dcae48d8c66",
+      "name": "مؤسسة المرزوق لتجارة السيارات",
+      "evidence": "بطاقة Maps باسم مؤسسة المرزوق لتجارة السيارات تطابق الاسم والعنوان W6CH+HGG في الصناعية الثانية بسكاكا، لكنها تعرض الهاتف +966597248583 مقابل 0581104704 في السجل، وتظهر «مغلق نهائيًا». لا يُحذف السجل دون دليل إضافي.",
+      "sources": [
+        "https://www.google.com/maps/?cid=17836680717443763445"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "google_maps_observed",
+          "evidence": "الاسم ونشاط تجارة السيارات مطابقان في بطاقة Maps.",
+          "sources": [
+            "https://www.google.com/maps/?cid=17836680717443763445"
+          ]
+        },
+        "city_locality": {
+          "status": "google_maps_observed",
+          "evidence": "عنوان البطاقة W6CH+HGG، الصناعية الثانية، سكاكا 72342، مطابق للمدينة والحي.",
+          "sources": [
+            "https://www.google.com/maps/?cid=17836680717443763445"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "Google Maps يعرض +966597248583، بينما المسجل 0581104704؛ يلزم مصدر مستقل للحسم.",
+          "sources": [
+            "https://www.google.com/maps/?cid=17836680717443763445"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يتم التحقق من واتساب مباشر.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "verified_listing_closed",
+          "evidence": "دبوس Google يطابق الاسم والعنوان، والبطاقة تصفه مغلقًا نهائيًا؛ لا يعني ذلك وحده جواز حذف السجل.",
+          "sources": [
+            "https://www.google.com/maps/?cid=17836680717443763445"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لا يظهر موقع رسمي في البطاقة.",
+          "sources": [
+            "https://www.google.com/maps/?cid=17836680717443763445"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-cf9c2a8aff90ad",
+      "name": "مؤسسة الغنام",
+      "evidence": "رابط CID المخزن يفتح بطاقة معرض الفرسان للسيارات عبدالواحد الغنام في الصناعية الثانية بسكاكا، لا بطاقة باسم «مؤسسة الغنام». الهاتف الظاهر 0506260555 لا يطابق 0501515035. احتمال الصلة قائم لكن غير مثبت.",
+      "sources": [
+        "https://www.google.com/maps/?cid=8859532670471741335"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "conflict",
+          "evidence": "بطاقة Maps تعرض معرض الفرسان للسيارات عبدالواحد الغنام، وليس «مؤسسة الغنام»؛ صلة الاسم/المنشأة غير محسومة.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8859532670471741335"
+          ]
+        },
+        "city_locality": {
+          "status": "google_maps_observed",
+          "evidence": "البطاقة تقع بطريق الأمير عبدالإله، الصناعية الثانية، سكاكا 72342.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8859532670471741335"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "بطاقة Maps تعرض +966506260555؛ الرقم المخزن 0501515035 مختلف.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8859532670471741335"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يتم التحقق من واتساب مباشر.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "verified_conflicting_listing",
+          "evidence": "الرابط يفتح بطاقة نشاط في المدينة، لكن الاسم والهاتف لا يطابقان السجل بالكامل.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8859532670471741335"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لا يظهر موقع رسمي في البطاقة.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8859532670471741335"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-711e34151620f3-059",
+      "name": "معرض الحيزان للسيارات",
+      "evidence": "نسخة إقليمية من معرض الحيزان؛ أُعيد استخدام فحص الأصل المحفوظ. السجل الإقليمي بلا رابط Google Maps؛ رابط الأصل Waze وليس رابط Google Maps. لا دبوس محلي مؤكد لهذه النسخة.",
+      "sources": [
+        "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps غير متوفر في السجل؛ الرابط المحفوظ Waze فقط ولا يثبت رابط Google Maps.",
+          "sources": [
+            "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps غير متوفر في السجل؛ الرابط المحفوظ Waze فقط ولا يثبت رابط Google Maps.",
+          "sources": [
+            "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps غير متوفر في السجل؛ الرابط المحفوظ Waze فقط ولا يثبت رابط Google Maps.",
+          "sources": [
+            "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُتحقق من رابط واتساب مباشر مستقل.",
+          "sources": [
+            "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+          ]
+        },
+        "google_maps": {
+          "status": "missing",
+          "evidence": "نسخة إقليمية من معرض الحيزان؛ أُعيد استخدام فحص الأصل المحفوظ. السجل الإقليمي بلا رابط Google Maps؛ رابط الأصل Waze وليس رابط Google Maps. لا دبوس محلي مؤكد لهذه النسخة.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي مستقل من البطاقة المباشرة.",
+          "sources": [
+            "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+          ]
+        }
+      },
+      "source_record": "national-car-711e34151620f3"
+    },
+    {
+      "id": "regional-pdf-national-car-2816f6e8e14766-059",
+      "name": "معرض المعاضب للسيارات",
+      "evidence": "نسخة إقليمية مطابقة لمعرض المعاضب؛ أُعيد استخدام نتيجة فحص الأصل المحفوظ دون تكرار البحث. بطاقة Google Maps الأصلية تؤكد الاسم والعنوان والهاتف في سكاكا، لكن السجل الإقليمي نفسه بلا بيانات دبوس جديدة.",
+      "sources": [
+        "https://www.google.com/maps/?cid=8080332964048608699"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "google_maps_observed",
+          "evidence": "بطاقة Maps تطابق الاسم والعنوان ورقم الهاتف المخزن.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8080332964048608699"
+          ]
+        },
+        "city_locality": {
+          "status": "google_maps_observed",
+          "evidence": "بطاقة Maps تطابق الاسم والعنوان ورقم الهاتف المخزن.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8080332964048608699"
+          ]
+        },
+        "phone": {
+          "status": "google_maps_match",
+          "evidence": "بطاقة Maps تطابق الاسم والعنوان ورقم الهاتف المخزن.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8080332964048608699"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُتحقق من رابط واتساب مباشر مستقل.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8080332964048608699"
+          ]
+        },
+        "google_maps": {
+          "status": "inherited_source_record",
+          "evidence": "نسخة إقليمية مطابقة لمعرض المعاضب؛ أُعيد استخدام نتيجة فحص الأصل المحفوظ دون تكرار البحث. بطاقة Google Maps الأصلية تؤكد الاسم والعنوان والهاتف في سكاكا، لكن السجل الإقليمي نفسه بلا بيانات دبوس جديدة.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8080332964048608699"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي مستقل من البطاقة المباشرة.",
+          "sources": [
+            "https://www.google.com/maps/?cid=8080332964048608699"
+          ]
+        }
+      },
+      "source_record": "national-car-2816f6e8e14766"
+    },
+    {
+      "id": "pdf-smalltown-028",
+      "name": "Automotive Exhibition Cavalry Abdul Wahid",
+      "evidence": "سجل PDF يحتوي استعلام بحث عام ولا يحتوي رابط دبوس Google Maps مؤكدًا؛ الاسم الإنجليزي الغريب والعنوان المختلط لا يثبتان المعرض أو الهاتف، كما لا يوجد رقم مخزن.",
+      "sources": [],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "اسم النشاط في السجل وحده لا يكفي لتأكيد تطابقه مع معرض فرسان الغنام أو أي معرض محدد.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "partial",
+          "evidence": "العنوان المكتوب يذكر طريق الأمير عبدالإله والصناعية الثانية في سكاكا، لكن لا يوجد دبوس مباشر للتحقق.",
+          "sources": []
+        },
+        "phone": {
+          "status": "missing",
+          "evidence": "لا يوجد رقم هاتف بالسجل ولم يُعثر على رقم مؤكد.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط واتساب موثق.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "missing",
+          "evidence": "لا يوجد رابط دبوس؛ mapsQ استعلام بحث فقط وليس دبوس Google Maps.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد موقع إلكتروني موثق.",
+          "sources": []
+        }
+      }
+    }
+  ]
+}
