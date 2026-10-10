@@ -350,8 +350,8 @@
           ]
         },
         "city_locality": {
-          "status": "incorrect_with_supported_replacement",
-          "evidence": "Record city says Abha, while BizMidEast, Wynnuh and NearPlace place this exact listing at Hijlah, Khamis Mushait, 62451. Proposed city correction: خميس مشيط.",
+          "status": "verified_location_within_abha_khamis_showroom_cluster",
+          "evidence": "The physical address is in Hijlah, Khamis Mushait (62451). Abha and Khamis Mushait are treated as one showroom-market cluster for this audit per the agreed coverage scope; this is not an error for the combined coverage. Preserve the actual municipality in locality evidence and do not change cars.json solely on this basis.",
           "sources": [
             "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%AA%D9%8A%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-055-053-3000",
             "https://wynuh.com/place/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%AA%D9%8A%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
@@ -382,7 +382,9 @@
           "evidence": "No website verified as belonging to this exact showroom; blank/other company links are not treated as proof.",
           "sources": []
         }
-      }
+      },
+      "cluster": "أبها–خميس مشيط",
+      "scope_note": "لا يصنف اختلاف المدينة البلدية كخطأ ضمن نطاق التجمع المشترك للمعارض؛ تُحفظ خميس مشيط كموقع فعلي ويظل نطاق التدقيق أبها–خميس مشيط."
     },
     {
       "id": "phase6-cars-ede672b5cfc35a",
@@ -482,7 +484,7 @@
   "notes": [
     "No Google Maps pin in this batch was confirmed open by the available reader; URLs are not treated as proof.",
     "WhatsApp links were not verified for these records; this means unconfirmed, not that the businesses lack WhatsApp.",
-    "No changes applied to cars.json. Only the wrong city for Al Watid and the corrupted address string on the duplicate Al Raya entry have supported replacement candidates; no data edits were made.",
+    "No data edits were made. The Al Watid physical address is in Khamis Mushait, which is inside the agreed Abha–Khamis Mushait showroom cluster; do not classify that as a coverage error or edit the city field on this basis alone. The second Al Raya record has supported evidence of a garbled address, but the two same-name rows must be resolved before any deduplication.",
     "Official agency status for Ramz branch remains unresolved; no record was archived.",
     "The two Al Raya IDs appear to refer to the same showroom. Preserve both until de-duplication is safely established."
   ]
