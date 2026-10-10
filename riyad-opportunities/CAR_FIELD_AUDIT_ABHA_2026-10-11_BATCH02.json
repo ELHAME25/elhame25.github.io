@@ -4,7 +4,7 @@
   "repository": "ELHAME25/elhame25.github.io",
   "branch": "fix/scope-counts-nhc-20261010",
   "source_head": "8f98a7a06bbde07f0a193b6b81ac183bcbe9392d",
-  "scope": "Joint Abha-Khamis Mushait cluster, records 11-20 after existing Batch01; do not split or reassign cities based only on the linked-city relationship",
+  "scope": "Joint Abha-Khamis Mushait cluster, first ten remaining records after existing Batch01; do not split or reassign cities based only on the linked-city relationship",
   "count": 10,
   "note": "Abha and Khamis Mushait are one linked audit scope per user instruction. A source naming either city does not by itself make the other-city representation erroneous. This is an evidence ledger only; no cars.json fields changed and no city reassignment is proposed. Unconfirmed means adequate field-level direct evidence was not obtained.",
   "entries": [
@@ -366,6 +366,43 @@
         "google_maps": {
           "status": "unconfirmed",
           "evidence": "Stored CID was not opened and matched to the business.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-entity-ba4bc778cc25-011",
+      "name": "معرض بن هيف للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No independent source for this exact showroom was found in this pass; the existing place URL alone is not proof.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "Abha and Khamis Mushait are one linked audit scope per user instruction; no city reassignment proposed. The exact neighborhood still requires independent confirmation.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "0558970974 was not corroborated to this exact listing by an independent source in this pass.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp account/link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Existing CID link was not independently opened and matched.",
           "sources": []
         },
         "website": {
