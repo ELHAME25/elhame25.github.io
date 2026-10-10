@@ -20233,6 +20233,75 @@
       },
       "evidence_note": "تُثبت الأدلة الثانوية الاسم/النشاط والعنوان/الهاتف المدرج، لكنها لا تثبت دبوس Google أو واتساب. لم تُعدّل الهواتف أو الموقع الجغرافي.",
       "checked_at": "2026-10-10"
+    },
+    {
+      "id": "v9-car-82d8d5493078",
+      "category": "cars",
+      "name": "معرض الوتير للسيارات",
+      "city": "الدوادمي",
+      "locality": "طريق الملك خالد، الصناعية، الدوادمي",
+      "status": "unresolved_maps_pin_not_opened",
+      "decision": "corrected_secondary_phone_added_pin_unverified",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D8%AA%D9%8A%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AF%D9%85%D9%8A",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D8%AA%D9%8A%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AF%D9%85%D9%8A",
+      "field_checks": {
+        "name_activity": {
+          "status": "matched_business_social_profile",
+          "source": "https://www.snapchat.com/@alwtyr-motors"
+        },
+        "city_locality": {
+          "status": "matched_business_social_profile",
+          "value": "الدوادمي معارض السيارات"
+        },
+        "phone": {
+          "status": "corrected_from_business_profile",
+          "previous": [
+            "0559976482"
+          ],
+          "value": [
+            "0559976482",
+            "0505576606"
+          ],
+          "sources": [
+            "https://www.snapchat.com/@alwtyr-motors"
+          ]
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        },
+        "google_maps_pin": {
+          "status": "not_opened_unresolved"
+        }
+      },
+      "source_urls": [
+        "https://www.snapchat.com/@alwtyr-motors",
+        "https://www.albaraka.ma/cat/تاجر-سيارات-الدوادمي/"
+      ],
+      "map_check": {
+        "opened": false,
+        "matched": false,
+        "status": "unresolved_maps_pin_not_opened"
+      },
+      "evidence_note": "الحساب الاجتماعي باسم المعرض يذكر المدينة ويعرض رقمي التواصل؛ أضيف الرقم الثاني إلى السجل. لم يثبت واتساب. دبوس Google لم يُفتح، فلا يُعد مؤكداً.",
+      "checked_at": "2026-10-10",
+      "archiveRecord": {
+        "id": "v9-car-82d8d5493078",
+        "n": "معرض الوتير للسيارات",
+        "city": "الدوادمي",
+        "nb": "طريق الملك خالد، الصناعية، الدوادمي",
+        "phones": [
+          "0559976482"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D8%AA%D9%8A%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AF%D9%85%D9%8A",
+        "lat": 24.50756,
+        "lon": 44.3571,
+        "sec": "",
+        "loc": "nb"
+      }
     }
   ],
   "browser_spot_checks": [
@@ -20255,8 +20324,8 @@
       "tested_at": "2026-10-10"
     }
   ],
-  "last_verified_head": "51b0d34e5960b496e3a28d8c50f235433020ef03",
-  "last_batch": "الدوادمي: توثيق العضياني والعدل من أدلة مستقلة للاسم/النشاط والعنوان والهاتف؛ دبابيس Maps لم تُفتح، فظلت غير محسومة.",
+  "last_verified_head": "76703f992ec920edd4f86f57f52758669d2f1285",
+  "last_batch": "الدوادمي: معرض الوتير؛ إضافة رقم التواصل الثاني المثبت في حساب النشاط، مع إبقاء الدبوس وواتساب غير مؤكدين.",
   "followup_batches": [
     {
       "date": "2026-10-10",
