@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 9004)
-Total output lines: 403
-
 /* Reproducible interaction checks against the shipped app.js in a small DOM VM. */
 const fs = require('fs');
 const vm = require('vm');
@@ -139,7 +136,195 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   // The search control and live filtering are exercised independently for each populated section.
   const searchable = ['projects', 'opps', 'nhc', 'selfbuild', 'companies', 'offices', 'cars'];
   const searchResults = searchable.map(k => {
-    const city = Object.keys(d.cityCount[k] || {}).find(c => (d.cityCount[k][c] || 0) >…4004 tokens truncated…ces', '', 'branch');
+    const city = Object.keys(d.cityCount[k] || {}).find(c => (d.cityCount[k][c] || 0) > 0 && d.branches.some(b => A.sameCity(b.city, c)));
+    const branch = city && d.branches.find(b => A.sameCity(b.city, city));
+    if (!branch) return false;
+    A.selectBranch(branch.c); A.state().scope = 'city'; A.state().tab = k; A.state().q[k] = ''; A.renderBranch();
+    if (!els.content.innerHTML.includes('id="q-sec"')) return false;
+    const q = els['q-sec']; q.value = '__qa_no_such_record__'; q.dispatch('input');
+    return A.state().q[k] === '__qa_no_such_record__' && els.content.innerHTML.includes('لا نتائج مطابقة');
+  });
+  assert(`search works in each of ${searchable.length} sections using a city with data`, searchResults.every(Boolean));
+  A.selectBranch('243', true); A.state().scope = 'branch'; A.state().tab = 'projects'; A.state().q.projects = ''; A.renderBranch();
+  const counterRows = A.itemsFor('projects', '', 'branch');
+  const unknownCount = counterRows.filter(x => x.rankD == null).length;
+  const approximateCount = counterRows.filter(x => x.rankD != null && x.o.loc === 'nb').length;
+  const exactCount = counterRows.length - unknownCount - approximateCount;
+  const cityUnknownCount = A.itemsFor('projects', '', 'city').filter(x => x.rankD == null).length;
+  const branchCounter = counterRows.length > 0 && exactCount > 0 && unknownCount === 0 &&
+    els.content.innerHTML.includes(counterRows.length + ' مشروعًا ضمن نطاق الفرع');
+  els['q-sec'].value = '__qa_no_such_record__'; els['q-sec'].dispatch('input');
+  assert('Riyadh branch count excludes unknown location and city view preserves those projects', branchCounter && cityUnknownCount > 0 && els.content.innerHTML.includes('0 مشروعًا ضمن نطاق الفرع') && !els.content.innerHTML.includes('موقع غير محدد') && els.content.innerHTML.includes('لا نتائج مطابقة'));
+
+  // NHC destinations stay separate from project rows and follow the selected sector.
+  A.selectBranch('243', true); A.state().scope = 'branch'; A.state().tab = 'nhc';
+  const eastBranchDestinations = A.itemsFor('nhc', '', 'branch');
+  A.state().scope = 'sector'; A.state().explore = 'شرق';
+  const eastDestinations = A.itemsFor('nhc', 'شرق', 'sector');
+  A.state().explore = 'شمال';
+  const northDestinations = A.itemsFor('nhc', 'شمال', 'sector');
+  const allDestinations = A.itemsFor('nhc', '', 'city');
+  const eastProjectRowsForCount = A.itemsFor('projects', 'شرق', 'sector');
+  const allRiyadhProjectRowsForCount = A.itemsFor('projects', '', 'city');
+  A.state().explore = 'شرق'; A.state().tab = 'nhc'; A.renderBranch();
+  assert('NHC destinations are separate from projects, sector-specific, and city view retains all destinations',
+    eastBranchDestinations.length === 3 && eastDestinations.length === 3 &&
+    eastDestinations.every(x => (x.o.sectors || []).includes('شرق')) &&
+    northDestinations.length === 1 && allDestinations.length === 5 &&
+    eastProjectRowsForCount.length === 59 && allRiyadhProjectRowsForCount.length === 261 &&
+    els.app.innerHTML.includes('وجهات NHC') && els.app.innerHTML.includes('data-tab="nhc"'));
+  // Open details from the card's delegated click, close with its close control, and open by Enter.
+  A.state().q = {}; A.state().scope = 'city'; A.state().tab = 'projects'; A.renderBranch();
+  const detailIdMatch = els.content.innerHTML.match(/data-detail="(\d+)"/);
+  let detailFlow = false;
+  if (detailIdMatch) {
+    const id = detailIdMatch[1];
+    fireDocument('click', target({ 'data-detail': id }));
+    const opened = els.detail.open;
+    fireDocument('click', target({ 'data-close': '' }));
+    const closed = !els.detail.open;
+    const article = target({ 'data-detail': id }, { className: 'vcard' });
+    fireDocument('keydown', article, { key: 'Enter' });
+    detailFlow = opened && closed && els.detail.open;
+    A.closeDlg();
+  }
+  assert('card click opens details, close control closes, Enter reopens', detailFlow);
+
+  // A record with multiple published numbers keeps a selectable phone list in card and detail.
+  const multi = d.companies.find(o => (o.phones || []).length > 1) || d.offices.find(o => (o.phones || []).length > 1) || d.cars.find(o => (o.phones || []).length > 1);
+  let multiPhone = false;
+  if (multi) {
+    const kind = d.companies.includes(multi) ? 'companies' : d.offices.includes(multi) ? 'offices' : 'cars';
+    const html = A.card(kind, multi, null, true, false, {});
+    const idMatch = html.match(/data-phonesel="(\d+)"/);
+    if (idMatch) {
+      A.openDetail(Number(idMatch[1]));
+      multiPhone = html.includes('data-phonesel=') && els.detail.innerHTML.includes('data-phonesel=') &&
+        (els.detail.innerHTML.match(/<option /g) || []).length === multi.phones.length;
+    }
+  }
+  assert('multiple numbers remain selectable on card and in details', multiPhone);
+
+  // Do not present unresolved availability or activity reviews as public records.
+  const reviewGroups = [
+    ['cars', 'activityReviewStatus'],
+    ['selfbuild', 'availabilityStatus'],
+    ['companies', 'commercialAuditStatus']
+  ];
+  const reviewExclusion = reviewGroups.map(([kind, field]) => {
+    const records = (d[kind] || []).filter(x => String(x[field] || '').toUpperCase() === 'REVIEW_REQUIRED');
+    return records.every(record => {
+      const b = d.branches.find(x => A.sameCity(x.city, record.city));
+      if (!b) return true;
+      A.selectBranch(b.c, true);
+      return !A.rawItems(kind).some(x => (x.o || x).id === record.id);
+    });
+  });
+  assert('review-required cars, self-build and companies stay out of public results', reviewExclusion.every(Boolean));
+  const alwateed = d.cars.filter(x => x.n === 'معرض الوتيد للسيارات');
+  const khamisWateed = alwateed.find(x => x.city === 'خميس مشيط');
+  const abhaWateed = alwateed.find(x => x.city === 'أبها');
+  let verifiedKhamisVisible = false, conflictingAbhaHidden = false;
+  if (khamisWateed && abhaWateed) {
+    const kb = d.branches.find(y => A.sameCity(y.city, khamisWateed.city));
+    A.selectBranch(kb.c, true);
+    verifiedKhamisVisible = khamisWateed.activityReviewStatus === 'verified_khamis_listing_abha_alias_pending' && A.rawItems('cars').some(y => y.o.id === khamisWateed.id);
+    const ab = d.branches.find(y => A.sameCity(y.city, abhaWateed.city));
+    A.selectBranch(ab.c, true);
+    conflictingAbhaHidden = abhaWateed.activityReviewStatus === 'REVIEW_REQUIRED' && !A.rawItems('cars').some(y => y.o.id === abhaWateed.id);
+  }
+  assert('verified Khamis Wateed listing is visible while its same-pin Abha alias stays under review', alwateed.length === 2 && verifiedKhamisVisible && conflictingAbhaHidden);
+  const hail = d.branches.find(x => A.sameCity(x.city, 'حائل'));
+  A.selectBranch(hail.c, true); A.state().tab = 'selfbuild'; A.state().scope = 'branch'; A.renderBranch();
+  const filteredCityTotal = A.compute().selfbuild.total;
+  A.state().scope = 'city'; A.renderBranch();
+  assert('city expansion count matches filtered public self-build results', filteredCityTotal === 1 && A.compute().selfbuild.items.length === filteredCityTotal);
+
+  // The picker should return actual branches for a city and never invent a city-wide entry.
+  fireDocument('click', target({ 'data-act': 'change' }));
+  const cityOptions = els.app.innerHTML;
+  els['q-branch'].value = ''; els['q-city'].value = 'بيش'; els['q-city'].dispatch('change');
+  assert('branch picker does not invent a city-wide entry for a city without branches', cityOptions.includes('بيش') && els['go-branch'].disabled && !els['branch-list'].innerHTML.includes('data-city-only'));
+
+
+
+  // Riyadh sector routing must use both valid city showroom groups in Central,
+  // and must preserve NHC's city-wide visibility and a sector-local distance anchor.
+  A.selectBranch('243', true);
+  A.state().scope = 'sector'; A.state().explore = 'وسط'; A.state().carArea = 'all'; A.state().tab = 'cars';
+  const centerCars = A.itemsFor('cars', 'وسط', 'sector');
+  const centerHasBothGroups = centerCars.length > 0 && centerCars[0].o.zone === 'shifa' &&
+    centerCars.some(x => x.o.zone === 'qadisiyah') && centerCars.every(x => x.o.zone === 'shifa' || x.o.zone === 'qadisiyah');
+  A.state().explore = 'غرب';
+  const westCars = A.itemsFor('cars', 'غرب', 'sector');
+  const westMapped = westCars.length > 0 && westCars.every(x => x.o.zone === 'shifa');
+  A.state().explore = 'شمال';
+  const northCars = A.itemsFor('cars', 'شمال', 'sector');
+  const northMapped = northCars.length > 0 && northCars.every(x => x.o.zone === 'qadisiyah');
+  A.state().explore = 'شرق'; A.state().scope = 'sector'; A.state().tab = 'projects'; A.renderBranch();
+  const eastOnlyActive = els.app.innerHTML.includes('data-explore="شرق" aria-pressed="true"') && els.app.innerHTML.includes('data-explore="شمال" aria-pressed="false"');
+  const eastProjects = A.itemsFor('projects', 'شرق', 'sector');
+  const eastSectorOnly = eastProjects.every(x => {
+    const sectors = x.o.sectors && x.o.sectors.length ? x.o.sectors : (x.o.sec ? [x.o.sec] : []);
+    return sectors.includes('شرق');
+  });
+  A.state().explore = 'شمال'; A.renderBranch();
+  const northOnlyActive = els.app.innerHTML.includes('data-explore="شمال" aria-pressed="true"') && els.app.innerHTML.includes('data-explore="شرق" aria-pressed="false"');
+  const northProjects = A.itemsFor('projects', 'شمال', 'sector');
+  const northSectorOnly = northProjects.every(x => {
+    const sectors = x.o.sectors && x.o.sectors.length ? x.o.sectors : (x.o.sec ? [x.o.sec] : []);
+    return sectors.includes('شمال');
+  });
+  A.state().explore = 'وسط';
+  const nhcCity = A.itemsFor('nhc', '', 'city').map(x => x.o.id).sort().join('|');
+  const nhcCenter = A.itemsFor('nhc', 'وسط', 'sector').map(x => x.o.id).sort().join('|');
+  A.state().tab = 'nhc'; A.state().scope = 'sector'; A.state().explore = 'شرق'; A.renderBranch();
+  const nhcDualCards = els.content.innerHTML.includes('وجهات شرق الرياض') && els.content.innerHTML.includes('كل وجهات الرياض') && els.content.innerHTML.includes('data-nhc-view="sector"') && els.content.innerHTML.includes('data-nhc-view="city"') && els.content.innerHTML.includes('<strong>3</strong>') && els.content.innerHTML.includes('<strong>5</strong>');
+  assert('Riyadh central shows Shifa first and both validated showroom groups', centerHasBothGroups);
+  assert('Riyadh west routes showrooms to Shifa and north to Qadisiyah', westMapped && northMapped);
+  assert('Riyadh East and North are independently selected and filtered', eastOnlyActive && northOnlyActive && eastSectorOnly && northSectorOnly && eastProjects.length > 0 && northProjects.length > 0);
+  assert('Riyadh NHC has separate sector and whole-city cards with every destination accessible', nhcCity.split('|').length === 5 && nhcCenter === '' && nhcDualCards);
+  A.state().scope = 'sector'; A.state().explore = 'وسط'; A.state().carArea = 'all'; A.state().tab = 'cars'; A.renderBranch();
+  const centralControls = els.content.innerHTML.includes('data-car-area="shifa" aria-pressed="true"') &&
+    els.content.innerHTML.includes('data-car-area="qadisiyah" aria-pressed="true"') &&
+    els.content.innerHTML.includes('data-car-area="all" aria-pressed="false"');
+  assert('central showroom controls show both groups active and All Riyadh inactive', centralControls);
+
+
+  // Small-city showrooms remain city-level; large regional cities use the selected branch radius.
+  A.selectBranch('607', true); A.state().tab = 'cars'; A.state().scope = 'branch'; A.renderBranch();
+  const rassCars = A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|');
+  const rassCityCars = A.itemsFor('cars', '', 'city').map(x => x.o.id).sort().join('|');
+  const noSmallCityCarRadius = !els.content.innerHTML.includes('id="radius"');
+  assert('small-city showrooms stay city-wide with no branch radius control', rassCars === rassCityCars && noSmallCityCarRadius);
+  const noSmallCityScopeToggle = !els.app.innerHTML.includes('data-scope="city"') && !els.content.innerHTML.includes('data-scope="city"') && !els.app.innerHTML.includes('<div class="controls">');
+  A.state().tab = 'offices'; A.renderBranch();
+  const smallCityOfficeBranchScope = !els.app.innerHTML.includes('data-scope="branch"') && !els.app.innerHTML.includes('data-scope="city"') && !els.app.innerHTML.includes('id="radius"') && A.itemsFor('offices', '', 'branch').map(x=>x.o.id).sort().join('|') === A.itemsFor('offices', '', 'city').map(x=>x.o.id).sort().join('|');
+  assert('small-city offices show the complete city without redundant scope controls', noSmallCityScopeToggle && smallCityOfficeBranchScope);
+  const buraydahCodes = ['602', '249', '273'];
+  const buraydahCars = buraydahCodes.map(code => {
+    const b = d.branchByCode[code]; if (!b || !A.sameCity(b.city, 'بريدة')) return null;
+    A.selectBranch(code, true); A.state().radius = 15; A.state().scope = 'branch';
+    const near = A.itemsFor('cars', '', 'branch');
+    return { ids: near.map(x => x.o.id).sort().join('|'), city: A.itemsFor('cars', '', 'city').length,
+      validDistances: near.every(x => A.sameCity(x.o.city, 'بريدة')), hasCityExpansion: !els.app.innerHTML.includes('data-scope="city"') };
+  });
+  assert('Buraidah showrooms show the same complete city inventory across branches', buraydahCars.every(x => x && x.validDistances && x.hasCityExpansion && x.ids.split('|').length === x.city) && new Set(buraydahCars.map(x => x.ids)).size === 1);
+
+  A.selectBranch('189'); A.state().radius = 15; A.state().scope = 'branch'; A.state().tab = 'projects'; A.renderBranch();
+  const makkahBranch = A.itemsFor('projects', '', 'branch'), makkahCity = A.itemsFor('projects', '', 'city');
+  assert('Makkah projects show the full city without radius controls', makkahBranch.length > 0 && makkahBranch.map(x=>x.o.id).sort().join('|') === makkahCity.map(x=>x.o.id).sort().join('|') && makkahBranch.every(x => A.sameCity(x.o.city,'مكة المكرمة')) && !els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-scope="city"'));
+  A.selectBranch('105'); const medinaCars = A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|'); const medinaOffices = A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|');
+  A.selectBranch('168');
+  assert('Medina showrooms and offices remain city-level across branches', medinaCars === A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|') && medinaOffices === A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|'));
+  A.selectBranch('304'); const ahsaCityCars = A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|'); const ahsaProjects = A.itemsFor('projects', '', 'branch').map(x => x.o.id).sort().join('|'); const ahsaOffices = A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|');
+  A.selectBranch('324');
+  assert('Ahsa showrooms, projects and offices stay city-wide across branches', ahsaCityCars === A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|') && ahsaProjects === A.itemsFor('projects', '', 'branch').map(x => x.o.id).sort().join('|') && ahsaOffices === A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|'));
+  A.selectBranch('161'); A.state().tab = 'offices'; A.state().radius = 5; A.state().scope = 'branch'; A.renderBranch();
+  const abha5 = A.itemsFor('offices', '', 'branch'); A.state().radius = 10; const abha10 = A.itemsFor('offices', '', 'branch');
+  assert('Abha remains city-wide without radius or sector controls', abha10.length > 0 && abha10.map(x=>x.o.id).sort().join('|') === abha5.map(x=>x.o.id).sort().join('|') && abha10.every(x => A.sameCity(x.o.city,'أبها')) && !els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-explore='));
+  A.selectBranch('111'); A.state().tab = 'offices'; A.state().radius = 15; A.state().scope = 'branch'; A.renderBranch();
+  const yanbu15 = A.itemsFor('offices', '', 'branch'); A.state().radius = 20; const yanbu20 = A.itemsFor('offices', '', 'branch');
   assert('Yanbu remains city-wide without radius or sector controls', yanbu20.length > 0 && yanbu20.map(x=>x.o.id).sort().join('|') === yanbu15.map(x=>x.o.id).sort().join('|') && yanbu20.every(x => A.sameCity(x.o.city,'ينبع')) && !els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-explore='));
   A.selectBranch('302', true); A.state().radius = 15; A.state().scope = 'branch';
   const dammamProject = A.itemsFor('projects', '', 'branch').find(x => x.o.id === 'P128');
