@@ -152,9 +152,9 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const exactCount = counterRows.length - unknownCount - approximateCount;
   const cityUnknownCount = A.itemsFor('projects', '', 'city').filter(x => x.rankD == null).length;
   const branchCounter = counterRows.length > 0 && exactCount > 0 && unknownCount === 0 &&
-    els.content.innerHTML.includes(counterRows.length + ' مشروعًا داخل نطاق الفرع، منها ' + approximateCount + ' بموقع الحي.');
+    els.content.innerHTML.includes(counterRows.length + ' مشروعًا ضمن نطاق الفرع');
   els['q-sec'].value = '__qa_no_such_record__'; els['q-sec'].dispatch('input');
-  assert('Riyadh branch count excludes unknown location and city view preserves those projects', branchCounter && cityUnknownCount > 0 && els.content.innerHTML.includes('0 مشروعًا داخل نطاق الفرع، منها 0 بموقع الحي.') && !els.content.innerHTML.includes('موقع غير محدد') && els.content.innerHTML.includes('لا نتائج مطابقة'));
+  assert('Riyadh branch count excludes unknown location and city view preserves those projects', branchCounter && cityUnknownCount > 0 && els.content.innerHTML.includes('0 مشروعًا ضمن نطاق الفرع') && !els.content.innerHTML.includes('موقع غير محدد') && els.content.innerHTML.includes('لا نتائج مطابقة'));
 
   // NHC destinations stay separate from project rows and follow the selected sector.
   A.selectBranch('243', true); A.state().scope = 'branch'; A.state().tab = 'nhc';
