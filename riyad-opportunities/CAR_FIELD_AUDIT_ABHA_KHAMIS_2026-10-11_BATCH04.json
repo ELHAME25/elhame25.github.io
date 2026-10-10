@@ -1,0 +1,436 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "4ade68be02897ed2462fdc1ecdf54babb459c08b",
+  "scope": "Joint Abha-Khamis Mushait cluster, records 31-40 after Batch01; no city splitting",
+  "count": 10,
+  "note": "Audit ledger only. Abha and Khamis Mushait remain linked. No cars.json fields changed. An unconfirmed field is not a correction recommendation. Google Maps pins are unconfirmed unless independently matched.",
+  "entries": [
+    {
+      "id": "pdf-smalltown-008",
+      "name": "معرض العباسي للسيارات",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "Regional guide lists Abbasi Cars Showroom as an auto dealer.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "Regional guide lists 966505740757 matching 0505740757.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "Nearby dealer listing places Abbasi Cars Showroom in حي المعارض, Khamis Mushait; both cities remain in one scope.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "No stored pin independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-009",
+      "name": "معرض أنوار أبها للسيارات",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No reliable exact-name source located in this pass.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "0172274774 not independently linked to this record.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "Exact locality not established; retain within the linked Abha–Khamis scope.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "No pin matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-010",
+      "name": "Khaled Majaal Cars Showroom",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "NearPlace lists an active car dealer under this name.",
+          "sources": [
+            "https://sa.near-place.com/car_dealer-nearby-khaled-majaal-cars-showroom-tryq-abha-alkhmys-khmys-mshyt",
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "NearPlace lists +966172219988, matching the stored number.",
+          "sources": [
+            "https://sa.near-place.com/car_dealer-nearby-khaled-majaal-cars-showroom-tryq-abha-alkhmys-khmys-mshyt",
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_within_linked_cluster",
+          "evidence": "NearPlace places it on طريق أبها الخميس, Khamis Mushait; within the linked pair.",
+          "sources": [
+            "https://sa.near-place.com/car_dealer-nearby-khaled-majaal-cars-showroom-tryq-abha-alkhmys-khmys-mshyt",
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Independent coordinates were found, but they have not been matched to the stored Google Maps pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-011",
+      "name": "معرض سعيد عبدالله الشهراني للسيارات",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast lists an auto showroom under this name.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D8%B9%D9%8A%D8%AF-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D8%A7%D9%86%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-017-234-5705",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "Stored number +966505743102 conflicts with directory number 0172345705. Do not replace until current contact is independently resolved.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D8%B9%D9%8A%D8%AF-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D8%A7%D9%86%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-017-234-5705",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_within_linked_cluster",
+          "evidence": "BizMidEast places the showroom on طريق أبها الخميس, هجلة, Khamis Mushait; within the linked pair.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D8%B9%D9%8A%D8%AF-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D8%A7%D9%86%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-017-234-5705",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored Google Maps pin has not been independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-012",
+      "name": "Safa Motor Gallery",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "Regional guide lists this named car showroom.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Existing 0172641304 was not independently corroborated in this pass.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "Regional source covers Abha and Khamis Mushait together; exact neighborhood remains unconfirmed.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored Google pin not matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-013",
+      "name": "Al Wafaa Showroom For Cars",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "Regional guide lists this named showroom.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "No phone was published in the source located.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "Nearby dealer source places it in حي المعارض, Khamis Mushait; within the linked pair.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Nearby listings do not verify the stored Google pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-014",
+      "name": "معرض التاج الحديث للسيارات مستعمل وجديد",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No independent listing for this exact full name was located in this pass.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "0555758923 not independently linked to the exact listing.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "Exact city/neighborhood remains unconfirmed; keep within the linked pair.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "No pin matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-015",
+      "name": "Star farmer car",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "Regional guide lists this showroom.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "Guide lists 966545424485 matching 0545424485.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "Guide covers the linked Abha–Khamis scope; exact city/neighborhood not established.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored pin not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-016",
+      "name": "معرض سعيد سالم الشهراني",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No independent source for the exact listing was located in this pass.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "No phone is stored and no direct contact source was found.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "Exact city/neighborhood remains unconfirmed; keep in the linked scope.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "No pin matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-017",
+      "name": "Husseiniya Show Room",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "partially_verified",
+          "evidence": "NearPlace includes a Husseiniya Show Room among Khamis Mushait car dealers; identity match to this exact record still needs confirmation.",
+          "sources": [
+            "https://sa.near-place.com/car_dealer-nearby-mrd-snhan-lby-wshra-alsyarat-hy-almard-khmys-mshyt"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "No phone is stored or independently found.",
+          "sources": [
+            "https://sa.near-place.com/car_dealer-nearby-mrd-snhan-lby-wshra-alsyarat-hy-almard-khmys-mshyt"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "NearPlace places a similarly named showroom on King Fahd Road in the Khamis dealer cluster; exact record match remains uncertain.",
+          "sources": [
+            "https://sa.near-place.com/car_dealer-nearby-mrd-snhan-lby-wshra-alsyarat-hy-almard-khmys-mshyt"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "No stored pin independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    }
+  ]
+}
