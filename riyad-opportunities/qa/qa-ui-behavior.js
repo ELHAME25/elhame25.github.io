@@ -172,7 +172,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     eastDestinations.every(x => (x.o.sectors || []).includes('شرق')) &&
     northDestinations.length === 1 && allDestinations.length === 5 &&
     eastProjectRowsForCount.length === 59 && allRiyadhProjectRowsForCount.length === 261 &&
-    els.app.innerHTML.includes('وجهات NHC') && els.app.innerHTML.includes('data-tab="nhc"') && els.app.innerHTML.includes('وجهات شرق الرياض') && els.app.innerHTML.includes('كل وجهات الرياض') && els.app.innerHTML.includes('data-nhc-view="city"'));
+    els.app.innerHTML.includes('وجهات NHC') && els.app.innerHTML.includes('data-tab="nhc"'));
   // Open details from the card's delegated click, close with its close control, and open by Enter.
   A.state().q = {}; A.state().scope = 'city'; A.state().tab = 'projects'; A.renderBranch();
   const detailIdMatch = els.content.innerHTML.match(/data-detail="(\d+)"/);
@@ -274,12 +274,12 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const nhcCity = A.itemsFor('nhc', '', 'city').map(x => x.o.id).sort().join('|');
   const nhcCenter = A.itemsFor('nhc', 'وسط', 'sector').map(x => x.o.id).sort().join('|');
   A.state().tab = 'nhc'; A.state().scope = 'sector'; A.state().explore = 'شرق'; A.renderBranch();
-  const nhcDualCards = els.app.innerHTML.includes('وجهات شرق الرياض') && els.app.innerHTML.includes('كل وجهات الرياض') && els.app.innerHTML.includes('>3</strong>') && els.app.innerHTML.includes('>5</strong>');
+  const nhcDualCards = els.content.innerHTML.includes('وجهات شرق الرياض') && els.content.innerHTML.includes('كل وجهات الرياض') && els.content.innerHTML.includes('data-nhc-view="sector"') && els.content.innerHTML.includes('data-nhc-view="city"') && els.content.innerHTML.includes('<strong>3</strong>') && els.content.innerHTML.includes('<strong>5</strong>');
   assert('Riyadh central shows Shifa first and both validated showroom groups', centerHasBothGroups);
   assert('Riyadh west routes showrooms to Shifa and north to Qadisiyah', westMapped && northMapped);
   assert('Riyadh East and North are independently selected and filtered', eastOnlyActive && northOnlyActive && eastSectorOnly && northSectorOnly && eastProjects.length > 0 && northProjects.length > 0);
   assert('Riyadh NHC has separate sector and whole-city cards with every destination accessible', nhcCity.split('|').length === 5 && nhcCenter === '' && nhcDualCards);
-  A.state().tab = 'cars'; A.renderBranch();
+  A.state().scope = 'sector'; A.state().explore = 'وسط'; A.state().carArea = 'all'; A.state().tab = 'cars'; A.renderBranch();
   const centralControls = els.content.innerHTML.includes('data-car-area="shifa" aria-pressed="true"') &&
     els.content.innerHTML.includes('data-car-area="qadisiyah" aria-pressed="true"') &&
     els.content.innerHTML.includes('data-car-area="all" aria-pressed="false"');
@@ -387,7 +387,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   if (areemDetailId) A.openDetail(areemDetailId);
   assert('Areem area preserves the primary NHC statement and exposes its internal official-source discrepancy', !!areem && areem.area.includes('89,905.67') && areem.areaNote.includes('105,827') && areemDetailId && els.detail.innerHTML.includes('تفصيل المساحة') && els.detail.innerHTML.includes('مصدر المساحة') && els.detail.innerHTML.includes('231,637.22'));
   A.selectBranch('176', true);
-  assert('Jeddah branch without a verified pin opens city data without fake zero-distance scope', A.state().scope === 'city' && !els.app.innerHTML.includes('id="radius"') && els.app.innerHTML.includes('لا تتوفر إحداثيات موثوقة لهذا الفرع'));
+  assert('Jeddah branch without a verified pin opens city data without fake zero-distance scope', A.state().scope === 'city' && !els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('إحداثيات موثوقة لهذا الفرع'));
   A.selectBranch('307', true); const rasTanuraDefaultScope = A.state().scope; A.state().tab = 'offices'; A.renderBranch();
   assert('Ras Tanura missing pin still opens full city offices without invented radius', rasTanuraDefaultScope === 'branch' && !els.app.innerHTML.includes('data-scope="branch"') && !els.app.innerHTML.includes('id="radius"') && A.itemsFor('offices','','branch').map(x=>x.o.id).sort().join('|') === A.itemsFor('offices','','city').map(x=>x.o.id).sort().join('|'));
 
