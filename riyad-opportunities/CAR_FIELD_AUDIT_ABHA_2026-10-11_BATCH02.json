@@ -6,7 +6,7 @@
   "source_head": "8f98a7a06bbde07f0a193b6b81ac183bcbe9392d",
   "scope": "Joint Abha-Khamis Mushait cluster, first ten remaining records after existing Batch01; do not split or reassign cities based only on the linked-city relationship",
   "count": 10,
-  "note": "Abha and Khamis Mushait are one linked audit scope per user instruction. A source naming either city does not by itself make the other-city representation erroneous. This is an evidence ledger only; no cars.json fields changed and no city reassignment is proposed. Unconfirmed means adequate field-level direct evidence was not obtained.",
+  "note": "Abha and Khamis Mushait are one linked audit scope per user instruction. A source naming either city does not by itself make the other-city representation erroneous. This is an evidence ledger only; no cars.json fields changed and no city reassignment is proposed. Unconfirmed means adequate field-level direct evidence was not obtained. Updated three linked Abha–Khamis entries from direct business-directory and seller sources; conflicting phone and unverified map states remain explicit. No cars.json values changed.",
   "entries": [
     {
       "id": "regional-car-phase6-cars-ad77d20fffff8b-1",
@@ -307,33 +307,39 @@
       "record_city": "أبها",
       "fields": {
         "name_activity": {
-          "status": "unconfirmed",
-          "evidence": "Generic label requires better evidence to identify the business; this is a record-identity gap, not a reason to treat the linked Abha–Khamis city scope as erroneous.",
-          "sources": []
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast identifies this name as a showroom/car-dealer business.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7-017-238-3788"
+          ]
         },
         "city_locality": {
           "status": "within_linked_cluster_scope",
-          "evidence": "Abha and Khamis Mushait remain a single linked scope per user instruction. The cited sources may identify a location in either city; that is not a conflict or basis for reassignment. Exact neighborhood/pin matching remains unconfirmed unless established elsewhere.",
-          "sources": []
+          "evidence": "BizMidEast places it in Khamis Mushait, within the linked Abha–Khamis scope.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7-017-238-3788"
+          ]
         },
         "phone": {
+          "status": "verified_directory_only",
+          "evidence": "Stored number matches BizMidEast's listed 017 238 3788.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7-017-238-3788"
+          ]
+        },
+        "google_maps": {
           "status": "unconfirmed",
-          "evidence": "0172383788 not independently linked to this record.",
+          "evidence": "Stored URL is a generic Google search, not a verified place pin.",
           "sources": []
         },
         "whatsapp": {
           "status": "unconfirmed",
-          "evidence": "No link verified.",
-          "sources": []
-        },
-        "google_maps": {
-          "status": "unconfirmed",
-          "evidence": "Stored URL is a generic search URL, not evidence of a pin.",
+          "evidence": "No direct WhatsApp profile or link verified.",
           "sources": []
         },
         "website": {
           "status": "unconfirmed",
-          "evidence": "No official site verified.",
+          "evidence": "No official website verified.",
           "sources": []
         }
       }
@@ -344,34 +350,45 @@
       "record_city": "أبها",
       "fields": {
         "name_activity": {
-          "status": "unconfirmed",
-          "evidence": "No independent direct source for this exact business was located in this pass.",
-          "sources": []
+          "status": "verified",
+          "evidence": "Haraj seller profile and BizMidEast identify the exact showroom.",
+          "sources": [
+            "https://haraj.com.sa/users/saeedzafe",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D8%B9%D9%8A%D8%AF-%D8%B8%D8%A7%D9%81%D8%B1-%D8%A7%D9%84%D9%82%D8%AD%D8%B7%D8%A7%D9%86%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_1U-017-235-4727"
+          ]
         },
         "city_locality": {
           "status": "within_linked_cluster_scope",
-          "evidence": "Abha and Khamis Mushait remain a single linked scope per user instruction. The cited sources may identify a location in either city; that is not a conflict or basis for reassignment. Exact neighborhood/pin matching remains unconfirmed unless established elsewhere.",
-          "sources": []
+          "evidence": "Haraj and BizMidEast place the showroom in Khamis Mushait; no change to the linked audit scope.",
+          "sources": [
+            "https://haraj.com.sa/users/saeedzafe",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D8%B9%D9%8A%D8%AF-%D8%B8%D8%A7%D9%81%D8%B1-%D8%A7%D9%84%D9%82%D8%AD%D8%B7%D8%A7%D9%86%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_1U-017-235-4727"
+          ]
         },
         "phone": {
+          "status": "conflict",
+          "evidence": "Stored landline matches BizMidEast, while Cybo lists another number (017 222 6141); retain the stored value pending direct resolution.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D8%B9%D9%8A%D8%AF-%D8%B8%D8%A7%D9%81%D8%B1-%D8%A7%D9%84%D9%82%D8%AD%D8%B7%D8%A7%D9%86%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_1U-017-235-4727",
+            "https://www.cybo.com/SA/khamis-mushait/new-car-dealers/?p=2"
+          ]
+        },
+        "google_maps": {
           "status": "unconfirmed",
-          "evidence": "0172354727 not independently corroborated.",
+          "evidence": "Stored CID has not been independently matched to the exact showroom.",
           "sources": []
         },
         "whatsapp": {
           "status": "unconfirmed",
-          "evidence": "No link verified.",
-          "sources": []
-        },
-        "google_maps": {
-          "status": "unconfirmed",
-          "evidence": "Stored CID was not opened and matched to the business.",
+          "evidence": "No direct WhatsApp profile or link verified.",
           "sources": []
         },
         "website": {
           "status": "unconfirmed",
-          "evidence": "No official site verified.",
-          "sources": []
+          "evidence": "Haraj is a seller profile, not an official site.",
+          "sources": [
+            "https://haraj.com.sa/users/saeedzafe"
+          ]
         }
       }
     },
@@ -381,33 +398,42 @@
       "record_city": "أبها",
       "fields": {
         "name_activity": {
-          "status": "unconfirmed",
-          "evidence": "No independent source for this exact showroom was found in this pass; the existing place URL alone is not proof.",
-          "sources": []
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast and Cybo list the named car showroom.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A8%D9%86-%D9%87%D9%8A%D9%81-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-055-897-0974",
+            "https://yellowpages-ar.cybo.com/SA/%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/%D9%85%D9%88%D8%A7%D9%82%D9%81-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D9%83%D8%B1%D8%A7%D8%AC%D8%A7%D8%AA/"
+          ]
         },
         "city_locality": {
           "status": "within_linked_cluster_scope",
-          "evidence": "Abha and Khamis Mushait are one linked audit scope per user instruction; no city reassignment proposed. The exact neighborhood still requires independent confirmation.",
-          "sources": []
+          "evidence": "Both sources place it in Khamis Mushait/Hijlah, within the linked scope.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A8%D9%86-%D9%87%D9%8A%D9%81-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-055-897-0974",
+            "https://yellowpages-ar.cybo.com/SA/%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/%D9%85%D9%88%D8%A7%D9%82%D9%81-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D9%83%D8%B1%D8%A7%D8%AC%D8%A7%D8%AA/"
+          ]
         },
         "phone": {
+          "status": "verified_directory_only",
+          "evidence": "Stored phone is listed by both BizMidEast and Cybo.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A8%D9%86-%D9%87%D9%8A%D9%81-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-055-897-0974",
+            "https://yellowpages-ar.cybo.com/SA/%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/%D9%85%D9%88%D8%A7%D9%82%D9%81-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D9%83%D8%B1%D8%A7%D8%AC%D8%A7%D8%AA/"
+          ]
+        },
+        "google_maps": {
           "status": "unconfirmed",
-          "evidence": "0558970974 was not corroborated to this exact listing by an independent source in this pass.",
+          "evidence": "Stored CID has not been directly matched to this business.",
           "sources": []
         },
         "whatsapp": {
           "status": "unconfirmed",
-          "evidence": "No direct WhatsApp account/link verified.",
-          "sources": []
-        },
-        "google_maps": {
-          "status": "unconfirmed",
-          "evidence": "Existing CID link was not independently opened and matched.",
+          "evidence": "No direct WhatsApp profile or link verified.",
           "sources": []
         },
         "website": {
           "status": "unconfirmed",
-          "evidence": "No official site verified.",
+          "evidence": "No official website verified.",
           "sources": []
         }
       }
