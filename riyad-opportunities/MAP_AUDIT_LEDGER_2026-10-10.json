@@ -20479,13 +20479,12 @@
       "name": "شركة رمز الاختيار للسيارات - فرع تبوك",
       "city": "تبوك",
       "locality": "CG8M+PW2، مخطط الراجحي، تبوك47311، المملكة العربية السعودية",
-      "status": "verified_authorized_multi_brand_dealer_archived_from_independent_showrooms",
-      "decision": "excluded_official_dealer",
+      "status": "verified_authorized_multi_brand_dealer_candidate_exclusion_not_applied",
       "source_urls": [
         "https://rec.sa/ar",
         "https://www.autoy.com/SA/Riyadh/108013217408224/%D8%B4%D8%B1%D9%83%D8%A9-%D8%B1%D9%85%D8%B2-%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-RamzElekhtear"
       ],
-      "evidence_note": "الموقع rec.sa يعرض شركة رمز الاختيار لبيع السيارات الجديدة ويذكر تبوك ضمن المدن المخدومة؛ صفحة الشركة على Autoy تصفها وكيلًا معتمدًا لعلامات متعددة وتذكر فرع تبوك. لذلك أُخرج سجل الفرع من قائمة المعارض المستقلة، مع حفظ كامل بياناته في الأرشيف.",
+      "evidence_note": "المصدران rec.sa وAutoy يثبتان أن الشركة تبيع سيارات جديدة ولها فرع في تبوك، ويصف Autoy الشركة بأنها وكيل معتمد لعلامات متعددة. رُصدت كمرشحة للاستبعاد من قائمة المعارض المستقلة؛ محاولة إزالة السجل من cars.json رُفضت تلقائيًا لأن واجهة الكتابة تستبدل الملف الكبير كاملًا. لذلك بقي السجل كما هو ولم يُنفذ الاستبعاد.",
       "previous_map": "https://www.google.com/maps/?cid=18122451927873025471",
       "current_map": "https://www.google.com/maps/?cid=18122451927873025471",
       "map_check": {
@@ -20503,23 +20502,6 @@
         "whatsapp": {
           "status": "not_verified"
         }
-      },
-      "decisionReason": "أرشفة سجل صحيح كشركة سيارات، لكنه وكيل/موزع معتمد متعدد العلامات وليس معرضًا مستقلاً ضمن نطاق القسم.",
-      "archiveReason": "استبعاد من عرض المعارض المستقلة بسبب إثبات صفة الوكيل/الموزع المعتمد في مصدر الشركة ومصدر مستقل؛ البيانات محفوظة للأثر والتدقيق.",
-      "archivedRecord": {
-        "id": "phase6-google-18122451927873025471",
-        "n": "شركة رمز الاختيار للسيارات - فرع تبوك",
-        "city": "تبوك",
-        "nb": "CG8M+PW2، مخطط الراجحي، تبوك47311، المملكة العربية السعودية",
-        "phones": [
-          "0508954254"
-        ],
-        "web": "",
-        "maps": "https://www.google.com/maps/?cid=18122451927873025471",
-        "lat": 28.41676,
-        "lon": 36.53477,
-        "sec": "",
-        "loc": "pt"
       }
     }
   ],
