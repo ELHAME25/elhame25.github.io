@@ -16564,6 +16564,105 @@
           "status": "not_present"
         }
       }
+    },
+    {
+      "id": "phase5-car-f50ec1897418",
+      "category": "cars",
+      "name": "الحيسوني",
+      "city": "المدينة المنورة",
+      "status": "unresolved_no_place_card",
+      "current_map": "https://www.google.com/maps/?cid=10267370201247900875",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_no_place_card",
+        "notes": "فُتح رابط CID المباشر؛ لا تظهر بطاقة مكان/عنوان/هاتف، وبقيت الخريطة بلا تعريف للجهة بعد قراءة ثانية. لم أعدّ الرابط تحققًا."
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=10267370201247900875"
+      ],
+      "evidence_note": "فُتح رابط CID المباشر؛ لا تظهر بطاقة مكان/عنوان/هاتف، وبقيت الخريطة بلا تعريف للجهة بعد قراءة ثانية. لم أعدّ الرابط تحققًا.",
+      "field_checks": {
+        "phone": {
+          "status": "unresolved"
+        },
+        "website": {
+          "status": "not_present"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "phase5-car-031baa2f56e7",
+      "category": "cars",
+      "name": "شركة الأصالة الراقية لاستيراد السيارات",
+      "city": "جدة",
+      "status": "unresolved_no_readable_card",
+      "current_map": "https://www.google.com/maps/?cid=17464010659960871120",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_no_readable_card",
+        "notes": "فُتح رابط CID المباشر في جدة؛ ظهرت لوحة Maps بلا اسم أو عنوان أو هاتف قابل للقراءة. لم أُثبت بيانات السجل."
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=17464010659960871120"
+      ],
+      "evidence_note": "فُتح رابط CID المباشر في جدة؛ ظهرت لوحة Maps بلا اسم أو عنوان أو هاتف قابل للقراءة. لم أُثبت بيانات السجل.",
+      "field_checks": {
+        "phone": {
+          "status": "unresolved"
+        },
+        "website": {
+          "status": "not_present"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "phase5-car-925c596716a9",
+      "category": "cars",
+      "name": "شركة العبور المطور للسيارات",
+      "city": "جدة",
+      "status": "coordinates_corrected_maps_retested",
+      "current_map": "https://www.google.com/maps/?cid=12267362337353591981",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "coordinates_corrected_maps_retested",
+        "notes": "بطاقة CID أُعيد فتحها بعد الحفظ؛ الاسم والعنوان حي الجوهرة جدة والهاتف مطابقان. رابط المكان المباشر أعطى 21.4321918,39.2596443 بدل الإحداثيات العامة القديمة 21.43173,39.25161.",
+        "coordinates": {
+          "lat": 21.4321918,
+          "lon": 39.2596443
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=12267362337353591981"
+      ],
+      "evidence_note": "بطاقة CID أُعيد فتحها بعد الحفظ؛ الاسم والعنوان حي الجوهرة جدة والهاتف مطابقان. رابط المكان المباشر أعطى 21.4321918,39.2596443 بدل الإحداثيات العامة القديمة 21.43173,39.25161.",
+      "current_coordinates": {
+        "lat": 21.4321918,
+        "lon": 39.2596443
+      },
+      "field_checks": {
+        "phone": {
+          "status": "verified_match_google_maps",
+          "value": "0552389440"
+        },
+        "website": {
+          "status": "not_present"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
     }
   ],
   "browser_spot_checks": [
@@ -16667,13 +16766,13 @@
     }
   ],
   "audit_counts": {
-    "as_of_commit": "7878b4920fe60a714c488a60b55eadeec59e4e2b",
+    "as_of_commit": "68d5ae7df972486337813a4382935327d34ea6c9",
     "map_target_actions": 4059,
-    "opened_and_tied_to_unique_record": 267,
-    "verified_correct": 102,
-    "corrected_and_retested": 17,
-    "unresolved_after_open": 165,
-    "not_opened": 3792,
+    "opened_and_tied_to_unique_record": 270,
+    "verified_correct": 103,
+    "corrected_and_retested": 21,
+    "unresolved_after_open": 167,
+    "not_opened": 3789,
     "method": "Deduplicated record IDs; map target action per app row uses maps||mapsQ, branch coordinates (246), and generated selfbuild search (10). Correct requires directly opened target and positive name/location/purpose evidence; unresolved and merely opened are excluded. Phone, WhatsApp and website status stays field-specific.",
     "verified_correct_ids": [
       "entity-96716f5db346",
@@ -16777,8 +16876,9 @@
       "phase5-car-3db66188b409",
       "phase5-car-72957fc3dcf9",
       "phase5-car-28e996896042",
-      "phase5-car-5eb858a520a4"
+      "phase5-car-5eb858a520a4",
+      "phase5-car-925c596716a9"
     ],
-    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field. Added 4 office records from Maps card opens: three matching Cards, one record where Maps title appeared but details could not be read; 3 marked correct, 1 unresolved. Official site/WhatsApp checks separated. Denominator reconciled to deduplicated baseline 4,059; previous checkpoints had incorrectly increased the denominator when logging existing dataset rows. All logged IDs were already represented in baseline target count. Before the removed-link re-audit, Maps had 215 opened, 71 verified matches, and 144 unresolved (counts corrected for P029). P029 corrected and post-edit tested: city fixed to Seihat and direct Google Maps card pin now matches project name, Ghadeer district, city; counts updated (+1 correct and corrected/retested, -1 unresolved). Tested and updated project search fallbacks after editing: P016 still returns no result/world center; P021 yields only Mutrafiyah area; P024 yields two similar but unverified candidates. All remain unresolved; none counted correct. Removed-link re-audit: opened 3 regional car searches and 3 company searches; Karden official HQ pin was post-edit tested, adding one verified and corrected/retested record. The other five remain unresolved and retained. Current totals: 4,059 targets; 221 opened; 72 correct; 7 corrected/retested; 149 unresolved; 3,838 unopened. New maps audit: five additional showroom records were opened; all five cards matched record name and locality. One showroom phone conflicts with its Maps listing and another lists two numbers; these are independent field states. Six Riyad Bank coordinate links were opened with no readable branch cards; official sources partially support names/locations and reveal that code 304 has two distinct addresses, so no pin/district correction was made. Updated cumulative totals: 232 opened, 77 proven correct, 7 corrected/retested, 155 unresolved, 3,827 not opened of 4,059 targets. Office/project/NHC batch: six office records revisited, only Hassani was a newly opened unique target; five had been opened earlier. Nasa and Mazal now meet match criteria; Mazal pin corrected and post-edit opened, but its phone conflicts with the stored number. Hassani verified. P003 and P031-P035 were opened; P032/P033/P035 matched the project, P032 and P035 saved as direct pins; P003/P031/P034 remain unresolved. Sama/Jida opportunity Maps opened: Jida direct project pin saved and post-edit opened; Sama remains ambiguous between scheme and sales-office listings. Six NHC destinations opened: AlJana matched a named residential destination card; AlRasha query resolved to sales center only and remains unresolved; Tabuk Valley corrected from unnamed coordinate to named NHC destination card; Ruba/Alwareef official sales-center pins and Makkah Hills official destination sales-center coordinate were opened after updating. Cumulative checkpoint: 4,059 targets, 247 opened, 89 correct, 15 corrected and post-edit retested, 158 unresolved, 3,812 unopened. Contact fields are separately audited; only official/general NHC phone distinctions recorded. دفعة استئناف: فُتحت بطاقتا معرض في جازان وحائل. بطاقة جازان دعمت إضافة عنوان شارع وهاتف مطابق مع بقاء إعادة الفتح بعد الحفظ غير محسومة؛ بطاقة حائل طابقت الاسم والمدينة والعنوان المتاح والهاتف. لا روابط موقع/واتساب مسجلة. لم يتغير أي دبوس في هذه الدفعة. ثم فُتحت بطاقتا معرض العين ويزيد في بريدة؛ طابقتا الاسم والمدينة والحي. رقم العين مطابق، ومن رقمي يزيد طابق رقم واحد ولم يُحسم الثاني. لم تتغير البيانات. ثم فُتح سجل ون كار: بطاقة Maps طابقت الاسم والمدينة والحي والهاتف، وربطت بصفحة المتجر في حراج. فُتحت صفحة المتجر وتطابق اسم المعرض ونشاطه وعروضه في بريدة؛ أضيف رابطها في حقل web. لا يوجد واتساب موثق. فُحص سجلان من مكة: أبو تركي طابق الاسم والعنوان والهاتف؛ رابط Snapchat الذي تعرضه خرائط Google لا يفتح محتوى صالحًا، فلم يُضف. طليعة الأجيال بقيت غير محسومة لأن بطاقة Maps تحمل اسمًا أقصر ورقمًا مختلفًا؛ لم يُغيّر السجل. استمر فحص المعارض: معرض عز العرب بأبها طابق العنوان المسجل والإحداثيات الدقيقة؛ مصدران مستقلان يطابقان الرقم. معرض النخبة بالباحة طابق الاسم والعنوان والهاتف مباشرة، مع تدوين plus code المجاور. رابط معرض التمكين في مكة فتح بطاقة فارغة وبقي غير محسوم. فُتحت بطاقة CID معرض سعد الزير ورابط بحث معرض بن قزان دون ظهور بطاقة Maps قابلة للفحص؛ سجلاهما غير محسومين، ولم تُجر تغييرات. فُتح سجل معرض الثواب ببريدة؛ بطاقة خرائط غير متاحة. إعلان حديث لحراج يطابق معرض الثواب ومدينة بريدة ويدرج رقم السجل ضمن جهات المبيعات، بينما صفحة الإعلان المحددة قديمة/محذوفة؛ بقي الدبوس غير محسوم ولم يضاف رابط موقع. سُجل معرض الصقور بجدة بعد إعادة الاختبار: بطاقة Maps تطابق الاسم والعنوان والهاتف؛ أُصلحت إحداثيات السجل 21.43173,39.25161 إلى 21.4296018,39.2539917 (نحو 340 م) ثم أُعيد فتح CID وتأكدت البطاقة. ثم طابق دبوس «الأسطورة الحديث» الرسمي Place ID الخاص بـGoogle مع CID المحفوظ؛ طابق الحي والهاتف، وأُضيف رابط الموقع الرسمي واختُبر بفتح الصفحة الرئيسية. لم تُغيّر الإحداثيات لعدم استخراجها من البطاقة بعد مهلة المتصفح. صُحح معرض جوهرة جدة: إحداثياته القديمة كانت تبعد نحو 850 م عن Place pin. حُفظ العنوان الدقيق والإحداثيات الظاهرة في بطاقة Maps، ثم أُعيد فتح CID بعد الحفظ وطابقت البطاقة العنوان والهاتف. دفعة بريدة التالية: فُتحت أربعة دبابيس معارض. طابقت بطاقة العمر الاسم والمدينة والهاتف مع بقاء الحي والإحداثيات الدقيقة غير مثبتة؛ طابقت بطاقتا سلطان الزعاق وكلاس الاسم والعنوان والهاتف؛ رابط نهضة السعودية بقي بلا بطاقة قابلة للقراءة. لم تُعدّل الإحداثيات المشتركة دون استخراج موقع دقيق."
+    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field. Added 4 office records from Maps card opens: three matching Cards, one record where Maps title appeared but details could not be read; 3 marked correct, 1 unresolved. Official site/WhatsApp checks separated. Denominator reconciled to deduplicated baseline 4,059; previous checkpoints had incorrectly increased the denominator when logging existing dataset rows. All logged IDs were already represented in baseline target count. Before the removed-link re-audit, Maps had 215 opened, 71 verified matches, and 144 unresolved (counts corrected for P029). P029 corrected and post-edit tested: city fixed to Seihat and direct Google Maps card pin now matches project name, Ghadeer district, city; counts updated (+1 correct and corrected/retested, -1 unresolved). Tested and updated project search fallbacks after editing: P016 still returns no result/world center; P021 yields only Mutrafiyah area; P024 yields two similar but unverified candidates. All remain unresolved; none counted correct. Removed-link re-audit: opened 3 regional car searches and 3 company searches; Karden official HQ pin was post-edit tested, adding one verified and corrected/retested record. The other five remain unresolved and retained. Current totals: 4,059 targets; 221 opened; 72 correct; 7 corrected/retested; 149 unresolved; 3,838 unopened. New maps audit: five additional showroom records were opened; all five cards matched record name and locality. One showroom phone conflicts with its Maps listing and another lists two numbers; these are independent field states. Six Riyad Bank coordinate links were opened with no readable branch cards; official sources partially support names/locations and reveal that code 304 has two distinct addresses, so no pin/district correction was made. Updated cumulative totals: 232 opened, 77 proven correct, 7 corrected/retested, 155 unresolved, 3,827 not opened of 4,059 targets. Office/project/NHC batch: six office records revisited, only Hassani was a newly opened unique target; five had been opened earlier. Nasa and Mazal now meet match criteria; Mazal pin corrected and post-edit opened, but its phone conflicts with the stored number. Hassani verified. P003 and P031-P035 were opened; P032/P033/P035 matched the project, P032 and P035 saved as direct pins; P003/P031/P034 remain unresolved. Sama/Jida opportunity Maps opened: Jida direct project pin saved and post-edit opened; Sama remains ambiguous between scheme and sales-office listings. Six NHC destinations opened: AlJana matched a named residential destination card; AlRasha query resolved to sales center only and remains unresolved; Tabuk Valley corrected from unnamed coordinate to named NHC destination card; Ruba/Alwareef official sales-center pins and Makkah Hills official destination sales-center coordinate were opened after updating. Cumulative checkpoint: 4,059 targets, 247 opened, 89 correct, 15 corrected and post-edit retested, 158 unresolved, 3,812 unopened. Contact fields are separately audited; only official/general NHC phone distinctions recorded. دفعة استئناف: فُتحت بطاقتا معرض في جازان وحائل. بطاقة جازان دعمت إضافة عنوان شارع وهاتف مطابق مع بقاء إعادة الفتح بعد الحفظ غير محسومة؛ بطاقة حائل طابقت الاسم والمدينة والعنوان المتاح والهاتف. لا روابط موقع/واتساب مسجلة. لم يتغير أي دبوس في هذه الدفعة. ثم فُتحت بطاقتا معرض العين ويزيد في بريدة؛ طابقتا الاسم والمدينة والحي. رقم العين مطابق، ومن رقمي يزيد طابق رقم واحد ولم يُحسم الثاني. لم تتغير البيانات. ثم فُتح سجل ون كار: بطاقة Maps طابقت الاسم والمدينة والحي والهاتف، وربطت بصفحة المتجر في حراج. فُتحت صفحة المتجر وتطابق اسم المعرض ونشاطه وعروضه في بريدة؛ أضيف رابطها في حقل web. لا يوجد واتساب موثق. فُحص سجلان من مكة: أبو تركي طابق الاسم والعنوان والهاتف؛ رابط Snapchat الذي تعرضه خرائط Google لا يفتح محتوى صالحًا، فلم يُضف. طليعة الأجيال بقيت غير محسومة لأن بطاقة Maps تحمل اسمًا أقصر ورقمًا مختلفًا؛ لم يُغيّر السجل. استمر فحص المعارض: معرض عز العرب بأبها طابق العنوان المسجل والإحداثيات الدقيقة؛ مصدران مستقلان يطابقان الرقم. معرض النخبة بالباحة طابق الاسم والعنوان والهاتف مباشرة، مع تدوين plus code المجاور. رابط معرض التمكين في مكة فتح بطاقة فارغة وبقي غير محسوم. فُتحت بطاقة CID معرض سعد الزير ورابط بحث معرض بن قزان دون ظهور بطاقة Maps قابلة للفحص؛ سجلاهما غير محسومين، ولم تُجر تغييرات. فُتح سجل معرض الثواب ببريدة؛ بطاقة خرائط غير متاحة. إعلان حديث لحراج يطابق معرض الثواب ومدينة بريدة ويدرج رقم السجل ضمن جهات المبيعات، بينما صفحة الإعلان المحددة قديمة/محذوفة؛ بقي الدبوس غير محسوم ولم يضاف رابط موقع. سُجل معرض الصقور بجدة بعد إعادة الاختبار: بطاقة Maps تطابق الاسم والعنوان والهاتف؛ أُصلحت إحداثيات السجل 21.43173,39.25161 إلى 21.4296018,39.2539917 (نحو 340 م) ثم أُعيد فتح CID وتأكدت البطاقة. ثم طابق دبوس «الأسطورة الحديث» الرسمي Place ID الخاص بـGoogle مع CID المحفوظ؛ طابق الحي والهاتف، وأُضيف رابط الموقع الرسمي واختُبر بفتح الصفحة الرئيسية. لم تُغيّر الإحداثيات لعدم استخراجها من البطاقة بعد مهلة المتصفح. صُحح معرض جوهرة جدة: إحداثياته القديمة كانت تبعد نحو 850 م عن Place pin. حُفظ العنوان الدقيق والإحداثيات الظاهرة في بطاقة Maps، ثم أُعيد فتح CID بعد الحفظ وطابقت البطاقة العنوان والهاتف. دفعة بريدة التالية: فُتحت أربعة دبابيس معارض. طابقت بطاقة العمر الاسم والمدينة والهاتف مع بقاء الحي والإحداثيات الدقيقة غير مثبتة؛ طابقت بطاقتا سلطان الزعاق وكلاس الاسم والعنوان والهاتف؛ رابط نهضة السعودية بقي بلا بطاقة قابلة للقراءة. لم تُعدّل الإحداثيات المشتركة دون استخراج موقع دقيق. دفعة متابعة بريدة/جدة: بعد فتح بطاقات العمر وسلطان الزعاق وكلاس والعبور المطور، استخرجت إحداثيات كل بطاقة من رابط المكان. صححت النقاط الأربع التي كانت عامة/بعيدة، ثم أعدت فتح CID بعد الحفظ وطابقت الاسم والهاتف والعنوان؛ أربع تصحيحات دبابيس أُعيد اختبارها. سُجل أيضًا رابط الحيسوني السابق الذي بقي بلا بطاقة مقروءة، وCID الأصالة الراقية الذي لم يعرض تفاصيل قابلة للتحقق."
   }
 }
