@@ -1,0 +1,441 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "d13601189f0a5605ad3f22cda32ddc88954fef69",
+  "scope": "مدينة بريدة — دفعة تدقيق سيارات. لا تغيير لبيانات cars.json؛ الروابط/الحقول غير المثبتة تبقى معلّقة.",
+  "count": 10,
+  "note": "Direct business listings, active seller listings and independent directory evidence recorded per field. No phone/map correction is applied based only on directory or search-result evidence.",
+  "entries": [
+    {
+      "id": "entity-44019da87964",
+      "name": "ابن الجبيل للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "The official Ibn Aljubil showroom site opens under its business name and identifies car showroom activity.",
+          "sources": [
+            "https://ibn-aljubil.com/showroom"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "The official site does not confirm Buraidah/Al Jazirah in the retrieved content.",
+          "sources": [
+            "https://ibn-aljubil.com/showroom"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "0532199902 not corroborated from a direct source.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "not_provided",
+          "evidence": "No Google Maps URL stored; no replacement pin inferred.",
+          "sources": []
+        },
+        "website": {
+          "status": "verified",
+          "evidence": "Stored URL is the official showroom site.",
+          "sources": [
+            "https://ibn-aljubil.com/showroom"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-65cb7cddce51",
+      "name": "معرض السواق للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Targeted exact-name searches did not locate an independent direct listing for this showroom.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Buraidah/Al Jazirah is the stored location; no independent source confirmed it.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "0505139373 not corroborated to this exact business.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp account/link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID was not independently matched to a business card.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "entity-88fe7e89ed9b",
+      "name": "معرض العين للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "Cybo lists the exact showroom as a used-car dealer.",
+          "sources": [
+            "https://www.cybo.com/SA/buraidah/used-car-dealers/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_directory_only",
+          "evidence": "Cybo places it on Qurtubah Street, Al Jazirah, Buraidah.",
+          "sources": [
+            "https://www.cybo.com/SA/buraidah/used-car-dealers/"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "Cybo lists 0505413888, matching the stored phone.",
+          "sources": [
+            "https://www.cybo.com/SA/buraidah/used-car-dealers/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID not directly matched to the listing.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "entity-f486968da68f",
+      "name": "معرض يزيد للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast identifies this named vehicle showroom and car-sales activity.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%8A%D8%B2%D9%8A%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-050-518-5353"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast places the showroom in Al Jazirah, Buraidah.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%8A%D8%B2%D9%8A%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-050-518-5353"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast lists 0505185353, matching the stored phone.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%8A%D8%B2%D9%8A%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-050-518-5353"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp account/link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID not independently matched to this business.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "BizMidEast shows a generic TikTok domain, not a verified official site; no official site confirmed.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%8A%D8%B2%D9%8A%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-050-518-5353"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-61ad2c52ce31",
+      "name": "معرض ون كار للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast identifies One Car showroom as a car dealer.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D9%86-%D9%83%D8%A7%D8%B1-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-050-519-9696"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast places One Car on Qurtubah Street, Al Jazirah, Buraidah.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D9%86-%D9%83%D8%A7%D8%B1-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-050-519-9696"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast lists 0505199696 matching the stored phone.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D9%86-%D9%83%D8%A7%D8%B1-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-050-519-9696"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "A directory displays contact options but does not verify a WhatsApp account for the stored number.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D9%86-%D9%83%D8%A7%D8%B1-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-050-519-9696"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID not independently matched to the showroom.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "Stored Haraj seller page is a marketplace profile, not a verified official website.",
+          "sources": [
+            "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D9%88%D9%86%20%D9%83%D8%A7%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-1d652336c58a",
+      "name": "معرض الثواب للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "Yango Maps identifies Thawab showroom as a car dealer.",
+          "sources": [
+            "https://maps.yango.com/ar/org/207648138816/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_directory_only",
+          "evidence": "Yango places it in Buraidah, Al Jazirah.",
+          "sources": [
+            "https://maps.yango.com/ar/org/207648138816/"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "0505152050 not visible in the independent source reviewed.",
+          "sources": [
+            "https://maps.yango.com/ar/org/207648138816/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp account/link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Yango location does not prove the stored Google CID pin.",
+          "sources": [
+            "https://maps.yango.com/ar/org/207648138816/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase5-car-72957fc3dcf9",
+      "name": "معرض العمر للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Current Haraj listings advertise vehicles from Al Omar showroom.",
+          "sources": [
+            "https://haraj.com.sa/11180084889/%D9%86%D9%8A%D8%B3%D8%A7%D9%86_%D8%B5%D9%86%D9%8A_2023_%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast, Cybo, and Kandal place it in Buraidah/Al Jazirah.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%85%D8%B1-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-050-086-0409",
+            "https://yellowpages-ar.cybo.com/SA-biz/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%85%D8%B1-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+            "https://kandal.sa/stores/maard-alaamr-llsyarat-chijb3"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "Haraj ads and directories publish 0500860409 among contact numbers.",
+          "sources": [
+            "https://haraj.com.sa/11180084889/%D9%86%D9%8A%D8%B3%D8%A7%D9%86_%D8%B5%D9%86%D9%8A_2023_%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1/",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%85%D8%B1-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-050-086-0409",
+            "https://yellowpages-ar.cybo.com/SA-biz/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%85%D8%B1-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "Kandal provides a WhatsApp action but its destination/number was not independently verified.",
+          "sources": [
+            "https://kandal.sa/stores/maard-alaamr-llsyarat-chijb3"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored pin was not opened and matched to the listing.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase5-car-17e3aaa9dbc1",
+      "name": "معرض الحنيني للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Current Haraj vehicle ads identify Al Hanini showroom.",
+          "sources": [
+            "https://haraj.com.sa/11180084889/%D9%86%D9%8A%D8%B3%D8%A7%D9%86_%D8%B5%D9%86%D9%8A_2023_%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_directory_only",
+          "evidence": "Yango and GulfMap place it in Al Jazirah, Buraidah.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/231467012517/",
+            "https://gulfmap.net/place/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AD%D9%86%D9%8A%D9%86%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "Current ads and independent showroom directory publish 0501555380.",
+          "sources": [
+            "https://haraj.com.sa/11180084889/%D9%86%D9%8A%D8%B3%D8%A7%D9%86_%D8%B5%D9%86%D9%8A_2023_%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1/",
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp account/link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Yango/GulfMap locations do not independently prove the stored Google search URL.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/231467012517/",
+            "https://gulfmap.net/place/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AD%D9%86%D9%8A%D9%86%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase5-car-8529bdf902df",
+      "name": "معرض نهضة السعودية للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "Yango identifies the showroom as a used-car dealer.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/2277500942/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_directory_only",
+          "evidence": "Yango places it in Buraidah, Al Jazirah.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/2277500942/"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "Yango lists 0559888830, matching the stored phone.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/2277500942/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp account/link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Yango location does not prove the stored CID pin.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/2277500942/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase5-car-28e996896042",
+      "name": "معرض سلطان الزعاق للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No independent current source for this exact showroom name was found in the targeted search.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Al Jazirah/Buraidah remains the stored locality; independent confirmation not found.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "0555134882 not corroborated to this exact business.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp account/link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID was not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    }
+  ]
+}
