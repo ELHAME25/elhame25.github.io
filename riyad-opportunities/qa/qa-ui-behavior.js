@@ -214,14 +214,12 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   A.state().scope = 'city'; A.renderBranch();
   assert('city expansion count matches filtered public self-build results', filteredCityTotal === 1 && A.compute().selfbuild.items.length === filteredCityTotal);
 
-  // City-only showroom records stay selectable without inventing a branch.
+  // The picker should return actual branches for a city and never invent a city-wide entry.
   fireDocument('click', target({ 'data-act': 'change' }));
   const cityOptions = els.app.innerHTML;
   els['q-branch'].value = ''; els['q-city'].value = 'بيش'; els['q-city'].dispatch('change');
-  const cityOnlyReady = cityOptions.includes('بيش') && !els['go-branch'].disabled && els['branch-list'].innerHTML.includes('data-city-only=\"بيش\"');
-  els['go-branch'].dispatch('click');
-  const cityOnlyCars = A.itemsFor('cars', '', 'city');
-  assert('cities without branches open their verified showroom list directly', cityOnlyReady && A.state().branch && A.state().branch.cityOnly === true && A.state().branch.city === 'بيش' && A.state().scope === 'city' && cityOnlyCars.length === 3 && !els.app.innerHTML.includes('pill code'));
+  assert('branch picker does not invent a city-wide entry for a city without branches', cityOptions.includes('بيش') && els['go-branch'].disabled && !els['branch-list'].innerHTML.includes('data-city-only'));
+
 
 
   // Riyadh sector routing must use both valid city showroom groups in Central,
@@ -326,6 +324,15 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const nhcDetailId = (nhcCardMarkup.match(/data-detail="([^"]+)/) || [])[1];
   A.openDetail(nhcDetailId);
   assert('official NHC project contact is labeled as developer contact with its source', nhcProject.phones.includes('920033499') && nhcProject.phoneLevel === 'dev' && nhcProject.phoneSource === 'https://www.nhc.sa/contact/' && els.detail.innerHTML.includes('رقم المطور') && !els.detail.innerHTML.includes('مصدر رقم التواصل'));
+  const nhcUnits = {'الفرسان':'أكثر من 50,000 وحدة','الربى':'أكثر من 9,000 وحدة','خزام':'أكثر من 52,000 وحدة','الأصالة':'5,835 وحدة','المشرقية':'15,055 وحدة'};
+  const nhcUnitsVisible = Object.entries(nhcUnits).every(([name, count]) => {
+    const destination = d.nhc.find(x => x.n === name && x.city === 'الرياض');
+    const detailId = destination && (A.card('nhc', destination, null, true, false, {}).match(/data-detail="([^\"]+)/) || [])[1];
+    if (!detailId) return false;
+    A.openDetail(detailId);
+    return els.detail.innerHTML.includes('إجمالي الوحدات') && els.detail.innerHTML.includes(count) && els.detail.innerHTML.includes('العودة إلى القائمة');
+  });
+  assert('Riyadh NHC destination details show only their confirmed total unit count and return control', nhcUnitsVisible);
   const akariaProject = d.projects.find(x => x.id === 'P386');
   assert('official Al Akaria project contact is labeled as developer contact', akariaProject.phones.includes('920003938') && akariaProject.phoneLevel === 'dev' && akariaProject.phoneSource === 'https://www.al-akaria.com/contact/');
   const etqaan = d.offices.find(x => x.id === 'national-ejar-office-202414');
