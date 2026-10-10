@@ -36,13 +36,38 @@ const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  assert.strictEqual(aflajCar.length,1,'regional Aflaaj listing must deduplicate with Layla source record');
  const sabtOffices=D.offices.filter(o=>Q.sameCity(o.city,'سبت العلاية'));
  assert.strictEqual(sabtOffices.length,5,'all five offices with variant spelling must attach to the branch city');
- const branchSearch=els['q-branch']; branchSearch.value='بريدة'; branchSearch.handlers.input();
- const buraidahBranches=D.branches.filter(b=>Q.sameCity(b.city,'بريدة'));
- assert(buraidahBranches.length>1,'Buraidah test should cover multiple branches');
- for(const b of buraidahBranches)assert(els['branch-list'].innerHTML.includes('data-code="'+b.c+'"'),`typing city must list branch ${b.c}`);
- branchSearch.value=''; els['q-city'].value='بريدة'; els['q-city'].handlers.change();
- assert.strictEqual((els['branch-list'].innerHTML.match(/data-code=/g)||[]).length,buraidahBranches.length,'choosing Buraidah must list its branches');
+ const branchSearch=els['q-branch'], citySelect=els['q-city'];
+ const branchCities=[...new Set(D.branches.map(b=>b.city).filter(Boolean))].sort();
+ assert(branchCities.length>50,'national test must cover the nationwide branch-city set');
+ for(const city of branchCities){
+   const rows=D.branches.filter(b=>Q.sameCity(b.city,city));
+   branchSearch.value=city; branchSearch.handlers.input();
+   for(const b of rows)assert(els['branch-list'].innerHTML.includes('data-code="'+b.c+'"'),`typing city ${city} must list branch ${b.c}`);
+   assert.strictEqual((els['branch-list'].innerHTML.match(/data-code=/g)||[]).length,rows.length,`city search ${city} must show only its actual branches`);
+   assert(!els['branch-list'].innerHTML.includes('data-city-only'),`city search ${city} must not invent a city-wide branch`);
+   branchSearch.value=''; citySelect.value=city; citySelect.handlers.change();
+   assert.strictEqual((els['branch-list'].innerHTML.match(/data-code=/g)||[]).length,rows.length,`selecting ${city} must list all its branches`);
+   for(const b of rows)assert(els['branch-list'].innerHTML.includes('data-code="'+b.c+'"'),`selecting ${city} must list branch ${b.c}`);
+ }
+ assert(branchCities.some(c=>Q.sameCity(c,'بريدة')),'Buraidah must be included in nationwide search');
+ assert(branchCities.some(c=>Q.sameCity(c,'عنيزة')),'Unaizah must be included in nationwide search');
+ assert(!branchCities.some(c=>Q.sameCity(c,'قبة')),'do not invent a Qubah branch city absent from the official branch dataset');
  assert(!els['branch-list'].innerHTML.includes('data-city-only'),'city selection must not add a city-wide entry');
+ const knownDestinationCounts={
+   'الجنى':'أكثر من 1,600 وحدة','الوريف':'أكثر من 12,000 وحدة','مكة هيلز':'أكثر من 3,100 وحدة',
+   'بوابة مكة':'أكثر من 8,000 وحدة','سدايم':'أكثر من 8,000 وحدة','الفرسان':'أكثر من 50,000 وحدة',
+   'الربى':'أكثر من 9,000 وحدة','خزام':'أكثر من 52,000 وحدة','المشرقية':'15,055 وحدة',
+   'الأصالة':'5,835 وحدة','مرجانة':'أكثر من 1,500 وحدة','لازورد':'أكثر من 8,100 وحدة',
+   'تبوك فالي':'1,106 وحدة','تبوك هيلز':'أكثر من 4,600 وحدة','الورود':'أكثر من 3,700 وحدة',
+   'وديانا':'نحو 2,000 وحدة','تبوك فالي 2':'874 وحدة','الغروب':'نحو 8,000 وحدة',
+   'قمرة':'2,832 وحدة','النخلة':'169 وحدة'
+ };
+ for(const [name,count] of Object.entries(knownDestinationCounts)){
+   const destination=D.nhc.find(o=>o.n===name);
+   assert(destination,`NHC destination missing: ${name}`);
+   assert.strictEqual(destination.unitCount,count,`verified NHC unit count missing or changed for ${name}`);
+ }
+ assert(D.nhc.every(o=>!o.unitCount||typeof o.unitCount==='string'),'NHC totals must be explicit display strings');
  for(const kind of ['projects','opps','nhc','selfbuild','companies','offices','cars'])for(const o of D[kind]||[])for(const city of [o.city,...(o.coverageCities||[])].filter(Boolean))assert(choices.some(c=>Q.sameCity(c,city)),`${kind} city/coverage missing: ${city}`);
  console.log(JSON.stringify({ok:true,cityChoices:choices.length,citySearchBranches:buraidahBranches.length,sabtAlAlayahOffices:sabtOffices.length}));
 })().catch(e=>{console.error(e.stack||e);process.exitCode=1;});

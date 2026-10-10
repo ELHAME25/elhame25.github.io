@@ -118,7 +118,7 @@
   function getJSON(path) {
     // Version query prevents a stale Pages/CDN copy of a corrected JSON file from breaking startup.
     var sep = path.indexOf('?') === -1 ? '?' : '&';
-    return fetch(path + sep + 'v=20261010-1', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
+    return fetch(path + sep + 'v=20261010-2', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
   }
   var DECORATIVE_PROJECT_IMAGES = {
     P013: ['https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-01/351x562_0.png', 'https://www.nhc.sa/ar/real-estate-development/projects/47490'],
