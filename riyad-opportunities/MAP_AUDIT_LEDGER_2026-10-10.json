@@ -12249,10 +12249,10 @@
     {
       "id": "entity-18e13fd7696f",
       "category": "cars",
-      "name": "معرض الشرق للسيارات",
+      "name": "معرض إبداعات الشرق للسيارات",
       "city": "الأحساء",
       "locality": "الصناعية الأحساء",
-      "status": "unresolved_maps_similar_name_unrelated_external_site",
+      "status": "corrected_verified_map_listing_active",
       "current_map": "https://www.google.com/maps/?cid=8971711842953861436",
       "checked_at": "2026-10-10",
       "map_check": {
@@ -12262,8 +12262,9 @@
       },
       "field_checks": {
         "phone": {
-          "status": "maps_only",
-          "notes": "CID opens معرض ابداعات الشرق للسيارات in Ahsa industrial area, not exact row name معرض الشرق. Phone 0540611166 on Maps only. Maps website points to unrelated Turkish hair clinic and was removed from displayed web field; old value retained in ledger."
+          "status": "verified_secondary_listing",
+          "value": "0540611166",
+          "notes": "مطابق لبطاقة الخرائط ومصدر Maptons"
         },
         "whatsapp": {
           "status": "not_separately_verified"
@@ -12271,12 +12272,22 @@
         "website": {
           "status": "no_repository_site_value; maps_card_external_url_unrelated",
           "old_repository_value": ""
+        },
+        "name": {
+          "status": "corrected",
+          "notes": "الاسم مطابق الآن لبطاقة دبوس الخرائط"
+        },
+        "map": {
+          "status": "matched",
+          "notes": "Google Maps CID يفتح معرض إبداعات الشرق في الأحساء الصناعية"
         }
       },
       "source_urls": [
-        "https://directmap.com.sa/"
+        "https://directmap.com.sa/",
+        "https://uy.maptons.com/p/12140172356"
       ],
-      "evidence_note": "CID opens معرض ابداعات الشرق للسيارات in Ahsa industrial area, not exact row name معرض الشرق. Phone 0540611166 on Maps only. Maps website points to unrelated Turkish hair clinic and was removed from displayed web field; old value retained in ledger."
+      "evidence_note": "صحح الاسم من معرض الشرق إلى الاسم المطابق لبطاقة الدبوس. رابط Google Maps CID يفتح معرض إبداعات الشرق في الصناعية بالأحساء؛ مصدر الخرائط Maptons يعيد الاسم نفسه والفئة تاجر سيارات والهاتف +966 54 061 1166 وموقع CF68+HC7. لم نعتمد رابط الموقع الخارجي غير المرتبط.",
+      "decision": "corrected_approved"
     },
     {
       "id": "entity-db4c196b303d",
