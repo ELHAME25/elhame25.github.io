@@ -1,0 +1,379 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "8f98a7a06bbde07f0a193b6b81ac183bcbe9392d",
+  "scope": "Abha records 11-20 after existing Batch01; first ten remaining rows, excluding Riyadh",
+  "count": 10,
+  "note": "This is an evidence ledger only. No cars.json fields were changed. Unconfirmed means no adequate direct independent evidence was obtained; an existing Google Maps URL alone was not treated as proof.",
+  "entries": [
+    {
+      "id": "regional-car-phase6-cars-ad77d20fffff8b-1",
+      "name": "معرض الخليج للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "partially_verified",
+          "evidence": "The name appears in a Khamis Mushait business directory; no current direct listing was found to establish the record's phone or activity independently.",
+          "sources": [
+            "https://www.dalilmadina.com/disp_cnt.aspx?c=84&i=K7ManuVJ2rE%2F6caIsEwfsQ%3D%3D"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict",
+          "evidence": "Record address states حي المعارض، خميس مشيط, while record_city is أبها; directory result associates showroom with Khamis Mushait. Abha city assignment is unsupported.",
+          "sources": [
+            "https://www.dalilmadina.com/disp_cnt.aspx?c=84&i=K7ManuVJ2rE%2F6caIsEwfsQ%3D%3D"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "No independent current source found for 0557726222.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No account/link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Existing pin URL was not independently opened and matched to the listing.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-car-phase6-cars-feb7624f1d8a77-2",
+      "name": "معرض القصيم للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "conflict",
+          "evidence": "Independent sources identify معرض القصيم للسيارات in Khamis Mushait as an official Nissan dealer/distributor, while this record is presented as an Abha used-car showroom. The source material does not confirm that the Abha record is a distinct business.",
+          "sources": [
+            "https://rewaq.net/ar/sa/company/85550b9pisd/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%84%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D9%85%D8%B1%D8%B4%D8%AF-%D9%85%D9%81%D9%84%D8%AD-%D9%81%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D9%85%D8%B7%D9%8A%D8%B1%D9%8A",
+            "https://www.sayarabay.com/ar/new-cars/nissan/dealers/khamis-mushait/al-qaseem-showroom-for-cars-104",
+            "https://ksa.motory.com/ar/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84/%D8%AA%D9%88%D9%8A%D9%88%D8%AA%D8%A7/%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/?page=4"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict",
+          "evidence": "The independent directory records the named showroom in Khamis Mushait; this row is assigned to Abha.",
+          "sources": [
+            "https://rewaq.net/ar/sa/company/85550b9pisd/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%84%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D9%85%D8%B1%D8%B4%D8%AF-%D9%85%D9%81%D9%84%D8%AD-%D9%81%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D9%85%D8%B7%D9%8A%D8%B1%D9%8A"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "0557542566 is not corroborated to this exact showroom by the located independent sources.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Existing link not independently matched; directory and dealer pages do not prove the stored pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-car-phase6-cars-60b2a1f2bb33e2-3",
+      "name": "معرض سالم فلاح الشهرانى للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Active Haraj listing for this showroom with current vehicle advertisements.",
+          "sources": [
+            "https://haraj.com.sa/11188599307/%D8%A7%D9%8A%D8%B3%D9%88%D8%B2%D9%88_%D8%AF%D9%8A%D9%85%D8%A7%D9%83%D8%B3_%D8%BA%D9%85%D8%A7%D8%B1%D8%AA%D9%8A%D9%86_GT_2026/"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict",
+          "evidence": "The current Haraj listing explicitly locates sales in خميس مشيط – حي المعارض; this row is assigned to أبها.",
+          "sources": [
+            "https://haraj.com.sa/11188599307/%D8%A7%D9%8A%D8%B3%D9%88%D8%B2%D9%88_%D8%AF%D9%8A%D9%85%D8%A7%D9%83%D8%B3_%D8%BA%D9%85%D8%A7%D8%B1%D8%AA%D9%8A%D9%86_GT_2026/",
+            "https://maps.yango.com/ar-sa/org/62907635553/"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "Haraj listing publishes 0569162045 for sales; other salesperson number also appears in the listing.",
+          "sources": [
+            "https://haraj.com.sa/11188599307/%D8%A7%D9%8A%D8%B3%D9%88%D8%B2%D9%88_%D8%AF%D9%8A%D9%85%D8%A7%D9%83%D8%B3_%D8%BA%D9%85%D8%A7%D8%B1%D8%AA%D9%8A%D9%86_GT_2026/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp URL/account verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Haraj and Yango corroborate Khamis Mushait, but the stored Google pin itself has not been independently matched.",
+          "sources": [
+            "https://haraj.com.sa/11188599307/%D8%A7%D9%8A%D8%B3%D9%88%D8%B2%D9%88_%D8%AF%D9%8A%D9%85%D8%A7%D9%83%D8%B3_%D8%BA%D9%85%D8%A7%D8%B1%D8%AA%D9%8A%D9%86_GT_2026/",
+            "https://maps.yango.com/ar-sa/org/62907635553/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "Haraj seller account is a listing profile, not a verified official website.",
+          "sources": [
+            "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%A7%D9%84%D9%85%20%D9%81%D9%84%D8%A7%D8%AD%20%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D8%A7%D9%86%D9%89/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regional-car-phase6-cars-f1b277c1fcff81-4",
+      "name": "معرض القمة ون للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No reliable direct listing for this exact name was located; similar 'القمة' names were not treated as the same business.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "No independent source verified the Abha assignment or neighborhood.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "0545410633 not independently linked to this exact showroom.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No account/link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored Google place URL was not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-car-phase6-cars-5f20efffc47dfc-5",
+      "name": "معرض سعود للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No reliable direct listing for the exact name and phone was located.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "No independent source verified the Abha assignment or neighborhood.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "0507776512 not independently linked to this exact showroom.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No account/link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored Google place URL was not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-car-phase6-cars-b2f589b3cbaf76-6",
+      "name": "معرض أبودبيل الدولي للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "partially_verified",
+          "evidence": "Independent regional showroom guide lists Abu Dbeel Motor Show with a phone number matching the stored number after normalization; it does not establish that this is an Abha location.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Regional guide covers both Abha and Khamis Mushait; exact branch city not established independently.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "Regional guide lists 966509566666, matching 0509566666 after normalization.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "The source guide indicates a map link but does not prove this row's Google Maps pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-car-phase6-cars-2e0a62d93d79bd-7",
+      "name": "معرض ال جلاله للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Independent regional guide lists this exact showroom among car dealers in the Abha/Khamis Mushait cluster.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Regional guide combines the two cities and does not establish which city this listing occupies.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "Regional guide lists 966547863488 while the record has 0573000313; no source proves the record's number belongs to this business.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored pin not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-entity-90e0b0e360dd-011",
+      "name": "معرض خميس مشيط",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Generic name and landline do not identify a specific active business; no independent listing matching both was found.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "conflict",
+          "evidence": "Record city says أبها while record name says خميس مشيط; the address is empty.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "0172383788 not independently linked to this record.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored URL is a generic search URL, not evidence of a pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-entity-83b787c12cb5-011",
+      "name": "معرض سعيد ظافر القحطاني للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No independent direct source for this exact business was located in this pass.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "conflict",
+          "evidence": "Record is labeled Abha but address says هجلة, associated here with Khamis Mushait; direct branch evidence is still missing.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "0172354727 not independently corroborated.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID was not opened and matched to the business.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    }
+  ]
+}
