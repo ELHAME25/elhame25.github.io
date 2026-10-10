@@ -1,0 +1,665 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "02fc72b251858b4df81d7bb07e2d792bb95175bc",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "الطائف، مراجعة مباشرة في Google Maps للسجلات 1–10 بعد ثبوت تعارض الدبابيس في التدقيق الأول. جرى فتح روابط CID نفسها ثم التحقق من بطاقات Google Maps بالاسم والعنوان والهاتف.",
+  "count": 10,
+  "corrections": [
+    {
+      "id": "entity-078be72a5e01",
+      "fields": [
+        "maps",
+        "lat",
+        "lon"
+      ],
+      "evidence": "CID القديم يفتح خريطة افتراضية. صفحة Google Maps المطابقة تعرض المعرض نفسه، 7916 الطائف، الهاتف 0557769222، وإحداثيات 21.4509764,40.502985؛ استبدال الرابط والإحداثيات بهذه القيمة."
+    },
+    {
+      "id": "entity-c458a9f70bef",
+      "fields": [
+        "nb",
+        "lat",
+        "lon"
+      ],
+      "evidence": "CID يفتح بطاقة Google Maps المطابقة: طريق المطار، حي مثمله، الطائف؛ إحداثيات 21.4539402,40.5025352. القيم المخزنة كانت الحوية والإحداثيات 21.42893,40.47781. بقي الهاتف كما هو بسبب التعارض."
+    }
+  ],
+  "note": "لم يُستبدل أي دبوس برابط بحث؛ السجلات الملتبسة بقيت بلا تصحيح. واتساب والموقع الرسمي يظلان غير مؤكدين حيث لا يوجد رابط مباشر مثبت.",
+  "entries": [
+    {
+      "id": "entity-efb15b8d3d96",
+      "name": "معرض العدالة للسيارات",
+      "evidence": "The stored CID opens an empty/default Google Maps view. A direct Google Maps search exposes two similarly named Taif listings, both using 0566801888: 7C4V+VR8 and 7F54+24W (Nakhab/exhibitions). Existing 0536048630 is supported by the older BizMidEast listing, so phone/pin selection remains conflicted; no replacement.",
+      "sources": [
+        "https://www.google.com/maps?cid=9075003861689496833",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%AF%D8%A7%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+        "https://www.bizmideast.com/SA/معرض-العدالة-للسيارات-053-604-8630",
+        "https://haraj.com.sa/11186390719/هونشي_H5_موديل_2022_عداد_40_الف_فقط/"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_or_conflicted_by_record",
+          "evidence": "The stored CID opens an empty/default Google Maps view. A direct Google Maps search exposes two similarly named Taif listings, both using 0566801888: 7C4V+VR8 and 7F54+24W (Nakhab/exhibitions). Existing 0536048630 is supported by the older BizMidEast listing, so phone/pin selection remains conflicted; no replacement.",
+          "sources": [
+            "https://www.google.com/maps?cid=9075003861689496833",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%AF%D8%A7%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://www.bizmideast.com/SA/معرض-العدالة-للسيارات-053-604-8630",
+            "https://haraj.com.sa/11186390719/هونشي_H5_موديل_2022_عداد_40_الف_فقط/"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed_or_conflicted",
+          "evidence": "The stored CID opens an empty/default Google Maps view. A direct Google Maps search exposes two similarly named Taif listings, both using 0566801888: 7C4V+VR8 and 7F54+24W (Nakhab/exhibitions). Existing 0536048630 is supported by the older BizMidEast listing, so phone/pin selection remains conflicted; no replacement.",
+          "sources": [
+            "https://www.google.com/maps?cid=9075003861689496833",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%AF%D8%A7%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://www.bizmideast.com/SA/معرض-العدالة-للسيارات-053-604-8630",
+            "https://haraj.com.sa/11186390719/هونشي_H5_موديل_2022_عداد_40_الف_فقط/"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "The stored CID opens an empty/default Google Maps view. A direct Google Maps search exposes two similarly named Taif listings, both using 0566801888: 7C4V+VR8 and 7F54+24W (Nakhab/exhibitions). Existing 0536048630 is supported by the older BizMidEast listing, so phone/pin selection remains conflicted; no replacement.",
+          "sources": [
+            "https://www.google.com/maps?cid=9075003861689496833",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%AF%D8%A7%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://www.bizmideast.com/SA/معرض-العدالة-للسيارات-053-604-8630",
+            "https://haraj.com.sa/11186390719/هونشي_H5_موديل_2022_عداد_40_الف_فقط/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the stored phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=9075003861689496833",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%AF%D8%A7%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://www.bizmideast.com/SA/معرض-العدالة-للسيارات-053-604-8630",
+            "https://haraj.com.sa/11186390719/هونشي_H5_موديل_2022_عداد_40_الف_فقط/"
+          ]
+        },
+        "google_maps": {
+          "status": "wrong_ambiguous",
+          "evidence": "The stored CID opens an empty/default Google Maps view. A direct Google Maps search exposes two similarly named Taif listings, both using 0566801888: 7C4V+VR8 and 7F54+24W (Nakhab/exhibitions). Existing 0536048630 is supported by the older BizMidEast listing, so phone/pin selection remains conflicted; no replacement.",
+          "sources": [
+            "https://www.google.com/maps?cid=9075003861689496833",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%AF%D8%A7%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://www.bizmideast.com/SA/معرض-العدالة-للسيارات-053-604-8630",
+            "https://haraj.com.sa/11186390719/هونشي_H5_موديل_2022_عداد_40_الف_فقط/"
+          ]
+        },
+        "website": {
+          "status": "no_official_website_verified",
+          "evidence": "Google Maps shows no website or only a seller/social profile; no direct official business website was established.",
+          "sources": [
+            "https://www.google.com/maps?cid=9075003861689496833",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%AF%D8%A7%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://www.bizmideast.com/SA/معرض-العدالة-للسيارات-053-604-8630",
+            "https://haraj.com.sa/11186390719/هونشي_H5_موديل_2022_عداد_40_الف_فقط/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-078be72a5e01",
+      "name": "معرض الحصين للسيارات",
+      "evidence": "Google Maps search returns the exact showroom, phone +966557769222, address 7916 Taif 26576, Plus Code FG23+95. The stored CID opens a default map unrelated to the listing; replaced with the exact Google Maps place URL from that result and set coordinates to 21.4509764,40.502985.",
+      "sources": [
+        "https://www.google.com/maps?cid=11505333252710358494",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B5%D9%8A%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%200557769222",
+        "https://www.bizmideast.com/SA/معرض-الحصين-للسيارات-055-776-9222",
+        "https://www.snapchat.com/place/-/60be71d6-647c-11ed-8004-cb07e0f5362b"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_or_conflicted_by_record",
+          "evidence": "Google Maps search returns the exact showroom, phone +966557769222, address 7916 Taif 26576, Plus Code FG23+95. The stored CID opens a default map unrelated to the listing; replaced with the exact Google Maps place URL from that result and set coordinates to 21.4509764,40.502985.",
+          "sources": [
+            "https://www.google.com/maps?cid=11505333252710358494",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B5%D9%8A%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%200557769222",
+            "https://www.bizmideast.com/SA/معرض-الحصين-للسيارات-055-776-9222",
+            "https://www.snapchat.com/place/-/60be71d6-647c-11ed-8004-cb07e0f5362b"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_maps",
+          "evidence": "Google Maps search returns the exact showroom, phone +966557769222, address 7916 Taif 26576, Plus Code FG23+95. The stored CID opens a default map unrelated to the listing; replaced with the exact Google Maps place URL from that result and set coordinates to 21.4509764,40.502985.",
+          "sources": [
+            "https://www.google.com/maps?cid=11505333252710358494",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B5%D9%8A%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%200557769222",
+            "https://www.bizmideast.com/SA/معرض-الحصين-للسيارات-055-776-9222",
+            "https://www.snapchat.com/place/-/60be71d6-647c-11ed-8004-cb07e0f5362b"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_maps",
+          "evidence": "Google Maps search returns the exact showroom, phone +966557769222, address 7916 Taif 26576, Plus Code FG23+95. The stored CID opens a default map unrelated to the listing; replaced with the exact Google Maps place URL from that result and set coordinates to 21.4509764,40.502985.",
+          "sources": [
+            "https://www.google.com/maps?cid=11505333252710358494",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B5%D9%8A%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%200557769222",
+            "https://www.bizmideast.com/SA/معرض-الحصين-للسيارات-055-776-9222",
+            "https://www.snapchat.com/place/-/60be71d6-647c-11ed-8004-cb07e0f5362b"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the stored phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=11505333252710358494",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B5%D9%8A%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%200557769222",
+            "https://www.bizmideast.com/SA/معرض-الحصين-للسيارات-055-776-9222",
+            "https://www.snapchat.com/place/-/60be71d6-647c-11ed-8004-cb07e0f5362b"
+          ]
+        },
+        "google_maps": {
+          "status": "corrected",
+          "evidence": "Google Maps search returns the exact showroom, phone +966557769222, address 7916 Taif 26576, Plus Code FG23+95. The stored CID opens a default map unrelated to the listing; replaced with the exact Google Maps place URL from that result and set coordinates to 21.4509764,40.502985.",
+          "sources": [
+            "https://www.google.com/maps?cid=11505333252710358494",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B5%D9%8A%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%200557769222",
+            "https://www.bizmideast.com/SA/معرض-الحصين-للسيارات-055-776-9222",
+            "https://www.snapchat.com/place/-/60be71d6-647c-11ed-8004-cb07e0f5362b"
+          ]
+        },
+        "website": {
+          "status": "no_official_website_verified",
+          "evidence": "Google Maps shows no website or only a seller/social profile; no direct official business website was established.",
+          "sources": [
+            "https://www.google.com/maps?cid=11505333252710358494",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B5%D9%8A%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%200557769222",
+            "https://www.bizmideast.com/SA/معرض-الحصين-للسيارات-055-776-9222",
+            "https://www.snapchat.com/place/-/60be71d6-647c-11ed-8004-cb07e0f5362b"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-0203c46c9759",
+      "name": "معرض بن صعيب للسيارات",
+      "evidence": "Google Maps search returns the exact car dealer, stored phone +966507221716 and address العام، الطائف 26578 / Plus Code FG32+2P. The stored CID opens a blank/default unrelated view. The search result did not provide a verified direct place URL in the accessible page, so the wrong pin is flagged and not replaced with the search URL.",
+      "sources": [
+        "https://www.google.com/maps?cid=2450742426125124072",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%86%20%D8%B5%D8%B9%D9%8A%D8%A8%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+        "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_or_conflicted_by_record",
+          "evidence": "Google Maps search returns the exact car dealer, stored phone +966507221716 and address العام، الطائف 26578 / Plus Code FG32+2P. The stored CID opens a blank/default unrelated view. The search result did not provide a verified direct place URL in the accessible page, so the wrong pin is flagged and not replaced with the search URL.",
+          "sources": [
+            "https://www.google.com/maps?cid=2450742426125124072",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%86%20%D8%B5%D8%B9%D9%8A%D8%A8%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed_or_conflicted",
+          "evidence": "Google Maps search returns the exact car dealer, stored phone +966507221716 and address العام، الطائف 26578 / Plus Code FG32+2P. The stored CID opens a blank/default unrelated view. The search result did not provide a verified direct place URL in the accessible page, so the wrong pin is flagged and not replaced with the search URL.",
+          "sources": [
+            "https://www.google.com/maps?cid=2450742426125124072",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%86%20%D8%B5%D8%B9%D9%8A%D8%A8%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_maps",
+          "evidence": "Google Maps search returns the exact car dealer, stored phone +966507221716 and address العام، الطائف 26578 / Plus Code FG32+2P. The stored CID opens a blank/default unrelated view. The search result did not provide a verified direct place URL in the accessible page, so the wrong pin is flagged and not replaced with the search URL.",
+          "sources": [
+            "https://www.google.com/maps?cid=2450742426125124072",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%86%20%D8%B5%D8%B9%D9%8A%D8%A8%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the stored phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=2450742426125124072",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%86%20%D8%B5%D8%B9%D9%8A%D8%A8%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/"
+          ]
+        },
+        "google_maps": {
+          "status": "wrong_pin_no_safe_direct_replacement",
+          "evidence": "Google Maps search returns the exact car dealer, stored phone +966507221716 and address العام، الطائف 26578 / Plus Code FG32+2P. The stored CID opens a blank/default unrelated view. The search result did not provide a verified direct place URL in the accessible page, so the wrong pin is flagged and not replaced with the search URL.",
+          "sources": [
+            "https://www.google.com/maps?cid=2450742426125124072",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%86%20%D8%B5%D8%B9%D9%8A%D8%A8%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/"
+          ]
+        },
+        "website": {
+          "status": "no_official_website_verified",
+          "evidence": "Google Maps shows no website or only a seller/social profile; no direct official business website was established.",
+          "sources": [
+            "https://www.google.com/maps?cid=2450742426125124072",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%86%20%D8%B5%D8%B9%D9%8A%D8%A8%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-c458a9f70bef",
+      "name": "معرض الشاطري للسيارات",
+      "evidence": "The exact stored CID opens the Google Maps business profile: طريق المطار، حي مثمله، الطائف 26578; pin 21.4539402,40.5025352; Google lists 0555892276, conflicting with stored 0555050025 and BizMidEast's number. Updated only neighborhood and coordinates to match this exact pin; kept phone unchanged. The business Linktree lists a Google Maps location at FG33+H3W and WhatsApp, but not a number match.",
+      "sources": [
+        "https://www.google.com/maps?cid=8468293270224232567",
+        "https://linktr.ee/srhd2030",
+        "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025",
+        "https://haraj.com.sa/users/معرض%20الشاطري%20للسيارات/"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_or_conflicted_by_record",
+          "evidence": "The exact stored CID opens the Google Maps business profile: طريق المطار، حي مثمله، الطائف 26578; pin 21.4539402,40.5025352; Google lists 0555892276, conflicting with stored 0555050025 and BizMidEast's number. Updated only neighborhood and coordinates to match this exact pin; kept phone unchanged. The business Linktree lists a Google Maps location at FG33+H3W and WhatsApp, but not a number match.",
+          "sources": [
+            "https://www.google.com/maps?cid=8468293270224232567",
+            "https://linktr.ee/srhd2030",
+            "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025",
+            "https://haraj.com.sa/users/معرض%20الشاطري%20للسيارات/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_maps",
+          "evidence": "The exact stored CID opens the Google Maps business profile: طريق المطار، حي مثمله، الطائف 26578; pin 21.4539402,40.5025352; Google lists 0555892276, conflicting with stored 0555050025 and BizMidEast's number. Updated only neighborhood and coordinates to match this exact pin; kept phone unchanged. The business Linktree lists a Google Maps location at FG33+H3W and WhatsApp, but not a number match.",
+          "sources": [
+            "https://www.google.com/maps?cid=8468293270224232567",
+            "https://linktr.ee/srhd2030",
+            "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025",
+            "https://haraj.com.sa/users/معرض%20الشاطري%20للسيارات/"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "The exact stored CID opens the Google Maps business profile: طريق المطار، حي مثمله، الطائف 26578; pin 21.4539402,40.5025352; Google lists 0555892276, conflicting with stored 0555050025 and BizMidEast's number. Updated only neighborhood and coordinates to match this exact pin; kept phone unchanged. The business Linktree lists a Google Maps location at FG33+H3W and WhatsApp, but not a number match.",
+          "sources": [
+            "https://www.google.com/maps?cid=8468293270224232567",
+            "https://linktr.ee/srhd2030",
+            "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025",
+            "https://haraj.com.sa/users/معرض%20الشاطري%20للسيارات/"
+          ]
+        },
+        "whatsapp": {
+          "status": "business_whatsapp_link_listed_number_unmatched",
+          "evidence": "Linktree for the exact business lists a WhatsApp account, but does not show a direct URL/number that matches the stored phone.",
+          "sources": [
+            "https://www.google.com/maps?cid=8468293270224232567",
+            "https://linktr.ee/srhd2030",
+            "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025",
+            "https://haraj.com.sa/users/معرض%20الشاطري%20للسيارات/"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_pin_coordinates_corrected",
+          "evidence": "The exact stored CID opens the Google Maps business profile: طريق المطار، حي مثمله، الطائف 26578; pin 21.4539402,40.5025352; Google lists 0555892276, conflicting with stored 0555050025 and BizMidEast's number. Updated only neighborhood and coordinates to match this exact pin; kept phone unchanged. The business Linktree lists a Google Maps location at FG33+H3W and WhatsApp, but not a number match.",
+          "sources": [
+            "https://www.google.com/maps?cid=8468293270224232567",
+            "https://linktr.ee/srhd2030",
+            "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025",
+            "https://haraj.com.sa/users/معرض%20الشاطري%20للسيارات/"
+          ]
+        },
+        "website": {
+          "status": "no_official_website_verified",
+          "evidence": "Google Maps shows no website or only a seller/social profile; no direct official business website was established.",
+          "sources": [
+            "https://www.google.com/maps?cid=8468293270224232567",
+            "https://linktr.ee/srhd2030",
+            "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025",
+            "https://haraj.com.sa/users/معرض%20الشاطري%20للسيارات/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-d978a4293026",
+      "name": "معرض عتل عسيلان للسيارات",
+      "evidence": "Google Maps search profile identifies the exact dealer, phone +966555559176, address العام 21974 / Plus Code FG22+QC, Taif. Phone matches stored value; precise neighborhood label from the row is not corroborated by the profile.",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%AA%D9%84%20%D8%B9%D8%B3%D9%8A%D9%84%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+        "https://www.bizmideast.com/SA/معرض-عتل-عسيلان-للسيارات"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_or_conflicted_by_record",
+          "evidence": "Google Maps search profile identifies the exact dealer, phone +966555559176, address العام 21974 / Plus Code FG22+QC, Taif. Phone matches stored value; precise neighborhood label from the row is not corroborated by the profile.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%AA%D9%84%20%D8%B9%D8%B3%D9%8A%D9%84%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://www.bizmideast.com/SA/معرض-عتل-عسيلان-للسيارات"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_maps",
+          "evidence": "Google Maps search profile identifies the exact dealer, phone +966555559176, address العام 21974 / Plus Code FG22+QC, Taif. Phone matches stored value; precise neighborhood label from the row is not corroborated by the profile.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%AA%D9%84%20%D8%B9%D8%B3%D9%8A%D9%84%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://www.bizmideast.com/SA/معرض-عتل-عسيلان-للسيارات"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_maps",
+          "evidence": "Google Maps search profile identifies the exact dealer, phone +966555559176, address العام 21974 / Plus Code FG22+QC, Taif. Phone matches stored value; precise neighborhood label from the row is not corroborated by the profile.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%AA%D9%84%20%D8%B9%D8%B3%D9%8A%D9%84%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://www.bizmideast.com/SA/معرض-عتل-عسيلان-للسيارات"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the stored phone was verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%AA%D9%84%20%D8%B9%D8%B3%D9%8A%D9%84%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://www.bizmideast.com/SA/معرض-عتل-عسيلان-للسيارات"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_listing_identity_phone",
+          "evidence": "Google Maps search profile identifies the exact dealer, phone +966555559176, address العام 21974 / Plus Code FG22+QC, Taif. Phone matches stored value; precise neighborhood label from the row is not corroborated by the profile.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%AA%D9%84%20%D8%B9%D8%B3%D9%8A%D9%84%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://www.bizmideast.com/SA/معرض-عتل-عسيلان-للسيارات"
+          ]
+        },
+        "website": {
+          "status": "no_official_website_verified",
+          "evidence": "Google Maps shows no website or only a seller/social profile; no direct official business website was established.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%AA%D9%84%20%D8%B9%D8%B3%D9%8A%D9%84%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://www.bizmideast.com/SA/معرض-عتل-عسيلان-للسيارات"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-12cc657e7ebd",
+      "name": "مؤسسة النور التجارية للسيارات",
+      "evidence": "The exact stored CID opens مؤسسة النور للسيارات (Google's shorter display name), a car dealer at شارع المعارض بعد صراف الأهلي بجوار معرض السيف، Taif; phone +966530641511 and Plus Code 7C4V+P5 match stored contact and locality.",
+      "sources": [
+        "https://www.google.com/maps?cid=16460637458132405357"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_or_conflicted_by_record",
+          "evidence": "The exact stored CID opens مؤسسة النور للسيارات (Google's shorter display name), a car dealer at شارع المعارض بعد صراف الأهلي بجوار معرض السيف، Taif; phone +966530641511 and Plus Code 7C4V+P5 match stored contact and locality.",
+          "sources": [
+            "https://www.google.com/maps?cid=16460637458132405357"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_maps",
+          "evidence": "The exact stored CID opens مؤسسة النور للسيارات (Google's shorter display name), a car dealer at شارع المعارض بعد صراف الأهلي بجوار معرض السيف، Taif; phone +966530641511 and Plus Code 7C4V+P5 match stored contact and locality.",
+          "sources": [
+            "https://www.google.com/maps?cid=16460637458132405357"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_maps",
+          "evidence": "The exact stored CID opens مؤسسة النور للسيارات (Google's shorter display name), a car dealer at شارع المعارض بعد صراف الأهلي بجوار معرض السيف، Taif; phone +966530641511 and Plus Code 7C4V+P5 match stored contact and locality.",
+          "sources": [
+            "https://www.google.com/maps?cid=16460637458132405357"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the stored phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=16460637458132405357"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_pin",
+          "evidence": "The exact stored CID opens مؤسسة النور للسيارات (Google's shorter display name), a car dealer at شارع المعارض بعد صراف الأهلي بجوار معرض السيف، Taif; phone +966530641511 and Plus Code 7C4V+P5 match stored contact and locality.",
+          "sources": [
+            "https://www.google.com/maps?cid=16460637458132405357"
+          ]
+        },
+        "website": {
+          "status": "no_official_website_verified",
+          "evidence": "Google Maps shows no website or only a seller/social profile; no direct official business website was established.",
+          "sources": [
+            "https://www.google.com/maps?cid=16460637458132405357"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-319946b8b2c3",
+      "name": "سلطان الطائف للسيارات",
+      "evidence": "The exact stored CID opens سلطان الطائف للسيارات at Al Ma'arid, Taif 26516, Plus Code 7C5R+4H; phone +966555702299 matches. This is separate from the unrelated Riyadh Sultan Cars site.",
+      "sources": [
+        "https://www.google.com/maps?cid=3520678864337785550",
+        "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_or_conflicted_by_record",
+          "evidence": "The exact stored CID opens سلطان الطائف للسيارات at Al Ma'arid, Taif 26516, Plus Code 7C5R+4H; phone +966555702299 matches. This is separate from the unrelated Riyadh Sultan Cars site.",
+          "sources": [
+            "https://www.google.com/maps?cid=3520678864337785550",
+            "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_maps",
+          "evidence": "The exact stored CID opens سلطان الطائف للسيارات at Al Ma'arid, Taif 26516, Plus Code 7C5R+4H; phone +966555702299 matches. This is separate from the unrelated Riyadh Sultan Cars site.",
+          "sources": [
+            "https://www.google.com/maps?cid=3520678864337785550",
+            "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_maps",
+          "evidence": "The exact stored CID opens سلطان الطائف للسيارات at Al Ma'arid, Taif 26516, Plus Code 7C5R+4H; phone +966555702299 matches. This is separate from the unrelated Riyadh Sultan Cars site.",
+          "sources": [
+            "https://www.google.com/maps?cid=3520678864337785550",
+            "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the stored phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=3520678864337785550",
+            "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_pin",
+          "evidence": "The exact stored CID opens سلطان الطائف للسيارات at Al Ma'arid, Taif 26516, Plus Code 7C5R+4H; phone +966555702299 matches. This is separate from the unrelated Riyadh Sultan Cars site.",
+          "sources": [
+            "https://www.google.com/maps?cid=3520678864337785550",
+            "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299"
+          ]
+        },
+        "website": {
+          "status": "no_official_website_verified",
+          "evidence": "Google Maps shows no website or only a seller/social profile; no direct official business website was established.",
+          "sources": [
+            "https://www.google.com/maps?cid=3520678864337785550",
+            "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-39b6695d2c26",
+      "name": "معرض غازي بن حازم النفيعي للسيارات",
+      "evidence": "The exact stored CID opens the exact named car dealer, phone +966533466650, حي مثمله، الطائف 26578, Plus Code FG32+5V. Name, number, locality, and pin match.",
+      "sources": [
+        "https://www.google.com/maps?cid=12996941905231208033"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_or_conflicted_by_record",
+          "evidence": "The exact stored CID opens the exact named car dealer, phone +966533466650, حي مثمله، الطائف 26578, Plus Code FG32+5V. Name, number, locality, and pin match.",
+          "sources": [
+            "https://www.google.com/maps?cid=12996941905231208033"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_maps",
+          "evidence": "The exact stored CID opens the exact named car dealer, phone +966533466650, حي مثمله، الطائف 26578, Plus Code FG32+5V. Name, number, locality, and pin match.",
+          "sources": [
+            "https://www.google.com/maps?cid=12996941905231208033"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_maps",
+          "evidence": "The exact stored CID opens the exact named car dealer, phone +966533466650, حي مثمله، الطائف 26578, Plus Code FG32+5V. Name, number, locality, and pin match.",
+          "sources": [
+            "https://www.google.com/maps?cid=12996941905231208033"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the stored phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=12996941905231208033"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_pin",
+          "evidence": "The exact stored CID opens the exact named car dealer, phone +966533466650, حي مثمله، الطائف 26578, Plus Code FG32+5V. Name, number, locality, and pin match.",
+          "sources": [
+            "https://www.google.com/maps?cid=12996941905231208033"
+          ]
+        },
+        "website": {
+          "status": "no_official_website_verified",
+          "evidence": "Google Maps shows no website or only a seller/social profile; no direct official business website was established.",
+          "sources": [
+            "https://www.google.com/maps?cid=12996941905231208033"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-4280267152a5",
+      "name": "معرض العضيلة للسيارات",
+      "evidence": "Google Maps search and direct CID did not expose a readable exact listing during this check. External social-directory result supports a Taif/Hawiyah showroom but does not validate the stored CID or phone.",
+      "sources": [
+        "https://www.google.com/maps?cid=827839617266078404",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%B6%D9%8A%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+        "https://mobile.twstalker.com/hashtag/%23معرض"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_or_conflicted_by_record",
+          "evidence": "Google Maps search and direct CID did not expose a readable exact listing during this check. External social-directory result supports a Taif/Hawiyah showroom but does not validate the stored CID or phone.",
+          "sources": [
+            "https://www.google.com/maps?cid=827839617266078404",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%B6%D9%8A%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://mobile.twstalker.com/hashtag/%23معرض"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed_or_conflicted",
+          "evidence": "Google Maps search and direct CID did not expose a readable exact listing during this check. External social-directory result supports a Taif/Hawiyah showroom but does not validate the stored CID or phone.",
+          "sources": [
+            "https://www.google.com/maps?cid=827839617266078404",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%B6%D9%8A%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://mobile.twstalker.com/hashtag/%23معرض"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps search and direct CID did not expose a readable exact listing during this check. External social-directory result supports a Taif/Hawiyah showroom but does not validate the stored CID or phone.",
+          "sources": [
+            "https://www.google.com/maps?cid=827839617266078404",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%B6%D9%8A%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://mobile.twstalker.com/hashtag/%23معرض"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the stored phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=827839617266078404",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%B6%D9%8A%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://mobile.twstalker.com/hashtag/%23معرض"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps search and direct CID did not expose a readable exact listing during this check. External social-directory result supports a Taif/Hawiyah showroom but does not validate the stored CID or phone.",
+          "sources": [
+            "https://www.google.com/maps?cid=827839617266078404",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%B6%D9%8A%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://mobile.twstalker.com/hashtag/%23معرض"
+          ]
+        },
+        "website": {
+          "status": "no_official_website_verified",
+          "evidence": "Google Maps shows no website or only a seller/social profile; no direct official business website was established.",
+          "sources": [
+            "https://www.google.com/maps?cid=827839617266078404",
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%B6%D9%8A%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+            "https://mobile.twstalker.com/hashtag/%23معرض"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-a745a2ebace9",
+      "name": "معرض عبدالله العتيبي للسيارات",
+      "evidence": "Stored CID opens a default/blank map. Google Maps search returns no exact name: one nearby معرض العتيبي للسيارات at 0501067890 and a separate معرض عشق بن دسمان العتيبي at 0503799934. Neither matches the stored name/phone 0503042588; retained pending identity proof.",
+      "sources": [
+        "https://www.google.com/maps?cid=14227582919557112799",
+        "https://www.google.com/maps/search/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%A7%D9%84%D8%B9%D8%AA%D9%8A%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%E2%80%AD"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "conflict",
+          "evidence": "Stored CID opens a default/blank map. Google Maps search returns no exact name: one nearby معرض العتيبي للسيارات at 0501067890 and a separate معرض عشق بن دسمان العتيبي at 0503799934. Neither matches the stored name/phone 0503042588; retained pending identity proof.",
+          "sources": [
+            "https://www.google.com/maps?cid=14227582919557112799",
+            "https://www.google.com/maps/search/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%A7%D9%84%D8%B9%D8%AA%D9%8A%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%E2%80%AD"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed_or_conflicted",
+          "evidence": "Stored CID opens a default/blank map. Google Maps search returns no exact name: one nearby معرض العتيبي للسيارات at 0501067890 and a separate معرض عشق بن دسمان العتيبي at 0503799934. Neither matches the stored name/phone 0503042588; retained pending identity proof.",
+          "sources": [
+            "https://www.google.com/maps?cid=14227582919557112799",
+            "https://www.google.com/maps/search/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%A7%D9%84%D8%B9%D8%AA%D9%8A%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%E2%80%AD"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "Stored CID opens a default/blank map. Google Maps search returns no exact name: one nearby معرض العتيبي للسيارات at 0501067890 and a separate معرض عشق بن دسمان العتيبي at 0503799934. Neither matches the stored name/phone 0503042588; retained pending identity proof.",
+          "sources": [
+            "https://www.google.com/maps?cid=14227582919557112799",
+            "https://www.google.com/maps/search/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%A7%D9%84%D8%B9%D8%AA%D9%8A%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%E2%80%AD"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the stored phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=14227582919557112799",
+            "https://www.google.com/maps/search/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%A7%D9%84%D8%B9%D8%AA%D9%8A%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%E2%80%AD"
+          ]
+        },
+        "google_maps": {
+          "status": "wrong_or_conflicted_candidates",
+          "evidence": "Stored CID opens a default/blank map. Google Maps search returns no exact name: one nearby معرض العتيبي للسيارات at 0501067890 and a separate معرض عشق بن دسمان العتيبي at 0503799934. Neither matches the stored name/phone 0503042588; retained pending identity proof.",
+          "sources": [
+            "https://www.google.com/maps?cid=14227582919557112799",
+            "https://www.google.com/maps/search/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%A7%D9%84%D8%B9%D8%AA%D9%8A%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%E2%80%AD"
+          ]
+        },
+        "website": {
+          "status": "no_official_website_verified",
+          "evidence": "Google Maps shows no website or only a seller/social profile; no direct official business website was established.",
+          "sources": [
+            "https://www.google.com/maps?cid=14227582919557112799",
+            "https://www.google.com/maps/search/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%A7%D9%84%D8%B9%D8%AA%D9%8A%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%E2%80%AD"
+          ]
+        }
+      }
+    }
+  ]
+}
