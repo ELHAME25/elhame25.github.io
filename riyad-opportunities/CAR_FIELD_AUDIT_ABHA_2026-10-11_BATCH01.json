@@ -5,13 +5,13 @@
   "branch": "fix/scope-counts-nhc-20261010",
   "source_head": "c67554bcc3c6b53d177441df276dc9f841b5b6aa",
   "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
-  "scope": "Abha first ten unreviewed records; no Qadisiyah records",
+  "scope": "Linked Abha–Khamis Mushait regional audit scope; keep both cities together and do not reassign records based only on which city a source mentions.",
   "count": 10,
   "entries": [
     {
       "id": "entity-a06af30db1c2",
       "name": "معرض الرايه الامثل للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "verified",
@@ -63,7 +63,7 @@
     {
       "id": "phase6-cars-48b2393f96feba",
       "name": "معرض الرايه الامثل للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "verified",
@@ -112,7 +112,7 @@
     {
       "id": "entity-1e32869fea87",
       "name": "معرض عز العرب",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "verified",
@@ -158,7 +158,7 @@
     {
       "id": "entity-faa8a7e44fe6",
       "name": "معرض بن قزان للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "verified",
@@ -202,7 +202,7 @@
     {
       "id": "phase6-cars-e70c72395f26c1",
       "name": "شيخ المعارض ابها",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "partially_verified",
@@ -248,7 +248,7 @@
     {
       "id": "phase6-cars-7dda7f96a004e0",
       "name": "معرض آل عبود للسيارات بجميع أنواعها",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "verified",
@@ -293,7 +293,7 @@
     {
       "id": "phase6-cars-e75ae5a9b09c0e",
       "name": "معرض القحاص لبيع وشراء السيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "verified",
@@ -338,7 +338,7 @@
     {
       "id": "phase6-cars-75dfdefd60deba",
       "name": "معرض الوتيد للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "verified",
@@ -389,7 +389,7 @@
     {
       "id": "phase6-cars-ede672b5cfc35a",
       "name": "شركة رمز الاختيار للتجارة",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "verified",
@@ -438,7 +438,7 @@
     {
       "id": "phase6-cars-733f8d18c31326",
       "name": "معرض بن عبود للسيارات",
-      "record_city": "أبها",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
       "fields": {
         "name_activity": {
           "status": "partially_verified",
@@ -487,5 +487,6 @@
     "No data edits were made. The Al Watid physical address is in Khamis Mushait, which is inside the agreed Abha–Khamis Mushait showroom cluster; do not classify that as a coverage error or edit the city field on this basis alone. The second Al Raya record has supported evidence of a garbled address, but the two same-name rows must be resolved before any deduplication.",
     "Official agency status for Ramz branch remains unresolved; no record was archived.",
     "The two Al Raya IDs appear to refer to the same showroom. Preserve both until de-duplication is safely established."
-  ]
+  ],
+  "note": " Scope labels normalized to the user-required linked Abha–Khamis audit group; no cars.json fields changed."
 }
