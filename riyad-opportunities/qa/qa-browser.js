@@ -22,15 +22,6 @@ const server=http.createServer((req,res)=>{
    page.on('pageerror',err=>errors.push(err.message));
    await page.addInitScript(()=>{Object.defineProperty(navigator,'share',{configurable:true,value:async(data)=>{window.__shared=data;}});});
    await page.goto(base);await page.locator('#go-branch').waitFor();
-   const branchRows=JSON.parse(fs.readFileSync(path.join(root,'data/branches.json'),'utf8'));
-   const branchCities=[...new Set(branchRows.map(b=>b.city).filter(Boolean))];
-   for(const city of branchCities){
-    const expected=branchRows.filter(b=>b.city===city);
-    await page.locator('#q-city').selectOption('');
-    await page.locator('#q-branch').fill(city);
-    for(const b of expected)assert(await page.locator('.branch-item[data-code="'+b.c+'"]').count()>0,device+' city query '+city+' missing branch '+b.c);
-   }
-   await page.locator('#q-branch').fill('');
    await page.locator('#q-emp').fill('خالد الماطر');
    assert((await page.locator('#greet').innerText()).includes('خالد الماطر'));
    const open=async code=>{

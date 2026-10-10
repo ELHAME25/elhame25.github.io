@@ -253,13 +253,12 @@
     });
     var selectedCode = '';
     function list() {
-      var raw = qb.value.trim(), q = norm(raw), city = qc.value, cityQuery = !!q && D.branches.some(function (b) { return sameCity(b.city, raw); });
+      var raw = qb.value.trim(), q = norm(raw), city = qc.value;
       qb.disabled = false;
       if (!city && !q) { selectedCode = ''; go.disabled = true; document.getElementById('branch-list').innerHTML = ''; return; }
       var items = D.branches.filter(function (b) {
         if (city && !sameCity(b.city, city)) return false;
         if (!q) return true;
-        if (cityQuery) return sameCity(b.city, raw);
         return (b.codeStatus !== 'local_internal_reference' && String(b.c).indexOf(raw) >= 0) || norm(b.n).indexOf(q) >= 0 || sameCity(b.city, raw) || norm(b.city).indexOf(q) >= 0 || (b.nb && norm(b.nb).indexOf(q) >= 0);
       });
       var exact = D.branchByCode[raw];

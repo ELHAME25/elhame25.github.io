@@ -70,5 +70,5 @@ const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  }
  assert(D.nhc.every(o=>!o.unitCount||typeof o.unitCount==='string'),'NHC totals must be explicit display strings');
  for(const kind of ['projects','opps','nhc','selfbuild','companies','offices','cars'])for(const o of D[kind]||[])for(const city of [o.city,...(o.coverageCities||[])].filter(Boolean))assert(choices.some(c=>Q.sameCity(c,city)),`${kind} city/coverage missing: ${city}`);
- console.log(JSON.stringify({ok:true,cityChoices:choices.length,citySearchBranches:buraidahBranches.length,sabtAlAlayahOffices:sabtOffices.length}));
+ console.log(JSON.stringify({ok:true,cityChoices:choices.length,searchedBranchCities:branchCities.length,sabtAlAlayahOffices:sabtOffices.length}));
 })().catch(e=>{console.error(e.stack||e);process.exitCode=1;});
