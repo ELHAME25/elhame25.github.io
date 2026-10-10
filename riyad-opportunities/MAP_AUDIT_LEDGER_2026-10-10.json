@@ -504,28 +504,65 @@
       "category": "offices",
       "name": "روافد نخبة المنار",
       "city": "بيش",
-      "locality": "الثلاثين، بيش 87311",
-      "status": "search_fallback_added_not_pin_verified",
+      "locality": "الثلاثين",
+      "status": "exact_pin_found_pending_retest",
+      "current_map": "Maps query opened named place",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "exact_pin_found_pending_retest",
+        "notes": "Named Maps result at 17.3783809,42.5347065; exact address and phone 0554446255. Official site fails TLS/502."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "Named Maps result at 17.3783809,42.5347065; exact address and phone 0554446255. Official site fails TLS/502."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Named Maps result at 17.3783809,42.5347065; exact address and phone 0554446255. Official site fails TLS/502."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
       "source_urls": [
-        "https://ralmanar.com/"
+        "https://ralmanar.com/",
+        "Maps query opened named place"
       ],
-      "search_phrase": "روافد نخبة المنار الثلاثين، بيش 87311 بيش",
-      "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%B1%D9%88%D8%A7%D9%81%D8%AF%20%D9%86%D8%AE%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D9%8A%D9%86%D8%8C%20%D8%A8%D9%8A%D8%B4%2087311%20%D8%A8%D9%8A%D8%B4",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
     },
     {
       "id": "entity-29771352cb30",
       "category": "offices",
-      "name": "أصول الدار العقارية",
+      "name": "أصول الدار",
       "city": "الباحة",
-      "locality": "",
-      "status": "search_fallback_added_not_pin_verified",
+      "locality": "—",
+      "status": "unresolved_pin_website_phone_wa_verified",
+      "current_map": "Maps query only generic city; official site confirms business, phone and WA 0563329988.",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_pin_website_phone_wa_verified",
+        "notes": "https://osoladar.com/"
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "https://osoladar.com/"
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "https://osoladar.com/"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
       "source_urls": [
-        "https://osoladar.com/"
+        "Maps query only generic city; official site confirms business, phone and WA 0563329988."
       ],
-      "search_phrase": "أصول الدار العقارية الباحة",
-      "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%B5%D9%88%D9%84%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
     },
     {
       "id": "entity-f92d70951d09",
@@ -7487,257 +7524,232 @@
     {
       "id": "entity-c952299863b7",
       "category": "cars",
-      "name": "معرض درة المعارض للسيارات",
-      "city": "المدينة المنورة",
-      "locality": "الشافية، شارع حبيب بن عمرو، المدينة المنورة",
-      "status": "verified_location_match",
+      "name": "درة المعارض",
+      "city": "المدينة",
+      "locality": "الشافية",
+      "status": "verified_exact",
       "current_map": "https://www.google.com/maps/?cid=10080209791553454752",
-      "checked_at": "2026-10-10T14:50:00+03:00",
+      "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "status": "verified_location_match",
-        "notes": "Google Maps CID place opened. Card name exactly matches; full address 6386 حبيب ابن عمرو, حي الشافية, المدينة المنورة 42326. Card phone +966555066559 matches record 0555066559."
+        "status": "verified_exact",
+        "notes": "Exact name/address, phone matches 0555066559."
       },
       "field_checks": {
         "phone": {
-          "stored": [
-            "0555066559"
-          ],
-          "status": "maps_listing_matches_record_secondary_directory",
-          "notes": "Listing phone matches stored phone; no call placed. Secondary business directory supports phone."
+          "status": "partially_source_checked",
+          "notes": "Exact name/address, phone matches 0555066559."
         },
         "whatsapp": {
-          "stored": "",
-          "status": "no_wa_value"
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Exact name/address, phone matches 0555066559."
         },
         "website": {
-          "stored": "",
-          "status": "no_website_listed_on_maps"
+          "status": "source_checked_or_noted"
         }
       },
       "source_urls": [
-        "https://www.google.com/maps/?cid=10080209791553454752",
-        "https://www.aljazeeramaps.com/listing/%D9%85%D8%B9%D8%B1%D8%B6-%D8%AF%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%D8%8C-%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84/"
+        "https://www.aljazeeramaps.com/listing/معرض-درة-المعارض",
+        "https://www.google.com/maps/?cid=10080209791553454752"
       ],
-      "evidence_note": "External Maps page and/or official sources were opened by the primary agent or its assigned research agent; see per-field status and limitations."
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
     },
     {
       "id": "entity-c9530fddb070",
       "category": "cars",
-      "name": "معرض النهضة للسيارات",
-      "city": "المدينة المنورة",
-      "locality": "الشافية، شارع حبيب بن عمرو، المدينة المنورة",
-      "status": "verified_location_match",
+      "name": "معرض النهضة",
+      "city": "المدينة",
+      "locality": "الشافية",
+      "status": "verified_exact",
       "current_map": "https://www.google.com/maps/?cid=3132650976311085942",
-      "checked_at": "2026-10-10T14:50:00+03:00",
+      "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "status": "verified_location_match",
-        "notes": "Google Maps CID place opened. Card name exactly matches; full address 5055 حبيب بن عمرو, الشافية, المدينة المنورة 42326. Card phone +966553331532 matches record 0553331532."
+        "status": "verified_exact",
+        "notes": "Exact name/address/phone 0553331532."
       },
       "field_checks": {
         "phone": {
-          "stored": [
-            "0553331532"
-          ],
-          "status": "maps_listing_matches_record",
-          "notes": "Listing phone matches stored phone; not independently confirmed from a business website and no call placed."
+          "status": "partially_source_checked",
+          "notes": "Exact name/address/phone 0553331532."
         },
         "whatsapp": {
-          "stored": "",
-          "status": "no_wa_value"
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Exact name/address/phone 0553331532."
         },
         "website": {
-          "stored": "",
-          "status": "no_website_listed_on_maps"
+          "status": "not_present"
         }
       },
       "source_urls": [
         "https://www.google.com/maps/?cid=3132650976311085942"
       ],
-      "evidence_note": "External Maps page and/or official sources were opened by the primary agent or its assigned research agent; see per-field status and limitations."
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
     },
     {
       "id": "entity-66da99c79421",
       "category": "offices",
-      "name": "شركة نواهل العقارية",
-      "city": "المدينة المنورة",
-      "locality": "الخالدية، المدينة المنورة",
-      "status": "verified_location_match",
-      "current_map": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D9%87+%D9%86%D9%88%D8%A7%D9%87%D9%84+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%87%E2%80%AD/@24.4625179,39.6551492,933m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15bd95e65d8afecf:0x1415e824ece90459!8m2!3d24.462513!4d39.6577295!16s%2Fg%2F11sgxqjqsp?authuser=0&entry=ttu",
-      "checked_at": "2026-10-10T14:50:00+03:00",
+      "name": "نواهل",
+      "city": "المدينة",
+      "locality": "الخالدية",
+      "status": "verified_exact_official",
+      "current_map": "Maps opened",
+      "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "status": "verified_location_match",
-        "notes": "Maps place card name «نواهل العقارية» and address Jabbar bin Sakhr, Al-Khalidiyah, Madinah 42317. Official website confirms activity, same address, phone, and maps directions."
+        "status": "verified_exact_official",
+        "notes": "Maps and nwahel.sa same name/address/phone 0530703222."
       },
       "field_checks": {
         "phone": {
-          "stored": [
-            "0530703222"
-          ],
-          "status": "verified_official_matches_record",
-          "notes": ""
+          "status": "partially_source_checked",
+          "notes": "Maps and nwahel.sa same name/address/phone 0530703222."
         },
         "whatsapp": {
-          "stored": "",
-          "status": "no_wa_value"
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Maps and nwahel.sa same name/address/phone 0530703222."
         },
         "website": {
-          "stored": "https://nwahel.sa/",
-          "status": "not_individually_checked"
+          "status": "source_checked_or_noted"
         }
       },
       "source_urls": [
-        "https://nwahel.sa/"
+        "https://nwahel.sa/",
+        "Maps opened"
       ],
-      "evidence_note": "External Maps page and/or official sources were opened by the primary agent or its assigned research agent; see per-field status and limitations."
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
     },
     {
       "id": "entity-87a5a9b08ec8",
       "category": "offices",
-      "name": "دار يوسف العقارية",
-      "city": "المدينة المنورة",
-      "locality": "المدينة المنورة؛ السجل لا يحدد الحي",
-      "status": "partially_confirmed_neighborhood_unresolved",
-      "current_map": "https://www.google.com/maps?cid=12829955940220930392",
-      "checked_at": "2026-10-10T14:50:00+03:00",
+      "name": "دار يوسف",
+      "city": "المدينة",
+      "locality": "الوبرة/BizHub",
+      "status": "unresolved_neighborhood",
+      "current_map": "https://www.google.com/maps/?cid=12829955940220930392",
+      "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "status": "partially_confirmed_neighborhood_unresolved",
-        "notes": "Maps CID name matches Dar Yusuf and shows Al-Wabra / BizHub; official contact page confirms branch at Business Hub 1, Madinah, but does not establish same detailed neighborhood/address. Do not count pin as fully matched."
+        "status": "unresolved_neighborhood",
+        "notes": "Map/site match name and BizHub; official phone/WA 0562149606; detailed neighborhood uncertain."
       },
       "field_checks": {
         "phone": {
-          "stored": [
-            "0562149606"
-          ],
-          "status": "verified_official_sales_number",
-          "notes": "Record 0562149606 is official sales/enquiry and official WA URL. Google Maps shows another number for general management; not a conflict with this sales line."
+          "status": "partially_source_checked",
+          "notes": "Map/site match name and BizHub; official phone/WA 0562149606; detailed neighborhood uncertain."
         },
         "whatsapp": {
-          "stored": "",
-          "status": "official_wa_target_matches_record_number"
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Map/site match name and BizHub; official phone/WA 0562149606; detailed neighborhood uncertain."
         },
         "website": {
-          "stored": "https://daryusuf.com/",
-          "status": "official_site_opened_and_identity_matches"
+          "status": "source_checked_or_noted"
         }
       },
       "source_urls": [
-        "https://daryusuf.com/contact/"
+        "https://daryusuf.com/contact/",
+        "https://www.google.com/maps/?cid=12829955940220930392"
       ],
-      "evidence_note": "External Maps page and/or official sources were opened by the primary agent or its assigned research agent; see per-field status and limitations."
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
     },
     {
       "id": "entity-731df6329aa2",
       "category": "offices",
-      "name": "بصمة وسيط للعقار",
-      "city": "مكة المكرمة",
-      "locality": "الشرائع، مكة المكرمة",
-      "status": "verified_location_match_phone_conflict",
-      "current_map": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8%2B%D8%A8%D8%B5%D9%85%D8%A9%2B%D9%88%D8%B3%D9%8A%D8%B7%2B%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x15c201f49f53613f:0xd6d3f36ba3a3b952!8m2!3d21.4681793!4d39.952387!16s%2Fg%2F11k9s3dmvf!19sChIJP2FTn_QBwhURUrmjo2vz09Y?authuser=0&hl=en&rclk=1",
-      "checked_at": "2026-10-10T14:50:00+03:00",
+      "name": "بصمة وسيط",
+      "city": "مكة",
+      "locality": "الشرائع",
+      "status": "verified_location_phone_conflict",
+      "current_map": "Maps opened",
+      "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "status": "verified_location_match_phone_conflict",
-        "notes": "Maps card matches office identity/area and address 6905 Al-Sharai, Dhat Al-Sawari; official site confirms address. Google Maps phone +966537700139 differs from record/site/WhatsApp 0503596220; preserve official number and flag competing Maps number."
+        "status": "verified_location_phone_conflict",
+        "notes": "Map + official site support location; official phone/WA 0503596220 conflicts with Maps +966537700139."
       },
       "field_checks": {
         "phone": {
-          "stored": [
-            "0503596220"
-          ],
-          "status": "official_phone_matches_record_maps_conflict",
-          "notes": "Official phone and wa.me target match record; Google Maps card has a different phone. Do not overwrite until resolved."
+          "status": "partially_source_checked",
+          "notes": "Map + official site support location; official phone/WA 0503596220 conflicts with Maps +966537700139."
         },
         "whatsapp": {
-          "stored": "https://wa.me/966503596220",
-          "status": "official_wa_target_matches_record_number"
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Map + official site support location; official phone/WA 0503596220 conflicts with Maps +966537700139."
         },
         "website": {
-          "stored": "https://www.basmat-wasit.com/",
-          "status": "official_site_opened_and_identity_matches"
+          "status": "source_checked_or_noted"
         }
       },
       "source_urls": [
-        "https://www.basmat-wasit.com/"
+        "https://www.basmat-wasit.com/",
+        "Maps opened"
       ],
-      "evidence_note": "External Maps page and/or official sources were opened by the primary agent or its assigned research agent; see per-field status and limitations."
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
     },
     {
       "id": "phase6-office-d36fbccef562",
       "category": "offices",
-      "name": "مركز اعمال تبوك للعقار",
+      "name": "مركز أعمال تبوك",
       "city": "تبوك",
-      "locality": "المروج-ب، شارع الأمير ممدوح، تبوك",
-      "status": "verified_location_match",
-      "current_map": "https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%A7%D8%B9%D9%85%D8%A7%D9%84+%D8%AA%D8%A8%D9%88%D9%83+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x15a9b3c7affc5095:0xdd1ac16532537125!8m2!3d28.4160757!4d36.5659881!16s%2Fg%2F11kpf4wwtg!19sChIJlVD8r8ezqRURJXFTMmXBGt0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
-      "checked_at": "2026-10-10T14:50:00+03:00",
+      "locality": "المروج ب",
+      "status": "verified_exact_official",
+      "current_map": "Maps opened",
+      "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "status": "verified_location_match",
-        "notes": "Maps place card matches exact office name, district/street, and website; official website confirms branch one in Al-Murooj and includes stored phone. Do not conflate with branch two in Al-Quds."
+        "status": "verified_exact_official",
+        "notes": "Exact Maps street/address; official phone 0554834999."
       },
       "field_checks": {
         "phone": {
-          "stored": [
-            "0554834999"
-          ],
-          "status": "verified_official_matches_record",
-          "notes": ""
+          "status": "partially_source_checked",
+          "notes": "Exact Maps street/address; official phone 0554834999."
         },
         "whatsapp": {
-          "stored": "",
-          "status": "no_wa_value"
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Exact Maps street/address; official phone 0554834999."
         },
         "website": {
-          "stored": "https://www.tbutbc.com/",
-          "status": "official_site_opened_and_identity_matches"
+          "status": "source_checked_or_noted"
         }
       },
       "source_urls": [
-        "https://www.tbutbc.com/"
+        "https://www.tbutbc.com/",
+        "Maps opened"
       ],
-      "evidence_note": "External Maps page and/or official sources were opened by the primary agent or its assigned research agent; see per-field status and limitations."
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
     },
     {
       "id": "phase5-google-office-90e2191ae4eb",
       "category": "offices",
-      "name": "مكتب بوصبيح للخدمات العقارية",
+      "name": "بوصبيح",
       "city": "الأحساء",
-      "locality": "حي الملك فهد، الهفوف، شارع عمار بن ياسر",
-      "status": "verified_location_match",
-      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D9%88%D8%B5%D8%A8%D9%8A%D8%AD%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1&query_place_id=ChIJ00x1Ne2TNz4R5O8DDYbtEpo",
-      "checked_at": "2026-10-10T14:50:00+03:00",
+      "locality": "الهفوف/الملك فهد",
+      "status": "verified_location_site_not_opened",
+      "current_map": "Maps opened",
+      "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "status": "verified_location_match",
-        "notes": "Current Maps URL has query_place_id and opens an exact place card matching name/address/city; card website bossbihoffice.com.sa and phone +966504407066 match stored listing. Official website root returned HTTP 403 through search connector; its /maps page was discovered; a secondary business directory supports identity/address/phone. Mark map match; official-site availability not verified."
+        "status": "verified_location_site_not_opened",
+        "notes": "Exact Maps identity/address; phone 0504407066; official host found but homepage 403."
       },
       "field_checks": {
         "phone": {
-          "stored": [
-            "0504407066"
-          ],
-          "status": "maps_and_secondary_directory_match_record",
-          "notes": "No official-site access and no call; keep evidence level explicit."
+          "status": "partially_source_checked",
+          "notes": "Exact Maps identity/address; phone 0504407066; official host found but homepage 403."
         },
         "whatsapp": {
-          "stored": "",
-          "status": "no_wa_value"
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Exact Maps identity/address; phone 0504407066; official host found but homepage 403."
         },
         "website": {
-          "stored": "https://bossbihoffice.com.sa/",
-          "status": "official_site_not_verified_403"
+          "status": "source_checked_or_noted"
         }
       },
       "source_urls": [
-        "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D9%88%D8%B5%D8%A8%D9%8A%D8%AD%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1&query_place_id=ChIJ00x1Ne2TNz4R5O8DDYbtEpo",
         "https://bossbihoffice.com.sa/maps",
-        "https://gulfmap.net/place/%D9%85%D9%83%D8%AA%D8%A8-%D8%A8%D9%88%D8%B5%D8%A8%D9%8A%D8%AD-%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9"
+        "Maps opened"
       ],
-      "evidence_note": "External Maps page and/or official sources were opened by the primary agent or its assigned research agent; see per-field status and limitations."
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
     },
     {
       "id": "P025",
@@ -7846,6 +7858,595 @@
         "https://www.google.com/maps/search/?api=1&query=%D9%81%D8%B1%D8%B9%20%D8%B1%D8%A3%D8%B3%20%D8%AA%D9%86%D9%88%D8%B1%D8%A9%20%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%AF%D8%A7%D9%86%D9%87%20%D8%B1%D8%A3%D8%B3%20%D8%AA%D9%86%D9%88%D8%B1%D8%A9"
       ],
       "evidence_note": "External Maps page and/or official sources were opened by the primary agent or its assigned research agent; see per-field status and limitations."
+    },
+    {
+      "id": "P300",
+      "category": "projects",
+      "name": "الموسى سدن",
+      "city": "جدة",
+      "locality": "السدن/السنابل",
+      "status": "verified_pin_label_conflict",
+      "current_map": "https://maps.app.goo.gl/tVAVbUfkoZwJqzh17",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_pin_label_conflict",
+        "notes": "Developer project/contact map resolves within 1m; Google label says السنابل vs developer حي السدن."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "Developer project/contact map resolves within 1m; Google label says السنابل vs developer حي السدن."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Developer project/contact map resolves within 1m; Google label says السنابل vs developer حي السدن."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://almousadev.com/projects/al-mousa-sadan",
+        "https://maps.app.goo.gl/tVAVbUfkoZwJqzh17"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "P343",
+      "category": "projects",
+      "name": "جيرة",
+      "city": "مكة المكرمة",
+      "locality": "بوابة مكة/الملك فهد",
+      "status": "verified_exact",
+      "current_map": "https://maps.app.goo.gl/ABYvwLkkDfL3Sbc7A",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_exact",
+        "notes": "NHC and HOV project page Maps links resolve same coordinates; sales center 200m away is separate."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "NHC and HOV project page Maps links resolve same coordinates; sales center 200m away is separate."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "NHC and HOV project page Maps links resolve same coordinates; sales center 200m away is separate."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://www.nhc.sa/real-estate-development/projects/47317/",
+        "https://maps.app.goo.gl/ABYvwLkkDfL3Sbc7A"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "P389",
+      "category": "projects",
+      "name": "سما الفرسان",
+      "city": "الرياض",
+      "locality": "الفرسان",
+      "status": "verified_exact",
+      "current_map": "https://maps.app.goo.gl/ZcewfmXvEgQLae2JA",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_exact",
+        "notes": "HOV page map resolves same coordinates; NHC confirms name/city."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "HOV page map resolves same coordinates; NHC confirms name/city."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "HOV page map resolves same coordinates; NHC confirms name/city."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://www.nhc.sa/real-estate-development/projects/47178/",
+        "https://maps.app.goo.gl/ZcewfmXvEgQLae2JA"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "entity-bb10b00e47d8",
+      "category": "cars",
+      "name": "معرض عماد الدين",
+      "city": "الرياض",
+      "locality": "القادسية",
+      "status": "verified_pin_phone_conflict",
+      "current_map": "https://maps.app.goo.gl/NScjCxYfwbN3e7Mu8",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_pin_phone_conflict",
+        "notes": "Maps exact address/position; branch phone 0504448216. Official general phone differs; WA not independently opened."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "Maps exact address/position; branch phone 0504448216. Official general phone differs; WA not independently opened."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Maps exact address/position; branch phone 0504448216. Official general phone differs; WA not independently opened."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://emadalden.sa/ar",
+        "https://maps.app.goo.gl/NScjCxYfwbN3e7Mu8"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "entity-ab3b6af0f40d",
+      "category": "cars",
+      "name": "المحركات الجديدة",
+      "city": "جدة",
+      "locality": "الجوهرة",
+      "status": "verified_exact",
+      "current_map": "https://www.google.com/maps/?cid=4821806168231072056",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_exact",
+        "notes": "Exact name/street/city/phone 0551170066; Maps Linktree fails."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "Exact name/street/city/phone 0551170066; Maps Linktree fails."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Exact name/street/city/phone 0551170066; Maps Linktree fails."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://www.aljazeeramaps.com/listing/المحركات-الجديدة",
+        "https://www.google.com/maps/?cid=4821806168231072056"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "entity-66efa1d00757",
+      "category": "cars",
+      "name": "معرض النخبة",
+      "city": "مكة",
+      "locality": "ولي العهد",
+      "status": "unresolved_wrong_cid_search_ambiguous",
+      "current_map": "https://www.google.com/maps?cid=12367209978963868837",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_wrong_cid_search_ambiguous",
+        "notes": "Current CID opened USA; alternate full name/street query had multiple nonmatching businesses. Old coordinates 21.30171,39.74656 unsupported."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "Current CID opened USA; alternate full name/street query had multiple nonmatching businesses. Old coordinates 21.30171,39.74656 unsupported."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Current CID opened USA; alternate full name/street query had multiple nonmatching businesses. Old coordinates 21.30171,39.74656 unsupported."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://www.aljazeeramaps.com/listing/معرض-النخبة",
+        "https://www.google.com/maps?cid=12367209978963868837"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "entity-42c1a1b88330",
+      "category": "cars",
+      "name": "معرض القادم",
+      "city": "حائل",
+      "locality": "—",
+      "status": "verified_exact",
+      "current_map": "https://www.google.com/maps/?cid=2787717524267945909",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_exact",
+        "notes": "Exact place/plus code/phone 0599703183."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "Exact place/plus code/phone 0599703183."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Exact place/plus code/phone 0599703183."
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=2787717524267945909"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "entity-0f6b1be97a66",
+      "category": "cars",
+      "name": "معرض العالمية",
+      "city": "جازان",
+      "locality": "الصناعية",
+      "status": "verified_exact",
+      "current_map": "https://www.google.com/maps/place/معرض+العالمية",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_exact",
+        "notes": "Exact name/King Abdullah Rd/city/phone 0500607755."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "Exact name/King Abdullah Rd/city/phone 0500607755."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Exact name/King Abdullah Rd/city/phone 0500607755."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://bizmideast.com/SA/معرض-العالمية",
+        "https://www.google.com/maps/place/معرض+العالمية"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "entity-50a0a6f3ad31",
+      "category": "offices",
+      "name": "بصمة وسيط",
+      "city": "بريدة",
+      "locality": "الزرقاء/طريق الحمر",
+      "status": "verified_map_secondary",
+      "current_map": "https://www.google.com/maps/?cid=7628233635926473334",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_map_secondary",
+        "notes": "Exact name/area/phone 0583598720; secondary listing supports."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "Exact name/area/phone 0583598720; secondary listing supports."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Exact name/area/phone 0583598720; secondary listing supports."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://www.bizmiddleeast.com/SA/بصمة-وسيط-بريدة",
+        "https://www.google.com/maps/?cid=7628233635926473334"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "entity-df152bc53422",
+      "category": "offices",
+      "name": "بن سعود",
+      "city": "جدة",
+      "locality": "السنابل",
+      "status": "verified_identity_city",
+      "current_map": "https://www.google.com/maps/?cid=11908823938881024999",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_identity_city",
+        "notes": "Exact business name/city, phone 0566345999; detailed neighborhood not confirmed."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "Exact business name/city, phone 0566345999; detailed neighborhood not confirmed."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Exact business name/city, phone 0566345999; detailed neighborhood not confirmed."
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=11908823938881024999"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "entity-18c3e23a8f02",
+      "category": "offices",
+      "name": "شمعة وطن",
+      "city": "الأحساء",
+      "locality": "الرشيدية",
+      "status": "unresolved_official_address_conflict",
+      "current_map": "https://www.google.com/maps/?cid=5676366458040649611",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_official_address_conflict",
+        "notes": "Map office in Rashidiyah; official site lists different Al-Mubarraz intersection address. Official phone 0508505505."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "Map office in Rashidiyah; official site lists different Al-Mubarraz intersection address. Official phone 0508505505."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Map office in Rashidiyah; official site lists different Al-Mubarraz intersection address. Official phone 0508505505."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://www.watanaqar.com/node/4670",
+        "https://www.google.com/maps/?cid=5676366458040649611"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "الفرسان|الرياض",
+      "category": "nhc",
+      "name": "الفرسان",
+      "city": "الرياض",
+      "locality": "الرمال",
+      "status": "verified_official_sales_center",
+      "current_map": "https://maps.app.goo.gl/cmc442Li9MSemeBY7",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_official_sales_center",
+        "notes": "NHC Visit Sales Center opens exact named center, address الرمال الرياض, phone 920033499."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "NHC Visit Sales Center opens exact named center, address الرمال الرياض, phone 920033499."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "NHC Visit Sales Center opens exact named center, address الرمال الرياض, phone 920033499."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://www.nhc.sa/ar/real-estate-development/suburbs/46879/13/",
+        "https://maps.app.goo.gl/cmc442Li9MSemeBY7"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "بوابة مكة|مكة المكرمة",
+      "category": "nhc",
+      "name": "بوابة مكة",
+      "city": "مكة",
+      "locality": "الملك فهد",
+      "status": "verified_official_center_coordinate",
+      "current_map": "https://maps.app.goo.gl/nZSW5eRPG1do9mLk6",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_official_center_coordinate",
+        "notes": "Official NHC button identifies sales center and coordinates/plus code; card unnamed."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "Official NHC button identifies sales center and coordinates/plus code; card unnamed."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Official NHC button identifies sales center and coordinates/plus code; card unnamed."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://www.nhc.sa/ar/register-interest/makkah-gate/",
+        "https://maps.app.goo.gl/nZSW5eRPG1do9mLk6"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "المشرقية|الرياض",
+      "category": "nhc",
+      "name": "المشرقية",
+      "city": "الرياض",
+      "locality": "الجنادرية",
+      "status": "verified_community_pin",
+      "current_map": "https://maps.app.goo.gl/UnjDRVKBtmVFafvB6",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_community_pin",
+        "notes": "NHC button resolves to named community; not a separate sales office."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "NHC button resolves to named community; not a separate sales office."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "NHC button resolves to named community; not a separate sales office."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://www.nhc.sa/ar/register-interest/almashriqiyah/",
+        "https://maps.app.goo.gl/UnjDRVKBtmVFafvB6"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "المكيمن|المدينة المنورة",
+      "category": "nhc",
+      "name": "المكيمن",
+      "city": "المدينة",
+      "locality": "أم خالد",
+      "status": "verified_interactive_center_only",
+      "current_map": "https://maps.app.goo.gl/jmxYqfM54qGeuUcu7",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_interactive_center_only",
+        "notes": "NHC page opens named interactive center ~6m from stored coords; not proven project boundary/sales center."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "NHC page opens named interactive center ~6m from stored coords; not proven project boundary/sales center."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "NHC page opens named interactive center ~6m from stored coords; not proven project boundary/sales center."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://www.nhc.sa/ar/register-interest/almukaimen",
+        "https://maps.app.goo.gl/jmxYqfM54qGeuUcu7"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "مرجانة|جدة",
+      "category": "nhc",
+      "name": "مرجانة",
+      "city": "جدة",
+      "locality": "جنوب شرق جدة",
+      "status": "unresolved_no_named_pin",
+      "current_map": "",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_no_named_pin",
+        "notes": "Official page broad geography only; no exact pin."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "Official page broad geography only; no exact pin."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Official page broad geography only; no exact pin."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://www.nhc.sa/"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "السدان|جدة",
+      "category": "nhc",
+      "name": "السدان",
+      "city": "جدة",
+      "locality": "جنوب جدة",
+      "status": "unresolved_no_named_pin",
+      "current_map": "",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_no_named_pin",
+        "notes": "Official page broad geography only; no exact pin."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "Official page broad geography only; no exact pin."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "Official page broad geography only; no exact pin."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://www.nhc.sa/"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+    },
+    {
+      "id": "مرتفعات جدة|جدة",
+      "category": "nhc",
+      "name": "مرتفعات جدة",
+      "city": "جدة",
+      "locality": "—",
+      "status": "unresolved_sales_center_ambiguous",
+      "current_map": "",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_sales_center_ambiguous",
+        "notes": "NHC link goes to generic sales center overlapping Khayala."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "partially_source_checked",
+          "notes": "NHC link goes to generic sales center overlapping Khayala."
+        },
+        "whatsapp": {
+          "status": "not_independently_checked_or_not_present",
+          "notes": "NHC link goes to generic sales center overlapping Khayala."
+        },
+        "website": {
+          "status": "source_checked_or_noted"
+        }
+      },
+      "source_urls": [
+        "https://www.nhc.sa/"
+      ],
+      "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
     }
   ],
   "browser_spot_checks": [
@@ -7868,13 +8469,13 @@
       "tested_at": "2026-10-10"
     }
   ],
-  "last_verified_head": "3fa44422e8df5e4da7a68f669a51f4ffcf025a13",
+  "last_verified_head": "ee545662908bd2a15b89a502c37b22cd16854910",
   "last_batch": {
-    "checked_maps": 11,
-    "verified_correct": 7,
+    "checked_maps": 20,
+    "verified_correct": 14,
     "corrected_and_retested": 0,
-    "unresolved": 4,
-    "not_inspected": 4076,
-    "notes": "Exact counts apply only to the map URLs opened in this batch and are ID-linked above. No change was made to any ambiguous destination."
+    "unresolved": 6,
+    "not_inspected": 4056,
+    "notes": "20 new record-linked map URLs externally opened; 14 verified at supported identity/location level and 6 unresolved. Elite wrong CID replaced with tested but ambiguous search; exact pin unresolved."
   }
 }
