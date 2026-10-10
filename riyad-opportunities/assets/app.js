@@ -3,7 +3,7 @@
    - نطاق المدن الكبيرة يقبل تصفح الفرع أو القطاع أو المدينة، وتبدأ النتائج الأقرب.
    - في المدن الأخرى تُعرض جميع الفئات على مستوى المدينة دون خلط المدن المتجاورة.
    - سجلات السيارات تستبعد الشركات والوكالات وموزعي العلامات التجارية، وتزيل تكرار المعرض داخل المدينة.
-   - العناصر بلا إحداثيات تبقى ظاهرة دون مسافة مختلقة.
+   - المشاريع بلا إحداثيات تبقى ظاهرة في عرض المدينة ولا تُحتسب ضمن نطاق الفرع؛ وجهات NHC تُرشح بقطاعها عند اختيار قطاع.
    - وجهات NHC والبناء الذاتي تخدم المدينة كلها.
    - الأرقام أعلى الصفحة تتبع العناصر المعروضة.
    - قسم واحد يُعرض في كل مرة. */
@@ -24,7 +24,7 @@
   var SECTORS = ['شرق', 'شمال', 'جنوب', 'غرب', 'وسط'];
   var SECTIONS = ['projects', 'opps', 'nhc', 'selfbuild', 'companies', 'offices', 'cars', 'nearby'];
   var LABEL = { opps: 'فرص عقارية حالية', selfbuild: 'البناء الذاتي', projects: 'المشاريع المعتمدة', nhc: 'وجهات NHC', companies: 'شركات التسويق والاستثمار العقاري', offices: 'مكاتب العقار', cars: 'معارض السيارات', nearby: 'فرص قريبة من الفرع' };
-  var SHORT = { opps: 'فرص حالية', selfbuild: 'البناء الذاتي', projects: 'المشاريع', nhc: 'الوجهات', companies: 'شركات التسويق والاستثمار العقاري', offices: 'المكاتب', cars: 'المعارض', nearby: 'قريبة' };
+  var SHORT = { opps: 'فرص حالية', selfbuild: 'البناء الذاتي', projects: 'المشاريع', nhc: 'وجهات NHC', companies: 'شركات التسويق والاستثمار العقاري', offices: 'المكاتب', cars: 'المعارض', nearby: 'قريبة' };
   var NOUN = { opps: 'فرص عقارية حالية', selfbuild: 'مخططات للبناء الذاتي', projects: 'مشاريع معتمدة', nhc: 'وجهات NHC', companies: 'شركات تسويق أو تطوير', offices: 'مكاتب عقار', cars: 'معارض سيارات', nearby: 'فرص' };
   var SEARCH_PH = { opps: 'ابحث باسم المشروع أو المطور', selfbuild: 'ابحث عن مخطط', projects: 'ابحث باسم المشروع أو المطور أو الحي', nhc: 'ابحث عن وجهة', companies: 'ابحث عن شركة', offices: 'ابحث باسم المكتب أو الحي', cars: 'ابحث باسم المعرض أو الحي', nearby: 'ابحث في الفرص القريبة' };
   var NEARBY_MODE = { metro_support: 5, nearby_auto_if_category_sparse: 5, nearby_optional: 1 };
@@ -118,7 +118,7 @@
   function getJSON(path) {
     // Version query prevents a stale Pages/CDN copy of a corrected JSON file from breaking startup.
     var sep = path.indexOf('?') === -1 ? '?' : '&';
-    return fetch(path + sep + 'v=20261010-2', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
+    return fetch(path + sep + 'v=20261010-3', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
   }
   var DECORATIVE_PROJECT_IMAGES = {
     P013: ['https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-01/351x562_0.png', 'https://www.nhc.sa/ar/real-estate-development/projects/47490'],
@@ -581,9 +581,9 @@
         }).filter(function (x) { return x.d == null || x.d <= radius || x.serviceMatch; });
       } else if (!regionalRiyadhCars) out = out.filter(function (x) {
         if (x.rankD != null) return x.rankD <= radius;
-        // Keep same-city records without a verified location visible, but never
-        // count them as measured radius matches or assign a distance.
-        return true;
+        // Projects without a verified location stay available in city view,
+        // but cannot be represented as inside a branch radius.
+        return kind !== 'projects' && kind !== 'opps';
       });
     }
     // نطاق الفرع الذي لا يملك دبوسًا يعتمد الحي المطابق، ثم القطاع عند غياب الحي.
@@ -602,6 +602,8 @@
       if (isDammamBranch()) out = out.filter(function (x) { if (easternNeighborCity(x.o.city)) return true; var sectors = sectorsOf(x.o); return !sectors.length || sectors.indexOf(S.branch.sec) >= 0; });
       else
       out = out.filter(function (x) { var sectors = sectorsOf(x.o); return !sectors.length || sectors.indexOf(S.branch.sec) >= 0; });
+    } else if (scope === 'branch' && sectorCity(S.branch.city) && S.branch.sec && kind === 'nhc') {
+      out = out.filter(function (x) { return sectorsOf(x.o).indexOf(S.branch.sec) >= 0; });
     }
     // اختيار القطاع نطاق كامل مستقل؛ لا يطبق عليه نصف قطر الفرع.
     if (scope === 'sector' && sectorCity(S.branch.city) && (sec || S.explore)) {
@@ -609,7 +611,7 @@
       var selectedSet = selectedSectors(selectedSector);
       if (kind === 'companies') {
         out = out.filter(function (x) { return x.cityOnly || x.explicitCityCoverage || sectorsOf(x.o).some(function (s) { return selectedSet.indexOf(s) >= 0; }) || x.linkedProjects.some(function (p) { return sectorsOf(p).some(function (s) { return selectedSet.indexOf(s) >= 0; }); }); });
-      } else if (kind !== 'selfbuild' && kind !== 'nhc' && !(kind === 'cars' && sameCity(S.branch.city, 'الرياض'))) {
+      } else if (kind !== 'selfbuild' && !(kind === 'cars' && sameCity(S.branch.city, 'الرياض'))) {
         out = out.filter(function (x) { return sectorsOf(x.o).some(function (s) { return selectedSet.indexOf(s) >= 0; }); });
       }
       var anchors = {};
@@ -767,10 +769,9 @@
   function intro(k, n, rows) {
     var b = S.branch;
     if (k === 'projects' && S.scope === 'branch' && radiusApplies(k, 'branch') && rows) {
-      var unknown = rows.filter(function (x) { return x.rankD == null; }).length;
       var approximate = rows.filter(function (x) { return x.rankD != null && x.o.loc === 'nb'; }).length;
-      var located = rows.length - unknown - approximate;
-      return fmt(n) + ' مشروعًا لنطاق الفرع: ' + fmt(located) + ' بإحداثيات، ' + fmt(approximate) + ' بمسافة تقريبية، ' + fmt(unknown) + ' موقع غير محدد';
+      var located = n - approximate;
+      return fmt(n) + ' مشروعًا داخل نطاق الفرع: ' + fmt(located) + ' بإحداثيات، ' + fmt(approximate) + ' بمواقع تقريبية. المشاريع غير محددة الموقع متاحة عند اختيار كل ' + esc(b.city);
     }
     if (k === 'cars' && sameCity(b.city, 'الرياض') && S.scope !== 'city') {
       var area = S.carArea || defaultCarArea(b);
