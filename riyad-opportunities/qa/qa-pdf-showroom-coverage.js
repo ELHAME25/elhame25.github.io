@@ -11,7 +11,7 @@ const newClones=cars.filter(x=>x.regionalListing===true&&String(x.regionalListin
 const shared=cars.filter(x=>x.regionalServiceArea==='أبها–خميس مشيط');
 const shifa=cars.filter(x=>x.city==='الرياض'&&x.zone==='shifa');
 const qadi=cars.filter(x=>x.city==='الرياض'&&x.zone==='qadisiyah');
-const validClone=(x)=>{const r=byId.get(x.regionalListingOf);return !!r&&x.n===r.n&&JSON.stringify(x.phones||[])===JSON.stringify(r.phones||[])&&x.maps===r.maps&&x.mapsQ===r.mapsQ&&x.lat===r.lat&&x.lon===r.lon&&x.originCity;};
+const validClone=(x)=>{const r=byId.get(x.regionalListingOf);const preservesOriginMap=x.maps===r?.maps&&x.mapsQ===r?.mapsQ&&x.lat===r?.lat&&x.lon===r?.lon;const suppressesForeignMap=x.mapReviewStatus==='no_verified_local_pin'&&!x.maps&&!x.mapsQ&&x.lat==null&&x.lon==null;return !!r&&x.n===r.n&&JSON.stringify(x.phones||[])===JSON.stringify(r.phones||[])&&(preservesOriginMap||suppressesForeignMap)&&x.originCity;};
 const reviewRequiredIds=['entity-cb0ac77da252','phase5-google-2049951513340009758','phase6-google-7740940609020663943','phase6-cars-75dfdefd60deba','phase6-google-7593477781153902425','phase6-google-14514093740487545178','national-car-00d7bc837202eb','national-car-da080928d404e3','national-car-7749faab1f6281','phase6-cars-93b8851dbd48d9','phase6-cars-0c9ff285bc9877','phase6-cars-4d2fa54d2074e9','phase6-google-4044662082393491158','national-car-d41509abbbaa06'].sort();
 const actualReviewRequiredIds=cars.filter(x=>x.activityReviewStatus==='REVIEW_REQUIRED').map(x=>x.id).sort();
 const tests={
