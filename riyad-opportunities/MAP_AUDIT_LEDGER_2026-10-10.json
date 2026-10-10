@@ -14838,6 +14838,391 @@
         "https://al-durar.com/"
       ],
       "evidence_note": "Maps result is Civil / developer company office, not project. Sakani and company site confirm Downtown B in Al-Bandariyah, Al-Khobar; no project pin. Data row has no phone/WA/web to test."
+    },
+    {
+      "id": "entity-cb0ac77da252",
+      "category": "cars",
+      "name": "معرض الوتيد للسيارات",
+      "city": "خميس مشيط",
+      "locality": "حجلة / طريق أبها، 7MQF+PX2",
+      "status": "verified_card_name_city_locality",
+      "current_map": "https://www.google.com/maps/?cid=17711530166608884804",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_maps_card_identity_and_locality",
+        "notes": "بطاقة Maps مباشرة تطابق الاسم والهاتف وتعرض الإحداثية 18.2892658,42.6748905؛ العنوان بطاقة خميس مشيط 62451/هجلة، مع اختلاف بعض الأدلة في تصنيفها أبها. تبقى مطابقة العنوان وفق البطاقة، ويُحفظ تحفّظ المدينة في الملاحظة."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_and_secondary_match",
+          "value": "0550533000",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-الوتيد-للسيارات-055-053-3000",
+            "https://sa.near-place.com/mrd-alwtyd-llsyarat-tryq-abha-khmys-mshyt"
+          ]
+        },
+        "website": {
+          "status": "not_listed_by_map_or_primary_source"
+        },
+        "whatsapp": {
+          "status": "not_listed_by_map_or_primary_source"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=17711530166608884804",
+        "https://www.bizmideast.com/SA/معرض-الوتيد-للسيارات-055-053-3000",
+        "https://sa.near-place.com/mrd-alwtyd-llsyarat-tryq-abha-khmys-mshyt"
+      ],
+      "evidence_note": "بطاقة Maps مباشرة تطابق الاسم والهاتف وتعرض الإحداثية 18.2892658,42.6748905؛ العنوان بطاقة خميس مشيط 62451/هجلة، مع اختلاف بعض الأدلة في تصنيفها أبها. تبقى مطابقة العنوان وفق البطاقة، ويُحفظ تحفّظ المدينة في الملاحظة."
+    },
+    {
+      "id": "entity-a80e0faa1f92",
+      "category": "cars",
+      "name": "معارض المسعودي للسيارات",
+      "city": "تبوك",
+      "locality": "الصناعية، شارع علاء الدين الأنصاري، CFR5+3R7",
+      "status": "verified_card_name_city_locality",
+      "current_map": "https://www.google.com/maps/?cid=15384170190339951718",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_maps_card_identity_and_locality",
+        "notes": "بطاقة Maps تطابق الاسم والعنوان والهاتف +966 14 418 0116 في تبوك؛ يؤيده BizMidEast وDirectMap. لم يظهر موقع ويب موثق أو WhatsApp."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_and_secondary_match",
+          "value": "0144180116",
+          "sources": [
+            "https://www.bizmideast.com/SA/معارض-المسعودي-للسيارات-014-418-0116",
+            "https://directmap.city/gl/تبوك/7173"
+          ]
+        },
+        "website": {
+          "status": "not_listed_by_map_or_primary_source"
+        },
+        "whatsapp": {
+          "status": "not_listed_by_map_or_primary_source"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=15384170190339951718",
+        "https://www.bizmideast.com/SA/معارض-المسعودي-للسيارات-014-418-0116",
+        "https://directmap.city/gl/تبوك/7173"
+      ],
+      "evidence_note": "بطاقة Maps تطابق الاسم والعنوان والهاتف +966 14 418 0116 في تبوك؛ يؤيده BizMidEast وDirectMap. لم يظهر موقع ويب موثق أو WhatsApp."
+    },
+    {
+      "id": "entity-83b787c12cb5",
+      "category": "cars",
+      "name": "معرض سعيد ظافر القحطاني للسيارات",
+      "city": "خميس مشيط",
+      "locality": "المعارض، حجلة، خميس مشيط 62451",
+      "status": "verified_location_phone_conflict",
+      "current_map": "https://www.google.com/maps/?cid=9651929219402481732",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_maps_card_identity_and_locality",
+        "notes": "بطاقة Maps تطابق الاسم والحي والمدينة وتعرض الهاتف +966172226141، وهو لا يطابق هاتف السجل 0172354727. BizMidEast يطابق اسم المعرض والمدينة لكنه يؤيد رقم السجل، لذا المكان صحيح والهاتف متعارض وغير محسوم."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "conflict_maps_vs_secondary",
+          "value": "0172354727",
+          "maps_value": "+966172226141",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-سعيد-ظافر-القحطاني-للسيارات_1U-017-235-4727",
+            "https://sa.near-place.com/alyahya-"
+          ]
+        },
+        "website": {
+          "status": "not_listed_by_map_or_primary_source"
+        },
+        "whatsapp": {
+          "status": "not_listed_by_map_or_primary_source"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=9651929219402481732",
+        "https://www.bizmideast.com/SA/معرض-سعيد-ظافر-القحطاني-للسيارات_1U-017-235-4727",
+        "https://sa.near-place.com/alyahya-"
+      ],
+      "evidence_note": "بطاقة Maps تطابق الاسم والحي والمدينة وتعرض الهاتف +966172226141، وهو لا يطابق هاتف السجل 0172354727. BizMidEast يطابق اسم المعرض والمدينة لكنه يؤيد رقم السجل، لذا المكان صحيح والهاتف متعارض وغير محسوم."
+    },
+    {
+      "id": "entity-b4bef84d2797",
+      "category": "cars",
+      "name": "معرض خطى الرواد بيع وشراء السيارات",
+      "city": "تبوك",
+      "locality": "CFR5+V33، شارع المعارض، الصناعية، تبوك 47722",
+      "status": "verified_card_name_city_locality",
+      "current_map": "https://www.google.com/maps/?cid=14318706363565814445",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_maps_card_identity_and_locality",
+        "notes": "بطاقة Maps تطابق اسم النشاط والعنوان. رقم البطاقة +966560964425 يطابق أحد رقمي السجل/دليل BizMidEast، وتظهر هناك أيضًا 0563548585؛ لم يثبت أيهما الأساسي. لا موقع/WhatsApp مثبت."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_matches_one_of_secondary_numbers",
+          "value": [
+            "0560964425",
+            "0563548585"
+          ],
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-خطى-الرواد-بيع-وشراء-السيارات-056-354-8585"
+          ]
+        },
+        "website": {
+          "status": "not_listed_by_map_or_primary_source"
+        },
+        "whatsapp": {
+          "status": "not_listed_by_map_or_primary_source"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=14318706363565814445",
+        "https://www.bizmideast.com/SA/معرض-خطى-الرواد-بيع-وشراء-السيارات-056-354-8585"
+      ],
+      "evidence_note": "بطاقة Maps تطابق اسم النشاط والعنوان. رقم البطاقة +966560964425 يطابق أحد رقمي السجل/دليل BizMidEast، وتظهر هناك أيضًا 0563548585؛ لم يثبت أيهما الأساسي. لا موقع/WhatsApp مثبت."
+    },
+    {
+      "id": "entity-ba4bc778cc25",
+      "category": "cars",
+      "name": "معرض بن هيف للسيارات",
+      "city": "خميس مشيط",
+      "locality": "حجلة، 8317، 4608، خميس مشيط 62451، 7MQF+W7",
+      "status": "verified_card_name_city_locality",
+      "current_map": "https://www.google.com/maps/?cid=3489098167682317197",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_maps_card_identity_and_locality",
+        "notes": "بطاقة Maps تطابق اسم المعرض والمدينة والحي والهاتف +966558970974؛ يؤيد العنوان والهاتف BizMidEast وCybo. لا موقع ويب/WhatsApp مثبت."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_and_secondary_match",
+          "value": "0558970974",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-بن-هيف-للسيارات-055-897-0974",
+            "https://yellowpages-ar.cybo.com/SA/خميس-مشيط/مواقف-السيارات-والكراجات/"
+          ]
+        },
+        "website": {
+          "status": "not_listed_by_map_or_primary_source"
+        },
+        "whatsapp": {
+          "status": "not_listed_by_map_or_primary_source"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=3489098167682317197",
+        "https://www.bizmideast.com/SA/معرض-بن-هيف-للسيارات-055-897-0974",
+        "https://yellowpages-ar.cybo.com/SA/خميس-مشيط/مواقف-السيارات-والكراجات/"
+      ],
+      "evidence_note": "بطاقة Maps تطابق اسم المعرض والمدينة والحي والهاتف +966558970974؛ يؤيد العنوان والهاتف BizMidEast وCybo. لا موقع ويب/WhatsApp مثبت."
+    },
+    {
+      "id": "161",
+      "category": "branches",
+      "name": "المنسك",
+      "city": "أبها",
+      "locality": "المنسك",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=18.2235625%2C42.5614375",
+      "status": "unresolved_maps_no_branch_card",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_maps_no_branch_card",
+        "notes": "فتحت رابط إحداثيات الفرع في Google Maps؛ لم تظهر بطاقة فرع قابلة لمطابقة الاسم والعنوان/الحي. لا أعد الإحداثية وحدها إثباتًا للموقع."
+      },
+      "source_urls": [
+        "https://www.google.com/maps/search/?api=1&query=18.2235625%2C42.5614375",
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+        "https://www.riyadbank.com/ar/personal-banking/digital-banking-channels/riyad-self-service",
+        "https://www.riyadbank.com/ar/branches"
+      ],
+      "evidence_note": "مصدر البنك الرسمي يثبت اسم فرع المنسك/الرمز 161 في أبها ويدعم حي المنسك، شارع أبو هريرة؛ لم تثبت بطاقة Maps إحداثية السجل.",
+      "field_checks": {
+        "phone": {
+          "status": "not_present_in_record"
+        },
+        "website": {
+          "status": "not_independently_audited"
+        },
+        "whatsapp": {
+          "status": "not_present_in_record"
+        }
+      }
+    },
+    {
+      "id": "501",
+      "category": "branches",
+      "name": "فرع أحد المسارحة",
+      "city": "أحد المسارحة",
+      "locality": "العز",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=16.71116%2C42.948797",
+      "status": "unresolved_maps_no_branch_card",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_maps_no_branch_card",
+        "notes": "فتحت رابط إحداثيات الفرع في Google Maps؛ لم تظهر بطاقة فرع قابلة لمطابقة الاسم والعنوان/الحي. لا أعد الإحداثية وحدها إثباتًا للموقع."
+      },
+      "source_urls": [
+        "https://www.google.com/maps/search/?api=1&query=16.71116%2C42.948797",
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+        "https://www.riyadbank.com/ar/personal-banking/digital-banking-channels/riyad-self-service",
+        "https://www.riyadbank.com/ar/branches"
+      ],
+      "evidence_note": "المصدر الرسمي يدعم الاسم/المدينة (أحد المسارحة، الجفر في الأحساء، وجامعة الملك فيصل في الهفوف)؛ لا يثبت إحداثية السجل أو الحي المذكور.",
+      "field_checks": {
+        "phone": {
+          "status": "not_present_in_record"
+        },
+        "website": {
+          "status": "not_independently_audited"
+        },
+        "whatsapp": {
+          "status": "not_present_in_record"
+        }
+      }
+    },
+    {
+      "id": "304",
+      "category": "branches",
+      "name": "فرع الهفوف الرئيسي",
+      "city": "الأحساء",
+      "locality": "التعاون",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=25.381358%2C49.590013",
+      "status": "unresolved_official_district_conflict_maps_no_card",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_official_district_conflict_maps_no_card",
+        "notes": "فتحت رابط إحداثيات الفرع في Google Maps؛ لم تظهر بطاقة فرع قابلة لمطابقة الاسم والعنوان/الحي. لا أعد الإحداثية وحدها إثباتًا للموقع."
+      },
+      "source_urls": [
+        "https://www.google.com/maps/search/?api=1&query=25.381358%2C49.590013",
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+        "https://www.riyadbank.com/ar/personal-banking/digital-banking-channels/riyad-self-service",
+        "https://www.riyadbank.com/ar/branches"
+      ],
+      "evidence_note": "مصدر بنك الرياض الرسمي يذكر فرع الهفوف رمز 304 في الفاضلية/شارع علي أبي طالب ويظهر صفًا ثانيًا بالرمز 304 في المبرز/حي الفتح؛ هذا يتعارض مع الحي المخزن «التعاون». لا يمكن اختيار موقع السجل/تصحيح الحي دون حسم أي فرع يقصده السجل؛ يبقى محفوظًا وغير محسوم.",
+      "field_checks": {
+        "phone": {
+          "status": "not_present_in_record"
+        },
+        "website": {
+          "status": "not_independently_audited"
+        },
+        "whatsapp": {
+          "status": "not_present_in_record"
+        }
+      }
+    },
+    {
+      "id": "317",
+      "category": "branches",
+      "name": "فرع الجفر",
+      "city": "الأحساء",
+      "locality": "",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=25.37428%2C49.72018",
+      "status": "unresolved_maps_no_branch_card",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_maps_no_branch_card",
+        "notes": "فتحت رابط إحداثيات الفرع في Google Maps؛ لم تظهر بطاقة فرع قابلة لمطابقة الاسم والعنوان/الحي. لا أعد الإحداثية وحدها إثباتًا للموقع."
+      },
+      "source_urls": [
+        "https://www.google.com/maps/search/?api=1&query=25.37428%2C49.72018",
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+        "https://www.riyadbank.com/ar/personal-banking/digital-banking-channels/riyad-self-service",
+        "https://www.riyadbank.com/ar/branches"
+      ],
+      "evidence_note": "المصدر الرسمي يدعم الاسم/المدينة (أحد المسارحة، الجفر في الأحساء، وجامعة الملك فيصل في الهفوف)؛ لا يثبت إحداثية السجل أو الحي المذكور.",
+      "field_checks": {
+        "phone": {
+          "status": "not_present_in_record"
+        },
+        "website": {
+          "status": "not_independently_audited"
+        },
+        "whatsapp": {
+          "status": "not_present_in_record"
+        }
+      }
+    },
+    {
+      "id": "318",
+      "category": "branches",
+      "name": "فرع جامعة الملك فيصل",
+      "city": "الأحساء",
+      "locality": "العويمري",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=25.3514722%2C49.5919722",
+      "status": "unresolved_maps_no_branch_card",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_maps_no_branch_card",
+        "notes": "فتحت رابط إحداثيات الفرع في Google Maps؛ لم تظهر بطاقة فرع قابلة لمطابقة الاسم والعنوان/الحي. لا أعد الإحداثية وحدها إثباتًا للموقع."
+      },
+      "source_urls": [
+        "https://www.google.com/maps/search/?api=1&query=25.3514722%2C49.5919722",
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+        "https://www.riyadbank.com/ar/personal-banking/digital-banking-channels/riyad-self-service",
+        "https://www.riyadbank.com/ar/branches"
+      ],
+      "evidence_note": "المصدر الرسمي يدعم الاسم/المدينة (أحد المسارحة، الجفر في الأحساء، وجامعة الملك فيصل في الهفوف)؛ لا يثبت إحداثية السجل أو الحي المذكور.",
+      "field_checks": {
+        "phone": {
+          "status": "not_present_in_record"
+        },
+        "website": {
+          "status": "not_independently_audited"
+        },
+        "whatsapp": {
+          "status": "not_present_in_record"
+        }
+      }
+    },
+    {
+      "id": "324",
+      "category": "branches",
+      "name": "فرع العيون",
+      "city": "الأحساء",
+      "locality": "ضاحي الامير سلطان الجنوبي",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=25.5991087%2C49.5615138",
+      "status": "unresolved_maps_no_branch_card",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_maps_no_branch_card",
+        "notes": "فتحت رابط إحداثيات الفرع في Google Maps؛ لم تظهر بطاقة فرع قابلة لمطابقة الاسم والعنوان/الحي. لا أعد الإحداثية وحدها إثباتًا للموقع."
+      },
+      "source_urls": [
+        "https://www.google.com/maps/search/?api=1&query=25.5991087%2C49.5615138",
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+        "https://www.riyadbank.com/ar/personal-banking/digital-banking-channels/riyad-self-service",
+        "https://www.riyadbank.com/ar/branches"
+      ],
+      "evidence_note": "لم يظهر إثبات رسمي حاسم لرمز الفرع وموقعه في العيون من المصادر المفحوصة، وMaps لم يعرض بطاقة فرع.",
+      "field_checks": {
+        "phone": {
+          "status": "not_present_in_record"
+        },
+        "website": {
+          "status": "not_independently_audited"
+        },
+        "whatsapp": {
+          "status": "not_present_in_record"
+        }
+      }
     }
   ],
   "browser_spot_checks": [
@@ -14943,11 +15328,11 @@
   "audit_counts": {
     "as_of_commit": "7286f1f7c23925cdfd16422d60cd30b996c80cb8",
     "map_target_actions": 4059,
-    "opened_and_tied_to_unique_record": 221,
-    "verified_correct": 72,
+    "opened_and_tied_to_unique_record": 232,
+    "verified_correct": 77,
     "corrected_and_retested": 7,
-    "unresolved_after_open": 149,
-    "not_opened": 3838,
+    "unresolved_after_open": 155,
+    "not_opened": 3827,
     "method": "Deduplicated record IDs; map target action per app row uses maps||mapsQ, branch coordinates (246), and generated selfbuild search (10). Correct requires directly opened target and positive name/location/purpose evidence; unresolved and merely opened are excluded. Phone, WhatsApp and website status stays field-specific.",
     "verified_correct_ids": [
       "entity-96716f5db346",
@@ -15023,6 +15408,6 @@
       "P029",
       "cp-karden-asir"
     ],
-    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field. Added 4 office records from Maps card opens: three matching Cards, one record where Maps title appeared but details could not be read; 3 marked correct, 1 unresolved. Official site/WhatsApp checks separated. Denominator reconciled to deduplicated baseline 4,059; previous checkpoints had incorrectly increased the denominator when logging existing dataset rows. All logged IDs were already represented in baseline target count. Before the removed-link re-audit, Maps had 215 opened, 71 verified matches, and 144 unresolved (counts corrected for P029). P029 corrected and post-edit tested: city fixed to Seihat and direct Google Maps card pin now matches project name, Ghadeer district, city; counts updated (+1 correct and corrected/retested, -1 unresolved). Tested and updated project search fallbacks after editing: P016 still returns no result/world center; P021 yields only Mutrafiyah area; P024 yields two similar but unverified candidates. All remain unresolved; none counted correct. Removed-link re-audit: opened 3 regional car searches and 3 company searches; Karden official HQ pin was post-edit tested, adding one verified and corrected/retested record. The other five remain unresolved and retained. Current totals: 4,059 targets; 221 opened; 72 correct; 7 corrected/retested; 149 unresolved; 3,838 unopened."
+    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field. Added 4 office records from Maps card opens: three matching Cards, one record where Maps title appeared but details could not be read; 3 marked correct, 1 unresolved. Official site/WhatsApp checks separated. Denominator reconciled to deduplicated baseline 4,059; previous checkpoints had incorrectly increased the denominator when logging existing dataset rows. All logged IDs were already represented in baseline target count. Before the removed-link re-audit, Maps had 215 opened, 71 verified matches, and 144 unresolved (counts corrected for P029). P029 corrected and post-edit tested: city fixed to Seihat and direct Google Maps card pin now matches project name, Ghadeer district, city; counts updated (+1 correct and corrected/retested, -1 unresolved). Tested and updated project search fallbacks after editing: P016 still returns no result/world center; P021 yields only Mutrafiyah area; P024 yields two similar but unverified candidates. All remain unresolved; none counted correct. Removed-link re-audit: opened 3 regional car searches and 3 company searches; Karden official HQ pin was post-edit tested, adding one verified and corrected/retested record. The other five remain unresolved and retained. Current totals: 4,059 targets; 221 opened; 72 correct; 7 corrected/retested; 149 unresolved; 3,838 unopened. New maps audit: five additional showroom records were opened; all five cards matched record name and locality. One showroom phone conflicts with its Maps listing and another lists two numbers; these are independent field states. Six Riyad Bank coordinate links were opened with no readable branch cards; official sources partially support names/locations and reveal that code 304 has two distinct addresses, so no pin/district correction was made. Updated cumulative totals: 232 opened, 77 proven correct, 7 corrected/retested, 155 unresolved, 3,827 not opened of 4,059 targets."
   }
 }
