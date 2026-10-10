@@ -5,8 +5,8 @@
   "branch": "fix/scope-counts-nhc-20261010",
   "source_head": "51f87c85cb7cd1bcbb6e92a7eb22cf014d7c2961",
   "scope": "Joint Abha-Khamis Mushait cluster, next ten records after Batch02; no city splitting",
-  "count": 10,
-  "note": "Audit findings only. Abha and Khamis Mushait remain a linked scope. No cars.json fields changed. Unconfirmed means direct adequate evidence was not obtained; no map search result is treated as proof of a pin.",
+  "count": 13,
+  "note": "Audit findings only. Abha and Khamis Mushait remain a linked scope. No cars.json fields changed. Unconfirmed means direct adequate evidence was not obtained; no map search result is treated as proof of a pin. Updated direct source checks for three linked Abha–Khamis records and added three Khamis Mushait records; no cars.json values were changed.",
   "entries": [
     {
       "id": "regional-pdf-phase6-cars-bd080bb93cf3b6-011",
@@ -438,6 +438,146 @@
           "status": "unconfirmed",
           "evidence": "No official website verified.",
           "sources": []
+        }
+      }
+    },
+    {
+      "id": "entity-dee18ad48246",
+      "name": "معرض الوادعي لبيع السيارات",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast identifies this exact business as a car showroom.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D8%B9%D9%8A-%D9%84%D8%A8%D9%8A%D8%B9-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-050-773-3999"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "BizMidEast locates the showroom in Khamis Mushait; exact neighborhood remains unconfirmed.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D8%B9%D9%8A-%D9%84%D8%A8%D9%8A%D8%B9-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-050-773-3999"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "Stored 0507733999 matches BizMidEast's published phone.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D8%B9%D9%8A-%D9%84%D8%A8%D9%8A%D8%B9-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-050-773-3999"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp account/link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "not_provided",
+          "evidence": "No Google Maps URL is stored for this record; no replacement pin inferred.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase6-cars-6d2f6d2348871d",
+      "name": "مجموعة صالح للسيارات",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "The official site identifies Saleh Cars as a vehicle sales group.",
+          "sources": [
+            "https://www.salehcars.com/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified",
+          "evidence": "The official branches page lists its Khamis Mushait branch under Asir.",
+          "sources": [
+            "https://www.salehcars.com/contact-us"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "The official contact page publishes 920022122, matching the stored phone.",
+          "sources": [
+            "https://www.salehcars.com/contact-us"
+          ]
+        },
+        "whatsapp": {
+          "status": "verified",
+          "evidence": "The official contact page links WhatsApp at +966920022122.",
+          "sources": [
+            "https://www.salehcars.com/contact-us"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored Google place link was not directly matched against the official branch pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "verified",
+          "evidence": "The stored website is the official Saleh Cars site.",
+          "sources": [
+            "https://www.salehcars.com/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-cars-36b65d0c23b39e",
+      "name": "ظل الجزيرة للسيارات - خميس مشيط",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "The official site identifies Zill Aljazeera as a vehicle-sales company.",
+          "sources": [
+            "https://www.tj4cars.com/contact",
+            "https://www.tj4cars.com/about"
+          ]
+        },
+        "city_locality": {
+          "status": "verified",
+          "evidence": "The official contact page lists Khamis Mushait, King Fahd Road, Al-Ma'arid neighborhood.",
+          "sources": [
+            "https://www.tj4cars.com/contact"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "The official contact page publishes 0508960666, matching the stored number.",
+          "sources": [
+            "https://www.tj4cars.com/contact"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "The official page does not directly identify a WhatsApp link for this number.",
+          "sources": [
+            "https://www.tj4cars.com/contact"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "The official page contains a Maps link, but it could not be opened to compare against the stored Google pin.",
+          "sources": [
+            "https://www.tj4cars.com/contact"
+          ]
+        },
+        "website": {
+          "status": "verified",
+          "evidence": "The stored record has no website; the official company site is https://www.tj4cars.com/.",
+          "sources": [
+            "https://www.tj4cars.com/"
+          ]
         }
       }
     }
