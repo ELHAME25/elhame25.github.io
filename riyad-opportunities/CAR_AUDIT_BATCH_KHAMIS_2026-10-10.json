@@ -1,0 +1,29 @@
+{
+  "schema": "car-audit-batch-v1",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "checked_at": "2026-10-10",
+  "entries": [
+    {
+      "id": "entity-cb0ac77da252",
+      "category": "cars",
+      "city": "خميس مشيط",
+      "name": "معرض الوتيد للسيارات",
+      "decision": "verified_khamis_record_retained_abha_alias_pending",
+      "field_checks": {
+        "name_activity": "الاسم وفئة المعرض متطابقان في بطاقة Google المسجلة؛ صفحة حراج تعرض حسابًا نشطًا للمعرض وعروضًا حديثة في خميس مشيط.",
+        "city_locality": "BizMidEast يدرج هجلة/7MQF+PX2، طريق أبها، خميس مشيط 62451؛ Haraj يعرض إعلانات حديثة في خميس مشيط.",
+        "phone": "0550533000 مطابق في بطاقة Google وBizMidEast.",
+        "whatsapp": "غير مثبت؛ لا رابط مباشر.",
+        "website": "لا موقع رسمي مثبت؛ أُضيف رابط حساب المعرض النشط على حراج.",
+        "google_maps_pin": "سجل التدقيق السابق يثبت بطاقة Google بالاسم والرمز والهاتف؛ العنوان البريدي المستقل يؤيد خميس مشيط. نسخة أبها ذات الهاتف والإحداثية نفسيهما لا تزال معلّقة، ولم تُؤرشف."
+      },
+      "source_urls": [
+        "https://haraj.com.sa/users/معرض%20الوتيد%20للسيارات/",
+        "https://www.bizmideast.com/SA/معرض-الوتيد-للسيارات-055-053-3000",
+        "https://www.google.com/maps/?cid=17711530166608884804",
+        "https://auto.ae/ar/wateedcars/"
+      ],
+      "status": "سجل خميس مشيط موثق ومفعل؛ لا تُعد نسخة أبها مدينة مكتملة أو معرضًا مستقلًا قبل حسم التكرار."
+    }
+  ]
+}
