@@ -1,0 +1,74 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-10",
+  "source_head": "efc71e64130acb8273d0c5574fce0d97fcb157f2",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": "additional Riyadh non-Qadisiyah showroom checks; no cars.json changes",
+  "verification_method": "Independent web-source checks, no direct Google Maps place card verification or telephone call",
+  "count": 3,
+  "entries": [
+    {
+      "id": "v9-car-07412c33b068",
+      "status": "name_activity_supported_phone_conflict",
+      "evidence": "Small Wagun self-described website and several directories corroborate name and Riyadh Shifa/Marwah location. Stored 0536357605 not on official contact list; official site publishes 0502126506,0533606130,0501495324,0530301454,0555271709; older directories publish 0114224612; ArabWheels publishes 0556223200. Do not replace without resolving branch identity.",
+      "sources": [
+        "https://smallwagun.com/",
+        "https://guidesaudi.com/Item/42668/معرض-العربة-الصغيرة-للسيارات",
+        "https://www.arabwheels.sa/dealers/?page=3"
+      ],
+      "google_maps_pin": "unverified",
+      "whatsapp": "unverified",
+      "stored": {
+        "name": "معرض العربة الصغيرة للسيارات",
+        "city": "الرياض",
+        "neighborhood": "المروة",
+        "phones": [
+          "0536357605"
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": ""
+      }
+    },
+    {
+      "id": "phase5-google-6308243084985542083",
+      "status": "name_phone_city_supported",
+      "evidence": "ArabWheels dealer listing identifies الاصدار الخامس للسيارات / Five Edition Cars, An Narjis Riyadh, phone 0500662665 matching stored phone. Does not verify precise street or Google Maps place card.",
+      "sources": [
+        "https://www.arabwheels.sa/dealers/?page=3"
+      ],
+      "google_maps_pin": "unverified",
+      "whatsapp": "unverified",
+      "stored": {
+        "name": "صالة الإصدار الخامس للسيارات",
+        "city": "الرياض",
+        "neighborhood": "حي النرجس، طريق أبي بكر الصديق",
+        "phones": [
+          "0500662665"
+        ],
+        "maps": "https://www.google.com/maps/?cid=6308243084985542083",
+        "website": ""
+      }
+    },
+    {
+      "id": "v9-car-0ddf3d1c662a",
+      "status": "activity_phone_address_supported",
+      "evidence": "Multiple dealer-authored recent Haraj listings for معرض سماء الرياض للسيارات publish showroom landline 0114210111 and Riyadh Shifa car showrooms on Jubrail bin Jameel street. Google Maps place pin still not independently verified.",
+      "sources": [
+        "https://beta.haraj.com.sa/en/11188270666/Toyota_Veloz_2026_GLX_Full_Option/",
+        "https://haraj.com.sa/11189936950/باص_هاي_اس_فان_2025_بضاعة_سقف_مرتفع_جير_عادي_ديزل/"
+      ],
+      "google_maps_pin": "unverified",
+      "whatsapp": "unverified",
+      "stored": {
+        "name": "معرض سماء الرياض للسيارات",
+        "city": "الرياض",
+        "neighborhood": "المروة",
+        "phones": [
+          "0114210111"
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B3%D9%85%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": ""
+      }
+    }
+  ]
+}
