@@ -18927,6 +18927,40 @@
         "status": "unresolved_no_verified_city_specific_pin",
         "notes": "نسخة مدينة مجاورة؛ لا توجد بطاقة محلية مثبتة. حُذفت مراجع الخرائط غير المحلية/البحثية فقط، وبقيت بيانات المصدر والاسم والعنوان والهاتف والمدينة الأصلية دون حذف."
       }
+    },
+    {
+      "id": "phase5-google-16243200524237174562",
+      "category": "cars",
+      "name": "معرض البكاري للسيارات",
+      "city": "المدينة المنورة",
+      "locality": "حي الدار،4885 ثابت بن الدحداح",
+      "status": "corrected_google_place_pin_from_matching_business_page",
+      "current_map": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%A8%D9%83%D8%A7%D8%B1%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.5487682,39.6224816,17z/data=!3m1!4b1!4m6!3m5!1s0x15bdbdadc946174d:0xe16b70d10e987722!8m2!3d24.5487682!4d39.6224816!16s%2Fg%2F11fktzl8k4?hl=ar&entry=tts&shorturl=1",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "corrected_and_retested",
+        "notes": "Google Place ID g/11fktzl8k4 ارتبط من زر صفحة الجزيرة المطابقة للاسم والعنوان والهاتف؛ إحداثيات Google الظاهرة في الرابط 24.5487682,39.6224816. كانت الإحداثية القديمة 24.53048,39.63777. تم فتح رابط الموقع بعد حفظ التصحيح."
+      },
+      "source_urls": [
+        "https://www.aljazeeramaps.com/listing/معرض-البكاري-للسيارات،-المدينة-المنور",
+        "https://www.google.com/maps/place/معرض+البكاري+للسيارات/@24.5487682,39.6224816,17z/data=!3m5!1s0x15bdbdadc946174d:0xe16b70d10e987722!8m2!3d24.5487682!4d39.6224816!16s%2Fg%2F11fktzl8k4"
+      ],
+      "evidence_note": "صفحة خرائط الجزيرة المطابقة تعرض الاسم، المدينة، العنوان 4885 ثابت بن الدحداح/الدار والهاتف 0500777033. زر Google فيها حوّل إلى Google Place ID g/11fktzl8k4 عند 24.5487682,39.6224816، فاستبدلت إحداثيات السجل القديمة (24.53048,39.63777). الموقع mg-albakkari.com أعاد 502 عند الاختبار، لذلك لم أضفه كوجهة web.",
+      "field_checks": {
+        "phone": {
+          "status": "verified_on_matching_listing",
+          "value": "0500777033"
+        },
+        "website": {
+          "status": "listed_but_tested_502_not_added",
+          "url": "https://mg-albakkari.com/"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        }
+      }
     }
   ],
   "browser_spot_checks": [
@@ -19111,6 +19145,14 @@
         "regional-pdf-pdf-smalltown-021-045"
       ],
       "result": "أزيلت المراجع غير المحلية أو روابط البحث العامة فقط من نسخ لم يثبت لها دبوس محلي؛ لم تحذف السجلات أو تعدل الاسم/العنوان/الهاتف/المدينة الأصلية أو بيانات المصدر."
+    },
+    {
+      "checked_at": "2026-10-10",
+      "scope": "تصحيح دبوس معرض البكاري بالمدينة",
+      "record_ids": [
+        "phase5-google-16243200524237174562"
+      ],
+      "result": "تحديث الإحداثيات ورابط Google Place ID من زر الصفحة المطابقة؛ اختبار الصفحة الرئيسية لموقع المعرض أعاد 502 لذلك لم يضف."
     }
   ],
   "audit_counts": {
