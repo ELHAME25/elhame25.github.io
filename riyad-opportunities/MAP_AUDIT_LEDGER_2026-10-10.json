@@ -491,13 +491,44 @@
       "name": "روشن فيو العقارية",
       "city": "جازان",
       "locality": "السويس",
-      "status": "search_fallback_added_not_pin_verified",
+      "status": "corrected_exact_official_pin_pending_post_edit_retest",
       "source_urls": [
-        "https://roshnview.com/"
+        "https://roshnview.com/",
+        "https://roshnview.com/contact-us/",
+        "https://www.google.com/maps/place/شركة+روشن+فيو+العقارية%E2%80%AD/@16.8702013,42.5821558,17z/data=!4m8!3m7!1s0x1607e3b547bc50a3:0xa85099f09fbfa9be!8m2!3d16.8701962!4d42.5847307!9m1!1b1!16s%2Fg%2F11vrxz1mr8?entry=ttu"
       ],
       "search_phrase": "روشن فيو العقارية السويس جازان",
       "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%B1%D9%88%D8%B4%D9%86%20%D9%81%D9%8A%D9%88%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%B3%20%D8%AC%D8%A7%D8%B2%D8%A7%D9%86",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "evidence_note": "The exact map place URL is linked from the official website; actual post-edit data link will be reopened after commit.",
+      "current_map": "https://www.google.com/maps/place/شركة+روشن+فيو+العقارية%E2%80%AD/@16.8702013,42.5821558,17z/data=!4m8!3m7!1s0x1607e3b547bc50a3:0xa85099f09fbfa9be!8m2!3d16.8701962!4d42.5847307!9m1!1b1!16s%2Fg%2F11vrxz1mr8?entry=ttu",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "exact_named_map_pin_official_site_link",
+        "notes": "Official roshnview.com Maps link opens Google Maps place card named شركة روشن فيو العقارية at 16.8701962,42.5847307, in Jazan. Official contact page gives Abu Bakr Al-Siddiq St, Al-Suwais, Jazan and phone 0500795552 matching record. Prior stored coords 16.86227,42.59703 were ~1.8km away."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "officially_verified",
+          "value": "0500795552",
+          "source": "https://roshnview.com/contact-us/"
+        },
+        "whatsapp": {
+          "status": "not_separately_published"
+        },
+        "website": {
+          "status": "official_and_maps_card_domain_match",
+          "value": "https://roshnview.com/"
+        }
+      },
+      "corrected_from": {
+        "map": "",
+        "coords": [
+          16.86227,
+          42.59703
+        ],
+        "prior_search": "روشن فيو العقارية جازان السويس"
+      }
     },
     {
       "id": "entity-96716f5db346",
@@ -7366,34 +7397,6 @@
       "evidence_note": "The current app constructs this Maps search link in the card; no exact pin is stored in the record."
     },
     {
-      "id": "sb-b0ec99bd45",
-      "category": "selfbuild",
-      "name": "مشروع المدائن",
-      "city": "حائل",
-      "locality": "جنوب حائل",
-      "status": "ui_generates_search_fallback_not_pin_verified",
-      "source_urls": [
-        "https://sakani.sa/app/land-projects/239"
-      ],
-      "search_phrase": "مشروع المدائن جنوب حائل حائل",
-      "alternative": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%A6%D9%86%20%D8%AC%D9%86%D9%88%D8%A8%20%D8%AD%D8%A7%D8%A6%D9%84%20%D8%AD%D8%A7%D8%A6%D9%84",
-      "evidence_note": "The current app constructs this Maps search link in the card; no exact pin is stored in the record."
-    },
-    {
-      "id": "sb-4ff6a29617",
-      "category": "selfbuild",
-      "name": "إسكان الشنان",
-      "city": "حائل",
-      "locality": "شرق الشنان",
-      "status": "ui_generates_search_fallback_not_pin_verified",
-      "source_urls": [
-        "https://sakani.sa/app/land-projects/398"
-      ],
-      "search_phrase": "إسكان الشنان شرق الشنان حائل",
-      "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%A5%D8%B3%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%B4%D9%86%D8%A7%D9%86%20%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B4%D9%86%D8%A7%D9%86%20%D8%AD%D8%A7%D8%A6%D9%84",
-      "evidence_note": "The current app constructs this Maps search link in the card; no exact pin is stored in the record."
-    },
-    {
       "id": "sb-03618dd35f",
       "category": "selfbuild",
       "name": "مخطط وزارة البلديات والإسكان | الشنان",
@@ -9433,7 +9436,7 @@
       "tested_at": "2026-10-10"
     }
   ],
-  "last_verified_head": "728617273e4486a5a7108487d7e0517ee6be6c44",
+  "last_verified_head": "88a26a504b682b5023f506197b671f7176c48f3f",
   "last_batch": {
     "checked_maps": 20,
     "verified_correct": 14,
@@ -9470,6 +9473,13 @@
       "selfbuild_pins_matched": 0,
       "notes": "No branch pin is counted as correct because Google Maps did not yield a place card. Branch codes are stored as IDs as used in this audit. No self-build exact pin confirmed. Office currentMap links reflect Maps URLs generated from mapsQ/coordinates because rows have no explicit maps URL.",
       "office_map_links_opened": 5
+    },
+    {
+      "date": "2026-10-10",
+      "head": "88a26a504b682b5023f506197b671f7176c48f3f",
+      "new_map_targets": 1,
+      "official_exact_pin_candidates": 1,
+      "notes": "Roshn View official website provides Google Maps review link resolving to exact named company and coordinates; replaced unpinned/stale coordinates. Post-edit link retest pending."
     }
   ]
 }
