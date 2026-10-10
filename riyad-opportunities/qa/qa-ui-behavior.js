@@ -164,14 +164,14 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   A.state().explore = 'شمال';
   const northDestinations = A.itemsFor('nhc', 'شمال', 'sector');
   const allDestinations = A.itemsFor('nhc', '', 'city');
-  const eastProjects = A.itemsFor('projects', 'شرق', 'sector');
-  const allProjects = A.itemsFor('projects', '', 'city');
+  const eastProjectRowsForCount = A.itemsFor('projects', 'شرق', 'sector');
+  const allRiyadhProjectRowsForCount = A.itemsFor('projects', '', 'city');
   A.state().explore = 'شرق'; A.state().tab = 'nhc'; A.renderBranch();
   assert('NHC destinations are separate from projects, sector-specific, and city view retains all destinations',
     eastBranchDestinations.length === 3 && eastDestinations.length === 3 &&
     eastDestinations.every(x => (x.o.sectors || []).includes('شرق')) &&
     northDestinations.length === 1 && allDestinations.length === 5 &&
-    eastProjects.length === 59 && allProjects.length === 261 &&
+    eastProjectRowsForCount.length === 59 && allRiyadhProjectRowsForCount.length === 261 &&
     els.app.innerHTML.includes('وجهات NHC') && els.app.innerHTML.includes('data-tab="nhc"'));
   // Open details from the card's delegated click, close with its close control, and open by Enter.
   A.state().q = {}; A.state().scope = 'city'; A.state().tab = 'projects'; A.renderBranch();
