@@ -1,0 +1,489 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "c67554bcc3c6b53d177441df276dc9f841b5b6aa",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "Abha first ten unreviewed records; no Qadisiyah records",
+  "count": 10,
+  "entries": [
+    {
+      "id": "entity-a06af30db1c2",
+      "name": "معرض الرايه الامثل للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "The showroom is listed as an automotive seller and has active showroom advertisements.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/",
+            "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B1%D8%A7%D9%8A%D9%87%20%D8%A7%D9%84%D8%A7%D9%85%D8%AB%D9%84%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D8%A8%D9%87%D8%A7"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict",
+          "evidence": "Cybo/StriveME place it at Al-Matar, King Fahd Road near Al-Rajhi; ICartea instead gives Al-Rabwa/King Abdullah Road. City Abha is consistent, exact neighborhood/address conflicts.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/",
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D8%A8%D9%87%D8%A7",
+            "https://ksa.icartea.com/car-service/provider/al-raya-optimal-cars-showroom"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "0534429821 appears on Cybo and StriveME and on active showroom listings.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/",
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D8%A8%D9%87%D8%A7",
+            "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B1%D8%A7%D9%8A%D9%87%20%D8%A7%D9%84%D8%A7%D9%85%D8%AB%D9%84%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No verified WhatsApp link/account was found in the checked sources; no WhatsApp URL is present in this record.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unavailable",
+          "evidence": "No maps link stored for this ID; Google pin not verified.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "saedcars.com is the official site of Saeed Salem Al-Shahrani Cars; a directory associates it with this showroom, but exact ownership/branch relation is unconfirmed.",
+          "sources": [
+            "https://saedcars.com/",
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-cars-48b2393f96feba",
+      "name": "معرض الرايه الامثل للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Same named active showroom appears in Haraj/Cybo listings.",
+          "sources": [
+            "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B1%D8%A7%D9%8A%D9%87%20%D8%A7%D9%84%D8%A7%D9%85%D8%AB%D9%84%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/"
+          ]
+        },
+        "city_locality": {
+          "status": "incorrect_with_supported_replacement",
+          "evidence": "Record contains garbled trailing address fragments. Cybo gives the clean address صالة الراجحي، 2545 طريق الملك فهد، أبها 62437 7843; exact neighborhood is reported inconsistently elsewhere.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/",
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D8%A8%D9%87%D8%A7"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "0530287489 is explicitly published in an active ad for the showroom; 0534429821 is also published for the same showroom, so records appear to duplicate one business with distinct sales contacts.",
+          "sources": [
+            "https://haraj.com.sa/11164708180/%D8%AA%D9%88%D8%B1%D8%B3_%D8%A7%D9%85%D8%A8%D9%8A%D8%A7%D9%86%D8%AA%D9%8A_2025_%D8%B9%D8%B1%D9%88%D8%B6_%D8%A7%D9%84%D9%8A%D9%88%D9%85_%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A/",
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No verified WhatsApp link/account was found in the checked sources; no WhatsApp URL is present in this record.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps page could not be opened with the available reader. The URL's format or search result is not treated as proof of the pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "saedcars.com is related by a directory listing, but its official site identifies a different legal/company name; relation to this showroom is not independently confirmed.",
+          "sources": [
+            "https://saedcars.com/",
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-1e32869fea87",
+      "name": "معرض عز العرب",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Two directory sources list the showroom as an auto dealer.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B9%D8%B2-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8-055-534-9344",
+            "https://www.cybo.com/SA-biz/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B9%D8%B2-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8"
+          ]
+        },
+        "city_locality": {
+          "status": "verified",
+          "evidence": "Both sources place it behind the Chamber of Commerce on Abha-Khamis Road, Abha.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B9%D8%B2-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8-055-534-9344",
+            "https://www.cybo.com/SA-biz/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B9%D8%B2-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "0555349344 matches across BizMidEast and Cybo.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B9%D8%B2-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8-055-534-9344",
+            "https://www.cybo.com/SA-biz/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B9%D8%B2-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No verified WhatsApp link/account was found in the checked sources; no WhatsApp URL is present in this record.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps page could not be opened with the available reader. The URL's format or search result is not treated as proof of the pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No website verified as belonging to this exact showroom; blank/other company links are not treated as proof.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "entity-faa8a7e44fe6",
+      "name": "معرض بن قزان للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Name and vehicle-dealer activity appear in Cybo's Abha dealer directory.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/"
+          ]
+        },
+        "city_locality": {
+          "status": "partially_verified",
+          "evidence": "Abha and address near the Chamber of Commerce are listed; precise neighborhood not established.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "0506484537 appears in Cybo's Abha listing and an independent regional roundup.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/",
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No verified WhatsApp link/account was found in the checked sources; no WhatsApp URL is present in this record.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "not_a_pin",
+          "evidence": "Current URL is a general Google Maps search, not a place card; the correct pin remains unverified.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No website verified as belonging to this exact showroom; blank/other company links are not treated as proof.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase6-cars-e70c72395f26c1",
+      "name": "شيخ المعارض ابها",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "partially_verified",
+          "evidence": "Multiple directories categorize the listing among auto dealers, but the title may describe a showroom cluster/market role rather than a distinct dealership.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D8%B4%D9%8A%D8%AE-%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D8%A8%D9%87%D8%A7-017-227-1375",
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/"
+          ]
+        },
+        "city_locality": {
+          "status": "partially_verified",
+          "evidence": "Directory address is 4920, Abha 62529; neighborhood/individual showroom location not confirmed.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D8%B4%D9%8A%D8%AE-%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D8%A8%D9%87%D8%A7-017-227-1375",
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "0172271375 is repeated by BizMidEast and NearPlace; not independently confirmed by an official business source.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D8%B4%D9%8A%D8%AE-%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D8%A8%D9%87%D8%A7-017-227-1375",
+            "https://sa.near-place.com/shykh-almard-abha-4920-abha-62529"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No verified WhatsApp link/account was found in the checked sources; no WhatsApp URL is present in this record.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps page could not be opened with the available reader. The URL's format or search result is not treated as proof of the pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No website verified as belonging to this exact showroom; blank/other company links are not treated as proof.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase6-cars-7dda7f96a004e0",
+      "name": "معرض آل عبود للسيارات بجميع أنواعها",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Listed as a car showroom/dealer by business directories.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A2%D9%84-%D8%B9%D8%A8%D9%88%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D8%AC%D9%85%D9%8A%D8%B9-%D8%A3%D9%86%D9%88%D8%A7%D8%B9%D9%87%D8%A7-017-231-6161",
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified",
+          "evidence": "Address listed at 4993, Abha 62529; broader locality is Abha.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A2%D9%84-%D8%B9%D8%A8%D9%88%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D8%AC%D9%85%D9%8A%D8%B9-%D8%A3%D9%86%D9%88%D8%A7%D8%B9%D9%87%D8%A7-017-231-6161",
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "0172316161 is listed by BizMidEast; no official source found.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A2%D9%84-%D8%B9%D8%A8%D9%88%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D8%AC%D9%85%D9%8A%D8%B9-%D8%A3%D9%86%D9%88%D8%A7%D8%B9%D9%87%D8%A7-017-231-6161"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No verified WhatsApp link/account was found in the checked sources; no WhatsApp URL is present in this record.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps page could not be opened with the available reader. The URL's format or search result is not treated as proof of the pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No website verified as belonging to this exact showroom; blank/other company links are not treated as proof.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase6-cars-e75ae5a9b09c0e",
+      "name": "معرض القحاص لبيع وشراء السيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Listed in Abha auto-dealer directories.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/",
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "city_locality": {
+          "status": "partially_verified",
+          "evidence": "Abha and address near 5004/62529 appear in directory listings; exact district not resolved.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "0542360549 appears in Cybo and a regional directory.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/",
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No verified WhatsApp link/account was found in the checked sources; no WhatsApp URL is present in this record.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps page could not be opened with the available reader. The URL's format or search result is not treated as proof of the pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No website verified as belonging to this exact showroom; blank/other company links are not treated as proof.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase6-cars-75dfdefd60deba",
+      "name": "معرض الوتيد للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Three local directories identify an active used/new car showroom.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%AA%D9%8A%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-055-053-3000",
+            "https://wynuh.com/place/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%AA%D9%8A%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+            "https://sa.near-place.com/mrd-alwtyd-llsyarat-tryq-abha-khmys-mshyt/es"
+          ]
+        },
+        "city_locality": {
+          "status": "incorrect_with_supported_replacement",
+          "evidence": "Record city says Abha, while BizMidEast, Wynnuh and NearPlace place this exact listing at Hijlah, Khamis Mushait, 62451. Proposed city correction: خميس مشيط.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%AA%D9%8A%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-055-053-3000",
+            "https://wynuh.com/place/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%AA%D9%8A%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+            "https://sa.near-place.com/mrd-alwtyd-llsyarat-tryq-abha-khmys-mshyt/es"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "0550533000 matches across BizMidEast, Wynnuh and NearPlace.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%AA%D9%8A%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-055-053-3000",
+            "https://wynuh.com/place/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%AA%D9%8A%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+            "https://sa.near-place.com/mrd-alwtyd-llsyarat-tryq-abha-khmys-mshyt/es"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No verified WhatsApp link/account was found in the checked sources; no WhatsApp URL is present in this record.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps page could not be opened with the available reader. The URL's format or search result is not treated as proof of the pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No website verified as belonging to this exact showroom; blank/other company links are not treated as proof.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase6-cars-ede672b5cfc35a",
+      "name": "شركة رمز الاختيار للتجارة",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Ramz's official account and app describe the company as selling cars; exact Abha branch activity is supported by the local listing.",
+          "sources": [
+            "https://x.com/RamzElekhtear/status/1939664466196459980",
+            "https://apps.apple.com/au/app/%D8%B1%D9%85%D8%B2-%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/id1571358791",
+            "https://albaraka.ma/annuaire/%D8%B4%D8%B1%D9%83%D8%A9-%D8%B1%D9%85%D8%B2-%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1-%D8%A3%D8%A8%D9%87%D8%A7-966-54-244-3259/"
+          ]
+        },
+        "city_locality": {
+          "status": "partially_verified",
+          "evidence": "Local directory lists 6161 King Fahd Road, Abha 62563; exact branch pin/address not independently confirmed.",
+          "sources": [
+            "https://albaraka.ma/annuaire/%D8%B4%D8%B1%D9%83%D8%A9-%D8%B1%D9%85%D8%B2-%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1-%D8%A3%D8%A8%D9%87%D8%A7-966-54-244-3259/"
+          ]
+        },
+        "phone": {
+          "status": "conflict_unresolved",
+          "evidence": "Record has 0502814093. Local directory gives 0542443259, while Ramz's official account publishes central 8001260333. No evidence ties either mobile to this exact branch; do not substitute the central line.",
+          "sources": [
+            "https://albaraka.ma/annuaire/%D8%B4%D8%B1%D9%83%D8%A9-%D8%B1%D9%85%D8%B2-%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1-%D8%A3%D8%A8%D9%87%D8%A7-966-54-244-3259/",
+            "https://x.com/RamzElekhtear/status/1939664466196459980"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No verified WhatsApp link/account was found in the checked sources; no WhatsApp URL is present in this record.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps page could not be opened with the available reader. The URL's format or search result is not treated as proof of the pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "Official account is present; the blank record has no website. A branch-specific official site URL was not verified.",
+          "sources": [
+            "https://x.com/RamzElekhtear/status/1939664466196459980"
+          ]
+        }
+      },
+      "scope_note": "Possible corporate dealership; do not archive as an authorized agency without branch-specific evidence."
+    },
+    {
+      "id": "phase6-cars-733f8d18c31326",
+      "name": "معرض بن عبود للسيارات",
+      "record_city": "أبها",
+      "fields": {
+        "name_activity": {
+          "status": "partially_verified",
+          "evidence": "Directory listings support an auto-dealer listing named بن عبود; possible duplication with nearby آل عبود record remains unresolved.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/",
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_city_locality_unresolved_identity",
+          "evidence": "Listing is placed in Al-Mahala, Abha. Its coordinates are very close to the separate آل عبود listing; exact identity/duplicate relation needs confirmation.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "0561945619 appears in Cybo/HalaCarly; no official source found.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA/%D8%A3%D8%A8%D9%87%D8%A7/%D8%AA%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/",
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No verified WhatsApp link/account was found in the checked sources; no WhatsApp URL is present in this record.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps page could not be opened with the available reader. The URL's format or search result is not treated as proof of the pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No website verified as belonging to this exact showroom; blank/other company links are not treated as proof.",
+          "sources": []
+        }
+      }
+    }
+  ],
+  "notes": [
+    "No Google Maps pin in this batch was confirmed open by the available reader; URLs are not treated as proof.",
+    "WhatsApp links were not verified for these records; this means unconfirmed, not that the businesses lack WhatsApp.",
+    "No changes applied to cars.json. Only the wrong city for Al Watid and the corrupted address string on the duplicate Al Raya entry have supported replacement candidates; no data edits were made.",
+    "Official agency status for Ramz branch remains unresolved; no record was archived.",
+    "The two Al Raya IDs appear to refer to the same showroom. Preserve both until de-duplication is safely established."
+  ]
+}
