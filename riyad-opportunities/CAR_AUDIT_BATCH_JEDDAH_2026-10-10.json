@@ -1,0 +1,53 @@
+{
+  "schema": "car-audit-batch-v1",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "checked_at": "2026-10-10",
+  "entries": [
+    {
+      "id": "phase5-car-d4be6fd1a88e",
+      "category": "cars",
+      "city": "جدة",
+      "name": "معرض فيض الخيرات للسيارات",
+      "decision": "retained_partial_pin_unverified",
+      "field_checks": {
+        "name_activity": "مطابق في Waze وموتري ودليل BizMidEast؛ نشاط بيع السيارات المستعملة مثبت.",
+        "city_locality": "جدة، الجوهرة، شارع أحمد ذاكر إدريس، الرمز 22417؛ تؤيده Waze وYango وBizMidEast.",
+        "phones": "0550761199 في Waze؛ 0509920428 و0505730813 في BizMidEast وصفحة نشاط على LinkedIn. أضيفت الأرقام الثلاثة إلى phones.",
+        "whatsapp": "غير مثبت لأي رقم بعينه؛ لم يُنشأ رابط wa.me.",
+        "website": "faydalkhayrat.com يظهر في بطاقة Waze؛ أبقي كما هو.",
+        "google_maps_pin": "رابط CID قائم لكن لم يمكن التحقق من الدبوس؛ أُبقي الرابط موسومًا غير مؤكد، وأزيلت lat/lon لتجنب عرض إحداثيات غير مثبتة."
+      },
+      "source_urls": [
+        "https://www.waze.com/ar/live-map/directions/sa/mkh-almkrmh/jdh/mardh-fydh-alkhyrat-llsyarat-jdh-fayd-al-khayraat-car-show-room?to=place.ChIJ58P2s4DLwxURRBKU-zFitZ4",
+        "https://ksa.motory.com/ar/الدليل/شركة/معرض-فيض-الخيرات-للسيارات/",
+        "https://www.bizmideast.com/SA/معرض-فيض-الخيرات-للسيارات-جدة-fayd-al-050-992-0428",
+        "https://maps.yango.com/en-sa/org/45097189936/",
+        "https://sa.linkedin.com/in/ehab-salama-69566b344"
+      ],
+      "status": "الجهة والنشاط ووسائل الاتصال المدعومة؛ دبوس Google غير محسوم؛ لا يُعد مكتمل التدقيق مكانيًا."
+    },
+    {
+      "id": "phase5-car-062bda41f13d",
+      "category": "cars",
+      "city": "جدة",
+      "name": "معرض الشلبى للسيارات المستوردة",
+      "decision": "retained_partial_pin_unverified",
+      "field_checks": {
+        "name_activity": "مطابق في Waze وكاندال ودليل موتري؛ نشاط معرض سيارات مثبت.",
+        "city_locality": "جدة، الجوهرة، C7M3+F86؛ تؤيده Waze وكاندال وCybo.",
+        "phones": "0555611699 مطابق في Waze وكاندال وCybo؛ أُبقي.",
+        "whatsapp": "كاندال يربط الرقم مباشرة برابط wa.me/966555611699 المطابق لـ0555611699.",
+        "website": "حساب twitter.com/shalabicars مرتبط في Waze وكاندال؛ أبقي. دليل آخر يذكر shalabiauto.com لكن لم يمكن فتحه، فلا أعتمده.",
+        "google_maps_pin": "رابط CID قائم لكن لم يمكن التحقق من الدبوس؛ أُبقي الرابط موسومًا غير مؤكد، وأزيلت lat/lon لتجنب عرض إحداثيات غير مثبتة."
+      },
+      "source_urls": [
+        "https://www.waze.com/ar/live-map/directions/sa/mkh-almkrmh/jdh/mardh-alshlba-llsyarat-almstwrdh?to=place.ChIJARSQ3vPLwxURFVWrFqlgCd8",
+        "https://kandal.sa/stores/maard-alshlb-llsyarat-almstord-chijar",
+        "https://yellowpages-ar.cybo.com/SA/جدة/تجار-السيارات-المستعملة",
+        "https://sa.near-place.com/mrd-alshlby-llsyarat-almstwrdt-jeddah",
+        "https://ksa.motory.com/ar/الدليل/شركة/معرض-الشلبي-للسيارات/"
+      ],
+      "status": "الجهة والنشاط والاتصال وواتساب والرابط الاجتماعي مدعومة؛ دبوس Google غير محسوم؛ لا يُعد مكتمل التدقيق مكانيًا."
+    }
+  ]
+}
