@@ -491,43 +491,17 @@
       "name": "روشن فيو العقارية",
       "city": "جازان",
       "locality": "السويس",
-      "status": "corrected_exact_official_pin_pending_post_edit_retest",
+      "status": "corrected_exact_official_pin_retested",
       "source_urls": [
-        "https://roshnview.com/",
-        "https://roshnview.com/contact-us/",
-        "https://www.google.com/maps/place/شركة+روشن+فيو+العقارية%E2%80%AD/@16.8702013,42.5821558,17z/data=!4m8!3m7!1s0x1607e3b547bc50a3:0xa85099f09fbfa9be!8m2!3d16.8701962!4d42.5847307!9m1!1b1!16s%2Fg%2F11vrxz1mr8?entry=ttu"
+        "https://roshnview.com/"
       ],
       "search_phrase": "روشن فيو العقارية السويس جازان",
       "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%B1%D9%88%D8%B4%D9%86%20%D9%81%D9%8A%D9%88%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%B3%20%D8%AC%D8%A7%D8%B2%D8%A7%D9%86",
-      "evidence_note": "The exact map place URL is linked from the official website; actual post-edit data link will be reopened after commit.",
-      "current_map": "https://www.google.com/maps/place/شركة+روشن+فيو+العقارية%E2%80%AD/@16.8702013,42.5821558,17z/data=!4m8!3m7!1s0x1607e3b547bc50a3:0xa85099f09fbfa9be!8m2!3d16.8701962!4d42.5847307!9m1!1b1!16s%2Fg%2F11vrxz1mr8?entry=ttu",
-      "checked_at": "2026-10-10",
+      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin.",
       "map_check": {
         "opened": true,
-        "status": "exact_named_map_pin_official_site_link",
-        "notes": "Official roshnview.com Maps link opens Google Maps place card named شركة روشن فيو العقارية at 16.8701962,42.5847307, in Jazan. Official contact page gives Abu Bakr Al-Siddiq St, Al-Suwais, Jazan and phone 0500795552 matching record. Prior stored coords 16.86227,42.59703 were ~1.8km away."
-      },
-      "field_checks": {
-        "phone": {
-          "status": "officially_verified",
-          "value": "0500795552",
-          "source": "https://roshnview.com/contact-us/"
-        },
-        "whatsapp": {
-          "status": "not_separately_published"
-        },
-        "website": {
-          "status": "official_and_maps_card_domain_match",
-          "value": "https://roshnview.com/"
-        }
-      },
-      "corrected_from": {
-        "map": "",
-        "coords": [
-          16.86227,
-          42.59703
-        ],
-        "prior_search": "روشن فيو العقارية جازان السويس"
+        "status": "corrected_exact_official_pin_retested",
+        "notes": "Final stored direct Maps link reopened after data commit; card is named شركة روشن فيو العقارية, official site links same pin, contact page confirms Suwais, Jazan and phone."
       }
     },
     {
@@ -599,12 +573,31 @@
       "category": "offices",
       "name": "مكتب عقار الباحة",
       "city": "الباحة",
-      "locality": "",
-      "status": "search_fallback_added_not_pin_verified",
-      "source_urls": [],
-      "search_phrase": "مكتب عقار الباحة الباحة",
-      "alternative": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "locality": "الباهر/الحوية",
+      "status": "unresolved_location_conflict",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_location_conflict",
+        "notes": "Maps blank; Ejar matching business and secondary sources disagree locality; phone secondary only."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Maps blank; Ejar matching business and secondary sources disagree locality; phone secondary only."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://ejar.sa/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9"
+      ]
     },
     {
       "id": "entity-a4e2a8ee6f6f",
@@ -612,11 +605,29 @@
       "name": "مكتب عقار الباحة الفريني",
       "city": "الباحة",
       "locality": "",
-      "status": "search_fallback_added_not_pin_verified",
-      "source_urls": [],
-      "search_phrase": "مكتب عقار الباحة الفريني الباحة",
-      "alternative": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9%20%D8%A7%D9%84%D9%81%D8%B1%D9%8A%D9%86%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "status": "unresolved_no_exact_match",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9%20%D8%A7%D9%84%D9%81%D8%B1%D9%8A%D9%86%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_no_exact_match",
+        "notes": "Search no exact place, phone/site/WA unverified."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Search no exact place, phone/site/WA unverified."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9%20%D8%A7%D9%84%D9%81%D8%B1%D9%8A%D9%86%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9"
+      ]
     },
     {
       "id": "cp-da8cabf976",
@@ -657,26 +668,64 @@
     {
       "id": "cp-8db0b586c9",
       "category": "companies",
-      "name": "شركة بوابة الدرعية المحدودة",
-      "city": "الرياض",
-      "locality": "",
-      "status": "search_fallback_added_not_pin_verified",
-      "source_urls": [],
-      "search_phrase": "شركة بوابة الدرعية المحدودة الرياض",
-      "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "name": "بوابة الدرعية المحدودة",
+      "city": "الدرعية/الرياض",
+      "locality": "الشهداء",
+      "status": "unresolved_related_authority_pin",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_related_authority_pin",
+        "notes": "Official Maps route leads to Diriyah Gate Authority not exact company. Official contact confirms 920021727 and WA same number/address."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Official Maps route leads to Diriyah Gate Authority not exact company. Official contact confirms 920021727 and WA same number/address."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://www.dgda.gov.sa/contact-us",
+        "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+      ]
     },
     {
       "id": "cp-5ef80d95bb",
       "category": "companies",
-      "name": "شركة محمد ومصعب عبدالله العجلان الاستثمارية",
+      "name": "العجلان ريفييرا",
       "city": "الرياض",
       "locality": "",
-      "status": "search_fallback_added_not_pin_verified",
-      "source_urls": [],
-      "search_phrase": "شركة محمد ومصعب عبدالله العجلان الاستثمارية الرياض",
-      "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%88%D9%85%D8%B5%D8%B9%D8%A8%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%A7%D9%84%D8%B9%D8%AC%D9%84%D8%A7%D9%86%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "status": "official_site_phone_verified_maps_unresolved",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%88%D9%85%D8%B5%D8%B9%D8%A8%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%A7%D9%84%D8%B9%D8%AC%D9%84%D8%A7%D9%86%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "official_site_phone_verified_maps_unresolved",
+        "notes": "Official site confirms 920033158; no exact pin/WA."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Official site confirms 920033158; no exact pin/WA."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://alajlanriviera.com/",
+        "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%88%D9%85%D8%B5%D8%B9%D8%A8%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%A7%D9%84%D8%B9%D8%AC%D9%84%D8%A7%D9%86%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+      ]
     },
     {
       "id": "cp-1a1786accf",
@@ -705,26 +754,64 @@
     {
       "id": "cp-d4a0d3f6e1",
       "category": "companies",
-      "name": "شركة الرمز للعقارات",
+      "name": "الرمز للعقارات",
       "city": "الرياض",
-      "locality": "",
-      "status": "search_fallback_added_not_pin_verified",
-      "source_urls": [],
-      "search_phrase": "شركة الرمز للعقارات الرياض",
-      "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B1%D9%85%D8%B2%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "locality": "الملقا/فصيلة",
+      "status": "unresolved_no_exact_pin",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B1%D9%85%D8%B2%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_no_exact_pin",
+        "notes": "Official address and 920031440; Maps alternatives ambiguous, mobile/WA unresolved."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Official address and 920031440; Maps alternatives ambiguous, mobile/WA unresolved."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://alramz.com/contact-us",
+        "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B1%D9%85%D8%B2%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+      ]
     },
     {
       "id": "cp-df5fe89eac",
       "category": "companies",
-      "name": "شركة جنان فدك للتطوير والاستثمار العقاري",
-      "city": "الدمام",
-      "locality": "",
-      "status": "search_fallback_added_not_pin_verified",
-      "source_urls": [],
-      "search_phrase": "شركة جنان فدك للتطوير والاستثمار العقاري الدمام",
-      "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AC%D9%86%D8%A7%D9%86%20%D9%81%D8%AF%D9%83%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "name": "جنان فدك",
+      "city": "سيهات",
+      "locality": "قرطبة/المنتزه",
+      "status": "exact_official_pin_city_corrected_pending_retest",
+      "current_map": "https://www.google.com/maps/place/جنان+فدك+للتطوير+والاستثمار+العقاري%E2%80%AD/@26.4951384,50.0423299,779m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e49ff0045e54d07:0x6d99f5f7b5f17032!8m2!3d26.4951384!4d50.0423299!16s%2Fg%2F11w9zmp7mp",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "exact_official_pin_city_corrected_pending_retest",
+        "notes": "Official exact map place at 26.4951384,50.0423299; official HQ Seihat address/phone 594027240. City label corrected Dammam→Seihat, retained Dammam/Safwa coverage. WA not verified."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Official exact map place at 26.4951384,50.0423299; official HQ Seihat address/phone 594027240. City label corrected Dammam→Seihat, retained Dammam/Safwa coverage. WA not verified."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://jinanfadak.sa/contact",
+        "https://www.google.com/maps/place/جنان+فدك+للتطوير+والاستثمار+العقاري%E2%80%AD/@26.4951384,50.0423299,779m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e49ff0045e54d07:0x6d99f5f7b5f17032!8m2!3d26.4951384!4d50.0423299!16s%2Fg%2F11w9zmp7mp"
+      ]
     },
     {
       "id": "cp-cced7c77d3",
@@ -9414,6 +9501,554 @@
       "source_urls": [
         "https://sakani.sa/app/land-projects/398"
       ]
+    },
+    {
+      "id": "P013",
+      "category": "projects",
+      "name": "سما الورود",
+      "city": "الأحساء",
+      "locality": "الورود",
+      "status": "unresolved_related_Maya_project_only",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%85%D8%A7%20%D8%A7%D9%84%D9%88%D8%B1%D9%88%D8%AF%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%A7%D9%8A%D8%A7%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D9%88%D8%B1%D9%88%D8%AF",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_related_Maya_project_only",
+        "notes": "Maps shows Maya/Sama Al-Wurud card and a separate plot; NHC confirms project/developer/Hofuf. Not exact boundary pin."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Maps shows Maya/Sama Al-Wurud card and a separate plot; NHC confirms project/developer/Hofuf. Not exact boundary pin."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://www.nhc.sa/real-estate-development/projects/47490/",
+        "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%85%D8%A7%20%D8%A7%D9%84%D9%88%D8%B1%D9%88%D8%AF%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%A7%D9%8A%D8%A7%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D9%88%D8%B1%D9%88%D8%AF"
+      ]
+    },
+    {
+      "id": "P044",
+      "category": "projects",
+      "name": "دارة الفرسان",
+      "city": "الرياض",
+      "locality": "الفرسان",
+      "status": "unresolved_project_vs_show_villa_pin",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%A7%D8%B1%D9%87%20%D8%A7%D9%84%D9%81%D8%B1%D8%B3%D8%A7%D9%86%20%D8%A7%D8%AC%D8%AF%D8%A7%D9%86%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_project_vs_show_villa_pin",
+        "notes": "Maps search shows project and separate showroom villa; don't substitute. Ajdan/Maps general 920000658 conflicts with stored 920008416; do not change unproven."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Maps search shows project and separate showroom villa; don't substitute. Ajdan/Maps general 920000658 conflicts with stored 920008416; do not change unproven."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://www.nhc.sa/real-estate-development/projects/47211/",
+        "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%A7%D8%B1%D9%87%20%D8%A7%D9%84%D9%81%D8%B1%D8%B3%D8%A7%D9%86%20%D8%A7%D8%AC%D8%AF%D8%A7%D9%86%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9"
+      ]
+    },
+    {
+      "id": "P050",
+      "category": "projects",
+      "name": "أراسي/كوارترز",
+      "city": "الخبر",
+      "locality": "لازورد",
+      "status": "related_project_pin_identity_supported",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%B1%D8%A7%D8%B3%D9%8A%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9%20%D9%84%D9%84%D8%A7%D8%B3%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "related_project_pin_identity_supported",
+        "notes": "Maps shows مشروع أراسي كوارترز لازورد الخبر; NHC confirms Al Khobar/Lazurd. WA target unresolved."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Maps shows مشروع أراسي كوارترز لازورد الخبر; NHC confirms Al Khobar/Lazurd. WA target unresolved."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://www.nhc.sa/real-estate-development/projects/47617/",
+        "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%B1%D8%A7%D8%B3%D9%8A%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9%20%D9%84%D9%84%D8%A7%D8%B3%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1"
+      ]
+    },
+    {
+      "id": "P055",
+      "category": "projects",
+      "name": "أراسي هايتس",
+      "city": "الخبر",
+      "locality": "لازورد",
+      "status": "unresolved_maps_returns_quarters",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%B1%D8%A7%D8%B3%D9%8A%20%D9%87%D8%A7%D9%8A%D8%AA%D8%B3%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9%20%D9%84%D9%84%D8%A5%D8%B3%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_maps_returns_quarters",
+        "notes": "Maps returns Quarters, not Heights. NHC confirms project identity/city only."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Maps returns Quarters, not Heights. NHC confirms project identity/city only."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://www.nhc.sa/real-estate-development/projects/47701/",
+        "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%B1%D8%A7%D8%B3%D9%8A%20%D9%87%D8%A7%D9%8A%D8%AA%D8%B3%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9%20%D9%84%D9%84%D8%A5%D8%B3%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1"
+      ]
+    },
+    {
+      "id": "P057",
+      "category": "projects",
+      "name": "عزوة",
+      "city": "الخبر",
+      "locality": "لازورد",
+      "status": "unresolved_maps_developer_office",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%B9%D8%B2%D9%88%D8%A9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AA%D9%85%D9%83%D9%8A%D9%86%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D9%88%20%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_maps_developer_office",
+        "notes": "Maps returns Tamkean Dammam office; official project page confirms Azwah in Khobar/Lazurd and 920000140. WA destination not independently opened."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Maps returns Tamkean Dammam office; official project page confirms Azwah in Khobar/Lazurd and 920000140. WA destination not independently opened."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://tamkean.sa/en/ezwah/",
+        "https://www.google.com/maps/search/?api=1&query=%D8%B9%D8%B2%D9%88%D8%A9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AA%D9%85%D9%83%D9%8A%D9%86%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D9%88%20%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1"
+      ]
+    },
+    {
+      "id": "P072",
+      "category": "projects",
+      "name": "مسايا 2",
+      "city": "الدمام",
+      "locality": "",
+      "status": "unresolved_maps_developer_office",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%A7%D9%8A%D8%A72%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AA%D9%85%D9%83%D9%8A%D9%86%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_maps_developer_office",
+        "notes": "Maps returns developer office, not project; official Tamkean confirms Dammam and 40 units; WA destination unverified."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Maps returns developer office, not project; official Tamkean confirms Dammam and 40 units; WA destination unverified."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://tamkean.sa/en/masaya2/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%A7%D9%8A%D8%A72%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AA%D9%85%D9%83%D9%8A%D9%86%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85"
+      ]
+    },
+    {
+      "id": "P073",
+      "category": "projects",
+      "name": "ريفان",
+      "city": "الدمام",
+      "locality": "الواجهة/الضاحية الغربية",
+      "status": "exact_building_within_project_pin_pending_retest",
+      "current_map": "https://www.google.com/maps/place/%D8%B9%D9%85%D8%A7%D8%B1%D9%87+E6+%D9%85%D8%B4%D8%B1%D9%88%D8%B9+%D8%B1%D9%8A%D9%81%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x3e361d00437487bd:0x6af2c304699fa2f7!8m2!3d26.3368136!4d49.9812616!16s%2Fg%2F11ntdrq50w!19sChIJvYd0QwAdNj4R96KfaQTD8mo",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "exact_building_within_project_pin_pending_retest",
+        "notes": "Google Maps pin is عماره E6 مشروع ريفان, 8XPJ+PGC, 26.3368136,49.9812616; building pin, not entire development boundary."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Google Maps pin is عماره E6 مشروع ريفان, 8XPJ+PGC, 26.3368136,49.9812616; building pin, not entire development boundary."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://maya.sa.com/projects/3",
+        "https://www.google.com/maps/place/%D8%B9%D9%85%D8%A7%D8%B1%D9%87+E6+%D9%85%D8%B4%D8%B1%D9%88%D8%B9+%D8%B1%D9%8A%D9%81%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x3e361d00437487bd:0x6af2c304699fa2f7!8m2!3d26.3368136!4d49.9812616!16s%2Fg%2F11ntdrq50w!19sChIJvYd0QwAdNj4R96KfaQTD8mo"
+      ]
+    },
+    {
+      "id": "P083",
+      "category": "projects",
+      "name": "نساج تاون",
+      "city": "الدمام",
+      "locality": "",
+      "status": "phase1_pin_matches_coords_phase_scope_unresolved",
+      "current_map": "https://www.google.com/maps/place/Nesaj+Town+1+%7C+نساج+الدمام+1%E2%80%AD/data=!4m7!3m6!1s0x3e361dc0d475ab49:0xa09ffd4967778539!8m2!3d26.3333125!4d50.0008125!16s%2Fg%2F11h1sqpzhd!19sChIJSat11MAdNj4ROYV3Z0n9n6A",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "phase1_pin_matches_coords_phase_scope_unresolved",
+        "notes": "Maps search exact stored coords resolves Nesaj Town 1; phase detail is explicit while record is generic. Official Retal supports name/city."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Maps search exact stored coords resolves Nesaj Town 1; phase detail is explicit while record is generic. Official Retal supports name/city."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://retal.com.sa/properties/nesaj-town/",
+        "https://www.google.com/maps/place/Nesaj+Town+1+%7C+نساج+الدمام+1%E2%80%AD/data=!4m7!3m6!1s0x3e361dc0d475ab49:0xa09ffd4967778539!8m2!3d26.3333125!4d50.0008125!16s%2Fg%2F11h1sqpzhd!19sChIJSat11MAdNj4ROYV3Z0n9n6A"
+      ]
+    },
+    {
+      "id": "phase5-car-b4aeb4edf7b8",
+      "category": "cars",
+      "name": "معرض الخيمة",
+      "city": "بريدة",
+      "locality": "المعارض/قرطبة",
+      "status": "verified_exact",
+      "current_map": "https://www.google.com/maps/?cid=14816848140957479822",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_exact",
+        "notes": "exact map name/address/phone 0543854395; WA supported by seller listings."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "exact map name/address/phone 0543854395; WA supported by seller listings."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=14816848140957479822"
+      ]
+    },
+    {
+      "id": "phase5-google-2604452144150166554",
+      "category": "cars",
+      "name": "الرواد للسيارات",
+      "city": "الأحساء",
+      "locality": "الصناعية",
+      "status": "verified_exact",
+      "current_map": "https://www.google.com/maps/?cid=2604452144150166554",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_exact",
+        "notes": "Map name/city/phone 0135925222."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Map name/city/phone 0135925222."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=2604452144150166554"
+      ]
+    },
+    {
+      "id": "phase6-google-15901674051955793565",
+      "category": "cars",
+      "name": "الحربي للسيارات",
+      "city": "تبوك",
+      "locality": "الصناعية",
+      "status": "verified_maps_card",
+      "current_map": "https://www.google.com/maps/?cid=15901674051955793565",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_maps_card",
+        "notes": "Map identity/city/phone 0535287749, no independent source."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Map identity/city/phone 0535287749, no independent source."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=15901674051955793565"
+      ]
+    },
+    {
+      "id": "national-car-769929b42054d3",
+      "category": "cars",
+      "name": "أبو رويس",
+      "city": "الدوادمي",
+      "locality": "طريق الملك خالد/الصناعية",
+      "status": "map_match_phone_conflict",
+      "current_map": "https://www.google.com/maps/?cid=6972608864476564691",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "map_match_phone_conflict",
+        "notes": "Map address/name match; maps number differs; external directories support stored 0116440666."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Map address/name match; maps number differs; external directories support stored 0116440666."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=6972608864476564691"
+      ]
+    },
+    {
+      "id": "phase6-google-8821589655719132477",
+      "category": "cars",
+      "name": "عناد للسيارات",
+      "city": "حائل",
+      "locality": "",
+      "status": "verified_maps_card",
+      "current_map": "https://www.google.com/maps/?cid=8821589655719132477",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_maps_card",
+        "notes": "Map name/phone 0506879961."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Map name/phone 0506879961."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=8821589655719132477"
+      ]
+    },
+    {
+      "id": "phase6-google-8339575344558130197",
+      "category": "cars",
+      "name": "المزيني للسيارات",
+      "city": "تبوك",
+      "locality": "",
+      "status": "verified_maps_card",
+      "current_map": "https://www.google.com/maps/?cid=8339575344558130197",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_maps_card",
+        "notes": "Map name/city/phone 0500555547."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Map name/city/phone 0500555547."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=8339575344558130197"
+      ]
+    },
+    {
+      "id": "national-car-2c9f561b057194",
+      "category": "cars",
+      "name": "Ash Shar'i Car Showroom",
+      "city": "القريات",
+      "locality": "طريق الملك فيصل",
+      "status": "unresolved_map_name_mismatch",
+      "current_map": "https://www.google.com/maps/?cid=11923081665893202698",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "unresolved_map_name_mismatch",
+        "notes": "Maps exact road/phone but named معرض العطاء الصالح; relationship unproven."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Maps exact road/phone but named معرض العطاء الصالح; relationship unproven."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=11923081665893202698"
+      ]
+    },
+    {
+      "id": "regional-car-phase5-car-5eb858a520a4-35",
+      "category": "cars",
+      "name": "كلاس للسيارات",
+      "city": "عنيزة (تغطية؛ الأصل بريدة)",
+      "locality": "الجزيرة/قرطبة",
+      "status": "verified_origin_city_alias",
+      "current_map": "https://www.google.com/maps/?cid=7454404555245510583",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_origin_city_alias",
+        "notes": "Exact pin at Buraidah matching originCity; app displays nearby-city alias."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Exact pin at Buraidah matching originCity; app displays nearby-city alias."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=7454404555245510583"
+      ]
+    },
+    {
+      "id": "regional-pdf-phase5-google-8725025085619062305-006",
+      "category": "cars",
+      "name": "نواحي التوفيق",
+      "city": "بريدة (تغطية؛ الأصل عنيزة)",
+      "locality": "المنار/32Q8+PQ عنيزة",
+      "status": "verified_origin_city_alias",
+      "current_map": "https://www.google.com/maps/?cid=8725025085619062305",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "verified_origin_city_alias",
+        "notes": "Exact map place and plus code match original Onaizah, not a Buraidah branch."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Exact map place and plus code match original Onaizah, not a Buraidah branch."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "not_present"
+        }
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=8725025085619062305"
+      ]
+    },
+    {
+      "id": "cp-cced7c77",
+      "category": "companies",
+      "name": "دار وإعمار",
+      "city": "الرياض/الخبر",
+      "locality": "مواقع متعددة",
+      "status": "official_site_phone_addresses_pin_unresolved",
+      "current_map": "",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "status": "official_site_phone_addresses_pin_unresolved",
+        "notes": "Official site gives two offices and 920004077; mobile and WA unverified."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "as_noted",
+          "notes": "Official site gives two offices and 920004077; mobile and WA unverified."
+        },
+        "whatsapp": {
+          "status": "not_separately_verified"
+        },
+        "website": {
+          "status": "official_or_secondary_source_checked"
+        }
+      },
+      "source_urls": [
+        "https://darwaemar.com/contact"
+      ]
     }
   ],
   "browser_spot_checks": [
@@ -9436,7 +10071,7 @@
       "tested_at": "2026-10-10"
     }
   ],
-  "last_verified_head": "88a26a504b682b5023f506197b671f7176c48f3f",
+  "last_verified_head": "69c11a72b30a8ae84dcc1f1cd539f5198ab61337",
   "last_batch": {
     "checked_maps": 20,
     "verified_correct": 14,
@@ -9476,10 +10111,11 @@
     },
     {
       "date": "2026-10-10",
-      "head": "88a26a504b682b5023f506197b671f7176c48f3f",
-      "new_map_targets": 1,
-      "official_exact_pin_candidates": 1,
-      "notes": "Roshn View official website provides Google Maps review link resolving to exact named company and coordinates; replaced unpinned/stale coordinates. Post-edit link retest pending."
+      "head": "69c11a72b30a8ae84dcc1f1cd539f5198ab61337",
+      "project_records": 8,
+      "car_new_records": 9,
+      "business_records": 7,
+      "notes": "Project exact/related result distinction and car origin-city semantics are saved per ID. Roshn entry retest was post-save and confirmed."
     }
   ]
 }
