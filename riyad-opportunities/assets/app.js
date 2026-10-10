@@ -711,7 +711,7 @@
       '<p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : (b.cityOnly ? 'عرض المدينة دون فرع' : 'فرص الفرع')) + '</p>' +
       '<h1>' + esc(b.n) + '</h1><div class="b-meta">' + (b.cityOnly ? '' : '<span class="pill code num">' + (b.codeStatus === 'local_internal_reference' ? 'مرجع داخلي ' : '') + esc(b.c) + '</span>') + '<span class="pill">' + esc(b.city) + '</span>' +
       (sc && b.sec ? '<span class="pill sec">' + esc(b.sec) + ' ' + esc(b.city) + '</span>' : '') + (b.nb ? '<span class="pill">حي ' + esc(b.nb) + '</span>' : '') +
-      (S.origin ? '<span class="pill geo-pill">أقرب فرع محدد الموقع · ' + distTag(S.nearestBranchDistance, {}) + '</span><a class="pill geo-map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=' + esc(b.lat + ',' + b.lon) + '">خريطة الفرع</a>' : '') + '</div></div>' +
+      (S.origin ? '<span class="pill geo-pill">أقرب فرع محدد الموقع · ' + distTag(S.nearestBranchDistance, {}) + '</span>' : '') + ((b.mapsQ || (b.lat != null && b.lon != null)) ? '<a class="pill geo-map" target="_blank" rel="noopener" href="' + esc(b.mapsQ || ('https://www.google.com/maps/search/?api=1&query=' + b.lat + ',' + b.lon)) + '">خريطة الفرع</a>' : '') + '</div></div>' +
       '<button class="btn ghost" data-act="change">' + ICON.swap + 'تغيير الفرع</button></div>' +
       '<div class="stats" role="group" aria-label="ملخص">' + stats + '</div></div></section>' +
       controlsMarkup +
