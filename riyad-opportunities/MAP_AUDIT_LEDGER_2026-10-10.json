@@ -272,10 +272,40 @@
       "city": "الدلم",
       "locality": "",
       "status": "search_fallback_added_not_pin_verified",
-      "source_urls": [],
+      "source_urls": [
+        "https://www.waze.com/live-map/directions/sa/riyadh-province/al-kharj/mardh-mtlq-al-mlhm-llsyarat?to=place.ChIJOXPgZlBMJT4RvDg3vTZq21M",
+        "https://www.bizmideast.com/SA/معرض-مطلق-ال-ملحم-للسيارات-055-510-2170",
+        "https://www.cybo.com/SA-biz/معرض-مطلق-ال-ملحم-للسيارات",
+        "https://striveme.com/article/محركات/معارض-السيارات-في-الخرج"
+      ],
       "search_phrase": "معرض مطلق آل ملحم للسيارات الدلم",
       "alternative": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%B7%D9%84%D9%82%20%D8%A2%D9%84%20%D9%85%D9%84%D8%AD%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AF%D9%84%D9%85",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "evidence_note": "تم فتح بحث Maps؛ البطاقة تشير إلى معرض باسم مطابق قرب الخرج عند 24.1867957,47.4017143، لا إلى الدلم. Waze وBizMidEast وCybo وStriveME تؤيد عنوان السعادة/الخرج والهاتف 0555102170. لا دليل على فرع الدلم ولا يجوز استخدام دبوس الخرج كسجل الدلم؛ يبقى غير محسوم.",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%B7%D9%84%D9%82%20%D8%A2%D9%84%20%D9%85%D9%84%D8%AD%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AF%D9%84%D9%85",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_wrong_or_unproven_local_location",
+        "notes": "تم فتح بحث Maps؛ البطاقة تشير إلى معرض باسم مطابق قرب الخرج عند 24.1867957,47.4017143، لا إلى الدلم. Waze وBizMidEast وCybo وStriveME تؤيد عنوان السعادة/الخرج والهاتف 0555102170. لا دليل على فرع الدلم ولا يجوز استخدام دبوس الخرج كسجل الدلم؛ يبقى غير محسوم."
+      },
+      "field_checks": {
+        "whatsapp": {
+          "status": "not_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        },
+        "phone": {
+          "status": "verified_by_multiple_listings",
+          "value": "0555102170",
+          "sources": [
+            "https://www.waze.com/live-map/directions/sa/riyadh-province/al-kharj/mardh-mtlq-al-mlhm-llsyarat?to=place.ChIJOXPgZlBMJT4RvDg3vTZq21M",
+            "https://www.bizmideast.com/SA/معرض-مطلق-ال-ملحم-للسيارات-055-510-2170",
+            "https://www.cybo.com/SA-biz/معرض-مطلق-ال-ملحم-للسيارات",
+            "https://striveme.com/article/محركات/معارض-السيارات-في-الخرج"
+          ]
+        }
+      }
     },
     {
       "id": "regional-pdf-national-car-9e7346b3ca3e8f-074",
@@ -315,11 +345,37 @@
       "locality": "",
       "status": "search_fallback_added_not_pin_verified",
       "source_urls": [
-        "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+        "https://x.com/hizan_cars?lang=en",
+        "https://haraj.com.sa/11178279366/تويوتا_كامري_LE_2026_قير_اوتوماتيك_بنزين/",
+        "https://www.threads.com/@hizan.cars/video/Dd4cYRlEl8-/video-posted-by-معرض-الحيزان-لسيارات-hizancars/"
       ],
       "search_phrase": "معرض الحيزان للسيارات دومة الجندل",
       "alternative": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%8A%D8%B2%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AF%D9%88%D9%85%D8%A9%20%D8%A7%D9%84%D8%AC%D9%86%D8%AF%D9%84",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "evidence_note": "تم فتح رابط البحث؛ لا يمكن إثبات بطاقة بدومة الجندل. الحساب الرسمي وإعلان حراج يثبتان المعرض ورقم 0539393328 لكن يضعان موقعه في الصناعية الثانية بحي المعارض، سكاكا. لا يُنقل دبوس سكاكا إلى سجل دومة الجندل؛ يبقى الموقع غير محسوم.",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%8A%D8%B2%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AF%D9%88%D9%85%D8%A9%20%D8%A7%D9%84%D8%AC%D9%86%D8%AF%D9%84",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_wrong_or_unproven_local_location",
+        "notes": "تم فتح رابط البحث؛ لا يمكن إثبات بطاقة بدومة الجندل. الحساب الرسمي وإعلان حراج يثبتان المعرض ورقم 0539393328 لكن يضعان موقعه في الصناعية الثانية بحي المعارض، سكاكا. لا يُنقل دبوس سكاكا إلى سجل دومة الجندل؛ يبقى الموقع غير محسوم."
+      },
+      "field_checks": {
+        "whatsapp": {
+          "status": "not_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        },
+        "phone": {
+          "status": "verified_official_and_listing",
+          "value": "0539393328",
+          "sources": [
+            "https://x.com/hizan_cars?lang=en",
+            "https://haraj.com.sa/11178279366/تويوتا_كامري_LE_2026_قير_اوتوماتيك_بنزين/",
+            "https://www.threads.com/@hizan.cars/video/Dd4cYRlEl8-/video-posted-by-معرض-الحيزان-لسيارات-hizancars/"
+          ]
+        }
+      }
     },
     {
       "id": "regional-pdf-national-car-a73435a12ccdae-059",
@@ -369,10 +425,34 @@
       "city": "سيهات",
       "locality": "",
       "status": "wrong_city_pin_replaced_by_search_unverified",
-      "source_urls": [],
+      "source_urls": [
+        "https://striveme.com/article/محركات/معارض-السيارات-في-القطيف"
+      ],
       "search_phrase": "معرض آل إبراهيم للسيارات سيهات",
       "alternative": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A2%D9%84%20%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B3%D9%8A%D9%87%D8%A7%D8%AA",
-      "evidence_note": "Prior Google Maps/Waze destination conflicted with record city; query fallback only."
+      "evidence_note": "تم فتح بحث Maps لكن لم تثبت بطاقة/عنوان سيهات. مصدر StriveME يعرض معرض الإبراهيم بالقطيف برقم مختلف 0549836772؛ لا يثبت أن الرقم المسجل 0503852098 أو وجود فرع سيهات. يبقى الموقع ورقم الهاتف غير محسومين.",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A2%D9%84%20%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B3%D9%8A%D9%87%D8%A7%D8%AA",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_wrong_or_unproven_local_location",
+        "notes": "تم فتح بحث Maps لكن لم تثبت بطاقة/عنوان سيهات. مصدر StriveME يعرض معرض الإبراهيم بالقطيف برقم مختلف 0549836772؛ لا يثبت أن الرقم المسجل 0503852098 أو وجود فرع سيهات. يبقى الموقع ورقم الهاتف غير محسومين."
+      },
+      "field_checks": {
+        "whatsapp": {
+          "status": "not_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        },
+        "phone": {
+          "status": "unverified_conflicting_source",
+          "value": "0503852098",
+          "sources": [
+            "https://striveme.com/article/محركات/معارض-السيارات-في-القطيف"
+          ]
+        }
+      }
     },
     {
       "id": "regional-pdf-national-car-e2d5530a674676-036",
@@ -2195,36 +2275,133 @@
       "category": "companies",
       "name": "شركة سكن المتحدة للتطوير العقاري",
       "city": "أبها",
-      "locality": "",
+      "locality": "الطبجية",
       "status": "search_fallback_added_not_pin_verified",
-      "source_urls": [],
+      "source_urls": [
+        "https://sakanun.com.sa/Contactus.aspx",
+        "https://sakanun.com.sa/alfairouzpage.aspx",
+        "https://sakanun.com.sa/"
+      ],
       "search_phrase": "شركة سكن المتحدة للتطوير العقاري أبها",
-      "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B3%D9%83%D9%86%20%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A3%D8%A8%D9%87%D8%A7",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B3%D9%83%D9%86%20%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B7%D8%A8%D8%AC%D9%8A%D8%A9%20%D8%A3%D8%A8%D9%87%D8%A7",
+      "evidence_note": "فتحت بحث Maps المحدّث بعد التعديل فحلّ إلى بطاقة «مخطط الفيروز» وعنوانها قرى آل غليظ، أبها؛ هذه وجهة المشروع وليست مقر الشركة، لذلك لم أحتسبها صحيحة. صفحة الاتصال الرسمية تذكر عنوان المكتب في الطبجية بأبها والرقمين 0560000136 و920006061، بينما رابط الخريطة المرتبط بصفحة الفيروز يخص المشروع وليس المكتب. لا يوجد دبوس مكتب مثبت. يبقى البحث المحدد غير محسوم.",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B3%D9%83%D9%86%20%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A3%D8%A8%D9%87%D8%A7",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B3%D9%83%D9%86%20%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B7%D8%A8%D8%AC%D9%8A%D8%A9%20%D8%A3%D8%A8%D9%87%D8%A7",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_no_company_office_pin"
+      },
+      "field_checks": {
+        "phone": {
+          "status": "verified_official",
+          "values": [
+            "0560000136",
+            "920006061"
+          ],
+          "sources": [
+            "https://sakanun.com.sa/Contactus.aspx",
+            "https://sakanun.com.sa/"
+          ]
+        },
+        "website": {
+          "status": "verified_official",
+          "value": "https://sakanun.com.sa/",
+          "sources": [
+            "https://sakanun.com.sa/"
+          ]
+        },
+        "whatsapp": {
+          "status": "not_listed"
+        }
+      }
     },
     {
       "id": "cp-amlak-alrass",
       "category": "companies",
       "name": "شركة أملاك للتطوير والاستثمار العقاري",
       "city": "الرس",
-      "locality": "",
+      "locality": "حي الروابي، جوار صيدلية ليمون",
       "status": "search_fallback_added_not_pin_verified",
-      "source_urls": [],
+      "source_urls": [
+        "https://amlaak.sa/تواصل-معنا/",
+        "https://www.google.com/maps/search/?api=1&query=VG32%2BVHR%20%D8%A7%D9%84%D8%B1%D8%B3%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9"
+      ],
       "search_phrase": "شركة أملاك للتطوير والاستثمار العقاري الرس",
-      "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A3%D9%85%D9%84%D8%A7%D9%83%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B1%D8%B3",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A3%D9%85%D9%84%D8%A7%D9%83%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%A8%D9%8A%20%D8%AC%D9%88%D8%A7%D8%B1%20%D8%B5%D9%8A%D8%AF%D9%84%D9%8A%D8%A9%20%D9%84%D9%8A%D9%85%D9%88%D9%86%20%D8%A7%D9%84%D8%B1%D8%B3",
+      "evidence_note": "فتحت البحث المحدّث إلى خرائط Google؛ ظهر اسم شركة أملاك لكن تعذر قراءة بطاقة العنوان كاملة، ولم يُثبت تطابقها مع حي الروابي ورمز VG32+VHR. رابط الرمز الرسمي نفسه يفتح نقطة عامة تعرض تنبيهًا بأن الموقع غير دقيق، وليس دبوس شركة مؤكّدًا. أبقيت رابط بحث الاسم والحي؛ لا أحتسب الموقع صحيحًا.",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A3%D9%85%D9%84%D8%A7%D9%83%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B1%D8%B3",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A3%D9%85%D9%84%D8%A7%D9%83%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%A8%D9%8A%20%D8%AC%D9%88%D8%A7%D8%B1%20%D8%B5%D9%8A%D8%AF%D9%84%D9%8A%D8%A9%20%D9%84%D9%8A%D9%85%D9%88%D9%86%20%D8%A7%D9%84%D8%B1%D8%B3",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_no_company_office_pin"
+      },
+      "field_checks": {
+        "phone": {
+          "status": "verified_official",
+          "values": [
+            "0163335857",
+            "0508833755",
+            "0573666855"
+          ],
+          "sources": [
+            "https://amlaak.sa/تواصل-معنا/"
+          ]
+        },
+        "website": {
+          "status": "verified_official",
+          "value": "https://amlaak.sa/",
+          "sources": [
+            "https://amlaak.sa/تواصل-معنا/"
+          ]
+        },
+        "whatsapp": {
+          "status": "not_listed"
+        }
+      }
     },
     {
       "id": "cp-karden-asir",
       "category": "companies",
       "name": "كاردن للتطوير العقاري",
       "city": "أبها",
-      "locality": "",
+      "locality": "قرى آل غليظ، طريق الملك خالد (Work Corner)",
       "status": "search_fallback_added_not_pin_verified",
-      "source_urls": [],
+      "source_urls": [
+        "https://www.karden-ksa.com/contact.html",
+        "https://www.karden-ksa.com/"
+      ],
       "search_phrase": "كاردن للتطوير العقاري أبها",
-      "alternative": "https://www.google.com/maps/search/?api=1&query=%D9%83%D8%A7%D8%B1%D8%AF%D9%86%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A3%D8%A8%D9%87%D8%A7",
-      "evidence_note": "Search phrase uses the record name and its recorded city/locality; this link is a search, not a verified pin."
+      "alternative": "https://maps.app.goo.gl/t4qp2jGqtsRQHLC7A",
+      "evidence_note": "الموقع الرسمي يربط مقر كاردن الرئيسي في أبها إلى maps.app.goo.gl/t4qp2jGqtsRQHLC7A؛ فُتح بعد تعديل companies.json وأظهر بطاقة Work Corner، طريق الملك خالد، قرى آل غليظ، أبها، Plus Code 6M54+47. البطاقة تمثل عنوان المقر الذي يحدده الموقع الرسمي. رقم +966550811151 والموقع الرسمي مطابقان لمصدر كاردن. رابط واتساب غير منشور.",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=%D9%83%D8%A7%D8%B1%D8%AF%D9%86%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A3%D8%A8%D9%87%D8%A7",
+      "current_map": "https://maps.app.goo.gl/t4qp2jGqtsRQHLC7A",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_official_hq_address_and_google_card_post_edit_retested"
+      },
+      "field_checks": {
+        "phone": {
+          "status": "verified_official",
+          "value": "+966550811151",
+          "sources": [
+            "https://www.karden-ksa.com/contact.html"
+          ]
+        },
+        "website": {
+          "status": "verified_official",
+          "value": "https://www.karden-ksa.com/",
+          "sources": [
+            "https://www.karden-ksa.com/contact.html",
+            "https://www.karden-ksa.com/"
+          ]
+        },
+        "whatsapp": {
+          "status": "not_listed"
+        }
+      }
     },
     {
       "id": "cp-roshn-group-riyadh",
@@ -14764,13 +14941,13 @@
     }
   ],
   "audit_counts": {
-    "as_of_commit": "pending",
+    "as_of_commit": "this checkpoint",
     "map_target_actions": 4059,
-    "opened_and_tied_to_unique_record": 215,
-    "verified_correct": 71,
-    "corrected_and_retested": 6,
-    "unresolved_after_open": 144,
-    "not_opened": 3844,
+    "opened_and_tied_to_unique_record": 221,
+    "verified_correct": 72,
+    "corrected_and_retested": 7,
+    "unresolved_after_open": 149,
+    "not_opened": 3838,
     "method": "Deduplicated record IDs; map target action per app row uses maps||mapsQ, branch coordinates (246), and generated selfbuild search (10). Correct requires directly opened target and positive name/location/purpose evidence; unresolved and merely opened are excluded. Phone, WhatsApp and website status stays field-specific.",
     "verified_correct_ids": [
       "entity-96716f5db346",
@@ -14845,6 +15022,6 @@
       "P027",
       "P029"
     ],
-    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field. Added 4 office records from Maps card opens: three matching Cards, one record where Maps title appeared but details could not be read; 3 marked correct, 1 unresolved. Official site/WhatsApp checks separated. Denominator reconciled to deduplicated baseline 4,059; previous checkpoints had incorrectly increased the denominator when logging existing dataset rows. All logged IDs were already represented in baseline target count. Maps currently opened 215, with 70 verified matching results and 145 unresolved. P029 corrected and post-edit tested: city fixed to Seihat and direct Google Maps card pin now matches project name, Ghadeer district, city; counts updated (+1 correct and corrected/retested, -1 unresolved). Tested and updated project search fallbacks after editing: P016 still returns no result/world center; P021 yields only Mutrafiyah area; P024 yields two similar but unverified candidates. All remain unresolved; none counted correct."
+    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field. Added 4 office records from Maps card opens: three matching Cards, one record where Maps title appeared but details could not be read; 3 marked correct, 1 unresolved. Official site/WhatsApp checks separated. Denominator reconciled to deduplicated baseline 4,059; previous checkpoints had incorrectly increased the denominator when logging existing dataset rows. All logged IDs were already represented in baseline target count. Before the removed-link re-audit, Maps had 215 opened, 71 verified matches, and 144 unresolved (counts corrected for P029). P029 corrected and post-edit tested: city fixed to Seihat and direct Google Maps card pin now matches project name, Ghadeer district, city; counts updated (+1 correct and corrected/retested, -1 unresolved). Tested and updated project search fallbacks after editing: P016 still returns no result/world center; P021 yields only Mutrafiyah area; P024 yields two similar but unverified candidates. All remain unresolved; none counted correct. Removed-link re-audit: opened 3 regional car searches and 3 company searches; Karden official HQ pin was post-edit tested, adding one verified and corrected/retested record. The other five remain unresolved and retained. Current totals: 4,059 targets; 221 opened; 72 correct; 7 corrected/retested; 149 unresolved; 3,838 unopened."
   }
 }
