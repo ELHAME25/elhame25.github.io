@@ -2,8 +2,8 @@
   "schema": "map-audit-ledger-v1",
   "branch": "fix/scope-counts-nhc-20261010",
   "base_commit": "bffa7fe0a4f2c8515335b4853cc942c507e7aeae",
-  "generated_at": "2026-10-10T16:03:34.996Z",
-  "note": "This ledger records safe Google Maps search fallbacks, not a claim that every resulting pin was opened or verified. It preserves record identifiers and prior links for reversibility. جولة الأحساء الإضافية: طابقت بطاقتا فهد مسفر الدوسري والمبارك الاسم والعنوان والهاتف؛ لم يتغير السجل. فُتحت خمسة دبابيس أخرى وتعذرت قراءة تفاصيلها؛ سجلت غير محسومة. This update archives and excludes 15 unresolved regional city copies from display in non-origin cities; original-city records are not changed.",
+  "generated_at": "2026-10-10T16:05:44.371Z",
+  "note": "This ledger records safe Google Maps search fallbacks, not a claim that every resulting pin was opened or verified. It preserves record identifiers and prior links for reversibility. جولة الأحساء الإضافية: طابقت بطاقتا فهد مسفر الدوسري والمبارك الاسم والعنوان والهاتف؛ لم يتغير السجل. فُتحت خمسة دبابيس أخرى وتعذرت قراءة تفاصيلها؛ سجلت غير محسومة. This update archives and excludes 15 unresolved regional city copies from display in non-origin cities; original-city records are not changed. Two Abha official dealer records (Universal Motors Agencies/Chevrolet and SMOU/Changan) were archived then excluded from display based on official operator/brand sources.",
   "entries": [
     {
       "id": "P003",
@@ -19328,6 +19328,71 @@
           "status": "not_verified"
         }
       }
+    },
+    {
+      "id": "phase6-cars-ace4b0a3a9b96a",
+      "category": "cars",
+      "name": "التوكيلات العالمية للسيارات",
+      "city": "أبها",
+      "locality": "Abha, King Fahad Street, HUB TOWNS SOUTH المملكة العربية السعودية",
+      "status": "official_dealer_excluded",
+      "decision": "excluded_official_dealer",
+      "source_urls": [
+        "https://chevrolet.ar.altawkilat.com/get-in-touch/",
+        "https://smoucars.com/",
+        "https://smoucars.com/%D8%B9%D9%86-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9/",
+        "https://maps.yango.com/ar-sa/org/11506569025/"
+      ],
+      "evidence_note": "Official authorized distributor/dealer confirmed from the operator's official website and official brand/distributor information. Archived complete pre-removal record in archivedRecord; removed only from the cars display list.",
+      "archivedRecord": {
+        "id": "phase6-cars-ace4b0a3a9b96a",
+        "n": "التوكيلات العالمية للسيارات",
+        "city": "أبها",
+        "nb": "Abha, King Fahad Street, HUB TOWNS SOUTH المملكة العربية السعودية",
+        "phones": [
+          "8002442244"
+        ],
+        "web": "https://chevrolet.ar.altawkilat.com/locations/abha-sultan-city-king-fahd-road/",
+        "maps": "https://www.google.com/maps/place/%D8%A7%D9%84%D8%AA%D9%88%D9%83%D9%8A%D9%84%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fb560130fb0aad:0x53c474a597f8e3d9!8m2!3d18.252792!4d42.626267!16s%2Fg%2F11bbrlyz3c!19sChIJrQr7MAFW-xUR2eP4l6V0xFM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 18.25279,
+        "lon": 42.62627,
+        "sec": "",
+        "loc": "pt",
+        "authorizedDealer": true
+      },
+      "archiveReason": "User explicitly requires excluding official dealers and authorized distributors from car showroom listings."
+    },
+    {
+      "id": "phase6-cars-0883a6cce64df2",
+      "category": "cars",
+      "name": "معرض سمو شانجان ابها | Changan Smou Abha - Showroom",
+      "city": "أبها",
+      "locality": "طريق الملك فهد، أريم، أبها 62563، المملكة العربية السعودية",
+      "status": "official_dealer_excluded",
+      "decision": "excluded_official_dealer",
+      "source_urls": [
+        "https://chevrolet.ar.altawkilat.com/get-in-touch/",
+        "https://smoucars.com/",
+        "https://smoucars.com/%D8%B9%D9%86-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9/",
+        "https://maps.yango.com/ar-sa/org/11506569025/"
+      ],
+      "evidence_note": "Official authorized distributor/dealer confirmed from the operator's official website and official brand/distributor information. Archived complete pre-removal record in archivedRecord; removed only from the cars display list.",
+      "archivedRecord": {
+        "id": "phase6-cars-0883a6cce64df2",
+        "n": "معرض سمو شانجان ابها | Changan Smou Abha - Showroom",
+        "city": "أبها",
+        "nb": "طريق الملك فهد، أريم، أبها 62563، المملكة العربية السعودية",
+        "phones": [
+          "920008775"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B3%D9%85%D9%88+%D8%B4%D8%A7%D9%86%D8%AC%D8%A7%D9%86+%D8%A7%D8%A8%D9%87%D8%A7+%7C+Changan+Smou+Abha+-+Showroom%E2%80%AD/data=!4m7!3m6!1s0x15fb57b0751889f5:0x17ab8caac3581b7a!8m2!3d18.2594152!4d42.6341979!16s%2Fg%2F11q4drl8sk!19sChIJ9YkYdbBX-xURehtYw6qMqxc?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 18.25942,
+        "lon": 42.6342,
+        "sec": "",
+        "loc": "pt"
+      },
+      "archiveReason": "User explicitly requires excluding official dealers and authorized distributors from car showroom listings."
     }
   ],
   "browser_spot_checks": [
