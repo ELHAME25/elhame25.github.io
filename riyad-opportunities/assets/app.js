@@ -939,6 +939,7 @@
       return '<article class="vcard" data-detail="' + id + '" tabindex="0"><div class="media">' + ph('وجهة ' + o.n, o.city, kind, o) +
         (nhcImage ? '<img class="property-image official-image" loading="lazy" decoding="async" alt="صورة الوجهة" data-src="' + esc(nhcImage) + '">' : '') + '</div>' +
         '<div class="body"><h3>' + esc(o.n) + '</h3><div class="where">' + esc(o.dir || o.city) + '</div>' +
+        phoneLine(o.phones, id, o.phoneContacts) + (o.phones && o.phones.length ? '<div class="acts">' + actions(id, o, 'ibtn') + '</div>' : '') +
         '<div class="foot"><button class="btn primary" data-detail="' + id + '">التفاصيل</button><div class="tags"><span class="tag">' + esc(directionReason) + '</span>' + (showCity ? '<span class="tag city">' + esc(o.city) + '</span>' : '') + (d != null ? distTag(d, o) : '') + unknownTag + '</div></div></div></article>';
     }
     if (kind === 'companies') {
@@ -950,7 +951,9 @@
         
         (o.contact ? '<span class="tag">المسؤول: ' + esc(o.contact) + '</span>' : '') + unknownTag + '</div>' +
         (o.projects && o.projects.length ? '<p class="sub" style="margin:0">' + esc(o.projects.slice(0, 4).join('، ')) + (o.projects.length > 4 ? '…' : '') + '</p>' : '') +
-        phoneLine(o.phones, id, o.phoneContacts) + '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
+        phoneLine(o.phones, id, o.phoneContacts) +
+        (o.salesCenters || []).map(function (center) { return '<div class="sub"><a target="_blank" rel="noopener" href="' + esc(center.maps) + '">' + esc(center.n) + ' — خرائط Google</a></div>'; }).join('') +
+        '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
     }
     return '<article class="lcard"><div class="head"><span class="avatar">' + ICON[kind === 'cars' ? 'cars' : 'offices'] + '</span><div><h3>' + esc(o.n) + '</h3>' +
       (compactLocation(o) ? '<div class="sub">' + esc(compactLocation(o)) + '</div>' : '') + '</div></div>' +
@@ -990,7 +993,7 @@
     var it = REG[id]; if (!it) return; var o = it.o, k = it.k, dlg = document.getElementById('detail');
     var rows, links = '';
     if (k === 'nhc') {
-      rows = [['المدينة', o.city], ['الموقع', o.dir], ['مرجع دبوس الخريطة', o.geoBasis]];
+      rows = [['المدينة', o.city], ['الموقع', o.dir]];
       if (o.url) links += '<a class="btn primary" target="_blank" rel="noopener" href="' + esc(o.url) + '">' + ICON.web + 'صفحة الوجهة في NHC</a>';
     } else {
       rows = [['المطور', o.dev], ['الموقع', o.nb], ['المدينة', o.city], ['نوع الوحدات', o.type], ['الغرف', o.rooms], ['عدد الوحدات', o.units], ['المساحة', o.area], ['تفصيل المساحة', o.areaNote], ['حالة العرض', o.status], ['رقم التواصل', o.phoneLevel === 'dev' && o.phones && o.phones[0] ? 'رقم المطور' : '']];
