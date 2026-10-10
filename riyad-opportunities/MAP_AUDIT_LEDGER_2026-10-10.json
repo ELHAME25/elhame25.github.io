@@ -15899,6 +15899,70 @@
           "status": "not_present"
         }
       }
+    },
+    {
+      "id": "entity-86a5a362d753",
+      "category": "cars",
+      "name": "معرض الرايه الامثل للسيارات",
+      "city": "جازان",
+      "locality": "6926 طريق الملك عبدالعزيز، جيزان",
+      "status": "map_card_name_locality_phone_match_address_filled_from_opened_card",
+      "current_map": "https://www.google.com/maps/?cid=13346903039466333875",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "direct_card_match_address_filled",
+        "notes": "بطاقة Maps المفتوحة تعرض معرض الرايه للسيارات، جيزان، العنوان 6926 طريق الملك عبدالعزيز، 3900، جيزان 82722، والهاتف +966552218513 المطابق للسجل. أضيف العنوان الظاهر فقط؛ الرابط لم يتغير. إعادة التحميل بعد الحفظ تعذرت بسبب مهلة واجهة المتصفح."
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=13346903039466333875"
+      ],
+      "evidence_note": "تم إدخال عنوان بطاقة Maps في سجل كان عنوانه فارغًا. رابط الدبوس لم يتغير؛ إعادة فتح البطاقة بعد الحفظ انتهت بمهلة. لا موقع رسمي أو واتساب مسجل.",
+      "field_checks": {
+        "phone": {
+          "status": "verified_match_google_maps",
+          "value": "+966552218513"
+        },
+        "website": {
+          "status": "not_present"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "entity-c612efb039f5",
+      "category": "cars",
+      "name": "معرض المخلف للسيارات",
+      "city": "حائل",
+      "locality": "FPHJ+XQ4، طريق غير مسمى",
+      "status": "direct_maps_card_name_locality_phone_match",
+      "current_map": "https://www.google.com/maps/?cid=6492392779851949292",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "direct_card_match",
+        "notes": "بطاقة Maps تعرض معرض المخلف للسيارات، حائل، FPHJ+XQ4، Unnamed Road، حائل 55423، والهاتف +966165328506 المطابق للسجل. الحي غير مسمى؛ لا تغيير للدبوس أو العنوان."
+      },
+      "source_urls": [
+        "https://www.google.com/maps/?cid=6492392779851949292"
+      ],
+      "evidence_note": "تحقق مباشر من اسم المعرض والمدينة والعنوان المتاح ورقم الهاتف. الموقع الإلكتروني وواتساب غير موجودين في السجل أو البطاقة.",
+      "field_checks": {
+        "phone": {
+          "status": "verified_match_google_maps",
+          "value": "+966165328506"
+        },
+        "website": {
+          "status": "not_present"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
     }
   ],
   "browser_spot_checks": [
@@ -16002,13 +16066,13 @@
     }
   ],
   "audit_counts": {
-    "as_of_commit": "f2cbe2005d57ed44824613f4d5d141863266d2b7",
+    "as_of_commit": "pending",
     "map_target_actions": 4059,
-    "opened_and_tied_to_unique_record": 247,
-    "verified_correct": 89,
+    "opened_and_tied_to_unique_record": 249,
+    "verified_correct": 90,
     "corrected_and_retested": 15,
-    "unresolved_after_open": 158,
-    "not_opened": 3812,
+    "unresolved_after_open": 159,
+    "not_opened": 3810,
     "method": "Deduplicated record IDs; map target action per app row uses maps||mapsQ, branch coordinates (246), and generated selfbuild search (10). Correct requires directly opened target and positive name/location/purpose evidence; unresolved and merely opened are excluded. Phone, WhatsApp and website status stays field-specific.",
     "verified_correct_ids": [
       "entity-96716f5db346",
@@ -16099,8 +16163,9 @@
       "تبوك فالي|تبوك",
       "الربى|الرياض",
       "الوريف|جدة",
-      "مكة هيلز|مكة المكرمة"
+      "مكة هيلز|مكة المكرمة",
+      "entity-c612efb039f5"
     ],
-    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field. Added 4 office records from Maps card opens: three matching Cards, one record where Maps title appeared but details could not be read; 3 marked correct, 1 unresolved. Official site/WhatsApp checks separated. Denominator reconciled to deduplicated baseline 4,059; previous checkpoints had incorrectly increased the denominator when logging existing dataset rows. All logged IDs were already represented in baseline target count. Before the removed-link re-audit, Maps had 215 opened, 71 verified matches, and 144 unresolved (counts corrected for P029). P029 corrected and post-edit tested: city fixed to Seihat and direct Google Maps card pin now matches project name, Ghadeer district, city; counts updated (+1 correct and corrected/retested, -1 unresolved). Tested and updated project search fallbacks after editing: P016 still returns no result/world center; P021 yields only Mutrafiyah area; P024 yields two similar but unverified candidates. All remain unresolved; none counted correct. Removed-link re-audit: opened 3 regional car searches and 3 company searches; Karden official HQ pin was post-edit tested, adding one verified and corrected/retested record. The other five remain unresolved and retained. Current totals: 4,059 targets; 221 opened; 72 correct; 7 corrected/retested; 149 unresolved; 3,838 unopened. New maps audit: five additional showroom records were opened; all five cards matched record name and locality. One showroom phone conflicts with its Maps listing and another lists two numbers; these are independent field states. Six Riyad Bank coordinate links were opened with no readable branch cards; official sources partially support names/locations and reveal that code 304 has two distinct addresses, so no pin/district correction was made. Updated cumulative totals: 232 opened, 77 proven correct, 7 corrected/retested, 155 unresolved, 3,827 not opened of 4,059 targets. Office/project/NHC batch: six office records revisited, only Hassani was a newly opened unique target; five had been opened earlier. Nasa and Mazal now meet match criteria; Mazal pin corrected and post-edit opened, but its phone conflicts with the stored number. Hassani verified. P003 and P031-P035 were opened; P032/P033/P035 matched the project, P032 and P035 saved as direct pins; P003/P031/P034 remain unresolved. Sama/Jida opportunity Maps opened: Jida direct project pin saved and post-edit opened; Sama remains ambiguous between scheme and sales-office listings. Six NHC destinations opened: AlJana matched a named residential destination card; AlRasha query resolved to sales center only and remains unresolved; Tabuk Valley corrected from unnamed coordinate to named NHC destination card; Ruba/Alwareef official sales-center pins and Makkah Hills official destination sales-center coordinate were opened after updating. Cumulative checkpoint: 4,059 targets, 247 opened, 89 correct, 15 corrected and post-edit retested, 158 unresolved, 3,812 unopened. Contact fields are separately audited; only official/general NHC phone distinctions recorded."
+    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field. Added 4 office records from Maps card opens: three matching Cards, one record where Maps title appeared but details could not be read; 3 marked correct, 1 unresolved. Official site/WhatsApp checks separated. Denominator reconciled to deduplicated baseline 4,059; previous checkpoints had incorrectly increased the denominator when logging existing dataset rows. All logged IDs were already represented in baseline target count. Before the removed-link re-audit, Maps had 215 opened, 71 verified matches, and 144 unresolved (counts corrected for P029). P029 corrected and post-edit tested: city fixed to Seihat and direct Google Maps card pin now matches project name, Ghadeer district, city; counts updated (+1 correct and corrected/retested, -1 unresolved). Tested and updated project search fallbacks after editing: P016 still returns no result/world center; P021 yields only Mutrafiyah area; P024 yields two similar but unverified candidates. All remain unresolved; none counted correct. Removed-link re-audit: opened 3 regional car searches and 3 company searches; Karden official HQ pin was post-edit tested, adding one verified and corrected/retested record. The other five remain unresolved and retained. Current totals: 4,059 targets; 221 opened; 72 correct; 7 corrected/retested; 149 unresolved; 3,838 unopened. New maps audit: five additional showroom records were opened; all five cards matched record name and locality. One showroom phone conflicts with its Maps listing and another lists two numbers; these are independent field states. Six Riyad Bank coordinate links were opened with no readable branch cards; official sources partially support names/locations and reveal that code 304 has two distinct addresses, so no pin/district correction was made. Updated cumulative totals: 232 opened, 77 proven correct, 7 corrected/retested, 155 unresolved, 3,827 not opened of 4,059 targets. Office/project/NHC batch: six office records revisited, only Hassani was a newly opened unique target; five had been opened earlier. Nasa and Mazal now meet match criteria; Mazal pin corrected and post-edit opened, but its phone conflicts with the stored number. Hassani verified. P003 and P031-P035 were opened; P032/P033/P035 matched the project, P032 and P035 saved as direct pins; P003/P031/P034 remain unresolved. Sama/Jida opportunity Maps opened: Jida direct project pin saved and post-edit opened; Sama remains ambiguous between scheme and sales-office listings. Six NHC destinations opened: AlJana matched a named residential destination card; AlRasha query resolved to sales center only and remains unresolved; Tabuk Valley corrected from unnamed coordinate to named NHC destination card; Ruba/Alwareef official sales-center pins and Makkah Hills official destination sales-center coordinate were opened after updating. Cumulative checkpoint: 4,059 targets, 247 opened, 89 correct, 15 corrected and post-edit retested, 158 unresolved, 3,812 unopened. Contact fields are separately audited; only official/general NHC phone distinctions recorded. دفعة استئناف: فُتحت بطاقتا معرض في جازان وحائل. بطاقة جازان دعمت إضافة عنوان شارع وهاتف مطابق مع بقاء إعادة الفتح بعد الحفظ غير محسومة؛ بطاقة حائل طابقت الاسم والمدينة والعنوان المتاح والهاتف. لا روابط موقع/واتساب مسجلة. لم يتغير أي دبوس في هذه الدفعة."
   }
 }
