@@ -13751,6 +13751,246 @@
         "https://mashroat.com.sa/maps/"
       ],
       "evidence_note": "Maps target opens developer office, not project. Developer source lists multiple neighborhoods (Mutrafiyah, Yasmin, Khuzama, Jalmudah/Al Taif); no single precise pin."
+    },
+    {
+      "id": "prior-qadisiyya-76",
+      "category": "offices",
+      "name": "مكتب ركن الرحمة العقاري",
+      "city": "الرياض",
+      "locality": "القادسية",
+      "status": "unresolved_coordinate_only_no_business_card",
+      "current_map": "https://www.google.com/maps?q=24.817084225111,46.808375165247",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_coordinate_only_no_business_card",
+        "notes": "Maps shows coordinate/address only, no business card; no official phone/site/WA match located."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "unresolved"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        }
+      },
+      "source_urls": [],
+      "evidence_note": "Maps shows coordinate/address only, no business card; no official phone/site/WA match located."
+    },
+    {
+      "id": "prior-qadisiyya-77",
+      "category": "offices",
+      "name": "مكتب خيمة اليرموك للعقارات",
+      "city": "الرياض",
+      "locality": "أبي جعفر المنصور",
+      "status": "unresolved_place_id_page_no_business_card",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%AE%D9%8A%D9%85%D8%A9%20%D8%A7%D9%84%D9%8A%D8%B1%D9%85%D9%88%D9%83%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ928jarv_Lj4RN3EKXx8XrUA",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_place_id_page_no_business_card",
+        "notes": "Maps page did not load a readable place card. Market listing supports name/phone and Riyadh only; no official office location or WA/site confirmation."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "third_party_listing_support"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        }
+      },
+      "source_urls": [
+        "https://ksaaqar.com/ad/ارض-سكنية-للبيع-حي-اليرموك/"
+      ],
+      "evidence_note": "Maps page did not load a readable place card. Market listing supports name/phone and Riyadh only; no official office location or WA/site confirmation."
+    },
+    {
+      "id": "prior-qadisiyya-78",
+      "category": "offices",
+      "name": "مكتب نور اليرموك للعقارات",
+      "city": "الرياض",
+      "locality": "اليرموك",
+      "status": "unresolved_maps_coordinate_no_card_official_address_coordinates",
+      "current_map": "https://www.google.com/maps?q=24.7994703,46.7475655",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_maps_coordinate_no_card_official_address_coordinates",
+        "notes": "Maps shows coordinate only, no business card. Ejar official page confirms name, phone, Riyadh, Al-Yarmouk and street Al-Diyar, and contains same coordinates; no separate website/WA."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "official_source_match"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        }
+      },
+      "source_urls": [
+        "https://www.ejar.sa/ar/node/197608"
+      ],
+      "evidence_note": "Maps shows coordinate only, no business card. Ejar official page confirms name, phone, Riyadh, Al-Yarmouk and street Al-Diyar, and contains same coordinates; no separate website/WA."
+    },
+    {
+      "id": "prior-qadisiyya-79",
+      "category": "offices",
+      "name": "مكتب واجهة الخليج للخدمات العقارية",
+      "city": "الرياض",
+      "locality": "الخليج",
+      "status": "unresolved_maps_coordinate_no_card_official_address_coordinates",
+      "current_map": "https://www.google.com/maps?q=24.779379789495,46.794878940488",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_maps_coordinate_no_card_official_address_coordinates",
+        "notes": "Maps shows coordinate only, no business card. Ejar official page confirms name, phone, Riyadh, Al-Khaleej and street Sheikh Abdulaziz bin Abdulrahman bin Bishr, and references same map coordinates; no separate website/WA."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "official_source_match"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        }
+      },
+      "source_urls": [
+        "https://www.ejar.sa/ar/node/206519"
+      ],
+      "evidence_note": "Maps shows coordinate only, no business card. Ejar official page confirms name, phone, Riyadh, Al-Khaleej and street Sheikh Abdulaziz bin Abdulrahman bin Bishr, and references same map coordinates; no separate website/WA."
+    },
+    {
+      "id": "phase5-office-31ca6de3470b",
+      "category": "offices",
+      "name": "مكتب واجهة الأفق للخدمات العقارية",
+      "city": "بريدة",
+      "locality": "طريق الملك خالد",
+      "status": "unresolved_maps_card_unreadable_address_conflict",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D9%81%D9%82%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9&query_place_id=ChIJJU-Mi0hZfxURFq62RvLqmRI",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_maps_card_unreadable_address_conflict",
+        "notes": "Maps tab inaccessible/read not showing card; Aqar/Haraj support name and phone, but reported office locations vary (Al-Ufuq vs Al-Rihab); exact office location unresolved."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "third_party_listing_support"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        }
+      },
+      "source_urls": [
+        "https://sa.aqar.fm/عقارات/1124",
+        "https://haraj.com.sa/11176770009/أرض_شالية_مؤسس_دورين_في_مخطط_الراشد/"
+      ],
+      "evidence_note": "Maps tab inaccessible/read not showing card; Aqar/Haraj support name and phone, but reported office locations vary (Al-Ufuq vs Al-Rihab); exact office location unresolved."
+    },
+    {
+      "id": "phase5-office-8768084b4722",
+      "category": "offices",
+      "name": "مكتب السكب السعودي",
+      "city": "جدة",
+      "locality": "الأجاويد جنوب جدة",
+      "status": "unresolved_maps_card_unreadable_contact_unknown",
+      "current_map": "https://www.google.com/maps/?cid=5776640672961015109",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_maps_card_unreadable_contact_unknown",
+        "notes": "Maps card could not be read; secondary listing shows same business name in Jeddah but no phone or detailed location; phone, district, WA and website unresolved."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "unresolved"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        }
+      },
+      "source_urls": [
+        "https://nearloca.com/search-places/وكالة-عقارات-in-مكة-المكرمة/"
+      ],
+      "evidence_note": "Maps card could not be read; secondary listing shows same business name in Jeddah but no phone or detailed location; phone, district, WA and website unresolved."
+    },
+    {
+      "id": "phase5-office-9de23ef81504",
+      "category": "offices",
+      "name": "مكتب صلاح عمر السيف العقاري",
+      "city": "الدمام",
+      "locality": "الندى، شارع محمد عبدالوهاب",
+      "status": "unresolved_search_no_readable_card_phone_secondary_directory",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B5%D9%84%D8%A7%D8%AD%20%D8%B9%D9%85%D8%B1%20%D8%A7%D9%84%D8%B3%D9%8A%D9%81%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%2093CM%2BRR5%20%D8%A7%D9%84%D9%86%D8%AF%D9%89%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_search_no_readable_card_phone_secondary_directory",
+        "notes": "Maps page/card unreadable; secondary directory supports phone and address, not official; no WA/official site."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "third_party_listing_support"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        }
+      },
+      "source_urls": [
+        "https://www.bizmideast.com/SA/مكتب-صلاح-عمر-السيف-العقاري-053-056-5881"
+      ],
+      "evidence_note": "Maps page/card unreadable; secondary directory supports phone and address, not official; no WA/official site."
+    },
+    {
+      "id": "phase5-office-5df8151219e0",
+      "category": "offices",
+      "name": "شركة السمات العمرانية تسويق عقارات",
+      "city": "الدمام",
+      "locality": "طيبة، شارع عبدالرحمن بن عوف",
+      "status": "unresolved_maps_card_unreadable_official_details_match",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B3%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%85%D8%B1%D8%A7%D9%86%D9%8A%D8%A9%20%D8%B7%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_maps_card_unreadable_official_details_match",
+        "notes": "Maps card unreadable; official company site supports phone and location/address (6926 Abdulrahman bin Awf Street, Al-Taybah, Dammam); no separate WA proven."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "official_source_match"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        },
+        "website": {
+          "status": "official_site"
+        }
+      },
+      "source_urls": [
+        "https://www.sematalaqaria.com/about/",
+        "https://alsematalaqareya.com/"
+      ],
+      "evidence_note": "Maps card unreadable; official company site supports phone and location/address (6926 Abdulrahman bin Awf Street, Al-Taybah, Dammam); no separate WA proven."
     }
   ],
   "browser_spot_checks": [
@@ -13855,11 +14095,11 @@
   ],
   "audit_counts": {
     "as_of_commit": "pending",
-    "map_target_actions": 4086,
-    "opened_and_tied_to_unique_record": 185,
+    "map_target_actions": 4094,
+    "opened_and_tied_to_unique_record": 193,
     "verified_correct": 65,
     "corrected_and_retested": 5,
-    "unresolved_after_open": 120,
+    "unresolved_after_open": 128,
     "not_opened": 3901,
     "method": "Deduplicated record IDs; map target action per app row uses maps||mapsQ, branch coordinates (246), and generated selfbuild search (10). Correct requires directly opened target and positive name/location/purpose evidence; unresolved and merely opened are excluded. Phone, WhatsApp and website status stays field-specific.",
     "verified_correct_ids": [
@@ -13929,6 +14169,6 @@
       "entity-3951089fe932",
       "entity-ce43a7dc2866"
     ],
-    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved."
+    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field."
   }
 }
