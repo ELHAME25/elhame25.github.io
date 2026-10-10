@@ -773,8 +773,7 @@
   function intro(k, n, rows) {
     var b = S.branch;
     if (k === 'projects' && S.scope === 'branch' && radiusApplies(k, 'branch') && rows) {
-      var approximate = rows.filter(function (x) { return x.rankD != null && x.o.loc === 'nb'; }).length;
-      return fmt(n) + ' مشروعًا داخل نطاق الفرع، منها ' + fmt(approximate) + ' بموقع الحي.';
+      return fmt(n) + ' مشروعًا ضمن نطاق الفرع';
     }
     if (k === 'cars' && sameCity(b.city, 'الرياض') && S.scope !== 'city') {
       var area = S.carArea || defaultCarArea(b);
@@ -786,7 +785,7 @@
   function emptyState(k, c) {
     var sec = activeSector(), b = S.branch;
     if (S.scope === 'city' && !sec) return '<div class="empty"><h3>لا توجد ' + esc(NOUN[k]) + ' مسجلة في ' + esc(b.city) + '</h3></div>';
-    var emptyTitle = sec ? 'لا توجد ' + NOUN[k] + ' في ' + sec + ' ' + b.city : ((!b.cityOnly && branchScopedKind(k) && (b.lat == null || b.lon == null)) ? 'تعذر تحديد ' + NOUN[k] + ' القريبة: لا توجد إحداثيات موثوقة للفرع' : (radiusApplies(k, S.scope) ? 'لا توجد ' + NOUN[k] + ' ضمن ' + fmt(S.radius) + ' كم من نقطة المرجع' : 'لا توجد ' + NOUN[k] + ' في ' + b.city));
+    var emptyTitle = sec ? 'لا توجد ' + NOUN[k] + ' في ' + sec + ' ' + b.city : (radiusApplies(k, S.scope) ? 'لا توجد ' + NOUN[k] + ' ضمن ' + fmt(S.radius) + ' كم من نقطة المرجع' : 'لا توجد ' + NOUN[k] + ' في ' + b.city);
     var h = '<div class="empty"><h3>' + esc(emptyTitle) + '</h3><div class="row">';
     if (sec) h += SECTORS.filter(function (s) { return s !== sec; }).map(function (s) { return { s: s, n: itemsFor(k, s, 'sector').length }; }).filter(function (x) { return x.n; })
       .map(function (x) { return '<button class="btn" data-explore="' + x.s + '">' + esc(x.s) + ' · <span class="num">' + fmt(x.n) + '</span></button>'; }).join('');
