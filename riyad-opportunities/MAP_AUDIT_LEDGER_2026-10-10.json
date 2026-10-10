@@ -17698,30 +17698,53 @@
       "category": "cars",
       "name": "معرض العون للسيارات",
       "city": "جدة",
-      "status": "unresolved_card_not_readable",
+      "status": "approved_verified_maps_motory",
       "current_map": "https://www.google.com/maps/?cid=290209195033820772",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "matched": false,
-        "status": "unresolved_card_not_readable",
-        "notes": "فُتح رابط CID المباشر لكن لم تظهر بطاقة قابلة للقراءة بعد المحاولة؛ لم أغير السجل."
+        "matched": true,
+        "status": "approved_verified_maps_motory",
+        "notes": "تمت إعادة فتح CID في Google Maps؛ رابط الاتصال يعرض tel:+966555541001، ويرتبط في البطاقة بحساب حراج باسم معرض العون للسيارات. منصة موتري تعرض معرض العون المتميز للسيارات بجدة وتبيع السيارات المستعملة؛ دليل خرائط أعمال يطابق رقم الاتصال والمدينة والحي: الجوهرة، جدة 22417، plus code C7M3+6M. رابط Maps هو دبوس CID مباشر."
       },
       "source_urls": [
-        "https://www.google.com/maps/?cid=290209195033820772"
+        "https://www.google.com/maps/?cid=290209195033820772",
+        "https://ksa.motory.com/ar/الدليل/شركة/معرض-العون-المتميز-للسيارات/",
+        "https://www.aljazeeramaps.com/listing/معرض-العون-للسيارات،-جدة"
       ],
       "evidence_note": "فُتح رابط CID المباشر لكن لم تظهر بطاقة قابلة للقراءة بعد المحاولة؛ لم أغير السجل.",
       "field_checks": {
-        "phone": {
-          "status": "unresolved"
+        "name": {
+          "status": "matched",
+          "sources": [
+            "Google Maps",
+            "Motory"
+          ]
         },
-        "website": {
-          "status": "not_present"
+        "activity": {
+          "status": "verified_used_cars",
+          "source": "Motory"
+        },
+        "city_locality": {
+          "status": "matched",
+          "value": "الجوهرة، جدة 22417، C7M3+6M"
+        },
+        "phone": {
+          "status": "verified_maps",
+          "value": "0555541001",
+          "tested_link": "tel:+966555541001"
         },
         "whatsapp": {
-          "status": "not_present"
+          "status": "listed_on_motory_not_independently_mapped_to_number"
+        },
+        "website": {
+          "status": "no_official_site_listed"
+        },
+        "map": {
+          "status": "direct_cid_opened"
         }
-      }
+      },
+      "decision": "approved"
     },
     {
       "id": "phase5-car-47d33ee61000",
