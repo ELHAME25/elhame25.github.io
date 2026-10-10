@@ -17838,6 +17838,66 @@
           "status": "not_verified"
         }
       }
+    },
+    {
+      "id": "entity-dee18ad48246",
+      "category": "cars",
+      "name": "معرض الوادعي لبيع السيارات",
+      "city": "خميس مشيط",
+      "locality": "هجلة",
+      "status": "unresolved_no_exact_pin",
+      "current_map": "",
+      "search_fallback": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D8%B9%D9%8A%20%D9%84%D8%A8%D9%8A%D8%B9%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%87%D8%AC%D9%84%D8%A9%20%D8%AE%D9%85%D9%8A%D8%B3%20%D9%85%D8%B4%D9%8A%D8%B7%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_no_exact_pin",
+        "notes": "بطاقة CID القديمة عامة وتعرض رقمًا مختلفًا؛ لا يوجد دبوس دقيق مؤكد. mapsQ بحث مساعد فقط وليس دبوسًا."
+      },
+      "source_urls": [],
+      "evidence_note": "بطاقة CID القديمة عامة وتعرض رقمًا مختلفًا؛ لا يوجد دبوس دقيق مؤكد. mapsQ بحث مساعد فقط وليس دبوسًا. لا تمثل وصلة البحث دبوسًا مؤكدًا.",
+      "field_checks": {
+        "phone": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        }
+      }
+    },
+    {
+      "id": "entity-65cb7cddce51",
+      "category": "cars",
+      "name": "معرض السواق للسيارات",
+      "city": "بريدة",
+      "locality": "الجزيرة",
+      "status": "unresolved_no_exact_pin",
+      "current_map": "",
+      "search_fallback": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B3%D9%88%D8%A7%D9%82%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_no_exact_pin",
+        "notes": "بطاقة CID القديمة فارغة؛ لا يوجد دبوس دقيق مؤكد. mapsQ بحث مساعد فقط وليس دبوسًا."
+      },
+      "source_urls": [],
+      "evidence_note": "بطاقة CID القديمة فارغة؛ لا يوجد دبوس دقيق مؤكد. mapsQ بحث مساعد فقط وليس دبوسًا. لا تمثل وصلة البحث دبوسًا مؤكدًا.",
+      "field_checks": {
+        "phone": {
+          "status": "not_independently_verified"
+        },
+        "website": {
+          "status": "not_verified"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        }
+      }
     }
   ],
   "browser_spot_checks": [
@@ -17938,6 +17998,15 @@
       "office_unresolved": 6,
       "car_pin_corrections_posttested": 2,
       "notes": "Golden Advisor and Al-Ramz CID cards match. Golden Advisor also has a conflicting stored coordinate field, kept flagged; Wahat Hajar exact sublocality remains unresolved. Five search-only offices have official contact fields partially confirmed but no map card. Added verified direct showroom pins for Ali Al-Sadiq and Al-Dagharir; both were reopened after saving. Alta official WhatsApp destination differs from malformed stored wa.me URL; updated URL to official source but browser policy prevented opening/testing it."
+    },
+    {
+      "checked_at": "2026-10-10",
+      "scope": "تصحيح اكتمال وسم السجلين اللذين سبق فحصهما",
+      "record_ids": [
+        "entity-dee18ad48246",
+        "entity-65cb7cddce51"
+      ],
+      "result": "إضافة mapReviewStatus وmapReviewNote، وإضافة mapsQ بحثي صريح غير مؤكد؛ لم يُنشأ دبوس ولا أُعد الفحص."
     }
   ],
   "audit_counts": {
