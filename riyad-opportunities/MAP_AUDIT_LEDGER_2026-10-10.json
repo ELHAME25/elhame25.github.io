@@ -16705,30 +16705,34 @@
       "category": "cars",
       "name": "معرض فيض الخيرات للسيارات",
       "city": "جدة",
-      "status": "unresolved_card_not_readable",
+      "status": "verified_waze_location_contact_map_cid_unreadable",
       "current_map": "https://www.google.com/maps/?cid=11436154795590947396",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
         "matched": false,
-        "status": "title_visible_details_not_readable",
-        "notes": "فُتح CID وعرضت خرائط Google عنوانًا يوحي باسم معرض فيض الخيرات للسيارات جدة، لكن تعذر استخراج بطاقة تفاصيل قابلة للقراءة بعد محاولات القراءة؛ لم يُثبت العنوان أو الهاتف."
+        "status": "waze_named_place_exact_google_cid_unreadable",
+        "notes": "بطاقة Waze المطابقة للاسم تعرض الجوهرة، شارع أحمد ذاكر إدريس، جدة 22417، ورقم 0550761199 والموقع faydalkhayrat.com. تم تحديث العنوان والموقع؛ أبقيت Google CID الحالي دون ادعاء قراءة بطاقته."
       },
       "source_urls": [
-        "https://www.google.com/maps/?cid=11436154795590947396"
+        "https://www.google.com/maps/?cid=11436154795590947396",
+        "https://www.waze.com/ar/live-map/directions/sa/mkh-almkrmh/jdh/mardh-fydh-alkhyrat-llsyarat-jdh-fayd-al-khayraat-car-show-room?to=place.ChIJ58P2s4DLwxURRBKU-zFitZ4"
       ],
-      "evidence_note": "لم أعدّ عنوان الصفحة وحده إثباتًا لحقول السجل.",
+      "evidence_note": "بطاقة Waze المطابقة للاسم تعرض الجوهرة، شارع أحمد ذاكر إدريس، جدة 22417، ورقم 0550761199 والموقع faydalkhayrat.com. تم تحديث العنوان والموقع؛ أبقيت Google CID الحالي دون ادعاء قراءة بطاقته.",
       "field_checks": {
         "phone": {
-          "status": "unresolved"
+          "status": "verified_match_waze",
+          "notes": "0550761199"
         },
         "website": {
-          "status": "not_present"
+          "status": "verified_match_waze",
+          "notes": "faydalkhayrat.com"
         },
         "whatsapp": {
           "status": "not_present"
         }
-      }
+      },
+      "locality": "الجوهرة، معارض السيارات، شارع أحمد ذاكر إدريس، جدة 22417"
     },
     {
       "id": "phase5-car-5bf4ff1d69f2",
@@ -17101,30 +17105,34 @@
       "category": "cars",
       "name": "معرض الشلبى للسيارات المستوردة",
       "city": "جدة",
-      "status": "unresolved_card_not_readable",
+      "status": "verified_waze_location_contact_map_cid_unreadable",
       "current_map": "https://www.google.com/maps/?cid=16071483024594392341",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
         "matched": false,
-        "status": "unresolved_card_not_readable",
-        "notes": "فُتح رابط CID المباشر لكن لم تظهر بطاقة Maps قابلة للقراءة؛ لم أعدّ الاسم أو الرقم أو العنوان مثبتًا."
+        "status": "waze_named_place_exact_google_cid_unreadable",
+        "notes": "بطاقة Waze المطابقة للاسم تعرض C7M3+F86، الجوهرة، جدة 22417، ورقم 0555611699 ورابط الحساب twitter.com/shalabicars. تم تحديث العنوان والرابط؛ أبقيت Google CID الحالي دون ادعاء قراءة بطاقته."
       },
       "source_urls": [
-        "https://www.google.com/maps/?cid=16071483024594392341"
+        "https://www.google.com/maps/?cid=16071483024594392341",
+        "https://www.waze.com/ar/live-map/directions/sa/mkh-almkrmh/jdh/mardh-alshlba-llsyarat-almstwrdh?to=place.ChIJARSQ3vPLwxURFVWrFqlgCd8"
       ],
-      "evidence_note": "فُتح رابط CID المباشر لكن لم تظهر بطاقة Maps قابلة للقراءة؛ لم أعدّ الاسم أو الرقم أو العنوان مثبتًا.",
+      "evidence_note": "بطاقة Waze المطابقة للاسم تعرض C7M3+F86، الجوهرة، جدة 22417، ورقم 0555611699 ورابط الحساب twitter.com/shalabicars. تم تحديث العنوان والرابط؛ أبقيت Google CID الحالي دون ادعاء قراءة بطاقته.",
       "field_checks": {
         "phone": {
-          "status": "unresolved"
+          "status": "verified_match_waze",
+          "notes": "0555611699"
         },
         "website": {
-          "status": "not_present"
+          "status": "verified_social_link_waze",
+          "notes": "twitter.com/shalabicars"
         },
         "whatsapp": {
           "status": "not_present"
         }
-      }
+      },
+      "locality": "C7M3+F86، الجوهرة، جدة 22417"
     },
     {
       "id": "phase5-car-39d4cad0d586",
@@ -17742,20 +17750,22 @@
       "category": "cars",
       "name": "معرض الضحيان للسيارات",
       "city": "الأحساء",
-      "locality": "",
-      "status": "unresolved_after_open",
+      "locality": "المنطقة الصناعية، المبرز، الأحساء",
+      "status": "verified_business_name_address_map_pin_unresolved",
       "current_map": "https://www.google.com/maps/?cid=10114112633508966693",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
         "matched": false,
-        "status": "unresolved_after_open",
-        "notes": "تعذر تحميل بطاقة قابلة للقراءة؛ غير محسوم."
+        "status": "business_name_and_locality_supported_pin_unresolved",
+        "notes": "إعلان حراج حديث باسم معرض يوسف صالح الضحيان للسيارات يحدد (المنطقة الشرقية - الأحساء - المنطقة الصناعية)، وقائمة موردي بنك الراجحي تدرج الاسم نفسه للأحساء. تم تصحيح الاسم والعنوان؛ رقم الهاتف ودبوس Google لم يتغيرا لعدم التحقق منهما."
       },
       "source_urls": [
-        "https://www.google.com/maps/?cid=10114112633508966693"
+        "https://www.google.com/maps/?cid=10114112633508966693",
+        "https://haraj.com.sa/11153439491/نيسان_اكستريل_7_راكب/",
+        "https://alrajhibank.com.sa/-/media/Project/AlRajhi/ARBRevamp/Home/Personal/Finance/Supplier-Name.pdf"
       ],
-      "evidence_note": "تعذر تحميل بطاقة قابلة للقراءة؛ غير محسوم.",
+      "evidence_note": "إعلان حراج حديث باسم معرض يوسف صالح الضحيان للسيارات يحدد (المنطقة الشرقية - الأحساء - المنطقة الصناعية)، وقائمة موردي بنك الراجحي تدرج الاسم نفسه للأحساء. تم تصحيح الاسم والعنوان؛ رقم الهاتف ودبوس Google لم يتغيرا لعدم التحقق منهما.",
       "field_checks": {
         "phone": {
           "status": "not_independently_verified"
