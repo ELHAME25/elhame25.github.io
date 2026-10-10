@@ -1,0 +1,287 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-10",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "7e544b20831d532f18a78dd12356303f6d7ffbaa",
+  "scope": "Riyadh non-Qadisiyah showroom evidence only",
+  "data_write_prohibition": "cars.json not modified; this is an independent evidence record, not an applied patch",
+  "verification_method": "Web search and direct reading of named Waze/Yango/official/dealer/directory pages; no Google place card opened or phone call placed",
+  "entry_count": 10,
+  "entries": [
+    {
+      "id": "car-shifa-05",
+      "stored": {
+        "name": "معرض بهجة الشفاء للسيارات",
+        "city": "الرياض",
+        "neighborhood": "",
+        "phones": [
+          "0536623945"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%87%D8%AC%D8%A9%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%D8%A1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": ""
+      },
+      "decision": "source_supported",
+      "evidence": "Waze and Al Jazeera Maps identify the showroom in Al Marwah and publish the stored phone 0536623945.",
+      "field_status": {
+        "name_activity": "supported_or_partial_see_evidence",
+        "city_locality": "supported_or_partial_see_evidence",
+        "phone": "supported_by_external_source",
+        "whatsapp": "not_verified",
+        "website": "not_verified_or_not_listed",
+        "google_maps_pin": "not_verified"
+      },
+      "remaining": "phone supported by two directories; Google place pin unverified",
+      "sources": [
+        "https://www.waze.com/ar/live-map/directions/sa/mntqh-alryadh/alryadh/mardh-bhjh-alshfaa-llsyarat?to=place.ChIJbwEWVTcOLz4RE6-Meu2-Ons",
+        "https://www.aljazeeramaps.com/listing/معرض-بهجة-الشفاء-للسيارات،-الرياض"
+      ]
+    },
+    {
+      "id": "car-shifa-07",
+      "stored": {
+        "name": "شركة رعد الشفاء للسيارات - الفرع الرئيسي",
+        "city": "الرياض",
+        "neighborhood": "",
+        "phones": [
+          "0500781804"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B1%D8%B9%D8%AF%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%D8%A1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20-%20%D8%A7%D9%84%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": ""
+      },
+      "decision": "source_supported",
+      "evidence": "Waze and BizMidEast match the branch name, Al Imam Muslim/Ash Shifa location and stored phone 0500781804.",
+      "field_status": {
+        "name_activity": "supported_or_partial_see_evidence",
+        "city_locality": "supported_or_partial_see_evidence",
+        "phone": "supported_by_external_source",
+        "whatsapp": "not_verified",
+        "website": "not_verified_or_not_listed",
+        "google_maps_pin": "not_verified"
+      },
+      "remaining": "phone and district corroborated; Google pin unverified",
+      "sources": [
+        "https://www.waze.com/live-map/directions/sa/riyadh-province/riyadh/shrkh-rad-alshfaa-llsyarat-alfra-alreysy?to=place.ChIJP_me4E8PLz4RlwKDMclNoF0",
+        "https://www.bizmideast.com/SA/معرض-رعد-الشفاء-للسيارات-050-078-1804"
+      ]
+    },
+    {
+      "id": "car-shifa-08",
+      "stored": {
+        "name": "معرض محمد بن ذعار العجمي للسيارات - فرع الشفا",
+        "city": "الرياض",
+        "neighborhood": "",
+        "phones": [
+          "0547777703"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D8%B0%D8%B9%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D8%AC%D9%85%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20-%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": ""
+      },
+      "decision": "partial_contact_conflict",
+      "evidence": "Official mzjcars.com confirms Ash Shifa branch on Imam Muslim Road and publishes 920014635, but stored 0547777703 is not independently confirmed. Official site also lists a Qadisiyah branch, which was not touched.",
+      "field_status": {
+        "name_activity": "supported_or_partial_see_evidence",
+        "city_locality": "supported_or_partial_see_evidence",
+        "phone": "conflict_or_unverified",
+        "whatsapp": "not_verified",
+        "website": "official_website_confirmed",
+        "google_maps_pin": "not_verified"
+      },
+      "remaining": "company website confirmed; branch phone stored unverified; Google pin unverified",
+      "sources": [
+        "https://mzjcars.com/"
+      ]
+    },
+    {
+      "id": "car-shifa-09",
+      "stored": {
+        "name": "معرض السران للسيارات",
+        "city": "الرياض",
+        "neighborhood": "",
+        "phones": [
+          "0561047060"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B3%D8%B1%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": ""
+      },
+      "decision": "phone_conflict",
+      "evidence": "Yango lists معرض السران in Al Marwah on Ahmad Al Basri with 0530571776, unlike stored 0561047060. Identity match requires additional evidence.",
+      "field_status": {
+        "name_activity": "supported_or_partial_see_evidence",
+        "city_locality": "supported_or_partial_see_evidence",
+        "phone": "conflict_or_unverified",
+        "whatsapp": "not_verified",
+        "website": "not_verified_or_not_listed",
+        "google_maps_pin": "not_verified"
+      },
+      "remaining": "do not replace phone until exact entity match resolved; Google pin unverified",
+      "sources": [
+        "https://maps.yango.com/ar-sa/org/183365434566/"
+      ]
+    },
+    {
+      "id": "car-shifa-10",
+      "stored": {
+        "name": "معرض سماء ديراب للسيارات",
+        "city": "الرياض",
+        "neighborhood": "",
+        "phones": [
+          "0557004484"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B3%D9%85%D8%A7%D8%A1%20%D8%AF%D9%8A%D8%B1%D8%A7%D8%A8%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": ""
+      },
+      "decision": "partial_supported",
+      "evidence": "Haraj dealer account معرض سماء ديراب للسيارات shows active vehicle listings; a third-party listing for معرض ديراب publishes 0557004484, matching stored phone, but exact business identity not fully proven.",
+      "field_status": {
+        "name_activity": "supported_or_partial_see_evidence",
+        "city_locality": "supported_or_partial_see_evidence",
+        "phone": "partially_supported_or_unverified",
+        "whatsapp": "not_verified",
+        "website": "not_verified_or_not_listed",
+        "google_maps_pin": "not_verified"
+      },
+      "remaining": "activity supported; phone identity tentative; Google pin unverified",
+      "sources": [
+        "https://haraj.com.sa/users/معرض%20سماء%20ديراب%20للسيارات/",
+        "https://www.aljazeeramaps.com/listing/معرض-ديراب،-الرياض"
+      ]
+    },
+    {
+      "id": "car-shifa-11",
+      "stored": {
+        "name": "معرض متعب للسيارات الشفا",
+        "city": "الرياض",
+        "neighborhood": "",
+        "phones": [
+          "0554715999"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%AA%D8%B9%D8%A8%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": ""
+      },
+      "decision": "activity_supported_phone_unverified",
+      "evidence": "Motory lists معرض متعب للسيارات in Riyadh with car-showroom activity, but does not establish stored phone 0554715999 or exact Google pin.",
+      "field_status": {
+        "name_activity": "supported_or_partial_see_evidence",
+        "city_locality": "supported_or_partial_see_evidence",
+        "phone": "partially_supported_or_unverified",
+        "whatsapp": "not_verified",
+        "website": "not_verified_or_not_listed",
+        "google_maps_pin": "not_verified"
+      },
+      "remaining": "exact stored phone and location unverified",
+      "sources": [
+        "https://ksa.motory.com/ar/الدليل/شركة/معرض-متعب-للسارات/"
+      ]
+    },
+    {
+      "id": "car-shifa-13",
+      "stored": {
+        "name": "معرض السبيعي للسيارات",
+        "city": "الرياض",
+        "neighborhood": "",
+        "phones": [
+          "0554444604"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B3%D8%A8%D9%8A%D8%B9%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": ""
+      },
+      "decision": "source_supported",
+      "evidence": "Cybo lists معرض السبيعي للسيارات at 2878 Imam Muslim, Al Marwah, Riyadh with phone 0554444604 matching stored number.",
+      "field_status": {
+        "name_activity": "supported_or_partial_see_evidence",
+        "city_locality": "supported_or_partial_see_evidence",
+        "phone": "supported_by_external_source",
+        "whatsapp": "not_verified",
+        "website": "not_verified_or_not_listed",
+        "google_maps_pin": "not_verified"
+      },
+      "remaining": "directory supports name, location and phone; Google pin not opened",
+      "sources": [
+        "https://yellowpages-ar.cybo.com/SA-biz/معرض-السبيعي-للسيارات_2G"
+      ]
+    },
+    {
+      "id": "car-shifa-04",
+      "stored": {
+        "name": "معرض الإبداع للسيارات",
+        "city": "الرياض",
+        "neighborhood": "",
+        "phones": [
+          "0537031513"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%A5%D8%A8%D8%AF%D8%A7%D8%B9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": ""
+      },
+      "decision": "phone_conflict_possible_identity_ambiguity",
+      "evidence": "Al Jazeera Maps lists الابداع للسيارات on Al Khalil bin Ahmad, Ash Shifa, with 0553355441/0555553189/0553775018, none matching stored 0537031513. Exact identity not established.",
+      "field_status": {
+        "name_activity": "supported_or_partial_see_evidence",
+        "city_locality": "supported_or_partial_see_evidence",
+        "phone": "conflict_or_unverified",
+        "whatsapp": "not_verified",
+        "website": "not_verified_or_not_listed",
+        "google_maps_pin": "not_verified"
+      },
+      "remaining": "retain stored phone pending stronger identity evidence",
+      "sources": [
+        "https://www.aljazeeramaps.com/listing/الابداع-للسيارات"
+      ]
+    },
+    {
+      "id": "v9-car-374863400782",
+      "stored": {
+        "name": "مجمع معارض الشفاء للسيارات",
+        "city": "الرياض",
+        "neighborhood": "المروة/الشفا",
+        "phones": [
+          "0505615836"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%AC%D9%85%D8%B9%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%D8%A1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": ""
+      },
+      "decision": "source_supported",
+      "evidence": "Waze lists مجمع معارض الشفاء للسيارات at Ibn Sayyidah, Al Marwah, with stored 0505615836; another directory calls it معرض الشفا الجديد.",
+      "field_status": {
+        "name_activity": "supported_or_partial_see_evidence",
+        "city_locality": "supported_or_partial_see_evidence",
+        "phone": "supported_by_external_source",
+        "whatsapp": "not_verified",
+        "website": "not_verified_or_not_listed",
+        "google_maps_pin": "not_verified"
+      },
+      "remaining": "phone and locality supported; naming variants require care; Google pin unverified",
+      "sources": [
+        "https://www.waze.com/ar/live-map/directions/sa/mntqh-alryadh/alryadh/mjma-maardh-alshfaa-llsyarat?to=place.ChIJFV24BTEOLz4Rhoxbo98jWoQ",
+        "https://www.bizmideast.com/SA/معرض-الشفاء-الجديد-للسيارات-050-561-5836"
+      ]
+    },
+    {
+      "id": "v9-car-0ddf3d1c662a",
+      "stored": {
+        "name": "معرض سماء الرياض للسيارات",
+        "city": "الرياض",
+        "neighborhood": "المروة",
+        "phones": [
+          "0114210111"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B3%D9%85%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": ""
+      },
+      "decision": "partial_supported",
+      "evidence": "Google Maps indexed search results show معرض سماء الرياض للسيارات with stored 0114210111, but no named Google place page was opened; exact pin and locality not established.",
+      "field_status": {
+        "name_activity": "supported_or_partial_see_evidence",
+        "city_locality": "supported_or_partial_see_evidence",
+        "phone": "partially_supported_or_unverified",
+        "whatsapp": "not_verified",
+        "website": "not_verified_or_not_listed",
+        "google_maps_pin": "not_verified"
+      },
+      "remaining": "indexed search evidence only; do not claim Google pin verified",
+      "sources": [
+        "https://www.google.com/maps/search/معارض%2Bللسيارات%2Bالرياض"
+      ]
+    }
+  ]
+}
