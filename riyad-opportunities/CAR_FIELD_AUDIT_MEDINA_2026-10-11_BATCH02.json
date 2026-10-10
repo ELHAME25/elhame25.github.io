@@ -43,15 +43,15 @@
           ]
         },
         "google_maps": {
-          "status": "official_site_listed_unreachable",
-          "evidence": "Qemacars identifies معرض قمة الإبداع للسيارات, describes new-car sales, and lists the Medina/Aziziyah/Al-Daitha/Uthman bin Ubayd Allah location. Search result did not corroborate stored 0531348844; direct page timed out, so retain it unresolved. The stored Google Maps link has not been directly matched to the exact current place pin; Waze was not substituted.",
+          "status": "unconfirmed",
+          "evidence": "The stored Google Maps place_id URL was not directly opened and matched. The official qemacars.com search result establishes its site and Medina location, but no exact Google Maps pin.",
           "sources": [
             "https://qemacars.com/"
           ]
         },
         "website": {
-          "status": "unconfirmed",
-          "evidence": "Qemacars identifies معرض قمة الإبداع للسيارات, describes new-car sales, and lists the Medina/Aziziyah/Al-Daitha/Uthman bin Ubayd Allah location. Search result did not corroborate stored 0531348844; direct page timed out, so retain it unresolved. No official showroom website was verified from the examined sources.",
+          "status": "official_site_listed_unreachable",
+          "evidence": "The official qemacars.com site is indexed with the showroom name, sales activity and Medina location; the direct fetch timed out. This is not enough to label the site broken.",
           "sources": [
             "https://qemacars.com/"
           ]
@@ -416,8 +416,8 @@
           ]
         },
         "google_maps": {
-          "status": "broken_suspended",
-          "evidence": "Official Saqr search-indexed contact page identifies the showroom, lists the stored contact numbers and Shafiyah/Guard Road location; an independent seller marketplace lists active vehicle ads. Opening the stored official contact URL currently redirects to an account-suspended page. Official indexed page shows a WhatsApp action, but not a clear number-specific WhatsApp mapping. The stored Google Maps link has not been directly matched to the exact current place pin; Waze was not substituted.",
+          "status": "unconfirmed",
+          "evidence": "Stored Google Maps URL is a general search query and was not validated as the exact branch pin. The official contact page's plus code and location are not a substitute for this stored URL.",
           "sources": [
             "https://www.saqercars.com/contact/",
             "https://www.saqercars.com/en/contact-us/",
@@ -426,8 +426,8 @@
           ]
         },
         "website": {
-          "status": "unconfirmed",
-          "evidence": "Official Saqr search-indexed contact page identifies the showroom, lists the stored contact numbers and Shafiyah/Guard Road location; an independent seller marketplace lists active vehicle ads. Opening the stored official contact URL currently redirects to an account-suspended page. Official indexed page shows a WhatsApp action, but not a clear number-specific WhatsApp mapping. The stored saqercars.com URL is currently confirmed suspended on open.",
+          "status": "confirmed_broken_suspended",
+          "evidence": "Opening the stored https://www.saqercars.com/contact/ redirects to an account-suspended page, so this website link is currently broken/suspended. Search-indexed official contact text still contains the location and contacts.",
           "sources": [
             "https://www.saqercars.com/contact/",
             "https://www.saqercars.com/en/contact-us/",
