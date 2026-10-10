@@ -118,7 +118,7 @@
   function getJSON(path) {
     // Version query prevents a stale Pages/CDN copy of a corrected JSON file from breaking startup.
     var sep = path.indexOf('?') === -1 ? '?' : '&';
-    return fetch(path + sep + 'v=20261010-1', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
+    return fetch(path + sep + 'v=20261010-2', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(path); return r.json(); });
   }
   var DECORATIVE_PROJECT_IMAGES = {
     P013: ['https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-01/351x562_0.png', 'https://www.nhc.sa/ar/real-estate-development/projects/47490'],
@@ -253,13 +253,14 @@
     });
     var selectedCode = '';
     function list() {
-      var raw = qb.value.trim(), q = norm(raw), city = qc.value;
+      var raw = qb.value.trim(), q = norm(raw), city = qc.value, cityQuery = !!q && D.branches.some(function (b) { return sameCity(b.city, raw); });
       qb.disabled = false;
       if (!city && !q) { selectedCode = ''; go.disabled = true; document.getElementById('branch-list').innerHTML = ''; return; }
       var items = D.branches.filter(function (b) {
         if (city && !sameCity(b.city, city)) return false;
         if (!q) return true;
-        return (b.codeStatus !== 'local_internal_reference' && String(b.c).indexOf(raw) >= 0) || norm(b.n).indexOf(q) >= 0 || norm(b.city).indexOf(q) >= 0 || (b.nb && norm(b.nb).indexOf(q) >= 0);
+        if (cityQuery) return sameCity(b.city, raw);
+        return (b.codeStatus !== 'local_internal_reference' && String(b.c).indexOf(raw) >= 0) || norm(b.n).indexOf(q) >= 0 || sameCity(b.city, raw) || norm(b.city).indexOf(q) >= 0 || (b.nb && norm(b.nb).indexOf(q) >= 0);
       });
       var exact = D.branchByCode[raw];
       selectedCode = exact && exact.codeStatus !== 'local_internal_reference' && (!city || sameCity(exact.city, city)) ? exact.c : '';
