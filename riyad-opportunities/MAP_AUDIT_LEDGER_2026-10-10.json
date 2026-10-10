@@ -2,7 +2,7 @@
   "schema": "map-audit-ledger-v1",
   "branch": "fix/scope-counts-nhc-20261010",
   "base_commit": "bffa7fe0a4f2c8515335b4853cc942c507e7aeae",
-  "generated_at": "2026-10-10T16:08:41.160Z",
+  "generated_at": "2026-10-10T16:40:00Z",
   "note": "This ledger records safe Google Maps search fallbacks, not a claim that every resulting pin was opened or verified. It preserves record identifiers and prior links for reversibility. جولة الأحساء الإضافية: طابقت بطاقتا فهد مسفر الدوسري والمبارك الاسم والعنوان والهاتف؛ لم يتغير السجل. فُتحت خمسة دبابيس أخرى وتعذرت قراءة تفاصيلها؛ سجلت غير محسومة. This update archives and excludes 15 unresolved regional city copies from display in non-origin cities; original-city records are not changed. Two Abha official dealer records (Universal Motors Agencies/Chevrolet and SMOU/Changan) were archived then excluded from display based on official operator/brand sources. Ten further records already marked authorizedDealer=true were archived for removal as official dealerships/distributors. معرض فيصل الدوسري بالأحساء: اعتمد رقما التواصل الظاهرين في إعلانات حراج النشطة للمعرض نفسه بعد حفظ الرقم القديم وتعارض رقم خرائط Google في السجل.",
   "entries": [
     {
@@ -17027,30 +17027,44 @@
       "category": "cars",
       "name": "شركة الأصالة الراقية لاستيراد السيارات",
       "city": "جدة",
-      "status": "unresolved_no_readable_card",
+      "status": "verified_exact_google_cid",
       "current_map": "https://www.google.com/maps/?cid=17464010659960871120",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "matched": false,
-        "status": "unresolved_no_readable_card",
-        "notes": "فُتح رابط CID المباشر في جدة؛ ظهرت لوحة Maps بلا اسم أو عنوان أو هاتف قابل للقراءة. لم أُثبت بيانات السجل."
+        "matched": true,
+        "status": "verified_exact_google_cid",
+        "notes": "بطاقة Google Maps تعرض الاسم شركة الأصالة الراقية لاستيراد السيارات، الفئة تاجر سيارات، حي الجوهرة جدة، Plus Code C7G3+3Q، مفتوح، والهاتف +966555535935 مع رابط اتصال مطابق. لا موقع أو واتساب مستقل."
       },
       "source_urls": [
         "https://www.google.com/maps/?cid=17464010659960871120"
       ],
-      "evidence_note": "فُتح رابط CID المباشر في جدة؛ ظهرت لوحة Maps بلا اسم أو عنوان أو هاتف قابل للقراءة. لم أُثبت بيانات السجل.",
+      "evidence_note": "أعيد فتح CID بعد الحفظ، وظهرت بطاقة Maps المطابقة للنشاط والاسم والحي ورقم الاتصال؛ الدبوس من CID الموجود بالسجل. لم يظهر موقع إلكتروني أو واتساب.",
       "field_checks": {
+        "name": {
+          "status": "matched_google_maps"
+        },
+        "activity": {
+          "status": "google_maps_car_dealer"
+        },
+        "city_locality": {
+          "status": "matched",
+          "value": "حي الجوهرة، جدة، C7G3+3Q"
+        },
         "phone": {
-          "status": "unresolved"
+          "status": "matched",
+          "value": "0555535935",
+          "maps_tel": "tel:+966555535935"
         },
         "website": {
           "status": "not_present"
         },
         "whatsapp": {
-          "status": "not_present"
+          "status": "not_found"
         }
-      }
+      },
+      "decision": "approved",
+      "final_status": "معتمد"
     },
     {
       "id": "phase5-car-925c596716a9",
@@ -17613,16 +17627,16 @@
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
-        "matched": false,
-        "status": "unresolved_card_not_readable",
-        "notes": "فُتح CID المباشر في جدة ولم تظهر بطاقة قابلة للقراءة باسم أو عنوان أو هاتف. بقي دون تعديل."
+        "matched": true,
+        "status": "post_save_retest_passed",
+        "notes": "بعد حفظ التصحيح أُعيد فتح رابط Google Maps المحفوظ. البطاقة تعرض الاسم معرض القوس للسيارات، التصنيف تاجر سيارات، العنوان حي الجوهرة جدة 22417، Plus Code C7P7+H4، والهاتف +966504623073 ورابط اتصال tel مطابق. لا موقع إلكتروني أو واتساب منفصل."
       },
       "source_urls": [
         "https://www.google.com/maps/?cid=5043959628520970916",
         "https://www.aljazeeramaps.com/listing/معرض-القوس-للسيارات،-جدة",
         "https://www.dliplace.com/info-place/1631"
       ],
-      "evidence_note": "مطابقة دبوس خرائط Google المباشر المستخرج من تحويل رابط الاتجاهات في صفحة دليل الأعمال: اسم المكان معرض القوس للسيارات وإحداثيات 21.4364113,39.2628611 وPlace ID ينتهي 11dym9_0z9. صفحة الخرائط تعرض رابط اتصال tel:+966504623073 مطابقًا لهاتف السجل. صفحة الخرائط المحلية تؤكد نشاط معرض سيارات/تاجر سيارات، المدينة جدة والحي الجوهرة وPlus Code C7P7+H4. لا موقع رسمي أو واتساب مستقل موثق.",
+      "evidence_note": "مطابقة دبوس خرائط Google المباشر المستخرج من تحويل رابط الاتجاهات في صفحة دليل الأعمال: اسم المكان معرض القوس للسيارات وإحداثيات 21.4364113,39.2628611 وPlace ID ينتهي 11dym9_0z9. صفحة الخرائط تعرض رابط اتصال tel:+966504623073 مطابقًا لهاتف السجل. صفحة الخرائط المحلية تؤكد نشاط معرض سيارات/تاجر سيارات، المدينة جدة والحي الجوهرة وPlus Code C7P7+H4. لا موقع رسمي أو واتساب مستقل موثق. إعادة اختبار بعد الحفظ: اجتاز الدبوس المباشر مطابقة الاسم والنشاط والعنوان والرقم.",
       "field_checks": {
         "name": {
           "status": "matched_google_maps"
@@ -17637,7 +17651,8 @@
         "phone": {
           "status": "matched",
           "value": "0504623073",
-          "maps_tel": "tel:+966504623073"
+          "maps_tel": "tel:+966504623073",
+          "post_save_retest": "tel:+966504623073"
         },
         "website": {
           "status": "not_found"
@@ -17647,7 +17662,8 @@
         },
         "map": {
           "status": "replaced_with_exact_google_place",
-          "coordinates": "21.4364113,39.2628611"
+          "coordinates": "21.4364113,39.2628611",
+          "post_save_retest": "passed_google_maps_exact_place"
         }
       },
       "archivedRecord": {
@@ -17856,31 +17872,35 @@
       "category": "cars",
       "name": "معرض العز للسيارات",
       "city": "جدة",
-      "status": "pin_address_corrected_retest_unreadable",
+      "status": "verified_phone_pin_retest_independent_sources",
       "current_map": "https://www.google.com/maps/?cid=4577936201056493848",
       "checked_at": "2026-10-10",
       "map_check": {
         "opened": true,
         "matched": true,
-        "status": "pin_address_corrected_retest_unreadable",
-        "notes": "بطاقة CID الأصلية طابقت الاسم والهاتف +966595652844، والعنوان شارع عبدالله بن أمية الأسدي، الجوهرة جدة، Plus Code C7P4+GR. أُصلح العنوان والإحداثيات إلى 21.4362951,39.2570826 من رابط المكان المباشر. أعدت فتح CID بعد الحفظ لكن البطاقة لم تظهر قابلة للقراءة في إعادة الاختبار، لذلك لا أحتسبها ضمن تصحيحات ما بعد الاختبار."
+        "status": "verified_phone_pin_retest_independent_sources",
+        "notes": "إعادة فتح CID المحفوظ أظهرت رابط اتصال tel:+966595652844. تطابق Waze وBizMideast وSaudiSale الاسم والرقم وعنوان عبدالله بن أمية الأسدي، حي الجوهرة، جدة. العنوان والإحداثيات سبق تصحيحهما إلى Plus Code C7P4+GR / 21.4362951,39.2570826. لا موقع أو واتساب مستقل مثبت."
       },
       "source_urls": [
         "https://www.google.com/maps/?cid=4577936201056493848",
         "https://www.google.com/maps/place/معرض+العز+للسيارات/@21.4362951,39.2570826"
       ],
-      "evidence_note": "بطاقة CID الأصلية طابقت الاسم والهاتف +966595652844، والعنوان شارع عبدالله بن أمية الأسدي، الجوهرة جدة، Plus Code C7P4+GR. أُصلح العنوان والإحداثيات إلى 21.4362951,39.2570826 من رابط المكان المباشر. أعدت فتح CID بعد الحفظ لكن البطاقة لم تظهر قابلة للقراءة في إعادة الاختبار، لذلك لا أحتسبها ضمن تصحيحات ما بعد الاختبار.",
+      "evidence_note": "بطاقة CID الأصلية طابقت الاسم والهاتف +966595652844، والعنوان شارع عبدالله بن أمية الأسدي، الجوهرة جدة، Plus Code C7P4+GR. أُصلح العنوان والإحداثيات إلى 21.4362951,39.2570826 من رابط المكان المباشر. أعدت فتح CID بعد الحفظ لكن البطاقة لم تظهر قابلة للقراءة في إعادة الاختبار، لذلك لا أحتسبها ضمن تصحيحات ما بعد الاختبار. أُعيد اختبار الدبوس المحفوظ فظهر رابط اتصال +966595652844؛ مصادر Waze وBizMideast وSaudiSale المتاحة تؤيد الرقم والاسم والعنوان.",
       "field_checks": {
         "phone": {
-          "status": "verified_match_google_maps"
+          "status": "retested_google_maps_tel_and_independent_matches",
+          "value": "0595652844",
+          "maps_tel": "tel:+966595652844"
         },
         "website": {
           "status": "not_present"
         },
         "whatsapp": {
-          "status": "not_present"
+          "status": "not_found"
         }
-      }
+      },
+      "decision": "corrected_approved",
+      "final_status": "مصحح ومعتمد"
     },
     {
       "id": "phase5-car-e3b31fa1ae89",
@@ -20046,15 +20066,8 @@
       "tested_at": "2026-10-10"
     }
   ],
-  "last_verified_head": "308c931857acb51f7336dd80fc2a7c365239da28",
-  "last_batch": {
-    "checked_maps": 20,
-    "verified_correct": 12,
-    "corrected_and_retested": 8,
-    "unresolved": 5,
-    "not_inspected": 3812,
-    "notes": "20 latest Map opens tied to record IDs: office batch had 5 prior opened IDs plus one new unique; six projects and opportunities were new targets; six NHC rows checked. Count metrics add 15 unique target opens, because five office rechecks were already counted."
-  },
+  "last_verified_head": "0b304597ef0e90e689f3cf15c886cbed23b3c26e",
+  "last_batch": "إعادة اختبار القوس بعد الحفظ، وقراءة بطاقة Google للأصالة الراقية، وإعادة اختبار هاتف العز من CID مع مطابقة مصادر محلية.",
   "followup_batches": [
     {
       "date": "2026-10-10",
