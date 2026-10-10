@@ -2,8 +2,8 @@
   "schema": "map-audit-ledger-v1",
   "branch": "fix/scope-counts-nhc-20261010",
   "base_commit": "bffa7fe0a4f2c8515335b4853cc942c507e7aeae",
-  "generated_at": "2026-10-10T16:05:44.371Z",
-  "note": "This ledger records safe Google Maps search fallbacks, not a claim that every resulting pin was opened or verified. It preserves record identifiers and prior links for reversibility. جولة الأحساء الإضافية: طابقت بطاقتا فهد مسفر الدوسري والمبارك الاسم والعنوان والهاتف؛ لم يتغير السجل. فُتحت خمسة دبابيس أخرى وتعذرت قراءة تفاصيلها؛ سجلت غير محسومة. This update archives and excludes 15 unresolved regional city copies from display in non-origin cities; original-city records are not changed. Two Abha official dealer records (Universal Motors Agencies/Chevrolet and SMOU/Changan) were archived then excluded from display based on official operator/brand sources.",
+  "generated_at": "2026-10-10T16:07:11.295Z",
+  "note": "This ledger records safe Google Maps search fallbacks, not a claim that every resulting pin was opened or verified. It preserves record identifiers and prior links for reversibility. جولة الأحساء الإضافية: طابقت بطاقتا فهد مسفر الدوسري والمبارك الاسم والعنوان والهاتف؛ لم يتغير السجل. فُتحت خمسة دبابيس أخرى وتعذرت قراءة تفاصيلها؛ سجلت غير محسومة. This update archives and excludes 15 unresolved regional city copies from display in non-origin cities; original-city records are not changed. Two Abha official dealer records (Universal Motors Agencies/Chevrolet and SMOU/Changan) were archived then excluded from display based on official operator/brand sources. Ten further records already marked authorizedDealer=true were archived for removal as official dealerships/distributors.",
   "entries": [
     {
       "id": "P003",
@@ -19393,6 +19393,315 @@
         "loc": "pt"
       },
       "archiveReason": "User explicitly requires excluding official dealers and authorized distributors from car showroom listings."
+    },
+    {
+      "id": "phase5-google-16172549367196749459",
+      "category": "cars",
+      "name": "تويوتا | شركة دغمل للتجارة المحدودة TOYOTA",
+      "city": "نجران",
+      "locality": "4179 طريق الملك عبدالعزيز، دحضة، نجران 66273، المملكة العربية السعودية",
+      "status": "official_dealer_excluded",
+      "decision": "excluded_official_dealer",
+      "source_urls": [
+        "https://www.doghmal.com/aboutus",
+        "https://www.waze.com/ar/live-map/directions/sa/najran-province/najran/twywta-shrkh-dghml-lltjarh-almhdwdh-%28dhdhh%29"
+      ],
+      "evidence_note": "The pre-existing record explicitly carried authorizedDealer:true; official brand/distributor sources confirm the associated make and distributor. Complete original record archived here before removal from the showroom list.",
+      "archivedRecord": {
+        "id": "phase5-google-16172549367196749459",
+        "n": "تويوتا | شركة دغمل للتجارة المحدودة TOYOTA",
+        "city": "نجران",
+        "nb": "4179 طريق الملك عبدالعزيز، دحضة، نجران 66273، المملكة العربية السعودية",
+        "phones": [
+          "0175238338"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/%D8%AA%D9%88%D9%8A%D9%88%D8%AA%D8%A7+%7C+%D8%B4%D8%B1%D9%83%D8%A9+%D8%AF%D8%BA%D9%85%D9%84+%D9%84%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9+TOYOTA%E2%80%AD/data=!4m7!3m6!1s0x15fee9f72383b7c7:0xe0706ff6b03b0e93!8m2!3d17.5137557!4d44.1760711!16s%2Fg%2F12hqd_166!19sChIJx7eDI_fp_hURkw47sPZvcOA?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.51376,
+        "lon": 44.17607,
+        "sec": "",
+        "loc": "pt",
+        "authorizedDealer": true
+      },
+      "archiveReason": "Official showroom/distributor; excluded under the user's rule against official dealerships and authorized distributors."
+    },
+    {
+      "id": "phase5-google-17753318798704162674",
+      "category": "cars",
+      "name": "هيونداي محمد يوسف ناغي للسيارات‎ معرض نجران Hyundai Mohamed Yousuf Naghi Motors Najran Showroom",
+      "city": "نجران",
+      "locality": "Al Araysah Al Janubi Subdivision, Najran 66244، المملكة العربية السعودية",
+      "status": "official_dealer_excluded",
+      "decision": "excluded_official_dealer",
+      "source_urls": [
+        "https://hyundaiksa.com/ar/mynaghi/after-sales-network",
+        "https://saudiauto.com.sa/الناغي-هيونداي-تفتتح-مركزها-الجديد-في/"
+      ],
+      "evidence_note": "The pre-existing record explicitly carried authorizedDealer:true; official brand/distributor sources confirm the associated make and distributor. Complete original record archived here before removal from the showroom list.",
+      "archivedRecord": {
+        "id": "phase5-google-17753318798704162674",
+        "n": "هيونداي محمد يوسف ناغي للسيارات‎ معرض نجران Hyundai Mohamed Yousuf Naghi Motors Najran Showroom",
+        "city": "نجران",
+        "nb": "Al Araysah Al Janubi Subdivision, Najran 66244، المملكة العربية السعودية",
+        "phones": [
+          "8001240191"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/%D9%87%D9%8A%D9%88%D9%86%D8%AF%D8%A7%D9%8A+%D9%85%D8%AD%D9%85%D8%AF+%D9%8A%D9%88%D8%B3%D9%81+%D9%86%D8%A7%D8%BA%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%8E+%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+Hyundai+Mohamed+Yousuf+Naghi+Motors+Najran+Showroom%E2%80%AD/data=!4m7!3m6!1s0x15fedda82be29e6d:0xf6607562e506b772!8m2!3d17.5578621!4d44.3074703!16s%2Fg%2F11vxjpvkw_!19sChIJbZ7iK6jd_hURcrcG5WJ1YPY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.55786,
+        "lon": 44.30747,
+        "sec": "",
+        "loc": "pt",
+        "authorizedDealer": true
+      },
+      "archiveReason": "Official showroom/distributor; excluded under the user's rule against official dealerships and authorized distributors."
+    },
+    {
+      "id": "phase6-cars-390faf4bc41860",
+      "category": "cars",
+      "name": "شركة محمد يوسف ناغي للسيارات‎ { معرض جينيسيس أبها GENESIS Showroom Abha }",
+      "city": "أبها",
+      "locality": "7MJC+PHJ، حجله، أبها 62451، المملكة العربية السعودية",
+      "status": "official_dealer_excluded",
+      "decision": "excluded_official_dealer",
+      "source_urls": [
+        "https://mynaghi.sa/en/showrooms",
+        "https://www.genesis.com/middleeast/en/gate.html"
+      ],
+      "evidence_note": "The pre-existing record explicitly carried authorizedDealer:true; official brand/distributor sources confirm the associated make and distributor. Complete original record archived here before removal from the showroom list.",
+      "archivedRecord": {
+        "id": "phase6-cars-390faf4bc41860",
+        "n": "شركة محمد يوسف ناغي للسيارات‎ { معرض جينيسيس أبها GENESIS Showroom Abha }",
+        "city": "أبها",
+        "nb": "7MJC+PHJ، حجله، أبها 62451، المملكة العربية السعودية",
+        "phones": [
+          "8001240215"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D9%85%D8%AD%D9%85%D8%AF+%D9%8A%D9%88%D8%B3%D9%81+%D9%86%D8%A7%D8%BA%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%8E+%7B+%D9%85%D8%B9%D8%B1%D8%B6+%D8%AC%D9%8A%D9%86%D9%8A%D8%B3%D9%8A%D8%B3+%D8%A3%D8%A8%D9%87%D8%A7+GENESIS+Showroom+Abha+%7D%E2%80%AD/data=!4m7!3m6!1s0x15fb5705f6ddb807:0x78399137f669d7d2!8m2!3d18.2818241!4d42.6713694!16s%2Fg%2F11x6wn7kl7!19sChIJB7jd9gVX-xUR0tdp9jeROXg?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 18.28182,
+        "lon": 42.67137,
+        "sec": "",
+        "loc": "pt",
+        "authorizedDealer": true
+      },
+      "archiveReason": "Official showroom/distributor; excluded under the user's rule against official dealerships and authorized distributors."
+    },
+    {
+      "id": "phase6-cars-247df2e4386b3e",
+      "category": "cars",
+      "name": "شركة المجدوعي للسيارات ( شانجان )",
+      "city": "جازان",
+      "locality": "طريق الملك عبدالعزيز، حي الصفا، 4251، جيزان 82721، المملكة العربية السعودية",
+      "status": "official_dealer_excluded",
+      "decision": "excluded_official_dealer",
+      "source_urls": [
+        "https://changan-ksa.com/about",
+        "https://almajdouiemotors.com/"
+      ],
+      "evidence_note": "The pre-existing record explicitly carried authorizedDealer:true; official brand/distributor sources confirm the associated make and distributor. Complete original record archived here before removal from the showroom list.",
+      "archivedRecord": {
+        "id": "phase6-cars-247df2e4386b3e",
+        "n": "شركة المجدوعي للسيارات ( شانجان )",
+        "city": "جازان",
+        "nb": "طريق الملك عبدالعزيز، حي الصفا، 4251، جيزان 82721، المملكة العربية السعودية",
+        "phones": [
+          "920008775"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%AC%D8%AF%D9%88%D8%B9%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%28+%D8%B4%D8%A7%D9%86%D8%AC%D8%A7%D9%86+%29%E2%80%AD/data=!4m7!3m6!1s0x1607e3f31adbd5c5:0xa3336c88bfb6a41b!8m2!3d16.8847686!4d42.5782722!16s%2Fg%2F11nh9bj0cs!19sChIJxdXbGvPjBxYRG6S2v4hsM6M?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.88477,
+        "lon": 42.57827,
+        "sec": "",
+        "loc": "pt",
+        "authorizedDealer": true
+      },
+      "archiveReason": "Official showroom/distributor; excluded under the user's rule against official dealerships and authorized distributors."
+    },
+    {
+      "id": "phase6-cars-b382fb300d54ec",
+      "category": "cars",
+      "name": "شركة التوكيلات العالمية للسيارات دونغ فينغ",
+      "city": "جازان",
+      "locality": "بن عبد العزيز، الزهور طريق الملك فيصل، جيزان 82741، المملكة العربية السعودية",
+      "status": "official_dealer_excluded",
+      "decision": "excluded_official_dealer",
+      "source_urls": [
+        "https://www.altawkilat.com/ar/",
+        "https://www.dongfeng-ksa.com/"
+      ],
+      "evidence_note": "The pre-existing record explicitly carried authorizedDealer:true; official brand/distributor sources confirm the associated make and distributor. Complete original record archived here before removal from the showroom list.",
+      "archivedRecord": {
+        "id": "phase6-cars-b382fb300d54ec",
+        "n": "شركة التوكيلات العالمية للسيارات دونغ فينغ",
+        "city": "جازان",
+        "nb": "بن عبد العزيز، الزهور طريق الملك فيصل، جيزان 82741، المملكة العربية السعودية",
+        "phones": [
+          "8002442244"
+        ],
+        "web": "https://www.dongfeng-ksa.com/",
+        "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%AA%D9%88%D9%83%D9%8A%D9%84%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%AF%D9%88%D9%86%D8%BA+%D9%81%D9%8A%D9%86%D8%BA%E2%80%AD/data=!4m7!3m6!1s0x1607e3f246d06cf9:0x4845eb335d5a839f!8m2!3d16.8792621!4d42.6016708!16s%2Fg%2F11n4ms_pjz!19sChIJ-WzQRvLjBxYRn4NaXTPrRUg?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.87926,
+        "lon": 42.60167,
+        "sec": "",
+        "loc": "pt",
+        "authorizedDealer": true
+      },
+      "archiveReason": "Official showroom/distributor; excluded under the user's rule against official dealerships and authorized distributors."
+    },
+    {
+      "id": "phase6-cars-b6b534583b8202",
+      "category": "cars",
+      "name": "التوكيلات العالمية للسيارات",
+      "city": "الباحة",
+      "locality": "طريق الملك عبدالعزيز، الباحة، بني سار 65723، المملكة العربية السعودية",
+      "status": "official_dealer_excluded",
+      "decision": "excluded_official_dealer",
+      "source_urls": [
+        "https://chevrolet.ar.altawkilat.com/",
+        "https://chevrolet.ar.altawkilat.com/get-in-touch/"
+      ],
+      "evidence_note": "The pre-existing record explicitly carried authorizedDealer:true; official brand/distributor sources confirm the associated make and distributor. Complete original record archived here before removal from the showroom list.",
+      "archivedRecord": {
+        "id": "phase6-cars-b6b534583b8202",
+        "n": "التوكيلات العالمية للسيارات",
+        "city": "الباحة",
+        "nb": "طريق الملك عبدالعزيز، الباحة، بني سار 65723، المملكة العربية السعودية",
+        "phones": [
+          "8002442244"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/%D8%A7%D9%84%D8%AA%D9%88%D9%83%D9%8A%D9%84%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15ef47d8ebb761c5:0x8358434eeb770e04!8m2!3d20.0913507!4d41.4428188!16s%2Fg%2F11bwfhfvbw!19sChIJxWG369hH7xURBA53605DWIM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 20.09135,
+        "lon": 41.44282,
+        "sec": "",
+        "loc": "pt",
+        "authorizedDealer": true
+      },
+      "archiveReason": "Official showroom/distributor; excluded under the user's rule against official dealerships and authorized distributors."
+    },
+    {
+      "id": "phase6-cars-d543d97913bdb3",
+      "category": "cars",
+      "name": "عبد اللطيف جميل للسيارات - تويوتا",
+      "city": "بلجرشي",
+      "locality": "Abdul Latif Jameel, بلجرشي 65651، المملكة العربية السعودية",
+      "status": "official_dealer_excluded",
+      "decision": "excluded_official_dealer",
+      "source_urls": [
+        "https://www.toyota.com.sa/ar/about",
+        "https://www.toyota.com.sa/ar/find-a-center"
+      ],
+      "evidence_note": "The pre-existing record explicitly carried authorizedDealer:true; official brand/distributor sources confirm the associated make and distributor. Complete original record archived here before removal from the showroom list.",
+      "archivedRecord": {
+        "id": "phase6-cars-d543d97913bdb3",
+        "n": "عبد اللطيف جميل للسيارات - تويوتا",
+        "city": "بلجرشي",
+        "nb": "Abdul Latif Jameel, بلجرشي 65651، المملكة العربية السعودية",
+        "phones": [
+          "0177277720"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/%D8%B9%D8%A8%D8%AF+%D8%A7%D9%84%D9%84%D8%B7%D9%8A%D9%81+%D8%AC%D9%85%D9%8A%D9%84+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+-+%D8%AA%D9%88%D9%8A%D9%88%D8%AA%D8%A7%E2%80%AD/data=!4m7!3m6!1s0x15ef45b79838d21f:0xaf8961b94e418d5e!8m2!3d19.8630707!4d41.5743057!16s%2Fg%2F1q62hp__y!19sChIJH9I4mLdF7xURXo1BTrlhia8?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 19.86307,
+        "lon": 41.57431,
+        "sec": "",
+        "loc": "pt",
+        "authorizedDealer": true
+      },
+      "archiveReason": "Official showroom/distributor; excluded under the user's rule against official dealerships and authorized distributors."
+    },
+    {
+      "id": "phase6-cars-e8582129a50345",
+      "category": "cars",
+      "name": "هيونداي محمد يوسف ناغي للسيارات معرض بلجرشي",
+      "city": "بلجرشي",
+      "locality": "7072 طريق الملك عبدالعزيز، المحمدية، بلجرشي 65629، المملكة العربية السعودية",
+      "status": "official_dealer_excluded",
+      "decision": "excluded_official_dealer",
+      "source_urls": [
+        "https://hyundaiksa.com/ar/mynaghi/after-sales-network",
+        "https://hyundaiksa.com/ar/mynaghi"
+      ],
+      "evidence_note": "The pre-existing record explicitly carried authorizedDealer:true; official brand/distributor sources confirm the associated make and distributor. Complete original record archived here before removal from the showroom list.",
+      "archivedRecord": {
+        "id": "phase6-cars-e8582129a50345",
+        "n": "هيونداي محمد يوسف ناغي للسيارات معرض بلجرشي",
+        "city": "بلجرشي",
+        "nb": "7072 طريق الملك عبدالعزيز، المحمدية، بلجرشي 65629، المملكة العربية السعودية",
+        "phones": [
+          "8001240191"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/%D9%87%D9%8A%D9%88%D9%86%D8%AF%D8%A7%D9%8A+%D9%85%D8%AD%D9%85%D8%AF+%D9%8A%D9%88%D8%B3%D9%81+%D9%86%D8%A7%D8%BA%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D9%85%D8%B9%D8%B1%D8%B6+%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x15ef5d8e06e4cb5f:0x6c654a384cae1ebf!8m2!3d19.8743235!4d41.573015!16s%2Fg%2F11gtgdnr_f!19sChIJX8vkBo5d7xURvx6uTDhKZWw?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 19.87432,
+        "lon": 41.57301,
+        "sec": "",
+        "loc": "pt",
+        "authorizedDealer": true
+      },
+      "archiveReason": "Official showroom/distributor; excluded under the user's rule against official dealerships and authorized distributors."
+    },
+    {
+      "id": "phase6-cars-c4196e7b01489f",
+      "category": "cars",
+      "name": "فورد - شركة محمد يوسف ناغي للسيارات",
+      "city": "بلجرشي",
+      "locality": "7072 طريق الملك عبدالعزيز، المحمدية، بلجرشي 65629، المملكة العربية السعودية",
+      "status": "official_dealer_excluded",
+      "decision": "excluded_official_dealer",
+      "source_urls": [
+        "https://ar.ford.mynaghi.com/",
+        "https://www.me.ford.com/ar/sau/locate-a-distributor/"
+      ],
+      "evidence_note": "The pre-existing record explicitly carried authorizedDealer:true; official brand/distributor sources confirm the associated make and distributor. Complete original record archived here before removal from the showroom list.",
+      "archivedRecord": {
+        "id": "phase6-cars-c4196e7b01489f",
+        "n": "فورد - شركة محمد يوسف ناغي للسيارات",
+        "city": "بلجرشي",
+        "nb": "7072 طريق الملك عبدالعزيز، المحمدية، بلجرشي 65629، المملكة العربية السعودية",
+        "phones": [
+          "8001240218"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/%D9%81%D9%88%D8%B1%D8%AF+-+%D8%B4%D8%B1%D9%83%D8%A9+%D9%85%D8%AD%D9%85%D8%AF+%D9%8A%D9%88%D8%B3%D9%81+%D9%86%D8%A7%D8%BA%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15ef5de417e16d2d:0xda847858b40bcb0e!8m2!3d19.8742325!4d41.5729129!16s%2Fg%2F11v69tcryn!19sChIJLW3hF-Rd7xURDssLtFh4hNo?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 19.87423,
+        "lon": 41.57291,
+        "sec": "",
+        "loc": "pt",
+        "authorizedDealer": true
+      },
+      "archiveReason": "Official showroom/distributor; excluded under the user's rule against official dealerships and authorized distributors."
+    },
+    {
+      "id": "phase6-cars-59636b9121c1f4",
+      "category": "cars",
+      "name": "هيونداي محمد يوسف ناغي الكورنيش",
+      "city": "ينبع",
+      "locality": "9530 King Abdulaziz Rd Allulu 3879 Yanbu 46432",
+      "status": "official_dealer_excluded",
+      "decision": "excluded_official_dealer",
+      "source_urls": [
+        "https://hyundaiksa.com/ar/mynaghi/after-sales-network",
+        "https://hyundaiksa.com/ar/mynaghi"
+      ],
+      "evidence_note": "The pre-existing record explicitly carried authorizedDealer:true; official brand/distributor sources confirm the associated make and distributor. Complete original record archived here before removal from the showroom list.",
+      "archivedRecord": {
+        "id": "phase6-cars-59636b9121c1f4",
+        "n": "هيونداي محمد يوسف ناغي الكورنيش",
+        "city": "ينبع",
+        "nb": "9530 King Abdulaziz Rd Allulu 3879 Yanbu 46432",
+        "phones": [
+          "8001240191"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=11907536183355293557",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "authorizedDealer": true
+      },
+      "archiveReason": "Official showroom/distributor; excluded under the user's rule against official dealerships and authorized distributors."
     }
   ],
   "browser_spot_checks": [
