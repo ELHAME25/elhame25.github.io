@@ -152,9 +152,9 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const exactCount = counterRows.length - unknownCount - approximateCount;
   const cityUnknownCount = A.itemsFor('projects', '', 'city').filter(x => x.rankD == null).length;
   const branchCounter = counterRows.length > 0 && exactCount > 0 && unknownCount === 0 &&
-    els.content.innerHTML.includes(counterRows.length + ' مشروعًا داخل نطاق الفرع: ' + exactCount + ' بإحداثيات، ' + approximateCount + ' بمواقع تقريبية.');
+    els.content.innerHTML.includes(counterRows.length + ' مشروعًا داخل نطاق الفرع، منها ' + approximateCount + ' بموقع الحي.');
   els['q-sec'].value = '__qa_no_such_record__'; els['q-sec'].dispatch('input');
-  assert('Riyadh branch count excludes unknown location and city view preserves those projects', branchCounter && cityUnknownCount > 0 && els.content.innerHTML.includes('0 مشروعًا داخل نطاق الفرع: 0 بإحداثيات، 0 بمواقع تقريبية.') && els.content.innerHTML.includes('المشاريع غير محددة الموقع متاحة عند اختيار كل الرياض') && els.content.innerHTML.includes('لا نتائج مطابقة'));
+  assert('Riyadh branch count excludes unknown location and city view preserves those projects', branchCounter && cityUnknownCount > 0 && els.content.innerHTML.includes('0 مشروعًا داخل نطاق الفرع، منها 0 بموقع الحي.') && !els.content.innerHTML.includes('موقع غير محدد') && els.content.innerHTML.includes('لا نتائج مطابقة'));
 
   // NHC destinations stay separate from project rows and follow the selected sector.
   A.selectBranch('243', true); A.state().scope = 'branch'; A.state().tab = 'nhc';
@@ -172,7 +172,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     eastDestinations.every(x => (x.o.sectors || []).includes('شرق')) &&
     northDestinations.length === 1 && allDestinations.length === 5 &&
     eastProjectRowsForCount.length === 59 && allRiyadhProjectRowsForCount.length === 261 &&
-    els.app.innerHTML.includes('وجهات NHC') && els.app.innerHTML.includes('data-tab="nhc"'));
+    els.app.innerHTML.includes('وجهات NHC') && els.app.innerHTML.includes('data-tab="nhc"') && els.app.innerHTML.includes('وجهات شرق الرياض') && els.app.innerHTML.includes('كل وجهات الرياض') && els.app.innerHTML.includes('data-nhc-view="city"'));
   // Open details from the card's delegated click, close with its close control, and open by Enter.
   A.state().q = {}; A.state().scope = 'city'; A.state().tab = 'projects'; A.renderBranch();
   const detailIdMatch = els.content.innerHTML.match(/data-detail="(\d+)"/);
@@ -273,10 +273,12 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   A.state().explore = 'وسط';
   const nhcCity = A.itemsFor('nhc', '', 'city').map(x => x.o.id).sort().join('|');
   const nhcCenter = A.itemsFor('nhc', 'وسط', 'sector').map(x => x.o.id).sort().join('|');
+  A.state().tab = 'nhc'; A.state().scope = 'sector'; A.state().explore = 'شرق'; A.renderBranch();
+  const nhcDualCards = els.app.innerHTML.includes('وجهات شرق الرياض') && els.app.innerHTML.includes('كل وجهات الرياض') && els.app.innerHTML.includes('>3</strong>') && els.app.innerHTML.includes('>5</strong>');
   assert('Riyadh central shows Shifa first and both validated showroom groups', centerHasBothGroups);
   assert('Riyadh west routes showrooms to Shifa and north to Qadisiyah', westMapped && northMapped);
   assert('Riyadh East and North are independently selected and filtered', eastOnlyActive && northOnlyActive && eastSectorOnly && northSectorOnly && eastProjects.length > 0 && northProjects.length > 0);
-  assert('NHC destinations remain city-wide when a sector is selected', nhcCity === nhcCenter);
+  assert('Riyadh NHC has separate sector and whole-city cards with every destination accessible', nhcCity.split('|').length === 5 && nhcCenter === '' && nhcDualCards);
   A.state().tab = 'cars'; A.renderBranch();
   const centralControls = els.content.innerHTML.includes('data-car-area="shifa" aria-pressed="true"') &&
     els.content.innerHTML.includes('data-car-area="qadisiyah" aria-pressed="true"') &&
