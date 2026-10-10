@@ -727,6 +727,16 @@
     var limit = S.limit[k] || CFG.pageSize, shown = items.slice(0, limit);
     var head = '<div class="sec-head"><div><h2>' + esc(LABEL[k]) + '</h2><p>' + esc(intro(k, items.length, items)) + '</p></div>' +
       '<div class="search">' + ICON.search + '<input id="q-sec" class="input" type="search" placeholder="' + esc(SEARCH_PH[k]) + '" value="' + esc(S.q[k] || '') + '" aria-label="' + esc(SEARCH_PH[k]) + '"></div></div>';
+    if (k === 'nhc' && sectorCity(b.city)) {
+      var nhcSector = activeSector() || b.sec || '';
+      if (nhcSector) {
+        var nhcSectorCount = itemsFor('nhc', nhcSector, 'sector').length;
+        var nhcCityCount = itemsFor('nhc', null, 'city').length;
+        head += '<div class="car-zone-cards nhc-scope-cards" role="group" aria-label="وجهات NHC في ' + esc(b.city) + '">' +
+          '<button class="car-zone-card" data-nhc-view="sector" aria-pressed="' + (S.scope !== 'city') + '"><span>وجهات ' + esc(nhcSector) + ' ' + esc(b.city) + '</span><strong>' + fmt(nhcSectorCount) + '</strong></button>' +
+          '<button class="car-zone-card car-zone-all" data-nhc-view="city" aria-pressed="' + (S.scope === 'city') + '"><span>كل وجهات ' + esc(b.city) + '</span><strong>' + fmt(nhcCityCount) + '</strong></button></div>';
+      }
+    }
     if (k === 'cars' && sameCity(S.branch.city, 'الرياض')) {
       var shifaCount = (D.cars || []).filter(function (o) { return carAreaOf(o) === 'shifa'; }).length;
       var qadisiyahCount = (D.cars || []).filter(function (o) { return carAreaOf(o) === 'qadisiyah'; }).length;
@@ -752,12 +762,6 @@
       var n = document.getElementById('q-sec'); n.focus(); try { n.setSelectionRange(pos, pos); } catch (e) { /* ignore */ }
     });
   }
-  function unlocatedPanel(kind, items, open) {
-    var visual = kind === 'projects' || kind === 'opps' || kind === 'nhc';
-    return '<details class="unlocated-panel"' + (open ? ' open' : '') + '><summary>موقع غير محدد <span class="num">' + fmt(items.length) + '</span> — تظل هذه الفرص متاحة دون مسافة</summary>' +
-      '<p>لا تتوفر إحداثية موثوقة لهذه العناصر. تبقى ظاهرة هنا دون مسافة مختلقة، أو اختر «كل المدينة» لعرضها مع بقية النتائج.</p>' +
-      '<div class="grid' + (visual ? '' : ' list') + '">' + items.map(function (x) { return card(x.k || kind, x.o, null, true, true, x); }).join('') + '</div></details>';
-  }
   // أزرار التوسيع: أوسع ← قطاع الفرع ← كل المدينة، مع عدد ما سيظهر في كل منها
   function widen(k, c) {
     var b = S.branch, h = '';
@@ -771,16 +775,6 @@
     if (k === 'projects' && S.scope === 'branch' && radiusApplies(k, 'branch') && rows) {
       var approximate = rows.filter(function (x) { return x.rankD != null && x.o.loc === 'nb'; }).length;
       return fmt(n) + ' مشروعًا داخل نطاق الفرع، منها ' + fmt(approximate) + ' بموقع الحي.';
-    }
-    if (k === 'nhc' && sectorCity(b.city)) {
-      var nhcSector = activeSector() || b.sec || '';
-      if (nhcSector) {
-        var nhcSectorCount = itemsFor('nhc', nhcSector, 'sector').length;
-        var nhcCityCount = itemsFor('nhc', null, 'city').length;
-        head += '<div class="car-zone-cards nhc-scope-cards" role="group" aria-label="وجهات NHC في ' + esc(b.city) + '">' +
-          '<button class="car-zone-card" data-nhc-view="sector" aria-pressed="' + (S.scope !== 'city') + '"><span>وجهات ' + esc(nhcSector) + ' ' + esc(b.city) + '</span><strong>' + fmt(nhcSectorCount) + '</strong></button>' +
-          '<button class="car-zone-card car-zone-all" data-nhc-view="city" aria-pressed="' + (S.scope === 'city') + '"><span>كل وجهات ' + esc(b.city) + '</span><strong>' + fmt(nhcCityCount) + '</strong></button></div>';
-      }
     }
     if (k === 'cars' && sameCity(b.city, 'الرياض') && S.scope !== 'city') {
       var area = S.carArea || defaultCarArea(b);
