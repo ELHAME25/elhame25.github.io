@@ -2,7 +2,7 @@
   "schema": "map-audit-ledger-v1",
   "branch": "fix/scope-counts-nhc-20261010",
   "base_commit": "bffa7fe0a4f2c8515335b4853cc942c507e7aeae",
-  "generated_at": "2026-10-10T18:55:00+03:00",
+  "generated_at": "2026-10-10T13:51:18.032Z",
   "note": "This ledger records safe Google Maps search fallbacks, not a claim that every resulting pin was opened or verified. It preserves record identifiers and prior links for reversibility.",
   "entries": [
     {
@@ -15223,6 +15223,682 @@
           "status": "not_present_in_record"
         }
       }
+    },
+    {
+      "id": "entity-30e6808c384f",
+      "category": "offices",
+      "name": "مكتب الناصع للعقارات",
+      "city": "الرياض",
+      "locality": "عريض / جبل حضن",
+      "status": "verified_card_name_city_locality",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%86%D8%A7%D8%B5%D8%B9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%B9%D8%B1%D9%8A%D8%B6",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_card_name_city_locality",
+        "notes": "بطاقة البحث المفتوحة أظهرت مكتب الناصع للعقارات حي عريض/مخططات عريض، حي جبل حضن، الرياض 14753. لم يُستخرج رابط مكان ثابت؛ لا يُدّعى اختبار إحداثيات السجل."
+      },
+      "source_urls": [
+        "https://alnaseaqar.com/"
+      ],
+      "evidence_note": "بطاقة البحث المفتوحة أظهرت مكتب الناصع للعقارات حي عريض/مخططات عريض، حي جبل حضن، الرياض 14753. لم يُستخرج رابط مكان ثابت؛ لا يُدّعى اختبار إحداثيات السجل.",
+      "field_checks": {
+        "phone": {
+          "status": "verified_official",
+          "value": "0549577008",
+          "sources": [
+            "https://alnaseaqar.com/"
+          ]
+        },
+        "website": {
+          "status": "verified_official",
+          "value": "https://alnaseaqar.com/"
+        },
+        "whatsapp": {
+          "status": "official_link_listed_target_not_independently_tested"
+        }
+      }
+    },
+    {
+      "id": "entity-e82cfda6e8a7",
+      "category": "offices",
+      "name": "مازال العقارية",
+      "city": "حائل",
+      "locality": "الخزامى، مبنى غفوة",
+      "status": "corrected_pin_post_edit_retested",
+      "current_map": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%85%D8%A7%D8%B2%D8%A7%D9%84+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@27.570836,41.7221654,990m/data=!3m2!1e3!4b1!4m6!3m5!1s0x157645a238e56081:0xb600eab4a1311446!8m2!3d27.570836!4d41.7221654!16s%2Fg%2F11q25m09nc",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "corrected_pin_post_edit_retested",
+        "notes": "تم تحديث الرابط والإحداثيات من بطاقة Maps المباشرة لمازال في مبنى غفوة، حي الخزامى، حائل، ثم فتح رابط الدبوس بعد الحفظ. رقم Maps 0533981881 يخالف رقم السجل 0533418188؛ لا يعتمد أيهما حتى توثيق مستقل."
+      },
+      "source_urls": [
+        "https://mazal.sa/"
+      ],
+      "evidence_note": "تم تحديث الرابط والإحداثيات من بطاقة Maps المباشرة لمازال في مبنى غفوة، حي الخزامى، حائل، ثم فتح رابط الدبوس بعد الحفظ. رقم Maps 0533981881 يخالف رقم السجل 0533418188؛ لا يعتمد أيهما حتى توثيق مستقل.",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A7%D8%B2%D8%A7%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%AD%D8%A7%D8%A6%D9%84%20%D8%A7%D9%84%D8%AE%D8%B2%D8%A7%D9%85%D9%89",
+      "field_checks": {
+        "phone": {
+          "status": "conflict_maps_vs_record",
+          "maps_value": "0533981881",
+          "record_value": "0533418188",
+          "sources": [
+            "https://mazal.sa/"
+          ]
+        },
+        "website": {
+          "status": "verified_official",
+          "value": "https://mazal.sa/"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        }
+      }
+    },
+    {
+      "id": "entity-d9171026a8d0",
+      "category": "offices",
+      "name": "مكتب العبيد العقاري",
+      "city": "حائل",
+      "locality": "غير مثبت",
+      "status": "unresolved_no_hail_office_card",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B9%D8%A8%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%AD%D8%A7%D8%A6%D9%84",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_no_hail_office_card",
+        "notes": "لم تظهر بطاقة المكتب في حائل؛ النتائج العامة كانت غير ذات صلة. موقع المكتب يثبت عروضًا في حائل لا عنوان مكتبه. السجل محفوظ بلا موقع مختلق."
+      },
+      "source_urls": [
+        "https://www.alobidoffice.com/"
+      ],
+      "evidence_note": "لم تظهر بطاقة المكتب في حائل؛ النتائج العامة كانت غير ذات صلة. موقع المكتب يثبت عروضًا في حائل لا عنوان مكتبه. السجل محفوظ بلا موقع مختلق.",
+      "field_checks": {
+        "phone": {
+          "status": "not_independently_verified",
+          "record_value": "0552554532"
+        },
+        "website": {
+          "status": "official_site_opened",
+          "value": "https://www.alobidoffice.com/"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        }
+      }
+    },
+    {
+      "id": "entity-eb6a252fffd5",
+      "category": "offices",
+      "name": "شرق أبها للخدمات العقارية",
+      "city": "أبها",
+      "locality": "المنسك / شارع وهب بن مسرة",
+      "status": "unresolved_address_district_conflict",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%82%20%D8%A3%D8%A8%D9%87%D8%A7%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A3%D8%A8%D9%87%D8%A7%20%D8%A7%D9%84%D9%85%D9%86%D8%B3%D9%83",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_address_district_conflict",
+        "notes": "بطاقة Maps عرضت المكتب بشارع وهب بن مسرة وأبها؛ يوجد تعارض سابق مسجل حول المنسك/المروج في مصادر الموقع الرسمية، ولم تُقارن إحداثيات السجل بالدبوس بما يكفي لاعتماد إصلاح."
+      },
+      "source_urls": [
+        "https://eastabha.sa/",
+        "https://eastabha.sa/contact-us/"
+      ],
+      "evidence_note": "بطاقة Maps عرضت المكتب بشارع وهب بن مسرة وأبها؛ يوجد تعارض سابق مسجل حول المنسك/المروج في مصادر الموقع الرسمية، ولم تُقارن إحداثيات السجل بالدبوس بما يكفي لاعتماد إصلاح.",
+      "field_checks": {
+        "phone": {
+          "status": "official_numbers_district_conflict",
+          "values": [
+            "0553959655",
+            "0504746662"
+          ]
+        },
+        "website": {
+          "status": "verified_official",
+          "value": "https://eastabha.sa/"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        }
+      }
+    },
+    {
+      "id": "entity-ede39ec11bd6",
+      "category": "offices",
+      "name": "جازان وطن للخدمات العقارية",
+      "city": "جازان",
+      "locality": "السويس، طريق الأمير سلطان",
+      "status": "unresolved_saved_coordinate_conflict",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%AC%D8%A7%D8%B2%D8%A7%D9%86%20%D9%88%D8%B7%D9%86%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%AC%D8%A7%D8%B2%D8%A7%D9%86%20%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%B3",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_saved_coordinate_conflict",
+        "notes": "بطاقة Maps ومصدر الاتصال يتفقان على جازان/السويس والطريق والهاتف؛ إحداثية السجل تبعد نحو 1.6 كم عن البطاقة، لذا لم تُحتسب المطابقة ولا يُعتمد دبوس السجل."
+      },
+      "source_urls": [
+        "https://jazwtn.sa/اتصل-بنا/"
+      ],
+      "evidence_note": "بطاقة Maps ومصدر الاتصال يتفقان على جازان/السويس والطريق والهاتف؛ إحداثية السجل تبعد نحو 1.6 كم عن البطاقة، لذا لم تُحتسب المطابقة ولا يُعتمد دبوس السجل.",
+      "field_checks": {
+        "phone": {
+          "status": "verified_official_and_maps",
+          "value": "920031858"
+        },
+        "website": {
+          "status": "verified_official",
+          "value": "https://jazwtn.sa/"
+        },
+        "whatsapp": {
+          "status": "not_independently_verified"
+        }
+      }
+    },
+    {
+      "id": "phase5-office-fc0c0013ba00",
+      "category": "offices",
+      "name": "مؤسسة الحسني لإدارة الأملاك العقارية",
+      "city": "الدمام",
+      "locality": "القزاز، شارع الملك خالد",
+      "status": "verified_card_name_city_locality_phone",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AD%D8%B3%D9%86%D9%8A%20%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A7%D9%85%D9%84%D8%A7%D9%83%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%82%D8%B2%D8%A7%D8%B2%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_card_name_city_locality_phone",
+        "notes": "بطاقة Maps أظهرت المؤسسة بالقزاز/شارع الملك خالد، الدمام 32244، هاتف 0504520188؛ يدعمها دليلان ثانويان. لا موقع أو WhatsApp رسمي مثبت."
+      },
+      "source_urls": [
+        "https://kandal.sa/",
+        "https://yellowpages-ar.cybo.com/SA/الدمام/العقارات/"
+      ],
+      "evidence_note": "بطاقة Maps أظهرت المؤسسة بالقزاز/شارع الملك خالد، الدمام 32244، هاتف 0504520188؛ يدعمها دليلان ثانويان. لا موقع أو WhatsApp رسمي مثبت.",
+      "field_checks": {
+        "phone": {
+          "status": "maps_and_secondary_match",
+          "value": "0504520188"
+        },
+        "website": {
+          "status": "not_found"
+        },
+        "whatsapp": {
+          "status": "not_found"
+        }
+      }
+    },
+    {
+      "id": "P003",
+      "category": "projects",
+      "name": "جدن السديم",
+      "city": "خميس مشيط",
+      "locality": "",
+      "status": "unresolved_no_project_pin",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%AC%D8%AF%D9%86%20%D8%A7%D9%84%D8%B3%D8%AF%D9%8A%D9%85%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%A8%D8%AA%D9%83%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%AE%D9%85%D9%8A%D8%B3%20%D9%85%D8%B4%D9%8A%D8%B7",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_no_project_pin",
+        "notes": "البحث المفتوح لم يُظهر جدن السديم؛ ظهرت مشروعات/أسماء مشابهة ومكتب المطور بالأحساء. صفحة المشروع تؤكد خميس مشيط دون حي أو إحداثية. الهاتف 920035351 مطابق للموقع الرسمي؛ لا WhatsApp مسجل."
+      },
+      "source_urls": [
+        "https://sadeem.jadan.sa/",
+        "https://www.jadan.sa/contact-us/"
+      ],
+      "evidence_note": "البحث المفتوح لم يُظهر جدن السديم؛ ظهرت مشروعات/أسماء مشابهة ومكتب المطور بالأحساء. صفحة المشروع تؤكد خميس مشيط دون حي أو إحداثية. الهاتف 920035351 مطابق للموقع الرسمي؛ لا WhatsApp مسجل.",
+      "field_checks": {
+        "phone": {
+          "status": "verified_official",
+          "value": "920035351"
+        },
+        "website": {
+          "status": "verified_official",
+          "value": "https://sadeem.jadan.sa/"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "P031",
+      "category": "projects",
+      "name": "الدرر داون تاون B",
+      "city": "الخبر",
+      "locality": "البندرية",
+      "status": "unresolved_wrong_developer_office_result",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%AF%D8%B1%D8%B1%20%D8%AF%D8%A7%D9%88%D9%86%20%D8%AA%D8%A7%D9%88%D9%86%20B%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%AF%D8%B1%D8%B1%20%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC%D9%8A%D8%A9%20%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_wrong_developer_office_result",
+        "notes": "الرابط الحالي أعاد بطاقة سيفيل/مقر شركة الدرر الخليجية لا المشروع. صفحة المطور تؤيد Downtown A وB في البندرية، لكن لا يوجد دبوس مشروع B مثبت. بحث بديل باسم المشروع والحي والمدينة حُفظ واختُبر كرابط بحث دون احتسابه دبوسًا."
+      },
+      "source_urls": [
+        "https://al-durar.com/"
+      ],
+      "evidence_note": "الرابط الحالي أعاد بطاقة سيفيل/مقر شركة الدرر الخليجية لا المشروع. صفحة المطور تؤيد Downtown A وB في البندرية، لكن لا يوجد دبوس مشروع B مثبت. بحث بديل باسم المشروع والحي والمدينة حُفظ واختُبر كرابط بحث دون احتسابه دبوسًا.",
+      "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%AF%D8%B1%D8%B1%20%D8%AF%D8%A7%D9%88%D9%86%20%D8%AA%D8%A7%D9%88%D9%86%20B%20%D8%A7%D9%84%D8%A8%D9%86%D8%AF%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "field_checks": {
+        "phone": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "not_present"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "P032",
+      "category": "projects",
+      "name": "درر الشبيلي",
+      "city": "الخبر",
+      "locality": "الحمراء",
+      "status": "corrected_pin_post_edit_retested",
+      "current_map": "https://www.google.com/maps/place/%D8%AF%D8%B1%D8%B1+%D8%A7%D9%84%D8%B4%D8%A8%D9%8A%D9%84%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x3e49c32d2b45c451:0x8c83b4d9dc87b511!8m2!3d26.2231418!4d50.1967473!16s%2Fg%2F11v9j_86zr!19sChIJUcRFKy3DST4REbWH3Nm0g4w",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "corrected_pin_post_edit_retested",
+        "notes": "الاستعلام القديم أعاد بطاقة المطور، لا المشروع. بحث الاسم/حي الحمراء أظهر بطاقة Google Maps «درر الشبيلي»، مجمع عمارات، الخبر، العنوان 6587 طريق الملك خالد الفرعي، Plus Code 65FW+7M؛ تم حفظ رابط البطاقة المباشر وفتحه بعد التعديل. تقرير عقار يدعم حي الحمراء؛ لم يثبت ارتباط الهاتف الظاهر بالمطور."
+      },
+      "source_urls": [
+        "https://sa.aqar.fm/",
+        "https://www.google.com/maps/place/%D8%AF%D8%B1%D8%B1+%D8%A7%D9%84%D8%B4%D8%A8%D9%8A%D9%84%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x3e49c32d2b45c451:0x8c83b4d9dc87b511!8m2!3d26.2231418!4d50.1967473!16s%2Fg%2F11v9j_86zr!19sChIJUcRFKy3DST4REbWH3Nm0g4w"
+      ],
+      "evidence_note": "الاستعلام القديم أعاد بطاقة المطور، لا المشروع. بحث الاسم/حي الحمراء أظهر بطاقة Google Maps «درر الشبيلي»، مجمع عمارات، الخبر، العنوان 6587 طريق الملك خالد الفرعي، Plus Code 65FW+7M؛ تم حفظ رابط البطاقة المباشر وفتحه بعد التعديل. تقرير عقار يدعم حي الحمراء؛ لم يثبت ارتباط الهاتف الظاهر بالمطور.",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%B1%D8%B1%20%D8%A7%D9%84%D8%B4%D8%A8%D9%8A%D9%84%D9%8A%20%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%86%D8%A7%D8%B5%D8%B1%20%D8%A7%D9%84%D9%82%D8%AD%D8%B7%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "field_checks": {
+        "phone": {
+          "status": "maps_phone_unverified",
+          "maps_value": "0544185555"
+        },
+        "website": {
+          "status": "not_present"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "P033",
+      "category": "projects",
+      "name": "بيوتات البندرية",
+      "city": "الخبر",
+      "locality": "البندرية",
+      "status": "verified_maps_project_card_name_district_city",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D9%88%D8%AA%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D9%86%D8%AF%D8%B1%D9%8A%D8%A9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B1%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D8%A8%D9%86%D9%8A%D8%A7%D9%86%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_maps_project_card_name_district_city",
+        "notes": "نتائج Maps المفتوحة أظهرت بطاقة «مشروع البندرية» عند 26.3053273,50.2163735 ورابط Linktree لبيوتات البندرية؛ سكني والمطور الرسميان يؤكدان اسم المشروع والخبر وحي البندرية. لا يوجد place URL ثابت محفوظ، لذا يبقى حقل Maps بحثًا؛ المطابقة معتمدة على البطاقة الظاهرة والمصادر، لا على صيغة الرابط."
+      },
+      "source_urls": [
+        "https://sakani.sa/app/units/920240",
+        "https://beutat-albandariah.ryadah.com.sa/ar/"
+      ],
+      "evidence_note": "نتائج Maps المفتوحة أظهرت بطاقة «مشروع البندرية» عند 26.3053273,50.2163735 ورابط Linktree لبيوتات البندرية؛ سكني والمطور الرسميان يؤكدان اسم المشروع والخبر وحي البندرية. لا يوجد place URL ثابت محفوظ، لذا يبقى حقل Maps بحثًا؛ المطابقة معتمدة على البطاقة الظاهرة والمصادر، لا على صيغة الرابط.",
+      "field_checks": {
+        "phone": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "official_project_source",
+          "value": "https://beutat-albandariah.ryadah.com.sa/ar/"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "P034",
+      "category": "projects",
+      "name": "أصداف الخبر",
+      "city": "الخبر",
+      "locality": "العزيزية (مذكور في تقارير المشروع)",
+      "status": "unresolved_company_result_not_project",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%B5%D8%AF%D8%A7%D9%81%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A3%D8%B3%D9%8A%D9%83%D9%88%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_company_result_not_project",
+        "notes": "الرابط المفتوح أعاد بطاقة SAQCO Arabia Limited لا أصداف. أخبار المشروع تدعم اسم أصداف وموقع العزيزية جنوب الخبر؛ رابط البحث البديل بالاسم/المدينة/الحي حُفظ واختُبر، دون دبوس دقيق."
+      },
+      "source_urls": [
+        "https://www.alweeam.com.sa/",
+        "https://www.al-madina.com/"
+      ],
+      "evidence_note": "الرابط المفتوح أعاد بطاقة SAQCO Arabia Limited لا أصداف. أخبار المشروع تدعم اسم أصداف وموقع العزيزية جنوب الخبر؛ رابط البحث البديل بالاسم/المدينة/الحي حُفظ واختُبر، دون دبوس دقيق.",
+      "alternative": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%B5%D8%AF%D8%A7%D9%81%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9",
+      "field_checks": {
+        "phone": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "not_present"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "P035",
+      "category": "projects",
+      "name": "أنار 2 السكني",
+      "city": "الخبر",
+      "locality": "الحي غير مثبت",
+      "status": "corrected_pin_post_edit_retested",
+      "current_map": "https://www.google.com/maps/place/%D9%85%D8%B4%D8%B1%D9%88%D8%B9+%D8%A3%D9%86%D8%A7%D8%B12+%D8%A7%D9%84%D8%B3%D9%83%D9%86%D9%8A%E2%80%AD/@26.2309934,50.2040801,1002m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e49c3b628254a13:0xbc933b81f57abe38!8m2!3d26.2309934!4d50.2040801!16s%2Fg%2F11l24gpy7g",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "corrected_pin_post_edit_retested",
+        "notes": "بطاقة Maps المباشرة تحمل «مشروع أنار2 السكني» في الخبر، وفتحت بعد حفظها في حقل maps. سكني يدعم المدينة؛ لم يُنقل حي أنار 1 إلى أنار 2 ولم يثبت حي دقيق. هاتف/ويب/واتساب غير مدونة."
+      },
+      "source_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B4%D8%B1%D9%88%D8%B9+%D8%A3%D9%86%D8%A7%D8%B12+%D8%A7%D9%84%D8%B3%D9%83%D9%86%D9%8A%E2%80%AD/@26.2309934,50.2040801,1002m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e49c3b628254a13:0xbc933b81f57abe38!8m2!3d26.2309934!4d50.2040801!16s%2Fg%2F11l24gpy7g",
+        "https://sakani.sa/app/offplan-projects/"
+      ],
+      "evidence_note": "بطاقة Maps المباشرة تحمل «مشروع أنار2 السكني» في الخبر، وفتحت بعد حفظها في حقل maps. سكني يدعم المدينة؛ لم يُنقل حي أنار 1 إلى أنار 2 ولم يثبت حي دقيق. هاتف/ويب/واتساب غير مدونة.",
+      "field_checks": {
+        "phone": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "project_social_source",
+          "value": "https://x.com/anar_project"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "op-6cf8280cf2",
+      "category": "opportunities",
+      "name": "سما الورود",
+      "city": "الأحساء",
+      "locality": "الهفوف، وجهة الورود",
+      "status": "unresolved_ambiguous_two_map_candidates",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%85%D8%A7%20%D8%A7%D9%84%D9%88%D8%B1%D9%88%D8%AF%20%D8%A7%D9%84%D9%87%D9%81%D9%88%D9%81%20-%20%D9%88%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D9%88%D8%B1%D9%88%D8%AF%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_ambiguous_two_map_candidates",
+        "notes": "Maps أظهر مخطط سما الورود (مجمع سكني) وبطاقة منفصلة لمكتب مبيعات مايا باسم مشروع سما الورود. لا أستخدم دبوس المكتب للمشروع ولا أختار أحد المرشحين دون إثبات حي/حدود من NHC؛ سجل الفرصة محفوظ."
+      },
+      "source_urls": [
+        "https://www.nhc.sa/ar/real-estate-development/projects/47490/"
+      ],
+      "evidence_note": "Maps أظهر مخطط سما الورود (مجمع سكني) وبطاقة منفصلة لمكتب مبيعات مايا باسم مشروع سما الورود. لا أستخدم دبوس المكتب للمشروع ولا أختار أحد المرشحين دون إثبات حي/حدود من NHC؛ سجل الفرصة محفوظ.",
+      "field_checks": {
+        "phone": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "verified_official",
+          "value": "https://www.nhc.sa/ar/real-estate-development/projects/47490/"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "op-c4e61f63eb",
+      "category": "opportunities",
+      "name": "جيدا",
+      "city": "الأحساء",
+      "locality": "الهفوف، وجهة الورود",
+      "status": "corrected_pin_post_edit_retested",
+      "current_map": "https://www.google.com/maps/place/%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%AC%D9%8A%D8%AF%D8%A7%20%D9%80%20%D9%88%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D9%88%D8%B1%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1/@25.2844029,49.5927532",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "corrected_pin_post_edit_retested",
+        "notes": "بطاقة Maps المباشرة «مشروع جيدا ـ وجهة الورود الأحساء» طابقت الاسم والمدينة والوجهة؛ فتحت بعد حفظ الرابط في السجل. NHC يؤكد جيدا/الهفوف/وجهة الورود/260 وحدة."
+      },
+      "source_urls": [
+        "https://www.nhc.sa/ar/real-estate-development/projects/47491"
+      ],
+      "evidence_note": "بطاقة Maps المباشرة «مشروع جيدا ـ وجهة الورود الأحساء» طابقت الاسم والمدينة والوجهة؛ فتحت بعد حفظ الرابط في السجل. NHC يؤكد جيدا/الهفوف/وجهة الورود/260 وحدة.",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=%D8%AC%D9%8A%D8%AF%D8%A7%20%D8%A7%D9%84%D9%87%D9%81%D9%88%D9%81%20-%20%D9%88%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D9%88%D8%B1%D9%88%D8%AF%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1",
+      "field_checks": {
+        "phone": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "verified_official",
+          "value": "https://www.nhc.sa/ar/real-estate-development/projects/47491"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "الجنى|جدة",
+      "category": "nhc",
+      "name": "الجنى",
+      "city": "جدة",
+      "locality": "شمال جدة حسب صفحة NHC",
+      "status": "verified_search_result_name_city_type",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%88%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AC%D9%86%D9%89%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%AC%D8%AF%D8%A9%20(%D9%85%D8%B0%D9%83%D9%88%D8%B1%20%D9%81%D9%8A%20%D9%88%D8%B5%D9%81%20NHC)%20%D8%AC%D8%AF%D8%A9",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_search_result_name_city_type",
+        "notes": "بحث Maps المفتوح أظهر «وجهة الجنى - سكني» كمجمع سكني عند 21.818417,39.1532658 (R593+98)؛ صفحة NHC وخبرها يثبتان الوجهة شمال جدة. لا عنوان حي أدق أو هاتف/واتساب خاص بالوجهة؛ الرابط بحث يفتح نتيجة مطابقة وليس دبوسًا مباشرًا."
+      },
+      "source_urls": [
+        "https://www.nhc.sa/ar/real-estate-development/suburbs/47697/15/",
+        "https://www.nhc.sa/media-center/news/47705/",
+        "https://sakani.sa/app/offplan-projects/1645"
+      ],
+      "evidence_note": "بحث Maps المفتوح أظهر «وجهة الجنى - سكني» كمجمع سكني عند 21.818417,39.1532658 (R593+98)؛ صفحة NHC وخبرها يثبتان الوجهة شمال جدة. لا عنوان حي أدق أو هاتف/واتساب خاص بالوجهة؛ الرابط بحث يفتح نتيجة مطابقة وليس دبوسًا مباشرًا.",
+      "field_checks": {
+        "phone": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "verified_official",
+          "value": "https://www.nhc.sa/ar/real-estate-development/suburbs/47697/15/"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "الرشا|الدمام",
+      "category": "nhc",
+      "name": "الرشا",
+      "city": "الدمام",
+      "locality": "وسط الدمام حسب صفحة NHC",
+      "status": "unresolved_sales_center_not_destination",
+      "current_map": "https://www.google.com/maps/search/?api=1&query=%D9%88%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%B1%D8%B4%D8%A7%20%D9%81%D9%8A%20%D9%82%D9%84%D8%A8%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%D8%8C%20%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_sales_center_not_destination",
+        "notes": "النتيجة الأولى كانت «مركز مبيعات وجهة الرشا - NHC» (93H2+XWC) لا بطاقة الضاحية نفسها؛ لا أخلط مركز المبيعات بالوجهة. صفحة NHC تثبت الدمام و2,331 وحدة. لا رقم/واتساب خاص بالوجهة."
+      },
+      "source_urls": [
+        "https://www.nhc.sa/ar/real-estate-development/suburbs/47687/14/"
+      ],
+      "evidence_note": "النتيجة الأولى كانت «مركز مبيعات وجهة الرشا - NHC» (93H2+XWC) لا بطاقة الضاحية نفسها؛ لا أخلط مركز المبيعات بالوجهة. صفحة NHC تثبت الدمام و2,331 وحدة. لا رقم/واتساب خاص بالوجهة.",
+      "field_checks": {
+        "phone": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "verified_official",
+          "value": "https://www.nhc.sa/ar/real-estate-development/suburbs/47687/14/"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "تبوك فالي|تبوك",
+      "category": "nhc",
+      "name": "تبوك فالي",
+      "city": "تبوك",
+      "locality": "المصيف، تبوك 47324",
+      "status": "corrected_official_destination_pin_post_edit_opened",
+      "current_map": "https://www.google.com/maps/place/%D9%88%D8%AC%D9%87%D8%A9+%D8%AA%D8%A8%D9%88%D9%83+%D9%81%D8%A7%D9%84%D9%8A+%7C+NHC+-+Tabuk+Valley%E2%80%AD/@28.4506134,36.5177269,982m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15a9b3645d50c5d3:0x88412c0ba1ce35f2!8m2!3d28.4506134!4d36.5177269!16s%2Fg%2F11j_66nqhy",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "corrected_official_destination_pin_post_edit_opened",
+        "notes": "الرابط السابق كان دبوس إحداثيات عند 28.4605625,36.5175625 بلا اسم، ويبعد نحو 1.1 كم. البديل بطاقة Google باسم «وجهة تبوك فالي | NHC - Tabuk Valley»، المصيف، تبوك، عند 28.4506134,36.5177269؛ فُتح الرابط بعد التحديث. صفحة NHC تثبت وجهة تبوك فالي؛ رقم البطاقة 920033499 عام لـNHC وليس رقم مبيعات خاصًا."
+      },
+      "source_urls": [
+        "https://www.nhc.sa/ar/real-estate-development/suburbs/47658/73/",
+        "https://www.nhc.sa/media-center/news/47999/",
+        "https://www.google.com/maps/place/%D9%88%D8%AC%D9%87%D8%A9+%D8%AA%D8%A8%D9%88%D9%83+%D9%81%D8%A7%D9%84%D9%8A+%7C+NHC+-+Tabuk+Valley%E2%80%AD/@28.4506134,36.5177269,982m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15a9b3645d50c5d3:0x88412c0ba1ce35f2!8m2!3d28.4506134!4d36.5177269!16s%2Fg%2F11j_66nqhy"
+      ],
+      "evidence_note": "الرابط السابق كان دبوس إحداثيات عند 28.4605625,36.5175625 بلا اسم، ويبعد نحو 1.1 كم. البديل بطاقة Google باسم «وجهة تبوك فالي | NHC - Tabuk Valley»، المصيف، تبوك، عند 28.4506134,36.5177269؛ فُتح الرابط بعد التحديث. صفحة NHC تثبت وجهة تبوك فالي؛ رقم البطاقة 920033499 عام لـNHC وليس رقم مبيعات خاصًا.",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=28.4605625%2C36.5175625",
+      "field_checks": {
+        "phone": {
+          "status": "maps_lists_nhc_general_phone_not_local",
+          "value": "+966920033499"
+        },
+        "website": {
+          "status": "verified_official",
+          "value": "https://www.nhc.sa/ar/real-estate-development/suburbs/47658/73/"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "الربى|الرياض",
+      "category": "nhc",
+      "name": "الربى",
+      "city": "الرياض",
+      "locality": "الرماية / شرق الرياض",
+      "status": "official_nhc_sales_center_pin_post_edit_retested",
+      "current_map": "https://maps.app.goo.gl/y9HZ8AuP1afv4k9XA",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "official_nhc_sales_center_pin_post_edit_retested",
+        "notes": "الرابط الذي فُتح بعد التعديل يعرض NHC Sales Center – AlRuba Distenation، الرماية، الرياض، عند الإحداثية الرسمية 24.7640516,46.8900099 المطابقة للسجل. وصف NHC يحدد الوجهة شرق الرياض. يظل نوع المكان مركز مبيعات، لا حدود الضاحية."
+      },
+      "source_urls": [
+        "https://www.nhc.sa/ar/real-estate-development/suburbs/47607/13/",
+        "https://maps.app.goo.gl/y9HZ8AuP1afv4k9XA"
+      ],
+      "evidence_note": "الرابط الذي فُتح بعد التعديل يعرض NHC Sales Center – AlRuba Distenation، الرماية، الرياض، عند الإحداثية الرسمية 24.7640516,46.8900099 المطابقة للسجل. وصف NHC يحدد الوجهة شرق الرياض. يظل نوع المكان مركز مبيعات، لا حدود الضاحية.",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=24.7640516,46.8900099",
+      "field_checks": {
+        "phone": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "official_nhc_page"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "الوريف|جدة",
+      "category": "nhc",
+      "name": "الوريف",
+      "city": "جدة",
+      "locality": "التعاون / جنوب شرق جدة",
+      "status": "official_nhc_sales_center_pin_post_edit_retested",
+      "current_map": "https://maps.app.goo.gl/GasyBUkzGe89iRzB6",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "official_nhc_sales_center_pin_post_edit_retested",
+        "notes": "الرابط بعد التعديل يعرض مركز مبيعات وجهة الوريف - NHC بعنوان التعاون، جدة، عند 21.3508125,39.2610625 المطابقة تمامًا لإحداثية السجل. البطاقة تذكر nhc.sa ورقم NHC العام +966920033499؛ صفحة NHC تحدد الوجهة جنوب شرق جدة."
+      },
+      "source_urls": [
+        "https://www.nhc.sa/ar/real-estate-development/suburbs/47595/15/",
+        "https://maps.app.goo.gl/GasyBUkzGe89iRzB6"
+      ],
+      "evidence_note": "الرابط بعد التعديل يعرض مركز مبيعات وجهة الوريف - NHC بعنوان التعاون، جدة، عند 21.3508125,39.2610625 المطابقة تمامًا لإحداثية السجل. البطاقة تذكر nhc.sa ورقم NHC العام +966920033499؛ صفحة NHC تحدد الوجهة جنوب شرق جدة.",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=21.3508125,39.2610625",
+      "field_checks": {
+        "phone": {
+          "status": "verified_nhc_general_not_local",
+          "value": "+966920033499"
+        },
+        "website": {
+          "status": "verified_official"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
+    },
+    {
+      "id": "مكة هيلز|مكة المكرمة",
+      "category": "nhc",
+      "name": "مكة هيلز",
+      "city": "مكة المكرمة",
+      "locality": "شرق المسجد الحرام",
+      "status": "official_nhc_sales_center_coordinate_match_post_edit_retested",
+      "current_map": "https://maps.app.goo.gl/HTsMdUxcYHfxc67z7",
+      "checked_at": "2026-10-10",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "status": "official_nhc_sales_center_coordinate_match_post_edit_retested",
+        "notes": "الصفحة الرسمية لـNHC تربط زر زيارة مركز المبيعات بهذا الدبوس؛ Maps بعد الفتح يعرض إحداثية FX8J+G87 بمكة (21.4662778,39.9808056)، مطابقة عمليًا لإحداثية السجل 21.4662689,39.9808047، دون اسم مكان ظاهر في بطاقة الإحداثية. التوثيق يعتمد على مصدر NHC المباشر، لا اسم البطاقة."
+      },
+      "source_urls": [
+        "https://www.nhc.sa/ar/real-estate-development/suburbs/47583/80/",
+        "https://maps.app.goo.gl/HTsMdUxcYHfxc67z7"
+      ],
+      "evidence_note": "الصفحة الرسمية لـNHC تربط زر زيارة مركز المبيعات بهذا الدبوس؛ Maps بعد الفتح يعرض إحداثية FX8J+G87 بمكة (21.4662778,39.9808056)، مطابقة عمليًا لإحداثية السجل 21.4662689,39.9808047، دون اسم مكان ظاهر في بطاقة الإحداثية. التوثيق يعتمد على مصدر NHC المباشر، لا اسم البطاقة.",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=21.4662689,39.9808047",
+      "field_checks": {
+        "phone": {
+          "status": "not_present"
+        },
+        "website": {
+          "status": "official_nhc_page"
+        },
+        "whatsapp": {
+          "status": "not_present"
+        }
+      }
     }
   ],
   "browser_spot_checks": [
@@ -15247,12 +15923,12 @@
   ],
   "last_verified_head": "69c11a72b30a8ae84dcc1f1cd539f5198ab61337",
   "last_batch": {
-    "checked_maps": 58,
-    "verified_correct": 31,
-    "corrected_and_retested": 1,
-    "unresolved": 27,
-    "not_inspected": 3923,
-    "notes": "58 direct current map opens total across the latest three rounds. 7 more matches from office batch (8 opened, one identity/phone conflict); cumulative matches in latest batches 31. Two map fixes post-tested currently (cp-df and Sultan) and current batch correction metric 1. Website/contact checks remain separate."
+    "checked_maps": 17,
+    "verified_correct": 12,
+    "corrected_and_retested": 8,
+    "unresolved": 5,
+    "not_inspected": 3812,
+    "notes": "17 latest Map opens tied to record IDs: office batch had 5 prior opened IDs plus one new unique; six projects and opportunities were new targets; six NHC rows checked. Count metrics add 15 unique target opens, because five office rechecks were already counted."
   },
   "followup_batches": [
     {
@@ -15326,13 +16002,13 @@
     }
   ],
   "audit_counts": {
-    "as_of_commit": "c0fbeafd74878405bff401f8efcd0484e1da12f1",
+    "as_of_commit": "f2cbe2005d57ed44824613f4d5d141863266d2b7",
     "map_target_actions": 4059,
-    "opened_and_tied_to_unique_record": 232,
-    "verified_correct": 77,
-    "corrected_and_retested": 7,
-    "unresolved_after_open": 155,
-    "not_opened": 3827,
+    "opened_and_tied_to_unique_record": 247,
+    "verified_correct": 89,
+    "corrected_and_retested": 15,
+    "unresolved_after_open": 158,
+    "not_opened": 3812,
     "method": "Deduplicated record IDs; map target action per app row uses maps||mapsQ, branch coordinates (246), and generated selfbuild search (10). Correct requires directly opened target and positive name/location/purpose evidence; unresolved and merely opened are excluded. Phone, WhatsApp and website status stays field-specific.",
     "verified_correct_ids": [
       "entity-96716f5db346",
@@ -15411,8 +16087,20 @@
       "entity-a80e0faa1f92",
       "entity-83b787c12cb5",
       "entity-b4bef84d2797",
-      "entity-ba4bc778cc25"
+      "entity-ba4bc778cc25",
+      "entity-30e6808c384f",
+      "entity-e82cfda6e8a7",
+      "phase5-office-fc0c0013ba00",
+      "P032",
+      "P033",
+      "P035",
+      "op-c4e61f63eb",
+      "الجنى|جدة",
+      "تبوك فالي|تبوك",
+      "الربى|الرياض",
+      "الوريف|جدة",
+      "مكة هيلز|مكة المكرمة"
     ],
-    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field. Added 4 office records from Maps card opens: three matching Cards, one record where Maps title appeared but details could not be read; 3 marked correct, 1 unresolved. Official site/WhatsApp checks separated. Denominator reconciled to deduplicated baseline 4,059; previous checkpoints had incorrectly increased the denominator when logging existing dataset rows. All logged IDs were already represented in baseline target count. Before the removed-link re-audit, Maps had 215 opened, 71 verified matches, and 144 unresolved (counts corrected for P029). P029 corrected and post-edit tested: city fixed to Seihat and direct Google Maps card pin now matches project name, Ghadeer district, city; counts updated (+1 correct and corrected/retested, -1 unresolved). Tested and updated project search fallbacks after editing: P016 still returns no result/world center; P021 yields only Mutrafiyah area; P024 yields two similar but unverified candidates. All remain unresolved; none counted correct. Removed-link re-audit: opened 3 regional car searches and 3 company searches; Karden official HQ pin was post-edit tested, adding one verified and corrected/retested record. The other five remain unresolved and retained. Current totals: 4,059 targets; 221 opened; 72 correct; 7 corrected/retested; 149 unresolved; 3,838 unopened. New maps audit: five additional showroom records were opened; all five cards matched record name and locality. One showroom phone conflicts with its Maps listing and another lists two numbers; these are independent field states. Six Riyad Bank coordinate links were opened with no readable branch cards; official sources partially support names/locations and reveal that code 304 has two distinct addresses, so no pin/district correction was made. Updated cumulative totals: 232 opened, 77 proven correct, 7 corrected/retested, 155 unresolved, 3,827 not opened of 4,059 targets."
+    "notes": "Map metrics only. This batch adds 8 opened office map targets: 2 direct CID cards matched name/address/phone; six searches or precision conflicts unresolved. Car batch before it corrected and post-tested Ali Al-Sadiq and Al-Dagharir pins (total corrected and retested 5). Contact fields remain separately coded; Alta WhatsApp was changed to exact official source link but target navigation was policy-blocked and is unresolved. Added 8 office records from direct coordinate/query opens (0 confirmed pins) and 6 NHC current coordinate targets whose Maps cards were inaccessible; all unresolved, not counted correct. Office contact verification is field-specific; no missing records removed. Latest batch: 7 new car records and 6 new project records opened; four car Maps cards verified; three car records and all six projects unresolved. Existing opened record entity-efb15b8d3d96 is now explicitly logged unresolved. Added two additional office batches (prior-qadisiyya-76–79 and phase5-office-31/876/9de/5df): all eight Maps cards were unavailable or coordinate-only; unresolved, with official and secondary contact sources distinguished per field. Added 4 office records from Maps card opens: three matching Cards, one record where Maps title appeared but details could not be read; 3 marked correct, 1 unresolved. Official site/WhatsApp checks separated. Denominator reconciled to deduplicated baseline 4,059; previous checkpoints had incorrectly increased the denominator when logging existing dataset rows. All logged IDs were already represented in baseline target count. Before the removed-link re-audit, Maps had 215 opened, 71 verified matches, and 144 unresolved (counts corrected for P029). P029 corrected and post-edit tested: city fixed to Seihat and direct Google Maps card pin now matches project name, Ghadeer district, city; counts updated (+1 correct and corrected/retested, -1 unresolved). Tested and updated project search fallbacks after editing: P016 still returns no result/world center; P021 yields only Mutrafiyah area; P024 yields two similar but unverified candidates. All remain unresolved; none counted correct. Removed-link re-audit: opened 3 regional car searches and 3 company searches; Karden official HQ pin was post-edit tested, adding one verified and corrected/retested record. The other five remain unresolved and retained. Current totals: 4,059 targets; 221 opened; 72 correct; 7 corrected/retested; 149 unresolved; 3,838 unopened. New maps audit: five additional showroom records were opened; all five cards matched record name and locality. One showroom phone conflicts with its Maps listing and another lists two numbers; these are independent field states. Six Riyad Bank coordinate links were opened with no readable branch cards; official sources partially support names/locations and reveal that code 304 has two distinct addresses, so no pin/district correction was made. Updated cumulative totals: 232 opened, 77 proven correct, 7 corrected/retested, 155 unresolved, 3,827 not opened of 4,059 targets. Office/project/NHC batch: six office records revisited, only Hassani was a newly opened unique target; five had been opened earlier. Nasa and Mazal now meet match criteria; Mazal pin corrected and post-edit opened, but its phone conflicts with the stored number. Hassani verified. P003 and P031-P035 were opened; P032/P033/P035 matched the project, P032 and P035 saved as direct pins; P003/P031/P034 remain unresolved. Sama/Jida opportunity Maps opened: Jida direct project pin saved and post-edit opened; Sama remains ambiguous between scheme and sales-office listings. Six NHC destinations opened: AlJana matched a named residential destination card; AlRasha query resolved to sales center only and remains unresolved; Tabuk Valley corrected from unnamed coordinate to named NHC destination card; Ruba/Alwareef official sales-center pins and Makkah Hills official destination sales-center coordinate were opened after updating. Cumulative checkpoint: 4,059 targets, 247 opened, 89 correct, 15 corrected and post-edit retested, 158 unresolved, 3,812 unopened. Contact fields are separately audited; only official/general NHC phone distinctions recorded."
   }
 }
