@@ -12648,33 +12648,33 @@
       "category": "cars",
       "name": "ابن الجبيل للسيارات",
       "city": "بريدة",
-      "locality": "",
-      "status": "unresolved_maps_name_branch_not_confirmed_official_group_contacts",
-      "current_map": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D8%A8%D9%86%20%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%84%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+      "locality": "حي الجزيرة، بريدة",
+      "status": "no_verified_local_pin",
+      "current_map": "",
       "map_check": {
         "opened": true,
         "matched": false,
-        "status": "unresolved_maps_name_branch_not_confirmed_official_group_contacts",
-        "notes": "Opened current Maps search; title «شركة الجبيل للسيارات», but AX did not yield address/phone or confirm that it is the record’s «ابن الجبيل» Buraidah branch. Official group site shows Qassim/Buraidah branch and WhatsApp +966532199902 for group, not branch-specific. Haraj listing says Buraidah Al-Jazirah; not sufficient to identify this Maps card. Keep existing query and stored contact pending exact branch card."
+        "status": "no_verified_local_pin",
+        "notes": "إعلان حراج حديث باسم ابن الجبيل للسيارات يذكر فرع بريدة/حي الجزيرة؛ الموقع الرسمي يعرض فرع القصيم في بريدة وبيانات تواصل عامة. لم أعثر على دبوس Google مباشر مطابق، فبقي maps فارغًا وmapsQ بحثًا مساعدًا."
       },
       "field_checks": {
         "phone": {
-          "status": "unresolved_or_source_only",
-          "notes": "Opened current Maps search; title «شركة الجبيل للسيارات», but AX did not yield address/phone or confirm that it is the record’s «ابن الجبيل» Buraidah branch. Official group site shows Qassim/Buraidah branch and WhatsApp +966532199902 for group, not branch-specific. Haraj listing says Buraidah Al-Jazirah; not sufficient to identify this Maps card. Keep existing query and stored contact pending exact branch card."
-        },
-        "whatsapp": {
-          "status": "not_present_or_not_separately_verified"
+          "status": "verified_against_business_listing"
         },
         "website": {
-          "status": "not_present_or_not_verified"
+          "status": "matching_active_business_page"
+        },
+        "whatsapp": {
+          "status": "not_verified"
         }
       },
       "source_urls": [
         "https://ibn-aljubil.com/",
         "https://haraj.com.sa/11183288570/نيسان_اكس_تريل_2026_S/",
-        "https://haraj.com.sa/11187524660/شيفورليه_كروز_فل_كامل_2027/"
+        "https://haraj.com.sa/11187524660/شيفورليه_كروز_فل_كامل_2027/",
+        "https://haraj.com.sa/11180756143/هيونداي_اكسنت_فليت_2026/"
       ],
-      "evidence_note": "Opened current Maps search; title «شركة الجبيل للسيارات», but AX did not yield address/phone or confirm that it is the record’s «ابن الجبيل» Buraidah branch. Official group site shows Qassim/Buraidah branch and WhatsApp +966532199902 for group, not branch-specific. Haraj listing says Buraidah Al-Jazirah; not sufficient to identify this Maps card. Keep existing query and stored contact pending exact branch card."
+      "evidence_note": "إعلان حراج حديث باسم ابن الجبيل للسيارات يذكر فرع بريدة/حي الجزيرة؛ الموقع الرسمي يعرض فرع القصيم في بريدة وبيانات تواصل عامة. لم أعثر على دبوس Google مباشر مطابق، فبقي maps فارغًا وmapsQ بحثًا مساعدًا."
     },
     {
       "id": "entity-c7cbd30dbc0a",
@@ -18002,6 +18002,68 @@
           "status": "not_independently_verified"
         }
       }
+    },
+    {
+      "id": "phase5-google-18346828850129065532",
+      "category": "cars",
+      "name": "معرض الأزوري للسيارات",
+      "city": "الطائف",
+      "locality": "7C4V+FMJ، المعارض، الطائف 26516",
+      "status": "linked_exact_google_cid_from_matching_business_page",
+      "current_map": "https://www.google.com/maps/?cid=18346828850129065532",
+      "checked_at": "2026-10-10",
+      "source_urls": [
+        "https://www.bizmideast.com/SA/معرض-الازوري-للسيارات-012-746-6671"
+      ],
+      "field_checks": {
+        "phone": {
+          "status": "verified_against_business_listing"
+        },
+        "website": {
+          "status": "not_verified"
+        },
+        "whatsapp": {
+          "status": "not_verified"
+        }
+      },
+      "evidence_note": "صفحة مطابقة تعرض الاسم والعنوان 7C4V+FMJ والهاتفين 0127466671 و0555700288، وزر خرائط Google يفتح CID 18346828850129065532 المطابق للسجل. فُتح الرابط المباشر، لكن بطاقة Google الديناميكية غير مقروءة.",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "linked_exact_google_cid_from_matching_business_page",
+        "notes": "صفحة مطابقة تعرض الاسم والعنوان 7C4V+FMJ والهاتفين 0127466671 و0555700288، وزر خرائط Google يفتح CID 18346828850129065532 المطابق للسجل. فُتح الرابط المباشر، لكن بطاقة Google الديناميكية غير مقروءة."
+      }
+    },
+    {
+      "id": "phase5-google-12982528182969435934",
+      "category": "cars",
+      "name": "معرض الوذيناني للسيارات",
+      "city": "الطائف",
+      "locality": "6236، 5560، الحوية، الطائف 26578",
+      "status": "no_verified_local_pin",
+      "current_map": "https://www.google.com/maps/?cid=12982528182969435934",
+      "checked_at": "2026-10-10",
+      "source_urls": [
+        "https://gulfmap.net/place/معرض-الوذيناني-للسيارات-اوتو-الحوية"
+      ],
+      "field_checks": {
+        "phone": {
+          "status": "verified_against_business_listing"
+        },
+        "website": {
+          "status": "matching_active_business_page"
+        },
+        "whatsapp": {
+          "status": "listed_and_linked_but_destination_not_loaded"
+        }
+      },
+      "evidence_note": "GulfMap يطابق الاسم والعنوان 6236، 5560، الحوية، الطائف والهاتف 0127255517؛ زر WhatsApp مرتبط بالرقم ذاته. رابط الاتجاهات يفتح بحث Google عام، لذلك لم يُعتمد دبوسًا. أُضيف متجر حراج النشط المطابق في الطائف إلى web.",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "status": "no_verified_local_pin",
+        "notes": "GulfMap يطابق الاسم والعنوان 6236، 5560، الحوية، الطائف والهاتف 0127255517؛ زر WhatsApp مرتبط بالرقم ذاته. رابط الاتجاهات يفتح بحث Google عام، لذلك لم يُعتمد دبوسًا. أُضيف متجر حراج النشط المطابق في الطائف إلى web."
+      }
     }
   ],
   "browser_spot_checks": [
@@ -18130,6 +18192,16 @@
         "entity-65cb7cddce51"
       ],
       "result": "تصحيح ثلاثة سجلات مدرجة في مدينة مجاورة بالاعتماد على صفحة النشاط المطابقة؛ ربط CID مباشر لمعرض السواق من زر خرائط صفحة الاسم/العنوان/الهاتف. بطاقة Google بقيت ديناميكية وغير مقروءة؛ لا ادعاء بفحص تفاصيل البطاقة."
+    },
+    {
+      "checked_at": "2026-10-10",
+      "scope": "استكمال بيانات معرض ابن الجبيل ببريدة ومعرضي الأزوري والوذيناني بالطائف",
+      "record_ids": [
+        "entity-44019da87964",
+        "phase5-google-18346828850129065532",
+        "phase5-google-12982528182969435934"
+      ],
+      "result": "استكمال عناوين مؤكدة، إضافة رقم اتصال أرضي للأزوري، إضافة صفحة متجر حراج ورابط WhatsApp المباشر للوذيناني؛ كل رابط بحث Google بقي غير مؤكد كدبوس."
     }
   ],
   "audit_counts": {
