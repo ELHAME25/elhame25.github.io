@@ -722,7 +722,7 @@
 
   function renderSection(pre) {
     REG.length = 0;
-    var c = pre || compute(), k = S.tab, el = document.getElementById('content');
+    var c = pre || compute(), k = S.tab, el = document.getElementById('content'), b = S.branch;
     var all = c[k] ? c[k].items : [], items = filterQuery(k, all);
     var limit = S.limit[k] || CFG.pageSize, shown = items.slice(0, limit);
     var head = '<div class="sec-head"><div><h2>' + esc(LABEL[k]) + '</h2><p>' + esc(intro(k, items.length, items)) + '</p></div>' +
