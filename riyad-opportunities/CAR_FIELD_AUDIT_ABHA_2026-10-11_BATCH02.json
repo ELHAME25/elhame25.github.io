@@ -4,9 +4,9 @@
   "repository": "ELHAME25/elhame25.github.io",
   "branch": "fix/scope-counts-nhc-20261010",
   "source_head": "8f98a7a06bbde07f0a193b6b81ac183bcbe9392d",
-  "scope": "Abha records 11-20 after existing Batch01; first ten remaining rows, excluding Riyadh",
+  "scope": "Joint Abha-Khamis Mushait cluster, records 11-20 after existing Batch01; do not split or reassign cities based only on the linked-city relationship",
   "count": 10,
-  "note": "This is an evidence ledger only. No cars.json fields were changed. Unconfirmed means no adequate direct independent evidence was obtained; an existing Google Maps URL alone was not treated as proof.",
+  "note": "Abha and Khamis Mushait are one linked audit scope per user instruction. A source naming either city does not by itself make the other-city representation erroneous. This is an evidence ledger only; no cars.json fields changed and no city reassignment is proposed. Unconfirmed means adequate field-level direct evidence was not obtained.",
   "entries": [
     {
       "id": "regional-car-phase6-cars-ad77d20fffff8b-1",
@@ -21,8 +21,8 @@
           ]
         },
         "city_locality": {
-          "status": "conflict",
-          "evidence": "Record address states حي المعارض، خميس مشيط, while record_city is أبها; directory result associates showroom with Khamis Mushait. Abha city assignment is unsupported.",
+          "status": "within_linked_cluster_scope",
+          "evidence": "Abha and Khamis Mushait remain a single linked scope per user instruction. The cited sources may identify a location in either city; that is not a conflict or basis for reassignment. Exact neighborhood/pin matching remains unconfirmed unless established elsewhere.",
           "sources": [
             "https://www.dalilmadina.com/disp_cnt.aspx?c=84&i=K7ManuVJ2rE%2F6caIsEwfsQ%3D%3D"
           ]
@@ -56,7 +56,7 @@
       "fields": {
         "name_activity": {
           "status": "conflict",
-          "evidence": "Independent sources identify معرض القصيم للسيارات in Khamis Mushait as an official Nissan dealer/distributor, while this record is presented as an Abha used-car showroom. The source material does not confirm that the Abha record is a distinct business.",
+          "evidence": "Independent sources identify معرض القصيم للسيارات in Khamis Mushait as an official Nissan dealer/distributor. This may indicate dealership classification, but does not justify splitting the linked city scope or changing this row without further proof.",
           "sources": [
             "https://rewaq.net/ar/sa/company/85550b9pisd/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%84%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D9%85%D8%B1%D8%B4%D8%AF-%D9%85%D9%81%D9%84%D8%AD-%D9%81%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D9%85%D8%B7%D9%8A%D8%B1%D9%8A",
             "https://www.sayarabay.com/ar/new-cars/nissan/dealers/khamis-mushait/al-qaseem-showroom-for-cars-104",
@@ -64,8 +64,8 @@
           ]
         },
         "city_locality": {
-          "status": "conflict",
-          "evidence": "The independent directory records the named showroom in Khamis Mushait; this row is assigned to Abha.",
+          "status": "within_linked_cluster_scope",
+          "evidence": "Abha and Khamis Mushait remain a single linked scope per user instruction. The cited sources may identify a location in either city; that is not a conflict or basis for reassignment. Exact neighborhood/pin matching remains unconfirmed unless established elsewhere.",
           "sources": [
             "https://rewaq.net/ar/sa/company/85550b9pisd/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%84%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D9%85%D8%B1%D8%B4%D8%AF-%D9%85%D9%81%D9%84%D8%AD-%D9%81%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D9%85%D8%B7%D9%8A%D8%B1%D9%8A"
           ]
@@ -105,8 +105,8 @@
           ]
         },
         "city_locality": {
-          "status": "conflict",
-          "evidence": "The current Haraj listing explicitly locates sales in خميس مشيط – حي المعارض; this row is assigned to أبها.",
+          "status": "within_linked_cluster_scope",
+          "evidence": "Haraj explicitly places this active showroom in Khamis Mushait – حي المعارض. This is within the linked Abha–Khamis scope; no city change is proposed. Exact Google Maps pin remains independently unverified.",
           "sources": [
             "https://haraj.com.sa/11188599307/%D8%A7%D9%8A%D8%B3%D9%88%D8%B2%D9%88_%D8%AF%D9%8A%D9%85%D8%A7%D9%83%D8%B3_%D8%BA%D9%85%D8%A7%D8%B1%D8%AA%D9%8A%D9%86_GT_2026/",
             "https://maps.yango.com/ar-sa/org/62907635553/"
@@ -152,8 +152,8 @@
           "sources": []
         },
         "city_locality": {
-          "status": "unconfirmed",
-          "evidence": "No independent source verified the Abha assignment or neighborhood.",
+          "status": "within_linked_cluster_scope",
+          "evidence": "Abha and Khamis Mushait remain a single linked scope per user instruction. The cited sources may identify a location in either city; that is not a conflict or basis for reassignment. Exact neighborhood/pin matching remains unconfirmed unless established elsewhere.",
           "sources": []
         },
         "phone": {
@@ -189,8 +189,8 @@
           "sources": []
         },
         "city_locality": {
-          "status": "unconfirmed",
-          "evidence": "No independent source verified the Abha assignment or neighborhood.",
+          "status": "within_linked_cluster_scope",
+          "evidence": "Abha and Khamis Mushait remain a single linked scope per user instruction. The cited sources may identify a location in either city; that is not a conflict or basis for reassignment. Exact neighborhood/pin matching remains unconfirmed unless established elsewhere.",
           "sources": []
         },
         "phone": {
@@ -228,8 +228,8 @@
           ]
         },
         "city_locality": {
-          "status": "unconfirmed",
-          "evidence": "Regional guide covers both Abha and Khamis Mushait; exact branch city not established independently.",
+          "status": "within_linked_cluster_scope",
+          "evidence": "Abha and Khamis Mushait remain a single linked scope per user instruction. The cited sources may identify a location in either city; that is not a conflict or basis for reassignment. Exact neighborhood/pin matching remains unconfirmed unless established elsewhere.",
           "sources": [
             "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
           ]
@@ -271,8 +271,8 @@
           ]
         },
         "city_locality": {
-          "status": "unconfirmed",
-          "evidence": "Regional guide combines the two cities and does not establish which city this listing occupies.",
+          "status": "within_linked_cluster_scope",
+          "evidence": "Abha and Khamis Mushait remain a single linked scope per user instruction. The cited sources may identify a location in either city; that is not a conflict or basis for reassignment. Exact neighborhood/pin matching remains unconfirmed unless established elsewhere.",
           "sources": [
             "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
           ]
@@ -308,12 +308,12 @@
       "fields": {
         "name_activity": {
           "status": "unconfirmed",
-          "evidence": "Generic name and landline do not identify a specific active business; no independent listing matching both was found.",
+          "evidence": "Generic label requires better evidence to identify the business; this is a record-identity gap, not a reason to treat the linked Abha–Khamis city scope as erroneous.",
           "sources": []
         },
         "city_locality": {
-          "status": "conflict",
-          "evidence": "Record city says أبها while record name says خميس مشيط; the address is empty.",
+          "status": "within_linked_cluster_scope",
+          "evidence": "Abha and Khamis Mushait remain a single linked scope per user instruction. The cited sources may identify a location in either city; that is not a conflict or basis for reassignment. Exact neighborhood/pin matching remains unconfirmed unless established elsewhere.",
           "sources": []
         },
         "phone": {
@@ -349,8 +349,8 @@
           "sources": []
         },
         "city_locality": {
-          "status": "conflict",
-          "evidence": "Record is labeled Abha but address says هجلة, associated here with Khamis Mushait; direct branch evidence is still missing.",
+          "status": "within_linked_cluster_scope",
+          "evidence": "Abha and Khamis Mushait remain a single linked scope per user instruction. The cited sources may identify a location in either city; that is not a conflict or basis for reassignment. Exact neighborhood/pin matching remains unconfirmed unless established elsewhere.",
           "sources": []
         },
         "phone": {
