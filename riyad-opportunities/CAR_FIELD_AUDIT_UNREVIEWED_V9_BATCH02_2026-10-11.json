@@ -1,0 +1,514 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "8005cf85758dfe165efe73d2bf71c7c6130f4743",
+  "batch": 2,
+  "scope": {
+    "reviewed": 16,
+    "direct_google_maps_cards_confirmed": 0,
+    "unresolved_pins": 16,
+    "qadisiyah_excluded": true
+  },
+  "records": [
+    {
+      "id": "v9-car-4bc674fb7319",
+      "name": "معرض نقوة",
+      "city": "القويعية",
+      "neighborhood": "الصناعية، القويعية",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "unresolved_search_or_card_not_obtained",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%86%D9%82%D9%88%D8%A9%20%D8%A7%D9%84%D9%82%D9%88%D9%8A%D8%B9%D9%8A%D8%A9",
+        "coordinates_in_existing_record": {
+          "lat": 24.06826,
+          "lon": 45.31019
+        }
+      },
+      "phone": {
+        "status": "unverified",
+        "value": [
+          "0594402759"
+        ]
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%86%D9%82%D9%88%D8%A9%20%D8%A7%D9%84%D9%82%D9%88%D9%8A%D8%B9%D9%8A%D8%A9"
+      ],
+      "note": "لم يظهر مصدر يثبت بطاقة المكان المطابقة أو الدبوس بعد البحث بالاسم والمدينة والهاتف؛ أبقيت السجل دون تعديل."
+    },
+    {
+      "id": "v9-car-fa37d453166e",
+      "name": "معرض العريفي للسيارات - أبو شوارب",
+      "city": "القويعية",
+      "neighborhood": "القويعية",
+      "activity_status": "conflicting",
+      "map_pin": {
+        "status": "location_conflict",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%B1%D9%8A%D9%81%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20-%20%D8%A3%D8%A8%D9%88%20%D8%B4%D9%88%D8%A7%D8%B1%D8%A8%20%D8%A7%D9%84%D9%82%D9%88%D9%8A%D8%B9%D9%8A%D8%A9",
+        "coordinates_in_existing_record": {
+          "lat": null,
+          "lon": null
+        }
+      },
+      "phone": {
+        "status": "secondary_source_match_activity_conflict",
+        "value": [
+          "0501144614"
+        ]
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/org/235424429951/"
+      ],
+      "note": "Yango يطابق الاسم والرقم لكنه يصنف النشاط «أعمال خيرية» ويضع المكان في مزعل، لا القويعية؛ لم أربط البطاقة بسجل معرض سيارات."
+    },
+    {
+      "id": "v9-car-03318791fee2",
+      "name": "معرض ضاوي صاهود السهلي",
+      "city": "المجمعة",
+      "neighborhood": "الصناعية، المجمعة",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "search_url_not_pin",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B6%D8%A7%D9%88%D9%8A%20%D8%B5%D8%A7%D9%87%D9%88%D8%AF%20%D8%A7%D9%84%D8%B3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A9",
+        "coordinates_in_existing_record": {
+          "lat": 25.87599,
+          "lon": 45.39536
+        }
+      },
+      "phone": {
+        "status": "secondary_source_match",
+        "value": [
+          "0505120589"
+        ]
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A9"
+      ],
+      "note": "StriveME يطابق الاسم والرقم ويذكر عنوانًا في المنطقة الصناعية بالمجمعة؛ لم يثبت دبوس Google."
+    },
+    {
+      "id": "v9-car-585ebb8d6246",
+      "name": "معرض القصيم للسيارات",
+      "city": "المجمعة",
+      "neighborhood": "المجمعة",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "search_url_not_pin",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A9",
+        "coordinates_in_existing_record": {
+          "lat": null,
+          "lon": null
+        }
+      },
+      "phone": {
+        "status": "secondary_source_match",
+        "value": [
+          "0557788708"
+        ]
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A9"
+      ],
+      "note": "StriveME يطابق معرض القصيم بالمجمعة والرقم 0557788708 ويذكر المنطقة الصناعية؛ لا يوجد دبوس Google مؤكد."
+    },
+    {
+      "id": "v9-car-b088cbf87fe0",
+      "name": "معرض العضيلة للسيارات",
+      "city": "المجمعة",
+      "neighborhood": "الصناعية، المجمعة",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "search_url_not_pin",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D8%B6%D9%8A%D9%84%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A9",
+        "coordinates_in_existing_record": {
+          "lat": 25.87599,
+          "lon": 45.39536
+        }
+      },
+      "phone": {
+        "status": "missing",
+        "value": []
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A9"
+      ],
+      "note": "StriveME يطابق الاسم والعنوان في المنطقة الصناعية بالمجمعة، دون رقم هاتف؛ دبوس Google غير مثبت."
+    },
+    {
+      "id": "v9-car-0535236d68dc",
+      "name": "معرض آل سويد للسيارات",
+      "city": "السليل",
+      "neighborhood": "السليل",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "location_conflict",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A2%D9%84%20%D8%B3%D9%88%D9%8A%D8%AF%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D9%84%D9%8A%D9%84",
+        "coordinates_in_existing_record": {
+          "lat": null,
+          "lon": null
+        }
+      },
+      "phone": {
+        "status": "secondary_source_match_city_conflict",
+        "value": [
+          "0551999946"
+        ]
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/org/36915219933/?lang=ar",
+        "https://albaraka.ma/annuaire/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A2%D9%84-%D8%B3%D9%88%D9%8A%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D9%84%D9%8A%D9%84-966-55-199-9946/"
+      ],
+      "note": "الاسم والرقم متطابقان؛ Yango يضع المكان في الرياض/جبل طويق، ودليل آخر يذكر السليل. المدينة والدبوس متعارضان."
+    },
+    {
+      "id": "v9-car-2d9407920ab3",
+      "name": "معرض سلطان للسيارات",
+      "city": "السليل",
+      "neighborhood": "الطريق العام، السليل",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "location_conflict",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D9%84%D9%8A%D9%84",
+        "coordinates_in_existing_record": {
+          "lat": null,
+          "lon": null
+        }
+      },
+      "phone": {
+        "status": "conflict_different_yango_record",
+        "value": [
+          "0581523680"
+        ]
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/org/215493084505/"
+      ],
+      "note": "بطاقة Yango باسم معرض سلطان للسيارات في الجبيل وبرقم 0533337738، ولا تطابق مدينة السليل أو الرقم المسجل 0581523680."
+    },
+    {
+      "id": "v9-car-b4ca928aa450",
+      "name": "معرض الشمري للسيارات",
+      "city": "السليل",
+      "neighborhood": "عائشة بنت أبي بكر، الروضة، السليل",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "unresolved_search_or_card_not_obtained",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D9%85%D8%B1%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D9%84%D9%8A%D9%84",
+        "coordinates_in_existing_record": {
+          "lat": 20.47355,
+          "lon": 45.58778
+        }
+      },
+      "phone": {
+        "status": "unverified",
+        "value": [
+          "0592063469"
+        ]
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D9%85%D8%B1%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D9%84%D9%8A%D9%84"
+      ],
+      "note": "لم يظهر مصدر يثبت بطاقة المكان المطابقة أو الدبوس بعد البحث بالاسم والمدينة والهاتف؛ أبقيت السجل دون تعديل."
+    },
+    {
+      "id": "v9-car-9ef748bc90de",
+      "name": "معرض في الفضاء لبيع وشراء السيارات",
+      "city": "وادي الدواسر",
+      "neighborhood": "وادي الدواسر 18617",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "search_url_not_pin",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A1%20%D9%84%D8%A8%D9%8A%D8%B9%20%D9%88%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%B3%D8%B1",
+        "coordinates_in_existing_record": {
+          "lat": null,
+          "lon": null
+        }
+      },
+      "phone": {
+        "status": "not_independently_confirmed",
+        "value": [
+          "0555207049"
+        ]
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/114163/wadi-ad-dawasir/category/car_dealership/184105322/"
+      ],
+      "note": "لم يظهر مصدر مستقل مطابق بالاسم والرقم؛ رابط خرائط السجل بحث عام."
+    },
+    {
+      "id": "v9-car-b3d20120a5eb",
+      "name": "معرض الملقا للسيارات",
+      "city": "وادي الدواسر",
+      "neighborhood": "وادي الدواسر 18617",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "search_url_not_pin",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D9%84%D9%82%D8%A7%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%B3%D8%B1",
+        "coordinates_in_existing_record": {
+          "lat": null,
+          "lon": null
+        }
+      },
+      "phone": {
+        "status": "not_independently_confirmed",
+        "value": [
+          "0533330027"
+        ]
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/114163/wadi-ad-dawasir/category/car_dealership/184105322/"
+      ],
+      "note": "لم يظهر مصدر مستقل مطابق بالاسم والرقم؛ رابط خرائط السجل بحث عام."
+    },
+    {
+      "id": "v9-car-ee748c56b18e",
+      "name": "معرض المملكة الجديد للسيارات",
+      "city": "وادي الدواسر",
+      "neighborhood": "وادي الدواسر",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "search_url_not_pin",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%20%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%B3%D8%B1",
+        "coordinates_in_existing_record": {
+          "lat": null,
+          "lon": null
+        }
+      },
+      "phone": {
+        "status": "not_independently_confirmed",
+        "value": [
+          "0500060011"
+        ]
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/114163/wadi-ad-dawasir/category/car_dealership/184105322/"
+      ],
+      "note": "قائمة وكلاء السيارات في وادي الدواسر تعرض الاسم فقط؛ الهاتف والدبوس غير مثبتين."
+    },
+    {
+      "id": "v9-car-2cdb1d8ff2a6",
+      "name": "معرض الذهبي للسيارات",
+      "city": "وادي الدواسر",
+      "neighborhood": "وادي الدواسر",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "search_url_not_pin",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%B3%D8%B1",
+        "coordinates_in_existing_record": {
+          "lat": null,
+          "lon": null
+        }
+      },
+      "phone": {
+        "status": "missing",
+        "value": []
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/114163/wadi-ad-dawasir/category/car_dealership/184105322/"
+      ],
+      "note": "قائمة Yango تعرض معرض الذهبي للسيارات في وادي الدواسر دون رقم؛ دبوس Google غير مثبت."
+    },
+    {
+      "id": "v9-car-7002e1e1842d",
+      "name": "شركة المتميزون للسيارات",
+      "city": "وادي الدواسر",
+      "neighborhood": "وادي الدواسر",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "search_url_not_pin",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D8%AA%D9%85%D9%8A%D8%B2%D9%88%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%B3%D8%B1",
+        "coordinates_in_existing_record": {
+          "lat": null,
+          "lon": null
+        }
+      },
+      "phone": {
+        "status": "missing",
+        "value": []
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/114163/wadi-ad-dawasir/category/car_dealership/184105322/"
+      ],
+      "note": "قائمة Yango تعرض شركة المتميزون للسيارات في وادي الدواسر دون رقم؛ دبوس Google غير مثبت."
+    },
+    {
+      "id": "v9-car-5f758b9c1c04",
+      "name": "معرض النشاري للسيارات",
+      "city": "حقل",
+      "neighborhood": "طريق الملك عبدالعزيز، الظهرة، حقل 71951",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "unresolved_search_or_card_not_obtained",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B1%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%82%D9%84",
+        "coordinates_in_existing_record": {
+          "lat": 29.28511,
+          "lon": 34.94624
+        }
+      },
+      "phone": {
+        "status": "unverified",
+        "value": [
+          "0532538150"
+        ]
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B1%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%82%D9%84"
+      ],
+      "note": "لم يظهر مصدر يثبت بطاقة المكان المطابقة أو الدبوس بعد البحث بالاسم والمدينة والهاتف؛ أبقيت السجل دون تعديل."
+    },
+    {
+      "id": "v9-car-de4ab6caf5cd",
+      "name": "معرض الحربي",
+      "city": "حقل",
+      "neighborhood": "طريق موسى بن نصير، اليرموك، حقل 49939",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "unresolved_search_or_card_not_obtained",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B1%D8%A8%D9%8A%20%D8%AD%D9%82%D9%84",
+        "coordinates_in_existing_record": {
+          "lat": 29.28101,
+          "lon": 34.96225
+        }
+      },
+      "phone": {
+        "status": "missing",
+        "value": []
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B1%D8%A8%D9%8A%20%D8%AD%D9%82%D9%84"
+      ],
+      "note": "لم يظهر مصدر يثبت بطاقة المكان المطابقة أو الدبوس بعد البحث بالاسم والمدينة والهاتف؛ أبقيت السجل دون تعديل."
+    },
+    {
+      "id": "v9-car-82851ad17564",
+      "name": "معرض الطويرش للسيارات",
+      "city": "ضباء",
+      "neighborhood": "البِر، ضباء 49314",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "unresolved_search_or_card_not_obtained",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B7%D9%88%D9%8A%D8%B1%D8%B4%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B6%D8%A8%D8%A7%D8%A1",
+        "coordinates_in_existing_record": {
+          "lat": null,
+          "lon": null
+        }
+      },
+      "phone": {
+        "status": "unverified",
+        "value": [
+          "0505375982"
+        ]
+      },
+      "whatsapp": {
+        "status": "not_verified"
+      },
+      "website": {
+        "status": "not_verified"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B7%D9%88%D9%8A%D8%B1%D8%B4%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B6%D8%A8%D8%A7%D8%A1"
+      ],
+      "note": "لم يظهر مصدر يثبت بطاقة المكان المطابقة أو الدبوس بعد البحث بالاسم والمدينة والهاتف؛ أبقيت السجل دون تعديل."
+    }
+  ],
+  "integrity": {
+    "cars_records_before": 821,
+    "cars_records_after": 821,
+    "qadisiyah_records": 33,
+    "qadisiyah_modified": false,
+    "cars_json_modified": false,
+    "merge": false,
+    "publish": false
+  }
+}
