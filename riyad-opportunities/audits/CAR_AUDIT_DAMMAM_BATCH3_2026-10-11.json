@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-11",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "city": "الدمام",
+  "records": [
+    {
+      "id": "phase5-google-2364072976167935461",
+      "storedName": "شركة بن قير للسيارات",
+      "mapsCardName": "معارض السيارات شركة بن قير للسيارات",
+      "decision": "verified direct Google Maps card",
+      "activity": "تاجر السيارات",
+      "address": "معارض الدمام، ضاحية الملك فهد، الدمام 32271",
+      "phone": "+966557914802",
+      "storedPhone": "0557914802",
+      "plusCode": "C225+H5",
+      "verifiedCoordinates": [
+        26.4014345,
+        50.0079519
+      ],
+      "proposedChanges": {
+        "n": "معارض السيارات شركة بن قير للسيارات",
+        "lat": 26.4014345,
+        "lon": 50.0079519
+      }
+    },
+    {
+      "id": "phase5-car-f91368845dad",
+      "name": "معرض الوادي الفضي",
+      "decision": "verified direct Google Maps card; replace non-Google map and generic coordinates",
+      "activity": "تاجر سيارات",
+      "address": "حي ضاحية الملك فهد، الدمام 32313",
+      "phone": "+966562803375",
+      "storedPhone": "0562803375",
+      "plusCode": "92X8+F2",
+      "verifiedCid": "5110969622782353372",
+      "verifiedCoordinates": [
+        26.3987483,
+        50.0150053
+      ],
+      "proposedChanges": {
+        "maps": "https://www.google.com/maps/?cid=5110969622782353372",
+        "lat": 26.3987483,
+        "lon": 50.0150053,
+        "nb": "حي ضاحية الملك فهد، الدمام 32313"
+      }
+    }
+  ],
+  "cityDecision": "All 13 Dammam records that lacked mapReviewStatus at extraction time were processed in this continuation: 12 have direct-card decisions across the three Dammam audit files; Autoworld used-cars Dammam remains unresolved because prior saved evidence found only wrong rental/area candidates, not a dealership pin.",
+  "writeStatus": "Evidence and precise changes committed; cars.json write remains blocked by prior auto-review rejection. Qadisiyah untouched."
+}
