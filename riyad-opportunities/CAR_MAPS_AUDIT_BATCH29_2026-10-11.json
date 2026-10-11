@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "audit_batch": "CAR_MAPS_AUDIT_BATCH29_2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": "three previously unresolved Khamis Mushait regional records; Google Maps checked; Qadisiyah untouched",
+  "method": "Searched Google Maps by stored business name and city. Only direct place cards with matching name/activity/locality count as verified; search results and similarly named listings are not accepted as identity proof.",
+  "entries": [
+    {
+      "id": "regional-pdf-pdf-smalltown-009-045",
+      "stored_name": "معرض أنوار أبها للسيارات",
+      "stored_city": "خميس مشيط",
+      "stored_phone": "0172274774",
+      "status": "unresolved_no_matching_card",
+      "search": "Google Maps search for معرض أنوار أبها للسيارات خميس مشيط",
+      "results_observed": [
+        {
+          "name": "معرض ابها كارز للسيارات",
+          "category": "تاجر سيارات",
+          "locality": "خميس مشيط",
+          "phone": "+966 17 222 2238",
+          "assessment": "different name; not accepted as the stored business"
+        },
+        {
+          "name": "اضواء خميس مشيط للسيارات ف خميس مشيط",
+          "category": "تاجر سيارات",
+          "locality": "خميس مشيط",
+          "phone": "+966 56 581 1940",
+          "assessment": "different name and phone; not accepted as the stored business"
+        }
+      ],
+      "evidence_note": "The Maps search returned no direct card matching the stored business name and phone. Keep the record unresolved; do not substitute either nearby listing."
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-015-045",
+      "stored_name": "Star farmer car",
+      "stored_city": "خميس مشيط",
+      "stored_phone": "0545424485",
+      "status": "unresolved_identity_and_phone_conflict",
+      "maps_card_observed": {
+        "name": "شركة نجوم الفلاح للسيارات",
+        "category": "تاجر سيارات",
+        "locality": "المعارض، طريق الملك فهد، حجله، خميس مشيط 61961",
+        "phone": "+966 54 460 1689",
+        "coordinates": [
+          18.286516,
+          42.6730732
+        ],
+        "direct_maps_url": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D9%86%D8%AC%D9%88%D9%85+%D8%A7%D9%84%D9%81%D9%84%D8%A7%D8%AD+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@18.286516,42.6730732,17z/data=!3m1!4b1!4m6!3m5!1s0x15fb571b52af78c7:0x27e25897ab6e3385!8m2!3d18.286516!4d42.6730732!16s%2Fg%2F11ckr6pzj9"
+      },
+      "secondary_conflict": "Prior web directory lists Star farmer car with the stored number; the opened Maps card is a differently named business with a different number.",
+      "evidence_note": "The Maps place itself is real and local, but the name/phone mismatch prevents proving it is the stored business. Do not replace the stored link or phone."
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-016-045",
+      "stored_name": "معرض سعيد سالم الشهراني",
+      "stored_city": "خميس مشيط",
+      "stored_phone": null,
+      "status": "unresolved_multiple_similar_listings",
+      "results_observed": [
+        {
+          "name": "شركة سعيد سالم الشهراني للسيارات",
+          "category": "تاجر سيارات",
+          "locality_snippet": "خميس مشيط",
+          "phone": "+966 17 235 4626",
+          "direct_maps_url": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%B3%D8%B9%D9%8A%D8%AF+%D8%B3%D8%A7%D9%84%D9%85+%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D8%A7%D9%86%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fb570356b774f5:0x45f10224ef9c4293!8m2!3d18.2871884!4d42.67302!16s%2Fg%2F11hd9nzxpt!19sChIJ9XS3VgNX-xURk0Kc7yQC8UU?authuser=0&hl=ar&rclk=1"
+        },
+        {
+          "name": "معرض سعيد عبدالله الشهراني للسيارات",
+          "category": "تاجر سيارات",
+          "locality": "خميس مشيط",
+          "phone": "+966 17 234 5705",
+          "assessment": "separate similarly named place"
+        },
+        {
+          "name": "معرض سعيد محمد الشهراني",
+          "category": "not confirmed from results list",
+          "locality": "خميس مشيط",
+          "assessment": "another similarly named result"
+        }
+      ],
+      "evidence_note": "The exact-name candidate appeared in Maps results, but the opened direct place card was not inspected and multiple similar businesses were returned. Keep record unresolved; no pin/phone accepted."
+    }
+  ],
+  "cars_json_modified": false,
+  "qadisiyah_modified": false,
+  "merged": false,
+  "published": false,
+  "qa_run": false
+}
