@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "timezone": "Asia/Riyadh",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": {
+    "cities": [
+      "طريف",
+      "الدوادمي",
+      "رابغ",
+      "بدر"
+    ],
+    "record_count": 8,
+    "protected_qadisiyah_touched": false
+  },
+  "policy": {
+    "primary_source": "Google Maps place cards",
+    "general_search_url_not_accepted_as_verified_pin": true,
+    "websites_and_whatsapp_out_of_scope": true,
+    "cars_json_write_status": "Not attempted in this batch because the prior full-file replacement write was explicitly rejected by review; verified changes are preserved here without bypassing that decision."
+  },
+  "summary": {
+    "verified_correct_no_data_change": 3,
+    "verified_with_proposed_data_correction": 4,
+    "unresolved_after_search": 1,
+    "temporarily_closed": 1,
+    "permanently_closed": 0
+  },
+  "records": [
+    {
+      "id": "national-car-a5c1b61714bf42",
+      "city": "طريف",
+      "stored_name": "معرض اليقين الدولي للسيارات الجديدة والمستعملة",
+      "decision": "unresolved_after_search",
+      "stored": {
+        "phone": "0582402146",
+        "maps_cid": "2632071144803295288",
+        "lat": null,
+        "lng": null
+      },
+      "evidence": {
+        "google_maps_cid_result": "The stored CID opened a blank/non-place Maps panel.",
+        "google_maps_name_search": "An exact city/country search returned a results list but no listing matching the stored business name.",
+        "secondary_search": "Yango search index mentioned the name only as a nearby organization and exposed no direct place card or phone.",
+        "phone_search": "No reliable result tied 0582402146 to this showroom."
+      },
+      "unresolved_fields": [
+        "maps_place",
+        "coordinates",
+        "phone"
+      ],
+      "proposed_change": null,
+      "rationale": "No verified pin or reliable phone source; retain pending status and do not fabricate or replace with a generic search URL."
+    },
+    {
+      "id": "national-car-8c5f8021ce8d16",
+      "city": "طريف",
+      "stored_name": "صالة الوسام المضئ للسيارات",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {
+        "phone": "0508834177",
+        "maps_cid": "4235436313888503050",
+        "lat": null,
+        "lng": null
+      },
+      "observed": {
+        "name": "صالة الوسام المضيء للسيارات",
+        "activity": "تاجر السيارات",
+        "address": "MJJX+5MF، طريق الملك عبدالعزيز، العزيزية، طريف 75312، المملكة العربية السعودية",
+        "phone_on_google_maps": null,
+        "lat": 31.6804413,
+        "lng": 38.6491826,
+        "current_maps_fp": "10714209362248763342",
+        "maps_url": "https://www.google.com/maps/place/%D8%B5%D8%A7%D9%84%D8%A9+%D8%A7%D9%84%D9%88%D8%B3%D8%A7%D9%85+%D8%A7%D9%84%D9%85%D8%B6%D9%8A%D8%A1+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@31.6804413,38.6491826,17z/data=!3m1!4b1!4m6!3m5!1s0x15116185e30393fb:0x94b084a60e0087ce!8m2!3d31.6804413!4d38.6491826!16s%2Fg%2F11qfj_s262"
+      },
+      "secondary_phone_evidence": {
+        "source": "Facebook business page/posts indexed by web search",
+        "phone": "0508834177",
+        "note": "Multiple activity posts for معرض الوسام المضيء publish the same number and mention طريف."
+      },
+      "proposed_change": {
+        "name": "صالة الوسام المضيء للسيارات",
+        "phone": "0508834177",
+        "lat": 31.6804413,
+        "lng": 38.6491826,
+        "maps_cid": "10714209362248763342"
+      },
+      "rationale": "Google Maps confirms name/activity/address/pin; phone absent from Maps but confirmed by the business's published posts."
+    },
+    {
+      "id": "national-car-769929b42054d3",
+      "city": "الدوادمي",
+      "stored_name": "معرض أبو رويس للسيارات والمعدات",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {
+        "phone": "0116440666",
+        "maps_cid": "6972608864476564691",
+        "lat": 24.50756,
+        "lng": 44.3571
+      },
+      "observed": {
+        "name": "معرض ابورويس للسيارات",
+        "activity": "تاجر السيارات",
+        "address": "G995+3CQ، طريق الملك خالد، الصناعية، الدوادمي 17436، المملكة العربية السعودية",
+        "phone": "0114663223",
+        "lat": 24.5177105,
+        "lng": 44.3586087,
+        "current_maps_fp": "9264382309521894077",
+        "maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%88%D8%B1%D9%88%D9%8A%D8%B3+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.5177105,44.3586087,17z/data=!3m1!4b1!4m6!3m5!1s0x1586fcd4f9b8048f:0x8091b2a02e772abd!8m2!3d24.5177105!4d44.3586087!16s%2Fg%2F11b6_j9n87"
+      },
+      "proposed_change": {
+        "name": "معرض ابورويس للسيارات",
+        "phone": "0114663223",
+        "lat": 24.5177105,
+        "lng": 44.3586087,
+        "maps_cid": "9264382309521894077"
+      },
+      "rationale": "The live card shows a different phone and pin; stored coordinates are about 1.1 km south of the verified card."
+    },
+    {
+      "id": "v9-car-82d8d5493078",
+      "city": "الدوادمي",
+      "stored_name": "معرض الوتير للسيارات",
+      "decision": "verified_correct_no_data_change",
+      "stored": {
+        "phones": [
+          "0559976482",
+          "0505576606"
+        ],
+        "lat": 24.5185018,
+        "lng": 44.3600211
+      },
+      "observed": {
+        "name": "معرض الوتير للسيارات",
+        "activity": "تاجر سيارات",
+        "address": "طريق الملك خالد، الصناعية، الدوادمي 17444، المملكة العربية السعودية",
+        "phone_on_google_maps": "0559976482",
+        "plus_code": "G996+C2 الدوادمي السعودية",
+        "lat": 24.5185018,
+        "lng": 44.3600211,
+        "maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%88%D8%AA%D9%8A%D8%B1+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.5185018,44.3600211,17z/data=!3m1!4b1!4m6!3m5!1s0x1586fda4ea0f362f:0xefda9e184a4d05f0!8m2!3d24.5185018!4d44.3600211!16s%2Fg%2F11kq65h20q"
+      },
+      "secondary_phone_evidence": {
+        "source": "Official Snapchat profile indexed by web search",
+        "phones": [
+          "0559976482",
+          "0505576606"
+        ]
+      },
+      "proposed_change": null
+    },
+    {
+      "id": "phase6-cars-1ffc9fda309a5b",
+      "city": "رابغ",
+      "stored_name": "معرض ملفي اليوبي للسيارات",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {
+        "phone": "0124221421",
+        "maps_cid": "14670529483918325538",
+        "lat": null,
+        "lng": null
+      },
+      "observed": {
+        "name": "معرض مرزوق ملفي اليوبي للسيارات",
+        "activity": "مزاد السيارات",
+        "address": "2، 22°45'25.0N 39°02'18.9E، رابغ، المملكة العربية السعودية",
+        "phone": "0506604244",
+        "plus_code": "Q24Q+Q9 رابغ",
+        "lat": 22.7568838,
+        "lng": 39.0384923,
+        "maps_cid": "14670529483918325538",
+        "maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D8%B1%D8%B2%D9%88%D9%82+%D9%85%D9%84%D9%81%D9%8A+%D8%A7%D9%84%D9%8A%D9%88%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@22.7568838,39.0384923,17z/data=!3m1!4b1!4m6!3m5!1s0x15c0943798165aa7:0xcb9830d67bd8b722!8m2!3d22.7568838!4d39.0384923!16s%2Fg%2F11byzdyg6x"
+      },
+      "proposed_change": {
+        "name": "معرض مرزوق ملفي اليوبي للسيارات",
+        "phone": "0506604244",
+        "lat": 22.7568838,
+        "lng": 39.0384923
+      },
+      "rationale": "Same stored CID resolves to the live business, but the stored name is incomplete and the stored landline conflicts with the published mobile."
+    },
+    {
+      "id": "phase6-cars-17c5be83710c89",
+      "city": "رابغ",
+      "stored_name": "Al Beladi Motors",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {
+        "phone": "0124222020",
+        "maps_cid": "6190294818975653279",
+        "lat": null,
+        "lng": null
+      },
+      "observed": {
+        "name": "البلادي للسيارات",
+        "activity": "مورد سيارات ميتسوبيشي",
+        "operational_status": "مغلق مؤقتًا",
+        "address": "R22X+J3M، الصبوح، رابغ 25754، المملكة العربية السعودية",
+        "phone": "0124222020",
+        "lat": 22.8015901,
+        "lng": 39.0476691,
+        "maps_cid": "6190294818975653279",
+        "maps_url": "https://www.google.com/maps/place/%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%AF%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@22.8015901,39.0476691,17z/data=!3m1!4b1!4m6!3m5!1s0x15c096e862e1ccfb:0x55e858571bfc1d9f!8m2!3d22.8015901!4d39.0476691!16s%2Fg%2F12ltsxjgw"
+      },
+      "proposed_change": {
+        "name": "البلادي للسيارات",
+        "phone": "0124222020",
+        "lat": 22.8015901,
+        "lng": 39.0476691
+      },
+      "archive_decision": "Do not archive: Google marks it temporarily closed, not permanently closed."
+    },
+    {
+      "id": "phase6-cars-07f3a5d0b1b53d",
+      "city": "بدر",
+      "stored_name": "معرض راضي للسيارات",
+      "decision": "verified_correct_no_data_change",
+      "stored": {
+        "phone": "0143320572",
+        "maps_cid": "17439757753554847686",
+        "lat": 23.77579,
+        "lng": 38.79661
+      },
+      "observed": {
+        "name": "معرض راضي للسيارات",
+        "activity": "تاجر سيارات",
+        "address": "QQGW+8J9، الغزوة، بدر 46357، المملكة العربية السعودية",
+        "phone": "0143320572",
+        "lat": 23.7757871,
+        "lng": 38.7966242,
+        "maps_cid": "17439757753554847686"
+      },
+      "proposed_change": null
+    },
+    {
+      "id": "national-primary-badr-13319744037421832064",
+      "city": "بدر",
+      "stored_name": "معرض المهند للسيارات",
+      "decision": "verified_correct_no_data_change",
+      "stored": {
+        "phone": "0565600008",
+        "maps_cid": "13319744037421832064",
+        "lat": null,
+        "lng": null
+      },
+      "observed": {
+        "name": "معرض المهند للسيارات",
+        "activity": "تاجر سيارات",
+        "address": "340، الغزلاني، بدر 46354، المملكة العربية السعودية",
+        "phone": "0565600008",
+        "plus_code": "QP7J+Q3 بدر السعودية",
+        "lat": 23.7644707,
+        "lng": 38.7302494,
+        "maps_cid": "13319744037421832064"
+      },
+      "proposed_change": null,
+      "note": "Coordinates are verified and may be populated even though the existing record has null coordinates."
+    }
+  ]
+}
