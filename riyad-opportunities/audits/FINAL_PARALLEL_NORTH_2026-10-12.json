@@ -1,0 +1,1984 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-12",
+  "scope": "issue_union records in القريات، سكاكا، تبوك، عرعر، حقل، ضباء، الوجه absent from riyad-opportunities/audits",
+  "method": "Programmatic issue-union derivation from current cars.json; IDs already present in audits excluded. Prior individual city audits were reused without re-auditing. Seven records were reopened as actual Google Maps cards to resolve search links or missing coordinates.",
+  "count": 57,
+  "by_city": {
+    "القريات": 16,
+    "الوجه": 1,
+    "تبوك": 10,
+    "حقل": 3,
+    "سكاكا": 15,
+    "ضباء": 1,
+    "عرعر": 11
+  },
+  "records": [
+    {
+      "id": "phase6-google-9117763370233227839",
+      "name": "معرض بوابة الطائف للسيارات",
+      "city": "تبوك",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "المعارض، تبوك47722، المملكة العربية السعودية",
+        "phones": [
+          "0544333379"
+        ],
+        "maps": "https://www.google.com/maps/?cid=9117763370233227839",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_TABUK_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "unconfirmed",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "unconfirmed",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=9117763370233227839"
+      ],
+      "note": "بطاقة Google Maps الفعلية طابقت الاسم والنشاط والعنوان في تبوك والهاتف 0544333379.",
+      "proposed_correction": {
+        "lat": 28.4405712,
+        "lon": 36.4587927
+      },
+      "final_decision": "coordinates_corrected_confirmed"
+    },
+    {
+      "id": "phase6-google-7740940609020663943",
+      "name": "معرض العوفي للسيارات",
+      "city": "تبوك",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "Unnamed Road، تبوك47722، المملكة العربية السعودية",
+        "phones": [
+          "0595333363"
+        ],
+        "maps": "https://www.google.com/maps/?cid=7740940609020663943",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_TABUK_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name_activity": "verified_directory_only",
+        "city_locality": "verified_directory_only",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "unconfirmed",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.saudi-arabia-today.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%AA%D8%A8%D9%88%D9%83/",
+        "https://legacy.haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D9%88%D9%81%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%AA%D8%A8%D9%88%D9%83"
+      ],
+      "note": "Tabuk directories and the Haraj seller profile identify معرض العوفي as a new/used car showroom in Tabuk. No independent source found for the stored phone 0595333363.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "phase6-google-9212319036610140364",
+      "name": "معرض الشهراني للسيارات",
+      "city": "تبوك",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "3422 6398 تبوك الصناعيةSA، تبوك47722، المملكة العربية السعودية",
+        "phones": [
+          "0530800572"
+        ],
+        "maps": "https://www.google.com/maps/?cid=9212319036610140364",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_TABUK_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "unconfirmed",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "unconfirmed",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [],
+      "note": "Exact-name/phone searches did not establish this showroom in Tabuk from reliable independent sources; retain all stored fields as unconfirmed.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "phase6-google-10142441659998788437",
+      "name": "معرض جزى هليل الخلاف للسيارات",
+      "city": "تبوك",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "منطقة معارض السيارات، تبوك47722، المملكة العربية السعودية",
+        "phones": [
+          "0541577600"
+        ],
+        "maps": "https://www.google.com/maps/?cid=10142441659998788437",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_TABUK_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name_activity": "verified_directory_only",
+        "city_locality": "verified_directory_only",
+        "phone": "conflict",
+        "whatsapp": "unconfirmed",
+        "google_maps": "unconfirmed",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%AC%D8%B2%D9%89-%D9%87%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%AE%D9%84%D8%A7%D9%81-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-054-157-7670"
+      ],
+      "note": "بطاقة Google Maps الفعلية طابقت الاسم والنشاط والعنوان في منطقة معارض السيارات بتبوك والهاتف المخزن 0541577600؛ المصدر الدليلي يعرض رقمًا إضافيًا.",
+      "proposed_correction": {
+        "lat": 28.4377641,
+        "lon": 36.4594288
+      },
+      "final_decision": "coordinates_corrected_confirmed"
+    },
+    {
+      "id": "phase6-google-10359068539901826533",
+      "name": "معرض جارالله القحطاني فرع طريق المدينة",
+      "city": "تبوك",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "الأمير فهد بن سلطان الفرعي، منطقة الزراعية، تبوك47316، المملكة العربية السعودية",
+        "phones": [
+          "0555243358"
+        ],
+        "maps": "https://www.google.com/maps/?cid=10359068539901826533",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_TABUK_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "unconfirmed",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "unconfirmed",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=10359068539901826533"
+      ],
+      "note": "بطاقة Google Maps الفعلية طابقت الاسم والنشاط والعنوان في تبوك والهاتف 0555243358.",
+      "proposed_correction": {
+        "lat": 28.4234915,
+        "lon": 36.6098259
+      },
+      "final_decision": "coordinates_corrected_confirmed"
+    },
+    {
+      "id": "national-car-711e34151620f3",
+      "name": "معرض الحيزان للسيارات",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "شارع الأمير نايف بن عبدالعزيز، الصناعية الثانية، سكاكا 72342، السعودية",
+        "phones": [
+          "0539393328"
+        ],
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ8fKdJMy-chURDIqJkr75fCo",
+        "lat": 29.9218508,
+        "lon": 40.2314734
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "unconfirmed",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "wrong_provider",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+      ],
+      "note": "Google Maps غير متوفر في السجل؛ الرابط المحفوظ Waze فقط ولا يثبت رابط Google Maps.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-2a94c8fa96017a",
+      "name": "معرض فريح لتجارة السيارات",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "map_not_cid",
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "المعارض، القريات 77496، السعودية",
+        "phones": [
+          "0551773518"
+        ],
+        "maps": "https://www.waze.com/live-map/directions/sa/mntqh-aljwf/alqryat/mardh-fryh-ltjarh-alsyarat?to=place.ChIJNexKueYHEBURZn8l5k1wVDA",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_supported",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "official_confirmed_missing_in_stored_field",
+        "google_maps_pin": "waze_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://mamdouhfreih-for-cars.com/",
+        "https://www.arabwheels.sa/dealers/ct_al-qurayyat/",
+        "https://www.waze.com/live-map/directions/sa/mntqh-aljwf/alqryat/mardh-fryh-ltjarh-alsyarat?to=place.ChIJNexKueYHEBURZn8l5k1wVDA"
+      ],
+      "note": "الموقع الرسمي ودليل مستقل يطابقان اسم المعرض والقريات والعنوان ورقم 0551773518؛ رابط Waze مكان مباشر.",
+      "proposed_correction": {
+        "type": "website_missing_confirmed",
+        "field": "web",
+        "old_value": "",
+        "new_value": "https://mamdouhfreih-for-cars.com/",
+        "status": "not_applied",
+        "evidence": [
+          "https://mamdouhfreih-for-cars.com/"
+        ]
+      },
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-00d7bc837202eb",
+      "name": "معرض الحازمي للسيارات",
+      "city": "عرعر",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "معارض السيارات 73313، عرعر",
+        "phones": [
+          "0535563764"
+        ],
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AD%D8%A7%D8%B2%D9%85%D9%8A%E2%80%AD/@31.0015192,40.9395194,17z/data=!3m1!4b1!4m6!3m5!1s0x156c738369b168d1:0x28eddc28da8358b8!8m2!3d31.0015192!4d40.9395194!16s%2Fg%2F11f75_c1vk",
+        "lat": 31.0015192,
+        "lon": 40.9395194
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_REMAINING_ARAR_2026-10-11.json",
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=2949255399020386488"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-c0f221b2e1c918",
+      "name": "معرض رضوان العلي للسيارات",
+      "city": "عرعر",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "3022 معارض السيارات، عرعر 73313 9016، السعودية",
+        "phones": [
+          "0583085502"
+        ],
+        "maps": "https://www.google.com/maps/?cid=11584850255152263052",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_REMAINING_ARAR_2026-10-11.json",
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=11584850255152263052"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-f9bee8ef8c3bbf",
+      "name": "معرض مطر جهيم العنزي للسيارات",
+      "city": "عرعر",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "المعارض، معارض السيارات، عرعر 73313",
+        "phones": [
+          "0538391411"
+        ],
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D8%B7%D8%B1+%D8%AC%D9%87%D9%8A%D9%85+%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@31.0035616,40.9405511,17z/data=!3m1!4b1!4m6!3m5!1s0x156c7307a79652d3:0x8da52195d3e95176!8m2!3d31.0035616!4d40.9405511!16s%2Fg%2F11jt7rj0vm",
+        "lat": 31.0035616,
+        "lon": 40.9405511
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_REMAINING_ARAR_2026-10-11.json",
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=10206601057894224246"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-12dc52f4f88954",
+      "name": "معرض الفواز للسيارات",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "طريق الملك فيصل، القريات 77496، السعودية",
+        "phones": [
+          "0591158745"
+        ],
+        "maps": "https://www.google.com/maps/?cid=11516743417971786796",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=11516743417971786796"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-eec4c9b845b205",
+      "name": "معرض حامد غصيب الشراري",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "حي المعارض، القريات 77453، السعودية",
+        "phones": [
+          "0504865071"
+        ],
+        "maps": "https://www.google.com/maps/?cid=14727130929848674447",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=14727130929848674447"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-ad41bf47d13ac2",
+      "name": "معرض الهلال للسيارات",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "المعارض، القريات 77454، السعودية",
+        "phones": [
+          "0567994113"
+        ],
+        "maps": "https://www.google.com/maps/?cid=2867894922656383973",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=2867894922656383973"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-209a262ace4a89",
+      "name": "معرض ساري ستار للسيارات",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "سكاكا، حي البستان، WRJA4713",
+        "phones": [
+          "0506267979"
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/122776213387/",
+        "lat": 29.91995,
+        "lon": 40.23098
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "unconfirmed",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "wrong_provider",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/org/122776213387/"
+      ],
+      "note": "الموجود رابط Yango فقط؛ لا يثبت رابط Google Maps.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-0489424505545d",
+      "name": "معرض السعدون للسيارات عرعر",
+      "city": "عرعر",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "2W2R+GHC، طريق طريف، معارض السيارات، عرعر 73313",
+        "phones": [
+          "0505585475"
+        ],
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B3%D8%B9%D8%AF%D9%88%D9%86+%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA+%D8%B9%D8%B1%D8%B9%D8%B1%E2%80%AD/@31.0013027,40.9413961,17z/data=!3m1!4b1!4m6!3m5!1s0x156c73002f7c94f9:0x282123f6672ff8d3!8m2!3d31.0013027!4d40.9413961!16s%2Fg%2F11z8tmz43p",
+        "lat": 31.0013027,
+        "lon": 40.9413961
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_REMAINING_ARAR_2026-10-11.json",
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=2072815952272909286"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-4b1dc24ee3c0ba",
+      "name": "شركة السعدون للسيارات",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "سكاكا، طريق المعارض، Sakaka Saudi Arabia",
+        "phones": [
+          "0539929994"
+        ],
+        "maps": "https://www.google.com/maps/?cid=2621385342235769310",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name_activity": "google_maps_observed",
+        "city_locality": "google_maps_observed",
+        "phone": "conflict",
+        "whatsapp": "unconfirmed",
+        "google_maps": "verified_conflict",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=2621385342235769310"
+      ],
+      "note": "بطاقة Google تعرض 0506195164 بدل الرقم المخزن 0539929994.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-246f7e80198729",
+      "name": "Automotive Exhibition Cavalry Abdul Wahid Al-Ghannam",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "سكاكا، طريق الأمير عبدالإله بن عبدالعزيز، Second Industrial, Sakaka 72342, Saudi Arabia",
+        "phones": [
+          "0146260555"
+        ],
+        "maps": "https://www.google.com/maps/?cid=9046313807519607327",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "unconfirmed",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "unconfirmed",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=9046313807519607327"
+      ],
+      "note": "صفحة CID لم تعرض بطاقة قابلة للتحقق؛ غير مؤكد.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-2e5c60a41b6a9f",
+      "name": "معرض الوسام المضيء",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "65، القريات 77496",
+        "phones": [
+          "0508834177"
+        ],
+        "maps": "https://www.google.com/maps/?cid=14674811090005949866",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=14674811090005949866"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "phase6-google-17178187686909245727",
+      "name": "شيخ معارض السيارات بمنطقة تبوك",
+      "city": "تبوك",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "6883،تبوك47722 3427",
+        "phones": [
+          "0531263544"
+        ],
+        "maps": "https://www.google.com/maps/?cid=17178187686909245727",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_TABUK_2026-10-11_BATCH03.json",
+      "field_decisions": {
+        "name_activity": "verified_directory_only",
+        "city_locality": "verified_directory_only",
+        "phone": "conflict",
+        "whatsapp": "unconfirmed",
+        "google_maps": "unconfirmed",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.snapchat.com/place/-/a6306670-647c-11ed-9b15-abd334bc67aa",
+        "https://www.bizmideast.com/SA/%D8%B4%D9%8A%D8%AE-%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%AA%D8%A8%D9%88%D9%83-055-560-1656"
+      ],
+      "note": "Snapchat confirms this named Tabuk showroom and lists 0531263544, while BizMidEast's own page title lists 0555601656 and the URL carries 0583171136; keep the row unchanged and mark phone as unresolved conflict.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "phase6-google-9551763254376688954",
+      "name": "معرض المدينة المنورة",
+      "city": "تبوك",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "6908،تبوك47722 3137",
+        "phones": [
+          "0530591896"
+        ],
+        "maps": "https://www.google.com/maps/?cid=9551763254376688954",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_TABUK_2026-10-11_BATCH03.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "unconfirmed",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "unconfirmed",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [],
+      "note": "No reliable independent listing was found matching this generic business name, Tabuk address and stored number; retain it unresolved.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-9d3dce7b723cb9",
+      "name": "معرض اسيا للسيارات",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "شارع الامير نايف، Second Industrial, Sakaka 72342, Saudi Arabia، سكاكا، منطقة الجوف",
+        "phones": [
+          "0507116656"
+        ],
+        "maps": "https://www.google.com/maps/?cid=13469919869683530200",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name_activity": "google_maps_observed",
+        "city_locality": "google_maps_observed",
+        "phone": "google_maps_match",
+        "whatsapp": "unconfirmed",
+        "google_maps": "verified_listing",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=13469919869683530200"
+      ],
+      "note": "بطاقة Maps تطابق الاسم والعنوان والرقم.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-821fdc51b6df23",
+      "name": "معرض الرميح للسيارات",
+      "city": "عرعر",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "معارض السيارات، عرعر 73313",
+        "phones": [
+          "0503363170"
+        ],
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B1%D9%85%D9%8A%D8%AD+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@31.0000829,40.9418583,17z/data=!3m1!4b1!4m6!3m5!1s0x156c73364ce9ae07:0xe7e7a8601fad7ba8!8m2!3d31.0000829!4d40.9418583!16s%2Fg%2F11gtslwvss",
+        "lat": 31.0000829,
+        "lon": 40.9418583
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_REMAINING_ARAR_2026-10-11.json",
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=16710510073183304616"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-2f415413f39a6f",
+      "name": "معرض دروب الشمال للسيارات _ سكاكا _ الجوف",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "طريق الاقليمي _ طريق عبدالاله بن عبد العزيز ال سعود سكاكا_الجوف Saudi Arabia، منطقة الجوف",
+        "phones": [
+          "0534873733"
+        ],
+        "maps": "https://www.google.com/maps/?cid=12614325780751697104",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "unconfirmed",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "unconfirmed",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=12614325780751697104"
+      ],
+      "note": "صفحة CID لم تعرض بطاقة قابلة للتحقق؛ غير مؤكد.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-a73435a12ccdae",
+      "name": "معرض الحيزان للسيارات 2",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "طريق الأمير عبدالإله بن عبدالعزيز، Second Industrial, Sakaka 72342, Saudi Arabia، سكاكا، منطقة الجوف",
+        "phones": [
+          "0550717211"
+        ],
+        "maps": "https://www.google.com/maps/?cid=6111654092087325284",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name_activity": "google_maps_observed",
+        "city_locality": "google_maps_observed",
+        "phone": "conflict",
+        "whatsapp": "unconfirmed",
+        "google_maps": "verified_conflict",
+        "website": "google_maps_observed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=6111654092087325284"
+      ],
+      "note": "الاسم/النشاط قريب لكن الهاتف لا يطابق؛ قد تكون نسخة/فرعًا آخر، فلا يُصحح آليًا.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-36b18716c139ef",
+      "name": "معرض عبد الله الحربي",
+      "city": "عرعر",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "2W3R+RQ9, Car Gallery, Arar 73313, Saudi Arabia، عرعر (مدينة)، منطقة الحدود الشمالية",
+        "phones": [
+          "0583765012"
+        ],
+        "maps": "https://www.google.com/maps/?cid=16768009180384451108",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_REMAINING_ARAR_2026-10-11.json",
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=16768009180384451108"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "phase6-google-13185746710543009663",
+      "name": "معرض طارق عليان الذبياني للسيارات",
+      "city": "تبوك",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "6512،3548",
+        "phones": [
+          "0557774727"
+        ],
+        "maps": "https://www.google.com/maps/?cid=13185746710543009663",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_TABUK_2026-10-11_BATCH03.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "unconfirmed",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "unconfirmed",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [],
+      "note": "No dependable independent source matched this exact seller name, Tabuk locality and stored 0557774727; retain it without changes.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-c809dddea2c75d",
+      "name": "معرض سلطان لتجارة السيارات",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "شارع عثمان بن عفان، القريات77451",
+        "phones": [
+          "0557137115"
+        ],
+        "maps": "https://www.google.com/maps/?cid=10534756114516504308",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "confirmed",
+        "whatsapp": "supported_by_listing",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11180057744/",
+        "https://haraj.com.sa/11182309724/",
+        "https://www.google.com/maps/?cid=10534756114516504308"
+      ],
+      "note": "إعلانات حديثة متعددة تطابق معرض سلطان والقريات/الفيصلية والرقم المخزن، وتعرض أرقام اتصال إضافية.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "phase6-google-8339575344558130197",
+      "name": "معرض المزيني للسيارات",
+      "city": "تبوك",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "6533،3291، تبوك47722",
+        "phones": [
+          "0500555547"
+        ],
+        "maps": "https://www.google.com/maps/?cid=8339575344558130197",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_TABUK_BUKAYRIYAH_KHAFJI_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name": "confirmed_by_google_card",
+        "activity": "confirmed_car_dealer",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "confirmed_by_google_card",
+        "google_maps_pin": "confirmed_direct_cid"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=8339575344558130197"
+      ],
+      "note": "بطاقة Google Maps الفعلية طابقت الاسم والنشاط والعنوان في تبوك والهاتف 0500555547.",
+      "proposed_correction": {
+        "lat": 28.4363125,
+        "lon": 36.4593666
+      },
+      "final_decision": "coordinates_corrected_confirmed"
+    },
+    {
+      "id": "phase6-google-10389926801337554678",
+      "name": "معرض فوزي سليمان البلوي للسيارات",
+      "city": "تبوك",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "شارع المعارض، تبوك73825",
+        "phones": [
+          "0537448548"
+        ],
+        "maps": "https://www.google.com/maps/?cid=10389926801337554678",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_TABUK_BUKAYRIYAH_KHAFJI_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name": "confirmed_by_google_card",
+        "activity": "confirmed_car_dealer",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "confirmed_by_google_card",
+        "google_maps_pin": "confirmed_direct_cid"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=10389926801337554678"
+      ],
+      "note": "بطاقة Google Maps الفعلية طابقت الاسم والنشاط والعنوان في تبوك والهاتف 0537448548.",
+      "proposed_correction": {
+        "lat": 28.4422368,
+        "lon": 36.4583114
+      },
+      "final_decision": "coordinates_corrected_confirmed"
+    },
+    {
+      "id": "phase6-cars-0b257e4c26fea9",
+      "name": "معرض أحمد بن سودان البلوي للسيارات",
+      "city": "حقل",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "7WMP+RPV, 5، الظهرة، حقل 49938",
+        "phones": [
+          "0509624706"
+        ],
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A3%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D8%B3%D9%88%D8%AF%D8%A7%D9%86+%D8%A7%D9%84%D8%A8%D9%84%D9%88%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15aa9976325f5a63:0xab79a7732bf382ba!8m2!3d29.2846174!4d34.93679!16s%2Fg%2F11b7fjpqzd!19sChIJY1pfMnaZqhURuoLzK3Oneas?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 29.28462,
+        "lon": 34.93679
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_CROSS_CITY_2026-10-11_BATCH01.json",
+      "evidence_urls": [],
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-8099531917d54c",
+      "name": "معرض المشيطي للسيارات",
+      "city": "عرعر",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "حي معارض السيارات، عرعر 73313، المملكة العربية السعودية",
+        "phones": [
+          "0554885540"
+        ],
+        "maps": "https://www.google.com/maps/?cid=218152471808205720",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_REMAINING_ARAR_2026-10-11.json",
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=218152471808205720"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-40e9f76b92325e",
+      "name": "معرض العسكر للسيارات",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "map_not_cid",
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "4795، سكاكا 72342، المملكة العربية السعودية",
+        "phones": [
+          "0500598996"
+        ],
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJd5r-08y-chURGJs_NYqygi0",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "unconfirmed",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "unconfirmed",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/?q=place_id:ChIJd5r-08y-chURGJs_NYqygi0"
+      ],
+      "note": "رابط place_id لم يعرض بطاقة واضحة في القراءة؛ غير مؤكد.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-54fc8a4f692f81",
+      "name": "معرض سمراء حائل",
+      "city": "عرعر",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "معارض السيارات، عرعر 73313",
+        "phones": [
+          "0598042520"
+        ],
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B3%D9%85%D8%B1%D8%A7%D8%A1+%D8%AD%D8%A7%D8%A6%D9%84%E2%80%AD/@31.0040625,40.9410625,17z/data=!3m1!4b1!4m6!3m5!1s0x156c732fec74356f:0xdc8fc66562a033d7!8m2!3d31.0040625!4d40.9410625!16s%2Fg%2F11f75zr447",
+        "lat": 31.0040625,
+        "lon": 40.9410625
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_REMAINING_ARAR_2026-10-11.json",
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/?q=place_id:ChIJbzV07C9zbBUR1zOgYmXGj9w"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-f45c8d1dcceb9e",
+      "name": "معرض أسوار الشمال للسيارات",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "شارع الأمير نايف بن عبدالعزيز، الصناعية الثانية، سكاكا 72342",
+        "phones": [
+          "0505196875"
+        ],
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJb3wI2zK5chURSOWMgoGMtdw",
+        "lat": 29.97319,
+        "lon": 40.21912
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name_activity": "google_maps_observed",
+        "city_locality": "google_maps_observed",
+        "phone": "google_maps_match",
+        "whatsapp": "unconfirmed",
+        "google_maps": "verified_listing",
+        "website": "google_maps_observed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/?q=place_id:ChIJb3wI2zK5chURSOWMgoGMtdw"
+      ],
+      "note": "بطاقة Google Maps تعرض معرض اسوار الشمال للسيارات، نشاط تاجر سيارات، في شارع الأمير نايف بالصناعية الثانية بسكاكا، والهاتف +966505196875 يطابق المخزن 0505196875. البطاقة تعرض رابط حراج مطابق لموقع السجل.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-99ec91c8169443",
+      "name": "معرض الدرعان",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "7120 طريق الأمير نايف بن عبدالعزيز، الصناعية الثانية، 4474، سكاكا 72342",
+        "phones": [
+          "0555389696"
+        ],
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ81nnzQi5chUReDfjTOx8uuE",
+        "lat": 29.97319,
+        "lon": 40.21912
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name_activity": "google_maps_observed",
+        "city_locality": "google_maps_observed",
+        "phone": "google_maps_match",
+        "whatsapp": "unconfirmed",
+        "google_maps": "verified_listing",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/?q=place_id:ChIJ81nnzQi5chUReDfjTOx8uuE"
+      ],
+      "note": "بطاقة Google Maps تعرض معرض الدرعان، تاجر سيارات، عنوان 7120 طريق الأمير نايف، الصناعية الثانية، سكاكا 72342، والهاتف +966555389696 مطابق للسجل.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-8b3780b5e45c4d",
+      "name": "معرض الذهبي للسيارات",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "map_not_cid",
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "WRJD4904، 4904 ابن الأرقم، 6686، سكاكا 72342",
+        "phones": [
+          "0554105387"
+        ],
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJmRXvLJe_chUR_dexMJC6tVg",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "unconfirmed",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "unconfirmed",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/?q=place_id:ChIJmRXvLJe_chUR_dexMJC6tVg"
+      ],
+      "note": "رابط place_id فتح صفحة بلا اسم/عنوان/هاتف ظاهرين في فحص الواجهة؛ لا يمكن إثبات تطابق الدبوس أو الهاتف.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-01d093744c71d8",
+      "name": "معرض الرويلي للسيارات",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "القريات 77496, Saudi Arabia",
+        "phones": [
+          "0509164236"
+        ],
+        "maps": "https://www.google.com/maps/?cid=3477522350294230349",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=3477522350294230349"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-5da0c8fe904151",
+      "name": "معرض العنزي للسيارات",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "القريات 77496, Saudi Arabia",
+        "phones": [
+          "0556426466"
+        ],
+        "maps": "https://www.google.com/maps/?cid=14530871316664146433",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "confirmed_plus_additional_number",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://yellowpages-ar.cybo.com/SA-biz/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+        "https://www.mideastarchives.biz/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+        "https://www.google.com/maps/?cid=14530871316664146433"
+      ],
+      "note": "دليلان يطابقان الاسم والقريات والرقم المخزن، ويعرضان رقمًا إضافيًا 0534070003.",
+      "proposed_correction": {
+        "type": "additional_phone_review",
+        "field": "phones",
+        "old_value": [
+          "0556426466"
+        ],
+        "new_value": [
+          "0556426466",
+          "0534070003"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://yellowpages-ar.cybo.com/SA-biz/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+          "https://www.mideastarchives.biz/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+        ]
+      },
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-c40b2f1b058b4a",
+      "name": "معرض الختيلات",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "القريات 77496, Saudi Arabia",
+        "phones": [
+          "0534903172"
+        ],
+        "maps": "https://www.google.com/maps/?cid=168712103053392913",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH01.json",
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=168712103053392913"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-0d4edcf7e875c3",
+      "name": "معرض نخبة المملكة لتجارة السيارات",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "معارض السيارات, القريات 77431, Saudi Arabia",
+        "phones": [
+          "0506393457"
+        ],
+        "maps": "https://www.google.com/maps/?cid=16585293446710525259",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "confirmed_owner_wholesale",
+        "whatsapp": "confirmed_by_current_listing",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11159696239/",
+        "https://haraj.com.sa/11188409110/",
+        "https://haraj.com.sa/11187310241/",
+        "https://www.google.com/maps/?cid=16585293446710525259"
+      ],
+      "note": "إعلانات حالية تثبت الاسم وفرع القريات بحي المعارض والرقم المخزن للمبيعات بالجملة، وتعرض أرقام الفرع المباشرة أيضًا.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-6185078d31cbf8",
+      "name": "معرض الميدالية الساطعة لتجارة السيارات",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "القريات، حي الأمير عبدالاله بن عبدالعزيز، WCWA4987",
+        "phones": [
+          "0543790766"
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/66902358842/",
+        "lat": 31.36861,
+        "lon": 37.3003
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "yango_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/org/66902358842/"
+      ],
+      "note": "بطاقة Yango تطابق الاسم والقريات والحي والرمز ورقم 0543790766، وتصف النشاط بوكلاء سيارات.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-45a9448d6c68f3",
+      "name": "معرض الطائف للسيارات",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "Uthman Ibn Afan, Al Faisaliyah, القريات 77451, Saudi Arabia",
+        "phones": [
+          "0569987951"
+        ],
+        "maps": "https://www.google.com/maps/?cid=14615556041182092423",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=14615556041182092423"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة ولم يُقترح تغيير.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-8c713969d4d929",
+      "name": "معرض مازن الحربي للسيارات",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "المعارض, Almatar, القريات 11221, Saudi Arabia",
+        "phones": [
+          "0583411725"
+        ],
+        "maps": "https://www.google.com/maps/?cid=8721210413908904472",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=8721210413908904472"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة ولم يُقترح تغيير.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-709c050b116aaf",
+      "name": "معرض محمد بن ناصر للتجارت السيارات",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "الملك فيصل, Al Faisaliyah, القريات 77451, Saudi Arabia",
+        "phones": [
+          "0583240538"
+        ],
+        "maps": "https://www.google.com/maps/?cid=8989381324733091014",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=8989381324733091014"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة ولم يُقترح تغيير.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-de9b6ac74bc52e",
+      "name": "معرض الحميدي لتجارت السيارات",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "WCMC8513 4390، حي, Al Faisaliyah، 8513 شارع خالد بن الوليد, القريات 77451, Saudi Arabia",
+        "phones": [
+          "0580294103"
+        ],
+        "maps": "https://www.google.com/maps/?cid=12570405884755041325",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=12570405884755041325"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة ولم يُقترح تغيير.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-2c9f561b057194",
+      "name": "Ash Shar'i Car Showroom",
+      "city": "القريات",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "8529 King Faisal Rd, القريات 77451, Saudi Arabia",
+        "phones": [
+          "0146433332"
+        ],
+        "maps": "https://www.google.com/maps/?cid=11923081665893202698",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_QURAYYAT_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=11923081665893202698"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة ولم يُقترح تغيير.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-30d548c04a98c7",
+      "name": "معرض الغانم لتجاره السيارات",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "Second Industrial, سكاكا 72342, Saudi Arabia",
+        "phones": [
+          "0561904495"
+        ],
+        "maps": "https://www.google.com/maps/?cid=13247503441694705830",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH02.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "unconfirmed",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "unconfirmed",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=13247503441694705830"
+      ],
+      "note": "تعذر تحميل بطاقة Google Maps أو استخراج بياناتها مباشرة في فحص الواجهة؛ لا يُعامل ذلك كدليل على تعطل الرابط أو خطأ السجل.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-cf9c2a8aff90ad",
+      "name": "مؤسسة الغنام",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "5354 طريق الامير نايف بن عبدالعزيز، Second Industrial, سكاكا 72342, Saudi Arabia",
+        "phones": [
+          "0501515035"
+        ],
+        "maps": "https://www.google.com/maps/?cid=8859532670471741335",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH03.json",
+      "field_decisions": {
+        "name_activity": "conflict",
+        "city_locality": "google_maps_observed",
+        "phone": "conflict",
+        "whatsapp": "unconfirmed",
+        "google_maps": "verified_conflicting_listing",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=8859532670471741335"
+      ],
+      "note": "بطاقة Maps تعرض معرض الفرسان للسيارات عبدالواحد الغنام، وليس «مؤسسة الغنام»؛ صلة الاسم/المنشأة غير محسومة.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-841ee85b151cf8",
+      "name": "مكتب النور لبيع السيارات",
+      "city": "عرعر",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "7388 شارع الأمير مشعل بن عبدالعزيز، حي النسيم، عرعر 73241 4306",
+        "phones": [
+          "0590483379"
+        ],
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%86%D9%88%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x156c0f1fd0689e15:0x3e39310e92a2fc4d!8m2!3d30.9636909!4d41.0492023!16s%2Fg%2F11pckk57lr!19sChIJFZ5o0B8PbBURTfyikg4xOT4",
+        "lat": 30.9636909,
+        "lon": 41.0492023
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_REMAINING_ARAR_2026-10-11.json",
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=4483668842683497549"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-47cc4e68349574",
+      "name": "العين للسيارات",
+      "city": "عرعر",
+      "issue_union_reasons": [
+        "map_not_cid",
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "2W2V+PC7، معارض السيارات، عرعر 73313",
+        "phones": [
+          "0594252353"
+        ],
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJp1hR3PJzbBURtx7lCuN6U7k",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_REMAINING_ARAR_2026-10-11.json",
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/?q=place_id:ChIJp1hR3PJzbBURtx7lCuN6U7k"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "national-car-112d893584cdee",
+      "name": "معرض العين للسيارات",
+      "city": "عرعر",
+      "issue_union_reasons": [
+        "map_not_cid",
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "XWXX+XF، معارض السيارات، عرعر 73313",
+        "phones": [
+          "0582314524"
+        ],
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJFVwlGRdzbBURxrCklMFf2E0",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_REMAINING_ARAR_2026-10-11.json",
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/?q=place_id:ChIJFVwlGRdzbBURxrCklMFf2E0"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "regional-pdf-national-car-711e34151620f3-059",
+      "name": "معرض الحيزان للسيارات",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "شارع الأمير نايف بن عبدالعزيز، الصناعية الثانية، سكاكا 72342، السعودية",
+        "phones": [
+          "0539393328"
+        ],
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ8fKdJMy-chURDIqJkr75fCo",
+        "lat": 29.9218508,
+        "lon": 40.2314734
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH03.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "unconfirmed",
+        "phone": "unconfirmed",
+        "whatsapp": "unconfirmed",
+        "google_maps": "missing",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [
+        "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo"
+      ],
+      "note": "Google Maps غير متوفر في السجل؛ الرابط المحفوظ Waze فقط ولا يثبت رابط Google Maps.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "pdf-smalltown-028",
+      "name": "Automotive Exhibition Cavalry Abdul Wahid",
+      "city": "سكاكا",
+      "issue_union_reasons": [
+        "map_not_cid",
+        "coordinates_missing",
+        "phone_missing"
+      ],
+      "stored": {
+        "neighborhood": "Ghannam-Al سكاكا ،طريق الأمير عبدالإله بن عبدالعزيز ،Industrial Second, Saudi Arabia72342, Sakaka",
+        "phones": [],
+        "maps": "",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_SAKAKA_2026-10-11_BATCH03.json",
+      "field_decisions": {
+        "name_activity": "unconfirmed",
+        "city_locality": "partial",
+        "phone": "missing",
+        "whatsapp": "unconfirmed",
+        "google_maps": "missing",
+        "website": "unconfirmed"
+      },
+      "evidence_urls": [],
+      "note": "اسم النشاط في السجل وحده لا يكفي لتأكيد تطابقه مع معرض فرسان الغنام أو أي معرض محدد.",
+      "final_decision": "reused_prior_individual_audit"
+    },
+    {
+      "id": "v9-car-1362c378fe34",
+      "name": "معرض أبو إبراهيم للسيارات",
+      "city": "الوجه",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "طريق أبو بكر الصديق، النهضة، الوجه",
+        "phones": [
+          "0550588652"
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A3%D8%A8%D9%88%20%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D8%AC%D9%87",
+        "lat": 26.26479,
+        "lon": 36.43895
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_UNREVIEWED_V9_BATCH01_2026-10-11.json",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "search_url_not_pin",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A3%D8%A8%D9%88%20%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D8%AC%D9%87",
+        "coordinates_in_existing_record": {
+          "lat": 26.26479,
+          "lon": 36.43895
+        }
+      },
+      "phone": {
+        "status": "secondary_source_match",
+        "value": [
+          "0550588652"
+        ]
+      },
+      "evidence_urls": [
+        "https://yellowpages-ar.cybo.com/SA/%D8%A7%D9%84%D9%88%D8%AC%D9%87/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA?p=2"
+      ],
+      "note": "Cybo يطابق الاسم والرقم وعنوان طريق أبي بكر الصديق في الوجه؛ رابط الخرائط الحالي بحث عام، وليس دبوسًا.",
+      "google_maps_recheck": {
+        "status": "corrected_pin_confirmed",
+        "name": "معرض أبو إبراهيم للسيارات",
+        "activity": "تاجر سيارات",
+        "city": "الوجه",
+        "address": "7C9R+6H9، طريق أبو بكر الصديق، النهضة، الوجه 48722، المملكة العربية السعودية",
+        "phone": "0550588652",
+        "lat": 26.2680496,
+        "lon": 36.4414714,
+        "cid": "16253186203877594101",
+        "maps": "https://www.google.com/maps/?cid=16253186203877594101",
+        "note": "بطاقة Google Maps الفعلية طابقت الاسم والنشاط والمدينة والعنوان والهاتف؛ رابط البحث العام يجب استبداله بالدبوس المباشر."
+      },
+      "final_decision": "corrected_pin_confirmed",
+      "proposed_correction": {
+        "maps": "https://www.google.com/maps/?cid=16253186203877594101",
+        "lat": 26.2680496,
+        "lon": 36.4414714,
+        "phone": "0550588652"
+      }
+    },
+    {
+      "id": "v9-car-5f758b9c1c04",
+      "name": "معرض النشاري للسيارات",
+      "city": "حقل",
+      "issue_union_reasons": [
+        "map_not_cid"
+      ],
+      "stored": {
+        "neighborhood": "طريق الملك عبدالعزيز، الظهرة، حقل 71951",
+        "phones": [
+          "0532538150"
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B1%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%82%D9%84",
+        "lat": 29.28511,
+        "lon": 34.94624
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_UNREVIEWED_V9_BATCH02_2026-10-11.json",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "unresolved_search_or_card_not_obtained",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B1%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%82%D9%84",
+        "coordinates_in_existing_record": {
+          "lat": 29.28511,
+          "lon": 34.94624
+        }
+      },
+      "phone": {
+        "status": "unverified",
+        "value": [
+          "0532538150"
+        ]
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B1%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%82%D9%84"
+      ],
+      "note": "لم يظهر مصدر يثبت بطاقة المكان المطابقة أو الدبوس بعد البحث بالاسم والمدينة والهاتف؛ أبقيت السجل دون تعديل.",
+      "google_maps_recheck": {
+        "status": "corrected_pin_confirmed",
+        "name": "معرض النشاري للسيارات",
+        "activity": "معرض سيارات",
+        "city": "حقل",
+        "address": "الملك عبدالعزيز، الظهرة، حقل 71951، المملكة العربية السعودية",
+        "phone": "0532538150",
+        "lat": 29.2831877,
+        "lon": 34.9375306,
+        "cid": "16220856477119159262",
+        "maps": "https://www.google.com/maps/?cid=16220856477119159262",
+        "note": "بطاقة Google Maps الفعلية طابقت الاسم والمدينة والعنوان والهاتف؛ رابط البحث العام والإحداثيات المخزنة يحتاجان تصحيحًا."
+      },
+      "final_decision": "corrected_pin_confirmed",
+      "proposed_correction": {
+        "maps": "https://www.google.com/maps/?cid=16220856477119159262",
+        "lat": 29.2831877,
+        "lon": 34.9375306,
+        "phone": "0532538150"
+      }
+    },
+    {
+      "id": "v9-car-de4ab6caf5cd",
+      "name": "معرض الحربي",
+      "city": "حقل",
+      "issue_union_reasons": [
+        "map_not_cid",
+        "phone_missing"
+      ],
+      "stored": {
+        "neighborhood": "طريق موسى بن نصير، اليرموك، حقل 49939",
+        "phones": [],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B1%D8%A8%D9%8A%20%D8%AD%D9%82%D9%84",
+        "lat": 29.28101,
+        "lon": 34.96225
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_UNREVIEWED_V9_BATCH02_2026-10-11.json",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "unresolved_search_or_card_not_obtained",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B1%D8%A8%D9%8A%20%D8%AD%D9%82%D9%84",
+        "coordinates_in_existing_record": {
+          "lat": 29.28101,
+          "lon": 34.96225
+        }
+      },
+      "phone": {
+        "status": "missing",
+        "value": []
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B1%D8%A8%D9%8A%20%D8%AD%D9%82%D9%84"
+      ],
+      "note": "لم يظهر مصدر يثبت بطاقة المكان المطابقة أو الدبوس بعد البحث بالاسم والمدينة والهاتف؛ أبقيت السجل دون تعديل.",
+      "google_maps_recheck": {
+        "status": "pin_confirmed_phone_unresolved",
+        "name": "معرض الحربي",
+        "activity": "تاجر سيارات",
+        "city": "حقل",
+        "address": "KHGA4059 7987 موسى بن نصير، اليرموك، 4059، حقل 49939، المملكة العربية السعودية",
+        "phone": null,
+        "lat": 29.2824649,
+        "lon": 34.9587402,
+        "cid": "17987225893406597016",
+        "maps": "https://www.google.com/maps/?cid=17987225893406597016",
+        "note": "بطاقة Google Maps الفعلية طابقت الاسم والنشاط والمدينة والعنوان ولم تنشر رقم هاتف؛ الرقم يبقى غير محسوم."
+      },
+      "final_decision": "pin_confirmed_phone_unresolved",
+      "proposed_correction": {
+        "maps": "https://www.google.com/maps/?cid=17987225893406597016",
+        "lat": 29.2824649,
+        "lon": 34.9587402,
+        "phone": null
+      }
+    },
+    {
+      "id": "v9-car-82851ad17564",
+      "name": "معرض الطويرش للسيارات",
+      "city": "ضباء",
+      "issue_union_reasons": [
+        "map_not_cid",
+        "coordinates_missing"
+      ],
+      "stored": {
+        "neighborhood": "البِر، ضباء 49314",
+        "phones": [
+          "0505375982"
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B7%D9%88%D9%8A%D8%B1%D8%B4%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B6%D8%A8%D8%A7%D8%A1",
+        "lat": null,
+        "lon": null
+      },
+      "prior_audit_source": "CAR_FIELD_AUDIT_UNREVIEWED_V9_BATCH02_2026-10-11.json",
+      "activity_status": "not_fully_confirmed",
+      "map_pin": {
+        "status": "unresolved_search_or_card_not_obtained",
+        "existing_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B7%D9%88%D9%8A%D8%B1%D8%B4%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B6%D8%A8%D8%A7%D8%A1",
+        "coordinates_in_existing_record": {
+          "lat": null,
+          "lon": null
+        }
+      },
+      "phone": {
+        "status": "unverified",
+        "value": [
+          "0505375982"
+        ]
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B7%D9%88%D9%8A%D8%B1%D8%B4%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B6%D8%A8%D8%A7%D8%A1"
+      ],
+      "note": "لم يظهر مصدر يثبت بطاقة المكان المطابقة أو الدبوس بعد البحث بالاسم والمدينة والهاتف؛ أبقيت السجل دون تعديل.",
+      "google_maps_recheck": {
+        "status": "corrected_pin_confirmed",
+        "name": "معرض الطويرش للسيارات",
+        "activity": "معرض سيارات",
+        "city": "ضباء",
+        "address": "9M4X+G7V، حي البير، ضباء 49314، المملكة العربية السعودية",
+        "phone": "0505375982",
+        "lat": 27.35636,
+        "lon": 35.6981625,
+        "cid": "12243591649978578159",
+        "maps": "https://www.google.com/maps/?cid=12243591649978578159",
+        "note": "بطاقة Google Maps الفعلية طابقت الاسم والمدينة والعنوان والهاتف؛ رابط البحث العام والإحداثيات الناقصة يحتاجان تصحيحًا."
+      },
+      "final_decision": "corrected_pin_confirmed",
+      "proposed_correction": {
+        "maps": "https://www.google.com/maps/?cid=12243591649978578159",
+        "lat": 27.35636,
+        "lon": 35.6981625,
+        "phone": "0505375982"
+      }
+    }
+  ]
+}
