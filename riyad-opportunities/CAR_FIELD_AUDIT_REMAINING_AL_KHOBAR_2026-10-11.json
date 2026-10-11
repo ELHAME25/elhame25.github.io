@@ -1,0 +1,470 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "7e4ab8398bce0853646df1e3f13542c469e98a90",
+  "scope": {
+    "city": "الخبر",
+    "batch": "remaining",
+    "count": 13,
+    "positions": "1-13 of 13",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Direct provider place records, stored coordinates, linked business pages and regional provenance were reconciled field by field. Search-only links were not accepted as pins.",
+  "records": [
+    {
+      "id": "national-car-0cd777a68d1394",
+      "name": "معرض فيصل العتيبي للسيارات والمعدات بالخبر",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الخبر",
+        "neighborhood": "76G5+RV2،طريق الملك فهد،الخبر الجنوبية،الخبر34621،السعودية",
+        "phones": [
+          "0138990676"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.waze.com/ar/live-map/directions/sa/almntqh-alshrqyh/alkhbr/mardh-fysl-alatyby-llsyarat-walmadat-balkhbr?to=place.ChIJl-x3uiboST4RrLtfhlPCmAk",
+        "lat": 26.27701,
+        "lon": 50.20964
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_provider_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.waze.com/ar/live-map/directions/sa/almntqh-alshrqyh/alkhbr/mardh-fysl-alatyby-llsyarat-walmadat-balkhbr?to=place.ChIJl-x3uiboST4RrLtfhlPCmAk"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-9e7346b3ca3e8f",
+      "name": "معرض الغصاب للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الخبر",
+        "neighborhood": "شارع الرياض،الإسكان،الخبر34626،السعودية",
+        "phones": [
+          "0566944266",
+          "0553777070"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.waze.com/ar/live-map/directions/sa/almntqh-alshrqyh/alkhbr/mardh-alghsab-llsyarat?to=place.ChIJ-wTj9L3CST4R7VGW9hV0Pq4",
+        "lat": 26.25729,
+        "lon": 50.20926
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_provider_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.waze.com/ar/live-map/directions/sa/almntqh-alshrqyh/alkhbr/mardh-alghsab-llsyarat?to=place.ChIJ-wTj9L3CST4R7VGW9hV0Pq4"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-96008c787703ab",
+      "name": "شركة RPM للسيارات — فرع الخبر",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الخبر",
+        "neighborhood": "الخبر، حي الراكة الشمالية، شارع الملك فهد، السعودية",
+        "phones": [
+          "0115007242"
+        ],
+        "whatsapp": null,
+        "website": "https://rpmformotors.com/",
+        "maps": "https://maps.app.goo.gl/NTDmLihtXDohHmpe9",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_provider_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://maps.app.goo.gl/NTDmLihtXDohHmpe9",
+        "https://rpmformotors.com/"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-195d08bb463f33",
+      "name": "Auto Golden معرض سيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الخبر",
+        "neighborhood": "شارع الرياض تقاطع18، الخبر34625",
+        "phones": [
+          "0551800887"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=9839870615767720510",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=9839870615767720510"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-d41509abbbaa06",
+      "name": "معرض تداول السيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الخبر",
+        "neighborhood": "طريق خادم الحرمين الشريفين، الشارع الرابع، خلف شركة ولاء للتأمين وخزانات المهيدب، الخبر",
+        "phones": [
+          "0138111201"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=253352331538930413",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=253352331538930413"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-fe7563b1731854",
+      "name": "Al Gulf Car Sales And Ownership Transfer",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الخبر",
+        "neighborhood": "2253، الخبر الجنوبية، الخبر 34611؛ عنوان Yango الوطني EEAB2255",
+        "phones": [
+          "0546522225"
+        ],
+        "whatsapp": null,
+        "website": "https://maps.yango.com/org/112433886579/",
+        "maps": "https://www.google.com/maps/?cid=7688140446062028536",
+        "lat": 26.27403,
+        "lon": 50.20773
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=7688140446062028536",
+        "https://maps.yango.com/org/112433886579/"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-bd9f09b15f6f98",
+      "name": "شركة سيارتك غير — فرع الخبر",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الخبر",
+        "neighborhood": "شارع الملك فهد، صناعية الفوازية، الخبر34627",
+        "phones": [
+          "0551188933"
+        ],
+        "whatsapp": null,
+        "website": "https://www.yourcar-d.com/branches",
+        "maps": "https://www.google.com/maps?cid=11876543475537219853&gl=SA&hl=ar&ll=26.245968,50.214878&mapclient=embed&t=m&z=13",
+        "lat": 26.24597,
+        "lon": 50.21488
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps?cid=11876543475537219853&gl=SA&hl=ar&ll=26.245968,50.214878&mapclient=embed&t=m&z=13",
+        "https://www.yourcar-d.com/branches"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-abcf3059eebb2c",
+      "name": "صالة قود كارز للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الخبر",
+        "neighborhood": "2240 شعيب الضبعي، حي الخزامى، الخبر34719",
+        "phones": [
+          "0599100001"
+        ],
+        "whatsapp": null,
+        "website": "https://haraj.com.sa/users/%D8%B5%D8%A7%D9%84%D9%87%20%D9%82%D9%88%D8%AF%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+        "maps": "https://www.google.com/maps/?cid=17358073183773571856",
+        "lat": 26.20852,
+        "lon": 50.18704
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=17358073183773571856",
+        "https://haraj.com.sa/users/%D8%B5%D8%A7%D9%84%D9%87%20%D9%82%D9%88%D8%AF%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-united-khobar",
+      "name": "معرض المركبة المتحدة للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الخبر",
+        "neighborhood": "الثقبة",
+        "phones": [
+          "0500425548"
+        ],
+        "whatsapp": null,
+        "website": "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A9%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+        "maps": "https://www.google.com/maps/?cid=4727680965130451960",
+        "lat": 26.27419,
+        "lon": 50.19189
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=4727680965130451960",
+        "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A9%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-mas-khobar",
+      "name": "شركة ماس الشرقية للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الخبر",
+        "neighborhood": null,
+        "phones": [
+          "0596861943"
+        ],
+        "whatsapp": null,
+        "website": "https://mascars.net/",
+        "maps": "https://www.google.com/maps/?cid=8051062329967731745",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "unresolved",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=8051062329967731745",
+        "https://mascars.net/"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "regional-pdf-national-car-9e7346b3ca3e8f-074",
+      "name": "معرض الغصاب للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الخبر",
+        "neighborhood": "شارع الرياض، الإسكان، الخبر 34626، السعودية",
+        "phones": [
+          "0566944266"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": null,
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "confirmed_but_duplicate",
+        "neighborhood": "confirmed",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "missing"
+      },
+      "evidence_urls": [],
+      "note": "نسخة إقليمية مكررة داخل المدينة نفسها؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_same_city",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الخبر",
+          "id": "regional-pdf-national-car-9e7346b3ca3e8f-074"
+        },
+        "new_value": {
+          "action": "exclude_same_city_regional_duplicate",
+          "retain_id": "national-car-9e7346b3ca3e8f",
+          "origin_city": "الخبر"
+        },
+        "status": "not_applied",
+        "evidence": [],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-9e7346b3ca3e8f",
+          "originCity=الخبر",
+          "stored_neighborhood=شارع الرياض، الإسكان، الخبر 34626، السعودية"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-mas-khobar-074",
+      "name": "شركة ماس الشرقية للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الخبر",
+        "neighborhood": "طريق الملك فهد، الراكة الجنوبية، الخبر",
+        "phones": [
+          "0596861943"
+        ],
+        "whatsapp": null,
+        "website": "https://mascars.net/",
+        "maps": null,
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "confirmed_but_duplicate",
+        "neighborhood": "confirmed",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "missing"
+      },
+      "evidence_urls": [
+        "https://mascars.net/"
+      ],
+      "note": "نسخة إقليمية مكررة داخل المدينة نفسها؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_same_city",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الخبر",
+          "id": "regional-pdf-national-car-mas-khobar-074"
+        },
+        "new_value": {
+          "action": "exclude_same_city_regional_duplicate",
+          "retain_id": "national-car-mas-khobar",
+          "origin_city": "الخبر"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://mascars.net/"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-mas-khobar",
+          "originCity=الخبر",
+          "stored_neighborhood=طريق الملك فهد، الراكة الجنوبية، الخبر"
+        ]
+      }
+    },
+    {
+      "id": "pdf-smalltown-024",
+      "name": "معرض فيصل العتيبي للسيارات والمعدات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الخبر",
+        "neighborhood": "بالخبر 76G5+RV2،طريق الملك فهد،الخبر الجنوبية،الخبر34621،السعودية",
+        "phones": [
+          "+966138990676"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": null,
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "partially_confirmed",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_only_not_pin"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/org/140182282529/"
+      ],
+      "note": "تعذر إثبات دبوس مباشر؛ حُفظت بقية الأدلة المتاحة وبقي حقل الخرائط غير محسوم."
+    }
+  ]
+}
