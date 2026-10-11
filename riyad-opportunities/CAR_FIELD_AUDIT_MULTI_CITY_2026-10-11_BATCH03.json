@@ -1,0 +1,697 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "a4c6dd5b87427e4eaa29ecaa812d71808eaf9081",
+  "scope": "Continuation batch: Al Ahsa, Umluj, Al Qunfudhah, Muhayil Asir, Al Nairiyah and Al Mithnab",
+  "exclusions": [
+    "Qadisiyah not included"
+  ],
+  "data_write_prohibition": "cars.json not modified; all corrections remain review candidates",
+  "verification_method": "Exact public name-phone-city search, official company pages, current market listings and stored place URLs. Search-only Maps URLs were not accepted as verified pins.",
+  "entry_count": 24,
+  "summary": {
+    "cities": [
+      "الأحساء",
+      "أملج",
+      "القنفذة",
+      "محايل عسير",
+      "النعيرية",
+      "المذنب"
+    ],
+    "triple_match_confirmed": 1,
+    "official_dealer_exclusion_candidates": 2,
+    "other_correction_candidates": 1,
+    "partial_or_unresolved": 21,
+    "cars_json_modified": false,
+    "qadisiyah_modified": false
+  },
+  "entries": [
+    {
+      "id": "phase5-car-197ca86c38ef",
+      "stored": {
+        "name": "معرض الموسى للسيارات",
+        "city": "الأحساء",
+        "neighborhood": "المنطقة الصناعية بالأحساء، CF68+4RP",
+        "phones": [
+          "0503917401"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=CF68%2B4RP%2C%20Al%20Ahsa",
+        "website": ""
+      },
+      "decision": "unresolved_search_or_missing_pin",
+      "evidence": "Only a search URL or no Maps link is stored, and exact public lookup did not establish an authoritative pin/phone match.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "pending",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "search_link_only"
+      },
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=CF68%2B4RP%2C%20Al%20Ahsa"
+      ]
+    },
+    {
+      "id": "phase5-car-7168b98a40ae",
+      "stored": {
+        "name": "معرض الشموع للسيارات",
+        "city": "الأحساء",
+        "neighborhood": "المبرز، حي مشرفة، طريق الأمير طلال",
+        "phones": [
+          "0135362088",
+          "0506884881"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=4903061669009308738",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored direct Google Maps place/CID/embed supports the displayed identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=4903061669009308738"
+      ]
+    },
+    {
+      "id": "phase5-car-32175aaba1e1",
+      "stored": {
+        "name": "معرض ريان الأحساء للسيارات",
+        "city": "الأحساء",
+        "neighborhood": "الصناعية الأحساء",
+        "phones": [
+          "0564444110"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=CF57%2BR52%2C%20Hasa%20Industrial%20City%2C%20Saudi%20Arabia",
+        "website": ""
+      },
+      "decision": "unresolved_search_or_missing_pin",
+      "evidence": "Only a search URL or no Maps link is stored, and exact public lookup did not establish an authoritative pin/phone match.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "pending",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "search_link_only"
+      },
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=CF57%2BR52%2C%20Hasa%20Industrial%20City%2C%20Saudi%20Arabia"
+      ]
+    },
+    {
+      "id": "phase5-car-7d02d675a9a7",
+      "stored": {
+        "name": "معرض سول للسيارات",
+        "city": "الأحساء",
+        "neighborhood": "الصناعية الأحساء",
+        "phones": [
+          "0135923600"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=CF69%2B766%2C%20Hasa%20Industrial%20City%2C%20Saudi%20Arabia",
+        "website": ""
+      },
+      "decision": "unresolved_search_or_missing_pin",
+      "evidence": "Only a search URL or no Maps link is stored, and exact public lookup did not establish an authoritative pin/phone match.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "pending",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "search_link_only"
+      },
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=CF69%2B766%2C%20Hasa%20Industrial%20City%2C%20Saudi%20Arabia"
+      ]
+    },
+    {
+      "id": "phase5-car-f584d4e8bf28",
+      "stored": {
+        "name": "معرض الحمالي للسيارات",
+        "city": "الأحساء",
+        "neighborhood": "الصناعية الأحساء",
+        "phones": [
+          "0555051111"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=25.4089167%2C49.4645607",
+        "website": ""
+      },
+      "decision": "unresolved_search_or_missing_pin",
+      "evidence": "Only a search URL or no Maps link is stored, and exact public lookup did not establish an authoritative pin/phone match.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "pending",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "search_link_only"
+      },
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=25.4089167%2C49.4645607"
+      ]
+    },
+    {
+      "id": "phase6-cars-68b9d5f1f02568",
+      "stored": {
+        "name": "معرض المروانى للسيارات",
+        "city": "أملج",
+        "neighborhood": "طريق الملك فيصل، الضويحي، املج 48322",
+        "phones": [
+          "0555875526"
+        ],
+        "google_maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%85%D8%B1%D9%88%D8%A7%D9%86%D9%89+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15b0a7a610e24ca9:0xe93b404219637499!8m2!3d25.059247!4d37.2641638!16s%2Fg%2F11qg46t71q!19sChIJqUziEKansBURmXRjGUJAO-k?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored direct Google Maps place/CID/embed supports the displayed identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%85%D8%B1%D9%88%D8%A7%D9%86%D9%89+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15b0a7a610e24ca9:0xe93b404219637499!8m2!3d25.059247!4d37.2641638!16s%2Fg%2F11qg46t71q!19sChIJqUziEKansBURmXRjGUJAO-k?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ]
+    },
+    {
+      "id": "phase6-cars-a26734ec5f415b",
+      "stored": {
+        "name": "معرض ابو ايمن النحاس للسيارات.",
+        "city": "أملج",
+        "neighborhood": "3747+VCF، طريق الملك فيصل، الضويحي، املج 48324",
+        "phones": [
+          "0503579096"
+        ],
+        "google_maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%88+%D8%A7%D9%8A%D9%85%D9%86+%D8%A7%D9%84%D9%86%D8%AD%D8%A7%D8%B3+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA.%E2%80%AD/data=!4m7!3m6!1s0x15b0a7fa58aba351:0x1ef323af5f125887!8m2!3d25.0571846!4d37.2636097!16s%2Fg%2F11l6c5xmrr!19sChIJUaOrWPqnsBURh1gSX68j8x4?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored direct Google Maps place/CID/embed supports the displayed identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%88+%D8%A7%D9%8A%D9%85%D9%86+%D8%A7%D9%84%D9%86%D8%AD%D8%A7%D8%B3+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA.%E2%80%AD/data=!4m7!3m6!1s0x15b0a7fa58aba351:0x1ef323af5f125887!8m2!3d25.0571846!4d37.2636097!16s%2Fg%2F11l6c5xmrr!19sChIJUaOrWPqnsBURh1gSX68j8x4?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ]
+    },
+    {
+      "id": "phase6-cars-1879177f0c7f7d",
+      "stored": {
+        "name": "معرض عبدالرحمن سعد الجهني للسيارات",
+        "city": "أملج",
+        "neighborhood": "KUDC6446، 6446 طريق الملك فيصل، الضويحي، املج 48322",
+        "phones": [
+          "0508998620"
+        ],
+        "google_maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86+%D8%B3%D8%B9%D8%AF+%D8%A7%D9%84%D8%AC%D9%87%D9%86%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15b0a70004e9d8bd:0xe7318ca12de2552c!8m2!3d25.0574189!4d37.2636288!16s%2Fg%2F11zcsbqkn2!19sChIJvdjpBACnsBURLFXiLaGMMec?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored direct Google Maps place/CID/embed supports the displayed identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86+%D8%B3%D8%B9%D8%AF+%D8%A7%D9%84%D8%AC%D9%87%D9%86%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15b0a70004e9d8bd:0xe7318ca12de2552c!8m2!3d25.0574189!4d37.2636288!16s%2Fg%2F11zcsbqkn2!19sChIJvdjpBACnsBURLFXiLaGMMec?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ]
+    },
+    {
+      "id": "phase6-cars-56fc1e0cbe2502",
+      "stored": {
+        "name": "شركة مجموعة محمد صالح بابقي وأولاده للسيارات - القنفذة",
+        "city": "القنفذة",
+        "neighborhood": "",
+        "phones": [
+          "920033745"
+        ],
+        "google_maps": "https://www.google.com/maps/embed?ie=UTF8&iwloc=&output=embed&pb=!1m14!1m8!1m3!1d15077.923568859074!2d41.079832!3d19.130416!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e68f58c3c1f273:0x5c561fb003b3eb24!2sMohamed+Saleh+Babgi+%26+Sons+Group+Co.+Ltd.!5e0!3m2!1sen!2sus!4v1689364768916!5m2!1sen!2sus&t=&z=11",
+        "website": "https://mbabgi.sa/findcenter"
+      },
+      "decision": "official_dealer_confirmed_exclusion_candidate",
+      "evidence": "The official Mohamed Saleh Babgi site confirms the company as Toyota/Lexus sales and service, publishes 920033745, and identifies Toyota Al Qunfudhah. This is an official dealer record, outside the independent-showroom rule.",
+      "field_status": {
+        "name_activity": "confirmed",
+        "activity_type": "official_dealer_not_independent_showroom",
+        "city_locality": "supported_by_place_link",
+        "phone": "confirmed",
+        "whatsapp": "not_verified",
+        "website": "official_website_confirmed",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://mbabgi.sa/contact",
+        "https://www.mbabgi.sa/home",
+        "https://www.google.com/maps/embed?ie=UTF8&iwloc=&output=embed&pb=!1m14!1m8!1m3!1d15077.923568859074!2d41.079832!3d19.130416!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e68f58c3c1f273:0x5c561fb003b3eb24!2sMohamed+Saleh+Babgi+%26+Sons+Group+Co.+Ltd.!5e0!3m2!1sen!2sus!4v1689364768916!5m2!1sen!2sus&t=&z=11"
+      ],
+      "proposed_correction": {
+        "type": "exclude_official_dealer",
+        "apply_status": "not_applied"
+      }
+    },
+    {
+      "id": "phase6-cars-050e3294316f0d",
+      "stored": {
+        "name": "معرض الراية الأمثل للسيارات",
+        "city": "محايل عسير",
+        "neighborhood": "King Abdullah Rd, Alkhaldiyah, Muhayil 63687",
+        "phones": [
+          "0551055397"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=5647039032092486162",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored direct Google Maps place/CID/embed supports the displayed identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=5647039032092486162"
+      ]
+    },
+    {
+      "id": "phase6-cars-9a574fdfa72d8d",
+      "stored": {
+        "name": "الراقي كار",
+        "city": "محايل عسير",
+        "neighborhood": "3832 حي الشهد AHAA9369 طريق الملك عبدالله محايل 63311",
+        "phones": [
+          "0552016930"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=87639476552118783",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored direct Google Maps place/CID/embed supports the displayed identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=87639476552118783"
+      ]
+    },
+    {
+      "id": "phase6-cars-32923021719792",
+      "stored": {
+        "name": "معرض نايفات القصيم للسيارات",
+        "city": "القنفذة",
+        "neighborhood": "القنفذة 28823",
+        "phones": [
+          "0505395993"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=12909113172771516688",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored direct Google Maps place/CID/embed supports the displayed identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=12909113172771516688"
+      ]
+    },
+    {
+      "id": "phase6-cars-b9bf9e96446ec3",
+      "stored": {
+        "name": "معرض السيارات أبو سليمان",
+        "city": "محايل عسير",
+        "neighborhood": "عسير، محايل، حي النزهة",
+        "phones": [
+          "0564707901"
+        ],
+        "google_maps": "https://maps.yango.com/ar-sa/org/6239325989/",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored Yango place supports the identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "yango_place_present"
+      },
+      "sources": [
+        "https://maps.yango.com/ar-sa/org/6239325989/"
+      ]
+    },
+    {
+      "id": "national-car-624b70b6a7d4b0",
+      "stored": {
+        "name": "معرض هديب حياء الرشيدي",
+        "city": "النعيرية",
+        "neighborhood": "near cattle market حي السوق الماشي النعيرية Al Nairiyah 37486",
+        "phones": [
+          "0537078110"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=2193603285461162027",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored direct Google Maps place/CID/embed supports the displayed identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=2193603285461162027"
+      ]
+    },
+    {
+      "id": "national-car-fa44ba48e70734",
+      "stored": {
+        "name": "معرض الفرو",
+        "city": "النعيرية",
+        "neighborhood": "النعيرية 37486، المملكة العربية السعودية",
+        "phones": [
+          "0500550051"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=7237572279603442674",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored direct Google Maps place/CID/embed supports the displayed identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=7237572279603442674"
+      ]
+    },
+    {
+      "id": "national-car-2c7d7be2b9ebe4",
+      "stored": {
+        "name": "معرض السامر الخليجي للسيارات",
+        "city": "النعيرية",
+        "neighborhood": "CCUA5180، 5180 حي ج6 1، 7121، النعيرية 37486",
+        "phones": [
+          "0503864664"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=15825249902745520606",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored direct Google Maps place/CID/embed supports the displayed identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=15825249902745520606"
+      ]
+    },
+    {
+      "id": "national-car-e670a78699c47e",
+      "stored": {
+        "name": "معرض الجريو للسيارات",
+        "city": "النعيرية",
+        "neighborhood": "GG4R+H27، النعيرية 37486",
+        "phones": [
+          "0559881166"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=17557773069909224831",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored direct Google Maps place/CID/embed supports the displayed identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=17557773069909224831"
+      ]
+    },
+    {
+      "id": "phase6-cars-32e93c5ff42bc3",
+      "stored": {
+        "name": "ظل الجزيرة للسيارات - محايل عسير",
+        "city": "محايل عسير",
+        "neighborhood": "محايل، حي الجنادرية، طريق الملك عبدالله بن عبدالعزيز، AHAA2741",
+        "phones": [
+          "0508960666"
+        ],
+        "google_maps": "https://maps.yango.com/ar-sa/org/197660744397/",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored Yango place supports the identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "yango_place_present"
+      },
+      "sources": [
+        "https://maps.yango.com/ar-sa/org/197660744397/"
+      ]
+    },
+    {
+      "id": "national-car-96d706d51373d3",
+      "stored": {
+        "name": "معرض القويفل للسيارات",
+        "city": "المذنب",
+        "neighborhood": "V5PW+5G4، المذنب56641",
+        "phones": [
+          "0563431010"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=203628540090817535",
+        "website": ""
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Stored direct Google Maps place/CID/embed supports the displayed identity and locality; exact public lookup did not independently confirm the stored phone.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=203628540090817535"
+      ]
+    },
+    {
+      "id": "national-yango-cars-233315252441",
+      "stored": {
+        "name": "نجوم الفلاح للسيارات",
+        "city": "محايل عسير",
+        "neighborhood": "محايل، حي الروضة، طريق الملك عبدالله بن عبدالعزيز، AHAA5685",
+        "phones": [
+          "0557173725"
+        ],
+        "google_maps": "https://maps.yango.com/ar-sa/org/233315252441/",
+        "website": ""
+      },
+      "decision": "triple_match_confirmed",
+      "evidence": "Current Haraj listings identify شركة نجوم الفلاح للسيارات, list a Muhayil Asir branch, and publish 0557173725 as a sales/WhatsApp number; the stored Yango place supplies the branch pin.",
+      "field_status": {
+        "name_activity": "confirmed",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "supported_by_place_link",
+        "phone": "confirmed",
+        "whatsapp": "confirmed_by_current_listing",
+        "website": "not_listed",
+        "google_maps_pin": "yango_place_present"
+      },
+      "sources": [
+        "https://haraj.com/11189984163/",
+        "https://maps.yango.com/ar-sa/org/233315252441/"
+      ]
+    },
+    {
+      "id": "v9-car-2bce066e7d5c",
+      "stored": {
+        "name": "معرض الهلال للسيارات",
+        "city": "أملج",
+        "neighborhood": "الصناعية، أملج 48240",
+        "phones": [],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%87%D9%84%D8%A7%D9%84%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D9%85%D9%84%D8%AC",
+        "website": ""
+      },
+      "decision": "unresolved_search_or_missing_pin",
+      "evidence": "Only a search URL or no Maps link is stored, and exact public lookup did not establish an authoritative pin/phone match.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "pending",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "search_link_only"
+      },
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%87%D9%84%D8%A7%D9%84%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D9%85%D9%84%D8%AC"
+      ]
+    },
+    {
+      "id": "v9-car-9ab9c7fddd86",
+      "stored": {
+        "name": "معرض سطوع الشمس للسيارات",
+        "city": "المذنب",
+        "neighborhood": "طريق الملك عبدالعزيز، المذنب 56641",
+        "phones": [
+          "0163631248"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B7%D9%88%D8%B9%20%D8%A7%D9%84%D8%B4%D9%85%D8%B3%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B0%D9%86%D8%A8",
+        "website": ""
+      },
+      "decision": "phone_name_confirmed_locality_conflict",
+      "evidence": "A current Haraj listing confirms معرض سطوع الشمس and phone 0163631248, but its text says Qassim/Unaizah/King Abdulaziz Road while the result is geotagged Al Mithnab and the stored record is Al Mithnab. The Maps link is only a search URL; locality remains unresolved.",
+      "field_status": {
+        "name_activity": "confirmed",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "conflict",
+        "phone": "confirmed",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "search_link_only"
+      },
+      "sources": [
+        "https://haraj.com.sa/11179815152/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B7%D9%88%D8%B9%20%D8%A7%D9%84%D8%B4%D9%85%D8%B3%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B0%D9%86%D8%A8"
+      ],
+      "proposed_correction": {
+        "type": "review_city_locality",
+        "stored_city": "المذنب",
+        "conflicting_locality": "عنيزة",
+        "apply_status": "not_applied"
+      }
+    },
+    {
+      "id": "v9-car-925aa0ae9f2e",
+      "stored": {
+        "name": "معرض عالم التميز للسيارات",
+        "city": "المذنب",
+        "neighborhood": "طريق عثمان بن عفان، الصناعية، المذنب 56641",
+        "phones": [],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D8%AA%D9%85%D9%8A%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B0%D9%86%D8%A8",
+        "website": ""
+      },
+      "decision": "unresolved_search_or_missing_pin",
+      "evidence": "Only a search URL or no Maps link is stored, and exact public lookup did not establish an authoritative pin/phone match.",
+      "field_status": {
+        "name_activity": "supported_or_pending_see_evidence",
+        "activity_type": "car_showroom_or_pending",
+        "city_locality": "pending",
+        "phone": "pending_independent_confirmation",
+        "whatsapp": "not_verified",
+        "website": "not_listed",
+        "google_maps_pin": "search_link_only"
+      },
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D8%AA%D9%85%D9%8A%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B0%D9%86%D8%A8"
+      ]
+    },
+    {
+      "id": "pdf-smalltown-026",
+      "stored": {
+        "name": "شركة مجموعة محمد صالح بابقي وأولاده للسيارات",
+        "city": "القنفذة",
+        "neighborhood": "العنوان غير مدرج￾القنفذة",
+        "phones": [
+          "920033745"
+        ],
+        "google_maps": "",
+        "website": ""
+      },
+      "decision": "official_dealer_confirmed_exclusion_candidate",
+      "evidence": "The official Mohamed Saleh Babgi site confirms the company as Toyota/Lexus sales and service, publishes 920033745, and identifies Toyota Al Qunfudhah. This is an official dealer record, outside the independent-showroom rule.",
+      "field_status": {
+        "name_activity": "confirmed",
+        "activity_type": "official_dealer_not_independent_showroom",
+        "city_locality": "pending",
+        "phone": "confirmed",
+        "whatsapp": "not_verified",
+        "website": "official_website_confirmed",
+        "google_maps_pin": "missing"
+      },
+      "sources": [
+        "https://mbabgi.sa/contact",
+        "https://www.mbabgi.sa/home"
+      ],
+      "proposed_correction": {
+        "type": "exclude_official_dealer",
+        "apply_status": "not_applied",
+        "duplicate_of": "phase6-cars-56fc1e0cbe2502"
+      }
+    }
+  ]
+}
