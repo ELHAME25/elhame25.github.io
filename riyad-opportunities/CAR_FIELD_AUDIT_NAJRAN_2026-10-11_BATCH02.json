@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "daeae00ce59ae222db7ea31302cdb37ada878d5c",
+  "scope": {
+    "city": "نجران",
+    "batch": "02",
+    "count": 5,
+    "positions": "16-20 of 20",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Direct Google Maps/Yango place URLs, stored coordinates and linked seller pages were reconciled field by field. Unsupported WhatsApp or website fields remain unresolved.",
+  "records": [
+    {
+      "id": "phase5-google-6862480891870983680",
+      "name": "معرض نجم الهلال للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "5119 ابن عليم، نجران 66232، المملكة العربية السعودية",
+        "phones": [
+          "0508892661"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%AC%D9%85+%D8%A7%D9%84%D9%87%D9%84%D8%A7%D9%84+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90074cf9d8f:0x5f3c6e031de03600!8m2!3d17.5790753!4d44.3400442!16s%2Fg%2F11wbcxdz3z!19sChIJj53PdADZ_hURADbgHQNuPF8?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.57907,
+        "lon": 44.34004
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%AC%D9%85+%D8%A7%D9%84%D9%87%D9%84%D8%A7%D9%84+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90074cf9d8f:0x5f3c6e031de03600!8m2!3d17.5790753!4d44.3400442!16s%2Fg%2F11wbcxdz3z!19sChIJj53PdADZ_hURADbgHQNuPF8?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-0a82a439ddbc14",
+      "name": "معرض نجوم الشارقة للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "مخطط الصهبان، 5843, 8035 66232، المملكة العربية السعودية",
+        "phones": [
+          "0537999763"
+        ],
+        "whatsapp": null,
+        "website": "https://haraj.com.sa/11189458237/%D8%AA%D9%88%D9%8A%D9%88%D8%AA%D8%A7_%D9%84%D8%A7%D9%86%D8%AF%D9%83%D8%B1%D9%88%D8%B2%D8%B1_GX_%D9%87%D8%AF%D8%AF_%D9%85%D8%AF%D9%8A%D9%842026253900_%D8%B4%D8%A7%D9%85%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9/",
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%AC%D9%88%D9%85+%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D9%82%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90bfa966ee3:0xa335dd51016d001c!8m2!3d17.5839425!4d44.3467946!16s%2Fg%2F11bzrpq_3m!19sChIJ426W-gvZ_hURHABtAVHdNaM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.58394,
+        "lon": 44.3468
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "seller_listing_verified_not_official_domain",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%AC%D9%88%D9%85+%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D9%82%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90bfa966ee3:0xa335dd51016d001c!8m2!3d17.5839425!4d44.3467946!16s%2Fg%2F11bzrpq_3m!19sChIJ426W-gvZ_hURHABtAVHdNaM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "https://haraj.com.sa/11189458237/%D8%AA%D9%88%D9%8A%D9%88%D8%AA%D8%A7_%D9%84%D8%A7%D9%86%D8%AF%D9%83%D8%B1%D9%88%D8%B2%D8%B1_GX_%D9%87%D8%AF%D8%AF_%D9%85%D8%AF%D9%8A%D9%842026253900_%D8%B4%D8%A7%D9%85%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9/"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-c9f0887e3fa8ce",
+      "name": "معرض العنزي للسيارات بنجران",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "H8HQ+FQQ، حي الصناعية 66232، المملكة العربية السعودية",
+        "phones": [
+          "0555510547"
+        ],
+        "whatsapp": null,
+        "website": "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86/",
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A8%D9%86%D8%AC%D8%B1%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15fed9cf17bb45e9:0x7dc4eadb8194e11a!8m2!3d17.5787058!4d44.3394769!16s%2Fg%2F11jmyzs_tt!19sChIJ6UW7F8_Z_hURGuGUgdvqxH0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.57871,
+        "lon": 44.33948
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "seller_listing_verified_not_official_domain",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A8%D9%86%D8%AC%D8%B1%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15fed9cf17bb45e9:0x7dc4eadb8194e11a!8m2!3d17.5787058!4d44.3394769!16s%2Fg%2F11jmyzs_tt!19sChIJ6UW7F8_Z_hURGuGUgdvqxH0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86/"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-d3d666f82da0aa",
+      "name": "معرض شاهين الصحراء للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "حراج السيارات، مخططات الغويلا الزراعية 66232، المملكة العربية السعودية",
+        "phones": [
+          "0555814681"
+        ],
+        "whatsapp": null,
+        "website": "https://haraj.com.sa/11189497740/%D9%83%D8%A7%D9%85%D8%B1%D9%8A_2023_%D8%B3%D8%B9%D9%88%D8%AF%D9%8A_%D9%81%D9%84_%D9%83%D8%A7%D9%85%D9%84_%D9%87%D8%A7%D9%8A%D8%A8%D8%B1%D8%AF_%D9%82%D9%85%D8%A9_%D8%A7%D9%84%D9%86%D8%B8%D8%A7%D9%81%D8%A9/",
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B4%D8%A7%D9%87%D9%8A%D9%86+%D8%A7%D9%84%D8%B5%D8%AD%D8%B1%D8%A7%D8%A1+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90c83f8b867:0x88cc51e6f3d42cc2!8m2!3d17.583745!4d44.344623!16s%2Fg%2F11f40q47ym!19sChIJZ7j4gwzZ_hURwizU8-ZRzIg?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.58375,
+        "lon": 44.34462
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "seller_listing_verified_not_official_domain",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B4%D8%A7%D9%87%D9%8A%D9%86+%D8%A7%D9%84%D8%B5%D8%AD%D8%B1%D8%A7%D8%A1+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90c83f8b867:0x88cc51e6f3d42cc2!8m2!3d17.583745!4d44.344623!16s%2Fg%2F11f40q47ym!19sChIJZ7j4gwzZ_hURwizU8-ZRzIg?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "https://haraj.com.sa/11189497740/%D9%83%D8%A7%D9%85%D8%B1%D9%8A_2023_%D8%B3%D8%B9%D9%88%D8%AF%D9%8A_%D9%81%D9%84_%D9%83%D8%A7%D9%85%D9%84_%D9%87%D8%A7%D9%8A%D8%A8%D8%B1%D8%AF_%D9%82%D9%85%D8%A9_%D8%A7%D9%84%D9%86%D8%B8%D8%A7%D9%81%D8%A9/"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "national-yango-cars-59763002297",
+      "name": "الصقر للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "نجران، حي المسماة، طريق الملك عبدالعزيز، NJJE4053",
+        "phones": [
+          "0550570769"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://maps.yango.com/ar-sa/org/59763002297/",
+        "lat": 17.54592,
+        "lon": 44.27993
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_provider_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/org/59763002297/"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    }
+  ]
+}
