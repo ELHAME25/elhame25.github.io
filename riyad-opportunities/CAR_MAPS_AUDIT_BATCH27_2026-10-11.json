@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head_before_batch": "2e6cf32aa8bc2e4834d441e435645628b4ea9381",
+  "scope": {
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false,
+    "merge": false,
+    "publish": false,
+    "comprehensive_qa": false
+  },
+  "records": [
+    {
+      "id": "regional-pdf-pdf-smalltown-012-045",
+      "stored": {
+        "name": "Safa Motor Gallery",
+        "city": "خميس مشيط",
+        "neighborhood": "طريق الملك فهد ،حي المعارض",
+        "phones": [
+          "+966172641304"
+        ],
+        "maps": ""
+      },
+      "google_maps": {
+        "title": "معرض الصفا للسيارات",
+        "category": "تاجر سيارات",
+        "address": "7MPC+7RF، طريق الملك فهد، حي المعارض، خميس مشيط 62451",
+        "phone": "+966 17 264 1304"
+      },
+      "phone_matches_stored": true,
+      "status": "place identity and city verified; phone matches; direct pin url not extracted",
+      "direct_place_url_saved": false,
+      "proposed_action": "replace blank maps only after obtaining direct place URL"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-013-045",
+      "stored": {
+        "name": "Al Wafaa Showroom For Cars",
+        "city": "خميس مشيط",
+        "neighborhood": "حي المعارض",
+        "phones": [
+          "0172354610"
+        ],
+        "maps": ""
+      },
+      "google_maps": {
+        "title": "معرض الوفاء للسيارات",
+        "category": "تاجر سيارات",
+        "address": "7MQF+PHJ، حي المعارض، حجله، خميس مشيط 62451",
+        "phone": "+966 17 235 4610"
+      },
+      "phone_matches_stored": true,
+      "status": "place identity and city verified; phone matches; direct pin url not extracted",
+      "direct_place_url_saved": false,
+      "proposed_action": "replace blank maps only after obtaining direct place URL"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-014-045",
+      "stored": {
+        "name": "معرض التاج الحديث للسيارات مستعمل وجديد",
+        "city": "خميس مشيط",
+        "neighborhood": "حي المعارض",
+        "phones": [
+          "0555758923"
+        ],
+        "maps": ""
+      },
+      "google_maps": {
+        "title": "معرض التاج الحديث للسيارات مستعمل وجديد",
+        "category": "تاجر سيارات مستعملة",
+        "address": "الشارع العام الرئيسي، محافظة وادي ابن هشبل 62915",
+        "phone": "+966 55 575 8923"
+      },
+      "phone_matches_stored": true,
+      "status": "identity and phone match but location contradicts stored city خميس مشيط; do not attach this pin to Khamees row",
+      "direct_place_url_saved": false,
+      "proposed_action": "leave fields unchanged; unresolved"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-015-045",
+      "stored": {
+        "name": "Star farmer car",
+        "city": "خميس مشيط",
+        "neighborhood": "طريق الملك فهد ،حي المعارض",
+        "phones": [
+          "0545424485"
+        ],
+        "maps": ""
+      },
+      "google_maps": {
+        "title": "شركة نجوم الفلاح للسيارات",
+        "category": "تاجر سيارات",
+        "address": "طريق الملك فهد، حجله",
+        "phone": "+966 54 460 1689"
+      },
+      "phone_matches_stored": false,
+      "status": "search result only; name and phone conflict with stored Star farmer car; remains unresolved",
+      "direct_place_url_saved": false,
+      "proposed_action": "leave fields unchanged; unresolved"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-016-045",
+      "stored": {
+        "name": "معرض سعيد سالم الشهراني",
+        "city": "خميس مشيط",
+        "neighborhood": "حي المعارض ،طريق الملك فهد",
+        "phones": [],
+        "maps": ""
+      },
+      "google_maps": {
+        "title": "شركة سعيد سالم الشهراني للسيارات",
+        "category": "تاجر سيارات",
+        "address": "8046، 4615، خميس مشيط",
+        "phone": "+966 17 235 4626"
+      },
+      "phone_matches_stored": false,
+      "status": "similar but non-identical name; stored record has no phone; identity not proven, keep unresolved",
+      "direct_place_url_saved": false,
+      "proposed_action": "leave fields unchanged; unresolved"
+    }
+  ],
+  "counts": {
+    "reviewed": 5,
+    "identity_and_city_verified": 2,
+    "phone_matches": 3,
+    "city_conflict": 1,
+    "unresolved_identity": 2,
+    "direct_urls_saved": 0,
+    "cars_json_edits": 0
+  },
+  "notes": [
+    "These rows were opened through Google Maps and the relevant place card was visible. For some, the browser remained on a search-results URL and a direct place URL could not be captured, so no search URL is being proposed as a pin.",
+    "معرض التاج الحديث resolves to Wadi Ibn Hashbal, not the stored Khamis location; it is not archived because it is a real car showroom, and it is not moved pending duplicate/source-row resolution.",
+    "The search result for Star farmer car did not match the exact name or stored phone; no association is assumed."
+  ],
+  "writing_gate": {
+    "cars_json_write_authorized": false,
+    "cars_json_modified": false
+  }
+}
