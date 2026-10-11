@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": {
+    "record_count": 15,
+    "selection": "Current non-protected records with a stored direct Google Maps CID and null coordinates, excluding records already resolved in the continuation audits",
+    "cities": ["جدة", "الطائف", "خميس مشيط", "جازان", "بريدة", "الأحساء", "المدينة المنورة"],
+    "protected_qadisiyah_touched": false
+  },
+  "policy": {
+    "primary_source": "Live Google Maps place cards opened from the stored CID",
+    "general_search_url_not_accepted_as_verified_pin": true,
+    "websites_and_whatsapp_out_of_scope": true,
+    "cars_json_write_status": "Not attempted because the prior automated review explicitly rejected the full-file replacement; proven corrections are preserved here without bypassing that decision."
+  },
+  "summary": {
+    "verified_with_proposed_data_correction": 14,
+    "unresolved_after_direct_cid_check": 1,
+    "phone_mismatches": 1,
+    "name_mismatches": 2,
+    "coordinates_resolved": 14,
+    "permanently_closed": 0
+  },
+  "records": [
+    {
+      "id": "entity-12fdbf4749a7",
+      "city": "جدة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض البركة للسيارات", "phones": ["0553517154"], "maps_cid": "4190982439750258627", "lat": null, "lng": null},
+      "observed": {"name": "معرض البركه للسيارات", "activity": "تاجر سيارات", "address": "الجوهرة، Unnamed Road، جدة 22417، المملكة العربية السعودية", "phone": "0553517154", "lat": 21.4288894, "lng": 39.2538789},
+      "proposed_change": {"lat": 21.4288894, "lng": 39.2538789},
+      "evidence": ["https://www.google.com/maps/?cid=4190982439750258627"]
+    },
+    {
+      "id": "entity-efb15b8d3d96",
+      "city": "الطائف",
+      "decision": "unresolved_after_direct_cid_check",
+      "stored": {"name": "معرض العدالة للسيارات", "phones": ["0536048630"], "maps_cid": "9075003861689496833", "lat": null, "lng": null},
+      "observed": {"result": "The stored CID opened an empty Google Maps place panel with no name, address, activity, phone or pin."},
+      "unresolved_fields": ["name", "activity", "address", "phone", "coordinates"],
+      "proposed_change": null,
+      "evidence": ["https://www.google.com/maps/?cid=9075003861689496833"]
+    },
+    {
+      "id": "entity-83b787c12cb5",
+      "city": "خميس مشيط",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض سعيد ظافر القحطاني للسيارات", "phones": ["0172354727"], "maps_cid": "9651929219402481732", "lat": null, "lng": null},
+      "observed": {"name": "معرض سعيد ظافر القحطاني للسيارات", "activity": "تاجر سيارات", "address": "المعارض، حجله، خميس مشيط 62451، المملكة العربية السعودية", "phone": "0172226141", "lat": 18.2891142, "lng": 42.6746586},
+      "proposed_change": {"phones": ["0172226141"], "lat": 18.2891142, "lng": 42.6746586},
+      "evidence": ["https://www.google.com/maps/?cid=9651929219402481732"]
+    },
+    {
+      "id": "entity-ba4bc778cc25",
+      "city": "خميس مشيط",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض بن هيف للسيارات", "phones": ["0558970974"], "maps_cid": "3489098167682317197", "lat": null, "lng": null},
+      "observed": {"name": "معرض بن هيف للسيارات", "activity": "تاجر سيارات", "address": "حجله، خميس مشيط 62451، المملكة العربية السعودية", "phone": "0558970974", "lat": 18.2897792, "lng": 42.6731995},
+      "proposed_change": {"lat": 18.2897792, "lng": 42.6731995},
+      "evidence": ["https://www.google.com/maps/?cid=3489098167682317197"]
+    },
+    {
+      "id": "entity-86a5a362d753",
+      "city": "جازان",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض الرايه الامثل للسيارات", "phones": ["0552218513"], "maps_cid": "13346903039466333875", "lat": null, "lng": null},
+      "observed": {"name": "معرض الرايه للسيارات", "activity": "تاجر سيارات", "address": "6926 طريق الملك عبدالعزيز، جيزان 82722، المملكة العربية السعودية", "phone": "0552218513", "lat": 16.8868646, "lng": 42.5748304},
+      "proposed_change": {"name": "معرض الرايه للسيارات", "lat": 16.8868646, "lng": 42.5748304},
+      "evidence": ["https://www.google.com/maps/?cid=13346903039466333875"]
+    },
+    {
+      "id": "phase5-car-a1fbedf16e10",
+      "city": "بريدة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض عالم الدوحة للسيارات", "phones": ["0537709090"], "maps_cid": "9265664504288849499", "lat": null, "lng": null},
+      "observed": {"name": "معرض عالم الدوحة للسيارات.", "activity": "تاجر سيارات", "address": "2203، بريدة 52581، المملكة العربية السعودية", "phone": "0537709090", "lat": 26.4110892, "lng": 43.8819944},
+      "proposed_change": {"lat": 26.4110892, "lng": 43.8819944},
+      "evidence": ["https://www.google.com/maps/?cid=9265664504288849499"]
+    },
+    {
+      "id": "phase5-car-cb09e15b0d61",
+      "city": "بريدة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض الشبرمي للسيارات ببريدة", "phones": ["0503850044"], "maps_cid": "11759714580601117630", "lat": null, "lng": null},
+      "observed": {"name": "معرض الشبرمي للسيارات ببريده", "activity": "تاجر السيارات", "address": "2484، بريدة، المملكة العربية السعودية", "phone": "0503850044", "lat": 26.4084648, "lng": 43.8803296},
+      "proposed_change": {"lat": 26.4084648, "lng": 43.8803296},
+      "evidence": ["https://www.google.com/maps/?cid=11759714580601117630"]
+    },
+    {
+      "id": "phase5-car-4b9ba799e221",
+      "city": "بريدة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض المحيا للسيارات", "phones": ["0503854000"], "maps_cid": "3930363977058113059", "lat": null, "lng": null},
+      "observed": {"name": "معرض المحيا للسيارات", "activity": "تاجر سيارات مستعملة", "address": "2340، بريدة 52581، المملكة العربية السعودية", "phone": "0503854000", "lat": 26.4096851, "lng": 43.8786059},
+      "proposed_change": {"lat": 26.4096851, "lng": 43.8786059},
+      "evidence": ["https://www.google.com/maps/?cid=3930363977058113059"]
+    },
+    {
+      "id": "phase5-car-d4be6fd1a88e",
+      "city": "جدة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض فيض الخيرات للسيارات", "phones": ["0550761199", "0509920428", "0505730813"], "maps_cid": "11436154795590947396", "lat": null, "lng": null},
+      "observed": {"name": "معرض فيض الخيرات للسيارات جدة FAYD AL KHAYRAAT CAR SHOW ROOM", "activity": "تاجر سيارات", "address": "معارض السيارات، شارع أحمد ذاكر إدريس، جدة 22417، المملكة العربية السعودية", "phone_on_google_maps": "0550761199", "lat": 21.4321737, "lng": 39.252085},
+      "phone_note": "Google Maps confirms the first stored phone; the two additional stored phones were not revalidated in this batch.",
+      "proposed_change": {"lat": 21.4321737, "lng": 39.252085},
+      "evidence": ["https://www.google.com/maps/?cid=11436154795590947396"]
+    },
+    {
+      "id": "phase5-car-a3cb87108886",
+      "city": "الأحساء",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض أبوزيد للسيارات", "phones": ["0505921435"], "maps_cid": "13016530448738204529", "lat": null, "lng": null},
+      "observed": {"name": "معرض ابوزيد للسيارات", "activity": "معرض سيارات", "address": "CF69+9FG، المنطقة الصناعية بالأحساء 36456، المملكة العربية السعودية", "phone": "0505921435", "lat": 25.4109291, "lng": 49.4687154},
+      "proposed_change": {"lat": 25.4109291, "lng": 49.4687154},
+      "evidence": ["https://www.google.com/maps/?cid=13016530448738204529"]
+    },
+    {
+      "id": "phase5-car-7168b98a40ae",
+      "city": "الأحساء",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض الشموع للسيارات", "phones": ["0135362088", "0506884881"], "maps_cid": "4903061669009308738", "lat": null, "lng": null},
+      "observed": {"name": "معرض الشموع للسيارات", "activity": "تاجر السيارات", "address": "8419 الأمير طلال، الهفوف والمبرز 36342، المملكة العربية السعودية", "phone_on_google_maps": "0135362088", "lat": 25.4417472, "lng": 49.5928317},
+      "phone_note": "Google Maps confirms the stored landline; the additional mobile was not revalidated in this batch.",
+      "proposed_change": {"lat": 25.4417472, "lng": 49.5928317},
+      "evidence": ["https://www.google.com/maps/?cid=4903061669009308738"]
+    },
+    {
+      "id": "phase5-car-651a00024415",
+      "city": "الأحساء",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "مجموعة السلام الخليجية للسيارات", "phones": ["0562139558"], "maps_cid": "17185239753483363397", "lat": null, "lng": null},
+      "observed": {"name": "مجموعه السلام الخليجيه للسيارات بالاحساء", "activity": "تاجر سيارات", "address": "طريق مكة، المبرز 36423، المملكة العربية السعودية", "phone": "0562139558", "lat": 25.4209862, "lng": 49.5632493},
+      "proposed_change": {"lat": 25.4209862, "lng": 49.5632493},
+      "evidence": ["https://www.google.com/maps/?cid=17185239753483363397"]
+    },
+    {
+      "id": "phase5-google-16760726046999437016",
+      "city": "المدينة المنورة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض المنال الوطني للسيارات", "phones": ["0544512299"], "maps_cid": "16760726046999437016", "lat": null, "lng": null},
+      "observed": {"name": "معرض المنال الوطني للسيارات", "activity": "تاجر سيارات", "address": "عثمان بن عثمان الثقفي، العزيزية، المدينة المنورة 42376، المملكة العربية السعودية", "phone": "0544512299", "lat": 24.42064, "lng": 39.5153953},
+      "proposed_change": {"lat": 24.42064, "lng": 39.5153953},
+      "evidence": ["https://www.google.com/maps/?cid=16760726046999437016"]
+    },
+    {
+      "id": "phase5-google-2049951513340009758",
+      "city": "المدينة المنورة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "شركة زهرة العيص للسيارات", "phones": ["0599229220"], "maps_cid": "2049951513340009758", "lat": null, "lng": null},
+      "observed": {"name": "شركة زهرة العيص للسيارات", "activity": "تاجر السيارات", "address": "8881 عثمان بن عبيدالله، العزيزية، المدينة المنورة 42376، المملكة العربية السعودية", "phone": "0599229220", "lat": 24.4204953, "lng": 39.514047},
+      "proposed_change": {"lat": 24.4204953, "lng": 39.514047},
+      "evidence": ["https://www.google.com/maps/?cid=2049951513340009758"]
+    },
+    {
+      "id": "phase5-google-16275502605220452806",
+      "city": "المدينة المنورة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "شركة قمة المعارض للسيارات", "phones": ["0556312477"], "maps_cid": "16275502605220452806", "lat": null, "lng": null},
+      "observed": {"name": "شركة قمة المعارض للسيارات", "activity": "تاجر سيارات", "address": "الطفيل بن عمرو، العزيزية، المدينة المنورة 42376، المملكة العربية السعودية", "phone": "0556312477", "lat": 24.41707, "lng": 39.5170514},
+      "proposed_change": {"lat": 24.41707, "lng": 39.5170514},
+      "evidence": ["https://www.google.com/maps/?cid=16275502605220452806"]
+    }
+  ]
+}
