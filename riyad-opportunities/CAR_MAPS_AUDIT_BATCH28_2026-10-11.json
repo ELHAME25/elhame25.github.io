@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "audit_batch": "CAR_MAPS_AUDIT_BATCH28_2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": "five unresolved regional records in Khamis Mushait; Qadisiyah untouched",
+  "method": "Google Maps place cards opened; accepted only direct cards with showroom name, vehicle-dealer category, and city/address matching; no cars.json changes.",
+  "entries": [
+    {
+      "id": "regional-pdf-pdf-smalltown-017-045",
+      "stored_name": "Husseiniya Show Room",
+      "stored_phone": "0590292449",
+      "status": "unresolved_identity_and_phone_conflict",
+      "maps_card_name": "معرض الحسنية",
+      "maps_category": "تاجر سيارات مستعملة",
+      "maps_address": "طريق الملك فهد، حجله 62451، خميس مشيط",
+      "maps_phone": "+966 50 575 5564",
+      "direct_maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AD%D8%B3%D9%86%D9%8A%D8%A9%E2%80%AD/@18.2891922,42.6776736,17z/data=!3m1!4b1!4m6!3m5!1s0x15fb571a7a50c273:0x5014388cf7a4dfa4!8m2!3d18.2891922!4d42.6776736!16s%2Fg%2F11bw4jd_mv",
+      "evidence": "Maps card is an active used-car dealer in Khamis Mushait, but its name is الحسنية rather than stored Husseiniya Show Room and the displayed number conflicts. Do not attach the pin or replace the stored phone until identity is independently established."
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-018-045",
+      "stored_name": "معرض بن ملهي للسيارات",
+      "stored_phone": "0565335204",
+      "status": "verified_direct_maps_card",
+      "maps_card_name": "معرض بنّ ملهي للسيارات",
+      "maps_category": "تاجر سيارات",
+      "maps_address": "7MQF+QPH، حجله، خميس مشيط 62451",
+      "maps_phone": "+966 56 533 5204",
+      "maps_coordinates": [
+        18.2894315,
+        42.6743526
+      ],
+      "direct_maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A8%D9%86%D9%91+%D9%85%D9%84%D9%87%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@18.2894315,42.6743526,17z/data=!3m1!4b1!4m6!3m5!1s0x15fb5700700b1f95:0x4d8369ab0c16fdca!8m2!3d18.2894315!4d42.6743526!16s%2Fg%2F11yrkxf_gc",
+      "evidence": "Direct place card title differs only in spelling diacritic, category is car dealer, city/address and phone match stored record."
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-019-045",
+      "stored_name": "معرض مكة المكرمة",
+      "stored_phone": "0505748036",
+      "status": "verified_direct_maps_card",
+      "maps_card_name": "معرض مكة المكرمة",
+      "maps_category": "تاجر سيارات",
+      "maps_address": "8324، 4670، خميس مشيط 62451",
+      "maps_phone": "+966 50 574 8036",
+      "maps_coordinates": [
+        18.289856,
+        42.6737421
+      ],
+      "direct_maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9%E2%80%AD/@18.289856,42.6737421,17z/data=!3m1!4b1!4m6!3m5!1s0x15fb571b821ba01f:0x8e75d13b71f49987!8m2!3d18.289856!4d42.6737421!16s%2Fg%2F11hd523wft",
+      "evidence": "Direct Google card matches stored name, car-dealer category, Khamis Mushait address, and stored phone."
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-020-045",
+      "stored_name": "معرض وسام المجد للسيارات",
+      "stored_phone": "0552244999",
+      "status": "unresolved_no_matching_maps_card",
+      "maps_result": "Google Maps search opened شركة نايف للسيارات خميس مشيط, phone +966 17 220 6555, not a matching name or number. Its profile showed a Haraj URL containing وسام المجد فرع خميس مشيط, but this alone does not establish the Maps business identity.",
+      "evidence": "No matching direct place card established after name/city/phone search; do not attach Naif's card or use its phone/pin for this record."
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-021-045",
+      "stored_name": "معرض هبوب نجد",
+      "stored_phone": "+966172377060",
+      "status": "verified_place_pin_phone_conflict",
+      "maps_card_name": "معرض هبوب نجد",
+      "maps_category": "تاجر سيارات",
+      "maps_address": "سلمه بن قيس، حجله، خميس مشيط 62451",
+      "maps_phone": "+966 55 813 1666",
+      "maps_coordinates": [
+        18.289617,
+        42.6780538
+      ],
+      "direct_maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%87%D8%A8%D9%88%D8%A8+%D9%86%D8%AC%D8%AF%E2%80%AD/@18.289617,42.6780538,17z/data=!3m1!4b1!4m6!3m5!1s0x15fb578d3a4da291:0xac9ada410c65b2c0!8m2!3d18.289617!4d42.6780538!16s%2Fg%2F11xkz9259t",
+      "evidence": "Direct card confirms the showroom identity, vehicle-dealer activity, Khamis Mushait location, and pin. Its displayed mobile number conflicts with the stored landline; treat stored phone as unconfirmed and use the Maps number only as a proposed correction pending approved data application."
+    }
+  ]
+}
