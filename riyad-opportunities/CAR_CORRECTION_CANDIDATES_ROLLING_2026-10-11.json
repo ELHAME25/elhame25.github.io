@@ -3,7 +3,7 @@
   "generated_at": "2026-10-11",
   "repository": "ELHAME25/elhame25.github.io",
   "branch": "fix/scope-counts-nhc-20261010",
-  "through_audit_head": "56637e55f38371bfc1284d96886fa920c6953914",
+  "through_audit_head": "c1cdf4c1456132dee29de5cee6934dfcdd3b8ebe",
   "safety": {
     "cars_json_modified_by_this_package": false,
     "qadisiyah_included": false,
@@ -13,8 +13,8 @@
     "baseline_applied_records": 2,
     "baseline_applied_field_changes": 6,
     "pending_confirmed": 98,
-    "pending_review_required": 6,
-    "note": "Rolling package through completion of Makkah. No pending item is authorized for cars.json."
+    "pending_review_required": 8,
+    "note": "Rolling package through completion of Dammam. No pending item is authorized for cars.json."
   },
   "applied_baseline_history": [
     {
@@ -2340,6 +2340,38 @@
       "status": "not_applied",
       "evidence": [
         "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74"
+      ]
+    },
+    {
+      "id": "phase5-car-f91368845dad",
+      "name": "معرض الوادي الفضي",
+      "classification": "review_required_before_approval",
+      "type": "phone_conflict_review",
+      "field": "phones",
+      "old_value": [
+        "0562803375"
+      ],
+      "new_value": [
+        "0566005188"
+      ],
+      "status": "not_applied",
+      "evidence": [
+        "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D9%81%D8%B6%D9%8A-056-600-5188",
+        "https://maps.yango.com/ar-sa/org/64849300395/"
+      ]
+    },
+    {
+      "id": "phase5-google-4012528401095037100",
+      "name": "مجموعة صالح للسيارات — الدمام",
+      "classification": "review_required_before_approval",
+      "type": "website_missing_confirmed",
+      "field": "web",
+      "old_value": "",
+      "new_value": "https://salehcars.com/",
+      "status": "not_applied",
+      "evidence": [
+        "https://salehcars.com/",
+        "https://www.google.com/maps/?cid=4012528401095037100"
       ]
     }
   ]
