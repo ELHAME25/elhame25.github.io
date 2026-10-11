@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "d3b2a7f5eb7604adc792412e5738fc5b60ec0a0f",
+  "scope": {
+    "city": "ينبع",
+    "batch": "02",
+    "count": 5,
+    "positions": "16-20 of 20",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Direct provider records were accepted; search-only URLs were not accepted as pins. Four PDF records were matched to same-city canonical records and queued for review only.",
+  "records": [
+    {
+      "id": "national-primary-budget-17332883661124769655",
+      "name": "بدجت - معرض ينبع",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": null,
+        "phones": [
+          "0126927070"
+        ],
+        "whatsapp": null,
+        "website": "https://mazad.budgetsaudi.com/Home/Contact",
+        "maps": "https://www.google.com/maps/?cid=17332883661124769655",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_matching_canonical",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=17332883661124769655",
+        "https://mazad.budgetsaudi.com/Home/Contact"
+      ],
+      "note": "تطابق الاسم والمدينة والهاتف والمصدر الرسمي/الدبوس؛ لا واتساب مستقل مثبت."
+    },
+    {
+      "id": "pdf-smalltown-029",
+      "name": "Yanbu Balubaid Autozone -اوتوزون بالبيد ينبع",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "Yanbu Saudi Arabia, Al Sawari District, King Abdul Aziz Street",
+        "phones": [],
+        "whatsapp": null,
+        "website": null,
+        "maps": null,
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "partially_matched_to_canonical",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_matching_canonical",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_only_not_pin"
+      },
+      "evidence_urls": [],
+      "note": "سجل PDF يبدو تكرارًا لسجل ينبع الأساسي بالاسم والعنوان؛ رابط البحث العام ليس دبوسًا، لذا أُبقي قرار الدمج للمراجعة.",
+      "proposed_correction": {
+        "type": "probable_duplicate_same_city",
+        "field": "record_scope",
+        "old_value": {
+          "city": "ينبع",
+          "id": "pdf-smalltown-029"
+        },
+        "new_value": {
+          "action": "exclude_probable_duplicate_after_approval",
+          "retain_id": "phase6-cars-14a08a4bd9b2f4",
+          "origin_city": "ينبع"
+        },
+        "status": "not_applied",
+        "evidence": [],
+        "proof": [
+          "matching_canonical_id=phase6-cars-14a08a4bd9b2f4",
+          "stored_neighborhood=Yanbu Saudi Arabia, Al Sawari District, King Abdul Aziz Street"
+        ]
+      }
+    },
+    {
+      "id": "pdf-smalltown-030",
+      "name": "للسيارات الكثيريKatheri Car Dealer | -Al",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "Saudi46424, Yanbu , Al Sharbatli, Ali Bin Abi Talib Road, FF+3QW32 Arabia",
+        "phones": [],
+        "whatsapp": null,
+        "website": null,
+        "maps": null,
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "partially_matched_to_canonical",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_matching_canonical",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_only_not_pin"
+      },
+      "evidence_urls": [],
+      "note": "سجل PDF يبدو تكرارًا لسجل ينبع الأساسي بالاسم والعنوان؛ رابط البحث العام ليس دبوسًا، لذا أُبقي قرار الدمج للمراجعة.",
+      "proposed_correction": {
+        "type": "probable_duplicate_same_city",
+        "field": "record_scope",
+        "old_value": {
+          "city": "ينبع",
+          "id": "pdf-smalltown-030"
+        },
+        "new_value": {
+          "action": "exclude_probable_duplicate_after_approval",
+          "retain_id": "phase6-cars-bdb51b87a900ad",
+          "origin_city": "ينبع"
+        },
+        "status": "not_applied",
+        "evidence": [],
+        "proof": [
+          "matching_canonical_id=phase6-cars-bdb51b87a900ad",
+          "stored_neighborhood=Saudi46424, Yanbu , Al Sharbatli, Ali Bin Abi Talib Road, FF+3QW32 Arabia"
+        ]
+      }
+    },
+    {
+      "id": "pdf-smalltown-031",
+      "name": "Yanbu Hondaمعرض هلا",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "Saudi Arabia46429, Yanbu , Attakhi, King Khalid Rd",
+        "phones": [],
+        "whatsapp": null,
+        "website": null,
+        "maps": null,
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "partially_matched_to_canonical",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_matching_canonical",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_only_not_pin"
+      },
+      "evidence_urls": [],
+      "note": "سجل PDF يبدو تكرارًا لسجل ينبع الأساسي بالاسم والعنوان؛ رابط البحث العام ليس دبوسًا، لذا أُبقي قرار الدمج للمراجعة.",
+      "proposed_correction": {
+        "type": "probable_duplicate_same_city",
+        "field": "record_scope",
+        "old_value": {
+          "city": "ينبع",
+          "id": "pdf-smalltown-031"
+        },
+        "new_value": {
+          "action": "exclude_probable_duplicate_after_approval",
+          "retain_id": "phase6-cars-a46eb003b73006",
+          "origin_city": "ينبع"
+        },
+        "status": "not_applied",
+        "evidence": [],
+        "proof": [
+          "matching_canonical_id=phase6-cars-a46eb003b73006",
+          "stored_neighborhood=Saudi Arabia46429, Yanbu , Attakhi, King Khalid Rd"
+        ]
+      }
+    },
+    {
+      "id": "pdf-smalltown-032",
+      "name": "Kia NMC - Showroomالشركة الأهلية للتسويق -",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "المعرض Saudi Arabia46425, Yanbu , Al Buhayrah، عبدالله الملك طريق",
+        "phones": [
+          "+966920034888"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": null,
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "partially_matched_to_canonical",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_matching_canonical",
+        "phone": "confirmed_by_yango",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_only_not_pin"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/en-sa/org/94424291487/"
+      ],
+      "note": "سجل PDF يبدو تكرارًا لسجل ينبع الأساسي بالاسم والعنوان؛ رابط البحث العام ليس دبوسًا، لذا أُبقي قرار الدمج للمراجعة.",
+      "proposed_correction": {
+        "type": "probable_duplicate_same_city",
+        "field": "record_scope",
+        "old_value": {
+          "city": "ينبع",
+          "id": "pdf-smalltown-032"
+        },
+        "new_value": {
+          "action": "exclude_probable_duplicate_after_approval",
+          "retain_id": "phase6-cars-b7d1ffd9d26057",
+          "origin_city": "ينبع"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://maps.yango.com/en-sa/org/94424291487/"
+        ],
+        "proof": [
+          "matching_canonical_id=phase6-cars-b7d1ffd9d26057",
+          "stored_neighborhood=المعرض Saudi Arabia46425, Yanbu , Al Buhayrah، عبدالله الملك طريق"
+        ]
+      }
+    }
+  ]
+}
