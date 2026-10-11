@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-10-11",
+  "baseCommit": "0c71ea52cbcdc54b09f7e668ed2477ab5066c36d",
+  "reviewedRecords": 1,
+  "records": [
+    {
+      "id": "phase5-car-92f3ec4ef0df",
+      "name": "فرع الدمام- معرض أحدث السيارات",
+      "city": "الدمام",
+      "neighborhood": "ضاحية الملك فهد شارع المعارض",
+      "fields": {
+        "nameActivity": {
+          "status": "confirmed",
+          "value": "معرض أحدث السيارات - فرع الدمام، تاجر سيارات",
+          "source": "https://www.google.com/maps/?cid=6470638257011526863"
+        },
+        "mapPin": {
+          "status": "confirmed_and_corrected",
+          "old": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A3%D8%AD%D8%AF%D8%AB%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20-%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%20%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2032314",
+          "new": "https://www.google.com/maps/?cid=6470638257011526863",
+          "oldCoordinates": {
+            "lat": 26.42196,
+            "lon": 49.995
+          },
+          "newCoordinates": {
+            "lat": 26.4020272,
+            "lon": 50.0099061
+          },
+          "address": "ضاحية الملك فهد، الدمام 32314",
+          "plusCode": "C225+RX"
+        },
+        "phone": {
+          "status": "confirmed",
+          "number": "0542626479",
+          "source": "https://www.google.com/maps/?cid=6470638257011526863",
+          "independentConfirmation": "https://haraj.com.sa/11182595693/%D9%87%D9%8A%D9%88%D9%86%D8%AF%D8%A7%D9%8A_%D8%A7%D9%84%D9%86%D8%AA%D8%B1%D8%A7_2026_%D8%B3%D9%85%D8%A7%D8%B1%D8%AA_%D9%88%D8%A8%D9%84%D8%B3_%D9%88%D9%83%D9%85%D9%81%D9%88%D8%B1%D8%AA_%D8%A7%D9%82%D9%84_%D8%B3%D8%B9%D8%B1/"
+        },
+        "whatsapp": {
+          "status": "confirmed_branch_link",
+          "old": "",
+          "new": "https://wa.me/966548889767",
+          "number": "0548889767",
+          "source": "https://linktr.ee/ahdthcar"
+        },
+        "website": {
+          "status": "confirmed_listing",
+          "old": "",
+          "new": "https://ahdth-cars.com/",
+          "source": "https://www.google.com/maps/?cid=6470638257011526863",
+          "officialLinktreeAlternate": "https://ahdthalsayarat.com/ (fetch returned 502)"
+        },
+        "neighborhoodStreet": {
+          "status": "partially_confirmed",
+          "verified": "ضاحية الملك فهد",
+          "unresolved": "شارع المعارض not present in Google place card"
+        }
+      },
+      "evidence": {
+        "googleMapsPlace": "https://www.google.com/maps/?cid=6470638257011526863",
+        "officialLinktree": "https://linktr.ee/ahdthcar",
+        "harajListing": "https://haraj.com.sa/11182595693/%D9%87%D9%8A%D9%88%D9%86%D8%AF%D8%A7%D9%8A_%D8%A7%D9%84%D9%86%D8%AA%D8%B1%D8%A7_2026_%D8%B3%D9%85%D8%A7%D8%B1%D8%AA_%D9%88%D8%A8%D9%84%D8%B3_%D9%88%D9%83%D9%85%D9%81%D9%88%D8%B1%D8%AA_%D8%A7%D9%82%D9%84_%D8%B3%D8%B9%D8%B1/"
+      },
+      "unresolved": [
+        "الجزء «شارع المعارض» في حقل الحي لم يظهر في بطاقة Maps؛ الحي المسمى ضاحية الملك فهد مؤكد.",
+        "لم يمكن جلب الموقع المرتبط من Linktree ahdthalsayarat.com (502)، لكن بطاقة Maps تعرض ahdth-cars.com."
+      ]
+    }
+  ],
+  "checks": {
+    "totalRecords": 821,
+    "qadisiyahRecords": 33,
+    "qadisiyahUnchanged": true,
+    "unrelatedRecordsChanged": 0
+  }
+}
