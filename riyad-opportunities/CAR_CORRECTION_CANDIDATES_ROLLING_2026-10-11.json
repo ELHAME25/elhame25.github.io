@@ -3,7 +3,7 @@
   "generated_at": "2026-10-11",
   "repository": "ELHAME25/elhame25.github.io",
   "branch": "fix/scope-counts-nhc-20261010",
-  "through_audit_head": "2e647331b12cc7389d3db7c22d0b6c0c88d83c72",
+  "through_audit_head": "0b80b64897cc142b3fb62537c414865b8ce94370",
   "safety": {
     "cars_json_modified_by_this_package": false,
     "qadisiyah_included": false,
@@ -12,8 +12,9 @@
   "summary": {
     "baseline_applied_records": 2,
     "baseline_applied_field_changes": 6,
-    "pending_confirmed": 12,
-    "pending_review_required": 0
+    "pending_confirmed": 40,
+    "pending_review_required": 2,
+    "note": "Rolling package through completion of Unayzah. No pending item is authorized for cars.json."
   },
   "applied_baseline_history": [
     {
@@ -353,6 +354,718 @@
         "regionalListingOf matches canonical id",
         "originCity=القطيف",
         "stored address=شارع الملك فيصل بن عبدالعزيز، المدني، القطيف32653"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "national-car-9fe1f36a66845c",
+      "name": null,
+      "classification": "review_required_before_approval",
+      "type": "probable_duplicate",
+      "old_value": {
+        "record": "present_as_stored",
+        "stored_city": null
+      },
+      "new_value": {
+        "action": "probable_duplicate",
+        "duplicate_of": "regional-pdf-national-car-9fe1f36a66845c-071",
+        "conflicting_locality": null
+      },
+      "evidence": [
+        "https://www.google.com/maps/?cid=9651703162385704987"
+      ],
+      "proof": [
+        "name",
+        "phone",
+        "google_maps_cid",
+        "locality"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "phase6-cars-56fc1e0cbe2502",
+      "name": null,
+      "classification": "confirmed_pending_approval",
+      "type": "exclude_official_dealer",
+      "old_value": {
+        "record": "present_as_stored",
+        "stored_city": null
+      },
+      "new_value": {
+        "action": "exclude_official_dealer",
+        "duplicate_of": null,
+        "conflicting_locality": null
+      },
+      "evidence": [
+        "https://mbabgi.sa/contact",
+        "https://www.mbabgi.sa/home",
+        "https://www.google.com/maps/embed?ie=UTF8&iwloc=&output=embed&pb=!1m14!1m8!1m3!1d15077.923568859074!2d41.079832!3d19.130416!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e68f58c3c1f273:0x5c561fb003b3eb24!2sMohamed+Saleh+Babgi+%26+Sons+Group+Co.+Ltd.!5e0!3m2!1sen!2sus!4v1689364768916!5m2!1sen!2sus&t=&z=11"
+      ],
+      "proof": [],
+      "status": "not_applied"
+    },
+    {
+      "id": "v9-car-9ab9c7fddd86",
+      "name": null,
+      "classification": "review_required_before_approval",
+      "type": "review_city_locality",
+      "old_value": {
+        "record": "present_as_stored",
+        "stored_city": "المذنب"
+      },
+      "new_value": {
+        "action": "review_city_locality",
+        "duplicate_of": null,
+        "conflicting_locality": "عنيزة"
+      },
+      "evidence": [
+        "https://haraj.com.sa/11179815152/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B7%D9%88%D8%B9%20%D8%A7%D9%84%D8%B4%D9%85%D8%B3%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B0%D9%86%D8%A8"
+      ],
+      "proof": [],
+      "status": "not_applied"
+    },
+    {
+      "id": "pdf-smalltown-026",
+      "name": null,
+      "classification": "confirmed_pending_approval",
+      "type": "exclude_official_dealer",
+      "old_value": {
+        "record": "present_as_stored",
+        "stored_city": null
+      },
+      "new_value": {
+        "action": "exclude_official_dealer",
+        "duplicate_of": "phase6-cars-56fc1e0cbe2502",
+        "conflicting_locality": null
+      },
+      "evidence": [
+        "https://mbabgi.sa/contact",
+        "https://www.mbabgi.sa/home"
+      ],
+      "proof": [],
+      "status": "not_applied"
+    },
+    {
+      "id": "phase5-google-14674860521592015536",
+      "name": "معرض الشومر للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "city_scope_conflict",
+      "old_value": "عنيزة",
+      "new_value": "بريدة",
+      "evidence": [
+        "https://haraj.com.sa/11162719489/",
+        "https://haraj.com.sa/11167494598/",
+        "https://www.google.com/maps/?cid=14674860521592015536",
+        "https://haraj.com.sa/11162719489/",
+        "https://haraj.com.sa/11167494598/"
+      ],
+      "proof": [],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-entity-65cb7cddce51-26",
+      "name": "معرض السواق للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-entity-65cb7cddce51-26"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "entity-65cb7cddce51"
+      },
+      "evidence": [
+        "https://www.google.com/maps?cid=7379344931059592204"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=entity-65cb7cddce51",
+        "stored_neighborhood=الجزيرة",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-entity-88fe7e89ed9b-27",
+      "name": "معرض العين للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-entity-88fe7e89ed9b-27"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "entity-88fe7e89ed9b"
+      },
+      "evidence": [
+        "https://www.google.com/maps?cid=1915662507814545437"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=entity-88fe7e89ed9b",
+        "stored_neighborhood=الجزيرة",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-entity-f486968da68f-28",
+      "name": "معرض يزيد للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-entity-f486968da68f-28"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "entity-f486968da68f"
+      },
+      "evidence": [
+        "https://www.google.com/maps?cid=7252323014565702336"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=entity-f486968da68f",
+        "stored_neighborhood=الجزيرة",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-entity-61ad2c52ce31-29",
+      "name": "معرض ون كار للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-entity-61ad2c52ce31-29"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "entity-61ad2c52ce31"
+      },
+      "evidence": [
+        "https://www.google.com/maps?cid=10568589926404639721"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=entity-61ad2c52ce31",
+        "stored_neighborhood=الجزيرة",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-1d652336c58a-30",
+      "name": "معرض الثواب للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-1d652336c58a-30"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-1d652336c58a"
+      },
+      "evidence": [
+        "https://www.google.com/maps/?cid=11330109308896036467"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-1d652336c58a",
+        "stored_neighborhood=الجزيرة، شارع المعارض",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-72957fc3dcf9-31",
+      "name": "معرض العمر للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-72957fc3dcf9-31"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-72957fc3dcf9"
+      },
+      "evidence": [
+        "https://haraj.com.sa/11183337105/",
+        "https://www.google.com/maps/?cid=2649823631827727372"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-72957fc3dcf9",
+        "stored_neighborhood=الجزيرة",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-17e3aaa9dbc1-32",
+      "name": "معرض الحنيني للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-17e3aaa9dbc1-32"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-17e3aaa9dbc1"
+      },
+      "evidence": [
+        "https://haraj.com/11185816408/",
+        "https://haraj.com.sa/11185191352/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%86%D9%8A%D9%86%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-17e3aaa9dbc1",
+        "stored_neighborhood=الجزيرة، المعارض",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-8529bdf902df-33",
+      "name": "معرض نهضة السعودية للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-8529bdf902df-33"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-8529bdf902df"
+      },
+      "evidence": [
+        "https://www.google.com/maps/?cid=984081930831597039"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-8529bdf902df",
+        "stored_neighborhood=الجزيرة",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-28e996896042-34",
+      "name": "معرض سلطان الزعاق للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-28e996896042-34"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-28e996896042"
+      },
+      "evidence": [
+        "https://www.google.com/maps/?cid=1959047558649111581"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-28e996896042",
+        "stored_neighborhood=الجزيرة، المعارض",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-5eb858a520a4-35",
+      "name": "معرض كلاس للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-5eb858a520a4-35"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-5eb858a520a4"
+      },
+      "evidence": [
+        "https://haraj.com.sa/11183075099/",
+        "https://beta.haraj.com.sa/11186774978/",
+        "https://www.google.com/maps/?cid=7454404555245510583"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-5eb858a520a4",
+        "stored_neighborhood=الجزيرة، قرطبة",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-39a5a70300d4-36",
+      "name": "معرض رصد الفخامة للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-39a5a70300d4-36"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-39a5a70300d4"
+      },
+      "evidence": [
+        "https://www.snapchat.com/%40mtrrrrf?locale=sv-SE",
+        "https://haraj.com.sa/11189080613/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D8%B5%D8%AF%20%D8%A7%D9%84%D9%81%D8%AE%D8%A7%D9%85%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-39a5a70300d4",
+        "stored_neighborhood=الجزيرة",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-4de01a5b7b78-37",
+      "name": "معرض رصد نجد للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-4de01a5b7b78-37"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-4de01a5b7b78"
+      },
+      "evidence": [
+        "https://haraj.com.sa/11180276721/",
+        "https://haraj.com.sa/11175605707/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D8%B5%D8%AF%20%D9%86%D8%AC%D8%AF%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-4de01a5b7b78",
+        "stored_neighborhood=الجزيرة",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-2535e653ff82-38",
+      "name": "معرض الجوعي للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-2535e653ff82-38"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-2535e653ff82"
+      },
+      "evidence": [
+        "https://haraj.com/11188699136/",
+        "https://haraj.com.sa/11188767929/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AC%D9%88%D8%B9%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-2535e653ff82",
+        "stored_neighborhood=الجزيرة، شارع المعارض",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-34768af6371d-39",
+      "name": "معرض يوسف الركبي للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-34768af6371d-39"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-34768af6371d"
+      },
+      "evidence": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%8A%D9%88%D8%B3%D9%81%20%D8%A7%D9%84%D8%B1%D9%83%D8%A8%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-34768af6371d",
+        "stored_neighborhood=الجزيرة",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-6cb5f4d4506f-40",
+      "name": "معرض رصد النجوم للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-6cb5f4d4506f-40"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-6cb5f4d4506f"
+      },
+      "evidence": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D8%B5%D8%AF%D8%A7%D9%84%D9%86%D8%AC%D9%88%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-6cb5f4d4506f",
+        "stored_neighborhood=الجزيرة، طريق قرطبة",
+        "coordinates=26.40874,43.87542"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-61e242e0fb5c-41",
+      "name": "معرض العمري للسيارات ببريدة",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-61e242e0fb5c-41"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-61e242e0fb5c"
+      },
+      "evidence": [
+        "https://www.google.com/maps/?cid=15469127827695661937"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-61e242e0fb5c",
+        "stored_neighborhood=بريدة",
+        "coordinates=26.4077724,43.8789597"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-84a836c91f7c-42",
+      "name": "معرض الحسن للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-84a836c91f7c-42"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-84a836c91f7c"
+      },
+      "evidence": [
+        "https://www.google.com/maps/?cid=2691009453807433308"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-84a836c91f7c",
+        "stored_neighborhood=الجزيرة، شارع المعارض"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-802875b5e42b-43",
+      "name": "معرض ريادة المركبات للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-802875b5e42b-43"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-802875b5e42b"
+      },
+      "evidence": [
+        "https://www.google.com/maps/?cid=15671310233964637836"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-802875b5e42b",
+        "stored_neighborhood=الجزيرة، شارع المعارض"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-b4aeb4edf7b8-44",
+      "name": "معرض الخيمة للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-b4aeb4edf7b8-44"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-b4aeb4edf7b8"
+      },
+      "evidence": [
+        "https://www.google.com/maps/?cid=14816848140957479822"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-b4aeb4edf7b8",
+        "stored_neighborhood=المعارض، شارع قرطبة"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-car-phase5-car-3aadec05b977-45",
+      "name": "معرض وارد الامتياز للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-car-phase5-car-3aadec05b977-45"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-3aadec05b977"
+      },
+      "evidence": [
+        "https://haraj.com.sa/11174857301/",
+        "https://beta.haraj.com.sa/11185820587/",
+        "https://www.google.com/maps/?cid=4399106248976947723"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-3aadec05b977",
+        "stored_neighborhood=الجزيرة"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-entity-44019da87964-017",
+      "name": "ابن الجبيل للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-pdf-entity-44019da87964-017"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "entity-44019da87964"
+      },
+      "evidence": [
+        "https://ibn-aljubil.com/showroom"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=entity-44019da87964",
+        "stored_neighborhood="
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase5-car-a1fbedf16e10-017",
+      "name": "معرض عالم الدوحة للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-pdf-phase5-car-a1fbedf16e10-017"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-a1fbedf16e10"
+      },
+      "evidence": [
+        "https://haraj.com.sa/11186495973/",
+        "https://haraj.com.sa/11187340585/",
+        "https://www.google.com/maps/?cid=9265664504288849499"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-a1fbedf16e10",
+        "stored_neighborhood=بريدة"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase5-car-cb09e15b0d61-017",
+      "name": "معرض الشبرمي للسيارات ببريدة",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-pdf-phase5-car-cb09e15b0d61-017"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-cb09e15b0d61"
+      },
+      "evidence": [
+        "https://www.google.com/maps/?cid=11759714580601117630"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-cb09e15b0d61",
+        "stored_neighborhood=بريدة"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase5-car-4b9ba799e221-017",
+      "name": "معرض المحيا للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-pdf-phase5-car-4b9ba799e221-017"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-car-4b9ba799e221"
+      },
+      "evidence": [
+        "https://www.google.com/maps/?cid=3930363977058113059"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-car-4b9ba799e221",
+        "stored_neighborhood=بريدة"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase5-google-16966314980904996465-017",
+      "name": "معرض البحر العربي للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "عنيزة",
+        "id": "regional-pdf-phase5-google-16966314980904996465-017"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_unayzah_scope",
+        "retain_id": "phase5-google-16966314980904996465"
+      },
+      "evidence": [
+        "https://www.google.com/maps/?cid=16966314980904996465"
+      ],
+      "proof": [
+        "originCity=بريدة",
+        "regionalListingOf=phase5-google-16966314980904996465",
+        "stored_neighborhood=شارع المعارض العام،بريدة"
       ],
       "status": "not_applied"
     }
