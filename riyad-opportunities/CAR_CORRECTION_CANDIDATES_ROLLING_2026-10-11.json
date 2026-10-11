@@ -3,7 +3,7 @@
   "generated_at": "2026-10-11",
   "repository": "ELHAME25/elhame25.github.io",
   "branch": "fix/scope-counts-nhc-20261010",
-  "through_audit_head": "0b80b64897cc142b3fb62537c414865b8ce94370",
+  "through_audit_head": "56637e55f38371bfc1284d96886fa920c6953914",
   "safety": {
     "cars_json_modified_by_this_package": false,
     "qadisiyah_included": false,
@@ -12,9 +12,9 @@
   "summary": {
     "baseline_applied_records": 2,
     "baseline_applied_field_changes": 6,
-    "pending_confirmed": 40,
-    "pending_review_required": 2,
-    "note": "Rolling package through completion of Unayzah. No pending item is authorized for cars.json."
+    "pending_confirmed": 98,
+    "pending_review_required": 6,
+    "note": "Rolling package through completion of Makkah. No pending item is authorized for cars.json."
   },
   "applied_baseline_history": [
     {
@@ -1068,6 +1068,1279 @@
         "stored_neighborhood=شارع المعارض العام،بريدة"
       ],
       "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-entity-781752dff6d0-009",
+      "name": "معرض القصيم",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-entity-781752dff6d0-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "entity-781752dff6d0"
+      },
+      "proof": [
+        "originCity=صبيا",
+        "regionalListingOf=entity-781752dff6d0",
+        "stored_neighborhood=",
+        "coordinates=null,null"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-entity-0f6b1be97a66-009",
+      "name": "معرض العالمية للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-entity-0f6b1be97a66-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "entity-0f6b1be97a66"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=entity-0f6b1be97a66",
+        "stored_neighborhood=طريق الملك عبدالله، المنطقة الصناعية، جيزان 82621، المملكة العربية السعودية",
+        "coordinates=16.83097,42.62953"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-entity-ce43a7dc2866-009",
+      "name": "معرض موتور وان للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-entity-ce43a7dc2866-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "entity-ce43a7dc2866"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=entity-ce43a7dc2866",
+        "stored_neighborhood=4050 طريق الملك عبدالعزيز، جازان 82722 6868، المملكة العربية السعودية",
+        "coordinates=16.88637,42.57532"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-f68610bf3d6644-009",
+      "name": "القصيم للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-f68610bf3d6644-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-f68610bf3d6644"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-f68610bf3d6644",
+        "stored_neighborhood=طريق الملك عبدالعزيز، جيزان 82722، المملكة العربية السعودية",
+        "coordinates=16.88664,42.57483"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-00e3bc16bfad3d-009",
+      "name": "معرض نايف للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-00e3bc16bfad3d-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-00e3bc16bfad3d"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-00e3bc16bfad3d",
+        "stored_neighborhood=طريق الملك عبدالعزيز، جيزان 82721، المملكة العربية السعودية",
+        "coordinates=16.8859,42.57751"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-7b5880f3dce5f8-009",
+      "name": "شركة اضواء خميس مشيط للسيارات جازان",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-7b5880f3dce5f8-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-7b5880f3dce5f8"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-7b5880f3dce5f8",
+        "stored_neighborhood=طريق الملك عبدالعزيز، جيزان 82722، المملكة العربية السعودية",
+        "coordinates=16.88624,42.57627"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-a3d330066c2da4-009",
+      "name": "لوكار للسيارات فرع جيزان",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-a3d330066c2da4-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-a3d330066c2da4"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-a3d330066c2da4",
+        "stored_neighborhood=طريق الملك فيصل، جيزان 82741، المملكة العربية السعودية",
+        "coordinates=16.8795,42.60245"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-f8d6bc714bbda0-009",
+      "name": "شيخ المعارض",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-f8d6bc714bbda0-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-f8d6bc714bbda0"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-f8d6bc714bbda0",
+        "stored_neighborhood=RJJH+7XM، المنطقة الصناعية، جيزان 82621، المملكة العربية السعودية",
+        "coordinates=16.83072,42.62993"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-812be51786f8aa-009",
+      "name": "شركة إكسون للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-812be51786f8aa-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-812be51786f8aa"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-812be51786f8aa",
+        "stored_neighborhood=طريق الملك عبدالعزيز، الصفا، جيزان 82721، المملكة العربية السعودية",
+        "coordinates=16.88532,42.5767"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-7018abada2b85b-009",
+      "name": "معرض تاج العريش",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-7018abada2b85b-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-7018abada2b85b"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-7018abada2b85b",
+        "stored_neighborhood=طريق الملك عبدالله، المنطقة الصناعية، جيزان 82622، المملكة العربية السعودية",
+        "coordinates=16.83178,42.6335"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-48efa9b6c706b4-009",
+      "name": "شركة نجوم الفلاح للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-48efa9b6c706b4-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-48efa9b6c706b4"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-48efa9b6c706b4",
+        "stored_neighborhood=جيزان 82722، المملكة العربية السعودية",
+        "coordinates=16.88594,42.57756"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-bcaefe8211fc19-009",
+      "name": "العاصمة بن جلالة للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-bcaefe8211fc19-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-bcaefe8211fc19"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-bcaefe8211fc19",
+        "stored_neighborhood=4083 طريق الملك عبدالعزيز، الصفا، جيزان 82721، المملكة العربية السعودية",
+        "coordinates=16.88452,42.58"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-61690a218e60a0-009",
+      "name": "معرض شركة اداابت للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-61690a218e60a0-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-61690a218e60a0"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-61690a218e60a0",
+        "stored_neighborhood=WG4X+35X، الشاطئ، جيزان 82725، المملكة العربية السعودية",
+        "coordinates=16.90523,42.54797"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-aec74c87b01e91-009",
+      "name": "معرض الفاضل للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-aec74c87b01e91-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-aec74c87b01e91"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-aec74c87b01e91",
+        "stored_neighborhood=طريق الملك عبدالله، المنطقة الصناعية، جيزان 82511، المملكة العربية السعودية",
+        "coordinates=16.83125,42.63169"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-266ff450cfead5-009",
+      "name": "معرض ظفر الوسام للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-266ff450cfead5-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-266ff450cfead5"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-266ff450cfead5",
+        "stored_neighborhood=RJJH+3CW، حي المعارض، جيزان 82621، المملكة العربية السعودية",
+        "coordinates=16.83024,42.62858"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-9de2819da7ff65-009",
+      "name": "معرض جازان للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-9de2819da7ff65-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-9de2819da7ff65"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-9de2819da7ff65",
+        "stored_neighborhood=VHQC+QVG، جيزان 82722، المملكة العربية السعودية",
+        "map_kind=direct_place"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-a5ea0667872316-009",
+      "name": "Autozone Jizan",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-a5ea0667872316-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-a5ea0667872316"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-a5ea0667872316",
+        "stored_neighborhood=4083 طريق الملك عبدالعزيز، الصفا، جيزان 82721، المملكة العربية السعودية",
+        "map_kind=direct_place"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-6573b5e2174a73-009",
+      "name": "معرض قمه عسير للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-6573b5e2174a73-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-6573b5e2174a73"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=phase6-cars-6573b5e2174a73",
+        "stored_neighborhood=XV36+W9R، الصناعية، أبو عريش84216",
+        "map_kind=direct_place"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-8e1ef9c80a327c-009",
+      "name": "معرض مركبة الرؤية للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-phase6-cars-8e1ef9c80a327c-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "phase6-cars-8e1ef9c80a327c"
+      },
+      "proof": [
+        "originCity=صبيا",
+        "regionalListingOf=phase6-cars-8e1ef9c80a327c",
+        "stored_neighborhood=العام، صبيا 85297، المملكة العربية السعودية",
+        "map_kind=missing_or_search"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-national-primary-budget-13879183185635902606-009",
+      "name": "بدجت - معرض جيزان",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-national-primary-budget-13879183185635902606-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "national-primary-budget-13879183185635902606"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=national-primary-budget-13879183185635902606",
+        "stored_neighborhood=",
+        "map_kind=direct_place"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-d0cd534a5437-009",
+      "name": "معرض قمة عسير لبيع وشراء السيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-v9-car-d0cd534a5437-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "v9-car-d0cd534a5437"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-d0cd534a5437",
+        "stored_neighborhood=شارع المعارض، الصناعية، أبو عريش 62529",
+        "map_kind=missing_or_search"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-6034f3303506-009",
+      "name": "معرض المعشي",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-v9-car-6034f3303506-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "v9-car-6034f3303506"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-6034f3303506",
+        "stored_neighborhood=المعارض، أبو عريش 84216",
+        "map_kind=missing_or_search"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-921b1d2e358b-009",
+      "name": "معرض مكس كارز للسيارات أبو عريش",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-v9-car-921b1d2e358b-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "v9-car-921b1d2e358b"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-921b1d2e358b",
+        "stored_neighborhood=الصناعية، أبو عريش 84718",
+        "map_kind=missing_or_search"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-c61e61e7e45b-009",
+      "name": "معرض الوفاء للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-v9-car-c61e61e7e45b-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "v9-car-c61e61e7e45b"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-c61e61e7e45b",
+        "stored_neighborhood=طريق الملك عبدالله، الصناعية، أبو عريش 84216",
+        "map_kind=missing_or_search"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-d585c7680b4a-009",
+      "name": "معرض بوابة المركبات للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-v9-car-d585c7680b4a-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "v9-car-d585c7680b4a"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-d585c7680b4a",
+        "stored_neighborhood=طريق الملك عبدالله، الصناعية، أبو عريش 84212",
+        "map_kind=missing_or_search"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-e7ed2ccacdc2-009",
+      "name": "معرض الحكمي",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-v9-car-e7ed2ccacdc2-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "v9-car-e7ed2ccacdc2"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-e7ed2ccacdc2",
+        "stored_neighborhood=الصناعية، أبو عريش 84216",
+        "map_kind=missing_or_search"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-005018b74aea-009",
+      "name": "معرض المعافا للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-v9-car-005018b74aea-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "v9-car-005018b74aea"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-005018b74aea",
+        "stored_neighborhood=الصناعية، أبو عريش 84216",
+        "map_kind=missing_or_search"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-63c2f51fadb2-009",
+      "name": "معرض رواد النوادر",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-v9-car-63c2f51fadb2-009"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "v9-car-63c2f51fadb2"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-63c2f51fadb2",
+        "stored_neighborhood=معارض السيارات، أبو عريش",
+        "map_kind=missing_or_search"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-022-002",
+      "name": "معرض الثقة للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-pdf-smalltown-022-002"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "pdf-smalltown-022"
+      },
+      "proof": [
+        "originCity=صامطة",
+        "regionalListingOf=pdf-smalltown-022",
+        "stored_neighborhood=86735 صامطة، Q4P+P2JW",
+        "map_kind=missing_or_search"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-023-002",
+      "name": "معرض عسكر للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "أحد المسارحة",
+        "id": "regional-pdf-pdf-smalltown-023-002"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ahad_al_masarihah_scope",
+        "retain_id": "pdf-smalltown-023"
+      },
+      "proof": [
+        "originCity=صامطة",
+        "regionalListingOf=pdf-smalltown-023",
+        "stored_neighborhood=الصناعية ،صامطة 86385",
+        "map_kind=missing_or_search"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-entity-781752dff6d0-056",
+      "name": "معرض القصيم",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-entity-781752dff6d0-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "entity-781752dff6d0"
+      },
+      "proof": [
+        "originCity=صبيا",
+        "regionalListingOf=entity-781752dff6d0",
+        "stored_neighborhood=",
+        "coordinates=null,null"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-entity-0f6b1be97a66-056",
+      "name": "معرض العالمية للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-entity-0f6b1be97a66-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "entity-0f6b1be97a66"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=entity-0f6b1be97a66",
+        "stored_neighborhood=طريق الملك عبدالله، المنطقة الصناعية، جيزان 82621، المملكة العربية السعودية",
+        "coordinates=16.83097,42.62953"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-entity-ce43a7dc2866-056",
+      "name": "معرض موتور وان للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-entity-ce43a7dc2866-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "entity-ce43a7dc2866"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=entity-ce43a7dc2866",
+        "stored_neighborhood=4050 طريق الملك عبدالعزيز، جازان 82722 6868، المملكة العربية السعودية",
+        "coordinates=16.88637,42.57532"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-f68610bf3d6644-056",
+      "name": "القصيم للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-f68610bf3d6644-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-f68610bf3d6644"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-f68610bf3d6644",
+        "stored_neighborhood=طريق الملك عبدالعزيز، جيزان 82722، المملكة العربية السعودية",
+        "coordinates=16.88664,42.57483"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-00e3bc16bfad3d-056",
+      "name": "معرض نايف للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-00e3bc16bfad3d-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-00e3bc16bfad3d"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-00e3bc16bfad3d",
+        "stored_neighborhood=طريق الملك عبدالعزيز، جيزان 82721، المملكة العربية السعودية",
+        "coordinates=16.8859,42.57751"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-7b5880f3dce5f8-056",
+      "name": "شركة اضواء خميس مشيط للسيارات جازان",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-7b5880f3dce5f8-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-7b5880f3dce5f8"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-7b5880f3dce5f8",
+        "stored_neighborhood=طريق الملك عبدالعزيز، جيزان 82722، المملكة العربية السعودية",
+        "coordinates=16.88624,42.57627"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-a3d330066c2da4-056",
+      "name": "لوكار للسيارات فرع جيزان",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-a3d330066c2da4-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-a3d330066c2da4"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-a3d330066c2da4",
+        "stored_neighborhood=طريق الملك فيصل، جيزان 82741، المملكة العربية السعودية",
+        "coordinates=16.8795,42.60245"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-f8d6bc714bbda0-056",
+      "name": "شيخ المعارض",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-f8d6bc714bbda0-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-f8d6bc714bbda0"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-f8d6bc714bbda0",
+        "stored_neighborhood=RJJH+7XM، المنطقة الصناعية، جيزان 82621، المملكة العربية السعودية",
+        "coordinates=16.83072,42.62993"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-812be51786f8aa-056",
+      "name": "شركة إكسون للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-812be51786f8aa-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-812be51786f8aa"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-812be51786f8aa",
+        "stored_neighborhood=طريق الملك عبدالعزيز، الصفا، جيزان 82721، المملكة العربية السعودية",
+        "coordinates=16.88532,42.5767"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-7018abada2b85b-056",
+      "name": "معرض تاج العريش",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-7018abada2b85b-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-7018abada2b85b"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-7018abada2b85b",
+        "stored_neighborhood=طريق الملك عبدالله، المنطقة الصناعية، جيزان 82622، المملكة العربية السعودية",
+        "coordinates=16.83178,42.6335"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-48efa9b6c706b4-056",
+      "name": "شركة نجوم الفلاح للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-48efa9b6c706b4-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-48efa9b6c706b4"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-48efa9b6c706b4",
+        "stored_neighborhood=جيزان 82722، المملكة العربية السعودية",
+        "coordinates=16.88594,42.57756"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-bcaefe8211fc19-056",
+      "name": "العاصمة بن جلالة للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-bcaefe8211fc19-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-bcaefe8211fc19"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-bcaefe8211fc19",
+        "stored_neighborhood=4083 طريق الملك عبدالعزيز، الصفا، جيزان 82721، المملكة العربية السعودية",
+        "coordinates=16.88452,42.58"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-61690a218e60a0-056",
+      "name": "معرض شركة اداابت للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-61690a218e60a0-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-61690a218e60a0"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-61690a218e60a0",
+        "stored_neighborhood=WG4X+35X، الشاطئ، جيزان 82725، المملكة العربية السعودية",
+        "coordinates=16.90523,42.54797"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-aec74c87b01e91-056",
+      "name": "معرض الفاضل للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-aec74c87b01e91-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-aec74c87b01e91"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-aec74c87b01e91",
+        "stored_neighborhood=طريق الملك عبدالله، المنطقة الصناعية، جيزان 82511، المملكة العربية السعودية",
+        "coordinates=16.83125,42.63169"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-266ff450cfead5-056",
+      "name": "معرض ظفر الوسام للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-266ff450cfead5-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-266ff450cfead5"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-266ff450cfead5",
+        "stored_neighborhood=RJJH+3CW، حي المعارض، جيزان 82621، المملكة العربية السعودية",
+        "coordinates=16.83024,42.62858"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-9de2819da7ff65-056",
+      "name": "معرض جازان للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-9de2819da7ff65-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-9de2819da7ff65"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-9de2819da7ff65",
+        "stored_neighborhood=VHQC+QVG، جيزان 82722، المملكة العربية السعودية"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-a5ea0667872316-056",
+      "name": "Autozone Jizan",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-a5ea0667872316-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-a5ea0667872316"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=phase6-cars-a5ea0667872316",
+        "stored_neighborhood=4083 طريق الملك عبدالعزيز، الصفا، جيزان 82721، المملكة العربية السعودية"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-6573b5e2174a73-056",
+      "name": "معرض قمه عسير للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-6573b5e2174a73-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-6573b5e2174a73"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=phase6-cars-6573b5e2174a73",
+        "stored_neighborhood=XV36+W9R، الصناعية، أبو عريش84216"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-phase6-cars-8e1ef9c80a327c-056",
+      "name": "معرض مركبة الرؤية للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-phase6-cars-8e1ef9c80a327c-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "phase6-cars-8e1ef9c80a327c"
+      },
+      "proof": [
+        "originCity=صبيا",
+        "regionalListingOf=phase6-cars-8e1ef9c80a327c",
+        "stored_neighborhood=العام، صبيا 85297، المملكة العربية السعودية"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-national-primary-budget-13879183185635902606-056",
+      "name": "بدجت - معرض جيزان",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-national-primary-budget-13879183185635902606-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "national-primary-budget-13879183185635902606"
+      },
+      "proof": [
+        "originCity=جازان",
+        "regionalListingOf=national-primary-budget-13879183185635902606",
+        "stored_neighborhood="
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-d0cd534a5437-056",
+      "name": "معرض قمة عسير لبيع وشراء السيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-v9-car-d0cd534a5437-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "v9-car-d0cd534a5437"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-d0cd534a5437",
+        "stored_neighborhood=شارع المعارض، الصناعية، أبو عريش 62529"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-6034f3303506-056",
+      "name": "معرض المعشي",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-v9-car-6034f3303506-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "v9-car-6034f3303506"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-6034f3303506",
+        "stored_neighborhood=المعارض، أبو عريش 84216"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-921b1d2e358b-056",
+      "name": "معرض مكس كارز للسيارات أبو عريش",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-v9-car-921b1d2e358b-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "v9-car-921b1d2e358b"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-921b1d2e358b",
+        "stored_neighborhood=الصناعية، أبو عريش 84718"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-c61e61e7e45b-056",
+      "name": "معرض الوفاء للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-v9-car-c61e61e7e45b-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "v9-car-c61e61e7e45b"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-c61e61e7e45b",
+        "stored_neighborhood=طريق الملك عبدالله، الصناعية، أبو عريش 84216"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-d585c7680b4a-056",
+      "name": "معرض بوابة المركبات للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-v9-car-d585c7680b4a-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "v9-car-d585c7680b4a"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-d585c7680b4a",
+        "stored_neighborhood=طريق الملك عبدالله، الصناعية، أبو عريش 84212"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-e7ed2ccacdc2-056",
+      "name": "معرض الحكمي",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-v9-car-e7ed2ccacdc2-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "v9-car-e7ed2ccacdc2"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-e7ed2ccacdc2",
+        "stored_neighborhood=الصناعية، أبو عريش 84216"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-005018b74aea-056",
+      "name": "معرض المعافا للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-v9-car-005018b74aea-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "v9-car-005018b74aea"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-005018b74aea",
+        "stored_neighborhood=الصناعية، أبو عريش 84216"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-v9-car-63c2f51fadb2-056",
+      "name": "معرض رواد النوادر",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "old_value": {
+        "city": "صامطة",
+        "id": "regional-pdf-v9-car-63c2f51fadb2-056"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_samtah_scope",
+        "retain_id": "v9-car-63c2f51fadb2"
+      },
+      "proof": [
+        "originCity=أبو عريش",
+        "regionalListingOf=v9-car-63c2f51fadb2",
+        "stored_neighborhood=معارض السيارات، أبو عريش"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "phase6-google-2266458032871672264",
+      "name": "معرض الراضي للسيارات",
+      "classification": "review_required_before_approval",
+      "type": "phone_conflict_review",
+      "field": "phones",
+      "old_value": [
+        "0555508208"
+      ],
+      "new_value": [
+        "0125315000"
+      ],
+      "status": "not_applied",
+      "evidence": [
+        "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74"
+      ]
+    },
+    {
+      "id": "phase6-google-16103946259151844909",
+      "name": "معرض ابو هاني للسيارات",
+      "classification": "review_required_before_approval",
+      "type": "phone_conflict_review",
+      "field": "phones",
+      "old_value": [
+        "0505511878"
+      ],
+      "new_value": [
+        "0555557342"
+      ],
+      "status": "not_applied",
+      "evidence": [
+        "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74"
+      ]
+    },
+    {
+      "id": "phase6-google-11467314085846766385",
+      "name": "معرض الرويزن",
+      "classification": "review_required_before_approval",
+      "type": "review_phone_format",
+      "field": "phones",
+      "old_value": [
+        "0500373270"
+      ],
+      "new_value": [
+        "050373270"
+      ],
+      "status": "not_applied",
+      "evidence": [
+        "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74"
+      ]
+    },
+    {
+      "id": "phase6-google-9538097124382675126",
+      "name": "شركة العميري للسيارات واقامة المزادات",
+      "classification": "review_required_before_approval",
+      "type": "phone_conflict_review",
+      "field": "phones",
+      "old_value": [
+        "0555209876"
+      ],
+      "new_value": [
+        "0555510499"
+      ],
+      "status": "not_applied",
+      "evidence": [
+        "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74"
+      ]
     }
   ]
 }
