@@ -1,0 +1,240 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "fc1ff7dec73073ab76462160e653cb928fe6f2c9",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "الطائف، الدفعة 03، إغلاق آخر خمسة سجلات من 25. لم يُستبدل رابط Google Maps بدليل خرائط آخر؛ التعارضات بقيت معلّقة دون اختراع تصحيح.",
+  "count": 5,
+  "note": "الطائف اكتملت مراجعة تغطيتها على 25 سجلًا؛ لا تعديل في cars.json دون إثبات بديل مباشر.",
+  "entries": [
+    {
+      "id": "phase5-google-977602606797274226",
+      "name": "معرض توب كار للسيارات الراقية",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Yandex Maps lists the exact name as a car dealership in Taif.",
+          "sources": [
+            "https://yandex.com/maps/org/95074733477/",
+            "https://x.com/TOPCAR18"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict",
+          "evidence": "Yandex Maps gives Ar Rabie District, Taif (TAAF7672), while stored neighborhood says Al-Ma'arid; exact local pin needs reconciliation.",
+          "sources": [
+            "https://yandex.com/maps/org/95074733477/",
+            "https://x.com/TOPCAR18"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "X account @TOPCAR18 publishes Taif TopCar contact 0127496969 and WhatsApp 0555588373, neither matching stored 0555333282; identity likely related but number conflict unresolved.",
+          "sources": [
+            "https://yandex.com/maps/org/95074733477/",
+            "https://x.com/TOPCAR18"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت رابط واتساب مباشر يخص الرقم المخزن.",
+          "sources": [
+            "https://yandex.com/maps/org/95074733477/",
+            "https://x.com/TOPCAR18"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم أتمكن من مطابقة دبوس Google Maps المرتبط بالسجل مباشرة بالاسم والحي والهاتف؛ نتائج Yandex أو روابط البحث لا تستبدل دبوس Google.",
+          "sources": [
+            "https://yandex.com/maps/org/95074733477/",
+            "https://x.com/TOPCAR18"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط من المصادر المباشرة المتاحة.",
+          "sources": [
+            "https://yandex.com/maps/org/95074733477/",
+            "https://x.com/TOPCAR18"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-google-18346828850129065532",
+      "name": "معرض الأزوري للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No exact independent listing found.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored plus code/locality not independently verified.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Neither mobile nor landline independently confirmed.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت رابط واتساب مباشر يخص الرقم المخزن.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم أتمكن من مطابقة دبوس Google Maps المرتبط بالسجل مباشرة بالاسم والحي والهاتف؛ نتائج Yandex أو روابط البحث لا تستبدل دبوس Google.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط من المصادر المباشرة المتاحة.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase5-google-7350114245114851184",
+      "name": "معرض صقر الطائف للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Exact-name/phone searches returned unrelated results; no exact Taif dealer confirmation.",
+          "sources": [
+            "https://x.com/falconauto_co"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored address not independently confirmed.",
+          "sources": [
+            "https://x.com/falconauto_co"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored mobile not confirmed; results for شركة الصقر للسيارات were Riyadh and unrelated.",
+          "sources": [
+            "https://x.com/falconauto_co"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت رابط واتساب مباشر يخص الرقم المخزن.",
+          "sources": [
+            "https://x.com/falconauto_co"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم أتمكن من مطابقة دبوس Google Maps المرتبط بالسجل مباشرة بالاسم والحي والهاتف؛ نتائج Yandex أو روابط البحث لا تستبدل دبوس Google.",
+          "sources": [
+            "https://x.com/falconauto_co"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط من المصادر المباشرة المتاحة.",
+          "sources": [
+            "https://x.com/falconauto_co"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-google-12982528182969435934",
+      "name": "معرض الوذيناني للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "A current Haraj seller account exists under the exact name معرض الوذيناني للسيارات.",
+          "sources": [
+            "https://haraj.com.sa/users/معرض%20الوذيناني%20للسيارات/"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "The seller page identified the business, but the stored Hawiyah address was not independently established in retrieved content.",
+          "sources": [
+            "https://haraj.com.sa/users/معرض%20الوذيناني%20للسيارات/"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored landline 0127255517 was not independently verified.",
+          "sources": [
+            "https://haraj.com.sa/users/معرض%20الوذيناني%20للسيارات/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت رابط واتساب مباشر يخص الرقم المخزن.",
+          "sources": [
+            "https://haraj.com.sa/users/معرض%20الوذيناني%20للسيارات/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم أتمكن من مطابقة دبوس Google Maps المرتبط بالسجل مباشرة بالاسم والحي والهاتف؛ نتائج Yandex أو روابط البحث لا تستبدل دبوس Google.",
+          "sources": [
+            "https://haraj.com.sa/users/معرض%20الوذيناني%20للسيارات/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط من المصادر المباشرة المتاحة.",
+          "sources": [
+            "https://haraj.com.sa/users/معرض%20الوذيناني%20للسيارات/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-025",
+      "name": "معرض الميزاني للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No exact independent match found.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored Hawiyah/Dahhas Bridge location not independently confirmed.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored phone not independently confirmed.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت رابط واتساب مباشر يخص الرقم المخزن.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم أتمكن من مطابقة دبوس Google Maps المرتبط بالسجل مباشرة بالاسم والحي والهاتف؛ نتائج Yandex أو روابط البحث لا تستبدل دبوس Google.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط من المصادر المباشرة المتاحة.",
+          "sources": []
+        }
+      }
+    }
+  ]
+}

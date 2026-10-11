@@ -123,12 +123,15 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   fireDocument('click', target({ 'data-scope': 'city' }));
   assert('all-city scope is explicit and applied', A.state().scope === 'city' && els.app.innerHTML.includes('كل ' + A.state().branch.city));
 
-  // Widening the radius changes results while keeping unlocated records visible.
+  // Branch totals include only geographically verifiable projects; city view retains unlocated projects.
   A.selectBranch('243'); A.state().radius = 5; A.state().scope = 'branch'; A.renderBranch();
-  const projectCount5 = A.itemsFor('projects', '', 'branch').length;
+  const projectCount5 = A.itemsFor('projects', '', 'branch');
+  const cityProjectCount = A.itemsFor('projects', '', 'city');
+  const unknownInBranch = projectCount5.filter(x => x.rankD == null).length;
+  const unknownInCity = cityProjectCount.filter(x => x.rankD == null).length;
   els.radius.value = '10'; els.radius.dispatch('change');
   const projectCount10 = A.itemsFor('projects', '', 'branch').length;
-  assert('widening 5 km to 10 km applies the wider filter', A.state().radius === 10 && A.state().scope === 'branch' && projectCount10 >= projectCount5);
+  assert('branch radius excludes unlocated records while city view retains them', A.state().radius === 10 && A.state().scope === 'branch' && projectCount10 >= projectCount5.length && unknownInBranch === 0 && unknownInCity > 0);
 
   // The search control and live filtering are exercised independently for each populated section.
   const searchable = ['projects', 'opps', 'nhc', 'selfbuild', 'companies', 'offices', 'cars'];
@@ -147,11 +150,29 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const unknownCount = counterRows.filter(x => x.rankD == null).length;
   const approximateCount = counterRows.filter(x => x.rankD != null && x.o.loc === 'nb').length;
   const exactCount = counterRows.length - unknownCount - approximateCount;
-  const branchCounter = counterRows.length > 0 && exactCount > 0 && unknownCount > 0 &&
-    els.content.innerHTML.includes(counterRows.length + ' مشروعًا لنطاق الفرع: ' + exactCount + ' بإحداثيات، ' + approximateCount + ' بمسافة تقريبية، ' + unknownCount + ' موقع غير محدد');
+  const cityUnknownCount = A.itemsFor('projects', '', 'city').filter(x => x.rankD == null).length;
+  const branchCounter = counterRows.length > 0 && exactCount > 0 && unknownCount === 0 &&
+    els.content.innerHTML.includes(counterRows.length + ' مشروعًا ضمن نطاق الفرع');
   els['q-sec'].value = '__qa_no_such_record__'; els['q-sec'].dispatch('input');
-  assert('Riyadh branch project count splits exact, approximate and unknown locations and follows search', branchCounter && els.content.innerHTML.includes('0 مشروعًا لنطاق الفرع: 0 بإحداثيات، 0 بمسافة تقريبية، 0 موقع غير محدد') && els.content.innerHTML.includes('لا نتائج مطابقة'));
+  assert('Riyadh branch count excludes unknown location and city view preserves those projects', branchCounter && cityUnknownCount > 0 && els.content.innerHTML.includes('0 مشروعًا ضمن نطاق الفرع') && !els.content.innerHTML.includes('موقع غير محدد') && els.content.innerHTML.includes('لا نتائج مطابقة'));
 
+  // NHC destinations stay separate from project rows and follow the selected sector.
+  A.selectBranch('243', true); A.state().scope = 'branch'; A.state().tab = 'nhc';
+  const eastBranchDestinations = A.itemsFor('nhc', '', 'branch');
+  A.state().scope = 'sector'; A.state().explore = 'شرق';
+  const eastDestinations = A.itemsFor('nhc', 'شرق', 'sector');
+  A.state().explore = 'شمال';
+  const northDestinations = A.itemsFor('nhc', 'شمال', 'sector');
+  const allDestinations = A.itemsFor('nhc', '', 'city');
+  const eastProjectRowsForCount = A.itemsFor('projects', 'شرق', 'sector');
+  const allRiyadhProjectRowsForCount = A.itemsFor('projects', '', 'city');
+  A.state().explore = 'شرق'; A.state().tab = 'nhc'; A.renderBranch();
+  assert('NHC destinations are separate from projects, sector-specific, and city view retains all destinations',
+    eastBranchDestinations.length === 3 && eastDestinations.length === 3 &&
+    eastDestinations.every(x => (x.o.sectors || []).includes('شرق')) &&
+    northDestinations.length === 1 && allDestinations.length === 5 &&
+    eastProjectRowsForCount.length === 59 && allRiyadhProjectRowsForCount.length === 261 &&
+    els.app.innerHTML.includes('وجهات NHC') && els.app.innerHTML.includes('data-tab="nhc"'));
   // Open details from the card's delegated click, close with its close control, and open by Enter.
   A.state().q = {}; A.state().scope = 'city'; A.state().tab = 'projects'; A.renderBranch();
   const detailIdMatch = els.content.innerHTML.match(/data-detail="(\d+)"/);
@@ -201,13 +222,18 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   });
   assert('review-required cars, self-build and companies stay out of public results', reviewExclusion.every(Boolean));
   const alwateed = d.cars.filter(x => x.n === 'معرض الوتيد للسيارات');
-  const duplicateCityBlocked = alwateed.length === 2 && alwateed.every(x => x.activityReviewStatus === 'REVIEW_REQUIRED') &&
-    alwateed.every(x => {
-      const b = d.branches.find(y => A.sameCity(y.city, x.city));
-      A.selectBranch(b.c, true);
-      return !A.rawItems('cars').some(y => y.o.id === x.id);
-    });
-  assert('same-name showroom with conflicting city is retained for review and hidden in both cities', duplicateCityBlocked);
+  const khamisWateed = alwateed.find(x => x.city === 'خميس مشيط');
+  const abhaWateed = alwateed.find(x => x.city === 'أبها');
+  let verifiedKhamisVisible = false, conflictingAbhaHidden = false;
+  if (khamisWateed && abhaWateed) {
+    const kb = d.branches.find(y => A.sameCity(y.city, khamisWateed.city));
+    A.selectBranch(kb.c, true);
+    verifiedKhamisVisible = khamisWateed.activityReviewStatus === 'verified_khamis_listing_abha_alias_pending' && A.rawItems('cars').some(y => y.o.id === khamisWateed.id);
+    const ab = d.branches.find(y => A.sameCity(y.city, abhaWateed.city));
+    A.selectBranch(ab.c, true);
+    conflictingAbhaHidden = abhaWateed.activityReviewStatus === 'REVIEW_REQUIRED' && !A.rawItems('cars').some(y => y.o.id === abhaWateed.id);
+  }
+  assert('verified Khamis Wateed listing is visible while its same-pin Abha alias stays under review', alwateed.length === 2 && verifiedKhamisVisible && conflictingAbhaHidden);
   const hail = d.branches.find(x => A.sameCity(x.city, 'حائل'));
   A.selectBranch(hail.c, true); A.state().tab = 'selfbuild'; A.state().scope = 'branch'; A.renderBranch();
   const filteredCityTotal = A.compute().selfbuild.total;
@@ -252,11 +278,13 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   A.state().explore = 'وسط';
   const nhcCity = A.itemsFor('nhc', '', 'city').map(x => x.o.id).sort().join('|');
   const nhcCenter = A.itemsFor('nhc', 'وسط', 'sector').map(x => x.o.id).sort().join('|');
+  A.state().tab = 'nhc'; A.state().scope = 'sector'; A.state().explore = 'شرق'; A.renderBranch();
+  const nhcDualCards = els.content.innerHTML.includes('وجهات شرق الرياض') && els.content.innerHTML.includes('كل وجهات الرياض') && els.content.innerHTML.includes('data-nhc-view="sector"') && els.content.innerHTML.includes('data-nhc-view="city"') && els.content.innerHTML.includes('<strong>3</strong>') && els.content.innerHTML.includes('<strong>5</strong>');
   assert('Riyadh central shows Shifa first and both validated showroom groups', centerHasBothGroups);
   assert('Riyadh west routes showrooms to Shifa and north to Qadisiyah', westMapped && northMapped);
   assert('Riyadh East and North are independently selected and filtered', eastOnlyActive && northOnlyActive && eastSectorOnly && northSectorOnly && eastProjects.length > 0 && northProjects.length > 0);
-  assert('NHC destinations remain city-wide when a sector is selected', nhcCity === nhcCenter);
-  A.state().tab = 'cars'; A.renderBranch();
+  assert('Riyadh NHC has separate sector and whole-city cards with every destination accessible', nhcCity.split('|').length === 5 && nhcCenter === '' && nhcDualCards);
+  A.state().scope = 'sector'; A.state().explore = 'وسط'; A.state().carArea = 'all'; A.state().tab = 'cars'; A.renderBranch();
   const centralControls = els.content.innerHTML.includes('data-car-area="shifa" aria-pressed="true"') &&
     els.content.innerHTML.includes('data-car-area="qadisiyah" aria-pressed="true"') &&
     els.content.innerHTML.includes('data-car-area="all" aria-pressed="false"');
@@ -364,7 +392,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   if (areemDetailId) A.openDetail(areemDetailId);
   assert('Areem area preserves the primary NHC statement and exposes its internal official-source discrepancy', !!areem && areem.area.includes('89,905.67') && areem.areaNote.includes('105,827') && areemDetailId && els.detail.innerHTML.includes('تفصيل المساحة') && els.detail.innerHTML.includes('مصدر المساحة') && els.detail.innerHTML.includes('231,637.22'));
   A.selectBranch('176', true);
-  assert('Jeddah branch without a verified pin opens city data without fake zero-distance scope', A.state().scope === 'city' && !els.app.innerHTML.includes('id="radius"') && els.app.innerHTML.includes('لا تتوفر إحداثيات موثوقة لهذا الفرع'));
+  assert('Jeddah branch without a verified pin opens city data without fake zero-distance scope', A.state().scope === 'city' && !els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('إحداثيات موثوقة لهذا الفرع'));
   A.selectBranch('307', true); const rasTanuraDefaultScope = A.state().scope; A.state().tab = 'offices'; A.renderBranch();
   assert('Ras Tanura missing pin still opens full city offices without invented radius', rasTanuraDefaultScope === 'branch' && !els.app.innerHTML.includes('data-scope="branch"') && !els.app.innerHTML.includes('id="radius"') && A.itemsFor('offices','','branch').map(x=>x.o.id).sort().join('|') === A.itemsFor('offices','','city').map(x=>x.o.id).sort().join('|'));
 

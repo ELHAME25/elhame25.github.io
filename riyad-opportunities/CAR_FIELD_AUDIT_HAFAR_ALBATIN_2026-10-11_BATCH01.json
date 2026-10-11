@@ -1,0 +1,540 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "faf6ff3752be2a8fcae25c862fdd64a437d5a8db",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "حفر الباطن، مراجعة 10 سجلات أولى: تحقق مباشر من بطاقات Google Maps، مع مصادر مستقلة مباشرة حيث توفرت؛ الهاتف/الواتساب/الموقع غير المؤكد يبقى معلماً كذلك. هذه متابعة وطنية منفصلة عن تدقيق الطائف المكتمل كسجلات خرائط.",
+  "count": 10,
+  "note": "لا تغييرات على cars.json. خرائط Google هي الدليل المباشر للدبوس والبطاقة، وليست بمفردها مصدراً مستقلاً لتأكيد رقم الهاتف؛ التعارضات مبينة ولم تصحح دون مرجع مستقل.",
+  "entries": [
+    {
+      "id": "national-car-7825aae3e6064c",
+      "name": "معرض عبدالرحمن الشمري للسيارات",
+      "evidence": "Direct stored Google Maps CID opens exact showroom name, car dealer category, Hafar Al Batin industrial/showroom address, and +966509593172 matching the stored phone; plus code C2MV+CV.",
+      "sources": [
+        "https://www.google.com/maps?cid=14109796504681432124"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "confirmed_maps",
+          "evidence": "Direct stored Google Maps CID opens exact showroom name, car dealer category, Hafar Al Batin industrial/showroom address, and +966509593172 matching the stored phone; plus code C2MV+CV.",
+          "sources": [
+            "https://www.google.com/maps?cid=14109796504681432124"
+          ]
+        },
+        "city_locality": {
+          "status": "confirmed_maps",
+          "evidence": "Direct stored Google Maps CID opens exact showroom name, car dealer category, Hafar Al Batin industrial/showroom address, and +966509593172 matching the stored phone; plus code C2MV+CV.",
+          "sources": [
+            "https://www.google.com/maps?cid=14109796504681432124"
+          ]
+        },
+        "phone": {
+          "status": "confirmed_maps",
+          "evidence": "Direct stored Google Maps CID opens exact showroom name, car dealer category, Hafar Al Batin industrial/showroom address, and +966509593172 matching the stored phone; plus code C2MV+CV.",
+          "sources": [
+            "https://www.google.com/maps?cid=14109796504681432124"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded business phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=14109796504681432124"
+          ]
+        },
+        "google_maps": {
+          "status": "verified",
+          "evidence": "Direct stored Google Maps CID opens exact showroom name, car dealer category, Hafar Al Batin industrial/showroom address, and +966509593172 matching the stored phone; plus code C2MV+CV.",
+          "sources": [
+            "https://www.google.com/maps?cid=14109796504681432124"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official business website was established for this entry in this pass; blank Maps website panel is not proof none exists.",
+          "sources": [
+            "https://www.google.com/maps?cid=14109796504681432124"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-a131194b86755e",
+      "name": "معرض الناصر للسيارات",
+      "evidence": "Stored CID opens an empty/default map or a different listing, with the visible phone +966500759070; it does not confirm معرض الناصر or stored 0531857033. Do not use the unrelated destination.",
+      "sources": [
+        "https://www.google.com/maps?cid=5485194684924307210"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "wrong_pin_conflict",
+          "evidence": "Stored CID opens an empty/default map or a different listing, with the visible phone +966500759070; it does not confirm معرض الناصر or stored 0531857033. Do not use the unrelated destination.",
+          "sources": [
+            "https://www.google.com/maps?cid=5485194684924307210"
+          ]
+        },
+        "city_locality": {
+          "status": "wrong_pin_conflict",
+          "evidence": "Stored CID opens an empty/default map or a different listing, with the visible phone +966500759070; it does not confirm معرض الناصر or stored 0531857033. Do not use the unrelated destination.",
+          "sources": [
+            "https://www.google.com/maps?cid=5485194684924307210"
+          ]
+        },
+        "phone": {
+          "status": "wrong_pin_conflict",
+          "evidence": "Stored CID opens an empty/default map or a different listing, with the visible phone +966500759070; it does not confirm معرض الناصر or stored 0531857033. Do not use the unrelated destination.",
+          "sources": [
+            "https://www.google.com/maps?cid=5485194684924307210"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded business phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=5485194684924307210"
+          ]
+        },
+        "google_maps": {
+          "status": "wrong",
+          "evidence": "Stored CID opens an empty/default map or a different listing, with the visible phone +966500759070; it does not confirm معرض الناصر or stored 0531857033. Do not use the unrelated destination.",
+          "sources": [
+            "https://www.google.com/maps?cid=5485194684924307210"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official business website was established for this entry in this pass; blank Maps website panel is not proof none exists.",
+          "sources": [
+            "https://www.google.com/maps?cid=5485194684924307210"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-41521f4209a68a",
+      "name": "معرض العديم للسيارات",
+      "evidence": "Stored CID did not expose a readable matching listing; direct page showed phone +966500759070 but no business title, so association with معرض العديم cannot be established from the pin alone. Independent Aladeem Auto page supports the landline 0137237888 and car trade activity; phone remains supported by first-party evidence.",
+      "sources": [
+        "https://www.google.com/maps?cid=10728070575540965033",
+        "https://aladeemauto.com/"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed_pin",
+          "evidence": "Stored CID did not expose a readable matching listing; direct page showed phone +966500759070 but no business title, so association with معرض العديم cannot be established from the pin alone. Independent Aladeem Auto page supports the landline 0137237888 and car trade activity; phone remains supported by first-party evidence.",
+          "sources": [
+            "https://www.google.com/maps?cid=10728070575540965033",
+            "https://aladeemauto.com/"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed_pin",
+          "evidence": "Stored CID did not expose a readable matching listing; direct page showed phone +966500759070 but no business title, so association with معرض العديم cannot be established from the pin alone. Independent Aladeem Auto page supports the landline 0137237888 and car trade activity; phone remains supported by first-party evidence.",
+          "sources": [
+            "https://www.google.com/maps?cid=10728070575540965033",
+            "https://aladeemauto.com/"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed_pin",
+          "evidence": "Stored CID did not expose a readable matching listing; direct page showed phone +966500759070 but no business title, so association with معرض العديم cannot be established from the pin alone. Independent Aladeem Auto page supports the landline 0137237888 and car trade activity; phone remains supported by first-party evidence.",
+          "sources": [
+            "https://www.google.com/maps?cid=10728070575540965033",
+            "https://aladeemauto.com/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded business phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=10728070575540965033",
+            "https://aladeemauto.com/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID did not expose a readable matching listing; direct page showed phone +966500759070 but no business title, so association with معرض العديم cannot be established from the pin alone. Independent Aladeem Auto page supports the landline 0137237888 and car trade activity; phone remains supported by first-party evidence.",
+          "sources": [
+            "https://www.google.com/maps?cid=10728070575540965033",
+            "https://aladeemauto.com/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official business website was established for this entry in this pass; blank Maps website panel is not proof none exists.",
+          "sources": [
+            "https://www.google.com/maps?cid=10728070575540965033",
+            "https://aladeemauto.com/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-f1bddde384ee20",
+      "name": "معرض مشرع العتيبي للسيارات",
+      "evidence": "Stored CID opens exact معرض مشرع العتيبي للسيارات at the correct Hafar industrial/showroom area, but Maps lists +966554901000, not stored landline 0137250033. Preserve both as conflict pending direct independent contact confirmation.",
+      "sources": [
+        "https://www.google.com/maps?cid=8851408192984393552"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "phone_conflict",
+          "evidence": "Stored CID opens exact معرض مشرع العتيبي للسيارات at the correct Hafar industrial/showroom area, but Maps lists +966554901000, not stored landline 0137250033. Preserve both as conflict pending direct independent contact confirmation.",
+          "sources": [
+            "https://www.google.com/maps?cid=8851408192984393552"
+          ]
+        },
+        "city_locality": {
+          "status": "phone_conflict",
+          "evidence": "Stored CID opens exact معرض مشرع العتيبي للسيارات at the correct Hafar industrial/showroom area, but Maps lists +966554901000, not stored landline 0137250033. Preserve both as conflict pending direct independent contact confirmation.",
+          "sources": [
+            "https://www.google.com/maps?cid=8851408192984393552"
+          ]
+        },
+        "phone": {
+          "status": "phone_conflict",
+          "evidence": "Stored CID opens exact معرض مشرع العتيبي للسيارات at the correct Hafar industrial/showroom area, but Maps lists +966554901000, not stored landline 0137250033. Preserve both as conflict pending direct independent contact confirmation.",
+          "sources": [
+            "https://www.google.com/maps?cid=8851408192984393552"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded business phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=8851408192984393552"
+          ]
+        },
+        "google_maps": {
+          "status": "conflict",
+          "evidence": "Stored CID opens exact معرض مشرع العتيبي للسيارات at the correct Hafar industrial/showroom area, but Maps lists +966554901000, not stored landline 0137250033. Preserve both as conflict pending direct independent contact confirmation.",
+          "sources": [
+            "https://www.google.com/maps?cid=8851408192984393552"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official business website was established for this entry in this pass; blank Maps website panel is not proof none exists.",
+          "sources": [
+            "https://www.google.com/maps?cid=8851408192984393552"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-f97afb8405db10",
+      "name": "معرض مركبة الدمام للسيارات",
+      "evidence": "Stored CID repeatedly returned an empty/default Google Maps card; no business name/address/phone was readable, so current link is unconfirmed, not proven broken.",
+      "sources": [
+        "https://www.google.com/maps?cid=8795043352371008225"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed_pin",
+          "evidence": "Stored CID repeatedly returned an empty/default Google Maps card; no business name/address/phone was readable, so current link is unconfirmed, not proven broken.",
+          "sources": [
+            "https://www.google.com/maps?cid=8795043352371008225"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed_pin",
+          "evidence": "Stored CID repeatedly returned an empty/default Google Maps card; no business name/address/phone was readable, so current link is unconfirmed, not proven broken.",
+          "sources": [
+            "https://www.google.com/maps?cid=8795043352371008225"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed_pin",
+          "evidence": "Stored CID repeatedly returned an empty/default Google Maps card; no business name/address/phone was readable, so current link is unconfirmed, not proven broken.",
+          "sources": [
+            "https://www.google.com/maps?cid=8795043352371008225"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded business phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=8795043352371008225"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID repeatedly returned an empty/default Google Maps card; no business name/address/phone was readable, so current link is unconfirmed, not proven broken.",
+          "sources": [
+            "https://www.google.com/maps?cid=8795043352371008225"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official business website was established for this entry in this pass; blank Maps website panel is not proof none exists.",
+          "sources": [
+            "https://www.google.com/maps?cid=8795043352371008225"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-7a163d43f01fd9",
+      "name": "شركة قوافل النخبة للسيارات",
+      "evidence": "Direct CID opens شركة قوافل النخبة للسيارات, commercial car outlet, Hafar industrial/showroom address, phone +966137257600 matching stored number. No website/WhatsApp displayed.",
+      "sources": [
+        "https://www.google.com/maps?cid=11125751618932715886"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "confirmed_maps",
+          "evidence": "Direct CID opens شركة قوافل النخبة للسيارات, commercial car outlet, Hafar industrial/showroom address, phone +966137257600 matching stored number. No website/WhatsApp displayed.",
+          "sources": [
+            "https://www.google.com/maps?cid=11125751618932715886"
+          ]
+        },
+        "city_locality": {
+          "status": "confirmed_maps",
+          "evidence": "Direct CID opens شركة قوافل النخبة للسيارات, commercial car outlet, Hafar industrial/showroom address, phone +966137257600 matching stored number. No website/WhatsApp displayed.",
+          "sources": [
+            "https://www.google.com/maps?cid=11125751618932715886"
+          ]
+        },
+        "phone": {
+          "status": "confirmed_maps",
+          "evidence": "Direct CID opens شركة قوافل النخبة للسيارات, commercial car outlet, Hafar industrial/showroom address, phone +966137257600 matching stored number. No website/WhatsApp displayed.",
+          "sources": [
+            "https://www.google.com/maps?cid=11125751618932715886"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded business phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=11125751618932715886"
+          ]
+        },
+        "google_maps": {
+          "status": "verified",
+          "evidence": "Direct CID opens شركة قوافل النخبة للسيارات, commercial car outlet, Hafar industrial/showroom address, phone +966137257600 matching stored number. No website/WhatsApp displayed.",
+          "sources": [
+            "https://www.google.com/maps?cid=11125751618932715886"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official business website was established for this entry in this pass; blank Maps website panel is not proof none exists.",
+          "sources": [
+            "https://www.google.com/maps?cid=11125751618932715886"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-1cb31c9bff59f3",
+      "name": "معرض محمد ناصر المطيري لتجارة السيارات",
+      "evidence": "Direct Google Maps name search returns معرض محمد ناصر المطير لتجارة السيارات والكرفانات in industrial Hafar, but Maps lists +966591382436, different from stored 0559444407. Name is similar, not exact; no pin replacement or phone change.",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%86%D8%A7%D8%B5%D8%B1%20%D8%A7%D9%84%D9%85%D8%B7%D9%8A%D8%B1%D9%8A%20%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "conflict_candidate",
+          "evidence": "Direct Google Maps name search returns معرض محمد ناصر المطير لتجارة السيارات والكرفانات in industrial Hafar, but Maps lists +966591382436, different from stored 0559444407. Name is similar, not exact; no pin replacement or phone change.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%86%D8%A7%D8%B5%D8%B1%20%D8%A7%D9%84%D9%85%D8%B7%D9%8A%D8%B1%D9%8A%20%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict_candidate",
+          "evidence": "Direct Google Maps name search returns معرض محمد ناصر المطير لتجارة السيارات والكرفانات in industrial Hafar, but Maps lists +966591382436, different from stored 0559444407. Name is similar, not exact; no pin replacement or phone change.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%86%D8%A7%D8%B5%D8%B1%20%D8%A7%D9%84%D9%85%D8%B7%D9%8A%D8%B1%D9%8A%20%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86"
+          ]
+        },
+        "phone": {
+          "status": "conflict_candidate",
+          "evidence": "Direct Google Maps name search returns معرض محمد ناصر المطير لتجارة السيارات والكرفانات in industrial Hafar, but Maps lists +966591382436, different from stored 0559444407. Name is similar, not exact; no pin replacement or phone change.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%86%D8%A7%D8%B5%D8%B1%20%D8%A7%D9%84%D9%85%D8%B7%D9%8A%D8%B1%D9%8A%20%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded business phone was verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%86%D8%A7%D8%B5%D8%B1%20%D8%A7%D9%84%D9%85%D8%B7%D9%8A%D8%B1%D9%8A%20%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86"
+          ]
+        },
+        "google_maps": {
+          "status": "conflict",
+          "evidence": "Direct Google Maps name search returns معرض محمد ناصر المطير لتجارة السيارات والكرفانات in industrial Hafar, but Maps lists +966591382436, different from stored 0559444407. Name is similar, not exact; no pin replacement or phone change.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%86%D8%A7%D8%B5%D8%B1%20%D8%A7%D9%84%D9%85%D8%B7%D9%8A%D8%B1%D9%8A%20%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official business website was established for this entry in this pass; blank Maps website panel is not proof none exists.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%86%D8%A7%D8%B5%D8%B1%20%D8%A7%D9%84%D9%85%D8%B7%D9%8A%D8%B1%D9%8A%20%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-1b00447b1164f6",
+      "name": "معرض الشرق السيارت",
+      "evidence": "Direct Google Maps name search returns معرض الشرق للسيارات at Ahmad bin Rashid, Hafar industrial, but lists +966551179119, not stored 0555670963. Similar identity only; no replacement.",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%20%D8%A7%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D8%B1%D8%B4%D8%AF"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "conflict_candidate",
+          "evidence": "Direct Google Maps name search returns معرض الشرق للسيارات at Ahmad bin Rashid, Hafar industrial, but lists +966551179119, not stored 0555670963. Similar identity only; no replacement.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%20%D8%A7%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D8%B1%D8%B4%D8%AF"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict_candidate",
+          "evidence": "Direct Google Maps name search returns معرض الشرق للسيارات at Ahmad bin Rashid, Hafar industrial, but lists +966551179119, not stored 0555670963. Similar identity only; no replacement.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%20%D8%A7%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D8%B1%D8%B4%D8%AF"
+          ]
+        },
+        "phone": {
+          "status": "conflict_candidate",
+          "evidence": "Direct Google Maps name search returns معرض الشرق للسيارات at Ahmad bin Rashid, Hafar industrial, but lists +966551179119, not stored 0555670963. Similar identity only; no replacement.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%20%D8%A7%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D8%B1%D8%B4%D8%AF"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded business phone was verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%20%D8%A7%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D8%B1%D8%B4%D8%AF"
+          ]
+        },
+        "google_maps": {
+          "status": "conflict",
+          "evidence": "Direct Google Maps name search returns معرض الشرق للسيارات at Ahmad bin Rashid, Hafar industrial, but lists +966551179119, not stored 0555670963. Similar identity only; no replacement.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%20%D8%A7%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D8%B1%D8%B4%D8%AF"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official business website was established for this entry in this pass; blank Maps website panel is not proof none exists.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%20%D8%A7%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D8%B1%D8%B4%D8%AF"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-0ac213e1ad11b4",
+      "name": "معرض فرج للسيارات",
+      "evidence": "Direct Google Maps name+phone search returns exact معرض فرج للسيارات at C2MV+RRP, Ahmad bin Rashid, Hafar industrial 39925; +966505950797 matches stored phone.",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%81%D8%B1%D8%AC%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%200505950797"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "confirmed_maps",
+          "evidence": "Direct Google Maps name+phone search returns exact معرض فرج للسيارات at C2MV+RRP, Ahmad bin Rashid, Hafar industrial 39925; +966505950797 matches stored phone.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%81%D8%B1%D8%AC%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%200505950797"
+          ]
+        },
+        "city_locality": {
+          "status": "confirmed_maps",
+          "evidence": "Direct Google Maps name+phone search returns exact معرض فرج للسيارات at C2MV+RRP, Ahmad bin Rashid, Hafar industrial 39925; +966505950797 matches stored phone.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%81%D8%B1%D8%AC%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%200505950797"
+          ]
+        },
+        "phone": {
+          "status": "confirmed_maps",
+          "evidence": "Direct Google Maps name+phone search returns exact معرض فرج للسيارات at C2MV+RRP, Ahmad bin Rashid, Hafar industrial 39925; +966505950797 matches stored phone.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%81%D8%B1%D8%AC%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%200505950797"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded business phone was verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%81%D8%B1%D8%AC%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%200505950797"
+          ]
+        },
+        "google_maps": {
+          "status": "verified",
+          "evidence": "Direct Google Maps name+phone search returns exact معرض فرج للسيارات at C2MV+RRP, Ahmad bin Rashid, Hafar industrial 39925; +966505950797 matches stored phone.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%81%D8%B1%D8%AC%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%200505950797"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official business website was established for this entry in this pass; blank Maps website panel is not proof none exists.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%81%D8%B1%D8%AC%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%200505950797"
+          ]
+        }
+      }
+    },
+    {
+      "id": "national-car-7a899b4f0d4959",
+      "name": "معرض نبع السيل للسيارات",
+      "evidence": "Stored CID opens only an empty/default Google Maps view without a matching business card; no proof of a broken link and no safe replacement found.",
+      "sources": [
+        "https://www.google.com/maps?cid=4068511953030946093"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed_pin",
+          "evidence": "Stored CID opens only an empty/default Google Maps view without a matching business card; no proof of a broken link and no safe replacement found.",
+          "sources": [
+            "https://www.google.com/maps?cid=4068511953030946093"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed_pin",
+          "evidence": "Stored CID opens only an empty/default Google Maps view without a matching business card; no proof of a broken link and no safe replacement found.",
+          "sources": [
+            "https://www.google.com/maps?cid=4068511953030946093"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed_pin",
+          "evidence": "Stored CID opens only an empty/default Google Maps view without a matching business card; no proof of a broken link and no safe replacement found.",
+          "sources": [
+            "https://www.google.com/maps?cid=4068511953030946093"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded business phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=4068511953030946093"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID opens only an empty/default Google Maps view without a matching business card; no proof of a broken link and no safe replacement found.",
+          "sources": [
+            "https://www.google.com/maps?cid=4068511953030946093"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official business website was established for this entry in this pass; blank Maps website panel is not proof none exists.",
+          "sources": [
+            "https://www.google.com/maps?cid=4068511953030946093"
+          ]
+        }
+      }
+    }
+  ]
+}

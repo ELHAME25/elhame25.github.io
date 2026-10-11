@@ -1,0 +1,113 @@
+{
+  "audit_date": "2026-10-10",
+  "base_head": "377665a365a2be8ca3e17c5c391eaa79f3ecb6b0",
+  "scope": "Concurrent tool checks: external identity/contact checks, NOT Google Maps pin inspections",
+  "lanes": [
+    {
+      "lane": 1,
+      "file": "data/cars.json",
+      "records": [
+        {
+          "id": "entity-3180414b6dfb",
+          "name": "علي الصادق للسيارات",
+          "city": "الدمام",
+          "field": "phones[0]",
+          "stored": "0565963726",
+          "observed": "0565963726",
+          "status": "matched_official_website",
+          "source": "https://www.alsadiqmotors.net/",
+          "maps_pin_verified": false,
+          "correction": null
+        }
+      ],
+      "note": "Different branches exist at Dammam and Safwa; no map pin was confirmed."
+    },
+    {
+      "lane": 2,
+      "file": "data/offices.json",
+      "records": [
+        {
+          "id": "entity-f23bd4322c3f",
+          "name": "مكتب أعمال العقاري",
+          "city": "الرياض",
+          "field": "phones[0], nb",
+          "stored": "0555068571; السعادة",
+          "observed": "0555068571; حي السعادة شارع طلحة بن عبيدالله",
+          "status": "matched_official_website",
+          "source": "https://aamalre.com/",
+          "maps_pin_verified": false,
+          "correction": null
+        },
+        {
+          "id": "entity-8438aa400dcf",
+          "name": "مكتب رواد العقود للعقارات",
+          "city": "الرياض",
+          "field": "phones[0],nb",
+          "stored": "0555038551; المونسية",
+          "observed": "0555038551; المونسية; فال 1200013689",
+          "status": "matched_third_party_agency_page",
+          "source": "https://www.muktamel.com/agencies/1429/مكتب-رواد-العقود-للعقارات",
+          "maps_pin_verified": false,
+          "correction": null
+        }
+      ]
+    },
+    {
+      "lane": 3,
+      "file": "data/companies.json",
+      "records": [],
+      "note": "Inspected selected company data; no new independent authoritative match sufficient for correction."
+    },
+    {
+      "lane": 4,
+      "file": "data/opportunities.json",
+      "records": [
+        {
+          "id": "op-6cf8280cf2",
+          "name": "سما الورود",
+          "city": "الأحساء",
+          "field": "dev, city, units, price, page",
+          "stored": "مايا للتطوير والاستثمار العقاري; الهفوف; 346; 747400; NHC 47490",
+          "observed": "مايا للتطوير والاستثمار العقاري; الهفوف; 346; 747400; NHC 47490",
+          "status": "matched_official_NHC_page",
+          "source": "https://www.nhc.sa/ar/real-estate-development/projects/47490/",
+          "maps_pin_verified": false,
+          "correction": null
+        }
+      ],
+      "note": "NHC's official page confirms project identity, not a precise pin."
+    },
+    {
+      "lane": 5,
+      "file": "data/branches.json",
+      "records": [
+        {
+          "id": "161",
+          "name": "المنسك",
+          "city": "أبها",
+          "field": "branch code, city, neighborhood",
+          "stored": "161; أبها; المنسك",
+          "observed": "161; أبها; المنسك; أبو هريرة",
+          "status": "matched_official_bank_directory",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "maps_pin_verified": false,
+          "correction": null
+        }
+      ],
+      "note": "No browser QA tests run in this pass."
+    }
+  ],
+  "summary": {
+    "unique_source_pages_matched": 5,
+    "records_with_positive_external_field_match": 5,
+    "google_map_pins_opened_and_identity_verified": 0,
+    "data_corrections_applied": 0,
+    "unresolved_map_pins": 5
+  },
+  "nonclaims": [
+    "No nationwide audit completed",
+    "No exact Maps pin proven in this batch",
+    "Search results alone do not validate map coordinates",
+    "No data files modified"
+  ]
+}

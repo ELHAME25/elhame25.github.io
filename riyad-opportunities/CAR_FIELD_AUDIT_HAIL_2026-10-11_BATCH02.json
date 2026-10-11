@@ -1,0 +1,533 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "6abd0065de5f3b9da0227bd61908a5e763db4f85",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "حائل، الدفعة 02، السجلات 11–20 من 28. فحص الدبابيس المباشر؛ الحالات الجزئية لا تثبت اسم المعرض ولا الموقع.",
+  "count": 10,
+  "note": "لم يتغير cars.json. مطابقة الهاتف في Google Maps وحدها ليست تحققاً مستقلاً؛ واتساب والموقع الرسمي يحتاجان إثباتاً مباشراً مستقلاً قبل التصحيح.",
+  "entries": [
+    {
+      "id": "phase6-google-9531526961148001094",
+      "name": "معرض عالم السيارات",
+      "evidence": "Stored CID opened blank/default map; no readable identity or contact information.",
+      "sources": [
+        "https://www.google.com/maps?cid=9531526961148001094"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID opened blank/default map; no readable identity or contact information.",
+          "sources": [
+            "https://www.google.com/maps?cid=9531526961148001094"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID opened blank/default map; no readable identity or contact information.",
+          "sources": [
+            "https://www.google.com/maps?cid=9531526961148001094"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID opened blank/default map; no readable identity or contact information.",
+          "sources": [
+            "https://www.google.com/maps?cid=9531526961148001094"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=9531526961148001094"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID opened blank/default map; no readable identity or contact information.",
+          "sources": [
+            "https://www.google.com/maps?cid=9531526961148001094"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=9531526961148001094"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-3646076934075893210",
+      "name": "معرض درة حائل للسيارات",
+      "evidence": "Direct CID opens معرض درة حائل للسيارات, car dealer, FPJM+M5X Hail 55423, phone +966501620215 matching stored number.",
+      "sources": [
+        "https://www.google.com/maps?cid=3646076934075893210"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض درة حائل للسيارات, car dealer, FPJM+M5X Hail 55423, phone +966501620215 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=3646076934075893210"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض درة حائل للسيارات, car dealer, FPJM+M5X Hail 55423, phone +966501620215 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=3646076934075893210"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض درة حائل للسيارات, car dealer, FPJM+M5X Hail 55423, phone +966501620215 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=3646076934075893210"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=3646076934075893210"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض درة حائل للسيارات, car dealer, FPJM+M5X Hail 55423, phone +966501620215 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=3646076934075893210"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=3646076934075893210"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-4044662082393491158",
+      "name": "معرض التركي للسيارات",
+      "evidence": "Direct CID exposed phone +966575159860 matching stored number but the business title/address could not be read, so identity/pin remain unconfirmed.",
+      "sources": [
+        "https://www.google.com/maps?cid=4044662082393491158"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed_partial",
+          "evidence": "Direct CID exposed phone +966575159860 matching stored number but the business title/address could not be read, so identity/pin remain unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=4044662082393491158"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed_partial",
+          "evidence": "Direct CID exposed phone +966575159860 matching stored number but the business title/address could not be read, so identity/pin remain unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=4044662082393491158"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed_partial",
+          "evidence": "Direct CID exposed phone +966575159860 matching stored number but the business title/address could not be read, so identity/pin remain unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=4044662082393491158"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=4044662082393491158"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Direct CID exposed phone +966575159860 matching stored number but the business title/address could not be read, so identity/pin remain unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=4044662082393491158"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=4044662082393491158"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-5643651359504875625",
+      "name": "معرض الجابري للسيارات",
+      "evidence": "Stored CID opened blank/default map; no readable business card.",
+      "sources": [
+        "https://www.google.com/maps?cid=5643651359504875625"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID opened blank/default map; no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=5643651359504875625"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID opened blank/default map; no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=5643651359504875625"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID opened blank/default map; no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=5643651359504875625"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=5643651359504875625"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID opened blank/default map; no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=5643651359504875625"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=5643651359504875625"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-10062908089215171885",
+      "name": "معرض الخليفة للمعدات والسيارات",
+      "evidence": "Direct CID opens معرض الخليفة للمعدات والسيارات, car dealer, Hail 55423, Plus Code FPHM+FM; phone +966505156857 matches stored number.",
+      "sources": [
+        "https://www.google.com/maps?cid=10062908089215171885"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الخليفة للمعدات والسيارات, car dealer, Hail 55423, Plus Code FPHM+FM; phone +966505156857 matches stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=10062908089215171885"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الخليفة للمعدات والسيارات, car dealer, Hail 55423, Plus Code FPHM+FM; phone +966505156857 matches stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=10062908089215171885"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الخليفة للمعدات والسيارات, car dealer, Hail 55423, Plus Code FPHM+FM; phone +966505156857 matches stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=10062908089215171885"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=10062908089215171885"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الخليفة للمعدات والسيارات, car dealer, Hail 55423, Plus Code FPHM+FM; phone +966505156857 matches stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=10062908089215171885"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=10062908089215171885"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-4240941406413093517",
+      "name": "معرض الامجاد للسيارات",
+      "evidence": "Direct CID exposed a phone link +966533098666 matching the stored number but the business title/address could not be read. Identity/pin remain unconfirmed.",
+      "sources": [
+        "https://www.google.com/maps?cid=4240941406413093517"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed_partial",
+          "evidence": "Direct CID exposed a phone link +966533098666 matching the stored number but the business title/address could not be read. Identity/pin remain unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=4240941406413093517"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed_partial",
+          "evidence": "Direct CID exposed a phone link +966533098666 matching the stored number but the business title/address could not be read. Identity/pin remain unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=4240941406413093517"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed_partial",
+          "evidence": "Direct CID exposed a phone link +966533098666 matching the stored number but the business title/address could not be read. Identity/pin remain unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=4240941406413093517"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=4240941406413093517"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Direct CID exposed a phone link +966533098666 matching the stored number but the business title/address could not be read. Identity/pin remain unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=4240941406413093517"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=4240941406413093517"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-5665935497291163350",
+      "name": "معرض التويجري للسيارات",
+      "evidence": "Direct CID opens معرض التويجري للسيارات, car dealer, الشارع العام، حائل 99999, phone +966594259400 matching stored number; Plus Code FPHM+XF.",
+      "sources": [
+        "https://www.google.com/maps?cid=5665935497291163350"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض التويجري للسيارات, car dealer, الشارع العام، حائل 99999, phone +966594259400 matching stored number; Plus Code FPHM+XF.",
+          "sources": [
+            "https://www.google.com/maps?cid=5665935497291163350"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض التويجري للسيارات, car dealer, الشارع العام، حائل 99999, phone +966594259400 matching stored number; Plus Code FPHM+XF.",
+          "sources": [
+            "https://www.google.com/maps?cid=5665935497291163350"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض التويجري للسيارات, car dealer, الشارع العام، حائل 99999, phone +966594259400 matching stored number; Plus Code FPHM+XF.",
+          "sources": [
+            "https://www.google.com/maps?cid=5665935497291163350"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=5665935497291163350"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض التويجري للسيارات, car dealer, الشارع العام، حائل 99999, phone +966594259400 matching stored number; Plus Code FPHM+XF.",
+          "sources": [
+            "https://www.google.com/maps?cid=5665935497291163350"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=5665935497291163350"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-8821589655719132477",
+      "name": "معرض عناد لسيارات",
+      "evidence": "Direct CID exposed phone link +966506879961 matching stored number but no readable business title/address, so pin identity remains unconfirmed.",
+      "sources": [
+        "https://www.google.com/maps?cid=8821589655719132477"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed_partial",
+          "evidence": "Direct CID exposed phone link +966506879961 matching stored number but no readable business title/address, so pin identity remains unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=8821589655719132477"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed_partial",
+          "evidence": "Direct CID exposed phone link +966506879961 matching stored number but no readable business title/address, so pin identity remains unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=8821589655719132477"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed_partial",
+          "evidence": "Direct CID exposed phone link +966506879961 matching stored number but no readable business title/address, so pin identity remains unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=8821589655719132477"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=8821589655719132477"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Direct CID exposed phone link +966506879961 matching stored number but no readable business title/address, so pin identity remains unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=8821589655719132477"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=8821589655719132477"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-14309599542859758045",
+      "name": "معرض الشامخ للسيارات بحائل",
+      "evidence": "Direct CID opens معرض الشامخ للسيارات بحائل, car dealer, address المعارض، حائل 55411 / Plus Code FPJM+HM, phone +966553998015 matches stored number.",
+      "sources": [
+        "https://www.google.com/maps?cid=14309599542859758045"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الشامخ للسيارات بحائل, car dealer, address المعارض، حائل 55411 / Plus Code FPJM+HM, phone +966553998015 matches stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=14309599542859758045"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الشامخ للسيارات بحائل, car dealer, address المعارض، حائل 55411 / Plus Code FPJM+HM, phone +966553998015 matches stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=14309599542859758045"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الشامخ للسيارات بحائل, car dealer, address المعارض، حائل 55411 / Plus Code FPJM+HM, phone +966553998015 matches stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=14309599542859758045"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=14309599542859758045"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الشامخ للسيارات بحائل, car dealer, address المعارض، حائل 55411 / Plus Code FPJM+HM, phone +966553998015 matches stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=14309599542859758045"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=14309599542859758045"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-14570016571882771368",
+      "name": "معرض فخر العروبة للسيارات",
+      "evidence": "Stored CID returned blank/default map with no readable business card.",
+      "sources": [
+        "https://www.google.com/maps?cid=14570016571882771368"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map with no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=14570016571882771368"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map with no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=14570016571882771368"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map with no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=14570016571882771368"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=14570016571882771368"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map with no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=14570016571882771368"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=14570016571882771368"
+          ]
+        }
+      }
+    }
+  ]
+}

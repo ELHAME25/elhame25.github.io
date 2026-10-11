@@ -1,0 +1,62 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "30545bb4639abf2212a03f0d02321083dd9a640f",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "جازان داخل المدينة، سجل الإغلاق المتبقي بعد الدفعتين السابقتين.",
+  "count": 1,
+  "note": "آخر سجل محلي في جازان؛ لا تعديل على cars.json ولا حذف.",
+  "entries": [
+    {
+      "id": "national-primary-budget-13879183185635902606",
+      "name": "بدجت - معرض جيزان",
+      "record_city": "جازان",
+      "fields": {
+        "name_activity": {
+          "status": "verified_official",
+          "evidence": "Budget Saudi's official used-car sales contact page labels this a Jizan showroom and lists its location on Airport Road next to Al-Istishariyoon Center/King Faisal bin Fahd Road, plus landline 0173225253. This exactly supports the stored city and phone. The page is the official seller channel; it lists used-vehicle sales branches.",
+          "sources": [
+            "https://mazad.budgetsaudi.com/Home/Contact"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_official",
+          "evidence": "Budget Saudi's official used-car sales contact page labels this a Jizan showroom and lists its location on Airport Road next to Al-Istishariyoon Center/King Faisal bin Fahd Road, plus landline 0173225253. This exactly supports the stored city and phone. The page is the official seller channel; it lists used-vehicle sales branches.",
+          "sources": [
+            "https://mazad.budgetsaudi.com/Home/Contact"
+          ]
+        },
+        "phone": {
+          "status": "verified_official",
+          "evidence": "Budget Saudi's official used-car sales contact page labels this a Jizan showroom and lists its location on Airport Road next to Al-Istishariyoon Center/King Faisal bin Fahd Road, plus landline 0173225253. This exactly supports the stored city and phone. The page is the official seller channel; it lists used-vehicle sales branches.",
+          "sources": [
+            "https://mazad.budgetsaudi.com/Home/Contact"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "Official sales-contact page shows the branch contact and central channel; no direct WhatsApp URL or explicit WhatsApp number for this Jizan branch was established.",
+          "sources": [
+            "https://mazad.budgetsaudi.com/Home/Contact"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored Google Maps CID URL was not directly matched to the exact official branch pin.",
+          "sources": [
+            "https://mazad.budgetsaudi.com/Home/Contact"
+          ]
+        },
+        "website": {
+          "status": "verified_official",
+          "evidence": "The stored URL is Budget Saudi's official used-car sales contact page, which lists the Jizan showroom.",
+          "sources": [
+            "https://mazad.budgetsaudi.com/Home/Contact"
+          ]
+        }
+      }
+    }
+  ]
+}

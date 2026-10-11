@@ -1,0 +1,416 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "904fb24adebbf53551ffff8bb6ac5a577ced274d",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "حائل، الدفعة 03، آخر 8 سجلات من 28. مراجعة خرائط Google المباشرة؛ ملف pdf-smalltown-027 لا يحتوي على رابط Maps.",
+  "count": 8,
+  "note": "لم يتغير cars.json. نتائج البطاقة وحدها لا تكفي لتصحيح الهاتف دون مصدر مستقل. الروابط التي لم تُقرأ مسجلة غير محسومة لا معطلة.",
+  "entries": [
+    {
+      "id": "phase6-google-4156538934738978535",
+      "name": "معرض الشباب للسيارات",
+      "evidence": "Stored CID returned blank/default map; no matching place card to verify.",
+      "sources": [
+        "https://www.google.com/maps?cid=4156538934738978535"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map; no matching place card to verify.",
+          "sources": [
+            "https://www.google.com/maps?cid=4156538934738978535"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map; no matching place card to verify.",
+          "sources": [
+            "https://www.google.com/maps?cid=4156538934738978535"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map; no matching place card to verify.",
+          "sources": [
+            "https://www.google.com/maps?cid=4156538934738978535"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the record verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=4156538934738978535"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map; no matching place card to verify.",
+          "sources": [
+            "https://www.google.com/maps?cid=4156538934738978535"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=4156538934738978535"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-2739362050555451371",
+      "name": "شركة إبراهيم العودة للسيارات - فرع شركة شعار السيارة المحدودة",
+      "evidence": "Direct CID exposes aloudhmotors.com and +966115207355 matching stored number, but snapshot did not reveal business title/address; profile identity needs independent tie-out.",
+      "sources": [
+        "https://www.google.com/maps?cid=2739362050555451371",
+        "https://aloudhmotors.com/"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_map_phone_only",
+          "evidence": "Direct CID exposes aloudhmotors.com and +966115207355 matching stored number, but snapshot did not reveal business title/address; profile identity needs independent tie-out.",
+          "sources": [
+            "https://www.google.com/maps?cid=2739362050555451371"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_map_phone_only",
+          "evidence": "Direct CID exposes aloudhmotors.com and +966115207355 matching stored number, but snapshot did not reveal business title/address; profile identity needs independent tie-out.",
+          "sources": [
+            "https://www.google.com/maps?cid=2739362050555451371"
+          ]
+        },
+        "phone": {
+          "status": "verified_map_phone_only",
+          "evidence": "Direct CID exposes aloudhmotors.com and +966115207355 matching stored number, but snapshot did not reveal business title/address; profile identity needs independent tie-out.",
+          "sources": [
+            "https://www.google.com/maps?cid=2739362050555451371"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the record verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=2739362050555451371"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Direct CID exposes aloudhmotors.com and +966115207355 matching stored number, but snapshot did not reveal business title/address; profile identity needs independent tie-out.",
+          "sources": [
+            "https://www.google.com/maps?cid=2739362050555451371"
+          ]
+        },
+        "website": {
+          "status": "verified_listing_only",
+          "evidence": "Maps exposes aloudhmotors.com but the listing identity was not readable in the captured page; official-domain association remains to confirm.",
+          "sources": [
+            "https://www.google.com/maps?cid=2739362050555451371"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-13181426436365412113",
+      "name": "معرض الشرق اللامع للسيارات",
+      "evidence": "Direct CID opens معرض الشرق اللامع للسيارات, car dealer, address FPJM+3VR الصناعية الثانية، حائل 55423 and phone +966505157637 matching stored number.",
+      "sources": [
+        "https://www.google.com/maps?cid=13181426436365412113"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الشرق اللامع للسيارات, car dealer, address FPJM+3VR الصناعية الثانية، حائل 55423 and phone +966505157637 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=13181426436365412113"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الشرق اللامع للسيارات, car dealer, address FPJM+3VR الصناعية الثانية، حائل 55423 and phone +966505157637 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=13181426436365412113"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الشرق اللامع للسيارات, car dealer, address FPJM+3VR الصناعية الثانية، حائل 55423 and phone +966505157637 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=13181426436365412113"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the record verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=13181426436365412113"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الشرق اللامع للسيارات, car dealer, address FPJM+3VR الصناعية الثانية، حائل 55423 and phone +966505157637 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=13181426436365412113"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=13181426436365412113"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-13140754517636640618",
+      "name": "معرض فهد الزامل للسيارات",
+      "evidence": "Stored CID returned blank/default map; no readable business card.",
+      "sources": [
+        "https://www.google.com/maps?cid=13140754517636640618"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map; no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=13140754517636640618"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map; no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=13140754517636640618"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map; no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=13140754517636640618"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the record verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=13140754517636640618"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map; no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=13140754517636640618"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=13140754517636640618"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-229356291587975408",
+      "name": "معرض التميمي للسيارات Al-Tamimi Exhibition For Cars",
+      "evidence": "Direct CID exposed +966534770022 matching the stored number but the business title/address could not be read; map identity remains unconfirmed.",
+      "sources": [
+        "https://www.google.com/maps?cid=229356291587975408"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed_partial",
+          "evidence": "Direct CID exposed +966534770022 matching the stored number but the business title/address could not be read; map identity remains unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=229356291587975408"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed_partial",
+          "evidence": "Direct CID exposed +966534770022 matching the stored number but the business title/address could not be read; map identity remains unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=229356291587975408"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed_partial",
+          "evidence": "Direct CID exposed +966534770022 matching the stored number but the business title/address could not be read; map identity remains unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=229356291587975408"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the record verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=229356291587975408"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Direct CID exposed +966534770022 matching the stored number but the business title/address could not be read; map identity remains unconfirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=229356291587975408"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=229356291587975408"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-3168134045689477811",
+      "name": "معرض الباحوث بحائل",
+      "evidence": "Direct CID opens معرض الباحوث بحائل, car dealer, address FPJJ+4VR / حائل 55423 and phone +966504871767 matching stored number.",
+      "sources": [
+        "https://www.google.com/maps?cid=3168134045689477811"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الباحوث بحائل, car dealer, address FPJJ+4VR / حائل 55423 and phone +966504871767 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=3168134045689477811"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الباحوث بحائل, car dealer, address FPJJ+4VR / حائل 55423 and phone +966504871767 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=3168134045689477811"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الباحوث بحائل, car dealer, address FPJJ+4VR / حائل 55423 and phone +966504871767 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=3168134045689477811"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the record verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=3168134045689477811"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الباحوث بحائل, car dealer, address FPJJ+4VR / حائل 55423 and phone +966504871767 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=3168134045689477811"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=3168134045689477811"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-7347978235120157841",
+      "name": "معرض طارق",
+      "evidence": "Stored CID returned blank/default map; no readable business card.",
+      "sources": [
+        "https://www.google.com/maps?cid=7347978235120157841"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map; no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=7347978235120157841"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map; no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=7347978235120157841"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map; no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=7347978235120157841"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the record verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=7347978235120157841"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID returned blank/default map; no readable business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=7347978235120157841"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=7347978235120157841"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-027",
+      "name": "شركة إبراهيم العودة للسيارات -فرع شركة شعار",
+      "evidence": "Record has no Google Maps URL. No direct canonical place pin verified in this pass.",
+      "sources": [],
+      "fields": {
+        "name_activity": {
+          "status": "missing_maps",
+          "evidence": "Record has no Google Maps URL. No direct canonical place pin verified in this pass.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "missing_maps",
+          "evidence": "Record has no Google Maps URL. No direct canonical place pin verified in this pass.",
+          "sources": []
+        },
+        "phone": {
+          "status": "missing_maps",
+          "evidence": "Record has no Google Maps URL. No direct canonical place pin verified in this pass.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the record verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "missing",
+          "evidence": "Record has no Google Maps URL. No direct canonical place pin verified in this pass.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": []
+        }
+      }
+    }
+  ]
+}
