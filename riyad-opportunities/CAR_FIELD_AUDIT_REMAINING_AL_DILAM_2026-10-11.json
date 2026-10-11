@@ -1,0 +1,776 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "1cabcf4cba41c6a8ec7c1a29d3dbee8d442db916",
+  "scope": {
+    "city": "الدلم",
+    "batch": "remaining",
+    "count": 14,
+    "positions": "1-14 of 14",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Direct provider place records, stored coordinates, linked business pages and regional provenance were reconciled field by field. Search-only links were not accepted as pins.",
+  "records": [
+    {
+      "id": "regional-pdf-national-car-9a1a524798640b-073",
+      "name": "معرض مطلق زامل العتيبي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "5CP3+VQJ، السعادة، الخرج 16443، السعودية",
+        "phones": [
+          "0500047979"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=17975153483091438440",
+        "lat": 24.18721,
+        "lon": 47.40439
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=17975153483091438440"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-9a1a524798640b-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-9a1a524798640b",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=17975153483091438440"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-9a1a524798640b",
+          "originCity=الخرج",
+          "stored_neighborhood=5CP3+VQJ، السعادة، الخرج 16443، السعودية"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-853fb5466c5011-073",
+      "name": "معرض العصيمي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "9388، السعادة، الخرج 16443 5180، السعودية",
+        "phones": [
+          "0536978474"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=15505607070274085038",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=15505607070274085038"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-853fb5466c5011-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-853fb5466c5011",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=15505607070274085038"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-853fb5466c5011",
+          "originCity=الخرج",
+          "stored_neighborhood=9388، السعادة، الخرج 16443 5180، السعودية"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-6a99816571c77d-073",
+      "name": "Al-Kharj procession Motor Show",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "5081، 9309، السعادة، الخرج 16443، السعودية",
+        "phones": [
+          "0506289460"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=11851558662877532658",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=11851558662877532658"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-6a99816571c77d-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-6a99816571c77d",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=11851558662877532658"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-6a99816571c77d",
+          "originCity=الخرج",
+          "stored_neighborhood=5081، 9309، السعادة، الخرج 16443، السعودية"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-596d662897f898-073",
+      "name": "معرض طارق الحرشان للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "الخرج، السعودية؛ المدينة منشورة في ملف المنشأة على موتري، الشارع غير منشور",
+        "phones": [
+          "0537000246"
+        ],
+        "whatsapp": null,
+        "website": "https://heylink.me/th4cars/",
+        "maps": "https://www.google.com/maps?cid=2062726030508407044",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps?cid=2062726030508407044",
+        "https://heylink.me/th4cars/"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-596d662897f898-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-596d662897f898",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps?cid=2062726030508407044",
+          "https://heylink.me/th4cars/"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-596d662897f898",
+          "originCity=الخرج",
+          "stored_neighborhood=الخرج، السعودية؛ المدينة منشورة في ملف المنشأة على موتري، الشارع غير منشور"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-b5c3d0cd22c414-073",
+      "name": "معرض محمد الدوسري للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "5065، السعادة، الخرج 16443 Saudi Arabia، Al Kharj، منطقة الرياض",
+        "phones": [
+          "0555244525"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=13003556705439302203",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=13003556705439302203"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-b5c3d0cd22c414-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-b5c3d0cd22c414",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=13003556705439302203"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-b5c3d0cd22c414",
+          "originCity=الخرج",
+          "stored_neighborhood=5065، السعادة، الخرج 16443 Saudi Arabia، Al Kharj، منطقة الرياض"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-2f34d51fc6373a-073",
+      "name": "معرض البيضاني للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "9361، حي السعادة، الخرج16443",
+        "phones": [
+          "0508086877"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=17911804452584942703",
+        "lat": 24.1867863,
+        "lon": 47.4008989
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=17911804452584942703"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-2f34d51fc6373a-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-2f34d51fc6373a",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=17911804452584942703"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-2f34d51fc6373a",
+          "originCity=الخرج",
+          "stored_neighborhood=9361، حي السعادة، الخرج16443"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-bda17a7164c9a4-073",
+      "name": "معرض محمد اليمني للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "4901، حي السعادة، الخرج16443",
+        "phones": [
+          "0553398892"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=6862834981212550681",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=6862834981212550681"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-bda17a7164c9a4-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-bda17a7164c9a4",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=6862834981212550681"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-bda17a7164c9a4",
+          "originCity=الخرج",
+          "stored_neighborhood=4901، حي السعادة، الخرج16443"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-3173ea85386a4e-073",
+      "name": "معرض دنيا المركبة",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "5180،9388، الخرج11942",
+        "phones": [
+          "0502929050"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=467178736688522384",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=467178736688522384"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-3173ea85386a4e-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-3173ea85386a4e",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=467178736688522384"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-3173ea85386a4e",
+          "originCity=الخرج",
+          "stored_neighborhood=5180،9388، الخرج11942"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-58d96cb5fef0db-073",
+      "name": "معرض فهد للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "4945 الحارث المخزومي،9181، حي السعادة، الخرج16443",
+        "phones": [
+          "0507641818"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=6675816523290613200",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=6675816523290613200"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-58d96cb5fef0db-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-58d96cb5fef0db",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=6675816523290613200"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-58d96cb5fef0db",
+          "originCity=الخرج",
+          "stored_neighborhood=4945 الحارث المخزومي،9181، حي السعادة، الخرج16443"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-eca070e37aa486-073",
+      "name": "معرض طلال سعود للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "5170، السعادة، الخرج16443،9069",
+        "phones": [
+          "0555240264"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=17510596670128344072",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=17510596670128344072"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-eca070e37aa486-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-eca070e37aa486",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=17510596670128344072"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-eca070e37aa486",
+          "originCity=الخرج",
+          "stored_neighborhood=5170، السعادة، الخرج16443،9069"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-03aa01712571b3-073",
+      "name": "معرض أركان الموسم للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "السعادة، الخرج12345",
+        "phones": [
+          "0551626262"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=3690969017662199560",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=3690969017662199560"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-03aa01712571b3-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-03aa01712571b3",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=3690969017662199560"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-03aa01712571b3",
+          "originCity=الخرج",
+          "stored_neighborhood=السعادة، الخرج12345"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-713e192a69026a-073",
+      "name": "معرض عايد للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "شارع الحارث المخزومي، السعادة، الخرج16443",
+        "phones": [
+          "0535876375"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=16773646786803679033",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=16773646786803679033"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-713e192a69026a-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-713e192a69026a",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=16773646786803679033"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-713e192a69026a",
+          "originCity=الخرج",
+          "stored_neighborhood=شارع الحارث المخزومي، السعادة، الخرج16443"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-4dc430510649da-073",
+      "name": "معرض المرزوقي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "حي السعادة، الخرج، المملكة العربية السعودية",
+        "phones": [
+          "0591128715"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://maps.google.com/?cid=11110557788920364682",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://maps.google.com/?cid=11110557788920364682"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-4dc430510649da-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-4dc430510649da",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://maps.google.com/?cid=11110557788920364682"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-4dc430510649da",
+          "originCity=الخرج",
+          "stored_neighborhood=حي السعادة، الخرج، المملكة العربية السعودية"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-38a10fe36d0e71-073",
+      "name": "معرض وسام العز للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدلم",
+        "neighborhood": "9080 البهاء الزهير، السعادة، OAJB4989، 4989، الخرج 16443، المملكة العربية السعودية",
+        "phones": [
+          "0573775457"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://maps.google.com/?cid=16631214370456951426",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://maps.google.com/?cid=16631214370456951426"
+      ],
+      "note": "نسخة إقليمية في الدلم لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخرج؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الدلم",
+          "id": "regional-pdf-national-car-38a10fe36d0e71-073"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_dilam_scope",
+          "retain_id": "national-car-38a10fe36d0e71",
+          "origin_city": "الخرج"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://maps.google.com/?cid=16631214370456951426"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-38a10fe36d0e71",
+          "originCity=الخرج",
+          "stored_neighborhood=9080 البهاء الزهير، السعادة، OAJB4989، 4989، الخرج 16443، المملكة العربية السعودية"
+        ]
+      }
+    }
+  ]
+}
