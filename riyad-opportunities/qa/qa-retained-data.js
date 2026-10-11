@@ -3,6 +3,9 @@ const root=path.resolve(process.argv[2]||path.join(__dirname,'..'));
 const baseline=JSON.parse(fs.readFileSync(path.join(__dirname,'retained-data-baseline.json'),'utf8'));
 const audit=JSON.parse(fs.readFileSync(path.join(root,'MAP_AUDIT_LEDGER_2026-10-10.json'),'utf8'));
 const auditById=new Map(audit.entries.map(x=>[x.id,x]));
+const dealers=JSON.parse(fs.readFileSync(path.join(root,'data/dealers.json'),'utf8'));
+const dealerById=new Map(dealers.map(x=>[x.id,x]));
+const dealerMigrations=new Map([['phase6-cars-56fc1e0cbe2502','official-dealer-mbabgi-qunfudhah'],['pdf-smalltown-026','official-dealer-mbabgi-qunfudhah']]);
 let retained=0,phones=0;
 for(const [kind,rows] of Object.entries(baseline.records)){
  const current=JSON.parse(fs.readFileSync(path.join(root,'data',kind+'.json'),'utf8'));
@@ -13,10 +16,13 @@ for(const [kind,rows] of Object.entries(baseline.records)){
   if(!now){
    const entry=auditById.get(prior.id),archive=entry?.archivedRecord;
    const properlyArchived=kind==='cars'&&archive?.id===prior.id&&entry.archiveReason&&['excluded_official_dealer','excluded_from_unverified_city_alias'].includes(entry.decision)&&!byId.has(prior.id);
-   assert(properlyArchived,kind+' missing '+prior.id);
-   for(const p of prior.phones||[])assert((archive.phones||[]).includes(p),prior.id+' archived without source phone '+p);
-   if(prior.contact)assert.equal(archive.contact,prior.contact,prior.id+' archived without named contact');
-   assert.equal(archive.img||'',prior.img,prior.id+' archived without deferred image');
+   const migratedDealer=kind==='cars'?dealerById.get(dealerMigrations.get(prior.id)):null;
+   const properlyMigrated=!!migratedDealer&&migratedDealer.city==='القنفذة'&&migratedDealer.kind==='وكالة سيارات رسمية'&&migratedDealer.web==='https://mbabgi.sa/findcenter'&&!!migratedDealer.maps;
+   assert(properlyArchived||properlyMigrated,kind+' missing '+prior.id);
+   const preserved=properlyMigrated?migratedDealer:archive;
+   for(const p of prior.phones||[])assert((preserved.phones||[]).includes(p),prior.id+' preserved without source phone '+p);
+   if(prior.contact)assert.equal(preserved.contact,prior.contact,prior.id+' preserved without named contact');
+   assert.equal(preserved.img||'',prior.img,prior.id+' changed a deferred image during preservation');
    retained++;continue;
   }
   retained++;
