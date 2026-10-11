@@ -1,0 +1,647 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "3119e057926b940894caebbb047fb4a89193f700",
+  "summary": {
+    "total": 18,
+    "resolved_confirmed": 12,
+    "rejected_keep_current": 3,
+    "unresolved": 3,
+    "does_not_block_original_confirmed_212": true
+  },
+  "safety": {
+    "cars_json_modified": false,
+    "qadisiyah_modified": false,
+    "merge_or_publish": false
+  },
+  "decisions": [
+    {
+      "original_candidate_id": "national-car-9fe1f36a66845c",
+      "original_candidate": {
+        "id": "national-car-9fe1f36a66845c",
+        "name": null,
+        "classification": "review_required_before_approval",
+        "type": "probable_duplicate",
+        "old_value": {
+          "record": "present_as_stored",
+          "stored_city": null
+        },
+        "new_value": {
+          "action": "probable_duplicate",
+          "duplicate_of": "regional-pdf-national-car-9fe1f36a66845c-071",
+          "conflicting_locality": null
+        },
+        "evidence": [
+          "https://www.google.com/maps/?cid=9651703162385704987"
+        ],
+        "proof": [
+          "name",
+          "phone",
+          "google_maps_cid",
+          "locality"
+        ],
+        "status": "not_applied"
+      },
+      "outcome": "resolved_confirmed",
+      "action": {
+        "operation": "remove_record",
+        "id": "regional-pdf-national-car-9fe1f36a66845c-071",
+        "retain_id": "national-car-9fe1f36a66845c"
+      },
+      "reason": "السجل الإقليمي يطابق السجل الأساسي في الاسم والهاتف وCID والإحداثيات ويحمل regionalListingOf للمعرّف الأساسي؛ عُكس اتجاه الاستبعاد لحماية السجل الأساسي.",
+      "evidence": [
+        "https://www.google.com/maps/?cid=9651703162385704987"
+      ]
+    },
+    {
+      "original_candidate_id": "v9-car-9ab9c7fddd86",
+      "original_candidate": {
+        "id": "v9-car-9ab9c7fddd86",
+        "name": null,
+        "classification": "review_required_before_approval",
+        "type": "review_city_locality",
+        "old_value": {
+          "record": "present_as_stored",
+          "stored_city": "المذنب"
+        },
+        "new_value": {
+          "action": "review_city_locality",
+          "duplicate_of": null,
+          "conflicting_locality": "عنيزة"
+        },
+        "evidence": [
+          "https://haraj.com.sa/11179815152/",
+          "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B7%D9%88%D8%B9%20%D8%A7%D9%84%D8%B4%D9%85%D8%B3%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B0%D9%86%D8%A8"
+        ],
+        "proof": [],
+        "status": "not_applied"
+      },
+      "outcome": "resolved_confirmed",
+      "action": {
+        "operation": "replace_city",
+        "id": "v9-car-9ab9c7fddd86",
+        "old_value": "المذنب",
+        "new_value": "عنيزة"
+      },
+      "reason": "إعلانات المعرض الحديثة والمتكررة تحدد القصيم–عنيزة–طريق الملك عبدالعزيز مع نفس الرقم 0163631248.",
+      "evidence": [
+        "https://haraj.com.sa/11164190664/",
+        "https://haraj.com.sa/11187778591/"
+      ]
+    },
+    {
+      "original_candidate_id": "phase6-google-2266458032871672264",
+      "original_candidate": {
+        "id": "phase6-google-2266458032871672264",
+        "name": "معرض الراضي للسيارات",
+        "classification": "review_required_before_approval",
+        "type": "phone_conflict_review",
+        "field": "phones",
+        "old_value": [
+          "0555508208"
+        ],
+        "new_value": [
+          "0125315000"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74"
+        ]
+      },
+      "outcome": "rejected_keep_current",
+      "action": {
+        "operation": "none",
+        "keep": [
+          "0555508208"
+        ]
+      },
+      "reason": "Waze المرتبط بالمكان يعرض الرقم الحالي؛ الرقم الأرضي المقترح يظهر في أدلة ثانوية فقط.",
+      "evidence": [
+        "https://www.waze.com/ar/live-map/directions/sa/mkh-almkrmh/mkh/mardh-alradhy-llsyarat?to=place.ChIJERYqx2cQwhURyImlm5ITdB8"
+      ]
+    },
+    {
+      "original_candidate_id": "phase6-google-16103946259151844909",
+      "original_candidate": {
+        "id": "phase6-google-16103946259151844909",
+        "name": "معرض ابو هاني للسيارات",
+        "classification": "review_required_before_approval",
+        "type": "phone_conflict_review",
+        "field": "phones",
+        "old_value": [
+          "0505511878"
+        ],
+        "new_value": [
+          "0555557342"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74"
+        ]
+      },
+      "outcome": "unresolved",
+      "action": {
+        "operation": "none"
+      },
+      "reason": "ظهرت ثلاثة أرقام متعارضة: الحالي، المقترح، ورقم ثالث 0555551241؛ لا يوجد مصدر رسمي يحسم الاستبدال.",
+      "evidence": [
+        "https://www.aljazeeramaps.com/listing/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A3%D8%A8%D9%88-%D9%87%D8%A7%D9%86%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+      ]
+    },
+    {
+      "original_candidate_id": "phase6-google-11467314085846766385",
+      "original_candidate": {
+        "id": "phase6-google-11467314085846766385",
+        "name": "معرض الرويزن",
+        "classification": "review_required_before_approval",
+        "type": "review_phone_format",
+        "field": "phones",
+        "old_value": [
+          "0500373270"
+        ],
+        "new_value": [
+          "050373270"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74"
+        ]
+      },
+      "outcome": "rejected_keep_current",
+      "action": {
+        "operation": "none",
+        "keep": [
+          "0500373270"
+        ]
+      },
+      "reason": "المقترح ناقص رقمًا؛ عدة مصادر حديثة تعرض الرقم الحالي كاملًا.",
+      "evidence": [
+        "https://www.aljazeeramaps.com/listing/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B1%D9%88%D9%8A%D8%B2%D9%86%D8%8C-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
+        "https://sa.near-place.com/shrkt-alrwyzn-llsyarat-hsyn-srhan-mecca"
+      ]
+    },
+    {
+      "original_candidate_id": "phase6-google-9538097124382675126",
+      "original_candidate": {
+        "id": "phase6-google-9538097124382675126",
+        "name": "شركة العميري للسيارات واقامة المزادات",
+        "classification": "review_required_before_approval",
+        "type": "phone_conflict_review",
+        "field": "phones",
+        "old_value": [
+          "0555209876"
+        ],
+        "new_value": [
+          "0555510499"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74"
+        ]
+      },
+      "outcome": "unresolved",
+      "action": {
+        "operation": "none"
+      },
+      "reason": "صفحة الدليل نفسها تعرض الرقمين القديم والجديد بصيغ متعارضة؛ لا مصدر رسمي مستقل يحسم الحذف أو الاستبدال.",
+      "evidence": [
+        "https://www.bizmideast.com/SA/%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D9%8A%D8%B1%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%88%D8%A7%D9%82%D8%A7%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AF%D8%A7%D8%AA-055-551-0499"
+      ]
+    },
+    {
+      "original_candidate_id": "phase5-car-f91368845dad",
+      "original_candidate": {
+        "id": "phase5-car-f91368845dad",
+        "name": "معرض الوادي الفضي",
+        "classification": "review_required_before_approval",
+        "type": "phone_conflict_review",
+        "field": "phones",
+        "old_value": [
+          "0562803375"
+        ],
+        "new_value": [
+          "0566005188"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D9%81%D8%B6%D9%8A-056-600-5188",
+          "https://maps.yango.com/ar-sa/org/64849300395/"
+        ]
+      },
+      "outcome": "resolved_confirmed",
+      "action": {
+        "operation": "replace_phones",
+        "id": "phase5-car-f91368845dad",
+        "old_value": [
+          "0562803375"
+        ],
+        "new_value": [
+          "0566005188"
+        ]
+      },
+      "reason": "Yango ودليل الأعمال يتطابقان على الاسم والمدينة والرقم الجديد.",
+      "evidence": [
+        "https://maps.yango.com/ar-sa/org/64849300395/",
+        "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D9%81%D8%B6%D9%8A-056-600-5188"
+      ]
+    },
+    {
+      "original_candidate_id": "phase5-google-4012528401095037100",
+      "original_candidate": {
+        "id": "phase5-google-4012528401095037100",
+        "name": "مجموعة صالح للسيارات — الدمام",
+        "classification": "review_required_before_approval",
+        "type": "website_missing_confirmed",
+        "field": "web",
+        "old_value": "",
+        "new_value": "https://salehcars.com/",
+        "status": "not_applied",
+        "evidence": [
+          "https://salehcars.com/",
+          "https://www.google.com/maps/?cid=4012528401095037100"
+        ]
+      },
+      "outcome": "resolved_confirmed",
+      "action": {
+        "operation": "replace_web",
+        "id": "phase5-google-4012528401095037100",
+        "old_value": "",
+        "new_value": "https://salehcars.com/"
+      },
+      "reason": "الموقع الرسمي مطابق لمجموعة صالح للسيارات والدبوس.",
+      "evidence": [
+        "https://salehcars.com/",
+        "https://www.google.com/maps/?cid=4012528401095037100"
+      ]
+    },
+    {
+      "original_candidate_id": "national-car-3238e148b1c2bc",
+      "original_candidate": {
+        "id": "national-car-3238e148b1c2bc",
+        "name": "معرض وصالة وادي السرحان للسيارات",
+        "classification": "review_required_before_approval",
+        "type": "phone_conflict_review",
+        "field": "phones",
+        "old_value": [
+          "0551406746"
+        ],
+        "new_value": [
+          "0557329806",
+          "0551403680",
+          "0557272867",
+          "0559135291"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://haraj.com.sa/11187640669/"
+        ]
+      },
+      "outcome": "resolved_confirmed",
+      "action": {
+        "operation": "replace_phones",
+        "id": "national-car-3238e148b1c2bc",
+        "old_value": [
+          "0551406746"
+        ],
+        "new_value": [
+          "0557329806",
+          "0551403680",
+          "0557272867",
+          "0559135291"
+        ]
+      },
+      "reason": "عدة إعلانات حديثة متكررة من حساب المعرض نفسه تنص أن هذه أرقام قسم المبيعات الحالية ولا توجد أرقام أخرى.",
+      "evidence": [
+        "https://haraj.com.sa/11187640669/",
+        "https://haraj.com.sa/11185557402/",
+        "https://haraj.com.sa/11189984915/"
+      ]
+    },
+    {
+      "original_candidate_id": "national-car-5da0c8fe904151",
+      "original_candidate": {
+        "id": "national-car-5da0c8fe904151",
+        "name": "معرض العنزي للسيارات",
+        "classification": "review_required_before_approval",
+        "type": "additional_phone_review",
+        "field": "phones",
+        "old_value": [
+          "0556426466"
+        ],
+        "new_value": [
+          "0556426466",
+          "0534070003"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://yellowpages-ar.cybo.com/SA-biz/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+          "https://www.mideastarchives.biz/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+        ]
+      },
+      "outcome": "rejected_keep_current",
+      "action": {
+        "operation": "none",
+        "keep": [
+          "0556426466"
+        ]
+      },
+      "reason": "الرقم الإضافي المقترح مصدره أدلة قديمة، بينما إعلانات المعرض الحديثة تعرض الرقم الحالي وأرقام موظفين مختلفة وتصرح بعدم وجود أرقام أخرى.",
+      "evidence": [
+        "https://haraj.com.sa/11189984915/",
+        "https://haraj.com.sa/11183159411/"
+      ]
+    },
+    {
+      "original_candidate_id": "national-car-8423d1c5d7f666",
+      "original_candidate": {
+        "id": "national-car-8423d1c5d7f666",
+        "name": "معرض راف كار للسيارات",
+        "classification": "review_required_before_approval",
+        "type": "additional_phone_review",
+        "field": "phones",
+        "old_value": [
+          "0506416060"
+        ],
+        "new_value": [
+          "0506416060",
+          "0556416060",
+          "0506436000"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://haraj.com.sa/11186927626/"
+        ]
+      },
+      "outcome": "unresolved",
+      "action": {
+        "operation": "none"
+      },
+      "reason": "لم يظهر مصدر مستقل حديث يربط الرقمين الإضافيين بالمعرض نفسه؛ يبقى الرقم الحالي دون تعديل.",
+      "evidence": [
+        "https://haraj.com.sa/11186927626/"
+      ]
+    },
+    {
+      "original_candidate_id": "phase5-google-15139476235122476844",
+      "original_candidate": {
+        "id": "phase5-google-15139476235122476844",
+        "name": "معرض افق الجزيرة للسيارات",
+        "classification": "review_required_before_approval",
+        "type": "additional_phone_review",
+        "field": "phones",
+        "old_value": [
+          "0508184690"
+        ],
+        "new_value": [
+          "0508184690",
+          "0505328222",
+          "0505178161"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://haraj.com.sa/11163019532/",
+          "https://haraj.com.sa/11189321775/"
+        ]
+      },
+      "outcome": "resolved_confirmed",
+      "action": {
+        "operation": "replace_phones",
+        "id": "phase5-google-15139476235122476844",
+        "old_value": [
+          "0508184690"
+        ],
+        "new_value": [
+          "0508184690",
+          "0505328222",
+          "0505178161"
+        ]
+      },
+      "reason": "إعلان حديث للمعرض يذكر الأرقام الثلاثة، مع إعلان آخر يؤكد الرقم الأساسي.",
+      "evidence": [
+        "https://haraj.com.sa/11189321775/",
+        "https://haraj.com.sa/11163019532/"
+      ]
+    },
+    {
+      "original_candidate_id": "phase5-google-9753578593939363284",
+      "original_candidate": {
+        "id": "phase5-google-9753578593939363284",
+        "name": "معرض العز كار للسيارات",
+        "classification": "review_required_before_approval",
+        "type": "additional_phone_review",
+        "field": "phones",
+        "old_value": [
+          "0508199800"
+        ],
+        "new_value": [
+          "0508199800",
+          "0502889449"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://haraj.com.sa/11183836448/",
+          "https://haraj.com.sa/11189960825/"
+        ]
+      },
+      "outcome": "resolved_confirmed",
+      "action": {
+        "operation": "replace_phones",
+        "id": "phase5-google-9753578593939363284",
+        "old_value": [
+          "0508199800"
+        ],
+        "new_value": [
+          "0508199800",
+          "0502889449"
+        ]
+      },
+      "reason": "إعلانات متعددة وحديثة من حساب المعرض تكرر رقمي المبيعات.",
+      "evidence": [
+        "https://haraj.com.sa/11183836448/",
+        "https://haraj.com.sa/11189960825/"
+      ]
+    },
+    {
+      "original_candidate_id": "phase5-google-10670140498229279196",
+      "original_candidate": {
+        "id": "phase5-google-10670140498229279196",
+        "name": "معرض عامر الرثيع للسيارات",
+        "classification": "review_required_before_approval",
+        "type": "additional_phone_review",
+        "field": "phones",
+        "old_value": [
+          "0555144127"
+        ],
+        "new_value": [
+          "0555144127",
+          "0530423741"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://haraj.com.sa/11177403625/"
+        ]
+      },
+      "outcome": "resolved_confirmed",
+      "action": {
+        "operation": "replace_phones",
+        "id": "phase5-google-10670140498229279196",
+        "old_value": [
+          "0555144127"
+        ],
+        "new_value": [
+          "0555144127",
+          "0530423741"
+        ]
+      },
+      "reason": "إعلان حديث باسم المعرض يذكر الرقمين للتواصل.",
+      "evidence": [
+        "https://haraj.com.sa/11177403625/"
+      ]
+    },
+    {
+      "original_candidate_id": "pdf-smalltown-029",
+      "original_candidate": {
+        "id": "pdf-smalltown-029",
+        "name": "Yanbu Balubaid Autozone -اوتوزون بالبيد ينبع",
+        "classification": "review_required",
+        "type": "probable_duplicate_same_city",
+        "field": "record_scope",
+        "old_value": {
+          "city": "ينبع",
+          "id": "pdf-smalltown-029"
+        },
+        "new_value": {
+          "action": "exclude_probable_duplicate_after_approval",
+          "retain_id": "phase6-cars-14a08a4bd9b2f4",
+          "origin_city": "ينبع"
+        },
+        "status": "not_applied",
+        "evidence": [],
+        "proof": [
+          "matching_canonical_id=phase6-cars-14a08a4bd9b2f4",
+          "stored_neighborhood=Yanbu Saudi Arabia, Al Sawari District, King Abdul Aziz Street"
+        ]
+      },
+      "outcome": "resolved_confirmed",
+      "action": {
+        "operation": "remove_record",
+        "id": "pdf-smalltown-029",
+        "retain_id": "phase6-cars-14a08a4bd9b2f4"
+      },
+      "reason": "اسم الجهة والعنوان والمدينة متطابقة مع السجل الأساسي ذي الدبوس المباشر؛ سجل PDF بلا دبوس مستقل.",
+      "evidence": [
+        "https://www.google.com/maps/?cid=15590231318220488544"
+      ]
+    },
+    {
+      "original_candidate_id": "pdf-smalltown-030",
+      "original_candidate": {
+        "id": "pdf-smalltown-030",
+        "name": "للسيارات الكثيريKatheri Car Dealer | -Al",
+        "classification": "review_required",
+        "type": "probable_duplicate_same_city",
+        "field": "record_scope",
+        "old_value": {
+          "city": "ينبع",
+          "id": "pdf-smalltown-030"
+        },
+        "new_value": {
+          "action": "exclude_probable_duplicate_after_approval",
+          "retain_id": "phase6-cars-bdb51b87a900ad",
+          "origin_city": "ينبع"
+        },
+        "status": "not_applied",
+        "evidence": [],
+        "proof": [
+          "matching_canonical_id=phase6-cars-bdb51b87a900ad",
+          "stored_neighborhood=Saudi46424, Yanbu , Al Sharbatli, Ali Bin Abi Talib Road, FF+3QW32 Arabia"
+        ]
+      },
+      "outcome": "resolved_confirmed",
+      "action": {
+        "operation": "remove_record",
+        "id": "pdf-smalltown-030",
+        "retain_id": "phase6-cars-bdb51b87a900ad"
+      },
+      "reason": "اسم الجهة والعنوان والمدينة متطابقة مع السجل الأساسي ذي الدبوس المباشر؛ سجل PDF بلا دبوس مستقل.",
+      "evidence": [
+        "https://www.google.com/maps/?cid=6843176698281207014"
+      ]
+    },
+    {
+      "original_candidate_id": "pdf-smalltown-031",
+      "original_candidate": {
+        "id": "pdf-smalltown-031",
+        "name": "Yanbu Hondaمعرض هلا",
+        "classification": "review_required",
+        "type": "probable_duplicate_same_city",
+        "field": "record_scope",
+        "old_value": {
+          "city": "ينبع",
+          "id": "pdf-smalltown-031"
+        },
+        "new_value": {
+          "action": "exclude_probable_duplicate_after_approval",
+          "retain_id": "phase6-cars-a46eb003b73006",
+          "origin_city": "ينبع"
+        },
+        "status": "not_applied",
+        "evidence": [],
+        "proof": [
+          "matching_canonical_id=phase6-cars-a46eb003b73006",
+          "stored_neighborhood=Saudi Arabia46429, Yanbu , Attakhi, King Khalid Rd"
+        ]
+      },
+      "outcome": "resolved_confirmed",
+      "action": {
+        "operation": "remove_record",
+        "id": "pdf-smalltown-031",
+        "retain_id": "phase6-cars-a46eb003b73006"
+      },
+      "reason": "اسم الجهة والعنوان والمدينة متطابقة مع السجل الأساسي ذي الدبوس المباشر؛ سجل PDF بلا دبوس مستقل.",
+      "evidence": [
+        "https://www.google.com/maps/?cid=2889396343584531324"
+      ]
+    },
+    {
+      "original_candidate_id": "pdf-smalltown-032",
+      "original_candidate": {
+        "id": "pdf-smalltown-032",
+        "name": "Kia NMC - Showroomالشركة الأهلية للتسويق -",
+        "classification": "review_required",
+        "type": "probable_duplicate_same_city",
+        "field": "record_scope",
+        "old_value": {
+          "city": "ينبع",
+          "id": "pdf-smalltown-032"
+        },
+        "new_value": {
+          "action": "exclude_probable_duplicate_after_approval",
+          "retain_id": "phase6-cars-b7d1ffd9d26057",
+          "origin_city": "ينبع"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://maps.yango.com/en-sa/org/94424291487/"
+        ],
+        "proof": [
+          "matching_canonical_id=phase6-cars-b7d1ffd9d26057",
+          "stored_neighborhood=المعرض Saudi Arabia46425, Yanbu , Al Buhayrah، عبدالله الملك طريق"
+        ]
+      },
+      "outcome": "resolved_confirmed",
+      "action": {
+        "operation": "remove_record",
+        "id": "pdf-smalltown-032",
+        "retain_id": "phase6-cars-b7d1ffd9d26057"
+      },
+      "reason": "اسم الجهة والعنوان والمدينة متطابقة مع السجل الأساسي ذي الدبوس المباشر؛ سجل PDF بلا دبوس مستقل.",
+      "evidence": [
+        "https://www.google.com/maps/?cid=166395200608629438",
+        "https://maps.yango.com/en-sa/org/94424291487/"
+      ]
+    }
+  ]
+}
