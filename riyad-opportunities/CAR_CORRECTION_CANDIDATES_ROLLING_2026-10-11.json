@@ -3,7 +3,7 @@
   "generated_at": "2026-10-11",
   "repository": "ELHAME25/elhame25.github.io",
   "branch": "fix/scope-counts-nhc-20261010",
-  "through_audit_head": "c1cdf4c1456132dee29de5cee6934dfcdd3b8ebe",
+  "through_audit_head": "bcf34ec3c4b6904332e9c8ce98a29bf3bbd8ef5d",
   "safety": {
     "cars_json_modified_by_this_package": false,
     "qadisiyah_included": false,
@@ -12,9 +12,9 @@
   "summary": {
     "baseline_applied_records": 2,
     "baseline_applied_field_changes": 6,
-    "pending_confirmed": 98,
-    "pending_review_required": 8,
-    "note": "Rolling package through completion of Dammam. No pending item is authorized for cars.json."
+    "pending_confirmed": 99,
+    "pending_review_required": 11,
+    "note": "Rolling package through completion of Qurayyat. No pending item is authorized for cars.json."
   },
   "applied_baseline_history": [
     {
@@ -2372,6 +2372,77 @@
       "evidence": [
         "https://salehcars.com/",
         "https://www.google.com/maps/?cid=4012528401095037100"
+      ]
+    },
+    {
+      "id": "national-car-2a94c8fa96017a",
+      "name": "معرض فريح لتجارة السيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "website_missing_confirmed",
+      "field": "web",
+      "old_value": "",
+      "new_value": "https://mamdouhfreih-for-cars.com/",
+      "status": "not_applied",
+      "evidence": [
+        "https://mamdouhfreih-for-cars.com/"
+      ]
+    },
+    {
+      "id": "national-car-3238e148b1c2bc",
+      "name": "معرض وصالة وادي السرحان للسيارات",
+      "classification": "review_required_before_approval",
+      "type": "phone_conflict_review",
+      "field": "phones",
+      "old_value": [
+        "0551406746"
+      ],
+      "new_value": [
+        "0557329806",
+        "0551403680",
+        "0557272867",
+        "0559135291"
+      ],
+      "status": "not_applied",
+      "evidence": [
+        "https://haraj.com.sa/11187640669/"
+      ]
+    },
+    {
+      "id": "national-car-5da0c8fe904151",
+      "name": "معرض العنزي للسيارات",
+      "classification": "review_required_before_approval",
+      "type": "additional_phone_review",
+      "field": "phones",
+      "old_value": [
+        "0556426466"
+      ],
+      "new_value": [
+        "0556426466",
+        "0534070003"
+      ],
+      "status": "not_applied",
+      "evidence": [
+        "https://yellowpages-ar.cybo.com/SA-biz/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+        "https://www.mideastarchives.biz/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+      ]
+    },
+    {
+      "id": "national-car-8423d1c5d7f666",
+      "name": "معرض راف كار للسيارات",
+      "classification": "review_required_before_approval",
+      "type": "additional_phone_review",
+      "field": "phones",
+      "old_value": [
+        "0506416060"
+      ],
+      "new_value": [
+        "0506416060",
+        "0556416060",
+        "0506436000"
+      ],
+      "status": "not_applied",
+      "evidence": [
+        "https://haraj.com.sa/11186927626/"
       ]
     }
   ]
