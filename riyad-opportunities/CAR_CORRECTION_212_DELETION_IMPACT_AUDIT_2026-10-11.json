@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "manifest": {
+    "path": "riyad-opportunities/CAR_CORRECTION_APPLICATION_MANIFEST_212_2026-10-11.json",
+    "baseline_commit": "3119e057",
+    "blob_sha": "0db1223ed5465425cc4c3271eacc047b6277404b"
+  },
+  "inputs": {
+    "cars_blob_sha": "da6d9458163224b27166aaaf28fc4a7ad46db5bf",
+    "app_js_blob_sha": "add349d5dfa720772b0d22ce09e4f9d04151e2f1",
+    "branches_blob_sha": "3522160f77eafebab50e4eb6961dec042edd7ba6",
+    "city_strategy_blob_sha": "a33b028a81c0032cae42cdd2222a6bdcf4e9a1ed",
+    "companies_blob_sha": "d8a0be265bdaeec0a03de2e6be391d98b8120559"
+  },
+  "authorization": {
+    "apply_manifest": false,
+    "cars_json_write": false,
+    "merge": false,
+    "publish": false
+  },
+  "verdict": {
+    "safe_to_apply_without_losing_correct_opportunities": false,
+    "answer": "NO",
+    "blocking_exceptions": 3,
+    "reason": "الحذف يزيل بطاقة وكالة رسمية ظاهرة في القنفذة، ويزيل معرضين من قسم الفرص القريبة في أم الحمام وصبيا وفق سلوك التطبيق الحالي."
+  },
+  "test_scope": {
+    "raw_records_before": 998,
+    "raw_records_after_manifest_preview": 788,
+    "deletion_candidates": 210,
+    "regional_duplicates": 208,
+    "official_dealer_records": 2,
+    "branches_checked": 248,
+    "views_checked": [
+      "قائمة معارض المدينة وفق rawItems(cars)",
+      "عدادات المدن وفق D.cityCount.cars",
+      "قسم الفرص القريبة وفق nearbyInfo/nearbyItems وبنصف القطر الافتراضي 15 كم",
+      "حقول الاتصال وواتساب والموقع والخرائط للسجلات المحذوفة والمحتفظ بها",
+      "أبها وخميس مشيط ومحايل عسير والنماص",
+      "سجلات القادسية المحمية"
+    ]
+  },
+  "application_behavior_findings": {
+    "regional_cross_city_records": 205,
+    "regional_same_city_records": 3,
+    "note": "rawItems يستبعد النسخة الإقليمية عندما تختلف originCity عن مدينة الفرع؛ لذلك لا تظهر النسخ العابرة للمدن في القائمة المحلية أصلًا. لكن nearbyItems يقرأ D.cars حسب مدينة الدعم والمسافة ولا يطبق شرط originCity نفسه، ولذلك ظهرت حالتا فقد في قسم القريب.",
+    "boot_cars_before": 962,
+    "boot_cars_after_deletion_only": 754,
+    "local_view_differences": [
+      {
+        "city": "الخبر",
+        "removed_ids": [
+          "regional-pdf-national-car-9e7346b3ca3e8f-074",
+          "regional-pdf-national-car-mas-khobar-074"
+        ],
+        "opportunity_loss": false,
+        "reason": "السجلان نسختان في المدينة نفسها؛ السجلان canonical ما زالا ظاهرين، ويحملان بيانات اتصال/خرائط مساوية أو أغنى."
+      },
+      {
+        "city": "القنفذة",
+        "removed_ids": [
+          "pdf-smalltown-026"
+        ],
+        "also_deleted_hidden_canonical_id": "phase6-cars-56fc1e0cbe2502",
+        "opportunity_loss": true,
+        "reason": "pdf-smalltown-026 هو البطاقة الظاهرة حاليًا. السجل canonical محجوب أصلًا من دليل المعارض بواسطة مرشح الشركات/الوكالات، ولا يوجد تمثيل لبابقي في companies.json."
+      }
+    ],
+    "nearby_view_differences": [
+      {
+        "branch_code": "330",
+        "city": "أم الحمام",
+        "removed_visible_id": "regional-car-national-car-c80e0cb5068ed3-8",
+        "canonical_id": "national-car-c80e0cb5068ed3",
+        "name": "معرض جنان للسيارات",
+        "canonical_city": "سيهات",
+        "opportunity_loss": true,
+        "contact_continuity_if_canonical_is_reused": true,
+        "reason": "النسخة تظهر ضمن دعم القطيف وبمسافة أقل من 15 كم؛ canonical له الهاتف والدبوس نفسيهما لكنه لا يدخل nearbyItems لأن مدينته سيهات."
+      },
+      {
+        "branch_code": "513",
+        "city": "صبيا",
+        "removed_visible_id": "regional-pdf-phase6-cars-8e1ef9c80a327c-053",
+        "canonical_id": "phase6-cars-8e1ef9c80a327c",
+        "name": "معرض مركبة الرؤية للسيارات",
+        "canonical_city": "صبيا",
+        "opportunity_loss": true,
+        "contact_continuity_if_canonical_is_reused": true,
+        "reason": "النسخة المخزنة تحت أبو عريش هي الوحيدة التي يعرضها قسم القريب لفرع صبيا وفق استراتيجية الدعم الحالية؛ canonical له الهاتف والدبوس نفسيهما لكنه لا يدخل لأن nearbyItems يقصر المصدر على مدينة الدعم أبو عريش."
+      }
+    ]
+  },
+  "regional_retention_validation": {
+    "retain_ids_present_for_all_208": true,
+    "phone_differences": 1,
+    "phone_difference_assessment": "السجل المحتفظ به لمعرض الغصاب أغنى: رقمان بدل رقم واحد.",
+    "whatsapp_differences": 0,
+    "substantive_map_link_losses": 0,
+    "note": "الفروق الأخرى في الخرائط/الإحداثيات إما تنسيق URL أو أن السجل canonical أغنى. المشكلة ليست ضياع بيانات الاتصال من canonical، بل عدم عرضه في مسارات المدن الثلاث أعلاه."
+  },
+  "official_dealer_validation": {
+    "records": [
+      "phase6-cars-56fc1e0cbe2502",
+      "pdf-smalltown-026"
+    ],
+    "same_business": true,
+    "official_dealer_confirmed": true,
+    "business": "شركة مجموعة محمد صالح بابقي وأولاده للسيارات - تويوتا/لكزس القنفذة",
+    "official_phone": "920033745",
+    "official_sources": [
+      "https://www.mbabgi.sa/",
+      "https://mbabgi.sa/findcenter",
+      "https://mbabgi.sa/contact",
+      "https://mbabgi.sa/about"
+    ],
+    "source_facts": [
+      "الموقع الرسمي يعرّف الشركة كبائع ومقدم صيانة وقطع غيار لسيارات تويوتا ولكزس.",
+      "صفحة الفروع الرسمية تسجل فرع القنفذة للمبيعات والصيانة وقطع الغيار بالرقم 920033745."
+    ],
+    "companies_dataset_match": false,
+    "conclusion": "التصنيف كوكالة/موزع رسمي صحيح، لكن حذف السجلين الآن يفقد ظهور هذه الفرصة بالكامل من البوابة ما لم تُنقل أولًا إلى دليل وكالات/شركات مناسب."
+  },
+  "protected_areas": {
+    "qadisiyah_records": 33,
+    "qadisiyah_targeted": false,
+    "qadisiyah_byte_equivalent_after_preview": true,
+    "changed_ids": []
+  },
+  "southern_region_regression": {
+    "cities": [
+      {
+        "city": "أبها",
+        "visible_before": 30,
+        "visible_after": 30,
+        "ids_unchanged": true,
+        "contact_whatsapp_maps_web_unchanged": true
+      },
+      {
+        "city": "خميس مشيط",
+        "visible_before": 39,
+        "visible_after": 39,
+        "ids_unchanged": true,
+        "contact_whatsapp_maps_web_unchanged": true
+      },
+      {
+        "city": "محايل عسير",
+        "visible_before": 5,
+        "visible_after": 5,
+        "ids_unchanged": true,
+        "contact_whatsapp_maps_web_unchanged": true
+      },
+      {
+        "city": "النماص",
+        "visible_before": 2,
+        "visible_after": 2,
+        "ids_unchanged": true,
+        "contact_whatsapp_maps_web_unchanged": true
+      }
+    ],
+    "note": "لا يوجد هدف حذف من أبها أو خميس مشيط في الحزمة؛ التغيير المسمى «أضواء خميس مشيط» يقع في سجلات جازان الإقليمية ولا يغير نتائج أبها/خميس مشيط."
+  },
+  "required_remediation_before_approval": [
+    {
+      "priority": 1,
+      "action": "استبدال النسخ الإقليمية بعلاقة تغطية صريحة على السجل canonical، مثل serviceCities/coverageCities، وتعديل nearbyItems ليختار السجل canonical بالمسافة أو التغطية مع إزالة التكرار.",
+      "must_preserve": [
+        {
+          "canonical_id": "national-car-c80e0cb5068ed3",
+          "served_city": "أم الحمام"
+        },
+        {
+          "canonical_id": "phase6-cars-8e1ef9c80a327c",
+          "served_city": "صبيا"
+        }
+      ]
+    },
+    {
+      "priority": 2,
+      "action": "إضافة وكالة بابقي القنفذة إلى دليل مستقل للوكالات/الشركات أو إبقاء سجل canonical مرئيًا في موضع مناسب قبل حذف سجلي cars.",
+      "must_preserve": {
+        "name": "شركة مجموعة محمد صالح بابقي وأولاده للسيارات - القنفذة",
+        "city": "القنفذة",
+        "phone": "920033745",
+        "website": "https://mbabgi.sa/findcenter",
+        "map_source": "دبوس/موقع الفرع الرسمي المثبت"
+      }
+    },
+    {
+      "priority": 3,
+      "action": "إعادة توليد manifest بعد المعالجة وتشغيل مقارنة IDs والعدادات والأفعال لكل الفروع؛ يجب أن تكون خسائر الفرص الصحيحة صفرًا قبل طلب الاعتماد."
+    }
+  ],
+  "safe_subset_observation": {
+    "same_city_duplicate_removals_safe": true,
+    "cross_city_deletions_conditionally_safe": "آمنة فقط بعد حفظ التغطية على canonical وإصلاح مسار nearby؛ الحزمة الحالية لا تحقق ذلك.",
+    "official_dealer_deletions_conditionally_safe": "آمنة فقط بعد نقل الوكالة إلى دليل مناسب يبقي ظهورها."
+  },
+  "final_state": {
+    "cars_json_modified": false,
+    "manifest_applied": false,
+    "merged": false,
+    "published": false
+  }
+}
