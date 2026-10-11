@@ -3,7 +3,7 @@
   "generated_at": "2026-10-11",
   "repository": "ELHAME25/elhame25.github.io",
   "branch": "fix/scope-counts-nhc-20261010",
-  "through_audit_head": "c7caa174df5ac3d68c105134492c7627ffe585de",
+  "through_audit_head": "52c956dd9e254d3e6997621183361334e2d276a5",
   "safety": {
     "cars_json_modified_by_this_package": false,
     "qadisiyah_included": false,
@@ -13,8 +13,8 @@
     "baseline_applied_records": 2,
     "baseline_applied_field_changes": 6,
     "pending_confirmed": 160,
-    "pending_review_required": 14,
-    "note": "Rolling package through completion of Najran. No new correction candidates from this city; no pending item is authorized for cars.json."
+    "pending_review_required": 18,
+    "note": "Rolling package through completion of Yanbu. Four probable same-city PDF duplicates require separate review; no item is authorized for cars.json."
   },
   "applied_baseline_history": [
     {
@@ -4084,6 +4084,96 @@
         "regionalListingOf=phase5-google-8725025085619062305",
         "originCity=عنيزة",
         "stored_neighborhood=المنار؛ رمز Plus Codes: 32Q8+PQ عنيزة السعودية"
+      ]
+    },
+    {
+      "id": "pdf-smalltown-029",
+      "name": "Yanbu Balubaid Autozone -اوتوزون بالبيد ينبع",
+      "classification": "review_required",
+      "type": "probable_duplicate_same_city",
+      "field": "record_scope",
+      "old_value": {
+        "city": "ينبع",
+        "id": "pdf-smalltown-029"
+      },
+      "new_value": {
+        "action": "exclude_probable_duplicate_after_approval",
+        "retain_id": "phase6-cars-14a08a4bd9b2f4",
+        "origin_city": "ينبع"
+      },
+      "status": "not_applied",
+      "evidence": [],
+      "proof": [
+        "matching_canonical_id=phase6-cars-14a08a4bd9b2f4",
+        "stored_neighborhood=Yanbu Saudi Arabia, Al Sawari District, King Abdul Aziz Street"
+      ]
+    },
+    {
+      "id": "pdf-smalltown-030",
+      "name": "للسيارات الكثيريKatheri Car Dealer | -Al",
+      "classification": "review_required",
+      "type": "probable_duplicate_same_city",
+      "field": "record_scope",
+      "old_value": {
+        "city": "ينبع",
+        "id": "pdf-smalltown-030"
+      },
+      "new_value": {
+        "action": "exclude_probable_duplicate_after_approval",
+        "retain_id": "phase6-cars-bdb51b87a900ad",
+        "origin_city": "ينبع"
+      },
+      "status": "not_applied",
+      "evidence": [],
+      "proof": [
+        "matching_canonical_id=phase6-cars-bdb51b87a900ad",
+        "stored_neighborhood=Saudi46424, Yanbu , Al Sharbatli, Ali Bin Abi Talib Road, FF+3QW32 Arabia"
+      ]
+    },
+    {
+      "id": "pdf-smalltown-031",
+      "name": "Yanbu Hondaمعرض هلا",
+      "classification": "review_required",
+      "type": "probable_duplicate_same_city",
+      "field": "record_scope",
+      "old_value": {
+        "city": "ينبع",
+        "id": "pdf-smalltown-031"
+      },
+      "new_value": {
+        "action": "exclude_probable_duplicate_after_approval",
+        "retain_id": "phase6-cars-a46eb003b73006",
+        "origin_city": "ينبع"
+      },
+      "status": "not_applied",
+      "evidence": [],
+      "proof": [
+        "matching_canonical_id=phase6-cars-a46eb003b73006",
+        "stored_neighborhood=Saudi Arabia46429, Yanbu , Attakhi, King Khalid Rd"
+      ]
+    },
+    {
+      "id": "pdf-smalltown-032",
+      "name": "Kia NMC - Showroomالشركة الأهلية للتسويق -",
+      "classification": "review_required",
+      "type": "probable_duplicate_same_city",
+      "field": "record_scope",
+      "old_value": {
+        "city": "ينبع",
+        "id": "pdf-smalltown-032"
+      },
+      "new_value": {
+        "action": "exclude_probable_duplicate_after_approval",
+        "retain_id": "phase6-cars-b7d1ffd9d26057",
+        "origin_city": "ينبع"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://maps.yango.com/en-sa/org/94424291487/"
+      ],
+      "proof": [
+        "matching_canonical_id=phase6-cars-b7d1ffd9d26057",
+        "stored_neighborhood=المعرض Saudi Arabia46425, Yanbu , Al Buhayrah، عبدالله الملك طريق"
       ]
     }
   ]
