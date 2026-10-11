@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-12",
+  "timezone": "Asia/Riyadh",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": {
+    "cities": ["الخرج", "وادي الدواسر", "السليل", "القويعية", "المجمعة", "الزلفي", "الروضة"],
+    "selection": "Records absent from audits where coordinates are null, map is a Google search URL, or phone is empty",
+    "records_reviewed": 37,
+    "protected_qadisiyah_touched": false
+  },
+  "summary": {
+    "verified_with_proposed_data_correction": 26,
+    "verified_pin_phone_unresolved": 6,
+    "unresolved_after_search": 4,
+    "wrong_city_match_rejected": 1
+  },
+  "policy": {
+    "primary_source": "Google Maps place cards opened directly",
+    "general_search_url_not_accepted_as_verified_pin": true,
+    "cars_json_write_status": "Not modified by this parallel audit worker",
+    "github_write_status": "Not attempted by this parallel audit worker"
+  },
+  "records": [
+    {
+      "id": "entity-c7cbd30dbc0a",
+      "city": "الروضة",
+      "stored": {"name": "معرض سيارات السلام", "phone": "0504876281", "maps": "", "lat": null, "lon": null},
+      "decision": "unresolved_after_search",
+      "unresolved": ["pin", "address", "phone_on_place_card"],
+      "note": "No matching Google Maps place card was established for the stored city and phone."
+    },
+    {
+      "id": "national-car-4835e5d99e640e",
+      "city": "الخرج",
+      "stored": {"name": "معرض مطلق آل ملحم للسيارات", "phone": "0555102170", "maps_provider": "Waze", "lat": null, "lon": null},
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض مطلق ال ملحم للسيارات", "activity": "تاجر سيارات", "address": "السعادة، الخرج 16443، المملكة العربية السعودية", "phone": "0555102170", "lat": 24.1867957, "lon": 47.4017143, "maps_cid": "6042540108382943420"},
+      "proposed_change": {"n": "معرض مطلق ال ملحم للسيارات", "maps": "https://www.google.com/maps/?cid=6042540108382943420", "lat": 24.1867957, "lon": 47.4017143, "nb": "السعادة، الخرج 16443، المملكة العربية السعودية"}
+    },
+    {
+      "id": "national-car-da080928d404e3",
+      "city": "الخرج",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض القرنين للسيارات", "activity": "تاجر سيارات", "address": "5245 9560، الخرج 16443، المملكة العربية السعودية", "phone": "0555563118", "lat": 24.188808, "lon": 47.4041362, "maps_cid": "14274973744697221433"},
+      "proposed_change": {"lat": 24.188808, "lon": 47.4041362}
+    },
+    {
+      "id": "national-car-7749faab1f6281",
+      "city": "الخرج",
+      "stored": {"name": "معرض روز الماس للسيارات", "phone": "0555510308", "maps_cid": "15500398747931973343"},
+      "decision": "unresolved_after_search",
+      "unresolved": ["pin", "phone_on_place_card"],
+      "note": "Stored CID opened an empty map with no place card; it was not accepted as a verified pin."
+    },
+    {
+      "id": "national-car-853fb5466c5011",
+      "city": "الخرج",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض العصيمي للسيارات", "activity": "تاجر السيارات", "address": "9388، السعادة، الخرج 16443 5180، المملكة العربية السعودية", "phone": "0536978474", "lat": 24.1874842, "lon": 47.403078, "maps_cid": "15505607070274085038"},
+      "proposed_change": {"lat": 24.1874842, "lon": 47.403078}
+    },
+    {
+      "id": "national-car-6a99816571c77d",
+      "city": "الخرج",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض موكب الخرج للسيارات", "activity": "مورد سيارات تويوتا", "address": "5081، 9309، السعادة، الخرج 16443، المملكة العربية السعودية", "phone": "0506289460", "lat": 24.1867624, "lon": 47.4021988, "maps_cid": "11851558662877532658"},
+      "proposed_change": {"n": "معرض موكب الخرج للسيارات", "lat": 24.1867624, "lon": 47.4021988}
+    },
+    {
+      "id": "national-car-596d662897f898",
+      "city": "الخرج",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض طارق الحرشان للسيارات", "activity": "تاجر سيارات", "address": "المعارض، السعادة، الخرج 16443، المملكة العربية السعودية", "phone": "0555100461", "lat": 24.1880915, "lon": 47.405106, "maps_cid": "2062726030508407044"},
+      "proposed_change": {"phones": ["0555100461"], "lat": 24.1880915, "lon": 47.405106, "nb": "المعارض، السعادة، الخرج 16443، المملكة العربية السعودية"}
+    },
+    {
+      "id": "national-car-e2c42ae8d2f010",
+      "city": "وادي الدواسر",
+      "decision": "verified_pin_phone_unresolved",
+      "observed": {"name": "معرض فهد الدوسري للسيارت", "address_city": "وادي الدواسر", "lat": 20.4211002, "lon": 44.7817547, "maps_cid": "17184813909837409404", "phone": null},
+      "proposed_change": {"maps": "https://www.google.com/maps/?cid=17184813909837409404", "lat": 20.4211002, "lon": 44.7817547},
+      "unresolved": ["phone_on_place_card"]
+    },
+    {
+      "id": "national-car-b5c3d0cd22c414",
+      "city": "الخرج",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض محمد الدوسري للسيارات", "activity": "تاجر السيارات", "address": "5065، السعادة، الخرج 16443، المملكة العربية السعودية", "phone": "0555244525", "lat": 24.1857286, "lon": 47.402238, "maps_cid": "13003556705439302203"},
+      "proposed_change": {"lat": 24.1857286, "lon": 47.402238}
+    },
+    {
+      "id": "national-car-bda17a7164c9a4",
+      "city": "الخرج",
+      "decision": "verified_pin_phone_unresolved",
+      "observed": {"name": "معرض اليمني للسيارات", "activity": "تاجر سيارات", "address": "الحارث المخزومي، السعادة، الخرج 16443، المملكة العربية السعودية", "phone": null, "lat": 24.1862018, "lon": 47.4017576, "maps_cid": "6862834981212550681"},
+      "proposed_change": {"n": "معرض اليمني للسيارات", "lat": 24.1862018, "lon": 47.4017576},
+      "unresolved": ["stored_phone_not_published_on_google_card"]
+    },
+    {
+      "id": "national-car-3173ea85386a4e",
+      "city": "الخرج",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض دنيا المركبة", "activity": "تاجر سيارات مستعملة", "address": "5180 9388، الخرج 11942، المملكة العربية السعودية", "phone": "0502929050", "lat": 24.1873343, "lon": 47.4031216, "maps_cid": "467178736688522384"},
+      "proposed_change": {"lat": 24.1873343, "lon": 47.4031216}
+    },
+    {
+      "id": "national-car-58d96cb5fef0db",
+      "city": "الخرج",
+      "decision": "verified_pin_phone_unresolved",
+      "observed": {"name": "معرض فهد للسيارات", "address_city": "الخرج", "lat": 24.1856088, "lon": 47.4009542, "maps_cid": "6675816523290613200", "phone": null},
+      "proposed_change": {"lat": 24.1856088, "lon": 47.4009542},
+      "unresolved": ["phone_on_place_card"]
+    },
+    {
+      "id": "national-car-eca070e37aa486",
+      "city": "الخرج",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض شيخ المعارض بالخرج طلال سعود للسيارات", "activity": "تاجر سيارات", "address": "5170، السعادة، الخرج 16443 9069، المملكة العربية السعودية", "phone": "0555240264", "lat": 24.184464, "lon": 47.403326, "maps_cid": "17510596670128344072"},
+      "proposed_change": {"n": "معرض شيخ المعارض بالخرج طلال سعود للسيارات", "lat": 24.184464, "lon": 47.403326}
+    },
+    {
+      "id": "national-car-03aa01712571b3",
+      "city": "الخرج",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض أركان الموسم للسيارات", "activity": "تاجر سيارات", "address": "شارع المعارض، السعادة، الخرج 12345، المملكة العربية السعودية", "phone": "0551626262", "lat": 24.1851362, "lon": 47.4011774, "maps_cid": "3690969017662199560"},
+      "proposed_change": {"lat": 24.1851362, "lon": 47.4011774, "nb": "شارع المعارض، السعادة، الخرج 12345، المملكة العربية السعودية"}
+    },
+    {
+      "id": "national-car-713e192a69026a",
+      "city": "الخرج",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض عايد للسيارات", "activity": "تاجر سيارات", "address": "الحارثي المخزومي، السعادة، الخرج 16443، المملكة العربية السعودية", "phone": "0535876375", "lat": 24.1862564, "lon": 47.4026331, "maps_cid": "16773646786803679033"},
+      "proposed_change": {"lat": 24.1862564, "lon": 47.4026331, "nb": "الحارثي المخزومي، السعادة، الخرج 16443، المملكة العربية السعودية"}
+    },
+    {
+      "id": "national-car-4dc430510649da",
+      "city": "الخرج",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض المرزوقي", "activity": "تاجر سيارات", "address": "5CP3+GJ3، معارض، السعادة، الخرج 16443، المملكة العربية السعودية", "phone": "0557992999", "lat": 24.1862522, "lon": 47.4040621, "maps_cid": "11110557788920364682"},
+      "proposed_change": {"n": "معرض المرزوقي", "phones": ["0557992999"], "lat": 24.1862522, "lon": 47.4040621, "nb": "5CP3+GJ3، معارض، السعادة، الخرج 16443، المملكة العربية السعودية"}
+    },
+    {
+      "id": "national-car-38a10fe36d0e71",
+      "city": "الخرج",
+      "decision": "verified_pin_phone_unresolved",
+      "observed": {"name": "معرض وسام العز", "activity": "تاجر سيارات", "address": "9080 البهاء الزهير، السعادة، الخرج 16443، المملكة العربية السعودية", "phone": null, "lat": 24.1848139, "lon": 47.4013539, "maps_cid": "16631214370456951426"},
+      "proposed_change": {"n": "معرض وسام العز", "lat": 24.1848139, "lon": 47.4013539},
+      "unresolved": ["stored_phone_not_published_on_google_card"]
+    },
+    {
+      "id": "national-car-car-sulail-candidate",
+      "city": "السليل",
+      "decision": "verified_pin_phone_unresolved",
+      "observed": {"name": "معرض كار السليل للسيارات", "address_city": "السليل", "lat": 20.4617776, "lon": 45.5934508, "maps_cid": "12071258730333334287", "phone": null},
+      "proposed_change": {"lat": 20.4617776, "lon": 45.5934508},
+      "unresolved": ["phone_on_place_card"]
+    },
+    {
+      "id": "v9-car-92ae70913a25",
+      "city": "الزلفي",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض المجيدل للسيارات بالزلفي", "activity": "تاجر سيارات", "address": "8886 شارع ابن الجوزي، الصناعية، الزلفي 15943، المملكة العربية السعودية", "phone": "0504224904", "lat": 26.3028983, "lon": 44.8709761, "maps_cid": "1191917596193715345"},
+      "proposed_change": {"maps": "https://www.google.com/maps/?cid=1191917596193715345", "lat": 26.3028983, "lon": 44.8709761}
+    },
+    {
+      "id": "v9-car-b91525b61fa5",
+      "city": "الزلفي",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "(الكثيري للسيارات (الزلفي", "activity": "تاجر سيارات", "lat": 26.3096552, "lon": 44.8731681, "maps_cid": "9237962362695040264", "phone": null},
+      "proposed_change": {"n": "(الكثيري للسيارات (الزلفي", "maps": "https://www.google.com/maps/?cid=9237962362695040264", "lat": 26.3096552, "lon": 44.8731681},
+      "unresolved": ["stored_phone_not_confirmed_on_opened_card"]
+    },
+    {
+      "id": "v9-car-9da8d2a6b67e",
+      "city": "الزلفي",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض الموسى للسيارات", "activity": "تاجر سيارات", "address": "8478 شارع ابن الجوزي، الصناعية، الزلفي 15943 3455", "phone": "0551685855", "lat": 26.299328, "lon": 44.8727682, "maps_cid": "15027902952120039842"},
+      "proposed_change": {"maps": "https://www.google.com/maps/?cid=15027902952120039842", "lat": 26.299328, "lon": 44.8727682, "nb": "8478 شارع ابن الجوزي، الصناعية، الزلفي 15943 3455"}
+    },
+    {
+      "id": "v9-car-bc197dc393c3",
+      "city": "الزلفي",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض تميز العربة للسيارات", "activity": "تاجر سيارات مستعملة", "lat": 26.3025404, "lon": 44.8711293, "maps_cid": "352137452603209370", "phone": null},
+      "proposed_change": {"maps": "https://www.google.com/maps/?cid=352137452603209370", "lat": 26.3025404, "lon": 44.8711293},
+      "unresolved": ["stored_phone_not_confirmed_on_opened_card"]
+    },
+    {
+      "id": "v9-car-4c2fde441c7b",
+      "city": "الزلفي",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض الدوسري لسيارات( الزلفي )", "activity": "تاجر سيارات", "lat": 26.3007083, "lon": 44.8719919, "maps_cid": "10077233197496718654", "phone": null},
+      "proposed_change": {"n": "معرض الدوسري لسيارات( الزلفي )", "maps": "https://www.google.com/maps/?cid=10077233197496718654", "lat": 26.3007083, "lon": 44.8719919},
+      "unresolved": ["stored_phone_not_confirmed_on_opened_card"]
+    },
+    {
+      "id": "v9-car-069025df19ca",
+      "city": "القويعية",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "دكه الطير", "activity": "تاجر سيارات", "address": "2511 القويعية 302، الضريب، القويعية 19247، المملكة العربية السعودية", "phone": null, "lat": 24.0440929, "lon": 45.245396, "maps_cid": "14015698257691374893"},
+      "proposed_change": {"n": "دكه الطير", "maps": "https://www.google.com/maps/?cid=14015698257691374893", "lat": 24.0440929, "lon": 45.245396}
+    },
+    {
+      "id": "v9-car-4bc674fb7319",
+      "city": "القويعية",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض نقوه", "activity": "تاجر سيارات", "lat": 24.0679868, "lon": 45.3075707, "maps_cid": "9086054738112254303", "phone": null},
+      "proposed_change": {"n": "معرض نقوه", "maps": "https://www.google.com/maps/?cid=9086054738112254303", "lat": 24.0679868, "lon": 45.3075707},
+      "unresolved": ["stored_phone_not_confirmed_on_opened_card"]
+    },
+    {
+      "id": "v9-car-fa37d453166e",
+      "city": "القويعية",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض العريفي للسيارات $ابو شوارب$", "activity": "تاجر سيارات", "lat": 24.0099681, "lon": 45.2015375, "maps_cid": "13943836207216306738", "phone": null},
+      "proposed_change": {"n": "معرض العريفي للسيارات $ابو شوارب$", "maps": "https://www.google.com/maps/?cid=13943836207216306738", "lat": 24.0099681, "lon": 45.2015375},
+      "unresolved": ["stored_phone_not_confirmed_on_opened_card"]
+    },
+    {
+      "id": "v9-car-03318791fee2",
+      "city": "المجمعة",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض ضاوي صاهود السهلي السيارات", "address_city": "المجمعة", "lat": 25.8761, "lon": 45.3859957, "maps_cid": "11449926712185852330", "phone": null},
+      "proposed_change": {"n": "معرض ضاوي صاهود السهلي السيارات", "maps": "https://www.google.com/maps/?cid=11449926712185852330", "lat": 25.8761, "lon": 45.3859957},
+      "unresolved": ["stored_phone_not_confirmed_on_opened_card"]
+    },
+    {
+      "id": "v9-car-585ebb8d6246",
+      "city": "المجمعة",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض القصيم لسيارات بالمجمعة", "address_city": "المجمعة", "lat": 25.8760584, "lon": 45.3864441, "maps_cid": "17232738308547315038", "phone": null},
+      "proposed_change": {"n": "معرض القصيم لسيارات بالمجمعة", "maps": "https://www.google.com/maps/?cid=17232738308547315038", "lat": 25.8760584, "lon": 45.3864441},
+      "unresolved": ["stored_phone_not_confirmed_on_opened_card"]
+    },
+    {
+      "id": "v9-car-b088cbf87fe0",
+      "city": "المجمعة",
+      "stored": {"name": "معرض العضيلة للسيارات", "phone": null},
+      "decision": "wrong_city_match_rejected",
+      "unresolved": ["local_pin", "local_phone"],
+      "note": "Google Maps query resolved to شركة حسام العضيلة للسيارات at 21.4526366,40.5025389 in Taif, not Al Majmaah; this card was rejected and no local pin was accepted."
+    },
+    {
+      "id": "v9-car-0535236d68dc",
+      "city": "السليل",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض آل سويد للسيارات", "address_city": "السليل", "lat": 20.486843, "lon": 45.5892625, "maps_cid": "12917536280676224086", "phone": null},
+      "proposed_change": {"maps": "https://www.google.com/maps/?cid=12917536280676224086", "lat": 20.486843, "lon": 45.5892625},
+      "unresolved": ["stored_phone_not_confirmed_on_opened_card"]
+    },
+    {
+      "id": "v9-car-2d9407920ab3",
+      "city": "السليل",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض سلطان للسيارات", "activity": "أرض المعارض", "address": "FH87+P5W الخط العام بجوار كار، السليل 18655، المملكة العربية السعودية", "phone": "0581523680", "lat": 20.4668679, "lon": 45.5629394, "maps_cid": "13374098203614484521"},
+      "proposed_change": {"maps": "https://www.google.com/maps/?cid=13374098203614484521", "lat": 20.4668679, "lon": 45.5629394, "nb": "FH87+P5W الخط العام بجوار كار، السليل 18655، المملكة العربية السعودية"}
+    },
+    {
+      "id": "v9-car-b4ca928aa450",
+      "city": "السليل",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض الشمري للسيارات", "address_city": "السليل", "lat": 20.4775412, "lon": 45.5822224, "maps_cid": "15980047850722596267", "phone": null},
+      "proposed_change": {"maps": "https://www.google.com/maps/?cid=15980047850722596267", "lat": 20.4775412, "lon": 45.5822224},
+      "unresolved": ["stored_phone_not_confirmed_on_opened_card"]
+    },
+    {
+      "id": "v9-car-9ef748bc90de",
+      "city": "وادي الدواسر",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض في الفضاء لبيع وشراء السيارات", "activity": "تاجر سيارات", "address": "وادي الدواسر 18616", "phone": "0555207049", "lat": 20.4166609, "lon": 44.8739753, "maps_cid": "18012828819839465849"},
+      "proposed_change": {"maps": "https://www.google.com/maps/?cid=18012828819839465849", "lat": 20.4166609, "lon": 44.8739753, "nb": "وادي الدواسر 18616"}
+    },
+    {
+      "id": "v9-car-b3d20120a5eb",
+      "city": "وادي الدواسر",
+      "decision": "verified_pin_phone_unresolved",
+      "observed": {"name": "معرض الملقا للسيارات", "address_city": "وادي الدواسر", "lat": 20.4167223, "lon": 44.874243, "maps_cid": "1252490957422198987", "phone": null},
+      "proposed_change": {"maps": "https://www.google.com/maps/?cid=1252490957422198987", "lat": 20.4167223, "lon": 44.874243},
+      "unresolved": ["stored_phone_not_confirmed_on_opened_card"]
+    },
+    {
+      "id": "v9-car-ee748c56b18e",
+      "city": "وادي الدواسر",
+      "decision": "verified_with_proposed_data_correction",
+      "observed": {"name": "معرض المملكة الجديد للسيارات", "activity": "تاجر السيارات", "address": "7289 الخالدية 197، وادي الدواسر", "phone": "0500060011", "lat": 20.4178981, "lon": 44.8693288, "maps_cid": "5844654517251884931"},
+      "proposed_change": {"maps": "https://www.google.com/maps/?cid=5844654517251884931", "lat": 20.4178981, "lon": 44.8693288, "nb": "7289 الخالدية 197، وادي الدواسر"}
+    },
+    {
+      "id": "v9-car-2cdb1d8ff2a6",
+      "city": "وادي الدواسر",
+      "stored": {"name": "معرض الذهبي للسيارات", "phone": null},
+      "decision": "unresolved_after_search",
+      "unresolved": ["pin", "phone"],
+      "note": "Google Maps returned other similarly named showrooms, including results outside Wadi ad-Dawasir, but no exact local card for the stored name; no pin was accepted."
+    },
+    {
+      "id": "v9-car-7002e1e1842d",
+      "city": "وادي الدواسر",
+      "stored": {"name": "شركة المتميزون للسيارات", "phone": null},
+      "decision": "unresolved_after_search",
+      "unresolved": ["pin", "phone"],
+      "note": "Google Maps search returned unrelated tyre, repair, salvage and other-city businesses; no exact local showroom card was established."
+    }
+  ]
+}
