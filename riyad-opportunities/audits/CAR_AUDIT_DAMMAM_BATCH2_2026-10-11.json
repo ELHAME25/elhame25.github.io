@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-11",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "city": "الدمام",
+  "records": [
+    {
+      "id": "phase5-car-ab6b4c9db134",
+      "name": "معرض السيف شراء وبيع السيارات المستعمله",
+      "decision": "verified",
+      "activity": "تاجر السيارات",
+      "address": "معارض السيارات، الدمام",
+      "phone": "+966541078727",
+      "storedPhone": "0541078727",
+      "plusCode": "92W8+W2",
+      "coordinates": [
+        26.3972767,
+        50.0151227
+      ],
+      "coordinateDecision": "matches stored"
+    },
+    {
+      "id": "phase5-car-d4913195c092",
+      "name": "معرض الشهري للسيارات",
+      "decision": "verified",
+      "activity": "تاجر سيارات",
+      "address": "ضاحية الملك فهد، الدمام 32313",
+      "phone": "+966564383333",
+      "storedPhone": "0564383333",
+      "plusCode": "92W6+QF6",
+      "coordinates": [
+        26.396917,
+        50.011135
+      ],
+      "coordinateDecision": "matches stored"
+    },
+    {
+      "id": "entity-fc7767edf13e",
+      "name": "معرض مرجان الشرق للسيارات",
+      "decision": "verified",
+      "activity": "تاجر السيارات",
+      "address": "شارع المعارض، ضاحية الملك فهد، الدمام 32313",
+      "phone": "+966501197232",
+      "storedPhone": "0501197232",
+      "plusCode": "C228+35",
+      "coordinates": [
+        26.4001515,
+        50.015381
+      ],
+      "coordinateDecision": "matches stored"
+    },
+    {
+      "id": "entity-3180414b6dfb",
+      "storedName": "علي الصادق للسيارات",
+      "mapsCardName": "معرض علي الصادق للسيارات الدمام المعارض",
+      "decision": "verified card; stored phone is wrong and neighborhood/address missing",
+      "activity": "تاجر سيارات",
+      "address": "7671، الدمام",
+      "phone": "+966500507533",
+      "storedPhone": "0565963726",
+      "plusCode": "C226+H2",
+      "coordinates": [
+        26.4014324,
+        50.0100646
+      ],
+      "proposedChanges": {
+        "name": "معرض علي الصادق للسيارات الدمام المعارض",
+        "phones": [
+          "0500507533"
+        ],
+        "nb": "7671، الدمام",
+        "lat": 26.4014324,
+        "lon": 50.0100646
+      }
+    }
+  ],
+  "writeStatus": "Evidence and exact proposed changes committed. cars.json mutation not retried because the prior auto-review explicitly rejected that file replacement; Qadisiyah untouched."
+}
