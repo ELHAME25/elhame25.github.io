@@ -3,7 +3,7 @@
   "generated_at": "2026-10-11",
   "repository": "ELHAME25/elhame25.github.io",
   "branch": "fix/scope-counts-nhc-20261010",
-  "through_audit_head": "c64c12daab1b736ba2a9ce1e859283657ad98338",
+  "through_audit_head": "75dab4726e698ad35cbe07c2cc8b0108257a5e72",
   "safety": {
     "cars_json_modified_by_this_package": false,
     "qadisiyah_included": false,
@@ -12,9 +12,9 @@
   "summary": {
     "baseline_applied_records": 2,
     "baseline_applied_field_changes": 6,
-    "pending_confirmed": 160,
+    "pending_confirmed": 212,
     "pending_review_required": 18,
-    "note": "Rolling package through completion of Al Kharj. No new correction candidates from this city; no item is authorized for cars.json."
+    "note": "Rolling package through completion of every remaining non-Qadisiyah city. No pending item is authorized for cars.json; Qadisiyah remains excluded and unchanged."
   },
   "applied_baseline_history": [
     {
@@ -4174,6 +4174,1363 @@
       "proof": [
         "matching_canonical_id=phase6-cars-b7d1ffd9d26057",
         "stored_neighborhood=المعرض Saudi Arabia46425, Yanbu , Al Buhayrah، عبدالله الملك طريق"
+      ]
+    },
+    {
+      "id": "regional-car-national-car-c80e0cb5068ed3-8",
+      "name": "معرض جنان للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "القطيف",
+        "id": "regional-car-national-car-c80e0cb5068ed3-8"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_qatif_scope",
+        "retain_id": "national-car-c80e0cb5068ed3",
+        "origin_city": "سيهات"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=2391268452885284099"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-c80e0cb5068ed3",
+        "originCity=سيهات",
+        "stored_neighborhood=الملك عبدالعزيز، الطف، سيهات 32463، السعودية"
+      ]
+    },
+    {
+      "id": "regional-car-phase6-cars-6573b5e2174a73-15",
+      "name": "معرض قمه عسير للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "جازان",
+        "id": "regional-car-phase6-cars-6573b5e2174a73-15"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_jazan_scope",
+        "retain_id": "phase6-cars-6573b5e2174a73",
+        "origin_city": "أبو عريش"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=9075923892784612536"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=phase6-cars-6573b5e2174a73",
+        "originCity=أبو عريش",
+        "stored_neighborhood=XV36+W9R، الصناعية، أبو عريش84216"
+      ]
+    },
+    {
+      "id": "regional-car-phase6-cars-8e1ef9c80a327c-16",
+      "name": "معرض مركبة الرؤية للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "جازان",
+        "id": "regional-car-phase6-cars-8e1ef9c80a327c-16"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_jazan_scope",
+        "retain_id": "phase6-cars-8e1ef9c80a327c",
+        "origin_city": "صبيا"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/search/?api=1&query=17.1845319,42.7528181&query_place_id=ChIJb8kCjIVF_RURcSUFAERUgzk"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=phase6-cars-8e1ef9c80a327c",
+        "originCity=صبيا",
+        "stored_neighborhood=العام، صبيا 85297، المملكة العربية السعودية"
+      ]
+    },
+    {
+      "id": "regional-car-v9-car-d0cd534a5437-17",
+      "name": "معرض قمة عسير لبيع وشراء السيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "جازان",
+        "id": "regional-car-v9-car-d0cd534a5437-17"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_jazan_scope",
+        "retain_id": "v9-car-d0cd534a5437",
+        "origin_city": "أبو عريش"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%82%D9%85%D8%A9%20%D8%B9%D8%B3%D9%8A%D8%B1%20%D9%84%D8%A8%D9%8A%D8%B9%20%D9%88%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=v9-car-d0cd534a5437",
+        "originCity=أبو عريش",
+        "stored_neighborhood=شارع المعارض، الصناعية، أبو عريش 62529"
+      ]
+    },
+    {
+      "id": "regional-car-v9-car-921b1d2e358b-18",
+      "name": "معرض مكس كارز للسيارات أبو عريش",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "جازان",
+        "id": "regional-car-v9-car-921b1d2e358b-18"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_jazan_scope",
+        "retain_id": "v9-car-921b1d2e358b",
+        "origin_city": "أبو عريش"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D9%83%D8%B3%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=v9-car-921b1d2e358b",
+        "originCity=أبو عريش",
+        "stored_neighborhood=الصناعية، أبو عريش 84718"
+      ]
+    },
+    {
+      "id": "regional-car-v9-car-c61e61e7e45b-19",
+      "name": "معرض الوفاء للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "جازان",
+        "id": "regional-car-v9-car-c61e61e7e45b-19"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_jazan_scope",
+        "retain_id": "v9-car-c61e61e7e45b",
+        "origin_city": "أبو عريش"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D9%81%D8%A7%D8%A1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=v9-car-c61e61e7e45b",
+        "originCity=أبو عريش",
+        "stored_neighborhood=طريق الملك عبدالله، الصناعية، أبو عريش 84216"
+      ]
+    },
+    {
+      "id": "regional-car-v9-car-d585c7680b4a-20",
+      "name": "معرض بوابة المركبات للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "جازان",
+        "id": "regional-car-v9-car-d585c7680b4a-20"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_jazan_scope",
+        "retain_id": "v9-car-d585c7680b4a",
+        "origin_city": "أبو عريش"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=v9-car-d585c7680b4a",
+        "originCity=أبو عريش",
+        "stored_neighborhood=طريق الملك عبدالله، الصناعية، أبو عريش 84212"
+      ]
+    },
+    {
+      "id": "regional-car-v9-car-005018b74aea-21",
+      "name": "معرض المعافا للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "جازان",
+        "id": "regional-car-v9-car-005018b74aea-21"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_jazan_scope",
+        "retain_id": "v9-car-005018b74aea",
+        "origin_city": "أبو عريش"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%81%D8%A7%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=v9-car-005018b74aea",
+        "originCity=أبو عريش",
+        "stored_neighborhood=الصناعية، أبو عريش 84216"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-96008c787703ab-072",
+      "name": "شركة RPM للسيارات — فرع الخبر",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الثقبة",
+        "id": "regional-pdf-national-car-96008c787703ab-072"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+        "retain_id": "national-car-96008c787703ab",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://maps.app.goo.gl/NTDmLihtXDohHmpe9",
+        "https://rpmformotors.com/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-96008c787703ab",
+        "originCity=الخبر",
+        "stored_neighborhood=الخبر، حي الراكة الشمالية، شارع الملك فهد، السعودية"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-195d08bb463f33-072",
+      "name": "Auto Golden معرض سيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الثقبة",
+        "id": "regional-pdf-national-car-195d08bb463f33-072"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+        "retain_id": "national-car-195d08bb463f33",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=9839870615767720510"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-195d08bb463f33",
+        "originCity=الخبر",
+        "stored_neighborhood=شارع الرياض تقاطع18، الخبر34625"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-fe7563b1731854-072",
+      "name": "Al Gulf Car Sales And Ownership Transfer",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الثقبة",
+        "id": "regional-pdf-national-car-fe7563b1731854-072"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+        "retain_id": "national-car-fe7563b1731854",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=7688140446062028536",
+        "https://maps.yango.com/org/112433886579/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-fe7563b1731854",
+        "originCity=الخبر",
+        "stored_neighborhood=2253، الخبر الجنوبية، الخبر 34611؛ عنوان Yango الوطني EEAB2255"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-bd9f09b15f6f98-072",
+      "name": "شركة سيارتك غير — فرع الخبر",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الثقبة",
+        "id": "regional-pdf-national-car-bd9f09b15f6f98-072"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+        "retain_id": "national-car-bd9f09b15f6f98",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps?cid=11876543475537219853&gl=SA&hl=ar&ll=26.245968,50.214878&mapclient=embed&t=m&z=13",
+        "https://www.yourcar-d.com/branches"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-bd9f09b15f6f98",
+        "originCity=الخبر",
+        "stored_neighborhood=شارع الملك فهد، صناعية الفوازية، الخبر34627"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-abcf3059eebb2c-072",
+      "name": "صالة قود كارز للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الثقبة",
+        "id": "regional-pdf-national-car-abcf3059eebb2c-072"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+        "retain_id": "national-car-abcf3059eebb2c",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=17358073183773571856",
+        "https://haraj.com.sa/users/%D8%B5%D8%A7%D9%84%D9%87%20%D9%82%D9%88%D8%AF%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-abcf3059eebb2c",
+        "originCity=الخبر",
+        "stored_neighborhood=2240 شعيب الضبعي، حي الخزامى، الخبر34719"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-united-khobar-072",
+      "name": "معرض المركبة المتحدة للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الثقبة",
+        "id": "regional-pdf-national-car-united-khobar-072"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+        "retain_id": "national-car-united-khobar",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=4727680965130451960",
+        "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A9%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-united-khobar",
+        "originCity=الخبر",
+        "stored_neighborhood=الثقبة"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-9a1a524798640b-073",
+      "name": "معرض مطلق زامل العتيبي للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-9a1a524798640b-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-9a1a524798640b",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=17975153483091438440"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-9a1a524798640b",
+        "originCity=الخرج",
+        "stored_neighborhood=5CP3+VQJ، السعادة، الخرج 16443، السعودية"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-853fb5466c5011-073",
+      "name": "معرض العصيمي للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-853fb5466c5011-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-853fb5466c5011",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=15505607070274085038"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-853fb5466c5011",
+        "originCity=الخرج",
+        "stored_neighborhood=9388، السعادة، الخرج 16443 5180، السعودية"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-6a99816571c77d-073",
+      "name": "Al-Kharj procession Motor Show",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-6a99816571c77d-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-6a99816571c77d",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=11851558662877532658"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-6a99816571c77d",
+        "originCity=الخرج",
+        "stored_neighborhood=5081، 9309، السعادة، الخرج 16443، السعودية"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-596d662897f898-073",
+      "name": "معرض طارق الحرشان للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-596d662897f898-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-596d662897f898",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps?cid=2062726030508407044",
+        "https://heylink.me/th4cars/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-596d662897f898",
+        "originCity=الخرج",
+        "stored_neighborhood=الخرج، السعودية؛ المدينة منشورة في ملف المنشأة على موتري، الشارع غير منشور"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-b5c3d0cd22c414-073",
+      "name": "معرض محمد الدوسري للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-b5c3d0cd22c414-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-b5c3d0cd22c414",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=13003556705439302203"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-b5c3d0cd22c414",
+        "originCity=الخرج",
+        "stored_neighborhood=5065، السعادة، الخرج 16443 Saudi Arabia، Al Kharj، منطقة الرياض"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-2f34d51fc6373a-073",
+      "name": "معرض البيضاني للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-2f34d51fc6373a-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-2f34d51fc6373a",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=17911804452584942703"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-2f34d51fc6373a",
+        "originCity=الخرج",
+        "stored_neighborhood=9361، حي السعادة، الخرج16443"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-bda17a7164c9a4-073",
+      "name": "معرض محمد اليمني للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-bda17a7164c9a4-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-bda17a7164c9a4",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=6862834981212550681"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-bda17a7164c9a4",
+        "originCity=الخرج",
+        "stored_neighborhood=4901، حي السعادة، الخرج16443"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-3173ea85386a4e-073",
+      "name": "معرض دنيا المركبة",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-3173ea85386a4e-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-3173ea85386a4e",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=467178736688522384"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-3173ea85386a4e",
+        "originCity=الخرج",
+        "stored_neighborhood=5180،9388، الخرج11942"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-58d96cb5fef0db-073",
+      "name": "معرض فهد للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-58d96cb5fef0db-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-58d96cb5fef0db",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=6675816523290613200"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-58d96cb5fef0db",
+        "originCity=الخرج",
+        "stored_neighborhood=4945 الحارث المخزومي،9181، حي السعادة، الخرج16443"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-eca070e37aa486-073",
+      "name": "معرض طلال سعود للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-eca070e37aa486-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-eca070e37aa486",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=17510596670128344072"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-eca070e37aa486",
+        "originCity=الخرج",
+        "stored_neighborhood=5170، السعادة، الخرج16443،9069"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-03aa01712571b3-073",
+      "name": "معرض أركان الموسم للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-03aa01712571b3-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-03aa01712571b3",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=3690969017662199560"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-03aa01712571b3",
+        "originCity=الخرج",
+        "stored_neighborhood=السعادة، الخرج12345"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-713e192a69026a-073",
+      "name": "معرض عايد للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-713e192a69026a-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-713e192a69026a",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=16773646786803679033"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-713e192a69026a",
+        "originCity=الخرج",
+        "stored_neighborhood=شارع الحارث المخزومي، السعادة، الخرج16443"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-4dc430510649da-073",
+      "name": "معرض المرزوقي للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-4dc430510649da-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-4dc430510649da",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://maps.google.com/?cid=11110557788920364682"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-4dc430510649da",
+        "originCity=الخرج",
+        "stored_neighborhood=حي السعادة، الخرج، المملكة العربية السعودية"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-38a10fe36d0e71-073",
+      "name": "معرض وسام العز للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الدلم",
+        "id": "regional-pdf-national-car-38a10fe36d0e71-073"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_dilam_scope",
+        "retain_id": "national-car-38a10fe36d0e71",
+        "origin_city": "الخرج"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://maps.google.com/?cid=16631214370456951426"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-38a10fe36d0e71",
+        "originCity=الخرج",
+        "stored_neighborhood=9080 البهاء الزهير، السعادة، OAJB4989، 4989، الخرج 16443، المملكة العربية السعودية"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-9e7346b3ca3e8f-074",
+      "name": "معرض الغصاب للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_same_city",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الخبر",
+        "id": "regional-pdf-national-car-9e7346b3ca3e8f-074"
+      },
+      "new_value": {
+        "action": "exclude_same_city_regional_duplicate",
+        "retain_id": "national-car-9e7346b3ca3e8f",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-9e7346b3ca3e8f",
+        "originCity=الخبر",
+        "stored_neighborhood=شارع الرياض، الإسكان، الخبر 34626، السعودية"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-96008c787703ab-074",
+      "name": "شركة RPM للسيارات — فرع الخبر",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الظهران",
+        "id": "regional-pdf-national-car-96008c787703ab-074"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_dhahran_scope",
+        "retain_id": "national-car-96008c787703ab",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://maps.app.goo.gl/NTDmLihtXDohHmpe9",
+        "https://rpmformotors.com/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-96008c787703ab",
+        "originCity=الخبر",
+        "stored_neighborhood=الخبر، حي الراكة الشمالية، شارع الملك فهد، السعودية"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-195d08bb463f33-074",
+      "name": "Auto Golden معرض سيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الظهران",
+        "id": "regional-pdf-national-car-195d08bb463f33-074"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_dhahran_scope",
+        "retain_id": "national-car-195d08bb463f33",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=9839870615767720510"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-195d08bb463f33",
+        "originCity=الخبر",
+        "stored_neighborhood=شارع الرياض تقاطع18، الخبر34625"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-fe7563b1731854-074",
+      "name": "Al Gulf Car Sales And Ownership Transfer",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الظهران",
+        "id": "regional-pdf-national-car-fe7563b1731854-074"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_dhahran_scope",
+        "retain_id": "national-car-fe7563b1731854",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=7688140446062028536",
+        "https://maps.yango.com/org/112433886579/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-fe7563b1731854",
+        "originCity=الخبر",
+        "stored_neighborhood=2253، الخبر الجنوبية، الخبر 34611؛ عنوان Yango الوطني EEAB2255"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-bd9f09b15f6f98-074",
+      "name": "شركة سيارتك غير — فرع الخبر",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الظهران",
+        "id": "regional-pdf-national-car-bd9f09b15f6f98-074"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_dhahran_scope",
+        "retain_id": "national-car-bd9f09b15f6f98",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps?cid=11876543475537219853&gl=SA&hl=ar&ll=26.245968,50.214878&mapclient=embed&t=m&z=13",
+        "https://www.yourcar-d.com/branches"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-bd9f09b15f6f98",
+        "originCity=الخبر",
+        "stored_neighborhood=شارع الملك فهد، صناعية الفوازية، الخبر34627"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-abcf3059eebb2c-074",
+      "name": "صالة قود كارز للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الظهران",
+        "id": "regional-pdf-national-car-abcf3059eebb2c-074"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_dhahran_scope",
+        "retain_id": "national-car-abcf3059eebb2c",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=17358073183773571856",
+        "https://haraj.com.sa/users/%D8%B5%D8%A7%D9%84%D9%87%20%D9%82%D9%88%D8%AF%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-abcf3059eebb2c",
+        "originCity=الخبر",
+        "stored_neighborhood=2240 شعيب الضبعي، حي الخزامى، الخبر34719"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-united-khobar-074",
+      "name": "معرض المركبة المتحدة للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الظهران",
+        "id": "regional-pdf-national-car-united-khobar-074"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_dhahran_scope",
+        "retain_id": "national-car-united-khobar",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=4727680965130451960",
+        "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A9%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-united-khobar",
+        "originCity=الخبر",
+        "stored_neighborhood=الثقبة"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-mas-khobar-074",
+      "name": "شركة ماس الشرقية للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_same_city",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الخبر",
+        "id": "regional-pdf-national-car-mas-khobar-074"
+      },
+      "new_value": {
+        "action": "exclude_same_city_regional_duplicate",
+        "retain_id": "national-car-mas-khobar",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://mascars.net/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-mas-khobar",
+        "originCity=الخبر",
+        "stored_neighborhood=طريق الملك فهد، الراكة الجنوبية، الخبر"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-640f1c0527f877-035",
+      "name": "معرض علي الصادق للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "القطيف",
+        "id": "regional-pdf-national-car-640f1c0527f877-035"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_qatif_scope",
+        "retain_id": "national-car-640f1c0527f877",
+        "origin_city": "صفوى"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://maps.yango.com/ar-sa/org/30323973408/",
+        "https://www.instagram.com/alsadiqshowroom/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-640f1c0527f877",
+        "originCity=صفوى",
+        "stored_neighborhood=صفوى، شارع الإمام علي، المنطقة الشرقية، السعودية"
+      ]
+    },
+    {
+      "id": "regional-pdf-entity-781752dff6d0-013",
+      "name": "معرض القصيم",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "جازان",
+        "id": "regional-pdf-entity-781752dff6d0-013"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_jazan_scope",
+        "retain_id": "entity-781752dff6d0",
+        "origin_city": "صبيا"
+      },
+      "status": "not_applied",
+      "evidence": [],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=entity-781752dff6d0",
+        "originCity=صبيا",
+        "stored_neighborhood="
+      ]
+    },
+    {
+      "id": "regional-pdf-v9-car-6034f3303506-013",
+      "name": "معرض المعشي",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "جازان",
+        "id": "regional-pdf-v9-car-6034f3303506-013"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_jazan_scope",
+        "retain_id": "v9-car-6034f3303506",
+        "origin_city": "أبو عريش"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%B4%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=v9-car-6034f3303506",
+        "originCity=أبو عريش",
+        "stored_neighborhood=المعارض، أبو عريش 84216"
+      ]
+    },
+    {
+      "id": "regional-pdf-v9-car-e7ed2ccacdc2-013",
+      "name": "معرض الحكمي",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "جازان",
+        "id": "regional-pdf-v9-car-e7ed2ccacdc2-013"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_jazan_scope",
+        "retain_id": "v9-car-e7ed2ccacdc2",
+        "origin_city": "أبو عريش"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%83%D9%85%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=v9-car-e7ed2ccacdc2",
+        "originCity=أبو عريش",
+        "stored_neighborhood=الصناعية، أبو عريش 84216"
+      ]
+    },
+    {
+      "id": "regional-pdf-v9-car-63c2f51fadb2-013",
+      "name": "معرض رواد النوادر",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "جازان",
+        "id": "regional-pdf-v9-car-63c2f51fadb2-013"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_jazan_scope",
+        "retain_id": "v9-car-63c2f51fadb2",
+        "origin_city": "أبو عريش"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D9%88%D8%A7%D8%AF%20%D8%A7%D9%84%D9%86%D9%88%D8%A7%D8%AF%D8%B1%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=v9-car-63c2f51fadb2",
+        "originCity=أبو عريش",
+        "stored_neighborhood=معارض السيارات، أبو عريش"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-c80e0cb5068ed3-075",
+      "name": "معرض جنان للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "رأس تنورة",
+        "id": "regional-pdf-national-car-c80e0cb5068ed3-075"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ras_tanura_scope",
+        "retain_id": "national-car-c80e0cb5068ed3",
+        "origin_city": "سيهات"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=2391268452885284099"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-c80e0cb5068ed3",
+        "originCity=سيهات",
+        "stored_neighborhood=الملك عبدالعزيز، الطف، سيهات 32463، السعودية"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-640f1c0527f877-075",
+      "name": "معرض علي الصادق للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "رأس تنورة",
+        "id": "regional-pdf-national-car-640f1c0527f877-075"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ras_tanura_scope",
+        "retain_id": "national-car-640f1c0527f877",
+        "origin_city": "صفوى"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://maps.yango.com/ar-sa/org/30323973408/",
+        "https://www.instagram.com/alsadiqshowroom/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-640f1c0527f877",
+        "originCity=صفوى",
+        "stored_neighborhood=صفوى، شارع الإمام علي، المنطقة الشرقية، السعودية"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-cf6f3c5b146fa1-075",
+      "name": "معرض أبو فارس للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "رأس تنورة",
+        "id": "regional-pdf-national-car-cf6f3c5b146fa1-075"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ras_tanura_scope",
+        "retain_id": "national-car-cf6f3c5b146fa1",
+        "origin_city": "القطيف"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=11438090590808644062"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-cf6f3c5b146fa1",
+        "originCity=القطيف",
+        "stored_neighborhood=7567، 2240، القطيف 32637"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-5ac8dcb253c865-075",
+      "name": "A-Hamzah Car Dealer",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "رأس تنورة",
+        "id": "regional-pdf-national-car-5ac8dcb253c865-075"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ras_tanura_scope",
+        "retain_id": "national-car-5ac8dcb253c865",
+        "origin_city": "القطيف"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=11549186874776732353"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-5ac8dcb253c865",
+        "originCity=القطيف",
+        "stored_neighborhood=شارع القدس، منطقة المستودعات، القطيف 32631"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-41f8e10e641608-075",
+      "name": "Abdullatif Cars Sale",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "رأس تنورة",
+        "id": "regional-pdf-national-car-41f8e10e641608-075"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ras_tanura_scope",
+        "retain_id": "national-car-41f8e10e641608",
+        "origin_city": "القطيف"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=161918289725503931"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-41f8e10e641608",
+        "originCity=القطيف",
+        "stored_neighborhood=H3F2+QW4، الروضة، القطيف 32625"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-48ab5b2906b449-075",
+      "name": "معرض العبداللطيف للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "رأس تنورة",
+        "id": "regional-pdf-national-car-48ab5b2906b449-075"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ras_tanura_scope",
+        "retain_id": "national-car-48ab5b2906b449",
+        "origin_city": "القطيف"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=5074131212685972609"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-48ab5b2906b449",
+        "originCity=القطيف",
+        "stored_neighborhood=H2FR+7MP، طريق أحد، الروضة، القطيف32625"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-fc5ea0c4ea47f9-075",
+      "name": "ساحة عادل عبدالله الحبيب للسيارات المستعملة",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "رأس تنورة",
+        "id": "regional-pdf-national-car-fc5ea0c4ea47f9-075"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_ras_tanura_scope",
+        "retain_id": "national-car-fc5ea0c4ea47f9",
+        "origin_city": "القطيف"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://www.google.com/maps/?cid=17015749861607641515"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=national-car-fc5ea0c4ea47f9",
+        "originCity=القطيف",
+        "stored_neighborhood=شارع الملك فيصل بن عبدالعزيز، المدني، القطيف32653"
+      ]
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-022-040",
+      "name": "معرض الثقة للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "جازان",
+        "id": "regional-pdf-pdf-smalltown-022-040"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_jazan_scope",
+        "retain_id": "pdf-smalltown-022",
+        "origin_city": "صامطة"
+      },
+      "status": "not_applied",
+      "evidence": [],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=pdf-smalltown-022",
+        "originCity=صامطة",
+        "stored_neighborhood=86735 صامطة، Q4P+P2JW"
+      ]
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-023-040",
+      "name": "معرض عسكر للسيارات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "جازان",
+        "id": "regional-pdf-pdf-smalltown-023-040"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_jazan_scope",
+        "retain_id": "pdf-smalltown-023",
+        "origin_city": "صامطة"
+      },
+      "status": "not_applied",
+      "evidence": [],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=pdf-smalltown-023",
+        "originCity=صامطة",
+        "stored_neighborhood=الصناعية ،صامطة 86385"
+      ]
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-024-008",
+      "name": "معرض فيصل العتيبي للسيارات والمعدات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الثقبة",
+        "id": "regional-pdf-pdf-smalltown-024-008"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+        "retain_id": "pdf-smalltown-024",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://maps.yango.com/ar-sa/org/140182282529/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=pdf-smalltown-024",
+        "originCity=الخبر",
+        "stored_neighborhood=بالخبر 76G5+RV2،طريق الملك فهد،الخبر الجنوبية،الخبر34621،السعودية"
+      ]
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-024-019",
+      "name": "معرض فيصل العتيبي للسيارات والمعدات",
+      "classification": "confirmed_pending_approval",
+      "type": "regional_duplicate_scope_conflict",
+      "field": "record_scope",
+      "old_value": {
+        "city": "الظهران",
+        "id": "regional-pdf-pdf-smalltown-024-019"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_dhahran_scope",
+        "retain_id": "pdf-smalltown-024",
+        "origin_city": "الخبر"
+      },
+      "status": "not_applied",
+      "evidence": [
+        "https://maps.yango.com/ar-sa/org/140182282529/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf=pdf-smalltown-024",
+        "originCity=الخبر",
+        "stored_neighborhood=بالخبر 76G5+RV2،طريق الملك فهد،الخبر الجنوبية،الخبر34621،السعودية"
       ]
     }
   ]
