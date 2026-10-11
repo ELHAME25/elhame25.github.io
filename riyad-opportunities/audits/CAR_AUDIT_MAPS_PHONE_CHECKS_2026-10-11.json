@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-11",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "purpose": "direct Google Maps checks for previously unresolved phone fields",
+  "records": [
+    {
+      "id": "v9-car-e7ed2ccacdc2",
+      "city": "أبو عريش",
+      "name": "معرض الحكمي",
+      "cid": "11827992477974119567",
+      "card": "direct card; car trader; XV46+286 الصناعية، أبو عريش 84216; phone absent and Maps prompts to add one",
+      "decision": "name/activity/city-neighborhood confirmed; phone unresolved"
+    },
+    {
+      "id": "v9-car-925aa0ae9f2e",
+      "city": "المذنب",
+      "name": "معرض عالم التميز للسيارات",
+      "cid": "2948263367209297392",
+      "card": "direct card; car dealer; Uthman Bin Affan Rd, حي الصناعية, المذنب; Plus V5PX+G9; phone absent and Maps prompts to add one",
+      "decision": "name/activity/city-neighborhood confirmed; phone unresolved; a reviewer says no showroom at that location, insufficient alone to establish closure"
+    },
+    {
+      "id": "v9-car-670c094930f0",
+      "city": "المزاحمية",
+      "name": "معرض المزاحمية للسيارات",
+      "cid": "6707188243099141575",
+      "card": "direct card; car dealer; F8P3+FQQ, طريق الملك عبدالعزيز، الصناعية، المزاحمية; phone absent and Maps prompts to add one",
+      "decision": "name/activity/city-neighborhood confirmed; phone unresolved"
+    },
+    {
+      "id": "v9-car-cd204cdd1e62",
+      "city": "المزاحمية",
+      "name": "معرض بن شري للسيارات",
+      "cid": "8995801159498164632",
+      "card": "direct card; used-car dealer; F8P4+843، الصناعية، المزاحمية; phone absent and Maps prompts to add one",
+      "decision": "name/activity/city-neighborhood confirmed; phone unresolved"
+    },
+    {
+      "id": "v9-car-2bce066e7d5c",
+      "city": "أملج",
+      "name": "معرض الهلال للسيارات",
+      "cid": "6306203123901699137",
+      "card": "direct card; car dealer; W8M4+R9F، الصناعية، أملج; phone absent and Maps prompts to add one",
+      "decision": "name/activity/city-neighborhood confirmed; phone unresolved"
+    }
+  ],
+  "dataWrite": "No cars.json changes; previous auto-review rejection remains binding."
+}
