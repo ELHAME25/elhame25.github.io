@@ -3,7 +3,7 @@
   "generated_at": "2026-10-11",
   "repository": "ELHAME25/elhame25.github.io",
   "branch": "fix/scope-counts-nhc-20261010",
-  "through_audit_head": "bcf34ec3c4b6904332e9c8ce98a29bf3bbd8ef5d",
+  "through_audit_head": "caeed9e194755923d2b818ef29c6ad1194e7a791",
   "safety": {
     "cars_json_modified_by_this_package": false,
     "qadisiyah_included": false,
@@ -13,8 +13,8 @@
     "baseline_applied_records": 2,
     "baseline_applied_field_changes": 6,
     "pending_confirmed": 99,
-    "pending_review_required": 11,
-    "note": "Rolling package through completion of Qurayyat. No pending item is authorized for cars.json."
+    "pending_review_required": 14,
+    "note": "Rolling package through completion of Ar Rass. No pending item is authorized for cars.json."
   },
   "applied_baseline_history": [
     {
@@ -2443,6 +2443,63 @@
       "status": "not_applied",
       "evidence": [
         "https://haraj.com.sa/11186927626/"
+      ]
+    },
+    {
+      "id": "phase5-google-15139476235122476844",
+      "name": "معرض افق الجزيرة للسيارات",
+      "classification": "review_required_before_approval",
+      "type": "additional_phone_review",
+      "field": "phones",
+      "old_value": [
+        "0508184690"
+      ],
+      "new_value": [
+        "0508184690",
+        "0505328222",
+        "0505178161"
+      ],
+      "status": "not_applied",
+      "evidence": [
+        "https://haraj.com.sa/11163019532/",
+        "https://haraj.com.sa/11189321775/"
+      ]
+    },
+    {
+      "id": "phase5-google-9753578593939363284",
+      "name": "معرض العز كار للسيارات",
+      "classification": "review_required_before_approval",
+      "type": "additional_phone_review",
+      "field": "phones",
+      "old_value": [
+        "0508199800"
+      ],
+      "new_value": [
+        "0508199800",
+        "0502889449"
+      ],
+      "status": "not_applied",
+      "evidence": [
+        "https://haraj.com.sa/11183836448/",
+        "https://haraj.com.sa/11189960825/"
+      ]
+    },
+    {
+      "id": "phase5-google-10670140498229279196",
+      "name": "معرض عامر الرثيع للسيارات",
+      "classification": "review_required_before_approval",
+      "type": "additional_phone_review",
+      "field": "phones",
+      "old_value": [
+        "0555144127"
+      ],
+      "new_value": [
+        "0555144127",
+        "0530423741"
+      ],
+      "status": "not_applied",
+      "evidence": [
+        "https://haraj.com.sa/11177403625/"
       ]
     }
   ]
