@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "through_audit_head": "2e647331b12cc7389d3db7c22d0b6c0c88d83c72",
+  "safety": {
+    "cars_json_modified_by_this_package": false,
+    "qadisiyah_included": false,
+    "requires_separate_explicit_approval": true
+  },
+  "summary": {
+    "baseline_applied_records": 2,
+    "baseline_applied_field_changes": 6,
+    "pending_confirmed": 12,
+    "pending_review_required": 0
+  },
+  "applied_baseline_history": [
+    {
+      "id": "entity-078be72a5e01",
+      "fields": [
+        {
+          "field": "maps",
+          "old_value": "invalid/default stored CID (see source audit)",
+          "new_value": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AD%D8%B5%D9%8A%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@21.4509764,40.5055546,1039m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15ea2fb00db809e9:0x9fab27a2ae4a5dde!8m2!3d21.4509764!4d40.502985!16s%2Fg%2F11cp5hms8v!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "field": "lat",
+          "old_value": null,
+          "new_value": 21.4509764
+        },
+        {
+          "field": "lon",
+          "old_value": null,
+          "new_value": 40.502985
+        }
+      ],
+      "status": "already_applied_in_baseline_head_5b9564bea5f931ed09f923404b2b6357001f6236",
+      "evidence": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AD%D8%B5%D9%8A%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@21.4509764,40.5055546,1039m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15ea2fb00db809e9:0x9fab27a2ae4a5dde!8m2!3d21.4509764!4d40.502985!16s%2Fg%2F11cp5hms8v"
+      ]
+    },
+    {
+      "id": "entity-c458a9f70bef",
+      "fields": [
+        {
+          "field": "nb",
+          "old_value": "الحوية",
+          "new_value": "طريق المطار، حي مثمله، الطائف"
+        },
+        {
+          "field": "lat",
+          "old_value": 21.42893,
+          "new_value": 21.4539402
+        },
+        {
+          "field": "lon",
+          "old_value": 40.47781,
+          "new_value": 40.5025352
+        }
+      ],
+      "status": "already_applied_in_baseline_head_5b9564bea5f931ed09f923404b2b6357001f6236",
+      "evidence": [
+        "https://www.google.com/maps/?cid=8468293270224232567"
+      ]
+    }
+  ],
+  "pending_candidates": [
+    {
+      "id": "regional-pdf-national-car-640f1c0527f877-036",
+      "name": "معرض علي الصادق للسيارات",
+      "classification": "confirmed_pending_approval",
+      "old_value": {
+        "city": "سيهات",
+        "id": "regional-pdf-national-car-640f1c0527f877-036"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_canonical_dataset",
+        "retain_id": "national-car-640f1c0527f877"
+      },
+      "type": "regional_duplicate_scope_conflict",
+      "evidence": [
+        "https://www.alsadiqmotors.net/",
+        "https://www.sobranews.com/sobra/271319/",
+        "https://maps.yango.com/ar-sa/org/30323973408/"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf matches canonical id",
+        "originCity=صفوى",
+        "stored address=صفوى، شارع الإمام علي، المنطقة الشرقية، السعودية"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-national-car-cf6f3c5b146fa1-036",
+      "name": "معرض أبو فارس للسيارات",
+      "classification": "confirmed_pending_approval",
+      "old_value": {
+        "city": "سيهات",
+        "id": "regional-pdf-national-car-cf6f3c5b146fa1-036"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_canonical_dataset",
+        "retain_id": "national-car-cf6f3c5b146fa1"
+      },
+      "type": "regional_duplicate_scope_conflict",
+      "evidence": [
+        "https://www.google.com/maps/?cid=11438090590808644062"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf matches canonical id",
+        "originCity=القطيف",
+        "stored address=7567، 2240، القطيف 32637"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-national-car-5ac8dcb253c865-036",
+      "name": "A-Hamzah Car Dealer",
+      "classification": "confirmed_pending_approval",
+      "old_value": {
+        "city": "سيهات",
+        "id": "regional-pdf-national-car-5ac8dcb253c865-036"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_canonical_dataset",
+        "retain_id": "national-car-5ac8dcb253c865"
+      },
+      "type": "regional_duplicate_scope_conflict",
+      "evidence": [
+        "https://www.google.com/maps/?cid=11549186874776732353"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf matches canonical id",
+        "originCity=القطيف",
+        "stored address=شارع القدس، منطقة المستودعات، القطيف 32631"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-national-car-41f8e10e641608-036",
+      "name": "Abdullatif Cars Sale",
+      "classification": "confirmed_pending_approval",
+      "old_value": {
+        "city": "سيهات",
+        "id": "regional-pdf-national-car-41f8e10e641608-036"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_canonical_dataset",
+        "retain_id": "national-car-41f8e10e641608"
+      },
+      "type": "regional_duplicate_scope_conflict",
+      "evidence": [
+        "https://www.google.com/maps/?cid=161918289725503931"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf matches canonical id",
+        "originCity=القطيف",
+        "stored address=H3F2+QW4، الروضة، القطيف 32625"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-national-car-48ab5b2906b449-036",
+      "name": "معرض العبداللطيف للسيارات",
+      "classification": "confirmed_pending_approval",
+      "old_value": {
+        "city": "سيهات",
+        "id": "regional-pdf-national-car-48ab5b2906b449-036"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_canonical_dataset",
+        "retain_id": "national-car-48ab5b2906b449"
+      },
+      "type": "regional_duplicate_scope_conflict",
+      "evidence": [
+        "https://www.google.com/maps/?cid=5074131212685972609"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf matches canonical id",
+        "originCity=القطيف",
+        "stored address=H2FR+7MP، طريق أحد، الروضة، القطيف32625"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-national-car-fc5ea0c4ea47f9-036",
+      "name": "ساحة عادل عبدالله الحبيب للسيارات المستعملة",
+      "classification": "confirmed_pending_approval",
+      "old_value": {
+        "city": "سيهات",
+        "id": "regional-pdf-national-car-fc5ea0c4ea47f9-036"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_canonical_dataset",
+        "retain_id": "national-car-fc5ea0c4ea47f9"
+      },
+      "type": "regional_duplicate_scope_conflict",
+      "evidence": [
+        "https://www.google.com/maps/?cid=17015749861607641515"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf matches canonical id",
+        "originCity=القطيف",
+        "stored address=شارع الملك فيصل بن عبدالعزيز، المدني، القطيف32653"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-national-car-c80e0cb5068ed3-047",
+      "name": "معرض جنان للسيارات",
+      "classification": "confirmed_pending_approval",
+      "old_value": {
+        "city": "صفوى",
+        "id": "regional-pdf-national-car-c80e0cb5068ed3-047"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_canonical_dataset",
+        "retain_id": "national-car-c80e0cb5068ed3"
+      },
+      "type": "regional_duplicate_scope_conflict",
+      "evidence": [
+        "https://www.google.com/maps/?cid=2391268452885284099"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf matches canonical id",
+        "originCity=سيهات",
+        "stored address=الملك عبدالعزيز، الطف، سيهات 32463، السعودية"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-national-car-cf6f3c5b146fa1-047",
+      "name": "معرض أبو فارس للسيارات",
+      "classification": "confirmed_pending_approval",
+      "old_value": {
+        "city": "صفوى",
+        "id": "regional-pdf-national-car-cf6f3c5b146fa1-047"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_canonical_dataset",
+        "retain_id": "national-car-cf6f3c5b146fa1"
+      },
+      "type": "regional_duplicate_scope_conflict",
+      "evidence": [
+        "https://www.google.com/maps/?cid=11438090590808644062"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf matches canonical id",
+        "originCity=القطيف",
+        "stored address=7567، 2240، القطيف 32637"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-national-car-5ac8dcb253c865-047",
+      "name": "A-Hamzah Car Dealer",
+      "classification": "confirmed_pending_approval",
+      "old_value": {
+        "city": "صفوى",
+        "id": "regional-pdf-national-car-5ac8dcb253c865-047"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_canonical_dataset",
+        "retain_id": "national-car-5ac8dcb253c865"
+      },
+      "type": "regional_duplicate_scope_conflict",
+      "evidence": [
+        "https://www.google.com/maps/?cid=11549186874776732353"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf matches canonical id",
+        "originCity=القطيف",
+        "stored address=شارع القدس، منطقة المستودعات، القطيف 32631"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-national-car-41f8e10e641608-047",
+      "name": "Abdullatif Cars Sale",
+      "classification": "confirmed_pending_approval",
+      "old_value": {
+        "city": "صفوى",
+        "id": "regional-pdf-national-car-41f8e10e641608-047"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_canonical_dataset",
+        "retain_id": "national-car-41f8e10e641608"
+      },
+      "type": "regional_duplicate_scope_conflict",
+      "evidence": [
+        "https://www.google.com/maps/?cid=161918289725503931"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf matches canonical id",
+        "originCity=القطيف",
+        "stored address=H3F2+QW4، الروضة، القطيف 32625"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-national-car-48ab5b2906b449-047",
+      "name": "معرض العبداللطيف للسيارات",
+      "classification": "confirmed_pending_approval",
+      "old_value": {
+        "city": "صفوى",
+        "id": "regional-pdf-national-car-48ab5b2906b449-047"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_canonical_dataset",
+        "retain_id": "national-car-48ab5b2906b449"
+      },
+      "type": "regional_duplicate_scope_conflict",
+      "evidence": [
+        "https://www.google.com/maps/?cid=5074131212685972609"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf matches canonical id",
+        "originCity=القطيف",
+        "stored address=H2FR+7MP، طريق أحد، الروضة، القطيف32625"
+      ],
+      "status": "not_applied"
+    },
+    {
+      "id": "regional-pdf-national-car-fc5ea0c4ea47f9-047",
+      "name": "ساحة عادل عبدالله الحبيب للسيارات المستعملة",
+      "classification": "confirmed_pending_approval",
+      "old_value": {
+        "city": "صفوى",
+        "id": "regional-pdf-national-car-fc5ea0c4ea47f9-047"
+      },
+      "new_value": {
+        "action": "exclude_duplicate_record_from_canonical_dataset",
+        "retain_id": "national-car-fc5ea0c4ea47f9"
+      },
+      "type": "regional_duplicate_scope_conflict",
+      "evidence": [
+        "https://www.google.com/maps/?cid=17015749861607641515"
+      ],
+      "proof": [
+        "regionalListing=true",
+        "regionalListingOf matches canonical id",
+        "originCity=القطيف",
+        "stored address=شارع الملك فيصل بن عبدالعزيز، المدني، القطيف32653"
+      ],
+      "status": "not_applied"
+    }
+  ]
+}
