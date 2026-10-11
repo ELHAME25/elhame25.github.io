@@ -1,0 +1,818 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "b553d005ef89885ea9cc42f5eb33dd73dba04047",
+  "scope": {
+    "city": "صامطة",
+    "batch": "01",
+    "count": 16,
+    "positions": "1-16 of 31",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Current exact searches plus direct stored place links and explicit regional provenance. Fields without independent matches remain unresolved.",
+  "records": [
+    {
+      "id": "phase6-cars-8bb231b9c0f936",
+      "name": "وكالة تويوتا",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "الشارع العام صامطة 86383",
+        "phones": [
+          "0173320903"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=7103076850908896021",
+        "lat": null,
+        "lon": null,
+        "originCity": null,
+        "regionalListingOf": null
+      },
+      "field_decisions": {
+        "name": "unresolved_generic_name",
+        "activity": "official_dealer_suspected_not_confirmed",
+        "city": "supported_by_address",
+        "neighborhood": "supported",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "unconfirmed_direct_cid"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=7103076850908896021"
+      ],
+      "note": "الاسم عام ويشير إلى وكالة رسمية محتملة؛ لم يظهر مصدر مستقل مطابق للاسم والرقم، لذلك بقي السجل غير محسوم ولم يُقترح استبعاده بعد."
+    },
+    {
+      "id": "regional-pdf-entity-781752dff6d0-056",
+      "name": "معرض القصيم",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "",
+        "phones": [
+          "0502425105"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": null,
+        "lat": null,
+        "lon": null,
+        "originCity": "صبيا",
+        "regionalListingOf": "entity-781752dff6d0"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported",
+        "city": "conflict_confirmed_origin_is_صبيا",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "missing"
+      },
+      "evidence_urls": [],
+      "note": "نسخة إقليمية أصلها صبيا وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-entity-781752dff6d0-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "entity-781752dff6d0"
+        },
+        "proof": [
+          "originCity=صبيا",
+          "regionalListingOf=entity-781752dff6d0",
+          "stored_neighborhood=",
+          "coordinates=null,null"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-entity-0f6b1be97a66-056",
+      "name": "معرض العالمية للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "طريق الملك عبدالله، المنطقة الصناعية، جيزان 82621، المملكة العربية السعودية",
+        "phones": [
+          "0500607755"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%8C%D8%AC%D8%A7%D8%B2%D8%A7%D9%86%2C+%D9%84%D9%84%D8%A8%D9%8A%D8%B9+%D9%88%D8%B4%D8%B1%D8%A7%D8%A1%E2%80%AD/data=!4m7!3m6!1s0x1607e317b962a0d1:0xaf877d3d18e99710!8m2!3d16.8309669!4d42.6295302!16s%2Fg%2F11mwclzfc6!19sChIJ0aBiuRfjBxYREJfpGD19h68?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.83097,
+        "lon": 42.62953,
+        "originCity": "جازان",
+        "regionalListingOf": "entity-0f6b1be97a66"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%8C%D8%AC%D8%A7%D8%B2%D8%A7%D9%86%2C+%D9%84%D9%84%D8%A8%D9%8A%D8%B9+%D9%88%D8%B4%D8%B1%D8%A7%D8%A1%E2%80%AD/data=!4m7!3m6!1s0x1607e317b962a0d1:0xaf877d3d18e99710!8m2!3d16.8309669!4d42.6295302!16s%2Fg%2F11mwclzfc6!19sChIJ0aBiuRfjBxYREJfpGD19h68?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-entity-0f6b1be97a66-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "entity-0f6b1be97a66"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=entity-0f6b1be97a66",
+          "stored_neighborhood=طريق الملك عبدالله، المنطقة الصناعية، جيزان 82621، المملكة العربية السعودية",
+          "coordinates=16.83097,42.62953"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-entity-ce43a7dc2866-056",
+      "name": "معرض موتور وان للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "4050 طريق الملك عبدالعزيز، جازان 82722 6868، المملكة العربية السعودية",
+        "phones": [
+          "0546003731"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D9%88%D8%AA%D9%88%D8%B1+%D9%88%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e35b481ba747:0xe1f8e0927ed51e2a!8m2!3d16.8863701!4d42.5753223!16s%2Fg%2F11r_xhb__1!19sChIJR6cbSFvjBxYRKh7VfpLg-OE?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.88637,
+        "lon": 42.57532,
+        "originCity": "جازان",
+        "regionalListingOf": "entity-ce43a7dc2866"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D9%88%D8%AA%D9%88%D8%B1+%D9%88%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e35b481ba747:0xe1f8e0927ed51e2a!8m2!3d16.8863701!4d42.5753223!16s%2Fg%2F11r_xhb__1!19sChIJR6cbSFvjBxYRKh7VfpLg-OE?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-entity-ce43a7dc2866-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "entity-ce43a7dc2866"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=entity-ce43a7dc2866",
+          "stored_neighborhood=4050 طريق الملك عبدالعزيز، جازان 82722 6868، المملكة العربية السعودية",
+          "coordinates=16.88637,42.57532"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-f68610bf3d6644-056",
+      "name": "القصيم للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "طريق الملك عبدالعزيز، جيزان 82722، المملكة العربية السعودية",
+        "phones": [
+          "0532444516"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e2e8f6c7102b:0xfbb061492c1f4e49!8m2!3d16.8866429!4d42.5748315!16s%2Fg%2F12lsrz8r7!19sChIJKxDH9ujiBxYRSU4fLElhsPs?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.88664,
+        "lon": 42.57483,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-f68610bf3d6644"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e2e8f6c7102b:0xfbb061492c1f4e49!8m2!3d16.8866429!4d42.5748315!16s%2Fg%2F12lsrz8r7!19sChIJKxDH9ujiBxYRSU4fLElhsPs?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-f68610bf3d6644-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-f68610bf3d6644"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-f68610bf3d6644",
+          "stored_neighborhood=طريق الملك عبدالعزيز، جيزان 82722، المملكة العربية السعودية",
+          "coordinates=16.88664,42.57483"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-00e3bc16bfad3d-056",
+      "name": "معرض نايف للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "طريق الملك عبدالعزيز، جيزان 82721، المملكة العربية السعودية",
+        "phones": [
+          "0535351820"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%A7%D9%8A%D9%81+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e34bdddfcfe1:0xcf03f89ff51f502f!8m2!3d16.8858959!4d42.5775106!16s%2Fg%2F11w1dnm051!19sChIJ4c_f3UvjBxYRL1Af9Z_4A88?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.8859,
+        "lon": 42.57751,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-00e3bc16bfad3d"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%A7%D9%8A%D9%81+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e34bdddfcfe1:0xcf03f89ff51f502f!8m2!3d16.8858959!4d42.5775106!16s%2Fg%2F11w1dnm051!19sChIJ4c_f3UvjBxYRL1Af9Z_4A88?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-00e3bc16bfad3d-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-00e3bc16bfad3d"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-00e3bc16bfad3d",
+          "stored_neighborhood=طريق الملك عبدالعزيز، جيزان 82721، المملكة العربية السعودية",
+          "coordinates=16.8859,42.57751"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-7b5880f3dce5f8-056",
+      "name": "شركة اضواء خميس مشيط للسيارات جازان",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "طريق الملك عبدالعزيز، جيزان 82722، المملكة العربية السعودية",
+        "phones": [
+          "0540033549"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D8%B6%D9%88%D8%A7%D8%A1+%D8%AE%D9%85%D9%8A%D8%B3+%D9%85%D8%B4%D9%8A%D8%B7+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%AC%D8%A7%D8%B2%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x1607e3aa38a6b6c7:0x44552dedf2c3774b!8m2!3d16.8862363!4d42.5762681!16s%2Fg%2F11kblbfmc1!19sChIJx7amOKrjBxYRS3fD8u0tVUQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.88624,
+        "lon": 42.57627,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-7b5880f3dce5f8"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D8%B6%D9%88%D8%A7%D8%A1+%D8%AE%D9%85%D9%8A%D8%B3+%D9%85%D8%B4%D9%8A%D8%B7+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%AC%D8%A7%D8%B2%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x1607e3aa38a6b6c7:0x44552dedf2c3774b!8m2!3d16.8862363!4d42.5762681!16s%2Fg%2F11kblbfmc1!19sChIJx7amOKrjBxYRS3fD8u0tVUQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-7b5880f3dce5f8-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-7b5880f3dce5f8"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-7b5880f3dce5f8",
+          "stored_neighborhood=طريق الملك عبدالعزيز، جيزان 82722، المملكة العربية السعودية",
+          "coordinates=16.88624,42.57627"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-a3d330066c2da4-056",
+      "name": "لوكار للسيارات فرع جيزان",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "طريق الملك فيصل، جيزان 82741، المملكة العربية السعودية",
+        "phones": [
+          "920013212"
+        ],
+        "whatsapp": null,
+        "website": "https://www.locar.sa/",
+        "maps": "https://www.google.com/maps/place/%D9%84%D9%88%D9%83%D8%A7%D8%B1+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D9%81%D8%B1%D8%B9+%D8%AC%D9%8A%D8%B2%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x1607e357884d1d1d:0x70cecac4b94b8f4a!8m2!3d16.8795033!4d42.6024488!16s%2Fg%2F11sbhnyf6t!19sChIJHR1NiFfjBxYRSo9LucTKznA?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.8795,
+        "lon": 42.60245,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-a3d330066c2da4"
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "supported",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11176689221/",
+        "https://www.locar.sa/",
+        "https://www.google.com/maps/place/%D9%84%D9%88%D9%83%D8%A7%D8%B1+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D9%81%D8%B1%D8%B9+%D8%AC%D9%8A%D8%B2%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x1607e357884d1d1d:0x70cecac4b94b8f4a!8m2!3d16.8795033!4d42.6024488!16s%2Fg%2F11sbhnyf6t!19sChIJHR1NiFfjBxYRSo9LucTKznA?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-a3d330066c2da4-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-a3d330066c2da4"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-a3d330066c2da4",
+          "stored_neighborhood=طريق الملك فيصل، جيزان 82741، المملكة العربية السعودية",
+          "coordinates=16.8795,42.60245"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-f8d6bc714bbda0-056",
+      "name": "شيخ المعارض",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "RJJH+7XM، المنطقة الصناعية، جيزان 82621، المملكة العربية السعودية",
+        "phones": [
+          "0552808837"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D8%B4%D9%8A%D8%AE+%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%E2%80%AD/data=!4m7!3m6!1s0x1607e409e614307f:0xaa43dbc36674648!8m2!3d16.8307228!4d42.6299327!16s%2Fg%2F11fyx9jt5s!19sChIJfzAU5gnkBxYRSEZnNrw9pAo?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.83072,
+        "lon": 42.62993,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-f8d6bc714bbda0"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D8%B4%D9%8A%D8%AE+%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%E2%80%AD/data=!4m7!3m6!1s0x1607e409e614307f:0xaa43dbc36674648!8m2!3d16.8307228!4d42.6299327!16s%2Fg%2F11fyx9jt5s!19sChIJfzAU5gnkBxYRSEZnNrw9pAo?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-f8d6bc714bbda0-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-f8d6bc714bbda0"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-f8d6bc714bbda0",
+          "stored_neighborhood=RJJH+7XM، المنطقة الصناعية، جيزان 82621، المملكة العربية السعودية",
+          "coordinates=16.83072,42.62993"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-812be51786f8aa-056",
+      "name": "شركة إكسون للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "طريق الملك عبدالعزيز، الصفا، جيزان 82721، المملكة العربية السعودية",
+        "phones": [
+          "0590033087"
+        ],
+        "whatsapp": null,
+        "website": "https://haraj.com.sa/@XON_CARS?ref=o",
+        "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A5%D9%83%D8%B3%D9%88%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e320795614a9:0x79a004ed65129edf!8m2!3d16.8853174!4d42.5766947!16s%2Fg%2F11yvpkkxn1!19sChIJqRRWeSDjBxYR354SZe0EoHk?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.88532,
+        "lon": 42.5767,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-812be51786f8aa"
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "supported",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://haraj.com/11187534668/",
+        "https://haraj.com.sa/@XON_CARS?ref=o",
+        "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A5%D9%83%D8%B3%D9%88%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e320795614a9:0x79a004ed65129edf!8m2!3d16.8853174!4d42.5766947!16s%2Fg%2F11yvpkkxn1!19sChIJqRRWeSDjBxYR354SZe0EoHk?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-812be51786f8aa-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-812be51786f8aa"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-812be51786f8aa",
+          "stored_neighborhood=طريق الملك عبدالعزيز، الصفا، جيزان 82721، المملكة العربية السعودية",
+          "coordinates=16.88532,42.5767"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-7018abada2b85b-056",
+      "name": "معرض تاج العريش",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "طريق الملك عبدالله، المنطقة الصناعية، جيزان 82622، المملكة العربية السعودية",
+        "phones": [],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%AA%D8%A7%D8%AC+%D8%A7%D9%84%D8%B9%D8%B1%D9%8A%D8%B4%E2%80%AD/data=!4m7!3m6!1s0x1607e59e39b3cc29:0x7e5257a043adba5c!8m2!3d16.831775!4d42.6335051!16s%2Fg%2F11fm5d357g!19sChIJKcyzOZ7lBxYRXLqtQ6BXUn4?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.83178,
+        "lon": 42.6335,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-7018abada2b85b"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "missing",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%AA%D8%A7%D8%AC+%D8%A7%D9%84%D8%B9%D8%B1%D9%8A%D8%B4%E2%80%AD/data=!4m7!3m6!1s0x1607e59e39b3cc29:0x7e5257a043adba5c!8m2!3d16.831775!4d42.6335051!16s%2Fg%2F11fm5d357g!19sChIJKcyzOZ7lBxYRXLqtQ6BXUn4?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-7018abada2b85b-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-7018abada2b85b"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-7018abada2b85b",
+          "stored_neighborhood=طريق الملك عبدالله، المنطقة الصناعية، جيزان 82622، المملكة العربية السعودية",
+          "coordinates=16.83178,42.6335"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-48efa9b6c706b4-056",
+      "name": "شركة نجوم الفلاح للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "جيزان 82722، المملكة العربية السعودية",
+        "phones": [
+          "0507414402"
+        ],
+        "whatsapp": null,
+        "website": "https://beacons.ai/carsalfalah",
+        "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D9%86%D8%AC%D9%88%D9%85+%D8%A7%D9%84%D9%81%D9%84%D8%A7%D8%AD+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e3e32988ad55:0x5ba0b8afb3c30f8d!8m2!3d16.8859375!4d42.5775625!16s%2Fg%2F11g0w3yb1t!19sChIJVa2IKePjBxYRjQ_Ds6-4oFs?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.88594,
+        "lon": 42.57756,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-48efa9b6c706b4"
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "confirmed",
+        "whatsapp": "confirmed_in_ad_for_listed_contact",
+        "website": "supported",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11175850351/",
+        "https://beacons.ai/carsalfalah",
+        "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D9%86%D8%AC%D9%88%D9%85+%D8%A7%D9%84%D9%81%D9%84%D8%A7%D8%AD+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e3e32988ad55:0x5ba0b8afb3c30f8d!8m2!3d16.8859375!4d42.5775625!16s%2Fg%2F11g0w3yb1t!19sChIJVa2IKePjBxYRjQ_Ds6-4oFs?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-48efa9b6c706b4-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-48efa9b6c706b4"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-48efa9b6c706b4",
+          "stored_neighborhood=جيزان 82722، المملكة العربية السعودية",
+          "coordinates=16.88594,42.57756"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-bcaefe8211fc19-056",
+      "name": "العاصمة بن جلالة للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "4083 طريق الملك عبدالعزيز، الصفا، جيزان 82721، المملكة العربية السعودية",
+        "phones": [
+          "0173153333"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9+%D8%A8%D9%86+%D8%AC%D9%84%D8%A7%D9%84%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e2e88609d761:0x417dfec0b2667bba!8m2!3d16.8845155!4d42.5799958!16s%2Fg%2F11cscc277w!19sChIJYdcJhujiBxYRuntmssD-fUE?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.88452,
+        "lon": 42.58,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-bcaefe8211fc19"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9+%D8%A8%D9%86+%D8%AC%D9%84%D8%A7%D9%84%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e2e88609d761:0x417dfec0b2667bba!8m2!3d16.8845155!4d42.5799958!16s%2Fg%2F11cscc277w!19sChIJYdcJhujiBxYRuntmssD-fUE?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-bcaefe8211fc19-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-bcaefe8211fc19"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-bcaefe8211fc19",
+          "stored_neighborhood=4083 طريق الملك عبدالعزيز، الصفا، جيزان 82721، المملكة العربية السعودية",
+          "coordinates=16.88452,42.58"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-61690a218e60a0-056",
+      "name": "معرض شركة اداابت للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "WG4X+35X، الشاطئ، جيزان 82725، المملكة العربية السعودية",
+        "phones": [
+          "0173224380"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D8%AF%D8%A7%D8%A7%D8%A8%D8%AA+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x160808032f84708b:0x6b5d62cd3df7e206!8m2!3d16.905234!4d42.5479706!16s%2Fg%2F11hb573tsd!19sChIJi3CELwMICBYRBuL3Pc1iXWs?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.90523,
+        "lon": 42.54797,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-61690a218e60a0"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D8%AF%D8%A7%D8%A7%D8%A8%D8%AA+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x160808032f84708b:0x6b5d62cd3df7e206!8m2!3d16.905234!4d42.5479706!16s%2Fg%2F11hb573tsd!19sChIJi3CELwMICBYRBuL3Pc1iXWs?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-61690a218e60a0-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-61690a218e60a0"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-61690a218e60a0",
+          "stored_neighborhood=WG4X+35X، الشاطئ، جيزان 82725، المملكة العربية السعودية",
+          "coordinates=16.90523,42.54797"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-aec74c87b01e91-056",
+      "name": "معرض الفاضل للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "طريق الملك عبدالله، المنطقة الصناعية، جيزان 82511، المملكة العربية السعودية",
+        "phones": [
+          "0549777616"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%81%D8%A7%D8%B6%D9%84+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e52528d97145:0xe158311451744362!8m2!3d16.831247!4d42.6316906!16s%2Fg%2F11y5smlpqq!19sChIJRXHZKCXlBxYRYkN0URQxWOE?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.83125,
+        "lon": 42.63169,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-aec74c87b01e91"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%81%D8%A7%D8%B6%D9%84+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e52528d97145:0xe158311451744362!8m2!3d16.831247!4d42.6316906!16s%2Fg%2F11y5smlpqq!19sChIJRXHZKCXlBxYRYkN0URQxWOE?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-aec74c87b01e91-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-aec74c87b01e91"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-aec74c87b01e91",
+          "stored_neighborhood=طريق الملك عبدالله، المنطقة الصناعية، جيزان 82511، المملكة العربية السعودية",
+          "coordinates=16.83125,42.63169"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-266ff450cfead5-056",
+      "name": "معرض ظفر الوسام للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "RJJH+3CW، حي المعارض، جيزان 82621، المملكة العربية السعودية",
+        "phones": [
+          "0555946965"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B8%D9%81%D8%B1+%D8%A7%D9%84%D9%88%D8%B3%D8%A7%D9%85+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e3403c07e15f:0xe455c1d48152e4c6!8m2!3d16.8302437!4d42.6285772!16s%2Fg%2F11l38q4w1j!19sChIJX-EHPEDjBxYRxuRSgdTBVeQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.83024,
+        "lon": 42.62858,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-266ff450cfead5"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B8%D9%81%D8%B1+%D8%A7%D9%84%D9%88%D8%B3%D8%A7%D9%85+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e3403c07e15f:0xe455c1d48152e4c6!8m2!3d16.8302437!4d42.6285772!16s%2Fg%2F11l38q4w1j!19sChIJX-EHPEDjBxYRxuRSgdTBVeQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ العنوان والإحداثيات ورابط الأصل متطابقة مع مدينة المنشأ.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-266ff450cfead5-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-266ff450cfead5"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-266ff450cfead5",
+          "stored_neighborhood=RJJH+3CW، حي المعارض، جيزان 82621، المملكة العربية السعودية",
+          "coordinates=16.83024,42.62858"
+        ],
+        "status": "not_applied"
+      }
+    }
+  ]
+}
