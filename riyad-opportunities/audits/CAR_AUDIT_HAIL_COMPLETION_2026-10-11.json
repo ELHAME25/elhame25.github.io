@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "timezone": "Asia/Riyadh",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": {"cities": ["حائل"], "existing_records_reviewed": 16, "protected_qadisiyah_touched": false},
+  "summary": {"verified_correct_no_data_change": 8, "verified_with_proposed_data_correction": 7, "verified_duplicate_proposed_archive": 1, "unresolved_phone": 0, "unresolved_pin": 0},
+  "policy": {
+    "primary_source": "Google Maps place cards opened directly",
+    "general_search_url_not_accepted_as_verified_pin": true,
+    "cars_json_write_status": "Not attempted; the prior full-file replacement was explicitly rejected. This file preserves exact field-level corrections and the duplicate decision without bypassing that review decision."
+  },
+  "records": [
+    {
+      "id": "entity-42c1a1b88330", "city": "حائل", "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض القادم للسيارات بحائل", "phone": "0599703183", "lat": 27.48226, "lon": 41.73277, "maps_cid": "2787717524267945909"},
+      "observed": {"name": "معرض القادم للسيارات بحائل", "phone": "0599703183", "lat": 27.4822616, "lon": 41.7327629, "maps_cid": "2787717524267945909"}, "proposed_change": null
+    },
+    {
+      "id": "entity-c612efb039f5", "city": "حائل", "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض المخلف للسيارات", "phone": "0165328506", "lat": 27.47989, "lon": 41.73195, "maps_cid": "6492392779851949292"},
+      "observed": {"name": "معرض المخلف للسيارات", "activity": "تاجر سيارات", "address": "FPHJ+XQ4، Unnamed Road، حائل 55423", "phone": "0165328506", "lat": 27.4798797, "lon": 41.7319522, "maps_cid": "6492392779851949292"}, "proposed_change": null
+    },
+    {
+      "id": "entity-57fcd2749acb", "city": "حائل", "decision": "verified_duplicate_proposed_archive",
+      "stored": {"name": "معرض التميمي للسيارات", "phone": "0534770022", "maps_provider": "Yango", "lat": 27.48599, "lon": 41.76137},
+      "matched_canonical_record": "phase6-google-229356291587975408",
+      "evidence": {"same_phone": "0534770022", "same_business_name": "معرض التميمي للسيارات", "canonical_maps_cid": "229356291587975408", "canonical_lat": 27.4815625, "canonical_lon": 41.7340625},
+      "proposed_change": {"archive_duplicate_from_display": true, "retain_id": "phase6-google-229356291587975408"}
+    },
+    {
+      "id": "entity-852df93f9758", "city": "حائل", "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض الحنيني للسيارات حائل", "phone": "0506176119", "lat": 27.4790533, "lon": 41.7321747, "maps_cid": "9177322994304214622"},
+      "observed": {"name": "معرض الحنيني للسيارات حائل", "activity": "مزاد السيارات", "address": "طريق الملك عبدالعزيز، حائل 55423", "phone": "0506176119", "lat": 27.4790533, "lon": 41.7321747, "maps_cid": "9177322994304214622"}, "proposed_change": null
+    },
+    {
+      "id": "phase6-google-6644873880173081101", "city": "حائل", "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض العواد للسيارات", "phone": "0505159089", "lat": 27.482596, "lon": 41.733192, "maps_cid": "6644873880173081101"},
+      "observed": {"name": "معرض العواد للسيارات", "activity": "تاجر سيارات", "phone": "0505159089", "lat": 27.482596, "lon": 41.733192, "maps_cid": "6644873880173081101"}, "proposed_change": null
+    },
+    {
+      "id": "phase6-google-10148029337991617788", "city": "حائل", "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض م. الصقري للسيارات حائل", "phone": "0557850808", "lat": 27.48599, "lon": 41.76137, "maps_cid": "10148029337991617788"},
+      "observed": {"name": "معرض م. الصقري للسيارات حائل", "activity": "تاجر سيارات مستعملة", "address": "الصناعية، حائل 55423", "phone": "0557850808", "plus_code": "FPJM+X4 حائل السعودية", "lat": 27.4824289, "lon": 41.7328572, "maps_cid": "10148029337991617788"},
+      "proposed_change": {"lat": 27.4824289, "lon": 41.7328572}
+    },
+    {
+      "id": "phase6-google-10535346191350138564", "city": "حائل", "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض الجبيل للسيارات بحائل", "phone": "0506175145", "lat": 27.4812074, "lon": 41.7347543, "maps_cid": "10535346191350138564"},
+      "observed": {"name": "معرض الجبيل للسيارات بحائل", "activity": "تاجر السيارات", "address": "6897 3061، حائل 55423", "phone": "0506175145", "plus_code": "FPJM+FW حائل السعودية", "lat": 27.4812074, "lon": 41.7347543, "maps_cid": "10535346191350138564"}, "proposed_change": null
+    },
+    {
+      "id": "phase6-google-14514093740487545178", "city": "حائل", "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض السديري للسيارات", "phone": "0509959174", "lat": null, "lon": null, "maps_cid": "14514093740487545178"},
+      "observed": {"name": "معرض السديري للسيارات", "activity": "تاجر سيارات", "address": "6866، 2935، حائل 55423", "phone": "0509959174", "plus_code": "FPJM+5H حائل السعودية", "lat": 27.4804514, "lon": 41.7338812, "maps_cid": "14514093740487545178"},
+      "proposed_change": {"lat": 27.4804514, "lon": 41.7338812}
+    },
+    {
+      "id": "phase6-google-3312015092521698669", "city": "حائل", "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض ركن المشراف للسيارات بحائل", "phone": "0542686044", "lat": 27.48184, "lon": 41.73305, "maps_cid": "3312015092521698669"},
+      "observed": {"name": "معرض ركن المشراف للسيارات بحائل", "activity": "تاجر السيارات", "address": "FPJM+P6M، حائل 55423", "phone": "0542686044", "lat": 27.4818327, "lon": 41.7330464, "maps_cid": "3312015092521698669"}, "proposed_change": null
+    },
+    {
+      "id": "phase6-google-7759503810639060055", "city": "حائل", "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض الصويطي للسيارات", "phone": "0541557007", "lat": 27.4798492, "lon": 41.7325596, "maps_cid": "7759503810639060055"},
+      "observed": {"name": "معرض الصويطي للسيارات", "activity": "سمسار سيارات", "address": "طريق الملك عبدالعزيز، حائل 55423", "phone": "0541557007", "plus_code": "FPHM+W2 حائل السعودية", "lat": 27.4798492, "lon": 41.7325596, "maps_cid": "7759503810639060055"}, "proposed_change": null
+    },
+    {
+      "id": "phase6-google-10062908089215171885", "city": "حائل", "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض الخليفة للمعدات والسيارات", "phone": "0505156857", "lat": null, "lon": null, "maps_cid": "10062908089215171885"},
+      "observed": {"name": "معرض الخليفة للمعدات والسيارات", "activity": "تاجر سيارات", "address": "3004 حائل 55423 6654", "phone": "0505156857", "plus_code": "FPHM+FM حائل السعودية", "lat": 27.4787165, "lon": 41.7341731, "maps_cid": "10062908089215171885"},
+      "proposed_change": {"lat": 27.4787165, "lon": 41.7341731}
+    },
+    {
+      "id": "phase6-google-4240941406413093517", "city": "حائل", "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض الامجاد للسيارات", "phone": "0533098666", "lat": 27.48144, "lon": 41.73292, "maps_cid": "4240941406413093517"},
+      "observed": {"name": "معرض الامجاد للسيارات", "activity": "تاجر سيارات", "address": "FPJM+H5F، حائل 55423", "phone": "0533098666", "lat": 27.4814447, "lon": 41.7329167, "maps_cid": "4240941406413093517"}, "proposed_change": null
+    },
+    {
+      "id": "phase6-google-5665935497291163350", "city": "حائل", "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض التويجري للسيارات", "phone": "0594259400", "lat": null, "lon": null, "maps_cid": "5665935497291163350"},
+      "observed": {"name": "معرض التويجري للسيارات", "activity": "تاجر سيارات", "address": "الشارع العام، حائل", "phone": "0594259400", "plus_code": "FPHM+XF حائل السعودية", "lat": 27.4799909, "lon": 41.733627, "maps_cid": "5665935497291163350"},
+      "proposed_change": {"lat": 27.4799909, "lon": 41.733627}
+    },
+    {
+      "id": "phase6-google-8821589655719132477", "city": "حائل", "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض عناد لسيارات", "phone": "0506879961", "lat": null, "lon": null, "maps_cid": "8821589655719132477"},
+      "observed": {"name": "معرض عناد لسيارات", "activity": "تاجر السيارات", "address": "6995، حائل 55423 2801، حائل 78905", "phone": "0506879961", "plus_code": "FPJJ+VP حائل السعودية", "lat": 27.4821864, "lon": 41.7318353, "maps_cid": "8821589655719132477"},
+      "proposed_change": {"lat": 27.4821864, "lon": 41.7318353}
+    },
+    {
+      "id": "phase6-google-14309599542859758045", "city": "حائل", "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض الشامخ للسيارات بحائل", "phone": "0553998015", "lat": null, "lon": null, "maps_cid": "14309599542859758045"},
+      "observed": {"name": "معرض الشامخ للسيارات بحائل", "activity": "تاجر السيارات", "address": "المعارض، حائل 55411", "phone": "0553998015", "plus_code": "FPJM+HM حائل السعودية", "lat": 27.481408, "lon": 41.7341392, "maps_cid": "14309599542859758045"},
+      "proposed_change": {"lat": 27.481408, "lon": 41.7341392}
+    },
+    {
+      "id": "phase6-google-14570016571882771368", "city": "حائل", "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض فخر العروبة للسيارات", "phone": "0532328869", "lat": null, "lon": null, "maps_cid": "14570016571882771368"},
+      "observed": {"name": "معرض فخر العروبة للسيارات", "activity": "متجر", "address": "6883، 2871، حائل 55423", "phone": "0532328869", "plus_code": "FPJM+74 حائل السعودية", "lat": 27.4807287, "lon": 41.7327859, "maps_cid": "14570016571882771368"},
+      "proposed_change": {"lat": 27.4807287, "lon": 41.7327859}
+    }
+  ]
+}
