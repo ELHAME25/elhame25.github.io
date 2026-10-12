@@ -2,10 +2,10 @@
   "schema": "office-maps-unreviewed-candidates-v1",
   "generatedAt": "2026-10-12",
   "branch": "fix/scope-counts-nhc-20261010",
-  "sourceHead": "340eaab8a8cabdb2df7e19363ddf0276a3a00b64",
+  "sourceHead": "2920c675ed40ee7077fb3a31d76ab7113fabbedc",
   "inventory": 1524,
-  "explicitOutcomesCount": 109,
-  "withoutRecordedIndividualOutcome": 304,
+  "explicitOutcomesCount": 124,
+  "withoutRecordedIndividualOutcome": 289,
   "method": "Rows are IDs not found with an explicit status field across committed OFFICE audit checkpoints/ledgers at sourceHead. These are candidates for individual Maps audit; do not infer correct or incorrect from absence.",
   "regionalCounts": {
     "riyadh": {
@@ -30,8 +30,8 @@
     },
     "southCentral": {
       "total": 243,
-      "decisionRecorded": 24,
-      "remainingWithoutDecision": 219
+      "decisionRecorded": 39,
+      "remainingWithoutDecision": 204
     }
   },
   "assignments": {
@@ -1612,7 +1612,7 @@
         "phones": [
           "0560812888"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "phase5-office-e42486eb4fd5",
@@ -1621,7 +1621,7 @@
         "phones": [
           "0564000017"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "phase5-office-dfcc7d37ac18",
@@ -1630,7 +1630,7 @@
         "phones": [
           "0555130033"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "phase5-office-6fa1c875aab0",
@@ -1639,7 +1639,7 @@
         "phones": [
           "0500952466"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "phase5-office-7350091f3d8c",
@@ -1648,7 +1648,7 @@
         "phones": [
           "0550009301"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "phase5-google-office-2581369b19a1",
@@ -1657,7 +1657,7 @@
         "phones": [
           "0565594599"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "phase5-google-office-5866c0d207bd",
@@ -1675,7 +1675,7 @@
         "phones": [
           "0555171245"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "phase5-google-office-83cb5f261e57",
@@ -1684,7 +1684,7 @@
         "phones": [
           "0503143400"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "phase5-google-office-f3739ca6383c",
@@ -1693,7 +1693,7 @@
         "phones": [
           "0539611777"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "phase5-google-office-03dbadabc646",
@@ -1702,7 +1702,7 @@
         "phones": [
           "0563040016"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "phase5-google-office-1b38ae7084b9",
@@ -1711,7 +1711,7 @@
         "phones": [
           "0550932500"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "phase5-google-office-fe33c04d9f43",
@@ -1720,7 +1720,7 @@
         "phones": [
           "0553277788"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "phase5-google-office-f22dcf4e8a80",
@@ -1729,7 +1729,7 @@
         "phones": [
           "0555143663"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "phase5-google-office-8e6ad9a9bfc1",
@@ -1891,7 +1891,7 @@
         "phones": [
           "0163631411"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_timeout"
       },
       {
         "id": "office-maps-acec82930cc7",
@@ -1900,7 +1900,7 @@
         "phones": [
           "0551332229"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-5c46af751afc",
@@ -3758,5 +3758,5 @@
       }
     ]
   },
-  "note": "Statuses reconciled against mapsAudit for unique candidate IDs in committed data; unresolved Maps reviews count as individual decisions, pending entries have no saved decision."
+  "note": "Statuses reconciled against mapsAudit for unique candidate IDs in committed data; unresolved findings count as individual decisions, pending entries have no saved decision."
 }
