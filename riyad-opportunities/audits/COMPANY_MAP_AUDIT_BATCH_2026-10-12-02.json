@@ -1,0 +1,195 @@
+{
+  "schema": "record-map-audit-batch-v1",
+  "audit_date": "2026-10-12",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "method": "Opened the existing Google Maps search-link for each row; only count a match when a place card was actually readable and identity/location aligned. No generic search counts as a verified pin.",
+  "records": [
+    {
+      "id": "cp-da8cabf976",
+      "name": "شركة دار الماجد العقارية",
+      "currentMaps": "empty; mapsQ opened",
+      "map": {
+        "opened": true,
+        "placeCard": "شركة حسام وماجد الماجد العقارية",
+        "matched": false,
+        "status": "unresolved_name_mismatch",
+        "evidence": "Google Maps returned a different titled business; do not assign this pin. Company official project site exists but does not establish that card as the record's office."
+      },
+      "phone": {
+        "stored": [
+          "0555048581",
+          "0592431071"
+        ],
+        "status": "not_independently_verified"
+      },
+      "whatsapp": {
+        "stored": "empty",
+        "status": "not_listed"
+      },
+      "website": {
+        "stored": "https://almajdiah.com",
+        "status": "official website name/source identified; not opened in this run"
+      },
+      "sources": [
+        "https://almajdiah.com",
+        "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%A7%D8%AC%D8%AF%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+      ]
+    },
+    {
+      "id": "cp-9aadba3f11",
+      "name": "شركة رتال للتطوير العمراني",
+      "currentMaps": "empty before this audit; mapsQ query opened",
+      "map": {
+        "opened": true,
+        "matched": true,
+        "status": "pin_added_post_edit_retest_pending",
+        "saved": "https://www.google.com/maps/place/%D8%B1%D8%AA%D8%A7%D9%84+%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%A5%D9%82%D9%84%D9%8A%D9%85%D9%8A+%D9%88+%D9%85%D8%B1%D9%83%D8%B2+%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x3e2efdbd307bdbb5:0x1966e0d5616e23df!8m2!3d24.7826875!4d46.6970625!16s%2Fg%2F11mxyykqds!19sChIJtdt7ML39Lj4R3yNuYdXgZhk?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+        "evidence": "Google Maps place card explicitly «رتال المكتب الإقليمي و مركز المبيعات», Riyadh 13313, Diriyah/Northern Ring Rd, phone +966 800 303 0888, website retal.com.sa. Company and Riyadh match. Pin was written, but reopening after write timed out; don't count post-edit retest as passed."
+      },
+      "phone": {
+        "stored": [
+          "0559564362",
+          "8003030888",
+          "0567933737"
+        ],
+        "status": "8003030888 matched Google Maps card; others not verified"
+      },
+      "whatsapp": {
+        "stored": "https://wa.me/message/MFDPXBNPC5ZWM1",
+        "status": "not independently tested; attempt blocked by browser security policy"
+      },
+      "website": {
+        "stored": "https://retal.com.sa",
+        "status": "Google Maps card links retal.com.sa; direct open timed out"
+      },
+      "sources": [
+        "https://retal.com.sa/",
+        "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B1%D8%AA%D8%A7%D9%84%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%85%D8%B1%D8%A7%D9%86%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+      ]
+    },
+    {
+      "id": "cp-3b5ace92c4",
+      "name": "شركة السليمان العقارية",
+      "map": {
+        "opened": true,
+        "placeCardTitle": "شركة السليمان العقارية Al-Soliman Real Estate Co",
+        "matched": false,
+        "status": "unresolved_card_details_not_loaded",
+        "evidence": "Maps tab/title loaded the matching name but details with address/pin were not readable; no pin added."
+      },
+      "phone": {
+        "stored": [
+          "920003511"
+        ],
+        "status": "official site search result lists Riyadh Qirawan address; number not independently tested"
+      },
+      "whatsapp": {
+        "stored": "empty",
+        "status": "not_listed"
+      },
+      "website": {
+        "stored": "https://alsoliman.com.sa",
+        "status": "official contact page found in web search, not directly opened"
+      },
+      "sources": [
+        "https://alsoliman.com.sa/ar/contact",
+        "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+      ]
+    },
+    {
+      "id": "cp-8db0b586c9",
+      "name": "شركة بوابة الدرعية المحدودة",
+      "map": {
+        "opened": true,
+        "placeCardTitle": "هيئة تطوير بوابة الدرعية",
+        "matched": false,
+        "status": "unresolved_entity_mismatch",
+        "evidence": "Maps showed the development authority, which is a distinct named entity from the company record. No pin assigned."
+      },
+      "phone": {
+        "stored": [
+          "920021727"
+        ],
+        "status": "not_independently_verified"
+      },
+      "whatsapp": {
+        "stored": "empty",
+        "status": "not_listed"
+      },
+      "website": {
+        "stored": "https://www.diriyahcompany.sa",
+        "status": "official company contact page found; not directly opened"
+      },
+      "sources": [
+        "https://www.diriyahcompany.sa/ar/contact-us",
+        "https://www.dgda.gov.sa/ar/contact-us",
+        "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+      ]
+    },
+    {
+      "id": "cp-5ef80d95bb",
+      "name": "شركة محمد ومصعب عبدالله العجلان الاستثمارية",
+      "map": {
+        "opened": true,
+        "placeCardTitle": "شركة محمد و مصعب العجلان الاستثمارية",
+        "matched": false,
+        "status": "unresolved_card_details_not_loaded",
+        "evidence": "Exact/near exact Maps title loaded, but place-card details, address and neighborhood were not readable; no pin saved."
+      },
+      "phone": {
+        "stored": [
+          "920033158"
+        ],
+        "status": "not_independently_verified"
+      },
+      "whatsapp": {
+        "stored": "empty",
+        "status": "not_listed"
+      },
+      "website": {
+        "stored": "https://alajlaninvest.com",
+        "status": "official company site identified; not opened"
+      },
+      "sources": [
+        "https://alajlaninvest.com",
+        "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%88%D9%85%D8%B5%D8%B9%D8%A8%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%A7%D9%84%D8%B9%D8%AC%D9%84%D8%A7%D9%86%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "https://rega.gov.sa/rega-services/platforms/wafi-off-plan-sales-and-lease/?currentPage=7&licenseRequestTypeId=e2271e31-87f6-411f-a896-6af70e601bbb&tabActive=Wafi+Projects&wafiCityId=fe7e7625-dab3-464e-bd72-9822d7fa793c"
+      ]
+    },
+    {
+      "id": "cp-1a1786accf",
+      "name": "شركة الخلجان الثلاثة العقارية",
+      "map": {
+        "opened": true,
+        "placeCardTitle": "بوابة رقم 3",
+        "matched": false,
+        "status": "unresolved_wrong_result"
+      },
+      "phone": {
+        "stored": [],
+        "status": "no phone in record"
+      },
+      "whatsapp": {
+        "stored": "empty",
+        "status": "not_listed"
+      },
+      "website": {
+        "stored": "empty",
+        "status": "none verified"
+      },
+      "sources": [
+        "https://rega.gov.sa/rega-services/platforms/wafi-off-plan-sales-and-lease/?currentDeveloperPage=10&tabActive=Wafi",
+        "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%AE%D9%84%D8%AC%D8%A7%D9%86%20%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%AA%D8%A8%D9%88%D9%83"
+      ]
+    }
+  ],
+  "counts": {
+    "opened_maps": 6,
+    "fully_matched": 1,
+    "verified_correct_pins": 0,
+    "wrong_links_corrected_and_retested": 0,
+    "unresolved": 5,
+    "not_opened_in_batch": 0
+  },
+  "note": "Retal's pin is a new link in an empty map field, not a repair of a previously wrong pin. Post-write test timed out, therefore verified_correct_pins and corrected/retested remain zero for this batch. The 5 other rows were retained with no speculative locations."
+}
