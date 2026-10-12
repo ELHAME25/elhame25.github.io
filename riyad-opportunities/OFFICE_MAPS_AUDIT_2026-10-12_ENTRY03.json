@@ -1,0 +1,39 @@
+{
+  "audit": "offices-google-maps",
+  "date": "2026-10-12",
+  "basedOnCommit": "18daa6cb2f88fb0631a69a23f19dff183deb7ef0",
+  "entry": {
+    "id": "entity-bd9121973107",
+    "storedName": "مكتب قواعد الأندلس",
+    "googleMapsCard": {
+      "url": "https://www.google.com/maps/?cid=15391395510121292153",
+      "title": "مكتب قواعد الاندلس",
+      "category": "شركة إدارة عقارات",
+      "address": "الرمال، الرياض 13254، المملكة العربية السعودية",
+      "plusCode": "RRR4+JC الرمال، الرياض السعودية",
+      "phone": "+966 50 553 9095",
+      "phoneLink": "tel:+966505539095",
+      "hours": "مغلق · يفتح عند الساعة 3:30 م",
+      "observedLiveCard": true
+    },
+    "dataBefore": [
+      "0558648755",
+      "0505539095"
+    ],
+    "dataAfter": [
+      "0505539095"
+    ],
+    "previousUnconfirmedPhonePreservedInAudit": "0558648755",
+    "status": "partially_verified",
+    "confirmed": [
+      "name",
+      "city",
+      "district",
+      "googleMapsPhone"
+    ],
+    "pending": [
+      "compare_stored_coordinates_to_actual_pin"
+    ],
+    "correctionApplied": true
+  }
+}
