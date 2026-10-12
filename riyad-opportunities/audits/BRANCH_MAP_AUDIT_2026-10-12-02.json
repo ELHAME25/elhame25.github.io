@@ -1,0 +1,151 @@
+{
+  "schema": "record-map-audit-batch-v1",
+  "audit_date": "2026-10-12",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "records": [
+    {
+      "id": "branch-500",
+      "name": "فرع أبها الرئيسي",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_coordinate_only",
+        "observed": "18.212646,42.499310 / 6F7X+3P3 أبها"
+      },
+      "phone": {
+        "status": "not stored or branch-specific verified"
+      },
+      "whatsapp": {
+        "status": "not stored"
+      },
+      "website": {
+        "status": "general official Riyad Bank locator"
+      },
+      "sources": [
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-"
+      ]
+    },
+    {
+      "id": "branch-520",
+      "name": "فرع أبو عريش",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_coordinate_only",
+        "observed": "16.975386,42.828153 / XRGH+572 أبو عريش"
+      },
+      "phone": {
+        "status": "not stored or branch-specific verified"
+      },
+      "whatsapp": {
+        "status": "not stored"
+      },
+      "website": {
+        "status": "general official Riyad Bank locator"
+      },
+      "sources": [
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-"
+      ]
+    },
+    {
+      "id": "branch-304",
+      "name": "فرع الهفوف الرئيسي",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_coordinate_and_official_locator_conflict",
+        "observed": "25.381358,49.590013 / 9HJR+G2R الهفوف"
+      },
+      "sourceFinding": "official code 304 lists Al Hufuf/Al Fadhiliyah and a second Mubarraz/Al Fath record; conflicts with stored neighborhood التعاون. No change pending resolution.",
+      "phone": {
+        "status": "not stored or branch-specific verified"
+      },
+      "whatsapp": {
+        "status": "not stored"
+      },
+      "website": {
+        "status": "general official Riyad Bank locator"
+      },
+      "sources": [
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-"
+      ]
+    },
+    {
+      "id": "branch-514",
+      "name": "فرع الباحة",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_coordinate_only",
+        "observed": "20.0134375,41.4671875 / 2F78+9V الباحة"
+      },
+      "sourceFinding": "official locator lists code 514, Al Baha, Al Hawiyah, King Fahd; supports branch/neighborhood text but not current pin.",
+      "phone": {
+        "status": "not stored or branch-specific verified"
+      },
+      "whatsapp": {
+        "status": "not stored"
+      },
+      "website": {
+        "status": "general official Riyad Bank locator"
+      },
+      "sources": [
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-"
+      ]
+    },
+    {
+      "id": "branch-301",
+      "name": "فرع الخبر الرئيسي",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_official_locator_conflict",
+        "observed": "26.281134,50.211735 / 76J6+FM5 الخبر"
+      },
+      "sourceFinding": "official code 301 lists فرع المزروعية, Dammam, حي المزروعية, conflicting with stored Khobar main branch. No automatic edit.",
+      "phone": {
+        "status": "not stored or branch-specific verified"
+      },
+      "whatsapp": {
+        "status": "not stored"
+      },
+      "website": {
+        "status": "general official Riyad Bank locator"
+      },
+      "sources": [
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-"
+      ]
+    },
+    {
+      "id": "branch-302",
+      "name": "فرع الدمام الرئيسي",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_coordinate_only",
+        "observed": "26.4429163,50.1046308 / C4V3+5V6 الدمام"
+      },
+      "phone": {
+        "status": "not stored or branch-specific verified"
+      },
+      "whatsapp": {
+        "status": "not stored"
+      },
+      "website": {
+        "status": "general official Riyad Bank locator"
+      },
+      "sources": [
+        "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-"
+      ]
+    }
+  ],
+  "counts": {
+    "opened_maps": 6,
+    "fully_matched": 0,
+    "verified_correct_pins": 0,
+    "wrong_links_corrected_and_retested": 0,
+    "unresolved": 6,
+    "not_opened_in_batch": 0
+  },
+  "note": "Google Maps showed coordinates/Plus Codes without named branch cards. Official locator can corroborate branch name/address but does not prove these exact pins; all entries kept unresolved. Generic bank telephone/WhatsApp were not attributed to a branch."
+}
