@@ -1,0 +1,43 @@
+{
+  "audit": "offices-google-maps",
+  "date": "2026-10-12",
+  "basedOnCommit": "e71125ac5ecbf35d45288428ed3009cc9cb5ee03",
+  "entry": {
+    "id": "entity-2fa2c7120ef0",
+    "storedName": "مكتب الفجر المتقدمة للعقار",
+    "city": "المدينة المنورة",
+    "googleMapsCard": {
+      "url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%81%D8%AC%D8%B1%20%D8%A7%D9%84%D9%85%D8%AA%D9%82%D8%AF%D9%85%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJ24QBPJCVvRURXtK54SctXHk",
+      "title": "مكتب الفجر المتقدمة للعقار",
+      "category": "وكالة عقارات",
+      "address": "4893 أبو الأعور بن الحارث، الخالدية، المدينة المنورة 42317، المملكة العربية السعودية",
+      "plusCode": "FM87+R7 المدينة المنورة السعودية",
+      "phone": "+966 55 186 9766",
+      "phoneLink": "tel:+966551869766",
+      "hours": "مغلق · يفتح عند الساعة 5:00 م",
+      "observedLiveCard": true
+    },
+    "dataBefore": {
+      "districtField": "4893 ابو الاعور بن الحارث",
+      "coordinates": null
+    },
+    "dataAfter": {
+      "districtField": "الخالدية، 4893 أبو الأعور بن الحارث",
+      "coordinates": null
+    },
+    "correctionApplied": true,
+    "status": "partially_verified",
+    "confirmed": [
+      "name",
+      "city",
+      "district",
+      "street_address",
+      "business_category",
+      "google_maps_phone",
+      "published_hours"
+    ],
+    "pending": [
+      "stored_coordinates_missing; map_pin_coordinate_comparison_not_complete"
+    ]
+  }
+}
