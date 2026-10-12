@@ -914,7 +914,7 @@
       return '<article class="lcard"><div class="head"><span class="avatar">' + ICON.selfbuild + '</span><div><h3>' + esc(o.n) + '</h3><div class="sub">' + esc([o.loc, o.city].filter(Boolean).join('، ')) + '</div></div></div>' +
         (d != null ? '<div class="tags">' + distTag(d, o) + '</div>' : '') +
         (o.details ? '<p class="sub" style="margin:0">' + esc(o.details) + '</p>' : '') + phoneLine(o.phones, id, o.phoneContacts) +
-        '<div class="acts">' + actions(id, { phones: o.phones, url: o.url, mapsQ: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(o.n + ' ' + o.city), n: o.n }, 'ibtn') + '</div></article>';
+        '<div class="acts">' + actions(id, { phones: o.phones, url: o.url, maps: o.maps, mapsQ: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(o.n + ' ' + o.city), n: o.n }, 'ibtn') + '</div></article>';
     }
     if (kind === 'nhc') {
       var nhcImage = displayImage(kind, o);
