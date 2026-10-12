@@ -1,0 +1,3806 @@
+{
+  "schema": "office-maps-unreviewed-candidates-v1",
+  "generatedAt": "2026-10-12",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "sourceHead": "d1307f5512d0a9679ad87cc319863294c994f491",
+  "inventory": 1524,
+  "explicitOutcomesCount": 1104,
+  "withoutRecordedIndividualOutcome": 420,
+  "method": "Rows are IDs not found with an explicit status field across committed OFFICE audit checkpoints/ledgers at sourceHead. These are candidates for individual Maps audit; do not infer correct or incorrect from absence.",
+  "regionalCounts": {
+    "riyadh": 14,
+    "west": 74,
+    "east": 40,
+    "north": 49,
+    "southCentral": 243
+  },
+  "assignments": {
+    "riyadh": [
+      {
+        "id": "prior-qadisiyya-21",
+        "city": "الرياض",
+        "name": "شركة سكن المعالي العقارية",
+        "phones": [
+          "0534499249"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "prior-qadisiyya-23",
+        "city": "الرياض",
+        "name": "السديس للعقارات",
+        "phones": [
+          "0555286200"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "prior-qadisiyya-26",
+        "city": "الرياض",
+        "name": "مكتب أدق العقود للعقارات",
+        "phones": [
+          "0554969900"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "prior-qadisiyya-69",
+        "city": "الرياض",
+        "name": "مكتب سليميات المونسية للعقارات",
+        "phones": [
+          "0555102497",
+          "0503472563"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "prior-qadisiyya-70",
+        "city": "الرياض",
+        "name": "مكتب حي الرمال للعقار",
+        "phones": [
+          "0559796327",
+          "0535018089"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "prior-qadisiyya-71",
+        "city": "الرياض",
+        "name": "مكتب تحالف أشبيليا للعقارات",
+        "phones": [
+          "0505403262"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "prior-qadisiyya-72",
+        "city": "الرياض",
+        "name": "مكتب نبراس البيت للعقارات",
+        "phones": [
+          "0504482827"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "prior-qadisiyya-73",
+        "city": "الرياض",
+        "name": "مكتب عبدالله حمدان عواد المطيري للعقارات",
+        "phones": [
+          "0567366541"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "prior-qadisiyya-74",
+        "city": "الرياض",
+        "name": "مكتب صهوة نجد للخدمات العقارية",
+        "phones": [
+          "0566233336"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "prior-qadisiyya-75",
+        "city": "الرياض",
+        "name": "مكتب بصمة وعد للتطوير والاستثمار العقاري",
+        "phones": [
+          "0555035552"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "prior-qadisiyya-76",
+        "city": "الرياض",
+        "name": "مكتب ركن الرحمة العقاري",
+        "phones": [
+          "0554404590"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "prior-qadisiyya-77",
+        "city": "الرياض",
+        "name": "مكتب خيمة اليرموك للعقارات",
+        "phones": [
+          "0112229823"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "prior-qadisiyya-78",
+        "city": "الرياض",
+        "name": "مكتب نور اليرموك للعقارات",
+        "phones": [
+          "0566996999"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "prior-qadisiyya-79",
+        "city": "الرياض",
+        "name": "مكتب واجهة الخليج للخدمات العقارية",
+        "phones": [
+          "0590144410"
+        ],
+        "status": "pending"
+      }
+    ],
+    "west": [
+      {
+        "id": "phase5-office-59b80113287f",
+        "city": "جدة",
+        "name": "مكتب الغانمي العقاري",
+        "phones": [
+          "0567888710"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-8768084b4722",
+        "city": "جدة",
+        "name": "مكتب السكب السعودي",
+        "phones": [
+          "0505618004"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-f2f555a6a880",
+        "city": "الطائف",
+        "name": "مصاطب",
+        "phones": [
+          "0555209010"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-3f96801c1a5a",
+        "city": "الطائف",
+        "name": "مكتب الماجد للعقار",
+        "phones": [
+          "0505440034"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-ec2bd607c79a",
+        "city": "الطائف",
+        "name": "الوبيل العقارية",
+        "phones": [
+          "0500741144"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-fb907e714ff5",
+        "city": "الطائف",
+        "name": "مكتب وسام العرفا للعقار",
+        "phones": [
+          "0542030393"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-ac257febcae9",
+        "city": "الطائف",
+        "name": "مؤسسة بوابة الطائف العقارية",
+        "phones": [
+          "0559002060"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-014df7b49eb4",
+        "city": "الطائف",
+        "name": "مكتب الأحمدي للعقار",
+        "phones": [
+          "0566033002"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-455bf081dca3",
+        "city": "الطائف",
+        "name": "مكتب الوتار للعقارات والمقاولات بالطائف",
+        "phones": [
+          "0546440232"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-ede5d688f7aa",
+        "city": "الطائف",
+        "name": "مكتب مؤسسة الشاعر العقارية",
+        "phones": [
+          "0501089830"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase6-office-fb14f228a325",
+        "city": "مكة المكرمة",
+        "name": "رسملة العقارية",
+        "phones": [
+          "0599966012"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-195301",
+        "city": "ينبع",
+        "name": "مكتب فهد قليل الثقفي للعقارات",
+        "phones": [
+          "0503342155"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-195170",
+        "city": "ينبع",
+        "name": "مكتب دليل ينبع للعقارات",
+        "phones": [
+          "0550010510"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-194902",
+        "city": "ينبع",
+        "name": "مؤسسة حسام وجهتك العقارية",
+        "phones": [
+          "0540557744"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192096",
+        "city": "ينبع",
+        "name": "مكتب محمد مرشود مرشد الجهنى العقاري",
+        "phones": [
+          "0504393240"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-201011",
+        "city": "ينبع",
+        "name": "مكتب ناجي عبدالله حسن معوض للعقار",
+        "phones": [
+          "0558697340"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-199383",
+        "city": "ينبع",
+        "name": "مؤسسة سكن القمم للعقار",
+        "phones": [
+          "0565190148"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-193445",
+        "city": "ينبع",
+        "name": "مؤسسة الخزنة العقارية",
+        "phones": [
+          "0564466443"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192502",
+        "city": "ينبع",
+        "name": "مكتب ج للعقار",
+        "phones": [
+          "0500042550"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-193976",
+        "city": "ينبع",
+        "name": "مكتب رواسي ينبع للخدمات العقارية",
+        "phones": [
+          "0541800031"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-217095",
+        "city": "ينبع",
+        "name": "مكتب الريان العربية للخدمات العقارية",
+        "phones": [
+          "0566066076"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-198086",
+        "city": "ينبع",
+        "name": "مكتب عقار الغربية",
+        "phones": [
+          "0544008859"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-196083",
+        "city": "ينبع",
+        "name": "مكتب عزم الأيام للخدمات العقارية",
+        "phones": [
+          "0551308889"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-209261",
+        "city": "ينبع",
+        "name": "مؤسسة نواف بن حمود بن حاجي المطيري العقارية",
+        "phones": [
+          "0545400098"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-195174",
+        "city": "العلا",
+        "name": "مكتب عبد الرحمن محمد المبارك للعقارات",
+        "phones": [
+          "0504351887"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-201194",
+        "city": "العلا",
+        "name": "مؤسسة امينه عصمان الكحلاني للخدمات العقارية",
+        "phones": [
+          "0555043333"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-215722",
+        "city": "العلا",
+        "name": "مؤسسة سكة البخور للخدمات العقارية",
+        "phones": [
+          "0544464180"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-197921",
+        "city": "العلا",
+        "name": "مكتب قمة العلا للعقارات",
+        "phones": [
+          "0533379031"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-218624",
+        "city": "العلا",
+        "name": "مكتب دليل سكن العقاري",
+        "phones": [
+          "0565233695"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-208038",
+        "city": "العلا",
+        "name": "مؤسسة مساكن العلا العقارية",
+        "phones": [
+          "0500511101"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-332578",
+        "city": "العلا",
+        "name": "مكتب ركائز الوسيط العقاري",
+        "phones": [
+          "0535250700"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-202761",
+        "city": "العلا",
+        "name": "مؤسسة مكتب قمة المدائن للعقار",
+        "phones": [
+          "0566842266"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-207189",
+        "city": "العلا",
+        "name": "مكتب افق الإتحاد للخدمات العقارية",
+        "phones": [
+          "0506330424"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-213851",
+        "city": "العلا",
+        "name": "مؤسسة محمد عبدي سالم العنزي للعقارات",
+        "phones": [
+          "0501639896"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-203405",
+        "city": "العلا",
+        "name": "مؤسسة مساكن العهد للخدمات العقارية",
+        "phones": [
+          "0540050011"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-338770",
+        "city": "العلا",
+        "name": "مكتب دور التقدم للعقارات",
+        "phones": [
+          "0508684181"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-211073",
+        "city": "العلا",
+        "name": "مكتب رؤية العلا للخدمات العقارية",
+        "phones": [
+          "0544211206"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-214465",
+        "city": "العلا",
+        "name": "مكتب تلال اراك لادارة الأملاك",
+        "phones": [
+          "0554427426"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-213513",
+        "city": "العلا",
+        "name": "مؤسسة بلاد العز العقارية",
+        "phones": [
+          "0555000212"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192308",
+        "city": "بدر",
+        "name": "مكتب صفوة الجود للخدمات العقارية",
+        "phones": [
+          "0503341020"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-238771",
+        "city": "بدر",
+        "name": "مكتب المفتاح الرقمي للعقار",
+        "phones": [
+          "0534306337"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-199494",
+        "city": "بدر",
+        "name": "مكتب قمة بدر للعقار",
+        "phones": [
+          "0541905028"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-198642908166",
+        "city": "أملج",
+        "name": "مكتب العنزي للخدمات والعقار",
+        "phones": [
+          "0501861446"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-27617025406",
+        "city": "ضباء",
+        "name": "مكتب الفيصل للعقارات",
+        "phones": [
+          "0556593918"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-150604911997",
+        "city": "ضباء",
+        "name": "موقع خالدالسعيد ضباء",
+        "phones": [
+          "0541360723"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-cybo-office-cid4539478834288316074",
+        "city": "بدر",
+        "name": "مكتب الصفوة العقاري",
+        "phones": [
+          "0530307475"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-thirdparty-office-cid1605959927093973537",
+        "city": "أملج",
+        "name": "مكتب الساعه للخدمات العامه والعقاريه",
+        "phones": [
+          "0553753729"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-thirdparty-office-duba-0500517062",
+        "city": "ضباء",
+        "name": "مكتب العيسوي للعقار والخدمات الالكترونية ضباء",
+        "phones": [
+          "0500517062"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-thirdparty-office-duba-0537152989",
+        "city": "ضباء",
+        "name": "مكتب راما ضباء للخدمات العقارية",
+        "phones": [
+          "0537152989"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-218623",
+        "city": "ضباء",
+        "name": "مكتب إتقان ضباء للخدمات العامة",
+        "phones": [
+          "0550890479"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJS_fncGUxrBURtAMHFp7cxTo",
+        "city": "ضباء",
+        "name": "مكتب بروج الشمال للعقار والخدمات الإلكترونية.",
+        "phones": [
+          "0552557912"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJlWLEyVIxrBURmsC2lSl6KD8",
+        "city": "ضباء",
+        "name": "الوسيط الماسي للعقارات",
+        "phones": [
+          "0565304500"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJF0f8bJkxrBURbaC90CBimOQ",
+        "city": "ضباء",
+        "name": "مكتب ديلان للخدمات العقارية",
+        "phones": [
+          "0534674947"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJUWcVSKcxrBURgTAMZGa5vl8",
+        "city": "ضباء",
+        "name": "الوسيط العقاري علي غانم",
+        "phones": [
+          "0558348048"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJB2-geuYxrBURgR1tK4z-wlA",
+        "city": "ضباء",
+        "name": "مكتب إتقان الشمال للخدمات العقارية",
+        "phones": [
+          "0507064581"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJKYxQdgAxrBUR6qMfztPGmDw",
+        "city": "ضباء",
+        "name": "درة المعاملات للخدمات العامه",
+        "phones": [
+          "0500713364"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJKWKFCQAxrBURbS82iLA7JbY",
+        "city": "ضباء",
+        "name": "مكتب للخدمات العامة",
+        "phones": [
+          "0561923428"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJvyhrr2-nsBURiKZMvaQ0X8s",
+        "city": "أملج",
+        "name": "مكتب عبدالله عتيق",
+        "phones": [
+          "0598040926"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJDRLvGASnsBURTHMswC-dPJo",
+        "city": "أملج",
+        "name": "مكتب فارس الحوراء للخدمات العقارية",
+        "phones": [
+          "0505798375"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJTeZA_zmnsBURu839VIBUpXI",
+        "city": "أملج",
+        "name": "مكتب الفتح عقار أملج",
+        "phones": [
+          "0504551242"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJLaO4VM2nsBUR8ipz9k32sIM",
+        "city": "أملج",
+        "name": "مكتب فترة الانجاز للخدمات العقارية وادارة الاملاك والتاجير العقاري",
+        "phones": [
+          "0536415758"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJc-EeGwCnsBUR7BZSZMy2tS0",
+        "city": "أملج",
+        "name": "مجموعة الناشط العقاري",
+        "phones": [
+          "0506583080"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJxc17X3qnsBURSYpUv6EViRo",
+        "city": "أملج",
+        "name": "مكتب ناجي سالم للعقار",
+        "phones": [
+          "0504559252"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-215510",
+        "city": "بدر",
+        "name": "مكتب يسر بدر للعقار",
+        "phones": [
+          "0538400175"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-209056",
+        "city": "بدر",
+        "name": "مؤسسة مكتب الغزوة للخدمات العقارية",
+        "phones": [
+          "0533315552"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-205522",
+        "city": "بدر",
+        "name": "مكتب عبدالله عيد الصبحى للعقارات",
+        "phones": [
+          "0555361351"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-204440",
+        "city": "بدر",
+        "name": "مؤسسة عبدالعزيز وليد عاتق الحربي للخدمات العقارية",
+        "phones": [
+          "0553880947"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-328204",
+        "city": "بدر",
+        "name": "مؤسسة جمع الأعمال التجارية",
+        "phones": [
+          "0557021911"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-212595",
+        "city": "بدر",
+        "name": "مؤسسة فاطمه واصل بن عبدالعالي الحربي التجارية",
+        "phones": [
+          "0558669692"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-cid-13805103704243743602",
+        "city": "العلا",
+        "name": "نوادر التصاميم",
+        "phones": [
+          "0558990067"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-d8f3d9515850",
+        "city": "الوجه",
+        "name": "مكتب رواد العنان للعقارات",
+        "phones": [
+          "0530007949"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-76c14bc4a676",
+        "city": "الوجه",
+        "name": "ركن الجوهرة للعقار",
+        "phones": [],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-689c11e2b111",
+        "city": "الوجه",
+        "name": "مكتب الخلف للعقار",
+        "phones": [
+          "0500109309"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-a49fc1c319a4",
+        "city": "الوجه",
+        "name": "مكتب أبو طلال للعقار",
+        "phones": [
+          "0553026422"
+        ],
+        "status": "pending"
+      }
+    ],
+    "east": [
+      {
+        "id": "national-ejar-office-197979",
+        "city": "الظهران",
+        "name": "مكتب يافال للعقارات",
+        "phones": [
+          "0535644555"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-196211",
+        "city": "الظهران",
+        "name": "مكتب فلاالشرق للخدمات العقارية",
+        "phones": [
+          "0500978590"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-197258",
+        "city": "الظهران",
+        "name": "مكتب مصعب عبدالله الاحيدب للعقارات",
+        "phones": [
+          "0509072228"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-206891",
+        "city": "الظهران",
+        "name": "شركة الخالدي العقارية",
+        "phones": [],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-199883",
+        "city": "الظهران",
+        "name": "بنك العقارات فرع شركة مجموعة ناف",
+        "phones": [],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-203726",
+        "city": "الظهران",
+        "name": "مؤسسة درة الربوة العقارية",
+        "phones": [
+          "0567458444"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-206870",
+        "city": "الظهران",
+        "name": "مكتب خالد محمد حميد العريقي للخدمات العقارية",
+        "phones": [
+          "0505806845"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-202057",
+        "city": "الظهران",
+        "name": "مكتب المنفذون الوسطاء للخدمات العقارية",
+        "phones": [
+          "0566436116"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-197795",
+        "city": "الظهران",
+        "name": "مكتب واحة المستقبل للعقارات",
+        "phones": [
+          "0541668516"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-200067",
+        "city": "الظهران",
+        "name": "مؤسسة درهام العقارية",
+        "phones": [
+          "0551777713"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-200076",
+        "city": "الظهران",
+        "name": "مؤسسة فيصل بن عبدالرحيم بن حبيب الله جمعه للعقارات",
+        "phones": [
+          "0504917218"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-210984",
+        "city": "الظهران",
+        "name": "مؤسسة مساعد محمد عبدالرحمن العبدالكريم للخدمات العقارية",
+        "phones": [
+          "0552555552"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-510883",
+        "city": "الظهران",
+        "name": "مكتب ليان حسن الشهري للعقارات",
+        "phones": [
+          "0550467977"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-393100",
+        "city": "الظهران",
+        "name": "شركة أملاك القصور",
+        "phones": [
+          "0540401991"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-400222",
+        "city": "الظهران",
+        "name": "مكتب علياء القصور العقاري",
+        "phones": [
+          "0555051001"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-215579",
+        "city": "الظهران",
+        "name": "شركة جنات للاستثمار العقاري",
+        "phones": [
+          "0138997055"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-218035",
+        "city": "الظهران",
+        "name": "مؤسسة عبدالله حسين اليامي العقارية",
+        "phones": [
+          "0555802111"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-99477656014",
+        "city": "حفر الباطن",
+        "name": "مكتب تساهيل العقاري",
+        "phones": [
+          "0595220088"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJ8Ux8A0d1zT8RPmT70PF4-JU",
+        "city": "قرية العليا",
+        "name": "مكتب عبدالله للعقارات",
+        "phones": [
+          "0559779721"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJq6qqqvp1zT8RjGPWDyXauUQ",
+        "city": "قرية العليا",
+        "name": "مكتب ركن مدهال للعقار",
+        "phones": [
+          "0133860555"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJdzK1HQB1zT8RP1hCK6MaRIM",
+        "city": "قرية العليا",
+        "name": "مكتب الصمان للعقارات",
+        "phones": [
+          "0536670238"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-239017421555",
+        "city": "حفر الباطن",
+        "name": "مكتب العوض العقاري",
+        "phones": [
+          "0501019227"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-225072134083",
+        "city": "حفر الباطن",
+        "name": "بيت التسهيلات العقارية",
+        "phones": [
+          "0547455444"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-13937853672",
+        "city": "حفر الباطن",
+        "name": "أصول الجعيثن العقارية",
+        "phones": [
+          "0550979596"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-66192423770",
+        "city": "حفر الباطن",
+        "name": "المحامي فهد الرحيمان",
+        "phones": [
+          "0534696007"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-131282140959",
+        "city": "حفر الباطن",
+        "name": "مطلق لتحصيل الديون",
+        "phones": [
+          "0533332031"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-214784593424",
+        "city": "حفر الباطن",
+        "name": "مكتب همس المستقبل للعقارات",
+        "phones": [
+          "0583560000"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-108112364856",
+        "city": "حفر الباطن",
+        "name": "العارضي للخدمات العقارية",
+        "phones": [
+          "0505944124"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-83646496556",
+        "city": "حفر الباطن",
+        "name": "مكتب الفال الافضل العقاري",
+        "phones": [
+          "0566794333"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-18092931849",
+        "city": "حفر الباطن",
+        "name": "النادر للتطوير العقاري",
+        "phones": [
+          "0539722201"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-172404322366",
+        "city": "حفر الباطن",
+        "name": "اليوسف للمقاولات العامة والخدمات",
+        "phones": [
+          "0137239071"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-113991381361",
+        "city": "حفر الباطن",
+        "name": "مكتب الســمو العقاري",
+        "phones": [
+          "0531180091"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-118644541594",
+        "city": "قرية العليا",
+        "name": "مؤسسة دمث للخدمات العقارية",
+        "phones": [
+          "0559909449"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-159696511897",
+        "city": "حفر الباطن",
+        "name": "مكتب السيف للعقار",
+        "phones": [
+          "0555246830"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-160309343745",
+        "city": "حفر الباطن",
+        "name": "مكتب العبدالله للعقارات",
+        "phones": [
+          "0556230359"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-176431236509",
+        "city": "حفر الباطن",
+        "name": "مكتب السسعد للعقارات حفر الباطن فرع رقم 1",
+        "phones": [
+          "0555247722"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-208977239890",
+        "city": "حفر الباطن",
+        "name": "مكتب الدهام العقاري",
+        "phones": [
+          "0534944494"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-180233777212",
+        "city": "حفر الباطن",
+        "name": "مكتب الشباك العقاري",
+        "phones": [
+          "0552901449"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-38070204429",
+        "city": "بقيق",
+        "name": "مكتب القمة العقاري",
+        "phones": [
+          "0501063838"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-ca323e9433dc",
+        "city": "قرية العليا",
+        "name": "ثفال للعقارات",
+        "phones": [
+          "0550735550"
+        ],
+        "status": "pending"
+      }
+    ],
+    "north": [
+      {
+        "id": "national-ejar-office-194986",
+        "city": "خيبر",
+        "name": "مكتب طلال بشير رحيل الرشيدي العقاري",
+        "phones": [
+          "0554598013"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192755",
+        "city": "خيبر",
+        "name": "مكتب ايمن معزي معتق الرشيدي للعقارات",
+        "phones": [
+          "0592380032"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-317332",
+        "city": "خيبر",
+        "name": "مكتب المدى القريب للخدمات العقارية",
+        "phones": [
+          "0530090202"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-199447",
+        "city": "خيبر",
+        "name": "مؤسسة رمح الشمال للتطوير العقاري",
+        "phones": [
+          "0595959186"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-206500",
+        "city": "خيبر",
+        "name": "مؤسسة فارس معيض الرشيدي للخدمات العقارية",
+        "phones": [
+          "0553339625"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-285435",
+        "city": "خيبر",
+        "name": "مكتب خيرات طيبة للخدمات العقارية",
+        "phones": [
+          "0561378972"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-200167",
+        "city": "خيبر",
+        "name": "مؤسسة مكتب عبدالرحمن عبدالله عباس الرشيدي العقاري",
+        "phones": [
+          "0555155198"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-205514",
+        "city": "خيبر",
+        "name": "مؤسسة عاصفة الصدارة للخدمات العقارية",
+        "phones": [
+          "0532647579"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-259707",
+        "city": "خيبر",
+        "name": "مكتب أبراج خيبر العقاري",
+        "phones": [
+          "0557858456"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-bizmideast-office-1489677254523019010",
+        "city": "طريف",
+        "name": "مكتب جوف العقاري",
+        "phones": [
+          "0531811551"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-bizmideast-office-6924307141860146646",
+        "city": "طريف",
+        "name": "مكتب مكه العقاري",
+        "phones": [
+          "0556784488"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-bizmideast-office-10072782550110647495",
+        "city": "طريف",
+        "name": "مكتب النهضة العقاري",
+        "phones": [
+          "0500084886"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-44080244478",
+        "city": "طريف",
+        "name": "مكتب النهضة العقاري",
+        "phones": [
+          "0503053416"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-bizmideast-office-14965302872305815554",
+        "city": "طريف",
+        "name": "مكتب الخليج العقاري",
+        "phones": [
+          "0553186324"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-218822",
+        "city": "حقل",
+        "name": "مكتب ركن الشاري للخدمات العقارية",
+        "phones": [
+          "0557977544"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-202549",
+        "city": "حقل",
+        "name": "مكتب هبوب الشمال للخدمات العقارية",
+        "phones": [
+          "0503963209"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-216654",
+        "city": "حقل",
+        "name": "مكتب اليخت للخدمات العقارية",
+        "phones": [
+          "0557724181"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-210210",
+        "city": "حقل",
+        "name": "مؤسسة الأصول الموحدة العقارية",
+        "phones": [
+          "0569082425"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-528127",
+        "city": "حقل",
+        "name": "مكتب محمد أبراهيم ألفايز للخدمات العقارية",
+        "phones": [
+          "0594333318"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-55037224817",
+        "city": "دومة الجندل",
+        "name": "مكتب انجاز الخدمات",
+        "phones": [
+          "0590932840"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-bizmideast-office-10619088870718593562",
+        "city": "عرعر",
+        "name": "مكتب حلا الشمال العقاري",
+        "phones": [
+          "0557051418"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-bizmideast-office-16973113081066153423",
+        "city": "عرعر",
+        "name": "مكتب المنيع العقاري",
+        "phones": [
+          "0557473999"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-bizmideast-office-987028042178622047",
+        "city": "عرعر",
+        "name": "مكتب أوتار الشمال العقاري",
+        "phones": [
+          "0538189569"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-192988370309",
+        "city": "طريف",
+        "name": "مكتب الفجر البعيد العقاري",
+        "phones": [
+          "0554834914"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-76811632318",
+        "city": "طريف",
+        "name": "شركة دروازة المحدودة",
+        "phones": [
+          "0509451367"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-202682836844",
+        "city": "طريف",
+        "name": "مكتب المرقب العقاري",
+        "phones": [
+          "0566696963"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-121529303022",
+        "city": "عرعر",
+        "name": "مكتب عرعر العقاري",
+        "phones": [
+          "0502246200"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-63716439989",
+        "city": "عرعر",
+        "name": "مرو للتطوير العقاري والمقاولات",
+        "phones": [
+          "0560966660"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-234237984975",
+        "city": "عرعر",
+        "name": "مكتب العربية العقارية",
+        "phones": [
+          "0550304305"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-84223561230",
+        "city": "طريف",
+        "name": "مكتب الواحة العقاري",
+        "phones": [
+          "0508857477"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-200804579316",
+        "city": "دومة الجندل",
+        "name": "مكتب العبدالله العقاري",
+        "phones": [
+          "0558915172"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-thirdparty-office-cid14226381716455478133",
+        "city": "خيبر",
+        "name": "مؤسسة عبدالعزيز العنزي للمقاولات و العقار",
+        "phones": [
+          "0534055549"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-secondary-office-haql-nebras-zain-0552258546",
+        "city": "حقل",
+        "name": "مكتب نبراس زين للمقاولات والعقار",
+        "phones": [
+          "0552258546"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-web-office-ChIJUQd_HWQObBURbztnfApsK64",
+        "city": "عرعر",
+        "name": "Elite Real Estate Group",
+        "phones": [
+          "0593760016"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJAQAAANMNbBUR-rxK4W0_xVA",
+        "city": "عرعر",
+        "name": "أوال المتحدة العقارية",
+        "phones": [
+          "0507167771"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJfxMOyAYNbBURE-j-RGhcVB8",
+        "city": "عرعر",
+        "name": "المونسيه للاستثمار العقاري",
+        "phones": [
+          "0555386656"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJPeSmeLoNbBURlcEqlo8SlL0",
+        "city": "عرعر",
+        "name": "حوفان للاستثمار العقاري",
+        "phones": [
+          "0146610216"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJSWbRYH0PbBURSYSrGNF2Ux8",
+        "city": "عرعر",
+        "name": "مكتب استثمار الشمال العقاري",
+        "phones": [
+          "0536396020"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJm5s9NXwPbBUR-4Wm3fcn_t8",
+        "city": "عرعر",
+        "name": "مكتب الدار الشمالي العقاري",
+        "phones": [
+          "0503367797"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJ1678zAwPbBURC7hJh2lNCAU",
+        "city": "عرعر",
+        "name": "مكتب الدليل العقاري بعرعر",
+        "phones": [
+          "0533539664"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJwdFiCs4NbBURDZkpuLuhk3s",
+        "city": "عرعر",
+        "name": "مكتب الرميح العقاري",
+        "phones": [
+          "0507387668"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJeYt_-NgNbBURu3-iklJPa34",
+        "city": "عرعر",
+        "name": "مكتب الهرم العقاري",
+        "phones": [
+          "0506796792"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJEwm3TZYNbBURLQJ1aQsGZ38",
+        "city": "عرعر",
+        "name": "هتان الشمال للتسويق العقاري",
+        "phones": [
+          "0506060712"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-200310352671",
+        "city": "طريف",
+        "name": "Al-Khair Real Estate Office",
+        "phones": [
+          "0552607980"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJ03_r07GZqhUR-YVo9Vqg4-s",
+        "city": "حقل",
+        "name": "مكتب منصة الأوائل للعقارات",
+        "phones": [
+          "0553999747"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJ6cgmWQCZqhURzRqEY_TK_Vc",
+        "city": "حقل",
+        "name": "مكتب أبراج المدائن",
+        "phones": [
+          "0532015634"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJJSVBEQCZqhURsvN0Su0GDNQ",
+        "city": "حقل",
+        "name": "مكتب محمد الفايز للخدمات العقاريه",
+        "phones": [
+          "0531661300"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJbzvIl0CZqhURjCEXyT0ecbw",
+        "city": "حقل",
+        "name": "مكتب الشاطئ الشمالي للعقارات",
+        "phones": [
+          "0537008110"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-283731",
+        "city": "حقل",
+        "name": "مكتب برق الإنجاز للخدمات الإلكترونية",
+        "phones": [
+          "0553614009"
+        ],
+        "status": "pending"
+      }
+    ],
+    "southCentral": [
+      {
+        "id": "entity-50a0a6f3ad31",
+        "city": "بريدة",
+        "name": "بصمة بريدة للاستثمارات العقارية",
+        "phones": [
+          "0583598720"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "entity-d4e7af4fc2f6",
+        "city": "جازان",
+        "name": "شركة روشن فيو العقارية",
+        "phones": [
+          "0500795552"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "entity-96716f5db346",
+        "city": "بيش",
+        "name": "مكتب روافد نخبة المنار للخدمات العقارية",
+        "phones": [
+          "0554446255",
+          "0557833331"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-1c002d2dff5c",
+        "city": "بريدة",
+        "name": "شركة نبض العصر للعقارات",
+        "phones": [
+          "0533594043"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-31ca6de3470b",
+        "city": "بريدة",
+        "name": "مكتب واجهة الأفق للخدمات العقارية",
+        "phones": [
+          "0560812888"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-e42486eb4fd5",
+        "city": "بريدة",
+        "name": "الضحيان للاستثمارات العقارية",
+        "phones": [
+          "0564000017"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-dfcc7d37ac18",
+        "city": "بريدة",
+        "name": "مكتب الدكلة العقاري",
+        "phones": [
+          "0555130033"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-6fa1c875aab0",
+        "city": "بريدة",
+        "name": "وثيقة المستقبل للخدمات العقارية",
+        "phones": [
+          "0500952466"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-office-7350091f3d8c",
+        "city": "بريدة",
+        "name": "مكتب بيت اليسر للعقارات",
+        "phones": [
+          "0550009301"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-2581369b19a1",
+        "city": "بريدة",
+        "name": "البداح للعقارات",
+        "phones": [
+          "0565594599"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-5866c0d207bd",
+        "city": "بريدة",
+        "name": "الحفيتي للخدمات العقارية",
+        "phones": [
+          "0538829709"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-118818a545c4",
+        "city": "بريدة",
+        "name": "مكتب صديق التاجر للعقارات والتقيم العقاري",
+        "phones": [
+          "0555171245"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-83cb5f261e57",
+        "city": "بريدة",
+        "name": "مكتب عبدالحكيم النقيدان للعقارات",
+        "phones": [
+          "0503143400"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-f3739ca6383c",
+        "city": "بريدة",
+        "name": "ساع العقارية",
+        "phones": [
+          "0539611777"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-03dbadabc646",
+        "city": "بريدة",
+        "name": "أعمال مراسيم العقارية",
+        "phones": [
+          "0563040016"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-1b38ae7084b9",
+        "city": "بريدة",
+        "name": "مكتب الربدي للعقارات",
+        "phones": [
+          "0550932500"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-fe33c04d9f43",
+        "city": "بريدة",
+        "name": "احمد خالد صالح الرسينى للإستثمارات العقارية",
+        "phones": [
+          "0553277788"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-f22dcf4e8a80",
+        "city": "بريدة",
+        "name": "مكتب درة بريدة للعقارات",
+        "phones": [
+          "0555143663"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-8e6ad9a9bfc1",
+        "city": "بريدة",
+        "name": "مكتب معاذ الضحيان للعقارات",
+        "phones": [
+          "0565114888"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-5cbe8d86069d",
+        "city": "بريدة",
+        "name": "مكتب الفايز العقاري ALFAYEZ REAL ESTATE OFFICE",
+        "phones": [
+          "0555154683"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-c203a3aaf651",
+        "city": "بريدة",
+        "name": "مكتب الناصر للعقارات",
+        "phones": [
+          "0561311170"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-8634cd25e9b6",
+        "city": "بريدة",
+        "name": "مكتب ركن درب اليوم العقاري",
+        "phones": [
+          "0509770791"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-f81587ba4b95",
+        "city": "بريدة",
+        "name": "العليط للعقارات",
+        "phones": [
+          "0503119193"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-adcd0acaf212",
+        "city": "بريدة",
+        "name": "الصلال للعقارات",
+        "phones": [
+          "0508445051"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-5f5bb894c9ea",
+        "city": "بريدة",
+        "name": "النجيدي للعقارات",
+        "phones": [
+          "0163247041"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-06e6bc916275",
+        "city": "بريدة",
+        "name": "مكتب جودة العقار",
+        "phones": [
+          "0505614179"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-0549e047db07",
+        "city": "بريدة",
+        "name": "القابضان للعقارات والتقييم العقاري",
+        "phones": [
+          "0554283030"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-e3c5a48c0f52",
+        "city": "بريدة",
+        "name": "السويد للعقارات",
+        "phones": [
+          "0500169977"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "phase5-google-office-0d9201e2cf2e",
+        "city": "بريدة",
+        "name": "مكتب التويجري للعقارات",
+        "phones": [
+          "0505170699"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-f058c5ef83c0",
+        "city": "عنيزة",
+        "name": "مكتب تركي القطيمي للعقارات",
+        "phones": [
+          "0553655541"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-2008adecdf73",
+        "city": "عنيزة",
+        "name": "شركة الأوس العقارية",
+        "phones": [
+          "0541236006"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-eebd2d3dd21f",
+        "city": "عنيزة",
+        "name": "مكتب إبراهيم القرعاوي للإستثمارات العقارية",
+        "phones": [
+          "0163655559"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-1b05d74d53f1",
+        "city": "عنيزة",
+        "name": "مكتب بن عيد العقاري",
+        "phones": [
+          "0506161004"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-118659ee1d02",
+        "city": "عنيزة",
+        "name": "شركة عقارنا العقارية",
+        "phones": [
+          "920032728"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-fa81565c9aea",
+        "city": "عنيزة",
+        "name": "مكتب أصول للعقارات",
+        "phones": [
+          "0569353535"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-2cab8d33f0f2",
+        "city": "عنيزة",
+        "name": "مكتب نجد الخاص للعقارات",
+        "phones": [
+          "0163631411"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-acec82930cc7",
+        "city": "عنيزة",
+        "name": "مكتب كثيف للخدمات العقارية",
+        "phones": [
+          "0551332229"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-5c46af751afc",
+        "city": "عنيزة",
+        "name": "مكتب التميز للإستثمارات العقارية",
+        "phones": [
+          "0163645545"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-5b0a704f7146",
+        "city": "عنيزة",
+        "name": "مكتب حمد بن رشيد الموسى للعقارات",
+        "phones": [
+          "0542993223"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-2560bb597761",
+        "city": "عنيزة",
+        "name": "مكتب عبدالله الرشيد العقاري",
+        "phones": [
+          "0598334444"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-763647e6dbcb",
+        "city": "عنيزة",
+        "name": "مكتب ملاذ عنيزة للاستثمار العقاري",
+        "phones": [
+          "0591741111"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-4b699835384b",
+        "city": "عنيزة",
+        "name": "الراشد للعقارات",
+        "phones": [
+          "0553625544"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-7ffc0f3994e5",
+        "city": "عنيزة",
+        "name": "مكتب المربع الشرقي للعقارات",
+        "phones": [
+          "0541335155"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-4f20121f19ef",
+        "city": "عنيزة",
+        "name": "مكتب المرعول للعقارات",
+        "phones": [
+          "0163631006"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-e8995fea6b9b",
+        "city": "عنيزة",
+        "name": "مكتب سامي للخدمات العقارية",
+        "phones": [
+          "0505900321"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-7e33a040cdc6",
+        "city": "عنيزة",
+        "name": "مكتب الصالحي للعقارات",
+        "phones": [
+          "0163618000"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-e9e87e9b7878",
+        "city": "عنيزة",
+        "name": "مكتب النادر ون للعقار",
+        "phones": [
+          "0545406040"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-554de9ec5d8f",
+        "city": "عنيزة",
+        "name": "مكتب الزامل للعقار بعنيزة",
+        "phones": [
+          "0500580333"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-1e8c36d9efdb",
+        "city": "عنيزة",
+        "name": "الميدان الغربي للإستثمارات العقارية",
+        "phones": [
+          "0163640155"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-9e6565b1287a",
+        "city": "الرس",
+        "name": "مكتب إداري للعقار ب #الرس",
+        "phones": [
+          "0537153507"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-d07625c2a6db",
+        "city": "الرس",
+        "name": "مكتب ركن حدود الرس للخدمات العقارية",
+        "phones": [
+          "0582572276",
+          "0595150303"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-43dd5f4705ba",
+        "city": "الرس",
+        "name": "مكتب ابن مالك للعقار",
+        "phones": [
+          "0555070005"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-9677a40382b5",
+        "city": "الرس",
+        "name": "جوهرة الرس للعقارات",
+        "phones": [
+          "0558823444"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-4cbd7f76a5d4",
+        "city": "الرس",
+        "name": "اعمار الرس للعقار",
+        "phones": [
+          "0533911155"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-0566b09196c8",
+        "city": "الرس",
+        "name": "مكتب سهم الرس العقاري",
+        "phones": [
+          "0533182255"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-dfed5f0a3f20",
+        "city": "الرس",
+        "name": "مكتب إعمار النهضه للعقارات",
+        "phones": [
+          "0504205100"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-ab7241fd2e3a",
+        "city": "الرس",
+        "name": "مكتب زواية الاطلال ((ابو طلال البطاح)) للعقار",
+        "phones": [
+          "0505326619"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-5ac162939487",
+        "city": "الرس",
+        "name": "مكتب المساعد للعقار",
+        "phones": [
+          "0163392555"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-4684bdde238f",
+        "city": "الرس",
+        "name": "مكتب درة الرس للعقارات",
+        "phones": [
+          "0505137544"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-00dae62bcf94",
+        "city": "الرس",
+        "name": "مكتب الخليجية للخدمات العامه",
+        "phones": [
+          "0536202262"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-73f634791730",
+        "city": "الرس",
+        "name": "الفرسان للعقار",
+        "phones": [
+          "0533968887"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-a5dd7e9b8c3a",
+        "city": "الرس",
+        "name": "مكتب ابن عقيّل للعقار",
+        "phones": [
+          "0555145671"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-8649fd5374dc",
+        "city": "الرس",
+        "name": "مكتب الحميدي للعقار",
+        "phones": [
+          "0509966090"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-a8fbfc0ef6ca",
+        "city": "الرس",
+        "name": "اسثمار الرس للعقار",
+        "phones": [
+          "0500171881"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-2cc3ca16faa9",
+        "city": "الرس",
+        "name": "شركة عبدالعزيز القريان العقارية",
+        "phones": [
+          "0556236333"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-b205da143a76",
+        "city": "الرس",
+        "name": "مكتب نبراس نجد للخدمات العقارية",
+        "phones": [
+          "0500529215"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-90c4b854504f",
+        "city": "الرس",
+        "name": "ارض المساكن العقارية",
+        "phones": [
+          "0508860774"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-1e6e0e7fa290",
+        "city": "الرس",
+        "name": "مكتب روابي ديرتي للخدمات العقاريّة",
+        "phones": [
+          "0555658732"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-9ae072a185fe",
+        "city": "الرس",
+        "name": "مكتب بيت الوسيط للعقارات",
+        "phones": [
+          "0570301177"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-9110a832398f",
+        "city": "البكيرية",
+        "name": "مكتب الناصر للعقارات",
+        "phones": [
+          "0163352099"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-f2ac79ff7e2e",
+        "city": "البكيرية",
+        "name": "سامي أبا الخيل العقارية",
+        "phones": [
+          "0531331300"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-e7ed9a52503d",
+        "city": "البكيرية",
+        "name": "مكتب ســماء البلد للعقارات",
+        "phones": [
+          "0503138834"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-8eb1cefa98de",
+        "city": "البكيرية",
+        "name": "بدر الحبيب للاستثمار العقاري",
+        "phones": [
+          "920033163"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-dc6f4e469673",
+        "city": "البكيرية",
+        "name": "مكتب محمد السويلمي للعقارات",
+        "phones": [
+          "0541981515"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-8a9110a04a01",
+        "city": "البكيرية",
+        "name": "مكتب الحواس للعقارات",
+        "phones": [
+          "0553141219"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-eb124139f1fa",
+        "city": "البكيرية",
+        "name": "مكتب ركن الأمانة للعقارات",
+        "phones": [
+          "0508992508"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-d807542ecab7",
+        "city": "البكيرية",
+        "name": "مكتب محمد السويلم العقاري",
+        "phones": [
+          "0163352044"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-29b0ab8519d5",
+        "city": "البكيرية",
+        "name": "مكتب ديوان الوسيط",
+        "phones": [
+          "0554400010"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-9ad88f710669",
+        "city": "البكيرية",
+        "name": "مكتب عقار إلكتروني",
+        "phones": [
+          "0551298370"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-fc8245413e25",
+        "city": "خميس مشيط",
+        "name": "مكتب عقار سالم عبدالله الشهري",
+        "phones": [
+          "0505757345"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-56a846330786",
+        "city": "خميس مشيط",
+        "name": "مكتب فارهين العقاري",
+        "phones": [
+          "0556878879"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-6c79fd5d8b04",
+        "city": "خميس مشيط",
+        "name": "شركة أعمال الزبيري للعقارات",
+        "phones": [
+          "0560568086"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-0d81cb25cde4",
+        "city": "خميس مشيط",
+        "name": "مكتب شبكة الزبيري للعقارات",
+        "phones": [
+          "0557553598"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-5e88a5a271aa",
+        "city": "خميس مشيط",
+        "name": "مكتب أوائل الخميس للخدمات العقارية والإلكترونية",
+        "phones": [
+          "0555643271"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-df931061798b",
+        "city": "خميس مشيط",
+        "name": "مكتب نجم الخميس للعقارات",
+        "phones": [
+          "0503016803"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-9a6606417d51",
+        "city": "خميس مشيط",
+        "name": "مكتب ورود الرصراص الخدمات العقاريه",
+        "phones": [
+          "0559091352"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-23f6b85e0d11",
+        "city": "خميس مشيط",
+        "name": "مؤسسة بن جريس",
+        "phones": [
+          "0544454646"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-502cb049e6e5",
+        "city": "خميس مشيط",
+        "name": "هدى الشهري للعقارات",
+        "phones": [
+          "0552575244"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-202ca6de01fb",
+        "city": "الباحة",
+        "name": "مكتب عقاراتكم للخدمات العقارية و الخدمات العامه",
+        "phones": [
+          "0568777576",
+          "0566514707"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192087",
+        "city": "نجران",
+        "name": "مكتب ركن الروز للخدمات العامة",
+        "phones": [
+          "0500075051"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192560",
+        "city": "نجران",
+        "name": "شركة العرب الحديثه للعقارات",
+        "phones": [],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192222",
+        "city": "نجران",
+        "name": "مكتب رواد الانجاز للعقارات",
+        "phones": [
+          "0506791596"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-194652",
+        "city": "نجران",
+        "name": "مؤسسة علي ظافر ظافر الشمراني للعقار",
+        "phones": [
+          "0505725867"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-196395",
+        "city": "نجران",
+        "name": "مؤسسة ناجز الابداع للخدمات العقارية",
+        "phones": [
+          "0507119478"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-195780",
+        "city": "نجران",
+        "name": "مكتب غنام هادي الشريف للعقارات",
+        "phones": [
+          "0559595738"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-195555",
+        "city": "نجران",
+        "name": "مكتب الأفلاك للخدمات العقارية",
+        "phones": [
+          "0566669896"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-198603",
+        "city": "نجران",
+        "name": "مؤسسة بصمة السمو للخدمات العقارية",
+        "phones": [
+          "0500671811"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-197226",
+        "city": "نجران",
+        "name": "مؤسسة اعمار الشرفة للعقار",
+        "phones": [
+          "0538356309"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-194497",
+        "city": "نجران",
+        "name": "مكتب جوهرة الجوافة للعقار",
+        "phones": [
+          "0552335512"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-194223",
+        "city": "نجران",
+        "name": "مكتب حمد عبدالله حمد آل عباس للعقار",
+        "phones": [
+          "0532909084"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192117",
+        "city": "نجران",
+        "name": "مكتب اطياف الجنوب للخدمات العقارية",
+        "phones": [
+          "0544041333"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-193129",
+        "city": "نجران",
+        "name": "مكتب افنان العزيزية للعقارات",
+        "phones": [
+          "0541123718"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-196558",
+        "city": "نجران",
+        "name": "مكتب شموخ نجران للعقار",
+        "phones": [
+          "0500982411"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192537",
+        "city": "نجران",
+        "name": "مكتب فايز بن حمد بن مبارك اليامي للعقارات",
+        "phones": [
+          "0508961112"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-197107",
+        "city": "نجران",
+        "name": "مؤسسة عوض بن مساعد بن مساعد مساعد للعقار",
+        "phones": [
+          "0555726744"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-194158",
+        "city": "نجران",
+        "name": "مكتب التم للخدمات العقارية",
+        "phones": [
+          "0506308963"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-195166",
+        "city": "نجران",
+        "name": "مكتب منصة الدارة للخدمات العقارية",
+        "phones": [
+          "0559024555"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-196309",
+        "city": "نجران",
+        "name": "مكتب لوامع البناء المميز للعقار",
+        "phones": [
+          "0566601372"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192834",
+        "city": "نجران",
+        "name": "مكتب بصمة خدماتي العقاري",
+        "phones": [
+          "0500667377"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-196051",
+        "city": "نجران",
+        "name": "مكتب الصملة للخدمات العقارية",
+        "phones": [
+          "0509840427"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192377",
+        "city": "نجران",
+        "name": "مكتب فاطمه أحمد بن علي حميره العقاري",
+        "phones": [
+          "0592796666"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-196084",
+        "city": "نجران",
+        "name": "مكتب لوامع الجنوب العقارية",
+        "phones": [
+          "0552271319"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-198660",
+        "city": "نجران",
+        "name": "مكتب دليل المستأجر للعقار",
+        "phones": [
+          "0506795560"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-198712",
+        "city": "نجران",
+        "name": "مكتب القمري للعقارات",
+        "phones": [
+          "0555723728"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192859",
+        "city": "شرورة",
+        "name": "مكتب الواء الاخضر للعقارات",
+        "phones": [
+          "0501824055"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-202596",
+        "city": "شرورة",
+        "name": "مكتب زاوية الوطن للعقارات",
+        "phones": [
+          "0559108846"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-197788",
+        "city": "شرورة",
+        "name": "مكتب روابي للخدمات العقارية",
+        "phones": [
+          "0504564151"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-197748",
+        "city": "شرورة",
+        "name": "مكتب ركن الرائد للعقار",
+        "phones": [
+          "0508462711"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-196236",
+        "city": "شرورة",
+        "name": "مكتب امتياز الوسيط للعقار",
+        "phones": [
+          "0530728461"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-241858",
+        "city": "شرورة",
+        "name": "مؤسسة الدليل الذهبي للخدمات العقارية",
+        "phones": [
+          "0509958889"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-197035",
+        "city": "شرورة",
+        "name": "مكتب الجزيرة الذهبية للعقارات",
+        "phones": [
+          "0551555960"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-197388",
+        "city": "شرورة",
+        "name": "مكتب زاوية الجنوب للخدمات العقارية",
+        "phones": [
+          "0591888843"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-201296",
+        "city": "شرورة",
+        "name": "مكتب الصرح الوافي العقاري",
+        "phones": [
+          "0559805005"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-195198",
+        "city": "شرورة",
+        "name": "مكتب الركن الغالي للخدمات العقارية",
+        "phones": [
+          "0530706737"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-218534",
+        "city": "شرورة",
+        "name": "مكتب راية الحزم للعقارات",
+        "phones": [
+          "0559048913"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-202424",
+        "city": "شرورة",
+        "name": "مكتب خلود يسلم بن صالح الصيعري العقاري",
+        "phones": [
+          "0555313116"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-211473",
+        "city": "شرورة",
+        "name": "مكتب سالم علي الهمامي للعقار",
+        "phones": [
+          "0558305557"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-203088",
+        "city": "شرورة",
+        "name": "مؤسسة جسر التواصل للخدمات العقارية",
+        "phones": [
+          "0558818655"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-199284",
+        "city": "شرورة",
+        "name": "مؤسسة تماني الخير للعقارات",
+        "phones": [
+          "0535025934"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-217576",
+        "city": "شرورة",
+        "name": "مؤسسة حسن مبخوت حمد الصيعري للعقارات",
+        "phones": [
+          "0532465017"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-229515",
+        "city": "شرورة",
+        "name": "مؤسسة سعد عبدالله احمد آل بن محي للعقار",
+        "phones": [
+          "0503721685"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-204481",
+        "city": "شرورة",
+        "name": "مؤسسة صالح بن سليمان بن مسعد الصيعري للتطوير والاستثمار العقاري",
+        "phones": [
+          "0554189333"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-217480",
+        "city": "شرورة",
+        "name": "مكتب بصمة شرورة العقاري",
+        "phones": [
+          "0552276163"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-195389",
+        "city": "شرورة",
+        "name": "مكتب زاوية المستقبل للعقارات",
+        "phones": [
+          "0557373063"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-211701",
+        "city": "شرورة",
+        "name": "مكتب بروج الجبيل للخدمات العقارية",
+        "phones": [
+          "0508288022"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-488287",
+        "city": "شرورة",
+        "name": "مؤسسة منارة الدليل الذهبي للخدمات العقارية",
+        "phones": [
+          "0500224917"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-204553",
+        "city": "شرورة",
+        "name": "مكتب ركن دار الاجواد للعقار",
+        "phones": [
+          "0581453711"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-213195",
+        "city": "شرورة",
+        "name": "مكتب درع شرورة للعقارات",
+        "phones": [
+          "0544558810"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192622",
+        "city": "بلجرشي",
+        "name": "مؤسسة عبدالله محمد الغامدي للخدمات العقارية",
+        "phones": [
+          "0504270141"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-270160",
+        "city": "بلجرشي",
+        "name": "مكتب بدر علي ابن صالح الغامدي للعقارات",
+        "phones": [
+          "0508340660"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-192648",
+        "city": "بلجرشي",
+        "name": "مكتب خلود للخدمات العقارية",
+        "phones": [
+          "0557659240"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-194017",
+        "city": "بلجرشي",
+        "name": "مكتب مدار الأرض للعقارات",
+        "phones": [
+          "0505773917"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-195982",
+        "city": "بلجرشي",
+        "name": "مكتب رواسي الصقر للعقار",
+        "phones": [
+          "0598888801"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-218211",
+        "city": "بلجرشي",
+        "name": "مكتب صدى الوقت للعقار",
+        "phones": [
+          "0501552226"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-209089",
+        "city": "بلجرشي",
+        "name": "مكتب الوسيط سلمان للخدمات العقارية",
+        "phones": [
+          "0551555722"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-194160",
+        "city": "بلجرشي",
+        "name": "مكتب أملاكي للخدمات العقارية",
+        "phones": [
+          "0558184737"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-246079",
+        "city": "بلجرشي",
+        "name": "مكتب ديار الكرم للخدمات العقارية",
+        "phones": [
+          "0555618325"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-415657",
+        "city": "بلجرشي",
+        "name": "مكتب خبراء التوثيق للعقارات",
+        "phones": [
+          "0536544808"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-415930",
+        "city": "بلجرشي",
+        "name": "مكتب مرادك العقارية",
+        "phones": [
+          "0564343585"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-584125",
+        "city": "بلجرشي",
+        "name": "مكتب عقار بارك العقارية",
+        "phones": [
+          "0534550123"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-202137",
+        "city": "تربة",
+        "name": "مكتب المنصور للعقار",
+        "phones": [
+          "0561414555"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-a449dc340d3e",
+        "city": "نجران",
+        "name": "مكتب صحاري للعقارات وادارة الاملاك",
+        "phones": [
+          "0506386616"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-4df0444ece21",
+        "city": "بيشة",
+        "name": "مكتب رونق بيشة للعقار",
+        "phones": [
+          "0557973111"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-0c8acfd16b95",
+        "city": "بيشة",
+        "name": "مكتب وتد للعقار",
+        "phones": [
+          "0539344410"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-c33b8e3e876b",
+        "city": "بيشة",
+        "name": "المبارك للعقار والخدمات العامة",
+        "phones": [
+          "0558485785"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-20b51571176e",
+        "city": "بيشة",
+        "name": "مكتب نهضة بيشة للعقار",
+        "phones": [
+          "0503001775"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "office-maps-2ae22144b796",
+        "city": "بيشة",
+        "name": "مكتب الثريا المميز للعقار والخدمات العامه",
+        "phones": [
+          "0509980021"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-198909582195",
+        "city": "بيشة",
+        "name": "مكتب عقار",
+        "phones": [
+          "0536021175"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-28655674620",
+        "city": "بيشة",
+        "name": "مكتب معالي بيشة للعقارات",
+        "phones": [
+          "0503535919"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-17922235385",
+        "city": "بيشة",
+        "name": "مكتب ركن الاعمال للخدمات الالكترونيه",
+        "phones": [
+          "0567930789"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-243195522634",
+        "city": "بيشة",
+        "name": "مكتب جنوب المدينة للخدمات العقارية",
+        "phones": [
+          "0176222232"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-69635635496",
+        "city": "بيشة",
+        "name": "مكتب السمو الاقليمي للعقارات",
+        "phones": [
+          "0505764616"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJx2GTBggr8BURwc2oWfqJtAU",
+        "city": "بيشة",
+        "name": "مكتب جبال المتن للخدمات العقارية",
+        "phones": [
+          "0534200412"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJjeGyySUp8BURPB3HIKoUZXo",
+        "city": "بيشة",
+        "name": "مكتب سفير بيشة للعقارات",
+        "phones": [
+          "0503127837"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJURG3KQAp8BURvSU2Rn3nNkM",
+        "city": "بيشة",
+        "name": "مكتب ساعي البركة للعقارات عقار بيشه",
+        "phones": [
+          "0571127875"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJCxhlGgAr8BURXIUZXO5f3jw",
+        "city": "بيشة",
+        "name": "مكتب سالم للعقار والخدمات العامة",
+        "phones": [
+          "0501795906"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJL1DEHW4r8BURm1HxDB-GUqE",
+        "city": "بيشة",
+        "name": "ركن الوسيط للعقار",
+        "phones": [
+          "0552362323"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJ8f2BCMop8BURuaJyD1d275c",
+        "city": "بيشة",
+        "name": "مكتب النايف للعقار",
+        "phones": [
+          "0507525357"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJNw7IFgAr8BUR4lYhYHyZa3U",
+        "city": "بيشة",
+        "name": "شركة أساس العقارية",
+        "phones": [
+          "0506022001"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJ61qedHIp8BURhG6oqQif81s",
+        "city": "بيشة",
+        "name": "مكتب بيرق بيشة فرع ثاني لمكتب ابوحمدان للعقارات",
+        "phones": [
+          "0500215785"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJiwzYpJgr8BURacBH17yRueQ",
+        "city": "بيشة",
+        "name": "كيان التميز للخدمات العقارية",
+        "phones": [
+          "0531917101"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJhxovWQAr8BURmkLSHt12kbA",
+        "city": "بيشة",
+        "name": "مكتب خدمات الابداع للخدمات العقارية",
+        "phones": [
+          "0532481622"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJLaXFVu4p8BURyqXNYIvYKTc",
+        "city": "بيشة",
+        "name": "مكتب السادس للخدمات العقارية",
+        "phones": [
+          "0537200902"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJHY-CMEYr8BURSXWXiHfRzkI",
+        "city": "بيشة",
+        "name": "ابحر للخدمات العقارية",
+        "phones": [
+          "0552165204"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJN_yhBSUr8BURzxT9PjxtSCg",
+        "city": "بيشة",
+        "name": "مكتب شموخ بيشة للخدمات العقارية",
+        "phones": [
+          "0537242400"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJkXjcTCAp8BURHS5MK6mgMNY",
+        "city": "بيشة",
+        "name": "شركة النايف العقارية",
+        "phones": [
+          "0500521400"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJc2CCzn-b5BURilAqSZrTYvI",
+        "city": "محايل عسير",
+        "name": "ركن الحلول للعقارات",
+        "phones": [
+          "0506667018"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJg2bc-ZOF5BURW5tbvPEDjPA",
+        "city": "محايل عسير",
+        "name": "مكتب الأتمام للخدمات العقارية",
+        "phones": [
+          "0502518958"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJj6LDJMqP5BUR74rBPM4FM2A",
+        "city": "محايل عسير",
+        "name": "مكتب حي الوعد للعقار",
+        "phones": [
+          "0549497019"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJvb_yUlKF5BURNV0gjX7yXvI",
+        "city": "محايل عسير",
+        "name": "مؤسسة إنماء المستقبل للخدمات العقارية والمقاولات والخدمات العامه",
+        "phones": [
+          "0530077107"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJbQZcsnSF5BUR7V9K6YquJTQ",
+        "city": "محايل عسير",
+        "name": "رواسي الجنوب للخدمات العقارية",
+        "phones": [
+          "0504609620"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJk4P6WwiF5BURXjLhGnMklXo",
+        "city": "محايل عسير",
+        "name": "صروح العقاريه",
+        "phones": [
+          "0555899402"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJf3rK5wOF5BURjGDOPBgv6Ww",
+        "city": "محايل عسير",
+        "name": "مقر النخيل للعقارات محايل عسير",
+        "phones": [
+          "0550061507"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJA6UeM3CF5BUR3R58E373d8I",
+        "city": "محايل عسير",
+        "name": "مقيم عقاري معتمد",
+        "phones": [
+          "0554329717"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJhTDGblOF5BURDVa7_xAT4gI",
+        "city": "محايل عسير",
+        "name": "مكتب زاهر علي للعقار",
+        "phones": [
+          "0505243531"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJG1i9mskb5RURJT0Tkr24Cz8",
+        "city": "النماص",
+        "name": "مكتب جسور الانجاز للخدمات العامه والعقار",
+        "phones": [
+          "0172801040"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJVfFmPAob5RURCegkz5cw3e4",
+        "city": "النماص",
+        "name": "مكتب محمد عوض الشهري للخدمات العقاريه",
+        "phones": [
+          "0505763491"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJPYWGRgAb5RURBizz3JyFeAY",
+        "city": "النماص",
+        "name": "مكتب سرعة المنجز",
+        "phones": [
+          "0509399811"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJV_TW6sgb5RUR4aUYHPXoCUw",
+        "city": "النماص",
+        "name": "مكتب الريان العقاري",
+        "phones": [
+          "0172820648"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJTTocWQAb5RURMyGJ14XzxVQ",
+        "city": "النماص",
+        "name": "مكتب المهند للعقار بالنماص",
+        "phones": [
+          "0504780767"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJE48mwlcb5RURWhZsmHsBobY",
+        "city": "النماص",
+        "name": "مكتب ديار المتميزون للعقار",
+        "phones": [
+          "0570713878"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJl4O9Q9W_BxYR08gJulr6lG0",
+        "city": "صامطة",
+        "name": "مكتب علي حسن عبدالله حمدي",
+        "phones": [
+          "0506762617"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJeSeBSNS_BxYRowr36SXMTAM",
+        "city": "صامطة",
+        "name": "مكتب شروق الجنوب للعقار صامطة الضاحية",
+        "phones": [
+          "0554906916"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJ00i8UKa-BxYRbIat6CzAxjM",
+        "city": "صامطة",
+        "name": "المذكور للعقار",
+        "phones": [
+          "0504571418"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJqQWJne29BxYRNbORRJ4LgKU",
+        "city": "صامطة",
+        "name": "مكتب",
+        "phones": [
+          "0579216050"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJM5IFsxm9BxYR4CbP6QCqtx0",
+        "city": "صامطة",
+        "name": "مؤسسة عبد الروؤف مرعي احمد القحطاني للعقار",
+        "phones": [
+          "0505766908"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJqWwfXAG_BxYREy8W6MmNYns",
+        "city": "صامطة",
+        "name": "مكتب ابداع الضاحيه العقاري",
+        "phones": [
+          "0555828861"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJUagP4vG_BxYRvRHs0ktGIN4",
+        "city": "صامطة",
+        "name": "مكتب الشرق المتحدون",
+        "phones": [
+          "0559532031"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJfSOA1Ke_BxYRSxXKJIMyiLk",
+        "city": "صامطة",
+        "name": "مكتب عقار/ الرمال البيضاء للخدمات العقارية",
+        "phones": [
+          "0550767260"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJ5zS1FWC_BxYRakXieH8FYY0",
+        "city": "صامطة",
+        "name": "مكتب ابداع الضاحيه العقاري 2",
+        "phones": [
+          "0506026667"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJ4QpCBgS9BxYREBq1qBaqgyo",
+        "city": "صامطة",
+        "name": "أصداف الجنوب العقارية",
+        "phones": [
+          "0558686688"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJTRnGNSO_BxYRMfpssHNVszw",
+        "city": "صامطة",
+        "name": "خدمات عقارية",
+        "phones": [
+          "0537072586"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJly1RbCOXBxYRfK9tcx_94Jo",
+        "city": "أحد المسارحة",
+        "name": "مكتب المنارات المعمارية للعقار وخدمات العقار",
+        "phones": [
+          "0554662083"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJzb7ZYVSXBxYR0BM_vWKyjWI",
+        "city": "أحد المسارحة",
+        "name": "مكتب البعد الجديد للعقارات في أحد المسارحة",
+        "phones": [
+          "0509035431"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJpc_6tDuXBxYRSUyZM-bevDs",
+        "city": "أحد المسارحة",
+        "name": "مكتب عقار الحدادي",
+        "phones": [
+          "0503278403"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJqbzcHK-XBxYRZoBYMXUkIS8",
+        "city": "أحد المسارحة",
+        "name": "مكتب فجر المسارحة للخدمات والعقار",
+        "phones": [
+          "0566334466"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJpf78GpiXBxYRU5DPeiDqkwU",
+        "city": "أحد المسارحة",
+        "name": "مكتب المخلاف لخدمات ناجز ومعين ولجان الفصل",
+        "phones": [
+          "0552587562"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJz47sDcGXBxYRXpJyzVixwDY",
+        "city": "أحد المسارحة",
+        "name": "مكتب المسعودي للعقار",
+        "phones": [
+          "0505769333"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJjQO0_saXBxYR5TXKYTE4QWI",
+        "city": "أحد المسارحة",
+        "name": "مكتب الركن الازرق للخدمات العقارية",
+        "phones": [
+          "0536273439"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJnbST9JSXBxYRs30UmF9iJeY",
+        "city": "أحد المسارحة",
+        "name": "مكتب المتطور الرئيسي",
+        "phones": [
+          "0556956285"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-201301267794",
+        "city": "محايل عسير",
+        "name": "مكتب سروي للعقار",
+        "phones": [
+          "0505250818"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-google-office-ChIJQe666aaF5BURRhjNHq-g_aU",
+        "city": "محايل عسير",
+        "name": "مكتب راية وطني للخدمات العقارية",
+        "phones": [
+          "0582228836"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-58667948407",
+        "city": "بلجرشي",
+        "name": "Al Moasher Real Estate Services Office",
+        "phones": [
+          "0177228806"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJZ0pzBp65gRURE9Tqti-ofF0",
+        "city": "المذنب",
+        "name": "Al Shitwy Real Estate",
+        "phones": [
+          "0163422404",
+          "0555932404"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJR3Tv-MZd7xURJTKM7Otv48Q",
+        "city": "بلجرشي",
+        "name": "مؤسسة صيد الفرص العقارية. شيخ طائفة العقار",
+        "phones": [
+          "0550650334"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJW4VM8cxd7xURRuRrcSjCmAo",
+        "city": "بلجرشي",
+        "name": "الخلود للعقارات",
+        "phones": [
+          "0177226155",
+          "0554000826"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJY9YqrDJc7xURjnHYwtHQ42g",
+        "city": "بلجرشي",
+        "name": "مكتب العسلي للخدمات",
+        "phones": [
+          "0535449169",
+          "0564799581"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJjfopEEmF5BUR_hmxDESpBnA",
+        "city": "محايل عسير",
+        "name": "بوصلة المستقبل للخدمات العقارية",
+        "phones": [
+          "0555183385"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJgW58xp2F5BURw2zF0vDqi34",
+        "city": "محايل عسير",
+        "name": "شركة اسس الاداره",
+        "phones": [
+          "0555186620",
+          "0555071663"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJmbumboOb5BURVS81zhKJles",
+        "city": "محايل عسير",
+        "name": "مؤسسة عاصفة العروبة",
+        "phones": [
+          "0551753259"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJm_JTIeD1BxYRFGEtFDWFsx4",
+        "city": "أبو عريش",
+        "name": "الملهم للخدمات العقارية",
+        "phones": [
+          "0557714000"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJP2atdar1BxYRKnCBk0IYUk0",
+        "city": "أبو عريش",
+        "name": "جياد الراية للعقارات",
+        "phones": [
+          "0503768536"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJ1S_wasn1BxYRNbf2JCv1wcQ",
+        "city": "أبو عريش",
+        "name": "مكتب نفاذ وطني للخدمات العقارية",
+        "phones": [
+          "0550915577"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJD8PJi4X1BxYREKpwMM9jarA",
+        "city": "أبو عريش",
+        "name": "مكتب ورقه وقلم للخدمات العامة",
+        "phones": [
+          "0543435878",
+          "0545110527"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJxdWZ5OiLBxYR-q9NQcfZXEY",
+        "city": "أبو عريش",
+        "name": "عقارات شعبة الجربه",
+        "phones": [
+          "0504162465"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJx53oWRO_BxYRdKW1AZqXC4Y",
+        "city": "صامطة",
+        "name": "مكتب بروج الضاحية للخدمات العقارية",
+        "phones": [
+          "0553234565"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-thirdparty-office-cid8934779096754221356",
+        "city": "محايل عسير",
+        "name": "مكتب الفتح للعقار محايل عسير",
+        "phones": [
+          "0558991555"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-19e310b3d076",
+        "city": "بيش",
+        "name": "شركة صفقة عشير للوساطة الرقمية",
+        "phones": [
+          "0567778098"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-33e19b291f37",
+        "city": "بيش",
+        "name": "مكتب أساس الجودة للخدمات العقارية",
+        "phones": [
+          "0506966422"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-6f48609b6a84",
+        "city": "بيش",
+        "name": "مكتب إبداع بيش للخدمات العامة",
+        "phones": [
+          "0577532372"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-8084eb1ba210",
+        "city": "بيش",
+        "name": "مكتب المريع للعقار",
+        "phones": [],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-3af1d6a8ebfa",
+        "city": "بيش",
+        "name": "مكتب الغانم للعقار والخدمات العامة",
+        "phones": [
+          "0505770203"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-f539317f30bd",
+        "city": "سبت العلايا",
+        "name": "مكتب أبو ياسر العقاري",
+        "phones": [],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-8c11ea4278b3",
+        "city": "سبت العلايا",
+        "name": "مكتب الديرة",
+        "phones": [],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-b5e40da4e1da",
+        "city": "سبت العلايا",
+        "name": "السبعاني للعقار",
+        "phones": [
+          "0176301010"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-e84a171a279e",
+        "city": "سبت العلايا",
+        "name": "مكتب البرج العقاري",
+        "phones": [
+          "0569100109"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "v9-office-aea1d102e95c",
+        "city": "سبت العلايا",
+        "name": "مؤسسة الديرة للخدمات العقارية",
+        "phones": [
+          "0551133423"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-icuae-office-ChIJCV_itnz1BxYR247nAn0D8h0",
+        "city": "أبو عريش",
+        "name": "شركة أربى العالمية للمقاولات العامة",
+        "phones": [
+          "0590732110",
+          "0533111604"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "entity-ede39ec11bd6",
+        "city": "جازان",
+        "name": "جازان وطن للخدمات العقارية",
+        "phones": [
+          "920031858"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "entity-eb6a252fffd5",
+        "city": "أبها",
+        "name": "شرق أبها للخدمات العقارية",
+        "phones": [
+          "0504746662"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "entity-f92d70951d09",
+        "city": "الباحة",
+        "name": "مكتب عقار الباحة",
+        "phones": [
+          "0555775450"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-ejar-office-194958",
+        "city": "الباحة",
+        "name": "مؤسسة وسيط الباحه للعقارات",
+        "phones": [
+          "0509950527"
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "national-yango-office-227054884773",
+        "city": "بيشة",
+        "name": "مكتب أصول الشارقة للعقار",
+        "phones": [
+          "0534200412"
+        ],
+        "status": "pending"
+      }
+    ]
+  }
+}
