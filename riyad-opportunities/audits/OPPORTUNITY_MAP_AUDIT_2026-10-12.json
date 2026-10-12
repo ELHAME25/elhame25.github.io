@@ -1,0 +1,151 @@
+{
+  "schema": "opportunity-map-audit-batch-v1",
+  "audit_date": "2026-10-12",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "head_at_start": "b78e003ac8003578084f11b1f94057354d0b4963",
+  "counts_before": {
+    "map_targets": 4059,
+    "opened_unique": 325,
+    "verified_correct": 133,
+    "corrected_and_retested": 35,
+    "unresolved_after_open": 192,
+    "not_opened": 3734
+  },
+  "records": [
+    {
+      "id": "op-aa8f2b3bd7",
+      "name": "ذا روز هاوس",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved",
+        "evidence": "خرائط فتحت بطاقة «روز» عند 25.3618382,49.6059782 وليست المشروع؛ NHC يؤكد المشروع في الورود/الهفوف دون دبوس دقيق. أبقِ السجل.",
+        "sources": [
+          "https://www.nhc.sa/en/real-estate-development/projects/47520/",
+          "https://www.nhc.sa/en/real-estate-development/communities/47489/"
+        ]
+      },
+      "fields": {
+        "phone": "لا رقم مشروع مستقل",
+        "whatsapp": "لا رابط مشروع مستقل",
+        "website": "صفحة NHC الرسمية لا تعادل موقعًا خارجيًا للمشروع"
+      }
+    },
+    {
+      "id": "op-9aeaeabf64",
+      "name": "سلام",
+      "map": {
+        "opened": true,
+        "matched": true,
+        "verified": true,
+        "status": "verified_correct",
+        "saved": "https://www.google.com/maps/place/%D9%81%D9%80%D9%84%D9%84+%D8%B3%D9%84%D8%A7%D9%85+%7C+salam+villa%E2%80%AD/@25.3946038,49.5572723,1009m/data=!3m2!1e3!4m6!3m5!1s0x3e3797f272ab23ab:0xe2ef372cbce5446b!8m2!3d25.3946038!4d49.5572723!16s%2Fg%2F11sx74jdx_?entry=ttu",
+        "post_edit_retest": "attempted; browser did not render readable card",
+        "evidence": "موقع المشروع الرسمي يحدد حي السلام/الأحساء و21 وحدة ويربط إلى البطاقة «فلل سلام | salam villa». الهاتف 0533341187 ظاهر في Maps والموقع."
+      },
+      "fields": {
+        "phone": "0533341187 confirmed by Maps card and official site",
+        "whatsapp": "wa.me/966533341187 observed on official website; destination not separately tested",
+        "website": "https://dirwazhalsharq.com/projects/salam/"
+      },
+      "sources": [
+        "https://dirwazhalsharq.com/projects/salam/"
+      ]
+    },
+    {
+      "id": "op-92d62c2952",
+      "name": "فناء",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "verified": true,
+        "status": "official_coordinate_pin_no_named_place",
+        "saved": "https://maps.app.goo.gl/ryVMmYHNMhjt7sdU9",
+        "post_edit_retest": "opened after edit to 25.395159,49.556277 / 9HW4+3G6 Al Mubarraz",
+        "evidence": "خرائط البحث غير مطابقة؛ رابط صفحة المشروع الرسمية يفتح الإحداثية أعلاه. المدينة والحي/السلام و8 وحدات مثبتة في صفحة المطور؛ الدبوس coordinate-only وليس بطاقة باسم المشروع."
+      },
+      "fields": {
+        "phone": "0533341187 developer-level only",
+        "whatsapp": "wa.me/966533341187 developer-level; destination not separately tested",
+        "website": "https://dirwazhalsharq.com/projects/fana/"
+      },
+      "sources": [
+        "https://dirwazhalsharq.com/projects/fana/"
+      ]
+    },
+    {
+      "id": "op-9bdff30503",
+      "name": "منازل السلام",
+      "map": {
+        "opened": true,
+        "matched": true,
+        "verified": false,
+        "status": "post_edit_retest_pending",
+        "saved": "https://maps.app.goo.gl/R2MMYeWzLi1C98Fe6",
+        "evidence": "صفحة رسمية لمشروع منازل السلام تحدد حي السلام/الأحساء و28 شقة وترسل إلى 25.4016243,49.5533257 / CH23+J8W قرب بطاقة باسم منازل السلام بنحو 30م؛ بطاقة Maps تصنفها شركة إدارة عقارات، لذا الدبوس coordinate-only. إعادة الاختبار بعد الحفظ معلقة. تعارض عددي: 28 شقة مقابل مجموع حالات 29 (4+1+24)، لم أغير الرقم."
+      },
+      "fields": {
+        "phone": "0533341187 confirmed by Maps card and official project page",
+        "whatsapp": "official booking link wa.me/966533341187 observed; destination not separately tested",
+        "website": "https://dirwazhalsharq.com/projects/manazil-salam/"
+      },
+      "sources": [
+        "https://dirwazhalsharq.com/projects/manazil-salam/"
+      ]
+    },
+    {
+      "id": "op-21f5bccc51",
+      "name": "الزهراء 26",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved",
+        "evidence": "لا بطاقة أو دبوس مشروع؛ دبوس إعلان الوحدة لا يثبت موقع المشروع. المصدر الثانوي يثبت حي الزهراء ومخطط 1233/4 و5 معروضة، لا موقعًا.",
+        "sources": [
+          "https://wasalt.sa/project/الاحساء/مشروع-الزهراء-26-100558",
+          "https://sa.aqar.fm/فلل-للبيع/الهفوف/حي-المنيزلة/شارع-عبدالرحمن-ابن-ناجي-حي-الزهراء-مدينة-الاحساء-المنطقة-الشرقية-6643551"
+        ]
+      },
+      "fields": {
+        "phone": "0570153088 إعلان/بائع وليس رقم مشروع مثبت",
+        "whatsapp": "غير مثبت",
+        "website": "لم يثبت موقع رسمي"
+      }
+    },
+    {
+      "id": "op-5046d876a5",
+      "name": "واهب 07",
+      "map": {
+        "opened": true,
+        "matched": true,
+        "verified": true,
+        "status": "verified_correct",
+        "saved": "https://www.google.com/maps/place/Waheb+07+-+%D9%88%D8%A7%D9%87%D8%A8%E2%80%AD/@25.4056685,49.5587823,504m/data=!3m1!1e3!4m10!1m2!2m1!1z2YjYp9mH2KggMDcg2KfZhNmF2KjYsdiyIC0g2K3ZiiDYp9mE2LPZhNin2YUg2KfZhNij2K3Ys9in2KE!3m6!1s0x3e37973848ac7b35:0x2a89f039e06c514a!8m2!3d25.4040233!4d49.5568383!16s%2Fg%2F11yml_b1v7?entry=ttu",
+        "post_edit_retest": "map label Waheb 07 - واهب visibly rendered after edit",
+        "evidence": "البطاقة والصفحة الرسمية تطابقان واهب 07، المبرز/حي السلام؛ Maps يعرض الهاتف والموقع. الرسمي يذكر 25 وحدة و7 متاحة."
+      },
+      "fields": {
+        "phone": "0555440673 verified on map and official page; other contact 0554440673 appears officially too",
+        "whatsapp": "لم يثبت رابط WhatsApp خاص بالمشروع",
+        "website": "https://waheb.sa/ar/projects/single/waheb-07"
+      },
+      "sources": [
+        "https://waheb.sa/ar/projects/single/waheb-07"
+      ]
+    }
+  ],
+  "counts_after": {
+    "map_targets": 4059,
+    "opened_unique": 331,
+    "verified_correct": 136,
+    "corrected_and_retested": 35,
+    "unresolved_after_open": 195,
+    "not_opened": 3728
+  },
+  "count_notes": [
+    "الستة روابط فُتحت؛ حسب العدّ الصارم 3 مواقع صحيحة (سلام، فناء كإحداثية من مصدر رسمي، واهب 07)، 3 غير محسومة (روز هاوس، منازل السلام لاجتياز retest، الزهراء 26).",
+    "تم حفظ maps مباشرة لأربعة سجلات كانت حقولها فارغة: سلام، فناء، منازل السلام، واهب 07. لا أسجلها إصلاحات روابط خاطئة لأن الحقول كانت فارغة؛ فقط فناء وواهب أُعيد اختبارهما بعد الحفظ بقراءة وجهة الخرائط، وسلام ومحال السلام يحتاجان إعادة قراءة بعد الحفظ.",
+    "لا حذف ولا تعديل أرقام الوحدات؛ أرقام الهاتف وواتساب والمواقع موثقة بصورة مستقلة وفي مستوى المطور إذا لم تكن خاصة بالمشروع."
+  ]
+}
