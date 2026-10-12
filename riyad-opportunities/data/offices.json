@@ -9804,6 +9804,15 @@
       "storedPhoneBefore": "0500978590",
       "storedPhonePreserved": true,
       "note": "مطابقة اسم المكتب والوكالة العقارية والمدينة/الحي؛ بطاقة Maps تنشر رقمًا مختلفًا. أُبقي المسجل وأُضيف رقم البطاقة."
+    },
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_conflict_preserved",
+      "source": "https://www.google.com/maps/place/%D9%81%D9%84%D8%A7+%D8%A7%D9%84%D8%B4%D8%B1%D9%82+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9/@26.3504767,50.138793,17z/data=!3m1!4b1!4m6!3m5!1s0x3e49e44bb2c196d3:0x811d41539699a851!8m2!3d26.3504767!4d50.138793!16s/g/11gdjpq3pf",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "الاسم/المدينة/الحي ونشاط وكالة العقارات مطابق؛ الهاتف المنشور 0554733279 يختلف عن المسجل، فحُفظ الرقم القديم وأضيف المنشور.",
+      "observedPhoneIntl": "+966 55 473 3279",
+      "storedPhonePreserved": "0500978590"
     }
   },
   {
@@ -19531,7 +19540,14 @@
     "lat": 27.55962,
     "lon": 47.69554,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_and_location",
+      "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x3fcd7547037c4cf1:0x95f878f1d0fb643e!8m2!3d27.5596238!4d47.695538!16s%2Fg%2F11njn7ljw7!19sChIJ8Ux8A0d1zT8RPmT70PF4-JU?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "بطاقة مكتب عبدالله للعقارات في قرية العليا؛ الهاتف 0559779721 مطابق، العنوان والـPlus Code مطابقان، والدبوس الحالي محفوظ."
+    }
   },
   {
     "id": "national-google-office-ChIJq6qqqvp1zT8RjGPWDyXauUQ",
@@ -20608,7 +20624,14 @@
     "maps": "https://maps.yango.com/ar-sa/org/239017421555/?lang=ar",
     "lat": null,
     "lon": null,
-    "sec": ""
+    "sec": "",
+    "mapsAudit": {
+      "status": "unresolved_no_matching_card",
+      "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B9%D9%88%D8%B6+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%AD%D9%81%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "لم تظهر بطاقة أو هاتف مطابق؛ النتائج المحلية مختلفة، لا استنتاج إغلاق."
+    }
   },
   {
     "id": "national-yango-office-225072134083",
@@ -20719,7 +20742,14 @@
     "maps": "https://maps.yango.com/ar-sa/org/214784593424/?lang=ar",
     "lat": null,
     "lon": null,
-    "sec": ""
+    "sec": "",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_address",
+      "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D9%87%D9%85%D8%B3+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%AD%D9%81%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "بطاقة وكالة عقارات؛ 0583560000 مطابق؛ حي المروج، حفر الباطن 39913، 9XMQ+79. لم يستخرج permalink أو pin مستقل."
+    }
   },
   {
     "id": "national-yango-office-108112364856",
