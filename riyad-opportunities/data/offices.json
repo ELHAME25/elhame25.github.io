@@ -1367,7 +1367,15 @@
     "sec": "",
     "loc": "pt",
     "activity": "وكالة عقارات",
-    "activitySource": "Google Maps"
+    "activitySource": "Google Maps",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_address",
+      "source": "https://www.google.com/maps/?q=21.2658268,40.4276757",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "مصاطب؛ بطاقة وكالة عقارية في الطائف، الهاتف 0555209010 مطابق، موقع 7C8H+83M.",
+      "observedPhoneIntl": "0555209010"
+    }
   },
   {
     "id": "phase5-office-3f96801c1a5a",
@@ -1384,7 +1392,14 @@
     "sec": "",
     "loc": "pt",
     "activity": "وكالة عقارات تجارية",
-    "activitySource": "Google Maps"
+    "activitySource": "Google Maps",
+    "mapsAudit": {
+      "status": "verified_name_activity_location_phone_unlisted",
+      "source": "https://www.google.com/maps/?q=21.5401796,40.6129565",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "مكتب الماجد للعقار؛ شركة عقارية بالطائف؛ لم يظهر هاتف منشور، أُبقي الرقم المسجل دون تغيير."
+    }
   },
   {
     "id": "phase5-office-ec2bd607c79a",
@@ -1401,7 +1416,14 @@
     "sec": "",
     "loc": "pt",
     "activity": "وكالة عقارات",
-    "activitySource": "Google Maps"
+    "activitySource": "Google Maps",
+    "mapsAudit": {
+      "status": "verified_name_activity_location_phone_unlisted",
+      "source": "https://www.google.com/maps/?q=21.2607904,40.4098874",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "الوبيل العقارية؛ بطاقة نشاط عقاري في الطائف عند 7C65+8X6، لم يظهر هاتف منشور؛ الرقم المسجل محفوظ."
+    }
   },
   {
     "id": "phase5-office-fb907e714ff5",
@@ -1418,7 +1440,15 @@
     "sec": "",
     "loc": "pt",
     "activity": "مُصفٍّ عقاري",
-    "activitySource": "Google Maps"
+    "activitySource": "Google Maps",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_pin",
+      "source": "https://www.google.com/maps/?q=21.5411284,40.6099753",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "مكتب وسام العرفا؛ تصنيف البطاقة مُصفٍّ عقاري، الهاتف مطابق، الدبوس بالطائف.",
+      "observedPhoneIntl": "0542030393"
+    }
   },
   {
     "id": "phase5-office-ac257febcae9",
@@ -1462,7 +1492,15 @@
     "sec": "",
     "loc": "pt",
     "activity": "وكالة عقارات",
-    "activitySource": "Google Maps"
+    "activitySource": "Google Maps",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_pin",
+      "source": "https://www.google.com/maps/?cid=243440047378198572",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "مكتب الأحمدي للعقار؛ الاسم والهاتف مطابقان، الدبوس بالطائف.",
+      "observedPhoneIntl": "0566033002"
+    }
   },
   {
     "id": "phase5-office-455bf081dca3",
@@ -1496,7 +1534,15 @@
     "sec": "",
     "loc": "pt",
     "activity": "مكتب الشركات",
-    "activitySource": "Google Maps"
+    "activitySource": "Google Maps",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_pin",
+      "source": "https://www.google.com/maps/?cid=10276710977211267517",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "مكتب مؤسسة الشاعر العقارية؛ بطاقة Maps تصنفه مكتب شركات، الهاتف مطابق، الدبوس بالطائف.",
+      "observedPhoneIntl": "0501089830"
+    }
   },
   {
     "id": "phase5-office-b88b535e7e70",
@@ -14322,14 +14368,24 @@
     "city": "ينبع",
     "nb": "عثمان بن عفان، الربوة، ينبع، المدينة المنورة، المملكة العربية السعودية",
     "phones": [
-      "0551308889"
+      "0551308889",
+      "0501192592"
     ],
     "web": "",
     "maps": "https://maps.google.com/maps?q=24.09387334,38.0599119",
-    "lat": 24.09387,
-    "lon": 38.05991,
+    "lat": 24.0939605,
+    "lon": 38.0599293,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "verified_name_activity_location_phone_conflict",
+      "source": "https://maps.google.com/maps?q=24.09387334,38.0599119",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "عزم الأيام بينبع؛ بطاقة باسم عزم الأيام ونشاط عقاري وموقع مطابق؛ Maps يعرض 0501192592 بدل المسجل 0551308889، احتُفظ بالرقم القديم وأضيف المنشور.",
+      "observedPhoneIntl": "0501192592",
+      "storedPhonePreserved": true
+    }
   },
   {
     "id": "national-ejar-office-209261",
@@ -14341,10 +14397,18 @@
     ],
     "web": "",
     "maps": "https://maps.google.com/maps?q=24.0782536,38.09090892",
-    "lat": 24.07825,
-    "lon": 38.09091,
+    "lat": 24.0806331,
+    "lon": 38.1010303,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_pin",
+      "source": "https://maps.google.com/maps?q=24.0782536,38.09090892",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "نواف المطيري؛ الاسم والنشاط والهاتف مطابقان في ينبع والدبوس مثبت.",
+      "observedPhoneIntl": "0545400098"
+    }
   },
   {
     "id": "national-ejar-office-195487",
