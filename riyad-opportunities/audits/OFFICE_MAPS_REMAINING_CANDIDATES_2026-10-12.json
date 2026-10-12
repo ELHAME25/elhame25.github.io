@@ -2,13 +2,13 @@
   "schema": "office-maps-unreviewed-candidates-v1",
   "generatedAt": "2026-10-12",
   "branch": "fix/scope-counts-nhc-20261010",
-  "sourceHead": "d1307f5512d0a9679ad87cc319863294c994f491",
+  "sourceHead": "42e0fb4bc91f8bdc756dd53acecb8ae5ccbce83f",
   "inventory": 1524,
-  "explicitOutcomesCount": 1104,
-  "withoutRecordedIndividualOutcome": 420,
+  "explicitOutcomesCount": 1111,
+  "withoutRecordedIndividualOutcome": 413,
   "method": "Rows are IDs not found with an explicit status field across committed OFFICE audit checkpoints/ledgers at sourceHead. These are candidates for individual Maps audit; do not infer correct or incorrect from absence.",
   "regionalCounts": {
-    "riyadh": 14,
+    "riyadh": 7,
     "west": 74,
     "east": 40,
     "north": 49,
@@ -26,53 +26,6 @@
         "status": "pending"
       },
       {
-        "id": "prior-qadisiyya-23",
-        "city": "الرياض",
-        "name": "السديس للعقارات",
-        "phones": [
-          "0555286200"
-        ],
-        "status": "pending"
-      },
-      {
-        "id": "prior-qadisiyya-26",
-        "city": "الرياض",
-        "name": "مكتب أدق العقود للعقارات",
-        "phones": [
-          "0554969900"
-        ],
-        "status": "pending"
-      },
-      {
-        "id": "prior-qadisiyya-69",
-        "city": "الرياض",
-        "name": "مكتب سليميات المونسية للعقارات",
-        "phones": [
-          "0555102497",
-          "0503472563"
-        ],
-        "status": "pending"
-      },
-      {
-        "id": "prior-qadisiyya-70",
-        "city": "الرياض",
-        "name": "مكتب حي الرمال للعقار",
-        "phones": [
-          "0559796327",
-          "0535018089"
-        ],
-        "status": "pending"
-      },
-      {
-        "id": "prior-qadisiyya-71",
-        "city": "الرياض",
-        "name": "مكتب تحالف أشبيليا للعقارات",
-        "phones": [
-          "0505403262"
-        ],
-        "status": "pending"
-      },
-      {
         "id": "prior-qadisiyya-72",
         "city": "الرياض",
         "name": "مكتب نبراس البيت للعقارات",
@@ -82,29 +35,11 @@
         "status": "pending"
       },
       {
-        "id": "prior-qadisiyya-73",
-        "city": "الرياض",
-        "name": "مكتب عبدالله حمدان عواد المطيري للعقارات",
-        "phones": [
-          "0567366541"
-        ],
-        "status": "pending"
-      },
-      {
         "id": "prior-qadisiyya-74",
         "city": "الرياض",
         "name": "مكتب صهوة نجد للخدمات العقارية",
         "phones": [
           "0566233336"
-        ],
-        "status": "pending"
-      },
-      {
-        "id": "prior-qadisiyya-75",
-        "city": "الرياض",
-        "name": "مكتب بصمة وعد للتطوير والاستثمار العقاري",
-        "phones": [
-          "0555035552"
         ],
         "status": "pending"
       },
@@ -3802,5 +3737,6 @@
         "status": "pending"
       }
     ]
-  }
+  },
+  "note": "Count includes record-level decision objects even where older ledgers used `decision` instead of `status`; 7 such Riyadh records were removed from pending queue."
 }
