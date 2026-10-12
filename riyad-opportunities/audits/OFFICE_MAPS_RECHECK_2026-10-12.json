@@ -1,0 +1,126 @@
+{
+  "schema": "live-google-maps-recheck-log-v1",
+  "checkedAt": "2026-10-12",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "method": "Google Maps search by stored office name, recorded phone, and Riyadh; only same-name/card matches can support a correction.",
+  "records": [
+    {
+      "id": "gap-office-a465eda7bc",
+      "storedName": "مؤسسة ركائز الغد العقارية",
+      "storedPhone": "0537081014",
+      "query": "مؤسسة ركائز الغد العقارية 0537081014 الرياض",
+      "observations": [
+        {
+          "name": "شركة ركائز الإنشاء للتطوير العقاري",
+          "category": "مطوّر عقارات",
+          "phone": "+966 53 400 0029",
+          "coordinates": "24.8319086,46.6380216"
+        },
+        {
+          "name": "شركة ركائز الراية للتجارة والمقاولات",
+          "category": "وكيل عقاري",
+          "phone": "+966 55 773 2505",
+          "coordinates": "24.8127553,46.6034185"
+        },
+        {
+          "name": "Msakin Rikaz Real Estate Office - مساكن ركاز للعقارات",
+          "category": "وكالة عقارات",
+          "phone": "+966 55 058 0890",
+          "coordinates": "24.6905819,46.8193516"
+        }
+      ],
+      "decision": "unconfirmed_no_exact_match"
+    },
+    {
+      "id": "gap-office-a4cf48477f",
+      "storedName": "مؤسسة منصة ربوة الأعمال",
+      "storedPhone": "0560095629",
+      "query": "مؤسسة منصة ربوة الأعمال 0560095629 الرياض",
+      "observations": [
+        {
+          "name": "شركة منصة الأعمال",
+          "category": "خدمات الاستثمار",
+          "phone": "+966 55 208 8807",
+          "coordinates": "24.8324953,46.6268076"
+        },
+        {
+          "name": "جمعية الدعوة والإرشاد وتوعية الجاليات بالربوة",
+          "category": "مؤسسة دينية",
+          "phone": "+966 56 937 4986",
+          "coordinates": "24.6998633,46.7723447"
+        }
+      ],
+      "decision": "unconfirmed_no_exact_match"
+    },
+    {
+      "id": "gap-office-a55dd41a4b",
+      "storedName": "شركة الياسمين لإدارة و تطوير العقارات",
+      "storedPhone": "0544448322",
+      "query": "شركة الياسمين لإدارة و تطوير العقارات 0544448322 الرياض",
+      "observations": [
+        {
+          "name": "شركة درة الياسمين العقارية",
+          "category": "وكالة عقارات",
+          "phone": "+966 11 220 1190",
+          "coordinates": "24.5688056,46.659582"
+        },
+        {
+          "name": "شركة سمار العقارية",
+          "category": "وكالة عقارات تجارية",
+          "phone": "+966 50 001 7227",
+          "coordinates": "24.8133328,46.6295005"
+        },
+        {
+          "name": "خبراء الامانة للاستثمار والتطوير العقاري",
+          "category": "شركة إدارة عقارات",
+          "phone": "+966 54 444 3789",
+          "coordinates": "24.8792719,46.6186541"
+        }
+      ],
+      "decision": "unconfirmed_no_exact_match"
+    },
+    {
+      "id": "gap-office-bbca2edfb9",
+      "storedName": "مكتب اصالة الرياض للعقارات",
+      "storedPhone": "0505256562",
+      "query": "مكتب اصالة الرياض للعقارات 0505256562 الرياض",
+      "observations": [
+        {
+          "name": "اصالة القابضة",
+          "category": "مكتب الشركات",
+          "phone": "+966 9200 09467",
+          "coordinates": "24.711207,46.671732"
+        },
+        {
+          "name": "أصالة الخليج للتطوير والاستثمار العقاري",
+          "category": "مطوّر عقارات",
+          "phone": "+966 11 270 0434",
+          "coordinates": "24.694318,46.6802621"
+        }
+      ],
+      "decision": "unconfirmed_no_exact_match"
+    },
+    {
+      "id": "gap-office-d2adfaf252",
+      "storedName": "شركة مهارة للاستثمارات العقارية المحدودة",
+      "storedPhone": "0500977737",
+      "query": "شركة مهارة للاستثمارات العقارية المحدودة 0500977737 الرياض",
+      "observations": [
+        {
+          "name": "شركة مهارة للموارد البشرية",
+          "category": "وكالة توظيف عمالة مؤقتة",
+          "phone": "+966 9200 11151",
+          "coordinates": "24.7782482,46.689591"
+        },
+        {
+          "name": "Maharah Tower - مهارة للموارد البشرية - الإدارة العامة",
+          "category": "مركز أنشطة تجارية",
+          "phone": "+966 9200 11151",
+          "coordinates": "24.819329,46.6218559"
+        }
+      ],
+      "decision": "unconfirmed_no_exact_match"
+    }
+  ],
+  "mutation": "No office data changed; no existing phone removed; no Qadisiyah record touched."
+}
