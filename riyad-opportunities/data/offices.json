@@ -22510,7 +22510,14 @@
     "lat": 25.03834,
     "lon": 37.25918,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "unresolved_maps_ui_timeout",
+      "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D9%88%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A3%D9%85%D9%84%D8%AC",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card or search review",
+      "note": "فتح رابط Maps المباشر لكن البطاقة لم تكتمل؛ لا استنتاج حول الهاتف أو وجود المكتب."
+    }
   },
   {
     "id": "national-thirdparty-office-cid14226381716455478133",
@@ -22623,14 +22630,24 @@
     "city": "ضباء",
     "nb": "شارع ابن سيناء، ضبا، المملكة العربية السعودية",
     "phones": [
-      "0550890479"
+      "0550890479",
+      "0595299311"
     ],
     "web": "",
     "maps": "https://maps.google.com/maps?q=27.346200839356,35.703029252967",
     "lat": 27.3462,
     "lon": 35.70303,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "verified_name_phone_conflict_activity_unresolved",
+      "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A5%D8%AA%D9%82%D8%A7%D9%86%20%D8%B6%D8%A8%D8%A7%D8%A1%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%200550890479",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card or search review",
+      "note": "بطاقة باسم مكتب إتقان ضباء للخدمات العامة؛ الرقم المنشور 0595299311 يختلف عن المسجل 0550890479؛ تصنيف/مطابقة النشاط لم تحسم، حُفظ القديم وأضيف المنشور دون استبدال.",
+      "observedPhoneIntl": "0595299311",
+      "storedPhonePreserved": true
+    }
   },
   {
     "id": "national-secondary-office-haql-nebras-zain-0552258546",
@@ -22890,10 +22907,18 @@
     ],
     "web": "",
     "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A8%D8%B1%D9%88%D8%AC+%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9.%E2%80%AD/data=!4m7!3m6!1s0x15ac316570e7f74b:0x3ac5dc9e160703b4!8m2!3d27.3412212!4d35.718798!16s%2Fg%2F11np3jtlfv!19sChIJS_fncGUxrBURtAMHFp7cxTo?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
-    "lat": 27.34122,
-    "lon": 35.7188,
+    "lat": 27.3412212,
+    "lon": 35.718798,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_pin",
+      "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A8%D8%B1%D9%88%D8%AC+%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9./data=!4m7!3m6!1s0x15ac316570e7f74b:0x3ac5dc9e160703b4!8m2!3d27.3412212!4d35.718798!16s/g/11np3jtlfv!19sChIJS_fncGUxrBURtAMHFp7cxTo",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card or search review",
+      "note": "مكتب بروج الشمال للعقار والخدمات الإلكترونية؛ طريق الملك فهد، المقيطع، ضباء 49312، Plus 8PR9+FG؛ الهاتف 0552557912 مطابق؛ pin 27.3412212,35.718798.",
+      "observedPhoneIntl": "0552557912"
+    }
   },
   {
     "id": "national-google-office-ChIJlWLEyVIxrBURmsC2lSl6KD8",
@@ -22905,10 +22930,18 @@
     ],
     "web": "",
     "maps": "https://www.google.com/maps/place/%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7+%D8%A7%D9%84%D9%85%D8%A7%D8%B3%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15ac3152c9c46295:0x3f287a2995b6c09a!8m2!3d27.3477679!4d35.6921703!16s%2Fg%2F11kjjww0zs!19sChIJlWLEyVIxrBURmsC2lSl6KD8?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
-    "lat": 27.34777,
-    "lon": 35.69217,
+    "lat": 27.3477679,
+    "lon": 35.6921703,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_pin",
+      "source": "https://www.google.com/maps/place/%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7+%D8%A7%D9%84%D9%85%D8%A7%D8%B3%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/data=!4m7!3m6!1s0x15ac3152c9c46295:0x3f287a2995b6c09a!8m2!3d27.3477679!4d35.6921703!16s/g/11kjjww0zs!19sChIJlWLEyVIxrBURmsC2lSl6KD8",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card or search review",
+      "note": "الوسيط الماسي للعقارات؛ ضباء، Plus 8MXR+4V3؛ الهاتف 0565304500 مطابق؛ pin 27.3477679,35.6921703.",
+      "observedPhoneIntl": "0565304500"
+    }
   },
   {
     "id": "national-google-office-ChIJF0f8bJkxrBURbaC90CBimOQ",
@@ -22920,10 +22953,18 @@
     ],
     "web": "",
     "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%AF%D9%8A%D9%84%D8%A7%D9%86+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15ac31996cfc4717:0xe4986220d0bda06d!8m2!3d27.3501011!4d35.6911147!16s%2Fg%2F11kqlv_36g!19sChIJF0f8bJkxrBURbaC90CBimOQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
-    "lat": 27.3501,
-    "lon": 35.69112,
+    "lat": 27.3501011,
+    "lon": 35.6911147,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_pin",
+      "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%AF%D9%8A%D9%84%D8%A7%D9%86+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9/data=!4m7!3m6!1s0x15ac31996cfc4717:0xe4986220d0bda06d!8m2!3d27.3501011!4d35.6911147!16s/g/11kqlv_36g!19sChIJF0f8bJkxrBURbaC90CBimOQ",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card or search review",
+      "note": "مكتب ديلان للخدمات العقارية؛ حي البلد، ضباء، Plus 9M2R+2C؛ الهاتف 0534674947 مطابق؛ pin 27.3501011,35.6911147.",
+      "observedPhoneIntl": "0534674947"
+    }
   },
   {
     "id": "national-google-office-ChIJUWcVSKcxrBURgTAMZGa5vl8",
@@ -22935,10 +22976,18 @@
     ],
     "web": "",
     "maps": "https://www.google.com/maps/place/%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B9%D9%84%D9%8A+%D8%BA%D8%A7%D9%86%D9%85%E2%80%AD/data=!4m7!3m6!1s0x15ac31a748156751:0x5fbeb966640c3081!8m2!3d27.3558313!4d35.6963247!16s%2Fg%2F11vrrbnl_c!19sChIJUWcVSKcxrBURgTAMZGa5vl8?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
-    "lat": 27.35583,
-    "lon": 35.69633,
+    "lat": 27.3558313,
+    "lon": 35.6963247,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_pin",
+      "source": "https://www.google.com/maps/place/%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B9%D9%84%D9%8A+%D8%BA%D8%A7%D9%86%D9%85/data=!4m7!3m6!1s0x15ac31a748156751:0x5fbeb966640c3081!8m2!3d27.3558313!4d35.6963247!16s/g/11vrrbnl_c!19sChIJUWcVSKcxrBURgTAMZGa5vl8",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card or search review",
+      "note": "الوسيط العقاري علي غانم؛ علي بن أبي طالب، ضباء 49311، Plus 9M4W+8G؛ الهاتف 0558348048 مطابق؛ pin 27.3558313,35.6963247.",
+      "observedPhoneIntl": "0558348048"
+    }
   },
   {
     "id": "national-google-office-ChIJB2-geuYxrBURgR1tK4z-wlA",
@@ -22983,7 +23032,15 @@
     "lat": 27.35099,
     "lon": 35.69599,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_address",
+      "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9/data=!4m7!3m6!1s0x15ac310009856229:0xb6253bb088362f6d!8m2!3d27.3509864!4d35.6959902!16s/g/11lts2ffqj!19sChIJKWKFCQAxrBURbS82iLA7JbY",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card or search review",
+      "note": "بطاقة «مكتب للخدمات العامة» مصنفة وكالة عقارات، ضباء 9M2W+99X؛ الهاتف 0561923428 مطابق.",
+      "observedPhoneIntl": "0561923428"
+    }
   },
   {
     "id": "national-icuae-office-ChIJAQAAANMNbBUR-rxK4W0_xVA",
