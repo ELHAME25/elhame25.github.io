@@ -1,0 +1,283 @@
+{
+  "schema": "office-maps-audit-batch-v1",
+  "checkedAt": "2026-10-12",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "fieldsAudited": [
+    "Google Maps place card and link",
+    "published phone"
+  ],
+  "records": [
+    {
+      "id": "prior-qadisiyya-23",
+      "city": "الرياض",
+      "storedName": "السديس للعقارات",
+      "storedPhone": "0555286200",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+السديس+للعقارات/",
+      "mapsName": "مكتب السديس للعقارات",
+      "mapsPhone": "0553342211",
+      "decision": "same_name_card_phone_mismatch; phone correction not applied"
+    },
+    {
+      "id": "prior-qadisiyya-26",
+      "city": "الرياض",
+      "storedName": "مكتب أدق العقود للعقارات",
+      "storedPhone": "0554969900",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+أدق+العقود+للعقارات/",
+      "mapsName": "مكتب أدق العقود للعقارات",
+      "mapsPhone": "0554446191",
+      "decision": "same_name_card_phone_mismatch; phone correction not applied"
+    },
+    {
+      "id": "prior-qadisiyya-69",
+      "city": "الرياض",
+      "storedName": "مكتب سليميات المونسية للعقارات",
+      "storedPhone": "0555102497",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+سليميات+المونسية+للعقارات/",
+      "mapsName": "مكتب سليميات المونسية للعقارات",
+      "mapsPhone": "0503472563",
+      "decision": "same_name_card_phone_mismatch; phone correction not applied"
+    },
+    {
+      "id": "prior-qadisiyya-71",
+      "city": "الرياض",
+      "storedName": "مكتب تحالف أشبيليا للعقارات",
+      "storedPhone": "0505403262",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+تحالف+اشبيليا+للعقارات/",
+      "mapsName": "مكتب تحالف اشبيليا للعقارات",
+      "mapsPhone": "0112491199",
+      "decision": "same_name_card_phone_mismatch; phone correction not applied"
+    },
+    {
+      "id": "prior-qadisiyya-70",
+      "city": "الرياض",
+      "storedName": "مكتب حي الرمال للعقار",
+      "storedPhone": "0559796327",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+حي+الرمال+للعقار/",
+      "mapsName": "مكتب حي الرمال للعقار",
+      "mapsPhone": "0535018089",
+      "decision": "same_name_card_phone_mismatch; phone correction not applied"
+    },
+    {
+      "id": "prior-qadisiyya-73",
+      "city": "الرياض",
+      "storedName": "مكتب عبدالله حمدان عواد المطيري للعقارات",
+      "storedPhone": "0567366541",
+      "mapsUrl": "https://www.google.com/maps/search/مكتب+عبدالله+حمدان+عواد+المطيري+للعقارات+0567366541+الرياض",
+      "decision": "no matching place card; phone and pin unresolved"
+    },
+    {
+      "id": "prior-qadisiyya-75",
+      "city": "الرياض",
+      "storedName": "مكتب بصمة وعد للتطوير والاستثمار العقاري",
+      "storedPhone": "0555035552",
+      "mapsUrl": "https://www.google.com/maps/place/بصمة+وعد+للعقارات/",
+      "mapsName": "بصمة وعد للعقارات",
+      "mapsPhone": null,
+      "decision": "likely same-name card, no published phone; stored phone unresolved"
+    },
+    {
+      "id": "entity-275f48bd3b79",
+      "city": "الأحساء",
+      "storedName": "مكتب الرمز العقاري",
+      "storedPhone": "0530008990",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+الرمز+العقاري/@25.4116303,49.5561432,17z/",
+      "mapsName": "مكتب الرمز العقاري",
+      "mapsPhone": "0530008990",
+      "decision": "name and phone match"
+    },
+    {
+      "id": "entity-8dc4911d8200",
+      "city": "الأحساء",
+      "storedName": "مكتب جوهرة الأحساء العقاري",
+      "storedPhone": "0504924416",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+جوهرة+الأحساء+العقاري/@25.3289929,49.5852239,17z/",
+      "mapsName": "مكتب جوهرة الأحساء العقاري",
+      "mapsPhone": "0504924416",
+      "decision": "name and phone match; Maps category conflict"
+    },
+    {
+      "id": "national-bizmideast-office-12410588115371088232",
+      "city": "حفر الباطن",
+      "storedName": "مكتب تساهيل العقاري",
+      "storedPhone": "0137201200",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+تساهيل+العقاري/@28.3978518,45.9832922,17z/",
+      "mapsName": "مكتب تساهيل العقاري",
+      "mapsPhone": "0595220088",
+      "decision": "same-name card with phone mismatch; preserve stored phone"
+    },
+    {
+      "id": "national-bizmideast-office-14101492817249683567",
+      "city": "صفوى",
+      "storedName": "مكتب عبدالمنعم آل إبراهيم للعقارات",
+      "storedPhone": "0540692103",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+عبدالمنعم+آل+ابراهيم+للعقارات/@26.640365,49.9668675,17z/",
+      "mapsName": "مكتب عبدالمنعم آل إبراهيم للعقارات",
+      "mapsPhone": "0505713472",
+      "decision": "same-name card with phone mismatch; preserve stored phone"
+    },
+    {
+      "id": "national-bizmideast-office-12876476283457759163",
+      "city": "رأس تنورة",
+      "storedName": "Real Estate Office Mana",
+      "storedPhone": "0504941014",
+      "mapsUrl": "https://www.google.com/maps/search/Real+Estate+Office+Mana+Ras+Tanura",
+      "decision": "no matching office card; unresolved"
+    },
+    {
+      "id": "national-bizmideast-office-16247503295903319306",
+      "city": "رأس تنورة",
+      "storedName": "مكتب الخالدي العقاري",
+      "storedPhone": "0505846966",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+الخالدي+العقاري/@26.7104503,50.0670934,17z/",
+      "mapsName": "مكتب الخالدي العقاري",
+      "mapsPhone": "0505846966",
+      "decision": "name and phone match"
+    },
+    {
+      "id": "national-bizmideast-office-16705893963301748721",
+      "city": "حفر الباطن",
+      "storedName": "مكتب موادع العقاري",
+      "storedPhone": "0550011013",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+موادع+العقاري/@28.4542575,46.0062153,17z/",
+      "mapsName": "مكتب موادع العقاري",
+      "mapsPhone": "0550011013",
+      "decision": "phone matches; Maps category is government office, real-estate activity unresolved"
+    },
+    {
+      "id": "national-bizmideast-office-4522036932357491741",
+      "city": "حفر الباطن",
+      "storedName": "مكتب البركة العقاري",
+      "storedPhone": "0504852762",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+البركه+العقاري/@28.4486816,46.0218215,17z/",
+      "mapsName": "مكتب البركة العقاري",
+      "mapsPhone": "0504852762",
+      "decision": "name and phone match"
+    },
+    {
+      "id": "national-bizmideast-office-8147064932840021039",
+      "city": "صفوى",
+      "storedName": "مكتب احياء الشرقيه العقاري",
+      "storedPhone": "0561535771",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+احياء+الشرقيه+العقاري/@26.6485966,49.9287848,17z/",
+      "mapsName": "مكتب احياء الشرقيه العقاري",
+      "mapsPhone": "0561535771",
+      "decision": "phone matches; activity category conflict"
+    },
+    {
+      "id": "national-ejar-office-192174",
+      "city": "الجبيل",
+      "storedName": "مكتب حزام بن محمد الزهراني للعقارات",
+      "storedPhone": "0505792259",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+الزهراني+للخدمات+العقارية/@27.1225485,49.5533328,17z/",
+      "mapsName": "مكتب الزهراني للخدمات العقارية",
+      "mapsPhone": "0545522220",
+      "decision": "different name and phone; identity unresolved"
+    },
+    {
+      "id": "national-ejar-office-192201",
+      "city": "الجبيل",
+      "storedName": "مكتب خبرات للعقار",
+      "storedPhone": "0505903609",
+      "mapsUrl": "https://www.google.com/maps/search/مكتب+خبرات+للعقار+0505903609+الجبيل",
+      "decision": "no matching place card; unresolved"
+    },
+    {
+      "id": "national-ejar-office-192448",
+      "city": "الخبر",
+      "storedName": "مؤسسة عبدالعزيز أحمد الناصر للخدمات العقارية",
+      "storedPhone": "0563443777",
+      "mapsUrl": "https://www.google.com/maps/search/مؤسسة+عبدالعزيز+احمد+الناصر+للخدمات+العقارية+0563443777+الخبر",
+      "decision": "city-only result; no matching place card"
+    },
+    {
+      "id": "phase6-office-abd6cc0524a8",
+      "city": "حائل",
+      "storedName": "مكتب ثواني نجد العقاري",
+      "storedPhone": "0554608935",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+ثواني+نجد+العقاري/@27.4504317,41.6239583,17z/",
+      "mapsName": "مكتب ثواني نجد العقاري",
+      "mapsPhone": "0554608935",
+      "decision": "name and phone match"
+    },
+    {
+      "id": "phase6-office-3e0931e7308c",
+      "city": "تبوك",
+      "storedName": "مؤسسة فواصل تبوك العقاريه",
+      "storedPhone": "0555369552",
+      "mapsUrl": "https://www.google.com/maps/place/مؤسسة+فواصل+تبوك+العقاريه/@28.3872653,36.5878181,17z/",
+      "mapsName": "مؤسسة فواصل تبوك العقاريه",
+      "mapsPhone": "0555369552",
+      "decision": "name and phone match"
+    },
+    {
+      "id": "phase6-office-bd9606a2182f",
+      "city": "تبوك",
+      "storedName": "مكتب راحة الاعمار للعقار",
+      "storedPhone": "0591780808",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+راحة+الاعمار+للعقار/",
+      "mapsName": "مكتب راحة الاعمار للعقار",
+      "mapsPhone": "0591780808",
+      "decision": "name and phone match"
+    },
+    {
+      "id": "phase6-office-3688238a1944",
+      "city": "حائل",
+      "storedName": "مكتب منبر للعقارات",
+      "storedPhone": "0559505280",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+منبر+للعقارات/",
+      "mapsName": "مكتب منبر للعقارات",
+      "mapsPhone": "0559505280",
+      "decision": "name and phone match"
+    },
+    {
+      "id": "phase6-office-ddd368e897de",
+      "city": "حائل",
+      "storedName": "مكتب مباشر حائل العقاري",
+      "storedPhone": "0566631999",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+مباشر+حائل+العقاري/",
+      "mapsName": "مكتب مباشر حائل العقاري",
+      "mapsPhone": "0566631999",
+      "decision": "name and phone match"
+    },
+    {
+      "id": "phase6-office-656ca0952d04",
+      "city": "حائل",
+      "storedName": "مكتب اعمار حائل للعقارات",
+      "storedPhone": "0506655466",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+اعمار+حائل+للعقارات/",
+      "mapsName": "مكتب اعمار حائل للعقارات",
+      "mapsPhone": "0506655466",
+      "decision": "name and phone match"
+    },
+    {
+      "id": "entity-e82cfda6e8a7",
+      "city": "حائل",
+      "storedName": "مازال العقارية",
+      "storedPhone": "0533418188",
+      "mapsUrl": "https://www.google.com/maps/place/مكتب+مازال+للعقارات/",
+      "mapsName": "مكتب مازال للعقارات",
+      "mapsPhone": "0533981881",
+      "decision": "possible duplicate; published number matches canonical related record; preserve old phone pending identity resolution"
+    },
+    {
+      "id": "entity-d9171026a8d0",
+      "city": "حائل",
+      "storedName": "مكتب العبيد العقاري",
+      "storedPhone": "0552554532",
+      "mapsUrl": "https://www.google.com/maps/search/مكتب+العبيد+العقاري+0552554532+حائل",
+      "decision": "no matching card; unrelated construction office excluded; unresolved"
+    },
+    {
+      "id": "entity-df152bc53422",
+      "city": "جدة",
+      "storedName": "بن سعود للعقار",
+      "storedPhone": "0566345999",
+      "mapsUrl": "https://www.google.com/maps/?cid=11908823938881024999",
+      "mapsName": "بن سعود للعقار",
+      "mapsPhone": "0566345999",
+      "decision": "name and phone match"
+    }
+  ],
+  "scopeNote": "All regions including Riyadh/Qadisiyah are in scope. Only direct, readable Google Maps cards are marked matched. Number mismatches and category/identity conflicts remain unresolved; no phone was removed.",
+  "dataChangesApplied": 0
+}
