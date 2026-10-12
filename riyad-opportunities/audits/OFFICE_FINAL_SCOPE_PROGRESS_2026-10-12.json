@@ -20,8 +20,8 @@
       "noSufficientCardEvidenceUnresolved": 12
     }
   },
-  "finalIndividualDecisionCount": 1111,
-  "remainingWithoutIndividualDecision": 413,
+  "finalIndividualDecisionCount": 1152,
+  "remainingWithoutIndividualDecision": 372,
   "phonePolicy": "No previously stored number was deleted in this final wave; different published numbers were retained alongside the stored value.",
   "changesOnBranch": [
     "Maps links, pin coordinates and activity normalized where direct card evidence and identity matched",
@@ -34,14 +34,20 @@
     "target": "full repository QA and desktop/mobile review"
   },
   "latestBranchHead": "b76efe03ffa21ca70b07b67e8537b29e490c063e",
-  "countBasis": "Unique office IDs with a per-record status or evidence-backed decision in committed office audit ledgers; updated to count older decisions that use decision rather than status.",
-  "recordsWithSavedIndividualOutcome": 1111,
-  "recordsWithoutSavedIndividualOutcome": 413,
+  "countBasis": "1111 unique outcomes from committed audit ledgers plus 41 distinct remaining-candidate IDs now carrying individual mapsAudit records in data/offices.json; includes unresolved decisions, excludes the uncommitted wave5 snapshot.",
+  "recordsWithSavedIndividualOutcome": 1152,
+  "recordsWithoutSavedIndividualOutcome": 372,
   "regionalRemaining": {
-    "riyadh": 7,
-    "west": 74,
-    "east": 40,
-    "north": 49,
-    "southCentral": 243
+    "riyadh": 0,
+    "west": 59,
+    "east": 29,
+    "north": 43,
+    "southCentral": 241
+  },
+  "recalculation": {
+    "at": "2026-10-12",
+    "baseLedgerCount": 1111,
+    "newCandidateOutcomes": 41,
+    "headAtCalculation": "d1ab1ac395f700d56fd28dbcf2b74fd25a84890d"
   }
 }
