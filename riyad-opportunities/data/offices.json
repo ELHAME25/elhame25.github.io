@@ -22541,8 +22541,7 @@
     "city": "ضباء",
     "nb": "تبوك، ضباء، شارع الشيخ محمد بن عبدالوهاب",
     "phones": [
-      "0556593918",
-      "0506581546"
+      "0556593918"
     ],
     "web": "",
     "maps": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%81%D9%8A%D8%B5%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B6%D8%A8%D8%A7%D8%A1%200556593918",
@@ -22550,13 +22549,11 @@
     "lon": null,
     "sec": "",
     "mapsAudit": {
-      "status": "verified_name_activity_phone_conflict_preserved",
+      "status": "unresolved_name_phone_identity_conflict",
       "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%81%D9%8A%D8%B5%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B6%D8%A8%D8%A7%D8%A1%200556593918",
       "checkedAt": "2026-10-12",
-      "reference": "Google Maps place card or search review",
-      "note": "بطاقة مكتب الفيصل للعقارات، وكالة عقارات، 7780 شارع الشيخ محمد بن عبدالوهاب، ضباء، Plus 8PQ8+2M؛ Maps يعرض 0506581546 بدل 0556593918؛ حفظ الرقم القديم وإضافة المنشور.",
-      "observedPhoneIntl": "0506581546",
-      "storedPhonePreserved": true
+      "reference": "Google Maps search/card review",
+      "note": "ظهرت بطاقة باسم قريب/مطابق جزئيًا في ضباء لكن رقمها 0506581546 يخالف المسجل، ولم يثبت أنها المكتب نفسه؛ لم يُربط الرقم المنشور بالسجل ولم يُحذف الرقم المسجل."
     }
   },
   {
@@ -22632,11 +22629,11 @@
     "sec": "",
     "loc": "pt",
     "mapsAudit": {
-      "status": "unresolved_maps_ui_timeout",
-      "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D9%88%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A3%D9%85%D9%84%D8%AC",
+      "status": "unresolved_maps_card_content_timeout",
+      "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9+%D9%88%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9/data=!4m7!3m6!1s0x15b0a75255de2afd:0x1649840b81f2d221!8m2!3d25.0383353!4d37.259181!16s/g/11rsc05j_w!19sChIJ_SreVVKnsBURIdLygQuESRY?authuser=0&hl=ar",
       "checkedAt": "2026-10-12",
       "reference": "Google Maps place card or search review",
-      "note": "فتح رابط Maps المباشر لكن البطاقة لم تكتمل؛ لا استنتاج حول الهاتف أو وجود المكتب."
+      "note": "تظهر صفحة Maps اسم مكتب الساعة ودبوسًا في رابطها، لكن التطبيق حمّل خريطة افتراضية ولم يعرض تفاصيل البطاقة أو رقم الهاتف؛ لم يُعتمد الدبوس ولا الرقم."
     }
   },
   {
@@ -22719,7 +22716,14 @@
     "lat": 27.34521,
     "lon": 35.71136,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "unresolved_name_match_phone_location_unverified",
+      "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B9%D9%8A%D8%B3%D9%88%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9%20%D8%B6%D8%A8%D8%A7%D8%A1%200500517062",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card or search review",
+      "note": "ظهرت نتيجة ذات اسم قريب «مكتب العيسوي للعقار والخدمات الإلكترونية ضباء» دون رقم/موقع كافٍ لإثبات أنها السجل؛ لا تغيير."
+    }
   },
   {
     "id": "national-thirdparty-office-duba-0537152989",
@@ -23119,10 +23123,18 @@
     ],
     "web": "",
     "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A5%D8%AA%D9%82%D8%A7%D9%86+%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15ac31e67aa06f07:0x50c2fe8c2b6d1d81!8m2!3d27.3474217!4d35.7059508!16s%2Fg%2F11x6xt36xt!19sChIJB2-geuYxrBURgR1tK4z-wlA?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
-    "lat": 27.34742,
-    "lon": 35.70595,
+    "lat": 27.3474217,
+    "lon": 35.7059508,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_pin",
+      "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A5%D8%AA%D9%82%D8%A7%D9%86+%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9/@27.3474217,35.7059508,17z/data=!3m1!4b1!4m6!3m5!1s0x15ac31e67aa06f07:0x50c2fe8c2b6d1d81!8m2!3d27.3474217!4d35.7059508!16s/g/11x6xt36xt?authuser=0&hl=ar",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card or search review",
+      "note": "مكتب إتقان الشمال للخدمات العقارية؛ الأمير فهد بن سلطان، المقيطع، ضباء 49311؛ الهاتف 0507064581 مطابق؛ Plus 8PW4+X9، pin 27.3474217,35.7059508.",
+      "observedPhoneIntl": "0507064581"
+    }
   },
   {
     "id": "national-google-office-ChIJKYxQdgAxrBUR6qMfztPGmDw",
@@ -23134,10 +23146,18 @@
     ],
     "web": "",
     "maps": "https://www.google.com/maps/place/%D8%AF%D8%B1%D8%A9+%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%87%E2%80%AD/data=!4m7!3m6!1s0x15ac310076508c29:0x3c98c6d3ce1fa3ea!8m2!3d27.3520254!4d35.6885927!16s%2Fg%2F11vrcp840p!19sChIJKYxQdgAxrBUR6qMfztPGmDw?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
-    "lat": 27.35203,
-    "lon": 35.68859,
+    "lat": 27.3520254,
+    "lon": 35.6885927,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_pin",
+      "source": "https://www.google.com/maps/place/%D8%AF%D8%B1%D8%A9+%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%87/data=!4m7!3m6!1s0x15ac310076508c29:0x3c98c6d3ce1fa3ea!8m2!3d27.3520254!4d35.6885927!16s/g/11vrcp840p!19sChIJKYxQdgAxrBUR6qMfztPGmDw?authuser=0&hl=ar",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card or search review",
+      "note": "درة المعاملات للخدمات العامة؛ الهاتف 0500713364 مطابق؛ KIAA2628 6696 خالد بن الوليد، ضباء، Plus 9M2Q+RC؛ pin 27.3520254,35.6885927.",
+      "observedPhoneIntl": "0500713364"
+    }
   },
   {
     "id": "national-google-office-ChIJKWKFCQAxrBURbS82iLA7JbY",
@@ -23632,7 +23652,15 @@
     "lat": 25.02605,
     "lon": 37.26587,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "partial_name_phone_match_location_activity_unconfirmed",
+      "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%B9%D8%AA%D9%8A%D9%82/data=!4m7!3m6!1s0x15b0a76faf6b28bf:0xcb5f34a4bd4ca688!8m2!3d25.0260548!4d37.2658744!16s/g/11sz5kyrvp!19sChIJvyhrr2-nsBURiKZMvaQ0X8s?authuser=0&hl=ar",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card or search review",
+      "note": "بطاقة باسم مكتب عبدالله عتيق أظهرت هاتف 0598040926 مطابقًا؛ تعذر تحميل النشاط والعنوان لتأكيد موقع أملج، لذا لم يُعدّل الدبوس.",
+      "observedPhoneIntl": "0598040926"
+    }
   },
   {
     "id": "national-icuae-office-ChIJDRLvGASnsBURTHMswC-dPJo",
