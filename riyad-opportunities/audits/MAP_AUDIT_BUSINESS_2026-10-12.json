@@ -1,0 +1,214 @@
+{
+  "schema": "maps-audit-business-batch-v1",
+  "audit_date": "2026-10-12",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "head_at_start": "4da2ee2b2cfd9ce09a43bf1ee0161effdf5a81a4",
+  "counts_before": {
+    "map_targets": 4059,
+    "opened_unique": 319,
+    "verified_correct": 131,
+    "corrected_and_retested": 35,
+    "unresolved_after_open": 188,
+    "not_opened": 3740
+  },
+  "records": [
+    {
+      "id": "cp-cced7c77d3",
+      "name": "شركة دار واعمار للاستثمار والتطوير",
+      "city": "الرياض",
+      "current_maps_opened": true,
+      "current_maps_matched": false,
+      "status": "unresolved",
+      "evidence": "Query الحالي لم يعرض بطاقة. رابط Maps مباشر من رابط الموقع الرسمي فتح بطاقة مكتب الرياض الإقليمي في حي حطين، 7397 الأمير تركي بن عبدالعزيز الأول؛ هاتف البطاقة 920004077 والموقع darwaemaar.com. لا يثبت أنه مركز البيع المقصود أو مقر الشركة. لذلك لم أستبدل رابط السجل/أضف دبوسًا ولم أعدّه إصلاحًا.",
+      "alternative_maps_observed": "https://www.google.com/maps/place/Dar%2BWa%2BEmaar%2B%7C%D8%AF%D8%A7%D8%B1%2B%D9%88%D8%A7%D8%B9%D9%85%D8%A7%D8%B1%E2%80%AD/@24.7612619,46.6044753,15z/data=!4m6!3m5!1s0x3e2ee39cede4ba53:0xae4bd164a53fe22c!8m2!3d24.7612619!4d46.6044753!16s%2Fg%2F11s7s44pm9?entry=ttu&hl=en-SA",
+      "fields": {
+        "phone": {
+          "verified": "920004077",
+          "source": "https://darwaemaar.com/contact/"
+        },
+        "unverified_phones": [
+          "0552629774",
+          "0540401113"
+        ],
+        "website": {
+          "status": "official",
+          "url": "https://darwaemaar.com/contact/"
+        },
+        "whatsapp": {
+          "status": "stored shortlink not independently resolved",
+          "stored": "https://wa.me/message/MFDPXBNPC5ZWM1",
+          "official_candidate": "https://api.whatsapp.com/send?phone=966920004077",
+          "note": "رابط الشركة الرسمي إلى واتساب لا يثبت وجهة الرابط القصير المخزن."
+        }
+      },
+      "sources": [
+        "https://darwaemaar.com/contact/"
+      ]
+    },
+    {
+      "id": "cp-4737529953",
+      "name": "شركة عبد الرحمن سعد الراشد وأولاده",
+      "city": "الرياض",
+      "current_maps_opened": true,
+      "current_maps_matched": true,
+      "status": "verified_correct",
+      "evidence": "بطاقة Maps فعلية مطابقة بصيغة شركة عبد الرحمن سعد الراشد القابضة | ARTAR، طريق الإمام سعود بن عبدالعزيز بن محمد، الرياض؛ دليل ثانوي يحدد حي المحمدية. بطاقة الماب تعرض ARTAR.com.sa ورقم 0114646111؛ ويب alrashid-properties.sa الرسمي يربط صراحة علامة الراشد بالشركة، لكن لا يوجد إثبات أن رقم/الرابط المخزن في WA والجوالين يرجع للشركة.",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86%20%D8%B3%D8%B9%D8%AF%20%D8%A7%D9%84%D8%B1%D8%A7%D8%B4%D8%AF%20%D9%88%20%D8%A3%D9%88%D9%84%D8%A7%D8%AF%D9%87%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+      "fields": {
+        "phone": {
+          "status": "stored phones not confirmed; official contact shows different number 920027239",
+          "source": "https://alrashid-properties.sa/en/contact-us/"
+        },
+        "phones_unverified": [
+          "0595554005",
+          "0530166333"
+        ],
+        "website": {
+          "status": "official page opened",
+          "url": "https://alrashid-properties.sa/en/contact-us/"
+        },
+        "whatsapp": {
+          "status": "shortlink not independently resolved",
+          "stored": "https://wa.me/message/MFDPXBNPC5ZWM1"
+        }
+      },
+      "sources": [
+        "https://alrashid-properties.sa/en/contact-us/",
+        "https://alrashid-properties.sa/communities/al-narjis-view-1",
+        "https://gludo.org/business-directory/2212-abdul-rahman-saad-al-rashid-co---artar"
+      ]
+    },
+    {
+      "id": "cp-3bf09a8d8c",
+      "name": "شركة المشاريع السكنية للتطوير العقاري",
+      "city": "جدة",
+      "current_maps_opened": true,
+      "current_maps_matched": false,
+      "status": "unresolved",
+      "evidence": "الاستعلام لم يعرض بطاقة. رابط Maps الرسمي للموقع كان إحداثية فقط 21.7677456,39.1151412 بلا بطاقة اسم؛ لا يُحتسب إثبات موقع.",
+      "fields": {
+        "phone": {
+          "verified_from_official_site": "920008699",
+          "source": "https://almousadev.com/contact"
+        },
+        "whatsapp": {
+          "status": "official site lists number but destination not separately opened",
+          "value": "966500654888",
+          "source": "https://almousadev.com/contact"
+        },
+        "website": {
+          "status": "official",
+          "url": "https://almousadev.com/contact"
+        },
+        "wa_link": {
+          "status": "not independently destination-tested"
+        }
+      },
+      "sources": [
+        "https://almousadev.com/contact",
+        "https://almousadev.com/projects/khaleej-aseel"
+      ]
+    },
+    {
+      "id": "cp-ee28fb1fee",
+      "name": "شركة صفا للاستثمار",
+      "city": "الرياض",
+      "current_maps_opened": true,
+      "current_maps_matched": false,
+      "status": "unresolved",
+      "evidence": "Query لم يحمل بطاقة مقروءة. تذكر ملاحظة سابقة بطاقتي المبيعات والإدارة العامة، لكنها ليست تحققًا جديدًا في هذه الجولة.",
+      "fields": {
+        "phone": {
+          "verified_official": "920001912",
+          "source": "https://safainv.sa/contact-us"
+        },
+        "phones_unverified": [
+          "0540774048",
+          "0553005905"
+        ],
+        "website": {
+          "status": "official",
+          "url": "https://safainv.sa/contact-us"
+        },
+        "whatsapp": {
+          "status": "no stored link"
+        }
+      },
+      "sources": [
+        "https://safainv.sa/contact-us"
+      ]
+    },
+    {
+      "id": "cp-df80f17ca7",
+      "name": "شركة مجموعة مبتكرون المتحدة للتطوير والاستثمار",
+      "city": "الرياض",
+      "current_maps_opened": true,
+      "current_maps_matched": false,
+      "status": "unresolved",
+      "evidence": "Query لم يعرض بطاقة. الرابط المضمن في صفحة الشركة لم يعط بطاقة قابلة للتحقق.",
+      "fields": {
+        "phone": {
+          "verified_official": "920010493",
+          "source": "https://www.mobtakeron.com.sa/تواصل-معنا/"
+        },
+        "website": {
+          "status": "official",
+          "url": "https://www.mobtakeron.com.sa/تواصل-معنا/"
+        },
+        "whatsapp": {
+          "status": "no stored link"
+        }
+      },
+      "sources": [
+        "https://www.mobtakeron.com.sa/تواصل-معنا/"
+      ]
+    },
+    {
+      "id": "cp-b1a12a88e4",
+      "name": "شركة التطوير الشامل للتطوير العقاري",
+      "city": "الرياض",
+      "current_maps_opened": true,
+      "current_maps_matched": true,
+      "status": "verified_correct",
+      "evidence": "بطاقة فعلية مطابقة بالاسم والعنوان 8042 طريق الملك عبدالعزيز، الرياض (لا يظهر الحي). البطاقة تعرض tatwirco.sa ورقم 0554595559، لكن الموقع الرسمي يؤكد رقم 920020156؛ لا يستبدل رقم السجل أو رقم البطاقة دون حسم مصدره.",
+      "fields": {
+        "phones": {
+          "official_verified": [
+            "920020156"
+          ],
+          "unverified": [
+            "0554841401",
+            "0575004302"
+          ],
+          "maps_card_unmatched": [
+            "0554595559"
+          ]
+        },
+        "website": {
+          "status": "official",
+          "url": "https://tatwirco.sa/privacy-policy-ar/"
+        },
+        "whatsapp": {
+          "status": "no stored link"
+        }
+      },
+      "sources": [
+        "https://tatwirco.sa/privacy-policy-ar/"
+      ]
+    }
+  ],
+  "counts_after": {
+    "map_targets": 4059,
+    "opened_unique": 325,
+    "verified_correct": 133,
+    "corrected_and_retested": 35,
+    "unresolved_after_open": 192,
+    "not_opened": 3734
+  },
+  "notes": [
+    "ستة استعلامات Maps حالية فُتحت؛ اثنان أظهرا بطاقتين اسميتين مطابقتين، وأربعة لم تنتج بطاقة مثبتة. رابط الشركة البديل لدار واعمار أظهر مكتبًا إقليميًا لكنه لا يحدد مركز البيع، لذا لا يعد دبوسًا مصححًا.",
+    "لم يتم تعديل السجلات أو حذفها في هذه الدفعة. الأرقام، الواتساب والمواقع سجلت حالة كل حقل مستقلًا؛ ذكر رقم في صفحة رسمية لا يعني أن وجهة رابط واتساب اختبرت.",
+    "أرقام العدّ التراكمية مشتقة من baseline السابق في MAP_AUDIT_BATCH_2026-10-12-02.json؛ ولا تشمل المشاريع الستة التي بحثها وكيل المشاريع دون فتح Maps."
+  ]
+}
