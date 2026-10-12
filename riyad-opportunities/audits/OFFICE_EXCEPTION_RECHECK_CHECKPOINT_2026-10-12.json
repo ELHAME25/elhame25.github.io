@@ -24,12 +24,12 @@
     "decisionCounts": {
       "fullyVerified": 1,
       "corrected": 0,
-      "partial": 13,
-      "unresolved": 165
+      "unresolved": 178
     },
     "directPlaceCardsRead": 15,
     "patchesProposed": 0,
-    "notes": "The direct card recheck was interrupted by repeated Google Maps UI protocol timeouts. An unresolved decision means this recheck did not establish identity/location/phone; it does not override earlier committed evidence. Some partial cards displayed a phone matching the stored value but left activity or pin evidence incomplete."
+    "notes": "The direct card recheck was interrupted by repeated Google Maps UI protocol timeouts. Unresolved includes records with partial field evidence; none are accepted as partially verified. Some cards displayed a phone matching the stored value but did not establish all required fields. This recheck does not override earlier committed evidence.",
+    "decisionPolicy": "A record counts as verified only when identity, real-estate activity, phone, and map pin are all confirmed. Any missing or conflicting required field remains unresolved; field observations are evidence notes only."
   },
   "application": {
     "officesJsonChanged": false,
@@ -52,6 +52,6 @@
   },
   "closure": {
     "allExceptionsResolved": false,
-    "reason": "165 target IDs remain unresolved after the current UI recheck; do not represent all office data as confirmed."
+    "reason": "178 target IDs remain unresolved under the full-record verification rule. Do not represent all office data as confirmed."
   }
 }
