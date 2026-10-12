@@ -2,10 +2,10 @@
   "schema": "office-maps-unreviewed-candidates-v1",
   "generatedAt": "2026-10-12",
   "branch": "fix/scope-counts-nhc-20261010",
-  "sourceHead": "fa521c4d06669e8c3f9ffd2d6e5528927d1cb08e",
+  "sourceHead": "90fc0cd00364fcc470bf307ececf04eeaf63e8d4",
   "inventory": 1524,
-  "explicitOutcomesCount": 263,
-  "withoutRecordedIndividualOutcome": 150,
+  "explicitOutcomesCount": 278,
+  "withoutRecordedIndividualOutcome": 135,
   "method": "Rows are IDs not found with an explicit status field across committed OFFICE audit checkpoints/ledgers at sourceHead. These are candidates for individual Maps audit; do not infer correct or incorrect from absence.",
   "regionalCounts": {
     "riyadh": {
@@ -30,8 +30,8 @@
     },
     "southCentral": {
       "total": 243,
-      "decisionRecorded": 94,
-      "remainingWithoutDecision": 149
+      "decisionRecorded": 109,
+      "remainingWithoutDecision": 134
     }
   },
   "assignments": {
@@ -2422,7 +2422,7 @@
         "phones": [
           "0559595738"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address_pin"
       },
       {
         "id": "national-ejar-office-195555",
@@ -2431,7 +2431,7 @@
         "phones": [
           "0566669896"
         ],
-        "status": "pending"
+        "status": "unresolved_no_matching_maps_card"
       },
       {
         "id": "national-ejar-office-198603",
@@ -2440,7 +2440,7 @@
         "phones": [
           "0500671811"
         ],
-        "status": "pending"
+        "status": "unresolved_identity_phone_conflict"
       },
       {
         "id": "national-ejar-office-197226",
@@ -2449,7 +2449,7 @@
         "phones": [
           "0538356309"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-194497",
@@ -2458,7 +2458,7 @@
         "phones": [
           "0552335512"
         ],
-        "status": "pending"
+        "status": "unresolved_no_matching_maps_card"
       },
       {
         "id": "national-ejar-office-194223",
@@ -2467,7 +2467,7 @@
         "phones": [
           "0532909084"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-192117",
@@ -2476,7 +2476,7 @@
         "phones": [
           "0544041333"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-193129",
@@ -2485,7 +2485,7 @@
         "phones": [
           "0541123718"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-196558",
@@ -2494,7 +2494,7 @@
         "phones": [
           "0500982411"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-192537",
@@ -2503,7 +2503,7 @@
         "phones": [
           "0508961112"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-197107",
@@ -2512,7 +2512,7 @@
         "phones": [
           "0555726744"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-194158",
@@ -2521,7 +2521,7 @@
         "phones": [
           "0506308963"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-195166",
@@ -2530,7 +2530,7 @@
         "phones": [
           "0559024555"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-196309",
@@ -2539,7 +2539,7 @@
         "phones": [
           "0566601372"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-192834",
@@ -2548,7 +2548,7 @@
         "phones": [
           "0500667377"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-196051",
