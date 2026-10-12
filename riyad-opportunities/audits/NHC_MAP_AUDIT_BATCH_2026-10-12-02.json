@@ -1,0 +1,152 @@
+{
+  "schema": "record-map-audit-batch-v1",
+  "audit_date": "2026-10-12",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "records": [
+    {
+      "id": "NHC:الجنى|جدة",
+      "name": "وجهة الجنى",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_neighborhood",
+        "evidence": "Maps Place وجهة الجنى - سكني at R593+98, north Jeddah; name and city align with NHC north-Jeddah description, but exact neighborhood/boundary is not confirmed."
+      },
+      "phone": {
+        "status": "not listed/not verified"
+      },
+      "whatsapp": {
+        "status": "not listed"
+      },
+      "website": {
+        "status": "official NHC page available"
+      },
+      "sources": [
+        "https://www.nhc.sa/ar/real-estate-development/suburbs/47697/15",
+        "https://www.nhc.sa/media-center/news/47705/"
+      ]
+    },
+    {
+      "id": "NHC:الرشا|الدمام",
+      "name": "وجهة الرشا",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_sales_center_not_community",
+        "evidence": "Maps showed مركز مبيعات وجهة الرشا - NHC at 26.3799375,50.0523125 / 93H2+XWC, separate from the residential community; not accepted as the community pin."
+      },
+      "phone": {
+        "status": "not listed/not verified"
+      },
+      "whatsapp": {
+        "status": "null/not listed"
+      },
+      "website": {
+        "status": "official NHC page available"
+      },
+      "sources": [
+        "https://www.nhc.sa/real-estate-development/suburbs/47687/14"
+      ]
+    },
+    {
+      "id": "NHC:السديم|خميس مشيط",
+      "name": "وجهة السديم",
+      "map": {
+        "opened": true,
+        "readable": false,
+        "matched": false,
+        "status": "unresolved_map_card_timeout",
+        "evidence": "Maps URL yielded place title/location but place card could not be read after retry; no match credited."
+      },
+      "phone": {
+        "status": "not listed/not verified"
+      },
+      "whatsapp": {
+        "status": "null/not listed"
+      },
+      "website": {
+        "status": "official NHC page available"
+      },
+      "sources": [
+        "https://www.nhc.sa/real-estate-development/suburbs/293/16"
+      ]
+    },
+    {
+      "id": "NHC:وديانا|الطائف",
+      "name": "وجهة وديانا",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_neighborhood",
+        "evidence": "Named Maps place at حي الخضيرة، الطائف matches name/city; NHC describes it as الحوية شمال الطائف. No official source located to reconcile neighborhood, so not fully verified."
+      },
+      "phone": {
+        "status": "no stored phone; card none"
+      },
+      "whatsapp": {
+        "status": "null/not listed"
+      },
+      "website": {
+        "status": "official NHC pages available"
+      },
+      "sources": [
+        "https://www.nhc.sa/ar/real-estate-development/communities/47516",
+        "https://nhc.sa/ar/real-estate-development/projects/47517/"
+      ]
+    },
+    {
+      "id": "NHC:قمرة|صفوى",
+      "name": "وجهة قمرة",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_sales_center_not_community",
+        "evidence": "Maps named result مركز مبيعات وجهة قمره at JXWR+7W, Safwa; sales-center pin, not community pin; no exact community location."
+      },
+      "phone": {
+        "status": "not listed/not verified"
+      },
+      "whatsapp": {
+        "status": "null/not listed"
+      },
+      "website": {
+        "status": "official NHC page available"
+      },
+      "sources": [
+        "https://www.nhc.sa/ar/real-estate-development/communities/42944/"
+      ]
+    },
+    {
+      "id": "NHC:النخلة|عنيزة",
+      "name": "مشروع النخلة",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "wrong_place_result_unresolved",
+        "evidence": "Current Maps search returns a hotel/resort named النخلة in حي الحمراء, Unaizah; unrelated to NHC project. Project retained; no replacement pin without proof."
+      },
+      "phone": {
+        "status": "no project phone; Maps phone belongs to unrelated hotel and excluded"
+      },
+      "whatsapp": {
+        "status": "null/not listed"
+      },
+      "website": {
+        "status": "official NHC project page available"
+      },
+      "sources": [
+        "https://www.nhc.sa/ar/real-estate-development/projects/47325/"
+      ]
+    }
+  ],
+  "counts": {
+    "opened_maps": 6,
+    "place_cards_readable": 5,
+    "fully_matched": 0,
+    "verified_correct_pins": 0,
+    "wrong_links_corrected_and_retested": 0,
+    "unresolved": 6,
+    "not_opened_in_batch": 0
+  },
+  "note": "All rows retained. Search surfaces are not treated as project pins. An unrelated hotel phone was not transferred."
+}
