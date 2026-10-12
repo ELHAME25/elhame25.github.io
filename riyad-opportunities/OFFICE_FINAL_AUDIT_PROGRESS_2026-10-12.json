@@ -1,0 +1,29 @@
+{
+  "schema": "office-final-audit-progress-v1",
+  "date": "2026-10-12",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "baseCommit": "4c032904550998a9612ce0ae377c95f8e473850b",
+  "inventory": {
+    "total": 1524,
+    "uniqueIds": 1524,
+    "previouslyVerifiedWithSufficientSavedEvidence": 213,
+    "coveredByPreviousEvidenceOrCurrentCheckpoints": 527,
+    "remainingWithoutSavedIndividualOutcome": 997,
+    "qadisiyahProtectedIds": 22
+  },
+  "currentContinuation": {
+    "recordsWithAppliedCorrections": 37,
+    "oldPhoneLosses": 0,
+    "qadisiyahRecordsChanged": 0,
+    "fullQaDeferredUntilMilestone": true
+  },
+  "lanes": {
+    "riyadhOutsideQadisiyah": {"eligible": 55, "checked": 55, "locationVerified": 45, "phoneMatched": 38, "needsCorrection": 24, "excludedNonRealEstate": 3, "unconfirmed": 10},
+    "west": {"scope": 102, "covered": 101, "protectedQadisiyah": 1, "checkpointNewIds": 91, "fullyVerified": 45, "activityConflicts": 2, "correctionCandidates": 2, "partial": 22, "unresolved": 22},
+    "east": {"scope": 310, "checkpointIds": 164, "remaining": 146},
+    "north": {"checkpointIds": 86},
+    "south": {"checkpointIds": 25}
+  },
+  "status": "in_progress_not_ready_for_merge_or_publish"
+}
