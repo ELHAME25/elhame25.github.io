@@ -5,8 +5,8 @@
   "branch": "fix/scope-counts-nhc-20261010",
   "sourceHead": "8de69c5f3e7595b947a985a54a6f42db5aed2b44",
   "inventory": 1524,
-  "latestSavedOutcomes": 1524,
-  "remainingCount": 0,
+  "latestSavedOutcomes": 1104,
+  "remainingCount": 420,
   "selectionBasis": "Latest Wave5 progress file lists remainingCities: Dhahran 8, Safwa 7, Saihat 7, Umm al-Hammam 1, Thuqbah 7, Buqayq 1, Ras Tanura 3. These 34 IDs partition those city counts.",
   "lanes": [
     {
@@ -93,10 +93,19 @@
   "publish": false,
   "latestBranchHeadBeforeClose": "148972f1f8c5592b86cd99670ef2a604348e93f7",
   "decisionRecordedCount": 34,
-  "recordsWithoutSavedIndividualOutcome": 0,
+  "recordsWithoutSavedIndividualOutcome": 420,
   "decisionCounts": {
     "verifiedOnMaps": 19,
     "phoneOrIdentityConflictPartiallyResolved": 3,
     "noSufficientCardEvidenceUnresolved": 12
+  },
+  "latestBranchHead": "2e4adae33f26d0ba0f87c0483601154987a7f5d4",
+  "countBasis": "Committed audit files contain 1104 unique explicit per-record decisions at latest reconciliation; these 34 outcomes are included. 420 distinct IDs remain without recorded individual audit outcome.",
+  "remainingRegionalCounts": {
+    "riyadh": 14,
+    "west": 74,
+    "east": 40,
+    "north": 49,
+    "southCentral": 243
   }
 }
