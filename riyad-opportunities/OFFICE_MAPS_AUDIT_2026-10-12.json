@@ -1,0 +1,30 @@
+{
+  "audit": "offices-google-maps",
+  "date": "2026-10-12",
+  "baseCommit": "cd47ecdbc7b5fcf9485462ff0d7de77356d345c9",
+  "sourceData": "riyad-opportunities/data/offices.json",
+  "totalRecords": 1524,
+  "verifiedComplete": 0,
+  "corrected": 0,
+  "entries": [
+    {
+      "id": "entity-d206eae500b8",
+      "name": "مكتب بهجة الرمال للعقارات",
+      "city": "الرياض",
+      "district": "الرمال",
+      "storedPhone": "0555499441",
+      "googleMapsCard": {
+        "title": "بهجة الرمال للعقارات",
+        "address": "سعيد بن الحاجب، الرمال، الرياض 13265، المملكة العربية السعودية",
+        "phone": "+966 55 549 9441",
+        "phoneMatches": true,
+        "listingCategory": "مطوّر عقارات",
+        "mapsPlaceId": "ChIJqz9b2otVLj4Rgb1LGLWu8Ns",
+        "observedFromLiveGoogleMapsCard": true
+      },
+      "status": "unresolved",
+      "reason": "الاسم والمدينة والحي ورقم الهاتف متطابقة مع البطاقة الحية. تصنيف Google Maps الظاهر «مطوّر عقارات» ولا يكفي لحسم أن النشاط مكتب عقاري؛ مراجعات البطاقة تصفه كمكتب، ويلزم فصل حسم نوع النشاط عن تحقق الدبوس قبل اعتماد السجل مكتملًا.",
+      "correctionApplied": false
+    }
+  ]
+}
