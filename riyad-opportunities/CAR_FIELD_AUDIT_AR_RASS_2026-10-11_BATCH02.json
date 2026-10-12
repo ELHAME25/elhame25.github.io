@@ -1,0 +1,295 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "09071b8d442e3ee62aa7304f86fad3806ac22ee4",
+  "scope": {
+    "city": "الرس",
+    "batch": "02",
+    "count": 9,
+    "positions": "16-24 of 24",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Direct Google place URLs with embedded place IDs and coordinates were retained for identity/location. Current exact searches were used for contact decisions; unresolved records did not block city completion.",
+  "records": [
+    {
+      "id": "phase5-google-12438332259724555275",
+      "name": "معرض الحربي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الرس",
+        "neighborhood": "RFX4+FWR، الصناعية، الرس 58871، المملكة العربية السعودية",
+        "phones": [
+          "0598691840"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AD%D8%B1%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1583b5aa850431c1:0xac9dd54a0329f40b!8m2!3d25.8487289!4d43.4572759!16s%2Fg%2F11gjjdjdyw!19sChIJwTEEhaq1gxURC_QpA0rVnaw?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 25.84873,
+        "lon": 43.45728
+      },
+      "field_decisions": {
+        "name": "confirmed_from_direct_place_url",
+        "activity": "supported",
+        "city": "confirmed_from_direct_place_url",
+        "neighborhood": "confirmed_from_direct_place_url",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_url_with_place_id_and_coordinates"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AD%D8%B1%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1583b5aa850431c1:0xac9dd54a0329f40b!8m2!3d25.8487289!4d43.4572759!16s%2Fg%2F11gjjdjdyw!19sChIJwTEEhaq1gxURC_QpA0rVnaw?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "رابط Google مكان مباشر باسم الجهة وإحداثياتها؛ لم تظهر مطابقة مستقلة كافية للهاتف في البحث الحالي."
+    },
+    {
+      "id": "phase5-google-4917774785126896283",
+      "name": "معرض الصامل للسيارات بالرس",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الرس",
+        "neighborhood": "6065, الرس 58838، المملكة العربية السعودية",
+        "phones": [
+          "0555787949"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B5%D8%A7%D9%85%D9%84+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A8%D8%A7%D9%84%D8%B1%D8%B3%E2%80%AD/data=!4m7!3m6!1s0x1583b562912000b1:0x443f721c90dc929b!8m2!3d25.8476831!4d43.4573141!16s%2Fg%2F11h_6hw13b!19sChIJsQAgkWK1gxURm5LckBxyP0Q?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 25.84768,
+        "lon": 43.45731
+      },
+      "field_decisions": {
+        "name": "confirmed_from_direct_place_url",
+        "activity": "supported",
+        "city": "confirmed_from_direct_place_url",
+        "neighborhood": "confirmed_from_direct_place_url",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_url_with_place_id_and_coordinates"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B5%D8%A7%D9%85%D9%84+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A8%D8%A7%D9%84%D8%B1%D8%B3%E2%80%AD/data=!4m7!3m6!1s0x1583b562912000b1:0x443f721c90dc929b!8m2!3d25.8476831!4d43.4573141!16s%2Fg%2F11h_6hw13b!19sChIJsQAgkWK1gxURm5LckBxyP0Q?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "رابط Google مكان مباشر باسم الجهة وإحداثياتها؛ لم تظهر مطابقة مستقلة كافية للهاتف في البحث الحالي."
+    },
+    {
+      "id": "phase5-google-7859957329799153328",
+      "name": "معرض العسكر لتجارة السيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الرس",
+        "neighborhood": "7988 شارع الحسين بن علي، الصناعية، الرس 68821، المملكة العربية السعودية",
+        "phones": [
+          "0591932457"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B9%D8%B3%D9%83%D8%B1+%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1583b5b59844e4c3:0x6d142d8c306806b0!8m2!3d25.8458558!4d43.4567555!16s%2Fg%2F11k3z3l3p6!19sChIJw-REmLW1gxURsAZoMIwtFG0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 25.84586,
+        "lon": 43.45676
+      },
+      "field_decisions": {
+        "name": "confirmed_from_direct_place_url",
+        "activity": "supported",
+        "city": "confirmed_from_direct_place_url",
+        "neighborhood": "confirmed_from_direct_place_url",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_url_with_place_id_and_coordinates"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B9%D8%B3%D9%83%D8%B1+%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1583b5b59844e4c3:0x6d142d8c306806b0!8m2!3d25.8458558!4d43.4567555!16s%2Fg%2F11k3z3l3p6!19sChIJw-REmLW1gxURsAZoMIwtFG0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "رابط Google مكان مباشر باسم الجهة وإحداثياتها؛ لم تظهر مطابقة مستقلة كافية للهاتف في البحث الحالي."
+    },
+    {
+      "id": "phase5-google-4463522623861820946",
+      "name": "معرض ابو عبدالله للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الرس",
+        "neighborhood": "شارع الحسين بن علي، الصناعية، الرس 58838، المملكة العربية السعودية",
+        "phones": [
+          "0505274610"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%88+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1583b504c35bdc77:0x3df19e2d7a340e12!8m2!3d25.8481108!4d43.4571885!16s%2Fg%2F11p16v9yx1!19sChIJd9xbwwS1gxUREg40ei2e8T0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 25.84811,
+        "lon": 43.45719
+      },
+      "field_decisions": {
+        "name": "confirmed_from_direct_place_url",
+        "activity": "supported",
+        "city": "confirmed_from_direct_place_url",
+        "neighborhood": "confirmed_from_direct_place_url",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_url_with_place_id_and_coordinates"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%88+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1583b504c35bdc77:0x3df19e2d7a340e12!8m2!3d25.8481108!4d43.4571885!16s%2Fg%2F11p16v9yx1!19sChIJd9xbwwS1gxUREg40ei2e8T0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "رابط Google مكان مباشر باسم الجهة وإحداثياتها؛ لم تظهر مطابقة مستقلة كافية للهاتف في البحث الحالي."
+    },
+    {
+      "id": "phase5-google-15306101694373336453",
+      "name": "معرض الحمياني",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الرس",
+        "neighborhood": "VF24+8VP، الصناعية، الرس 58829، المملكة العربية السعودية",
+        "phones": [
+          "0534072790"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AD%D9%85%D9%8A%D8%A7%D9%86%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x1583b5c5b37deaf5:0xd46a326555209585!8m2!3d25.8508407!4d43.457193!16s%2Fg%2F11c5333z99!19sChIJ9ep9s8W1gxURhZUgVWUyatQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 25.85084,
+        "lon": 43.45719
+      },
+      "field_decisions": {
+        "name": "confirmed_from_direct_place_url",
+        "activity": "supported",
+        "city": "confirmed_from_direct_place_url",
+        "neighborhood": "confirmed_from_direct_place_url",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_url_with_place_id_and_coordinates"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AD%D9%85%D9%8A%D8%A7%D9%86%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x1583b5c5b37deaf5:0xd46a326555209585!8m2!3d25.8508407!4d43.457193!16s%2Fg%2F11c5333z99!19sChIJ9ep9s8W1gxURhZUgVWUyatQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "رابط Google مكان مباشر باسم الجهة وإحداثياتها؛ لم تظهر مطابقة مستقلة كافية للهاتف في البحث الحالي."
+    },
+    {
+      "id": "phase5-google-11169225913882311431",
+      "name": "معرض النايف لتجارة السيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الرس",
+        "neighborhood": "شارع الحسين بن علي, حي الصناعية، الرس 52719، المملكة العربية السعودية",
+        "phones": [
+          "0590594636"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%86%D8%A7%D9%8A%D9%81+%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1583b5194683f009:0x9b010fcaa50afb07!8m2!3d25.8496757!4d43.45719!16s%2Fg%2F11tgg80j9p!19sChIJCfCDRhm1gxURB_sKpcoPAZs?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 25.84968,
+        "lon": 43.45719
+      },
+      "field_decisions": {
+        "name": "confirmed_from_direct_place_url",
+        "activity": "supported",
+        "city": "confirmed_from_direct_place_url",
+        "neighborhood": "confirmed_from_direct_place_url",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_url_with_place_id_and_coordinates"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%86%D8%A7%D9%8A%D9%81+%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1583b5194683f009:0x9b010fcaa50afb07!8m2!3d25.8496757!4d43.45719!16s%2Fg%2F11tgg80j9p!19sChIJCfCDRhm1gxURB_sKpcoPAZs?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "رابط Google مكان مباشر باسم الجهة وإحداثياتها؛ لم تظهر مطابقة مستقلة كافية للهاتف في البحث الحالي."
+    },
+    {
+      "id": "phase5-google-11595335386452792419",
+      "name": "معرض مجاهد العضيله",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الرس",
+        "neighborhood": "الصناعية، الرس 58871، المملكة العربية السعودية",
+        "phones": [
+          "0550017491"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D8%AC%D8%A7%D9%87%D8%AF+%D8%A7%D9%84%D8%B9%D8%B6%D9%8A%D9%84%D9%87%E2%80%AD/data=!4m7!3m6!1s0x1583b5d609cc9f03:0xa0eae81969091463!8m2!3d25.8460377!4d43.4563619!16s%2Fg%2F11g0tlrwz3!19sChIJA5_MCda1gxURYxQJaRno6qA?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 25.84604,
+        "lon": 43.45636
+      },
+      "field_decisions": {
+        "name": "confirmed_from_direct_place_url",
+        "activity": "supported",
+        "city": "confirmed_from_direct_place_url",
+        "neighborhood": "confirmed_from_direct_place_url",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_url_with_place_id_and_coordinates"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D8%AC%D8%A7%D9%87%D8%AF+%D8%A7%D9%84%D8%B9%D8%B6%D9%8A%D9%84%D9%87%E2%80%AD/data=!4m7!3m6!1s0x1583b5d609cc9f03:0xa0eae81969091463!8m2!3d25.8460377!4d43.4563619!16s%2Fg%2F11g0tlrwz3!19sChIJA5_MCda1gxURYxQJaRno6qA?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "رابط Google مكان مباشر باسم الجهة وإحداثياتها؛ لم تظهر مطابقة مستقلة كافية للهاتف في البحث الحالي."
+    },
+    {
+      "id": "phase5-google-2952431352797838074",
+      "name": "معرض الرشيد",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الرس",
+        "neighborhood": "RFV4+PHG، الصناعية، الرس 58871، المملكة العربية السعودية",
+        "phones": [],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B1%D8%B4%D9%8A%D8%AF%E2%80%AD/data=!4m7!3m6!1s0x1583b50cd32c32f3:0x28f924ac373dbafa!8m2!3d25.8443157!4d43.4564595!16s%2Fg%2F11f6dmyz5r!19sChIJ8zIs0wy1gxUR-ro9N6wk-Sg?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 25.84432,
+        "lon": 43.45646
+      },
+      "field_decisions": {
+        "name": "confirmed_from_direct_place_url",
+        "activity": "supported",
+        "city": "confirmed_from_direct_place_url",
+        "neighborhood": "confirmed_from_direct_place_url",
+        "phone": "missing_unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_url_with_place_id_and_coordinates"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B1%D8%B4%D9%8A%D8%AF%E2%80%AD/data=!4m7!3m6!1s0x1583b50cd32c32f3:0x28f924ac373dbafa!8m2!3d25.8443157!4d43.4564595!16s%2Fg%2F11f6dmyz5r!19sChIJ8zIs0wy1gxUR-ro9N6wk-Sg?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "رابط Google مكان مباشر باسم الجهة وإحداثياتها؛ لم تظهر مطابقة مستقلة كافية للهاتف في البحث الحالي."
+    },
+    {
+      "id": "phase5-google-12520729687529205108",
+      "name": "معرض محمد الخليوي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الرس",
+        "neighborhood": "VF24+WVF، الصناعية، الرس 58871، المملكة العربية السعودية",
+        "phones": [
+          "0501144442"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D8%AD%D9%85%D8%AF+%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%88%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1583b5c67fbe19ab:0xadc2915029ddad74!8m2!3d25.8523038!4d43.4571666!16s%2Fg%2F11gfp84k89!19sChIJqxm-f8a1gxURdK3dKVCRwq0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 25.8523,
+        "lon": 43.45717
+      },
+      "field_decisions": {
+        "name": "confirmed_from_direct_place_url",
+        "activity": "supported",
+        "city": "confirmed_from_direct_place_url",
+        "neighborhood": "confirmed_from_direct_place_url",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_url_with_place_id_and_coordinates"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D8%AD%D9%85%D8%AF+%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%88%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1583b5c67fbe19ab:0xadc2915029ddad74!8m2!3d25.8523038!4d43.4571666!16s%2Fg%2F11gfp84k89!19sChIJqxm-f8a1gxURdK3dKVCRwq0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "رابط Google مكان مباشر باسم الجهة وإحداثياتها؛ لم تظهر مطابقة مستقلة كافية للهاتف في البحث الحالي."
+    }
+  ]
+}

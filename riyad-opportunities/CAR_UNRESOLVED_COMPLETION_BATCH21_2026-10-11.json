@@ -1,0 +1,149 @@
+{
+  "batch": 21,
+  "date": "2026-10-11",
+  "reviewed": 3,
+  "baseCommit": "4fbb8f201f15728e6cb75b7d97521af37cfacc07",
+  "records": [
+    {
+      "id": "phase5-car-7d02d675a9a7",
+      "name": "معرض سول للسيارات",
+      "city": "الأحساء",
+      "neighborhood": "الصناعية الأحساء",
+      "fields": {
+        "mapPin": {
+          "status": "unresolved_partial_search",
+          "old": {
+            "url": "https://www.google.com/maps/search/?api=1&query=CF69%2B766%2C%20Hasa%20Industrial%20City%2C%20Saudi%20Arabia",
+            "coordinates": {
+              "lat": null,
+              "lon": null
+            }
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=معرض+سول+للسيارات+الأحساء+الصناعية+0135923600"
+        },
+        "phone": {
+          "status": "not_confirmed_on_place_card",
+          "value": [
+            "0135923600"
+          ]
+        },
+        "whatsapp": {
+          "status": "unresolved"
+        },
+        "website": {
+          "status": "unresolved"
+        }
+      },
+      "unresolved": [
+        "Google Maps أعاد نتيجة مطابقة جزئية للمنطقة الصناعية بالأحساء، لا بطاقة معرض سول؛ لم أستخدم دبوس المنطقة الصناعية أو أرقامًا غير مرتبطة."
+      ]
+    },
+    {
+      "id": "national-car-autoworld-used-dammam",
+      "name": "عالم السيارات — بيع السيارات المستعملة — الدمام",
+      "city": "الدمام",
+      "neighborhood": "النابية",
+      "fields": {
+        "mapPin": {
+          "status": "unresolved_wrong_activity_and_area",
+          "old": {
+            "url": "https://www.google.com/maps/search/?api=1&query=26.472751,50.014456",
+            "coordinates": {
+              "lat": 26.47275,
+              "lon": 50.01446
+            }
+          },
+          "candidate": {
+            "name": "عالم السيارات",
+            "category": "تأجير سيارات",
+            "address": "Al Qashlah, Dammam",
+            "phone": "920000991"
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=عالم+السيارات+بيع+السيارات+المستعملة+الدمام+النابية+920000991"
+        },
+        "phone": {
+          "status": "number_matches_candidate_company_only",
+          "value": [
+            "920000991"
+          ],
+          "source": "Google Maps search card"
+        },
+        "website": {
+          "status": "candidate_company_only",
+          "value": "https://autoworld.com.sa/"
+        },
+        "whatsapp": {
+          "status": "unresolved"
+        }
+      },
+      "unresolved": [
+        "بطاقة عالم السيارات تطابق الرقم الموحد والموقع الرسمي لكنها تصنف النشاط تأجير سيارات وتقع بالقشلة، لا النابية. لا تثبت كونها معرض بيع في الحي المحدد."
+      ]
+    },
+    {
+      "id": "national-car-autoworld-used-riyadh",
+      "name": "عالم السيارات — بيع السيارات المستعملة — الرياض",
+      "city": "الرياض",
+      "neighborhood": "الريان",
+      "fields": {
+        "mapPin": {
+          "status": "unresolved_wrong_activity_and_area",
+          "old": {
+            "url": "https://www.google.com/maps/search/?api=1&query=24.699922,46.772378",
+            "coordinates": {
+              "lat": 24.69992,
+              "lon": 46.77238
+            }
+          },
+          "candidate": {
+            "name": "عالم السيارات",
+            "category": "وكالة تأجير سيارات",
+            "address": "3834 محمد بن مخلد الأنصاري، الرياض",
+            "phone": "0568931273"
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=عالم+السيارات+بيع+السيارات+المستعملة+الرياض+الريان+920000991"
+        },
+        "phone": {
+          "status": "company_number_not_branch_verified",
+          "value": [
+            "920000991"
+          ]
+        },
+        "website": {
+          "status": "candidate_company_only",
+          "value": "https://autoworld.com.sa/"
+        },
+        "whatsapp": {
+          "status": "unresolved"
+        }
+      },
+      "unresolved": [
+        "نتيجة البحث الرسمية للشركة بالرياض مصنفة تأجير سيارات، ورقم البطاقة مختلف عن الرقم الموحد في السجل؛ لم تثبت صلتها بسجل بيع السيارات في حي الريان."
+      ]
+    },
+    {
+      "id": "national-car-autoworld-used-jeddah",
+      "name": "عالم السيارات — بيع السيارات المستعملة — جدة",
+      "city": "جدة",
+      "neighborhood": "قويزة",
+      "fields": {
+        "mapPin": {
+          "status": "not_reviewed_in_this_batch",
+          "old": "https://www.google.com/maps/search/?api=1&query=21.480731,39.277591"
+        },
+        "phone": {
+          "status": "unresolved"
+        },
+        "whatsapp": {
+          "status": "unresolved"
+        },
+        "website": {
+          "status": "unresolved"
+        }
+      },
+      "unresolved": [
+        "نقطة الاستئناف التالية: فحص سجل جدة ونتائج خرائطه وموقع الشركة الرسمي."
+      ]
+    }
+  ]
+}

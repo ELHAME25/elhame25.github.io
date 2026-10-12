@@ -1,0 +1,912 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "1c72797850a9252f46b189560306404f5e709e52",
+  "scope": {
+    "city": "عنيزة",
+    "batch": "02",
+    "count": 18,
+    "positions": "19-36 of 45",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Exact-name/phone searches plus regional provenance fields. Regional rows with originCity=Buraidah were treated as city-scope conflicts, not as Unayzah confirmations.",
+  "records": [
+    {
+      "id": "phase5-google-12049509763965931100",
+      "name": "معرض سطوع الشمس - فرع المعارض",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "عبدالعزيز عبدالله السليم",
+        "phones": [
+          "0163631248"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=12049509763965931100",
+        "lat": null,
+        "lon": null,
+        "originCity": null,
+        "regionalListingOf": null
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "supported",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "unconfirmed_direct_cid"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11182025733/",
+        "https://www.google.com/maps/?cid=12049509763965931100"
+      ],
+      "note": "الاسم والنشاط والمدينة مدعومة بإعلانات حالية؛ الهاتف غير موجود للسجل، ودبوس Google لم يُفتح مباشرة."
+    },
+    {
+      "id": "phase5-google-8725025085619062305",
+      "name": "معرض نواحي التوفيق للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "المنار؛ رمز Plus Codes: 32Q8+PQ عنيزة السعودية",
+        "phones": [],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=8725025085619062305",
+        "lat": 26.09895,
+        "lon": 44.01825,
+        "originCity": null,
+        "regionalListingOf": null
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "supported",
+        "phone": "missing",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "unconfirmed_direct_cid"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11176936079/",
+        "https://www.google.com/maps/?cid=8725025085619062305"
+      ],
+      "note": "الاسم والنشاط والمدينة مدعومة بإعلانات حالية؛ الهاتف غير موجود للسجل، ودبوس Google لم يُفتح مباشرة."
+    },
+    {
+      "id": "regional-car-entity-65cb7cddce51-26",
+      "name": "معرض السواق للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة",
+        "phones": [
+          "0505139373"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps?cid=7379344931059592204",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "entity-65cb7cddce51"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source_only",
+        "activity": "supported_by_regional_source_only",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "belongs_to_buraidah_not_unayzah"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps?cid=7379344931059592204"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-entity-65cb7cddce51-26"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "entity-65cb7cddce51"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=entity-65cb7cddce51",
+          "stored_neighborhood=الجزيرة",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-entity-88fe7e89ed9b-27",
+      "name": "معرض العين للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة",
+        "phones": [
+          "0505413888"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps?cid=1915662507814545437",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "entity-88fe7e89ed9b"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source_only",
+        "activity": "supported_by_regional_source_only",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "belongs_to_buraidah_not_unayzah"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps?cid=1915662507814545437"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-entity-88fe7e89ed9b-27"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "entity-88fe7e89ed9b"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=entity-88fe7e89ed9b",
+          "stored_neighborhood=الجزيرة",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-entity-f486968da68f-28",
+      "name": "معرض يزيد للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة",
+        "phones": [
+          "0505185353",
+          "0551444060"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps?cid=7252323014565702336",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "entity-f486968da68f"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source_only",
+        "activity": "supported_by_regional_source_only",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "belongs_to_buraidah_not_unayzah"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps?cid=7252323014565702336"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-entity-f486968da68f-28"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "entity-f486968da68f"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=entity-f486968da68f",
+          "stored_neighborhood=الجزيرة",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-entity-61ad2c52ce31-29",
+      "name": "معرض ون كار للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة",
+        "phones": [
+          "0505199696"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps?cid=10568589926404639721",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "entity-61ad2c52ce31"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source_only",
+        "activity": "supported_by_regional_source_only",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "belongs_to_buraidah_not_unayzah"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps?cid=10568589926404639721"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-entity-61ad2c52ce31-29"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "entity-61ad2c52ce31"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=entity-61ad2c52ce31",
+          "stored_neighborhood=الجزيرة",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-phase5-car-1d652336c58a-30",
+      "name": "معرض الثواب للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة، شارع المعارض",
+        "phones": [
+          "0505152050"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=11330109308896036467",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "phase5-car-1d652336c58a"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source_only",
+        "activity": "supported_by_regional_source_only",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "belongs_to_buraidah_not_unayzah"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=11330109308896036467"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-phase5-car-1d652336c58a-30"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "phase5-car-1d652336c58a"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=phase5-car-1d652336c58a",
+          "stored_neighborhood=الجزيرة، شارع المعارض",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-phase5-car-72957fc3dcf9-31",
+      "name": "معرض العمر للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة",
+        "phones": [
+          "0500860409"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=2649823631827727372",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "phase5-car-72957fc3dcf9"
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "belongs_to_buraidah_not_unayzah"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11183337105/",
+        "https://www.google.com/maps/?cid=2649823631827727372"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-phase5-car-72957fc3dcf9-31"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "phase5-car-72957fc3dcf9"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=phase5-car-72957fc3dcf9",
+          "stored_neighborhood=الجزيرة",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-phase5-car-17e3aaa9dbc1-32",
+      "name": "معرض الحنيني للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة، المعارض",
+        "phones": [
+          "0501555380"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%86%D9%8A%D9%86%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "phase5-car-17e3aaa9dbc1"
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://haraj.com/11185816408/",
+        "https://haraj.com.sa/11185191352/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%86%D9%8A%D9%86%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-phase5-car-17e3aaa9dbc1-32"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "phase5-car-17e3aaa9dbc1"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=phase5-car-17e3aaa9dbc1",
+          "stored_neighborhood=الجزيرة، المعارض",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-phase5-car-8529bdf902df-33",
+      "name": "معرض نهضة السعودية للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة",
+        "phones": [
+          "0559888830"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=984081930831597039",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "phase5-car-8529bdf902df"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source_only",
+        "activity": "supported_by_regional_source_only",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "belongs_to_buraidah_not_unayzah"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=984081930831597039"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-phase5-car-8529bdf902df-33"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "phase5-car-8529bdf902df"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=phase5-car-8529bdf902df",
+          "stored_neighborhood=الجزيرة",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-phase5-car-28e996896042-34",
+      "name": "معرض سلطان الزعاق للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة، المعارض",
+        "phones": [
+          "0555134882"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=1959047558649111581",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "phase5-car-28e996896042"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source_only",
+        "activity": "supported_by_regional_source_only",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "belongs_to_buraidah_not_unayzah"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=1959047558649111581"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-phase5-car-28e996896042-34"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "phase5-car-28e996896042"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=phase5-car-28e996896042",
+          "stored_neighborhood=الجزيرة، المعارض",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-phase5-car-5eb858a520a4-35",
+      "name": "معرض كلاس للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة، قرطبة",
+        "phones": [
+          "0534555977"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=7454404555245510583",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "phase5-car-5eb858a520a4"
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "belongs_to_buraidah_not_unayzah"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11183075099/",
+        "https://beta.haraj.com.sa/11186774978/",
+        "https://www.google.com/maps/?cid=7454404555245510583"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-phase5-car-5eb858a520a4-35"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "phase5-car-5eb858a520a4"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=phase5-car-5eb858a520a4",
+          "stored_neighborhood=الجزيرة، قرطبة",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-phase5-car-39a5a70300d4-36",
+      "name": "معرض رصد الفخامة للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة",
+        "phones": [
+          "0567108335"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D8%B5%D8%AF%20%D8%A7%D9%84%D9%81%D8%AE%D8%A7%D9%85%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "phase5-car-39a5a70300d4"
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://www.snapchat.com/%40mtrrrrf?locale=sv-SE",
+        "https://haraj.com.sa/11189080613/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D8%B5%D8%AF%20%D8%A7%D9%84%D9%81%D8%AE%D8%A7%D9%85%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-phase5-car-39a5a70300d4-36"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "phase5-car-39a5a70300d4"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=phase5-car-39a5a70300d4",
+          "stored_neighborhood=الجزيرة",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-phase5-car-4de01a5b7b78-37",
+      "name": "معرض رصد نجد للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة",
+        "phones": [
+          "0558185252"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D8%B5%D8%AF%20%D9%86%D8%AC%D8%AF%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "phase5-car-4de01a5b7b78"
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11180276721/",
+        "https://haraj.com.sa/11175605707/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D8%B5%D8%AF%20%D9%86%D8%AC%D8%AF%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-phase5-car-4de01a5b7b78-37"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "phase5-car-4de01a5b7b78"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=phase5-car-4de01a5b7b78",
+          "stored_neighborhood=الجزيرة",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-phase5-car-2535e653ff82-38",
+      "name": "معرض الجوعي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة، شارع المعارض",
+        "phones": [
+          "0567721414"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AC%D9%88%D8%B9%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "phase5-car-2535e653ff82"
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://haraj.com/11188699136/",
+        "https://haraj.com.sa/11188767929/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AC%D9%88%D8%B9%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-phase5-car-2535e653ff82-38"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "phase5-car-2535e653ff82"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=phase5-car-2535e653ff82",
+          "stored_neighborhood=الجزيرة، شارع المعارض",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-phase5-car-34768af6371d-39",
+      "name": "معرض يوسف الركبي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة",
+        "phones": [
+          "0501555312"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%8A%D9%88%D8%B3%D9%81%20%D8%A7%D9%84%D8%B1%D9%83%D8%A8%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "phase5-car-34768af6371d"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source_only",
+        "activity": "supported_by_regional_source_only",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%8A%D9%88%D8%B3%D9%81%20%D8%A7%D9%84%D8%B1%D9%83%D8%A8%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-phase5-car-34768af6371d-39"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "phase5-car-34768af6371d"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=phase5-car-34768af6371d",
+          "stored_neighborhood=الجزيرة",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-phase5-car-6cb5f4d4506f-40",
+      "name": "معرض رصد النجوم للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "الجزيرة، طريق قرطبة",
+        "phones": [
+          "0552012698"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D8%B5%D8%AF%D8%A7%D9%84%D9%86%D8%AC%D9%88%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+        "lat": 26.40874,
+        "lon": 43.87542,
+        "originCity": "بريدة",
+        "regionalListingOf": "phase5-car-6cb5f4d4506f"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source_only",
+        "activity": "supported_by_regional_source_only",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D8%B5%D8%AF%D8%A7%D9%84%D9%86%D8%AC%D9%88%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-phase5-car-6cb5f4d4506f-40"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "phase5-car-6cb5f4d4506f"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=phase5-car-6cb5f4d4506f",
+          "stored_neighborhood=الجزيرة، طريق قرطبة",
+          "coordinates=26.40874,43.87542"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-car-phase5-car-61e242e0fb5c-41",
+      "name": "معرض العمري للسيارات ببريدة",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "عنيزة",
+        "neighborhood": "بريدة",
+        "phones": [
+          "0567631169"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=15469127827695661937",
+        "lat": 26.4077724,
+        "lon": 43.8789597,
+        "originCity": "بريدة",
+        "regionalListingOf": "phase5-car-61e242e0fb5c"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source_only",
+        "activity": "supported_by_regional_source_only",
+        "city": "conflict_confirmed_origin_is_buraidah",
+        "neighborhood": "conflict_buraidah_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "belongs_to_buraidah_not_unayzah"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=15469127827695661937"
+      ],
+      "note": "السجل موسوم أصلًا regionalListingOf وoriginCity=بريدة، والعنوان/الإحداثيات تشير لبريدة؛ لا يصح احتسابه معرضًا في عنيزة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "عنيزة",
+          "id": "regional-car-phase5-car-61e242e0fb5c-41"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_unayzah_scope",
+          "retain_id": "phase5-car-61e242e0fb5c"
+        },
+        "proof": [
+          "originCity=بريدة",
+          "regionalListingOf=phase5-car-61e242e0fb5c",
+          "stored_neighborhood=بريدة",
+          "coordinates=26.4077724,43.8789597"
+        ],
+        "status": "not_applied"
+      }
+    }
+  ]
+}

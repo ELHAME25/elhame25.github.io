@@ -1,0 +1,336 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "5477c812e143bbc5df8117f55ec1ef4386082c2c",
+  "scope": {
+    "city": "دومة الجندل",
+    "batch": "02",
+    "count": 6,
+    "positions": "16-21 of 21",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Regional copies were evaluated through originCity, parent IDs, locality text and direct place links; corrections are queued only. Search-only map URLs were not accepted as pins.",
+  "records": [
+    {
+      "id": "regional-pdf-national-car-30d548c04a98c7-059",
+      "name": "معرض الغانم لتجاره السيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "دومة الجندل",
+        "neighborhood": "Second Industrial, سكاكا 72342, Saudi Arabia",
+        "phones": [
+          "0561904495"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=13247503441694705830",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=13247503441694705830"
+      ],
+      "note": "نسخة إقليمية مخصصة لدومة الجندل، لكن originCity والعنوان/الدبوس يثبتان سكاكا؛ أُضيفت للاستبعاد من نطاق دومة الجندل دون تعديل.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "دومة الجندل",
+          "id": "regional-pdf-national-car-30d548c04a98c7-059"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_dumat_al_jandal_scope",
+          "retain_id": "national-car-30d548c04a98c7",
+          "origin_city": "سكاكا"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=13247503441694705830"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-30d548c04a98c7",
+          "originCity=سكاكا",
+          "stored_neighborhood=Second Industrial, سكاكا 72342, Saudi Arabia"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-522abe06ef755d-059",
+      "name": "معرض السرحاني للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "دومة الجندل",
+        "neighborhood": "W6CF+JR3, Second Industrial, سكاكا 72342, Saudi Arabia",
+        "phones": [
+          "0583573517"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=1932431838206068733",
+        "lat": 29.92151,
+        "lon": 40.22455
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=1932431838206068733"
+      ],
+      "note": "نسخة إقليمية مخصصة لدومة الجندل، لكن originCity والعنوان/الدبوس يثبتان سكاكا؛ أُضيفت للاستبعاد من نطاق دومة الجندل دون تعديل.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "دومة الجندل",
+          "id": "regional-pdf-national-car-522abe06ef755d-059"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_dumat_al_jandal_scope",
+          "retain_id": "national-car-522abe06ef755d",
+          "origin_city": "سكاكا"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=1932431838206068733"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-522abe06ef755d",
+          "originCity=سكاكا",
+          "stored_neighborhood=W6CF+JR3, Second Industrial, سكاكا 72342, Saudi Arabia"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-654dcae48d8c66-059",
+      "name": "مؤسسة المرزوق لتجارة السيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "دومة الجندل",
+        "neighborhood": "W6CH+HGG, Second Industrial, سكاكا 72342, Saudi Arabia",
+        "phones": [
+          "0581104704"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=17836680717443763445",
+        "lat": 29.92144,
+        "lon": 40.22883
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=17836680717443763445"
+      ],
+      "note": "نسخة إقليمية مخصصة لدومة الجندل، لكن originCity والعنوان/الدبوس يثبتان سكاكا؛ أُضيفت للاستبعاد من نطاق دومة الجندل دون تعديل.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "دومة الجندل",
+          "id": "regional-pdf-national-car-654dcae48d8c66-059"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_dumat_al_jandal_scope",
+          "retain_id": "national-car-654dcae48d8c66",
+          "origin_city": "سكاكا"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=17836680717443763445"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-654dcae48d8c66",
+          "originCity=سكاكا",
+          "stored_neighborhood=W6CH+HGG, Second Industrial, سكاكا 72342, Saudi Arabia"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-cf9c2a8aff90ad-059",
+      "name": "مؤسسة الغنام",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "دومة الجندل",
+        "neighborhood": "5354 طريق الامير نايف بن عبدالعزيز، Second Industrial, سكاكا 72342, Saudi Arabia",
+        "phones": [
+          "0501515035"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=8859532670471741335",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=8859532670471741335"
+      ],
+      "note": "نسخة إقليمية مخصصة لدومة الجندل، لكن originCity والعنوان/الدبوس يثبتان سكاكا؛ أُضيفت للاستبعاد من نطاق دومة الجندل دون تعديل.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "دومة الجندل",
+          "id": "regional-pdf-national-car-cf9c2a8aff90ad-059"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_dumat_al_jandal_scope",
+          "retain_id": "national-car-cf9c2a8aff90ad",
+          "origin_city": "سكاكا"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=8859532670471741335"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-cf9c2a8aff90ad",
+          "originCity=سكاكا",
+          "stored_neighborhood=5354 طريق الامير نايف بن عبدالعزيز، Second Industrial, سكاكا 72342, Saudi Arabia"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-5ff475f7259d21-029",
+      "name": "معرض عبدالرحمن صالح الهلال للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "دومة الجندل",
+        "neighborhood": "QRQG+9R، دومة الجندل74823، المملكة العربية السعودية",
+        "phones": [
+          "0556607654"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=18014161922815469697",
+        "lat": 29.78844,
+        "lon": 39.82706
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "confirmed_but_duplicate",
+        "neighborhood": "confirmed",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=18014161922815469697"
+      ],
+      "note": "نسخة إقليمية مكررة داخل المدينة نفسها، تطابق المعرّف الأبوي والاسم والهاتف والدبوس؛ أُضيفت للحزمة فقط دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_same_city",
+        "field": "record_scope",
+        "old_value": {
+          "city": "دومة الجندل",
+          "id": "regional-pdf-national-car-5ff475f7259d21-029"
+        },
+        "new_value": {
+          "action": "exclude_same_city_regional_duplicate",
+          "retain_id": "national-car-5ff475f7259d21",
+          "origin_city": "دومة الجندل"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=18014161922815469697"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-5ff475f7259d21",
+          "originCity=دومة الجندل",
+          "stored_neighborhood=QRQG+9R، دومة الجندل74823، المملكة العربية السعودية"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-028-047",
+      "name": "Automotive Exhibition Cavalry Abdul Wahid",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "دومة الجندل",
+        "neighborhood": "Ghannam-Al سكاكا ،طريق الأمير عبدالإله بن عبدالعزيز ،Industrial Second, Saudi Arabia72342, Sakaka",
+        "phones": [],
+        "whatsapp": null,
+        "website": null,
+        "maps": null,
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_only_not_pin"
+      },
+      "evidence_urls": [],
+      "note": "نسخة إقليمية مخصصة لدومة الجندل، لكن originCity والعنوان/الدبوس يثبتان سكاكا؛ أُضيفت للاستبعاد من نطاق دومة الجندل دون تعديل.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "دومة الجندل",
+          "id": "regional-pdf-pdf-smalltown-028-047"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_dumat_al_jandal_scope",
+          "retain_id": "pdf-smalltown-028",
+          "origin_city": "سكاكا"
+        },
+        "status": "not_applied",
+        "evidence": [],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=pdf-smalltown-028",
+          "originCity=سكاكا",
+          "stored_neighborhood=Ghannam-Al سكاكا ،طريق الأمير عبدالإله بن عبدالعزيز ،Industrial Second, Saudi Arabia72342, Sakaka"
+        ]
+      }
+    }
+  ]
+}

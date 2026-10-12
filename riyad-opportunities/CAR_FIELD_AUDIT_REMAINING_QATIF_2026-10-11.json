@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "60b449fc7eb0fc69b74f4d63a28e040b2636b4f9",
+  "scope": {
+    "city": "القطيف",
+    "batch": "remaining",
+    "count": 9,
+    "positions": "1-9 of 9",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Direct provider place records, stored coordinates, linked business pages and regional provenance were reconciled field by field. Search-only links were not accepted as pins.",
+  "records": [
+    {
+      "id": "national-car-47a94fd0602614",
+      "name": "معرض آل إبراهيم للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القطيف",
+        "neighborhood": "HX9W+V9J، الحسين، القطيف 32641، السعودية",
+        "phones": [
+          "0503852098"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=2068688951169834247",
+        "lat": 26.57548,
+        "lon": 49.99827
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=2068688951169834247"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-cf6f3c5b146fa1",
+      "name": "معرض أبو فارس للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القطيف",
+        "neighborhood": "7567، 2240، القطيف 32637",
+        "phones": [
+          "0549836772"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=11438090590808644062",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=11438090590808644062"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-5ac8dcb253c865",
+      "name": "A-Hamzah Car Dealer",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القطيف",
+        "neighborhood": "شارع القدس، منطقة المستودعات، القطيف 32631",
+        "phones": [
+          "0505847810"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=11549186874776732353",
+        "lat": 26.54172,
+        "lon": 50.0188
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=11549186874776732353"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-41f8e10e641608",
+      "name": "Abdullatif Cars Sale",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القطيف",
+        "neighborhood": "H3F2+QW4، الروضة، القطيف 32625",
+        "phones": [
+          "0545174052"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=161918289725503931",
+        "lat": 26.57439,
+        "lon": 50.05233
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=161918289725503931"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-48ab5b2906b449",
+      "name": "معرض العبداللطيف للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القطيف",
+        "neighborhood": "H2FR+7MP، طريق أحد، الروضة، القطيف32625",
+        "phones": [
+          "0509515854"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=5074131212685972609",
+        "lat": 26.57321,
+        "lon": 50.0417
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=5074131212685972609"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-fc5ea0c4ea47f9",
+      "name": "ساحة عادل عبدالله الحبيب للسيارات المستعملة",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القطيف",
+        "neighborhood": "شارع الملك فيصل بن عبدالعزيز، المدني، القطيف32653",
+        "phones": [
+          "0540496846"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=17015749861607641515",
+        "lat": 26.55962,
+        "lon": 49.99986
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=17015749861607641515"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "national-car-e2d5530a674676",
+      "name": "معرض الماس الشرقية للسيارات — فرع القطيف",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القطيف",
+        "neighborhood": "شارع أحد، حي الشهباء، القطيف 32656",
+        "phones": [
+          "0539488199"
+        ],
+        "whatsapp": null,
+        "website": "https://almascars.com/",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%85%D8%A7%D8%B3+%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9&query_place_id=ChIJoUhS3OX-NT4R5xau6bEikGw",
+        "lat": 26.56084,
+        "lon": 49.9844
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%85%D8%A7%D8%B3+%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9&query_place_id=ChIJoUhS3OX-NT4R5xau6bEikGw",
+        "https://almascars.com/"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "regional-car-national-car-c80e0cb5068ed3-8",
+      "name": "معرض جنان للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القطيف",
+        "neighborhood": "الملك عبدالعزيز، الطف، سيهات 32463، السعودية",
+        "phones": [
+          "0506852994"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=2391268452885284099",
+        "lat": 26.4938,
+        "lon": 50.02968
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=2391268452885284099"
+      ],
+      "note": "نسخة إقليمية في القطيف لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان سيهات؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "القطيف",
+          "id": "regional-car-national-car-c80e0cb5068ed3-8"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_qatif_scope",
+          "retain_id": "national-car-c80e0cb5068ed3",
+          "origin_city": "سيهات"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=2391268452885284099"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-c80e0cb5068ed3",
+          "originCity=سيهات",
+          "stored_neighborhood=الملك عبدالعزيز، الطف، سيهات 32463، السعودية"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-640f1c0527f877-035",
+      "name": "معرض علي الصادق للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القطيف",
+        "neighborhood": "صفوى، شارع الإمام علي، المنطقة الشرقية، السعودية",
+        "phones": [
+          "0503877939"
+        ],
+        "whatsapp": null,
+        "website": "https://www.instagram.com/alsadiqshowroom/",
+        "maps": "https://maps.yango.com/ar-sa/org/30323973408/",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_provider_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/org/30323973408/",
+        "https://www.instagram.com/alsadiqshowroom/"
+      ],
+      "note": "نسخة إقليمية في القطيف لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان صفوى؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "القطيف",
+          "id": "regional-pdf-national-car-640f1c0527f877-035"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_qatif_scope",
+          "retain_id": "national-car-640f1c0527f877",
+          "origin_city": "صفوى"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://maps.yango.com/ar-sa/org/30323973408/",
+          "https://www.instagram.com/alsadiqshowroom/"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-640f1c0527f877",
+          "originCity=صفوى",
+          "stored_neighborhood=صفوى، شارع الإمام علي، المنطقة الشرقية، السعودية"
+        ]
+      }
+    }
+  ]
+}

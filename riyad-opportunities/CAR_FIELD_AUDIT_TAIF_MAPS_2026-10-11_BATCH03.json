@@ -1,0 +1,94 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "0b334f639c9ad2491054780bc00142a14c5bf1a8",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "الطائف، متابعة مباشرة لدبابيس Google Maps، الدفعة 03 من 3؛ السجلات 21–25 من 25. أبها وخميس مشيط يظلان نطاقاً مترابطاً في استكمال المدن.",
+  "count": 5,
+  "note": "لا تغييرات على cars.json. الدبوس غير المقروء بسبب timeout مسجل غير محسوم وليس معطلاً.",
+  "entries": [
+    {
+      "id": "phase5-google-977602606797274226",
+      "name": "معرض توب كار للسيارات الراقية",
+      "evidence": "Direct stored CID opens exact معرض توب كار للسيارات الراقية. Maps lists phone +966555333282, address المعارض، الطائف 21944 and Plus Code 7C4V+PP; matches stored name, phone and area.",
+      "sources": [
+        "https://www.google.com/maps?cid=977602606797274226"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "verified",
+          "evidence": "Direct stored CID opens exact معرض توب كار للسيارات الراقية. Maps lists phone +966555333282, address المعارض، الطائف 21944 and Plus Code 7C4V+PP; matches stored name, phone and area.",
+          "sources": [
+            "https://www.google.com/maps?cid=977602606797274226"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-google-18346828850129065532",
+      "name": "معرض الأزوري للسيارات",
+      "evidence": "Previously opened exact direct CID. Maps listing معرض الازوري للسيارات at 7C4V+FMJ، المعارض، الطائف 26516; phone +966555700288 matches. No website shown.",
+      "sources": [
+        "https://www.google.com/maps?cid=18346828850129065532"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "verified",
+          "evidence": "Previously opened exact direct CID. Maps listing معرض الازوري للسيارات at 7C4V+FMJ، المعارض، الطائف 26516; phone +966555700288 matches. No website shown.",
+          "sources": [
+            "https://www.google.com/maps?cid=18346828850129065532"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-google-7350114245114851184",
+      "name": "معرض صقر الطائف للسيارات",
+      "evidence": "Direct CID opens exact معرض صقر الطائف للسيارات, address 2748 Taif 26516, Plus Code 7C4R+VR. Maps lists +966566688856; stored/source number differs, so phone correction remains pending. No website shown.",
+      "sources": [
+        "https://www.google.com/maps?cid=7350114245114851184"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "conflict_phone",
+          "evidence": "Direct CID opens exact معرض صقر الطائف للسيارات, address 2748 Taif 26516, Plus Code 7C4R+VR. Maps lists +966566688856; stored/source number differs, so phone correction remains pending. No website shown.",
+          "sources": [
+            "https://www.google.com/maps?cid=7350114245114851184"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-google-12982528182969435934",
+      "name": "معرض الوذيناني للسيارات",
+      "evidence": "Direct CID navigation was created, but Google Maps repeatedly timed out before its AX business card could be read. Do not infer a broken link or replace it without successful verification.",
+      "sources": [
+        "https://www.google.com/maps?cid=12982528182969435934"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "unconfirmed_timeout",
+          "evidence": "Direct CID navigation was created, but Google Maps repeatedly timed out before its AX business card could be read. Do not infer a broken link or replace it without successful verification.",
+          "sources": [
+            "https://www.google.com/maps?cid=12982528182969435934"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-025",
+      "name": "معرض الميزاني للسيارات",
+      "evidence": "No direct canonical Google Maps business page was captured for this record in this pass; the record has no verified CID. A search URL is not a safe replacement.",
+      "sources": [],
+      "fields": {
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "No direct canonical Google Maps business page was captured for this record in this pass; the record has no verified CID. A search URL is not a safe replacement.",
+          "sources": []
+        }
+      }
+    }
+  ]
+}

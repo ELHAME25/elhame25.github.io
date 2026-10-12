@@ -1,0 +1,517 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "1c96de4a8f75439aabfd015643e9778dc00210ac",
+  "scope": {
+    "city": "مكة المكرمة",
+    "batch": "02",
+    "count": 15,
+    "positions": "17-31 of 31",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Exact current name/phone searches, current Haraj listings and business directories. Direct Google CID place URLs were retained; conflicts were documented and not applied.",
+  "records": [
+    {
+      "id": "phase6-google-11419939857728431563",
+      "name": "معرض السيحاني للسيارات فرع الشرائع",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "الشارع العام،الشرائع،مكة24423،المملكة العربية السعودية",
+        "phones": [
+          "0565822220"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=11419939857728431563",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "supported_company",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "branch_unresolved",
+        "phone": "confirmed_company_number",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11147271023/",
+        "https://www.google.com/maps/?cid=11419939857728431563"
+      ],
+      "note": "إعلان حالي يثبت اسم السيحاني ورقم الشركة في مكة، لكنه لا يحسم فرع الشرائع بصورة مستقلة."
+    },
+    {
+      "id": "phase6-google-7820192215573775442",
+      "name": "معرض الشرق للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "FV5M+9FR،الخضراء،Unnamed Road،مكة24263،المملكة العربية السعودية",
+        "phones": [
+          "0555559446"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=7820192215573775442",
+        "lat": 21.45849,
+        "lon": 39.88364
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=7820192215573775442"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير محسومة مع الاحتفاظ برابط CID المباشر."
+    },
+    {
+      "id": "phase6-google-12147196120086976876",
+      "name": "معرض اللحياني",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "حي،ولي العهد،مكة24576،المملكة العربية السعودية",
+        "phones": [
+          "0503517713"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=12147196120086976876",
+        "lat": 21.30171,
+        "lon": 39.74656
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=12147196120086976876"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير محسومة مع الاحتفاظ برابط CID المباشر."
+    },
+    {
+      "id": "phase6-google-18031539532127376033",
+      "name": "معرض التوحيد للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "7RFC+V4W،ولي العهد،مكة24576،المملكة العربية السعودية",
+        "phones": [
+          "0559078430"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=18031539532127376033",
+        "lat": 21.27474,
+        "lon": 39.82033
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_supported",
+        "phone": "confirmed",
+        "whatsapp": "confirmed_by_current_listing",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11172748575/",
+        "https://www.google.com/maps/?cid=18031539532127376033"
+      ],
+      "note": "إعلان حالي يطابق اسم التوحيد ومكة ورقم الهاتف ويذكر التواصل عبر الهاتف أو واتساب."
+    },
+    {
+      "id": "phase6-google-3795453802631035256",
+      "name": "ندى الجزيرة للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "7141 طريق السيل،الخضراء،مكة24263،المملكة العربية السعودية",
+        "phones": [
+          "0555047837"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=3795453802631035256",
+        "lat": 21.44047,
+        "lon": 39.95239
+      },
+      "field_decisions": {
+        "name": "supported",
+        "activity": "supported",
+        "city": "supported",
+        "neighborhood": "partial",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74",
+        "https://www.google.com/maps/?cid=3795453802631035256"
+      ],
+      "note": "الدليل يدعم الاسم والنشاط ومكة، ولم يظهر تطابق مستقل كافٍ للهاتف."
+    },
+    {
+      "id": "phase6-google-11467314085846766385",
+      "name": "معرض الرويزن",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "FV4G+4C6،حسين سرحان،جبل النور،مكة24239،المملكة العربية السعودية",
+        "phones": [
+          "0500373270"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=11467314085846766385",
+        "lat": 21.45529,
+        "lon": 39.87602
+      },
+      "field_decisions": {
+        "name": "supported",
+        "activity": "supported",
+        "city": "supported",
+        "neighborhood": "partial",
+        "phone": "format_conflict",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74",
+        "https://www.google.com/maps/?cid=11467314085846766385"
+      ],
+      "note": "الدليل يعرض رقمًا ناقص/مختلف التنسيق (050373270) مقابل المخزن؛ لا يمكن اعتماد استبدال تلقائي.",
+      "proposed_correction": {
+        "type": "review_phone_format",
+        "field": "phones",
+        "old_value": [
+          "0500373270"
+        ],
+        "new_value": [
+          "050373270"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74"
+        ]
+      }
+    },
+    {
+      "id": "phase6-google-4883997732288407228",
+      "name": "معرض الاتحاد للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "7RGC+33G،ولي العهد،مكة24576،المملكة العربية السعودية",
+        "phones": [
+          "0580070015"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=4883997732288407228",
+        "lat": 21.27519,
+        "lon": 39.8202
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=4883997732288407228"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير محسومة مع الاحتفاظ برابط CID المباشر."
+    },
+    {
+      "id": "phase6-google-9538097124382675126",
+      "name": "شركة العميري للسيارات واقامة المزادات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "8577 طريق السيل،2409،العدل،مكة24244،المملكة العربية السعودية",
+        "phones": [
+          "0555209876"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=9538097124382675126",
+        "lat": 21.44657,
+        "lon": 39.87553
+      },
+      "field_decisions": {
+        "name": "supported",
+        "activity": "supported",
+        "city": "supported",
+        "neighborhood": "partial",
+        "phone": "conflict",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74",
+        "https://www.google.com/maps/?cid=9538097124382675126"
+      ],
+      "note": "الدليل يعرض 0555510499 بدل الرقم المخزن؛ التعارض موثق للمراجعة فقط.",
+      "proposed_correction": {
+        "type": "phone_conflict_review",
+        "field": "phones",
+        "old_value": [
+          "0555209876"
+        ],
+        "new_value": [
+          "0555510499"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://www.aindirectory.com/article/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-74"
+        ]
+      }
+    },
+    {
+      "id": "phase6-google-12794836813471720990",
+      "name": "معرض عبدالهادي الرويزن",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "7987 طريق السيل،الخضراء،مكة24263،المملكة العربية السعودية",
+        "phones": [
+          "0597488903"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=12794836813471720990",
+        "lat": 21.44047,
+        "lon": 39.95239
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=12794836813471720990"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير محسومة مع الاحتفاظ برابط CID المباشر."
+    },
+    {
+      "id": "phase6-google-12027909077831508116",
+      "name": "معرض التميز لبيع وشراء السيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "ولي العهد،مكة24576،المملكة العربية السعودية",
+        "phones": [
+          "0556558327"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=12027909077831508116",
+        "lat": 21.30171,
+        "lon": 39.74656
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=12027909077831508116"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير محسومة مع الاحتفاظ برابط CID المباشر."
+    },
+    {
+      "id": "phase6-google-7593477781153902425",
+      "name": "معرض العساف للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "2806،6096،مكة24432،المملكة العربية السعودية",
+        "phones": [],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=7593477781153902425",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "supported",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "supported",
+        "phone": "missing_unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.aljazeeramaps.com/listing/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D8%B3%D8%A7%D9%81-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%D8%8C-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9/",
+        "https://www.google.com/maps/?cid=7593477781153902425"
+      ],
+      "note": "صفحة أعمال تدعم الاسم والنشاط والعنوان في مكة، ولا تنشر رقم هاتف."
+    },
+    {
+      "id": "phase6-google-13726103461887631558",
+      "name": "معرض المرزوق للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "7109 طريق السيل،الخضراء،مكة24263 2491،مكة،المملكة العربية السعودية",
+        "phones": [
+          "0544778508"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=13726103461887631558",
+        "lat": 21.44047,
+        "lon": 39.95239
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=13726103461887631558"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير محسومة مع الاحتفاظ برابط CID المباشر."
+    },
+    {
+      "id": "phase6-google-5862429778389812172",
+      "name": "معرض الغالي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "5612،7137،جبل النور،مكة24239،المملكة العربية السعودية",
+        "phones": [
+          "0125700003"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=5862429778389812172",
+        "lat": 21.45832,
+        "lon": 39.87034
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=5862429778389812172"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير محسومة مع الاحتفاظ برابط CID المباشر."
+    },
+    {
+      "id": "phase6-google-7948581987925029160",
+      "name": "معرض زيد العصيمي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "طريق غير مسمى24576، مكة المكرمة",
+        "phones": [
+          "0555510114"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=7948581987925029160",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=7948581987925029160"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير محسومة مع الاحتفاظ برابط CID المباشر."
+    },
+    {
+      "id": "phase6-google-11032812090135488849",
+      "name": "معرض الأجيال للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "مكة المكرمة",
+        "neighborhood": "مدينة السيارات، ولي العهد24576، مكة المكرمة",
+        "phones": [
+          "0545798383"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=11032812090135488849",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "confirmed",
+        "whatsapp": "confirmed_by_current_listing",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://daleli.sa/advertisements/ajyal-for-cars",
+        "https://haraj.com.sa/11179116738/",
+        "https://www.google.com/maps/?cid=11032812090135488849"
+      ],
+      "note": "دليل أعمال وإعلان حالي يطابقان الاسم ومكة ومدينة السيارات والرقم، والإعلان يذكره جوالًا وواتساب."
+    }
+  ]
+}

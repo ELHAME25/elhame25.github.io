@@ -1,0 +1,309 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "16beb322008593bdf27345f3ce77af7fa1409705",
+  "scope": "Riyadh non-Qadisiyah continuation: direct name-phone-location matching",
+  "exclusions": [
+    "Qadisiyah records excluded from audit writes and data changes"
+  ],
+  "data_write_prohibition": "cars.json not modified; this evidence record contains no applied data patch",
+  "verification_method": "Direct Google Maps result-card inspection where a unique card was available, supplemented only by already stored or current named dealer/market evidence; unresolved records remain pending.",
+  "entry_count": 11,
+  "summary": {
+    "triple_match_confirmed": 5,
+    "partial_or_pending": 6,
+    "cars_json_modified": false,
+    "qadisiyah_modified": false
+  },
+  "entries": [
+    {
+      "id": "phase5-google-2099705821861877937",
+      "stored": {
+        "name": "معرض الجنوب الحديث للسيارات",
+        "city": "الرياض",
+        "neighborhood": "الشفا،الخليل بن أحمد",
+        "phones": [
+          "0507218678"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=2099705821861877937",
+        "website": "",
+        "lat": 24.56495,
+        "lon": 46.6985
+      },
+      "decision": "triple_match_confirmed",
+      "evidence": "Google Maps place card exactly matched معرض الجنوب الحديث للسيارات, phone +966 50 721 8678, and address الخليل بن أحمد، الشفا، الرياض 11458 (plus code HM2M+63).",
+      "field_status": {
+        "name_activity": "confirmed_by_google_maps",
+        "city_locality": "confirmed_by_google_maps",
+        "phone": "confirmed_by_google_maps",
+        "google_maps_pin": "confirmed_existing_cid"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=2099705821861877937"
+      ]
+    },
+    {
+      "id": "national-car-autoworld-used-riyadh",
+      "stored": {
+        "name": "عالم السيارات — بيع السيارات المستعملة — الرياض",
+        "city": "الرياض",
+        "neighborhood": "الريان",
+        "phones": [
+          "920000991"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=24.699922,46.772378",
+        "website": "https://usedvehicles.autoworld.com.sa",
+        "lat": 24.69992,
+        "lon": 46.77238
+      },
+      "decision": "pending_google_place_confirmation",
+      "evidence": "Focused Google Maps query using the stored name and phone did not expose one authoritative place card in this pass.",
+      "field_status": {
+        "name_activity": "pending",
+        "city_locality": "stored_coordinates_only",
+        "phone": "pending",
+        "google_maps_pin": "pending"
+      },
+      "sources": [
+        "https://usedvehicles.autoworld.com.sa"
+      ]
+    },
+    {
+      "id": "v9-car-990505b6bada",
+      "stored": {
+        "name": "معارض الشفاء",
+        "city": "الرياض",
+        "neighborhood": "المروة",
+        "phones": [
+          "0555167673"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": "",
+        "lat": 24.54057,
+        "lon": 46.67578
+      },
+      "decision": "triple_match_confirmed",
+      "evidence": "Google Maps result card exactly matched معارض الشفاء, phone +966 55 516 7673 and the Ahmad Al Basri/Al Marwah location.",
+      "field_status": {
+        "name_activity": "confirmed_by_google_maps",
+        "city_locality": "confirmed_by_google_maps",
+        "phone": "confirmed_by_google_maps",
+        "google_maps_pin": "direct_place_confirmed"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6+%D8%A7%D9%84%D8%B4%D9%81%D8%A7%D8%A1%E2%80%AD/data=!4m7!3m6!1s0x3e2f0f928fef425b:0x1ec7955cc2a07d7c!8m2!3d24.5491158!4d46.6820423!16s%2Fg%2F11ry6khpmq!19sChIJW0Lvj5IPLz4RfH2gwlyVxx4?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1"
+      ]
+    },
+    {
+      "id": "v9-car-b48df41c4a45",
+      "stored": {
+        "name": "شركة رمز الإمارات للسيارات - معارض الشفا",
+        "city": "الرياض",
+        "neighborhood": "الشفا/المروة",
+        "phones": [
+          "920015990"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B1%D9%85%D8%B2%20%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20-%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": "",
+        "lat": 24.54057,
+        "lon": 46.67578
+      },
+      "decision": "triple_match_confirmed",
+      "evidence": "Google Maps result card exactly matched شركة رمز الإمارات للسيارات معارض الشفا, phone +966 9200 15990, and address محمد بن حمد ابو شيبة، طريق الإمام مسلم الفرعي in the Shifa showroom area.",
+      "field_status": {
+        "name_activity": "confirmed_by_google_maps",
+        "city_locality": "confirmed_by_google_maps",
+        "phone": "confirmed_by_google_maps",
+        "google_maps_pin": "direct_place_confirmed"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%B1%D9%85%D8%B2+%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D9%85%D8%B9%D8%A7%D8%B1%D8%B6+%D8%A7%D9%84%D8%B4%D9%81%D8%A7%E2%80%AD/data=!4m7!3m6!1s0x3e2f0fe8384328ad:0xffc80d7c2595b249!8m2!3d24.5447181!4d46.6814772!16s%2Fg%2F11ll904jqx!19sChIJrShDOOgPLz4RSbKVJXwNyP8?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1"
+      ]
+    },
+    {
+      "id": "v9-car-af5f988fb49e",
+      "stored": {
+        "name": "معرض فور كارز 4Cars للسيارات",
+        "city": "الرياض",
+        "neighborhood": "المروة",
+        "phones": [
+          "0539444885"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%81%D9%88%D8%B1%20%D9%83%D8%A7%D8%B1%D8%B2%204Cars%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": "",
+        "lat": 24.54057,
+        "lon": 46.67578
+      },
+      "decision": "name_location_confirmed_phone_pending",
+      "evidence": "The exact-name query resolved to a direct Google Maps place for معرض فور كارز 4Cars للسيارات at 24.5429716,46.6844839, near the stored Shifa/Al Marwah location. The phone was part of the focused query but was not independently extracted from the place card, so triple confirmation remains pending.",
+      "field_status": {
+        "name_activity": "confirmed_by_google_maps",
+        "city_locality": "confirmed_by_google_maps",
+        "phone": "pending_direct_card_extraction",
+        "google_maps_pin": "direct_place_confirmed"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%81%D9%88%D8%B1+%D9%83%D8%A7%D8%B1%D8%B2+4Cars+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.5429716,46.6844839,1016m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e2f0f51f4cd6c25:0xfc2b63c17add33e5!8m2!3d24.5429716!4d46.6844839!16s%2Fg%2F11j7d0d4qx!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+      ]
+    },
+    {
+      "id": "v9-car-067a2b4b4fd2",
+      "stored": {
+        "name": "شركة عربة البدر للسيارات",
+        "city": "الرياض",
+        "neighborhood": "المروة",
+        "phones": [
+          "0555299169"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B9%D8%B1%D8%A8%D8%A9%20%D8%A7%D9%84%D8%A8%D8%AF%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": "",
+        "lat": 24.54057,
+        "lon": 46.67578
+      },
+      "decision": "name_phone_supported_location_pin_pending",
+      "evidence": "Current Motory and Haraj listings identify شركة عربة البدر للسيارات in Riyadh/Shifa and repeatedly publish 0555299169. The focused Google Maps pass did not expose a direct authoritative card.",
+      "field_status": {
+        "name_activity": "supported_by_current_market_listings",
+        "city_locality": "supported_as_riyadh_shifa_by_listing",
+        "phone": "supported_by_multiple_current_listings",
+        "google_maps_pin": "pending"
+      },
+      "sources": [
+        "https://ksa.motory.com/ar/%D8%AD%D8%B1%D8%A7%D8%AC-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AD%D8%B1%D8%A7%D8%AC-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AC%D9%8A%D8%AA%D9%88%D8%B1/g700/2026/275819/",
+        "https://haraj.com.sa/11187931238/"
+      ]
+    },
+    {
+      "id": "gap-car-692ab2e490",
+      "stored": {
+        "name": "الو كار الرياض",
+        "city": "الرياض",
+        "neighborhood": "العليا، شارع التحلية، حي العليا، الرياض",
+        "phones": [
+          "0508050664"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%88%20%D9%83%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": "https://cars.saudisale.com/showroom/9551/%D8%A7%D9%84%D9%88-%D9%83%D8%A7%D8%B1-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "lat": 24.69314,
+        "lon": 46.68447
+      },
+      "decision": "pending_google_place_confirmation",
+      "evidence": "Stored SaudiSale showroom URL supports the named showroom record, but this pass did not produce a direct Google Maps card matching name, phone and location together.",
+      "field_status": {
+        "name_activity": "supported_by_stored_dealer_page",
+        "city_locality": "stored_only",
+        "phone": "pending",
+        "google_maps_pin": "pending"
+      },
+      "sources": [
+        "https://cars.saudisale.com/showroom/9551/%D8%A7%D9%84%D9%88-%D9%83%D8%A7%D8%B1-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+      ]
+    },
+    {
+      "id": "car-shifa-02",
+      "stored": {
+        "name": "معرض نجوم الشفا للسيارات",
+        "city": "الرياض",
+        "neighborhood": "",
+        "phones": [
+          "0540998075"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%86%D8%AC%D9%88%D9%85%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": "",
+        "lat": null,
+        "lon": null
+      },
+      "decision": "triple_match_confirmed",
+      "evidence": "Google Maps result card exactly matched معرض نجوم الشفا للسيارات, phone +966 54 099 8075, and address الخليل بن أحمد in Shifa.",
+      "field_status": {
+        "name_activity": "confirmed_by_google_maps",
+        "city_locality": "confirmed_by_google_maps",
+        "phone": "confirmed_by_google_maps",
+        "google_maps_pin": "direct_place_confirmed"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%AC%D9%88%D9%85+%D8%A7%D9%84%D8%B4%D9%81%D8%A7+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x3e2f0e319b5cb103:0x556cc941c8ba3335!8m2!3d24.5508699!4d46.6823563!16s%2Fg%2F11gcn7p7kh!19sChIJA7FcmzEOLz4RNTO6yEHJbFU?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1"
+      ]
+    },
+    {
+      "id": "car-shifa-06",
+      "stored": {
+        "name": "مجموعة معارض أحدث السيارات - فرع الشفا",
+        "city": "الرياض",
+        "neighborhood": "",
+        "phones": [
+          "0510686130"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A3%D8%AD%D8%AF%D8%AB%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20-%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": "",
+        "lat": null,
+        "lon": null
+      },
+      "decision": "triple_match_confirmed",
+      "evidence": "Google Maps result card exactly matched مجموعة معارض أحدث السيارات - فرع الشفاء, phone +966 51 068 6130, and place code GMWH+XMR in the Shifa showroom area.",
+      "field_status": {
+        "name_activity": "confirmed_by_google_maps",
+        "city_locality": "confirmed_by_google_maps",
+        "phone": "confirmed_by_google_maps",
+        "google_maps_pin": "direct_place_confirmed"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9+%D9%85%D8%B9%D8%A7%D8%B1%D8%B6+%D8%A3%D8%AD%D8%AF%D8%AB+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+-+%D9%81%D8%B1%D8%B9+%D8%A7%D9%84%D8%B4%D9%81%D8%A7%D8%A1%E2%80%AD/data=!4m7!3m6!1s0x3e2f0fc2248c70cb:0x22eb7a6e875f22cc!8m2!3d24.5474951!4d46.6791553!16s%2Fg%2F11nntxm0px!19sChIJy3CMJMIPLz4RzCJfh2566yI?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1"
+      ]
+    },
+    {
+      "id": "shifa-independent-001",
+      "stored": {
+        "name": "معرض عبد العزيز التويم للسيارات",
+        "city": "الرياض",
+        "neighborhood": "حي الشفا، الرياض",
+        "phones": [
+          "0114217509"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%A7%D9%84%D8%AA%D9%88%D9%8A%D9%85%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": "",
+        "lat": null,
+        "lon": null
+      },
+      "decision": "name_phone_location_supported_google_pin_pending",
+      "evidence": "The stored ArabLocal evidence matches معرض عبد العزيز التويم للسيارات, حي الشفا، الرياض and phone 0114217509. Google Maps did not expose a unique direct card in this pass.",
+      "field_status": {
+        "name_activity": "supported_by_directory",
+        "city_locality": "supported_by_directory",
+        "phone": "supported_by_directory",
+        "google_maps_pin": "pending"
+      },
+      "sources": [
+        "https://arablocal.com/ar/business/view/abdul-aziz-al-tiwaim-car-showroom"
+      ]
+    },
+    {
+      "id": "shifa-independent-002",
+      "stored": {
+        "name": "معرض محيسن حسين العتيبي للسيارات",
+        "city": "الرياض",
+        "neighborhood": "الشفا، شارع المعارض، الرياض",
+        "phones": [
+          "0114225117"
+        ],
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D8%AD%D9%8A%D8%B3%D9%86%20%D8%AD%D8%B3%D9%8A%D9%86%20%D8%A7%D9%84%D8%B9%D8%AA%D9%8A%D8%A8%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "website": "",
+        "lat": null,
+        "lon": null
+      },
+      "decision": "name_phone_location_supported_google_pin_pending",
+      "evidence": "The stored Al Jazeera Maps evidence matches معرض محيسن حسين العتيبي للسيارات, الشفا/شارع المعارض/الرياض and phone 0114225117. A unique direct Google Maps card remains pending.",
+      "field_status": {
+        "name_activity": "supported_by_directory",
+        "city_locality": "supported_by_directory",
+        "phone": "supported_by_directory",
+        "google_maps_pin": "pending"
+      },
+      "sources": [
+        "https://www.aljazeeramaps.com/listing/maard-mhysn-hsyn-alaatyby-llsyarat-alryad"
+      ]
+    }
+  ]
+}

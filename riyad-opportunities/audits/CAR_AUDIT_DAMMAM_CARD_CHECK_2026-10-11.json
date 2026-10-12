@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-11",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "city": "الدمام",
+  "records": [
+    {
+      "id": "phase5-car-9e24ec953233",
+      "name": "معرض وادي حبونا للسيارات",
+      "decision": "Google Maps direct place card opened; used-car dealer; address ضاحية الملك فهد، الدمام 32313; displayed phone +966581123472 matches stored 0581123472; Plus Code 92W7+MJ; exact card URL coordinates 26.3966974,50.0140092 match stored pin",
+      "status": "name/activity/city/phone/pin confirmed"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "entity-3180414b6dfb",
+      "name": "علي الصادق للسيارات",
+      "result": "direct Maps link redirected to Street View/photos and no business card could be read; remains unverified"
+    },
+    {
+      "id": "entity-fc7767edf13e",
+      "name": "معرض مرجان الشرق للسيارات",
+      "result": "CID loaded only skeleton / map unavailable in this attempt; remains unverified"
+    },
+    {
+      "id": "phase5-car-d4913195c092",
+      "name": "معرض الشهري للسيارات",
+      "result": "direct URL loaded without readable card in this attempt; remains unverified"
+    }
+  ],
+  "dataWrite": "No cars.json write attempted; direct card evidence preserved only."
+}

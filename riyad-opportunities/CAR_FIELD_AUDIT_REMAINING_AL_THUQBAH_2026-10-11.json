@@ -1,0 +1,406 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "f282d1c41b7d05b7ea57fa4508a82e1dd1359a6a",
+  "scope": {
+    "city": "الثقبة",
+    "batch": "remaining",
+    "count": 7,
+    "positions": "1-7 of 7",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Direct provider place records, stored coordinates, linked business pages and regional provenance were reconciled field by field. Search-only links were not accepted as pins.",
+  "records": [
+    {
+      "id": "regional-pdf-national-car-96008c787703ab-072",
+      "name": "شركة RPM للسيارات — فرع الخبر",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الثقبة",
+        "neighborhood": "الخبر، حي الراكة الشمالية، شارع الملك فهد، السعودية",
+        "phones": [
+          "0115007242"
+        ],
+        "whatsapp": null,
+        "website": "https://rpmformotors.com/",
+        "maps": "https://maps.app.goo.gl/NTDmLihtXDohHmpe9",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_provider_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://maps.app.goo.gl/NTDmLihtXDohHmpe9",
+        "https://rpmformotors.com/"
+      ],
+      "note": "نسخة إقليمية في الثقبة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخبر؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الثقبة",
+          "id": "regional-pdf-national-car-96008c787703ab-072"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+          "retain_id": "national-car-96008c787703ab",
+          "origin_city": "الخبر"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://maps.app.goo.gl/NTDmLihtXDohHmpe9",
+          "https://rpmformotors.com/"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-96008c787703ab",
+          "originCity=الخبر",
+          "stored_neighborhood=الخبر، حي الراكة الشمالية، شارع الملك فهد، السعودية"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-195d08bb463f33-072",
+      "name": "Auto Golden معرض سيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الثقبة",
+        "neighborhood": "شارع الرياض تقاطع18، الخبر34625",
+        "phones": [
+          "0551800887"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=9839870615767720510",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=9839870615767720510"
+      ],
+      "note": "نسخة إقليمية في الثقبة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخبر؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الثقبة",
+          "id": "regional-pdf-national-car-195d08bb463f33-072"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+          "retain_id": "national-car-195d08bb463f33",
+          "origin_city": "الخبر"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=9839870615767720510"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-195d08bb463f33",
+          "originCity=الخبر",
+          "stored_neighborhood=شارع الرياض تقاطع18، الخبر34625"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-fe7563b1731854-072",
+      "name": "Al Gulf Car Sales And Ownership Transfer",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الثقبة",
+        "neighborhood": "2253، الخبر الجنوبية، الخبر 34611؛ عنوان Yango الوطني EEAB2255",
+        "phones": [
+          "0546522225"
+        ],
+        "whatsapp": null,
+        "website": "https://maps.yango.com/org/112433886579/",
+        "maps": "https://www.google.com/maps/?cid=7688140446062028536",
+        "lat": 26.27403,
+        "lon": 50.20773
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=7688140446062028536",
+        "https://maps.yango.com/org/112433886579/"
+      ],
+      "note": "نسخة إقليمية في الثقبة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخبر؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الثقبة",
+          "id": "regional-pdf-national-car-fe7563b1731854-072"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+          "retain_id": "national-car-fe7563b1731854",
+          "origin_city": "الخبر"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=7688140446062028536",
+          "https://maps.yango.com/org/112433886579/"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-fe7563b1731854",
+          "originCity=الخبر",
+          "stored_neighborhood=2253، الخبر الجنوبية، الخبر 34611؛ عنوان Yango الوطني EEAB2255"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-bd9f09b15f6f98-072",
+      "name": "شركة سيارتك غير — فرع الخبر",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الثقبة",
+        "neighborhood": "شارع الملك فهد، صناعية الفوازية، الخبر34627",
+        "phones": [
+          "0551188933"
+        ],
+        "whatsapp": null,
+        "website": "https://www.yourcar-d.com/branches",
+        "maps": "https://www.google.com/maps?cid=11876543475537219853&gl=SA&hl=ar&ll=26.245968,50.214878&mapclient=embed&t=m&z=13",
+        "lat": 26.24597,
+        "lon": 50.21488
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps?cid=11876543475537219853&gl=SA&hl=ar&ll=26.245968,50.214878&mapclient=embed&t=m&z=13",
+        "https://www.yourcar-d.com/branches"
+      ],
+      "note": "نسخة إقليمية في الثقبة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخبر؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الثقبة",
+          "id": "regional-pdf-national-car-bd9f09b15f6f98-072"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+          "retain_id": "national-car-bd9f09b15f6f98",
+          "origin_city": "الخبر"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps?cid=11876543475537219853&gl=SA&hl=ar&ll=26.245968,50.214878&mapclient=embed&t=m&z=13",
+          "https://www.yourcar-d.com/branches"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-bd9f09b15f6f98",
+          "originCity=الخبر",
+          "stored_neighborhood=شارع الملك فهد، صناعية الفوازية، الخبر34627"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-abcf3059eebb2c-072",
+      "name": "صالة قود كارز للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الثقبة",
+        "neighborhood": "2240 شعيب الضبعي، حي الخزامى، الخبر34719",
+        "phones": [
+          "0599100001"
+        ],
+        "whatsapp": null,
+        "website": "https://haraj.com.sa/users/%D8%B5%D8%A7%D9%84%D9%87%20%D9%82%D9%88%D8%AF%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+        "maps": "https://www.google.com/maps/?cid=17358073183773571856",
+        "lat": 26.20852,
+        "lon": 50.18704
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=17358073183773571856",
+        "https://haraj.com.sa/users/%D8%B5%D8%A7%D9%84%D9%87%20%D9%82%D9%88%D8%AF%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+      ],
+      "note": "نسخة إقليمية في الثقبة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخبر؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الثقبة",
+          "id": "regional-pdf-national-car-abcf3059eebb2c-072"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+          "retain_id": "national-car-abcf3059eebb2c",
+          "origin_city": "الخبر"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=17358073183773571856",
+          "https://haraj.com.sa/users/%D8%B5%D8%A7%D9%84%D9%87%20%D9%82%D9%88%D8%AF%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-abcf3059eebb2c",
+          "originCity=الخبر",
+          "stored_neighborhood=2240 شعيب الضبعي، حي الخزامى، الخبر34719"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-united-khobar-072",
+      "name": "معرض المركبة المتحدة للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الثقبة",
+        "neighborhood": "الثقبة",
+        "phones": [
+          "0500425548"
+        ],
+        "whatsapp": null,
+        "website": "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A9%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+        "maps": "https://www.google.com/maps/?cid=4727680965130451960",
+        "lat": 26.27419,
+        "lon": 50.19189
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=4727680965130451960",
+        "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A9%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+      ],
+      "note": "نسخة إقليمية في الثقبة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخبر؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الثقبة",
+          "id": "regional-pdf-national-car-united-khobar-072"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+          "retain_id": "national-car-united-khobar",
+          "origin_city": "الخبر"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=4727680965130451960",
+          "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A9%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-united-khobar",
+          "originCity=الخبر",
+          "stored_neighborhood=الثقبة"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-024-008",
+      "name": "معرض فيصل العتيبي للسيارات والمعدات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الثقبة",
+        "neighborhood": "بالخبر 76G5+RV2،طريق الملك فهد،الخبر الجنوبية،الخبر34621،السعودية",
+        "phones": [
+          "+966138990676"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": null,
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_only_not_pin"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/org/140182282529/"
+      ],
+      "note": "نسخة إقليمية في الثقبة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان الخبر؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "الثقبة",
+          "id": "regional-pdf-pdf-smalltown-024-008"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_al_thuqbah_scope",
+          "retain_id": "pdf-smalltown-024",
+          "origin_city": "الخبر"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://maps.yango.com/ar-sa/org/140182282529/"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=pdf-smalltown-024",
+          "originCity=الخبر",
+          "stored_neighborhood=بالخبر 76G5+RV2،طريق الملك فهد،الخبر الجنوبية،الخبر34621،السعودية"
+        ]
+      }
+    }
+  ]
+}

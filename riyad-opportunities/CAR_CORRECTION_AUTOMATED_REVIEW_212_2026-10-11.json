@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "reviewed_source_head": "cf64d7b89ccc1da05d1bda8632121c7a527c9e74",
+  "reviewed_manifest": "riyad-opportunities/CAR_CORRECTION_APPLICATION_MANIFEST_212_2026-10-11.json",
+  "reviewed_manifest_commit": "3119e057926b940894caebbb047fb4a89193f700",
+  "result": "allowed_to_request_explicit_user_approval_not_authorized_to_write_yet",
+  "checks": {
+    "exact_change_count": 212,
+    "remove_record_count": 210,
+    "replace_city_count": 1,
+    "replace_web_count": 1,
+    "all_target_ids_exist": true,
+    "all_old_values_match_current_cars_json": true,
+    "all_changes_have_evidence_or_proof": true,
+    "duplicate_target_ids": 0,
+    "preview_resulting_record_count": 788,
+    "preview_ids_unique": true,
+    "qadisiyah_record_count": 33,
+    "qadisiyah_targeted": false,
+    "qadisiyah_preview_unchanged": true,
+    "records_outside_change_set_unchanged": true
+  },
+  "separate_review18": {
+    "resolved_confirmed": 12,
+    "rejected_keep_current": 3,
+    "unresolved": 3,
+    "included_in_212_approval": false
+  },
+  "authorization": {
+    "explicit_user_approval_received_for_212": false,
+    "cars_json_write_permitted_now": false,
+    "required_next_action": "user must explicitly approve the exact 212-operation manifest; approval must acknowledge 210 record removals and 2 field replacements"
+  },
+  "safety": {
+    "git_data_api_must_not_be_used_for_cars_json_before_approval": true,
+    "merge_or_publish": false
+  }
+}

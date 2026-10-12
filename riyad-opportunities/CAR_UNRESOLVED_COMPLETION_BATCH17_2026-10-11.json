@@ -1,0 +1,73 @@
+{
+  "batch": 17,
+  "date": "2026-10-11",
+  "reviewed": 1,
+  "baseCommit": "12f00a1131d6ff92a6d0c28d1f8260cd63a6cb5e",
+  "records": [
+    {
+      "id": "entity-44019da87964",
+      "name": "ابن الجبيل للسيارات",
+      "city": "بريدة",
+      "neighborhood": "حي الجزيرة، بريدة",
+      "fields": {
+        "mapPin": {
+          "status": "confirmed_and_corrected",
+          "old": {
+            "maps": "",
+            "lat": null,
+            "lon": null,
+            "phones": [
+              "0532199902"
+            ]
+          },
+          "new": {
+            "url": "https://www.google.com/maps/?cid=2661717095733510078",
+            "coordinates": {
+              "lat": 26.4124202,
+              "lon": 43.8736495
+            }
+          },
+          "source": "https://www.google.com/maps/?cid=2661717095733510078",
+          "confirmation": "البطاقة المباشرة تعرض شركة الجبيل للسيارات، فئة تاجر سيارات، وعنوان CV6F+XF6، حي الجزيرة، بريدة 52584."
+        },
+        "phone": {
+          "status": "confirmed_additional_map_number",
+          "old": {
+            "maps": "",
+            "lat": null,
+            "lon": null,
+            "phones": [
+              "0532199902"
+            ]
+          },
+          "new": [
+            "0532199902",
+            "0508204999"
+          ],
+          "sources": [
+            "https://www.google.com/maps/?cid=2661717095733510078",
+            "https://ibn-aljubil.com/compare"
+          ]
+        },
+        "whatsapp": {
+          "status": "partially_confirmed",
+          "number": "0532199902",
+          "source": "https://ibn-aljubil.com/compare"
+        },
+        "website": {
+          "status": "confirmed",
+          "value": "https://ibn-aljubil.com/showroom",
+          "source": "https://ibn-aljubil.com/showroom"
+        },
+        "activity": {
+          "status": "confirmed",
+          "value": "تاجر سيارات",
+          "source": "https://www.google.com/maps/?cid=2661717095733510078"
+        }
+      },
+      "unresolved": [
+        "رقم Google Maps 0508204999 للبطاقة يختلف عن رقم التواصل الرسمي 0532199902؛ احتُفظ بالرقمين دون إلغاء أي منهما. تفاصيل فرع رسمي دقيقة غير منشورة."
+      ]
+    }
+  ]
+}

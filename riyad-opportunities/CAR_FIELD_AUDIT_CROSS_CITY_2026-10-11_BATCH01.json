@@ -1,0 +1,383 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "693435143aff8c111b5108f57ca7e527ef699d49",
+  "scope": "Cross-city continuation batch for low-count cities; name-phone-location matching without cars.json changes",
+  "exclusions": [
+    "Qadisiyah not included"
+  ],
+  "data_write_prohibition": "cars.json not modified; proposed corrections are review candidates only",
+  "verification_method": "Focused exact-name/phone web lookup plus direct inspection of already stored authoritative place URLs; no result was promoted when the phone or place identity remained unsupported.",
+  "entry_count": 13,
+  "summary": {
+    "cities": [
+      "الروضة",
+      "المجمعة",
+      "بقيق",
+      "ضباء",
+      "حوطة سدير",
+      "وادي الدواسر",
+      "خيبر",
+      "العلا",
+      "حقل",
+      "رياض الخبراء",
+      "السليل",
+      "ضرماء",
+      "الأفلاج"
+    ],
+    "triple_match_confirmed": 1,
+    "proposed_corrections": 1,
+    "pending_or_partial": 12,
+    "cars_json_modified": false,
+    "qadisiyah_modified": false
+  },
+  "entries": [
+    {
+      "id": "entity-c7cbd30dbc0a",
+      "stored": {
+        "name": "معرض سيارات السلام",
+        "city": "الروضة",
+        "neighborhood": "",
+        "phones": [
+          "0504876281"
+        ],
+        "google_maps": "",
+        "website": "",
+        "lat": null,
+        "lon": null
+      },
+      "decision": "pending_full_confirmation",
+      "evidence": "No authoritative source surfaced for the exact stored name, phone and locality in the focused lookup.",
+      "field_status": {
+        "name_activity": "pending",
+        "city_locality": "pending",
+        "phone": "pending",
+        "google_maps_pin": "missing"
+      },
+      "sources": []
+    },
+    {
+      "id": "national-car-e51c978c308c6f",
+      "stored": {
+        "name": "معرض الموجيل للسيارات",
+        "city": "المجمعة",
+        "neighborhood": "شارع الأمير سلطان بن سلمان، الصناعية، المجمعة 15362، السعودية",
+        "phones": [
+          "0505120286"
+        ],
+        "google_maps": "https://www.waze.com/live-map/directions/sa/riyadh-province/al-majmaah/almojil-car-showroom?to=place.ChIJe_XkmjvEKj4RpodBonAbiao",
+        "website": "",
+        "lat": 25.87599,
+        "lon": 45.39536
+      },
+      "decision": "probable_name_correction",
+      "evidence": "An exact current X profile publishes phone 0505120286 and Al Majmaah but names the business معرض المعجل للسيارات, conflicting with stored معرض الموجيل للسيارات. Location and phone align; name requires correction review.",
+      "field_status": {
+        "name_activity": "conflict_probable_typo",
+        "city_locality": "confirmed_by_public_profile",
+        "phone": "confirmed_by_public_profile",
+        "google_maps_pin": "waze_place_stored"
+      },
+      "sources": [
+        "https://x.com/ko_opg?lang=en",
+        "https://www.waze.com/live-map/directions/sa/riyadh-province/al-majmaah/almojil-car-showroom?to=place.ChIJe_XkmjvEKj4RpodBonAbiao"
+      ],
+      "proposed_correction": {
+        "field": "n",
+        "old_value": "معرض الموجيل للسيارات",
+        "new_value": "معرض المعجل للسيارات",
+        "apply_status": "not_applied"
+      }
+    },
+    {
+      "id": "national-car-9288b0a19707b1",
+      "stored": {
+        "name": "Hadith Exhibition by ITS owner, Saleh Al-Omairah",
+        "city": "بقيق",
+        "neighborhood": "بقيق، حي الصناعية، طريق الملك عبدالعزيز، المنطقة الشرقية، السعودية",
+        "phones": [
+          "0567464999"
+        ],
+        "google_maps": "https://maps.yango.com/en-sa/org/hadith_exhibition_by_its_owner_saleh_al_omairah/79473148755/",
+        "website": "",
+        "lat": 25.92186,
+        "lon": 49.65392
+      },
+      "decision": "source_linked_pending_independent_recheck",
+      "evidence": "Stored Yango place link carries the named Abqaiq showroom and industrial-district location; phone still needs independent confirmation.",
+      "field_status": {
+        "name_activity": "supported_by_linked_place",
+        "city_locality": "supported_by_linked_place",
+        "phone": "pending_independent_confirmation",
+        "google_maps_pin": "not_applicable_yango"
+      },
+      "sources": [
+        "https://maps.yango.com/en-sa/org/hadith_exhibition_by_its_owner_saleh_al_omairah/79473148755/"
+      ]
+    },
+    {
+      "id": "phase6-cars-d918c91afaea9e",
+      "stored": {
+        "name": "معرض احمد سلمان بن سميحة للسيارات",
+        "city": "ضباء",
+        "neighborhood": "9M4X+WF9، ضبا 49314",
+        "phones": [
+          "0554764019"
+        ],
+        "google_maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%AD%D9%85%D8%AF+%D8%B3%D9%84%D9%85%D8%A7%D9%86+%D8%A8%D9%86+%D8%B3%D9%85%D9%8A%D8%AD%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15ac315eabfceb69:0x85b81657280fbdeb!8m2!3d27.3572751!4d35.6987435!16s%2Fg%2F11rhdc_55c!19sChIJaev8q14xrBUR670PKFcWuIU?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "website": "",
+        "lat": 27.35728,
+        "lon": 35.69874
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Direct Google Maps place URL encodes the exact showroom identity and coordinates in Duba; the stored phone did not surface in public search.",
+      "field_status": {
+        "name_activity": "supported_by_direct_google_place",
+        "city_locality": "supported_by_direct_google_place",
+        "phone": "pending",
+        "google_maps_pin": "direct_place_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%AD%D9%85%D8%AF+%D8%B3%D9%84%D9%85%D8%A7%D9%86+%D8%A8%D9%86+%D8%B3%D9%85%D9%8A%D8%AD%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15ac315eabfceb69:0x85b81657280fbdeb!8m2!3d27.3572751!4d35.6987435!16s%2Fg%2F11rhdc_55c!19sChIJaev8q14xrBUR670PKFcWuIU?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ]
+    },
+    {
+      "id": "national-car-7a598b7a7f48f9",
+      "stored": {
+        "name": "معرض البخيت للسيارات",
+        "city": "حوطة سدير",
+        "neighborhood": "حوطة سدير، حي الشبيلية، محافظة المجمعة، منطقة الرياض، السعودية",
+        "phones": [
+          "0505121301"
+        ],
+        "google_maps": "https://maps.yango.com/ar-sa/org/183568644997/",
+        "website": "",
+        "lat": 25.60083,
+        "lon": 45.65014
+      },
+      "decision": "source_linked_pending_independent_recheck",
+      "evidence": "Stored Yango place link supports the named Hawtat Sudair showroom and locality; phone needs independent confirmation.",
+      "field_status": {
+        "name_activity": "supported_by_linked_place",
+        "city_locality": "supported_by_linked_place",
+        "phone": "pending_independent_confirmation",
+        "google_maps_pin": "not_applicable_yango"
+      },
+      "sources": [
+        "https://maps.yango.com/ar-sa/org/183568644997/"
+      ]
+    },
+    {
+      "id": "national-car-e2c42ae8d2f010",
+      "stored": {
+        "name": "معرض فهد الدوسري للسيارات",
+        "city": "وادي الدواسر",
+        "neighborhood": "وادي الدواسر، حي آل تميم والصالحية، OGAA7872، السعودية",
+        "phones": [
+          "0571753788"
+        ],
+        "google_maps": "https://maps.yango.com/ar-sa/org/136450993878/?lang=ar",
+        "website": "",
+        "lat": null,
+        "lon": null
+      },
+      "decision": "source_linked_pending_independent_recheck",
+      "evidence": "Stored Yango place link supports the named Wadi Al-Dawasir showroom and locality; phone needs independent confirmation.",
+      "field_status": {
+        "name_activity": "supported_by_linked_place",
+        "city_locality": "supported_by_linked_place",
+        "phone": "pending_independent_confirmation",
+        "google_maps_pin": "not_applicable_yango"
+      },
+      "sources": [
+        "https://maps.yango.com/ar-sa/org/136450993878/?lang=ar"
+      ]
+    },
+    {
+      "id": "phase6-cars-cc8011f80be6d4",
+      "stored": {
+        "name": "معرض محمد بن دحيم لتجارة السيارات",
+        "city": "خيبر",
+        "neighborhood": "طريق الملك عبدالعزيز، خيبر 43821",
+        "phones": [
+          "0505653581"
+        ],
+        "google_maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D8%AF%D8%AD%D9%8A%D9%85+%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15a3277577a05ec3:0x854ef2bb492e6d1a!8m2!3d25.7012986!4d39.2969371!16s%2Fg%2F11h3kwljng!19sChIJw16gd3UnoxURGm0uSbvyToU?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "website": "",
+        "lat": 25.7013,
+        "lon": 39.29694
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Direct Google Maps place URL encodes the exact showroom identity and Khaybar coordinates; phone needs independent confirmation.",
+      "field_status": {
+        "name_activity": "supported_by_direct_google_place",
+        "city_locality": "supported_by_direct_google_place",
+        "phone": "pending",
+        "google_maps_pin": "direct_place_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D8%AF%D8%AD%D9%8A%D9%85+%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15a3277577a05ec3:0x854ef2bb492e6d1a!8m2!3d25.7012986!4d39.2969371!16s%2Fg%2F11h3kwljng!19sChIJw16gd3UnoxURGm0uSbvyToU?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ]
+    },
+    {
+      "id": "phase6-cars-24da4b79bf6aa6",
+      "stored": {
+        "name": "معرض فهد السحيمي",
+        "city": "العلا",
+        "neighborhood": "4724 طريق المدينة المنورة، DAMB8552، 8552 (list address only)",
+        "phones": [
+          "0548295999"
+        ],
+        "google_maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%81%D9%87%D8%AF+%D8%A7%D9%84%D8%B3%D8%AD%D9%8A%D9%85%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x15a5ab7f0745f91f:0xa70bb651a7dcec33!8m2!3d26.5480977!4d37.9589559!16s%2Fg%2F11vjq87719!19sChIJH_lFB3-rpRURM-zcp1G2C6c?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "website": "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%B3%D8%AD%D9%8A%D9%85%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+        "lat": 26.5481,
+        "lon": 37.95896
+      },
+      "decision": "name_location_sources_supported_phone_pending",
+      "evidence": "Direct Google Maps place and the stored Haraj showroom page support the Fahad Al-Suhaimi identity in AlUla; phone needs direct source confirmation.",
+      "field_status": {
+        "name_activity": "supported_by_google_and_market_profile",
+        "city_locality": "supported_by_google_place",
+        "phone": "pending",
+        "google_maps_pin": "direct_place_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%81%D9%87%D8%AF+%D8%A7%D9%84%D8%B3%D8%AD%D9%8A%D9%85%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x15a5ab7f0745f91f:0xa70bb651a7dcec33!8m2!3d26.5480977!4d37.9589559!16s%2Fg%2F11vjq87719!19sChIJH_lFB3-rpRURM-zcp1G2C6c?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%B3%D8%AD%D9%8A%D9%85%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+      ]
+    },
+    {
+      "id": "phase6-cars-0b257e4c26fea9",
+      "stored": {
+        "name": "معرض أحمد بن سودان البلوي للسيارات",
+        "city": "حقل",
+        "neighborhood": "7WMP+RPV, 5، الظهرة، حقل 49938",
+        "phones": [
+          "0509624706"
+        ],
+        "google_maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A3%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D8%B3%D9%88%D8%AF%D8%A7%D9%86+%D8%A7%D9%84%D8%A8%D9%84%D9%88%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15aa9976325f5a63:0xab79a7732bf382ba!8m2!3d29.2846174!4d34.93679!16s%2Fg%2F11b7fjpqzd!19sChIJY1pfMnaZqhURuoLzK3Oneas?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "website": "",
+        "lat": 29.28462,
+        "lon": 34.93679
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "Direct Google Maps place URL encodes the exact Ahmad bin Sudan Al-Balawi showroom identity and Haql coordinates; phone needs independent confirmation.",
+      "field_status": {
+        "name_activity": "supported_by_direct_google_place",
+        "city_locality": "supported_by_direct_google_place",
+        "phone": "pending",
+        "google_maps_pin": "direct_place_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A3%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D8%B3%D9%88%D8%AF%D8%A7%D9%86+%D8%A7%D9%84%D8%A8%D9%84%D9%88%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15aa9976325f5a63:0xab79a7732bf382ba!8m2!3d29.2846174!4d34.93679!16s%2Fg%2F11b7fjpqzd!19sChIJY1pfMnaZqhURuoLzK3Oneas?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ]
+    },
+    {
+      "id": "national-car-745ef02cf9880c",
+      "stored": {
+        "name": "معرض حسين عيد للسيارات",
+        "city": "رياض الخبراء",
+        "neighborhood": "الأفراح، رياض الخبراء54662",
+        "phones": [
+          "0569929994"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=5485631401581439181",
+        "website": "",
+        "lat": 26.05421,
+        "lon": 43.57068
+      },
+      "decision": "triple_match_confirmed",
+      "evidence": "Multiple current Haraj listings publish معرض حسين عيد, Riyadh Al Khabra/Qassim and phone 0569929994. The stored Google CID supplies the linked place pin.",
+      "field_status": {
+        "name_activity": "confirmed_by_current_market_listings",
+        "city_locality": "confirmed_by_current_market_listings",
+        "phone": "confirmed_by_multiple_current_listings",
+        "google_maps_pin": "stored_cid_present"
+      },
+      "sources": [
+        "https://haraj.com.sa/11189173193/",
+        "https://www.google.com/maps/?cid=5485631401581439181"
+      ]
+    },
+    {
+      "id": "national-car-car-sulail-candidate",
+      "stored": {
+        "name": "معرض كار السليل للسيارات",
+        "city": "السليل",
+        "neighborhood": "",
+        "phones": [
+          "0570007698"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=12071258730333334287",
+        "website": "",
+        "lat": null,
+        "lon": null
+      },
+      "decision": "name_pin_supported_phone_pending",
+      "evidence": "Stored Google CID supplies a direct place identity for معرض كار السليل; phone did not surface in the focused search.",
+      "field_status": {
+        "name_activity": "supported_by_google_cid",
+        "city_locality": "supported_by_google_cid",
+        "phone": "pending",
+        "google_maps_pin": "stored_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=12071258730333334287"
+      ]
+    },
+    {
+      "id": "national-car-raed-dhurma-live",
+      "stored": {
+        "name": "معرض رائد القحطاني للسيارات",
+        "city": "ضرماء",
+        "neighborhood": "",
+        "phones": [
+          "0500612925"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=2430947160815343634",
+        "website": "",
+        "lat": null,
+        "lon": null
+      },
+      "decision": "name_pin_supported_phone_pending",
+      "evidence": "Stored Google CID supplies a direct place identity for معرض رائد القحطاني للسيارات in Dhurma; phone needs independent confirmation.",
+      "field_status": {
+        "name_activity": "supported_by_google_cid",
+        "city_locality": "supported_by_google_cid",
+        "phone": "pending",
+        "google_maps_pin": "stored_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=2430947160815343634"
+      ]
+    },
+    {
+      "id": "regional-pdf-national-car-9fe1f36a66845c-071",
+      "stored": {
+        "name": "معرض أحمد الدريهم للسيارات — الأفلاج",
+        "city": "الأفلاج",
+        "neighborhood": "7P92+V2، الفيصلية، ليلى 16731، الأفلاج، السعودية",
+        "phones": [
+          "0501144220"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=9651703162385704987",
+        "website": "",
+        "lat": 22.26969,
+        "lon": 46.70006
+      },
+      "decision": "name_pin_supported_phone_pending",
+      "evidence": "Stored Google CID and detailed Al Aflaj/Layla address support the identity and locality; phone needs independent confirmation.",
+      "field_status": {
+        "name_activity": "supported_by_google_cid",
+        "city_locality": "supported_by_google_cid_and_address",
+        "phone": "pending",
+        "google_maps_pin": "stored_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=9651703162385704987"
+      ]
+    }
+  ]
+}

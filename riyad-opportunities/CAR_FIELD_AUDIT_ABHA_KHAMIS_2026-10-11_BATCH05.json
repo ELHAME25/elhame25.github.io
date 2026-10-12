@@ -1,0 +1,189 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "4c68cc3fff5622141dbf7e98edc1244c8c852c98",
+  "scope": "Final four entries in the linked Abha-Khamis source group; no city splitting",
+  "count": 4,
+  "note": "Terminal partial batch for the linked Abha–Khamis set. Audit ledger only; no cars.json fields changed. Candidate numbers are recorded for review, not applied.",
+  "entries": [
+    {
+      "id": "pdf-smalltown-018",
+      "name": "معرض بن ملهي للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Current Haraj listings identify the seller as معرض بن ملهي and advertise vehicles.",
+          "sources": [
+            "https://haraj.com.sa/11179243495/%D8%B4%D9%8A%D9%81%D8%B1%D9%88%D9%84%D9%8A%D9%87_%D8%AA%D8%A7%D9%87%D9%88_%D9%85%D9%88%D8%AF%D9%8A%D9%842022%D9%85%D8%A8%D8%A7%D8%A7%D8%B9/"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "Current seller listing and nearby directory identify this showroom in Khamis Mushait; that remains within the linked Abha–Khamis scope.",
+          "sources": [
+            "https://haraj.com.sa/11179243495/%D8%B4%D9%8A%D9%81%D8%B1%D9%88%D9%84%D9%8A%D9%87_%D8%AA%D8%A7%D9%87%D9%88_%D9%85%D9%88%D8%AF%D9%8A%D9%842022%D9%85%D8%A8%D8%A7%D8%A7%D8%B9/",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A8%D9%86-%D9%85%D9%84%D9%87%D9%8A-056-533-5204"
+          ]
+        },
+        "phone": {
+          "status": "correct_contact_candidate",
+          "evidence": "Haraj directly publishes 0565335204; cars.json currently has no phone for this row. Candidate is well-supported for review, but no cars.json update was made.",
+          "sources": [
+            "https://haraj.com.sa/11179243495/%D8%B4%D9%8A%D9%81%D8%B1%D9%88%D9%84%D9%8A%D9%87_%D8%AA%D8%A7%D9%87%D9%88_%D9%85%D9%88%D8%AF%D9%8A%D9%842022%D9%85%D8%A8%D8%A7%D8%A7%D8%B9/",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A8%D9%86-%D9%85%D9%84%D9%87%D9%8A-056-533-5204"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp URL/account independently verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored Google pin not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "Haraj page is a marketplace seller page, not an official company site.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-019",
+      "name": "معرض مكة المكرمة",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast identifies this as a car showroom in Khamis Mushait.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-050-574-8036"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "BizMidEast places the showroom in Khamis Mushait; that is within the user-defined linked Abha–Khamis scope.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-050-574-8036"
+          ]
+        },
+        "phone": {
+          "status": "correct_contact_candidate",
+          "evidence": "BizMidEast lists 0505748036; cars.json currently has no phone for this row. Candidate recorded for review; no cars.json update made.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-050-574-8036"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Existing Google Maps pin not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-020",
+      "name": "معرض وسام المجد للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "Independent business directory identifies an active Khamis Mushait car showroom under this name.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D8%B3%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AC%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7-017-220-6555",
+            "https://sa.near-place.com/mrd-wsam-almjd-llsyarat-khmys-mshyt-4833-khamis-mushait"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "Sources place the showroom in Khamis Mushait; city pairing remains intact.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D8%B3%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AC%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7-017-220-6555"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "Record has 0552244999, while BizMidEast lists 0172206555 and NearPlace lists +966547832974. No number replacement made pending direct resolution.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D8%B3%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AC%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7-017-220-6555",
+            "https://sa.near-place.com/mrd-wsam-almjd-llsyarat-khmys-mshyt-4833-khamis-mushait"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp URL verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Existing Google Maps pin not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "pdf-smalltown-021",
+      "name": "معرض هبوب نجد",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Current Haraj listings advertise vehicles under مجموعة معارض هبوب نجد للسيارات.",
+          "sources": [
+            "https://haraj.com.sa/11130651878/%D8%A7%D9%8A%D8%B3%D9%88%D8%B2%D9%88_%D8%AF%D9%8A%D9%85%D8%A7%D9%83%D8%B3_%D8%BA%D9%85%D8%A7%D8%B1%D8%AA%D9%8A%D9%86_%D8%AF%D8%A8%D9%84_%D8%AF%D9%8A%D8%B2%D9%84_%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1_2022/",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%87%D8%A8%D9%88%D8%A8-%D9%86%D8%AC%D8%AF-017-237-7060"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "Haraj and directory results place the showroom in Khamis Mushait, within the linked Abha–Khamis scope.",
+          "sources": [
+            "https://haraj.com.sa/11130651878/%D8%A7%D9%8A%D8%B3%D9%88%D8%B2%D9%88_%D8%AF%D9%8A%D9%85%D8%A7%D9%83%D8%B3_%D8%BA%D9%85%D8%A7%D8%B1%D8%AA%D9%8A%D9%86_%D8%AF%D8%A8%D9%84_%D8%AF%D9%8A%D8%B2%D9%84_%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1_2022/",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%87%D8%A8%D9%88%D8%A8-%D9%86%D8%AC%D8%AF-017-237-7060"
+          ]
+        },
+        "phone": {
+          "status": "correct_contact_candidate",
+          "evidence": "Haraj listing directly publishes landline 0172377060; cars.json currently has no phone for this row. Candidate recorded, no data edit made.",
+          "sources": [
+            "https://haraj.com.sa/11130651878/%D8%A7%D9%8A%D8%B3%D9%88%D8%B2%D9%88_%D8%AF%D9%8A%D9%85%D8%A7%D9%83%D8%B3_%D8%AF%D8%A8%D9%84_%D8%AF%D9%8A%D8%B2%D9%84_%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1_2022/",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%87%D8%A8%D9%88%D8%A8-%D9%86%D8%AC%D8%AF-017-237-7060"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp URL verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Existing Google Maps pin not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "BizMidEast says no business website; no official website verified.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%87%D8%A8%D9%88%D8%A8-%D9%86%D8%AC%D8%AF-017-237-7060"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-11",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": "single-record cities direct Google Maps batch",
+  "records": [
+    {
+      "id": "phase6-cars-cc8011f80be6d4",
+      "city": "خيبر",
+      "name": "معرض محمد بن دحيم لتجارة السيارات",
+      "decision": "verified",
+      "activity": "تاجر سيارات",
+      "address": "طريق الملك عبدالعزيز، خيبر 43821",
+      "phone": "+966505653581",
+      "plusCode": "P72W+GQ",
+      "coordinates": [
+        25.7012986,
+        39.2969371
+      ]
+    },
+    {
+      "id": "phase6-cars-24da4b79bf6aa6",
+      "city": "العلا",
+      "name": "معرض فهد السحيمي",
+      "decision": "verified",
+      "activity": "تاجر سيارات",
+      "address": "4724 طريق المدينة المنورة، العلا 43552",
+      "phone": "+966548295999",
+      "plusCode": "GXX5+6H",
+      "coordinates": [
+        26.5480977,
+        37.9589559
+      ]
+    },
+    {
+      "id": "national-car-5ff475f7259d21",
+      "city": "دومة الجندل",
+      "name": "معرض عبدالرحمن صالح الهلال للسيارات",
+      "decision": "verified",
+      "activity": "تاجر سيارات",
+      "address": "دومة الجندل 74823",
+      "phone": "+966556607654",
+      "plusCode": "QRQG+9R",
+      "verifiedCoordinates": [
+        29.7884392,
+        39.8270035
+      ],
+      "storedCoordinates": [
+        29.78844,
+        39.82706
+      ]
+    },
+    {
+      "id": "national-car-745ef02cf9880c",
+      "city": "رياض الخبراء",
+      "name": "معرض حسين عيد للسيارات",
+      "decision": "verified; stored coordinates differ",
+      "activity": "تاجر سيارات",
+      "address": "الأفراح، رياض الخبراء 54662",
+      "phone": "+966569929994",
+      "plusCode": "3H2C+6W",
+      "verifiedCoordinates": [
+        26.0505865,
+        43.572354
+      ],
+      "storedCoordinates": [
+        26.05421,
+        43.57068
+      ],
+      "proposedChange": "replace lat/lon"
+    },
+    {
+      "id": "national-car-raed-dhurma-live",
+      "city": "ضرماء",
+      "name": "معرض رائد القحطاني للسيارات",
+      "decision": "verified; coordinates/address missing",
+      "activity": "تاجر السيارات",
+      "address": "H4WR+XPW بجوار الشرطة، الخالدية، ضرما 19869",
+      "phone": "+966500612925",
+      "verifiedCoordinates": [
+        24.5974852,
+        46.1418386
+      ],
+      "proposedChange": "populate address and lat/lon"
+    },
+    {
+      "id": "regional-pdf-national-car-9fe1f36a66845c-071",
+      "city": "الأفلاج",
+      "storedName": "معرض أحمد الدريهم للسيارات — الأفلاج",
+      "mapsCardName": "معرض أحمد الدريهم للسيارات.الافلاج",
+      "decision": "verified",
+      "activity": "تاجر سيارات",
+      "address": "7P92+V2، الفيصلية، ليلى 16731",
+      "phone": "+966501144220",
+      "verifiedCoordinates": [
+        22.2695921,
+        46.6999635
+      ],
+      "storedCoordinates": [
+        22.26969,
+        46.70006
+      ]
+    },
+    {
+      "id": "national-car-9288b0a19707b1",
+      "city": "بقيق",
+      "storedName": "Hadith Exhibition by ITS owner, Saleh Al-Omairah",
+      "mapsCardName": "معرض هجر الحديث لصاحبه صالح العميره",
+      "decision": "Google card located; Arabic name and pin correction required; phone retained only from existing Yango source pending Google-card phone extraction",
+      "verifiedCoordinates": [
+        25.9228271,
+        49.6571356
+      ],
+      "storedCoordinates": [
+        25.92186,
+        49.65392
+      ],
+      "proposedChange": "Arabic name, Google pin and coordinates"
+    },
+    {
+      "id": "national-car-7a598b7a7f48f9",
+      "city": "حوطة سدير",
+      "name": "معرض البخيت للسيارات",
+      "decision": "Google card located; pin differs; phone retained from current source pending Google-card phone extraction",
+      "verifiedCoordinates": [
+        25.6037195,
+        45.6538994
+      ],
+      "storedCoordinates": [
+        25.60083,
+        45.65014
+      ],
+      "proposedChange": "replace Yango map/coordinates with direct Google place"
+    },
+    {
+      "id": "national-car-640f1c0527f877",
+      "city": "صفوى",
+      "storedName": "معرض علي الصادق للسيارات",
+      "mapsCardName": "علي الصادق للسيارات",
+      "decision": "Google card located; official/business evidence confirms صفوى شارع الإمام علي and stored primary phone",
+      "phone": "+966503877939",
+      "additionalPublishedPhones": [
+        "0565963726",
+        "0566124512"
+      ],
+      "verifiedCoordinates": [
+        26.6382642,
+        49.9656664
+      ],
+      "proposedChange": "use direct Google pin and populate coordinates"
+    },
+    {
+      "id": "phase6-cars-32923021719792",
+      "city": "القنفذة",
+      "storedName": "معرض نايفات القصيم للسيارات",
+      "storedPhone": "0505395993",
+      "storedCid": "12909113172771516688",
+      "actualMapsCard": {
+        "name": "شركه القصيم الاولي للسيارات",
+        "phone": "+966533887672",
+        "activity": "تاجر سيارات",
+        "address": "القنفذة 28823",
+        "plusCode": "44F7+W6",
+        "coordinates": [
+          19.1247954,
+          41.1131177
+        ]
+      },
+      "decision": "stored CID belongs to a different active showroom; do not treat current record as verified",
+      "proposedChange": "either replace record identity/phone with the actual CID business after deduplication, or detach the wrong CID and keep Naifat Qassim unresolved"
+    }
+  ],
+  "protectedScope": "Qadisiyah untouched. cars.json replacement not retried after explicit auto-review rejection."
+}

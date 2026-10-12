@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": {
+    "record_count": 15,
+    "cities": ["الأحساء", "عنيزة", "بريدة"],
+    "selection": "Next current non-protected records with a direct Google Maps CID and null coordinates, excluding records already resolved by continuation batches",
+    "protected_qadisiyah_touched": false
+  },
+  "policy": {
+    "primary_source": "Live Google Maps place cards opened from the stored CID",
+    "general_search_url_not_accepted_as_verified_pin": true,
+    "websites_and_whatsapp_out_of_scope": true,
+    "cars_json_write_status": "Not attempted because the prior automated review explicitly rejected the full-file replacement; proven corrections are preserved here without bypassing that decision."
+  },
+  "summary": {
+    "verified_with_proposed_coordinate_correction": 15,
+    "coordinates_resolved": 15,
+    "phones_confirmed_on_live_card": 12,
+    "phones_not_exposed_by_live_card_in_this_check": 3,
+    "phone_mismatches": 0,
+    "permanently_closed": 0
+  },
+  "records": [
+    {
+      "id": "phase5-google-10600651343576343549", "city": "الأحساء", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "معرض سفيان العمير للسيارات", "phone": "0562720003", "lat": null, "lng": null},
+      "observed": {"name": "معرض سفيان العمير للسيارات|Sufyan alomair car dealer", "activity": "تاجر سيارات", "address": "طريق مكة، الأحساء 36456، المملكة العربية السعودية", "phone": "0562720003", "lat": 25.4106936, "lng": 49.4641384},
+      "proposed_change": {"lat": 25.4106936, "lng": 49.4641384}, "evidence": ["https://www.google.com/maps/?cid=10600651343576343549"]
+    },
+    {
+      "id": "phase5-google-14458521232215212303", "city": "الأحساء", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "معرض المبارك للسيارات", "phone": "0562677708", "lat": null, "lng": null},
+      "observed": {"name": "معرض المبارك للسيارات", "activity": "تاجر سيارات", "address": "المنطقة الصناعية بالأحساء، المملكة العربية السعودية", "phone": "0562677708", "lat": 25.4116768, "lng": 49.4686625},
+      "proposed_change": {"lat": 25.4116768, "lng": 49.4686625}, "evidence": ["https://www.google.com/maps/?cid=14458521232215212303"]
+    },
+    {
+      "id": "phase5-google-1522833672022293717", "city": "الأحساء", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "توب كار للسيارات فرع الأحساء", "phone": "0563585137", "lat": null, "lng": null},
+      "observed": {"name": "توب كار للسيارات فرع الاحساء", "activity": "تاجر سيارات", "address": "حي السيفة، طريق الملك فهد 36361، المملكة العربية السعودية", "phone": "0563585137", "lat": 25.3915058, "lng": 49.5776798},
+      "proposed_change": {"lat": 25.3915058, "lng": 49.5776798}, "evidence": ["https://www.google.com/maps/?cid=1522833672022293717"]
+    },
+    {
+      "id": "phase5-google-2993588005355830307", "city": "عنيزة", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "سطوع الشمس للسيارات الجديدة", "phone": "0163631248", "lat": null, "lng": null},
+      "observed": {"name": "معرض سطوع الشمس للسيارات الجديدة", "activity": "تاجر سيارات", "address": "طريق الملك عبدالعزيز، هلالة، عنيزة 56434، المملكة العربية السعودية", "phone": "0163631248", "lat": 26.1128422, "lng": 43.9840827},
+      "proposed_change": {"name": "معرض سطوع الشمس للسيارات الجديدة", "lat": 26.1128422, "lng": 43.9840827}, "evidence": ["https://www.google.com/maps/?cid=2993588005355830307"]
+    },
+    {
+      "id": "phase5-google-5157916410947061269", "city": "عنيزة", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "معرض خيال عنيزة للسيارات", "phone": "0536564446", "lat": null, "lng": null},
+      "observed": {"name": "خيال عنيزة للسيارات", "activity": "تاجر سيارات", "address": "المنطقة الصناعية، عنيزة 56463، المملكة العربية السعودية", "phone": "0536564446", "lat": 26.0830459, "lng": 44.0223257},
+      "proposed_change": {"lat": 26.0830459, "lng": 44.0223257}, "evidence": ["https://www.google.com/maps/?cid=5157916410947061269"]
+    },
+    {
+      "id": "phase5-google-11458684518844988700", "city": "عنيزة", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "معرض المملكة للسيارات", "phone": "0591111413", "lat": null, "lng": null},
+      "observed": {"name": "معرض المملكه للسيارات", "activity": "مزاد السيارات", "address": "معارض السيارات، المنطقة الصناعية، عنيزة 56463، المملكة العربية السعودية", "phone": "0591111413", "lat": 26.0820548, "lng": 44.0217839},
+      "proposed_change": {"lat": 26.0820548, "lng": 44.0217839}, "evidence": ["https://www.google.com/maps/?cid=11458684518844988700"]
+    },
+    {
+      "id": "phase5-google-8149015121951605568", "city": "عنيزة", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "معرض القصيم لبيع وشراء جميع أنواع السيارات", "phone": "0163621736", "lat": null, "lng": null},
+      "observed": {"name": "معرض القصيم لبيع وشراء جميع أنواع السيارات", "lat": 26.0820621, "lng": 44.0220427, "phone_on_live_card": null},
+      "phone_note": "The live card title and pin resolved, but its details panel did not expose a phone in this browser check; the stored phone remains unconfirmed here.",
+      "proposed_change": {"lat": 26.0820621, "lng": 44.0220427}, "evidence": ["https://www.google.com/maps/?cid=8149015121951605568"]
+    },
+    {
+      "id": "phase5-google-7868024460572684961", "city": "عنيزة", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "شركة اتحاد مستوردي السيارات", "phone": "0569921240", "lat": null, "lng": null},
+      "observed": {"name": "شركة إتحاد مستوردي السيارات", "activity": "تاجر سيارات", "address": "الشبيلي، الشرقية، عنيزة 56439، المملكة العربية السعودية", "phone": "0569921240", "lat": 26.092329, "lng": 44.0182883},
+      "proposed_change": {"lat": 26.092329, "lng": 44.0182883}, "evidence": ["https://www.google.com/maps/?cid=7868024460572684961"]
+    },
+    {
+      "id": "phase5-google-6838660841826045233", "city": "عنيزة", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "معرض ابن سعيد للسيارات", "phone": "0553635252", "lat": null, "lng": null},
+      "observed": {"name": "معرض ابن سعيد للسيارات", "activity": "تاجر سيارات", "address": "عبدالعزيز عبدالله السليم، المنطقة الصناعية، عنيزة 56463، المملكة العربية السعودية", "phone": "0553635252", "lat": 26.0836674, "lng": 44.0218571},
+      "proposed_change": {"lat": 26.0836674, "lng": 44.0218571}, "evidence": ["https://www.google.com/maps/?cid=6838660841826045233"]
+    },
+    {
+      "id": "phase5-google-1746020354772953606", "city": "عنيزة", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "معرض الحميدي للسيارات", "phone": "0163215535", "lat": null, "lng": null},
+      "observed": {"name": "معرض الحميدي للسيارات", "activity": "تاجر السيارات", "address": "32MC+CMJ، المنطقة الصناعية، عنيزة 56463، المملكة العربية السعودية", "phone": "0163215535", "lat": 26.0835916, "lng": 44.0216381},
+      "proposed_change": {"lat": 26.0835916, "lng": 44.0216381}, "evidence": ["https://www.google.com/maps/?cid=1746020354772953606"]
+    },
+    {
+      "id": "phase5-google-1941030957480711250", "city": "عنيزة", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "معرض الوصل للسيارات", "phone": "0551268778", "lat": null, "lng": null},
+      "observed": {"name": "معرض الوصل للسيارات", "lat": 26.0836474, "lng": 44.0202094, "phone_on_live_card": null},
+      "phone_note": "The live card title and pin resolved, but its details panel did not expose a phone in this browser check; the stored phone remains unconfirmed here.",
+      "proposed_change": {"lat": 26.0836474, "lng": 44.0202094}, "evidence": ["https://www.google.com/maps/?cid=1941030957480711250"]
+    },
+    {
+      "id": "phase5-google-1243666094200634269", "city": "عنيزة", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "معرض الكويت", "phone": "0502261404", "lat": null, "lng": null},
+      "observed": {"name": "معرض الكويت", "lat": 26.0803769, "lng": 44.0181754, "phone_on_live_card": null},
+      "phone_note": "The live card title and pin resolved, but its details panel did not expose a phone in this browser check; the stored phone remains unconfirmed here.",
+      "proposed_change": {"lat": 26.0803769, "lng": 44.0181754}, "evidence": ["https://www.google.com/maps/?cid=1243666094200634269"]
+    },
+    {
+      "id": "phase5-google-17730179638790988700", "city": "عنيزة", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "معرض تساهيل طيبة للسيارات", "phone": "0163212145", "lat": null, "lng": null},
+      "observed": {"name": "معرض تساهيل طيبة للسيارات", "activity": "تاجر سيارات", "address": "32M8+4XX، شارع عبدالعزيز العبدالله السليم، الوسطى، عنيزة 56466، المملكة العربية السعودية", "phone": "0163212145", "lat": 26.0828562, "lng": 44.0174941},
+      "proposed_change": {"lat": 26.0828562, "lng": 44.0174941}, "evidence": ["https://www.google.com/maps/?cid=17730179638790988700"]
+    },
+    {
+      "id": "phase5-google-14636774918099559628", "city": "عنيزة", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "معرض و ك ر ٩ ٩ ٩ ٩", "phone": "0590830048", "lat": null, "lng": null},
+      "observed": {"name": "معرض و ك ر ٩ ٩ ٩ ٩", "activity": "تاجر سيارات", "address": "7945 طريق الأمير فيصل بن بندر، المنطقة الصناعية، عنيزة 56463، المملكة العربية السعودية", "phone": "0590830048", "lat": 26.0820198, "lng": 44.0199999},
+      "proposed_change": {"lat": 26.0820198, "lng": 44.0199999}, "evidence": ["https://www.google.com/maps/?cid=14636774918099559628"]
+    },
+    {
+      "id": "phase5-google-14674860521592015536", "city": "بريدة", "decision": "verified_with_proposed_coordinate_correction",
+      "stored": {"name": "معرض الشومر للسيارات", "phone": "0503712004", "lat": null, "lng": null},
+      "observed": {"name": "معرض الشومر للسيارات", "activity": "تاجر سيارات", "address": "2382، بريدة 52581، المملكة العربية السعودية", "phone": "0503712004", "lat": 26.4081252, "lng": 43.8793077},
+      "proposed_change": {"lat": 26.4081252, "lng": 43.8793077}, "evidence": ["https://www.google.com/maps/?cid=14674860521592015536"]
+    }
+  ]
+}

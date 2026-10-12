@@ -1,0 +1,239 @@
+{
+  "audit_date": "2026-10-12",
+  "scope": {
+    "cities": ["ينبع", "صبيا", "أبو عريش", "صامطة", "بيش", "جازان", "أحد المسارحة"],
+    "selection": "cars.json records where lat/lon is null, maps is a search URL, or phones is empty; IDs already present anywhere in audits were excluded",
+    "records_reviewed": 44,
+    "source": "Google Maps live place cards"
+  },
+  "decisions": [
+    {
+      "id": "entity-781752dff6d0",
+      "city": "صبيا",
+      "decision": "correct",
+      "before": {"name": "معرض القصيم", "maps": "", "lat": null, "lon": null, "phones": ["0502425105"]},
+      "proposed": {"name": "شركة القصيم الأولى للسيارات - فرع صبيا", "maps": "https://www.google.com/maps/?cid=6201847237457674857", "lat": 17.1641802, "lon": 42.6460612},
+      "phone_decision": "unresolved_after_live_card_open",
+      "evidence": "Live Google Maps card resolved by exact name/city; car dealer in Sabya."
+    },
+    {
+      "id": "entity-06d7d733538f",
+      "city": "أحد المسارحة",
+      "decision": "archive_and_replace",
+      "before": {"name": "معرض الدغارير للسيارات", "phones": ["0173196696"], "lat": null, "lon": null},
+      "evidence": "The stored place card (معرض الدغارير لبيع السيارات) is marked permanently closed at 16.677399,42.9661453. A distinct active Google Maps card exists in the same city.",
+      "replacement": {"name": "معرض الدغارير للسيارات", "activity": "تاجر سيارات", "maps": "https://www.google.com/maps/?cid=5357797164871881339", "lat": 16.6304557, "lon": 42.9491293, "phones": ["0503769662"]}
+    },
+    {
+      "id": "phase6-cars-7018abada2b85b",
+      "city": "جازان",
+      "decision": "unresolved_phone",
+      "verified": {"name": "معرض تاج العريش", "activity": "معرض سيارات", "address": "طريق الملك عبدالله، المنطقة الصناعية، جيزان 82622", "maps": "https://www.google.com/maps/place/معرض+تاج+العريش/@16.831775,42.6335051,17z", "lat": 16.831775, "lon": 42.6335051},
+      "phone_decision": "not_published_on_google_card"
+    },
+    {
+      "id": "phase6-cars-eff28d4e124b9e",
+      "city": "أبو عريش",
+      "decision": "archive",
+      "before": {"name": "Awaser Hyundai - أواصر هيونداي أبوعريش", "phones": ["0500331345"]},
+      "verified": {"maps": "https://www.google.com/maps/?cid=5258147903582025716", "lat": 16.9784741, "lon": 42.8321328, "address": "King Fahad Road، النهضة، أبو عريش 84414", "phone": "0500331345", "status": "permanently_closed"}
+    },
+    {
+      "id": "phase6-cars-11b62666ecdcb0",
+      "city": "ينبع",
+      "decision": "correct",
+      "before": {"name": "Radwa exhibition of cars", "phones": ["0143902074"], "lat": null, "lon": null},
+      "proposed": {"name": "معرض رضوى للسيارات", "address": "طريق الملك خالد، العصيلي، ينبع 46428، المملكة العربية السعودية", "phones": ["0567225566"], "maps": "https://www.google.com/maps/?cid=15799141217152998169", "lat": 24.1093342, "lon": 38.0763315},
+      "evidence": "Live Google card identifies a car dealer and publishes +966 56 722 5566."
+    },
+    {
+      "id": "phase6-cars-26dafbee4da12a",
+      "city": "ينبع",
+      "decision": "correct",
+      "verified": {"name": "معرض سلامه العلوني للسيارات", "maps": "https://www.google.com/maps/?cid=4990858516113376085", "lat": 24.1090459, "lon": 38.077189},
+      "proposed": {"lat": 24.1090459, "lon": 38.077189},
+      "phone_decision": "unresolved_after_live_card_open"
+    },
+    {
+      "id": "phase6-cars-14a08a4bd9b2f4",
+      "city": "ينبع",
+      "decision": "correct",
+      "before": {"name": "Autozone Balubaid Yanbu - اوتوزون بالبيد ينبع", "maps": "https://www.google.com/maps/?cid=15590231318220488544", "lat": null, "lon": null},
+      "proposed": {"name": "اوتوزون بالبيد للسيارات - ينبع", "maps": "https://www.google.com/maps/?cid=5229841061771161227", "lat": 24.0707817, "lon": 38.111033},
+      "phone_decision": "stored_phone_not_reconfirmed_on_card"
+    },
+    {
+      "id": "phase6-cars-a46eb003b73006",
+      "city": "ينبع",
+      "decision": "correct",
+      "before": {"name": "Honda Yanbu معرض هلا", "phones": ["0143914144"], "lat": null, "lon": null},
+      "proposed": {"phones": ["0564073962"], "lat": 24.0961763, "lon": 38.0906475},
+      "verified": {"activity": "مورد سيارات هوندا", "address": "YADB8214، طريق الملك خالد، 4464، التاخي، ينبع 46429", "maps": "https://www.google.com/maps/?cid=2889396343584531324"}
+    },
+    {
+      "id": "phase6-cars-6bcebe2d50264a",
+      "city": "ينبع",
+      "decision": "correct",
+      "proposed": {"name": "معرض سيارات الغربية", "lat": 24.1073236, "lon": 38.075527},
+      "verified": {"maps": "https://www.google.com/maps/?cid=8695559041823941930"},
+      "phone_decision": "unresolved_after_live_card_open"
+    },
+    {
+      "id": "phase6-cars-35ccb2a38cf4c9",
+      "city": "ينبع",
+      "decision": "correct",
+      "before": {"name": "Alesayi Motors", "phones": ["0143914888"], "lat": null, "lon": null},
+      "proposed": {"name": "العيسائي للسيارات", "phones": ["8002440060"], "lat": 24.0661006, "lon": 38.12518},
+      "verified": {"activity": "مورد سيارات ميتسوبيشي", "address": "4586 طريق الملك عبدالعزيز، 6360، الربيع، ينبع 46436", "maps": "https://www.google.com/maps/?cid=2856522372487202587"}
+    },
+    {
+      "id": "phase6-cars-b7d1ffd9d26057",
+      "city": "ينبع",
+      "decision": "correct",
+      "proposed": {"name": "Kia NMC - Showroom كيا الأهلية - المعرض", "lat": 24.0775815, "lon": 38.082245},
+      "verified": {"activity": "مورد سيارات كيا", "address": "طريق الملك عبدالله، البحيرة، ينبع 46425", "phone": "920034888", "maps": "https://www.google.com/maps/?cid=166395200608629438"}
+    },
+    {
+      "id": "phase6-cars-afe6eb68388478",
+      "city": "ينبع",
+      "decision": "correct",
+      "proposed": {"lat": 24.1081235, "lon": 38.0748487},
+      "verified": {"name": "معرض الورود للسيارات", "phone": "0545802641", "maps": "https://www.google.com/maps/?cid=10112693050439091468"}
+    },
+    {
+      "id": "phase6-cars-92b843e1897ce0",
+      "city": "ينبع",
+      "decision": "correct",
+      "proposed": {"name": "مازدا - معرض", "lat": 24.0844289, "lon": 38.0807011},
+      "verified": {"activity": "مورد سيارات مازدا", "address": "3216 طريق الملك عبدالعزيز، 7027، ينبع 46429", "phone": "0122249282", "maps": "https://www.google.com/maps/?cid=11420849038968601431"}
+    },
+    {
+      "id": "phase6-cars-8bb231b9c0f936",
+      "city": "صامطة",
+      "decision": "archive_and_replace",
+      "before": {"name": "وكالة تويوتا", "phones": ["0173320903"], "maps": "https://www.google.com/maps/?cid=7103076850908896021"},
+      "evidence": "Stored CID did not resolve to a usable card; exact Maps search shows the Toyota card at 16.5992274,42.9333344 permanently closed.",
+      "replacement": {"name": "شركة سالم صالح بابقي التجارية المحدودة", "activity": "تاجر سيارات", "address": "الشارع العام، صامطة", "phones": ["0545438343"], "maps": "https://www.google.com/maps/?cid=16261334688527786281", "lat": 16.5991738, "lon": 42.9332584}
+    },
+    {
+      "id": "national-primary-budget-17332883661124769655",
+      "city": "ينبع",
+      "decision": "archive",
+      "verified": {"name": "Budget Quick Service Workshop | بدجت الصيانة السريعة", "activity": "ورشة صيانة/خدمة سريعة وليس معرض سيارات", "lat": 24.0642097, "lon": 38.1270577, "maps": "https://www.google.com/maps/?cid=17332883661124769655"},
+      "evidence": "The stored CID opens a service workshop, not a vehicle showroom."
+    },
+    {
+      "id": "national-primary-budget-13879183185635902606",
+      "city": "جازان",
+      "decision": "archive",
+      "verified": {"name": "بدجت لتأجير السيارات", "activity": "تأجير سيارات وليس معرض بيع", "lat": 16.8987897, "lon": 42.5713232, "maps": "https://www.google.com/maps/?cid=13879183185635902606"}
+    },
+    {
+      "id": "v9-car-6034f3303506",
+      "city": "أبو عريش",
+      "decision": "correct",
+      "proposed": {"maps": "https://www.google.com/maps/?cid=13787849090893191040", "lat": 16.9547075, "lon": 42.8600115},
+      "verified": {"name": "معرض المعشي", "activity": "تاجر سيارات مستعملة", "address": "المعارض، أبو عريش 84216", "phone": "0503763420"}
+    },
+    {
+      "id": "v9-car-921b1d2e358b",
+      "city": "أبو عريش",
+      "decision": "correct",
+      "proposed": {"maps": "https://www.google.com/maps/?cid=10822345579480689944", "lat": 16.9545779, "lon": 42.8610882},
+      "verified": {"name": "معرض مكس كارز للسيارات أبو عريش", "activity": "تاجر سيارات", "address": "الصناعية، أبو عريش 84718", "phone": "0559998387"}
+    },
+    {
+      "id": "v9-car-c61e61e7e45b",
+      "city": "أبو عريش",
+      "decision": "correct",
+      "proposed": {"maps": "https://www.google.com/maps/?cid=16222136947372981299", "lat": 16.955256, "lon": 42.8599249},
+      "verified": {"name": "معرض الوفاء للسيارات", "activity": "تاجر سيارات"},
+      "phone_decision": "unresolved_after_live_card_open"
+    },
+    {
+      "id": "v9-car-d585c7680b4a",
+      "city": "أبو عريش",
+      "decision": "correct",
+      "proposed": {"maps": "https://www.google.com/maps/?cid=10819446149423925552", "lat": 16.9553482, "lon": 42.8603856},
+      "verified": {"name": "معرض بوابة المركبات للسيارات", "activity": "سوق سيارات"},
+      "phone_decision": "unresolved_after_live_card_open"
+    },
+    {
+      "id": "v9-car-005018b74aea",
+      "city": "أبو عريش",
+      "decision": "correct",
+      "proposed": {"maps": "https://www.google.com/maps/?cid=15828671634845885518", "lat": 16.9550734, "lon": 42.8594929, "address": "6537 الورود 49، الصناعية، أبو عريش 84216"},
+      "verified": {"name": "معرض المعافا للسيارات", "activity": "تاجر سيارات", "phone": "0558168701"}
+    },
+    {
+      "id": "v9-car-63c2f51fadb2",
+      "city": "أبو عريش",
+      "decision": "correct",
+      "proposed": {"maps": "https://www.google.com/maps/?cid=3111888776605163309", "lat": 16.9550317, "lon": 42.8613648},
+      "verified": {"name": "معرض رواد النوادر", "activity": "معرض سيارات"},
+      "phone_decision": "unresolved_after_live_card_open"
+    },
+    {"id": "regional-pdf-phase6-cars-7018abada2b85b-008", "city": "صبيا", "decision": "archive", "evidence": "Regional clone points to the verified Jazan card for معرض تاج العريش at 16.831775,42.6335051; city/address mismatch."},
+    {"id": "regional-pdf-national-primary-budget-13879183185635902606-008", "city": "صبيا", "decision": "archive", "evidence": "Regional clone points to Budget car-rental card in Jazan at 16.8987897,42.5713232; wrong city and wrong activity."},
+    {"id": "regional-pdf-v9-car-d0cd534a5437-008", "city": "صبيا", "decision": "archive", "evidence": "Regional clone points to the verified Abu Arish Qimma Asir card at 16.9546464,42.8605026; city mismatch."},
+    {"id": "regional-pdf-v9-car-6034f3303506-008", "city": "صبيا", "decision": "archive", "evidence": "Regional clone points to verified Abu Arish معرض المعشي at 16.9547075,42.8600115; city mismatch."},
+    {"id": "regional-pdf-v9-car-921b1d2e358b-008", "city": "صبيا", "decision": "archive", "evidence": "Regional clone points to verified Abu Arish مكس كارز at 16.9545779,42.8610882; city mismatch."},
+    {"id": "regional-pdf-v9-car-c61e61e7e45b-008", "city": "صبيا", "decision": "archive", "evidence": "Regional clone points to verified Abu Arish معرض الوفاء at 16.955256,42.8599249; city mismatch."},
+    {"id": "regional-pdf-v9-car-d585c7680b4a-008", "city": "صبيا", "decision": "archive", "evidence": "Regional clone points to verified Abu Arish بوابة المركبات at 16.9553482,42.8603856; city mismatch."},
+    {"id": "regional-pdf-v9-car-e7ed2ccacdc2-008", "city": "صبيا", "decision": "archive", "evidence": "Stored address and search target identify أبو عريش, not صبيا; no Sabya place card was established."},
+    {"id": "regional-pdf-v9-car-005018b74aea-008", "city": "صبيا", "decision": "archive", "evidence": "Regional clone points to verified Abu Arish معرض المعافا at 16.9550734,42.8594929; city mismatch."},
+    {"id": "regional-pdf-v9-car-63c2f51fadb2-008", "city": "صبيا", "decision": "archive", "evidence": "Regional clone points to verified Abu Arish رواد النوادر at 16.9550317,42.8613648; city mismatch."},
+    {
+      "id": "pdf-smalltown-022",
+      "city": "صامطة",
+      "decision": "correct",
+      "proposed": {"name": "معرض الثقه للسيارات", "maps": "https://www.google.com/maps/?cid=5526933381203080662", "lat": 16.6342316, "lon": 42.9330137},
+      "phone_decision": "unresolved_after_live_card_open"
+    },
+    {
+      "id": "pdf-smalltown-023",
+      "city": "صامطة",
+      "decision": "correct",
+      "proposed": {"maps": "https://www.google.com/maps/?cid=737573216091916475", "lat": 16.6339743, "lon": 42.9330378},
+      "verified": {"name": "معرض عسكر للسيارات", "city": "صامطة"},
+      "phone_decision": "unresolved_after_live_card_open"
+    },
+    {"id": "pdf-smalltown-029", "city": "ينبع", "decision": "archive_duplicate", "canonical_id": "phase6-cars-14a08a4bd9b2f4", "evidence": "Duplicate of the verified Autozone Balubaid Yanbu card."},
+    {"id": "pdf-smalltown-030", "city": "ينبع", "decision": "archive_duplicate", "canonical_id": "phase6-cars-bdb51b87a900ad", "evidence": "Duplicate of Al-Katheri Car Dealer in Yanbu."},
+    {"id": "pdf-smalltown-031", "city": "ينبع", "decision": "archive_duplicate", "canonical_id": "phase6-cars-a46eb003b73006", "evidence": "Duplicate of the verified Honda Yanbu معرض هلا card."},
+    {"id": "pdf-smalltown-032", "city": "ينبع", "decision": "archive_duplicate", "canonical_id": "phase6-cars-b7d1ffd9d26057", "evidence": "Duplicate of the verified Kia NMC Yanbu card."},
+    {"id": "regional-pdf-pdf-smalltown-022-057", "city": "صبيا", "decision": "archive", "evidence": "Regional clone points to verified Samtah معرض الثقة at 16.6342316,42.9330137; city mismatch."},
+    {"id": "regional-pdf-pdf-smalltown-023-057", "city": "صبيا", "decision": "archive", "evidence": "Regional clone points to verified Samtah معرض عسكر at 16.6339743,42.9330378; city mismatch."},
+    {
+      "id": "v9-car-d0cd534a5437",
+      "city": "أبو عريش",
+      "decision": "correct",
+      "proposed": {"maps": "https://www.google.com/maps/?cid=6098077050234401057", "lat": 16.9546464, "lon": 42.8605026, "address": "معارض السيارات، شارع المعارض، أبو عريش"},
+      "verified": {"name": "معرض قمة عسير لبيع وشراء السيارات", "activity": "تاجر سيارات", "phone": "0561552134"},
+      "evidence": "Exact Maps search also showed a distinct similarly named card at 16.9692963,42.8441786 as permanently closed; this record matches the active card."
+    },
+    {
+      "id": "v9-car-e3d202093fe0",
+      "city": "بيش",
+      "decision": "correct_with_unresolved_phone",
+      "proposed": {"maps": "https://www.google.com/maps/?cid=7452400199661829255", "lat": 17.3943764, "lon": 42.5404096},
+      "verified": {"name": "معرض قلعة الخليج للسيارات", "activity": "تاجر سيارات Peugeot", "address": "9GVR+Q53، طريق الملك عبدالعزيز، بيش 87722"},
+      "phone_decision": "not_published_on_google_card"
+    },
+    {
+      "id": "v9-car-822b7767502f",
+      "city": "بيش",
+      "decision": "correct",
+      "proposed": {"maps": "https://www.google.com/maps/?cid=17080356856443966623", "lat": 17.3880493, "lon": 42.5429375},
+      "verified": {"name": "معرض الطويل لبيع وشراء السيارات", "activity": "تاجر سيارات Seat"},
+      "phone_decision": "unresolved_after_live_card_open"
+    },
+    {
+      "id": "v9-car-97cce6124ff4",
+      "city": "بيش",
+      "decision": "correct",
+      "proposed": {"maps": "https://www.google.com/maps/?cid=12595467718198012190", "lat": 17.387761, "lon": 42.543052, "address": "9GQV+46Q، بيش 87721"},
+      "verified": {"name": "معرض الأثير", "activity": "تاجر سيارات", "phone": "0556522493"}
+    }
+  ]
+}

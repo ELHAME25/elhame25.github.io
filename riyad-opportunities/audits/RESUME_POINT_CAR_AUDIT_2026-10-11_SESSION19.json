@@ -1,0 +1,41 @@
+{
+  "savedAt": "2026-10-11T23:20:00+03:00",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "lastCompletedCommitBeforeCheckpoint": "e88c260d762bb463325b7184835290ba6e5c0f7f",
+  "sessionUniqueRecordsProcessed": 32,
+  "completedInThisContinuation": {
+    "phoneOnlyCards": 5,
+    "dammamDirectDecisions": 12,
+    "singleRecordCityBatch": 10,
+    "bukayriyahNamasDubaBatch": 5
+  },
+  "cityState": {
+    "الدمام": "all 13 previously no-status records now have decisions in audit evidence; 12 direct confirmations, Autoworld Dammam unresolved",
+    "البكيرية": "complete 2/2",
+    "النماص": "complete 2/2",
+    "خيبر": "complete 1/1",
+    "العلا": "complete 1/1",
+    "دومة الجندل": "complete 1/1",
+    "رياض الخبراء": "complete 1/1",
+    "ضرماء": "complete 1/1",
+    "الأفلاج": "complete 1/1 under this city label; duplicate ليلى record remains",
+    "صفوى": "complete 1/1 with direct Google pin and official phone evidence",
+    "بقيق": "Google card/pin found; phone still based on current secondary source",
+    "حوطة سدير": "Google card/pin found; phone still based on current secondary source",
+    "القنفذة": "stored CID/name/phone conflict documented; unresolved pending data correction choice",
+    "ضباء": "1/2; الطويرش remains"
+  },
+  "nextExactBatch": [
+    "national-car-a5c1b61714bf42",
+    "national-car-8c5f8021ce8d16",
+    "national-car-769929b42054d3",
+    "v9-car-82d8d5493078",
+    "phase6-cars-1ffc9fda309a5b",
+    "phase6-cars-17c5be83710c89",
+    "phase6-cars-07f3a5d0b1b53d",
+    "national-primary-badr-13319744037421832064"
+  ],
+  "writeConstraint": "Prior automated review explicitly rejected replacement of cars.json; all proven corrections are committed as audit evidence and were not applied indirectly.",
+  "publishState": "Not published yet: nationwide audit/data corrections/QA are incomplete. User explicitly authorizes publishing after completion.",
+  "protectedQadisiyah": "33 records untouched"
+}

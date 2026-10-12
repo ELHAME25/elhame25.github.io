@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "timezone": "Asia/Riyadh",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": {
+    "cities": ["حفر الباطن", "حائل"],
+    "existing_records_reviewed": 14,
+    "replacement_candidates_verified": 1,
+    "protected_qadisiyah_touched": false
+  },
+  "summary": {
+    "verified_correct_no_data_change": 5,
+    "verified_with_proposed_data_correction": 7,
+    "permanently_closed_with_verified_replacement": 1,
+    "verified_duplicate_proposed_archive": 1,
+    "verified_replacement_candidate": 1,
+    "unresolved_phone": 0,
+    "unresolved_pin": 0
+  },
+  "policy": {
+    "primary_source": "Google Maps place cards opened directly",
+    "general_search_url_not_accepted_as_verified_pin": true,
+    "cars_json_write_status": "Not attempted; the prior full-file replacement was explicitly rejected. This file preserves exact field-level corrections and archive/replacement decisions without bypassing that review decision."
+  },
+  "records": [
+    {
+      "id": "national-car-713c74bc45687d",
+      "city": "حفر الباطن",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "شركة الغاطي للسيارات و الاستثمار", "phone": "0593161111", "lat": 28.45394, "lon": 45.99566, "maps_cid": "13164476601926242244"},
+      "observed": {"name": "شركة الغاطي للسيارات و الاستثمار", "activity": "تاجر سيارات", "address": "7754 احمد بن رشد، 4742، الصناعية، حفر الباطن 4742", "phone": "0593161111", "plus_code": "C2PV+JM حفر الباطن السعودية", "lat": 28.4365414, "lon": 46.0442069, "maps_cid": "13164476601926242244"},
+      "proposed_change": {"lat": 28.4365414, "lon": 46.0442069}
+    },
+    {
+      "id": "national-car-55dc30ef051e23",
+      "city": "حفر الباطن",
+      "decision": "permanently_closed_with_verified_replacement",
+      "stored": {"name": "معرض ركن الاتحاد للسيارات", "phone": "0593945771", "lat": 28.45394, "lon": 45.99566, "maps_cid": "7603608738345344841"},
+      "observed": {"name": "معرض ركن الاتحاد للسيارات", "closure_label": "مغلق نهائيًا", "address": "احمد بن رشد، الصناعية، حفر الباطن 39925", "phone": "0593945771", "plus_code": "C2PV+6Q حفر الباطن السعودية", "lat": 28.435515, "lon": 46.044448, "maps_cid": "7603608738345344841"},
+      "proposed_change": {"archive_from_display": true, "replacement": "replacement-hafar-al-aidh"}
+    },
+    {
+      "id": "replacement-hafar-al-aidh",
+      "city": "حفر الباطن",
+      "decision": "verified_replacement_candidate",
+      "observed": {"name": "معرض العائض للسيارات", "activity": "تاجر سيارات", "address": "احمد بن رشد، حي المعارض، حفر الباطن 39925", "phone": "0595012897", "plus_code": "C2QV+3M حفر الباطن السعودية", "lat": 28.4376719, "lon": 46.044138, "maps_cid": "12735975472796310181", "permanent_closure_label": null},
+      "proposed_change": {"add_as_replacement_for": "national-car-55dc30ef051e23", "maps": "https://www.google.com/maps/?cid=12735975472796310181"}
+    },
+    {
+      "id": "phase6-google-4156538934738978535",
+      "city": "حائل",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض الشباب للسيارات", "phone": "0582844530", "lat": null, "lon": null, "maps_cid": "4156538934738978535"},
+      "observed": {"name": "معرض الشباب للسيارات", "activity": "تاجر سيارات", "address": "6969، 2794، حائل 55423", "phone": "0582844530", "plus_code": "FPJJ+HX حائل السعودية", "lat": 27.4814953, "lon": 41.7324166, "maps_cid": "4156538934738978535"},
+      "proposed_change": {"lat": 27.4814953, "lon": 41.7324166}
+    },
+    {
+      "id": "phase6-google-2739362050555451371",
+      "city": "حائل",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "شركة إبراهيم العودة للسيارات - فرع شركة شعار السيارة المحدودة", "phone": "0115207355", "lat": null, "lon": null, "maps_cid": "2739362050555451371"},
+      "observed": {"name": "شركة إبراهيم العودة للسيارات - فرع شركة شعار السيارة المحدودة", "activity": "تاجر سيارات", "address": "7163، 3125، حائل 55423", "phone": "0115207355", "plus_code": "FPMP+76 حائل السعودية", "lat": 27.4831814, "lon": 41.7355202, "maps_cid": "2739362050555451371"},
+      "proposed_change": {"lat": 27.4831814, "lon": 41.7355202}
+    },
+    {
+      "id": "phase6-google-13181426436365412113",
+      "city": "حائل",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض الشرق اللامع للسيارات", "phone": "0505157637", "lat": 27.48024, "lon": 41.73464, "maps_cid": "13181426436365412113"},
+      "observed": {"name": "معرض الشرق اللامع للسيارات", "activity": "تاجر السيارات", "address": "FPJM+3VR، الصناعية الثانية، حائل 55423", "phone": "0505157637", "lat": 27.4802495, "lon": 41.7346378, "maps_cid": "13181426436365412113"},
+      "proposed_change": null
+    },
+    {
+      "id": "phase6-google-13140754517636640618",
+      "city": "حائل",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض فهد الزامل للسيارات", "phone": "0165329999", "lat": 27.48214, "lon": 41.73505, "maps_cid": "13140754517636640618"},
+      "observed": {"name": "معرض فهد الزامل للسيارات", "activity": "تاجر سيارات", "address": "FPJP+V23، حائل 55423", "phone": "0165329999", "lat": 27.4821428, "lon": 41.7350482, "maps_cid": "13140754517636640618"},
+      "proposed_change": null
+    },
+    {
+      "id": "phase6-google-229356291587975408",
+      "city": "حائل",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض التميمي للسيارات Al-Tamimi Exhibition For Cars", "phone": "0534770022", "lat": null, "lon": null, "maps_cid": "229356291587975408"},
+      "observed": {"name": "معرض التميمي للسيارات Al-Tamimi Exhibition For Cars", "activity": "تاجر السيارات", "address": "حائل 55423", "phone": "0534770022", "plus_code": "FPJM+JJ حائل السعودية", "lat": 27.4815625, "lon": 41.7340625, "maps_cid": "229356291587975408"},
+      "proposed_change": {"lat": 27.4815625, "lon": 41.7340625}
+    },
+    {
+      "id": "phase6-google-3168134045689477811",
+      "city": "حائل",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض الباحوث بحائل", "phone": "0504871767", "lat": 27.48036, "lon": 41.73214, "maps_cid": "3168134045689477811"},
+      "observed": {"name": "معرض الباحوث بحائل", "activity": "تاجر سيارات", "address": "FPJJ+4VR معرض الباحوث للسيارات، حائل 55423", "phone": "0504871767", "lat": 27.4803649, "lon": 41.732127, "maps_cid": "3168134045689477811"},
+      "proposed_change": null
+    },
+    {
+      "id": "phase6-google-7347978235120157841",
+      "city": "حائل",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض طارق", "phone": "0505160884", "lat": 27.48121, "lon": 41.73239, "maps_cid": "7347978235120157841"},
+      "observed": {"name": "معرض طارق", "activity": "سمسار سيارات", "address": "FPJJ+FXJ، حائل 55423", "phone": "0505160884", "lat": 27.4812036, "lon": 41.7324022, "maps_cid": "7347978235120157841"},
+      "proposed_change": null
+    },
+    {
+      "id": "pdf-smalltown-027",
+      "city": "حائل",
+      "decision": "verified_duplicate_proposed_archive",
+      "stored": {"name": "شركة إبراهيم العودة للسيارات -فرع شركة شعار", "phone": "0115207355", "address": "السيارة المحدودة 7163،3125", "maps": "", "lat": null, "lon": null},
+      "matched_canonical_record": "phase6-google-2739362050555451371",
+      "evidence": {"same_phone": "0115207355", "same_address_tokens": "7163،3125", "same_business_name": "شركة إبراهيم العودة للسيارات - فرع شركة شعار السيارة المحدودة", "maps_cid": "2739362050555451371"},
+      "proposed_change": {"archive_duplicate_from_display": true, "retain_id": "phase6-google-2739362050555451371"}
+    },
+    {
+      "id": "phase6-google-9531526961148001094",
+      "city": "حائل",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض عالم السيارات", "phone": "0165328507", "lat": null, "lon": null, "maps_cid": "9531526961148001094"},
+      "observed": {"name": "معرض عالم السيارات", "activity": "متجر", "address": "2736، حائل 55423 6726", "phone": "0165328507", "plus_code": "FPHJ+PP حائل السعودية", "lat": 27.4793111, "lon": 41.7318162, "maps_cid": "9531526961148001094"},
+      "proposed_change": {"lat": 27.4793111, "lon": 41.7318162}
+    },
+    {
+      "id": "phase6-google-3646076934075893210",
+      "city": "حائل",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض درة حائل للسيارات", "phone": "0501620215", "lat": 27.48174, "lon": 41.73298, "maps_cid": "3646076934075893210"},
+      "observed": {"name": "معرض درة حائل للسيارات", "activity": "تاجر سيارات", "address": "FPJM+M5X، حائل 55423", "phone": "0501620215", "lat": 27.481735, "lon": 41.7329789, "maps_cid": "3646076934075893210"},
+      "proposed_change": null
+    },
+    {
+      "id": "phase6-google-4044662082393491158",
+      "city": "حائل",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض التركي للسيارات", "phone": "0575159860", "lat": null, "lon": null, "maps_cid": "4044662082393491158"},
+      "observed": {"name": "معرض التركي للسيارات", "activity": "تاجر سيارات", "address": "6703، حائل 55423 3015", "phone": "0575159860", "plus_code": "FPHM+MP حائل السعودية", "lat": 27.4791365, "lon": 41.7343492, "maps_cid": "4044662082393491158"},
+      "proposed_change": {"lat": 27.4791365, "lon": 41.7343492}
+    },
+    {
+      "id": "phase6-google-5643651359504875625",
+      "city": "حائل",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض الجابري للسيارات", "phone": "0541495858", "lat": null, "lon": null, "maps_cid": "5643651359504875625"},
+      "observed": {"name": "معرض الجابري للسيارات", "activity": "تاجر سيارات", "address": "ميمون بن جعفر، حائل 55423", "phone": "0541495858", "plus_code": "FPJM+Q3 حائل السعودية", "lat": 27.4819001, "lon": 41.7326849, "maps_cid": "5643651359504875625"},
+      "proposed_change": {"lat": 27.4819001, "lon": 41.7326849}
+    }
+  ]
+}

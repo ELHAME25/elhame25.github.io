@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "b9e168991b6323d7881a3972f010038425ba1fda",
+  "scope": {
+    "city": "المزاحمية",
+    "batch": "remaining",
+    "count": 8,
+    "positions": "1-8 of 8",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Direct provider place records, stored coordinates, linked business pages and regional provenance were reconciled field by field. Search-only links were not accepted as pins.",
+  "records": [
+    {
+      "id": "national-car-43964ad9e84858",
+      "name": "شركة RPM للسيارات — فرع المزاحمية",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "المزاحمية",
+        "neighborhood": "المزاحمية، حي نوارة، شارع العليا، السعودية",
+        "phones": [
+          "0115007242"
+        ],
+        "whatsapp": null,
+        "website": "https://rpmformotors.com/",
+        "maps": "https://maps.app.goo.gl/ZBeuDz75DyVBNnV4A",
+        "lat": 24.46369,
+        "lon": 46.29551
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_provider_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://maps.app.goo.gl/ZBeuDz75DyVBNnV4A",
+        "https://rpmformotors.com/"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "v9-car-8b3f08d2d412",
+      "name": "معرض شيخ معارض المزاحمية",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "المزاحمية",
+        "neighborhood": "الصناعية، المزاحمية 19658",
+        "phones": [
+          "0533666130"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B4%D9%8A%D8%AE%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9",
+        "lat": 24.4798,
+        "lon": 46.30615
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B4%D9%8A%D8%AE%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "v9-car-670c094930f0",
+      "name": "معرض المزاحمية للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "المزاحمية",
+        "neighborhood": "طريق الملك عبدالعزيز، الصناعية، المزاحمية 19658",
+        "phones": [],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9",
+        "lat": 24.4798,
+        "lon": 46.30615
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "v9-car-39f4aeb88cc9",
+      "name": "معرض قمة العارض للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "المزاحمية",
+        "neighborhood": "المزاحمية 19658",
+        "phones": [
+          "0508772086"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "v9-car-6b55573b9dd9",
+      "name": "معرض لواحق للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "المزاحمية",
+        "neighborhood": "طريق الملك عبدالعزيز، المزاحمية 19658",
+        "phones": [
+          "0530022204"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%84%D9%88%D8%A7%D8%AD%D9%82%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%84%D9%88%D8%A7%D8%AD%D9%82%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "v9-car-bb94b555f2ec",
+      "name": "معرض أضواء دوحة نجد للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "المزاحمية",
+        "neighborhood": "المزاحمية 19658",
+        "phones": [
+          "0532195034"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A3%D8%B6%D9%88%D8%A7%D8%A1%20%D8%AF%D9%88%D8%AD%D8%A9%20%D9%86%D8%AC%D8%AF%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A3%D8%B6%D9%88%D8%A7%D8%A1%20%D8%AF%D9%88%D8%AD%D8%A9%20%D9%86%D8%AC%D8%AF%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "v9-car-4459ddd63316",
+      "name": "معرض مفلح القحطاني للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "المزاحمية",
+        "neighborhood": "المزاحمية 19658",
+        "phones": [
+          "0115231242"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D9%81%D9%84%D8%AD%20%D8%A7%D9%84%D9%82%D8%AD%D8%B7%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "confirmed_from_provider_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D9%81%D9%84%D8%AD%20%D8%A7%D9%84%D9%82%D8%AD%D8%B7%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    },
+    {
+      "id": "v9-car-cd204cdd1e62",
+      "name": "معرض بن شري للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "المزاحمية",
+        "neighborhood": "الصناعية، المزاحمية 19658",
+        "phones": [],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%86%20%D8%B4%D8%B1%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9",
+        "lat": 24.4798,
+        "lon": 46.30615
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_provider_stated",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%86%20%D8%B4%D8%B1%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9"
+      ],
+      "note": "تطابقت بيانات السجل مع رابط المكان المباشر؛ الحقول غير المنشورة بقيت غير محسومة."
+    }
+  ]
+}

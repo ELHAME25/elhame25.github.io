@@ -1,0 +1,91 @@
+{
+  "report": "استكمال الحالات غير المحسومة - دفعة الهواتف الثانية وإصلاح سلامة النسخ الإقليمية",
+  "date": "2026-10-11",
+  "base_commit": "dadd75f52668277df3bbf2190b0acba4065ad328",
+  "scope": {
+    "phone_records_reviewed": 29,
+    "phone_records_corrected": 6,
+    "phone_records_unresolved_after": 23,
+    "records_after": 821,
+    "qadisiyah_records": 33,
+    "qadisiyah_changed": false,
+    "merge_or_publish": false
+  },
+  "qa_fix": {
+    "record": "national-car-711e34151620f3",
+    "name": "معرض الحيزان للسيارات",
+    "issue": "السجل الأصلي احتفظ بإحداثيات Waze قديمة بينما نسخته الإقليمية تحمل بطاقة Google المثبتة للمعرض نفسه.",
+    "old": {
+      "maps": "https://www.waze.com/ar/live-map/directions/sa/mntqh-aljwf/skaka/mardh-alhyzan-llsyarat?to=place.ChIJ8fKdJMy-chURDIqJkr75fCo",
+      "lat": 29.97319,
+      "lon": 40.21912
+    },
+    "new": {
+      "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ8fKdJMy-chURDIqJkr75fCo",
+      "lat": 29.9218508,
+      "lon": 40.2314734
+    },
+    "test_fix": "تعامل المقارنة mapsQ المفقود والسلسلة الفارغة كحالة فارغة واحدة، مع استمرار المطابقة الصارمة للاسم والهاتف والرابط والإحداثيات.",
+    "target_test": "13/13 passed",
+    "full_qa": "passed"
+  },
+  "phone_corrections": [
+    {
+      "id": "pdf-smalltown-013",
+      "name": "Al Wafaa Showroom For Cars",
+      "city": "أبها–خميس مشيط",
+      "old": [],
+      "new": ["0172354610"],
+      "proof": "بطاقة Google Maps: معرض الوفاء للسيارات، حي المعارض، خميس مشيط، والهاتف +966 17 235 4610؛ الرقم مطابق للنسخة الإقليمية المحفوظة regional-pdf-pdf-smalltown-013-045."
+    },
+    {
+      "id": "pdf-smalltown-027",
+      "name": "شركة إبراهيم العودة للسيارات - فرع شركة شعار",
+      "city": "حائل",
+      "old": [],
+      "new": ["0115207355"],
+      "proof": "بطاقة Google Maps طابقت الاسم الكامل والعنوان 7163، 3125، حائل والهاتف +966 11 520 7355."
+    },
+    {
+      "id": "pdf-smalltown-029",
+      "name": "اوتوزون بالبيد للسيارات - ينبع",
+      "city": "ينبع",
+      "old": [],
+      "new": ["8007606000"],
+      "proof": "بطاقة Google Maps طابقت الاسم وفرع ينبع وعنوان طريق الملك عبدالعزيز والهاتف الموحد +966 800 760 6000."
+    },
+    {
+      "id": "pdf-smalltown-030",
+      "name": "شركة الكثيري للسيارات",
+      "city": "ينبع",
+      "old": [],
+      "new": ["0143908880"],
+      "proof": "بطاقة Google Maps طابقت الاسم والعنوان في الشربتلي، ينبع والهاتف +966 14 390 8880."
+    },
+    {
+      "id": "pdf-smalltown-031",
+      "name": "Honda Yanbu معرض هلا",
+      "city": "ينبع",
+      "old": [],
+      "new": ["0564073962"],
+      "proof": "بطاقة Google Maps طابقت الاسم وعنوان طريق الملك خالد، ينبع والهاتف +966 56 407 3962."
+    },
+    {
+      "id": "v9-car-ee748c56b18e",
+      "name": "معرض المملكة الجديد للسيارات",
+      "city": "وادي الدواسر",
+      "old": [],
+      "new": ["0500060011"],
+      "proof": "بطاقة Google Maps طابقت الاسم ومدينة وادي الدواسر والهاتف +966 50 006 0011."
+    }
+  ],
+  "rejected_candidate": {
+    "id": "v9-car-b088cbf87fe0",
+    "name": "معرض العضيلة للسيارات",
+    "reason": "نتيجة البحث ذات الهاتف كانت في الطائف لا المجمعة؛ لم يُنقل الرقم لتجنب إسناده إلى سجل مختلف."
+  },
+  "browser_test": {
+    "status": "blocked_in_local_runner",
+    "reason": "حزمة Chromium المطلوبة من Playwright غير موجودة، ومحاولة التنزيل أعادت ملفًا فارغًا من الشبكة المقيدة؛ لم تُغيّر ملفات المشروع بسبب ذلك."
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-11",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "records": [
+    {
+      "id": "phase5-google-16189025206245480759",
+      "name": "مجموعة صالح للسيارات",
+      "city": "جدة",
+      "decision": "card/name/activity/phone confirmed; pin correction proposed",
+      "card": {
+        "category": "تاجر سيارات",
+        "address": "طريق الملك فهد، الفرعي، حي العزيزية، جدة",
+        "phone": "+966920022122",
+        "plusCode": "H54P+CX",
+        "coordinates": {
+          "lat": 21.5560643,
+          "lon": 39.1874537
+        }
+      },
+      "stored": {
+        "lat": 21.55287,
+        "lon": 39.19468
+      },
+      "proposed": {
+        "nb": "طريق الملك فهد الفرعي، حي العزيزية، جدة (H54P+CX)",
+        "lat": 21.5560643,
+        "lon": 39.1874537,
+        "mapReviewStatus": "verified_direct_pin"
+      }
+    },
+    {
+      "id": "phase5-google-15568748475583920162",
+      "name": "معرض محمد الجهني للسيارات",
+      "city": "جدة",
+      "decision": "card/name/activity/phone confirmed; pin correction proposed",
+      "card": {
+        "category": "تاجر سيارات",
+        "address": "معارض السيارات، الجوهرة جدة 22417",
+        "phone": "+966569717389",
+        "plusCode": "C7G3+3Q",
+        "coordinates": {
+          "lat": 21.4251355,
+          "lon": 39.2543775
+        }
+      },
+      "stored": {
+        "lat": 21.43173,
+        "lon": 39.25161
+      },
+      "proposed": {
+        "nb": "معارض السيارات، الجوهرة، جدة 22417 (C7G3+3Q)",
+        "lat": 21.4251355,
+        "lon": 39.2543775,
+        "mapReviewStatus": "verified_direct_pin"
+      }
+    },
+    {
+      "id": "phase5-car-062bda41f13d",
+      "name": "معرض الشلبى للسيارات المستوردة",
+      "city": "جدة",
+      "decision": "direct card and pin confirmed; coordinates unchanged",
+      "card": {
+        "category": "تاجر سيارات مستعملة",
+        "address": "C7M3+F86، الجوهرة، جدة 22417",
+        "phone": "+966555611699",
+        "coordinates": {
+          "lat": 21.4336709,
+          "lon": 39.253257
+        }
+      },
+      "stored": {
+        "lat": 21.4336709,
+        "lon": 39.253257
+      },
+      "proposed": {
+        "mapReviewStatus": "verified_direct_pin"
+      }
+    },
+    {
+      "id": "phase5-car-d4be6fd1a88e",
+      "name": "معرض فيض الخيرات للسيارات جدة",
+      "city": "جدة",
+      "decision": "direct card/name/activity/phone confirmed; exact pin coordinates unresolved",
+      "card": {
+        "category": "تاجر سيارات",
+        "address": "معارض السيارات، شارع أحمد ذاكر ادريس، جدة 22417",
+        "phone": "+966550761199",
+        "plusCode": "C7J2+VR"
+      },
+      "stored": {
+        "lat": null,
+        "lon": null
+      },
+      "proposed": {
+        "mapReviewStatus": "verified_card_coordinates_unconfirmed",
+        "lat": null,
+        "lon": null
+      }
+    }
+  ],
+  "writeStatus": "reviews rejected a full-file data update earlier; this log records verified evidence and suggested field changes without retrying or indirectly applying the rejected update."
+}

@@ -1,0 +1,235 @@
+{
+  "report": "استكمال البيانات غير المحسومة دون إعادة التدقيق السابق",
+  "date": "2026-10-11",
+  "base_commit": "89447f78caef1994f1875f1ed16cc64d97e2b96d",
+  "scope": {
+    "starting_records": 821,
+    "starting_map_unresolved": 219,
+    "starting_phone_missing": 33,
+    "priority": "السجلات المستعادة وعددها 33، ثم معرض الحيزان في سكاكا",
+    "protected_scope": "القادسية",
+    "merge_or_publish": false
+  },
+  "result": {
+    "records_after": 821,
+    "direct_map_links_after": 614,
+    "search_only_map_links_after": 207,
+    "missing_effective_map_after": 0,
+    "map_records_resolved_now": 12,
+    "phone_rows_resolved_now": 4,
+    "phone_rows_missing_after": 29,
+    "qadisiyah_changed": false
+  },
+  "map_corrections": [
+    {
+      "id": "regional-pdf-national-car-711e34151620f3-059",
+      "name": "معرض الحيزان للسيارات",
+      "city": "سكاكا",
+      "old": {"maps": "", "lat": null, "lon": null, "status": "no_verified_local_pin"},
+      "new": {"maps": "https://www.google.com/maps/place/?q=place_id:ChIJ8fKdJMy-chURDIqJkr75fCo", "lat": 29.9218508, "lon": 40.2314734, "status": "verified_direct_pin"},
+      "proof": "الاسم والعنوان في الصناعية الثانية بسكاكا والهاتف 0539393328 والإحداثيات متطابقة.",
+      "sources": [
+        "https://www.google.com/maps/place/?q=place_id:ChIJ8fKdJMy-chURDIqJkr75fCo",
+        "https://albaraka.ma/annuaire/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AD%D9%8A%D8%B2%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%B3%D9%83%D8%A7%D9%83%D8%A7-966-53-939-3328/",
+        "https://haraj.com.sa/11178279366/"
+      ]
+    },
+    {
+      "id": "v9-car-88a1d1a74cd8",
+      "name": "معرض حبيب للسيارات",
+      "city": "الخفجي",
+      "old": {"maps_kind": "google_search", "lat": null, "lon": null},
+      "new": {"maps": "https://www.google.com/maps/?cid=4834440466668727229", "lat": 28.430858, "lon": 48.4714191},
+      "proof": "بطاقة Google Maps مباشرة تطابقت بالاسم والمدينة والهاتف 0504960504.",
+      "sources": ["https://www.google.com/maps/?cid=4834440466668727229"]
+    },
+    {
+      "id": "v9-car-294cd28d5579",
+      "name": "معرض الحرملي للسيارات",
+      "city": "الخفجي",
+      "old": {"maps_kind": "google_search", "lat": null, "lon": null},
+      "new": {"maps": "https://www.google.com/maps/?cid=11429897377137668432", "lat": 28.4310152, "lon": 48.471495},
+      "proof": "بطاقة Google Maps مباشرة تطابقت بالاسم والمدينة والهاتف 0571547034.",
+      "sources": ["https://www.google.com/maps/?cid=11429897377137668432"]
+    },
+    {
+      "id": "v9-car-bb4cf966a6a6",
+      "name": "معرض البداح للسيارات",
+      "city": "الخفجي",
+      "old": {"maps_kind": "google_search", "lat": null, "lon": null},
+      "new": {"maps": "https://www.google.com/maps/?cid=15308422792903309991", "lat": 28.4310625, "lon": 48.4701875},
+      "proof": "بطاقة Google Maps مباشرة تطابقت بالاسم والمدينة والهاتف 0501666406.",
+      "sources": ["https://www.google.com/maps/?cid=15308422792903309991", "https://magicpin.com/saudi-arabia/Khafji/Khafji-Downtown/Autocare/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%A8%D8%AF%D8%A7%D8%AD-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/store/22b2983"]
+    },
+    {
+      "id": "v9-car-0d64b91343e9",
+      "name": "معرض الثقة للسيارات",
+      "city": "الخفجي",
+      "old": {"maps_kind": "google_search", "lat": null, "lon": null},
+      "new": {"maps": "https://www.google.com/maps/?cid=2889672543874003905", "lat": 28.4322371, "lon": 48.4690995},
+      "proof": "بطاقة Google Maps مباشرة تطابقت بالاسم والمدينة والهاتف 0561977091.",
+      "sources": ["https://www.google.com/maps/?cid=2889672543874003905", "https://sudanes800.wixsite.com/website/contact"]
+    },
+    {
+      "id": "v9-car-86ac8f8534f8",
+      "name": "معرض نايف الحربي",
+      "city": "الخفجي",
+      "old": {"maps_kind": "google_search", "lat": null, "lon": null},
+      "new": {"maps": "https://www.google.com/maps/?cid=6663495668206155321", "lat": 28.4313803, "lon": 48.4699299},
+      "proof": "بطاقة Google Maps مباشرة تطابقت بالاسم والمدينة والهاتف 0537494021.",
+      "sources": ["https://www.google.com/maps/?cid=6663495668206155321"]
+    },
+    {
+      "id": "v9-car-cf918a075485",
+      "name": "معرض عمر خالد الشمري للسيارات",
+      "city": "الخفجي",
+      "old": {"maps_kind": "google_search", "lat": null, "lon": null},
+      "new": {"maps": "https://www.google.com/maps/?cid=9509459008611719727", "lat": 28.4298884, "lon": 48.4700989},
+      "proof": "بطاقة Google Maps مباشرة حُلّت من الاسم والمدينة والهاتف 0567201230.",
+      "sources": ["https://www.google.com/maps/?cid=9509459008611719727"]
+    },
+    {
+      "id": "v9-car-b1bdc0f553d7",
+      "name": "شركة استثمار الجنوب للسيارات",
+      "city": "الخفجي",
+      "old": {"maps_kind": "google_search", "lat": null, "lon": null},
+      "new": {"maps": "https://www.google.com/maps/?cid=12559959882244875210", "lat": 28.4320802, "lon": 48.4726815},
+      "proof": "بطاقة Google Maps مباشرة حُلّت من الاسم والمدينة والهاتف 0504378165.",
+      "sources": ["https://www.google.com/maps/?cid=12559959882244875210"]
+    },
+    {
+      "id": "v9-car-bcbb563314f5",
+      "name": "معرض البركة للسيارات",
+      "city": "العلا",
+      "old": {"maps_kind": "google_search", "lat": 26.57055, "lon": 37.9424},
+      "new": {"maps": "https://www.google.com/maps/?cid=9222087794760365530", "lat": 26.5753473, "lon": 37.9436646},
+      "proof": "بطاقة Google Maps مباشرة تطابقت بالاسم والمدينة والهاتف 0148845554.",
+      "sources": ["https://www.google.com/maps/?cid=9222087794760365530"]
+    },
+    {
+      "id": "v9-car-a10fc7b2ee2e",
+      "name": "معرض سفير الوجه للسيارات",
+      "city": "الوجه",
+      "old": {"maps_kind": "google_search", "lat": null, "lon": null},
+      "new": {"maps": "https://www.google.com/maps/?cid=17871639296096803693", "lat": 26.2189532, "lon": 36.4915104},
+      "proof": "بطاقة Google Maps مباشرة حُلّت من الاسم والمدينة والهاتف 0583611555.",
+      "sources": ["https://www.google.com/maps/?cid=17871639296096803693"]
+    },
+    {
+      "id": "v9-car-6766b3d581ac",
+      "name": "معرض ناصر أمين الفرشوطي للسيارات",
+      "city": "الوجه",
+      "old": {"maps_kind": "google_search", "lat": 26.24434, "lon": 36.45475},
+      "new": {"maps": "https://www.google.com/maps/?cid=4746158665479278043", "lat": 26.2425779, "lon": 36.4582773},
+      "proof": "بطاقة Google Maps مباشرة حُلّت من الاسم والمدينة والهاتف 0553620322.",
+      "sources": ["https://www.google.com/maps/?cid=4746158665479278043"]
+    },
+    {
+      "id": "v9-car-ba916b45a31d",
+      "name": "معرض محمد عبدالقادر أبوصابر",
+      "city": "الوجه",
+      "old": {"maps_kind": "google_search", "lat": 26.25524, "lon": 36.44761},
+      "new": {"maps": "https://www.google.com/maps/?cid=11563736501233349119", "lat": 26.2607469, "lon": 36.4436104},
+      "proof": "بطاقة Google Maps مباشرة حُلّت من الاسم والمدينة والهاتف 0506022247.",
+      "sources": ["https://www.google.com/maps/?cid=11563736501233349119"]
+    }
+  ],
+  "phone_corrections": [
+    {
+      "id": "pdf-smalltown-018",
+      "name": "معرض بن ملهي للسيارات",
+      "city": "أبها",
+      "old": [],
+      "new": ["0565335204"],
+      "sources": ["https://haraj.com.sa/11179243495/", "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A8%D9%86-%D9%85%D9%84%D9%87%D9%8A-056-533-5204"]
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-018-045",
+      "name": "معرض بن ملهي للسيارات",
+      "city": "خميس مشيط",
+      "old": [],
+      "new": ["0565335204"],
+      "sources": ["https://haraj.com.sa/11179243495/", "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A8%D9%86-%D9%85%D9%84%D9%87%D9%8A-056-533-5204"]
+    },
+    {
+      "id": "pdf-smalltown-019",
+      "name": "معرض مكة المكرمة",
+      "city": "أبها",
+      "old": [],
+      "new": ["0505748036"],
+      "sources": ["https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-050-574-8036"]
+    },
+    {
+      "id": "pdf-smalltown-021",
+      "name": "معرض هبوب نجد",
+      "city": "أبها",
+      "old": [],
+      "new": ["0172377060"],
+      "sources": ["https://haraj.com.sa/11130651878/", "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%87%D8%A8%D9%88%D8%A8-%D9%86%D8%AC%D8%AF-017-237-7060"]
+    }
+  ],
+  "priority_map_unresolved_after_search": [
+    "v9-car-5401b2471ac1",
+    "v9-car-1362c378fe34",
+    "v9-car-e3d202093fe0",
+    "v9-car-822b7767502f",
+    "v9-car-97cce6124ff4",
+    "v9-car-069025df19ca",
+    "v9-car-4bc674fb7319",
+    "v9-car-fa37d453166e",
+    "v9-car-03318791fee2",
+    "v9-car-585ebb8d6246",
+    "v9-car-b088cbf87fe0",
+    "v9-car-0535236d68dc",
+    "v9-car-2d9407920ab3",
+    "v9-car-b4ca928aa450",
+    "v9-car-9ef748bc90de",
+    "v9-car-b3d20120a5eb",
+    "v9-car-ee748c56b18e",
+    "v9-car-2cdb1d8ff2a6",
+    "v9-car-7002e1e1842d",
+    "v9-car-5f758b9c1c04",
+    "v9-car-de4ab6caf5cd",
+    "v9-car-82851ad17564"
+  ],
+  "phone_missing_after": [
+    "phase5-google-8725025085619062305",
+    "phase5-google-16342160566062952186",
+    "phase5-google-2228534340415773388",
+    "phase5-google-2952431352797838074",
+    "phase6-google-7593477781153902425",
+    "phase6-cars-7018abada2b85b",
+    "v9-car-2bce066e7d5c",
+    "v9-car-e7ed2ccacdc2",
+    "v9-car-925aa0ae9f2e",
+    "v9-car-670c094930f0",
+    "v9-car-cd204cdd1e62",
+    "regional-pdf-phase6-cars-7018abada2b85b-008",
+    "regional-pdf-v9-car-e7ed2ccacdc2-008",
+    "pdf-smalltown-013",
+    "pdf-smalltown-016",
+    "pdf-smalltown-017",
+    "pdf-smalltown-027",
+    "pdf-smalltown-028",
+    "pdf-smalltown-029",
+    "pdf-smalltown-030",
+    "pdf-smalltown-031",
+    "regional-pdf-pdf-smalltown-016-045",
+    "v9-car-e3d202093fe0",
+    "v9-car-069025df19ca",
+    "v9-car-b088cbf87fe0",
+    "v9-car-ee748c56b18e",
+    "v9-car-2cdb1d8ff2a6",
+    "v9-car-7002e1e1842d",
+    "v9-car-de4ab6caf5cd"
+  ],
+  "carried_forward_without_repeat_audit": {
+    "map_records": 185,
+    "sources": [
+      "MAP_AUDIT_LEDGER_2026-10-10.json",
+      "MAP_AUDIT_PROGRESS_2026-10-10.md",
+      "CAR_FIELD_AUDIT_*_2026-10-11*.json"
+    ],
+    "decision": "بقيت روابط البحث الموثقة كغير محسومة؛ لم تُحوّل إلى دبابيس ولم تُخمن الإحداثيات."
+  }
+}

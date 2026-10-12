@@ -1,0 +1,463 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "ca61f9b83295429dcd1f21f9f3a45f18e4b28744",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "صبيا، الدفعة 03، السجلات 21–30؛ ربط النسخ المتطابقة بأدلة أبو عريش المحفوظة، وتحديد تعارض سجلي صامطة.",
+  "count": 10,
+  "note": "أُعيد استخدام التدقيق المحفوظ للنسخ؛ لا تعديل على cars.json. تصحيح تعارضات المدن والأرقام يحتاج إذن كتابة غير متاح بعد رفض كتابة cars.json السابق.",
+  "entries": [
+    {
+      "id": "regional-pdf-v9-car-d0cd534a5437-008",
+      "name": "معرض قمة عسير لبيع وشراء السيارات",
+      "evidence": "بيانات السجل نفسه تضع الموقع في صامطة، لا صبيا. لم يتوفر رابط خرائط Google أو مصدر مستقل مباشر في التدقيق المحفوظ للتحقق من الهاتف/الهوية.",
+      "sources": [],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "الاسم من cars.json فقط؛ لم يُثبت بمصدر مستقل مباشر.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "بيانات السجل نفسه تضع الموقع في صامطة، لا صبيا. لم يتوفر رابط خرائط Google أو مصدر مستقل مباشر في التدقيق المحفوظ للتحقق من الهاتف/الهوية.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "الرقم المخزن لم يُ corroborate بمصدر مستقل مباشر.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط واتساب مباشر موثق.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "missing",
+          "evidence": "لا يوجد رابط Google Maps في السجل ولم تُثبت بطاقة مباشرة.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد موقع إلكتروني موثق.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-6034f3303506-008",
+      "name": "معرض المعشي",
+      "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-6034f3303506 دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+      "source_record": "v9-car-6034f3303506",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%B4%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps name search did not load a readable card in this pass; stored URL is a search query, not a verified direct pin.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%B4%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-6034f3303506 دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%B4%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps name search did not load a readable card in this pass; stored URL is a search query, not a verified direct pin.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%B4%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination was verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%B4%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps name search did not load a readable card in this pass; stored URL is a search query, not a verified direct pin.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%B4%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website established for this listing.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%B4%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-921b1d2e358b-008",
+      "name": "معرض مكس كارز للسيارات أبو عريش",
+      "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-921b1d2e358b دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+      "source_record": "v9-car-921b1d2e358b",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D9%83%D8%B3%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "verified_listing_unpinned",
+          "evidence": "Google Maps search resolves exact معرض مكس كارز للسيارات أبو عريش, industrial district 84718, phone +966559998387 and Plus Code XV36+RC matching stored fields. Query remains search URL; direct canonical place link not captured.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D9%83%D8%B3%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "phone": {
+          "status": "google_maps_observed",
+          "evidence": "Google Maps search resolves exact معرض مكس كارز للسيارات أبو عريش, industrial district 84718, phone +966559998387 and Plus Code XV36+RC matching stored fields. Query remains search URL; direct canonical place link not captured.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D9%83%D8%B3%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-921b1d2e358b دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D9%83%D8%B3%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination for the listing phone verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D9%83%D8%B3%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website visible in the captured Maps card.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D9%83%D8%B3%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-c61e61e7e45b-008",
+      "name": "معرض الوفاء للسيارات",
+      "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-c61e61e7e45b دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+      "source_record": "v9-car-c61e61e7e45b",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D9%81%D8%A7%D8%A1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "verified_listing_unpinned",
+          "evidence": "Google Maps search resolves exact معرض الوفاء للسيارات, King Abdullah road, industrial Abu Arish 84216, phone +966576264996 and Plus Code XV45+4X matching record. Search URL is not a verified canonical pin.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D9%81%D8%A7%D8%A1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "phone": {
+          "status": "google_maps_observed",
+          "evidence": "Google Maps search resolves exact معرض الوفاء للسيارات, King Abdullah road, industrial Abu Arish 84216, phone +966576264996 and Plus Code XV45+4X matching record. Search URL is not a verified canonical pin.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D9%81%D8%A7%D8%A1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-c61e61e7e45b دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D9%81%D8%A7%D8%A1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination for the listing phone verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D9%81%D8%A7%D8%A1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website visible in the captured Maps card.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D9%81%D8%A7%D8%A1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-d585c7680b4a-008",
+      "name": "معرض بوابة المركبات للسيارات",
+      "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-d585c7680b4a دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+      "source_record": "v9-car-d585c7680b4a",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "verified_listing_unpinned",
+          "evidence": "Google Maps search resolves exact معرض بوابة المركبات للسيارات, King Abdullah road, industrial Abu Arish 84212, phone +966507377555 and Plus Code XV46+45. Search URL remains unpinned.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "phone": {
+          "status": "google_maps_observed",
+          "evidence": "Google Maps search resolves exact معرض بوابة المركبات للسيارات, King Abdullah road, industrial Abu Arish 84212, phone +966507377555 and Plus Code XV46+45. Search URL remains unpinned.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-d585c7680b4a دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination for the listing phone verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website visible in the captured Maps card.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-e7ed2ccacdc2-008",
+      "name": "معرض الحكمي",
+      "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-e7ed2ccacdc2 دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+      "source_record": "v9-car-e7ed2ccacdc2",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%83%D9%85%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps name search did not load a readable card in this pass; no phone is saved and no direct identity was verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%83%D9%85%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-e7ed2ccacdc2 دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%83%D9%85%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps name search did not load a readable card in this pass; no phone is saved and no direct identity was verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%83%D9%85%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination was verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%83%D9%85%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Google Maps name search did not load a readable card in this pass; no phone is saved and no direct identity was verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%83%D9%85%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website established for this listing.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%83%D9%85%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-005018b74aea-008",
+      "name": "معرض المعافا للسيارات",
+      "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-005018b74aea دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+      "source_record": "v9-car-005018b74aea",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%81%D8%A7%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "verified_listing_unpinned",
+          "evidence": "Google Maps search resolves exact معرض المعافا للسيارات, industrial Abu Arish 84216, phone +966558168701 and Plus Code XV45+2Q matching stored fields. Search URL is not a canonical place pin.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%81%D8%A7%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "phone": {
+          "status": "google_maps_observed",
+          "evidence": "Google Maps search resolves exact معرض المعافا للسيارات, industrial Abu Arish 84216, phone +966558168701 and Plus Code XV45+2Q matching stored fields. Search URL is not a canonical place pin.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%81%D8%A7%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-005018b74aea دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%81%D8%A7%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination for the listing phone verified.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%81%D8%A7%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website visible in the captured Maps card.",
+          "sources": [
+            "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%81%D8%A7%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-63c2f51fadb2-008",
+      "name": "معرض رواد النوادر",
+      "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-63c2f51fadb2 دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+      "source_record": "v9-car-63c2f51fadb2",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B1%D9%88%D8%A7%D8%AF+%D8%A7%D9%84%D9%86%D9%88%D8%A7%D8%AF%D8%B1%E2%80%AD/@16.9550317,42.8613648,1068m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1607f50058e0b60b:0x2b2fa65ad6135f2d!8m2!3d16.9550317!4d42.8613648!16s%2Fg%2F11ntg1y33f!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "verified_direct_place",
+          "evidence": "Google Maps resolves exact معرض رواد النوادر, car dealer, roundabout Al-Manqa / car showrooms Abu Arish, phone +966544262271 and Plus Code XV46+2G. Its browser address changes to a direct /maps/place URL; saved record still contains a search query.",
+          "sources": [
+            "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B1%D9%88%D8%A7%D8%AF+%D8%A7%D9%84%D9%86%D9%88%D8%A7%D8%AF%D8%B1%E2%80%AD/@16.9550317,42.8613648,1068m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1607f50058e0b60b:0x2b2fa65ad6135f2d!8m2!3d16.9550317!4d42.8613648!16s%2Fg%2F11ntg1y33f!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+          ]
+        },
+        "phone": {
+          "status": "google_maps_observed",
+          "evidence": "Google Maps resolves exact معرض رواد النوادر, car dealer, roundabout Al-Manqa / car showrooms Abu Arish, phone +966544262271 and Plus Code XV46+2G. Its browser address changes to a direct /maps/place URL; saved record still contains a search query.",
+          "sources": [
+            "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B1%D9%88%D8%A7%D8%AF+%D8%A7%D9%84%D9%86%D9%88%D8%A7%D8%AF%D8%B1%E2%80%AD/@16.9550317,42.8613648,1068m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1607f50058e0b60b:0x2b2fa65ad6135f2d!8m2!3d16.9550317!4d42.8613648!16s%2Fg%2F11ntg1y33f!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "نسخة إقليمية مكررة في مجموعة صبيا. أُعيد استخدام سجل التدقيق المحفوظ للمعرض الأصلي v9-car-63c2f51fadb2 دون إعادة البحث. عنوان السجل الأصلي في أبو عريش؛ لذلك حقل المدينة في النسخة متعارض.",
+          "sources": [
+            "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B1%D9%88%D8%A7%D8%AF+%D8%A7%D9%84%D9%86%D9%88%D8%A7%D8%AF%D8%B1%E2%80%AD/@16.9550317,42.8613648,1068m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1607f50058e0b60b:0x2b2fa65ad6135f2d!8m2!3d16.9550317!4d42.8613648!16s%2Fg%2F11ntg1y33f!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination for the listing phone verified.",
+          "sources": [
+            "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B1%D9%88%D8%A7%D8%AF+%D8%A7%D9%84%D9%86%D9%88%D8%A7%D8%AF%D8%B1%E2%80%AD/@16.9550317,42.8613648,1068m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1607f50058e0b60b:0x2b2fa65ad6135f2d!8m2!3d16.9550317!4d42.8613648!16s%2Fg%2F11ntg1y33f!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website visible in the captured Maps card.",
+          "sources": [
+            "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B1%D9%88%D8%A7%D8%AF+%D8%A7%D9%84%D9%86%D9%88%D8%A7%D8%AF%D8%B1%E2%80%AD/@16.9550317,42.8613648,1068m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1607f50058e0b60b:0x2b2fa65ad6135f2d!8m2!3d16.9550317!4d42.8613648!16s%2Fg%2F11ntg1y33f!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-022-057",
+      "name": "معرض الثقة للسيارات",
+      "evidence": "بيانات السجل نفسه تضع الموقع في صامطة، لا صبيا. لم يتوفر رابط خرائط Google أو مصدر مستقل مباشر في التدقيق المحفوظ للتحقق من الهاتف/الهوية.",
+      "sources": [],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "الاسم من cars.json فقط؛ لم يُثبت بمصدر مستقل مباشر.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "بيانات السجل نفسه تضع الموقع في صامطة، لا صبيا. لم يتوفر رابط خرائط Google أو مصدر مستقل مباشر في التدقيق المحفوظ للتحقق من الهاتف/الهوية.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "الرقم المخزن لم يُ corroborate بمصدر مستقل مباشر.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط واتساب مباشر موثق.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "missing",
+          "evidence": "لا يوجد رابط Google Maps في السجل ولم تُثبت بطاقة مباشرة.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد موقع إلكتروني موثق.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-023-057",
+      "name": "معرض عسكر للسيارات",
+      "evidence": "بيانات السجل نفسه تضع الموقع في صامطة، لا صبيا. لم يتوفر رابط خرائط Google أو مصدر مستقل مباشر في التدقيق المحفوظ للتحقق من الهاتف/الهوية.",
+      "sources": [],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "الاسم من cars.json فقط؛ لم يُثبت بمصدر مستقل مباشر.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "conflict_wrong_city",
+          "evidence": "بيانات السجل نفسه تضع الموقع في صامطة، لا صبيا. لم يتوفر رابط خرائط Google أو مصدر مستقل مباشر في التدقيق المحفوظ للتحقق من الهاتف/الهوية.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "الرقم المخزن لم يُ corroborate بمصدر مستقل مباشر.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط واتساب مباشر موثق.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "missing",
+          "evidence": "لا يوجد رابط Google Maps في السجل ولم تُثبت بطاقة مباشرة.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد موقع إلكتروني موثق.",
+          "sources": []
+        }
+      }
+    }
+  ]
+}

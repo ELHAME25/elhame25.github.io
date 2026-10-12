@@ -1,0 +1,533 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "403389239eaba92b2df0b0231d010a3f707ac57b",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "حائل، دفعة 01، أول 10 سجلات من 28. فُحصت روابط Google Maps المباشرة، ووسم الرابط الخارجي أو البطاقة غير المقروءة غير مؤكد دون تحايل برابط بحث.",
+  "count": 10,
+  "note": "مطابقة Google Maps وحدها لا تعد تحققاً مستقلاً لرقم الهاتف. الحالات المعلّمة verified_google_map_only بحاجة إلى مصدر مباشر ثانٍ قبل تصحيح البيانات.",
+  "entries": [
+    {
+      "id": "entity-42c1a1b88330",
+      "name": "معرض القادم للسيارات بحائل",
+      "evidence": "Stored direct CID returned blank/default map; no readable business card to verify name, activity, address, or phone.",
+      "sources": [
+        "https://www.google.com/maps?cid=2787717524267945909"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable business card to verify name, activity, address, or phone.",
+          "sources": [
+            "https://www.google.com/maps?cid=2787717524267945909"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable business card to verify name, activity, address, or phone.",
+          "sources": [
+            "https://www.google.com/maps?cid=2787717524267945909"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable business card to verify name, activity, address, or phone.",
+          "sources": [
+            "https://www.google.com/maps?cid=2787717524267945909"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=2787717524267945909"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable business card to verify name, activity, address, or phone.",
+          "sources": [
+            "https://www.google.com/maps?cid=2787717524267945909"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=2787717524267945909"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-c612efb039f5",
+      "name": "معرض المخلف للسيارات",
+      "evidence": "Stored direct CID returned blank/default map; no readable business card to verify name, activity, address, or phone.",
+      "sources": [
+        "https://www.google.com/maps?cid=6492392779851949292"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable business card to verify name, activity, address, or phone.",
+          "sources": [
+            "https://www.google.com/maps?cid=6492392779851949292"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable business card to verify name, activity, address, or phone.",
+          "sources": [
+            "https://www.google.com/maps?cid=6492392779851949292"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable business card to verify name, activity, address, or phone.",
+          "sources": [
+            "https://www.google.com/maps?cid=6492392779851949292"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=6492392779851949292"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable business card to verify name, activity, address, or phone.",
+          "sources": [
+            "https://www.google.com/maps?cid=6492392779851949292"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=6492392779851949292"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-57fcd2749acb",
+      "name": "معرض التميمي للسيارات",
+      "evidence": "The saved link is Yango Maps, not Google Maps; Google Maps direct pin was not established in this pass. Do not treat it as a Google Maps link.",
+      "sources": [
+        "https://maps.yango.com/ar-sa/org/60925282201/"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "wrong_type",
+          "evidence": "The saved link is Yango Maps, not Google Maps; Google Maps direct pin was not established in this pass. Do not treat it as a Google Maps link.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/60925282201/"
+          ]
+        },
+        "city_locality": {
+          "status": "wrong_type",
+          "evidence": "The saved link is Yango Maps, not Google Maps; Google Maps direct pin was not established in this pass. Do not treat it as a Google Maps link.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/60925282201/"
+          ]
+        },
+        "phone": {
+          "status": "wrong_type",
+          "evidence": "The saved link is Yango Maps, not Google Maps; Google Maps direct pin was not established in this pass. Do not treat it as a Google Maps link.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/60925282201/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone was verified.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/60925282201/"
+          ]
+        },
+        "google_maps": {
+          "status": "wrong_type",
+          "evidence": "The saved link is Yango Maps, not Google Maps; Google Maps direct pin was not established in this pass. Do not treat it as a Google Maps link.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/60925282201/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/org/60925282201/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-852df93f9758",
+      "name": "معرض الحنيني للسيارات حائل",
+      "evidence": "Direct CID opens معرض الحنيني للسيارات حائل, classified as car auction, address طريق الملك عبدالعزيز، حائل 55423 and phone +966506176119 matching the stored number.",
+      "sources": [
+        "https://www.google.com/maps?cid=9177322994304214622"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الحنيني للسيارات حائل, classified as car auction, address طريق الملك عبدالعزيز، حائل 55423 and phone +966506176119 matching the stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=9177322994304214622"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الحنيني للسيارات حائل, classified as car auction, address طريق الملك عبدالعزيز، حائل 55423 and phone +966506176119 matching the stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=9177322994304214622"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الحنيني للسيارات حائل, classified as car auction, address طريق الملك عبدالعزيز، حائل 55423 and phone +966506176119 matching the stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=9177322994304214622"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=9177322994304214622"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض الحنيني للسيارات حائل, classified as car auction, address طريق الملك عبدالعزيز، حائل 55423 and phone +966506176119 matching the stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=9177322994304214622"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=9177322994304214622"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-6644873880173081101",
+      "name": "معرض العواد للسيارات",
+      "evidence": "Stored direct CID returned blank/default map; identity and current contact cannot be confirmed.",
+      "sources": [
+        "https://www.google.com/maps?cid=6644873880173081101"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; identity and current contact cannot be confirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=6644873880173081101"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; identity and current contact cannot be confirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=6644873880173081101"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; identity and current contact cannot be confirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=6644873880173081101"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=6644873880173081101"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; identity and current contact cannot be confirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=6644873880173081101"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=6644873880173081101"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-10148029337991617788",
+      "name": "معرض م. الصقري للسيارات حائل",
+      "evidence": "Direct CID opens معرض م. الصقري للسيارات حائل, used-car dealer, industrial Hail, phone +966557850808 matching stored number; Plus Code FPJM+X4.",
+      "sources": [
+        "https://www.google.com/maps?cid=10148029337991617788"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض م. الصقري للسيارات حائل, used-car dealer, industrial Hail, phone +966557850808 matching stored number; Plus Code FPJM+X4.",
+          "sources": [
+            "https://www.google.com/maps?cid=10148029337991617788"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض م. الصقري للسيارات حائل, used-car dealer, industrial Hail, phone +966557850808 matching stored number; Plus Code FPJM+X4.",
+          "sources": [
+            "https://www.google.com/maps?cid=10148029337991617788"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض م. الصقري للسيارات حائل, used-car dealer, industrial Hail, phone +966557850808 matching stored number; Plus Code FPJM+X4.",
+          "sources": [
+            "https://www.google.com/maps?cid=10148029337991617788"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=10148029337991617788"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض م. الصقري للسيارات حائل, used-car dealer, industrial Hail, phone +966557850808 matching stored number; Plus Code FPJM+X4.",
+          "sources": [
+            "https://www.google.com/maps?cid=10148029337991617788"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=10148029337991617788"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-10535346191350138564",
+      "name": "معرض الجبيل للسيارات بحائل",
+      "evidence": "Stored direct CID returned blank/default map; no readable matching place details.",
+      "sources": [
+        "https://www.google.com/maps?cid=10535346191350138564"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable matching place details.",
+          "sources": [
+            "https://www.google.com/maps?cid=10535346191350138564"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable matching place details.",
+          "sources": [
+            "https://www.google.com/maps?cid=10535346191350138564"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable matching place details.",
+          "sources": [
+            "https://www.google.com/maps?cid=10535346191350138564"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=10535346191350138564"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable matching place details.",
+          "sources": [
+            "https://www.google.com/maps?cid=10535346191350138564"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=10535346191350138564"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-14514093740487545178",
+      "name": "معرض السديري للسيارات",
+      "evidence": "Direct CID showed phone link +966509959174, matching stored number, but Google Maps snapshot timed out before business name/address could be confirmed.",
+      "sources": [
+        "https://www.google.com/maps?cid=14514093740487545178"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Direct CID showed phone link +966509959174, matching stored number, but Google Maps snapshot timed out before business name/address could be confirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=14514093740487545178"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Direct CID showed phone link +966509959174, matching stored number, but Google Maps snapshot timed out before business name/address could be confirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=14514093740487545178"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Direct CID showed phone link +966509959174, matching stored number, but Google Maps snapshot timed out before business name/address could be confirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=14514093740487545178"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=14514093740487545178"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Direct CID showed phone link +966509959174, matching stored number, but Google Maps snapshot timed out before business name/address could be confirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=14514093740487545178"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=14514093740487545178"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-3312015092521698669",
+      "name": "معرض ركن المشراف للسيارات بحائل",
+      "evidence": "Direct CID opens معرض ركن المشراف للسيارات بحائل, car dealer, FPJM+P6M Hail 55423, phone +966542686044 matching stored number.",
+      "sources": [
+        "https://www.google.com/maps?cid=3312015092521698669"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض ركن المشراف للسيارات بحائل, car dealer, FPJM+P6M Hail 55423, phone +966542686044 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=3312015092521698669"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض ركن المشراف للسيارات بحائل, car dealer, FPJM+P6M Hail 55423, phone +966542686044 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=3312015092521698669"
+          ]
+        },
+        "phone": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض ركن المشراف للسيارات بحائل, car dealer, FPJM+P6M Hail 55423, phone +966542686044 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=3312015092521698669"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=3312015092521698669"
+          ]
+        },
+        "google_maps": {
+          "status": "verified_google_map_only",
+          "evidence": "Direct CID opens معرض ركن المشراف للسيارات بحائل, car dealer, FPJM+P6M Hail 55423, phone +966542686044 matching stored number.",
+          "sources": [
+            "https://www.google.com/maps?cid=3312015092521698669"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=3312015092521698669"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase6-google-7759503810639060055",
+      "name": "معرض الصويطي للسيارات",
+      "evidence": "Stored direct CID returned blank/default map; no readable matching business card.",
+      "sources": [
+        "https://www.google.com/maps?cid=7759503810639060055"
+      ],
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable matching business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=7759503810639060055"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable matching business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=7759503810639060055"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable matching business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=7759503810639060055"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination tied to the recorded phone was verified.",
+          "sources": [
+            "https://www.google.com/maps?cid=7759503810639060055"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored direct CID returned blank/default map; no readable matching business card.",
+          "sources": [
+            "https://www.google.com/maps?cid=7759503810639060055"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified; blank Maps panels do not establish absence.",
+          "sources": [
+            "https://www.google.com/maps?cid=7759503810639060055"
+          ]
+        }
+      }
+    }
+  ]
+}

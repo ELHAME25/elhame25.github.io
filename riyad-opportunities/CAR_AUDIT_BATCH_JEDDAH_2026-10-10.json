@@ -1,0 +1,136 @@
+{
+  "schema": "car-audit-batch-v1",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "checked_at": "2026-10-10",
+  "entries": [
+    {
+      "id": "phase5-car-d4be6fd1a88e",
+      "category": "cars",
+      "city": "جدة",
+      "name": "معرض فيض الخيرات للسيارات",
+      "decision": "retained_partial_pin_unverified",
+      "field_checks": {
+        "name_activity": "مطابق في Waze وموتري ودليل BizMidEast؛ نشاط بيع السيارات المستعملة مثبت.",
+        "city_locality": "جدة، الجوهرة، شارع أحمد ذاكر إدريس، الرمز 22417؛ تؤيده Waze وYango وBizMidEast.",
+        "phones": "0550761199 في Waze؛ 0509920428 و0505730813 في BizMidEast وصفحة نشاط على LinkedIn. أضيفت الأرقام الثلاثة إلى phones.",
+        "whatsapp": "غير مثبت لأي رقم بعينه؛ لم يُنشأ رابط wa.me.",
+        "website": "faydalkhayrat.com يظهر في بطاقة Waze؛ أبقي كما هو.",
+        "google_maps_pin": "رابط CID قائم لكن لم يمكن التحقق من الدبوس؛ أُبقي الرابط موسومًا غير مؤكد، وأزيلت lat/lon لتجنب عرض إحداثيات غير مثبتة."
+      },
+      "source_urls": [
+        "https://www.waze.com/ar/live-map/directions/sa/mkh-almkrmh/jdh/mardh-fydh-alkhyrat-llsyarat-jdh-fayd-al-khayraat-car-show-room?to=place.ChIJ58P2s4DLwxURRBKU-zFitZ4",
+        "https://ksa.motory.com/ar/الدليل/شركة/معرض-فيض-الخيرات-للسيارات/",
+        "https://www.bizmideast.com/SA/معرض-فيض-الخيرات-للسيارات-جدة-fayd-al-050-992-0428",
+        "https://maps.yango.com/en-sa/org/45097189936/",
+        "https://sa.linkedin.com/in/ehab-salama-69566b344"
+      ],
+      "status": "الجهة والنشاط ووسائل الاتصال المدعومة؛ دبوس Google غير محسوم؛ لا يُعد مكتمل التدقيق مكانيًا."
+    },
+    {
+      "id": "phase5-car-062bda41f13d",
+      "category": "cars",
+      "city": "جدة",
+      "name": "معرض الشلبى للسيارات المستوردة",
+      "decision": "retained_partial_pin_unverified",
+      "field_checks": {
+        "name_activity": "مطابق في Waze وكاندال ودليل موتري؛ نشاط معرض سيارات مثبت.",
+        "city_locality": "جدة، الجوهرة، C7M3+F86؛ تؤيده Waze وكاندال وCybo.",
+        "phones": "0555611699 مطابق في Waze وكاندال وCybo؛ أُبقي.",
+        "whatsapp": "كاندال يربط الرقم مباشرة برابط wa.me/966555611699 المطابق لـ0555611699.",
+        "website": "حساب twitter.com/shalabicars مرتبط في Waze وكاندال؛ أبقي. دليل آخر يذكر shalabiauto.com لكن لم يمكن فتحه، فلا أعتمده.",
+        "google_maps_pin": "رابط CID قائم لكن لم يمكن التحقق من الدبوس؛ أُبقي الرابط موسومًا غير مؤكد، وأزيلت lat/lon لتجنب عرض إحداثيات غير مثبتة."
+      },
+      "source_urls": [
+        "https://www.waze.com/ar/live-map/directions/sa/mkh-almkrmh/jdh/mardh-alshlba-llsyarat-almstwrdh?to=place.ChIJARSQ3vPLwxURFVWrFqlgCd8",
+        "https://kandal.sa/stores/maard-alshlb-llsyarat-almstord-chijar",
+        "https://yellowpages-ar.cybo.com/SA/جدة/تجار-السيارات-المستعملة",
+        "https://sa.near-place.com/mrd-alshlby-llsyarat-almstwrdt-jeddah",
+        "https://ksa.motory.com/ar/الدليل/شركة/معرض-الشلبي-للسيارات/"
+      ],
+      "status": "الجهة والنشاط والاتصال وواتساب والرابط الاجتماعي مدعومة؛ دبوس Google غير محسوم؛ لا يُعد مكتمل التدقيق مكانيًا."
+    },
+    {
+      "id": "entity-ab3b6af0f40d",
+      "category": "cars",
+      "city": "جدة",
+      "name": "معرض المحركات الجديدة للسيارات",
+      "decision": "retained_partial_active_haraj_name_activity_address_and_contacts_verified_google_pin_unverified",
+      "field_checks": {
+        "name_activity": "إعلانات حراج حديثة تعرض سيارات للبيع باسم معرض المحركات الجديدة للسيارات.",
+        "city_locality": "الإعلانات تحدد جدة، حي الجوهرة، منطقة معارض السيارات.",
+        "phones": "إعلان حراج حديث يعرض أرقام المبيعات 0551170054، 0551170066، 0569380260، 0566630039، 0552809922، 0556410555؛ توجد إعلانات أخرى تؤكد الرقمين الأولين.",
+        "whatsapp": "لم يظهر رابط واتساب مباشر مرتبط برقم محدد.",
+        "website": "لم يثبت موقع رسمي مستقل.",
+        "google_maps_pin": "مصدر النشاط لا يثبت CID خرائط Google الموجود في السجل؛ لا إحداثيات معتمدة."
+      },
+      "source_urls": [
+        "https://haraj.com.sa/11179022082/",
+        "https://haraj.com.sa/11187984226/",
+        "https://www.instagram.com/"
+      ],
+      "status": "النشاط والمدينة والعنوان وأرقام التواصل المنشورة مثبتة؛ واتساب ودبوس Google غير محسومين."
+    },
+    {
+      "id": "entity-56fe5894d60d",
+      "category": "cars",
+      "city": "جدة",
+      "name": "معرض شعلة جدة للسيارات",
+      "decision": "retained_partial_directory_identity_location_phone_google_pin_unverified",
+      "field_checks": {
+        "name_activity": "دليل الجزيرة للخرائط ومصدر آخر يصفان معرض شعلة جدة للسيارات ونشاط بيع السيارات.",
+        "city_locality": "العنوان المنشور 8355، حي الجوهرة، جدة.",
+        "phones": "0555658041 منشور في الدليل ومصدر النشاط المطابق للاسم.",
+        "whatsapp": "لا رابط واتساب موثق.",
+        "website": "لم يظهر موقع رسمي.",
+        "google_maps_pin": "مصادر الدليل تثبت العنوان النصي فقط ولا تثبت CID Google الحالي؛ لا إحداثيات."
+      },
+      "source_urls": [
+        "https://www.aljazeeramaps.com/listing/معرض-شعلة-جدة-للسيارات،-جدة/",
+        "https://qardbank.com/loans/افضل-معارض-تقسيط-السيارات-المستعملة-بالسعودية-1445/"
+      ],
+      "status": "هوية ونشاط وعنوان وهاتف مثبتة من مصادر مستقلة؛ واتساب ودبوس Google غير محسومين."
+    },
+    {
+      "id": "entity-a9435a28a84f",
+      "category": "cars",
+      "city": "جدة",
+      "name": "معرض النجاح المميز للسيارات",
+      "decision": "retained_partial_independent_directory_identity_location_phone_google_pin_unverified",
+      "field_checks": {
+        "name_activity": "Waze ودليل BizMidEast يسمّيان معرض النجاح المميز للسيارات؛ دليل الجزيرة يصنفه معرض سيارات.",
+        "city_locality": "Waze وBizMidEast يذكران حي الجوهرة، جدة، والعنوان البريدي 4041/8279.",
+        "phones": "Waze وBizMidEast ينشران 0555605896 المطابق للسجل.",
+        "whatsapp": "لا رابط واتساب موثق.",
+        "website": "لم يظهر موقع رسمي.",
+        "google_maps_pin": "الدلائل تثبت عنوانًا نصيًا ولا تثبت بطاقة Google CID الحالية."
+      },
+      "source_urls": [
+        "https://www.waze.com/live-map/directions/sa/mkh-almkrmh/jdh/mardh-alnjah-almmyz-llsyarat?to=place.ChIJUUPHg_HLwxUR8N7dLKwZYHY",
+        "https://www.bizmideast.com/SA/معرض-النجاح-055-560-5896",
+        "https://www.aljazeeramaps.com/listing/معرض-النجاح-المميز-للسيارات،-جدة/"
+      ],
+      "status": "الهوية والعنوان والهاتف مثبتة؛ الموقع الرسمي وواتساب والدبوس غير محسومة."
+    },
+    {
+      "id": "entity-12fdbf4749a7",
+      "category": "cars",
+      "city": "جدة",
+      "name": "معرض البركة للسيارات",
+      "decision": "retained_partial_active_listing_name_activity_location_phone_google_pin_unverified",
+      "field_checks": {
+        "name_activity": "حساب معرض البركة في حراج يعرض سيارات جديدة حديثة للبيع؛ موتري يصنفه بيع سيارات جديدة.",
+        "city_locality": "حراج وموتري ودليل الجزيرة تحدد جدة، حي الجوهرة؛ Plus Code في الدليل C7H3+GH.",
+        "phones": "دليل الجزيرة ينشر 0553517154 المطابق للسجل.",
+        "whatsapp": "لم يعثر البحث على رابط واتساب مستقل موثوق.",
+        "website": "حساب حراج ودليل موتري ليسا موقعًا رسميًا للمعرض؛ لم يظهر موقع مستقل.",
+        "google_maps_pin": "الدليل يوفر Plus Code لكنه لا يثبت تطابق CID Google المسجل؛ بقيت الإحداثيات null."
+      },
+      "source_urls": [
+        "https://haraj.com.sa/users/معرض%20البركة%20للسيارات/",
+        "https://ksa.motory.com/ar/الدليل/شركة/معرض-البركة-للسيارات/",
+        "https://www.aljazeeramaps.com/listing/معرض-البركه-للسيارات،-جدة/"
+      ],
+      "status": "الاسم والنشاط والمدينة والعنوان والهاتف مثبتة؛ واتساب وموقع رسمي ودبوس Google غير محسومين."
+    }
+  ]
+}

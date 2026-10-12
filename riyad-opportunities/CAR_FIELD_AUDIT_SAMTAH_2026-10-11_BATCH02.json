@@ -1,0 +1,730 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "f3d048645b297541f25c07870aa49343792524c1",
+  "scope": {
+    "city": "صامطة",
+    "batch": "02",
+    "count": 15,
+    "positions": "17-31 of 31",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Exact searches for the unresolved local records returned no independent matches. Regional records were decided from explicit origin metadata, addresses, coordinates, and original-record links.",
+  "records": [
+    {
+      "id": "regional-pdf-phase6-cars-9de2819da7ff65-056",
+      "name": "معرض جازان للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "VHQC+QVG، جيزان 82722، المملكة العربية السعودية",
+        "phones": [
+          "0583096223"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%AC%D8%A7%D8%B2%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e3001f4e45f1:0x670611bd33bcefdb!8m2!3d16.889431!4d42.5721999!16s%2Fg%2F11nr82bfkj!19sChIJ8UVOHwDjBxYR2--8M70RBmc?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.88943,
+        "lon": 42.5722,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-9de2819da7ff65"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported_by_regional_source",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%AC%D8%A7%D8%B2%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1607e3001f4e45f1:0x670611bd33bcefdb!8m2!3d16.889431!4d42.5721999!16s%2Fg%2F11nr82bfkj!19sChIJ8UVOHwDjBxYR2--8M70RBmc?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ لا تُحتسب ضمن المدينة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-9de2819da7ff65-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-9de2819da7ff65"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-9de2819da7ff65",
+          "stored_neighborhood=VHQC+QVG، جيزان 82722، المملكة العربية السعودية"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-a5ea0667872316-056",
+      "name": "Autozone Jizan",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "4083 طريق الملك عبدالعزيز، الصفا، جيزان 82721، المملكة العربية السعودية",
+        "phones": [
+          "8007606000"
+        ],
+        "whatsapp": null,
+        "website": "https://www.autozone.com.sa/",
+        "maps": "https://www.google.com/maps/place/Autozone+Jizan%E2%80%AD/data=!4m7!3m6!1s0x1607e2e90ba182fd:0xddad1393fa3e739!8m2!3d16.8842435!4d42.580168!16s%2Fg%2F11clzrtn3q!19sChIJ_YKhC-niBxYROeejPznR2g0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 16.88424,
+        "lon": 42.58017,
+        "originCity": "جازان",
+        "regionalListingOf": "phase6-cars-a5ea0667872316"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported_by_regional_source",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "present_not_independently_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://www.autozone.com.sa/",
+        "https://www.google.com/maps/place/Autozone+Jizan%E2%80%AD/data=!4m7!3m6!1s0x1607e2e90ba182fd:0xddad1393fa3e739!8m2!3d16.8842435!4d42.580168!16s%2Fg%2F11clzrtn3q!19sChIJ_YKhC-niBxYROeejPznR2g0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ لا تُحتسب ضمن المدينة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-a5ea0667872316-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-a5ea0667872316"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=phase6-cars-a5ea0667872316",
+          "stored_neighborhood=4083 طريق الملك عبدالعزيز، الصفا، جيزان 82721، المملكة العربية السعودية"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-6573b5e2174a73-056",
+      "name": "معرض قمه عسير للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "XV36+W9R، الصناعية، أبو عريش84216",
+        "phones": [
+          "0560809151"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=9075923892784612536",
+        "lat": 16.95486,
+        "lon": 42.86089,
+        "originCity": "أبو عريش",
+        "regionalListingOf": "phase6-cars-6573b5e2174a73"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported_by_regional_source",
+        "city": "conflict_confirmed_origin_is_أبو عريش",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_pin_belongs_to_أبو عريش"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=9075923892784612536"
+      ],
+      "note": "نسخة إقليمية أصلها أبو عريش وليست من صامطة؛ لا تُحتسب ضمن المدينة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-6573b5e2174a73-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-6573b5e2174a73"
+        },
+        "proof": [
+          "originCity=أبو عريش",
+          "regionalListingOf=phase6-cars-6573b5e2174a73",
+          "stored_neighborhood=XV36+W9R، الصناعية، أبو عريش84216"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-phase6-cars-8e1ef9c80a327c-056",
+      "name": "معرض مركبة الرؤية للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "العام، صبيا 85297، المملكة العربية السعودية",
+        "phones": [
+          "0502849827"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.1845319,42.7528181&query_place_id=ChIJb8kCjIVF_RURcSUFAERUgzk",
+        "lat": 17.18453,
+        "lon": 42.75282,
+        "originCity": "صبيا",
+        "regionalListingOf": "phase6-cars-8e1ef9c80a327c"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported_by_regional_source",
+        "city": "conflict_confirmed_origin_is_صبيا",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=17.1845319,42.7528181&query_place_id=ChIJb8kCjIVF_RURcSUFAERUgzk"
+      ],
+      "note": "نسخة إقليمية أصلها صبيا وليست من صامطة؛ لا تُحتسب ضمن المدينة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-phase6-cars-8e1ef9c80a327c-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "phase6-cars-8e1ef9c80a327c"
+        },
+        "proof": [
+          "originCity=صبيا",
+          "regionalListingOf=phase6-cars-8e1ef9c80a327c",
+          "stored_neighborhood=العام، صبيا 85297، المملكة العربية السعودية"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-national-primary-budget-13879183185635902606-056",
+      "name": "بدجت - معرض جيزان",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "",
+        "phones": [
+          "0173225253"
+        ],
+        "whatsapp": null,
+        "website": "https://mazad.budgetsaudi.com/Home/Contact",
+        "maps": "https://www.google.com/maps/?cid=13879183185635902606",
+        "lat": null,
+        "lon": null,
+        "originCity": "جازان",
+        "regionalListingOf": "national-primary-budget-13879183185635902606"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported_by_regional_source",
+        "city": "conflict_confirmed_origin_is_جازان",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "present_not_independently_verified",
+        "google_maps_pin": "direct_pin_belongs_to_جازان"
+      },
+      "evidence_urls": [
+        "https://mazad.budgetsaudi.com/Home/Contact",
+        "https://www.google.com/maps/?cid=13879183185635902606"
+      ],
+      "note": "نسخة إقليمية أصلها جازان وليست من صامطة؛ لا تُحتسب ضمن المدينة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-national-primary-budget-13879183185635902606-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "national-primary-budget-13879183185635902606"
+        },
+        "proof": [
+          "originCity=جازان",
+          "regionalListingOf=national-primary-budget-13879183185635902606",
+          "stored_neighborhood="
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-d0cd534a5437-056",
+      "name": "معرض قمة عسير لبيع وشراء السيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "شارع المعارض، الصناعية، أبو عريش 62529",
+        "phones": [
+          "0561552134"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%82%D9%85%D8%A9%20%D8%B9%D8%B3%D9%8A%D8%B1%20%D9%84%D8%A8%D9%8A%D8%B9%20%D9%88%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4",
+        "lat": 16.95703,
+        "lon": 42.85548,
+        "originCity": "أبو عريش",
+        "regionalListingOf": "v9-car-d0cd534a5437"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported_by_regional_source",
+        "city": "conflict_confirmed_origin_is_أبو عريش",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%82%D9%85%D8%A9%20%D8%B9%D8%B3%D9%8A%D8%B1%20%D9%84%D8%A8%D9%8A%D8%B9%20%D9%88%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "note": "نسخة إقليمية أصلها أبو عريش وليست من صامطة؛ لا تُحتسب ضمن المدينة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-v9-car-d0cd534a5437-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "v9-car-d0cd534a5437"
+        },
+        "proof": [
+          "originCity=أبو عريش",
+          "regionalListingOf=v9-car-d0cd534a5437",
+          "stored_neighborhood=شارع المعارض، الصناعية، أبو عريش 62529"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-6034f3303506-056",
+      "name": "معرض المعشي",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "المعارض، أبو عريش 84216",
+        "phones": [
+          "0503763420"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%B4%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4",
+        "lat": null,
+        "lon": null,
+        "originCity": "أبو عريش",
+        "regionalListingOf": "v9-car-6034f3303506"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported_by_regional_source",
+        "city": "conflict_confirmed_origin_is_أبو عريش",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%B4%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "note": "نسخة إقليمية أصلها أبو عريش وليست من صامطة؛ لا تُحتسب ضمن المدينة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-v9-car-6034f3303506-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "v9-car-6034f3303506"
+        },
+        "proof": [
+          "originCity=أبو عريش",
+          "regionalListingOf=v9-car-6034f3303506",
+          "stored_neighborhood=المعارض، أبو عريش 84216"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-921b1d2e358b-056",
+      "name": "معرض مكس كارز للسيارات أبو عريش",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "الصناعية، أبو عريش 84718",
+        "phones": [
+          "0559998387"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D9%83%D8%B3%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4",
+        "lat": 16.95703,
+        "lon": 42.85548,
+        "originCity": "أبو عريش",
+        "regionalListingOf": "v9-car-921b1d2e358b"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported_by_regional_source",
+        "city": "conflict_confirmed_origin_is_أبو عريش",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%85%D9%83%D8%B3%20%D9%83%D8%A7%D8%B1%D8%B2%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "note": "نسخة إقليمية أصلها أبو عريش وليست من صامطة؛ لا تُحتسب ضمن المدينة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-v9-car-921b1d2e358b-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "v9-car-921b1d2e358b"
+        },
+        "proof": [
+          "originCity=أبو عريش",
+          "regionalListingOf=v9-car-921b1d2e358b",
+          "stored_neighborhood=الصناعية، أبو عريش 84718"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-c61e61e7e45b-056",
+      "name": "معرض الوفاء للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "طريق الملك عبدالله، الصناعية، أبو عريش 84216",
+        "phones": [
+          "0576264996"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D9%81%D8%A7%D8%A1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4",
+        "lat": 16.95703,
+        "lon": 42.85548,
+        "originCity": "أبو عريش",
+        "regionalListingOf": "v9-car-c61e61e7e45b"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported_by_regional_source",
+        "city": "conflict_confirmed_origin_is_أبو عريش",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D9%81%D8%A7%D8%A1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "note": "نسخة إقليمية أصلها أبو عريش وليست من صامطة؛ لا تُحتسب ضمن المدينة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-v9-car-c61e61e7e45b-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "v9-car-c61e61e7e45b"
+        },
+        "proof": [
+          "originCity=أبو عريش",
+          "regionalListingOf=v9-car-c61e61e7e45b",
+          "stored_neighborhood=طريق الملك عبدالله، الصناعية، أبو عريش 84216"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-d585c7680b4a-056",
+      "name": "معرض بوابة المركبات للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "طريق الملك عبدالله، الصناعية، أبو عريش 84212",
+        "phones": [
+          "0507377555"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4",
+        "lat": 16.95703,
+        "lon": 42.85548,
+        "originCity": "أبو عريش",
+        "regionalListingOf": "v9-car-d585c7680b4a"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported_by_regional_source",
+        "city": "conflict_confirmed_origin_is_أبو عريش",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "note": "نسخة إقليمية أصلها أبو عريش وليست من صامطة؛ لا تُحتسب ضمن المدينة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-v9-car-d585c7680b4a-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "v9-car-d585c7680b4a"
+        },
+        "proof": [
+          "originCity=أبو عريش",
+          "regionalListingOf=v9-car-d585c7680b4a",
+          "stored_neighborhood=طريق الملك عبدالله، الصناعية، أبو عريش 84212"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-e7ed2ccacdc2-056",
+      "name": "معرض الحكمي",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "الصناعية، أبو عريش 84216",
+        "phones": [],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%83%D9%85%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4",
+        "lat": 16.95703,
+        "lon": 42.85548,
+        "originCity": "أبو عريش",
+        "regionalListingOf": "v9-car-e7ed2ccacdc2"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported_by_regional_source",
+        "city": "conflict_confirmed_origin_is_أبو عريش",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "missing",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%83%D9%85%D9%8A%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "note": "نسخة إقليمية أصلها أبو عريش وليست من صامطة؛ لا تُحتسب ضمن المدينة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-v9-car-e7ed2ccacdc2-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "v9-car-e7ed2ccacdc2"
+        },
+        "proof": [
+          "originCity=أبو عريش",
+          "regionalListingOf=v9-car-e7ed2ccacdc2",
+          "stored_neighborhood=الصناعية، أبو عريش 84216"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-005018b74aea-056",
+      "name": "معرض المعافا للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "الصناعية، أبو عريش 84216",
+        "phones": [
+          "0558168701"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%81%D8%A7%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4",
+        "lat": 16.95703,
+        "lon": 42.85548,
+        "originCity": "أبو عريش",
+        "regionalListingOf": "v9-car-005018b74aea"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported_by_regional_source",
+        "city": "conflict_confirmed_origin_is_أبو عريش",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%81%D8%A7%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "note": "نسخة إقليمية أصلها أبو عريش وليست من صامطة؛ لا تُحتسب ضمن المدينة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-v9-car-005018b74aea-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "v9-car-005018b74aea"
+        },
+        "proof": [
+          "originCity=أبو عريش",
+          "regionalListingOf=v9-car-005018b74aea",
+          "stored_neighborhood=الصناعية، أبو عريش 84216"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "regional-pdf-v9-car-63c2f51fadb2-056",
+      "name": "معرض رواد النوادر",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "معارض السيارات، أبو عريش",
+        "phones": [
+          "0544262271"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D9%88%D8%A7%D8%AF%20%D8%A7%D9%84%D9%86%D9%88%D8%A7%D8%AF%D8%B1%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4",
+        "lat": null,
+        "lon": null,
+        "originCity": "أبو عريش",
+        "regionalListingOf": "v9-car-63c2f51fadb2"
+      },
+      "field_decisions": {
+        "name": "supported_by_regional_source",
+        "activity": "supported_by_regional_source",
+        "city": "conflict_confirmed_origin_is_أبو عريش",
+        "neighborhood": "conflict_origin_locality",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_a_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D9%88%D8%A7%D8%AF%20%D8%A7%D9%84%D9%86%D9%88%D8%A7%D8%AF%D8%B1%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+      ],
+      "note": "نسخة إقليمية أصلها أبو عريش وليست من صامطة؛ لا تُحتسب ضمن المدينة.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "old_value": {
+          "city": "صامطة",
+          "id": "regional-pdf-v9-car-63c2f51fadb2-056"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_samtah_scope",
+          "retain_id": "v9-car-63c2f51fadb2"
+        },
+        "proof": [
+          "originCity=أبو عريش",
+          "regionalListingOf=v9-car-63c2f51fadb2",
+          "stored_neighborhood=معارض السيارات، أبو عريش"
+        ],
+        "status": "not_applied"
+      }
+    },
+    {
+      "id": "pdf-smalltown-022",
+      "name": "معرض الثقة للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "86735 صامطة، Q4P+P2JW",
+        "phones": [
+          "0555787883"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": null,
+        "lat": null,
+        "lon": null,
+        "originCity": null,
+        "regionalListingOf": null
+      },
+      "field_decisions": {
+        "name": "supported_by_saved_pdf_only",
+        "activity": "supported_by_saved_pdf_only",
+        "city": "confirmed_by_saved_pdf_address",
+        "neighborhood": "supported_by_saved_pdf_address",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "missing"
+      },
+      "evidence_urls": [],
+      "note": "لم يظهر تطابق مستقل بالاسم والهاتف، ولا يوجد دبوس Google محفوظ؛ أبقيت السجل غير محسوم دون تعطيل بقية الدفعة."
+    },
+    {
+      "id": "pdf-smalltown-023",
+      "name": "معرض عسكر للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "صامطة",
+        "neighborhood": "الصناعية ،صامطة 86385",
+        "phones": [
+          "0538816544"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": null,
+        "lat": null,
+        "lon": null,
+        "originCity": null,
+        "regionalListingOf": null
+      },
+      "field_decisions": {
+        "name": "supported_by_saved_pdf_only",
+        "activity": "supported_by_saved_pdf_only",
+        "city": "confirmed_by_saved_pdf_address",
+        "neighborhood": "supported_by_saved_pdf_address",
+        "phone": "not_independently_confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "missing"
+      },
+      "evidence_urls": [],
+      "note": "لم يظهر تطابق مستقل بالاسم والهاتف، ولا يوجد دبوس Google محفوظ؛ أبقيت السجل غير محسوم دون تعطيل بقية الدفعة."
+    }
+  ]
+}

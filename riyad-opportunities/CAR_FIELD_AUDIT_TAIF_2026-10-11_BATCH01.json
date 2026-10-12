@@ -1,0 +1,515 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "47c04c9381a78d7a52eb5fb01571b16725dd20ac",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "الطائف، الدفعة 01، سجلات السيارات 1–10 من 25. فُحصت الهواتف والأسماء والأحياء بالمصادر المباشرة المتاحة؛ لم تُعدّل cars.json لعدم ثبوت قيمة بديلة، وروابط Google Maps المباشرة بقيت غير محسومة.",
+  "count": 10,
+  "note": "المؤكد والتعارض وغير المؤكد محدد لكل حقل؛ لا تصحيح أو حذف بلا إثبات.",
+  "entries": [
+    {
+      "id": "entity-efb15b8d3d96",
+      "name": "معرض العدالة للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Haraj seller account and current listing identify معرض العدالة للسيارات as an active car seller.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-العدالة-للسيارات-053-604-8630",
+            "https://haraj.com.sa/users/معرض%20العدالة%20للسيارات/",
+            "https://haraj.com.sa/11186390719/هونشي_H5_موديل_2022_عداد_40_الف_فقط/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast gives the exact stored Nakhab address, while Haraj current ads locate the seller at Taif car exhibitions street; address conflict/precision remains.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-العدالة-للسيارات-053-604-8630",
+            "https://haraj.com.sa/users/معرض%20العدالة%20للسيارات/",
+            "https://haraj.com.sa/11186390719/هونشي_H5_موديل_2022_عداد_40_الف_فقط/"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "BizMidEast lists stored 0536048630. Current Haraj ad/account publishes 0546064432 and admin 0566801888; do not replace without direct confirmation.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-العدالة-للسيارات-053-604-8630",
+            "https://haraj.com.sa/users/معرض%20العدالة%20للسيارات/",
+            "https://haraj.com.sa/11186390719/هونشي_H5_موديل_2022_عداد_40_الف_فقط/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُثبت رابط WhatsApp مباشر مرتبط بالرقم المخزن. وجود رقم اتصال أو صفحة اجتماعية لا يثبت أنه واتساب.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-العدالة-للسيارات-053-604-8630",
+            "https://haraj.com.sa/users/معرض%20العدالة%20للسيارات/",
+            "https://haraj.com.sa/11186390719/هونشي_H5_موديل_2022_عداد_40_الف_فقط/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم تُفتح نتيجة Google Maps المباشرة بنجاح لمطابقة اسم الدبوس وعنوانه وهاتفه. لم أستخدم رابط Waze أو رابط بحث كبديل للدبوس.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-العدالة-للسيارات-053-604-8630",
+            "https://haraj.com.sa/users/معرض%20العدالة%20للسيارات/",
+            "https://haraj.com.sa/11186390719/هونشي_H5_موديل_2022_عداد_40_الف_فقط/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط؛ روابط حراج/Linktree صفحات بيع أو تواصل وليست موقعًا رسميًا.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-العدالة-للسيارات-053-604-8630",
+            "https://haraj.com.sa/users/معرض%20العدالة%20للسيارات/",
+            "https://haraj.com.sa/11186390719/هونشي_H5_موديل_2022_عداد_40_الف_فقط/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-078be72a5e01",
+      "name": "معرض الحصين للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast and Snapchat identify the exact showroom as a car dealer in Taif.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-الحصين-للسيارات-055-776-9222",
+            "https://www.snapchat.com/place/-/60be71d6-647c-11ed-8004-cb07e0f5362b",
+            "https://striveme.com/article/محركات/معارض-السيارات-في-الحوية"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict",
+          "evidence": "Stored area says حي المعارض; Snapchat gives 7916, Taif (Ad Dihasiyah). Exact locality needs reconciliation.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-الحصين-للسيارات-055-776-9222",
+            "https://www.snapchat.com/place/-/60be71d6-647c-11ed-8004-cb07e0f5362b",
+            "https://striveme.com/article/محركات/معارض-السيارات-في-الحوية"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "BizMidEast and Snapchat show stored 0557769222.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-الحصين-للسيارات-055-776-9222",
+            "https://www.snapchat.com/place/-/60be71d6-647c-11ed-8004-cb07e0f5362b",
+            "https://striveme.com/article/محركات/معارض-السيارات-في-الحوية"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُثبت رابط WhatsApp مباشر مرتبط بالرقم المخزن. وجود رقم اتصال أو صفحة اجتماعية لا يثبت أنه واتساب.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-الحصين-للسيارات-055-776-9222",
+            "https://www.snapchat.com/place/-/60be71d6-647c-11ed-8004-cb07e0f5362b",
+            "https://striveme.com/article/محركات/معارض-السيارات-في-الحوية"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم تُفتح نتيجة Google Maps المباشرة بنجاح لمطابقة اسم الدبوس وعنوانه وهاتفه. لم أستخدم رابط Waze أو رابط بحث كبديل للدبوس.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-الحصين-للسيارات-055-776-9222",
+            "https://www.snapchat.com/place/-/60be71d6-647c-11ed-8004-cb07e0f5362b",
+            "https://striveme.com/article/محركات/معارض-السيارات-في-الحوية"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط؛ روابط حراج/Linktree صفحات بيع أو تواصل وليست موقعًا رسميًا.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-الحصين-للسيارات-055-776-9222",
+            "https://www.snapchat.com/place/-/60be71d6-647c-11ed-8004-cb07e0f5362b",
+            "https://striveme.com/article/محركات/معارض-السيارات-في-الحوية"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-0203c46c9759",
+      "name": "معرض بن صعيب للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Haraj has a current seller account with the exact showroom name and vehicle listings.",
+          "sources": [
+            "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/",
+            "https://haraj.com.sa/11179296497/كامري_E/"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Haraj listing did not establish the stored Mithmala road address independently.",
+          "sources": [
+            "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/",
+            "https://haraj.com.sa/11179296497/كامري_E/"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Exact phone did not appear in independent results; do not infer from the seller profile.",
+          "sources": [
+            "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/",
+            "https://haraj.com.sa/11179296497/كامري_E/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُثبت رابط WhatsApp مباشر مرتبط بالرقم المخزن. وجود رقم اتصال أو صفحة اجتماعية لا يثبت أنه واتساب.",
+          "sources": [
+            "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/",
+            "https://haraj.com.sa/11179296497/كامري_E/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم تُفتح نتيجة Google Maps المباشرة بنجاح لمطابقة اسم الدبوس وعنوانه وهاتفه. لم أستخدم رابط Waze أو رابط بحث كبديل للدبوس.",
+          "sources": [
+            "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/",
+            "https://haraj.com.sa/11179296497/كامري_E/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط؛ روابط حراج/Linktree صفحات بيع أو تواصل وليست موقعًا رسميًا.",
+          "sources": [
+            "https://haraj.com.sa/users/معرض%20بن%20صعيب%20للسيارات/",
+            "https://haraj.com.sa/11179296497/كامري_E/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-c458a9f70bef",
+      "name": "معرض الشاطري للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "BizMidEast and the showroom's Linktree identify معرض الشاطري للسيارات.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025",
+            "https://linktr.ee/srhd2030",
+            "https://haraj.com.sa/users/معرض%20الشاطري%20للسيارات/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast lists Taif; the business-owned Linktree states its Google Maps location code FG33+H3W, At Taif. Stored CID was not directly reconciled to that map code.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025",
+            "https://linktr.ee/srhd2030",
+            "https://haraj.com.sa/users/معرض%20الشاطري%20للسيارات/"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "BizMidEast lists the stored phone 0555050025.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025",
+            "https://linktr.ee/srhd2030",
+            "https://haraj.com.sa/users/معرض%20الشاطري%20للسيارات/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُثبت رابط WhatsApp مباشر مرتبط بالرقم المخزن. وجود رقم اتصال أو صفحة اجتماعية لا يثبت أنه واتساب.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025",
+            "https://linktr.ee/srhd2030",
+            "https://haraj.com.sa/users/معرض%20الشاطري%20للسيارات/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم تُفتح نتيجة Google Maps المباشرة بنجاح لمطابقة اسم الدبوس وعنوانه وهاتفه. لم أستخدم رابط Waze أو رابط بحث كبديل للدبوس.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025",
+            "https://linktr.ee/srhd2030",
+            "https://haraj.com.sa/users/معرض%20الشاطري%20للسيارات/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط؛ روابط حراج/Linktree صفحات بيع أو تواصل وليست موقعًا رسميًا.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-الشاطري-للسيارات-055-505-0025",
+            "https://linktr.ee/srhd2030",
+            "https://haraj.com.sa/users/معرض%20الشاطري%20للسيارات/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-d978a4293026",
+      "name": "معرض عتل عسيلان للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No exact independent business listing was found in this search.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "No independent source verified the stored Hawiyah/road address.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "No independent source confirmed the stored number.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُثبت رابط WhatsApp مباشر مرتبط بالرقم المخزن. وجود رقم اتصال أو صفحة اجتماعية لا يثبت أنه واتساب.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم تُفتح نتيجة Google Maps المباشرة بنجاح لمطابقة اسم الدبوس وعنوانه وهاتفه. لم أستخدم رابط Waze أو رابط بحث كبديل للدبوس.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط؛ روابط حراج/Linktree صفحات بيع أو تواصل وليست موقعًا رسميًا.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "entity-12cc657e7ebd",
+      "name": "مؤسسة النور التجارية للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No exact independent business listing was found in this search.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "No independent source verified the stored Nakhab address.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "No independent source confirmed the stored number.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُثبت رابط WhatsApp مباشر مرتبط بالرقم المخزن. وجود رقم اتصال أو صفحة اجتماعية لا يثبت أنه واتساب.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم تُفتح نتيجة Google Maps المباشرة بنجاح لمطابقة اسم الدبوس وعنوانه وهاتفه. لم أستخدم رابط Waze أو رابط بحث كبديل للدبوس.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط؛ روابط حراج/Linktree صفحات بيع أو تواصل وليست موقعًا رسميًا.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "entity-319946b8b2c3",
+      "name": "سلطان الطائف للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast lists a Taif vehicle showroom with the exact name.",
+          "sources": [
+            "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299",
+            "https://sultan-cars.com/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast confirms Taif; precise neighborhood was not corroborated.",
+          "sources": [
+            "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299",
+            "https://sultan-cars.com/"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast lists stored 0555702299, but search surfaced a similarly named unrelated Sultan Cars official website in Riyadh; no association was made.",
+          "sources": [
+            "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299",
+            "https://sultan-cars.com/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُثبت رابط WhatsApp مباشر مرتبط بالرقم المخزن. وجود رقم اتصال أو صفحة اجتماعية لا يثبت أنه واتساب.",
+          "sources": [
+            "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299",
+            "https://sultan-cars.com/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم تُفتح نتيجة Google Maps المباشرة بنجاح لمطابقة اسم الدبوس وعنوانه وهاتفه. لم أستخدم رابط Waze أو رابط بحث كبديل للدبوس.",
+          "sources": [
+            "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299",
+            "https://sultan-cars.com/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط؛ روابط حراج/Linktree صفحات بيع أو تواصل وليست موقعًا رسميًا.",
+          "sources": [
+            "https://www.bizmideast.com/SA/سلطان-الطائف-للسيارات-055-570-2299",
+            "https://sultan-cars.com/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "entity-39b6695d2c26",
+      "name": "معرض غازي بن حازم النفيعي للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "Exact-name search did not find an independent Taif business listing.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "Stored Mithmala location not independently confirmed.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Stored phone not independently confirmed.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُثبت رابط WhatsApp مباشر مرتبط بالرقم المخزن. وجود رقم اتصال أو صفحة اجتماعية لا يثبت أنه واتساب.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم تُفتح نتيجة Google Maps المباشرة بنجاح لمطابقة اسم الدبوس وعنوانه وهاتفه. لم أستخدم رابط Waze أو رابط بحث كبديل للدبوس.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط؛ روابط حراج/Linktree صفحات بيع أو تواصل وليست موقعًا رسميًا.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase5-car-4280267152a5",
+      "name": "معرض العضيلة للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "An independent automotive social directory identifies معرض العضيلة للسيارات as a vehicle showroom in Taif/Hawiyah.",
+          "sources": [
+            "https://mobile.twstalker.com/hashtag/%23معرض"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_directory_only",
+          "evidence": "The directory confirms Taif/Hawiyah but does not validate the precise stored map pin.",
+          "sources": [
+            "https://mobile.twstalker.com/hashtag/%23معرض"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "No independent source verified the stored number.",
+          "sources": [
+            "https://mobile.twstalker.com/hashtag/%23معرض"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُثبت رابط WhatsApp مباشر مرتبط بالرقم المخزن. وجود رقم اتصال أو صفحة اجتماعية لا يثبت أنه واتساب.",
+          "sources": [
+            "https://mobile.twstalker.com/hashtag/%23معرض"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم تُفتح نتيجة Google Maps المباشرة بنجاح لمطابقة اسم الدبوس وعنوانه وهاتفه. لم أستخدم رابط Waze أو رابط بحث كبديل للدبوس.",
+          "sources": [
+            "https://mobile.twstalker.com/hashtag/%23معرض"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط؛ روابط حراج/Linktree صفحات بيع أو تواصل وليست موقعًا رسميًا.",
+          "sources": [
+            "https://mobile.twstalker.com/hashtag/%23معرض"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-a745a2ebace9",
+      "name": "معرض عبدالله العتيبي للسيارات",
+      "record_city": "الطائف",
+      "fields": {
+        "name_activity": {
+          "status": "conflict",
+          "evidence": "The exact stored phone 0503042588 appears in an article for معرض القادسية للسيارات with a Hawiyah, Taif branch, not for the stored name معرض عبدالله العتيبي. Identity/name-phone conflict; retain without modification.",
+          "sources": [
+            "https://trandawy.com/maerid-alqadisiat-lilsayaarat/"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict",
+          "evidence": "Source places the phone's associated معرض القادسية branch in Hawiyah, while the stored record names a different business and says Mithmala.",
+          "sources": [
+            "https://trandawy.com/maerid-alqadisiat-lilsayaarat/"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "Exact phone is associated by the found source with a differently named dealership; not enough to reassign.",
+          "sources": [
+            "https://trandawy.com/maerid-alqadisiat-lilsayaarat/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لم يُثبت رابط WhatsApp مباشر مرتبط بالرقم المخزن. وجود رقم اتصال أو صفحة اجتماعية لا يثبت أنه واتساب.",
+          "sources": [
+            "https://trandawy.com/maerid-alqadisiat-lilsayaarat/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "لم تُفتح نتيجة Google Maps المباشرة بنجاح لمطابقة اسم الدبوس وعنوانه وهاتفه. لم أستخدم رابط Waze أو رابط بحث كبديل للدبوس.",
+          "sources": [
+            "https://trandawy.com/maerid-alqadisiat-lilsayaarat/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "لم يثبت موقع رسمي للنشاط؛ روابط حراج/Linktree صفحات بيع أو تواصل وليست موقعًا رسميًا.",
+          "sources": [
+            "https://trandawy.com/maerid-alqadisiat-lilsayaarat/"
+          ]
+        }
+      }
+    }
+  ]
+}

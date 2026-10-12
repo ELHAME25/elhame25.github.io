@@ -1,0 +1,107 @@
+{
+  "schema": "car-audit-batch-v1",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "checked_at": "2026-10-10",
+  "entries": [
+    {
+      "id": "phase5-car-7168b98a40ae",
+      "category": "cars",
+      "city": "الأحساء",
+      "name": "معرض الشموع للسيارات",
+      "decision": "retained_partial_google_pin_unverified",
+      "field_checks": {
+        "name_activity": "Yango Maps يطابق اسم معرض الشموع للسيارات؛ النشاط المعروض معرض سيارات.",
+        "city_locality": "المبرز، حي مشرفة، طريق الأمير طلال وفق بطاقة Yango؛ استُبدل الحي السابق الراشدية بهذا العنوان المنشور.",
+        "phones": "Yango يعرض 0506884881؛ أُضيف بجانب 0135362088 السابق دون إسقاطه.",
+        "whatsapp": "غير مثبت؛ لا رابط WhatsApp مباشر.",
+        "website": "لم يظهر موقع رسمي في المصدر المفتوح.",
+        "google_maps_pin": "CID الموجود لم يعرض بطاقة مقروءة في التدقيق السابق؛ دبوس Google غير مؤكد. Yango رابط مصدر مستقل ولا يُعد إثباتًا لذلك الدبوس."
+      },
+      "source_urls": [
+        "https://maps.yango.com/ar-sa/org/179726272703/",
+        "https://www.google.com/maps/?cid=4903061669009308738"
+      ],
+      "status": "تم تصحيح الحي وإضافة رقم مدعوم؛ دبوس Google وواتساب غير محسومين."
+    },
+    {
+      "id": "phase5-car-197ca86c38ef",
+      "category": "cars",
+      "city": "الأحساء",
+      "name": "معرض الموسى للسيارات",
+      "decision": "retained_partial_google_pin_unverified",
+      "field_checks": {
+        "name_activity": "خريطة الخليج تعرض الاسم نفسه وتصنيف تاجر سيارات؛ الاسم والنشاط التجاري متوافقان.",
+        "city_locality": "العنوان المنشور CF68+4RP، المنطقة الصناعية بالأحساء. الحي/الشارع الدقيق غير منشور.",
+        "phones": "الدليل يعرض +966503917401؛ يطابق 0503917401 في السجل.",
+        "whatsapp": "رابط WhatsApp المباشر من صفحة النشاط يوجه إلى الرقم نفسه: https://wa.me/966503917401.",
+        "website": "لم يظهر موقع رسمي في المصدر المفتوح.",
+        "google_maps_pin": "رابط الاتجاهات في الدليل يفتح بحثًا بالاسم فقط ولا يثبت دبوس Google الدقيق؛ أزيلت الإحداثيات المسجلة لأنها غير مؤكدة."
+      },
+      "source_urls": [
+        "https://gulfmap.net/place/معرض-الموسى-للسيارات",
+        "https://www.google.com/maps/search/?api=1&query=معرض+الموسى+للسيارات"
+      ],
+      "status": "تم تأكيد الاسم والنشاط والهاتف ورابط واتساب والعنوان الصناعي من صفحة دليل؛ لم يثبت دبوس Google أو الحي الدقيق."
+    },
+    {
+      "id": "phase5-car-32175aaba1e1",
+      "category": "cars",
+      "city": "الأحساء",
+      "name": "معرض ريان الأحساء للسيارات",
+      "decision": "retained_partial_phone_and_pin_unverified",
+      "field_checks": {
+        "name_activity": "صفحة تصنيف تجار السيارات في الأحساء تعرض الاسم وتضعه ضمن تصنيف تاجر سيارات.",
+        "city_locality": "العنوان المعروض CF57+R52، المنطقة الصناعية بالأحساء 36456؛ لا تفاصيل حي/شارع أدق.",
+        "phones": "رقم 0564444110 في السجل لم أجد له تأكيدًا مستقلاً؛ أُبقي كما هو دون اعتباره مؤكداً.",
+        "whatsapp": "رابط WhatsApp في بطاقة القائمة لم يتسنّ استخراج الرقم منه؛ لا يُثبت ارتباطًا بالهاتف المسجل.",
+        "website": "لم يظهر موقع رسمي موثوق.",
+        "google_maps_pin": "الدليل يذكر Plus Code فقط؛ Google Maps لم يُتحقق من دبوسه. حُذفت الإحداثيات المكررة غير المدعومة."
+      },
+      "source_urls": [
+        "https://gulfmap.net/search-places/تاجر-سيارات-in-الأحساء",
+        "https://www.google.com/maps/search/?api=1&query=CF57%2BR52%2C%20Hasa%20Industrial%20City"
+      ],
+      "status": "قرار جزئي موثق؛ ما بقي مجهولاً محدد في field_checks، ولا يعد السجل كاملاً."
+    },
+    {
+      "id": "phase5-car-f584d4e8bf28",
+      "category": "cars",
+      "city": "الأحساء",
+      "name": "معرض الحمالي للسيارات",
+      "decision": "retained_partial_contact_unverified",
+      "field_checks": {
+        "name_activity": "Near-place يسمي معرض الحمالي ويصنفه كتاجر سيارات/Car dealer.",
+        "city_locality": "الإحداثيات والعلاقات المكانية من Near-place تضع النشاط في تجمع معارض الأحساء الصناعية؛ لم يُنشر حي أو شارع.",
+        "phones": "Near-place لا يعرض رقمًا كاملًا (+966 فقط)؛ رقم 0555051111 الموجود غير مؤكد بمصدر مستقل وحُفظ دون اعتماده.",
+        "whatsapp": "غير مثبت؛ لا رابط مباشر موثوق.",
+        "website": "لم يظهر موقع رسمي موثوق.",
+        "google_maps_pin": "Near-place ينشر 25.4089167,49.4645607، وهو يطابق الإحداثيات المخزنة؛ هذا يؤكد نقطة المصدر الخارجي فقط ولا يثبت دبوس Google نفسه."
+      },
+      "source_urls": [
+        "https://sa.near-place.com/mrd-alhmaly-llsyarat-",
+        "https://sa.near-place.com/car_dealer-nearby-mrd-alhmaly-llsyarat-"
+      ],
+      "status": "قرار جزئي موثق؛ ما بقي مجهولاً محدد في field_checks، ولا يعد السجل كاملاً."
+    },
+    {
+      "id": "phase5-car-7d02d675a9a7",
+      "category": "cars",
+      "city": "الأحساء",
+      "name": "معرض سول للسيارات",
+      "decision": "unresolved_keep_pending_no_closure_evidence",
+      "field_checks": {
+        "name_activity": "لم أعثر على مصدر مستقل مطابق للاسم والنشاط في الأحساء بعد البحث بالاسم والمدينة؛ بقي الاسم والنشاط غير مؤكدين.",
+        "city_locality": "لا يوجد مصدر مستقل يؤكد المدينة الفرعية أو الحي؛ القيمة في السجل لم تثبت.",
+        "phones": "0135923600 غير مؤكد بمصدر ثانوي؛ لم يُحذف ولم يُستبدل.",
+        "whatsapp": "غير مثبت.",
+        "website": "لم يظهر موقع رسمي موثوق.",
+        "google_maps_pin": "رابط البحث/الإحداثيات الحالية لا يثبت دبوس Google؛ أزيلت الإحداثيات المكررة غير المدعومة. لا دليل كاف على الإغلاق أو خطأ السجل."
+      },
+      "source_urls": [
+        "https://www.google.com/search?q=%22معرض+سول+للسيارات%22+الأحساء",
+        "https://www.google.com/search?q=%220135923600%22+الأحساء"
+      ],
+      "status": "قرار جزئي موثق؛ ما بقي مجهولاً محدد في field_checks، ولا يعد السجل كاملاً."
+    }
+  ]
+}

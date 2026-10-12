@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "timezone": "Asia/Riyadh",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": {
+    "cities": ["ليلى", "تربة", "شقراء", "الأرطاوية", "الغاط"],
+    "record_count": 10,
+    "protected_qadisiyah_touched": false
+  },
+  "summary": {
+    "verified_correct_no_data_change": 3,
+    "verified_with_proposed_data_correction": 7,
+    "phone_unresolved": 0,
+    "permanently_closed": 0
+  },
+  "policy": {
+    "primary_source": "Google Maps place cards opened directly",
+    "general_search_url_not_accepted_as_verified_pin": true,
+    "cars_json_write_status": "Not attempted; the prior full-file replacement was explicitly rejected. This file preserves field-level corrections without bypassing that review decision."
+  },
+  "records": [
+    {
+      "id": "national-car-9fe1f36a66845c",
+      "city": "ليلى",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض أحمد الدريهم للسيارات — الأفلاج", "phone": "0501144220", "lat": 22.26969, "lon": 46.70006, "maps_cid": "9651703162385704987"},
+      "observed": {"name": "معرض أحمد الدريهم للسيارات.الافلاج", "activity": "تاجر سيارات", "address": "7P92+V2، الفيصلية، ليلى 16731", "phone": "0501144220", "lat": 22.2695921, "lon": 46.6999635, "maps_cid": "9651703162385704987"},
+      "proposed_change": null
+    },
+    {
+      "id": "v9-car-541038d19388",
+      "city": "ليلى",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض آل محمسة للسيارات", "phone": "0509928444", "lat": 22.27615, "lon": 46.71039, "maps_type": "general_search"},
+      "observed": {"name": "معرض ال محمسة للسيارات", "activity": "تاجر سيارات مستعملة", "address": "Unnamed Road، الفيصلية، ليلى 16731، المملكة العربية السعودية", "phone": "0509928444", "plus_code": "7PC2+54 ليلى السعودية", "lat": 22.2703878, "lon": 46.7002945, "maps_cid": "6066026305407548810"},
+      "proposed_change": {"name": "معرض ال محمسة للسيارات", "maps": "https://www.google.com/maps/?cid=6066026305407548810", "lat": 22.2703878, "lon": 46.7002945},
+      "rationale": "The stored URL was only a general search and the stored coordinates were not the live pin. The exact place card confirms the phone and supplies a direct CID pin."
+    },
+    {
+      "id": "phase6-cars-cf0f72a22c5f5e",
+      "city": "تربة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض ابن هادي للسيارات", "phone": "0556011170", "lat": null, "lon": null, "maps_cid": "8832503833830164565"},
+      "observed": {"name": "معرض ابن هادي للسيارات", "activity": "سوق سيارات", "address": "دريد الراهب، الصناعية، تربة 29734", "phone": "0556011170", "plus_code": "5HMP+J5", "lat": 21.1840533, "lon": 41.5854155, "maps_cid": "8832503833830164565"},
+      "proposed_change": {"lat": 21.1840533, "lon": 41.5854155}
+    },
+    {
+      "id": "phase6-cars-e3f35731c5a93b",
+      "city": "تربة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض كل التسهيلات للسيارت بتربه", "phone": "0546669329", "lat": null, "lon": null, "maps_cid": "11999693453811823572"},
+      "observed": {"name": "معرض كل التسهيلات للسيارت بتربه", "activity": "تاجر السيارات", "address": "المنطقه الصناعيه، تربة 29734", "phone": "0546669329", "plus_code": "5HMP+9P", "lat": 21.1834458, "lon": 41.5868319, "maps_cid": "11999693453811823572"},
+      "proposed_change": {"lat": 21.1834458, "lon": 41.5868319}
+    },
+    {
+      "id": "national-car-6adcc1f8807eb1",
+      "city": "شقراء",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض الوشم للسيارات", "phone": "0116221405", "lat": null, "lon": null, "maps_cid": "8427015228975129259"},
+      "observed": {"name": "معرض الوشم للسيارات", "activity": "تاجر سيارات", "address": "شقراء 15557", "phone": "0116221405", "plus_code": "67J6+PV", "lat": 25.2317984, "lon": 45.2622263, "maps_cid": "8427015228975129259"},
+      "proposed_change": {"lat": 25.2317984, "lon": 45.2622263}
+    },
+    {
+      "id": "national-car-nahaid-shaqra",
+      "city": "شقراء",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض ناهض للسيارات", "phone": "0567894041", "lat": null, "lon": null, "maps_cid": "8946710965427660099"},
+      "observed": {"name": "معرض ناهض للسيارات", "activity": "تاجر سيارات", "address": "شقراء 15557، المملكة العربية السعودية", "phone": "0567894041", "plus_code": "67J7+GC شقراء السعودية", "lat": 25.2312943, "lon": 45.2635961, "maps_cid": "8946710965427660099"},
+      "proposed_change": {"lat": 25.2312943, "lon": 45.2635961}
+    },
+    {
+      "id": "national-car-dakhil-artawiyah",
+      "city": "الأرطاوية",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض الدخيل للسيارات", "phone": "0567340337", "lat": 26.51436, "lon": 45.34942, "maps_cid": "16763310021457772865"},
+      "observed": {"name": "معرض الدخيل للسيارات", "activity": "تاجر سيارات مستعملة", "address": "G87X+PQV، الأرطاوية 15739، المملكة العربية السعودية", "phone": "0567340337", "lat": 26.5143583, "lon": 45.3494224, "maps_cid": "16763310021457772865"},
+      "proposed_change": null
+    },
+    {
+      "id": "v9-car-7f8c210aec24",
+      "city": "الأرطاوية",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض عويض عوض للسيارات", "phone": "0507555355", "lat": 26.5500581, "lon": 45.338951, "maps_type": "direct_place"},
+      "observed": {"name": "معرض عويض عوض للسيارات", "activity": "تاجر سيارات", "address": "6457, الأرطاوية 15757، المملكة العربية السعودية", "phone": "0507555355", "plus_code": "H82Q+2H الأرطاوية السعودية", "lat": 26.5500581, "lon": 45.338951, "maps_cid": "1734074028977695752"},
+      "proposed_change": null
+    },
+    {
+      "id": "national-car-ghat-arifij-live",
+      "city": "الغاط",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض العريفج للسيارات", "phone": "0164421333", "lat": null, "lon": null, "maps_cid": "14083241386081246592"},
+      "observed": {"name": "معرض العريفج للسيارات", "activity": "تاجر سيارات", "address": "2XJ5+GXH، الغاط 15723، المملكة العربية السعودية", "phone": "0164421333", "lat": 26.0313231, "lon": 44.9599858, "maps_cid": "14083241386081246592"},
+      "proposed_change": {"address": "2XJ5+GXH، الغاط 15723، المملكة العربية السعودية", "lat": 26.0313231, "lon": 44.9599858}
+    },
+    {
+      "id": "national-car-ghat-sulaiman-live",
+      "city": "الغاط",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض السليمان للسيارات", "phone": "0501601541", "lat": null, "lon": null, "maps_cid": "13545011793853186503"},
+      "observed": {"name": "معرض السليمان للسيارات", "activity": "تاجر سيارات", "address": "2XCH+PQ8، الغاط 15722، المملكة العربية السعودية", "phone": "0501601541", "lat": 26.0217994, "lon": 44.9794441, "maps_cid": "13545011793853186503", "card_closure_label": null},
+      "proposed_change": {"address": "2XCH+PQ8، الغاط 15722، المملكة العربية السعودية", "lat": 26.0217994, "lon": 44.9794441},
+      "rationale": "The live card is not marked permanently closed. One user review alleging closure is insufficient for archival, so the record remains active."
+    }
+  ]
+}

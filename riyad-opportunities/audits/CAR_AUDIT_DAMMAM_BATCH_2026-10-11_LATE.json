@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-11",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "city": "الدمام",
+  "records": [
+    {
+      "id": "phase5-car-9e24ec953233",
+      "name": "معرض وادي حبونا للسيارات",
+      "status": "verified",
+      "activity": "تاجر سيارات مستعملة",
+      "address": "ضاحية الملك فهد، الدمام 32313",
+      "phone": "+966581123472",
+      "storedPhone": "0581123472",
+      "plusCode": "92W7+MJ",
+      "coordinates": [
+        26.3966974,
+        50.0140092
+      ],
+      "coordinateDecision": "matches stored"
+    },
+    {
+      "id": "phase5-car-4080ed828a19",
+      "name": "معرض فلاح آل سفر",
+      "status": "verified",
+      "activity": "تاجر سيارات",
+      "address": "ضاحية الملك فهد، الدمام 32314",
+      "phone": "+966555858800",
+      "storedPhone": "0555858800",
+      "plusCode": "C237+M7",
+      "coordinates": [
+        26.4042382,
+        50.0131831
+      ],
+      "coordinateDecision": "matches stored"
+    },
+    {
+      "id": "phase5-google-15688822406148910353",
+      "name": "معرض جزيرة السيارات فرع الدمام الرئيسي",
+      "status": "verified; coordinates missing in cars.json",
+      "activity": "تاجر سيارات",
+      "address": "طريق أبو حدرية، معارض السيارات، الدمام",
+      "phone": "+966546435636",
+      "storedPhone": "0546435636",
+      "plusCode": "92X6+9H",
+      "verifiedCoordinates": [
+        26.398421,
+        50.011406
+      ],
+      "proposedChange": "set lat/lon to verified coordinates"
+    },
+    {
+      "id": "phase5-google-4012528401095037100",
+      "name": "مجموعة صالح للسيارات — الدمام",
+      "status": "verified",
+      "mapsCardName": "مجموعة صالح للسيارات",
+      "activity": "تاجر سيارات",
+      "address": "شارع المعارض، ضاحية الملك فهد، الدمام 32314",
+      "phone": "+966920022122",
+      "storedPhone": "920022122",
+      "plusCode": "C227+VJ",
+      "coordinates": [
+        26.402189,
+        50.0140687
+      ],
+      "coordinateDecision": "matches stored"
+    },
+    {
+      "id": "phase5-google-16300325018666840791",
+      "name": "معرض نجوم الشرقية للسيارات",
+      "status": "verified",
+      "activity": "تاجر سيارات",
+      "address": "شارع المعارض، ضاحية الملك فهد، الدمام 32313",
+      "phone": "+966535048953",
+      "storedPhone": "0535048953",
+      "plusCode": "92W6+63",
+      "coordinates": [
+        26.3955598,
+        50.0101985
+      ],
+      "coordinateDecision": "matches stored"
+    },
+    {
+      "id": "phase5-google-15571274114565729231",
+      "name": "معرض كلاس للسيارات — الدمام",
+      "status": "verified; coordinates missing in cars.json",
+      "mapsCardName": "معرض كلاس للسيارات",
+      "activity": "تاجر سيارات",
+      "address": "شارع المعارض، ضاحية الملك فهد، الدمام 32314",
+      "phone": "+966542225255",
+      "storedPhone": "0542225255",
+      "plusCode": "C236+FV",
+      "proposedChange": "populate exact coordinates from direct Maps card URL after final extraction"
+    }
+  ],
+  "writeStatus": "Evidence committed; cars.json replacement remains blocked by prior auto-review rejection. No protected Qadisiyah record touched."
+}

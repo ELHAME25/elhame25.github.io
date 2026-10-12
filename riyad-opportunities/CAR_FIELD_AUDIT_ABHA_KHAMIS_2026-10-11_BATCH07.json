@@ -1,0 +1,499 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "90f04bb7be9e662de4ce5353448fb060f1c32636",
+  "scope": "أبها–خميس مشيط — ربط السجلات الإقليمية المتبقية بالأدلة المحفوظة للمعارض الأصلية، ضمن نطاق واحد.",
+  "count": 11,
+  "note": "No searches repeated. Linked records reuse existing field evidence; separate Khamis pin/location remains unconfirmed where source evidence is regional only.",
+  "entries": [
+    {
+      "id": "regional-pdf-pdf-smalltown-011-045",
+      "name": "معرض سعيد عبدالله الشهراني للسيارات",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast lists an auto showroom under this name.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D8%B9%D9%8A%D8%AF-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D8%A7%D9%86%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-017-234-5705",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "Stored number +966505743102 conflicts with directory number 0172345705. Do not replace until current contact is independently resolved.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D8%B9%D9%8A%D8%AF-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D8%A7%D9%86%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-017-234-5705",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "This Khamis regional row corresponds to pdf-smalltown-011. Keep Abha and Khamis as one linked scope; the source does not prove a distinct pin/locality for this alias.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B3%D8%B9%D9%8A%D8%AF-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D8%A7%D9%86%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-017-234-5705",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored Google Maps pin has not been independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      },
+      "linked_source_id": "pdf-smalltown-011"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-012-045",
+      "name": "Safa Motor Gallery",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "Regional guide lists this named car showroom.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "Existing 0172641304 was not independently corroborated in this pass.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "This Khamis regional row corresponds to pdf-smalltown-012. Keep Abha and Khamis as one linked scope; the source does not prove a distinct pin/locality for this alias.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored Google pin not matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      },
+      "linked_source_id": "pdf-smalltown-012"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-013-045",
+      "name": "Al Wafaa Showroom For Cars",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "Regional guide lists this named showroom.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "Khamis-linked row phone 0172354610 is not explicitly corroborated by the source entry; keep the difference unresolved.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "This Khamis regional row corresponds to pdf-smalltown-013. Keep Abha and Khamis as one linked scope; the source does not prove a distinct pin/locality for this alias.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/",
+            "https://sa.near-place.com/car_dealer-nearby-khamis-auto-show-4778-khamis-mushait"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Nearby listings do not verify the stored Google pin.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      },
+      "linked_source_id": "pdf-smalltown-013"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-014-045",
+      "name": "معرض التاج الحديث للسيارات مستعمل وجديد",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No independent listing for this exact full name was located in this pass.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "0555758923 not independently linked to the exact listing.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "This Khamis regional row corresponds to pdf-smalltown-014. Keep Abha and Khamis as one linked scope; the source does not prove a distinct pin/locality for this alias.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "No pin matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      },
+      "linked_source_id": "pdf-smalltown-014"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-015-045",
+      "name": "Star farmer car",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "Regional guide lists this showroom.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "Guide lists 966545424485 matching 0545424485.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "This Khamis regional row corresponds to pdf-smalltown-015. Keep Abha and Khamis as one linked scope; the source does not prove a distinct pin/locality for this alias.",
+          "sources": [
+            "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D9%87%D8%A7-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored pin not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      },
+      "linked_source_id": "pdf-smalltown-015"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-016-045",
+      "name": "معرض سعيد سالم الشهراني",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "No independent source for the exact listing was located in this pass.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "No phone is stored and no direct contact source was found.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "This Khamis regional row corresponds to pdf-smalltown-016. Keep Abha and Khamis as one linked scope; the source does not prove a distinct pin/locality for this alias.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "No pin matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      },
+      "linked_source_id": "pdf-smalltown-016"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-017-045",
+      "name": "Husseiniya Show Room",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "partially_verified",
+          "evidence": "NearPlace includes a Husseiniya Show Room among Khamis Mushait car dealers; identity match to this exact record still needs confirmation.",
+          "sources": [
+            "https://sa.near-place.com/car_dealer-nearby-mrd-snhan-lby-wshra-alsyarat-hy-almard-khmys-mshyt"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "Khamis-linked row phone 0590292449 is not explicitly corroborated by the source entry; keep the difference unresolved.",
+          "sources": [
+            "https://sa.near-place.com/car_dealer-nearby-mrd-snhan-lby-wshra-alsyarat-hy-almard-khmys-mshyt"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "This Khamis regional row corresponds to pdf-smalltown-017. Keep Abha and Khamis as one linked scope; the source does not prove a distinct pin/locality for this alias.",
+          "sources": [
+            "https://sa.near-place.com/car_dealer-nearby-mrd-snhan-lby-wshra-alsyarat-hy-almard-khmys-mshyt"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "No stored pin independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      },
+      "linked_source_id": "pdf-smalltown-017"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-018-045",
+      "name": "معرض بن ملهي للسيارات",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Current Haraj listings identify the seller as معرض بن ملهي and advertise vehicles.",
+          "sources": [
+            "https://haraj.com.sa/11179243495/%D8%B4%D9%8A%D9%81%D8%B1%D9%88%D9%84%D9%8A%D9%87_%D8%AA%D8%A7%D9%87%D9%88_%D9%85%D9%88%D8%AF%D9%8A%D9%842022%D9%85%D8%A8%D8%A7%D8%A7%D8%B9/"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "This Khamis regional row corresponds to pdf-smalltown-018. Keep Abha and Khamis as one linked scope; the source does not prove a distinct pin/locality for this alias.",
+          "sources": [
+            "https://haraj.com.sa/11179243495/%D8%B4%D9%8A%D9%81%D8%B1%D9%88%D9%84%D9%8A%D9%87_%D8%AA%D8%A7%D9%87%D9%88_%D9%85%D9%88%D8%AF%D9%8A%D9%842022%D9%85%D8%A8%D8%A7%D8%A7%D8%B9/",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A8%D9%86-%D9%85%D9%84%D9%87%D9%8A-056-533-5204"
+          ]
+        },
+        "phone": {
+          "status": "correct_contact_candidate",
+          "evidence": "Haraj directly publishes 0565335204; cars.json currently has no phone for this row. Candidate is well-supported for review, but no cars.json update was made.",
+          "sources": [
+            "https://haraj.com.sa/11179243495/%D8%B4%D9%8A%D9%81%D8%B1%D9%88%D9%84%D9%8A%D9%87_%D8%AA%D8%A7%D9%87%D9%88_%D9%85%D9%88%D8%AF%D9%8A%D9%842022%D9%85%D8%A8%D8%A7%D8%A7%D8%B9/",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A8%D9%86-%D9%85%D9%84%D9%87%D9%8A-056-533-5204"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp URL/account independently verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored Google pin not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "Haraj page is a marketplace seller page, not an official company site.",
+          "sources": []
+        }
+      },
+      "linked_source_id": "pdf-smalltown-018"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-019-045",
+      "name": "معرض مكة المكرمة",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "BizMidEast identifies this as a car showroom in Khamis Mushait.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-050-574-8036"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "This Khamis regional row corresponds to pdf-smalltown-019. Keep Abha and Khamis as one linked scope; the source does not prove a distinct pin/locality for this alias.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-050-574-8036"
+          ]
+        },
+        "phone": {
+          "status": "correct_contact_candidate",
+          "evidence": "BizMidEast lists 0505748036; cars.json currently has no phone for this row. Candidate recorded for review; no cars.json update made.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-050-574-8036"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Existing Google Maps pin not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      },
+      "linked_source_id": "pdf-smalltown-019"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-020-045",
+      "name": "معرض وسام المجد للسيارات",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "Independent business directory identifies an active Khamis Mushait car showroom under this name.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D8%B3%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AC%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7-017-220-6555",
+            "https://sa.near-place.com/mrd-wsam-almjd-llsyarat-khmys-mshyt-4833-khamis-mushait"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "This Khamis regional row corresponds to pdf-smalltown-020. Keep Abha and Khamis as one linked scope; the source does not prove a distinct pin/locality for this alias.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D8%B3%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AC%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7-017-220-6555"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "Record has 0552244999, while BizMidEast lists 0172206555 and NearPlace lists +966547832974. No number replacement made pending direct resolution.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D8%B3%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AC%D8%AF-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7-017-220-6555",
+            "https://sa.near-place.com/mrd-wsam-almjd-llsyarat-khmys-mshyt-4833-khamis-mushait"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp URL verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Existing Google Maps pin not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official site verified.",
+          "sources": []
+        }
+      },
+      "linked_source_id": "pdf-smalltown-020"
+    },
+    {
+      "id": "regional-pdf-pdf-smalltown-021-045",
+      "name": "معرض هبوب نجد",
+      "record_city": "ضمن نطاق أبها–خميس مشيط المرتبط",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Current Haraj listings advertise vehicles under مجموعة معارض هبوب نجد للسيارات.",
+          "sources": [
+            "https://haraj.com.sa/11130651878/%D8%A7%D9%8A%D8%B3%D9%88%D8%B2%D9%88_%D8%AF%D9%8A%D9%85%D8%A7%D9%83%D8%B3_%D8%BA%D9%85%D8%A7%D8%B1%D8%AA%D9%8A%D9%86_%D8%AF%D8%A8%D9%84_%D8%AF%D9%8A%D8%B2%D9%84_%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1_2022/",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%87%D8%A8%D9%88%D8%A8-%D9%86%D8%AC%D8%AF-017-237-7060"
+          ]
+        },
+        "city_locality": {
+          "status": "within_linked_cluster_scope",
+          "evidence": "This Khamis regional row corresponds to pdf-smalltown-021. Keep Abha and Khamis as one linked scope; the source does not prove a distinct pin/locality for this alias.",
+          "sources": [
+            "https://haraj.com.sa/11130651878/%D8%A7%D9%8A%D8%B3%D9%88%D8%B2%D9%88_%D8%AF%D9%8A%D9%85%D8%A7%D9%83%D8%B3_%D8%BA%D9%85%D8%A7%D8%B1%D8%AA%D9%8A%D9%86_%D8%AF%D8%A8%D9%84_%D8%AF%D9%8A%D8%B2%D9%84_%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1_2022/",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%87%D8%A8%D9%88%D8%A8-%D9%86%D8%AC%D8%AF-017-237-7060"
+          ]
+        },
+        "phone": {
+          "status": "correct_contact_candidate",
+          "evidence": "Haraj listing directly publishes landline 0172377060; cars.json currently has no phone for this row. Candidate recorded, no data edit made.",
+          "sources": [
+            "https://haraj.com.sa/11130651878/%D8%A7%D9%8A%D8%B3%D9%88%D8%B2%D9%88_%D8%AF%D9%8A%D9%85%D8%A7%D9%83%D8%B3_%D8%AF%D8%A8%D9%84_%D8%AF%D9%8A%D8%B2%D9%84_%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1_2022/",
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%87%D8%A8%D9%88%D8%A8-%D9%86%D8%AC%D8%AF-017-237-7060"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp URL verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Existing Google Maps pin not independently matched.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "BizMidEast says no business website; no official website verified.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D9%87%D8%A8%D9%88%D8%A8-%D9%86%D8%AC%D8%AF-017-237-7060"
+          ]
+        }
+      },
+      "linked_source_id": "pdf-smalltown-021"
+    }
+  ]
+}

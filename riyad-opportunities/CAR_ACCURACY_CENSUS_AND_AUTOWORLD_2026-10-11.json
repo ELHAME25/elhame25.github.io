@@ -1,0 +1,73 @@
+{
+  "title": "جرد أدلة دقة بيانات معارض السيارات",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_data_commit": "1fbde481abc75a9cccec6b94f447ac622984d722",
+  "scope": {
+    "showrooms": 821,
+    "al_qadisiyah_protected_records": 33,
+    "al_qadisiyah_modified": false
+  },
+  "methodology": {
+    "basis": "آخر حالة محفوظة لكل حقل في سجلات التدقيق وبيانات cars.json؛ وجود قيمة في قاعدة البيانات وحده لا يعد إثباتًا.",
+    "maps": "احتساب الدبوس المؤكد يتطلب رابط Google Maps محفوظًا مباشرًا ودليلًا صريحًا على تطابق بطاقة المكان؛ روابط البحث لا تعد دبابيس مؤكدة.",
+    "phone": "تصنيف الدليل بحسب ارتباط المصدر بالمعرض نفسه؛ الاتصال العام بالشركة لا يثبت رقم فرع بعينه.",
+    "corrections": "احتساب الحالات ذات سجل إعادة فتح/تحقق بعد التصحيح ومطابقة القيمة الحالية المحفوظة."
+  },
+  "results": {
+    "google_maps_pin_confirmed": 158,
+    "google_maps_pin_not_confirmed": 663,
+    "records_with_search_or_search_alternative_link": 172,
+    "phone_values_total": 830,
+    "phone_values_strongly_source_confirmed": 315,
+    "phone_values_limited_directory_evidence": 57,
+    "phone_values_explicitly_conflicting": 62,
+    "phone_values_unconfirmed_or_pending": 321,
+    "phone_values_without_field_specific_evidence": 75,
+    "showroom_records_without_phone": 23,
+    "whatsapp_urls_stored": 6,
+    "whatsapp_urls_confirmed": 4,
+    "whatsapp_urls_unconfirmed": 2,
+    "official_web_urls_stored": 817,
+    "official_web_urls_confirmed": 10,
+    "web_urls_unconfirmed": 807,
+    "web_urls_blank": 4,
+    "corrected_records_retested_and_verified": 23
+  },
+  "interpretation": {
+    "phone_not_strongly_confirmed": 515,
+    "maps_pin_not_confirmed_includes_search_links_and_unverified_direct_links": true,
+    "website_presence_is_not_evidence_of_official_status": true,
+    "verified_corrections_current_values_match_saved_retest_evidence": true
+  },
+  "additional_verification": [
+    {
+      "record_id": "national-car-autoworld-used-jeddah",
+      "verified": {
+        "official_site": "https://usedvehicles.autoworld.com.sa",
+        "official_listing": "https://usedvehicles.autoworld.com.sa/Vehicle/Detail/hyundai-hyundai-accent_2022_id8192",
+        "activity_and_city": "بيع السيارات المستعملة في جدة",
+        "district": "قويزة",
+        "company_contact": "920000991"
+      },
+      "unresolved": {
+        "exact_google_maps_place_pin": "لم تظهر بطاقة مكان باسم المعرض؛ تضمين الإحداثيات في خريطة الموقع الرسمي لا يثبت دبوس المكان.",
+        "branch_specific_phone": "المصدر الرسمي يثبت رقم الشركة العام ولا يربطه بفرع جدة تحديدًا.",
+        "whatsapp": "غير مثبت"
+      },
+      "action": "لم يجر تعديل السجل: الموقع والحي ورقم الشركة موجودة، والدبوس ورقم الفرع لا يثبتان بدليل كافٍ."
+    }
+  ],
+  "limitations": [
+    "الأعداد تلخص الأدلة المحفوظة حتى commit المصدر؛ ليست ادعاءً بأن جميع الحقول غير المحسومة أمكن إثباتها.",
+    "172 رابط بحث أو بديل بحث هي مجموعة فرعية من 663 سجلًا لا يوجد لها دبوس مثبت.",
+    "57 رقمًا لها دليل محدود فقط، لذا لم تُضم إلى الأرقام المؤكدة بقوة.",
+    "لم يُشغّل QA، ولم تُمَس cars.json، ولم يحدث دمج أو نشر."
+  ],
+  "sources": {
+    "audit_ledger_path": "riyad-opportunities/MAP_AUDIT_LEDGER_2026-10-10.json",
+    "autoworld_official_listing": "https://usedvehicles.autoworld.com.sa/Vehicle/Detail/hyundai-hyundai-accent_2022_id8192",
+    "autoworld_official_home": "https://usedvehicles.autoworld.com.sa/"
+  }
+}

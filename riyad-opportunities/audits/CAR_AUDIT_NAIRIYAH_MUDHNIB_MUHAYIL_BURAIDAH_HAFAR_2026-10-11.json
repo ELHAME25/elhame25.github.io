@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "timezone": "Asia/Riyadh",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": {
+    "cities": ["النعيرية", "المذنب", "محايل عسير", "بريدة", "حفر الباطن"],
+    "existing_records_reviewed": 15,
+    "protected_qadisiyah_touched": false
+  },
+  "summary": {
+    "verified_correct_no_data_change": 4,
+    "verified_with_proposed_data_correction": 11,
+    "unresolved_phone": 0,
+    "unresolved_pin": 0,
+    "permanently_closed": 0
+  },
+  "policy": {
+    "primary_source": "Google Maps place cards opened directly",
+    "general_search_url_not_accepted_as_verified_pin": true,
+    "cars_json_write_status": "Not attempted; the prior full-file replacement was explicitly rejected. This file preserves exact field-level corrections without bypassing that review decision."
+  },
+  "records": [
+    {
+      "id": "national-car-2c7d7be2b9ebe4",
+      "city": "النعيرية",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض السامر الخليجي للسيارات", "phone": "0503864664", "lat": null, "lon": null, "maps_cid": "15825249902745520606"},
+      "observed": {"name": "معرض السامر الخليجي للسيارات", "activity": "تاجر سيارات", "address": "CCUA5180، 5180 حي ج6 1، 7121، النعيرية 37486", "phone": "0503864664", "plus_code": "GG3P+HX النعيرية السعودية", "lat": 27.5039, "lon": 48.5374572, "maps_cid": "15825249902745520606"},
+      "proposed_change": {"lat": 27.5039, "lon": 48.5374572}
+    },
+    {
+      "id": "national-car-e670a78699c47e",
+      "city": "النعيرية",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض الجريو للسيارات", "phone": "0559881166", "lat": 27.50641, "lon": 48.54005, "maps_cid": "17557773069909224831"},
+      "observed": {"name": "معرض الجريو للسيارات", "activity": "تاجر سيارات مستعملة", "address": "GG4R+H27، النعيرية 37486", "phone": "0559881166", "lat": 27.5064087, "lon": 48.5400371, "maps_cid": "17557773069909224831"},
+      "proposed_change": null
+    },
+    {
+      "id": "national-car-96d706d51373d3",
+      "city": "المذنب",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض القويفل للسيارات", "phone": "0563431010", "lat": 25.88539, "lon": 44.19633, "maps_cid": "203628540090817535"},
+      "observed": {"name": "معرض القويفل للسيارات", "activity": "تاجر سيارات", "address": "V5PW+5G4، المذنب 56641", "phone": "0563431010", "lat": 25.8853971, "lon": 44.1963277, "maps_cid": "203628540090817535"},
+      "proposed_change": null
+    },
+    {
+      "id": "national-yango-cars-233315252441",
+      "city": "محايل عسير",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "نجوم الفلاح للسيارات", "phone": "0557173725", "maps_provider": "Yango", "lat": 18.52559, "lon": 42.02256},
+      "observed": {"name": "شركة نجوم الفلاح للسيارات", "activity": "تاجر سيارات", "address": "محايل عسير 63316، المملكة العربية السعودية", "phone": "0557174634", "plus_code": "G2QM+FQ محايل عسير السعودية", "lat": 18.5386626, "lon": 42.0344746, "maps_cid": "10139301730132505171"},
+      "proposed_change": {"name": "شركة نجوم الفلاح للسيارات", "phone": "0557174634", "maps": "https://www.google.com/maps/?cid=10139301730132505171", "lat": 18.5386626, "lon": 42.0344746},
+      "rationale": "The live exact Google card has the same business identity but publishes a different last four digits and a different pin than the stored Yango record."
+    },
+    {
+      "id": "v9-car-9ab9c7fddd86",
+      "city": "المذنب",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض سطوع الشمس للسيارات", "phone": "0163631248", "lat": null, "lon": null, "maps_type": "general_search"},
+      "observed": {"name": "معرض سطوع الشمس للسيارات", "activity": "تاجر سيارات", "address": "طريق الملك عبدالعزيز، المذنب 56641", "phone": "0163631248", "plus_code": "V5MW+WV المذنب السعودية", "lat": 25.8847503, "lon": 44.1971759, "maps_cid": "11417455116361801814"},
+      "proposed_change": {"maps": "https://www.google.com/maps/?cid=11417455116361801814", "lat": 25.8847503, "lon": 44.1971759}
+    },
+    {
+      "id": "phase5-car-a1fbedf16e10",
+      "city": "بريدة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض عالم الدوحة للسيارات", "phone": "0537709090", "lat": null, "lon": null, "maps_cid": "9265664504288849499"},
+      "observed": {"name": "معرض عالم الدوحة للسيارات.", "activity": "تاجر سيارات", "address": "2203، بريدة 52581", "phone": "0537709090", "plus_code": "CV6J+CQ بريدة السعودية", "lat": 26.4110892, "lon": 43.8819944, "maps_cid": "9265664504288849499"},
+      "proposed_change": {"lat": 26.4110892, "lon": 43.8819944}
+    },
+    {
+      "id": "phase5-car-cb09e15b0d61",
+      "city": "بريدة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض الشبرمي للسيارات ببريدة", "phone": "0503850044", "lat": null, "lon": null, "maps_cid": "11759714580601117630"},
+      "observed": {"name": "معرض الشبرمي للسيارات ببريده", "activity": "تاجر السيارات", "address": "2484، بريدة", "phone": "0503850044", "plus_code": "CV5J+94 بريدة السعودية", "lat": 26.4084648, "lon": 43.8803296, "maps_cid": "11759714580601117630"},
+      "proposed_change": {"lat": 26.4084648, "lon": 43.8803296}
+    },
+    {
+      "id": "phase5-car-4b9ba799e221",
+      "city": "بريدة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض المحيا للسيارات", "phone": "0503854000", "lat": null, "lon": null, "maps_cid": "3930363977058113059"},
+      "observed": {"name": "معرض المحيا للسيارات", "activity": "تاجر سيارات مستعملة", "address": "2340، بريدة 52581", "phone": "0503854000", "plus_code": "CV5H+VC بريدة السعودية", "lat": 26.4096851, "lon": 43.8786059, "maps_cid": "3930363977058113059"},
+      "proposed_change": {"lat": 26.4096851, "lon": 43.8786059}
+    },
+    {
+      "id": "phase5-car-b4aeb4edf7b8",
+      "city": "بريدة",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض الخيمة للسيارات", "phone": "0543854395", "lat": 26.4090086, "lon": 43.8798934, "maps_cid": "14816848140957479822"},
+      "observed": {"name": "معرض الخيمة للسيارات", "activity": "تاجر سيارات", "address": "شارع قرطبة، حي المعارض، بريدة 52581", "phone": "0543854395", "plus_code": "CV5H+JX بريدة السعودية", "lat": 26.4090086, "lon": 43.8798934, "maps_cid": "14816848140957479822"},
+      "proposed_change": null
+    },
+    {
+      "id": "phase5-car-3aadec05b977",
+      "city": "بريدة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض وارد الامتياز للسيارات", "phone": "0531862000", "lat": 26.40874, "lon": 43.87542, "maps_cid": "4399106248976947723"},
+      "observed": {"name": "معرض وارد الامتياز للسيارات", "activity": "تاجر سيارات", "address": "حي الجزيرة، بريدة 52584", "phone": "0531862000", "plus_code": "CV6G+97 بريدة السعودية", "lat": 26.4109266, "lon": 43.875748, "maps_cid": "4399106248976947723"},
+      "proposed_change": {"lat": 26.4109266, "lon": 43.875748}
+    },
+    {
+      "id": "phase5-google-11517200751577483956",
+      "city": "بريدة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض الفريدي للسيارات", "phone": "0163854050", "lat": 26.40874, "lon": 43.87542, "maps_cid": "11517200751577483956"},
+      "observed": {"name": "معرض الفريدي للسيارات", "activity": "تاجر سيارات", "address": "حي المعارض، حي الجزيرة، بريدة 52581", "phone": "0163854050", "plus_code": "CV5H+MC بريدة السعودية", "lat": 26.4091523, "lon": 43.8785465, "maps_cid": "11517200751577483956"},
+      "proposed_change": {"lat": 26.4091523, "lon": 43.8785465}
+    },
+    {
+      "id": "phase5-google-16966314980904996465",
+      "city": "بريدة",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض البحر العربي للسيارات", "phone": "0163852522", "lat": 26.4081551, "lon": 43.8772271, "maps_cid": "16966314980904996465"},
+      "observed": {"name": "معرض البحر العربي للسيارات", "activity": "تاجر السيارات", "address": "شارع المعارض العام، حي الجزيرة، بريدة 52582", "phone": "0163852522", "plus_code": "CV5G+7V بريدة السعودية", "lat": 26.4081551, "lon": 43.8772271, "maps_cid": "16966314980904996465"},
+      "proposed_change": null
+    },
+    {
+      "id": "national-car-7f00d3a7493aa6",
+      "city": "حفر الباطن",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "نوفا موتور للسيارات", "phone": "0557220292", "lat": 28.4323, "lon": 46.04, "maps_cid": "6038966003212083040"},
+      "observed": {"name": "نوفا موتور للسيارات", "activity": "تاجر سيارات", "address": "4639 طريق الملك خالد، الصناعية، حفر الباطن 39925 8139", "phone": "0557220292", "plus_code": "C2RV+27 حفر الباطن السعودية", "lat": 28.4400452, "lon": 46.0431851, "maps_cid": "6038966003212083040"},
+      "proposed_change": {"lat": 28.4400452, "lon": 46.0431851}
+    },
+    {
+      "id": "national-car-8c889dadcbb484",
+      "city": "حفر الباطن",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض نواف الشمري للسيارات", "phone": "0598362419", "lat": 28.4323, "lon": 46.04, "maps_cid": "18237107069220361898"},
+      "observed": {"name": "معرض نواف الشمري للسيارات", "activity": "تاجر سيارات", "address": "4715 الصناعية 50، حي الصناعية، CNDF7799، 7799، حفر الباطن 39925", "phone": "0593942374", "plus_code": "C2PV+QH حفر الباطن السعودية", "lat": 28.4369739, "lon": 46.0439329, "maps_cid": "18237107069220361898"},
+      "proposed_change": {"phone": "0593942374", "lat": 28.4369739, "lon": 46.0439329},
+      "rationale": "The exact stored CID resolves to the same named showroom and now publishes 0593942374, not the stored number."
+    },
+    {
+      "id": "national-car-399bf264a5425b",
+      "city": "حفر الباطن",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "شركة الخضر للسيارات - حفر الباطن", "phone": "0554355666", "lat": 28.45394, "lon": 45.99566, "maps_cid": "7067400936236402276"},
+      "observed": {"name": "صالة عبدالمجيد الخضر", "activity": "تاجر سيارات", "address": "احمد بن رشد، الصناعية، حفر الباطن 39925", "phone": "0554355666", "plus_code": "C2QV+RF حفر الباطن السعودية", "lat": 28.4395369, "lon": 46.0437357, "maps_cid": "7067400936236402276"},
+      "proposed_change": {"name": "صالة عبدالمجيد الخضر", "lat": 28.4395369, "lon": 46.0437357},
+      "rationale": "The exact stored CID and phone identify the same business; the live card name and pin differ from the stored values."
+    }
+  ]
+}

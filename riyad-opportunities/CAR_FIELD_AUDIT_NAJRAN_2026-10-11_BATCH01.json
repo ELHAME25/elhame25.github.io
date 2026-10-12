@@ -1,0 +1,486 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "442ce3d8205f0dafaddddb6729b2d12dc87e7623",
+  "scope": {
+    "city": "نجران",
+    "batch": "01",
+    "count": 15,
+    "positions": "1-15 of 20",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Direct Google Maps place URLs, stored place coordinates and linked official/seller pages were reconciled field by field. Unsupported WhatsApp or website fields remain unresolved.",
+  "records": [
+    {
+      "id": "phase5-google-2415828088619844111",
+      "name": "معرض ابن فنيس للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "5177، مخطط الصهبان، نجران 66232 7513، المملكة العربية السعودية",
+        "phones": [
+          "0502352555"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D9%81%D9%86%D9%8A%D8%B3+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed96aac6f9625:0x2186bed8d498c20f!8m2!3d17.5793809!4d44.3407231!16s%2Fg%2F11rwq7kx01!19sChIJJZZvrGrZ_hURD8KY1Ni-hiE?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.57938,
+        "lon": 44.34072
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D9%81%D9%86%D9%8A%D8%B3+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed96aac6f9625:0x2186bed8d498c20f!8m2!3d17.5793809!4d44.3407231!16s%2Fg%2F11rwq7kx01!19sChIJJZZvrGrZ_hURD8KY1Ni-hiE?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-17218785923134511703",
+      "name": "شركة عالم العوام التجارية",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "الصناعية، نجران 66232، المملكة العربية السعودية",
+        "phones": [
+          "0554552077"
+        ],
+        "whatsapp": null,
+        "website": "https://haraj.com.sa/users/%D8%B4%D8%B1%D9%83%D9%87%20%D8%B9%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D9%85%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D9%87",
+        "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%B9%D8%A7%D9%84%D9%85+%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D9%85+%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15fed90b803e2c83:0xeef56a916bedda57!8m2!3d17.5782451!4d44.3385779!16s%2Fg%2F1thvk5j0!19sChIJgyw-gAvZ_hURV9rta5Fq9e4?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.57824,
+        "lon": 44.33858
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "seller_listing_verified_not_official_domain",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%B9%D8%A7%D9%84%D9%85+%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D9%85+%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15fed90b803e2c83:0xeef56a916bedda57!8m2!3d17.5782451!4d44.3385779!16s%2Fg%2F1thvk5j0!19sChIJgyw-gAvZ_hURV9rta5Fq9e4?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "https://haraj.com.sa/users/%D8%B4%D8%B1%D9%83%D9%87%20%D8%B9%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D9%85%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D9%87"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-6913944460113285984",
+      "name": "معرض أصالة العين للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "مخطط الصهبان 5140، نجران 66232، المملكة العربية السعودية",
+        "phones": [
+          "0569519976"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A3%D8%B5%D8%A7%D9%84%D8%A9+%D8%A7%D9%84%D8%B9%D9%8A%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed96d06c954f5:0x5ff343dad5d51360!8m2!3d17.5785608!4d44.340518!16s%2Fg%2F11d_8ddgnl!19sChIJ9VTJBm3Z_hURYBPV1dpD818?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.57856,
+        "lon": 44.34052
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A3%D8%B5%D8%A7%D9%84%D8%A9+%D8%A7%D9%84%D8%B9%D9%8A%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed96d06c954f5:0x5ff343dad5d51360!8m2!3d17.5785608!4d44.340518!16s%2Fg%2F11d_8ddgnl!19sChIJ9VTJBm3Z_hURYBPV1dpD818?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-2584518843267675116",
+      "name": "معرض مركبة الفخامة للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "H8HQ+5P6، نجران 66232، المملكة العربية السعودية",
+        "phones": [
+          "0553158134"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D8%B1%D9%83%D8%A8%D8%A9+%D8%A7%D9%84%D9%81%D8%AE%D8%A7%D9%85%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fec33fffffffff:0x23de0e31d045f3ec!8m2!3d17.5779247!4d44.3392569!16s%2Fg%2F11hb6_22fb!19sChIJ_____z_D_hUR7PNF0DEO3iM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.57793,
+        "lon": 44.33926
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D8%B1%D9%83%D8%A8%D8%A9+%D8%A7%D9%84%D9%81%D8%AE%D8%A7%D9%85%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fec33fffffffff:0x23de0e31d045f3ec!8m2!3d17.5779247!4d44.3392569!16s%2Fg%2F11hb6_22fb!19sChIJ_____z_D_hUR7PNF0DEO3iM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-2751574138513083123",
+      "name": "شركة المركب للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "4984, 7340، مخطط الصهبان، As Sahban Subdivision, نجران 66232، المملكة العربية السعودية",
+        "phones": [
+          "0558766848"
+        ],
+        "whatsapp": null,
+        "website": "https://almrkbmotors.com/",
+        "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed96c3f6b6093:0x262f8e19bb394af3!8m2!3d17.5777294!4d44.3389595!16s%2Fg%2F11g892bfhr!19sChIJk2BrP2zZ_hUR80o5uxmOLyY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.57773,
+        "lon": 44.33896
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "verified_or_live_business_site",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed96c3f6b6093:0x262f8e19bb394af3!8m2!3d17.5777294!4d44.3389595!16s%2Fg%2F11g892bfhr!19sChIJk2BrP2zZ_hUR80o5uxmOLyY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "https://almrkbmotors.com/"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-16330195904412961613",
+      "name": "معرض الكويت للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "5714, 8099، مخطط الصهبان، As Sahban Subdivision, نجران 66232، المملكة العربية السعودية",
+        "phones": [
+          "0534338980"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90b96f8bed9:0xe2a082a76b12cb4d!8m2!3d17.5847342!4d44.3457008!16s%2Fg%2F11f0l50qnc!19sChIJ2b74lgvZ_hURTcsSa6eCoOI?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.58473,
+        "lon": 44.3457
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90b96f8bed9:0xe2a082a76b12cb4d!8m2!3d17.5847342!4d44.3457008!16s%2Fg%2F11f0l50qnc!19sChIJ2b74lgvZ_hURTcsSa6eCoOI?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-11310899230575500220",
+      "name": "معرض ابراج مكة للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "H8JV+F7C، طريق الملك عبدالعزيز، نجران 66232، المملكة العربية السعودية",
+        "phones": [
+          "0593091918"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D8%B1%D8%A7%D8%AC+%D9%85%D9%83%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed9026549b137:0x9cf862ec28b11bbc!8m2!3d17.5811849!4d44.3431282!16s%2Fg%2F11pc9m67c2!19sChIJN7FJZQLZ_hURvBuxKOxi-Jw?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.58119,
+        "lon": 44.34313
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D8%B1%D8%A7%D8%AC+%D9%85%D9%83%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed9026549b137:0x9cf862ec28b11bbc!8m2!3d17.5811849!4d44.3431282!16s%2Fg%2F11pc9m67c2!19sChIJN7FJZQLZ_hURvBuxKOxi-Jw?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-16115062965174592487",
+      "name": "معرض الغبشان للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "4954، 7320، مخطط الصهبان، نجران 66232، المملكة العربية السعودية",
+        "phones": [
+          "0505725961"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%BA%D8%A8%D8%B4%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed96c3d886da3:0xdfa43462b448e3e7!8m2!3d17.5775884!4d44.3385581!16s%2Fg%2F11fyx5df84!19sChIJo22IPWzZ_hUR5-NItGI0pN8?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.57759,
+        "lon": 44.33856
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%BA%D8%A8%D8%B4%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed96c3d886da3:0xdfa43462b448e3e7!8m2!3d17.5775884!4d44.3385581!16s%2Fg%2F11fyx5df84!19sChIJo22IPWzZ_hUR5-NItGI0pN8?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-9009651310933646988",
+      "name": "شركة محيميد للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "الشارع العام، نجران 66258، المملكة العربية السعودية",
+        "phones": [
+          "0556343807"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D9%85%D8%AD%D9%8A%D9%85%D9%8A%D8%AF+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90cf62cbc7f:0x7d08b621d2551e8c!8m2!3d17.5823603!4d44.3449184!16s%2Fg%2F11c0xwmks9!19sChIJf7ws9gzZ_hURjB5V0iG2CH0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.58236,
+        "lon": 44.34492
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D9%85%D8%AD%D9%8A%D9%85%D9%8A%D8%AF+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90cf62cbc7f:0x7d08b621d2551e8c!8m2!3d17.5823603!4d44.3449184!16s%2Fg%2F11c0xwmks9!19sChIJf7ws9gzZ_hURjB5V0iG2CH0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-4562917494384996548",
+      "name": "معرض الفرسان للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "8146، 5839، نجران 66232، المملكة العربية السعودية",
+        "phones": [
+          "0535557203"
+        ],
+        "whatsapp": null,
+        "website": "https://www.alforsancars.com/",
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%81%D8%B1%D8%B3%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90056b65b0b:0x3f52bd49283bb0c4!8m2!3d17.5848498!4d44.3465474!16s%2Fg%2F11x5cwxdzd!19sChIJC1u2VgDZ_hURxLA7KEm9Uj8?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.58485,
+        "lon": 44.34655
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "verified_or_live_business_site",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%81%D8%B1%D8%B3%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90056b65b0b:0x3f52bd49283bb0c4!8m2!3d17.5848498!4d44.3465474!16s%2Fg%2F11x5cwxdzd!19sChIJC1u2VgDZ_hURxLA7KEm9Uj8?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "https://www.alforsancars.com/"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-6430180122161728428",
+      "name": "معرض ابن عقيل",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "7800، مخطط الصهبان، مخطط الصهبان،, نجران 66232، المملكة العربية السعودية",
+        "phones": [
+          "0555724011"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D8%B9%D9%82%D9%8A%D9%84%E2%80%AD/data=!4m7!3m6!1s0x15fed90cd653e18b:0x593c96c0a73a4bac!8m2!3d17.582297!4d44.3430006!16s%2Fg%2F11c1hjb8x5!19sChIJi-FT1gzZ_hURrEs6p8CWPFk?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.5823,
+        "lon": 44.343
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D8%B9%D9%82%D9%8A%D9%84%E2%80%AD/data=!4m7!3m6!1s0x15fed90cd653e18b:0x593c96c0a73a4bac!8m2!3d17.582297!4d44.3430006!16s%2Fg%2F11c1hjb8x5!19sChIJi-FT1gzZ_hURrEs6p8CWPFk?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-11291216836251799911",
+      "name": "معرض ابن شنان",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "5170، مخطط الصهبان، مخطط الصهبان،, نجران 66232، المملكة العربية السعودية",
+        "phones": [
+          "0175442107"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D8%B4%D9%86%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15fed96d08cb2f59:0x9cb275e39eb2d167!8m2!3d17.5788837!4d44.3404568!16s%2Fg%2F11c483nyb4!19sChIJWS_LCG3Z_hURZ9GynuN1spw?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.57888,
+        "lon": 44.34046
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D8%B4%D9%86%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15fed96d08cb2f59:0x9cb275e39eb2d167!8m2!3d17.5788837!4d44.3404568!16s%2Fg%2F11c483nyb4!19sChIJWS_LCG3Z_hURZ9GynuN1spw?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-15321870026852806167",
+      "name": "معرض الصقري للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "2259 طريق الملك عبدالعزيز، 8461، نجران 66234، المملكة العربية السعودية",
+        "phones": [
+          "0545555794"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B5%D9%82%D8%B1%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90eaba63eed:0xd4a2379c55442e17!8m2!3d17.5831525!4d44.3472349!16s%2Fg%2F11df0pxhl6!19sChIJ7T6mqw7Z_hURFy5EVZw3otQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.58315,
+        "lon": 44.34723
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B5%D9%82%D8%B1%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90eaba63eed:0xd4a2379c55442e17!8m2!3d17.5831525!4d44.3472349!16s%2Fg%2F11df0pxhl6!19sChIJ7T6mqw7Z_hURFy5EVZw3otQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-5284656603640253918",
+      "name": "معرض نسيم البريمي نجران",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "الصناعية، نجران 66232، المملكة العربية السعودية",
+        "phones": [
+          "0503954276"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%B3%D9%8A%D9%85+%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D9%85%D9%8A+%D9%86%D8%AC%D8%B1%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15fed97f822e9405:0x4956df2e83e64dde!8m2!3d17.5838869!4d44.3448229!16s%2Fg%2F11j0j1szjm!19sChIJBZQugn_Z_hUR3k3mgy7fVkk?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.58389,
+        "lon": 44.34482
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%B3%D9%8A%D9%85+%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D9%85%D9%8A+%D9%86%D8%AC%D8%B1%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15fed97f822e9405:0x4956df2e83e64dde!8m2!3d17.5838869!4d44.3448229!16s%2Fg%2F11j0j1szjm!19sChIJBZQugn_Z_hUR3k3mgy7fVkk?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    },
+    {
+      "id": "phase5-google-1407078795061687076",
+      "name": "معرض ابن شملان",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "نجران",
+        "neighborhood": "5494، مخطط الصهبان، نجران 66232 7958، 66232، المملكة العربية السعودية",
+        "phones": [
+          "0175442130"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D8%B4%D9%85%D9%84%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15fed9ca6c7f2393:0x1386f2b586a2f324!8m2!3d17.5834395!4d44.3440853!16s%2Fg%2F11rf090zh7!19sChIJkyN_bMrZ_hURJPOihrXyhhM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 17.58344,
+        "lon": 44.34408
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported_by_place_name",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D8%B4%D9%85%D9%84%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15fed9ca6c7f2393:0x1386f2b586a2f324!8m2!3d17.5834395!4d44.3440853!16s%2Fg%2F11rf090zh7!19sChIJkyN_bMrZ_hURJPOihrXyhhM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "note": "تطابق الاسم والمدينة والعنوان والهاتف مع سجل المكان المباشر؛ لم يثبت واتساب مستقل، ولم يُستنتج أي حقل غير ظاهر."
+    }
+  ]
+}

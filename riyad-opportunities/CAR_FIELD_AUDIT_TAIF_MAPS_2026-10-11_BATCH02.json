@@ -1,0 +1,196 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "cb4110a7f67ef6f0f07be16106dc10b371551f3d",
+  "base_cars_blob": "e1a4ce177431c7631ba63cc0031c56811befca0d",
+  "scope": "الطائف، متابعة مباشرة لدبابيس Google Maps، الدفعة 02 من 3؛ السجلات 11–20 من 25، مع بقاء أبها وخميس مشيط نطاقاً مترابطاً في الخطة الوطنية.",
+  "count": 10,
+  "note": "نتائج Maps المباشرة فقط؛ لم يتغير cars.json. statuses تصف تحقق الدبوس، لا تكفي وحدها لإجراء تصحيح دون حسم مستقل.",
+  "entries": [
+    {
+      "id": "phase5-car-d7b9740d50cb",
+      "name": "معرض صفوة نجد للسيارات",
+      "evidence": "Direct CID opens exact صفوة نجد. Google page shows 0591999511 and permanently closed status; preserve row, do not delete. No website shown.",
+      "sources": [
+        "https://www.google.com/maps?cid=3422957814643235479",
+        "https://www.bizmideast.com/SA/معرض-صفوة-نجد-للسيارات-059-199-9511"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "verified_closed",
+          "evidence": "Direct CID opens exact صفوة نجد. Google page shows 0591999511 and permanently closed status; preserve row, do not delete. No website shown.",
+          "sources": [
+            "https://www.google.com/maps?cid=3422957814643235479"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-70264d766d5e",
+      "name": "معرض حمودين منصور للسيارات",
+      "evidence": "Direct CID opens معرض حمود بن منصور المرزوقي للسيارات, not stored حمودين منصور; phone +966555285737 and Taif/FG23+9F8 match. Name discrepancy pending corroboration.",
+      "sources": [
+        "https://www.google.com/maps?cid=442133278835853252",
+        "https://www.bizmideast.com/SA/معرض-حمودين-منصور-للسيارات-055-528-5737"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "conflict_name",
+          "evidence": "Direct CID opens معرض حمود بن منصور المرزوقي للسيارات, not stored حمودين منصور; phone +966555285737 and Taif/FG23+9F8 match. Name discrepancy pending corroboration.",
+          "sources": [
+            "https://www.google.com/maps?cid=442133278835853252"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-f74eab6cb2a7",
+      "name": "معرض السيف للسيارات",
+      "evidence": "Direct CID AX snapshot timed out; could not verify whether it resolves to السيف. Do not label broken without repeatable wrong destination.",
+      "sources": [
+        "https://www.google.com/maps?cid=10418689945817429002",
+        "https://www.bizmideast.com/SA/معرض-السيف-للسيارات-بالطائف-055-559-6945",
+        "https://pacasol.ma/annuaire/معرض-السيف-للسيارات-بالطائف-الطائف-966-55-559/"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "unconfirmed_timeout",
+          "evidence": "Direct CID AX snapshot timed out; could not verify whether it resolves to السيف. Do not label broken without repeatable wrong destination.",
+          "sources": [
+            "https://www.google.com/maps?cid=10418689945817429002"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-c3e0eb8315ed",
+      "name": "معرض الأطلال للسيارات",
+      "evidence": "Direct CID returned generic/default Google Maps UI without the business card; stored pin is not confirmed. Exact alternate canonical pin not established.",
+      "sources": [
+        "https://www.google.com/maps?cid=12507293502417812410",
+        "https://www.bizmideast.com/SA/معرض-الاطلال-للسيارات-بالطايف-059-059-7819"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "unconfirmed_wrong_or_blank",
+          "evidence": "Direct CID returned generic/default Google Maps UI without the business card; stored pin is not confirmed. Exact alternate canonical pin not established.",
+          "sources": [
+            "https://www.google.com/maps?cid=12507293502417812410"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-d6c18e19e291",
+      "name": "معرض أبو خالد للسيارات",
+      "evidence": "Direct CID returned generic/default Google Maps UI without a business card; no direct replacement established.",
+      "sources": [
+        "https://www.google.com/maps?cid=933614700550248890"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "unconfirmed_wrong_or_blank",
+          "evidence": "Direct CID returned generic/default Google Maps UI without a business card; no direct replacement established.",
+          "sources": [
+            "https://www.google.com/maps?cid=933614700550248890"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-4c8bfa8c9989",
+      "name": "معرض نجم الشفا للسيارات",
+      "evidence": "Direct CID opens exact معرض نجم الشفا; Google shows phone +966504702937 and address Taif 26516 (Plus Code 7C4V+R8). No standalone website; a Snapchat link appears.",
+      "sources": [
+        "https://www.google.com/maps?cid=14974515765791009882",
+        "https://www.bizmideast.com/SA/معرض-نجم-الشفا-للسيارات-050-470-2937",
+        "https://gulfmap.net/place/معرض-نجم-الشفا-للسيارات"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "verified",
+          "evidence": "Direct CID opens exact معرض نجم الشفا; Google shows phone +966504702937 and address Taif 26516 (Plus Code 7C4V+R8). No standalone website; a Snapchat link appears.",
+          "sources": [
+            "https://www.google.com/maps?cid=14974515765791009882"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-4b28fb6845d3",
+      "name": "معرض العمدة للسيارات",
+      "evidence": "Direct CID opens exact معرض العمدة للسيارات at coordinates 21.4508334,40.5035911; direct Google Maps place page title matches. Contact/address fields not available in captured AX delta; pin name identity confirmed.",
+      "sources": [
+        "https://www.google.com/maps?cid=17813243212644994981",
+        "https://www.bizmideast.com/SA/معرض-العمدة-للسيارات-059-668-8886",
+        "https://yellowpages-ar.cybo.com/SA-biz/معرض-العمدة-للسيارات",
+        "https://striveme.com/article/محركات/معارض-السيارات-في-الحوية"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "verified",
+          "evidence": "Direct CID opens exact معرض العمدة للسيارات at coordinates 21.4508334,40.5035911; direct Google Maps place page title matches. Contact/address fields not available in captured AX delta; pin name identity confirmed.",
+          "sources": [
+            "https://www.google.com/maps?cid=17813243212644994981"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-64c8bcf495b9",
+      "name": "معرض عبدالمجيد عوض المالكي للسيارات",
+      "evidence": "Direct CID opens exact showroom, address 7672 Taif 26516, Plus Code 7C4V+MJ. Google lists +966500000373, while record stored finance/contact number 0531909999 and ads contain other numbers. Keep conflict; no edit without independent resolution.",
+      "sources": [
+        "https://www.google.com/maps?cid=6625906131075376986",
+        "https://haraj.com.sa/11188626228/هيواندي_سوناتا_مكينه_2_5_كمفورت_داخليه_جملي_2026/",
+        "https://haraj.com.sa/11186556024/هيواندي_اكسنت_مكينه_1_5_فلت_ستاندر_2026/"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "conflict_phone",
+          "evidence": "Direct CID opens exact showroom, address 7672 Taif 26516, Plus Code 7C4V+MJ. Google lists +966500000373, while record stored finance/contact number 0531909999 and ads contain other numbers. Keep conflict; no edit without independent resolution.",
+          "sources": [
+            "https://www.google.com/maps?cid=6625906131075376986"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-67cd3d6f9272",
+      "name": "معرض نجم الطائف أوتومول للسيارات",
+      "evidence": "Direct CID opens معرض نجم الطائف اوتومول. Google lists +966565962468 and a WhatsApp call link; record's saved number differs. Google lists no address/website on captured panel. Phone conflict unresolved.",
+      "sources": [
+        "https://www.google.com/maps?cid=14274154983451843832"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "conflict_phone",
+          "evidence": "Direct CID opens معرض نجم الطائف اوتومول. Google lists +966565962468 and a WhatsApp call link; record's saved number differs. Google lists no address/website on captured panel. Phone conflict unresolved.",
+          "sources": [
+            "https://www.google.com/maps?cid=14274154983451843832"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-2f3165f353d8",
+      "name": "معرض نجم الاختيار للسيارات",
+      "evidence": "Direct CID opens معرض نجم الاختيار للسيارات, phone +966500902696, address المعارض، نخب، الطائف 26516 and Plus Code 7C4W+96. Google offers no website.",
+      "sources": [
+        "https://www.google.com/maps?cid=17463746403964832509",
+        "https://www.bizmideast.com/SA/معرض-نجم-الأختيار-للسيارات-050-090-2696"
+      ],
+      "fields": {
+        "google_maps": {
+          "status": "verified",
+          "evidence": "Direct CID opens معرض نجم الاختيار للسيارات, phone +966500902696, address المعارض، نخب، الطائف 26516 and Plus Code 7C4W+96. Google offers no website.",
+          "sources": [
+            "https://www.google.com/maps?cid=17463746403964832509"
+          ]
+        }
+      }
+    }
+  ]
+}

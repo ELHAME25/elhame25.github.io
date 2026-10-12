@@ -1,0 +1,485 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "ad1a2092979a4c9a6ad947c5b89d38de6ec87433",
+  "scope": {
+    "city": "ينبع",
+    "batch": "01",
+    "count": 15,
+    "positions": "1-15 of 20",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Direct Google Maps place URLs, stored place coordinates and linked business/seller pages were reconciled field by field.",
+  "records": [
+    {
+      "id": "phase6-cars-11b62666ecdcb0",
+      "name": "Radwa exhibition of cars",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "King Khalid Rd, Al Usaylai, Yanbu 46428, Saudi Arabia",
+        "phones": [
+          "0143902074"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=15799141217152998169",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=15799141217152998169"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-26dafbee4da12a",
+      "name": "معرض سلامه العلوني للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "الديار، طريق الملك خالد،, Yanbu 46428, Saudi Arabia",
+        "phones": [
+          "0143914637"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=4990858516113376085",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=4990858516113376085"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-14a08a4bd9b2f4",
+      "name": "Autozone Balubaid Yanbu - اوتوزون بالبيد ينبع",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "King Abdul Aziz Street, Al Sawari District, Yanbu Saudi Arabia",
+        "phones": [
+          "8007606000"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=15590231318220488544",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=15590231318220488544"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-bdb51b87a900ad",
+      "name": "Al-Katheri Car Dealer | الكثيري للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "32QW+3FF, Ali Bin Abi Talib Road, Al Sharbatli, Yanbu 46424, Saudi Arabia",
+        "phones": [
+          "0143908880"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=6843176698281207014",
+        "lat": 24.08769,
+        "lon": 38.04617
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=6843176698281207014"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-a46eb003b73006",
+      "name": "Honda Yanbu معرض هلا",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "King Khalid Rd, Attakhi, Yanbu 46429, Saudi Arabia",
+        "phones": [
+          "0143914144"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=2889396343584531324",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=2889396343584531324"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-6bcebe2d50264a",
+      "name": "معرض سيارات الغربية - AL-Gharbiyah Cars Exhibition",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "7786, Yanbu 46428, Saudi Arabia",
+        "phones": [
+          "0551388941"
+        ],
+        "whatsapp": null,
+        "website": "https://shopping-center-12817.business.site",
+        "maps": "https://www.google.com/maps/?cid=8695559041823941930",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "verified_or_linked_listing",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=8695559041823941930",
+        "https://shopping-center-12817.business.site"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-2ceb2e9bdc78b9",
+      "name": "معرض روتانا موزع جيلي",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "3498+P6P، طريق الملك عبد العزيز، Al Sawari, Yanbu 46431, Saudi Arabia",
+        "phones": [
+          "0590626228"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=5681440513540424381",
+        "lat": 24.06934,
+        "lon": 38.11558
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=5681440513540424381"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-35ccb2a38cf4c9",
+      "name": "Alesayi Motors",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "4586 King Abdulaziz Rd, 6360, AR Rabi, Yanbu 46436, Saudi Arabia",
+        "phones": [
+          "0143914888"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=2856522372487202587",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=2856522372487202587"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-b7d1ffd9d26057",
+      "name": "NMC Kia - Showroom الشركة الأهلية للتسويق - المعرض",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "طريق الملك عبدالله، Al Buhayrah, Yanbu 46425, Saudi Arabia",
+        "phones": [
+          "920034888"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=166395200608629438",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=166395200608629438"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-afe6eb68388478",
+      "name": "معرض الورود للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "شارع المعارض الفرعي, Al Usaylai, Yanbu 46428, Saudi Arabia",
+        "phones": [
+          "0545802641"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=10112693050439091468",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=10112693050439091468"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-dda1e9ab4ecb20",
+      "name": "Red Sea Car Showroom",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "7797 الامير نايف ابن عبدالعزيز YADD7797 3439 حي الورود ينبع 46428",
+        "phones": [
+          "0552518888"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=8040518425495881887",
+        "lat": 24.10623,
+        "lon": 38.07413
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=8040518425495881887"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-92b843e1897ce0",
+      "name": "معرض مازدا - Mazda showroom",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "3216 King Abdulaziz Rd, 7027, Yanbu 46429, Saudi Arabia",
+        "phones": [
+          "0122249282"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=11420849038968601431",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=11420849038968601431"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-ba3e515ac52732",
+      "name": "معرض النور للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "3366 العصيلي ينبع 46428 7838",
+        "phones": [
+          "0505360991"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=17389605020123542236",
+        "lat": 24.09987,
+        "lon": 38.07097
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=17389605020123542236"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-4727dbd3f7bc86",
+      "name": "معرض رضوى للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "طريق الملك خالد، العصيلي، ينبع46428، السعودية",
+        "phones": [
+          "0504353636"
+        ],
+        "whatsapp": null,
+        "website": "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D8%B6%D9%88%D9%89%20%D9%8A%D9%86%D8%A8%D8%B9/",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D8%B6%D9%88%D9%89%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%8A%D9%86%D8%A8%D8%B9&query_place_id=ChIJP9JKJ0UPuRURGRujxDrTQds",
+        "lat": 24.09987,
+        "lon": 38.07097
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "verified_or_linked_listing",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D8%B6%D9%88%D9%89%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%8A%D9%86%D8%A8%D8%B9&query_place_id=ChIJP9JKJ0UPuRURGRujxDrTQds",
+        "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B1%D8%B6%D9%88%D9%89%20%D9%8A%D9%86%D8%A8%D8%B9/"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    },
+    {
+      "id": "phase6-cars-c8ff42092819e8",
+      "name": "شركة شيري - جيتور ينبع",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "ينبع",
+        "neighborhood": "طريق الملك عبدالله، البحيرة، ينبع 46432",
+        "phones": [
+          "0568048869"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=8511983761178456363",
+        "lat": 24.07398,
+        "lon": 38.08977
+      },
+      "field_decisions": {
+        "name": "confirmed_by_direct_place",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed_by_place_address",
+        "phone": "confirmed_from_place_record",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_place_link_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=8511983761178456363"
+      ],
+      "note": "الاسم والمدينة والعنوان والهاتف متسقة مع رابط المكان المباشر؛ لا يوجد واتساب مثبت، ولم يُستنتج حقل غير ظاهر."
+    }
+  ]
+}

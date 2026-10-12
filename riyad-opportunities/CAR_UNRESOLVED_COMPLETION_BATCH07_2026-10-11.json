@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-10-11T12:45:00Z",
+  "baseCommit": "c97866077bb15b46ca6a023dd005106b81b649c9",
+  "reviewedRecords": 1,
+  "source": "Google Maps live place card opened directly after search; matched exact name, city, neighborhood/address, and phone",
+  "changes": [
+    {
+      "id": "phase5-car-17e3aaa9dbc1",
+      "name": "معرض الحنيني للسيارات",
+      "city": "بريدة",
+      "neighborhood": "حي الجزيرة، شارع المعارض",
+      "old": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D9%86%D9%8A%D9%86%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+        "lat": 26.40874,
+        "lon": 43.87542
+      },
+      "new": {
+        "maps": "https://www.google.com/maps/?cid=13833647810693615544",
+        "lat": 26.4105844,
+        "lon": 43.8777297
+      },
+      "evidence": {
+        "googleMapsPlace": "https://www.google.com/maps/?cid=13833647810693615544",
+        "matched": [
+          "معرض الحنيني للسيارات",
+          "شارع المعارض، حي الجزيرة، بريدة 52581",
+          "+966 50 155 5380"
+        ],
+        "coordinates": {
+          "lat": 26.4105844,
+          "lon": 43.8777297
+        },
+        "plusCode": "CV6H+63 بريدة السعودية"
+      }
+    }
+  ],
+  "checks": {
+    "totalRecords": 821,
+    "qadisiyahRecords": 33,
+    "qadisiyahUnchanged": true,
+    "phoneUnchanged": true
+  }
+}

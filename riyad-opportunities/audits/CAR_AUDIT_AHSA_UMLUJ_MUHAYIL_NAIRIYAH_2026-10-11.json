@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "timezone": "Asia/Riyadh",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": {
+    "cities": ["الأحساء", "أملج", "محايل عسير", "النعيرية"],
+    "existing_records_reviewed": 14,
+    "replacement_candidates_verified": 1,
+    "protected_qadisiyah_touched": false
+  },
+  "summary": {
+    "verified_correct_no_data_change": 7,
+    "verified_with_proposed_data_correction": 4,
+    "partial_phone_unresolved": 1,
+    "unresolved_no_exact_card": 1,
+    "permanently_closed_with_verified_replacement": 1,
+    "verified_replacement_candidate": 1
+  },
+  "policy": {
+    "primary_source": "Google Maps place cards opened directly",
+    "general_search_url_not_accepted_as_verified_pin": true,
+    "cars_json_write_status": "Not attempted; the prior full-file replacement was explicitly rejected. This file preserves field-level corrections and the archive/replacement decision without bypassing that review decision."
+  },
+  "records": [
+    {
+      "id": "phase5-car-197ca86c38ef",
+      "city": "الأحساء",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض الموسى للسيارات", "phone": "0503917401", "lat": 25.4103483, "lon": 49.4670699},
+      "observed": {"name": "معرض الموسى للسيارات", "activity": "تاجر سيارات", "address": "CF68+4RP، Unnamed Road، المنطقة الصناعية بالاحساء المملكة العربية السعودية", "phone": "0503917401", "lat": 25.4103483, "lon": 49.4670699, "maps_cid": "13872806870393737568"},
+      "proposed_change": null
+    },
+    {
+      "id": "phase5-car-7168b98a40ae",
+      "city": "الأحساء",
+      "decision": "partial_phone_unresolved",
+      "stored": {"name": "معرض الشموع للسيارات", "phones": ["0135362088", "0506884881"], "lat": null, "lon": null, "maps_cid": "4903061669009308738"},
+      "observed": {"name": "معرض الشموع للسيارات", "activity": "تاجر السيارات", "address": "8419 الأمير طلال، AR Rashidiyah Al Hufuf and Al Mubarraz، الهفوف والمبرز 36342", "phone": "0135362088", "plus_code": "CHRV+M4 المبرز السعودية", "lat": 25.4417472, "lon": 49.5928317, "maps_cid": "4903061669009308738"},
+      "proposed_change": {"lat": 25.4417472, "lon": 49.5928317},
+      "unresolved_fields": ["secondary_phone_0506884881"],
+      "rationale": "Google Maps confirms the landline but does not publish the stored secondary mobile number."
+    },
+    {
+      "id": "phase5-car-32175aaba1e1",
+      "city": "الأحساء",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض ريان الأحساء للسيارات", "phone": "0564444110", "lat": 25.409502, "lon": 49.4628876},
+      "observed": {"name": "معرض ريان الاحساء للسيارات", "activity": "تاجر سيارات", "address": "CF57+R52، Unnamed Road، المنطقة الصناعية بالاحساء 36456", "phone": "0564444110", "lat": 25.409502, "lon": 49.4628876, "maps_cid": "8312325973377845328"},
+      "proposed_change": null
+    },
+    {
+      "id": "phase5-car-7d02d675a9a7",
+      "city": "الأحساء",
+      "decision": "unresolved_no_exact_card",
+      "stored": {"name": "معرض سول للسيارات", "phone": "0135923600", "lat": null, "lon": null, "maps_type": "general_search"},
+      "observed": {"exact_google_maps_card": null, "search_result": "Exact name search returned other nearby dealerships but no result named معرض سول للسيارات."},
+      "proposed_change": null,
+      "unresolved_fields": ["name", "activity", "address", "phone", "pin"]
+    },
+    {
+      "id": "phase5-car-f584d4e8bf28",
+      "city": "الأحساء",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض الحمالي للسيارات", "phone": "0555051111", "lat": 25.4089167, "lon": 49.4645607},
+      "observed": {"name": "معرض الحمالي للسيارات", "activity": "تاجر سيارات", "address": "المنطقة الصناعية بالاحساء 36456، المملكة العربية السعودية", "phone": "0555051111", "plus_code": "CF57+HR", "lat": 25.4089167, "lon": 49.4645607, "maps_cid": "17461015148851578685"},
+      "proposed_change": null
+    },
+    {
+      "id": "phase6-cars-68b9d5f1f02568",
+      "city": "أملج",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض المروانى للسيارات", "phone": "0555875526", "lat": 25.05925, "lon": 37.26416},
+      "observed": {"name": "معرض المروانى للسيارات", "activity": "سوق سيارات", "address": "طريق الملك فيصل، الضويحي، املج 48322", "phone": "0555875526", "plus_code": "3757+MM املج السعودية", "lat": 25.059247, "lon": 37.2641638, "maps_cid": "16806097087101105305"},
+      "proposed_change": null
+    },
+    {
+      "id": "phase6-cars-a26734ec5f415b",
+      "city": "أملج",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض ابو ايمن النحاس للسيارات.", "phone": "0503579096", "lat": 25.05719, "lon": 37.26361},
+      "observed": {"name": "معرض ابو ايمن النحاس للسيارات.", "activity": "تاجر سيارات", "address": "3747+VCF، طريق الملك فيصل، الضويحي، املج 48324", "phone": "0503579096", "lat": 25.0571846, "lon": 37.2636097, "maps_cid": "2230165476599814279"},
+      "proposed_change": null
+    },
+    {
+      "id": "phase6-cars-1879177f0c7f7d",
+      "city": "أملج",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض عبدالرحمن سعد الجهني للسيارات", "phone": "0508998620", "lat": 25.05742, "lon": 37.26363},
+      "observed": {"name": "معرض عبدالرحمن سعد الجهني للسيارات", "activity": "تاجر السيارات", "address": "KUDC6446، 6446 طريق الملك فيصل، الضويحي، املج 48322", "phone": "0508998620", "plus_code": "3747+XF املج السعودية", "lat": 25.0574189, "lon": 37.2636288, "maps_cid": "16659251120507606316"},
+      "proposed_change": null
+    },
+    {
+      "id": "phase6-cars-050e3294316f0d",
+      "city": "محايل عسير",
+      "decision": "verified_correct_no_data_change",
+      "stored": {"name": "معرض الراية الأمثل للسيارات", "phone": "0551055397", "lat": 18.5391679, "lon": 42.0339275, "maps_cid": "5647039032092486162"},
+      "observed": {"name": "معرض الرايه الامثل للسيارات", "activity": "تاجر سيارات", "address": "شارع الملك عبدالله، الخالدية، محايل عسير 63687", "phone": "0551055397", "plus_code": "G2QM+MH محايل عسير السعودية", "lat": 18.5391679, "lon": 42.0339275, "maps_cid": "5647039032092486162"},
+      "proposed_change": null
+    },
+    {
+      "id": "phase6-cars-9a574fdfa72d8d",
+      "city": "محايل عسير",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "الراقي كار", "phone": "0552016930", "lat": 18.53786, "lon": 42.04866, "maps_cid": "87639476552118783"},
+      "observed": {"name": "الراقي كار", "activity": "تاجر سيارات", "address": "3832، حي الشهد، AHAA9369، طريق الملك عبدالله، محايل عسير 63311", "phone": "0552316580", "plus_code": "G2RW+6C محايل عسير السعودية", "lat": 18.5405012, "lon": 42.0461047, "maps_cid": "87639476552118783"},
+      "proposed_change": {"phone": "0552316580", "lat": 18.5405012, "lon": 42.0461047},
+      "rationale": "The exact stored CID resolves to the same business, but the live card publishes a different phone and pin."
+    },
+    {
+      "id": "phase6-cars-b9bf9e96446ec3",
+      "city": "محايل عسير",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض السيارات أبو سليمان", "phone": "0564707901", "maps_provider": "Yango", "lat": 18.54866, "lon": 42.05739},
+      "observed": {"name": "معرض السيارات ابو سليمان", "activity": "تاجر سيارات", "address": "الشارع الملك عبدالله، محايل عسير", "phone": "0564707901", "lat": 18.5473952, "lon": 42.0534398, "maps_cid": "7484911481174363312"},
+      "proposed_change": {"maps": "https://www.google.com/maps/?cid=7484911481174363312", "lat": 18.5473952, "lon": 42.0534398}
+    },
+    {
+      "id": "phase6-cars-32e93c5ff42bc3",
+      "city": "محايل عسير",
+      "decision": "permanently_closed_with_verified_replacement",
+      "stored": {"name": "ظل الجزيرة للسيارات - محايل عسير", "phone": "0508960666", "maps_provider": "Yango", "lat": 18.52627, "lon": 42.04283},
+      "observed": {"name": "ظل الجزيره للسيارات - محايل عسير", "closure_label": "مغلق نهائيًا", "address": "طريق خميس البحر العام، محايل عسير 63322", "phone": "0508960666", "lat": 18.5387528, "lon": 42.0357974, "maps_cid": "5912311246851794664"},
+      "proposed_change": {"archive_from_display": true, "replacement": "replacement-muhayil-saif-al-raya"},
+      "rationale": "The exact Google Maps card explicitly displays a permanent-closure label."
+    },
+    {
+      "id": "replacement-muhayil-saif-al-raya",
+      "city": "محايل عسير",
+      "decision": "verified_replacement_candidate",
+      "observed": {"name": "معرض سيف الراية للسيارات", "activity": "تاجر السيارات", "address": "معارض السيارات، محايل عسير 25412", "phone": "0500455955", "plus_code": "GWFV+9W محايل عسير السعودية", "lat": 18.5234629, "lon": 41.9448296, "maps_cid": "3623151268862885399", "permanent_closure_label": null},
+      "proposed_change": {"add_as_replacement_for": "phase6-cars-32e93c5ff42bc3", "maps": "https://www.google.com/maps/?cid=3623151268862885399"}
+    },
+    {
+      "id": "national-car-624b70b6a7d4b0",
+      "city": "النعيرية",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض هديب حياء الرشيدي", "phone": "0537078110", "lat": null, "lon": null, "maps_cid": "2193603285461162027"},
+      "observed": {"name": "Al rashidi cars showroom معرض هديب حياء الرشيدي", "activity": "تاجر السيارات", "address": "near cattle market حي السوق الماشي النعيرية Al Nairiyah 37486", "phone": "0537078110", "plus_code": "GG3M+8P النعيرية السعودية", "lat": 27.5034092, "lon": 48.5343078, "maps_cid": "2193603285461162027"},
+      "proposed_change": {"lat": 27.5034092, "lon": 48.5343078}
+    },
+    {
+      "id": "national-car-fa44ba48e70734",
+      "city": "النعيرية",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {"name": "معرض الفرو", "phone": "0500550051", "lat": null, "lon": null, "maps_cid": "7237572279603442674"},
+      "observed": {"name": "معرض الفرو", "activity": "تاجر سيارات مستعملة", "address": "النعيرية 37486، المملكة العربية السعودية", "phone": "0500550051", "plus_code": "GG4Q+8Q النعيرية السعودية", "lat": 27.5057923, "lon": 48.5393769, "maps_cid": "7237572279603442674"},
+      "proposed_change": {"lat": 27.5057923, "lon": 48.5393769}
+    }
+  ]
+}

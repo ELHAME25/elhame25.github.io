@@ -1,0 +1,398 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "782123191b550af5493c2daab29ac949db3f85ef",
+  "scope": {
+    "city": "رأس تنورة",
+    "batch": "remaining",
+    "count": 7,
+    "positions": "1-7 of 7",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Direct provider place records, stored coordinates, linked business pages and regional provenance were reconciled field by field. Search-only links were not accepted as pins.",
+  "records": [
+    {
+      "id": "regional-pdf-national-car-c80e0cb5068ed3-075",
+      "name": "معرض جنان للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "رأس تنورة",
+        "neighborhood": "الملك عبدالعزيز، الطف، سيهات 32463، السعودية",
+        "phones": [
+          "0506852994"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=2391268452885284099",
+        "lat": 26.4938,
+        "lon": 50.02968
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=2391268452885284099"
+      ],
+      "note": "نسخة إقليمية في رأس تنورة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان سيهات؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "رأس تنورة",
+          "id": "regional-pdf-national-car-c80e0cb5068ed3-075"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_ras_tanura_scope",
+          "retain_id": "national-car-c80e0cb5068ed3",
+          "origin_city": "سيهات"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=2391268452885284099"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-c80e0cb5068ed3",
+          "originCity=سيهات",
+          "stored_neighborhood=الملك عبدالعزيز، الطف، سيهات 32463، السعودية"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-640f1c0527f877-075",
+      "name": "معرض علي الصادق للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "رأس تنورة",
+        "neighborhood": "صفوى، شارع الإمام علي، المنطقة الشرقية، السعودية",
+        "phones": [
+          "0503877939"
+        ],
+        "whatsapp": null,
+        "website": "https://www.instagram.com/alsadiqshowroom/",
+        "maps": "https://maps.yango.com/ar-sa/org/30323973408/",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "linked_business_or_seller_page",
+        "google_maps_pin": "direct_provider_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/org/30323973408/",
+        "https://www.instagram.com/alsadiqshowroom/"
+      ],
+      "note": "نسخة إقليمية في رأس تنورة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان صفوى؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "رأس تنورة",
+          "id": "regional-pdf-national-car-640f1c0527f877-075"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_ras_tanura_scope",
+          "retain_id": "national-car-640f1c0527f877",
+          "origin_city": "صفوى"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://maps.yango.com/ar-sa/org/30323973408/",
+          "https://www.instagram.com/alsadiqshowroom/"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-640f1c0527f877",
+          "originCity=صفوى",
+          "stored_neighborhood=صفوى، شارع الإمام علي، المنطقة الشرقية، السعودية"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-cf6f3c5b146fa1-075",
+      "name": "معرض أبو فارس للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "رأس تنورة",
+        "neighborhood": "7567، 2240، القطيف 32637",
+        "phones": [
+          "0549836772"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=11438090590808644062",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=11438090590808644062"
+      ],
+      "note": "نسخة إقليمية في رأس تنورة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان القطيف؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "رأس تنورة",
+          "id": "regional-pdf-national-car-cf6f3c5b146fa1-075"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_ras_tanura_scope",
+          "retain_id": "national-car-cf6f3c5b146fa1",
+          "origin_city": "القطيف"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=11438090590808644062"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-cf6f3c5b146fa1",
+          "originCity=القطيف",
+          "stored_neighborhood=7567، 2240، القطيف 32637"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-5ac8dcb253c865-075",
+      "name": "A-Hamzah Car Dealer",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "رأس تنورة",
+        "neighborhood": "شارع القدس، منطقة المستودعات، القطيف 32631",
+        "phones": [
+          "0505847810"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=11549186874776732353",
+        "lat": 26.54172,
+        "lon": 50.0188
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=11549186874776732353"
+      ],
+      "note": "نسخة إقليمية في رأس تنورة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان القطيف؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "رأس تنورة",
+          "id": "regional-pdf-national-car-5ac8dcb253c865-075"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_ras_tanura_scope",
+          "retain_id": "national-car-5ac8dcb253c865",
+          "origin_city": "القطيف"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=11549186874776732353"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-5ac8dcb253c865",
+          "originCity=القطيف",
+          "stored_neighborhood=شارع القدس، منطقة المستودعات، القطيف 32631"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-41f8e10e641608-075",
+      "name": "Abdullatif Cars Sale",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "رأس تنورة",
+        "neighborhood": "H3F2+QW4، الروضة، القطيف 32625",
+        "phones": [
+          "0545174052"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=161918289725503931",
+        "lat": 26.57439,
+        "lon": 50.05233
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=161918289725503931"
+      ],
+      "note": "نسخة إقليمية في رأس تنورة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان القطيف؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "رأس تنورة",
+          "id": "regional-pdf-national-car-41f8e10e641608-075"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_ras_tanura_scope",
+          "retain_id": "national-car-41f8e10e641608",
+          "origin_city": "القطيف"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=161918289725503931"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-41f8e10e641608",
+          "originCity=القطيف",
+          "stored_neighborhood=H3F2+QW4، الروضة، القطيف 32625"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-48ab5b2906b449-075",
+      "name": "معرض العبداللطيف للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "رأس تنورة",
+        "neighborhood": "H2FR+7MP، طريق أحد، الروضة، القطيف32625",
+        "phones": [
+          "0509515854"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=5074131212685972609",
+        "lat": 26.57321,
+        "lon": 50.0417
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=5074131212685972609"
+      ],
+      "note": "نسخة إقليمية في رأس تنورة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان القطيف؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "رأس تنورة",
+          "id": "regional-pdf-national-car-48ab5b2906b449-075"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_ras_tanura_scope",
+          "retain_id": "national-car-48ab5b2906b449",
+          "origin_city": "القطيف"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=5074131212685972609"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-48ab5b2906b449",
+          "originCity=القطيف",
+          "stored_neighborhood=H2FR+7MP، طريق أحد، الروضة، القطيف32625"
+        ]
+      }
+    },
+    {
+      "id": "regional-pdf-national-car-fc5ea0c4ea47f9-075",
+      "name": "ساحة عادل عبدالله الحبيب للسيارات المستعملة",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "رأس تنورة",
+        "neighborhood": "شارع الملك فيصل بن عبدالعزيز، المدني، القطيف32653",
+        "phones": [
+          "0540496846"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=17015749861607641515",
+        "lat": 26.55962,
+        "lon": 49.99986
+      },
+      "field_decisions": {
+        "name": "confirmed_from_parent_or_place",
+        "activity": "supported",
+        "city": "conflict",
+        "neighborhood": "confirms_origin_city",
+        "phone": "retained_from_parent_unrechecked",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_google_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=17015749861607641515"
+      ],
+      "note": "نسخة إقليمية في رأس تنورة لكن originCity والمعرّف الأبوي والعنوان/الدبوس يثبتان القطيف؛ أُضيفت للحزمة دون تطبيق.",
+      "proposed_correction": {
+        "type": "regional_duplicate_scope_conflict",
+        "field": "record_scope",
+        "old_value": {
+          "city": "رأس تنورة",
+          "id": "regional-pdf-national-car-fc5ea0c4ea47f9-075"
+        },
+        "new_value": {
+          "action": "exclude_duplicate_record_from_ras_tanura_scope",
+          "retain_id": "national-car-fc5ea0c4ea47f9",
+          "origin_city": "القطيف"
+        },
+        "status": "not_applied",
+        "evidence": [
+          "https://www.google.com/maps/?cid=17015749861607641515"
+        ],
+        "proof": [
+          "regionalListing=true",
+          "regionalListingOf=national-car-fc5ea0c4ea47f9",
+          "originCity=القطيف",
+          "stored_neighborhood=شارع الملك فيصل بن عبدالعزيز، المدني، القطيف32653"
+        ]
+      }
+    }
+  ]
+}

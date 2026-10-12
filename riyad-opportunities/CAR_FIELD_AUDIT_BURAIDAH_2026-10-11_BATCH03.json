@@ -1,0 +1,332 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "981dbbfa0ba76fabf0b5610e4bd23ca2d0a7c6a2",
+  "scope": "مدينة بريدة — السجلات المحلية المتبقية في الدفعة 3. لم تُعدّل cars.json؛ سجلات النسخ الإقليمية ذات المصدر في عنيزة تتابع مع نطاق عنيزة ولا تُحوّل اعتمادًا على تشابه الاسم وحده.",
+  "count": 7,
+  "note": "Direct seller records and independent business directories checked. No Google Maps pin was replaced; phone, WhatsApp, and website evidence remains field-specific.",
+  "entries": [
+    {
+      "id": "phase5-car-a1fbedf16e10",
+      "name": "معرض عالم الدوحة للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Active seller listings advertise new vehicles under the exact showroom name.",
+          "sources": [
+            "https://kr.mtgr.com/11179026852/%D8%AC%D9%8A%D9%84%D9%89_%D8%A7%D9%85%D9%8A%D8%AC%D8%B1%D8%A7%D9%86%D8%AF_2026_%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1_%D8%A7%D8%A8%D9%8A%D8%B6_%D8%A8%D8%A847_000_%D8%B4%D8%A7%D9%85%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%87"
+          ]
+        },
+        "city_locality": {
+          "status": "verified",
+          "evidence": "Current seller listing locates the showroom in Buraidah's car exhibitions district; a supplier list also names Doha World in Buraidah.",
+          "sources": [
+            "https://kr.mtgr.com/11179026852/%D8%AC%D9%8A%D9%84%D9%89_%D8%A7%D9%85%D9%8A%D8%AC%D8%B1%D8%A7%D9%86%D8%AF_2026_%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1_%D8%A7%D8%A8%D9%8A%D8%B6_%D8%A8%D8%A847_000_%D8%B4%D8%A7%D9%85%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%87",
+            "https://www.alrajhibank.com.sa/-/media/Project/AlRajhi/ARBRevamp/Home/Personal/Finance/Supplier-Name.pdf"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "Current seller listing publishes 0537709090, matching the stored sales number.",
+          "sources": [
+            "https://kr.mtgr.com/11179026852/%D8%AC%D9%8A%D9%84%D9%89_%D8%A7%D9%85%D9%8A%D8%AC%D8%B1%D8%A7%D9%86%D8%AF_2026_%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%B1_%D8%A7%D8%A8%D9%8A%D8%B6_%D8%A8%D8%A847_000_%D8%B4%D8%A7%D9%85%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%87"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp destination for the stored number was matched.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Seller says it has a map location but this does not validate the stored CID.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "Social handles are mentioned in seller ads; no official website confirmed.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase5-car-cb09e15b0d61",
+      "name": "معرض الشبرمي للسيارات ببريدة",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Current Haraj listings identify Al Shabrmi showroom and advertise vehicles.",
+          "sources": [
+            "https://beta.haraj.com.sa/1184950836/%D9%81%D9%88%D8%B1%D8%AF_F150_2019/",
+            "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D8%A8%D8%B1%D9%85%D9%8A%20%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified",
+          "evidence": "Haraj ads explicitly place the showroom in Buraidah, Qassim.",
+          "sources": [
+            "https://beta.haraj.com.sa/1184950836/%D9%81%D9%88%D8%B1%D8%AF_F150_2019/"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "The active seller page publishes 0503850044 as its call number, matching the record.",
+          "sources": [
+            "https://beta.haraj.com.sa/1184950836/%D9%81%D9%88%D8%B1%D8%AF_F150_2019/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "Haraj publishes separate call/WhatsApp contacts; it does not confirm that the stored call number is WhatsApp.",
+          "sources": [
+            "https://beta.haraj.com.sa/1184950836/%D9%81%D9%88%D8%B1%D8%AF_F150_2019/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID was not independently matched to a Google place card.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "Haraj account is a marketplace profile, not an official website.",
+          "sources": [
+            "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D8%A8%D8%B1%D9%85%D9%8A%20%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-4b9ba799e221",
+      "name": "معرض المحيا للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "The Al Mohayya account identifies the showroom and car sale activity.",
+          "sources": [
+            "https://x.com/Almohayya1"
+          ]
+        },
+        "city_locality": {
+          "status": "verified",
+          "evidence": "The source describes the owner as operating showrooms in Buraidah, Qassim.",
+          "sources": [
+            "https://x.com/Almohayya1"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "The X profile publishes 0503854000 as a contact, matching the stored mobile.",
+          "sources": [
+            "https://x.com/Almohayya1"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "No direct WhatsApp link verified.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Stored CID was not opened and matched to the exact showroom.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": [
+            "https://x.com/Almohayya1"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-b4aeb4edf7b8",
+      "name": "معرض الخيمة للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Current Haraj ad identifies Al Khaimah showroom and vehicle sales.",
+          "sources": [
+            "https://haraj.com.sa/11182641571/%D8%A7%D9%84%D9%86%D8%AA%D8%B1%D8%A7_2022_%D8%A8%D9%86%D8%B2%D9%8A%D9%86/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified",
+          "evidence": "Current Haraj ad places the showroom in Buraidah car exhibitions district.",
+          "sources": [
+            "https://haraj.com.sa/11182641571/%D8%A7%D9%84%D9%86%D8%AA%D8%B1%D8%A7_2022_%D8%A8%D9%86%D8%B2%D9%8A%D9%86/"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "The ad names 0543854395 as the showroom phone, matching the stored value.",
+          "sources": [
+            "https://haraj.com.sa/11182641571/%D8%A7%D9%84%D9%86%D8%AA%D8%B1%D8%A7_2022_%D8%A8%D9%86%D8%B2%D9%8A%D9%86/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "The ad lists a separate WhatsApp contact; it does not establish WhatsApp for the stored showroom number.",
+          "sources": [
+            "https://haraj.com.sa/11182641571/%D8%A7%D9%84%D9%86%D8%AA%D8%B1%D8%A7_2022_%D8%A8%D9%86%D8%B2%D9%8A%D9%86/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Ad says a Google Maps location exists but does not prove the stored CID matches it.",
+          "sources": [
+            "https://haraj.com.sa/11182641571/%D8%A7%D9%84%D9%86%D8%AA%D8%B1%D8%A7_2022_%D8%A8%D9%86%D8%B2%D9%8A%D9%86/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "Snapchat handle is listed; no standalone official website confirmed.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase5-car-3aadec05b977",
+      "name": "معرض وارد الامتياز للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "Current Haraj listing identifies Wared Al Imtiaz and advertises new vehicles.",
+          "sources": [
+            "https://beta.haraj.com.sa/11185820587/%D8%B9%D8%B1%D8%B6_%D8%AE%D8%A7%D8%B5_%D9%83%D8%A7%D9%85%D8%B1%D9%8A_2026_%D9%81%D8%B6%D9%8A_%D8%A8_119_900_%D8%B4%D8%A7%D9%85%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%87/"
+          ]
+        },
+        "city_locality": {
+          "status": "verified",
+          "evidence": "Current listings locate Wared Al Imtiaz in Buraidah car exhibitions district.",
+          "sources": [
+            "https://beta.haraj.com.sa/11185820587/%D8%B9%D8%B1%D8%B6_%D8%AE%D8%A7%D8%B5_%D9%83%D8%A7%D9%85%D8%B1%D9%8A_2026_%D9%81%D8%B6%D9%8A_%D8%A8_119_900_%D8%B4%D8%A7%D9%85%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%87/"
+          ]
+        },
+        "phone": {
+          "status": "verified",
+          "evidence": "The active sales listing includes 0531862000, matching the stored number.",
+          "sources": [
+            "https://beta.haraj.com.sa/11185820587/%D8%B9%D8%B1%D8%B6_%D8%AE%D8%A7%D8%B5_%D9%83%D8%A7%D9%85%D8%B1%D9%8A_2026_%D9%81%D8%B6%D9%8A_%D8%A8_119_900_%D8%B4%D8%A7%D9%85%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%87/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "Ads list multiple numbers but no direct WhatsApp link is tied to the stored number.",
+          "sources": [
+            "https://beta.haraj.com.sa/11185820587/%D8%B9%D8%B1%D8%B6_%D8%AE%D8%A7%D8%B5_%D9%83%D8%A7%D9%85%D8%B1%D9%8A_2026_%D9%81%D8%B6%D9%8A_%D8%A8_119_900_%D8%B4%D8%A7%D9%85%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%87/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "The listing references Google Maps reviews but does not verify the saved CID.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "Haraj seller page mentions social accounts; no official company site confirmed.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase5-google-11517200751577483956",
+      "name": "معرض الفريدي للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified_directory_only",
+          "evidence": "Yandex and Kandal list the exact Al Freidi showroom.",
+          "sources": [
+            "https://yandex.com/maps/org/160961745309/",
+            "https://kandal.sa/stores/maard-alfrydy-llsyarat-chijh9"
+          ]
+        },
+        "city_locality": {
+          "status": "verified_directory_only",
+          "evidence": "Kandal locates it in Al Ma'arid, Al Jazirah, Buraidah.",
+          "sources": [
+            "https://kandal.sa/stores/maard-alfrydy-llsyarat-chijh9"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "Yandex and Kandal list 0163854050, matching the stored landline.",
+          "sources": [
+            "https://yandex.com/maps/org/160961745309/",
+            "https://kandal.sa/stores/maard-alfrydy-llsyarat-chijh9"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "Kandal offers a WhatsApp action but does not prove destination and number.",
+          "sources": [
+            "https://kandal.sa/stores/maard-alfrydy-llsyarat-chijh9"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Yandex/Kandal do not establish that the stored Google CID matches the place.",
+          "sources": [
+            "https://yandex.com/maps/org/160961745309/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "No official website verified.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "phase5-google-16966314980904996465",
+      "name": "معرض البحر العربي للسيارات",
+      "fields": {
+        "name_activity": {
+          "status": "verified",
+          "evidence": "The Linktree account identifies the vehicle showroom and current social channels.",
+          "sources": [
+            "https://linktr.ee/arabiansea"
+          ]
+        },
+        "city_locality": {
+          "status": "verified",
+          "evidence": "The Linktree page explicitly lists the showroom location as Buraidah, Al Ma'arid.",
+          "sources": [
+            "https://linktr.ee/arabiansea"
+          ]
+        },
+        "phone": {
+          "status": "verified_directory_only",
+          "evidence": "Kandal lists 0163852522, matching the stored phone.",
+          "sources": [
+            "https://kandal.sa/stores/maard-albhr-alaarby-llsyarat-chij70"
+          ]
+        },
+        "whatsapp": {
+          "status": "partially_verified",
+          "evidence": "Official Linktree includes a WhatsApp channel, but the destination number was not retrieved/matched to the stored phone.",
+          "sources": [
+            "https://linktr.ee/arabiansea"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "Linktree has a location action but the destination was not opened; stored CID remains unverified.",
+          "sources": [
+            "https://linktr.ee/arabiansea"
+          ]
+        },
+        "website": {
+          "status": "verified",
+          "evidence": "Linktree functions as the showroom's official social/contact hub; no standalone website verified.",
+          "sources": [
+            "https://linktr.ee/arabiansea"
+          ]
+        }
+      }
+    }
+  ]
+}

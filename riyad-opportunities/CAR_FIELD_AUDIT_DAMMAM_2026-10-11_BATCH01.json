@@ -1,0 +1,551 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "415c0caf786d5145ad842b5a9d4474aedf95556f",
+  "scope": {
+    "city": "الدمام",
+    "batch": "01",
+    "count": 16,
+    "positions": "1-16 of 27",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Continued from saved evidence already attached to records; evidence URLs were reconciled without restarting prior audits. Direct place/Waze/Yango links were distinguished from Google search URLs.",
+  "records": [
+    {
+      "id": "entity-3180414b6dfb",
+      "name": "علي الصادق للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": null,
+        "phones": [
+          "0565963726"
+        ],
+        "whatsapp": null,
+        "website": "https://www.alsadiqmotors.net/",
+        "maps": "https://www.google.com/maps/place/معرض+علي+الصادق+للسيارات+الدمام+المعارض/@26.4014324,50.0100646,1000m/data=!3m2!1e3!1b1!4m6!3m5!1s0x3e3603d5e9c5ebef:0x4f22de5816e0286a!8m2!3d26.4014324!4d50.0100646!16s%2Fg%2F11n_zqb473",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "partial",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "official_confirmed",
+        "google_maps_pin": "direct_place_link_with_coordinates"
+      },
+      "evidence_urls": [
+        "https://www.alsadiqmotors.net/",
+        "https://www.google.com/maps/place/معرض+علي+الصادق+للسيارات+الدمام+المعارض/@26.4014324,50.0100646,1000m/data=!3m2!1e3!1b1!4m6!3m5!1s0x3e3603d5e9c5ebef:0x4f22de5816e0286a!8m2!3d26.4014324!4d50.0100646!16s%2Fg%2F11n_zqb473"
+      ],
+      "note": "الموقع الرسمي ورابط المكان المباشر يدعمان الاسم والنشاط والمدينة والهاتف؛ العنوان التفصيلي غير مكتمل في السجل."
+    },
+    {
+      "id": "entity-fc7767edf13e",
+      "name": "معرض مرجان الشرق للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0501197232"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=13989602928127783625",
+        "lat": 26.4001515,
+        "lon": 50.015381
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_or_provider_place_link_retained"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=13989602928127783625"
+      ],
+      "note": "الأدلة المحفوظة لا تكفي لحسم جميع الحقول؛ وُثّقت الحقول غير المحسومة دون تعديل."
+    },
+    {
+      "id": "phase5-car-d4913195c092",
+      "name": "معرض الشهري للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0564383333"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%2092W6%2BQF6%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "supported_detailed_variant",
+        "activity": "confirmed",
+        "city": "supported",
+        "neighborhood": "partial",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_pin"
+      },
+      "evidence_urls": [
+        "https://www.aljazeeramaps.com/listing/maard-abo-yosf-alshhry-llsyarat",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%2092W6%2BQF6%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85"
+      ],
+      "note": "دليل مستقل يسرد «معرض أبو يوسف الشهري للسيارات» لخدمة بيع وشراء واستبدال السيارات في معارض الدمام، ويعرض الرقم 0564383333 المطابق للسجل. الاسم التفصيلي وحي/شارع المعرض لم يُحسما من هذا المصدر وحده؛ لم أغير الاسم أو العنوان. رابط الخرائط المحفوظ في السجل بحث بالاسم ولا يثبت دبوسًا."
+    },
+    {
+      "id": "phase5-car-0e5c5645c5bb",
+      "name": "معرض الحزام الذهبي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "92X6+XPJ، ضاحية الملك فهد، الدمام 32313",
+        "phones": [
+          "0565888882"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B2%D8%A7%D9%85%20%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%2092X6%2BXPJ%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "confirmed",
+        "whatsapp": "confirmed_by_listing",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_pin"
+      },
+      "evidence_urls": [
+        "https://yellowpages-ar.cybo.com/SA-biz/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AD%D8%B2%D8%A7%D9%85-%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+        "https://haraj.com.sa/11175816496/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B2%D8%A7%D9%85%20%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%2092X6%2BXPJ%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85"
+      ],
+      "note": "Cybo يطابق الاسم والعنوان بالرمز 92X6+XPJ ورقم 0565888882؛ إعلان حراج حديث يطابق المعرض ورقم الاتصال ويؤكد استقبال WhatsApp عبر الرقم. رابط Maps الحالي بحث استعلام فقط ولم يثبت بطاقة أو دبوسًا، لذلك لم يُسجل كدبوس."
+    },
+    {
+      "id": "phase5-car-f742e10a8874",
+      "name": "معرض بهجه المنامه للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0503460720"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.waze.com/da/live-map/directions/sa/eastern-province/dammam/mardh-bhjh-almnamh-llsyarat?to=place.ChIJNVfoyhIDNj4RhljenaVqJeo",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "unresolved",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "waze_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://www.waze.com/da/live-map/directions/sa/eastern-province/dammam/mardh-bhjh-almnamh-llsyarat?to=place.ChIJNVfoyhIDNj4RhljenaVqJeo"
+      ],
+      "note": "بطاقة Waze تعرض اسم معرض بهجة المنامة، الدمام، ورقم 0503460720 المطابق. لم تعرض الصفحة عنوانًا تفصيليًا أو إحداثيات؛ لم أغيّر الإحداثيات الحالية."
+    },
+    {
+      "id": "phase5-car-9c555880a1b7",
+      "name": "معرض نية الخير للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0535499053"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2032313",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2032313"
+      ],
+      "note": "الأدلة المحفوظة لا تكفي لحسم جميع الحقول؛ وُثّقت الحقول غير المحسومة دون تعديل."
+    },
+    {
+      "id": "phase5-car-16dadd49d5d7",
+      "name": "معرض عز الاختيار",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "92W5+MVP، شارع المعارض، ضاحية الملك فهد، الدمام 32313",
+        "phones": [
+          "0581100333",
+          "0566998086"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%B2%20%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1%2092W5%2BMVP%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_pin"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11162610681/",
+        "https://yellowpages-ar.cybo.com/SA-biz/%D9%85%D8%B9%D8%B1%D8%B6-%D8%B9%D8%B2-%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%B9%D8%B2%20%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1%2092W5%2BMVP%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85"
+      ],
+      "note": "إعلان حراج لمعرض عز الاختيار يذكر رقمي خالد 0581100333 وعبدالعزيز 0566998086؛ أُضيف الرقم الثاني. صفحة Cybo مستقلة تصنف النشاط كتاجر سيارات مستعملة وتعرض عنوان 92W5+MVP، Showrooms St، King Fahd Suburb، Dammam. لم يُفتح دبوس الخرائط نفسه، لذا لم أغيّر الإحداثيات. العنوان المؤيد من Cybo هو 92W5+MVP، شارع المعارض، ضاحية الملك فهد. رابط Google الحالي بحث بالاسم والرمز؛ لم أتمكن من فتح بطاقة الدبوس للتحقق من إحداثياته."
+    },
+    {
+      "id": "phase5-car-8037e9f35e75",
+      "name": "معرض المركبة الاولى للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0557788015",
+          "0138222275"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A9%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%D9%89%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%204394%20%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2032313",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "partial",
+        "phone": "confirmed",
+        "whatsapp": "supported_not_linked",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_pin"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11177755741/",
+        "https://haraj.com.sa/11171281703/",
+        "https://haraj.com.sa/11181635858/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A9%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%D9%89%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%204394%20%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2032313"
+      ],
+      "note": "أُضيف الرقم الأرضي 0138222275 إلى جهة الاتصال بعد ظهوره مع الجوال 0557788015 واسم «معرض المركبة الأولى للسيارات» ومدينة الدمام في عدة إعلانات حراج حديثة للمعرض؛ مثل https://haraj.com.sa/11177755741/ وhttps://haraj.com.sa/11171281703/ وhttps://haraj.com.sa/11181635858/. هذه مصادر إعلانات للمعرض وليست موقعًا رسميًا. واتساب مذكور في الإعلانات دون رابط أو رقم مستقل، لذلك لم يُنشأ رابط واتساب. دبوس Maps الحالي بحث عام ولا يثبت موقعًا دقيقًا، ولم يُعدّل."
+    },
+    {
+      "id": "phase5-car-a9f122e9c2c4",
+      "name": "معرض اضواء التميز",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0505900086"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D8%B6%D9%88%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AA%D9%85%D9%8A%D8%B2%20C237%2BRF8%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2032314",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D8%B6%D9%88%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AA%D9%85%D9%8A%D8%B2%20C237%2BRF8%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2032314"
+      ],
+      "note": "الأدلة المحفوظة لا تكفي لحسم جميع الحقول؛ وُثّقت الحقول غير المحسومة دون تعديل."
+    },
+    {
+      "id": "phase5-car-9e24ec953233",
+      "name": "معرض وادي حبونا للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0581123472"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%88%D8%A7%D8%AF%D9%8A%20%D8%AD%D8%A8%D9%88%D9%86%D8%A7%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%204844%208708%20%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%88%D8%A7%D8%AF%D9%8A%20%D8%AD%D8%A8%D9%88%D9%86%D8%A7%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%204844%208708%20%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85"
+      ],
+      "note": "الأدلة المحفوظة لا تكفي لحسم جميع الحقول؛ وُثّقت الحقول غير المحسومة دون تعديل."
+    },
+    {
+      "id": "phase5-car-a8b7bd9a3dab",
+      "name": "الرفايع الحديث للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0580164631"
+        ],
+        "whatsapp": null,
+        "website": "https://haraj.com.sa/users/elrfaay3/",
+        "maps": "https://maps.app.goo.gl/3dkmbQVibyFfESiw8",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "partial",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "seller_page_confirmed_not_official",
+        "google_maps_pin": "seller_published_short_link_unopened"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/users/elrfaay3/",
+        "https://haraj.com.sa/11187413469/",
+        "https://maps.app.goo.gl/3dkmbQVibyFfESiw8"
+      ],
+      "note": "صفحة بائع حراج elrfaay3 تعرض إعلانات حديثة من الدمام ومنها «معرض الرفايع الحديث لبيع وشراء جميع أنواع السيارات». ليست موقعًا رسميًا مستقلًا للمعرض. رابط الموقع المختصر maps.app.goo.gl/3dkmbQVibyFfESiw8 منشور في إعلانات حديثة لحساب حراج elrfaay3 التي تسمي معرض الرفايع الحديث بالدمام. رابط الخرائط لم يُفتح هنا؛ الإحداثيات لم تُعدّل ولم تُعدّ مثبتة."
+    },
+    {
+      "id": "phase5-car-f91368845dad",
+      "name": "معرض الوادي الفضي",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0562803375"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://maps.yango.com/ar-sa/org/64849300395/",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "supported",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "conflict",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "yango_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://maps.yango.com/ar-sa/org/64849300395/",
+        "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D9%81%D8%B6%D9%8A-056-600-5188"
+      ],
+      "note": "مصدر BizMidEast يعرض معرض الوادي الفضي في معارض السيارات أمام ساحة الحراج، ضاحية الملك فهد، لكنه يسرد 0566005188 بينما السجل يحمل 0562803375. لا يوجد مصدر ثانٍ يحسم الرقم؛ أبقيت الهاتف دون تغيير. Yango يعرض معرض الوادي الفضي في حي ضاحية الملك فهد، الدمام؛ لم أتحقق من الإحداثيات.",
+      "proposed_correction": {
+        "type": "phone_conflict_review",
+        "field": "phones",
+        "old_value": [
+          "0562803375"
+        ],
+        "new_value": [
+          "0566005188"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D9%81%D8%B6%D9%8A-056-600-5188",
+          "https://maps.yango.com/ar-sa/org/64849300395/"
+        ]
+      }
+    },
+    {
+      "id": "phase5-car-e05e6382d4b7",
+      "name": "معرض حديث القارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0550060111",
+          "0508784359"
+        ],
+        "whatsapp": null,
+        "website": "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%AD%D8%AF%D9%8A%D8%AB%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%AD%D8%AF%D9%8A%D8%AB%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%208708%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2032313",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "partial",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "seller_page_confirmed_not_official",
+        "google_maps_pin": "search_link_not_pin"
+      },
+      "evidence_urls": [
+        "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%AD%D8%AF%D9%8A%D8%AB-%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D8%A7%D8%AA-055-006-0111",
+        "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%AD%D8%AF%D9%8A%D8%AB%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+        "https://haraj.com.sa/11189939856/",
+        "https://haraj.com.sa/11178417387/",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%AD%D8%AF%D9%8A%D8%AB%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%208708%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2032313"
+      ],
+      "note": "أُضيف 0508784359 بعد ظهوره مع 0550060111 في إعلانات حراج حديثة باسم معرض حديث القارات للسيارات بالدمام. المصدر المطابق للاسم والمدينة: https://haraj.com.sa/11189939856/ وhttps://haraj.com.sa/11178417387/. صفحة البائع في حراج تحمل اسم معرض حديث القارات للسيارات؛ ليست موقعًا رسميًا مستقلاً."
+    },
+    {
+      "id": "phase5-car-fbefce74f3ef",
+      "name": "معرض الساحل الشرقي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0505500468"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B3%D8%A7%D8%AD%D9%84%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D8%A8%D9%88%20%D8%AD%D8%AF%D8%B1%D9%8A%D9%87%20%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_pin"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B3%D8%A7%D8%AD%D9%84%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D8%A8%D9%88%20%D8%AD%D8%AF%D8%B1%D9%8A%D9%87%20%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85"
+      ],
+      "note": "الأدلة المحفوظة لا تكفي لحسم جميع الحقول؛ وُثّقت الحقول غير المحسومة دون تعديل."
+    },
+    {
+      "id": "phase5-car-ab6b4c9db134",
+      "name": "معرض السيف شراء وبيع السيارات المستعمله",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0541078727"
+        ],
+        "whatsapp": "https://wa.me/966541078727",
+        "website": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B3%D9%8A%D9%81%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D9%88%D8%A8%D9%8A%D8%B9%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%D9%87%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "confirmed",
+        "whatsapp": "confirmed",
+        "website": "none_verified",
+        "google_maps_pin": "search_link_not_pin"
+      },
+      "evidence_urls": [
+        "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D9%81-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85-054-107-8727",
+        "https://kandal.sa/stores/maard-alsyf-shraaa-obyaa-alsyarat-almstaamlh-chijfw",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B3%D9%8A%D9%81%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D9%88%D8%A8%D9%8A%D8%B9%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%D9%87%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85"
+      ],
+      "note": "الرقم 0541078727 مطابق لصفحة BizMidEast وصفحة حراج حديثة تعرض معرض السيف بالدمام. Kandal يعرض خيار واتساب للرقم نفسه؛ أضيف رابط WhatsApp. Kandal يربط المعرض بضاحية الملك فهد، الدمام 32313؛ رابط Google الحالي بحث، ولم أفتح دبوسًا مباشرًا."
+    },
+    {
+      "id": "phase5-car-03ad1be50428",
+      "name": "معرض قمة البرج للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0593333814"
+        ],
+        "whatsapp": null,
+        "website": "https://alborgcars.com/",
+        "maps": "https://www.waze.com/ar/live-map/directions/sa/almntqh-alshrqyh/aldmam/mardh-qmh-albrj-llsyarat?to=place.ChIJzTxr84UCNj4RaCYSwubjT00",
+        "lat": 26.42196,
+        "lon": 49.995
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "official_confirmed",
+        "google_maps_pin": "waze_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://alborgcars.com/",
+        "https://www.waze.com/ar/live-map/directions/sa/almntqh-alshrqyh/aldmam/mardh-qmh-albrj-llsyarat?to=place.ChIJzTxr84UCNj4RaCYSwubjT00"
+      ],
+      "note": "الموقع الرسمي لقمة البرج يطابق اسم المعرض ورقم 0593333814 ويذكر فرع الدمام بشارع المعارض، ضاحية الملك فهد. بطاقة Waze تعرض الاسم والعنوان شارع المعارض، ضاحية الملك فهد، الدمام، ورقم المعرض 0593333814. إحداثيات سجل البيانات لم تُعدّل."
+    }
+  ]
+}

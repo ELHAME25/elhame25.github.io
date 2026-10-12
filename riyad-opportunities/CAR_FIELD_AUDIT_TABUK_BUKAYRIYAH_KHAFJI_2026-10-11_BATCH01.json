@@ -1,0 +1,209 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "437aa11343b5256db9ad9d748e87a9bc7aeba8e6",
+  "scope": "Tabuk completion plus Bukayriyah and Khafji continuation; no cars.json changes",
+  "exclusions": [
+    "Qadisiyah not included"
+  ],
+  "data_write_prohibition": "cars.json not modified",
+  "verification_method": "Focused exact-name/phone search and validation of the already stored direct place URL; phone remains pending when not independently surfaced.",
+  "entry_count": 7,
+  "summary": {
+    "cities": [
+      "تبوك",
+      "البكيرية",
+      "الخفجي"
+    ],
+    "triple_match_confirmed": 0,
+    "partial_or_pending": 7,
+    "cars_json_modified": false,
+    "qadisiyah_modified": false
+  },
+  "entries": [
+    {
+      "id": "phase6-google-8339575344558130197",
+      "stored": {
+        "name": "معرض المزيني للسيارات",
+        "city": "تبوك",
+        "neighborhood": "6533،3291، تبوك47722",
+        "phones": [
+          "0500555547"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=8339575344558130197",
+        "website": "",
+        "lat": null,
+        "lon": null
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "The stored direct Google Maps place/CID supports the exact showroom identity and locality; the stored phone did not surface in focused public search and remains pending.",
+      "field_status": {
+        "name_activity": "supported_by_linked_place",
+        "city_locality": "supported_by_linked_place",
+        "phone": "pending_independent_confirmation",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=8339575344558130197"
+      ]
+    },
+    {
+      "id": "phase6-google-10389926801337554678",
+      "stored": {
+        "name": "معرض فوزي سليمان البلوي للسيارات",
+        "city": "تبوك",
+        "neighborhood": "شارع المعارض، تبوك73825",
+        "phones": [
+          "0537448548"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=10389926801337554678",
+        "website": "",
+        "lat": null,
+        "lon": null
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "The stored direct Google Maps place/CID supports the exact showroom identity and locality; the stored phone did not surface in focused public search and remains pending.",
+      "field_status": {
+        "name_activity": "supported_by_linked_place",
+        "city_locality": "supported_by_linked_place",
+        "phone": "pending_independent_confirmation",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=10389926801337554678"
+      ]
+    },
+    {
+      "id": "phase6-google-9502345782858777060",
+      "stored": {
+        "name": "شركة الجزيرة لبيع وشراء السيارات",
+        "city": "تبوك",
+        "neighborhood": "طريق الأمير سلطان، الفيصلية الجنوبية، تبوك47911",
+        "phones": [
+          "0555554704"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=9502345782858777060",
+        "website": "",
+        "lat": 28.39076,
+        "lon": 36.5786
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "The stored direct Google Maps place/CID supports the exact showroom identity and locality; the stored phone did not surface in focused public search and remains pending.",
+      "field_status": {
+        "name_activity": "supported_by_linked_place",
+        "city_locality": "supported_by_linked_place",
+        "phone": "pending_independent_confirmation",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=9502345782858777060"
+      ]
+    },
+    {
+      "id": "phase5-google-5934656326570365457",
+      "stored": {
+        "name": "معرض موتر بلس للسيارات ( الشمالي سابقاً ) الموقع الجديد",
+        "city": "البكيرية",
+        "neighborhood": "طريق الملك فيصل، البكيرية 52724، المملكة العربية السعودية",
+        "phones": [
+          "0550570225"
+        ],
+        "google_maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D9%88%D8%AA%D8%B1+%D8%A8%D9%84%D8%B3+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%28+%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A+%D8%B3%D8%A7%D8%A8%D9%82%D8%A7%D9%8B+%29+%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B9+%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%E2%80%AD/data=!4m7!3m6!1s0x158219b162f9a68b:0x525c227c61405211!8m2!3d26.1443395!4d43.6961189!16s%2Fg%2F11fmxyxc79!19sChIJi6b5YrEZghUREVJAYXwiXFI?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "website": "",
+        "lat": 26.14434,
+        "lon": 43.69612
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "The stored direct Google Maps place/CID supports the exact showroom identity and locality; the stored phone did not surface in focused public search and remains pending.",
+      "field_status": {
+        "name_activity": "supported_by_linked_place",
+        "city_locality": "supported_by_linked_place",
+        "phone": "pending_independent_confirmation",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D9%88%D8%AA%D8%B1+%D8%A8%D9%84%D8%B3+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%28+%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A+%D8%B3%D8%A7%D8%A8%D9%82%D8%A7%D9%8B+%29+%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B9+%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%E2%80%AD/data=!4m7!3m6!1s0x158219b162f9a68b:0x525c227c61405211!8m2!3d26.1443395!4d43.6961189!16s%2Fg%2F11fmxyxc79!19sChIJi6b5YrEZghUREVJAYXwiXFI?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ]
+    },
+    {
+      "id": "phase5-google-12367322720271200923",
+      "stored": {
+        "name": "معرض حياك كار للسيارات",
+        "city": "البكيرية",
+        "neighborhood": "طريق الملك فيصل، البكيرية 52724، المملكة العربية السعودية",
+        "phones": [
+          "0551388897"
+        ],
+        "google_maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%AD%D9%8A%D8%A7%D9%83+%D9%83%D8%A7%D8%B1+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x158219964a935eb9:0xaba18e7d3c61f29b!8m2!3d26.1438003!4d43.6977963!16s%2Fg%2F11wtx2v4nr!19sChIJuV6TSpYZghURm_JhPH2Ooas?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "website": "",
+        "lat": 26.1438,
+        "lon": 43.6978
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "The stored direct Google Maps place/CID supports the exact showroom identity and locality; the stored phone did not surface in focused public search and remains pending.",
+      "field_status": {
+        "name_activity": "supported_by_linked_place",
+        "city_locality": "supported_by_linked_place",
+        "phone": "pending_independent_confirmation",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%AD%D9%8A%D8%A7%D9%83+%D9%83%D8%A7%D8%B1+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x158219964a935eb9:0xaba18e7d3c61f29b!8m2!3d26.1438003!4d43.6977963!16s%2Fg%2F11wtx2v4nr!19sChIJuV6TSpYZghURm_JhPH2Ooas?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ]
+    },
+    {
+      "id": "national-car-ef01771faef54a",
+      "stored": {
+        "name": "معرض سد المنار للسيارات",
+        "city": "الخفجي",
+        "neighborhood": "4486 شارع الأمير سلطان بن عبدالعزيز، الخفجي 39267 6418، السعودية",
+        "phones": [
+          "0582211864"
+        ],
+        "google_maps": "https://www.google.com/maps/?cid=15333421127409803993",
+        "website": "",
+        "lat": 28.430178,
+        "lon": 48.4702641
+      },
+      "decision": "name_location_pin_supported_phone_pending",
+      "evidence": "The stored direct Google Maps place/CID supports the exact showroom identity and locality; the stored phone did not surface in focused public search and remains pending.",
+      "field_status": {
+        "name_activity": "supported_by_linked_place",
+        "city_locality": "supported_by_linked_place",
+        "phone": "pending_independent_confirmation",
+        "google_maps_pin": "direct_or_cid_present"
+      },
+      "sources": [
+        "https://www.google.com/maps/?cid=15333421127409803993"
+      ]
+    },
+    {
+      "id": "national-car-e17edc8b26a3fc",
+      "stored": {
+        "name": "معرض ماجد الحربي للسيارات",
+        "city": "الخفجي",
+        "neighborhood": "مدينة رأس الخفجي، المنطقة الصناعية الأولى، CAMB8322، السعودية",
+        "phones": [
+          "0593273194"
+        ],
+        "google_maps": "https://maps.yango.com/ar-sa/org/183878972752/",
+        "website": "",
+        "lat": 28.41099,
+        "lon": 48.50511
+      },
+      "decision": "linked_place_supported_phone_pending",
+      "evidence": "The stored linked place supports the identity and locality; the stored phone did not surface in focused public search and remains pending.",
+      "field_status": {
+        "name_activity": "supported_by_linked_place",
+        "city_locality": "supported_by_linked_place",
+        "phone": "pending_independent_confirmation",
+        "google_maps_pin": "not_google_link"
+      },
+      "sources": [
+        "https://maps.yango.com/ar-sa/org/183878972752/"
+      ]
+    }
+  ]
+}

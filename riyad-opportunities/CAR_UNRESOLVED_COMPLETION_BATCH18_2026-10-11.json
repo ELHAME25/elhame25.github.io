@@ -1,0 +1,49 @@
+{
+  "batch": 18,
+  "date": "2026-10-11",
+  "reviewed": 1,
+  "baseCommit": "651e91d5402df589de12ff449dac0b4d05261582",
+  "records": [
+    {
+      "id": "entity-c7cbd30dbc0a",
+      "name": "معرض سيارات السلام",
+      "city": "الروضة",
+      "neighborhood": "",
+      "fields": {
+        "identity": {
+          "status": "partially_confirmed",
+          "finding": "بحث الرقم والاسم أظهر إدراجًا في منطقة حائل؛ لم تتطابق مدينة حائل مع قيمة المدينة المسجلة الروضة.",
+          "sources": [
+            "https://www.bizmideast.com/SA/معرض-سيارات-السلام-050-487-6281"
+          ]
+        },
+        "phone": {
+          "status": "confirmed_by_listing",
+          "value": "0504876281",
+          "source": "https://www.bizmideast.com/SA/معرض-سيارات-السلام-050-487-6281"
+        },
+        "mapPin": {
+          "status": "unresolved",
+          "old": {
+            "url": "",
+            "coordinates": {
+              "lat": null,
+              "lon": null
+            }
+          },
+          "source": "Google Maps search not yet tied to this business"
+        },
+        "whatsapp": {
+          "status": "unresolved"
+        },
+        "website": {
+          "status": "unresolved",
+          "old": ""
+        }
+      },
+      "unresolved": [
+        "Google Maps لم يعرض بطاقة يمكن ربطها بثقة بمدخل «معرض سيارات السلام»؛ دليل الأعمال يضع الاسم والرقم في حائل بينما قيمة المدينة في الملف «الروضة». لا أغير المدينة أو الرابط دون تحديد فرع المعرض."
+      ]
+    }
+  ]
+}

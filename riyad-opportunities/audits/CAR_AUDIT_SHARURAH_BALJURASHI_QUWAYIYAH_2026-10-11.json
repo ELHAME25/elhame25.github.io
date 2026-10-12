@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "timezone": "Asia/Riyadh",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "scope": {
+    "cities": [
+      "شرورة",
+      "بلجرشي",
+      "القويعية"
+    ],
+    "record_count": 8,
+    "protected_qadisiyah_touched": false
+  },
+  "summary": {
+    "verified_correct_no_data_change": 4,
+    "verified_with_proposed_data_correction": 2,
+    "partial_phone_unresolved": 1,
+    "activity_scope_conflict": 1,
+    "permanently_closed": 0
+  },
+  "policy": {
+    "primary_source": "Google Maps place cards",
+    "general_search_url_not_accepted_as_verified_pin": true,
+    "cars_json_write_status": "Not attempted; the prior full-file replacement was explicitly rejected. This file preserves field-level corrections without bypassing that review decision."
+  },
+  "records": [
+    {
+      "id": "phase6-cars-093d1ebfdcbcd3",
+      "city": "شرورة",
+      "decision": "verified_correct_no_data_change",
+      "stored": {
+        "name": "معرض سهوم المنايا للسيارات",
+        "phone": "0552007105",
+        "lat": 17.48907,
+        "lng": 47.11514
+      },
+      "observed": {
+        "name": "معرض سهوم المنايا للسيارات",
+        "activity": "مزاد السيارات",
+        "address": "3965، شرورة 68372، المملكة العربية السعودية",
+        "phone": "0552007105",
+        "plus_code": "F4Q8+J3 شرورة السعودية",
+        "lat": 17.4890668,
+        "lng": 47.1151371
+      },
+      "proposed_change": null
+    },
+    {
+      "id": "phase6-cars-e2cafffff3f294",
+      "city": "شرورة",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {
+        "name": "معرض الربع للسيارات",
+        "phone": "0554902299",
+        "maps_cid": "17629487567241212650",
+        "lat": 17.48911,
+        "lng": 47.11732
+      },
+      "observed": {
+        "name": "معرض الربع للسيارات",
+        "activity": "تاجر سيارات",
+        "address": "3949، الفيصلية، شرورة 68372 7643، المملكة العربية السعودية",
+        "phone": "0541842460",
+        "plus_code": "F4Q7+MX شرورة السعودية",
+        "lat": 17.4892,
+        "lng": 47.1149,
+        "maps_cid": "17629487567241212650"
+      },
+      "proposed_change": {
+        "phone": "0541842460",
+        "lat": 17.4892,
+        "lng": 47.1149
+      },
+      "rationale": "The exact stored CID resolves to the same business, but the card publishes a different phone and a corrected pin."
+    },
+    {
+      "id": "phase6-cars-64a7824ba36f4b",
+      "city": "شرورة",
+      "decision": "activity_scope_conflict",
+      "stored": {
+        "name": "وكالة بن دلباح للسيارات",
+        "phone": "0559046225",
+        "maps_cid": "5233131214911358878",
+        "lat": 17.48954,
+        "lng": 47.10437
+      },
+      "observed": {
+        "name": "شركة بن دلباح للسيارات مركز صيانة تويوتا & لكزس",
+        "activity": "مركز صيانة سيارات",
+        "phone": "0559046225",
+        "lat": 17.4987754,
+        "lng": 47.1022911,
+        "maps_cid": "5233131214911358878"
+      },
+      "proposed_change": {
+        "name": "شركة بن دلباح للسيارات مركز صيانة تويوتا & لكزس",
+        "lat": 17.4987754,
+        "lng": 47.1022911,
+        "scope_action": "exclude_from_showroom_display_or_replace_with_a_verified_dealer_record"
+      },
+      "rationale": "The exact stored CID and phone match, but the live Google category is a car service center rather than a showroom/dealer. This is not evidence of permanent closure, so it is not marked closed."
+    },
+    {
+      "id": "phase6-cars-4d992ddc020df0",
+      "city": "بلجرشي",
+      "decision": "verified_correct_no_data_change",
+      "stored": {
+        "name": "معرض ارض الفخامة",
+        "phone": "0506780373",
+        "lat": 19.89752,
+        "lng": 41.59602
+      },
+      "observed": {
+        "name": "معرض ارض الفخامة",
+        "activity": "تاجر سيارات",
+        "address": "Unnamed Road 65644، بلجرشي، المملكة العربية السعودية",
+        "phone": "0506780373",
+        "plus_code": "VHXW+2C بلجرشي السعودية",
+        "lat": 19.8975214,
+        "lng": 41.5960211
+      },
+      "proposed_change": null
+    },
+    {
+      "id": "phase6-cars-526b33bdde5478",
+      "city": "بلجرشي",
+      "decision": "verified_correct_no_data_change",
+      "stored": {
+        "name": "معرض العسلي للسيارات",
+        "phone": "0557304738",
+        "lat": 19.89981,
+        "lng": 41.59545
+      },
+      "observed": {
+        "name": "معرض العسلي للسيارات",
+        "activity": "تاجر سيارات",
+        "address": "VHXW+XJ، بلجرشي 65644، المملكة العربية السعودية",
+        "phone": "0557304738",
+        "lat": 19.8998078,
+        "lng": 41.5954475
+      },
+      "proposed_change": null
+    },
+    {
+      "id": "phase6-cars-940a0de5cbe0ce",
+      "city": "بلجرشي",
+      "decision": "verified_with_proposed_data_correction",
+      "stored": {
+        "name": "معرض اليوسف لبيع وشراء وحراج جميع السيارات",
+        "phone": "0565869563",
+        "lat": 19.89706,
+        "lng": 41.59566
+      },
+      "observed": {
+        "name": "معرض اليوسف لبيع وشراء وحراج جميع السيارات",
+        "activity": "تاجر سيارات",
+        "address": "المنطقة الصناعية، بلجرشي 65634، المملكة العربية السعودية",
+        "phone": "0550445054",
+        "plus_code": "VHWW+R7 بلجرشي السعودية",
+        "lat": 19.8970561,
+        "lng": 41.5956568
+      },
+      "proposed_change": {
+        "phone": "0550445054"
+      },
+      "rationale": "The exact place card publishes 0550445054; the stored 0565869563 conflicts with Google Maps."
+    },
+    {
+      "id": "national-car-a00741a7311db6",
+      "city": "القويعية",
+      "decision": "partial_phone_unresolved",
+      "stored": {
+        "name": "معرض الحميد للسيارات",
+        "phone": "0531048231",
+        "maps_provider": "Yango",
+        "lat": 24.05831,
+        "lng": 45.27076
+      },
+      "observed": {
+        "name": "معرض الحميد للسيارات",
+        "activity": "تاجر سيارات مستعملة",
+        "address": "طريق الملك عبدالعزيز، البساتين، القويعية 19248، السعودية",
+        "phone_on_google_maps": null,
+        "lat": 24.0606725,
+        "lng": 45.2742411
+      },
+      "search_result": "Exact-name and exact-phone web searches did not yield a reliable independent source for 0531048231.",
+      "proposed_change": {
+        "lat": 24.0606725,
+        "lng": 45.2742411,
+        "maps_provider": "Google Maps direct place"
+      },
+      "unresolved_fields": [
+        "phone"
+      ],
+      "rationale": "Name/activity/city/address/pin are confirmed; retain the phone only as unconfirmed secondary data, not as Google-verified."
+    },
+    {
+      "id": "national-car-651e0c21ed0844",
+      "city": "القويعية",
+      "decision": "verified_correct_no_data_change",
+      "stored": {
+        "name": "معرض الطيار",
+        "phone": "0116521000",
+        "lat": 24.04462,
+        "lng": 45.24851
+      },
+      "observed": {
+        "name": "معرض الطيار",
+        "activity": "تاجر سيارات",
+        "address": "26VX+R96 حي الضريب، القويعية 19247، المملكة العربية السعودية",
+        "phone": "0116521000",
+        "lat": 24.0445335,
+        "lng": 45.248395,
+        "current_maps_fp": "14874701513880426003"
+      },
+      "proposed_change": null
+    }
+  ]
+}

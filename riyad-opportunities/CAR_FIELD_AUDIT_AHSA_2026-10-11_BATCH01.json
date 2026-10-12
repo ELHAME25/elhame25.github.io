@@ -1,0 +1,544 @@
+{
+  "schema": "car-field-audit-v1",
+  "date": "2026-10-10",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "9bda56840945cfb3b5f97d18e345707d5550489f",
+  "scope": "الأحساء، الدفعة 1؛ الرياض مستثناة.",
+  "count": 10,
+  "note": "سجلت النتائج وحدود الإثبات. لم تُعدل cars.json أو تُحذف أي سجلات. لا اعتماد لدبوس Waze محل Google Maps.",
+  "entries": [
+    {
+      "id": "entity-18e13fd7696f",
+      "name": "معرض إبداعات الشرق للسيارات",
+      "record_city": "الأحساء",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "الاسم/النشاط/المدينة/الهاتف/الحي غير مؤكدة؛ لم يظهر تطابق مستقل موثوق. Google pin والواتساب والموقع الرسمي غير مثبتة. لا حذف.",
+          "sources": []
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "الاسم/النشاط/المدينة/الهاتف/الحي غير مؤكدة؛ لم يظهر تطابق مستقل موثوق. Google pin والواتساب والموقع الرسمي غير مثبتة. لا حذف.",
+          "sources": []
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "الاسم/النشاط/المدينة/الهاتف/الحي غير مؤكدة؛ لم يظهر تطابق مستقل موثوق. Google pin والواتساب والموقع الرسمي غير مثبتة. لا حذف.",
+          "sources": []
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط WhatsApp مباشر موثق لهذا السجل.",
+          "sources": []
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "رابط Google Maps المخزن لم يُطابق بدليل مستقل؛ لا يُستخدم Waze بديلًا.",
+          "sources": []
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "الموقع الرسمي غير مثبت لهذا السجل تحديدًا إلا إذا نص الدليل أعلاه على خلاف ذلك.",
+          "sources": []
+        }
+      }
+    },
+    {
+      "id": "entity-db4c196b303d",
+      "name": "معرض فيصل الدوسري للسيارات",
+      "record_city": "الأحساء",
+      "fields": {
+        "name_activity": {
+          "status": "partial_verified",
+          "evidence": "إعلان حراج حديث باسم المعرض يذكر الأحساء الصناعية ورقمي 0558221936 و0550569211؛ GulfMap يؤيد الاسم والمدينة. الرابط المسجل دليل أعمال وليس موقعًا رسميًا. دبوس Google وWhatsApp المباشر غير مثبتين.",
+          "sources": [
+            "https://haraj.com.sa/11188475685/%D9%84%D9%83%D8%B2%D8%B3_LS_3_50/",
+            "https://gulfmap.net/place/%D9%85%D8%B9%D8%B1%D8%B6-%D9%81%D9%8A%D8%B5%D9%84-%D8%A7%D9%84%D8%AF%D9%88%D8%B3%D8%B1%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+            "https://www.mideastarchives.biz/SA/faisal-al-dosari-motor-show"
+          ]
+        },
+        "city_locality": {
+          "status": "partial_verified",
+          "evidence": "إعلان حراج حديث باسم المعرض يذكر الأحساء الصناعية ورقمي 0558221936 و0550569211؛ GulfMap يؤيد الاسم والمدينة. الرابط المسجل دليل أعمال وليس موقعًا رسميًا. دبوس Google وWhatsApp المباشر غير مثبتين.",
+          "sources": [
+            "https://haraj.com.sa/11188475685/%D9%84%D9%83%D8%B2%D8%B3_LS_3_50/",
+            "https://gulfmap.net/place/%D9%85%D8%B9%D8%B1%D8%B6-%D9%81%D9%8A%D8%B5%D9%84-%D8%A7%D9%84%D8%AF%D9%88%D8%B3%D8%B1%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+            "https://www.mideastarchives.biz/SA/faisal-al-dosari-motor-show"
+          ]
+        },
+        "phone": {
+          "status": "partial_verified",
+          "evidence": "إعلان حراج حديث باسم المعرض يذكر الأحساء الصناعية ورقمي 0558221936 و0550569211؛ GulfMap يؤيد الاسم والمدينة. الرابط المسجل دليل أعمال وليس موقعًا رسميًا. دبوس Google وWhatsApp المباشر غير مثبتين.",
+          "sources": [
+            "https://haraj.com.sa/11188475685/%D9%84%D9%83%D8%B2%D8%B3_LS_3_50/",
+            "https://gulfmap.net/place/%D9%85%D8%B9%D8%B1%D8%B6-%D9%81%D9%8A%D8%B5%D9%84-%D8%A7%D9%84%D8%AF%D9%88%D8%B3%D8%B1%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+            "https://www.mideastarchives.biz/SA/faisal-al-dosari-motor-show"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط WhatsApp مباشر موثق لهذا السجل.",
+          "sources": [
+            "https://haraj.com.sa/11188475685/%D9%84%D9%83%D8%B2%D8%B3_LS_3_50/",
+            "https://gulfmap.net/place/%D9%85%D8%B9%D8%B1%D8%B6-%D9%81%D9%8A%D8%B5%D9%84-%D8%A7%D9%84%D8%AF%D9%88%D8%B3%D8%B1%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+            "https://www.mideastarchives.biz/SA/faisal-al-dosari-motor-show"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "رابط Google Maps المخزن لم يُطابق بدليل مستقل؛ لا يُستخدم Waze بديلًا.",
+          "sources": [
+            "https://haraj.com.sa/11188475685/%D9%84%D9%83%D8%B2%D8%B3_LS_3_50/",
+            "https://gulfmap.net/place/%D9%85%D8%B9%D8%B1%D8%B6-%D9%81%D9%8A%D8%B5%D9%84-%D8%A7%D9%84%D8%AF%D9%88%D8%B3%D8%B1%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+            "https://www.mideastarchives.biz/SA/faisal-al-dosari-motor-show"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "الموقع الرسمي غير مثبت لهذا السجل تحديدًا إلا إذا نص الدليل أعلاه على خلاف ذلك.",
+          "sources": [
+            "https://haraj.com.sa/11188475685/%D9%84%D9%83%D8%B2%D8%B3_LS_3_50/",
+            "https://gulfmap.net/place/%D9%85%D8%B9%D8%B1%D8%B6-%D9%81%D9%8A%D8%B5%D9%84-%D8%A7%D9%84%D8%AF%D9%88%D8%B3%D8%B1%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+            "https://www.mideastarchives.biz/SA/faisal-al-dosari-motor-show"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-e3b31fa1ae89",
+      "name": "معرض الودعاني للسيارات",
+      "record_city": "الأحساء",
+      "fields": {
+        "name_activity": {
+          "status": "partial_verified",
+          "evidence": "حراج ودليل سيارات يذكران معرض الودعاني في الهفوف. الهاتف المسجل والعنوان التفصيلي والدبوس والواتساب والموقع الرسمي غير مؤكدة.",
+          "sources": [
+            "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D8%AF%D8%B9%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://afdlhost.com/"
+          ]
+        },
+        "city_locality": {
+          "status": "partial_verified",
+          "evidence": "حراج ودليل سيارات يذكران معرض الودعاني في الهفوف. الهاتف المسجل والعنوان التفصيلي والدبوس والواتساب والموقع الرسمي غير مؤكدة.",
+          "sources": [
+            "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D8%AF%D8%B9%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://afdlhost.com/"
+          ]
+        },
+        "phone": {
+          "status": "partial_verified",
+          "evidence": "حراج ودليل سيارات يذكران معرض الودعاني في الهفوف. الهاتف المسجل والعنوان التفصيلي والدبوس والواتساب والموقع الرسمي غير مؤكدة.",
+          "sources": [
+            "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D8%AF%D8%B9%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://afdlhost.com/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط WhatsApp مباشر موثق لهذا السجل.",
+          "sources": [
+            "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D8%AF%D8%B9%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://afdlhost.com/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "رابط Google Maps المخزن لم يُطابق بدليل مستقل؛ لا يُستخدم Waze بديلًا.",
+          "sources": [
+            "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D8%AF%D8%B9%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://afdlhost.com/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "الموقع الرسمي غير مثبت لهذا السجل تحديدًا إلا إذا نص الدليل أعلاه على خلاف ذلك.",
+          "sources": [
+            "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%88%D8%AF%D8%B9%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+            "https://afdlhost.com/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-6d552ef1f7aa",
+      "name": "معرض أنوار الخليج للسيارات",
+      "record_city": "الأحساء",
+      "fields": {
+        "name_activity": {
+          "status": "unconfirmed",
+          "evidence": "نتيجة Yango لاسم مشابه تخص رفحاء لا الأحساء؛ لا تثبت هذا السجل. كل البيانات غير مؤكدة؛ لا ننقل بيانات مدينة أخرى ولا نحذف السجل.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/114164/rafha/category/car_dealership/184105322/"
+          ]
+        },
+        "city_locality": {
+          "status": "unconfirmed",
+          "evidence": "نتيجة Yango لاسم مشابه تخص رفحاء لا الأحساء؛ لا تثبت هذا السجل. كل البيانات غير مؤكدة؛ لا ننقل بيانات مدينة أخرى ولا نحذف السجل.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/114164/rafha/category/car_dealership/184105322/"
+          ]
+        },
+        "phone": {
+          "status": "unconfirmed",
+          "evidence": "نتيجة Yango لاسم مشابه تخص رفحاء لا الأحساء؛ لا تثبت هذا السجل. كل البيانات غير مؤكدة؛ لا ننقل بيانات مدينة أخرى ولا نحذف السجل.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/114164/rafha/category/car_dealership/184105322/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط WhatsApp مباشر موثق لهذا السجل.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/114164/rafha/category/car_dealership/184105322/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "رابط Google Maps المخزن لم يُطابق بدليل مستقل؛ لا يُستخدم Waze بديلًا.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/114164/rafha/category/car_dealership/184105322/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "الموقع الرسمي غير مثبت لهذا السجل تحديدًا إلا إذا نص الدليل أعلاه على خلاف ذلك.",
+          "sources": [
+            "https://maps.yango.com/ar-sa/114164/rafha/category/car_dealership/184105322/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-42fed6562912",
+      "name": "معرض الجنوب للسيارات",
+      "record_city": "الأحساء",
+      "fields": {
+        "name_activity": {
+          "status": "partial_verified",
+          "evidence": "BizMidEast يطابق الاسم والنشاط ورقم 0530562222 وعنوان Hasa Industrial City. aljanob.sa موقع رسمي للشركة ذات الاسم لكنه لا يثبت فرع الأحساء تحديدًا. WhatsApp وGoogle pin غير مثبتين.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_3o-053-056-2222",
+            "https://aljanob.sa/ar"
+          ]
+        },
+        "city_locality": {
+          "status": "partial_verified",
+          "evidence": "BizMidEast يطابق الاسم والنشاط ورقم 0530562222 وعنوان Hasa Industrial City. aljanob.sa موقع رسمي للشركة ذات الاسم لكنه لا يثبت فرع الأحساء تحديدًا. WhatsApp وGoogle pin غير مثبتين.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_3o-053-056-2222",
+            "https://aljanob.sa/ar"
+          ]
+        },
+        "phone": {
+          "status": "partial_verified",
+          "evidence": "BizMidEast يطابق الاسم والنشاط ورقم 0530562222 وعنوان Hasa Industrial City. aljanob.sa موقع رسمي للشركة ذات الاسم لكنه لا يثبت فرع الأحساء تحديدًا. WhatsApp وGoogle pin غير مثبتين.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_3o-053-056-2222",
+            "https://aljanob.sa/ar"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط WhatsApp مباشر موثق لهذا السجل.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_3o-053-056-2222",
+            "https://aljanob.sa/ar"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "رابط Google Maps المخزن لم يُطابق بدليل مستقل؛ لا يُستخدم Waze بديلًا.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_3o-053-056-2222",
+            "https://aljanob.sa/ar"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "الموقع الرسمي غير مثبت لهذا السجل تحديدًا إلا إذا نص الدليل أعلاه على خلاف ذلك.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_3o-053-056-2222",
+            "https://aljanob.sa/ar"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-88bb1bdc93be",
+      "name": "معرض الفريدي للسيارات",
+      "record_city": "الأحساء",
+      "fields": {
+        "name_activity": {
+          "status": "conflict",
+          "evidence": "الدليل يطابق الاسم والهاتف 0555915667، لكن الدليل الآخر/الموقع المرتبط يشيران إلى بريدة لا الأحساء؛ المدينة والحي والدبوس متعارضة. لم يثبت ارتباط الموقع بهذا السجل ولا WhatsApp.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D8%B1%D9%8A%D8%AF%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_1I-055-591-5667",
+            "https://alfridicars.otopanel.tech/showroom",
+            "https://kandal.sa/stores/maard-alfrydy-llsyarat-chijh9"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict",
+          "evidence": "الدليل يطابق الاسم والهاتف 0555915667، لكن الدليل الآخر/الموقع المرتبط يشيران إلى بريدة لا الأحساء؛ المدينة والحي والدبوس متعارضة. لم يثبت ارتباط الموقع بهذا السجل ولا WhatsApp.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D8%B1%D9%8A%D8%AF%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_1I-055-591-5667",
+            "https://alfridicars.otopanel.tech/showroom",
+            "https://kandal.sa/stores/maard-alfrydy-llsyarat-chijh9"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "الدليل يطابق الاسم والهاتف 0555915667، لكن الدليل الآخر/الموقع المرتبط يشيران إلى بريدة لا الأحساء؛ المدينة والحي والدبوس متعارضة. لم يثبت ارتباط الموقع بهذا السجل ولا WhatsApp.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D8%B1%D9%8A%D8%AF%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_1I-055-591-5667",
+            "https://alfridicars.otopanel.tech/showroom",
+            "https://kandal.sa/stores/maard-alfrydy-llsyarat-chijh9"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط WhatsApp مباشر موثق لهذا السجل.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D8%B1%D9%8A%D8%AF%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_1I-055-591-5667",
+            "https://alfridicars.otopanel.tech/showroom",
+            "https://kandal.sa/stores/maard-alfrydy-llsyarat-chijh9"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "رابط Google Maps المخزن لم يُطابق بدليل مستقل؛ لا يُستخدم Waze بديلًا.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D8%B1%D9%8A%D8%AF%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_1I-055-591-5667",
+            "https://alfridicars.otopanel.tech/showroom",
+            "https://kandal.sa/stores/maard-alfrydy-llsyarat-chijh9"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "الموقع الرسمي غير مثبت لهذا السجل تحديدًا إلا إذا نص الدليل أعلاه على خلاف ذلك.",
+          "sources": [
+            "https://www.bizmideast.com/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%81%D8%B1%D9%8A%D8%AF%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA_1I-055-591-5667",
+            "https://alfridicars.otopanel.tech/showroom",
+            "https://kandal.sa/stores/maard-alfrydy-llsyarat-chijh9"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-51a422fac578",
+      "name": "معرض الرزق للسيارات",
+      "record_city": "الأحساء",
+      "fields": {
+        "name_activity": {
+          "status": "conflict",
+          "evidence": "دليلان يذكران معرض الرزق في الأحساء/الصناعية. StriveME التاريخي يورد هاتف 0135928530، لا يطابق 0500569870؛ الهاتف تعارض ولم يُستبدل. الحي التفصيلي والدبوس والواتساب والموقع الرسمي غير مثبتة.",
+          "sources": [
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1-2022-%D8%A8%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%88%D8%A7%D8%B4%D9%87%D8%B1%D9%87%D8%A7",
+            "https://guidesaudi.com/result/%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%D8%A9/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1"
+          ]
+        },
+        "city_locality": {
+          "status": "conflict",
+          "evidence": "دليلان يذكران معرض الرزق في الأحساء/الصناعية. StriveME التاريخي يورد هاتف 0135928530، لا يطابق 0500569870؛ الهاتف تعارض ولم يُستبدل. الحي التفصيلي والدبوس والواتساب والموقع الرسمي غير مثبتة.",
+          "sources": [
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1-2022-%D8%A8%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%88%D8%A7%D8%B4%D9%87%D8%B1%D9%87%D8%A7",
+            "https://guidesaudi.com/result/%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%D8%A9/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1"
+          ]
+        },
+        "phone": {
+          "status": "conflict",
+          "evidence": "دليلان يذكران معرض الرزق في الأحساء/الصناعية. StriveME التاريخي يورد هاتف 0135928530، لا يطابق 0500569870؛ الهاتف تعارض ولم يُستبدل. الحي التفصيلي والدبوس والواتساب والموقع الرسمي غير مثبتة.",
+          "sources": [
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1-2022-%D8%A8%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%88%D8%A7%D8%B4%D9%87%D8%B1%D9%87%D8%A7",
+            "https://guidesaudi.com/result/%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%D8%A9/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط WhatsApp مباشر موثق لهذا السجل.",
+          "sources": [
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1-2022-%D8%A8%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%88%D8%A7%D8%B4%D9%87%D8%B1%D9%87%D8%A7",
+            "https://guidesaudi.com/result/%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%D8%A9/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "رابط Google Maps المخزن لم يُطابق بدليل مستقل؛ لا يُستخدم Waze بديلًا.",
+          "sources": [
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1-2022-%D8%A8%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%88%D8%A7%D8%B4%D9%87%D8%B1%D9%87%D8%A7",
+            "https://guidesaudi.com/result/%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%D8%A9/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "الموقع الرسمي غير مثبت لهذا السجل تحديدًا إلا إذا نص الدليل أعلاه على خلاف ذلك.",
+          "sources": [
+            "https://striveme.com/article/%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1-2022-%D8%A8%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%88%D8%A7%D8%B4%D9%87%D8%B1%D9%87%D8%A7",
+            "https://guidesaudi.com/result/%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%D8%A9/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-38a5750477d1",
+      "name": "معرض الغريب للسيارات الحديثه",
+      "record_city": "الأحساء",
+      "fields": {
+        "name_activity": {
+          "status": "partial_verified",
+          "evidence": "قائمة موردي مصرف الراجحي تذكر معرض الغريب للسيارات في الأحساء؛ الاسم الأساسي والنشاط والمدينة مؤيدة. وصف «الحديثه» والهاتف والحي والدبوس والواتساب والموقع غير مثبتة.",
+          "sources": [
+            "https://alrajhibank.com.sa/-/media/Project/AlRajhi/ARBRevamp/Home/Personal/Finance/Supplier-Name.pdf"
+          ]
+        },
+        "city_locality": {
+          "status": "partial_verified",
+          "evidence": "قائمة موردي مصرف الراجحي تذكر معرض الغريب للسيارات في الأحساء؛ الاسم الأساسي والنشاط والمدينة مؤيدة. وصف «الحديثه» والهاتف والحي والدبوس والواتساب والموقع غير مثبتة.",
+          "sources": [
+            "https://alrajhibank.com.sa/-/media/Project/AlRajhi/ARBRevamp/Home/Personal/Finance/Supplier-Name.pdf"
+          ]
+        },
+        "phone": {
+          "status": "partial_verified",
+          "evidence": "قائمة موردي مصرف الراجحي تذكر معرض الغريب للسيارات في الأحساء؛ الاسم الأساسي والنشاط والمدينة مؤيدة. وصف «الحديثه» والهاتف والحي والدبوس والواتساب والموقع غير مثبتة.",
+          "sources": [
+            "https://alrajhibank.com.sa/-/media/Project/AlRajhi/ARBRevamp/Home/Personal/Finance/Supplier-Name.pdf"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط WhatsApp مباشر موثق لهذا السجل.",
+          "sources": [
+            "https://alrajhibank.com.sa/-/media/Project/AlRajhi/ARBRevamp/Home/Personal/Finance/Supplier-Name.pdf"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "رابط Google Maps المخزن لم يُطابق بدليل مستقل؛ لا يُستخدم Waze بديلًا.",
+          "sources": [
+            "https://alrajhibank.com.sa/-/media/Project/AlRajhi/ARBRevamp/Home/Personal/Finance/Supplier-Name.pdf"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "الموقع الرسمي غير مثبت لهذا السجل تحديدًا إلا إذا نص الدليل أعلاه على خلاف ذلك.",
+          "sources": [
+            "https://alrajhibank.com.sa/-/media/Project/AlRajhi/ARBRevamp/Home/Personal/Finance/Supplier-Name.pdf"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-de2d0f3599c1",
+      "name": "أحدث السيارات فرع الأحساء",
+      "record_city": "الأحساء",
+      "fields": {
+        "name_activity": {
+          "status": "partial_verified",
+          "evidence": "Cybo يثبت فرع أحدث السيارات بالأحساء الصناعية؛ إعلان حراج حديث يثبت نشاط الشركة ووجود فرع بالأحساء، والموقع ahdth-cars.com رسمي. رقم الفرع/WhatsApp غير ظاهر ولا يثبت 0581522923؛ العنوان الصناعي مؤيد، دبوس Google غير متحقق.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA-biz/%D8%A7%D8%AD%D8%AF%D8%AB-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D8%B1%D8%B9-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1",
+            "https://haraj.com.sa/11188385191/%D9%83%D8%B1%D9%8A%D8%AA%D8%A7_2026_%D8%B3%D9%85%D8%A7%D8%B1%D8%AA_%D8%AC%D9%85%D9%8A%D8%B9_%D8%A7%D9%84%D8%A7%D9%84%D9%88%D8%A7%D9%86_%D8%A7%D9%82%D9%84_%D8%B3%D8%B9%D8%B1_%D9%83%D8%A7%D8%B4_%D9%88%D8%A7%D9%82%D8%B3%D8%A7%D8%B7",
+            "https://ahdth-cars.com/"
+          ]
+        },
+        "city_locality": {
+          "status": "partial_verified",
+          "evidence": "Cybo يثبت فرع أحدث السيارات بالأحساء الصناعية؛ إعلان حراج حديث يثبت نشاط الشركة ووجود فرع بالأحساء، والموقع ahdth-cars.com رسمي. رقم الفرع/WhatsApp غير ظاهر ولا يثبت 0581522923؛ العنوان الصناعي مؤيد، دبوس Google غير متحقق.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA-biz/%D8%A7%D8%AD%D8%AF%D8%AB-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D8%B1%D8%B9-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1",
+            "https://haraj.com.sa/11188385191/%D9%83%D8%B1%D9%8A%D8%AA%D8%A7_2026_%D8%B3%D9%85%D8%A7%D8%B1%D8%AA_%D8%AC%D9%85%D9%8A%D8%B9_%D8%A7%D9%84%D8%A7%D9%84%D9%88%D8%A7%D9%86_%D8%A7%D9%82%D9%84_%D8%B3%D8%B9%D8%B1_%D9%83%D8%A7%D8%B4_%D9%88%D8%A7%D9%82%D8%B3%D8%A7%D8%B7",
+            "https://ahdth-cars.com/"
+          ]
+        },
+        "phone": {
+          "status": "partial_verified",
+          "evidence": "Cybo يثبت فرع أحدث السيارات بالأحساء الصناعية؛ إعلان حراج حديث يثبت نشاط الشركة ووجود فرع بالأحساء، والموقع ahdth-cars.com رسمي. رقم الفرع/WhatsApp غير ظاهر ولا يثبت 0581522923؛ العنوان الصناعي مؤيد، دبوس Google غير متحقق.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA-biz/%D8%A7%D8%AD%D8%AF%D8%AB-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D8%B1%D8%B9-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1",
+            "https://haraj.com.sa/11188385191/%D9%83%D8%B1%D9%8A%D8%AA%D8%A7_2026_%D8%B3%D9%85%D8%A7%D8%B1%D8%AA_%D8%AC%D9%85%D9%8A%D8%B9_%D8%A7%D9%84%D8%A7%D9%84%D9%88%D8%A7%D9%86_%D8%A7%D9%82%D9%84_%D8%B3%D8%B9%D8%B1_%D9%83%D8%A7%D8%B4_%D9%88%D8%A7%D9%82%D8%B3%D8%A7%D8%B7",
+            "https://ahdth-cars.com/"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط WhatsApp مباشر موثق لهذا السجل.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA-biz/%D8%A7%D8%AD%D8%AF%D8%AB-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D8%B1%D8%B9-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1",
+            "https://haraj.com.sa/11188385191/%D9%83%D8%B1%D9%8A%D8%AA%D8%A7_2026_%D8%B3%D9%85%D8%A7%D8%B1%D8%AA_%D8%AC%D9%85%D9%8A%D8%B9_%D8%A7%D9%84%D8%A7%D9%84%D9%88%D8%A7%D9%86_%D8%A7%D9%82%D9%84_%D8%B3%D8%B9%D8%B1_%D9%83%D8%A7%D8%B4_%D9%88%D8%A7%D9%82%D8%B3%D8%A7%D8%B7",
+            "https://ahdth-cars.com/"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "رابط Google Maps المخزن لم يُطابق بدليل مستقل؛ لا يُستخدم Waze بديلًا.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA-biz/%D8%A7%D8%AD%D8%AF%D8%AB-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D8%B1%D8%B9-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1",
+            "https://haraj.com.sa/11188385191/%D9%83%D8%B1%D9%8A%D8%AA%D8%A7_2026_%D8%B3%D9%85%D8%A7%D8%B1%D8%AA_%D8%AC%D9%85%D9%8A%D8%B9_%D8%A7%D9%84%D8%A7%D9%84%D9%88%D8%A7%D9%86_%D8%A7%D9%82%D9%84_%D8%B3%D8%B9%D8%B1_%D9%83%D8%A7%D8%B4_%D9%88%D8%A7%D9%82%D8%B3%D8%A7%D8%B7",
+            "https://ahdth-cars.com/"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "الموقع الرسمي غير مثبت لهذا السجل تحديدًا إلا إذا نص الدليل أعلاه على خلاف ذلك.",
+          "sources": [
+            "https://yellowpages-ar.cybo.com/SA-biz/%D8%A7%D8%AD%D8%AF%D8%AB-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D8%B1%D8%B9-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1",
+            "https://haraj.com.sa/11188385191/%D9%83%D8%B1%D9%8A%D8%AA%D8%A7_2026_%D8%B3%D9%85%D8%A7%D8%B1%D8%AA_%D8%AC%D9%85%D9%8A%D8%B9_%D8%A7%D9%84%D8%A7%D9%84%D9%88%D8%A7%D9%86_%D8%A7%D9%82%D9%84_%D8%B3%D8%B9%D8%B1_%D9%83%D8%A7%D8%B4_%D9%88%D8%A7%D9%82%D8%B3%D8%A7%D8%B7",
+            "https://ahdth-cars.com/"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phase5-car-96cd6f795ad9",
+      "name": "معرض جبل همدان للسيارات",
+      "record_city": "الأحساء",
+      "fields": {
+        "name_activity": {
+          "status": "partial_verified",
+          "evidence": "دليل أعمال يذكر معرض جبل همدان للسيارات بالأحساء 36456، ويشير إلى Foursquare. الهاتف والعنوان التفصيلي والدبوس والواتساب والموقع الرسمي غير مثبتة.",
+          "sources": [
+            "https://www.mideastarchives.biz/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%AC%D8%A8%D9%84-%D9%87%D9%85%D8%AF%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+          ]
+        },
+        "city_locality": {
+          "status": "partial_verified",
+          "evidence": "دليل أعمال يذكر معرض جبل همدان للسيارات بالأحساء 36456، ويشير إلى Foursquare. الهاتف والعنوان التفصيلي والدبوس والواتساب والموقع الرسمي غير مثبتة.",
+          "sources": [
+            "https://www.mideastarchives.biz/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%AC%D8%A8%D9%84-%D9%87%D9%85%D8%AF%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+          ]
+        },
+        "phone": {
+          "status": "partial_verified",
+          "evidence": "دليل أعمال يذكر معرض جبل همدان للسيارات بالأحساء 36456، ويشير إلى Foursquare. الهاتف والعنوان التفصيلي والدبوس والواتساب والموقع الرسمي غير مثبتة.",
+          "sources": [
+            "https://www.mideastarchives.biz/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%AC%D8%A8%D9%84-%D9%87%D9%85%D8%AF%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+          ]
+        },
+        "whatsapp": {
+          "status": "unconfirmed",
+          "evidence": "لا يوجد رابط WhatsApp مباشر موثق لهذا السجل.",
+          "sources": [
+            "https://www.mideastarchives.biz/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%AC%D8%A8%D9%84-%D9%87%D9%85%D8%AF%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+          ]
+        },
+        "google_maps": {
+          "status": "unconfirmed",
+          "evidence": "رابط Google Maps المخزن لم يُطابق بدليل مستقل؛ لا يُستخدم Waze بديلًا.",
+          "sources": [
+            "https://www.mideastarchives.biz/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%AC%D8%A8%D9%84-%D9%87%D9%85%D8%AF%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+          ]
+        },
+        "website": {
+          "status": "unconfirmed",
+          "evidence": "الموقع الرسمي غير مثبت لهذا السجل تحديدًا إلا إذا نص الدليل أعلاه على خلاف ذلك.",
+          "sources": [
+            "https://www.mideastarchives.biz/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%AC%D8%A8%D9%84-%D9%87%D9%85%D8%AF%D8%A7%D9%86-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+          ]
+        }
+      }
+    }
+  ]
+}

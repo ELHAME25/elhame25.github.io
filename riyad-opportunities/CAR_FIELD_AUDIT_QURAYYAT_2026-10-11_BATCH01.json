@@ -1,0 +1,534 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head": "2923554cf9444926984bcb9d6dbdd459915edcad",
+  "scope": {
+    "city": "القريات",
+    "batch": "01",
+    "count": 15,
+    "positions": "1-15 of 25",
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false
+  },
+  "method": "Exact current name/phone searches, official business sites, current Haraj listings and indexed business directories. Direct CID/Waze links were retained without treating search results as proof of a live Google card.",
+  "records": [
+    {
+      "id": "national-car-2a94c8fa96017a",
+      "name": "معرض فريح لتجارة السيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "المعارض، القريات 77496، السعودية",
+        "phones": [
+          "0551773518"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.waze.com/live-map/directions/sa/mntqh-aljwf/alqryat/mardh-fryh-ltjarh-alsyarat?to=place.ChIJNexKueYHEBURZn8l5k1wVDA",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed_or_supported",
+        "phone": "confirmed",
+        "whatsapp": "unresolved",
+        "website": "official_confirmed_missing_in_stored_field",
+        "google_maps_pin": "waze_place_confirmed"
+      },
+      "evidence_urls": [
+        "https://mamdouhfreih-for-cars.com/",
+        "https://www.arabwheels.sa/dealers/ct_al-qurayyat/",
+        "https://www.waze.com/live-map/directions/sa/mntqh-aljwf/alqryat/mardh-fryh-ltjarh-alsyarat?to=place.ChIJNexKueYHEBURZn8l5k1wVDA"
+      ],
+      "note": "الموقع الرسمي ودليل مستقل يطابقان اسم المعرض والقريات والعنوان ورقم 0551773518؛ رابط Waze مكان مباشر.",
+      "proposed_correction": {
+        "type": "website_missing_confirmed",
+        "field": "web",
+        "old_value": "",
+        "new_value": "https://mamdouhfreih-for-cars.com/",
+        "status": "not_applied",
+        "evidence": [
+          "https://mamdouhfreih-for-cars.com/"
+        ]
+      }
+    },
+    {
+      "id": "national-car-12dc52f4f88954",
+      "name": "معرض الفواز للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "طريق الملك فيصل، القريات 77496، السعودية",
+        "phones": [
+          "0591158745"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=11516743417971786796",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=11516743417971786796"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر."
+    },
+    {
+      "id": "national-car-eec4c9b845b205",
+      "name": "معرض حامد غصيب الشراري",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "حي المعارض، القريات 77453، السعودية",
+        "phones": [
+          "0504865071"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=14727130929848674447",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=14727130929848674447"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر."
+    },
+    {
+      "id": "national-car-ad41bf47d13ac2",
+      "name": "معرض الهلال للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "المعارض، القريات 77454، السعودية",
+        "phones": [
+          "0567994113"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=2867894922656383973",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=2867894922656383973"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر."
+    },
+    {
+      "id": "national-car-4f67a9dce9efa6",
+      "name": "معرض العرادي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "9868+P5X، القريات 77496، السعودية",
+        "phones": [
+          "0530813733"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=13898097401436690092",
+        "lat": 31.36186,
+        "lon": 37.31548
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=13898097401436690092"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر."
+    },
+    {
+      "id": "national-car-2e5c60a41b6a9f",
+      "name": "معرض الوسام المضيء",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "65، القريات 77496",
+        "phones": [
+          "0508834177"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=14674811090005949866",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=14674811090005949866"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر."
+    },
+    {
+      "id": "national-car-ba6a51332fb2a9",
+      "name": "معرض بدر الشراري للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "8176 طريق الملك فهد، حصيدة،3499، القريات 77455",
+        "phones": [
+          "0595026187"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=5294022148192467359",
+        "lat": 31.32224,
+        "lon": 37.36335
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=5294022148192467359"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر."
+    },
+    {
+      "id": "national-car-c809dddea2c75d",
+      "name": "معرض سلطان لتجارة السيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "شارع عثمان بن عفان، القريات77451",
+        "phones": [
+          "0557137115"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=10534756114516504308",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "confirmed",
+        "whatsapp": "supported_by_listing",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/11180057744/",
+        "https://haraj.com.sa/11182309724/",
+        "https://www.google.com/maps/?cid=10534756114516504308"
+      ],
+      "note": "إعلانات حديثة متعددة تطابق معرض سلطان والقريات/الفيصلية والرقم المخزن، وتعرض أرقام اتصال إضافية."
+    },
+    {
+      "id": "national-car-729c0f8692f52b",
+      "name": "معرض السلام للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "9868+VFF، القريات77496",
+        "phones": [
+          "0500428631"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=12199591114314342183",
+        "lat": 31.36219,
+        "lon": 37.31617
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=12199591114314342183"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر."
+    },
+    {
+      "id": "national-car-020ad76141e190",
+      "name": "معرض السعدون للسيارات — فرع القريات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "88WQ+WVF, Al Faisaliyah, القريات 77451, Saudi Arabia",
+        "phones": [
+          "0551466941"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=15005320553389531426",
+        "lat": 31.34731,
+        "lon": 37.33967
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=15005320553389531426"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر."
+    },
+    {
+      "id": "national-car-f727e9201c4799",
+      "name": "معرض ليث للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "88WQ+RQG، Uthman Ibn Affan Road, Opposite Ar Rajhi ATM, Al Faisaliyah, Al Faisaliyah, القريات 77451, Saudi Arabia",
+        "phones": [
+          "0503396336"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=7887889525159219145",
+        "lat": 31.34706,
+        "lon": 37.33945
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=7887889525159219145"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر."
+    },
+    {
+      "id": "national-car-01d093744c71d8",
+      "name": "معرض الرويلي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "القريات 77496, Saudi Arabia",
+        "phones": [
+          "0509164236"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=3477522350294230349",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=3477522350294230349"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر."
+    },
+    {
+      "id": "national-car-3238e148b1c2bc",
+      "name": "معرض وصالة وادي السرحان للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "8260 عثمان بن عفان، حي الفيصلية، القريات 77451 5134،, القريات 77451, Saudi Arabia",
+        "phones": [
+          "0551406746"
+        ],
+        "whatsapp": null,
+        "website": "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D9%88%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B1%D8%AD%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+        "maps": "https://www.google.com/maps/?cid=10332034237703010017",
+        "lat": 31.34272,
+        "lon": 37.33026
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "supported",
+        "phone": "conflict_with_current_listing",
+        "whatsapp": "confirmed_by_current_listing",
+        "website": "seller_page_confirmed_not_official",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D9%88%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B1%D8%AD%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
+        "https://haraj.com.sa/11187640669/",
+        "https://www.google.com/maps/?cid=10332034237703010017"
+      ],
+      "note": "صفحة البائع وإعلانات حالية تثبت الاسم والنشاط والقريات، لكنها تعرض أرقام مبيعات حالية مختلفة عن الرقم المخزن.",
+      "proposed_correction": {
+        "type": "phone_conflict_review",
+        "field": "phones",
+        "old_value": [
+          "0551406746"
+        ],
+        "new_value": [
+          "0557329806",
+          "0551403680",
+          "0557272867",
+          "0559135291"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://haraj.com.sa/11187640669/"
+        ]
+      }
+    },
+    {
+      "id": "national-car-5da0c8fe904151",
+      "name": "معرض العنزي للسيارات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "القريات 77496, Saudi Arabia",
+        "phones": [
+          "0556426466"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=14530871316664146433",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "confirmed",
+        "activity": "confirmed",
+        "city": "confirmed",
+        "neighborhood": "confirmed",
+        "phone": "confirmed_plus_additional_number",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://yellowpages-ar.cybo.com/SA-biz/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+        "https://www.mideastarchives.biz/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+        "https://www.google.com/maps/?cid=14530871316664146433"
+      ],
+      "note": "دليلان يطابقان الاسم والقريات والرقم المخزن، ويعرضان رقمًا إضافيًا 0534070003.",
+      "proposed_correction": {
+        "type": "additional_phone_review",
+        "field": "phones",
+        "old_value": [
+          "0556426466"
+        ],
+        "new_value": [
+          "0556426466",
+          "0534070003"
+        ],
+        "status": "not_applied",
+        "evidence": [
+          "https://yellowpages-ar.cybo.com/SA-biz/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA",
+          "https://www.mideastarchives.biz/SA/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA"
+        ]
+      }
+    },
+    {
+      "id": "national-car-c40b2f1b058b4a",
+      "name": "معرض الختيلات",
+      "stored": {
+        "activity": "معرض/بيع سيارات",
+        "city": "القريات",
+        "neighborhood": "القريات 77496, Saudi Arabia",
+        "phones": [
+          "0534903172"
+        ],
+        "whatsapp": null,
+        "website": null,
+        "maps": "https://www.google.com/maps/?cid=168712103053392913",
+        "lat": null,
+        "lon": null
+      },
+      "field_decisions": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "city": "unresolved",
+        "neighborhood": "unresolved",
+        "phone": "unresolved",
+        "whatsapp": "unresolved",
+        "website": "none_verified",
+        "google_maps_pin": "direct_cid_retained_not_live_opened"
+      },
+      "evidence_urls": [
+        "https://www.google.com/maps/?cid=168712103053392913"
+      ],
+      "note": "لم تظهر مطابقة مستقلة كافية للاسم والهاتف معًا؛ بقيت الحقول غير المحسومة مع الاحتفاظ برابط المكان المباشر."
+    }
+  ]
+}

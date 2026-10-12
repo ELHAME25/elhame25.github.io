@@ -1,0 +1,490 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head_before_batch": "531ee11de96461c666215315a01583b6e0074fdc",
+  "scope": {
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false,
+    "merge": false,
+    "publish": false,
+    "comprehensive_qa": false
+  },
+  "method": "Direct Google Maps place cards were opened and inspected in browser. Classification is limited to place title, car-dealer category, displayed address/city, and card phone where visible. This file records evidence and proposed field changes only; no cars.json write was made.",
+  "verified_place_cards": [
+    {
+      "record_key": {
+        "id": "phase5-car-a8b7bd9a3dab",
+        "name": "الرفايع الحديث للسيارات",
+        "city": "الدمام"
+      },
+      "card": {
+        "name": "الرفايع الحديث للسيارات",
+        "category": "تاجر سيارات مستعملة",
+        "address": "طريق ابوحدريه، ضاحية الملك فهد، الدمام 32313",
+        "phone": "+966 58 016 4631",
+        "plus_code": "92X7+38 الدمام",
+        "coordinates": {
+          "lat": 26.3977404,
+          "lon": 50.0133606
+        }
+      },
+      "existing_phone_match": true,
+      "direct_google_maps_url": "https://www.google.com/maps/place/%D8%A7%D9%84%D8%B1%D9%81%D8%A7%D9%8A%D8%B9+%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@26.3977404,50.0133606,17z/data=!3m1!4b1!4m6!3m5!1s0x3e36035eab75cdcf:0x4c79388b9a88f3b9!8m2!3d26.3977404!4d50.0133606!16s%2Fg%2F11sr6n32z6",
+      "proposed_corrections": {
+        "maps": "replace existing search link with direct place card",
+        "lat": 26.3977404,
+        "lon": 50.0133606,
+        "nb": "طريق ابوحدريه، ضاحية الملك فهد، الدمام 32313"
+      },
+      "current_stored_values": {
+        "name": "الرفايع الحديث للسيارات",
+        "city": "الدمام",
+        "neighborhood": "ضاحية الملك فهد شارع المعارض",
+        "phones": [
+          "0580164631"
+        ],
+        "maps": "https://maps.app.goo.gl/3dkmbQVibyFfESiw8",
+        "lat": 26.42196,
+        "lon": 49.995
+      }
+    },
+    {
+      "record_key": {
+        "name": "معرض المحركات الجديدة للسيارات",
+        "city": "جدة",
+        "id": "entity-ab3b6af0f40d"
+      },
+      "card": {
+        "name": "معرض المحركات الجديدة للسيارات",
+        "category": "تاجر سيارات",
+        "address": "4519، حي الجوهرة، جدة 22417 8297",
+        "phone": "+966 55 117 0066",
+        "plus_code": "C7J6+R2 الجوهرة، جدة",
+        "coordinates": {
+          "lat": 21.4321172,
+          "lon": 39.260083
+        }
+      },
+      "existing_phone_match": true,
+      "direct_google_maps_url": "https://www.google.com/maps/?cid=4821806168231072056",
+      "proposed_corrections": {
+        "maps": "use direct place card",
+        "lat": 21.4321172,
+        "lon": 39.260083,
+        "nb": "4519، حي الجوهرة، جدة 22417 8297"
+      },
+      "current_stored_values": {
+        "name": "معرض المحركات الجديدة للسيارات",
+        "city": "جدة",
+        "neighborhood": "جدة، حي الجوهرة، منطقة معارض السيارات",
+        "phones": [
+          "0551170066",
+          "0551170054",
+          "0569380260",
+          "0566630039",
+          "0552809922",
+          "0556410555"
+        ],
+        "maps": "https://www.google.com/maps/?cid=4821806168231072056",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "record_key": {
+        "name": "معرض الشلبى للسيارات المستوردة",
+        "city": "جدة",
+        "id": "phase5-car-062bda41f13d"
+      },
+      "card": {
+        "name": "معرض الشلبى للسيارات المستوردة",
+        "category": "تاجر سيارات مستعملة",
+        "address": "C7M3+F86، الجوهرة، جدة 22417",
+        "phone": "+966 55 561 1699",
+        "plus_code": "C7M3+F86 الجوهرة، جدة",
+        "coordinates": {
+          "lat": 21.4336709,
+          "lon": 39.253257
+        }
+      },
+      "existing_phone_match": true,
+      "direct_google_maps_url": "https://www.google.com/maps/?cid=16071483024594392341",
+      "proposed_corrections": {
+        "maps": "use direct place card",
+        "lat": 21.4336709,
+        "lon": 39.253257
+      },
+      "current_stored_values": {
+        "name": "معرض الشلبى للسيارات المستوردة",
+        "city": "جدة",
+        "neighborhood": "C7M3+F86، الجوهرة، جدة 22417",
+        "phones": [
+          "0555611699"
+        ],
+        "maps": "https://www.google.com/maps/?cid=16071483024594392341",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "record_key": {
+        "name": "معرض فيض الخيرات للسيارات جدة FAYD AL KHAYRAAT CAR SHOW ROOM",
+        "city": "جدة",
+        "id": "phase5-car-d4be6fd1a88e"
+      },
+      "card": {
+        "name": "معرض فيض الخيرات للسيارات جدة FAYD AL KHAYRAAT CAR SHOW ROOM",
+        "category": "تاجر سيارات",
+        "address": "معارض السيارات، شارع أحمد ذاكر ادريس، جدة 22417",
+        "phone": "+966 55 076 1199",
+        "plus_code": "C7J2+VR الجوهرة، جدة"
+      },
+      "existing_phone_match": true,
+      "direct_google_maps_url": "https://www.google.com/maps/?cid=11436154795590947396",
+      "proposed_corrections": {
+        "maps": "direct place card already stored; record card-confirmation evidence"
+      },
+      "current_stored_values": {
+        "name": "معرض فيض الخيرات للسيارات",
+        "city": "جدة",
+        "neighborhood": "الجوهرة، معارض السيارات، شارع أحمد ذاكر إدريس، جدة 22417",
+        "phones": [
+          "0550761199",
+          "0509920428",
+          "0505730813"
+        ],
+        "maps": "https://www.google.com/maps/?cid=11436154795590947396",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "record_key": {
+        "name": "معرض شعلة جده للسيارات",
+        "city": "جدة",
+        "id": "entity-56fe5894d60d"
+      },
+      "card": {
+        "name": "معرض شعلة جده للسيارات",
+        "category": "تاجر سيارات مستعملة",
+        "address": "8355، حي الجوهرة، جدة 22417",
+        "phone": "+966 55 565 8041",
+        "plus_code": "C7M3+4R الجوهرة، جدة",
+        "coordinates": {
+          "lat": 21.4327589,
+          "lon": 39.2545921
+        }
+      },
+      "existing_phone_match": true,
+      "direct_google_maps_url": "https://www.google.com/maps/?cid=4867530580865042948",
+      "proposed_corrections": {
+        "maps": "direct place card already stored; record card-confirmation evidence"
+      },
+      "current_stored_values": {
+        "name": "معرض شعلة جدة للسيارات",
+        "city": "جدة",
+        "neighborhood": "جدة، حي الجوهرة، 8355",
+        "phones": [
+          "0555658041"
+        ],
+        "maps": "https://www.google.com/maps/?cid=4867530580865042948",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "record_key": {
+        "name": "معرض النجاح المميز للسيارات",
+        "city": "جدة",
+        "id": "entity-a9435a28a84f"
+      },
+      "card": {
+        "name": "معرض النجاح المميز للسيارات",
+        "category": "تاجر سيارات",
+        "address": "حي الجوهرة، 8279 4021، جدة 22417",
+        "phone": "+966 55 560 5896",
+        "plus_code": "C7M2+2W الجوهرة، جدة",
+        "coordinates": {
+          "lat": 21.4326242,
+          "lon": 39.2523245
+        }
+      },
+      "existing_phone_match": true,
+      "direct_google_maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%86%D8%AC%D8%A7%D8%AD+%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@21.4326242,39.2523245,17z/data=!3m1!4b1!4m6!3m5!1s0x15c3cbf183c74351:0x766019ac2cdddef0!8m2!3d21.4326242!4d39.2523245!16s%2Fg%2F11c1p5476d",
+      "proposed_corrections": {
+        "nb": "correct house number to 4021 based on Google card"
+      },
+      "current_stored_values": {
+        "name": "معرض النجاح المميز للسيارات",
+        "city": "جدة",
+        "neighborhood": "جدة، حي الجوهرة، 4041 (8279)",
+        "phones": [
+          "0555605896"
+        ],
+        "maps": "https://www.google.com/maps/?cid=8529845921517526768",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "record_key": {
+        "name": "معرض نواحي التوفيق للسيارات",
+        "city": "عنيزة",
+        "id": "phase5-google-8725025085619062305"
+      },
+      "card": {
+        "name": "معرض نواحي التوفيق للسيارات",
+        "category": "تاجر سيارات مستعملة",
+        "address": "المنار، المملكة العربية السعودية",
+        "plus_code": "32Q8+PQ عنيزة",
+        "coordinates": {
+          "lat": 26.0893718,
+          "lon": 44.0168937
+        }
+      },
+      "existing_phone_match": null,
+      "direct_google_maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D9%88%D8%A7%D8%AD%D9%8A+%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D9%82+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@26.0893718,44.0168937,17z/data=!3m1!4b1!4m6!3m5!1s0x1581eeadbab863b9:0x7915841694b24621!8m2!3d26.0893718!4d44.0168937!16s%2Fg%2F11f__2jht6",
+      "proposed_corrections": {
+        "lat": 26.0893718,
+        "lon": 44.0168937,
+        "nb": "المنار، عنيزة، رمز Plus Code: 32Q8+PQ"
+      },
+      "current_stored_values": {
+        "name": "معرض نواحي التوفيق للسيارات",
+        "city": "عنيزة",
+        "neighborhood": "المنار؛ رمز Plus Codes: 32Q8+PQ عنيزة السعودية",
+        "phones": [],
+        "maps": "https://www.google.com/maps/?cid=8725025085619062305",
+        "lat": 26.09895,
+        "lon": 44.01825
+      }
+    },
+    {
+      "record_key": {
+        "id": "phase6-cars-7b5880f3dce5f8",
+        "name": "شركة اضواء خميس مشيط للسيارات جازان",
+        "city": "جيزان"
+      },
+      "card": {
+        "name": "شركة اضواء خميس مشيط للسيارات جازان",
+        "category": "تاجر سيارات",
+        "address": "طريق الملك عبدالعزيز، جيزان 82722",
+        "phone": "+966 54 003 3549",
+        "plus_code": "VHPG+FG جيزان",
+        "coordinates": {
+          "lat": 16.8862363,
+          "lon": 42.5762681
+        }
+      },
+      "existing_phone_match": true,
+      "direct_google_maps_url": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D8%B6%D9%88%D8%A7%D8%A1+%D8%AE%D9%85%D9%8A%D8%B3+%D9%85%D8%B4%D9%8A%D8%B7+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%AC%D8%A7%D8%B2%D8%A7%D9%86%E2%80%AD/@16.8862363,42.5762681,17z/data=!3m1!4b1!4m6!3m5!1s0x1607e3aa38a6b6c7:0x44552dedf2c3774b!8m2!3d16.8862363!4d42.5762681!16s%2Fg%2F11kblbfmc1",
+      "proposed_corrections": {
+        "nb": "replace شارع الوكالات with طريق الملك عبدالعزيز if source record confirms this row"
+      }
+    },
+    {
+      "record_key": {
+        "name": "معرض فايز العصيمي للسيارات",
+        "city": "الدوادمي",
+        "id": "v9-car-64fcaf51bcc8"
+      },
+      "card": {
+        "name": "معرض فايز العصيمي للسيارات",
+        "category": "تاجر سيارات",
+        "address": "الصناعية، الدوادمي 17436",
+        "phone": "+966 50 830 7625",
+        "plus_code": "G975+PR الدوادمي",
+        "coordinates": {
+          "lat": 24.5142552,
+          "lon": 44.3596213
+        }
+      },
+      "existing_phone_match": true,
+      "direct_google_maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%81%D8%A7%D9%8A%D8%B2+%D8%A7%D9%84%D8%B9%D8%B5%D9%8A%D9%85%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.5142552,44.3596213,17z/data=!3m1!4b1!4m6!3m5!1s0x1586fd00138737eb:0x570ddc4240b7ef78!8m2!3d24.5142552!4d44.3596213!16s%2Fg%2F11v_1_2q2r",
+      "proposed_corrections": {
+        "maps": "replace search link with direct place card",
+        "lat": 24.5142552,
+        "lon": 44.3596213,
+        "nb": "الصناعية، الدوادمي 17436"
+      },
+      "current_stored_values": {
+        "name": "معرض فايز العصيمي للسيارات",
+        "city": "الدوادمي",
+        "neighborhood": "الصناعية، الدوادمي",
+        "phones": [
+          "0508307625"
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%81%D8%A7%D9%8A%D8%B2%20%D8%A7%D9%84%D8%B9%D8%B5%D9%8A%D9%85%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AF%D9%85%D9%8A",
+        "lat": 24.50756,
+        "lon": 44.3571
+      }
+    },
+    {
+      "record_key": {
+        "id": "v9-car-b36891e84b9f",
+        "name": "معرض الذيابي للسيارات بالدوادمي",
+        "city": "الدوادمي"
+      },
+      "card": {
+        "name": "معرض الذيابي للسيارات بالدوادمي",
+        "category": "تاجر السيارات",
+        "address": "معرض الذيابي للسيارات، الصناعية، الدوادمي 17436",
+        "phone": "+966 53 042 4038",
+        "plus_code": "G995+67 الدوادمي",
+        "coordinates": {
+          "lat": 24.5180212,
+          "lon": 44.3582205
+        }
+      },
+      "existing_phone_match": true,
+      "direct_google_maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B0%D9%8A%D8%A7%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A8%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AF%D9%85%D9%8A%E2%80%AD/@24.5180212,44.3582205,17z/data=!3m1!4b1!4m6!3m5!1s0x1586fdac4a42e0b9:0x813da152e18c943b!8m2!3d24.5180212!4d44.3582205!16s%2Fg%2F11gm7ytv_y",
+      "proposed_corrections": {
+        "maps": "replace search link with direct place card",
+        "lat": 24.5180212,
+        "lon": 44.3582205,
+        "nb": "الصناعية، الدوادمي 17436"
+      },
+      "current_stored_values": {
+        "name": "معرض الذيابي للسيارات بالدوادمي",
+        "city": "الدوادمي",
+        "neighborhood": "الدوادمي",
+        "phones": [
+          "0530424038"
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B0%D9%8A%D8%A7%D8%A8%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AF%D9%85%D9%8A%20%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AF%D9%85%D9%8A",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "record_key": {
+        "name": "معرض الضحيان للسيارات",
+        "city": "الأحساء",
+        "id": "phase5-google-10114112633508966693"
+      },
+      "card": {
+        "name": "معرض الضحيان للسيارات",
+        "category": "تاجر سيارات",
+        "address": "الهفوف 36456",
+        "phone": "+966 53 576 5199",
+        "plus_code": "CF68+9J الهفوف",
+        "coordinates": {
+          "lat": 25.4109337,
+          "lon": 49.4665473
+        }
+      },
+      "existing_phone_match": true,
+      "direct_google_maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B6%D8%AD%D9%8A%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@25.4109337,49.4665473,17z/data=!3m1!4b1!4m6!3m5!1s0x3e37a213a857d3f9:0x8c5c8bda7297b125!8m2!3d25.4109337!4d49.4665473!16s%2Fg%2F11c509jstk",
+      "match_note": "Map title omits Yusuf Saleh; stored row carries the same Al-Ahsa city region and matching phone, so retain as likely same entity but alias/name variation needs explicit source-row comparison.",
+      "proposed_corrections": {
+        "review_name_alias": "do not overwrite name until record identity is established"
+      },
+      "current_stored_values": {
+        "name": "معرض يوسف صالح الضحيان للسيارات",
+        "city": "الأحساء",
+        "neighborhood": "المنطقة الصناعية، المبرز، الأحساء",
+        "phones": [
+          "0535765199"
+        ],
+        "maps": "https://www.google.com/maps/?cid=10114112633508966693",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "record_key": {
+        "name": "معرض الشموع للسيارات",
+        "city": "الأحساء",
+        "id": "phase5-car-7168b98a40ae"
+      },
+      "card": {
+        "name": "معرض الشموع للسيارات",
+        "category": "تاجر السيارات",
+        "address": "8419 الأمير طلال، AR Rashidiyah Al Hufuf and Al Mubarraz، الهفوف والمبرز 36342",
+        "phone": "+966 13 536 2088",
+        "plus_code": "CHRV+M4 المبرز"
+      },
+      "existing_phone_match": null,
+      "direct_google_maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B4%D9%85%D9%88%D8%B9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@25.4417472,49.5928317,17z/data=!3m1!4b1!4m6!3m5!1s0x3e37bdf5b557b687:0x440b2c9c45223c42!8m2!3d25.4417472!4d49.5928317!16s%2Fg%2F11cs5pt3hr",
+      "proposed_corrections": {
+        "attach_direct_place_evidence": true
+      },
+      "current_stored_values": {
+        "name": "معرض الشموع للسيارات",
+        "city": "الأحساء",
+        "neighborhood": "المبرز، حي مشرفة، طريق الأمير طلال",
+        "phones": [
+          "0135362088",
+          "0506884881"
+        ],
+        "maps": "https://www.google.com/maps/?cid=4903061669009308738",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "record_key": {
+        "id": "v9-car-bcbb563314f5",
+        "name": "معرض البركة للسيارات",
+        "city": "العلا"
+      },
+      "current_stored_values": {
+        "neighborhood": "السلام، العلا 43543",
+        "phones": [
+          "0148845554"
+        ],
+        "maps": "https://www.google.com/maps/?cid=9222087794760365530",
+        "lat": 26.5753473,
+        "lon": 37.9436646
+      },
+      "card": {
+        "name": "معرض البركة للسيارات",
+        "category": "تاجر سيارات مستعملة",
+        "address": "HWGV+4FM، السلام، العلا 43543",
+        "phone": "+966 14 884 5554",
+        "coordinates": {
+          "lat": 26.5753473,
+          "lon": 37.9436646
+        }
+      },
+      "card_phone_matches_stored": true,
+      "direct_google_maps_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%A8%D8%B1%D9%83%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@26.5753473,37.9436646,17z/data=!3m1!4b1!4m6!3m5!1s0x15a5aaf0fe046c1d:0x7ffb6ffd162835da!8m2!3d26.5753473!4d37.9436646!16s%2Fg%2F11c555r2rg",
+      "proposed_corrections": {
+        "record_identity": "exact name and city match",
+        "maps": "current CID is this Google place; pin confirmed",
+        "phone": "same as card; keep unchanged"
+      }
+    }
+  ],
+  "unresolved_place_card_checks": [
+    {
+      "name": "معرض خميس مشيط",
+      "city": "خميس مشيط",
+      "result": "A generic card named معارض خميس مشيط appeared, but it did not identify this exact record. Do not bind its pin.",
+      "status": "unresolved"
+    },
+    {
+      "name": "معرض الرشيد",
+      "city": "الرس",
+      "result": "Google Maps card is classified تاجر شاحنات; car-dealer activity not established.",
+      "status": "unresolved"
+    }
+  ],
+  "writing_gate": {
+    "cars_json_write_authorized": false,
+    "action": "Evidence and proposed field changes saved separately; no update/delete was attempted against cars.json."
+  },
+  "counts": {
+    "new_direct_google_maps_cards_observed": 12,
+    "unresolved_checks": 2,
+    "confirmed_record_edits_applied": 0,
+    "records_matched_by_exact_id": 12
+  },
+  "next_resume": "Continue from the newest branch file containing the current 821-record cars dataset and its unresolved queue. This environment's GitHub branch snapshot returns 404 for data/cars.json, despite audit artifacts being available; do not infer record IDs or write cars.json until exact snapshot is accessible.",
+  "record_id_resolution": {
+    "based_on": "current riyad-opportunities/data/cars.json snapshot",
+    "source_blob_sha": "517606365ca029dc3fc998c024faddecb90e5a2c"
+  }
+}

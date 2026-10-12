@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-11",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "source_head_before_batch": "66c230084dda744d368ca5804c9f44970cf1498d",
+  "scope": {
+    "qadisiyah_excluded": true,
+    "cars_json_modified": false,
+    "merge": false,
+    "publish": false,
+    "comprehensive_qa": false
+  },
+  "records": [
+    {
+      "record_key": {
+        "name": "معرض البركة للسيارات",
+        "city": "العلا"
+      },
+      "google_maps_card": {
+        "name": "معرض البركة للسيارات",
+        "category": "تاجر سيارات مستعملة",
+        "address": "HWGV+4FM، السلام، العلا 43543، المملكة العربية السعودية",
+        "phone": "+966 14 884 5554",
+        "coordinates": {
+          "lat": 26.5753473,
+          "lon": 37.9436646
+        },
+        "direct_place_url": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%A8%D8%B1%D9%83%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@26.5753473,37.9436646,17z/data=!3m1!4b1!4m6!3m5!1s0x15a5aaf0fe046c1d:0x7ffb6ffd162835da!8m2!3d26.5753473!4d37.9436646!16s%2Fg%2F11c555r2rg"
+      },
+      "activity_and_location_status": "Google Maps exact-title card, used-car dealer category and AlUla address observed directly.",
+      "phone_status": "A Google Maps user edit states that the displayed number was wrong; current stored number could not be compared because the current cars.json file was not accessible in this repository snapshot. Treat phone as disputed; do not overwrite from this card alone.",
+      "proposed_correction": {
+        "maps": "bind this direct place card if stored row identity matches",
+        "coordinates": {
+          "lat": 26.5753473,
+          "lon": 37.9436646
+        },
+        "neighborhood": "السلام، العلا 43543"
+      },
+      "evidence": "Google Maps place card directly observed on tab 15; card includes 'كم رقم جوال المعرض الرقم الموجود خطا' edit note from six months ago."
+    }
+  ],
+  "writing_gate": {
+    "cars_json_write_authorized": false,
+    "cars_json_modified": false
+  },
+  "counts": {
+    "direct_cards_observed": 1,
+    "confirmed_activity_and_city": 1,
+    "phone_conflict_signal": 1,
+    "record_changes_applied": 0
+  }
+}
