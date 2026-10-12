@@ -276,27 +276,40 @@
     },
     {
       "id": "v9-office-aea1d102e95c",
-      "decision": "unresolved",
+      "decision": "corrected",
       "checkedAt": "2026-10-12",
       "observed": {
-        "name": null,
-        "category": null,
-        "city": null,
-        "district": null,
-        "pin": null,
-        "publishedPhone": null
+        "name": "مؤسسة الديرة للخدمات العقارية",
+        "category": "مكتب الشركات",
+        "city": "سبت العلاية",
+        "district": "JXHR+H9G، 30، الواحة، سبت العلاية 67533",
+        "pin": {
+          "lat": 19.6289414,
+          "lon": 41.9909566,
+          "plusCode": "JXHR+H9G"
+        },
+        "publishedPhone": "+966 55 113 3423"
       },
-      "mapsCardUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200551133423%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7",
-      "mapsCardOpened": false,
-      "phoneEvidence": null,
-      "pinEvidence": null,
-      "patch": null,
-      "note": "محاولة البحث بالاسم والرقم موجودة لكن لم يمكن قراءة النتائج من Maps بسبب timeout. لا اعتماد أو تعديل.",
+      "mapsCardUrl": "https://www.google.com/maps/place/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@19.6289414,41.9909566,17z/data=!3m1!4b1!4m6!3m5!1s0x15e57f8de9d9c773:0x46e9987003285840!8m2!3d19.6289414!4d41.9909566!16s%2Fg%2F11h88ppmdq?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+      "mapsCardOpened": true,
+      "phoneEvidence": "بطاقة Maps تعرض +966 55 113 3423، مطابق للهاتف 0551133423.",
+      "pinEvidence": "URL بطاقة Maps النهائي يعرض الإحداثيات 19.6289414,41.9909566؛ العنوان والمدينة يطابقان الموقع المخزن (سبت العلايا).",
+      "patch": {
+        "lat": 19.6289414,
+        "lon": 41.9909566,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@19.6289414,41.9909566,17z/data=!3m1!4b1!4m6!3m5!1s0x15e57f8de9d9c773:0x46e9987003285840!8m2!3d19.6289414!4d41.9909566!16s%2Fg%2F11h88ppmdq?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+      },
+      "note": "الاسم التجاري يحدد الخدمات العقارية، والهاتف والعنوان يطابقان؛ تصنيف Maps عام «مكتب الشركات». إضافة الإحداثيات الدقيقة المفقودة فقط مقترحة.",
       "searchAttempts": [
         {
           "query": "مؤسسة الديرة للخدمات العقارية 0551133423 سبت العلايا",
           "surface": "Google Maps",
           "observation": "فُتح بحث Maps، لكن لقطة الصفحة انتهت بمهلة DOMSnapshot؛ لم تُقرأ أي نتيجة أو بطاقة."
+        },
+        {
+          "query": "مؤسسة الديرة للخدمات العقارية 0551133423 سبت العلايا",
+          "surface": "Google Maps",
+          "observation": "بطاقة مكان مباشرة بالاسم والهاتف؛ الاسم مطابق، الفئة مكتب الشركات، العنوان الواحة، سبت العلاية JXHR+H9G، الهاتف مطابق. URL البطاقة النهائي يعطي lat/lon 19.6289414,41.9909566."
         }
       ]
     },
@@ -964,9 +977,9 @@
     }
   ],
   "verifiedCount": 6,
-  "unresolvedCount": 27,
+  "unresolvedCount": 26,
   "partialCount": 0,
-  "openedPlaceCardCount": 13,
+  "openedPlaceCardCount": 14,
   "note": "المعايير تستخدم verified عند مطابقة الاسم والنشاط والرقم المنشور والعنوان؛ غير ذلك يسجل unresolved دون استعمال partial.",
   "additionalSearches": {
     "mapsNameAndPhoneQueries": 2,
@@ -1002,6 +1015,6 @@
       "national-ejar-office-584125"
     ]
   },
-  "correctedCount": 1,
+  "correctedCount": 2,
   "closedProvenCount": 1
 }
