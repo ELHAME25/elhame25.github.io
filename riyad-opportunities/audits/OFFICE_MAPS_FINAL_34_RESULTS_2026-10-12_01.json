@@ -1,0 +1,34 @@
+{
+  "schema": "office-maps-verification-batch-v1",
+  "checkedAt": "2026-10-12",
+  "sourceHead": "fe713fc3f25701c0a689fb16baf0367fa515535f",
+  "records": [
+    {
+      "id": "national-gulfmap-office-ebea8a251a8c1ef",
+      "city": "صفوى",
+      "storedName": "مكتب خالد مبارك العواد للخدمات العقارية",
+      "storedPhone": "0503814445",
+      "status": "verified_name_activity_city_pin_phone",
+      "mapsUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%AE%D8%A7%D9%84%D8%AF+%D9%85%D8%A8%D8%A7%D8%B1%D9%83+%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D8%AF+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@26.6356246,49.9214931,17z/",
+      "cardTitle": "مكتب خالد مبارك العواد للخدمات العقارية",
+      "category": "وكالة عقارات",
+      "address": "JWP9+6HV الحزم، صفوى",
+      "pin": {
+        "lat": 26.6356246,
+        "lon": 49.9189235
+      },
+      "publishedPhone": "+966503814445",
+      "decision": "Maps name/category/address/pin and phone match stored record."
+    },
+    {
+      "id": "national-gulfmap-office-6b4acc4496a441a",
+      "city": "صفوى",
+      "storedName": "مكتب القلعة للخدمات العقارية",
+      "storedPhone": "0566169049",
+      "status": "unresolved_no_exact_business_card",
+      "mapsUrl": null,
+      "observation": "Maps search did not show a matching card in Safwa. Similar name 'مكتب القلعة العقاري' was at 26.570036,50.065791 outside Safwa, categorized as مكتب الشركات with no phone. Not treated as a match.",
+      "decision": "Keep stored phone and pin unchanged; no correction."
+    }
+  ]
+}
