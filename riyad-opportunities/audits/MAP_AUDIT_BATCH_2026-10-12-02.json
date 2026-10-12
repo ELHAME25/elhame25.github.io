@@ -1,0 +1,446 @@
+{
+  "schema": "maps-audit-batch-v1",
+  "audit_date": "2026-10-12",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "observed_head_before_batch": "b7f1c96194b3a95bfbe0dbe74bc7cf211e452ed5",
+  "source_ledger": {
+    "path": "riyad-opportunities/MAP_AUDIT_LEDGER_2026-10-10.json",
+    "sha": "6a1f1c1cdbc7b085e731b9f49506416868143fb0",
+    "note": "GitHub connector omits the oversized file content; IDs for offices were absent from MAP_AUDIT_PROGRESS_2026-10-10.md and the agent's available 3fa4442 ledger. NHC selected records were checked against the saved ledger history; جدة هايتس was previously logged and excluded."
+  },
+  "counts_before": {
+    "map_targets": 4059,
+    "opened_unique": 308,
+    "verified_correct": 125,
+    "corrected_and_retested": 35,
+    "unresolved_after_open": 183,
+    "not_opened": 3751
+  },
+  "records": [
+    {
+      "record_id": "NHC:السدن|جدة",
+      "category": "nhc",
+      "name": "السدن",
+      "city": "جدة",
+      "opened_maps_url": "https://www.google.com/maps/search/?api=1&query=21.3918125%2C39.2546875",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "verified_correct": false,
+        "corrected": false,
+        "status": "unresolved",
+        "evidence": "Google Maps عرض بطاقة إحداثية 21.391813,39.254688، Plus Code 97R3+PV السنابل، جدة؛ لا اسم وجهة أو مشروع. صفحة NHC تحدد جنوب جدة عند ملتقى طريقي مكة-جدة والحرمين فقط؛ لا تثبت هذا الدبوس."
+      },
+      "field_checks": {
+        "phone": "not checked independently",
+        "whatsapp": "not checked independently",
+        "website": "official community page opened; not a separate website/contact-field check"
+      },
+      "sources": [
+        "https://www.nhc.sa/real-estate-development/communities/43858/?hl=ar-SA",
+        "https://www.nhc.sa/ar/register-interest/alsadan/"
+      ]
+    },
+    {
+      "record_id": "NHC:الورود|الأحساء",
+      "category": "nhc",
+      "name": "الورود",
+      "city": "الأحساء",
+      "opened_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2854375%2C49.5795625",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "verified_correct": false,
+        "corrected": false,
+        "status": "unresolved",
+        "evidence": "بطاقة خرائط إحداثية 25.285438,49.579562 وPlus Code 7HPH+5R الهفوف؛ بلا اسم وجهة أو مركز البيع. NHC يثبت الهفوف ويذكر جنوب وسطها بمحاذاة طريق الملك عبدالله والدائري الخارجي؛ الدبوس لا يثبت الحي أو الوجهة."
+      },
+      "field_checks": {
+        "phone": "not checked independently",
+        "whatsapp": "not checked independently",
+        "website": "official community page opened; not a separate website/contact-field check"
+      },
+      "sources": [
+        "https://www.nhc.sa/real-estate-development/communities/47489/",
+        "https://www.nhc.sa/media-center/news/47493/"
+      ]
+    },
+    {
+      "record_id": "NHC:تبوك هيلز|تبوك",
+      "category": "nhc",
+      "name": "تبوك هيلز",
+      "city": "تبوك",
+      "opened_maps_url": "https://www.google.com/maps/search/?api=1&query=28.4606035%2C36.5175676",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "verified_correct": false,
+        "corrected": false,
+        "status": "unresolved",
+        "evidence": "رابط Maps مشترك مع تبوك فالي 2؛ تعذر تحميل بطاقة مقروءة. الإحداثية في البيانات مرتبطة بمركز البيع المشترك، لا بحدود المشروع. NHC يؤكد المدينة والمساحة لا الدبوس."
+      },
+      "field_checks": {
+        "phone": "not checked independently",
+        "whatsapp": "not checked independently",
+        "website": "official community page opened; not a separate website/contact-field check"
+      },
+      "sources": [
+        "https://www.nhc.sa/ar/real-estate-development/communities/47502/",
+        "https://nhc.sa/media-center/news/47566/"
+      ]
+    },
+    {
+      "record_id": "NHC:تبوك فالي 2|تبوك",
+      "category": "nhc",
+      "name": "تبوك فالي 2",
+      "city": "تبوك",
+      "opened_maps_url": "https://www.google.com/maps/search/?api=1&query=28.4606035%2C36.5175676",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "verified_correct": false,
+        "corrected": false,
+        "status": "unresolved",
+        "evidence": "رابط Maps المشترك فُتح مرة واحدة للسجلين ولم تُقرأ بطاقة؛ لا يثبت موقع مشروع مستقل. NHC يثبت أنه مجتمع مستقل ضمن وجهة تبوك فالي (778 ألف م²/874 وحدة)، لكن لا يقدم الدبوس."
+      },
+      "field_checks": {
+        "phone": "not checked independently",
+        "whatsapp": "not checked independently",
+        "website": "official community page opened; not a separate website/contact-field check"
+      },
+      "sources": [
+        "https://www.nhc.sa/real-estate-development/communities/47501/",
+        "https://www.nhc.sa/media-center/news/47999/"
+      ]
+    },
+    {
+      "record_id": "NHC:الغروب|المدينة المنورة",
+      "category": "nhc",
+      "name": "الغروب",
+      "city": "المدينة المنورة",
+      "opened_maps_url": "https://www.google.com/maps/search/?api=1&query=24.4545869%2C39.4852988",
+      "map_check": {
+        "opened": true,
+        "matched": false,
+        "verified_correct": false,
+        "corrected": false,
+        "status": "unresolved",
+        "evidence": "تعذر تحميل بطاقة خرائط مقروءة؛ بيانات المصدر تصف الإحداثية بأنها مرتبطة بمقر المجتمع لا حدود الضاحية. صفحة NHC تثبت المدينة واتصال المجتمع بالطرق الرئيسية ولا تثبت الحي أو الدبوس."
+      },
+      "field_checks": {
+        "phone": "not checked independently",
+        "whatsapp": "not checked independently",
+        "website": "official community page opened; not a separate website/contact-field check"
+      },
+      "sources": [
+        "https://www.nhc.sa/real-estate-development/communities/47324/"
+      ]
+    },
+    {
+      "record_id": "phase5-office-53d5e6778786",
+      "category": "office",
+      "name": "مؤسسة الشاهين للخدمات العقارية",
+      "city": "الدمام",
+      "locality": "حي العمامرة",
+      "opened_maps_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D9%87%D9%8A%D9%86%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20C4Q7%2BH2H%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "verified_correct": true,
+        "corrected": false,
+        "status": "verified_correct",
+        "observed_pin": "26.4389455,50.1126175",
+        "evidence": " بطاقة خرائط مسماة «مؤسسة الشاهين للخدمات العقارية»، عنوان C4Q7+H2H حي العمامرة، الدمام. يطابق الجهة والمدينة والحي والهاتف المعروض في البطاقة؛ لا مصدر رسمي مستقل للهاتف أو موقع/واتساب. إحداثية JSON 26.44431,50.11295 تختلف نحو 0.6 كم عن الدبوس، لذا لا تُصحح بلا مصدر يثبت نقطة المكتب."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_card_observed_not_independently_verified",
+          "value": "+966505807233"
+        },
+        "website": {
+          "status": "no_official_site_confirmed"
+        },
+        "whatsapp": {
+          "status": "not_confirmed"
+        }
+      }
+    },
+    {
+      "record_id": "phase5-office-d9c094b7e29b",
+      "category": "office",
+      "name": "مكتب نسيم الأحساء العقاري",
+      "city": "الأحساء/الهفوف",
+      "locality": "المنصورة",
+      "opened_maps_url": "https://www.google.com/maps/?cid=6606828595467539857",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "verified_correct": true,
+        "corrected": false,
+        "status": "verified_correct",
+        "observed_pin": "25.205?",
+        "evidence": "بطاقة Place مسماة «مكتب نسيم الاحساء العقاري»، العنوان 9MV8+454 الشارع العام، المنصورة 36369، الرقم +966 58 177 1188. موقع المكتب nseemalahsa.com وصفحة الاتصال تؤكد الأحساء/الهفوف ورقم الهاتف. لا WhatsApp مثبت."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_card_and_official_site_agree",
+          "value": "0581771188"
+        },
+        "website": {
+          "status": "official_site_verified",
+          "value": "https://nseemalahsa.com/",
+          "contact": "https://nseemalahsa.com/contact"
+        },
+        "whatsapp": {
+          "status": "not_confirmed"
+        }
+      }
+    },
+    {
+      "record_id": "phase5-office-0a76689cbbc1",
+      "category": "office",
+      "name": "وتد النخيل للخدمات العقارية والعامة",
+      "city": "الأحساء/المبرز",
+      "locality": "القادسية",
+      "opened_maps_url": "https://www.google.com/maps/search/?api=1&query=%D9%88%D8%AA%D8%AF%20%D8%A7%D9%84%D9%86%D8%AE%D9%8A%D9%84%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%88%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1&query_place_id=ChIJW6gEUnyXNz4RUqQpuo4GWx4",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "verified_correct": true,
+        "corrected": false,
+        "status": "verified_correct",
+        "observed_pin": "25.408971,49.5726225",
+        "evidence": "بطاقة Place مسماة «وتد النخيل للخدمات العقارية و العامة»، محاسن، حي القادسية، المبرز 36422؛ الاسم والمدينة والحي والهاتف الظاهر متطابقون. لا موقع أو WhatsApp أو مصدر رسمي مستقل."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_card_observed_not_independently_verified",
+          "value": "+966582866519"
+        },
+        "website": {
+          "status": "no_official_site_confirmed"
+        },
+        "whatsapp": {
+          "status": "not_confirmed"
+        }
+      }
+    },
+    {
+      "record_id": "phase5-office-bd4ad382398b",
+      "category": "office",
+      "name": "مكتب شموخ الأحساء العقاري",
+      "city": "الأحساء/الهفوف",
+      "locality": "العويمرية",
+      "opened_maps_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B4%D9%85%D9%88%D8%AE%20%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1&query_place_id=ChIJYYjelTqRNz4RHEvLuS6H2S4",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "verified_correct": true,
+        "corrected": false,
+        "status": "verified_correct",
+        "observed_pin": "25.34599,49.5803",
+        "evidence": "بطاقة مسماة تطابق مكتب شموخ والعويمرية/الهفوف والهاتف. دليل BizMidEast ثانوي يكرر العنوان والهاتف: https://www.bizmideast.com/SA/%D9%85%D9%83%D8%AA%D8%A8-%D8%B4%D9%85%D9%88%D8%AE-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A-013-588-8383 . لا موقع/WhatsApp رسمي."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_card_observed_not_independently_verified",
+          "value": "+966135888383"
+        },
+        "website": {
+          "status": "no_official_site_confirmed"
+        },
+        "whatsapp": {
+          "status": "not_confirmed"
+        }
+      }
+    },
+    {
+      "record_id": "phase5-office-bb39ac46e6f7",
+      "category": "office",
+      "name": "مكتب القمة للعقارات",
+      "city": "الأحساء/المبرز",
+      "locality": "الأندلس",
+      "opened_maps_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1&query_place_id=ChIJBTHFcGSWNz4RKiJKE3lhOdA",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "verified_correct": true,
+        "corrected": false,
+        "status": "verified_correct",
+        "observed_pin": "25.430?",
+        "evidence": "بطاقة «مكتب القمة للعقارات»، شارع الأمير سلطان/شارع النجاح، الأندلس، المبرز 36341، الهاتف +966 55 935 1115؛ مطابق للجهة والحي والمدينة والرقم. BizMidEast ثانوي يعرض العنوان والرقم ورابط business.site غير موثق رسميًا. لا WhatsApp مؤكد."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_card_observed_not_independently_verified",
+          "value": "+966559351115"
+        },
+        "website": {
+          "status": "no_official_site_confirmed"
+        },
+        "whatsapp": {
+          "status": "not_confirmed"
+        }
+      }
+    },
+    {
+      "record_id": "phase5-office-48af6b076314",
+      "category": "office",
+      "name": "مكتب روافد الأحساء للعقارات",
+      "city": "الأحساء/الهفوف",
+      "locality": "النايفية",
+      "opened_maps_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%88%D8%A7%D9%81%D8%AF%20%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "verified_correct": true,
+        "corrected": false,
+        "status": "verified_correct",
+        "observed_pin": "25.3298882,49.5563006",
+        "evidence": "بطاقة مسماة تطابق مكتب روافد والنايفية/الهفوف والهاتف. إحداثية JSON 25.33372,49.55673 تختلف نحو 0.43 كم عن الدبوس؛ لا تصلح بلا دليل. لا موقع أو WhatsApp أو مصدر رسمي مستقل."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "maps_card_observed_not_independently_verified",
+          "value": "+966503907955"
+        },
+        "website": {
+          "status": "no_official_site_confirmed"
+        },
+        "whatsapp": {
+          "status": "not_confirmed"
+        }
+      }
+    },
+    {
+      "record_id": "P036",
+      "category": "project",
+      "name": "اسوار السكني",
+      "city": "الخبر",
+      "map_check": {
+        "opened": false,
+        "matched": false,
+        "verified_correct": false,
+        "corrected": false,
+        "status": "not_opened_this_batch",
+        "current_maps_is_search": true
+      },
+      "external_data_review": {
+        "status": "research_only_no_data_changed",
+        "evidence": "سكني يثبت اسم اسوار السكني المرحلة الثانية والمطور أسوار المتحدة والمدينة؛ Maps الحالي بحث، ولم يفتح في هذه الجولة.",
+        "source": "https://sakani.sa/app/offplan-projects/1335"
+      }
+    },
+    {
+      "record_id": "P038",
+      "category": "project",
+      "name": "بارك فيو",
+      "city": "الخبر",
+      "map_check": {
+        "opened": false,
+        "matched": false,
+        "verified_correct": false,
+        "corrected": false,
+        "status": "not_opened_this_batch",
+        "current_maps_is_search": true
+      },
+      "external_data_review": {
+        "status": "research_only_no_data_changed",
+        "evidence": "سكني يحدد حي العزيزية بالخبر والمطور سمو الأصالة؛ خرائط لم تفتح.",
+        "source": "https://sakani.sa/app/offplan-projects/627"
+      }
+    },
+    {
+      "record_id": "P039",
+      "category": "project",
+      "name": "إطلالة البحر",
+      "city": "الخبر",
+      "map_check": {
+        "opened": false,
+        "matched": false,
+        "verified_correct": false,
+        "corrected": false,
+        "status": "not_opened_this_batch",
+        "current_maps_is_search": true
+      },
+      "external_data_review": {
+        "status": "research_only_no_data_changed",
+        "evidence": "تقرير صحفي يضعه بجوار جسر الملك فهد وعلى ساحل الخليج؛ لا حي/دبوس مثبت. خرائط لم تفتح.",
+        "source": "https://www.alwatan.com.sa/article/351563"
+      }
+    },
+    {
+      "record_id": "P040",
+      "category": "project",
+      "name": "نسيم",
+      "city": "الخبر",
+      "map_check": {
+        "opened": false,
+        "matched": false,
+        "verified_correct": false,
+        "corrected": false,
+        "status": "not_opened_this_batch",
+        "current_maps_is_search": true
+      },
+      "external_data_review": {
+        "status": "research_only_no_data_changed",
+        "evidence": "سكني وMADK يؤكدان مشروع نسيم في الخبر؛ لم يتوفر حي/دبوس مؤكد ولم تفتح خرائط.",
+        "source": "https://sakani.sa/"
+      }
+    },
+    {
+      "record_id": "P041",
+      "category": "project",
+      "name": "ماريون فيلا",
+      "city": "الخبر",
+      "map_check": {
+        "opened": false,
+        "matched": false,
+        "verified_correct": false,
+        "corrected": false,
+        "status": "not_opened_this_batch",
+        "current_maps_is_search": true
+      },
+      "external_data_review": {
+        "status": "research_only_no_data_changed",
+        "evidence": "المطور يحدد درة النخيل/حي الصدفة بالخبر، بينما صفحة رسمية إقليمية أخرى وصفت البستان؛ تعارض الحي غير محسوم. خرائط لم تفتح.",
+        "source": "https://www.maryoncorp.com/ar/properties/maryon-villa"
+      }
+    },
+    {
+      "record_id": "P042",
+      "category": "project",
+      "name": "نمو باتيو",
+      "city": "الخبر (مخالف للمصدر)",
+      "map_check": {
+        "opened": false,
+        "matched": false,
+        "verified_correct": false,
+        "corrected": false,
+        "status": "not_opened_this_batch",
+        "current_maps_is_search": true
+      },
+      "external_data_review": {
+        "status": "research_only_no_data_changed",
+        "evidence": "مصدر BSF الرسمي يدرجه بالدمام؛ بروشور المطور الرسمي يحدد السيف ويذكر معالم بالدمام. تعارض جوهري في city يلزم حسمه؛ خرائط لم تفتح.",
+        "source": "https://www.bsf.sa/"
+      }
+    }
+  ],
+  "counts_after": {
+    "map_targets": 4059,
+    "opened_unique": 319,
+    "verified_correct": 131,
+    "corrected_and_retested": 35,
+    "unresolved_after_open": 188,
+    "not_opened": 3740
+  },
+  "count_notes": [
+    "Counts_before carry the previous saved audit baseline; plus 5 new NHC record targets opened (one identical Maps URL serves two distinct records) and 6 previously unlogged office IDs opened.",
+    "The six offices' map cards were name/address matched; no map URL was edited, so zero wrong-link repairs in this batch.",
+    "The projects P036/P038-P042 were researched from sources but Maps did not open; all six remain not inspected and are not included as opened or verified.",
+    "Separate field status is not conflated: only Nasim Alahsa's website/phone had an official-source cross-check in the office batch. Other office phone numbers were seen on Maps but not independently confirmed; WhatsApp was not confirmed.",
+    "For NHC, the map links were opened but did not establish destination pins; phone/WhatsApp/website fields were not individually audited. No records deleted, and no fallback searches were promoted to verified pins."
+  ]
+}
