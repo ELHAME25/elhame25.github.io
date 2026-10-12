@@ -1,0 +1,126 @@
+{
+  "audit": "offices-google-maps-restored-evidence",
+  "date": "2026-10-12",
+  "restoredFromBranch": "audit/offices-maps-20261012",
+  "sourceAuditHead": "18e916451d643eccfac338d5cff4e91a0214c628",
+  "targetBranch": "fix/scope-counts-nhc-20261010",
+  "targetBranchHeadBeforeSave": "11b1981d02995072b2ef88578d6003770dd8a543",
+  "inventory": {
+    "totalOfficeRecords": 1524,
+    "uniqueIds": 1524,
+    "qadisiyahRowsProtected": 2
+  },
+  "entries": [
+    {
+      "id": "entity-d206eae500b8",
+      "name": "مكتب بهجة الرمال للعقارات",
+      "city": "الرياض",
+      "district": "الرمال",
+      "storedPhone": "0555499441",
+      "googleMapsCard": {
+        "title": "بهجة الرمال للعقارات",
+        "address": "سعيد بن الحاجب، الرمال، الرياض 13265، المملكة العربية السعودية",
+        "phone": "+966 55 549 9441",
+        "phoneMatches": true,
+        "listingCategory": "مطوّر عقارات",
+        "mapsPlaceId": "ChIJqz9b2otVLj4Rgb1LGLWu8Ns",
+        "observedFromLiveGoogleMapsCard": true
+      },
+      "status": "unresolved",
+      "reason": "الاسم والمدينة والحي ورقم الهاتف متطابقة مع البطاقة الحية. تصنيف Google Maps الظاهر «مطوّر عقارات» ولا يكفي لحسم أن النشاط مكتب عقاري؛ مراجعات البطاقة تصفه كمكتب، ويلزم فصل حسم نوع النشاط عن تحقق الدبوس قبل اعتماد السجل مكتملًا.",
+      "correctionApplied": false
+    },
+    {
+      "id": "entity-8438aa400dcf",
+      "name": "مكتب رواد العقود للعقارات",
+      "city": "الرياض",
+      "district": "المونسية",
+      "storedPhone": "0555038551",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=24.821913,46.771164",
+      "googleMapsObservation": {
+        "livePageOpened": true,
+        "resolvedToBusinessCard": false,
+        "pageTitle": "24°49'18.9\"N 46°46'16.2\"E",
+        "plusCode": "RQCC+QF7 المونسية، الرياض السعودية",
+        "pinCoordinatesShown": "24.821913, 46.771164",
+        "phoneShown": false,
+        "businessNameShown": false
+      },
+      "status": "unresolved",
+      "reason": "الرابط يفتح نقطة إحداثية فقط ولا يعرض بطاقة المكتب أو رقم هاتفه؛ تحقق الحي مبدئي من Plus Code، ولا تكفي هذه الصفحة لإثبات اسم النشاط أو الهاتف أو مطابقة الدبوس مع المكتب.",
+      "correctionApplied": false
+    },
+    {
+      "id": "entity-bd9121973107",
+      "storedName": "مكتب قواعد الأندلس",
+      "googleMapsCard": {
+        "url": "https://www.google.com/maps/?cid=15391395510121292153",
+        "title": "مكتب قواعد الاندلس",
+        "category": "شركة إدارة عقارات",
+        "address": "الرمال، الرياض 13254، المملكة العربية السعودية",
+        "plusCode": "RRR4+JC الرمال، الرياض السعودية",
+        "phone": "+966 50 553 9095",
+        "phoneLink": "tel:+966505539095",
+        "hours": "مغلق · يفتح عند الساعة 3:30 م",
+        "observedLiveCard": true
+      },
+      "dataBefore": [
+        "0558648755",
+        "0505539095"
+      ],
+      "dataAfter": [
+        "0505539095"
+      ],
+      "previousUnconfirmedPhonePreservedInAudit": "0558648755",
+      "status": "partially_verified",
+      "confirmed": [
+        "name",
+        "city",
+        "district",
+        "googleMapsPhone"
+      ],
+      "pending": [
+        "compare_stored_coordinates_to_actual_pin"
+      ],
+      "correctionApplied": true
+    },
+    {
+      "id": "entity-2fa2c7120ef0",
+      "storedName": "مكتب الفجر المتقدمة للعقار",
+      "city": "المدينة المنورة",
+      "googleMapsCard": {
+        "url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%81%D8%AC%D8%B1%20%D8%A7%D9%84%D9%85%D8%AA%D9%82%D8%AF%D9%85%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJ24QBPJCVvRURXtK54SctXHk",
+        "title": "مكتب الفجر المتقدمة للعقار",
+        "category": "وكالة عقارات",
+        "address": "4893 أبو الأعور بن الحارث، الخالدية، المدينة المنورة 42317، المملكة العربية السعودية",
+        "plusCode": "FM87+R7 المدينة المنورة السعودية",
+        "phone": "+966 55 186 9766",
+        "phoneLink": "tel:+966551869766",
+        "hours": "مغلق · يفتح عند الساعة 5:00 م",
+        "observedLiveCard": true
+      },
+      "dataBefore": {
+        "districtField": "4893 ابو الاعور بن الحارث",
+        "coordinates": null
+      },
+      "dataAfter": {
+        "districtField": "الخالدية، 4893 أبو الأعور بن الحارث",
+        "coordinates": null
+      },
+      "correctionApplied": true,
+      "status": "partially_verified",
+      "confirmed": [
+        "name",
+        "city",
+        "district",
+        "street_address",
+        "business_category",
+        "google_maps_phone",
+        "published_hours"
+      ],
+      "pending": [
+        "stored_coordinates_missing; map_pin_coordinate_comparison_not_complete"
+      ]
+    }
+  ]
+}
