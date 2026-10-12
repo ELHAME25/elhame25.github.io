@@ -20,8 +20,8 @@
       "noSufficientCardEvidenceUnresolved": 12
     }
   },
-  "finalIndividualDecisionCount": 1389,
-  "remainingWithoutIndividualDecision": 135,
+  "finalIndividualDecisionCount": 1434,
+  "remainingWithoutIndividualDecision": 90,
   "phonePolicy": "No previously stored number was deleted in this final wave; different published numbers were retained alongside the stored value.",
   "changesOnBranch": [
     "Maps links, pin coordinates and activity normalized where direct card evidence and identity matched",
@@ -33,22 +33,22 @@
     "status": "pending",
     "target": "full repository QA and desktop/mobile review"
   },
-  "latestBranchHead": "fa521c4d06669e8c3f9ffd2d6e5528927d1cb08e",
-  "countBasis": "1111 baseline individual outcomes plus 278 unique manifest IDs with saved mapsAudit decisions; unresolved outcomes remain explicitly unresolved.",
-  "recordsWithSavedIndividualOutcome": 1389,
-  "recordsWithoutSavedIndividualOutcome": 135,
+  "latestBranchHead": "155d81d598e9bd1cc56cd42c27d3a46e02bf4bac",
+  "countBasis": "1111 baseline individual outcomes plus 323 unique manifest IDs with saved mapsAudit decisions; unresolved outcomes remain explicitly unresolved.",
+  "recordsWithSavedIndividualOutcome": 1434,
+  "recordsWithoutSavedIndividualOutcome": 90,
   "regionalRemaining": {
     "riyadh": 0,
     "west": 1,
     "east": 0,
     "north": 0,
-    "southCentral": 134
+    "southCentral": 89
   },
   "recalculation": {
     "at": "2026-10-12",
     "baseLedgerCount": 1111,
-    "newCandidateOutcomes": 278,
-    "headAtCalculation": "90fc0cd00364fcc470bf307ececf04eeaf63e8d4",
+    "newCandidateOutcomes": 323,
+    "headAtCalculation": "ee512ee14fa6e413c7a16149d93f9e2176664bdc",
     "candidateAuditStatusCounts": {
       "verified_name_activity_phone_and_pin": 11,
       "partial_pin_mismatch_phone_unlisted": 1,
@@ -56,23 +56,23 @@
       "verified_name_and_phone_location_pin_unconfirmed": 1,
       "verified_name_phone_and_pin_activity_category_ambiguous": 1,
       "verified_name_activity_phone_and_address": 1,
-      "verified_name_activity_phone_address": 69,
-      "verified_name_activity_location_phone_unlisted": 7,
-      "verified_name_activity_phone_pin": 44,
+      "verified_name_activity_phone_address": 73,
+      "verified_name_activity_location_phone_unlisted": 8,
+      "verified_name_activity_phone_pin": 45,
       "unresolved_city_only": 3,
       "verified_name_activity_phone_conflict_preserved": 5,
       "verified_name_activity_location_phone_conflict": 2,
-      "unresolved_maps_ui_timeout": 29,
+      "unresolved_maps_ui_timeout": 39,
       "partial_name_pin_mismatch_phone_unverified": 1,
       "partial_pin_mismatch_phone_unverified": 1,
       "unresolved_name_phone_identity_conflict": 1,
-      "unresolved_maps_card_content_timeout": 1,
+      "unresolved_maps_card_content_timeout": 2,
       "unresolved_name_match_phone_location_unverified": 1,
       "verified_name_phone_conflict_activity_unresolved": 1,
       "partial_name_phone_match_location_activity_unconfirmed": 1,
       "unresolved_maps_card_not_confirmed": 2,
       "unresolved_foreign_search_result": 1,
-      "unresolved_no_matching_maps_card": 18,
+      "unresolved_no_matching_maps_card": 27,
       "verified_name_activity_phone_permanently_closed": 1,
       "unresolved_identity_phone_conflict": 3,
       "verified_name_activity_phone_pin_close_to_stored": 1,
@@ -82,7 +82,7 @@
       "verified_name_activity_phone_pin_mismatch_corrected": 1,
       "verified_name_phone_permanently_closed": 1,
       "unresolved_name_similar_phone_conflict": 1,
-      "partial_name_phone_conflict_unresolved": 2,
+      "partial_name_phone_conflict_unresolved": 5,
       "verified_name_phone_location_activity_category_note": 1,
       "partial_company_name_phone_match_branch_unresolved": 1,
       "unresolved_duplicate_cards_location_status_conflict": 1,
@@ -94,12 +94,13 @@
       "unresolved_name_location_conflict": 1,
       "unresolved_maps_card_blank": 1,
       "partial_card_location_mismatch": 1,
-      "verified_name_activity_phone_address_pin": 2,
+      "verified_name_activity_phone_address_pin": 17,
       "verified_name_activity_phone_location": 4,
       "unresolved_maps_timeout": 1,
       "verified_name_activity_phone_partial_match": 2,
       "verified_name_phone_location_activity_ambiguous": 6,
-      "partial_identity_activity_phone_unverified": 1
+      "partial_identity_activity_phone_unverified": 1,
+      "partial_identity_match_phone_location": 1
     }
   }
 }
