@@ -1,0 +1,57 @@
+{
+  "schema": "office-exception-recheck-checkpoint-v1",
+  "generatedAt": "2026-10-12",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "baseHead": "87cde3f6e64a829c990e9ceb2ab769c1119958b2",
+  "scope": {
+    "inventory": 1524,
+    "uniqueIds": 1524,
+    "noMatchingMapsCard": 127,
+    "partialOrConflicting": 52,
+    "uniqueExceptionIds": 179,
+    "overlap": 0
+  },
+  "newRecheck": {
+    "laneFiles": [
+      "audits/EXCEPTION_RECHECK_LANE1_2026-10-12.json",
+      "audits/EXCEPTION_RECHECK_LANE2_2026-10-12.json",
+      "audits/EXCEPTION_RECHECK_LANE3_2026-10-12.json",
+      "audits/EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "audits/EXCEPTION_RECHECK_LANE5_2026-10-12.json"
+    ],
+    "individualDecisionsRecorded": 179,
+    "decisionCounts": {
+      "fullyVerified": 1,
+      "corrected": 0,
+      "partial": 13,
+      "unresolved": 165
+    },
+    "directPlaceCardsRead": 15,
+    "patchesProposed": 0,
+    "notes": "The direct card recheck was interrupted by repeated Google Maps UI protocol timeouts. An unresolved decision means this recheck did not establish identity/location/phone; it does not override earlier committed evidence. Some partial cards displayed a phone matching the stored value but left activity or pin evidence incomplete."
+  },
+  "application": {
+    "officesJsonChanged": false,
+    "newCorrectionsApplied": 0,
+    "previouslyDocumentedCorrections": 25,
+    "previouslyDocumentedCorrectionsStillApplied": 25,
+    "recordsBefore": 1524,
+    "recordsAfter": 1524,
+    "uniqueIdsAfter": 1524,
+    "qadisiyahProtectedRecords": 22,
+    "qadisiyahChanged": 0,
+    "unsupportedPhoneOrPinChanges": 0
+  },
+  "qa": {
+    "existingBranchRecord": "passed",
+    "existingDesktopMobileWorkflowRun": 38301389069,
+    "freshLocalFullSuite": "timed out at 120 seconds during QA/companies-and-branch-radius.test.js; preceding emitted suites showed no failures",
+    "merge": false,
+    "publish": false
+  },
+  "closure": {
+    "allExceptionsResolved": false,
+    "reason": "165 target IDs remain unresolved after the current UI recheck; do not represent all office data as confirmed."
+  }
+}

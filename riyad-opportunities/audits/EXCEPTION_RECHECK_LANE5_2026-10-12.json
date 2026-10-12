@@ -1,0 +1,684 @@
+{
+  "title": "Office exception recheck lane 5",
+  "checkedAt": "2026-10-12",
+  "scopeCount": 35,
+  "completedWithDirectPlaceCard": 2,
+  "pinOnlyPagesOpened": 1,
+  "unresolvedBecauseCardNotOpened": 32,
+  "patchesProposed": 0,
+  "results": [
+    {
+      "id": "office-maps-1e6e0e7fa290",
+      "decision": "verified",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": "مكتب روابي ديرتي للخدمات العقاريّة",
+        "category": "مكتب الشركات",
+        "city": "الرس",
+        "district": "الملك خالد، طريق الملك فهد",
+        "pin": {
+          "lat": 25.8819592,
+          "lon": 43.4868998,
+          "plusCode": "VFJP+QQ الرس السعودية"
+        },
+        "publishedPhone": "+966555658732"
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/?api=1&query=25.8819592,43.4868998&query_place_id=ChIJqYdh357KgxURIhnE3Yko-4g",
+      "mapsCardOpened": true,
+      "phoneEvidence": "بطاقة Google Maps عرضت زر الهاتف +966 55 565 8732؛ يطابق 0555658732 المسجل.",
+      "pinEvidence": "بطاقة المكان الفعلية تعرض عنوان طريق الملك فهد، الملك خالد، الرس 58876؛ رابط place_id فتح البطاقة عند الإحداثيات 25.8819592,43.4868998.",
+      "patch": null,
+      "note": "اسم النشاط والعنوان والمدينة والهاتف الظاهر تطابق السجل؛ لا تعديل مقترح."
+    },
+    {
+      "id": "national-ejar-office-194652",
+      "decision": "partial",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": "مكتب علي ظافر للعقار والخدمات",
+        "category": "عقار شقق مفروشة",
+        "city": "نجران",
+        "district": "خالد بن عبدالعزيز، نجران 66256",
+        "pin": {
+          "lat": 17.5854684,
+          "lon": 44.2302731,
+          "plusCode": "H6PJ+54 نجران السعودية"
+        },
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/?api=1&query=17.5854684,44.2302731&query_place_id=ChIJIa9fWHTF_hURfMQJTTDWfHQ",
+      "mapsCardOpened": true,
+      "phoneEvidence": "البطاقة لا تعرض رقمًا، وتعرض خيار إضافة رقم الهاتف؛ الرقم المسجل 0505725867 غير مثبت من البطاقة.",
+      "pinEvidence": "بطاقة مكان Google Maps المباشرة عبر place_id تعرض العنوان في نجران والإحداثيات المرفقة تطابق سجل البيانات.",
+      "patch": null,
+      "note": "مطابقة الاسم/العنوان موجودة، لكن تصنيف البطاقة شقق مفروشة ولا تعرض رقم الهاتف؛ يظل النشاط والرقم غير محسومين. لا تعديل."
+    },
+    {
+      "id": "national-ejar-office-192117",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://maps.google.com/maps?q=17.53998061,44.21937944",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": "تم فتح صفحة الإحداثيات المباشرة في Google Maps عند 17.5399806,44.2193794، لكن الصفحة لم تعرض بطاقة نشاط/مكتب؛ الدبوس وحده لا يثبت هوية المكتب.",
+      "patch": null,
+      "note": "فتحت صفحة الإحداثيات، لا بطاقة المكان. محاولة البحث داخل Maps لم تُظهر محتوى قابلًا للفحص بسبب تعطل لقطة الصفحة؛ بقي الاسم والهاتف غير مثبتين."
+    },
+    {
+      "id": "national-ejar-office-195166",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/?api=1&query=17.6346736,44.5030157&query_place_id=ChIJBwK9IaMv_xURZ0h7TUNoBgc",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-192859",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://maps.google.com/maps?q=17.4886862,47.1120239",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-201296",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://maps.google.com/maps?q=17.49650941,47.11438537",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-203088",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://maps.google.com/maps?q=17.49284446,47.1137017",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-195389",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://maps.google.com/maps?q=17.49343232,47.08272722",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-google-office-ChIJV_TW6sgb5RUR4aUYHPXoCUw",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/place/?q=place_id:ChIJV_TW6sgb5RUR4aUYHPXoCUw",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "v9-office-aea1d102e95c",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200551133423%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-199883",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%81%D8%B1%D8%B9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20%D9%86%D8%A7%D9%81%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-200076",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/مؤسسة+فيصل+بن+عبدالرحيم+بن+حبيب+الله+جمعه+للعقارات+الظهران",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-218035",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%AD%D8%B3%D9%8A%D9%86+%D8%A7%D9%84%D9%8A%D8%A7%D9%85%D9%8A+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-yango-office-83646496556",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%81%D8%A7%D9%84+%D8%A7%D9%84%D8%A3%D9%81%D8%B6%D9%84+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%AD%D9%81%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-yango-office-176431236509",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D8%AF+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x3fd739f1f376bf4b:0xc08554dbe3b4ba6a!8m2!3d28.4122103!4d45.9843768!16s/g/11h1djktvr",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-192755",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%8A%D9%85%D9%86%20%D9%85%D8%B9%D8%B2%D9%8A%20%D9%85%D8%B9%D8%AA%D9%82%20%D8%A7%D9%84%D8%B1%D8%B4%D9%8A%D8%AF%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200592380032%20%D8%AE%D9%8A%D8%A8%D8%B1",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-200167",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%B9%D8%A8%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B1%D8%B4%D9%8A%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200555155198%20%D8%AE%D9%8A%D8%A8%D8%B1",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-218822",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%83%D9%86%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200557977544%20%D8%AD%D9%82%D9%84",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-yango-office-55037224817",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%86%D8%AC%D8%A7%D8%B2%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AF%D9%88%D9%85%D8%A9%20%D8%A7%D9%84%D8%AC%D9%86%D8%AF%D9%84%200590932840",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-yango-office-63716439989",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D8%B1%D9%88%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D9%88%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20%D8%B9%D8%B1%D8%B9%D8%B1%200560966660",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-google-office-ChIJ6cgmWQCZqhURzRqEY_TK_Vc",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A3%D8%A8%D8%B1%D8%A7%D8%AC+%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%A6%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15aa99005926c8e9:0x57fdcaf463841acd!8m2!3d29.2882259!4d34.9456302!16s%2Fg%2F11wh5jx4rr!19sChIJ6cgmWQCZqhURzRqEY_TK_Vc?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-192622",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://maps.google.com/maps?q=19.8621788,41.5642051",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-209089",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/?api=1&query=19.8608875,41.5603855&query_place_id=ChIJgxXnbJhd7xURO1fBGjMB2IA",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-584125",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://maps.google.com/maps?q=19.85847802,41.56419114",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-google-office-ChIJE48mwlcb5RURWhZsmHsBobY",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/place/?q=place_id:ChIJE48mwlcb5RURWhZsmHsBobY",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-icuae-office-ChIJ1S_wasn1BxYRNbf2JCv1wcQ",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D9%86%D9%81%D8%A7%D8%B0+%D9%88%D8%B7%D9%86%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%A3%D8%A8%D9%88+%D8%B9%D8%B1%D9%8A%D8%B4",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "entity-eb6a252fffd5",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%82%20%D8%A3%D8%A8%D9%87%D8%A7%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200504746662",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-194902",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%AD%D8%B3%D8%A7%D9%85+%D9%88%D8%AC%D9%87%D8%AA%D9%83+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%8A%D9%86%D8%A8%D8%B9",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-193976",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%88%D8%A7%D8%B3%D9%8A+%D9%8A%D9%86%D8%A8%D8%B9%E2%80%AD/data=!4m7!3m6!1s0x15b9075e1da3ae51:0xcf12eab8dd24b441!8m2!3d24.1077009!4d38.0155311!16s%2Fg%2F11s7dn1rlm!19sChIJUa6jHV4HuRURQbQk3bjqEs8?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-201194",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%85%D9%8A%D9%86%D9%87%20%D8%B9%D8%B5%D9%85%D8%A7%D9%86%20%D8%A7%D9%84%D9%83%D8%AD%D9%84%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200555043333",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-332578",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%83%D8%A7%D8%A6%D8%B2%20%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200535250700",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-338770",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%85%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200508684181",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-238771",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%85%D9%81%D8%AA%D8%A7%D8%AD+%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/@23.7629101,38.7409022,17z/data=!3m1!4b1!4m6!3m5!1s0x15bed70048770747:0x6273c479be82d582!8m2!3d23.7629101!4d38.7409022!16s%2Fg%2F11vqx3wdj3?entry=ttu",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-thirdparty-office-duba-0500517062",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B9%D9%8A%D8%B3%D9%88%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9+%D8%B6%D8%A8%D8%A7%D8%A1%E2%80%AD/data=!4m7!3m6!1s0x15ac2561d691fa81:0x568af99b89661ac5!8m2!3d27.3452099!4d35.7113604!16s%2Fg%2F11f7czlx5n!19sChIJgfqR1mElrBURxRpmiZv5ilY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    },
+    {
+      "id": "national-ejar-office-205522",
+      "decision": "unresolved",
+      "checkedAt": "2026-10-12",
+      "observed": {
+        "name": null,
+        "category": null,
+        "city": null,
+        "district": null,
+        "pin": null,
+        "publishedPhone": null
+      },
+      "mapsCardUrl": "https://www.google.com/maps/search/%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%B9%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B5%D8%A8%D8%AD%D9%8A%20%D8%A8%D8%AF%D8%B1%200555014348",
+      "mapsCardOpened": false,
+      "phoneEvidence": null,
+      "pinEvidence": null,
+      "patch": null,
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+    }
+  ]
+}
