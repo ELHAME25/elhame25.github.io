@@ -1,9 +1,9 @@
 {
-  "schema": "office-exception-recheck-checkpoint-v1",
-  "generatedAt": "2026-10-12",
+  "schema": "office-exception-recheck-checkpoint-v2",
+  "generatedAt": "2026-10-12T21:50:00Z",
   "repository": "ELHAME25/elhame25.github.io",
   "branch": "fix/scope-counts-nhc-20261010",
-  "baseHead": "87cde3f6e64a829c990e9ceb2ab769c1119958b2",
+  "latestDataCommit": "af9f9c52552eebd56a9962c9461ed605926d2f2f",
   "scope": {
     "inventory": 1524,
     "uniqueIds": 1524,
@@ -12,46 +12,53 @@
     "uniqueExceptionIds": 179,
     "overlap": 0
   },
-  "newRecheck": {
-    "laneFiles": [
+  "recheck": {
+    "files": [
       "audits/EXCEPTION_RECHECK_LANE1_2026-10-12.json",
       "audits/EXCEPTION_RECHECK_LANE2_2026-10-12.json",
       "audits/EXCEPTION_RECHECK_LANE3_2026-10-12.json",
       "audits/EXCEPTION_RECHECK_LANE4_2026-10-12.json",
       "audits/EXCEPTION_RECHECK_LANE5_2026-10-12.json"
     ],
-    "individualDecisionsRecorded": 179,
-    "decisionCounts": {
-      "fullyVerified": 1,
-      "corrected": 0,
-      "unresolved": 178
+    "individualRecords": 179,
+    "uniqueIds": 179,
+    "directGoogleMapsCardsOrSearchLinks": 106,
+    "counts": {
+      "verified": 20,
+      "corrected": 4,
+      "closedProven": 2,
+      "notYetFullyMatched": 159
     },
-    "directPlaceCardsRead": 15,
-    "patchesProposed": 0,
-    "notes": "The direct card recheck was interrupted by repeated Google Maps UI protocol timeouts. Unresolved includes records with partial field evidence; none are accepted as partially verified. Some cards displayed a phone matching the stored value but did not establish all required fields. This recheck does not override earlier committed evidence.",
-    "decisionPolicy": "A record counts as verified only when identity, real-estate activity, phone, and map pin are all confirmed. Any missing or conflicting required field remains unresolved; field observations are evidence notes only."
+    "rule": "A record counts as fully matched only when a direct Google Maps card supports the stored office identity and real-estate activity, matches the published phone where one exists, and establishes the pin. Other direct observations remain documented without being claimed as a full match."
   },
   "application": {
-    "officesJsonChanged": false,
-    "newCorrectionsApplied": 0,
-    "previouslyDocumentedCorrections": 25,
-    "previouslyDocumentedCorrectionsStillApplied": 25,
-    "recordsBefore": 1524,
-    "recordsAfter": 1524,
-    "uniqueIdsAfter": 1524,
-    "qadisiyahProtectedRecords": 22,
-    "qadisiyahChanged": 0,
-    "unsupportedPhoneOrPinChanges": 0
+    "officeCount": 1524,
+    "uniqueIds": 1524,
+    "restoredMissingRecord": "national-ejar-office-192308",
+    "deduplicatedId": "national-ejar-office-238771",
+    "retainedBothPhones": [
+      "0534306337",
+      "0545203221"
+    ],
+    "qadisiyahProtectedIds": 22,
+    "qadisiyahChanges": 0,
+    "provenPinUpdates": [
+      "v9-office-76c14bc4a676",
+      "national-yango-office-234237984975"
+    ],
+    "prior25CorrectionsPreserved": true
   },
   "qa": {
-    "existingBranchRecord": "passed",
-    "existingDesktopMobileWorkflowRun": 38301389069,
-    "freshLocalFullSuite": "timed out at 120 seconds during QA/companies-and-branch-radius.test.js; preceding emitted suites showed no failures",
+    "lastCompletedCommit": "4639f845722f016e95d410250de11eaee04e0d84",
+    "fullSuite": "success",
+    "desktopMobile": "success",
+    "latestCommitUnderTest": "af9f9c52552eebd56a9962c9461ed605926d2f2f",
+    "latestRunPending": true,
     "merge": false,
     "publish": false
   },
   "closure": {
-    "allExceptionsResolved": false,
-    "reason": "178 target IDs remain unresolved under the full-record verification rule. Do not represent all office data as confirmed."
+    "all179FullyMatched": false,
+    "reason": "159 of the 179 exception records still lack a complete match under the stated phone and pin criteria."
   }
 }

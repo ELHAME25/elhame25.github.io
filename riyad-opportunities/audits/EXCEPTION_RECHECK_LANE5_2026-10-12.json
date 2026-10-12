@@ -1,11 +1,11 @@
 {
   "title": "Office exception recheck lane 5",
-  "checkedAt": "2026-10-12",
+  "checkedAt": "2026-10-12T21:29:34+00:00",
   "scopeCount": 35,
-  "completedWithDirectPlaceCard": 5,
+  "completedWithDirectPlaceCard": 9,
   "pinOnlyPagesOpened": 1,
-  "unresolvedBecauseCardNotOpened": 32,
-  "patchesProposed": 0,
+  "unresolvedBecauseCardNotOpened": 18,
+  "patchesProposed": 4,
   "results": [
     {
       "id": "office-maps-1e6e0e7fa290",
@@ -41,17 +41,16 @@
         "district": "خالد بن عبدالعزيز، نجران 66256",
         "pin": {
           "lat": 17.5854684,
-          "lon": 44.2302731,
-          "plusCode": "H6PJ+54 نجران السعودية"
+          "lon": 44.2302731
         },
         "publishedPhone": null
       },
-      "mapsCardUrl": "https://www.google.com/maps/search/?api=1&query=17.5854684,44.2302731&query_place_id=ChIJIa9fWHTF_hURfMQJTTDWfHQ",
+      "mapsCardUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B9%D9%84%D9%8A+%D8%B8%D8%A7%D9%81%D8%B1+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%E2%80%AD/@17.5854684,44.2302731,17z/data=!3m1!4b1!4m6!3m5!1s0x15fec574585faf21:0x747cd6304d09c47c!8m2!3d17.5854684!4d44.2302731!16s%2Fg%2F11tx5bmkql?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
       "mapsCardOpened": true,
-      "phoneEvidence": "بطاقة المكان المباشرة لا تعرض رقمًا، وتعرض «إضافة رقم الهاتف»؛ الرقم 0505725867 المسجل غير مثبت.",
-      "pinEvidence": "بطاقة place_id تعرض العنوان والإحداثيات/Plus Code في نطاق نجران، ويطابق العنوان المحفوظ.",
+      "phoneEvidence": "البطاقة تعرض «إضافة رقم الهاتف للمكان»؛ لا يوجد رقم منشور للمقارنة مع 0505725867.",
+      "pinEvidence": "بطاقة المكان المباشرة تعرض العنوان نفسه ورمز الموقع H6PJ+54؛ رابط البطاقة يحدد 17.5854684,44.2302731، وهو يتطابق مع دبوس السجل المسجل في رابط Maps.",
       "patch": null,
-      "note": "الاسم والعنوان ظاهران، لكن تصنيف «شقق مفروشة» ورقم الاتصال غير المنشور يمنعان اعتماد النشاط والرقم."
+      "note": "تطابق الاسم والعنوان والدبوس، لكن لا يوجد هاتف منشور، كما أن تصنيف Google «شقق مفروشة» لا يثبت أن النشاط مكتب عقاري. لذلك يبقى السجل غير محسوم."
     },
     {
       "id": "national-ejar-office-192117",
@@ -70,12 +69,26 @@
       "phoneEvidence": null,
       "pinEvidence": "تم فتح صفحة الإحداثيات المباشرة في Google Maps عند 17.5399806,44.2193794، لكن الصفحة لم تعرض بطاقة نشاط/مكتب؛ الدبوس وحده لا يثبت هوية المكتب.",
       "patch": null,
-      "note": "فتحت صفحة الإحداثيات ثم بحث Maps بالاسم والهاتف في تبويب جديد وأعدت تحميله مرة واحدة؛ بقيت الصفحة فارغة وتعذر التقاطها. لا بطاقة نشاط، هاتف منشور أو دبوس لمكتب يمكن توثيقه؛ السجل غير محسوم.",
+      "note": "إعادة البحث بالاسم والرقم والحي أعادت نتيجة جزئية لبوفيه/مطعم «أطياف الجنوب»، لا بطاقة مكتب عقاري مطابقة. لا يُستدل منها على رقم المكتب أو موقعه.",
       "searchAttempts": [
         {
           "query": "مكتب أطياف الجنوب للخدمات العقارية 0544041333 نجران",
           "surface": "Google Maps، تبويب جديد",
           "observation": "فُتح رابط البحث وأعيد تحميله مرة واحدة؛ بقيت واجهة الصفحة فارغة في AX وتعذر التقاط screenshot بمهلة. لم تظهر بطاقة مكان أو نتيجة قابلة للتحقق."
+        }
+      ],
+      "additionalSearchAttempts": [
+        {
+          "query": "أطياف الجنوب للخدمات العقارية 0544041333 الخالدية نجران",
+          "mapsSearchUrl": "https://www.google.com/maps/search/%D8%A3%D8%B7%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200544041333%20%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D9%8A%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "mapsCardOpened": true,
+          "result": "نتيجة مطابقة جزئية فقط؛ بطاقة بوفية أطياف الجنوب، مصنفة مطعم مأكولات باكستانية، لا المكتب العقاري المطلوب.",
+          "candidateCardUrl": "https://www.google.com/maps/place/%D8%A8%D9%88%D9%81%D9%8A%D8%A9+%D8%A3%D8%B7%D9%8A%D8%A7%D9%81+%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8%E2%80%AD/data=!4m7!3m6!1s0x15fed9001491fb09:0x146ff9a61cfeefe!8m2!3d17.5707668!4d44.3517426!16s%2Fg%2F11vt5nngx8!19sChIJCfuRFADZ_hUR_u7PYZr_RgE?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+          "candidatePin": {
+            "lat": 17.5707668,
+            "lon": 44.3517426
+          },
+          "candidatePhone": null
         }
       ]
     },
@@ -210,6 +223,11 @@
           "query": "مؤسسة جسر التواصل للخدمات العقارية شرورة",
           "surface": "Google Maps",
           "observation": "تعذر على خرائط Google العثور على الاسم والمدينة؛ لم تظهر بطاقة مطابقة."
+        },
+        {
+          "query": "0558818655 شارع علي بن أبي طالب شرورة",
+          "surface": "Google Maps",
+          "observation": "Maps لم يعثر على رقم الهاتف مع الشارع والمدينة؛ لا نتيجة أو بطاقة."
         }
       ]
     },
@@ -230,7 +248,7 @@
       "phoneEvidence": null,
       "pinEvidence": null,
       "patch": null,
-      "note": "بحث Maps بالاسم والرقم ثم بالاسم والمدينة لا يعرض بطاقة مكتب مطابقة؛ لا تصحيح بلا بطاقة مباشرة.",
+      "note": "إعادة بحث مستقلة بالاسم المختصر والرقم والمدينة لم تعرض بطاقة مكان؛ لا يوجد تصحيح مثبت.",
       "searchAttempts": [
         {
           "query": "مكتب زاوية المستقبل للعقارات 0557373063 شرورة",
@@ -246,6 +264,14 @@
           "query": "0557373063",
           "surface": "Google Maps",
           "observation": "تعذر على خرائط Google العثور على رقم الهاتف؛ لم تظهر بطاقة منشأة أو رقم مكان."
+        }
+      ],
+      "additionalSearchAttempts": [
+        {
+          "query": "زاوية المستقبل للعقارات 0557373063 شرورة",
+          "mapsSearchUrl": "https://www.google.com/maps/search/%D8%B2%D8%A7%D9%88%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200557373063%20%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "mapsCardOpened": false,
+          "result": "أفادت خرائط Google تعذر العثور على هذا الاستعلام؛ لم تظهر بطاقة مكان."
         }
       ]
     },
@@ -408,26 +434,36 @@
       "phoneEvidence": null,
       "pinEvidence": null,
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا.",
+      "searchAttempts": [
+        {
+          "query": "مكتب الفال الأفضل العقاري 0566794333 حي السليمانية حفر الباطن",
+          "surface": "Google Maps",
+          "observation": "Maps أعادت نتيجة جزئية لحي السليمانية 9WXJ+XPX عند 28.3999818,45.9318672؛ بلا بطاقة المكتب أو رقم/نشاط منشور."
+        }
+      ]
     },
     {
       "id": "national-yango-office-176431236509",
       "decision": "unresolved",
       "checkedAt": "2026-10-12",
       "observed": {
-        "name": null,
-        "category": null,
-        "city": null,
-        "district": null,
-        "pin": null,
-        "publishedPhone": null
+        "name": "شركة السعد العقارية",
+        "category": "شركة إدارة عقارات",
+        "city": "حفر الباطن",
+        "district": "طريق الملك عبدالله",
+        "pin": {
+          "lat": 28.4122103,
+          "lon": 45.9843768
+        },
+        "publishedPhone": "+966 55 524 7722"
       },
-      "mapsCardUrl": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D8%AF+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x3fd739f1f376bf4b:0xc08554dbe3b4ba6a!8m2!3d28.4122103!4d45.9843768!16s/g/11h1djktvr",
-      "mapsCardOpened": false,
-      "phoneEvidence": null,
-      "pinEvidence": null,
+      "mapsCardUrl": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D8%AF+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x3fd739f1f376bf4b:0xc08554dbe3b4ba6a!8m2!3d28.4122103!4d45.9843768!16s%2Fg%2F11h1djktvr!19sChIJS7928_E51z8Rarq049tUhcA?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+      "mapsCardOpened": true,
+      "phoneEvidence": "رقم البطاقة +966 55 524 7722 يطابق رقم السجل 0555247722.",
+      "pinEvidence": "بطاقة المكان الفعلية تعرض الدبوس 28.4122103,45.9843768. هذا هو دبوس رابط Maps المسجل نفسه، لكن البطاقة تشير إلى «شركة السعد العقارية» على طريق الملك عبدالله، ولا تثبت أنها فرع السسعد رقم 1 في حي الصفاء/طريق الملك فيصل.",
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "تم فتح بطاقة شركة السعد العقارية مباشرة. تطابق الرقم والدبوس الموجود في رابط السجل، لكن اسم الفرع والعنوان الظاهر مختلفان عن وصف مكتب السسعد فرع 1؛ لذلك لم أعتمد هوية الفرع ولم أصحح."
     },
     {
       "id": "national-ejar-office-192755",
@@ -527,19 +563,33 @@
       "decision": "unresolved",
       "checkedAt": "2026-10-12",
       "observed": {
-        "name": null,
-        "category": null,
-        "city": null,
-        "district": null,
-        "pin": null,
-        "publishedPhone": null
+        "name": "مكتب انجاز الخدمات",
+        "category": "وكالة عقارات",
+        "city": "دومة الجندل",
+        "district": "WPGB4581، 4581 الأمير سلطان بن عبد العزيز، حي الفيصلية، دومة الجندل 74632",
+        "pin": {
+          "plusCode": "RV57+RW دومة الجندل السعودية",
+          "lat": null,
+          "lon": null
+        },
+        "publishedPhone": "+966 55 195 3155"
       },
       "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%86%D8%AC%D8%A7%D8%B2%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AF%D9%88%D9%85%D8%A9%20%D8%A7%D9%84%D8%AC%D9%86%D8%AF%D9%84%200590932840",
-      "mapsCardOpened": false,
-      "phoneEvidence": null,
-      "pinEvidence": null,
-      "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "mapsCardOpened": true,
+      "phoneEvidence": "البطاقة المباشرة تعرض +966551953155؛ الرقم المسجل 0590932840 مختلف. يمكن إضافة المنشور مع إبقاء المسجل إلى حين حسمه، دون حذف.",
+      "pinEvidence": "العنوان والرمز البريدي متطابقان، وPlus Code الظاهر RV57+RW؛ لم أتمكن من استخراج lat/lon من URL النهائي، لذلك دبوس الإحداثيات غير محسوم.",
+      "patch": {
+        "phonesAppend": "0551953155",
+        "preserveExistingPhone": "0590932840"
+      },
+      "note": "الاسم والنشاط والعنوان يؤكدان المكتب؛ الرقم المنشور يخالف الرقم المسجل. التصحيح المقترح إضافة الرقم المنشور مع إبقاء المسجل؛ pin يحتاج إحداثيات URL نهائية قبل اعتماد الموقع.",
+      "searchAttempts": [
+        {
+          "query": "مكتب انجاز الخدمات 0590932840 طريق الأمير سلطان دومة الجندل",
+          "surface": "Google Maps",
+          "observation": "بطاقة Maps مباشرة للاسم «مكتب انجاز الخدمات»، النشاط وكالة عقارات، العنوان WPGB4581، 4581 الأمير سلطان بن عبد العزيز، حي الفيصلية، دومة الجندل؛ الهاتف المنشور +966551953155 يختلف عن 0590932840؛ Plus Code RV57+RW. تعذر استخراج URL البطاقة النهائي/lat-lon من واجهة المتصفح."
+        }
+      ]
     },
     {
       "id": "national-yango-office-63716439989",
@@ -626,6 +676,11 @@
           "query": "مؤسسة عبدالله محمد الغامدي للخدمات العقارية بلجرشي",
           "surface": "Google Maps",
           "observation": "محاولة بحث الاسم دون الرقم انتهت بمهلة Page.enable قبل ظهور النتائج."
+        },
+        {
+          "query": "0504270141 أبي محمد عبدالله التاجر السلام بلجرشي",
+          "surface": "Google Maps",
+          "observation": "نتيجة مطابقة جزئية لمدينة بلجرشي فقط عند 19.8648875,41.5812154، دون بطاقة منشأة أو نشاط أو رقم."
         }
       ]
     },
@@ -678,6 +733,11 @@
           "surface": "Google Maps",
           "observation": "ظهرت بطاقتان مختلفتان: مكتب بلجرشي العقاري (شركة إدارة عقارات، هاتف 0177233228، pin 19.861901,41.5642335) وعقار (مبنى سكني، pin 19.8702952,41.5840636). لا تطابق الاسم أو الرقم مع السجل (0534550123). بحث الاسم الدقيق دون رقم انتهى بمهلة.",
           "phoneOnly": "Maps could not find 0534550123."
+        },
+        {
+          "query": "عقار بارك 0534550123 طريق الملك فيصل بلجرشي",
+          "surface": "Google Maps",
+          "observation": "نتيجة جزئية لطريق الملك فيصل عند 19.8598214,41.5627311 فقط؛ لا بطاقة مكتب أو رقم هاتف. لا تطابق مثبت."
         }
       ]
     },
@@ -729,19 +789,53 @@
       "decision": "unresolved",
       "checkedAt": "2026-10-12",
       "observed": {
-        "name": null,
-        "category": null,
-        "city": null,
-        "district": null,
-        "pin": null,
-        "publishedPhone": null
+        "name": "مرشحان مباشران في Google Maps: شرق ابها للخدمات العقارية والتسويق؛ مؤسسة شرق ابها للخدمات العقارية",
+        "category": "الأول: بائع العقارات بالمزاد؛ الثاني: مكتب الشركات",
+        "city": "أبها",
+        "district": "الأول على شارع وهب بن مسرة؛ الثاني عند 4530، 8188؛ لا يطابق الحي المسجل يقينًا",
+        "publishedPhone": [
+          "+966 50 474 6662",
+          "+966 50 474 6662"
+        ],
+        "pin": [
+          {
+            "lat": 18.2180595,
+            "lon": 42.5474015
+          },
+          {
+            "lat": 18.222957,
+            "lon": 42.5539567
+          }
+        ]
       },
-      "mapsCardUrl": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%82%20%D8%A3%D8%A8%D9%87%D8%A7%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200504746662",
-      "mapsCardOpened": false,
-      "phoneEvidence": null,
-      "pinEvidence": null,
+      "mapsCardUrl": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%82%20%D8%A3%D8%A8%D9%87%D8%A7%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200504746662%20%D8%A7%D9%84%D9%85%D9%86%D8%B3%D9%83%20%D8%A3%D8%A8%D9%87%D8%A7",
+      "mapsCardOpened": true,
+      "phoneEvidence": "الرقم المنشور في البطاقتين هو +966504746662، ويطابق الرقم 0504746662 في السجل.",
+      "pinEvidence": "بطاقتان مباشرتان مختلفتان تعرضان الاسم/الرقم نفسه لكن بدبوسين متباعدين بنحو 0.8 كم، وبعناوين/تصنيفين مختلفين؛ لا يمكن تعيين أيهما السجل المستهدف دون دليل إضافي.",
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "تم فتح بطاقتين فعليتين لكل منهما اسم مشابه ورقم مطابق، لكنهما تعرضان دبابيس وعناوين وتصنيفات مختلفة، ولا يكفي ذلك لتحديد موقع المكتب المسجل بدقة. يبقى الموقع غير محسوم؛ لا يوجد تصحيح مقترح.",
+      "candidateCards": [
+        {
+          "name": "شرق ابها للخدمات العقارية والتسويق",
+          "category": "بائع العقارات بالمزاد",
+          "phone": "+966 50 474 6662",
+          "pin": {
+            "lat": 18.2180595,
+            "lon": 42.5474015
+          },
+          "url": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%82+%D8%A7%D8%A8%D9%87%D8%A7+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%88%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%8A%D9%82%E2%80%AD/@18.2180595,42.5474015,17z/data=!3m1!4b1!4m6!3m5!1s0x88f7aee6deaed135:0xb5c4715415f0406c!8m2!3d18.2180595!4d42.5474015!16s%2Fg%2F11mdkf8lvp?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "name": "مؤسسة شرق ابها للخدمات العقارية",
+          "category": "مكتب الشركات",
+          "phone": "+966 50 474 6662",
+          "pin": {
+            "lat": 18.222957,
+            "lon": 42.5539567
+          },
+          "url": "https://www.google.com/maps/place/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B4%D8%B1%D9%82+%D8%A7%D8%A8%D9%87%D8%A7+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15fcabb9fa5839d7:0x87add548fb5ae750!8m2!3d18.222957!4d42.5539567!16s%2Fg%2F11hdw2j2ss!19sChIJ1zlY-rmr_BURUOda-0jVrYc?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1"
+        }
+      ]
     },
     {
       "id": "national-ejar-office-194902",
@@ -771,6 +865,11 @@
           "query": "مؤسسة حسام وجهتك العقارية ينبع",
           "surface": "Google Maps",
           "observation": "محاولة الاسم دون الرقم انتهت بمهلة تحميل Maps قبل عرض بطاقة."
+        },
+        {
+          "query": "0540557744 جعفر ابن أبي طالب النسيم ينبع",
+          "surface": "Google Maps",
+          "observation": "نتيجة جزئية لشارع جعفر بن أبي طالب في ينبع عند 24.0083908,38.1953839 دون بطاقة مكتب أو رقم؛ لا تُثبت هوية أو دبوس المكتب."
         }
       ]
     },
@@ -973,13 +1072,20 @@
       "phoneEvidence": null,
       "pinEvidence": null,
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا.",
+      "searchAttempts": [
+        {
+          "query": "0555361351 طريق الملك عبدالله الروضة بدر المدينة المنورة",
+          "surface": "Google Maps",
+          "observation": "خرائط أعادت نتيجتين جزئيتين لطريق الملك عبدالله/الروضة بدر عند 23.794038,38.7881649 و23.7936747,38.7884545، بلا منشأة عقارية أو رقم هاتف منشور؛ pin الطريق ليس بطاقة مكتب."
+        }
+      ]
     }
   ],
   "verifiedCount": 6,
   "unresolvedCount": 26,
   "partialCount": 0,
-  "openedPlaceCardCount": 14,
+  "openedPlaceCardCount": 17,
   "note": "المعايير تستخدم verified عند مطابقة الاسم والنشاط والرقم المنشور والعنوان؛ غير ذلك يسجل unresolved دون استعمال partial.",
   "additionalSearches": {
     "mapsNameAndPhoneQueries": 2,
@@ -988,7 +1094,8 @@
     "blocker": "Google Maps page protocol timeouts after several loaded tabs.",
     "recordsNoMatchingCard": [
       "national-ejar-office-203088",
-      "national-ejar-office-195389"
+      "national-ejar-office-195389",
+      "national-ejar-office-192117"
     ],
     "mapsNoMatchNumberOnly": [
       "national-ejar-office-192859",
@@ -999,7 +1106,10 @@
     ],
     "newDirectCards": [
       "national-thirdparty-office-duba-0500517062",
-      "national-ejar-office-193976"
+      "national-ejar-office-193976",
+      "entity-eb6a252fffd5",
+      "national-ejar-office-194652",
+      "national-yango-office-176431236509"
     ],
     "confirmedCorrectionCandidates": [
       "national-ejar-office-238771"
