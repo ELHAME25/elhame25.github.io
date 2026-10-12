@@ -3,7 +3,7 @@
   "audit_date": "2026-10-12",
   "repository": "ELHAME25/elhame25.github.io",
   "branch": "fix/scope-counts-nhc-20261010",
-  "observed_head_before_batch": "94366a6eab3731e62e049237c7b15d5bafa0dc8e",
+  "observed_head_before_batch": "e0038331ee0ca95c9aeef7c5ae65862554d69a2e",
   "source_ledger": {
     "path": "riyad-opportunities/MAP_AUDIT_LEDGER_2026-10-10.json",
     "sha": "6a1f1c1cdbc7b085e731b9f49506416868143fb0",
@@ -421,8 +421,9 @@
       },
       "external_data_review": {
         "status": "research_only_no_data_changed",
-        "evidence": "مصدر BSF الرسمي يدرجه بالدمام؛ بروشور المطور الرسمي يحدد السيف ويذكر معالم بالدمام. تعارض جوهري في city يلزم حسمه؛ خرائط لم تفتح.",
-        "source": "https://www.bsf.sa/"
+        "evidence": "مصدر BSF الرسمي يصنف نمو باتيو ضمن الدمام: https://bsf.sa/arabic/personal/finance/home-finance-products/off-plan-product. لكن بروشور المطور الرسمي https://numou-realestate.com/wp-content/uploads/2023/12/Numou-Patio-Profile-2-2.pdf يحدد حي السيف (مخطط سمو الخبر)؛ يوجد تعارض تصنيفي بين البنك والمطور، وهو ليس دليلًا كافيًا لتغيير المدينة إلى الدمام، ولا يثبت دبوسًا. لا تغيير للبيانات قبل فتح Maps وحسم التعارض.",
+        "source": "https://numou-realestate.com/wp-content/uploads/2023/12/Numou-Patio-Profile-2-2.pdf",
+        "city_conflict_source": "https://bsf.sa/arabic/personal/finance/home-finance-products/off-plan-product"
       }
     }
   ],
