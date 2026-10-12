@@ -30,10 +30,14 @@
   "merge": false,
   "publish": false,
   "qa": {
-    "status": "pending",
-    "target": "full repository QA and desktop/mobile review"
+    "status": "passed",
+    "target": "full repository QA plus desktop/mobile browser checks",
+    "workflowRunId": 38292085382,
+    "workflowRunUrl": "https://github.com/ELHAME25/elhame25.github.io/actions/runs/38292085382",
+    "testedCommit": "7bbaf261ed83d2456b07973ba9ee46768de34225",
+    "completedAt": "2026-10-12T18:40:11Z"
   },
-  "latestBranchHead": "d0fb0f522b0cdde709ce2791db16a31e12462e22",
+  "latestBranchHead": "7bbaf261ed83d2456b07973ba9ee46768de34225",
   "countBasis": "1111 baseline individual outcomes plus 413 unique candidate IDs with saved Google Maps decisions; unresolved findings are recorded individually without unsupported assumptions.",
   "recordsWithSavedIndividualOutcome": 1524,
   "recordsWithoutSavedIndividualOutcome": 0,
