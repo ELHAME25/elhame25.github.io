@@ -2,10 +2,10 @@
   "schema": "office-maps-unreviewed-candidates-v1",
   "generatedAt": "2026-10-12",
   "branch": "fix/scope-counts-nhc-20261010",
-  "sourceHead": "2920c675ed40ee7077fb3a31d76ab7113fabbedc",
+  "sourceHead": "f11837af6850a64efce032fd881bad0ea82b258b",
   "inventory": 1524,
-  "explicitOutcomesCount": 124,
-  "withoutRecordedIndividualOutcome": 289,
+  "explicitOutcomesCount": 151,
+  "withoutRecordedIndividualOutcome": 262,
   "method": "Rows are IDs not found with an explicit status field across committed OFFICE audit checkpoints/ledgers at sourceHead. These are candidates for individual Maps audit; do not infer correct or incorrect from absence.",
   "regionalCounts": {
     "riyadh": {
@@ -15,8 +15,8 @@
     },
     "west": {
       "total": 74,
-      "decisionRecorded": 23,
-      "remainingWithoutDecision": 51
+      "decisionRecorded": 27,
+      "remainingWithoutDecision": 47
     },
     "east": {
       "total": 40,
@@ -25,13 +25,13 @@
     },
     "north": {
       "total": 49,
-      "decisionRecorded": 15,
-      "remainingWithoutDecision": 34
+      "decisionRecorded": 23,
+      "remainingWithoutDecision": 26
     },
     "southCentral": {
       "total": 243,
-      "decisionRecorded": 39,
-      "remainingWithoutDecision": 204
+      "decisionRecorded": 54,
+      "remainingWithoutDecision": 189
     }
   },
   "assignments": {
@@ -450,7 +450,7 @@
         "phones": [
           "0555000212"
         ],
-        "status": "pending"
+        "status": "partial_name_pin_mismatch_phone_unverified"
       },
       {
         "id": "national-ejar-office-192308",
@@ -459,7 +459,7 @@
         "phones": [
           "0503341020"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_location_phone_unlisted"
       },
       {
         "id": "national-ejar-office-238771",
@@ -468,7 +468,7 @@
         "phones": [
           "0534306337"
         ],
-        "status": "pending"
+        "status": "partial_pin_mismatch_phone_unverified"
       },
       {
         "id": "national-ejar-office-199494",
@@ -486,7 +486,7 @@
         "phones": [
           "0501861446"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_pin"
       },
       {
         "id": "national-yango-office-27617025406",
@@ -1402,7 +1402,7 @@
         "phones": [
           "0558915172"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_location_phone_unreadable"
       },
       {
         "id": "national-thirdparty-office-cid14226381716455478133",
@@ -1411,7 +1411,7 @@
         "phones": [
           "0534055549"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "national-secondary-office-haql-nebras-zain-0552258546",
@@ -1420,7 +1420,7 @@
         "phones": [
           "0552258546"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_location_phone_unreadable"
       },
       {
         "id": "national-web-office-ChIJUQd_HWQObBURbztnfApsK64",
@@ -1429,7 +1429,7 @@
         "phones": [
           "0593760016"
         ],
-        "status": "pending"
+        "status": "unresolved_no_matching_card"
       },
       {
         "id": "national-icuae-office-ChIJAQAAANMNbBUR-rxK4W0_xVA",
@@ -1438,7 +1438,7 @@
         "phones": [
           "0507167771"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_conflict_preserved"
       },
       {
         "id": "national-icuae-office-ChIJfxMOyAYNbBURE-j-RGhcVB8",
@@ -1456,7 +1456,7 @@
         "phones": [
           "0146610216"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_conflict_preserved"
       },
       {
         "id": "national-icuae-office-ChIJSWbRYH0PbBURSYSrGNF2Ux8",
@@ -1465,7 +1465,7 @@
         "phones": [
           "0536396020"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_location_phone_unreadable"
       },
       {
         "id": "national-icuae-office-ChIJm5s9NXwPbBUR-4Wm3fcn_t8",
@@ -1474,7 +1474,7 @@
         "phones": [
           "0503367797"
         ],
-        "status": "pending"
+        "status": "unresolved_name_location_conflict"
       },
       {
         "id": "national-icuae-office-ChIJ1678zAwPbBURC7hJh2lNCAU",
@@ -1972,7 +1972,7 @@
         "phones": [
           "0505900321"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-7e33a040cdc6",
@@ -1981,7 +1981,7 @@
         "phones": [
           "0163618000"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-e9e87e9b7878",
@@ -1990,7 +1990,7 @@
         "phones": [
           "0545406040"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-554de9ec5d8f",
@@ -1999,7 +1999,7 @@
         "phones": [
           "0500580333"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_pin"
       },
       {
         "id": "office-maps-1e8c36d9efdb",
@@ -2008,7 +2008,7 @@
         "phones": [
           "0163640155"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-9e6565b1287a",
@@ -2017,7 +2017,7 @@
         "phones": [
           "0537153507"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-d07625c2a6db",
@@ -2027,7 +2027,7 @@
           "0582572276",
           "0595150303"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_partial_match"
       },
       {
         "id": "office-maps-43dd5f4705ba",
@@ -2036,7 +2036,7 @@
         "phones": [
           "0555070005"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-9677a40382b5",
@@ -2045,7 +2045,7 @@
         "phones": [
           "0558823444"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-4cbd7f76a5d4",
@@ -2054,7 +2054,7 @@
         "phones": [
           "0533911155"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-0566b09196c8",
@@ -2063,7 +2063,7 @@
         "phones": [
           "0533182255"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-dfed5f0a3f20",
@@ -2072,7 +2072,7 @@
         "phones": [
           "0504205100"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_pin"
       },
       {
         "id": "office-maps-ab7241fd2e3a",
@@ -2081,7 +2081,7 @@
         "phones": [
           "0505326619"
         ],
-        "status": "pending"
+        "status": "verified_name_phone_location_activity_ambiguous"
       },
       {
         "id": "office-maps-5ac162939487",
@@ -2090,7 +2090,7 @@
         "phones": [
           "0163392555"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-4684bdde238f",
@@ -2099,7 +2099,7 @@
         "phones": [
           "0505137544"
         ],
-        "status": "pending"
+        "status": "verified_name_phone_location_activity_ambiguous"
       },
       {
         "id": "office-maps-00dae62bcf94",
@@ -3758,5 +3758,5 @@
       }
     ]
   },
-  "note": "Statuses reconciled against mapsAudit for unique candidate IDs in committed data; unresolved findings count as individual decisions, pending entries have no saved decision."
+  "note": "Statuses reconciled against mapsAudit for unique candidate IDs in committed data; unresolved findings count as individual decisions."
 }
