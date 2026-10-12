@@ -1,0 +1,99 @@
+{
+  "schema": "maps-audit-addendum-v1",
+  "audit_date": "2026-10-12",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "saved_at_head_before_addendum": "bd6984498ee184a8c30490d3900ca5b38c086637",
+  "source_checkpoint": {
+    "ledger_path": "riyad-opportunities/MAP_AUDIT_LEDGER_2026-10-10.json",
+    "cumulative_counts_read_from_current_branch_ledger": {
+      "as_of_commit": "1ba2e31cf29bb5d3aee10d7b83b19ff46fe33c6f",
+      "map_targets": 4059,
+      "opened_unique": 307,
+      "verified_correct": 124,
+      "corrected_and_retested": 35,
+      "unresolved_after_open": 183,
+      "not_opened": 3752
+    },
+    "note": "The current ledger exceeded the GitHub file-fetch payload limit during this session; this immutable addendum records new evidence without replacing the existing ledger or its later contents."
+  },
+  "records": [
+    {
+      "record_id": "sb-b59040d5c2",
+      "category": "selfbuild",
+      "name": "مخطط مسرة الطائف",
+      "city": "الطائف",
+      "locality": "غرب الطائف",
+      "previous_maps_state": "UI-generated search by record name and city; no stored place pin.",
+      "opened_target": "https://www.google.com/maps/search/%D9%85%D8%AE%D8%B7%D8%B7%20%D9%85%D8%B3%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+      "map_check": {
+        "opened": true,
+        "matched": true,
+        "verified_correct": true,
+        "direct_pin_saved": "https://www.google.com/maps/place/%D9%85%D8%AE%D8%B7%D8%B7+%D9%85%D8%B3%D8%B1%D8%A9+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81+-+%D8%A7%D9%84%D8%B2%D8%A7%D9%85%D9%84%D9%8A%D8%A9+%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x15e98bbed2f4996d:0xafc06599b4a96a47!8m2!3d21.3088075!4d40.3663116!16s%2Fg%2F11zd5zjzb0!19sChIJbZn00r6L6RURR2qptJllwK8",
+        "post_edit_reopened": true,
+        "observed_card": {
+          "name": "مخطط مسرة الطائف - الزاملية للاستثمار",
+          "category": "مطوّر عقارات",
+          "address": "طريق الهدا، مسرة 2، الطائف 26713، المملكة العربية السعودية",
+          "coordinates": [
+            21.3088075,
+            40.3663116
+          ],
+          "plus_code": "8958+GG الطائف السعودية",
+          "phone": "+966 9200 31404",
+          "website_host": "alzamiliah.com"
+        },
+        "official_project_source": "https://alzamiliah.com/ar",
+        "official_project_detail": "https://alzamiliah.com/ar/projects/13",
+        "official_map_url": "https://maps.app.goo.gl/LNNrfPa2DcAyTX8q7",
+        "official_map_coordinates": [
+          21.309112,
+          40.366379
+        ],
+        "distance_meters_to_named_maps_card": 34,
+        "evidence": "الموقع الرسمي يعرض مخطط مسرة الطائف كمتاح للبيع، ورابط العنوان الرسمي يحدد موقعًا يبعد قرابة 34 مترًا عن بطاقة Google المسماة للمشروع والمطور. تم حفظ دبوس بطاقة المشروع نفسه ثم فتح الرابط بعد الحفظ؛ ظهرت البطاقة بالاسم والعنوان والهاتف والموقع الرسمي."
+      },
+      "field_checks": {
+        "phone": {
+          "status": "verified_on_named_google_maps_card_and_official_developer_contact",
+          "value": "920031404",
+          "sources": [
+            "https://www.google.com/maps/",
+            "https://alzamiliah.com/ar"
+          ],
+          "note": "اتصال المطور المرتبط ببطاقة المخطط؛ لم يُجرِ اتصالًا صوتيًا."
+        },
+        "website": {
+          "status": "official_project_page_found_and_opened_from_official_project_listing",
+          "value": "https://alzamiliah.com/ar/projects/13",
+          "source": "https://alzamiliah.com/ar",
+          "note": "احتُفظ برابط سكني الحالي في url؛ أضيف web لرابط صفحة المطور بالمخطط."
+        },
+        "whatsapp": {
+          "status": "official_link_observed_but_destination_not_tested",
+          "candidate": "https://api.whatsapp.com/send/?app_absent=0&phone=966920031404&text=&type=phone_number",
+          "source": "https://alzamiliah.com/ar",
+          "note": "وجهة واتساب الرسمية ظهرت عند تتبع رابط الموقع، لكن خدمة البحث أعادت ServerError والمتصفح منع فتح الرابط؛ لذلك لم تُضف wa إلى سجل العرض."
+        }
+      },
+      "data_changes": [
+        "maps",
+        "phones",
+        "web"
+      ],
+      "wrong_link_repaired": false,
+      "correction_counted_as_wrong_link_repair": false,
+      "direct_map_verification_counted": true
+    }
+  ],
+  "cumulative_map_counts_after_this_addendum": {
+    "map_targets": 4059,
+    "opened_unique": 308,
+    "verified_correct": 125,
+    "corrected_and_retested": 35,
+    "unresolved_after_open": 183,
+    "not_opened": 3751
+  },
+  "field_counting_rule": "Map, phone, WhatsApp, and website outcomes are separate; unresolved WhatsApp is not counted as verified. The map target was previously unopened, so one unique target moves from not_opened to opened/verified. No already-verified IDs are counted again."
+}
