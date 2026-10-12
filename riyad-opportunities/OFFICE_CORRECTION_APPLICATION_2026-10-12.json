@@ -1,58 +1,5728 @@
 {
-  "schema": "office-correction-application-v1",
+  "schema": "office-correction-application-v2",
   "date": "2026-10-12",
   "repository": "ELHAME25/elhame25.github.io",
   "branch": "fix/scope-counts-nhc-20261010",
-  "commit": "1fee9130e4200a76d4eb9658789bd06a922bada4",
-  "sourceAuditBranch": "audit/offices-maps-20261012",
-  "sourceAuditHead": "18e916451d643eccfac338d5cff4e91a0214c628",
+  "sourceHead": "c4d5751aff8c89426f5b98a21330f91714a744d5",
+  "sourcePackage": "OFFICE_CORRECTIONS_PENDING_2026-10-12.json (local restored audit package)",
+  "policy": {
+    "phones": "Preserve prior phone unless proven invalid; add the current Google Maps phone.",
+    "duplicates": "Archive the complete duplicate snapshot, then remove only the duplicate active row.",
+    "closed": "Archive permanently closed offices; retain temporarily closed offices with an explicit status.",
+    "nonRealEstate": "Archive and remove records whose live Google Maps activity is proven non-real-estate.",
+    "qadisiyah": "No Qadisiyah record may be changed."
+  },
   "validation": {
+    "packageOperations": 80,
+    "applied": 67,
+    "archivedAndHidden": 13,
+    "alreadyAppliedOrNoDataChange": 0,
+    "skippedPreconditionConflict": 0,
     "recordsBefore": 1524,
     "recordsAfter": 1524,
     "uniqueIdsBefore": 1524,
     "uniqueIdsAfter": 1524,
-    "qadisiyahRecordsBefore": 2,
-    "qadisiyahRecordsAfter": 2,
-    "deletedRecords": 0
+    "qadisiyahProtectedIds": [
+      "prior-qadisiyya-21",
+      "prior-qadisiyya-23",
+      "prior-qadisiyya-26",
+      "prior-qadisiyya-69",
+      "prior-qadisiyya-70",
+      "prior-qadisiyya-71",
+      "prior-qadisiyya-72",
+      "prior-qadisiyya-73",
+      "prior-qadisiyya-74",
+      "prior-qadisiyya-75",
+      "prior-qadisiyya-76",
+      "prior-qadisiyya-77",
+      "prior-qadisiyya-78",
+      "prior-qadisiyya-79",
+      "phase6-office-fb14f228a325",
+      "phase6-office-943040fee3e3",
+      "national-ejar-office-215963",
+      "national-ejar-office-195081",
+      "national-ejar-office-192765",
+      "national-google-office-ChIJcYN2PAABKz4RWoPMLHdzJB4",
+      "national-web-office-ChIJ83LlmEYAKz4RNlwPtofcf0k",
+      "national-icuae-office-ChIJ6Ss_roc5ghUR14ShOI631yw"
+    ],
+    "qadisiyahUnchanged": true
   },
+  "archivedRecords": [
+    {
+      "id": "national-icuae-office-ChIJCV_itnz1BxYR247nAn0D8h0",
+      "archiveReason": "non_real_estate",
+      "canonicalId": null,
+      "evidence": "direct Maps card shows a construction company rather than a real-estate office; preserve old phone in audit",
+      "archivedRecord": {
+        "id": "national-icuae-office-ChIJCV_itnz1BxYR247nAn0D8h0",
+        "n": "شركة أربى العالمية",
+        "city": "أبو عريش",
+        "nb": "An Nahdah – GMJD2840، 2840 طريق الملك فهد، 6090، حي الزهور – Abu Arish 84415 – Saudi Arabia",
+        "phones": [
+          "0590732110"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJCV_itnz1BxYR247nAn0D8h0",
+        "lat": 16.98427,
+        "lon": 42.83524,
+        "sec": "",
+        "loc": "nb"
+      }
+    },
+    {
+      "id": "entity-ede39ec11bd6",
+      "archiveReason": "duplicate_record",
+      "canonicalId": "office-maps-f01a9b89d0ce",
+      "evidence": "same business title, phone 920031858 and direct Google Maps card; canonical office-maps record contains the place reference and pin",
+      "archivedRecord": {
+        "id": "entity-ede39ec11bd6",
+        "n": "جازان وطن للخدمات العقارية",
+        "city": "جازان",
+        "nb": "السويس",
+        "phones": [
+          "920031858"
+        ],
+        "web": "https://jazwtn.sa/%D8%A7%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7/",
+        "maps": "",
+        "lat": 16.86227,
+        "lon": 42.59703,
+        "sec": "",
+        "loc": "nb",
+        "mapsQ": "جازان وطن للخدمات العقارية جازان السويس"
+      }
+    },
+    {
+      "id": "entity-eb6a252fffd5",
+      "archiveReason": "duplicate_record",
+      "canonicalId": "office-maps-ed93a354e226",
+      "evidence": "same business title, phone 0504746662, Place ID ChIJ1zlY-rmr_BURUOda-0jVrYc and pin 18.222957,42.5539567; canonical office-maps record contains Maps reference and coordinates",
+      "archivedRecord": {
+        "id": "entity-eb6a252fffd5",
+        "n": "شرق أبها للخدمات العقارية",
+        "city": "أبها",
+        "nb": "المنسك",
+        "phones": [
+          "0504746662"
+        ],
+        "web": "https://eastabha.sa/contact-us/",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "mapsQ": "شرق أبها للخدمات العقارية أبها المنسك"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJf3CLQkr-ST4R8nDrFtlIAhs",
+      "archiveReason": "duplicate_record",
+      "canonicalId": "national-bizmideast-office-7103830080288565090",
+      "evidence": "stored Place ID resolves to the same current card, phone and pin as شركة أساس الذهب للتطوير والاستثمار العقاري; do not retain it as a second office",
+      "archivedRecord": {
+        "id": "national-icuae-office-ChIJf3CLQkr-ST4R8nDrFtlIAhs",
+        "n": "Gold based Contracting and Real Estate Investment Group",
+        "city": "سيهات",
+        "nb": "F2RQ+7F2 – King Abdulaziz Rd – Al Khisab – Saihat 32452, Saudi Arabia",
+        "phones": [
+          "0549885511"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJf3CLQkr-ST4R8nDrFtlIAhs",
+        "lat": 26.49064,
+        "lon": 50.03864,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-ejar-office-250685",
+      "archiveReason": "non_real_estate",
+      "canonicalId": null,
+      "evidence": "direct Maps card with the same phone identifies the current business as an internet cafe rather than a real-estate office; retain prior identity in the audit trail",
+      "archivedRecord": {
+        "id": "national-ejar-office-250685",
+        "n": "مكتب درك للخدمات العامة والوساطة العقارية",
+        "city": "حقل",
+        "nb": "",
+        "phones": [
+          "0550724756"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=8867550915794963816",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "national-ejar-office-298109",
+      "archiveReason": "permanently_closed",
+      "canonicalId": null,
+      "evidence": "direct Maps card at matching coordinates marks the office permanently closed; preserve prior phone and record history",
+      "archivedRecord": {
+        "id": "national-ejar-office-298109",
+        "n": "مكتب الاختيار الرائد العقاري",
+        "city": "دومة الجندل",
+        "nb": "الملك عبدالله، العزيزية، دومة الجندل، الجوف، المملكة العربية السعودية",
+        "phones": [
+          "0596666176"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.806379239958,39.864630385834",
+        "lat": 29.80638,
+        "lon": 39.86463,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJW7yBbGENbBURDLNt3tfziaY",
+      "archiveReason": "permanently_closed",
+      "canonicalId": null,
+      "evidence": "direct Maps card displays the current phone and marks the office permanently closed; preserve prior phone and audit history",
+      "archivedRecord": {
+        "id": "national-icuae-office-ChIJW7yBbGENbBURDLNt3tfziaY",
+        "n": "مكتب نخبة الخيمة العقاري",
+        "city": "عرعر",
+        "nb": "بجانب الثلاجة العالمية – Almatar – Arar 73312 – Saudi Arabia",
+        "phones": [
+          "0500042852"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJW7yBbGENbBURDLNt3tfziaY",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJsSwh3_YPbBURhWCKuUlSYLw",
+      "archiveReason": "permanently_closed",
+      "canonicalId": null,
+      "evidence": "direct Maps card with matching name and phone 0502583421 marks the office permanently closed; archive or disable without deleting history",
+      "archivedRecord": {
+        "id": "national-icuae-office-ChIJsSwh3_YPbBURhWCKuUlSYLw",
+        "n": "مكتب طلال العقاري",
+        "city": "عرعر",
+        "nb": "2335+8JV – شارع الاربعين – Arar 73244 – Saudi Arabia",
+        "phones": [
+          "0502583421"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJsSwh3_YPbBURhWCKuUlSYLw",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJ06M8kH0PbBURHXBtJf-Sr-g",
+      "archiveReason": "permanently_closed",
+      "canonicalId": null,
+      "evidence": "direct Maps card with matching name and phone 0501203722 marks the office permanently closed; archive or disable without deleting history",
+      "archivedRecord": {
+        "id": "national-icuae-office-ChIJ06M8kH0PbBURHXBtJf-Sr-g",
+        "n": "مكتب عقاري درة العلياء",
+        "city": "عرعر",
+        "nb": "234G+7GP – حي المروج – Arar 73247 – Saudi Arabia",
+        "phones": [
+          "0501203722"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ06M8kH0PbBURHXBtJf-Sr-g",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJBz9Ad7QPbBURrepRTd6pr2s",
+      "archiveReason": "permanently_closed",
+      "canonicalId": null,
+      "evidence": "direct Maps card with matching name and phone 0594041451 marks the office permanently closed; archive or disable without deleting history",
+      "archivedRecord": {
+        "id": "national-icuae-office-ChIJBz9Ad7QPbBURrepRTd6pr2s",
+        "n": "مكتب منسوب العقاري",
+        "city": "عرعر",
+        "nb": "Arar 73244 – Saudi Arabia –  –",
+        "phones": [
+          "0594041451"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJBz9Ad7QPbBURrepRTd6pr2s",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "entity-f92d70951d09",
+      "archiveReason": "duplicate_record",
+      "canonicalId": "office-maps-69fc316f4c01",
+      "evidence": "same live title, phone 0558191926, coordinates and Place ID ChIJh7oQ6QJF7xURSApn68_CQFE as the existing canonical Maps record; preserve the prior phone 0555775450 in the duplicate audit snapshot",
+      "archivedRecord": {
+        "id": "entity-f92d70951d09",
+        "n": "مكتب عقار الباحة",
+        "city": "الباحة",
+        "nb": "",
+        "phones": [
+          "0555775450"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "mapsQ": "مكتب عقار الباحة الباحة"
+      }
+    },
+    {
+      "id": "national-ejar-office-194958",
+      "archiveReason": "duplicate_record",
+      "canonicalId": "office-maps-7749c06a6df9",
+      "evidence": "same live title, phone 0599901456, coordinates and Place ID ChIJNXZZj4hF7xURROfdhPq4-gQ as the existing canonical Maps record; preserve the prior phone 0509950527 in the duplicate audit snapshot",
+      "archivedRecord": {
+        "id": "national-ejar-office-194958",
+        "n": "مؤسسة وسيط الباحه للعقارات",
+        "city": "الباحة",
+        "nb": "طريق الملك فهد، السوق، الباحة، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0509950527"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=20.01681461,41.47134433",
+        "lat": 20.01682,
+        "lon": 41.47134,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-yango-office-227054884773",
+      "archiveReason": "duplicate_record",
+      "canonicalId": "national-google-office-ChIJx2GTBggr8BURwc2oWfqJtAU",
+      "evidence": "the same phone 0534200412, district and nearby pin resolve to the canonical current card مكتب جبال المتن للخدمات العقارية at 20.0110105,42.6179318; preserve the old title and snapshot rather than creating a second office",
+      "archivedRecord": {
+        "id": "national-yango-office-227054884773",
+        "n": "مكتب أصول الشارقة للعقار",
+        "city": "بيشة",
+        "nb": "عسير, بيشة, حي الخزامى",
+        "phones": [
+          "0534200412"
+        ],
+        "web": "",
+        "maps": "https://maps.yango.com/ar-sa/org/227054884773/?lang=ar",
+        "lat": 20.01468,
+        "lon": 42.61744,
+        "sec": "",
+        "loc": "nb"
+      }
+    }
+  ],
   "changes": [
+    {
+      "id": "gap-office-cb782422f5",
+      "name": "شركة نقش للاستثمار",
+      "city": "الرياض",
+      "field": "activity_address_phones_coordinates",
+      "before": {
+        "phones": [
+          "0551990160"
+        ],
+        "nb": "الياسمين، شارع الإمام سعود بن فيصل، الياسمين، الرياض"
+      },
+      "after": {
+        "phones": [
+          "0551990160",
+          "0550500613"
+        ],
+        "nb": "طريق الثمامة الفرعي، الياسمين، الرياض 13322",
+        "coordinates": [
+          24.8071686,
+          46.661853
+        ],
+        "activity": "شركة استثمار",
+        "section": "review_reclassification_out_of_real_estate_offices"
+      },
+      "reason": "direct Google Maps card confirms current phone/address/pin and classifies the entity as an investment company; preserve prior phone",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0551990160"
+            ],
+            "expected": [
+              "0551990160"
+            ],
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "nb",
+            "actual": "الياسمين، شارع الإمام سعود بن فيصل، الياسمين، الرياض",
+            "expected": "الياسمين، شارع الإمام سعود بن فيصل، الياسمين، الرياض",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "gap-office-cb782422f5",
+        "n": "شركة نقش للاستثمار",
+        "city": "الرياض",
+        "nb": "الياسمين، شارع الإمام سعود بن فيصل، الياسمين، الرياض",
+        "phones": [
+          "0551990160"
+        ],
+        "web": "https://www.ejar.sa/en/node/285672",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%86%D9%82%D8%B4%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "lat": 24.82287,
+        "lon": 46.64378,
+        "sec": "شمال",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "gap-office-cb782422f5",
+        "n": "شركة نقش للاستثمار",
+        "city": "الرياض",
+        "nb": "طريق الثمامة الفرعي، الياسمين، الرياض 13322",
+        "phones": [
+          "0551990160",
+          "0550500613"
+        ],
+        "web": "https://www.ejar.sa/en/node/285672",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%86%D9%82%D8%B4%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "lat": 24.8071686,
+        "lon": 46.661853,
+        "sec": "شمال",
+        "loc": "pt",
+        "activity": "شركة استثمار",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-bizmideast-office-15854713440579158181",
+      "name": "مكتب القدس العقاري",
+      "city": "عرعر",
+      "field": "phones",
+      "before": [
+        "0556603390"
+      ],
+      "after": [
+        "0556603390",
+        "0547029338"
+      ],
+      "reason": "direct Maps card displays 0547029338; preserve prior phone because it is not proven invalid",
+      "mapsCid": "15854713440579158181",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0556603390"
+            ],
+            "expected": [
+              "0556603390"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-bizmideast-office-15854713440579158181",
+        "n": "مكتب القدس العقاري",
+        "city": "عرعر",
+        "nb": "شارع القدس, Arar 73244, Saudi Arabia",
+        "phones": [
+          "0556603390"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=15854713440579158181",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "national-bizmideast-office-15854713440579158181",
+        "n": "مكتب القدس العقاري",
+        "city": "عرعر",
+        "nb": "شارع القدس, Arar 73244, Saudi Arabia",
+        "phones": [
+          "0556603390",
+          "0547029338"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=15854713440579158181",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "phase5-google-office-f1a3fd53d8b5",
+      "name": "مكتب بن بشر للعقار",
+      "city": "جدة",
+      "field": "nb",
+      "before": "",
+      "after": "الفيحاء، جدة 22246",
+      "reason": "direct Google Maps place card supplies the previously missing address; activity and phone 0563222177 match",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "nb",
+            "actual": "",
+            "expected": "",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "phase5-google-office-f1a3fd53d8b5",
+        "n": "مكتب بن بشر للعقار",
+        "city": "جدة",
+        "nb": "",
+        "phones": [
+          "0563222177"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D9%86%20%D8%A8%D8%B4%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%AC%D8%AF%D8%A9&query_place_id=ChIJR7RDoGLOwxUR-hVDTKyLkyk",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "phase5-google-office-f1a3fd53d8b5",
+        "n": "مكتب بن بشر للعقار",
+        "city": "جدة",
+        "nb": "الفيحاء، جدة 22246",
+        "phones": [
+          "0563222177"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D9%86%20%D8%A8%D8%B4%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%AC%D8%AF%D8%A9&query_place_id=ChIJR7RDoGLOwxUR-hVDTKyLkyk",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "phase5-google-office-f676ce975d57",
+      "name": "مكتب الجدعاني للعقار",
+      "city": "جدة",
+      "field": "nb",
+      "before": "",
+      "after": "4661 منصور السطوحي، الفيصلية، جدة 23444",
+      "reason": "direct Google Maps place card supplies the previously missing address; phone 0559522660 matches",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "nb",
+            "actual": "",
+            "expected": "",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "phase5-google-office-f676ce975d57",
+        "n": "مكتب الجدعاني للعقار",
+        "city": "جدة",
+        "nb": "",
+        "phones": [
+          "0559522660"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AC%D8%AF%D8%B9%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%AC%D8%AF%D8%A9&query_place_id=ChIJpZ7H30vQwxURpm-o6T6W_Sg",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "phase5-google-office-f676ce975d57",
+        "n": "مكتب الجدعاني للعقار",
+        "city": "جدة",
+        "nb": "4661 منصور السطوحي، الفيصلية، جدة 23444",
+        "phones": [
+          "0559522660"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AC%D8%AF%D8%B9%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%AC%D8%AF%D8%A9&query_place_id=ChIJpZ7H30vQwxURpm-o6T6W_Sg",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "phase5-google-office-58daff9c6a8a",
+      "name": "مكتب ابوعبدالله للعقار",
+      "city": "جدة",
+      "field": "nb",
+      "before": "",
+      "after": "6342 التوبه، حي الشرفية، جدة 23216 2990",
+      "reason": "direct Google Maps place card supplies the previously missing address; phone 0551787810 matches",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "nb",
+            "actual": "",
+            "expected": "",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "phase5-google-office-58daff9c6a8a",
+        "n": "مكتب ابوعبدالله للعقار",
+        "city": "جدة",
+        "nb": "",
+        "phones": [
+          "0551787810"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%A8%D9%88%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%AC%D8%AF%D8%A9&query_place_id=ChIJdZarJ1TPwxURrRVxU5SZos4",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "phase5-google-office-58daff9c6a8a",
+        "n": "مكتب ابوعبدالله للعقار",
+        "city": "جدة",
+        "nb": "6342 التوبه، حي الشرفية، جدة 23216 2990",
+        "phones": [
+          "0551787810"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%A8%D9%88%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%AC%D8%AF%D8%A9&query_place_id=ChIJdZarJ1TPwxURrRVxU5SZos4",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "entity-96716f5db346",
+      "name": "مكتب روافد نخبة المنار للخدمات العقارية",
+      "city": "بيش",
+      "field": "name_and_phones",
+      "before": {
+        "phones": [
+          "0554446255"
+        ]
+      },
+      "after": {
+        "name": "مكتب روافد نخبة المنار للخدمات العقارية",
+        "phones": [
+          "0554446255",
+          "0557833331"
+        ]
+      },
+      "reason": "direct Maps card confirms current expanded title and 0557833331; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0554446255"
+            ],
+            "expected": [
+              "0554446255"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "entity-96716f5db346",
+        "n": "روافد نخبة المنار",
+        "city": "بيش",
+        "nb": "الثلاثين، بيش 87311",
+        "phones": [
+          "0554446255"
+        ],
+        "web": "https://ralmanar.com/",
+        "maps": "https://www.google.com/maps/place/مكتب+روافد+نخبة+المنار+للخدمات+العقارية%E2%80%AD/@17.3783809,42.5347065,1066m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e2cbde9f6f7b8f:0x580b61624ec062a4!8m2!3d17.3783809!4d42.5347065!16s%2Fg%2F11z7g9t_k2",
+        "lat": 17.3783809,
+        "lon": 42.5347065,
+        "sec": "",
+        "loc": "pt",
+        "mapsQ": "روافد نخبة المنار بيش الثلاثين، بيش 87311"
+      },
+      "afterRecord": {
+        "id": "entity-96716f5db346",
+        "n": "مكتب روافد نخبة المنار للخدمات العقارية",
+        "city": "بيش",
+        "nb": "الثلاثين، بيش 87311",
+        "phones": [
+          "0554446255",
+          "0557833331"
+        ],
+        "web": "https://ralmanar.com/",
+        "maps": "https://www.google.com/maps/place/مكتب+روافد+نخبة+المنار+للخدمات+العقارية%E2%80%AD/@17.3783809,42.5347065,1066m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e2cbde9f6f7b8f:0x580b61624ec062a4!8m2!3d17.3783809!4d42.5347065!16s%2Fg%2F11z7g9t_k2",
+        "lat": 17.3783809,
+        "lon": 42.5347065,
+        "sec": "",
+        "loc": "pt",
+        "mapsQ": "روافد نخبة المنار بيش الثلاثين، بيش 87311"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJCV_itnz1BxYR247nAn0D8h0",
+      "name": "شركة أربى العالمية",
+      "city": "أبو عريش",
+      "field": "name_activity_phone_coordinates",
+      "before": {
+        "name": "شركة أربى العالمية",
+        "phone": "0590732110",
+        "coordinates": [
+          16.98427,
+          42.83524
+        ],
+        "section": "offices"
+      },
+      "after": {
+        "name": "شركة أربى العالمية للمقاولات العامة",
+        "phones": [
+          "0590732110",
+          "0533111604"
+        ],
+        "coordinates": [
+          16.9801298,
+          42.8299733
+        ],
+        "activity": "شركة إنشاء",
+        "section": "non-real-estate/reclassify"
+      },
+      "distanceKm": 0.725,
+      "reason": "direct Maps card shows a construction company rather than a real-estate office; preserve old phone in audit",
+      "result": "archived_and_hidden_from_active_offices",
+      "precondition": {
+        "status": "compatible",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "شركة أربى العالمية",
+            "expected": "شركة أربى العالمية",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "coordinates",
+            "actual": [
+              16.98427,
+              42.83524
+            ],
+            "expected": [
+              16.98427,
+              42.83524
+            ],
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "section",
+            "actual": "(implicit/not previously stored)",
+            "expected": "offices",
+            "exact": false,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJCV_itnz1BxYR247nAn0D8h0",
+        "n": "شركة أربى العالمية",
+        "city": "أبو عريش",
+        "nb": "An Nahdah – GMJD2840، 2840 طريق الملك فهد، 6090، حي الزهور – Abu Arish 84415 – Saudi Arabia",
+        "phones": [
+          "0590732110"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJCV_itnz1BxYR247nAn0D8h0",
+        "lat": 16.98427,
+        "lon": 42.83524,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJCV_itnz1BxYR247nAn0D8h0",
+        "n": "شركة أربى العالمية للمقاولات العامة",
+        "city": "أبو عريش",
+        "nb": "An Nahdah – GMJD2840، 2840 طريق الملك فهد، 6090، حي الزهور – Abu Arish 84415 – Saudi Arabia",
+        "phones": [
+          "0590732110",
+          "0533111604"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJCV_itnz1BxYR247nAn0D8h0",
+        "lat": 16.9801298,
+        "lon": 42.8299733,
+        "sec": "",
+        "loc": "pt",
+        "activity": "شركة إنشاء",
+        "activitySource": "Google Maps",
+        "activityReviewStatus": "non_real_estate",
+        "archiveReason": "direct Maps card shows a construction company rather than a real-estate office; preserve old phone in audit"
+      },
+      "archive": {
+        "id": "national-icuae-office-ChIJCV_itnz1BxYR247nAn0D8h0",
+        "archiveReason": "non_real_estate",
+        "canonicalId": null,
+        "evidence": "direct Maps card shows a construction company rather than a real-estate office; preserve old phone in audit",
+        "archivedRecord": {
+          "id": "national-icuae-office-ChIJCV_itnz1BxYR247nAn0D8h0",
+          "n": "شركة أربى العالمية",
+          "city": "أبو عريش",
+          "nb": "An Nahdah – GMJD2840، 2840 طريق الملك فهد، 6090، حي الزهور – Abu Arish 84415 – Saudi Arabia",
+          "phones": [
+            "0590732110"
+          ],
+          "web": "",
+          "maps": "https://www.google.com/maps/place/?q=place_id:ChIJCV_itnz1BxYR247nAn0D8h0",
+          "lat": 16.98427,
+          "lon": 42.83524,
+          "sec": "",
+          "loc": "nb"
+        }
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJD8PJi4X1BxYREKpwMM9jarA",
+      "name": "مكتب ورقه وقلم للخدمات العامة",
+      "city": "أبو عريش",
+      "field": "phones",
+      "before": [
+        "0543435878"
+      ],
+      "after": [
+        "0543435878",
+        "0545110527"
+      ],
+      "reason": "direct Maps card displays 0545110527; preserve prior number because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0543435878"
+            ],
+            "expected": [
+              "0543435878"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJD8PJi4X1BxYREKpwMM9jarA",
+        "n": "مكتب ورقه وقلم للخدمات العامة",
+        "city": "أبو عريش",
+        "nb": "XR9P+27C، شارع أسامة بن زيد،، النهضة،، – Abu Arish 84711، – Saudi Arabia –",
+        "phones": [
+          "0543435878"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJD8PJi4X1BxYREKpwMM9jarA",
+        "lat": 16.96756,
+        "lon": 42.83564,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJD8PJi4X1BxYREKpwMM9jarA",
+        "n": "مكتب ورقه وقلم للخدمات العامة",
+        "city": "أبو عريش",
+        "nb": "XR9P+27C، شارع أسامة بن زيد،، النهضة،، – Abu Arish 84711، – Saudi Arabia –",
+        "phones": [
+          "0543435878",
+          "0545110527"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJD8PJi4X1BxYREKpwMM9jarA",
+        "lat": 16.96756,
+        "lon": 42.83564,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJW4VM8cxd7xURRuRrcSjCmAo",
+      "name": "الخلود للعقارات",
+      "city": "بلجرشي",
+      "field": "phones",
+      "before": [
+        "0177226155"
+      ],
+      "after": [
+        "0177226155",
+        "0554000826"
+      ],
+      "reason": "direct Maps card displays 0554000826; preserve prior number because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0177226155"
+            ],
+            "expected": [
+              "0177226155"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJW4VM8cxd7xURRuRrcSjCmAo",
+        "n": "الخلود للعقارات",
+        "city": "بلجرشي",
+        "nb": "VH77+C8X – طريق الملك سعود – Baljurashi 65635 – Saudi Arabia",
+        "phones": [
+          "0177226155"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJW4VM8cxd7xURRuRrcSjCmAo",
+        "lat": 19.86361,
+        "lon": 41.56336,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJW4VM8cxd7xURRuRrcSjCmAo",
+        "n": "الخلود للعقارات",
+        "city": "بلجرشي",
+        "nb": "VH77+C8X – طريق الملك سعود – Baljurashi 65635 – Saudi Arabia",
+        "phones": [
+          "0177226155",
+          "0554000826"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJW4VM8cxd7xURRuRrcSjCmAo",
+        "lat": 19.86361,
+        "lon": 41.56336,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJY9YqrDJc7xURjnHYwtHQ42g",
+      "name": "مكتب العسلي للخدمات",
+      "city": "بلجرشي",
+      "field": "phones",
+      "before": [
+        "0535449169"
+      ],
+      "after": [
+        "0535449169",
+        "0564799581"
+      ],
+      "reason": "direct Maps card displays 0564799581; preserve prior number because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0535449169"
+            ],
+            "expected": [
+              "0535449169"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJY9YqrDJc7xURjnHYwtHQ42g",
+        "n": "مكتب العسلي للخدمات",
+        "city": "بلجرشي",
+        "nb": "VH66+J92 – Baljurashi 65635 – Saudi Arabia –",
+        "phones": [
+          "0535449169"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJY9YqrDJc7xURjnHYwtHQ42g",
+        "lat": 19.86151,
+        "lon": 41.56089,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJY9YqrDJc7xURjnHYwtHQ42g",
+        "n": "مكتب العسلي للخدمات",
+        "city": "بلجرشي",
+        "nb": "VH66+J92 – Baljurashi 65635 – Saudi Arabia –",
+        "phones": [
+          "0535449169",
+          "0564799581"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJY9YqrDJc7xURjnHYwtHQ42g",
+        "lat": 19.86151,
+        "lon": 41.56089,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJZ0pzBp65gRURE9Tqti-ofF0",
+      "name": "الشتوي للعقارات",
+      "city": "المذنب",
+      "field": "phones",
+      "before": [
+        "0163422404"
+      ],
+      "after": [
+        "0163422404",
+        "0555932404"
+      ],
+      "reason": "direct Maps card displays 0555932404; preserve prior number because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0163422404"
+            ],
+            "expected": [
+              "0163422404"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJZ0pzBp65gRURE9Tqti-ofF0",
+        "n": "Al Shitwy Real Estate",
+        "city": "المذنب",
+        "nb": "V65F+45W – Al Khaldiyah – Al Mithnab 56634 – Saudi Arabia",
+        "phones": [
+          "0163422404"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJZ0pzBp65gRURE9Tqti-ofF0",
+        "lat": 25.85786,
+        "lon": 44.22295,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJZ0pzBp65gRURE9Tqti-ofF0",
+        "n": "Al Shitwy Real Estate",
+        "city": "المذنب",
+        "nb": "V65F+45W – Al Khaldiyah – Al Mithnab 56634 – Saudi Arabia",
+        "phones": [
+          "0163422404",
+          "0555932404"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJZ0pzBp65gRURE9Tqti-ofF0",
+        "lat": 25.85786,
+        "lon": 44.22295,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJgW58xp2F5BURw2zF0vDqi34",
+      "name": "شركة اسس الاداره",
+      "city": "محايل عسير",
+      "field": "phones",
+      "before": [
+        "0555186620"
+      ],
+      "after": [
+        "0555186620",
+        "0555071663"
+      ],
+      "reason": "direct Maps card displays 0555071663; preserve prior number because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0555186620"
+            ],
+            "expected": [
+              "0555186620"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJgW58xp2F5BURw2zF0vDqi34",
+        "n": "شركة اسس الاداره",
+        "city": "محايل عسير",
+        "nb": "H324+9WF – النزهة، – Muhayil – Saudi Arabia",
+        "phones": [
+          "0555186620"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJgW58xp2F5BURw2zF0vDqi34",
+        "lat": 18.55094,
+        "lon": 42.0573,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJgW58xp2F5BURw2zF0vDqi34",
+        "n": "شركة اسس الاداره",
+        "city": "محايل عسير",
+        "nb": "H324+9WF – النزهة، – Muhayil – Saudi Arabia",
+        "phones": [
+          "0555186620",
+          "0555071663"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJgW58xp2F5BURw2zF0vDqi34",
+        "lat": 18.55094,
+        "lon": 42.0573,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJjfopEEmF5BUR_hmxDESpBnA",
+      "name": "بوصلة الجنوب للخدمات العقارية",
+      "city": "محايل عسير",
+      "field": "name_and_coordinates",
+      "before": {
+        "name": "بوصلة الجنوب للخدمات العقارية",
+        "coordinates": [
+          18.49839,
+          42.05635
+        ]
+      },
+      "after": {
+        "name": "بوصلة المستقبل للخدمات العقارية",
+        "coordinates": [
+          18.5035422,
+          42.0595944
+        ]
+      },
+      "distanceKm": 0.667,
+      "reason": "same Place ID and phone 0555183385; current Maps title and pin confirmed",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "بوصلة الجنوب للخدمات العقارية",
+            "expected": "بوصلة الجنوب للخدمات العقارية",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "coordinates",
+            "actual": [
+              18.49839,
+              42.05635
+            ],
+            "expected": [
+              18.49839,
+              42.05635
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJjfopEEmF5BUR_hmxDESpBnA",
+        "n": "بوصلة الجنوب للخدمات العقارية",
+        "city": "محايل عسير",
+        "nb": "حي الحيلة الغربي – AHAA5436، 5436 اسامة بن زيد، 8586 – Muhayil 63312 – Saudi Arabia",
+        "phones": [
+          "0555183385"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJjfopEEmF5BUR_hmxDESpBnA",
+        "lat": 18.49839,
+        "lon": 42.05635,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJjfopEEmF5BUR_hmxDESpBnA",
+        "n": "بوصلة المستقبل للخدمات العقارية",
+        "city": "محايل عسير",
+        "nb": "حي الحيلة الغربي – AHAA5436، 5436 اسامة بن زيد، 8586 – Muhayil 63312 – Saudi Arabia",
+        "phones": [
+          "0555183385"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJjfopEEmF5BUR_hmxDESpBnA",
+        "lat": 18.5035422,
+        "lon": 42.0595944,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJmbumboOb5BURVS81zhKJles",
+      "name": "مؤسسة عاصفة العروبة",
+      "city": "محايل عسير",
+      "field": "coordinates",
+      "before": [
+        18.53881,
+        42.08194
+      ],
+      "after": [
+        18.5597065,
+        42.0787689
+      ],
+      "distanceKm": 2.348,
+      "reason": "direct Maps card confirms same name and phone 0551753259 at current pin",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "coordinates",
+            "actual": [
+              18.53881,
+              42.08194
+            ],
+            "expected": [
+              18.53881,
+              42.08194
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJmbumboOb5BURVS81zhKJles",
+        "n": "مؤسسة عاصفة العروبة",
+        "city": "محايل عسير",
+        "nb": "G3QJ+GQ – Al Dirs – Muhayil 63751 – Saudi Arabia",
+        "phones": [
+          "0551753259"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJmbumboOb5BURVS81zhKJles",
+        "lat": 18.53881,
+        "lon": 42.08194,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJmbumboOb5BURVS81zhKJles",
+        "n": "مؤسسة عاصفة العروبة",
+        "city": "محايل عسير",
+        "nb": "G3QJ+GQ – Al Dirs – Muhayil 63751 – Saudi Arabia",
+        "phones": [
+          "0551753259"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJmbumboOb5BURVS81zhKJles",
+        "lat": 18.5597065,
+        "lon": 42.0787689,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "phase6-office-8797e8c48ab7",
+      "name": "شركة أصالة بلا حدود العقارية",
+      "city": "تبوك",
+      "field": "phones",
+      "before": [
+        "0144297444"
+      ],
+      "after": [
+        "0144297444",
+        "0530009094"
+      ],
+      "reason": "direct Google Maps place card currently displays 0530009094; preserve prior phone because its absence from Maps does not prove invalidity",
+      "placeId": "ChIJ0QeBHTytqRURQjTXPryuuMI",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0144297444"
+            ],
+            "expected": [
+              "0144297444"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "phase6-office-8797e8c48ab7",
+        "n": "شركة أصالة بلا حدود العقارية",
+        "city": "تبوك",
+        "nb": "Asaalh Real Estate Company، السلام، تبوك 47311، المملكة العربية السعودية",
+        "phones": [
+          "0144297444"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A3%D8%B5%D8%A7%D9%84%D8%A9+%D8%A8%D9%84%D8%A7+%D8%AD%D8%AF%D9%88%D8%AF+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15a9ad3c1d8107d1:0xc2b8aebc3ed73442!8m2!3d28.3912303!4d36.5932771!16s%2Fg%2F1yglq9m31!19sChIJ0QeBHTytqRURQjTXPryuuMI?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 28.39123,
+        "lon": 36.59328,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "phase6-office-8797e8c48ab7",
+        "n": "شركة أصالة بلا حدود العقارية",
+        "city": "تبوك",
+        "nb": "Asaalh Real Estate Company، السلام، تبوك 47311، المملكة العربية السعودية",
+        "phones": [
+          "0144297444",
+          "0530009094"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A3%D8%B5%D8%A7%D9%84%D8%A9+%D8%A8%D9%84%D8%A7+%D8%AD%D8%AF%D9%88%D8%AF+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15a9ad3c1d8107d1:0xc2b8aebc3ed73442!8m2!3d28.3912303!4d36.5932771!16s%2Fg%2F1yglq9m31!19sChIJ0QeBHTytqRURQjTXPryuuMI?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "lat": 28.39123,
+        "lon": 36.59328,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "office-maps-202ca6de01fb",
+      "name": "مكتب عقاراتكم للخدمات العقارية والخدمات العامة",
+      "city": "الباحة",
+      "field": "phones",
+      "before": [
+        "0568777576"
+      ],
+      "after": [
+        "0568777576",
+        "0566514707"
+      ],
+      "reason": "direct Google Maps place card currently displays 0566514707; preserve the prior number because absence from Maps does not prove invalidity",
+      "placeId": "ChIJ67iJk6JF7xURd65jj9a-DUA",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0568777576"
+            ],
+            "expected": [
+              "0568777576"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "office-maps-202ca6de01fb",
+        "n": "مكتب عقاراتكم للخدمات العقارية و الخدمات العامه",
+        "city": "الباحة",
+        "nb": "طريق ابوبكر الصديق، الحاوية، الباحة 65525، المملكة العربية السعودية",
+        "phones": [
+          "0568777576"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=20.0142048,41.4666162&query_place_id=ChIJ67iJk6JF7xURd65jj9a-DUA",
+        "lat": 20.01421,
+        "lon": 41.46662,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "office-maps-202ca6de01fb",
+        "n": "مكتب عقاراتكم للخدمات العقارية و الخدمات العامه",
+        "city": "الباحة",
+        "nb": "طريق ابوبكر الصديق، الحاوية، الباحة 65525، المملكة العربية السعودية",
+        "phones": [
+          "0568777576",
+          "0566514707"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=20.0142048,41.4666162&query_place_id=ChIJ67iJk6JF7xURd65jj9a-DUA",
+        "lat": 20.01421,
+        "lon": 41.46662,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJf9rBN-z5NT4RqKjlmYuF8pY",
+      "name": "عبدالله للخدمات العقارية",
+      "city": "صفوى",
+      "field": "coordinates",
+      "before": [
+        26.64962,
+        49.96083
+      ],
+      "after": [
+        26.6548692,
+        49.9559337
+      ],
+      "distanceKm": 0.75,
+      "reason": "direct Maps place card pin mismatch; stored phone 0546014449 preserved because Maps does not display a phone",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "coordinates",
+            "actual": [
+              26.64962,
+              49.96083
+            ],
+            "expected": [
+              26.64962,
+              49.96083
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJf9rBN-z5NT4RqKjlmYuF8pY",
+        "n": "مكتب عبدالله للخدمات العقارية",
+        "city": "صفوى",
+        "nb": "2459، 6353، المروة، – Safwa 32828، – Saudi Arabia –",
+        "phones": [
+          "0546014449"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJf9rBN-z5NT4RqKjlmYuF8pY",
+        "lat": 26.64962,
+        "lon": 49.96083,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJf9rBN-z5NT4RqKjlmYuF8pY",
+        "n": "مكتب عبدالله للخدمات العقارية",
+        "city": "صفوى",
+        "nb": "2459، 6353، المروة، – Safwa 32828، – Saudi Arabia –",
+        "phones": [
+          "0546014449"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJf9rBN-z5NT4RqKjlmYuF8pY",
+        "lat": 26.6548692,
+        "lon": 49.9559337,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJJwnF8wzoST4R0Gk5uwX_gIU",
+      "name": "رواد المستقبل",
+      "city": "الخبر",
+      "field": "phones",
+      "before": [
+        "0505825221"
+      ],
+      "after": [
+        "0505825221",
+        "0558469999"
+      ],
+      "reason": "direct Maps card displays 0558469999; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0505825221"
+            ],
+            "expected": [
+              "0505825221"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJJwnF8wzoST4R0Gk5uwX_gIU",
+        "n": "مكتب رواد المستقبل للعقار",
+        "city": "الثقبة",
+        "nb": "75MQ+JX8 – 4th St – Al-Thuqbah – Al Khobar 34623, Saudi Arabia",
+        "phones": [
+          "0505825221"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJJwnF8wzoST4R0Gk5uwX_gIU",
+        "lat": 26.28404,
+        "lon": 50.18995,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJJwnF8wzoST4R0Gk5uwX_gIU",
+        "n": "مكتب رواد المستقبل للعقار",
+        "city": "الثقبة",
+        "nb": "75MQ+JX8 – 4th St – Al-Thuqbah – Al Khobar 34623, Saudi Arabia",
+        "phones": [
+          "0505825221",
+          "0558469999"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJJwnF8wzoST4R0Gk5uwX_gIU",
+        "lat": 26.28404,
+        "lon": 50.18995,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-bizmideast-office-347606171115177985",
+      "name": "المالكي مكتب عقار",
+      "city": "رأس تنورة",
+      "field": "name_address_coordinates",
+      "before": {
+        "name": "المالكي مكتب عقار",
+        "coordinates": null
+      },
+      "after": {
+        "name": "مكتب المالكي للخدمات العقارية براس تنوره Al malki Real Estate Services Office",
+        "nb": "شارع عمر بن الخطاب، المنتزه، تقاطع أبي بكر، رأس تنورة",
+        "coordinates": [
+          26.6992068,
+          50.0467751
+        ],
+        "activity": "وكالة تأجير عقارات"
+      },
+      "reason": "same CID and matching phone 0558600053 confirm the current title, address and pin",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "المالكي مكتب عقار",
+            "expected": "المالكي مكتب عقار",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "coordinates",
+            "actual": null,
+            "expected": null,
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-bizmideast-office-347606171115177985",
+        "n": "المالكي مكتب عقار",
+        "city": "رأس تنورة",
+        "nb": "4433 Umar Ibn Al Khatab, Al Montazah, 7034, Ras Tanura 32819, Saudi Arabia",
+        "phones": [
+          "0558600053"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=347606171115177985",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "national-bizmideast-office-347606171115177985",
+        "n": "مكتب المالكي للخدمات العقارية براس تنوره Al malki Real Estate Services Office",
+        "city": "رأس تنورة",
+        "nb": "شارع عمر بن الخطاب، المنتزه، تقاطع أبي بكر، رأس تنورة",
+        "phones": [
+          "0558600053"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=347606171115177985",
+        "lat": 26.6992068,
+        "lon": 50.0467751,
+        "sec": "",
+        "loc": "pt",
+        "activity": "وكالة تأجير عقارات",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJ6w9vmQ4JSj4Rdsd_-XfAvc4",
+      "name": "14 Real Estate Office",
+      "city": "رأس تنورة",
+      "field": "name",
+      "before": "14 Real Estate Office",
+      "after": "مكتب فورتين العقاري",
+      "reason": "same Place ID, phone 0503863071 and address; current Maps title confirmed",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "14 Real Estate Office",
+            "expected": "14 Real Estate Office",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJ6w9vmQ4JSj4Rdsd_-XfAvc4",
+        "n": "14 Real Estate Office",
+        "city": "رأس تنورة",
+        "nb": "King Saud Road, Near Al Andalus, Ras Tanura 32816, Ras Tanura 32816 – Ras Tanura 31311 – Saudi Arabia –",
+        "phones": [
+          "0503863071"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ6w9vmQ4JSj4Rdsd_-XfAvc4",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJ6w9vmQ4JSj4Rdsd_-XfAvc4",
+        "n": "مكتب فورتين العقاري",
+        "city": "رأس تنورة",
+        "nb": "King Saud Road, Near Al Andalus, Ras Tanura 32816, Ras Tanura 32816 – Ras Tanura 31311 – Saudi Arabia –",
+        "phones": [
+          "0503863071"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ6w9vmQ4JSj4Rdsd_-XfAvc4",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJHayvENkJSj4RwEUpUsuQJWc",
+      "name": "إيجادة العقارية",
+      "city": "رأس تنورة",
+      "field": "name",
+      "before": "إيجادة العقارية",
+      "after": "مكتب لوكس رايز العقاري | Luxe Rise Real Estate",
+      "reason": "same Place ID and phone 0554608404; current Maps title indicates rebranding; preserve old name in audit",
+      "result": "applied",
+      "precondition": {
+        "status": "compatible",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مكتب إيجادة العقارية",
+            "expected": "إيجادة العقارية",
+            "exact": false,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJHayvENkJSj4RwEUpUsuQJWc",
+        "n": "مكتب إيجادة العقارية",
+        "city": "رأس تنورة",
+        "nb": "7248 King Abdullah bin Abdulaziz St – حي الدانة – ERAB3395, 3395 – Ras Tanura 32817, Saudi Arabia",
+        "phones": [
+          "0554608404"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJHayvENkJSj4RwEUpUsuQJWc",
+        "lat": 26.70528,
+        "lon": 50.06039,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJHayvENkJSj4RwEUpUsuQJWc",
+        "n": "مكتب لوكس رايز العقاري | Luxe Rise Real Estate",
+        "city": "رأس تنورة",
+        "nb": "7248 King Abdullah bin Abdulaziz St – حي الدانة – ERAB3395, 3395 – Ras Tanura 32817, Saudi Arabia",
+        "phones": [
+          "0554608404"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJHayvENkJSj4RwEUpUsuQJWc",
+        "lat": 26.70528,
+        "lon": 50.06039,
+        "sec": "",
+        "loc": "nb"
+      }
+    },
+    {
+      "id": "national-bizmideast-office-7667560039048382506",
+      "name": "بن عشلان",
+      "city": "رأس تنورة",
+      "field": "maps_reference",
+      "action": "remove_or_replace_only_after_correct_card_found",
+      "reason": "stored CID resolves to the canonical card of a different record مكتب ابن عشلان with phone 0556821555; do not copy that record's data",
+      "result": "applied",
+      "precondition": {
+        "status": "not_supplied",
+        "checks": []
+      },
+      "beforeRecord": {
+        "id": "national-bizmideast-office-7667560039048382506",
+        "n": "مكتب بن عشلان العقاري",
+        "city": "رأس تنورة",
+        "nb": "2583 شارع الأمير نايف بن عبدالعزيز، الفيحاء، 7669, Ras Tanura 32817, Saudi Arabia",
+        "phones": [
+          "0566291850"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=7667560039048382506",
+        "lat": 26.71222,
+        "lon": 50.05868,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-bizmideast-office-7667560039048382506",
+        "n": "مكتب بن عشلان العقاري",
+        "city": "رأس تنورة",
+        "nb": "2583 شارع الأمير نايف بن عبدالعزيز، الفيحاء، 7669, Ras Tanura 32817, Saudi Arabia",
+        "phones": [
+          "0566291850"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": 26.71222,
+        "lon": 50.05868,
+        "sec": "",
+        "loc": "nb",
+        "previousMaps": [
+          "https://www.google.com/maps/?cid=7667560039048382506"
+        ]
+      }
+    },
+    {
+      "id": "entity-ede39ec11bd6",
+      "name": "جازان وطن للخدمات العقارية",
+      "city": "جازان",
+      "field": "duplicate_record",
+      "action": "archive_duplicate_after_canonical_snapshot",
+      "canonicalId": "office-maps-f01a9b89d0ce",
+      "reason": "same business title, phone 920031858 and direct Google Maps card; canonical office-maps record contains the place reference and pin",
+      "result": "archived_and_hidden_from_active_offices",
+      "precondition": {
+        "status": "not_supplied",
+        "checks": []
+      },
+      "beforeRecord": {
+        "id": "entity-ede39ec11bd6",
+        "n": "جازان وطن للخدمات العقارية",
+        "city": "جازان",
+        "nb": "السويس",
+        "phones": [
+          "920031858"
+        ],
+        "web": "https://jazwtn.sa/%D8%A7%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7/",
+        "maps": "",
+        "lat": 16.86227,
+        "lon": 42.59703,
+        "sec": "",
+        "loc": "nb",
+        "mapsQ": "جازان وطن للخدمات العقارية جازان السويس"
+      },
+      "afterRecord": {
+        "id": "entity-ede39ec11bd6",
+        "n": "جازان وطن للخدمات العقارية",
+        "city": "جازان",
+        "nb": "السويس",
+        "phones": [
+          "920031858"
+        ],
+        "web": "https://jazwtn.sa/%D8%A7%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7/",
+        "maps": "",
+        "lat": 16.86227,
+        "lon": 42.59703,
+        "sec": "",
+        "loc": "nb",
+        "mapsQ": "جازان وطن للخدمات العقارية جازان السويس",
+        "activityReviewStatus": "archived_duplicate",
+        "archiveReason": "same business title, phone 920031858 and direct Google Maps card; canonical office-maps record contains the place reference and pin",
+        "duplicateOf": "office-maps-f01a9b89d0ce"
+      },
+      "archive": {
+        "id": "entity-ede39ec11bd6",
+        "archiveReason": "duplicate_record",
+        "canonicalId": "office-maps-f01a9b89d0ce",
+        "evidence": "same business title, phone 920031858 and direct Google Maps card; canonical office-maps record contains the place reference and pin",
+        "archivedRecord": {
+          "id": "entity-ede39ec11bd6",
+          "n": "جازان وطن للخدمات العقارية",
+          "city": "جازان",
+          "nb": "السويس",
+          "phones": [
+            "920031858"
+          ],
+          "web": "https://jazwtn.sa/%D8%A7%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7/",
+          "maps": "",
+          "lat": 16.86227,
+          "lon": 42.59703,
+          "sec": "",
+          "loc": "nb",
+          "mapsQ": "جازان وطن للخدمات العقارية جازان السويس"
+        }
+      }
+    },
+    {
+      "id": "phase5-google-office-78027d066a29",
+      "name": "مكتب محمد قشلان العقاري",
+      "city": "جدة",
+      "field": "nb",
+      "before": "شارع الشاركين، حي",
+      "after": "شارع الشاركين، حي الصفا، جدة 23453",
+      "reason": "direct Google Maps place card confirms the complete address; name/activity/phone match",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "nb",
+            "actual": "شارع الشاركين، حي",
+            "expected": "شارع الشاركين، حي",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "phase5-google-office-78027d066a29",
+        "n": "مكتب محمد قشلان العقاري",
+        "city": "جدة",
+        "nb": "شارع الشاركين، حي",
+        "phones": [
+          "0555548969"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%82%D8%B4%D9%84%D8%A7%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%AC%D8%AF%D8%A9&query_place_id=ChIJIZe9rgzRwxURc14GYYf-5xU",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "phase5-google-office-78027d066a29",
+        "n": "مكتب محمد قشلان العقاري",
+        "city": "جدة",
+        "nb": "شارع الشاركين، حي الصفا، جدة 23453",
+        "phones": [
+          "0555548969"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%82%D8%B4%D9%84%D8%A7%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%AC%D8%AF%D8%A9&query_place_id=ChIJIZe9rgzRwxURc14GYYf-5xU",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "phase5-google-office-6cd05a553883",
+      "name": "مكتب أحمد عمر العمودي للعقارات",
+      "city": "جدة",
+      "field": "nb",
+      "before": "حي، عبدالله جاسر",
+      "after": "عبدالله جاسر، حي الزهراء، جدة 23425",
+      "reason": "direct Google Maps place card confirms the complete address; name/activity/phone match",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "nb",
+            "actual": "حي، عبدالله جاسر",
+            "expected": "حي، عبدالله جاسر",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "phase5-google-office-6cd05a553883",
+        "n": "مكتب أحمد عمر العمودي للعقارات",
+        "city": "جدة",
+        "nb": "حي، عبدالله جاسر",
+        "phones": [
+          "0504611644"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A3%D8%AD%D9%85%D8%AF%20%D8%B9%D9%85%D8%B1%20%D8%A7%D9%84%D8%B9%D9%85%D9%88%D8%AF%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AC%D8%AF%D8%A9&query_place_id=ChIJR5keJY_awxURkdqZiEFuaWU",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "phase5-google-office-6cd05a553883",
+        "n": "مكتب أحمد عمر العمودي للعقارات",
+        "city": "جدة",
+        "nb": "عبدالله جاسر، حي الزهراء، جدة 23425",
+        "phones": [
+          "0504611644"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A3%D8%AD%D9%85%D8%AF%20%D8%B9%D9%85%D8%B1%20%D8%A7%D9%84%D8%B9%D9%85%D9%88%D8%AF%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AC%D8%AF%D8%A9&query_place_id=ChIJR5keJY_awxURkdqZiEFuaWU",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "national-bizmideast-office-2424784545275880387",
+      "name": "عقاركم لتسويق العقاري",
+      "city": "حفر الباطن",
+      "field": "name",
+      "before": "عقاركم لتسويق العقاري",
+      "after": "عقاركم للتسويق العقاري",
+      "reason": "direct Google Maps title confirms the grammatical article; address and pin match; stored phone preserved because Maps does not display one",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "عقاركم لتسويق العقاري",
+            "expected": "عقاركم لتسويق العقاري",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-bizmideast-office-2424784545275880387",
+        "n": "عقاركم لتسويق العقاري",
+        "city": "حفر الباطن",
+        "nb": "CWPX+5PJ, Prince Sultan Ibn Abdulaziz Rd, شارع الستين, Hafar Al Batin Saudi Arabia",
+        "phones": [
+          "0568696615"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=2424784545275880387",
+        "lat": 28.43546,
+        "lon": 45.94927,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-bizmideast-office-2424784545275880387",
+        "n": "عقاركم للتسويق العقاري",
+        "city": "حفر الباطن",
+        "nb": "CWPX+5PJ, Prince Sultan Ibn Abdulaziz Rd, شارع الستين, Hafar Al Batin Saudi Arabia",
+        "phones": [
+          "0568696615"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=2424784545275880387",
+        "lat": 28.43546,
+        "lon": 45.94927,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "entity-eb6a252fffd5",
+      "name": "شرق أبها للخدمات العقارية",
+      "city": "أبها",
+      "field": "duplicate_record",
+      "action": "archive_duplicate_after_canonical_snapshot",
+      "canonicalId": "office-maps-ed93a354e226",
+      "reason": "same business title, phone 0504746662, Place ID ChIJ1zlY-rmr_BURUOda-0jVrYc and pin 18.222957,42.5539567; canonical office-maps record contains Maps reference and coordinates",
+      "result": "archived_and_hidden_from_active_offices",
+      "precondition": {
+        "status": "not_supplied",
+        "checks": []
+      },
+      "beforeRecord": {
+        "id": "entity-eb6a252fffd5",
+        "n": "شرق أبها للخدمات العقارية",
+        "city": "أبها",
+        "nb": "المنسك",
+        "phones": [
+          "0504746662"
+        ],
+        "web": "https://eastabha.sa/contact-us/",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "mapsQ": "شرق أبها للخدمات العقارية أبها المنسك"
+      },
+      "afterRecord": {
+        "id": "entity-eb6a252fffd5",
+        "n": "شرق أبها للخدمات العقارية",
+        "city": "أبها",
+        "nb": "المنسك",
+        "phones": [
+          "0504746662"
+        ],
+        "web": "https://eastabha.sa/contact-us/",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "mapsQ": "شرق أبها للخدمات العقارية أبها المنسك",
+        "activityReviewStatus": "archived_duplicate",
+        "archiveReason": "same business title, phone 0504746662, Place ID ChIJ1zlY-rmr_BURUOda-0jVrYc and pin 18.222957,42.5539567; canonical office-maps record contains Maps reference and coordinates",
+        "duplicateOf": "office-maps-ed93a354e226"
+      },
+      "archive": {
+        "id": "entity-eb6a252fffd5",
+        "archiveReason": "duplicate_record",
+        "canonicalId": "office-maps-ed93a354e226",
+        "evidence": "same business title, phone 0504746662, Place ID ChIJ1zlY-rmr_BURUOda-0jVrYc and pin 18.222957,42.5539567; canonical office-maps record contains Maps reference and coordinates",
+        "archivedRecord": {
+          "id": "entity-eb6a252fffd5",
+          "n": "شرق أبها للخدمات العقارية",
+          "city": "أبها",
+          "nb": "المنسك",
+          "phones": [
+            "0504746662"
+          ],
+          "web": "https://eastabha.sa/contact-us/",
+          "maps": "",
+          "lat": null,
+          "lon": null,
+          "sec": "",
+          "mapsQ": "شرق أبها للخدمات العقارية أبها المنسك"
+        }
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJg9i5ACEJSj4RvNIDLH2qyVg",
+      "name": "الاعتماد الوافي",
+      "city": "رأس تنورة",
+      "field": "coordinates",
+      "before": [
+        26.71222,
+        50.05868
+      ],
+      "after": [
+        26.7158742,
+        50.0622728
+      ],
+      "distanceKm": 0.55,
+      "reason": "direct Google Maps place card pin mismatch; name/activity/phone matched",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "coordinates",
+            "actual": [
+              26.71222,
+              50.05868
+            ],
+            "expected": [
+              26.71222,
+              50.05868
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJg9i5ACEJSj4RvNIDLH2qyVg",
+        "n": "مكتب الاعتماد الوافي للعقارات",
+        "city": "رأس تنورة",
+        "nb": "7821 شارع الملك فيصل بن عبدالعزيز، الفيحاء، رأس تنورة 32817 3252،، – Ras Tanura 32819 – Saudi Arabia –",
+        "phones": [
+          "0500053893"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJg9i5ACEJSj4RvNIDLH2qyVg",
+        "lat": 26.71222,
+        "lon": 50.05868,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJg9i5ACEJSj4RvNIDLH2qyVg",
+        "n": "مكتب الاعتماد الوافي للعقارات",
+        "city": "رأس تنورة",
+        "nb": "7821 شارع الملك فيصل بن عبدالعزيز، الفيحاء، رأس تنورة 32817 3252،، – Ras Tanura 32819 – Saudi Arabia –",
+        "phones": [
+          "0500053893"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJg9i5ACEJSj4RvNIDLH2qyVg",
+        "lat": 26.7158742,
+        "lon": 50.0622728,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJOYR6-FcBNj4Raw2NkZc3GW8",
+      "name": "الهمم الذهبية",
+      "city": "سيهات",
+      "field": "coordinates_and_phone",
+      "before": {
+        "coordinates": [
+          26.47575,
+          50.00641
+        ],
+        "phones": [
+          "0538337898"
+        ]
+      },
+      "after": {
+        "coordinates": [
+          26.4694334,
+          50.0068326
+        ],
+        "phones": [
+          "0538337898",
+          "0561151539"
+        ]
+      },
+      "distanceKm": 0.7,
+      "reason": "direct place card confirms current pin and displays 0561151539; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "coordinates",
+            "actual": [
+              26.47575,
+              50.00641
+            ],
+            "expected": [
+              26.47575,
+              50.00641
+            ],
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "phones",
+            "actual": [
+              "0538337898"
+            ],
+            "expected": [
+              "0538337898"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJOYR6-FcBNj4Raw2NkZc3GW8",
+        "n": "مكتب الهمم الذهبية للخدمات العقارية",
+        "city": "سيهات",
+        "nb": "EMSA7537، 7537 شارع امير المومنين عمر بن الخطاب، 3812، حي النابية، – Saihat 32471 – Saudi Arabia –",
+        "phones": [
+          "0538337898"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJOYR6-FcBNj4Raw2NkZc3GW8",
+        "lat": 26.47575,
+        "lon": 50.00641,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJOYR6-FcBNj4Raw2NkZc3GW8",
+        "n": "مكتب الهمم الذهبية للخدمات العقارية",
+        "city": "سيهات",
+        "nb": "EMSA7537، 7537 شارع امير المومنين عمر بن الخطاب، 3812، حي النابية، – Saihat 32471 – Saudi Arabia –",
+        "phones": [
+          "0538337898",
+          "0561151539"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJOYR6-FcBNj4Raw2NkZc3GW8",
+        "lat": 26.4694334,
+        "lon": 50.0068326,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJH4hcmQMJSj4RZsNfyZafvEw",
+      "name": "خليج راس تنوره",
+      "city": "رأس تنورة",
+      "field": "name",
+      "before": "خليج راس تنوره",
+      "after": "زفر الخليج للعقارات",
+      "reason": "same direct Place ID, same phone 0136670774 and same address; current Maps title is زفر الخليج للعقارات",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "خليج راس تنوره",
+            "expected": "خليج راس تنوره",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJH4hcmQMJSj4RZsNfyZafvEw",
+        "n": "خليج راس تنوره",
+        "city": "رأس تنورة",
+        "nb": "6861 3468 Al Amir Muhammad Ibn Abdul Aziz – Ad Danah – Ras Tanura 32817 – Saudi Arabia",
+        "phones": [
+          "0136670774"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJH4hcmQMJSj4RZsNfyZafvEw",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJH4hcmQMJSj4RZsNfyZafvEw",
+        "n": "زفر الخليج للعقارات",
+        "city": "رأس تنورة",
+        "nb": "6861 3468 Al Amir Muhammad Ibn Abdul Aziz – Ad Danah – Ras Tanura 32817 – Saudi Arabia",
+        "phones": [
+          "0136670774"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJH4hcmQMJSj4RZsNfyZafvEw",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "national-bizmideast-office-10196811548197172594",
+      "name": "مكتب دانة صفوى",
+      "city": "صفوى",
+      "field": "identity_change",
+      "before": {
+        "name": "مكتب دانة صفوى العقاري",
+        "phones": [
+          "0136630812"
+        ]
+      },
+      "after": {
+        "name": "عقار المسكن",
+        "phones": [
+          "0136630812",
+          "0544459010"
+        ],
+        "coordinates": [
+          26.6549498,
+          49.9548616
+        ],
+        "activity": "وكالة تأجير وحدات مكتبية",
+        "section": "review_identity_change"
+      },
+      "reason": "the same CID and address now resolve to عقار المسكن with a different current phone; preserve the prior identity and phone in the audit trail rather than overwriting silently",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مكتب دانة صفوى العقاري",
+            "expected": "مكتب دانة صفوى العقاري",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "phones",
+            "actual": [
+              "0136630812"
+            ],
+            "expected": [
+              "0136630812"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-bizmideast-office-10196811548197172594",
+        "n": "مكتب دانة صفوى العقاري",
+        "city": "صفوى",
+        "nb": "8200 3722 Ali Ibn Abi Talib, Hazm, Safwa 32833, Saudi Arabia",
+        "phones": [
+          "0136630812"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=10196811548197172594",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "national-bizmideast-office-10196811548197172594",
+        "n": "عقار المسكن",
+        "city": "صفوى",
+        "nb": "8200 3722 Ali Ibn Abi Talib, Hazm, Safwa 32833, Saudi Arabia",
+        "phones": [
+          "0136630812",
+          "0544459010"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=10196811548197172594",
+        "lat": 26.6549498,
+        "lon": 49.9548616,
+        "sec": "",
+        "loc": "pt",
+        "activity": "وكالة تأجير وحدات مكتبية",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJf3CLQkr-ST4R8nDrFtlIAhs",
+      "name": "Gold based Contracting",
+      "city": "سيهات",
+      "field": "duplicate_record",
+      "action": "archive_duplicate_after_canonical_snapshot",
+      "canonicalId": "national-bizmideast-office-7103830080288565090",
+      "reason": "stored Place ID resolves to the same current card, phone and pin as شركة أساس الذهب للتطوير والاستثمار العقاري; do not retain it as a second office",
+      "result": "archived_and_hidden_from_active_offices",
+      "precondition": {
+        "status": "not_supplied",
+        "checks": []
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJf3CLQkr-ST4R8nDrFtlIAhs",
+        "n": "Gold based Contracting and Real Estate Investment Group",
+        "city": "سيهات",
+        "nb": "F2RQ+7F2 – King Abdulaziz Rd – Al Khisab – Saihat 32452, Saudi Arabia",
+        "phones": [
+          "0549885511"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJf3CLQkr-ST4R8nDrFtlIAhs",
+        "lat": 26.49064,
+        "lon": 50.03864,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJf3CLQkr-ST4R8nDrFtlIAhs",
+        "n": "Gold based Contracting and Real Estate Investment Group",
+        "city": "سيهات",
+        "nb": "F2RQ+7F2 – King Abdulaziz Rd – Al Khisab – Saihat 32452, Saudi Arabia",
+        "phones": [
+          "0549885511"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJf3CLQkr-ST4R8nDrFtlIAhs",
+        "lat": 26.49064,
+        "lon": 50.03864,
+        "sec": "",
+        "loc": "pt",
+        "activityReviewStatus": "archived_duplicate",
+        "archiveReason": "stored Place ID resolves to the same current card, phone and pin as شركة أساس الذهب للتطوير والاستثمار العقاري; do not retain it as a second office",
+        "duplicateOf": "national-bizmideast-office-7103830080288565090"
+      },
+      "archive": {
+        "id": "national-icuae-office-ChIJf3CLQkr-ST4R8nDrFtlIAhs",
+        "archiveReason": "duplicate_record",
+        "canonicalId": "national-bizmideast-office-7103830080288565090",
+        "evidence": "stored Place ID resolves to the same current card, phone and pin as شركة أساس الذهب للتطوير والاستثمار العقاري; do not retain it as a second office",
+        "archivedRecord": {
+          "id": "national-icuae-office-ChIJf3CLQkr-ST4R8nDrFtlIAhs",
+          "n": "Gold based Contracting and Real Estate Investment Group",
+          "city": "سيهات",
+          "nb": "F2RQ+7F2 – King Abdulaziz Rd – Al Khisab – Saihat 32452, Saudi Arabia",
+          "phones": [
+            "0549885511"
+          ],
+          "web": "",
+          "maps": "https://www.google.com/maps/place/?q=place_id:ChIJf3CLQkr-ST4R8nDrFtlIAhs",
+          "lat": 26.49064,
+          "lon": 50.03864,
+          "sec": "",
+          "loc": "pt"
+        }
+      }
+    },
+    {
+      "id": "office-maps-d07625c2a6db",
+      "name": "مكتب ركن حدود الرس للخدمات العقارية",
+      "city": "الرس",
+      "field": "phones",
+      "before": [
+        "0582572276"
+      ],
+      "after": [
+        "0582572276",
+        "0595150303"
+      ],
+      "reason": "live Google Maps card displays 0595150303; preserve the prior number because absence from Maps does not prove invalidity",
+      "placeId": "ChIJwyusovzLgxURANcc4x6Dfcg",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0582572276"
+            ],
+            "expected": [
+              "0582572276"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "office-maps-d07625c2a6db",
+        "n": "مكتب ركن حدود الرس للخدمات العقارية",
+        "city": "الرس",
+        "nb": "RFWP+P98، شارع موسى بن نصير",
+        "phones": [
+          "0582572276"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=25.8467777,43.4859424&query_place_id=ChIJwyusovzLgxURANcc4x6Dfcg",
+        "lat": 25.84678,
+        "lon": 43.48594,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "office-maps-d07625c2a6db",
+        "n": "مكتب ركن حدود الرس للخدمات العقارية",
+        "city": "الرس",
+        "nb": "RFWP+P98، شارع موسى بن نصير",
+        "phones": [
+          "0582572276",
+          "0595150303"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=25.8467777,43.4859424&query_place_id=ChIJwyusovzLgxURANcc4x6Dfcg",
+        "lat": 25.84678,
+        "lon": 43.48594,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
     {
       "id": "entity-bd9121973107",
       "name": "مكتب قواعد الأندلس",
       "city": "الرياض",
       "field": "phones",
       "before": [
-        "0558648755",
         "0505539095"
       ],
       "after": [
+        "0558648755",
         "0505539095"
       ],
-      "oldValuePreservedIn": "phoneAudit.previousPhones",
-      "evidence": {
-        "googleMapsCard": "https://www.google.com/maps/?cid=15391395510121292153",
-        "observedPhone": "+966 50 553 9095"
+      "reason": "restore previously retained phone because Google Maps confirms 0505539095 but does not prove 0558648755 invalid; this also resolves the retained-data QA failure",
+      "maps": "https://www.google.com/maps/?cid=15391395510121292153",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0505539095"
+            ],
+            "expected": [
+              "0505539095"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
       },
-      "scopeNote": "رقم البطاقة الحالية مثبت؛ مطابقة إحداثيات السجل لا تزال معلقة."
+      "beforeRecord": {
+        "id": "entity-bd9121973107",
+        "n": "مكتب قواعد الأندلس",
+        "city": "الرياض",
+        "nb": "الرمال",
+        "phones": [
+          "0505539095"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=15391395510121292153",
+        "lat": 24.96493,
+        "lon": 46.76536,
+        "sec": "شرق",
+        "loc": "nb",
+        "phoneAudit": {
+          "status": "VERIFIED_GOOGLE_MAPS",
+          "source": "https://www.google.com/maps/?cid=15391395510121292153",
+          "observedPhoneIntl": "+966 50 553 9095",
+          "storedPhoneBefore": "0558648755",
+          "observedPhoneNormalized": "0505539095",
+          "previousPhones": [
+            "0558648755",
+            "0505539095"
+          ],
+          "note": "بطاقة خرائط Google تعرض +966 50 553 9095؛ إحداثيات الدبوس تحتاج مطابقة مستقلة."
+        }
+      },
+      "afterRecord": {
+        "id": "entity-bd9121973107",
+        "n": "مكتب قواعد الأندلس",
+        "city": "الرياض",
+        "nb": "الرمال",
+        "phones": [
+          "0558648755",
+          "0505539095"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=15391395510121292153",
+        "lat": 24.96493,
+        "lon": 46.76536,
+        "sec": "شرق",
+        "loc": "nb",
+        "phoneAudit": {
+          "status": "VERIFIED_GOOGLE_MAPS",
+          "source": "https://www.google.com/maps/?cid=15391395510121292153",
+          "observedPhoneIntl": "+966 50 553 9095",
+          "storedPhoneBefore": "0558648755",
+          "observedPhoneNormalized": "0505539095",
+          "previousPhones": [
+            "0558648755",
+            "0505539095"
+          ],
+          "note": "بطاقة خرائط Google تعرض +966 50 553 9095؛ إحداثيات الدبوس تحتاج مطابقة مستقلة."
+        }
+      }
     },
     {
-      "id": "entity-2fa2c7120ef0",
-      "name": "مكتب الفجر المتقدمة للعقار",
-      "city": "المدينة المنورة",
-      "field": "nb",
-      "before": "4893 ابو الاعور بن الحارث",
-      "after": "الخالدية، 4893 أبو الأعور بن الحارث",
-      "evidence": {
-        "googleMapsPlaceId": "ChIJ24QBPJCVvRURXtK54SctXHk",
-        "address": "4893 أبو الأعور بن الحارث، الخالدية، المدينة المنورة 42317"
+      "id": "phase5-office-9de23ef81504",
+      "name": "مكتب صلاح عمر السيف العقاري",
+      "city": "الدمام",
+      "field": "coordinates",
+      "before": [
+        26.37558,
+        50.07659
+      ],
+      "after": [
+        26.3720046,
+        50.0846016
+      ],
+      "distanceKm": 0.9,
+      "reason": "live Google Maps card pin mismatch; name/category/address matched; phone not shown",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "coordinates",
+            "actual": [
+              26.37558,
+              50.07659
+            ],
+            "expected": [
+              26.37558,
+              50.07659
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
       },
-      "scopeNote": "الإحداثيات غير متوفرة ولم تُنشأ إحداثيات بديلة."
+      "beforeRecord": {
+        "id": "phase5-office-9de23ef81504",
+        "n": "مكتب صلاح عمر السيف العقاري",
+        "city": "الدمام",
+        "nb": "الندى شارع محمد عبد الوهاب",
+        "phones": [
+          "0530565881"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B5%D9%84%D8%A7%D8%AD%20%D8%B9%D9%85%D8%B1%20%D8%A7%D9%84%D8%B3%D9%8A%D9%81%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%2093CM%2BRR5%20%D8%A7%D9%84%D9%86%D8%AF%D9%89%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+        "lat": 26.37558,
+        "lon": 50.07659,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "phase5-office-9de23ef81504",
+        "n": "مكتب صلاح عمر السيف العقاري",
+        "city": "الدمام",
+        "nb": "الندى شارع محمد عبد الوهاب",
+        "phones": [
+          "0530565881"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B5%D9%84%D8%A7%D8%AD%20%D8%B9%D9%85%D8%B1%20%D8%A7%D9%84%D8%B3%D9%8A%D9%81%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%2093CM%2BRR5%20%D8%A7%D9%84%D9%86%D8%AF%D9%89%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+        "lat": 26.3720046,
+        "lon": 50.0846016,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "phase5-office-e42486eb4fd5",
+      "name": "الضحيان للاستثمارات العقارية",
+      "city": "بريدة",
+      "field": "coordinates",
+      "before": [
+        26.36582,
+        43.99773
+      ],
+      "after": [
+        26.3310045,
+        44.0112237
+      ],
+      "distanceKm": 4.098,
+      "card": {
+        "category": "وكالة عقارات",
+        "address": "النقع الغربية، طريق عمر بن عبدالعزيز",
+        "phone": "0564000017"
+      },
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "coordinates",
+            "actual": [
+              26.36582,
+              43.99773
+            ],
+            "expected": [
+              26.36582,
+              43.99773
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "phase5-office-e42486eb4fd5",
+        "n": "الضحيان للاستثمارات العقارية",
+        "city": "بريدة",
+        "nb": "النقع الغربية، طريق عمر بن عبدالعزيز",
+        "phones": [
+          "0564000017"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=7249379111381142048",
+        "lat": 26.36582,
+        "lon": 43.99773,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "phase5-office-e42486eb4fd5",
+        "n": "الضحيان للاستثمارات العقارية",
+        "city": "بريدة",
+        "nb": "النقع الغربية، طريق عمر بن عبدالعزيز",
+        "phones": [
+          "0564000017"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=7249379111381142048",
+        "lat": 26.3310045,
+        "lon": 44.0112237,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "phase5-office-1c002d2dff5c",
+      "name": "شركة نبض العصر للعقارات",
+      "city": "بريدة",
+      "field": "coordinates",
+      "before": [
+        26.36614,
+        43.9524
+      ],
+      "after": [
+        26.3688666,
+        43.9640031
+      ],
+      "distanceKm": 1.195,
+      "card": {
+        "title": "نبض العصر للعقارات ادارة املاك و تسويق عقاري",
+        "category": "شركة إدارة عقارات",
+        "address": "طريق الملك خالد، الصفراء، بريدة 52211",
+        "phoneShown": false
+      },
+      "preserveStoredPhone": "0533594043",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "coordinates",
+            "actual": [
+              26.36614,
+              43.9524
+            ],
+            "expected": [
+              26.36614,
+              43.9524
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "phase5-office-1c002d2dff5c",
+        "n": "شركة نبض العصر للعقارات",
+        "city": "بريدة",
+        "nb": "الصفراء، طريق الملك خالد",
+        "phones": [
+          "0533594043"
+        ],
+        "web": "",
+        "maps": "https://maps.app.goo.gl/qjha4rmJD1r2rzwY7",
+        "lat": 26.36614,
+        "lon": 43.9524,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "phase5-office-1c002d2dff5c",
+        "n": "شركة نبض العصر للعقارات",
+        "city": "بريدة",
+        "nb": "الصفراء، طريق الملك خالد",
+        "phones": [
+          "0533594043"
+        ],
+        "web": "",
+        "maps": "https://maps.app.goo.gl/qjha4rmJD1r2rzwY7",
+        "lat": 26.3688666,
+        "lon": 43.9640031,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "phase5-office-6fa1c875aab0",
+      "name": "وثيقة المستقبل للخدمات العقارية",
+      "city": "بريدة",
+      "field": "coordinates",
+      "before": [
+        26.42261,
+        43.8975
+      ],
+      "after": [
+        26.4130135,
+        43.8965724
+      ],
+      "distanceKm": 1.071,
+      "card": {
+        "category": "وكالة عقارات تجارية",
+        "address": "شارع قرطبة، الرحاب",
+        "phone": "0500952466"
+      },
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "coordinates",
+            "actual": [
+              26.42261,
+              43.8975
+            ],
+            "expected": [
+              26.42261,
+              43.8975
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "phase5-office-6fa1c875aab0",
+        "n": "وثيقة المستقبل للخدمات العقارية",
+        "city": "بريدة",
+        "nb": "الرحاب، شارع قرطبة",
+        "phones": [
+          "0500952466"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=991760027283007227",
+        "lat": 26.42261,
+        "lon": 43.8975,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "phase5-office-6fa1c875aab0",
+        "n": "وثيقة المستقبل للخدمات العقارية",
+        "city": "بريدة",
+        "nb": "الرحاب، شارع قرطبة",
+        "phones": [
+          "0500952466"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=991760027283007227",
+        "lat": 26.4130135,
+        "lon": 43.8965724,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "phase5-google-office-0d9201e2cf2e",
+      "name": "مكتب التويجري للعقارات",
+      "city": "بريدة",
+      "field": "coordinates",
+      "before": [
+        26.32109,
+        43.98508
+      ],
+      "after": [
+        26.3191941,
+        43.9767397
+      ],
+      "distanceKm": 0.858,
+      "card": {
+        "address": "7340 السادة، حي السادة، بريدة 52354 4373",
+        "phone": "0505170699"
+      },
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "coordinates",
+            "actual": [
+              26.32109,
+              43.98508
+            ],
+            "expected": [
+              26.32109,
+              43.98508
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "phase5-google-office-0d9201e2cf2e",
+        "n": "مكتب التويجري للعقارات",
+        "city": "بريدة",
+        "nb": "7340 السادة، حي السادة، بريدة 52354 4373،",
+        "phones": [
+          "0505170699"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AA%D9%88%D9%8A%D8%AC%D8%B1%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9&query_place_id=ChIJ6a97zfnjgRUR80HbdryCP6E",
+        "lat": 26.32109,
+        "lon": 43.98508,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "phase5-google-office-0d9201e2cf2e",
+        "n": "مكتب التويجري للعقارات",
+        "city": "بريدة",
+        "nb": "7340 السادة، حي السادة، بريدة 52354 4373،",
+        "phones": [
+          "0505170699"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AA%D9%88%D9%8A%D8%AC%D8%B1%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9&query_place_id=ChIJ6a97zfnjgRUR80HbdryCP6E",
+        "lat": 26.3191941,
+        "lon": 43.9767397,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "phase5-office-7350091f3d8c",
+      "name": "مكتب بيت اليسر للعقارات",
+      "city": "بريدة",
+      "field": "coordinates",
+      "before": [
+        26.28379,
+        43.99123
+      ],
+      "after": [
+        26.28925,
+        43.9912414
+      ],
+      "distanceKm": 0.607,
+      "card": {
+        "category": "وكالة عقارات تجارية",
+        "address": "السالمية، حي السالمية، بريدة 52335",
+        "phone": "0550009301"
+      },
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "coordinates",
+            "actual": [
+              26.28379,
+              43.99123
+            ],
+            "expected": [
+              26.28379,
+              43.99123
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "phase5-office-7350091f3d8c",
+        "n": "مكتب بيت اليسر للعقارات",
+        "city": "بريدة",
+        "nb": "السالمية",
+        "phones": [
+          "0550009301"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=16403523012582450862",
+        "lat": 26.28379,
+        "lon": 43.99123,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "phase5-office-7350091f3d8c",
+        "n": "مكتب بيت اليسر للعقارات",
+        "city": "بريدة",
+        "nb": "السالمية",
+        "phones": [
+          "0550009301"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=16403523012582450862",
+        "lat": 26.28925,
+        "lon": 43.9912414,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-ejar-office-195881",
+      "name": "مكتب دليل القريات للعقار",
+      "city": "القريات",
+      "field": "nb",
+      "before": "الشفاء",
+      "after": "المطار",
+      "maps": "https://www.google.com/maps/?cid=1432051686968142962",
+      "card": {
+        "category": "وكالة عقارات تجارية",
+        "address": "طريق الملك خالد، المطار، القريات 77454",
+        "phone": "0537273753"
+      },
+      "result": "applied",
+      "precondition": {
+        "status": "compatible",
+        "checks": [
+          {
+            "field": "nb",
+            "actual": "طريق الملك خالد، الشفاء، القريات، الجوف، المملكة العربية السعودية",
+            "expected": "الشفاء",
+            "exact": false,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-195881",
+        "n": "شركة مكتب دليل القريات للعقار شركة ذات مسئولية محدودة مختلطة",
+        "city": "القريات",
+        "nb": "طريق الملك خالد، الشفاء، القريات، الجوف، المملكة العربية السعودية",
+        "phones": [
+          "0537273753"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=1432051686968142962",
+        "lat": 31.31759,
+        "lon": 37.33638,
+        "sec": "",
+        "loc": "pt",
+        "phoneSource": "https://www.bizmideast.com/SA/مكتب-دليل-القريات-للعقار-053-727-3753"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-195881",
+        "n": "شركة مكتب دليل القريات للعقار شركة ذات مسئولية محدودة مختلطة",
+        "city": "القريات",
+        "nb": "المطار",
+        "phones": [
+          "0537273753"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=1432051686968142962",
+        "lat": 31.31759,
+        "lon": 37.33638,
+        "sec": "",
+        "loc": "pt",
+        "phoneSource": "https://www.bizmideast.com/SA/مكتب-دليل-القريات-للعقار-053-727-3753"
+      }
+    },
+    {
+      "id": "national-nearplace-office-7442354192782022943",
+      "name": "مؤسسة ابتار الشرقية للخدمات العقارية",
+      "city": "الثقبة",
+      "field": "maps_reference",
+      "action": "remove_or_replace_only_after_correct_card_found",
+      "reason": "stored CID 7442354192782022943 resolves to a different business شركة شموخ الساحل للخدمات العقارية; do not copy the other business name, phone or coordinates into the ابتار record",
+      "result": "applied",
+      "precondition": {
+        "status": "not_supplied",
+        "checks": []
+      },
+      "beforeRecord": {
+        "id": "national-nearplace-office-7442354192782022943",
+        "n": "مؤسسة ابتار الشرقية للخدمات العقارية",
+        "city": "الثقبة",
+        "nb": "الشارع الخامس والعشرين، الثقبة، الخبر34625",
+        "phones": [
+          "0500891599"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/?cid=7442354192782022943",
+        "lat": 26.27419,
+        "lon": 50.19189,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-nearplace-office-7442354192782022943",
+        "n": "مؤسسة ابتار الشرقية للخدمات العقارية",
+        "city": "الثقبة",
+        "nb": "الشارع الخامس والعشرين، الثقبة، الخبر34625",
+        "phones": [
+          "0500891599"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": 26.27419,
+        "lon": 50.19189,
+        "sec": "",
+        "loc": "nb",
+        "previousMaps": [
+          "https://maps.google.com/?cid=7442354192782022943"
+        ]
+      }
+    },
+    {
+      "id": "national-ejar-office-202137",
+      "name": "مكتب معدي منصور محماس البقمي للخدمات العقارية",
+      "city": "تربة",
+      "field": "name_address_coordinates",
+      "before": {
+        "name": "مكتب معدي منصور محماس البقمي للخدمات العقارية",
+        "nb": "طريق بدون اسم، الخالدية، تربة، مكة المكرمة، المملكة العربية السعودية",
+        "coordinates": [
+          21.20178,
+          41.62599
+        ],
+        "phones": [
+          "0561414555"
+        ]
+      },
+      "after": {
+        "name": "مكتب المنصور للعقار",
+        "nb": "شارع الطائف، السلام، تربة 29715",
+        "coordinates": [
+          21.2156695,
+          41.6273352
+        ],
+        "phones": [
+          "0561414555"
+        ],
+        "activity": "شركة إدارة عقارات"
+      },
+      "distanceKm": 1.548,
+      "mapsCid": "18032445946009813719",
+      "reason": "same direct Maps card and identical phone confirm the current title, address and pin; preserve the phone unchanged",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مكتب معدي منصور محماس البقمي للخدمات العقارية",
+            "expected": "مكتب معدي منصور محماس البقمي للخدمات العقارية",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "nb",
+            "actual": "طريق بدون اسم، الخالدية، تربة، مكة المكرمة، المملكة العربية السعودية",
+            "expected": "طريق بدون اسم، الخالدية، تربة، مكة المكرمة، المملكة العربية السعودية",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "coordinates",
+            "actual": [
+              21.20178,
+              41.62599
+            ],
+            "expected": [
+              21.20178,
+              41.62599
+            ],
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "phones",
+            "actual": [
+              "0561414555"
+            ],
+            "expected": [
+              "0561414555"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-202137",
+        "n": "مكتب معدي منصور محماس البقمي للخدمات العقارية",
+        "city": "تربة",
+        "nb": "طريق بدون اسم، الخالدية، تربة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0561414555"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=18032445946009813719",
+        "lat": 21.20178,
+        "lon": 41.62599,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-202137",
+        "n": "مكتب المنصور للعقار",
+        "city": "تربة",
+        "nb": "شارع الطائف، السلام، تربة 29715",
+        "phones": [
+          "0561414555"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=18032445946009813719",
+        "lat": 21.2156695,
+        "lon": 41.6273352,
+        "sec": "",
+        "loc": "pt",
+        "activity": "شركة إدارة عقارات",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-ejar-office-194530",
+      "name": "مكتب شريف جزاع البديوي العقاري",
+      "city": "سكاكا",
+      "field": "name_address_phones",
+      "before": {
+        "name": "مكتب شريف جزاع البديوي العقاري",
+        "phones": [
+          "0567184321"
+        ]
+      },
+      "after": {
+        "name": "مكتب البديوي للعقارات",
+        "nb": "7309 طريق الملك عبدالعزيز، السوق، سكاكا 72311",
+        "phones": [
+          "0567184321",
+          "0146261333"
+        ],
+        "activity": "وكالة تأجير عقارات"
+      },
+      "reason": "direct Maps card confirms current title, address and phone; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مكتب شريف جزاع البديوي العقاري",
+            "expected": "مكتب شريف جزاع البديوي العقاري",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "phones",
+            "actual": [
+              "0567184321"
+            ],
+            "expected": [
+              "0567184321"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-194530",
+        "n": "مكتب شريف جزاع البديوي العقاري",
+        "city": "سكاكا",
+        "nb": "طريق الملك عبد العزيز، السوق، سكاكا، الجوف، المملكة العربية السعودية",
+        "phones": [
+          "0567184321"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.99037723,40.20964175",
+        "lat": 29.99038,
+        "lon": 40.20964,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-194530",
+        "n": "مكتب البديوي للعقارات",
+        "city": "سكاكا",
+        "nb": "7309 طريق الملك عبدالعزيز، السوق، سكاكا 72311",
+        "phones": [
+          "0567184321",
+          "0146261333"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.99037723,40.20964175",
+        "lat": 29.99038,
+        "lon": 40.20964,
+        "sec": "",
+        "loc": "pt",
+        "activity": "وكالة تأجير عقارات",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-ejar-office-198956",
+      "name": "مكتب بيت المهند العقاري",
+      "city": "سكاكا",
+      "field": "name_address_phones",
+      "before": {
+        "phones": [
+          "0505386380"
+        ]
+      },
+      "after": {
+        "name": "مكتب بيت المهند العقاري بسكاكا الجوف",
+        "nb": "طريق الملك خالد، الحزام، سكاكا 72451",
+        "phones": [
+          "0505386380",
+          "0556256699"
+        ],
+        "activity": "بائع عقارات بالمزاد"
+      },
+      "reason": "direct Maps card confirms current title, address and phone; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0505386380"
+            ],
+            "expected": [
+              "0505386380"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-198956",
+        "n": "مكتب بيت المهند العقاري",
+        "city": "سكاكا",
+        "nb": "طريق الملك خالد، سكاكا، الجوف، المملكة العربية السعودية",
+        "phones": [
+          "0505386380"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.97434092,40.18945016",
+        "lat": 29.97434,
+        "lon": 40.18945,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-198956",
+        "n": "مكتب بيت المهند العقاري بسكاكا الجوف",
+        "city": "سكاكا",
+        "nb": "طريق الملك خالد، الحزام، سكاكا 72451",
+        "phones": [
+          "0505386380",
+          "0556256699"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.97434092,40.18945016",
+        "lat": 29.97434,
+        "lon": 40.18945,
+        "sec": "",
+        "loc": "pt",
+        "activity": "بائع عقارات بالمزاد",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-ejar-office-197369",
+      "name": "صدى الجوف",
+      "city": "سكاكا",
+      "field": "address_phones",
+      "before": {
+        "phones": [
+          "0501629996"
+        ]
+      },
+      "after": {
+        "nb": "8448-8353 طريق الملك خالد، قارا، سكاكا 72347",
+        "phones": [
+          "0501629996",
+          "0146330335"
+        ]
+      },
+      "reason": "direct Maps card displays the current address and phone; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0501629996"
+            ],
+            "expected": [
+              "0501629996"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-197369",
+        "n": "مكتب صدى الجوف للعقار",
+        "city": "سكاكا",
+        "nb": "الملك خالد، سكاكا، الجوف، المملكة العربية السعودية",
+        "phones": [
+          "0501629996"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.88990352,40.2143009",
+        "lat": 29.8899,
+        "lon": 40.2143,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-197369",
+        "n": "مكتب صدى الجوف للعقار",
+        "city": "سكاكا",
+        "nb": "8448-8353 طريق الملك خالد، قارا، سكاكا 72347",
+        "phones": [
+          "0501629996",
+          "0146330335"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.88990352,40.2143009",
+        "lat": 29.8899,
+        "lon": 40.2143,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-ejar-office-193154",
+      "name": "كل المواقع",
+      "city": "سكاكا",
+      "field": "address_phones",
+      "before": {
+        "phones": [
+          "0560666357"
+        ]
+      },
+      "after": {
+        "nb": "W5JQ+5RW، الفيصلية، سكاكا 72346",
+        "phones": [
+          "0560666357",
+          "0146265255"
+        ]
+      },
+      "reason": "direct Maps card displays the current address and phone; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0560666357"
+            ],
+            "expected": [
+              "0560666357"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-193154",
+        "n": "مكتب كل المواقع للعقارات",
+        "city": "سكاكا",
+        "nb": "الملك خالد، الزهور، سكاكا، الجوف، المملكة العربية السعودية",
+        "phones": [
+          "0560666357"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.9305954,40.1894629",
+        "lat": 29.9306,
+        "lon": 40.18946,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-193154",
+        "n": "مكتب كل المواقع للعقارات",
+        "city": "سكاكا",
+        "nb": "W5JQ+5RW، الفيصلية، سكاكا 72346",
+        "phones": [
+          "0560666357",
+          "0146265255"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.9305954,40.1894629",
+        "lat": 29.9306,
+        "lon": 40.18946,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-ejar-office-197754",
+      "name": "سهم المدن",
+      "city": "سكاكا",
+      "field": "name_address_phones",
+      "before": {
+        "name": "سهم المدن",
+        "phones": [
+          "0559973392"
+        ]
+      },
+      "after": {
+        "name": "مكتب سهم العقاري",
+        "nb": "W5QR+QW3، المحمدية، سكاكا 72345",
+        "phones": [
+          "0559973392",
+          "0558081707"
+        ],
+        "activity": "وكالة عقارات"
+      },
+      "reason": "direct Maps card at the matching pin confirms current title, address and phone; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "compatible",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مكتب سهم المدن العقاري",
+            "expected": "سهم المدن",
+            "exact": false,
+            "compatible": true
+          },
+          {
+            "field": "phones",
+            "actual": [
+              "0559973392"
+            ],
+            "expected": [
+              "0559973392"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-197754",
+        "n": "مكتب سهم المدن العقاري",
+        "city": "سكاكا",
+        "nb": "طريق الامير نايف بن عبدالعزيز، الزهور، سكاكا، الجوف، المملكة العربية السعودية",
+        "phones": [
+          "0559973392"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.93797954,40.19099631",
+        "lat": 29.93798,
+        "lon": 40.191,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-197754",
+        "n": "مكتب سهم العقاري",
+        "city": "سكاكا",
+        "nb": "W5QR+QW3، المحمدية، سكاكا 72345",
+        "phones": [
+          "0559973392",
+          "0558081707"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.93797954,40.19099631",
+        "lat": 29.93798,
+        "lon": 40.191,
+        "sec": "",
+        "loc": "pt",
+        "activity": "وكالة عقارات",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-ejar-office-194012",
+      "name": "امتار الفيصلية",
+      "city": "سكاكا",
+      "field": "address_phones",
+      "before": {
+        "phones": [
+          "0542227256"
+        ]
+      },
+      "after": {
+        "nb": "WRJA6421 خالد بن عبدالعزيز، مخطط الزهور، سكاكا 72342",
+        "phones": [
+          "0542227256",
+          "0543331449"
+        ]
+      },
+      "reason": "direct Maps card displays the current address and phone; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0542227256"
+            ],
+            "expected": [
+              "0542227256"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-194012",
+        "n": "مكتب امتار الفيصليه للعقارات",
+        "city": "سكاكا",
+        "nb": "شارع الأمير سلطان بن عبد العزيز، سكاكا، الجوف، المملكة العربية السعودية",
+        "phones": [
+          "0542227256"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.94529448,40.20292282",
+        "lat": 29.94529,
+        "lon": 40.20292,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-194012",
+        "n": "مكتب امتار الفيصليه للعقارات",
+        "city": "سكاكا",
+        "nb": "WRJA6421 خالد بن عبدالعزيز، مخطط الزهور، سكاكا 72342",
+        "phones": [
+          "0542227256",
+          "0543331449"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.94529448,40.20292282",
+        "lat": 29.94529,
+        "lon": 40.20292,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-ejar-office-303197",
+      "name": "مؤسسة أفق المربع العقارية",
+      "city": "سكاكا",
+      "field": "name_address_phones",
+      "before": {
+        "name": "مؤسسة أفق المربع العقارية",
+        "phones": [
+          "0501657613"
+        ]
+      },
+      "after": {
+        "name": "مكتب المربع للعقارات والتطوير العقاري والمقاولات",
+        "nb": "X5HQ+2GV، سكاكا",
+        "phones": [
+          "0501657613",
+          "0552302266"
+        ],
+        "activity": "وكالة عقارات"
+      },
+      "reason": "direct Maps card at the stored coordinates confirms current title, address and phone; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مؤسسة أفق المربع العقارية",
+            "expected": "مؤسسة أفق المربع العقارية",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "phones",
+            "actual": [
+              "0501657613"
+            ],
+            "expected": [
+              "0501657613"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-303197",
+        "n": "مؤسسة أفق المربع العقارية",
+        "city": "سكاكا",
+        "nb": "طريق القنيطرة، السليمانية، سكاكا، الجوف، المملكة العربية السعودية",
+        "phones": [
+          "0501657613"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.97759552,40.18880749",
+        "lat": 29.9776,
+        "lon": 40.18881,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-303197",
+        "n": "مكتب المربع للعقارات والتطوير العقاري والمقاولات",
+        "city": "سكاكا",
+        "nb": "X5HQ+2GV، سكاكا",
+        "phones": [
+          "0501657613",
+          "0552302266"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.97759552,40.18880749",
+        "lat": 29.9776,
+        "lon": 40.18881,
+        "sec": "",
+        "loc": "pt",
+        "activity": "وكالة عقارات",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "phase5-google-office-23c526045757",
+      "name": "مكتب واجهة الخير للعقارات",
+      "city": "الرياض",
+      "field": "nb",
+      "before": "",
+      "after": "الشرق، الرياض 13618",
+      "reason": "direct Google Maps card supplies the missing address; stored name and phone 0509994277 match, and Qadisiyah was not accessed",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "nb",
+            "actual": "",
+            "expected": "",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "phase5-google-office-23c526045757",
+        "n": "مكتب واجهة الخير للعقارات",
+        "city": "الرياض",
+        "nb": "",
+        "phones": [
+          "0509994277"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJhzWwOutVLj4RGYfNQcXPr7g",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "phase5-google-office-23c526045757",
+        "n": "مكتب واجهة الخير للعقارات",
+        "city": "الرياض",
+        "nb": "الشرق، الرياض 13618",
+        "phones": [
+          "0509994277"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJhzWwOutVLj4RGYfNQcXPr7g",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      }
+    },
+    {
+      "id": "entity-50a0a6f3ad31",
+      "name": "مكتب عقاري",
+      "city": "بريدة",
+      "field": "address_coordinates",
+      "before": {
+        "coordinates": [
+          26.34494,
+          43.92163
+        ]
+      },
+      "after": {
+        "nb": "طريق الحمر، حي الزرقاء، بريدة 52372",
+        "coordinates": [
+          26.3473725,
+          43.9232215
+        ]
+      },
+      "distanceKm": 0.318,
+      "reason": "direct Maps card confirms the current address and pin; stored business name and phone match",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "coordinates",
+            "actual": [
+              26.34494,
+              43.92163
+            ],
+            "expected": [
+              26.34494,
+              43.92163
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "entity-50a0a6f3ad31",
+        "n": "بصمة بريدة للاستثمارات العقارية",
+        "city": "بريدة",
+        "nb": "الزرقاء، طريق الحمر",
+        "phones": [
+          "0583598720"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=7628233635926473334",
+        "lat": 26.34494,
+        "lon": 43.92163,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "entity-50a0a6f3ad31",
+        "n": "بصمة بريدة للاستثمارات العقارية",
+        "city": "بريدة",
+        "nb": "طريق الحمر، حي الزرقاء، بريدة 52372",
+        "phones": [
+          "0583598720"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=7628233635926473334",
+        "lat": 26.3473725,
+        "lon": 43.9232215,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "entity-d4e7af4fc2f6",
+      "name": "روشن فيو العقارية",
+      "city": "جازان",
+      "field": "name_address",
+      "before": {
+        "name": "روشن فيو العقارية",
+        "nb": "السويس"
+      },
+      "after": {
+        "name": "شركة روشن فيو العقارية",
+        "nb": "شارع أبو بكر الصديق، السويس، جيزان 82722",
+        "activity": "وكالة عقارات تجارية"
+      },
+      "reason": "direct Maps card confirms the expanded current title and complete address; phone and pin match",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "روشن فيو العقارية",
+            "expected": "روشن فيو العقارية",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "nb",
+            "actual": "السويس",
+            "expected": "السويس",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "entity-d4e7af4fc2f6",
+        "n": "روشن فيو العقارية",
+        "city": "جازان",
+        "nb": "السويس",
+        "phones": [
+          "0500795552"
+        ],
+        "web": "https://roshnview.com/",
+        "maps": "https://www.google.com/maps/place/شركة+روشن+فيو+العقارية%E2%80%AD/@16.8702013,42.5821558,17z/data=!4m8!3m7!1s0x1607e3b547bc50a3:0xa85099f09fbfa9be!8m2!3d16.8701962!4d42.5847307!9m1!1b1!16s%2Fg%2F11vrxz1mr8?entry=ttu",
+        "lat": 16.8701962,
+        "lon": 42.5847307,
+        "sec": "",
+        "loc": "nb",
+        "mapsQ": "روشن فيو العقارية جازان السويس"
+      },
+      "afterRecord": {
+        "id": "entity-d4e7af4fc2f6",
+        "n": "شركة روشن فيو العقارية",
+        "city": "جازان",
+        "nb": "شارع أبو بكر الصديق، السويس، جيزان 82722",
+        "phones": [
+          "0500795552"
+        ],
+        "web": "https://roshnview.com/",
+        "maps": "https://www.google.com/maps/place/شركة+روشن+فيو+العقارية%E2%80%AD/@16.8702013,42.5821558,17z/data=!4m8!3m7!1s0x1607e3b547bc50a3:0xa85099f09fbfa9be!8m2!3d16.8701962!4d42.5847307!9m1!1b1!16s%2Fg%2F11vrxz1mr8?entry=ttu",
+        "lat": 16.8701962,
+        "lon": 42.5847307,
+        "sec": "",
+        "loc": "nb",
+        "mapsQ": "روشن فيو العقارية جازان السويس",
+        "activity": "وكالة عقارات تجارية",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-web-office-ChIJXaRIxR1gERURYRIoq9XMb8U",
+      "name": "Derwaza Co., Ltd.",
+      "city": "طريف",
+      "field": "name",
+      "before": "Derwaza Co., Ltd.",
+      "after": "شركة دروازة المحدودة",
+      "reason": "same direct Place ID, phone and pin; current Maps title is Arabic and category is real-estate consultant",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "Derwaza Co., Ltd.",
+            "expected": "Derwaza Co., Ltd.",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-web-office-ChIJXaRIxR1gERURYRIoq9XMb8U",
+        "n": "Derwaza Co., Ltd.",
+        "city": "طريف",
+        "nb": "MM82+GCG – الروابي، – Turaif – Saudi Arabia",
+        "phones": [
+          "0509451367"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJXaRIxR1gERURYRIoq9XMb8U",
+        "lat": 31.66631,
+        "lon": 38.65108,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-web-office-ChIJXaRIxR1gERURYRIoq9XMb8U",
+        "n": "شركة دروازة المحدودة",
+        "city": "طريف",
+        "nb": "MM82+GCG – الروابي، – Turaif – Saudi Arabia",
+        "phones": [
+          "0509451367"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJXaRIxR1gERURYRIoq9XMb8U",
+        "lat": 31.66631,
+        "lon": 38.65108,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-ejar-office-250685",
+      "name": "مكتب درك للخدمات العامة والوساطة العقارية",
+      "city": "حقل",
+      "field": "name_activity_coordinates",
+      "before": {
+        "name": "مكتب درك للخدمات العامة والوساطة العقارية",
+        "phones": [
+          "0550724756"
+        ],
+        "coordinates": null,
+        "section": "offices"
+      },
+      "after": {
+        "name": "مكتب درك للخدمات العامه",
+        "phones": [
+          "0550724756"
+        ],
+        "coordinates": [
+          29.2878701,
+          34.9455246
+        ],
+        "activity": "مقهى إنترنت",
+        "section": "non-real-estate/reclassify"
+      },
+      "reason": "direct Maps card with the same phone identifies the current business as an internet cafe rather than a real-estate office; retain prior identity in the audit trail",
+      "result": "archived_and_hidden_from_active_offices",
+      "precondition": {
+        "status": "compatible",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مكتب درك للخدمات العامة والوساطة العقارية",
+            "expected": "مكتب درك للخدمات العامة والوساطة العقارية",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "phones",
+            "actual": [
+              "0550724756"
+            ],
+            "expected": [
+              "0550724756"
+            ],
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "coordinates",
+            "actual": null,
+            "expected": null,
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "section",
+            "actual": "(implicit/not previously stored)",
+            "expected": "offices",
+            "exact": false,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-250685",
+        "n": "مكتب درك للخدمات العامة والوساطة العقارية",
+        "city": "حقل",
+        "nb": "",
+        "phones": [
+          "0550724756"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=8867550915794963816",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-250685",
+        "n": "مكتب درك للخدمات العامه",
+        "city": "حقل",
+        "nb": "",
+        "phones": [
+          "0550724756"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=8867550915794963816",
+        "lat": 29.2878701,
+        "lon": 34.9455246,
+        "sec": "",
+        "loc": "pt",
+        "activity": "مقهى إنترنت",
+        "activitySource": "Google Maps",
+        "activityReviewStatus": "non_real_estate",
+        "archiveReason": "direct Maps card with the same phone identifies the current business as an internet cafe rather than a real-estate office; retain prior identity in the audit trail"
+      },
+      "archive": {
+        "id": "national-ejar-office-250685",
+        "archiveReason": "non_real_estate",
+        "canonicalId": null,
+        "evidence": "direct Maps card with the same phone identifies the current business as an internet cafe rather than a real-estate office; retain prior identity in the audit trail",
+        "archivedRecord": {
+          "id": "national-ejar-office-250685",
+          "n": "مكتب درك للخدمات العامة والوساطة العقارية",
+          "city": "حقل",
+          "nb": "",
+          "phones": [
+            "0550724756"
+          ],
+          "web": "",
+          "maps": "https://www.google.com/maps/?cid=8867550915794963816",
+          "lat": null,
+          "lon": null,
+          "sec": ""
+        }
+      }
+    },
+    {
+      "id": "national-bizmideast-office-6687569893088606870",
+      "name": "مكتب دار الاندلس",
+      "city": "حفر الباطن",
+      "field": "name_phones_coordinates",
+      "before": {
+        "phones": [
+          "0532221043"
+        ],
+        "coordinates": null
+      },
+      "after": {
+        "name": "مكتب دار الأندلس للتطوير العقاري",
+        "phones": [
+          "0532221043",
+          "0505951100"
+        ],
+        "coordinates": [
+          28.3899272,
+          45.9699884
+        ]
+      },
+      "reason": "direct Maps card confirms the current expanded title, phone and pin; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0532221043"
+            ],
+            "expected": [
+              "0532221043"
+            ],
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "coordinates",
+            "actual": null,
+            "expected": null,
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-bizmideast-office-6687569893088606870",
+        "n": "مكتب دار الاندلس للتطوير العقاري",
+        "city": "حفر الباطن",
+        "nb": "8618-8636 سعد بن أبي وقاص، Al Muhammadiyah, Hafar Al Batin 39911, Saudi Arabia",
+        "phones": [
+          "0532221043"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=6687569893088606870",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "national-bizmideast-office-6687569893088606870",
+        "n": "مكتب دار الأندلس للتطوير العقاري",
+        "city": "حفر الباطن",
+        "nb": "8618-8636 سعد بن أبي وقاص، Al Muhammadiyah, Hafar Al Batin 39911, Saudi Arabia",
+        "phones": [
+          "0532221043",
+          "0505951100"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=6687569893088606870",
+        "lat": 28.3899272,
+        "lon": 45.9699884,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-bizmideast-office-7103830080288565090",
+      "name": "مكتب أساس الذهب العقاري",
+      "city": "سيهات",
+      "field": "name_phones_coordinates",
+      "before": {
+        "name": "مكتب أساس الذهب العقاري",
+        "phones": [
+          "0549888551"
+        ]
+      },
+      "after": {
+        "name": "شركة أساس الذهب للتطوير والاستثمار العقاري",
+        "phones": [
+          "0549888551",
+          "920018351"
+        ],
+        "coordinates": [
+          26.4952572,
+          50.0313231
+        ],
+        "activity": "وكالة عقارات"
+      },
+      "reason": "direct Maps card confirms the expanded current title, phone and pin; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مكتب أساس الذهب العقاري",
+            "expected": "مكتب أساس الذهب العقاري",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "phones",
+            "actual": [
+              "0549888551"
+            ],
+            "expected": [
+              "0549888551"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-bizmideast-office-7103830080288565090",
+        "n": "مكتب أساس الذهب العقاري",
+        "city": "سيهات",
+        "nb": "King Faisal Ibn Abdulaziz St, At Tif, Saihat 32463, Saudi Arabia",
+        "phones": [
+          "0549888551"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=7103830080288565090",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "national-bizmideast-office-7103830080288565090",
+        "n": "شركة أساس الذهب للتطوير والاستثمار العقاري",
+        "city": "سيهات",
+        "nb": "King Faisal Ibn Abdulaziz St, At Tif, Saihat 32463, Saudi Arabia",
+        "phones": [
+          "0549888551",
+          "920018351"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=7103830080288565090",
+        "lat": 26.4952572,
+        "lon": 50.0313231,
+        "sec": "",
+        "loc": "pt",
+        "activity": "وكالة عقارات",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJVYN2Fv8BNj4RCG5g-cTGxrU",
+      "name": "مكتب عقاري",
+      "city": "سيهات",
+      "field": "coordinates",
+      "after": [
+        26.4774877,
+        50.0039229
+      ],
+      "distanceKm": 0.325,
+      "reason": "direct Maps card confirms the current pin; other displayed identity fields match",
+      "result": "applied",
+      "precondition": {
+        "status": "not_supplied",
+        "checks": []
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJVYN2Fv8BNj4RCG5g-cTGxrU",
+        "n": "مكتب جداول الابداع للعقار",
+        "city": "سيهات",
+        "nb": "3514 النابية، – 3514 – 8426، – Saihat 32471, Saudi Arabia",
+        "phones": [
+          "0530838168"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJVYN2Fv8BNj4RCG5g-cTGxrU",
+        "lat": 26.47575,
+        "lon": 50.00641,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJVYN2Fv8BNj4RCG5g-cTGxrU",
+        "n": "مكتب جداول الابداع للعقار",
+        "city": "سيهات",
+        "nb": "3514 النابية، – 3514 – 8426، – Saihat 32471, Saudi Arabia",
+        "phones": [
+          "0530838168"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJVYN2Fv8BNj4RCG5g-cTGxrU",
+        "lat": 26.4774877,
+        "lon": 50.0039229,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJTah89hD_ST4RVWTwb53FRZ8",
+      "name": "مكتب حسن أحمد سواد العقاري",
+      "city": "سيهات",
+      "field": "coordinates",
+      "after": [
+        26.4925302,
+        50.0327869
+      ],
+      "distanceKm": 0.264,
+      "reason": "direct Maps card confirms the current pin; other displayed identity fields match",
+      "result": "applied",
+      "precondition": {
+        "status": "not_supplied",
+        "checks": []
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJTah89hD_ST4RVWTwb53FRZ8",
+        "n": "مكتب حسن أحمد سواد العقاري",
+        "city": "سيهات",
+        "nb": "2427, Saudi Arabia, الخصاب، – Saihat 32452 – Saudi Arabia –",
+        "phones": [
+          "0138562725"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJTah89hD_ST4RVWTwb53FRZ8",
+        "lat": 26.49191,
+        "lon": 50.03521,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJTah89hD_ST4RVWTwb53FRZ8",
+        "n": "مكتب حسن أحمد سواد العقاري",
+        "city": "سيهات",
+        "nb": "2427, Saudi Arabia, الخصاب، – Saihat 32452 – Saudi Arabia –",
+        "phones": [
+          "0138562725"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJTah89hD_ST4RVWTwb53FRZ8",
+        "lat": 26.4925302,
+        "lon": 50.0327869,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-ejar-office-199547",
+      "name": "مؤسسة اعمال فارس للعقار",
+      "city": "سكاكا",
+      "field": "name_address_phones",
+      "before": {
+        "name": "مؤسسة اعمال فارس للعقار",
+        "phones": [
+          "0538607973"
+        ]
+      },
+      "after": {
+        "name": "مكتب اعمال فارس العقاري",
+        "nb": "8557 طريق الملك فهد بن عبدالعزيز، المحمدية ب، سكاكا 72345 4466",
+        "phones": [
+          "0538607973",
+          "0504977075"
+        ],
+        "activity": "وكالة عقارات"
+      },
+      "mapsCid": "5552718874585962327",
+      "reason": "direct Maps card at matching coordinates confirms current title, address and phone; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مؤسسة اعمال فارس للعقار",
+            "expected": "مؤسسة اعمال فارس للعقار",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "phones",
+            "actual": [
+              "0538607973"
+            ],
+            "expected": [
+              "0538607973"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-199547",
+        "n": "مؤسسة اعمال فارس للعقار",
+        "city": "سكاكا",
+        "nb": "طريق الملك فهد بن عبد العزيز، سكاكا، الجوف، المملكة العربية السعودية",
+        "phones": [
+          "0538607973"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.95143119,40.19565001",
+        "lat": 29.95143,
+        "lon": 40.19565,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-199547",
+        "n": "مكتب اعمال فارس العقاري",
+        "city": "سكاكا",
+        "nb": "8557 طريق الملك فهد بن عبدالعزيز، المحمدية ب، سكاكا 72345 4466",
+        "phones": [
+          "0538607973",
+          "0504977075"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.95143119,40.19565001",
+        "lat": 29.95143,
+        "lon": 40.19565,
+        "sec": "",
+        "loc": "pt",
+        "activity": "وكالة عقارات",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-ejar-office-192616",
+      "name": "مكتب عالم الاتكال العقاري",
+      "city": "سكاكا",
+      "field": "name_address_activity",
+      "before": {
+        "name": "مكتب عالم الاتكال العقاري"
+      },
+      "after": {
+        "name": "عالم الاتكال للعقارات",
+        "nb": "4338 طريق الملك فهد بن عبدالعزيز، سكاكا",
+        "activity": "شركة إدارة عقارات"
+      },
+      "reason": "direct Maps card confirms the current title and address; stored phone 0546766339 matches",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مكتب عالم الاتكال العقاري",
+            "expected": "مكتب عالم الاتكال العقاري",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-192616",
+        "n": "مكتب عالم الاتكال العقاري",
+        "city": "سكاكا",
+        "nb": "طريق الملك فهد بن عبد العزيز، العزيزية، سكاكا، الجوف، المملكة العربية السعودية",
+        "phones": [
+          "0546766339"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.94922547,40.19417889",
+        "lat": 29.94922,
+        "lon": 40.19418,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-192616",
+        "n": "عالم الاتكال للعقارات",
+        "city": "سكاكا",
+        "nb": "4338 طريق الملك فهد بن عبدالعزيز، سكاكا",
+        "phones": [
+          "0546766339"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.94922547,40.19417889",
+        "lat": 29.94922,
+        "lon": 40.19418,
+        "sec": "",
+        "loc": "pt",
+        "activity": "شركة إدارة عقارات",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-ejar-office-195663",
+      "name": "مؤسسة مكتب قمة السفير العقاري",
+      "city": "سكاكا",
+      "field": "name_address_phones",
+      "before": {
+        "name": "مؤسسة مكتب قمة السفير العقاري",
+        "phones": [
+          "0504971953"
+        ]
+      },
+      "after": {
+        "name": "مكتب السفير للعقار",
+        "nb": "4546 طريق الملك عبدالعزيز، مخطط الصناعية، سكاكا 72341 6996",
+        "phones": [
+          "0504971953",
+          "0556256677"
+        ],
+        "activity": "شركة إدارة عقارات"
+      },
+      "reason": "direct Maps card at matching coordinates confirms current title, address and phone; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مؤسسة مكتب قمة السفير العقاري",
+            "expected": "مؤسسة مكتب قمة السفير العقاري",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "phones",
+            "actual": [
+              "0504971953"
+            ],
+            "expected": [
+              "0504971953"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-195663",
+        "n": "مؤسسة مكتب قمة السفير العقاري",
+        "city": "سكاكا",
+        "nb": "طريق الملك عبدالعزيز، سكاكا، الجوف، المملكة العربية السعودية",
+        "phones": [
+          "0504971953"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.95483501,40.21460957",
+        "lat": 29.95483,
+        "lon": 40.21461,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-195663",
+        "n": "مكتب السفير للعقار",
+        "city": "سكاكا",
+        "nb": "4546 طريق الملك عبدالعزيز، مخطط الصناعية، سكاكا 72341 6996",
+        "phones": [
+          "0504971953",
+          "0556256677"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.95483501,40.21460957",
+        "lat": 29.95483,
+        "lon": 40.21461,
+        "sec": "",
+        "loc": "pt",
+        "activity": "شركة إدارة عقارات",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-ejar-office-298109",
+      "name": "مكتب الاختيار الرائد العقاري",
+      "city": "سكاكا",
+      "field": "name_address_phones_status",
+      "before": {
+        "name": "مكتب الاختيار الرائد العقاري",
+        "phones": [
+          "0596666176"
+        ],
+        "status": "active"
+      },
+      "after": {
+        "name": "مكتب الرائد العقارى",
+        "nb": "طريق الملك عبدالله، العزيزية، سكاكا",
+        "phones": [
+          "0596666176",
+          "0146221562"
+        ],
+        "status": "permanently_closed",
+        "section": "archive_or_disable"
+      },
+      "reason": "direct Maps card at matching coordinates marks the office permanently closed; preserve prior phone and record history",
+      "result": "archived_and_hidden_from_active_offices",
+      "precondition": {
+        "status": "compatible",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مكتب الاختيار الرائد العقاري",
+            "expected": "مكتب الاختيار الرائد العقاري",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "phones",
+            "actual": [
+              "0596666176"
+            ],
+            "expected": [
+              "0596666176"
+            ],
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "status",
+            "actual": "(implicit/not previously stored)",
+            "expected": "active",
+            "exact": false,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-298109",
+        "n": "مكتب الاختيار الرائد العقاري",
+        "city": "دومة الجندل",
+        "nb": "الملك عبدالله، العزيزية، دومة الجندل، الجوف، المملكة العربية السعودية",
+        "phones": [
+          "0596666176"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.806379239958,39.864630385834",
+        "lat": 29.80638,
+        "lon": 39.86463,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-298109",
+        "n": "مكتب الرائد العقارى",
+        "city": "دومة الجندل",
+        "nb": "طريق الملك عبدالله، العزيزية، سكاكا",
+        "phones": [
+          "0596666176",
+          "0146221562"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.806379239958,39.864630385834",
+        "lat": 29.80638,
+        "lon": 39.86463,
+        "sec": "",
+        "loc": "pt",
+        "officeStatus": "permanently_closed",
+        "officeStatusSource": "Google Maps",
+        "activityReviewStatus": "closed_permanently",
+        "archiveReason": "direct Maps card at matching coordinates marks the office permanently closed; preserve prior phone and record history"
+      },
+      "archive": {
+        "id": "national-ejar-office-298109",
+        "archiveReason": "permanently_closed",
+        "canonicalId": null,
+        "evidence": "direct Maps card at matching coordinates marks the office permanently closed; preserve prior phone and record history",
+        "archivedRecord": {
+          "id": "national-ejar-office-298109",
+          "n": "مكتب الاختيار الرائد العقاري",
+          "city": "دومة الجندل",
+          "nb": "الملك عبدالله، العزيزية، دومة الجندل، الجوف، المملكة العربية السعودية",
+          "phones": [
+            "0596666176"
+          ],
+          "web": "",
+          "maps": "https://maps.google.com/maps?q=29.806379239958,39.864630385834",
+          "lat": 29.80638,
+          "lon": 39.86463,
+          "sec": "",
+          "loc": "pt"
+        }
+      }
+    },
+    {
+      "id": "national-ejar-office-194751",
+      "name": "شركة عقارية",
+      "city": "دومة الجندل",
+      "field": "name_address_phones",
+      "before": {
+        "phones": []
+      },
+      "after": {
+        "name": "مكتب الروضان للخدمات العقارية",
+        "nb": "طريق الملك عبدالله، العزيزية، دومة الجندل 74664",
+        "phones": [
+          "0546220123"
+        ],
+        "coordinates": [
+          29.8065576,
+          39.8637612
+        ],
+        "activity": "شركة إدارة عقارات"
+      },
+      "mapsCid": "2599021216209423614",
+      "reason": "direct Maps card matches the stored coordinates and supplies the current title, address and phone",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [],
+            "expected": [],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-194751",
+        "n": "شركة روضان فهد روضان الحسن للخدمات العقارية شخص واحد",
+        "city": "دومة الجندل",
+        "nb": "الصبور، العزيزية، دومة الجندل، الجوف، المملكة العربية السعودية",
+        "phones": [],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.8066455,39.8638244",
+        "lat": 29.80664,
+        "lon": 39.86382,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-194751",
+        "n": "مكتب الروضان للخدمات العقارية",
+        "city": "دومة الجندل",
+        "nb": "طريق الملك عبدالله، العزيزية، دومة الجندل 74664",
+        "phones": [
+          "0546220123"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=29.8066455,39.8638244",
+        "lat": 29.8065576,
+        "lon": 39.8637612,
+        "sec": "",
+        "loc": "pt",
+        "activity": "شركة إدارة عقارات",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJOWe_huYJSj4RWY3YNktLRG0",
+      "name": "ال همام",
+      "city": "رأس تنورة",
+      "field": "coordinates",
+      "before": [
+        26.70036,
+        50.04831
+      ],
+      "after": [
+        26.7040898,
+        50.0479166
+      ],
+      "distanceKm": 0.416,
+      "reason": "direct Maps card confirms the current pin; identity fields match",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "coordinates",
+            "actual": [
+              26.70036,
+              50.04831
+            ],
+            "expected": [
+              26.70036,
+              50.04831
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJOWe_huYJSj4RWY3YNktLRG0",
+        "n": "مكتب ال همام للعقارات",
+        "city": "رأس تنورة",
+        "nb": "4549 شارع الملك عبدالله بن عبدالعزيز، المنتزه، رأس تنورة 32819 7577، – Ras Tanura 31941 – Saudi Arabia –",
+        "phones": [
+          "0569176777"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJOWe_huYJSj4RWY3YNktLRG0",
+        "lat": 26.70036,
+        "lon": 50.04831,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJOWe_huYJSj4RWY3YNktLRG0",
+        "n": "مكتب ال همام للعقارات",
+        "city": "رأس تنورة",
+        "nb": "4549 شارع الملك عبدالله بن عبدالعزيز، المنتزه، رأس تنورة 32819 7577، – Ras Tanura 31941 – Saudi Arabia –",
+        "phones": [
+          "0569176777"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJOWe_huYJSj4RWY3YNktLRG0",
+        "lat": 26.7040898,
+        "lon": 50.0479166,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJQUxPHaEJSj4RpmusAFNm-oI",
+      "name": "البشيري",
+      "city": "رأس تنورة",
+      "field": "coordinates",
+      "after": [
+        26.7207313,
+        50.0403666
+      ],
+      "distanceKm": 0.118,
+      "reason": "direct Maps card confirms the current pin; identity fields match",
+      "result": "applied",
+      "precondition": {
+        "status": "not_supplied",
+        "checks": []
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJQUxPHaEJSj4RpmusAFNm-oI",
+        "n": "مكتب البشيري العقاري",
+        "city": "رأس تنورة",
+        "nb": "8496 شارع زيد بن اسامة، النعيم، رأس تنورة 32848 4249، – Saudi Arabia –  –",
+        "phones": [
+          "0556450667"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJQUxPHaEJSj4RpmusAFNm-oI",
+        "lat": 26.71969,
+        "lon": 50.04061,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJQUxPHaEJSj4RpmusAFNm-oI",
+        "n": "مكتب البشيري العقاري",
+        "city": "رأس تنورة",
+        "nb": "8496 شارع زيد بن اسامة، النعيم، رأس تنورة 32848 4249، – Saudi Arabia –  –",
+        "phones": [
+          "0556450667"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJQUxPHaEJSj4RpmusAFNm-oI",
+        "lat": 26.7207313,
+        "lon": 50.0403666,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJOclCg7EJSj4ROnpi5OJdFeg",
+      "name": "عبدالرحمن الخثلان",
+      "city": "رأس تنورة",
+      "field": "coordinates",
+      "after": [
+        26.7112433,
+        50.0541736
+      ],
+      "distanceKm": 0.485,
+      "reason": "direct Maps card confirms the current pin; identity fields match",
+      "result": "applied",
+      "precondition": {
+        "status": "not_supplied",
+        "checks": []
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJOclCg7EJSj4ROnpi5OJdFeg",
+        "n": "مكتب عبدالرحمن سعد الخثلان للخدمات العقارية",
+        "city": "رأس تنورة",
+        "nb": "2437 شارع الامير سلمان بن عبدالعزيز، 7303، الفيحاء، – Ras Tanura 32817، – Saudi Arabia –",
+        "phones": [
+          "0545112277"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJOclCg7EJSj4ROnpi5OJdFeg",
+        "lat": 26.71222,
+        "lon": 50.05868,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJOclCg7EJSj4ROnpi5OJdFeg",
+        "n": "مكتب عبدالرحمن سعد الخثلان للخدمات العقارية",
+        "city": "رأس تنورة",
+        "nb": "2437 شارع الامير سلمان بن عبدالعزيز، 7303، الفيحاء، – Ras Tanura 32817، – Saudi Arabia –",
+        "phones": [
+          "0545112277"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJOclCg7EJSj4ROnpi5OJdFeg",
+        "lat": 26.7112433,
+        "lon": 50.0541736,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "gap-office-208470666c",
+      "name": "مؤسسة مكتب إعمار البديعة للعقارات",
+      "city": "الرياض",
+      "field": "name_address_phones",
+      "before": {
+        "name": "مؤسسة مكتب إعمار البديعة للعقارات",
+        "nb": "ظهرة البديعة، حي ظهرة البديعة، الرياض",
+        "phones": [
+          "0558782212"
+        ]
+      },
+      "after": {
+        "name": "مكتب اعمار البديعه للعقارات",
+        "nb": "Unnamed Road، ظهرة البديعة، الرياض 12981",
+        "phones": [
+          "0558782212",
+          "0551122921"
+        ],
+        "activity": "مكتب الشركات"
+      },
+      "reason": "direct Maps card confirms the current title, complete address and phone; preserve prior phone because it is not proven invalid; Qadisiyah was not accessed",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مؤسسة مكتب إعمار البديعة للعقارات",
+            "expected": "مؤسسة مكتب إعمار البديعة للعقارات",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "nb",
+            "actual": "ظهرة البديعة، حي ظهرة البديعة، الرياض",
+            "expected": "ظهرة البديعة، حي ظهرة البديعة، الرياض",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "phones",
+            "actual": [
+              "0558782212"
+            ],
+            "expected": [
+              "0558782212"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "gap-office-208470666c",
+        "n": "مؤسسة مكتب إعمار البديعة للعقارات",
+        "city": "الرياض",
+        "nb": "ظهرة البديعة، حي ظهرة البديعة، الرياض",
+        "phones": [
+          "0558782212"
+        ],
+        "web": "https://sa.aqar.fm/user/3606838",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A5%D8%B9%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%AF%D9%8A%D8%B9%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "lat": 24.59771,
+        "lon": 46.64951,
+        "sec": "غرب",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "gap-office-208470666c",
+        "n": "مكتب اعمار البديعه للعقارات",
+        "city": "الرياض",
+        "nb": "Unnamed Road، ظهرة البديعة، الرياض 12981",
+        "phones": [
+          "0558782212",
+          "0551122921"
+        ],
+        "web": "https://sa.aqar.fm/user/3606838",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A5%D8%B9%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%AF%D9%8A%D8%B9%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "lat": 24.59771,
+        "lon": 46.64951,
+        "sec": "غرب",
+        "loc": "nb",
+        "activity": "مكتب الشركات",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJlYIv08APbBURHRwmgElLopY",
+      "name": "مكتب ديار الوسيط للعقارات",
+      "city": "عرعر",
+      "field": "address_phones",
+      "before": {
+        "phones": [
+          "0565948088"
+        ]
+      },
+      "after": {
+        "nb": "شارع أم المؤمنين خديجة، المنصورية، عرعر 73244",
+        "phones": [
+          "0565948088",
+          "0545650388"
+        ],
+        "activity": "وكالة عقارات"
+      },
+      "reason": "direct Maps card displays the current address and phone; preserve prior phone because it is not proven invalid",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0565948088"
+            ],
+            "expected": [
+              "0565948088"
+            ],
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJlYIv08APbBURHRwmgElLopY",
+        "n": "مكتب ديار الوسيط للعقارات",
+        "city": "عرعر",
+        "nb": "6650 King Abdullah Road – حي الربوة، – 4166 – Arar 73315, Saudi Arabia",
+        "phones": [
+          "0565948088"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJlYIv08APbBURHRwmgElLopY",
+        "lat": 31.00642,
+        "lon": 41.04579,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJlYIv08APbBURHRwmgElLopY",
+        "n": "مكتب ديار الوسيط للعقارات",
+        "city": "عرعر",
+        "nb": "شارع أم المؤمنين خديجة، المنصورية، عرعر 73244",
+        "phones": [
+          "0565948088",
+          "0545650388"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJlYIv08APbBURHRwmgElLopY",
+        "lat": 31.00642,
+        "lon": 41.04579,
+        "sec": "",
+        "loc": "nb",
+        "activity": "وكالة عقارات",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJW7yBbGENbBURDLNt3tfziaY",
+      "name": "مكتب نخبة الخيمة العقاري",
+      "city": "عرعر",
+      "field": "address_phones_status",
+      "before": {
+        "phones": [
+          "0500042852"
+        ],
+        "status": "active"
+      },
+      "after": {
+        "nb": "بجانب الثلاجة العالمية، المطار، عرعر 73312",
+        "phones": [
+          "0500042852",
+          "0532628881"
+        ],
+        "status": "permanently_closed",
+        "section": "archive_or_disable"
+      },
+      "reason": "direct Maps card displays the current phone and marks the office permanently closed; preserve prior phone and audit history",
+      "result": "archived_and_hidden_from_active_offices",
+      "precondition": {
+        "status": "compatible",
+        "checks": [
+          {
+            "field": "phones",
+            "actual": [
+              "0500042852"
+            ],
+            "expected": [
+              "0500042852"
+            ],
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "status",
+            "actual": "(implicit/not previously stored)",
+            "expected": "active",
+            "exact": false,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJW7yBbGENbBURDLNt3tfziaY",
+        "n": "مكتب نخبة الخيمة العقاري",
+        "city": "عرعر",
+        "nb": "بجانب الثلاجة العالمية – Almatar – Arar 73312 – Saudi Arabia",
+        "phones": [
+          "0500042852"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJW7yBbGENbBURDLNt3tfziaY",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJW7yBbGENbBURDLNt3tfziaY",
+        "n": "مكتب نخبة الخيمة العقاري",
+        "city": "عرعر",
+        "nb": "بجانب الثلاجة العالمية، المطار، عرعر 73312",
+        "phones": [
+          "0500042852",
+          "0532628881"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJW7yBbGENbBURDLNt3tfziaY",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "officeStatus": "permanently_closed",
+        "officeStatusSource": "Google Maps",
+        "activityReviewStatus": "closed_permanently",
+        "archiveReason": "direct Maps card displays the current phone and marks the office permanently closed; preserve prior phone and audit history"
+      },
+      "archive": {
+        "id": "national-icuae-office-ChIJW7yBbGENbBURDLNt3tfziaY",
+        "archiveReason": "permanently_closed",
+        "canonicalId": null,
+        "evidence": "direct Maps card displays the current phone and marks the office permanently closed; preserve prior phone and audit history",
+        "archivedRecord": {
+          "id": "national-icuae-office-ChIJW7yBbGENbBURDLNt3tfziaY",
+          "n": "مكتب نخبة الخيمة العقاري",
+          "city": "عرعر",
+          "nb": "بجانب الثلاجة العالمية – Almatar – Arar 73312 – Saudi Arabia",
+          "phones": [
+            "0500042852"
+          ],
+          "web": "",
+          "maps": "https://www.google.com/maps/place/?q=place_id:ChIJW7yBbGENbBURDLNt3tfziaY",
+          "lat": null,
+          "lon": null,
+          "sec": ""
+        }
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJUdh3D34PbBUReoOPn05vzUY",
+      "name": "درة المروج",
+      "city": "عرعر",
+      "field": "status",
+      "before": "active",
+      "after": "temporarily_closed",
+      "reason": "direct Maps card with matching name and phone 0567843431 marks the office temporarily closed",
+      "result": "applied",
+      "precondition": {
+        "status": "compatible",
+        "checks": [
+          {
+            "field": "status",
+            "actual": "(implicit active)",
+            "expected": "active",
+            "exact": false,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJUdh3D34PbBUReoOPn05vzUY",
+        "n": "مكتب دره المروج العقاري",
+        "city": "عرعر",
+        "nb": "234G+7HJ – Arar 73247 – Saudi Arabia –",
+        "phones": [
+          "0567843431"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJUdh3D34PbBUReoOPn05vzUY",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJUdh3D34PbBUReoOPn05vzUY",
+        "n": "مكتب دره المروج العقاري",
+        "city": "عرعر",
+        "nb": "234G+7HJ – Arar 73247 – Saudi Arabia –",
+        "phones": [
+          "0567843431"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJUdh3D34PbBUReoOPn05vzUY",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "officeStatus": "temporarily_closed",
+        "officeStatusSource": "Google Maps"
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJsSwh3_YPbBURhWCKuUlSYLw",
+      "name": "طلال العقاري",
+      "city": "عرعر",
+      "field": "status",
+      "before": "active",
+      "after": "permanently_closed",
+      "reason": "direct Maps card with matching name and phone 0502583421 marks the office permanently closed; archive or disable without deleting history",
+      "result": "archived_and_hidden_from_active_offices",
+      "precondition": {
+        "status": "compatible",
+        "checks": [
+          {
+            "field": "status",
+            "actual": "(implicit active)",
+            "expected": "active",
+            "exact": false,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJsSwh3_YPbBURhWCKuUlSYLw",
+        "n": "مكتب طلال العقاري",
+        "city": "عرعر",
+        "nb": "2335+8JV – شارع الاربعين – Arar 73244 – Saudi Arabia",
+        "phones": [
+          "0502583421"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJsSwh3_YPbBURhWCKuUlSYLw",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJsSwh3_YPbBURhWCKuUlSYLw",
+        "n": "مكتب طلال العقاري",
+        "city": "عرعر",
+        "nb": "2335+8JV – شارع الاربعين – Arar 73244 – Saudi Arabia",
+        "phones": [
+          "0502583421"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJsSwh3_YPbBURhWCKuUlSYLw",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "activityReviewStatus": "closed_permanently",
+        "archiveReason": "direct Maps card with matching name and phone 0502583421 marks the office permanently closed; archive or disable without deleting history"
+      },
+      "archive": {
+        "id": "national-icuae-office-ChIJsSwh3_YPbBURhWCKuUlSYLw",
+        "archiveReason": "permanently_closed",
+        "canonicalId": null,
+        "evidence": "direct Maps card with matching name and phone 0502583421 marks the office permanently closed; archive or disable without deleting history",
+        "archivedRecord": {
+          "id": "national-icuae-office-ChIJsSwh3_YPbBURhWCKuUlSYLw",
+          "n": "مكتب طلال العقاري",
+          "city": "عرعر",
+          "nb": "2335+8JV – شارع الاربعين – Arar 73244 – Saudi Arabia",
+          "phones": [
+            "0502583421"
+          ],
+          "web": "",
+          "maps": "https://www.google.com/maps/place/?q=place_id:ChIJsSwh3_YPbBURhWCKuUlSYLw",
+          "lat": null,
+          "lon": null,
+          "sec": ""
+        }
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJ06M8kH0PbBURHXBtJf-Sr-g",
+      "name": "درة العلياء",
+      "city": "عرعر",
+      "field": "status",
+      "before": "active",
+      "after": "permanently_closed",
+      "reason": "direct Maps card with matching name and phone 0501203722 marks the office permanently closed; archive or disable without deleting history",
+      "result": "archived_and_hidden_from_active_offices",
+      "precondition": {
+        "status": "compatible",
+        "checks": [
+          {
+            "field": "status",
+            "actual": "(implicit active)",
+            "expected": "active",
+            "exact": false,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJ06M8kH0PbBURHXBtJf-Sr-g",
+        "n": "مكتب عقاري درة العلياء",
+        "city": "عرعر",
+        "nb": "234G+7GP – حي المروج – Arar 73247 – Saudi Arabia",
+        "phones": [
+          "0501203722"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ06M8kH0PbBURHXBtJf-Sr-g",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJ06M8kH0PbBURHXBtJf-Sr-g",
+        "n": "مكتب عقاري درة العلياء",
+        "city": "عرعر",
+        "nb": "234G+7GP – حي المروج – Arar 73247 – Saudi Arabia",
+        "phones": [
+          "0501203722"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ06M8kH0PbBURHXBtJf-Sr-g",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "activityReviewStatus": "closed_permanently",
+        "archiveReason": "direct Maps card with matching name and phone 0501203722 marks the office permanently closed; archive or disable without deleting history"
+      },
+      "archive": {
+        "id": "national-icuae-office-ChIJ06M8kH0PbBURHXBtJf-Sr-g",
+        "archiveReason": "permanently_closed",
+        "canonicalId": null,
+        "evidence": "direct Maps card with matching name and phone 0501203722 marks the office permanently closed; archive or disable without deleting history",
+        "archivedRecord": {
+          "id": "national-icuae-office-ChIJ06M8kH0PbBURHXBtJf-Sr-g",
+          "n": "مكتب عقاري درة العلياء",
+          "city": "عرعر",
+          "nb": "234G+7GP – حي المروج – Arar 73247 – Saudi Arabia",
+          "phones": [
+            "0501203722"
+          ],
+          "web": "",
+          "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ06M8kH0PbBURHXBtJf-Sr-g",
+          "lat": null,
+          "lon": null,
+          "sec": ""
+        }
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJBz9Ad7QPbBURrepRTd6pr2s",
+      "name": "منسوب العقاري",
+      "city": "عرعر",
+      "field": "status",
+      "before": "active",
+      "after": "permanently_closed",
+      "reason": "direct Maps card with matching name and phone 0594041451 marks the office permanently closed; archive or disable without deleting history",
+      "result": "archived_and_hidden_from_active_offices",
+      "precondition": {
+        "status": "compatible",
+        "checks": [
+          {
+            "field": "status",
+            "actual": "(implicit active)",
+            "expected": "active",
+            "exact": false,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJBz9Ad7QPbBURrepRTd6pr2s",
+        "n": "مكتب منسوب العقاري",
+        "city": "عرعر",
+        "nb": "Arar 73244 – Saudi Arabia –  –",
+        "phones": [
+          "0594041451"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJBz9Ad7QPbBURrepRTd6pr2s",
+        "lat": null,
+        "lon": null,
+        "sec": ""
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJBz9Ad7QPbBURrepRTd6pr2s",
+        "n": "مكتب منسوب العقاري",
+        "city": "عرعر",
+        "nb": "Arar 73244 – Saudi Arabia –  –",
+        "phones": [
+          "0594041451"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJBz9Ad7QPbBURrepRTd6pr2s",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "activityReviewStatus": "closed_permanently",
+        "archiveReason": "direct Maps card with matching name and phone 0594041451 marks the office permanently closed; archive or disable without deleting history"
+      },
+      "archive": {
+        "id": "national-icuae-office-ChIJBz9Ad7QPbBURrepRTd6pr2s",
+        "archiveReason": "permanently_closed",
+        "canonicalId": null,
+        "evidence": "direct Maps card with matching name and phone 0594041451 marks the office permanently closed; archive or disable without deleting history",
+        "archivedRecord": {
+          "id": "national-icuae-office-ChIJBz9Ad7QPbBURrepRTd6pr2s",
+          "n": "مكتب منسوب العقاري",
+          "city": "عرعر",
+          "nb": "Arar 73244 – Saudi Arabia –  –",
+          "phones": [
+            "0594041451"
+          ],
+          "web": "",
+          "maps": "https://www.google.com/maps/place/?q=place_id:ChIJBz9Ad7QPbBURrepRTd6pr2s",
+          "lat": null,
+          "lon": null,
+          "sec": ""
+        }
+      }
+    },
+    {
+      "id": "national-icuae-office-ChIJm_JTIeD1BxYRFGEtFDWFsx4",
+      "name": "مكتب الملهم للخدمات العقارية",
+      "city": "أبو عريش",
+      "field": "maps_reference",
+      "before": "stale_or_empty_place_reference",
+      "after": {
+        "mapsCidHex": "0xbe05d16bd2344a65",
+        "feature": "/g/11zz4x5bv8",
+        "coordinates": [
+          16.9751455,
+          42.8220165
+        ]
+      },
+      "reason": "name-and-city Maps search found the current card; name, phone 0557714000 and Safa address match the stored identity, while the prior place reference no longer resolves",
+      "result": "applied",
+      "precondition": {
+        "status": "compatible",
+        "checks": []
+      },
+      "beforeRecord": {
+        "id": "national-icuae-office-ChIJm_JTIeD1BxYRFGEtFDWFsx4",
+        "n": "الملهم للخدمات العقارية",
+        "city": "أبو عريش",
+        "nb": "XRGC+3VC – As Safa – Abu Arish 84718 – Saudi Arabia",
+        "phones": [
+          "0557714000"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJm_JTIeD1BxYRFGEtFDWFsx4",
+        "lat": 16.97519,
+        "lon": 42.82214,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-icuae-office-ChIJm_JTIeD1BxYRFGEtFDWFsx4",
+        "n": "الملهم للخدمات العقارية",
+        "city": "أبو عريش",
+        "nb": "XRGC+3VC – As Safa – Abu Arish 84718 – Saudi Arabia",
+        "phones": [
+          "0557714000"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/?cid=13692580503108209253",
+        "lat": 16.9751455,
+        "lon": 42.8220165,
+        "sec": "",
+        "loc": "pt",
+        "previousMaps": [
+          "https://www.google.com/maps/place/?q=place_id:ChIJm_JTIeD1BxYRFGEtFDWFsx4"
+        ]
+      }
+    },
+    {
+      "id": "entity-d206eae500b8",
+      "name": "مكتب بهجة الرمال للعقارات",
+      "city": "الرياض",
+      "field": "name_address_activity",
+      "before": {
+        "name": "مكتب بهجة الرمال للعقارات",
+        "nb": "الرمال"
+      },
+      "after": {
+        "name": "بهجة الرمال للعقارات",
+        "nb": "سعيد بن الحاجب، الرمال، الرياض 13265",
+        "activity": "مطوّر عقارات"
+      },
+      "reason": "direct Maps card confirms the current title and full address; phone 0555499441 matches and Qadisiyah was not accessed",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مكتب بهجة الرمال للعقارات",
+            "expected": "مكتب بهجة الرمال للعقارات",
+            "exact": true,
+            "compatible": true
+          },
+          {
+            "field": "nb",
+            "actual": "الرمال",
+            "expected": "الرمال",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "entity-d206eae500b8",
+        "n": "مكتب بهجة الرمال للعقارات",
+        "city": "الرياض",
+        "nb": "الرمال",
+        "phones": [
+          "0555499441"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%87%D8%AC%D8%A9%20%D8%A7%D9%84%D8%B1%D9%85%D8%A7%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJqz9b2otVLj4Rgb1LGLWu8Ns",
+        "lat": 24.8522267,
+        "lon": 46.8283421,
+        "sec": "شرق",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "entity-d206eae500b8",
+        "n": "بهجة الرمال للعقارات",
+        "city": "الرياض",
+        "nb": "سعيد بن الحاجب، الرمال، الرياض 13265",
+        "phones": [
+          "0555499441"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%87%D8%AC%D8%A9%20%D8%A7%D9%84%D8%B1%D9%85%D8%A7%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJqz9b2otVLj4Rgb1LGLWu8Ns",
+        "lat": 24.8522267,
+        "lon": 46.8283421,
+        "sec": "شرق",
+        "loc": "nb",
+        "activity": "مطوّر عقارات",
+        "activitySource": "Google Maps"
+      }
+    },
+    {
+      "id": "entity-f92d70951d09",
+      "name": "مكتب عقار الباحة",
+      "city": "الباحة",
+      "field": "duplicate_record",
+      "action": "archive_duplicate_after_canonical_snapshot",
+      "canonicalId": "office-maps-69fc316f4c01",
+      "reason": "same live title, phone 0558191926, coordinates and Place ID ChIJh7oQ6QJF7xURSApn68_CQFE as the existing canonical Maps record; preserve the prior phone 0555775450 in the duplicate audit snapshot",
+      "result": "archived_and_hidden_from_active_offices",
+      "precondition": {
+        "status": "not_supplied",
+        "checks": []
+      },
+      "beforeRecord": {
+        "id": "entity-f92d70951d09",
+        "n": "مكتب عقار الباحة",
+        "city": "الباحة",
+        "nb": "",
+        "phones": [
+          "0555775450"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "mapsQ": "مكتب عقار الباحة الباحة"
+      },
+      "afterRecord": {
+        "id": "entity-f92d70951d09",
+        "n": "مكتب عقار الباحة",
+        "city": "الباحة",
+        "nb": "",
+        "phones": [
+          "0555775450"
+        ],
+        "web": "",
+        "maps": "",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "mapsQ": "مكتب عقار الباحة الباحة",
+        "activityReviewStatus": "archived_duplicate",
+        "archiveReason": "same live title, phone 0558191926, coordinates and Place ID ChIJh7oQ6QJF7xURSApn68_CQFE as the existing canonical Maps record; preserve the prior phone 0555775450 in the duplicate audit snapshot",
+        "duplicateOf": "office-maps-69fc316f4c01"
+      },
+      "archive": {
+        "id": "entity-f92d70951d09",
+        "archiveReason": "duplicate_record",
+        "canonicalId": "office-maps-69fc316f4c01",
+        "evidence": "same live title, phone 0558191926, coordinates and Place ID ChIJh7oQ6QJF7xURSApn68_CQFE as the existing canonical Maps record; preserve the prior phone 0555775450 in the duplicate audit snapshot",
+        "archivedRecord": {
+          "id": "entity-f92d70951d09",
+          "n": "مكتب عقار الباحة",
+          "city": "الباحة",
+          "nb": "",
+          "phones": [
+            "0555775450"
+          ],
+          "web": "",
+          "maps": "",
+          "lat": null,
+          "lon": null,
+          "sec": "",
+          "mapsQ": "مكتب عقار الباحة الباحة"
+        }
+      }
+    },
+    {
+      "id": "national-ejar-office-194958",
+      "name": "مؤسسة وسيط الباحه للعقارات",
+      "city": "الباحة",
+      "field": "duplicate_record",
+      "action": "archive_duplicate_after_canonical_snapshot",
+      "canonicalId": "office-maps-7749c06a6df9",
+      "reason": "same live title, phone 0599901456, coordinates and Place ID ChIJNXZZj4hF7xURROfdhPq4-gQ as the existing canonical Maps record; preserve the prior phone 0509950527 in the duplicate audit snapshot",
+      "result": "archived_and_hidden_from_active_offices",
+      "precondition": {
+        "status": "not_supplied",
+        "checks": []
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-194958",
+        "n": "مؤسسة وسيط الباحه للعقارات",
+        "city": "الباحة",
+        "nb": "طريق الملك فهد، السوق، الباحة، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0509950527"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=20.01681461,41.47134433",
+        "lat": 20.01682,
+        "lon": 41.47134,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-194958",
+        "n": "مؤسسة وسيط الباحه للعقارات",
+        "city": "الباحة",
+        "nb": "طريق الملك فهد، السوق، الباحة، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0509950527"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=20.01681461,41.47134433",
+        "lat": 20.01682,
+        "lon": 41.47134,
+        "sec": "",
+        "loc": "pt",
+        "activityReviewStatus": "archived_duplicate",
+        "archiveReason": "same live title, phone 0599901456, coordinates and Place ID ChIJNXZZj4hF7xURROfdhPq4-gQ as the existing canonical Maps record; preserve the prior phone 0509950527 in the duplicate audit snapshot",
+        "duplicateOf": "office-maps-7749c06a6df9"
+      },
+      "archive": {
+        "id": "national-ejar-office-194958",
+        "archiveReason": "duplicate_record",
+        "canonicalId": "office-maps-7749c06a6df9",
+        "evidence": "same live title, phone 0599901456, coordinates and Place ID ChIJNXZZj4hF7xURROfdhPq4-gQ as the existing canonical Maps record; preserve the prior phone 0509950527 in the duplicate audit snapshot",
+        "archivedRecord": {
+          "id": "national-ejar-office-194958",
+          "n": "مؤسسة وسيط الباحه للعقارات",
+          "city": "الباحة",
+          "nb": "طريق الملك فهد، السوق، الباحة، الباحة، المملكة العربية السعودية",
+          "phones": [
+            "0509950527"
+          ],
+          "web": "",
+          "maps": "https://maps.google.com/maps?q=20.01681461,41.47134433",
+          "lat": 20.01682,
+          "lon": 41.47134,
+          "sec": "",
+          "loc": "pt"
+        }
+      }
+    },
+    {
+      "id": "national-ejar-office-192087",
+      "name": "مكتب ركن الروز للخدمات العقارية",
+      "city": "نجران",
+      "field": "name",
+      "before": "مكتب ركن الروز للخدمات العقارية",
+      "after": "مكتب ركن الروز للخدمات العامة",
+      "reason": "name-and-city Maps card confirms the current title and real-estate-agency category; preserve stored phone and coordinates because Maps did not display a phone",
+      "result": "applied",
+      "precondition": {
+        "status": "exact",
+        "checks": [
+          {
+            "field": "name",
+            "actual": "مكتب ركن الروز للخدمات العقارية",
+            "expected": "مكتب ركن الروز للخدمات العقارية",
+            "exact": true,
+            "compatible": true
+          }
+        ]
+      },
+      "beforeRecord": {
+        "id": "national-ejar-office-192087",
+        "n": "مكتب ركن الروز للخدمات العقارية",
+        "city": "نجران",
+        "nb": "المملكة العربية السعودية طريق الملك عبدالعزيز، الضيافة، نجران، نجران، المملكة العربية السعودية",
+        "phones": [
+          "0500075051"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=17.53368573,44.21271309",
+        "lat": 17.53369,
+        "lon": 44.21271,
+        "sec": "",
+        "loc": "pt"
+      },
+      "afterRecord": {
+        "id": "national-ejar-office-192087",
+        "n": "مكتب ركن الروز للخدمات العامة",
+        "city": "نجران",
+        "nb": "المملكة العربية السعودية طريق الملك عبدالعزيز، الضيافة، نجران، نجران، المملكة العربية السعودية",
+        "phones": [
+          "0500075051"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=17.53368573,44.21271309",
+        "lat": 17.53369,
+        "lon": 44.21271,
+        "sec": "",
+        "loc": "pt"
+      }
+    },
+    {
+      "id": "national-yango-office-227054884773",
+      "name": "مكتب أصول الشارقة للعقار",
+      "city": "بيشة",
+      "field": "duplicate_record",
+      "action": "archive_duplicate_after_canonical_snapshot",
+      "canonicalId": "national-google-office-ChIJx2GTBggr8BURwc2oWfqJtAU",
+      "reason": "the same phone 0534200412, district and nearby pin resolve to the canonical current card مكتب جبال المتن للخدمات العقارية at 20.0110105,42.6179318; preserve the old title and snapshot rather than creating a second office",
+      "result": "archived_and_hidden_from_active_offices",
+      "precondition": {
+        "status": "not_supplied",
+        "checks": []
+      },
+      "beforeRecord": {
+        "id": "national-yango-office-227054884773",
+        "n": "مكتب أصول الشارقة للعقار",
+        "city": "بيشة",
+        "nb": "عسير, بيشة, حي الخزامى",
+        "phones": [
+          "0534200412"
+        ],
+        "web": "",
+        "maps": "https://maps.yango.com/ar-sa/org/227054884773/?lang=ar",
+        "lat": 20.01468,
+        "lon": 42.61744,
+        "sec": "",
+        "loc": "nb"
+      },
+      "afterRecord": {
+        "id": "national-yango-office-227054884773",
+        "n": "مكتب أصول الشارقة للعقار",
+        "city": "بيشة",
+        "nb": "عسير, بيشة, حي الخزامى",
+        "phones": [
+          "0534200412"
+        ],
+        "web": "",
+        "maps": "https://maps.yango.com/ar-sa/org/227054884773/?lang=ar",
+        "lat": 20.01468,
+        "lon": 42.61744,
+        "sec": "",
+        "loc": "nb",
+        "activityReviewStatus": "archived_duplicate",
+        "archiveReason": "the same phone 0534200412, district and nearby pin resolve to the canonical current card مكتب جبال المتن للخدمات العقارية at 20.0110105,42.6179318; preserve the old title and snapshot rather than creating a second office",
+        "duplicateOf": "national-google-office-ChIJx2GTBggr8BURwc2oWfqJtAU"
+      },
+      "archive": {
+        "id": "national-yango-office-227054884773",
+        "archiveReason": "duplicate_record",
+        "canonicalId": "national-google-office-ChIJx2GTBggr8BURwc2oWfqJtAU",
+        "evidence": "the same phone 0534200412, district and nearby pin resolve to the canonical current card مكتب جبال المتن للخدمات العقارية at 20.0110105,42.6179318; preserve the old title and snapshot rather than creating a second office",
+        "archivedRecord": {
+          "id": "national-yango-office-227054884773",
+          "n": "مكتب أصول الشارقة للعقار",
+          "city": "بيشة",
+          "nb": "عسير, بيشة, حي الخزامى",
+          "phones": [
+            "0534200412"
+          ],
+          "web": "",
+          "maps": "https://maps.yango.com/ar-sa/org/227054884773/?lang=ar",
+          "lat": 20.01468,
+          "lon": 42.61744,
+          "sec": "",
+          "loc": "nb"
+        }
+      }
     }
-  ],
-  "ongoing": {
-    "nationalRecords": 1524,
-    "verifiedOfficeRecordsThisSession": 4,
-    "fullyCompleteRecordsThisSession": 0,
-    "pendingCityCoverage": "جميع المسارات تستكمل التدقيق على دفعات؛ القادسية مستثناة."
-  }
+  ]
 }

@@ -527,7 +527,7 @@
       if (easternCrossCity && kind === 'cars' && o.regionalListingOf) return false;
       if (kind === 'cars' && o.authorizedDealer === true) return false;
       if (kind === 'cars' && requiresReview(o.activityReviewStatus)) return false;
-      if (kind === 'offices' && o.activityReviewStatus === 'closed_permanently') return false;
+      if (kind === 'offices' && ['closed_permanently', 'archived_duplicate', 'non_real_estate'].includes(o.activityReviewStatus)) return false;
       if (kind === 'selfbuild' && requiresReview(o.availabilityStatus)) return false;
       if (kind === 'cars' && sameCity(b.city, 'الرياض')) {
         var selectedSector = S.scope === 'sector' ? S.explore : '';
