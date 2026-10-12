@@ -1,0 +1,44 @@
+{
+  "schema": "office-final-audit-progress-v3",
+  "generatedAt": "2026-10-12",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "inventory": 1524,
+  "uniqueIds": 1524,
+  "previousSavedIndividualOutcomes": {
+    "count": 1490,
+    "checkpoint": "OFFICE_FINAL_AUDIT_PROGRESS_2026-10-12_WAVE5.json",
+    "basisCommit": "8fdbd35eabbf688621efdd39093947a452ecc2a6"
+  },
+  "final34": {
+    "decisionRecorded": 34,
+    "remainingWithoutIndividualDecision": 0,
+    "checkpoint": "audits/OFFICE_MAPS_REMAINING_34_2026-10-12.json",
+    "batches": [
+      "audits/OFFICE_MAPS_FINAL_34_RESULTS_2026-10-12_01.json",
+      "audits/OFFICE_MAPS_FINAL_34_RESULTS_2026-10-12_02.json",
+      "audits/OFFICE_MAPS_FINAL_34_RESULTS_2026-10-12_03.json",
+      "audits/OFFICE_MAPS_FINAL_34_RESULTS_2026-10-12_04.json",
+      "audits/OFFICE_MAPS_FINAL_34_RESULTS_2026-10-12_05.json",
+      "audits/OFFICE_MAPS_FINAL_34_RESULTS_2026-10-12_06.json"
+    ],
+    "outcomeCounts": {
+      "mapsVerified": 19,
+      "conflictOrPartial": 3,
+      "unresolvedForInsufficientMapsEvidence": 12
+    }
+  },
+  "finalIndividualDecisionCount": 1524,
+  "remainingWithoutIndividualDecision": 0,
+  "phonePolicy": "No previously stored number was deleted in this final wave; different published numbers were retained alongside the stored value.",
+  "changesOnBranch": [
+    "Maps links, pin coordinates and activity normalized where direct card evidence and identity matched",
+    "Permanently closed office retained and archived with source rather than deleted"
+  ],
+  "merge": false,
+  "publish": false,
+  "qa": {
+    "status": "pending",
+    "target": "comprehensive repository QA plus desktop/mobile review"
+  }
+}
