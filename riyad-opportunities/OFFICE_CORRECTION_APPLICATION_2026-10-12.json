@@ -1,0 +1,58 @@
+{
+  "schema": "office-correction-application-v1",
+  "date": "2026-10-12",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "commit": "1fee9130e4200a76d4eb9658789bd06a922bada4",
+  "sourceAuditBranch": "audit/offices-maps-20261012",
+  "sourceAuditHead": "18e916451d643eccfac338d5cff4e91a0214c628",
+  "validation": {
+    "recordsBefore": 1524,
+    "recordsAfter": 1524,
+    "uniqueIdsBefore": 1524,
+    "uniqueIdsAfter": 1524,
+    "qadisiyahRecordsBefore": 2,
+    "qadisiyahRecordsAfter": 2,
+    "deletedRecords": 0
+  },
+  "changes": [
+    {
+      "id": "entity-bd9121973107",
+      "name": "مكتب قواعد الأندلس",
+      "city": "الرياض",
+      "field": "phones",
+      "before": [
+        "0558648755",
+        "0505539095"
+      ],
+      "after": [
+        "0505539095"
+      ],
+      "oldValuePreservedIn": "phoneAudit.previousPhones",
+      "evidence": {
+        "googleMapsCard": "https://www.google.com/maps/?cid=15391395510121292153",
+        "observedPhone": "+966 50 553 9095"
+      },
+      "scopeNote": "رقم البطاقة الحالية مثبت؛ مطابقة إحداثيات السجل لا تزال معلقة."
+    },
+    {
+      "id": "entity-2fa2c7120ef0",
+      "name": "مكتب الفجر المتقدمة للعقار",
+      "city": "المدينة المنورة",
+      "field": "nb",
+      "before": "4893 ابو الاعور بن الحارث",
+      "after": "الخالدية، 4893 أبو الأعور بن الحارث",
+      "evidence": {
+        "googleMapsPlaceId": "ChIJ24QBPJCVvRURXtK54SctXHk",
+        "address": "4893 أبو الأعور بن الحارث، الخالدية، المدينة المنورة 42317"
+      },
+      "scopeNote": "الإحداثيات غير متوفرة ولم تُنشأ إحداثيات بديلة."
+    }
+  ],
+  "ongoing": {
+    "nationalRecords": 1524,
+    "verifiedOfficeRecordsThisSession": 4,
+    "fullyCompleteRecordsThisSession": 0,
+    "pendingCityCoverage": "جميع المسارات تستكمل التدقيق على دفعات؛ القادسية مستثناة."
+  }
+}
