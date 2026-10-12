@@ -20,8 +20,8 @@
       "noSufficientCardEvidenceUnresolved": 12
     }
   },
-  "finalIndividualDecisionCount": 1235,
-  "remainingWithoutIndividualDecision": 289,
+  "finalIndividualDecisionCount": 1262,
+  "remainingWithoutIndividualDecision": 262,
   "phonePolicy": "No previously stored number was deleted in this final wave; different published numbers were retained alongside the stored value.",
   "changesOnBranch": [
     "Maps links, pin coordinates and activity normalized where direct card evidence and identity matched",
@@ -33,35 +33,37 @@
     "status": "pending",
     "target": "full repository QA and desktop/mobile review"
   },
-  "latestBranchHead": "2920c675ed40ee7077fb3a31d76ab7113fabbedc",
-  "countBasis": "1111 individual outcomes in committed baseline audit ledgers plus 124 unique candidate IDs with mapsAudit outcomes in data/offices.json; unresolved findings count as an individual decision.",
-  "recordsWithSavedIndividualOutcome": 1235,
-  "recordsWithoutSavedIndividualOutcome": 289,
+  "latestBranchHead": "f11837af6850a64efce032fd881bad0ea82b258b",
+  "countBasis": "1111 baseline individual audit outcomes plus 151 unique candidate IDs with saved mapsAudit decisions; unresolved results count as individual decisions.",
+  "recordsWithSavedIndividualOutcome": 1262,
+  "recordsWithoutSavedIndividualOutcome": 262,
   "regionalRemaining": {
     "riyadh": 0,
-    "west": 51,
+    "west": 47,
     "east": 0,
-    "north": 34,
-    "southCentral": 204
+    "north": 26,
+    "southCentral": 189
   },
   "recalculation": {
     "at": "2026-10-12",
     "baseLedgerCount": 1111,
-    "newCandidateOutcomes": 124,
-    "headAtCalculation": "2920c675ed40ee7077fb3a31d76ab7113fabbedc",
+    "newCandidateOutcomes": 151,
+    "headAtCalculation": "f11837af6850a64efce032fd881bad0ea82b258b",
     "candidateAuditStatusCounts": {
       "verified_name_activity_phone_and_pin": 11,
       "partial_pin_mismatch_phone_unlisted": 1,
-      "unresolved_no_matching_card": 18,
+      "unresolved_no_matching_card": 19,
       "verified_name_and_phone_location_pin_unconfirmed": 1,
       "verified_name_phone_and_pin_activity_category_ambiguous": 1,
       "verified_name_activity_phone_and_address": 1,
-      "verified_name_activity_phone_address": 24,
-      "verified_name_activity_location_phone_unlisted": 4,
-      "verified_name_activity_phone_pin": 16,
+      "verified_name_activity_phone_address": 35,
+      "verified_name_activity_location_phone_unlisted": 5,
+      "verified_name_activity_phone_pin": 19,
       "unresolved_city_only": 3,
-      "verified_name_activity_phone_conflict_preserved": 2,
+      "verified_name_activity_phone_conflict_preserved": 4,
       "verified_name_activity_location_phone_conflict": 2,
+      "partial_name_pin_mismatch_phone_unverified": 1,
+      "partial_pin_mismatch_phone_unverified": 1,
       "unresolved_no_matching_maps_card": 16,
       "verified_name_activity_phone_permanently_closed": 1,
       "unresolved_identity_phone_conflict": 2,
@@ -79,9 +81,13 @@
       "unresolved_city_phone_conflict": 1,
       "unresolved_same_phone_different_name_closed": 1,
       "phone_conflict_unresolved_same_name": 1,
+      "verified_name_activity_location_phone_unreadable": 3,
+      "unresolved_name_location_conflict": 1,
       "verified_name_activity_phone_address_pin": 1,
       "verified_name_activity_phone_location": 4,
-      "unresolved_maps_timeout": 1
+      "unresolved_maps_timeout": 1,
+      "verified_name_activity_phone_partial_match": 1,
+      "verified_name_phone_location_activity_ambiguous": 2
     }
   }
 }
