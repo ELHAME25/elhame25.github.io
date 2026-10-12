@@ -1,0 +1,4816 @@
+{
+  "schema": "office-final-audit-checkpoint-v1",
+  "date": "2026-10-12",
+  "scope": [
+    "الخرج",
+    "الدلم",
+    "المجمعة",
+    "المزاحمية",
+    "الزلفي",
+    "الدوادمي",
+    "شقراء",
+    "القويعية",
+    "ضرماء",
+    "وادي الدواسر",
+    "السليل",
+    "ليلى",
+    "حوطة سدير",
+    "الأرطاوية",
+    "الغاط"
+  ],
+  "excludedCoveredIdsSource": "/tmp/office_audit_covered_ids.txt",
+  "summary": {
+    "records": 309,
+    "verifiedNameLocationPhone": 3,
+    "correctionCandidates": 13,
+    "partial": 4,
+    "activityConflict": 2,
+    "unresolved": 63,
+    "unconfirmed": 224
+  },
+  "records": [
+    {
+      "id": "national-ejar-office-196063",
+      "old": {
+        "name": "مكتب صكوك الديار للعقارات",
+        "address": "طريق الخرج الدلم، الخالدية، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0564055507"
+        ],
+        "lat": 24.05844965,
+        "lon": 47.17232417
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; no readable business card returned",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-195510",
+      "old": {
+        "name": "مكتب فرسان الدلم للعقارات",
+        "address": "الملك فيصل، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0531819020"
+        ],
+        "lat": 23.98931089,
+        "lon": 47.13076025
+      },
+      "new": {
+        "name": "مكتب فرسان الدلم للعقارت",
+        "address": "4955، 6929 شارع الثلاثين، الشفاء، الدلم",
+        "phones": [
+          "0531819020"
+        ],
+        "activity": "مكتب الشركات",
+        "lat": 23.9893599,
+        "lon": 47.1307981
+      },
+      "evidence": "Google Maps exact result 0x3e2515530cdea219:0x7ab10cb62af44346",
+      "status": "verified_match_live_2026-10-12",
+      "note": "Maps category is generic مكتب الشركات; listed name and reviews identify real-estate activity."
+    },
+    {
+      "id": "national-ejar-office-438733",
+      "old": {
+        "name": "مؤسسة يوسف زيد عبدالعزيز بن مانع للعقار",
+        "address": "الملك فيصل بن عبدالعزيز، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505451915"
+        ],
+        "lat": 23.99065811,
+        "lon": 47.13082854
+      },
+      "new": {
+        "name": "المانع للعقارات",
+        "address": "ODDA7070، 4937 الملك فيصل بن عبدالعزيز، 7070، الدلم",
+        "phones": [
+          "0505451915"
+        ],
+        "activity": "وكالة عقارات",
+        "lat": 23.990528,
+        "lon": 47.1308031
+      },
+      "evidence": "Google Maps exact phone and near-identical stored pin, place 0x3e256b007f9828d1:0x879e525140861cb0",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-223909",
+      "old": {
+        "name": "مكتب عبدالله راشد سالم الحويطان للعقارات",
+        "address": "الملك عبدالعزيز، الناصرية، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505104450"
+        ],
+        "lat": 23.99294251,
+        "lon": 47.16463387
+      },
+      "new": {
+        "name": "مكتب الحويطان الدلم",
+        "lat": 23.9929373,
+        "lon": 47.1646938
+      },
+      "evidence": "Google Maps search result place 0x3e253f8f426a0a71:0x570bbfb397c823d2 at stored pin; phone not exposed in result",
+      "status": "partial_name_location_phone_unverified"
+    },
+    {
+      "id": "national-ejar-office-200589",
+      "old": {
+        "name": "مكتب خالد محمد مسعود المسعود للعقارات",
+        "address": "الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0551593093"
+        ],
+        "lat": 24.0185703,
+        "lon": 47.1800893
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; no readable card returned",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-208544",
+      "old": {
+        "name": "مكتب عبدالاله محمد حمد التميمي للعقارات",
+        "address": "العام، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0504189693"
+        ],
+        "lat": 23.9797328,
+        "lon": 47.1508339
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; no matching card at stored identity/pin",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-202809",
+      "old": {
+        "name": "مكتب أسما محمد بن حمد التميمي للخدمات العقارية",
+        "address": "طريق الخرج الدلم، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0535738680"
+        ],
+        "lat": 23.99093709,
+        "lon": 47.13767588
+      },
+      "new": {
+        "name": "مكتب عبدالإله بن محمد السعيس التميمي للخدمات",
+        "address": "X4RQ+938، الدلم",
+        "phones": [
+          "0550412201"
+        ],
+        "activity": "وكالة عقارات",
+        "lat": 23.9908905,
+        "lon": 47.1376311
+      },
+      "evidence": "Google Maps exact-name search resolved to current card at near-identical stored pin, place 0x3e2541f2be517d2b:0xb4b43d500ab27839",
+      "status": "correction_candidate_identity_phone_at_same_pin",
+      "note": "Strong current Maps replacement at stored pin; main writer should match old value before any change."
+    },
+    {
+      "id": "national-ejar-office-214024",
+      "old": {
+        "name": "مكتب ارض المختص للعقارات",
+        "address": "الملك فيصل بن عبدالعزيز، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0532266677"
+        ],
+        "lat": 23.990482234132,
+        "lon": 47.130842059851
+      },
+      "new": {
+        "name": "مكتب الجاسر للعقارات",
+        "address": "X4RJ+59R، شارع الثلاثين، الدلم",
+        "phones": [
+          "0532266677"
+        ],
+        "activity": "وكالة عقارات",
+        "lat": 23.9904822,
+        "lon": 47.1308783
+      },
+      "evidence": "Google Maps result with identical phone and near-identical stored pin, place 0x3e256aac719d6cc3:0x1d53b23ea2d36044",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-192584",
+      "old": {
+        "name": "مكتب فدغوش هزاع العجمي للعقارات",
+        "address": "الامام البخاري، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0554777419"
+        ],
+        "lat": 24.01581302095,
+        "lon": 47.133058905602
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search returned only a residential villa 'فيلا الشيخ فدغوش بن هزاع العجمي' at 23.9862309,47.1169224, not stored pin, with no phone",
+      "status": "activity_conflict_search_result_not_same_pin",
+      "note": "Do not archive from this alone; no exact office card was found."
+    },
+    {
+      "id": "national-ejar-office-194572",
+      "old": {
+        "name": "مؤسسة عبدالرحمن سعد عبدالرحمن الدريهم للعقارات",
+        "address": "طريق الملك عبد العزيز شمال، الخالدية، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555108041"
+        ],
+        "lat": 24.00967662,
+        "lon": 47.16500715
+      },
+      "new": {
+        "name": "مكتب أبو سعد للعقارات",
+        "address": "2558+V26، طريق الملك عبدالعزيز، الدلم",
+        "phones": [
+          "0555108041"
+        ],
+        "activity": "وكالة عقارات",
+        "lat": 24.0096659,
+        "lon": 47.1650262
+      },
+      "evidence": "Google Maps exact phone and near-identical stored pin, place 0x3e25406f8d3ecde5:0x45a80e9814803bd3",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-217696",
+      "old": {
+        "name": "مؤسسة مكتب عبدالرحمن محمد الدخيني للعقارات",
+        "address": "طريق الخرج الدلم، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0554446050"
+        ],
+        "lat": 24.01599231,
+        "lon": 47.13615423
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; card unreadable",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-211591",
+      "old": {
+        "name": "مكتب بصمة الجود للعقارات",
+        "address": "سلمان بن محمد، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0504494179"
+        ],
+        "lat": 23.99772271,
+        "lon": 47.11128852
+      },
+      "new": null,
+      "evidence": "Google Maps reported partial match but no office listing; only city result appeared",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-327301",
+      "old": {
+        "name": "مؤسسة سعد عبدالعزيز بن سعد العرفج العقارية",
+        "address": "الأمير سلمان بن محمد، النخيل، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0538383419"
+        ],
+        "lat": 23.995417508604,
+        "lon": 47.147981199527
+      },
+      "new": {
+        "name": "مكتب العرفج العقارية",
+        "address": "الأمير سلمان بن محمد آل سعود، الدلم",
+        "phones": [
+          "0538383419"
+        ],
+        "activity": "وكالة عقارات تجارية",
+        "lat": 23.9954365,
+        "lon": 47.1480219
+      },
+      "evidence": "Google Maps exact phone and near-identical stored pin, place 0x3e25410b81967ca1:0x7cb5df94180318d6",
+      "status": "verified_match_live_2026-10-12"
+    },
+    {
+      "id": "national-ejar-office-215057",
+      "old": {
+        "name": "مكتب الحقباني للعقارات",
+        "address": "طريق الملك عبدالعزيز، الديرة، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0541333900"
+        ],
+        "lat": 23.988683681386,
+        "lon": 47.16326771231
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search returned unrelated Riyadh listing and residences; no matching الدلم card",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-216888",
+      "old": {
+        "name": "مكتب سامي عيسى ناصر العبداللطيف العقاري",
+        "address": "الامير سلطان بن عبدالعزيز، الصناعية، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0557475775"
+        ],
+        "lat": 23.98647913,
+        "lon": 47.12310254
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search returned different businesses/pins; no matching card",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-216899",
+      "old": {
+        "name": "مكتب سعد ناصر العبدان للعقارات",
+        "address": "ابو سعد النفيس، الخالدية، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555108634"
+        ],
+        "lat": 24.0115344,
+        "lon": 47.16789363
+      },
+      "new": null,
+      "evidence": "Google Maps returned 'مكتب العبدان' at 23.9932072,47.1647254 with no phone, materially different from stored pin",
+      "status": "unresolved_possible_name_location_mismatch"
+    },
+    {
+      "id": "national-ejar-office-211815",
+      "old": {
+        "name": "شركة عبدالله عبدالرحمن الحقباني للتطوير والاستثمار العقاري",
+        "address": "طريق الامير محمد بن سلمان بن عبدالعزيز، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505109610"
+        ],
+        "lat": 23.98713995473,
+        "lon": 47.139556355404
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search resolved to an unrelated investment company in Riyadh with phone 0560070002",
+      "status": "unresolved_wrong_search_result"
+    },
+    {
+      "id": "national-ejar-office-270000",
+      "old": {
+        "name": "مكتب سبيل الخير للعقارات",
+        "address": "طريق الخرج الدلم، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0556644036"
+        ],
+        "lat": 23.99977247,
+        "lon": 47.13765639
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search returned other offices only; no exact listing",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-365296",
+      "old": {
+        "name": "مكتب ابداع المسوق للعقارات",
+        "address": "عثمان بن بديل، الديرة، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0535559834"
+        ],
+        "lat": 23.992393090546,
+        "lon": 47.162777434553
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; card unreadable",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-312262",
+      "old": {
+        "name": "مكتب السهم المبهر للخدمات العقارية",
+        "address": "الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0508187717"
+        ],
+        "lat": 23.99408504928,
+        "lon": 47.137434855631
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search returned unrelated Bahrain listing and فرسان الدلم; no exact local card",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-472294",
+      "old": {
+        "name": "مكتب واجهة المحمدية العقارية",
+        "address": "طريق الخرج الدلم، الفلاح، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0504446050"
+        ],
+        "lat": 24.01548,
+        "lon": 47.13512
+      },
+      "new": {
+        "name": "مكتب واجهة المحمدية العقارية",
+        "address": "طريق الخرج، السعيدان، الدلم 16324",
+        "phones": [
+          "0554446050"
+        ],
+        "activity": "شركة إدارة عقارات",
+        "plusCode": "248P+GF"
+      },
+      "evidence": "Google Maps live exact-name card 0x3e2541f9ada9506b:0x8c94490b64373491",
+      "status": "correction_candidate_phone_address",
+      "note": "Live Maps phone differs by one digit from stored value; main writer must match old value before correction."
+    },
+    {
+      "id": "national-ejar-office-216042",
+      "old": {
+        "name": "مكتب أسس الثقة للخدمات العقارية",
+        "address": "الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505108522"
+        ],
+        "lat": 23.99493,
+        "lon": 47.13061
+      },
+      "new": null,
+      "evidence": "Google Maps search title resolved to 'مكتب أسس الثقة للاستثمار العقاري' but card details were unreadable",
+      "status": "unresolved_name_variant_only"
+    },
+    {
+      "id": "national-ejar-office-198249",
+      "old": {
+        "name": "مكتب ركن المستقل للخدمات العقارية",
+        "address": "العام، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555115556"
+        ],
+        "lat": 23.9984,
+        "lon": 47.12159
+      },
+      "new": null,
+      "evidence": "Google Maps reported partial match and displayed only the city; no office card",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-209518",
+      "old": {
+        "name": "مكتب نقاء القصر للعقارات",
+        "address": "الملك فيصل بن عبدالعزيز، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555107889"
+        ],
+        "lat": 23.99249,
+        "lon": 47.13121
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; no readable card returned",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-580141",
+      "old": {
+        "name": "مؤسسة فريم برو للعقارات",
+        "address": "الملك فيصل، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0543999801"
+        ],
+        "lat": 23.99074,
+        "lon": 47.13135
+      },
+      "new": {
+        "name": "فريم العقارية"
+      },
+      "evidence": "Google Maps search resolved title to 'فريم العقارية'; phone/address/activity card details remained unreadable",
+      "status": "partial_name_variant_only"
+    },
+    {
+      "id": "national-ejar-office-197553",
+      "old": {
+        "name": "مؤسسة مكتب أبراج يوسف للتطوير والاستثمار العقاري",
+        "address": "شارع جعفر بن ابي طالب، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500115955"
+        ],
+        "lat": 24.12229,
+        "lon": 47.27607
+      },
+      "new": {
+        "name": "مكتب ابراج اليوسف للاستثمار والتطوير العقاري"
+      },
+      "evidence": "Google Maps exact-name search resolved the tab title to 'مكتب ابراج اليوسف للاستثمار والتطوير العقاري'; the card body and phone did not become readable",
+      "status": "partial_name_variant_only"
+    },
+    {
+      "id": "national-ejar-office-208345",
+      "old": {
+        "name": "مكتب خالد محمد العرفج للعقارات",
+        "address": "فيصل بن عبدالعزيز، السيح، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505102162"
+        ],
+        "lat": 24.15459,
+        "lon": 47.30592
+      },
+      "new": {
+        "name": "عقارات بن عرفج",
+        "address": "طريق الملك فيصل، الخرج",
+        "phones": [
+          "0505102162"
+        ],
+        "activity": "وكالة عقارات",
+        "lat": 24.1548503,
+        "lon": 47.3058329
+      },
+      "evidence": "Google Maps direct result place 0x3e254f004e7fed09:0x1a9f8f6bedbda29c; exact stored phone and near-identical pin",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-194868",
+      "old": {
+        "name": "مكتب تطوير واصل للعقارات",
+        "address": "الإمام مالك بن أنس، النهضة، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0508192698"
+        ],
+        "lat": 24.16164,
+        "lon": 47.34017
+      },
+      "new": {
+        "name": "واصل للعقارات",
+        "phones": [
+          "0550027252"
+        ],
+        "lat": 24.1615414,
+        "lon": 47.3398393
+      },
+      "evidence": "Google Maps direct card title and tel link at near-identical stored pin; address/category text did not become readable",
+      "status": "correction_candidate_identity_phone_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-195760",
+      "old": {
+        "name": "شركة مقر المعتمد للعقارات",
+        "address": "الرازي، مشرف، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0502809902"
+        ],
+        "lat": 24.11922,
+        "lon": 47.28827
+      },
+      "new": {
+        "name": "شركة المعتمد للعقارات",
+        "address": "شارع الأمير محمد بن سلمان، الخرج",
+        "phones": [
+          "0502809902"
+        ],
+        "activity": "وكيل عقاري",
+        "lat": 24.1192388,
+        "lon": 47.2882641
+      },
+      "evidence": "Google Maps search result with exact stored phone and near-identical pin",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-194928",
+      "old": {
+        "name": "مكتب تميز الزعيم للعقارات",
+        "address": "شارع طارق بن زياد، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0509922998"
+        ],
+        "lat": 24.14006,
+        "lon": 47.35363
+      },
+      "new": {
+        "name": "مكتب تميز الزعيم للعقارات بالخرج",
+        "phones": [
+          "0555355812"
+        ],
+        "lat": 24.1400491,
+        "lon": 47.3536278
+      },
+      "evidence": "Google Maps direct exact-name card and tel link at the stored pin; address/category text did not become readable",
+      "status": "correction_candidate_identity_phone_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-195123",
+      "old": {
+        "name": "مكتب انماء المساكن للعقارات",
+        "address": "طريق الملك سعود، الخالدية، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0504246171"
+        ],
+        "lat": 24.13758,
+        "lon": 47.29024
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; the page remained in loading state and no business card was readable",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-193613",
+      "old": {
+        "name": "مكتب دارة العقار للعقارات",
+        "address": "طريق الملك سلمان بن عبدالعزيز، طويق، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555100033"
+        ],
+        "lat": 24.15151,
+        "lon": 47.34115
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; no readable card returned",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-197985",
+      "old": {
+        "name": "مكتب مزايا الابنية العقاري",
+        "address": "ابن الشيخ، الورود، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0507438346"
+        ],
+        "lat": 24.16473,
+        "lon": 47.30558
+      },
+      "new": {
+        "name": "مكتب مزايا العقاري",
+        "address": "شارع الورود العام، الخرج",
+        "phones": [
+          "0507438346"
+        ],
+        "activity": "مكتب تسجيل أراضي",
+        "lat": 24.1648024,
+        "lon": 47.3055922
+      },
+      "evidence": "Google Maps search result with exact stored phone and near-identical pin",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-195432",
+      "old": {
+        "name": "مكتب عجلان هيزع عجلان الشهري للعقارات",
+        "address": "عثمان بن عفان، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0506418744"
+        ],
+        "lat": 24.14521,
+        "lon": 47.30662
+      },
+      "new": {
+        "name": "مكتب عجلان للعقارات",
+        "address": "حي السليمانية، طريق عثمان بن عفان، الخرج",
+        "activity": "شركة إدارة عقارات"
+      },
+      "evidence": "Google Maps direct card at the stored-area pin; card says phone information is missing, so the stored phone was not treated as disproved",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-202034",
+      "old": {
+        "name": "مكتب رونق فال للخدمات العقارية",
+        "address": "شارع، الفيصلية، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555241233"
+        ],
+        "lat": 24.15876,
+        "lon": 47.3364
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; no readable card returned",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-200478",
+      "old": {
+        "name": "مؤسسة قمر الخرج العقارية",
+        "address": "عرفة، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0532640393"
+        ],
+        "lat": 24.13908,
+        "lon": 47.35478
+      },
+      "new": {
+        "name": "قمر الخرج",
+        "address": "طارق بن زياد، الزاهر، الخرج",
+        "phones": [
+          "0561824815"
+        ],
+        "activity": "مكتب الشركات",
+        "lat": 24.1390756,
+        "lon": 47.3547821
+      },
+      "evidence": "Google Maps direct card at the exact stored pin, but current category is generic 'مكتب الشركات' and does not independently prove real-estate activity",
+      "status": "activity_conflict_current_card_same_pin"
+    },
+    {
+      "id": "national-ejar-office-196350",
+      "old": {
+        "name": "مكتب سليمان عبدالعزيز سليمان الميمان للخدمات العقارية",
+        "address": "شارع الامير محمد بن عبدالعزيز، النهضة، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505105315"
+        ],
+        "lat": 24.15429,
+        "lon": 47.3273
+      },
+      "new": {
+        "name": "مكتب الميمان للعقارات",
+        "address": "شارع الملك عبدالله بن عبدالعزيز، النهضة، الخرج",
+        "phones": [
+          "0505105315"
+        ],
+        "activity": "مكتب الشركات",
+        "lat": 24.154329,
+        "lon": 47.3274649
+      },
+      "evidence": "Google Maps exact result with exact stored phone and near-identical pin; business name explicitly identifies real-estate activity",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-197489",
+      "old": {
+        "name": "مكتب العفراء للخدمات العقارية",
+        "address": "جعفر بن أبي طالب، الخالدية، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555108028"
+        ],
+        "lat": 24.12111,
+        "lon": 47.27438
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; the card extraction timed out",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-196812",
+      "old": {
+        "name": "مكتب اصول المثمن للعقارات",
+        "address": "الأمير نايف بن عبد العزيز، الورود، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0564459524"
+        ],
+        "lat": 24.15901,
+        "lon": 47.30414
+      },
+      "new": {
+        "name": "أصول المثمن للعقارات والمقاولات",
+        "address": "شارع قس بن ساعده، الورود، الخرج",
+        "phones": [
+          "0555331610"
+        ],
+        "activity": "شركة إدارة عقارات",
+        "lat": 24.1754439,
+        "lon": 47.3096936
+      },
+      "evidence": "Google Maps direct exact-name card; current phone/address/pin differ materially from stored values",
+      "status": "correction_candidate_exact_card_phone_address_pin"
+    },
+    {
+      "id": "national-ejar-office-195124",
+      "old": {
+        "name": "مجموعة التعمير العقارية",
+        "address": "طريق بدون اسم، اليرموك، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [],
+        "lat": 24.17678,
+        "lon": 47.3714
+      },
+      "new": {
+        "name": "مكتب مجموعة التعمير العقارية",
+        "activity": "مكتب الشركات",
+        "lat": 24.1781645,
+        "lon": 47.2784762
+      },
+      "evidence": "Google Maps returned an exact-name candidate and a second similarly named real-estate office, neither at the stored pin; phone absent on the exact-name candidate",
+      "status": "partial_ambiguous_name_location_mismatch"
+    },
+    {
+      "id": "national-ejar-office-210236",
+      "old": {
+        "name": "مكتب صكوك الإعمار للعقارات",
+        "address": "طريق عثمان بن عفان، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505103354"
+        ],
+        "lat": 24.14724,
+        "lon": 47.30573
+      },
+      "new": null,
+      "evidence": "Google Maps batch could not start this card because the browser tab command timed out; no value inferred",
+      "status": "unresolved_browser_timeout_before_card"
+    },
+    {
+      "id": "national-ejar-office-212040",
+      "old": {
+        "name": "مكتب عبدالله عجب عايض القحطاني للعقارات",
+        "address": "سعد بن معاذ، السلام، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505103740"
+        ],
+        "lat": 24.15293,
+        "lon": 47.31214
+      },
+      "new": null,
+      "evidence": "Google Maps batch could not start this card because the browser tab command timed out; no value inferred",
+      "status": "unresolved_browser_timeout_before_card"
+    },
+    {
+      "id": "national-ejar-office-196845",
+      "old": {
+        "name": "مكتب انجاز الوضوح للعقارات",
+        "address": "شرحبيل بن حسنه، الزاهر، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500033572"
+        ],
+        "lat": 24.13667,
+        "lon": 47.35597
+      },
+      "new": null,
+      "evidence": "Google Maps batch could not start this card because the browser tab command timed out; no value inferred",
+      "status": "unresolved_browser_timeout_before_card"
+    },
+    {
+      "id": "national-ejar-office-201336",
+      "old": {
+        "name": "مؤسسة نيشان المجد للعقارات",
+        "address": "طريق أبي بكر الصديق، السلام، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505592725"
+        ],
+        "lat": 24.1534,
+        "lon": 47.31788
+      },
+      "new": null,
+      "evidence": "Google Maps batch could not start this card because the browser tab command timed out; no value inferred",
+      "status": "unresolved_browser_timeout_before_card"
+    },
+    {
+      "id": "national-ejar-office-206284",
+      "old": {
+        "name": "مكتب عبدالله حشر العتيبي للعقارات",
+        "address": "شارع الامير محمد بن عبدالعزيز، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505104458"
+        ],
+        "lat": 24.15967,
+        "lon": 47.33517
+      },
+      "new": null,
+      "evidence": "Google Maps batch could not start this card because the browser tab command timed out; no value inferred",
+      "status": "unresolved_browser_timeout_before_card"
+    },
+    {
+      "id": "office-maps-6dcf7361ac8f",
+      "old": {
+        "name": "مكتب سليمان الدخيل العقاري",
+        "address": "5J5M+6V5",
+        "phones": [
+          "0163359123"
+        ],
+        "lat": 26.15801,
+        "lon": 43.63473
+      },
+      "new": {
+        "name": "مكتب سليمان الدخيل العقاري",
+        "address": "5J5M+6V5، البكيرية 52742، المملكة العربية السعودية",
+        "phones": [
+          "0163359123"
+        ],
+        "activity": "وكالة عقارات",
+        "lat": 26.1580069,
+        "lon": 43.6347298
+      },
+      "evidence": "Google Maps live direct card opened 2026-10-12 via stored place ID; exact name, وكالة عقارات activity, address, phone, and pin matched",
+      "status": "verified_match_live_2026-10-12"
+    },
+    {
+      "id": "office-maps-169ff048b44a",
+      "old": {
+        "name": "مكتب خطوط التقدم العقاري",
+        "address": "الشيخ سليمان ابن عبدالعزيز الراجحي",
+        "phones": [
+          "0500505584"
+        ],
+        "lat": 26.15324,
+        "lon": 43.65071
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "office-maps-45c552a59cbe",
+      "old": {
+        "name": "عنوان الاستثمار الأول للعقارات",
+        "address": "طريق الملك عبدالله",
+        "phones": [
+          "0537070806"
+        ],
+        "lat": 26.12552,
+        "lon": 43.64688
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "office-maps-dc01f03b0c17",
+      "old": {
+        "name": "مكتب نهضة وطن العقاري",
+        "address": "طريق السويلم",
+        "phones": [
+          "0534555618"
+        ],
+        "lat": 26.1432,
+        "lon": 43.60265
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "office-maps-8d50e9d63246",
+      "old": {
+        "name": "مكتب صالح الدخيّل للعقارات والمقاولات",
+        "address": "",
+        "phones": [
+          "0163359985"
+        ],
+        "lat": 26.14289,
+        "lon": 43.65892
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "office-maps-393364f8d13c",
+      "old": {
+        "name": "مكتب السلامة للعقارات",
+        "address": "طريق الملك خالد",
+        "phones": [
+          "0591719990"
+        ],
+        "lat": 26.13427,
+        "lon": 43.66677
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "office-maps-d546e47015c8",
+      "old": {
+        "name": "مكتب عقار الحربي",
+        "address": "4JJ7+JHR",
+        "phones": [
+          "0559001354"
+        ],
+        "lat": 26.13161,
+        "lon": 43.6139
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "office-maps-6189a130ff6e",
+      "old": {
+        "name": "الفائز العقارية",
+        "address": "محمد بن علي السويلم",
+        "phones": [
+          "0575555295"
+        ],
+        "lat": 26.15464,
+        "lon": 43.60584
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "office-maps-5ecefee5de6f",
+      "old": {
+        "name": "مكتب دار النزيه للعقارات",
+        "address": "4JJ7+P83، طريق الامير نايف بن عبدالعزيز",
+        "phones": [
+          "0531804870"
+        ],
+        "lat": 26.13176,
+        "lon": 43.61331
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "office-maps-1d2491682cf8",
+      "old": {
+        "name": "نهضة البلاد للعقارات",
+        "address": "4MP7+W4G",
+        "phones": [
+          "0112233667"
+        ],
+        "lat": 26.13731,
+        "lon": 43.66282
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-196080",
+      "old": {
+        "name": "مكتب فرسان يرموك للعقارات",
+        "address": "الكاتب ابن علام، اليرموك، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555419976"
+        ],
+        "lat": 24.14741,
+        "lon": 47.38082
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200044",
+      "old": {
+        "name": "مؤسسة نهضة اليرموك للخدمات العقارية",
+        "address": "محمد بن مهيزع، اليرموك، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0537121014"
+        ],
+        "lat": 24.15004,
+        "lon": 47.37985
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-199027",
+      "old": {
+        "name": "شركة مساكن الجزيرة للعقارات شركة شخص واحد",
+        "address": "20، النفل، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0503892512"
+        ],
+        "lat": 24.17335,
+        "lon": 47.29104
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-194043",
+      "old": {
+        "name": "مؤسسة زهرة النادر العقارية",
+        "address": "سعد بن معاذ، السلام، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0542300609"
+        ],
+        "lat": 24.15825,
+        "lon": 47.30705
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-253560",
+      "old": {
+        "name": "مكتب نهضة السيح للعقارات",
+        "address": "عبدالرحمن بن عوف، مشرف، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0560781000"
+        ],
+        "lat": 24.10574,
+        "lon": 47.28774
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-202698",
+      "old": {
+        "name": "مؤسسة حجرات العقارية",
+        "address": "طريق الملك عبدالله، الروضة، السليل، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0554495520"
+        ],
+        "lat": 20.47576,
+        "lon": 45.59299
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-212520",
+      "old": {
+        "name": "مكتب السليل للعقارات",
+        "address": "عمر بن الخطاب، الشفاء، السليل، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505496299"
+        ],
+        "lat": 20.46437,
+        "lon": 45.59253
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-196612",
+      "old": {
+        "name": "مكتب رعد الوادي للعقارات",
+        "address": "شارع الملك سلمان بن عبدالعزيز، الشفاء، السليل، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0530110011"
+        ],
+        "lat": 20.45794,
+        "lon": 45.5837
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-194570",
+      "old": {
+        "name": "مؤسسة واحة المصيف للعقارات",
+        "address": "ايو بكر الصديق، السليل، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0503200902"
+        ],
+        "lat": 20.46687,
+        "lon": 45.56294
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-209270",
+      "old": {
+        "name": "مكتب مريم منصور بن فهد الصفيان للعقارات",
+        "address": "طريق بدون اسم، السليل، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0506105160"
+        ],
+        "lat": 20.4592,
+        "lon": 45.62246
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed: cloud browser became unavailable after CDP timeout; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-198618",
+      "old": {
+        "name": "مكتب بندر محمد بن مبارك الدوسري للخدمات العقارية",
+        "address": "شارع سلمان الفارسي، السليل، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0542151285"
+        ],
+        "lat": 20.46297,
+        "lon": 45.58038
+      },
+      "new": null,
+      "evidence": "Google Maps CDP remained unavailable after browser reinitialization; focused exact-name public search returned no usable Maps card, so no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-202408",
+      "old": {
+        "name": "مؤسسة شمس عطيه سعيد العمري العقارية",
+        "address": "النخيل، السليل، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505171285"
+        ],
+        "lat": 20.46722,
+        "lon": 45.57515
+      },
+      "new": null,
+      "evidence": "Google Maps CDP remained unavailable after browser reinitialization; focused exact-name public search returned no usable Maps card, so no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-216195",
+      "old": {
+        "name": "مكتب ناصر مسفر عبدالله الدوسري للخدمات العقارية",
+        "address": "شارع الامير فرحان بن مسعود، السليل، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0554813149"
+        ],
+        "lat": 20.46365,
+        "lon": 45.57469
+      },
+      "new": null,
+      "evidence": "Google Maps CDP remained unavailable after browser reinitialization; focused exact-name public search returned no usable Maps card, so no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-405400",
+      "old": {
+        "name": "مؤسسة مكتب اللون النمري للعقارات",
+        "address": "شارع الامير نايف بن عبدالعزيز، الشفاء، السليل، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0550220688"
+        ],
+        "lat": 20.4532,
+        "lon": 45.60137
+      },
+      "new": null,
+      "evidence": "Google Maps CDP remained unavailable after browser reinitialization; focused exact-name public search returned no usable Maps card, so no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-210964",
+      "old": {
+        "name": "مكتب فيصل زعل الدوسري للعقارات",
+        "address": "السليل، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0565816662"
+        ],
+        "lat": 20.43834,
+        "lon": 45.60543
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197493",
+      "old": {
+        "name": "مكتب رايه البيضاء للعقار",
+        "address": "وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555532436"
+        ],
+        "lat": 20.45277,
+        "lon": 44.84398
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-199601",
+      "old": {
+        "name": "مكتب أنا مستشارك للعقار",
+        "address": "البحره، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0508678866"
+        ],
+        "lat": 20.45715,
+        "lon": 44.77096
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-194773",
+      "old": {
+        "name": "مكتب عايد مبارك الدوسري للعقارات",
+        "address": "شارع الملك عبدالله بن عبدالعزيز، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555937799"
+        ],
+        "lat": 20.4626,
+        "lon": 44.7816
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-195963",
+      "old": {
+        "name": "مكتب الامواج الفضية للخدمات العقارية",
+        "address": "العام، العقيق، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0541265466"
+        ],
+        "lat": 20.46837,
+        "lon": 44.77087
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-216164",
+      "old": {
+        "name": "مكتب شرق الوادي للعقارات",
+        "address": "خالد ابن الوليد، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555825768"
+        ],
+        "lat": 20.43044,
+        "lon": 44.87606
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197170",
+      "old": {
+        "name": "مكتب الوسيط المتطور للخدمات العقارية",
+        "address": "وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0559196925"
+        ],
+        "lat": 20.43289,
+        "lon": 44.8599
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-213857",
+      "old": {
+        "name": "مؤسسة أبراج المملكة للعقارات",
+        "address": "التقوى، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0545656786"
+        ],
+        "lat": 20.46138,
+        "lon": 44.78088
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-214260",
+      "old": {
+        "name": "مؤسسة نجد1 للعقارات",
+        "address": "النثرة، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555118696"
+        ],
+        "lat": 20.47078,
+        "lon": 44.76758
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-215964",
+      "old": {
+        "name": "مكتب درة الشرق الأوسط للعقارات",
+        "address": "الخالدية 18، الورود، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555267769"
+        ],
+        "lat": 20.42945,
+        "lon": 44.88536
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200239",
+      "old": {
+        "name": "مكتب أنوار الساحه للعقار",
+        "address": "امية ابن الاسكر، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0551182200"
+        ],
+        "lat": 20.45056,
+        "lon": 44.85731
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-218732",
+      "old": {
+        "name": "مكتب التيسير الجديد للعقارات",
+        "address": "وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505115118"
+        ],
+        "lat": 19.776586,
+        "lon": 44.545577
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-382663",
+      "old": {
+        "name": "مكتب قمة النادرة العقارية",
+        "address": "خالد ابن الوليد، الورود، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0535006773"
+        ],
+        "lat": 20.42055,
+        "lon": 44.87304
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-214822",
+      "old": {
+        "name": "مكتب ركان للعقارات",
+        "address": "هيئة الرقابه، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0506756760"
+        ],
+        "lat": 20.48404,
+        "lon": 44.76707
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-214913",
+      "old": {
+        "name": "مكتب رواد الوادي للعقارات",
+        "address": "وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0551105937"
+        ],
+        "lat": 20.46558,
+        "lon": 44.77995
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-520210",
+      "old": {
+        "name": "مكتب بوصلة الوادي للعقارات",
+        "address": "خالد ابن الوليد، الورود، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0538860635"
+        ],
+        "lat": 20.42303,
+        "lon": 44.87445
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed after browser reinitialization because CDP remained unavailable; no stored value was treated as proof",
+      "status": "unresolved_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-329950",
+      "old": {
+        "name": "مكتب العصر الحديث للعقار",
+        "address": "ابن اياس الكناني، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555115526"
+        ],
+        "lat": 20.44994,
+        "lon": 44.85714
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-210215",
+      "old": {
+        "name": "مكتب صفيه عطيه الغامدي العقارية",
+        "address": "ضياء الدين رجب، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0536641412"
+        ],
+        "lat": 20.4544,
+        "lon": 44.82056
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-211470",
+      "old": {
+        "name": "مؤسسة خبير الوادي للخدمات العقارية",
+        "address": "الزبير بن ابي هالة التميمي، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0509277157"
+        ],
+        "lat": 20.4531,
+        "lon": 44.85308
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200818",
+      "old": {
+        "name": "مكتب سعود عبدالله حنيف الدرعان للتطوير والاستثمار العقاري",
+        "address": "البحره، الروضة، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555115659"
+        ],
+        "lat": 20.4621,
+        "lon": 44.75641
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-205895",
+      "old": {
+        "name": "مؤسسة نجم الوادي للعقارات",
+        "address": "طريق واد الدواسر العام، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0569378703"
+        ],
+        "lat": 20.44181,
+        "lon": 44.86379
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-580006",
+      "old": {
+        "name": "مكتب إزداد الوادي للعقارات",
+        "address": "التقوى، وادي الدواسر، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0506566944"
+        ],
+        "lat": 20.46192,
+        "lon": 44.78111
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197944",
+      "old": {
+        "name": "مكتب فرص الوسيط للعقارات",
+        "address": "طريق الملك فيصل بن عبدالعزيز، السلام، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0552525688"
+        ],
+        "lat": 24.50366,
+        "lon": 44.38655
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197255",
+      "old": {
+        "name": "مكتب الرواد المطور للعقارات",
+        "address": "طريق الملك فيصل بن عبدالعزيز، السلام، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0544440686"
+        ],
+        "lat": 24.50584,
+        "lon": 44.3851
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-192802",
+      "old": {
+        "name": "مكتب فهد محسن بصيص الكثيري للخدمات العقارية",
+        "address": "الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0550071193"
+        ],
+        "lat": 24.55129,
+        "lon": 44.4325
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-231243",
+      "old": {
+        "name": "شركة قمة الريادة العقارية",
+        "address": "شارع الملك عبد الله بن عبد العزيز، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [],
+        "lat": 24.54781,
+        "lon": 44.42855
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197645",
+      "old": {
+        "name": "مكتب مهمة الانجاز للخدمات العقارية",
+        "address": "الاميرة نورة بنت عبدالرحمن، الفيصلية، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0532035381"
+        ],
+        "lat": 24.53571,
+        "lon": 44.41465
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-193331",
+      "old": {
+        "name": "مكتب الركن النافذ للعقارات",
+        "address": "طريق الملك عبدالعزيز، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0531144438"
+        ],
+        "lat": 24.52221,
+        "lon": 44.41886
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-194808",
+      "old": {
+        "name": "مكتب ارض البادية للعقارات",
+        "address": "طريق الملك سعود بن عبدالعزيز، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0542664702"
+        ],
+        "lat": 24.50648,
+        "lon": 44.38563
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-329161",
+      "old": {
+        "name": "مؤسسة السهل الممتنع العقارية",
+        "address": "شارع الملك عبد الله بن عبد العزيز، حطين، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0593685114"
+        ],
+        "lat": 24.54801,
+        "lon": 44.42835
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197100",
+      "old": {
+        "name": "مكتب ابراهيم محمد الصعب العقاري",
+        "address": "الملك عبدالعزيز، القدس، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0557972034"
+        ],
+        "lat": 24.5072,
+        "lon": 44.39563
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-201611",
+      "old": {
+        "name": "مكتب اعمال الرائد العقارية",
+        "address": "طريق بدون اسم، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0537771300"
+        ],
+        "lat": 24.53713,
+        "lon": 44.51471
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-195659",
+      "old": {
+        "name": "مكتب نوادر السلطان للخدمات العقارية",
+        "address": "نوره بنت عبدالرحمن، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0538080986"
+        ],
+        "lat": 24.53741,
+        "lon": 44.45122
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-195541",
+      "old": {
+        "name": "مؤسسة مكتب محمد مقعد شارع العتيبي العقاري",
+        "address": "طريق الملك عبدالله، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555853584"
+        ],
+        "lat": 24.53837,
+        "lon": 44.4103
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-213841",
+      "old": {
+        "name": "مكتب رمز مباشر للخدمات العقارية",
+        "address": "شارع الملك عبد الله بن عبد العزيز، حطين، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505571555"
+        ],
+        "lat": 24.54834,
+        "lon": 44.42794
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197381",
+      "old": {
+        "name": "مكتب الفايز للعقارات",
+        "address": "طريق الملك عبدالله، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0558822044"
+        ],
+        "lat": 24.54858,
+        "lon": 44.41945
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-219936",
+      "old": {
+        "name": "مكتب الركن الثاني للعقارات",
+        "address": "شارع الملك عبد الله بن عبد العزيز، حطين، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0599995554"
+        ],
+        "lat": 24.54298,
+        "lon": 44.43451
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-208253",
+      "old": {
+        "name": "مكتب الوسام الماسي للخدمات العقارية",
+        "address": "طريق الملك فيصل بن عبدالعزيز، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0530003493"
+        ],
+        "lat": 24.49931,
+        "lon": 44.3889
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-363916",
+      "old": {
+        "name": "مؤسسة روسانا العقارية",
+        "address": "الاميرة نورا بنت عبد الرحمن، بدر، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555515676"
+        ],
+        "lat": 24.52975,
+        "lon": 44.42122
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-215210",
+      "old": {
+        "name": "مكتب بن عدل للعقارات",
+        "address": "طريق الملك عبدالله، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0562380208"
+        ],
+        "lat": 24.54015,
+        "lon": 44.41176
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-208479",
+      "old": {
+        "name": "مكتب عبدالمجيد علي الزامل للعقارات",
+        "address": "طريق الملك فيصل بن عبدالعزيز، الديرة، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0506816681"
+        ],
+        "lat": 24.49588,
+        "lon": 44.39142
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-350773",
+      "old": {
+        "name": "مكتب بداية باب للعقار",
+        "address": "الملك عبدالله بن عبدالعزيز، الخالدية، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0557076222"
+        ],
+        "lat": 24.51525,
+        "lon": 44.37183
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-196770",
+      "old": {
+        "name": "مكتب رواد المعارف للخدمات العقارية",
+        "address": "شارع الملك عبد الله بن عبد العزيز، الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0580162412"
+        ],
+        "lat": 24.54768,
+        "lon": 44.42874
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-206657",
+      "old": {
+        "name": "مكتب عصر الأوائل للعقارات",
+        "address": "الدوادمي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500860689"
+        ],
+        "lat": 24.51332,
+        "lon": 44.38276
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-195596",
+      "old": {
+        "name": "مكتب أبراهيم بن سليمان بن محمد الحمدان العقاري",
+        "address": "طريق الملك عبدالله جنوب، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505122337"
+        ],
+        "lat": 26.2951,
+        "lon": 44.83869
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-199607",
+      "old": {
+        "name": "مكتب احمد عبداللطيف حسين المسعود العقاري",
+        "address": "شارع مصعب بن عمير، اليمامة، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0554237550"
+        ],
+        "lat": 26.31571,
+        "lon": 44.79516
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-192203",
+      "old": {
+        "name": "مكتب منارات الزلفي للعقارات",
+        "address": "طريق الملك عبدالعزيز، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555245958"
+        ],
+        "lat": 26.29929,
+        "lon": 44.79961
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197629",
+      "old": {
+        "name": "مكتب صالح عبدالرحمن بن حجي الشايع للعقارات",
+        "address": "الامام محمد بن عبدالوهاب، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0532259797"
+        ],
+        "lat": 26.32369,
+        "lon": 44.81995
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-213077",
+      "old": {
+        "name": "مكتب هامة المجد للخدمات العقارية",
+        "address": "الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0580438519"
+        ],
+        "lat": 26.29594,
+        "lon": 44.85523
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-195454",
+      "old": {
+        "name": "مكتب نوره ناصر دخيل الحمادي للعقارات",
+        "address": "الخالدية، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0554475514"
+        ],
+        "lat": 26.28983,
+        "lon": 44.81088
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-193303",
+      "old": {
+        "name": "مكتب متعب بن مرزوق بن عواد الضبيب للعقارات",
+        "address": "طريق الملك عبدالله شمال، اليرموك، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0533332425"
+        ],
+        "lat": 26.31827,
+        "lon": 44.82012
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200699",
+      "old": {
+        "name": "مكتب ربوة الخير للعقارات",
+        "address": "شارع ريان بن عمار، الربوة، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555124279"
+        ],
+        "lat": 26.31599,
+        "lon": 44.8725
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200524",
+      "old": {
+        "name": "مكتب المبني الجديد للخدمات العقارية",
+        "address": "الامام فيصل بن تركي، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0553034560"
+        ],
+        "lat": 26.28298,
+        "lon": 44.83441
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-201265",
+      "old": {
+        "name": "مكتب سليمان مزيد سليمان الفايز للعقارات",
+        "address": "الملك سعود، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0506415446"
+        ],
+        "lat": 26.30501,
+        "lon": 44.82035
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-205158",
+      "old": {
+        "name": "مكتب نوافذ الوفاء العقاري",
+        "address": "شارع ابو عبيده عامر بن الجراج، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0532631112"
+        ],
+        "lat": 26.32474,
+        "lon": 44.82084
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-199328",
+      "old": {
+        "name": "مكتب فواخر الرياض للعقارات",
+        "address": "طريق الملك سلمان، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0539393614"
+        ],
+        "lat": 26.28066,
+        "lon": 44.82491
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200554",
+      "old": {
+        "name": "مكتب حمود للاستثمار العقاري",
+        "address": "طريق الملك فهد، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500899949"
+        ],
+        "lat": 26.30572,
+        "lon": 44.82616
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-212247",
+      "old": {
+        "name": "مكتب ريم محمد بن علي الهويشان العقاري",
+        "address": "ابو بكر الصديق، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500809500"
+        ],
+        "lat": 26.3044,
+        "lon": 44.79815
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-211902",
+      "old": {
+        "name": "مكتب شايع عبدالمحسن المسعر للعقارات",
+        "address": "طريق الملك عبدالله جنوب، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0506204099"
+        ],
+        "lat": 26.29586,
+        "lon": 44.83822
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-201957",
+      "old": {
+        "name": "مكتب سلطان عبدالرحمن التركي العقاري",
+        "address": "طريق الملك سلمان بن عبدالعزيز، العزيزية، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505126167"
+        ],
+        "lat": 26.30194,
+        "lon": 44.81332
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-199911",
+      "old": {
+        "name": "مكتب المشاريف العقاري",
+        "address": "طريق الملك سلمان بن عبدالعزيز، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555128434"
+        ],
+        "lat": 26.28282,
+        "lon": 44.82495
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-208266",
+      "old": {
+        "name": "مكتب برق الزلفي للعقارات",
+        "address": "الغاط، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0504272265"
+        ],
+        "lat": 26.27161,
+        "lon": 44.84587
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-359749",
+      "old": {
+        "name": "مكتب امواج الاثير للعقارات",
+        "address": "عبدالله بن مسعود، اليمامة، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500970000"
+        ],
+        "lat": 26.30862,
+        "lon": 44.80202
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-209430",
+      "old": {
+        "name": "مكتب فهد حمد عبدالكريم البدر للعقارات",
+        "address": "عمر بن خطاب، الخالدية، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0503243410"
+        ],
+        "lat": 26.29376,
+        "lon": 44.80709
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197644",
+      "old": {
+        "name": "مكتب محمد عبدالله البدر للعقارات",
+        "address": "الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505577266"
+        ],
+        "lat": 26.28983,
+        "lon": 44.81088
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-196242",
+      "old": {
+        "name": "مكتب علي بن جفين بن عبيد المطيري للعقارات",
+        "address": "طريق الملك عبدالله شمال، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505113252"
+        ],
+        "lat": 26.31909,
+        "lon": 44.81933
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-214854",
+      "old": {
+        "name": "مكتب الحيطان للعقارات",
+        "address": "شارع المنذر بن مصعب، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0556236346"
+        ],
+        "lat": 26.31684,
+        "lon": 44.87736
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-218845",
+      "old": {
+        "name": "مكتب احمد سعد الحيدان العقاري",
+        "address": "طريق الملك عبدالعزيز، الزلفي، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0504198399"
+        ],
+        "lat": 26.29977,
+        "lon": 44.79957
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-192501",
+      "old": {
+        "name": "مكتب مسار التطور العقاري",
+        "address": "الملك عبدالعزيز، اليرموك، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0532233005"
+        ],
+        "lat": 25.91548,
+        "lon": 45.36249
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-192014",
+      "old": {
+        "name": "مكتب العريدي للعقارات",
+        "address": "طريق الملك عبدالعزيز، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505123104"
+        ],
+        "lat": 25.90859,
+        "lon": 45.35864
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-215891",
+      "old": {
+        "name": "شركة عاصم عبدالعزيز بن علي الحمد للعقارات شركة شخص واحد",
+        "address": "طريق الامير سلطان، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [],
+        "lat": 25.90519,
+        "lon": 45.36756
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-192854",
+      "old": {
+        "name": "مكتب السبهان العقاري",
+        "address": "الشيخ عبدالعزيز بن عبدالمحسن التويجري، الجامعيين، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505353544"
+        ],
+        "lat": 25.9034,
+        "lon": 45.38724
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-199946",
+      "old": {
+        "name": "مكتب الشارع الثاني العقاري",
+        "address": "طريق الملك عبدالعزيز، الجامعيين، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555122814"
+        ],
+        "lat": 25.90653,
+        "lon": 45.35748
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-193102",
+      "old": {
+        "name": "مؤسسة نخبة سدير للتطوير والاستثمار العقاري",
+        "address": "الامير سلطان بن عبدالعزيز، الأندلس، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0556270704"
+        ],
+        "lat": 25.91669,
+        "lon": 45.37488
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-198651",
+      "old": {
+        "name": "مؤسسة إنماء العقارية",
+        "address": "الحماده الحزام، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0566008239"
+        ],
+        "lat": 25.91969,
+        "lon": 45.3891
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-194010",
+      "old": {
+        "name": "مكتب درة العالمي العقاري",
+        "address": "عاصم ابن ابي وائل، الملك عبدالله، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0553036677"
+        ],
+        "lat": 25.91066,
+        "lon": 45.38383
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-199803",
+      "old": {
+        "name": "مكتب صالح خالد بن صالح المديهيم للعقارات",
+        "address": "البراء بن مالك، الجامعيين، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555333469"
+        ],
+        "lat": 25.90198,
+        "lon": 45.37773
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-195202",
+      "old": {
+        "name": "مكتب فواز متعب المطيري للعقارات",
+        "address": "الامير سطام، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505129125"
+        ],
+        "lat": 25.91749,
+        "lon": 45.37331
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200744",
+      "old": {
+        "name": "مكتب اليوسف للعقارات",
+        "address": "طريق الملك عبدالعزيز، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555129053"
+        ],
+        "lat": 25.92831,
+        "lon": 45.37113
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-194482",
+      "old": {
+        "name": "مكتب عبدالله عبدالمحسن الجاسر العقاري",
+        "address": "طريق الملك خالد، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0562114488"
+        ],
+        "lat": 25.90954,
+        "lon": 45.36697
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-199305",
+      "old": {
+        "name": "مكتب مقبل بجاد المطيري العقاري",
+        "address": "الحزام، المطار، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0508998947"
+        ],
+        "lat": 25.92104,
+        "lon": 45.38921
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-196695",
+      "old": {
+        "name": "مؤسسة مكتب ريان عبدالعزيز الحمد العقاري",
+        "address": "طريق الامير سلطان، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0553130703"
+        ],
+        "lat": 25.90519,
+        "lon": 45.36755
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-196938",
+      "old": {
+        "name": "مكتب علي بن حمد بن علي التويجري لادارة الأملاك",
+        "address": "الملك عبد العزيز، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555120050"
+        ],
+        "lat": 25.90957,
+        "lon": 45.36616
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-205383",
+      "old": {
+        "name": "مكتب بيان المجمعه للعقارات",
+        "address": "الأمير سطام بن عبدالعزيز، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0552848270"
+        ],
+        "lat": 25.9196,
+        "lon": 45.36973
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200172",
+      "old": {
+        "name": "مكتب قصر مساعد للعقارات",
+        "address": "طريق الملك عبدالعزيز، اليرموك، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505124271"
+        ],
+        "lat": 25.91696,
+        "lon": 45.36354
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200688",
+      "old": {
+        "name": "مكتب مدار الطالعة للعقارات",
+        "address": "الملك سلمان، اليرموك، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0501081999"
+        ],
+        "lat": 25.91823,
+        "lon": 45.36001
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200827",
+      "old": {
+        "name": "مكتب خالد بدين العازمي العقاري",
+        "address": "الامير ناصر بن عبدالعزيز، الروضة، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0554245632"
+        ],
+        "lat": 25.95025,
+        "lon": 45.35002
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-239906",
+      "old": {
+        "name": "مكتب مدى سدير للعقارات",
+        "address": "عمرو بن العاص، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555125210"
+        ],
+        "lat": 25.90751,
+        "lon": 45.36038
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-215963",
+      "old": {
+        "name": "مكتب عبدالسلام عبدالله الصالح العقاري",
+        "address": "القادسية، الملك فهد، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555120774"
+        ],
+        "lat": 25.906,
+        "lon": 45.34786
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-201992",
+      "old": {
+        "name": "مكتب عبدالله بن ابراهيم الشلهوب للعقارات",
+        "address": "الملك سلمان بن عبدالعزيز، الملك فهد، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505121034"
+        ],
+        "lat": 25.89859,
+        "lon": 45.34585
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-211923",
+      "old": {
+        "name": "مؤسسة واجهة المجمعة لادارة الأملاك",
+        "address": "طريق الملك فهد، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505464508"
+        ],
+        "lat": 25.89026,
+        "lon": 45.35635
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-196767",
+      "old": {
+        "name": "مؤسسة المسبار الذهبي للعقارات",
+        "address": "الامير سلطان بن عبدالعزيز، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0561022650"
+        ],
+        "lat": 25.91042,
+        "lon": 45.37206
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200108",
+      "old": {
+        "name": "مكتب ناصر عبدالعزيز الخالدى للعقارات",
+        "address": "سعد بن ابي وقاص، الفيحاء، المجمعة، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505120137"
+        ],
+        "lat": 25.91162,
+        "lon": 45.35466
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-192962",
+      "old": {
+        "name": "مكتب عبدالعزيز محمد بن عبدالرحمن المنيع للعقارات",
+        "address": "طريق الملك سعود، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555208587"
+        ],
+        "lat": 25.23637,
+        "lon": 45.25387
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-192961",
+      "old": {
+        "name": "مكتب قمة المتحد للعقار",
+        "address": "الملك سعود، الروضة، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505959336"
+        ],
+        "lat": 25.23781,
+        "lon": 45.25006
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-198673",
+      "old": {
+        "name": "مكتب لمسة وفاء للعقارات",
+        "address": "طريق الملك سعود، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0508766680"
+        ],
+        "lat": 25.23765,
+        "lon": 45.25015
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-195666",
+      "old": {
+        "name": "مكتب اعمار الجوفان المتميز للعقارات",
+        "address": "طريق الملك سعود، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0544622620"
+        ],
+        "lat": 25.23772,
+        "lon": 45.2498
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-213955",
+      "old": {
+        "name": "مؤسسة عقود الوشم للعقار",
+        "address": "طريق الملك خالد، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0538289565"
+        ],
+        "lat": 25.22696,
+        "lon": 45.26048
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-195184",
+      "old": {
+        "name": "مكتب عبدالرحمن بن محمد بن ابراهيم المقحم للعقارات",
+        "address": "الملك عبدالعزيز، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0504648884"
+        ],
+        "lat": 25.23509,
+        "lon": 45.25883
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197032",
+      "old": {
+        "name": "مكتب أملاك شقراء للعقارات",
+        "address": "طريق الملك سعود، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505221715"
+        ],
+        "lat": 25.23752,
+        "lon": 45.2505
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-192749",
+      "old": {
+        "name": "مكتب قصر المستشار العقاري",
+        "address": "طريق الملك سعود، الروضة، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0550439033"
+        ],
+        "lat": 25.23831,
+        "lon": 45.24838
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-213527",
+      "old": {
+        "name": "مكتب أسيار للعقار",
+        "address": "الملك عبدالله بن عبدالعزيز، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500813853"
+        ],
+        "lat": 25.21502,
+        "lon": 45.23475
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-216868",
+      "old": {
+        "name": "مكتب قمه الصداره العقاري",
+        "address": "طريق الملك سعود، الروضة، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0561222276"
+        ],
+        "lat": 25.23783,
+        "lon": 45.24988
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-199915",
+      "old": {
+        "name": "مكتب المضحي الاول للخدمات العقارية",
+        "address": "شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0536671034"
+        ],
+        "lat": 25.2318,
+        "lon": 45.24779
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-209951",
+      "old": {
+        "name": "مكتب ركن فيصل للعقارات",
+        "address": "طريق الملك سعود، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0537460016"
+        ],
+        "lat": 25.23678,
+        "lon": 45.2556
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-207902",
+      "old": {
+        "name": "مكتب نبض الوشم للعقارات",
+        "address": "طريق الملك سعود، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0553031309"
+        ],
+        "lat": 25.23688,
+        "lon": 45.25093
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-199579",
+      "old": {
+        "name": "مكتب بصمة الوشم للعقارات",
+        "address": "طريق الملك سعود، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0551166176"
+        ],
+        "lat": 25.2373,
+        "lon": 45.25105
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-205843",
+      "old": {
+        "name": "مؤسسة مكتب ابلج للخدمات العقارية",
+        "address": "الروابي 48، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0533662933"
+        ],
+        "lat": 25.21638,
+        "lon": 45.2619
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-211649",
+      "old": {
+        "name": "مكتب منازل شقراء للعقارات",
+        "address": "طريق الملك سعود، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555050552"
+        ],
+        "lat": 25.23676,
+        "lon": 45.25353
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-474133",
+      "old": {
+        "name": "مكتب رهف عبدالله العقيل للعقارات",
+        "address": "سعود بن عبدالعزيز، الروضة، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0509858915"
+        ],
+        "lat": 25.23696,
+        "lon": 45.25323
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-202933",
+      "old": {
+        "name": "مكتب همة المعالي للخدمات العقارية",
+        "address": "شقراء 366، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0532899941"
+        ],
+        "lat": 25.24156,
+        "lon": 45.25761
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-329824",
+      "old": {
+        "name": "مكتب صروح شقراء للعقارات",
+        "address": "الورود، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0543333157"
+        ],
+        "lat": 25.2182,
+        "lon": 45.23746
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-193494",
+      "old": {
+        "name": "مكتب نبعة الخير للعقارات",
+        "address": "طريق الملك عبدالعزيز، الروضة، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0506533613"
+        ],
+        "lat": 25.24093,
+        "lon": 45.24437
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-463738",
+      "old": {
+        "name": "مؤسسة سعد ابراهيم المعيقل للعقارات",
+        "address": "ابي البقاء الرندي، الروابي، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0568790162"
+        ],
+        "lat": 25.21851,
+        "lon": 45.2722
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-205009",
+      "old": {
+        "name": "مكتب آفاق الغد للعقارات",
+        "address": "طريق الملك عبدالله، شقراء، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0567444563"
+        ],
+        "lat": 25.23186,
+        "lon": 45.24428
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-217072",
+      "old": {
+        "name": "مكتب داود بن سليمان بن عمران العمران للعقارات",
+        "address": "الاميره حصـة بنت احمد السديري، المصيف، الغاط، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0533855754"
+        ],
+        "lat": 26.03674,
+        "lon": 44.93723
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-210832",
+      "old": {
+        "name": "مكتب ماجد سليمان الفوزان للعقارات",
+        "address": "الملك عبدالعزيز، الغدير، الغاط، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0530999130"
+        ],
+        "lat": 26.02467,
+        "lon": 44.95303
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-193784",
+      "old": {
+        "name": "مكتب فوزان بن ابراهيم بن علي الفوزان للعقارات",
+        "address": "طريق الملك سلمان، الخزامى، الغاط، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505125139"
+        ],
+        "lat": 26.02843,
+        "lon": 44.94722
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-195487",
+      "old": {
+        "name": "مؤسسة صرح لجين للعقارات",
+        "address": "طريق الملك عبد العزيز، الأندلس، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505110652"
+        ],
+        "lat": 24.47351,
+        "lon": 46.28306
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-198773",
+      "old": {
+        "name": "مكتب بصمة إعمار العقاري",
+        "address": "طريق الملك عبد العزيز، الأندلس، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505110838"
+        ],
+        "lat": 24.47357,
+        "lon": 46.2828
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-194316",
+      "old": {
+        "name": "مؤسسة مساكن العروبة العقارية",
+        "address": "طريق الملك فهد، غرناطة، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555804446"
+        ],
+        "lat": 24.4615,
+        "lon": 46.26513
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-210516",
+      "old": {
+        "name": "مكتب سكب المدينه للعقارات",
+        "address": "الامير سطام بن عبدالعزيز، الهدا، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0554498161"
+        ],
+        "lat": 24.45993,
+        "lon": 46.2668
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197302",
+      "old": {
+        "name": "مكتب عبيد محمد قبلان العتيبي للخدمات العقارية",
+        "address": "طريق الملك عبد العزيز، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505412363"
+        ],
+        "lat": 24.47134,
+        "lon": 46.26917
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-218030",
+      "old": {
+        "name": "مكتب اجواء العقار للعقارات",
+        "address": "طريق الملك عبد العزيز، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555297115"
+        ],
+        "lat": 24.47368,
+        "lon": 46.28332
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-207204",
+      "old": {
+        "name": "مكتب البلاد الفضية للعقارات",
+        "address": "طريق الأمير سلطان، الأندلس، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555110955"
+        ],
+        "lat": 24.47374,
+        "lon": 46.2836
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-195162",
+      "old": {
+        "name": "مكتب نبض السيار للعقارات",
+        "address": "طريق الملك فهد، الهدا، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0504133541"
+        ],
+        "lat": 24.46152,
+        "lon": 46.26546
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-194831",
+      "old": {
+        "name": "مكتب هتان الرياض للعقارات",
+        "address": "طريق الملك فيصل، الأندلس، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500144500"
+        ],
+        "lat": 24.46833,
+        "lon": 46.2738
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-202087",
+      "old": {
+        "name": "مؤسسة صكوك الغد العقارية",
+        "address": "طريق الملك فهد، العليا، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555110624"
+        ],
+        "lat": 24.46272,
+        "lon": 46.27941
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-196620",
+      "old": {
+        "name": "مؤسسة مكتب ركن الريادة العقاري",
+        "address": "المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0502927796"
+        ],
+        "lat": 24.46826,
+        "lon": 46.29054
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200080",
+      "old": {
+        "name": "مكتب دروب للخدمات العقارية",
+        "address": "سلمان بن عبدالعزيز، العليا، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0550444843"
+        ],
+        "lat": 24.45412,
+        "lon": 46.29093
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-208043",
+      "old": {
+        "name": "مكتب سعود عبدالله بن عبدالعزيز المبدل للعقارات",
+        "address": "طريق الملك فهد، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555282586"
+        ],
+        "lat": 24.46153,
+        "lon": 46.26551
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-210390",
+      "old": {
+        "name": "مكتب أضواء الفيصلية للخدمات العقارية",
+        "address": "طريق الملك فيصل، غرناطة، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505223696"
+        ],
+        "lat": 24.46777,
+        "lon": 46.27339
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-215605",
+      "old": {
+        "name": "مكتب فهد علي الرشيد للعقارات",
+        "address": "طريق الملك عبد العزيز، الأندلس، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505110640"
+        ],
+        "lat": 24.47123,
+        "lon": 46.27373
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-213039",
+      "old": {
+        "name": "مؤسسة أزاهير الرائد للعقار",
+        "address": "طريق الملك فيصل، غرناطة، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0504254900"
+        ],
+        "lat": 24.46763,
+        "lon": 46.27344
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-218727",
+      "old": {
+        "name": "مكتب اول مجال للخدمات العقارية",
+        "address": "طريق الملك فيصل، المروج، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0550600303"
+        ],
+        "lat": 24.47426,
+        "lon": 46.27248
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-243692",
+      "old": {
+        "name": "مؤسسة صكوك وأصول العقارية",
+        "address": "الترمذي، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0554374974"
+        ],
+        "lat": 24.4676,
+        "lon": 46.29678
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-313759",
+      "old": {
+        "name": "مؤسسة محمد عيد سعد القحطاني للعقارات",
+        "address": "سلمان بن عبدالعزيز، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0549700022"
+        ],
+        "lat": 24.46231,
+        "lon": 46.30001
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-328531",
+      "old": {
+        "name": "مؤسسة بصمة عرين العقارية",
+        "address": "سلمان بن عبدالعزيز، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0532226662"
+        ],
+        "lat": 24.45412,
+        "lon": 46.29053
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-205609",
+      "old": {
+        "name": "مؤسسة مناور الرياض للخدمات العقارية",
+        "address": "طريق الملك عبد العزيز، الأندلس، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0501222266"
+        ],
+        "lat": 24.47357,
+        "lon": 46.28314
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-203290",
+      "old": {
+        "name": "مؤسسة بيوت المستقبل العقارية",
+        "address": "طريق الملك فيصل، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0553434371"
+        ],
+        "lat": 24.46765,
+        "lon": 46.27344
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-206130",
+      "old": {
+        "name": "مكتب تأسيس المستقبل العقارية",
+        "address": "طريق الملك عبد العزيز، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555110660"
+        ],
+        "lat": 24.47203,
+        "lon": 46.26425
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-210274",
+      "old": {
+        "name": "مؤسسة مسكن القمة العقارية",
+        "address": "طريق الملك فيصل، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500535353"
+        ],
+        "lat": 24.46408,
+        "lon": 46.27434
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-220309",
+      "old": {
+        "name": "مؤسسة محمد سالم الشبوي القحطاني للعقارات",
+        "address": "طريق الملك فيصل، المزاحمية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0541110477"
+        ],
+        "lat": 24.47317,
+        "lon": 46.27213
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-193399",
+      "old": {
+        "name": "مكتب خالد ناصر السياري للعقارات",
+        "address": "ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0506424740"
+        ],
+        "lat": 24.61244,
+        "lon": 46.15179
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-194813",
+      "old": {
+        "name": "مكتب روائع نسران للعقارات",
+        "address": "طريق الملك عبدالعزيز، الخالدية، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0533900032"
+        ],
+        "lat": 24.60112,
+        "lon": 46.13054
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-196255",
+      "old": {
+        "name": "مكتب شمالي شرقي للعقارات",
+        "address": "النادي، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0530258496"
+        ],
+        "lat": 24.58997,
+        "lon": 46.15476
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-194592",
+      "old": {
+        "name": "مكتب محمد بن عبدالله بن محمد الفرحان للعقارات",
+        "address": "الملك عبدالعزيز، الخالدية، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555110561"
+        ],
+        "lat": 24.59043,
+        "lon": 46.15458
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-205615",
+      "old": {
+        "name": "مكتب رمز العطاء للعقارات",
+        "address": "الريان 105، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505110650"
+        ],
+        "lat": 24.59031,
+        "lon": 46.151
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-269334",
+      "old": {
+        "name": "مكتب قمم الروعه للخدمات العقارية",
+        "address": "طريق الملك عبدالعزيز، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500787773"
+        ],
+        "lat": 24.58569,
+        "lon": 46.16168
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-319171",
+      "old": {
+        "name": "مكتب قمه الريان للعقارات",
+        "address": "النادي، الريان، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0551101019"
+        ],
+        "lat": 24.59032,
+        "lon": 46.15444
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-208396",
+      "old": {
+        "name": "مكتب رواد التعامل للعقارات",
+        "address": "طريق الملك عبدالعزيز، الخالدية، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555445635"
+        ],
+        "lat": 24.59873,
+        "lon": 46.13479
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-212095",
+      "old": {
+        "name": "مكتب ناصر عبدالعزيز سعد المحارب للعقارات",
+        "address": "النادي، الريان، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0502968828"
+        ],
+        "lat": 24.58996,
+        "lon": 46.15479
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-359536",
+      "old": {
+        "name": "مكتب عنوان البيت للعقارات",
+        "address": "الملك عبدالعزيز، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0503211155"
+        ],
+        "lat": 24.59543,
+        "lon": 46.12981
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-348400",
+      "old": {
+        "name": "مكتب ركن صرح العمار للخدمات العقارية",
+        "address": "الملك عبدالعزيز، الريان، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0550666667"
+        ],
+        "lat": 24.58736,
+        "lon": 46.15616
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-193481",
+      "old": {
+        "name": "مكتب طارق عبدالله الرميح للعقارات",
+        "address": "طريق بدون اسم، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500808180"
+        ],
+        "lat": 24.77862,
+        "lon": 46.41523
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-205587",
+      "old": {
+        "name": "مؤسسة ليدار لادارة الأملاك",
+        "address": "جو 101، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0550333344"
+        ],
+        "lat": 24.49621,
+        "lon": 46.14837
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-198367",
+      "old": {
+        "name": "مؤسسة صرح السعد للخدمات العقارية",
+        "address": "طويق 1، الريان، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500339935"
+        ],
+        "lat": 24.58759,
+        "lon": 46.15629
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-216075",
+      "old": {
+        "name": "مكتب اسطورة نجد للعقارات",
+        "address": "ضرما 1185، العزيزية، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0509448271"
+        ],
+        "lat": 24.63091,
+        "lon": 46.13745
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-311998",
+      "old": {
+        "name": "مكتب محمد سليمان علي العليان للخدمات العقارية",
+        "address": "الامير عبدالمجيد بن عبد العزيز، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0548444960"
+        ],
+        "lat": 24.58957,
+        "lon": 46.13569
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-205931",
+      "old": {
+        "name": "مكتب ورد للخدمات العقارية",
+        "address": "النصية، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500595203"
+        ],
+        "lat": 24.5897,
+        "lon": 46.15365
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-471292",
+      "old": {
+        "name": "مكتب رسا النخبه للعقارات",
+        "address": "النادي، الريان، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0509921170"
+        ],
+        "lat": 24.58974,
+        "lon": 46.15463
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-204953",
+      "old": {
+        "name": "مؤسسة نهضة القدية للعقارات",
+        "address": "الريان 45، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0562151014"
+        ],
+        "lat": 24.5822,
+        "lon": 46.15068
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-498484",
+      "old": {
+        "name": "مؤسسة بندر عبدالله القحطاني للخدمات العقارية",
+        "address": "جو 101، ضرما، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0502010963"
+        ],
+        "lat": 24.49265,
+        "lon": 46.16278
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-199572",
+      "old": {
+        "name": "مكتب عبدالله محمد الزكري للعقارات",
+        "address": "عبدالعزيز ال سعود، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0556111960"
+        ],
+        "lat": 24.05951,
+        "lon": 45.27362
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-192926",
+      "old": {
+        "name": "مكتب عيد ابن جمعان ابن عيد القحطاني للعقارات",
+        "address": "الاميرمتعب، الخليج، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0509338901"
+        ],
+        "lat": 24.08485,
+        "lon": 45.30013
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-195232",
+      "old": {
+        "name": "مكتب ثقة التشييد للعقارات",
+        "address": "طريق الملك عبدالعزيز، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0508458748"
+        ],
+        "lat": 24.05873,
+        "lon": 45.27226
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-204273",
+      "old": {
+        "name": "مكتب محمد عيد القحطاني للعقارات",
+        "address": "ابي جعفر بن عبدالملك، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505961888"
+        ],
+        "lat": 23.76096,
+        "lon": 44.761184
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200180",
+      "old": {
+        "name": "مكتب ابراهيم سعد عبدالرحمن الجبيري للعقارات",
+        "address": "طريق الملك سعود بن عبدالعزيز، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505111161"
+        ],
+        "lat": 24.06271,
+        "lon": 45.2811
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-199635",
+      "old": {
+        "name": "مكتب أبراج النسق للعقارات",
+        "address": "طريق الملك فيصل، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0552575370"
+        ],
+        "lat": 24.06883,
+        "lon": 45.2876
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-207103",
+      "old": {
+        "name": "مكتب ارض الكنز العقاري",
+        "address": "الامير نايف بن عبدالعزيز، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0559065123"
+        ],
+        "lat": 24.08104,
+        "lon": 45.29049
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197619",
+      "old": {
+        "name": "مؤسسة رواسي عرقه للخدمات العقارية",
+        "address": "طريق الملك سعود بن عبدالعزيز، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0556111450"
+        ],
+        "lat": 24.06353,
+        "lon": 45.28015
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-205415",
+      "old": {
+        "name": "مكتب خالد فهد سعد الهويمل للعقارات",
+        "address": "طريق الملك عبدالعزيز، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0506241085"
+        ],
+        "lat": 24.06074,
+        "lon": 45.27604
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-211613",
+      "old": {
+        "name": "مكتب افاق الرين للعقارات",
+        "address": "عبدالله بن عبدالعزيز، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0558448940"
+        ],
+        "lat": 24.06477,
+        "lon": 45.27808
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197282",
+      "old": {
+        "name": "مكتب الرويضه بالعرض للعقارات",
+        "address": "ابي بشر الخراساني، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555294579"
+        ],
+        "lat": 23.760053,
+        "lon": 44.764287
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-218756",
+      "old": {
+        "name": "مكتب ديار السعاده للعقارات",
+        "address": "الامير متعب بن عبدالعزيز، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555805174"
+        ],
+        "lat": 24.07379,
+        "lon": 45.28165
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-208561",
+      "old": {
+        "name": "مكتب منيره عبدالرحمن سعد الجبرين للعقارات",
+        "address": "القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0534250478"
+        ],
+        "lat": 24.04878,
+        "lon": 45.29469
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-202850",
+      "old": {
+        "name": "مؤسسة مكتب عميد التميز للعقارات",
+        "address": "طريق الملك عبدالعزيز، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0566999802"
+        ],
+        "lat": 24.05924,
+        "lon": 45.27309
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-198935",
+      "old": {
+        "name": "مكتب حي سليم للعقارات",
+        "address": "شارع الامير نايف بن عبدالعزيز، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0544466670"
+        ],
+        "lat": 24.08122,
+        "lon": 45.29066
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-484768",
+      "old": {
+        "name": "مكتب سعد بن محمد بن حميد الحميد للعقارات",
+        "address": "عبدالعزيز ال سعود، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555248411"
+        ],
+        "lat": 24.05678,
+        "lon": 45.26955
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-194505",
+      "old": {
+        "name": "مكتب تركي حمد حمود القحطانى للعقارات",
+        "address": "شارع ابوعبيدة بن الجراح، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0531111981"
+        ],
+        "lat": 24.0698,
+        "lon": 45.29493
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-415015",
+      "old": {
+        "name": "مؤسسة أمواج أصول العقارات",
+        "address": "الملك سلمان ابن عبدالعزيز سعود، الربوة، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0533912839"
+        ],
+        "lat": 24.0712,
+        "lon": 45.29771
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-216568",
+      "old": {
+        "name": "مؤسسة دار الامتلاك للعقارات",
+        "address": "القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0503153153"
+        ],
+        "lat": 24.483259,
+        "lon": 45.875456
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-211170",
+      "old": {
+        "name": "مكتب بصري سعد البصري للعقارات",
+        "address": "ممر السلسبيل، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505245805"
+        ],
+        "lat": 24.06484,
+        "lon": 45.30528
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-230283",
+      "old": {
+        "name": "مؤسسة تميز الافق للعقارات",
+        "address": "طريق مكة المكرمة، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0558597307"
+        ],
+        "lat": 24.341614,
+        "lon": 45.807279
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-428116",
+      "old": {
+        "name": "مؤسسة تطورات أهداف للعقارات",
+        "address": "الشارع  كعب بن مالك، الزهور، القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0557692078"
+        ],
+        "lat": 24.0658,
+        "lon": 45.29151
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-283893",
+      "old": {
+        "name": "مكتب الخدمة المفضلة للعقارات",
+        "address": "القويعية، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0554111098"
+        ],
+        "lat": 24.0799,
+        "lon": 45.29
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-197736",
+      "old": {
+        "name": "مكتب الأندلس الاول للعقارات",
+        "address": "الملك فيصل بن عبدالعزيز، المذنب، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0503980244"
+        ],
+        "lat": 25.83716,
+        "lon": 44.22315
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-218841",
+      "old": {
+        "name": "مكتب ريمان الأول العقاري",
+        "address": "طريق ابي بكر الصديق، المذنب، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0503485281"
+        ],
+        "lat": 25.85959,
+        "lon": 44.221
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-196239",
+      "old": {
+        "name": "مكتب محمد الصالح الشتوي للعقار",
+        "address": "طريق الملك عبدالعزيز، المذنب، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0555155051"
+        ],
+        "lat": 25.85782,
+        "lon": 44.22265
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-202152",
+      "old": {
+        "name": "مكتب هام السمو العقاري",
+        "address": "الملك عبدالعزيز، الخالدية، المذنب، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0556669671"
+        ],
+        "lat": 25.87114,
+        "lon": 44.21088
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-203278",
+      "old": {
+        "name": "مكتب محمد بن عبدالله بن سليمان الحواس العقاري",
+        "address": "حي ج 3، المذنب، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0503979291"
+        ],
+        "lat": 25.85791,
+        "lon": 44.22314
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-200428",
+      "old": {
+        "name": "مكتب امان المستقبل العقاري",
+        "address": "طريق الملك عبدالعزيز، المذنب، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0553425555"
+        ],
+        "lat": 25.85801,
+        "lon": 44.22273
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-217802",
+      "old": {
+        "name": "مكتب نسيم المذنب العقاري",
+        "address": "الجزيره، المنتزة، المذنب، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0553977095"
+        ],
+        "lat": 25.84139,
+        "lon": 44.22158
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-196523",
+      "old": {
+        "name": "مكتب أحياء الديرة للعقار",
+        "address": "طريق ابي بكر الصديق، الخزان، المذنب، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0505155790"
+        ],
+        "lat": 25.86057,
+        "lon": 44.22317
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-215328",
+      "old": {
+        "name": "مكتب ركن المذنب العقاري",
+        "address": "حي د 4، المذنب، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0535374088"
+        ],
+        "lat": 25.86346,
+        "lon": 44.23277
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-214316",
+      "old": {
+        "name": "مكتب زاوية الابداعات للعقار",
+        "address": "فيصل، الخالدية، المذنب، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0598442121"
+        ],
+        "lat": 25.8569,
+        "lon": 44.22421
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-361360",
+      "old": {
+        "name": "مكتب تكامل الافق للعقار",
+        "address": "حي د 46، المذنب، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0553420541"
+        ],
+        "lat": 25.85713,
+        "lon": 44.22445
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-218523",
+      "old": {
+        "name": "مكتب نواف سعد المطيري العقاري",
+        "address": "انس ابن اوس، المذنب، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0551999515"
+        ],
+        "lat": 25.85508,
+        "lon": 44.22083
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-192849",
+      "old": {
+        "name": "شركة تاج نجد العقارية",
+        "address": "طريق الملك عبدالله، النزهة، رياض الخبراء، القصيم، المملكة العربية السعودية",
+        "phones": [],
+        "lat": 26.06772,
+        "lon": 43.55898
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-195081",
+      "old": {
+        "name": "مكتب عالم الوسيط للعقارات",
+        "address": "الملك عبدالله، القادسية، رياض الخبراء، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0500575000"
+        ],
+        "lat": 26.05591,
+        "lon": 43.55859
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-211702",
+      "old": {
+        "name": "مكتب حمد محارب الحربي للعقار",
+        "address": "المطلب السهمي، اليرموك، رياض الخبراء، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0534160002"
+        ],
+        "lat": 26.0729,
+        "lon": 43.54319
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-198369",
+      "old": {
+        "name": "مجموعة شخصيات للعقارات",
+        "address": "الملك عبدالله، رياض الخبراء، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0566661234"
+        ],
+        "lat": 26.05094,
+        "lon": 43.55873
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-192765",
+      "old": {
+        "name": "مكتب نهضة التميز العقاري",
+        "address": "طريق الملك خالد، القادسية، رياض الخبراء، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0555001756"
+        ],
+        "lat": 26.05297,
+        "lon": 43.5591
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-205516",
+      "old": {
+        "name": "مكتب عبدالله محمد بن صالح الحبيب للعقار",
+        "address": "الشيخ محمد ابراهيم الخضير، رياض الخبراء، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0505136510"
+        ],
+        "lat": 26.06476,
+        "lon": 43.54166
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-322579",
+      "old": {
+        "name": "مكتب فالح سعود فلاح الحربي للعقارات",
+        "address": "ثابت بن ابي زيد الانصاري، الخزان، رياض الخبراء، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0554216257"
+        ],
+        "lat": 26.06319,
+        "lon": 43.56086
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-286625",
+      "old": {
+        "name": "شركة هداج العقارية",
+        "address": "فهد بن عبدالعزيز، القدس، رياض الخبراء، القصيم، المملكة العربية السعودية",
+        "phones": [],
+        "lat": 26.06548,
+        "lon": 43.58018
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-icuae-office-ChIJGWwdJiI7ghURSG2Ox89D9tA",
+      "old": {
+        "name": "شركة هدّاج العقارية",
+        "address": "طريق الملك فهد – Riyadh Al Khabra 51961 – Saudi Arabia –",
+        "phones": [
+          "0555148917"
+        ],
+        "lat": null,
+        "lon": null
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-318898",
+      "old": {
+        "name": "مؤسسة مكتب عبدالله محمد هباس الحربي للخدمات العقارية",
+        "address": "طريق الملك عبدالله، التعاون، رياض الخبراء، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0503155548"
+        ],
+        "lat": 26.05082,
+        "lon": 43.55905
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-ejar-office-568759",
+      "old": {
+        "name": "مكتب محور وصل للخدمات العقارية",
+        "address": "البنية، النزهة، رياض الخبراء، القصيم، المملكة العربية السعودية",
+        "phones": [
+          "0591349881"
+        ],
+        "lat": 26.06832,
+        "lon": 43.55054
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-yango-office-90085656629",
+      "old": {
+        "name": "مكتب سعود عبيدان للعقارات ، عقار",
+        "address": "الرياض, الأفلاج, ليلى, حي الدوائر, الحارث بن هشام",
+        "phones": [
+          "0534977785"
+        ],
+        "lat": 22.2944,
+        "lon": 46.71568
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-yango-office-169114863619",
+      "old": {
+        "name": "الحواس للعقارات",
+        "address": "المذنب, حي الجديدة, QMJA2225",
+        "phones": [
+          "0163422226"
+        ],
+        "lat": 25.85785,
+        "lon": 44.23483
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-google-office-ChIJX-BRQ08AKz4Re_bUV-8MQ9k",
+      "old": {
+        "name": "مكتب فهد الرعيدان للعقارات بحوطة سدير",
+        "address": "HJWG+V45 – Badr – Hautat Sudair 15313 – Saudi Arabia",
+        "phones": [
+          "0506623156"
+        ],
+        "lat": 25.59714,
+        "lon": 45.62536
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-google-office-ChIJN6zAF0wAKz4Rns9ApAb7974",
+      "old": {
+        "name": "مكتب خالد للعقارات بحوطة سدير",
+        "address": "طريق الملك عبدالله، حوطة سدير حي النهضة المملكة العربية السعودية",
+        "phones": [
+          "0558714814"
+        ],
+        "lat": 25.60124,
+        "lon": 45.62545
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-google-office-ChIJi5CqHyABKz4RYu4ltfrEtPk",
+      "old": {
+        "name": "مكتب أساس نجد للخدمات العقارية",
+        "address": "طريق الملك عبدالله، حوطة سدير 11982، المملكة العربية السعودية",
+        "phones": [
+          "0500029789"
+        ],
+        "lat": 25.60346,
+        "lon": 45.62669
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-google-office-ChIJ33XmSzEAKz4ROj8tcOz-6L8",
+      "old": {
+        "name": "مكتب الدباس العقاري",
+        "address": "HJW7+GR5 – Al Aziziyah – Hautat Sudair 15313 – Saudi Arabia",
+        "phones": [
+          "0503110716"
+        ],
+        "lat": 25.59626,
+        "lon": 45.61461
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-google-office-ChIJYb2oiTAAKz4Rl33ZnxLU49c",
+      "old": {
+        "name": "الموسى للعقارات",
+        "address": "HJV7+232 – Hautat Sudair 15314 – Saudi Arabia –",
+        "phones": [
+          "0572339257"
+        ],
+        "lat": 25.59251,
+        "lon": 45.61264
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-google-office-ChIJcYN2PAABKz4RWoPMLHdzJB4",
+      "old": {
+        "name": "مكتب الخليل للعقارات",
+        "address": "HJVC+Q3C، القادسية، حوطة سدير 15332، المملكة العربية السعودية",
+        "phones": [
+          "0504315907"
+        ],
+        "lat": 25.59445,
+        "lon": 45.62014
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-google-office-ChIJ24eeWgABKz4RtSGM4lEu0L4",
+      "old": {
+        "name": "العريج للخدمات العقارية",
+        "address": "LMGC8628، 4624 الشيخ عبدالعزيز بن باز، 8628، حوطة سدير 15333، المملكة العربية السعودية",
+        "phones": [
+          "0555479223"
+        ],
+        "lat": 25.59385,
+        "lon": 45.61537
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-google-office-ChIJYcEFyCVfHj4RzrCxqhsZzg8",
+      "old": {
+        "name": "مكتب عقارات المصيف",
+        "address": "الديرة، السليل 18651، المملكة العربية السعودية",
+        "phones": [
+          "0530922053"
+        ],
+        "lat": 20.46265,
+        "lon": 45.58077
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-google-office-ChIJiWhcSQBfHj4R9dewtmlfX1k",
+      "old": {
+        "name": "مكتب اللون النمري للعقارات",
+        "address": "حي الشفاء، OPSA2995، 2995 شارع الامير نايف بن عبدالعزيز، 9907، السليل 18671، المملكة العربية السعودية",
+        "phones": [
+          "0551088008"
+        ],
+        "lat": 20.45379,
+        "lon": 45.58981
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-google-office-ChIJRwXkDABfHj4RDC9XEpGNN3s",
+      "old": {
+        "name": "مكتب نجد للخدمات العقارية",
+        "address": "حي الشفاء، 3233 شارع عمر بن الخطاب، OSAA3233، 7290، السليل 18211، المملكة العربية السعودية",
+        "phones": [
+          "0503483424"
+        ],
+        "lat": 20.46436,
+        "lon": 45.59257
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-yango-office-201252678934",
+      "old": {
+        "name": "مكتب إنجاز ليلى للعقارات",
+        "address": "ليلى, حي الخالدية, الامير عبدالمجيد بن عبدالعزيز, OIGA4750",
+        "phones": [
+          "0565666976"
+        ],
+        "lat": 22.32246,
+        "lon": 46.72134
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-yango-office-80629154986",
+      "old": {
+        "name": "السهم الذهبى للعقارات",
+        "address": "الرياض, الأفلاج, ليلى, حي السحاب, النوباد",
+        "phones": [
+          "0596117263"
+        ],
+        "lat": 22.30747,
+        "lon": 46.72046
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-yango-office-197541943103",
+      "old": {
+        "name": "حسين الثابتي",
+        "address": "الرياض, الأفلاج, ليلى, حي الدوائر",
+        "phones": [
+          "0598377864"
+        ],
+        "lat": 22.2944,
+        "lon": 46.71568
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-yango-office-224713863479",
+      "old": {
+        "name": "نسيم المذنب العقارية",
+        "address": "المذنب, حي الجديدة, طريق الملك سعود بن عبدالعزيز",
+        "phones": [
+          "0163424252"
+        ],
+        "lat": 25.85785,
+        "lon": 44.23483
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-yango-office-28572416202",
+      "old": {
+        "name": "أمان المستقبل للعقارات",
+        "address": "المذنب, حي الجديدة, QMJA2202",
+        "phones": [
+          "0163425555"
+        ],
+        "lat": 25.85785,
+        "lon": 44.23483
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-yango-office-180587383781",
+      "old": {
+        "name": "الشتوي العقارية",
+        "address": "المذنب, حي الجديدة, QMJA2201",
+        "phones": [
+          "0163422404"
+        ],
+        "lat": 25.85785,
+        "lon": 44.23483
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-yango-office-120460820842",
+      "old": {
+        "name": "مؤسسة ريمان للاستثمارات العقارية",
+        "address": "المذنب, حي الحزم, طريق ابي بكر الصديق, QMJC3414",
+        "phones": [
+          "0163422244"
+        ],
+        "lat": 25.86841,
+        "lon": 44.21975
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-yango-office-76852548075",
+      "old": {
+        "name": "مكتب الخبير العقاري ٠٥٠٣٣٤٧٧٨٨",
+        "address": "رياض الخبراء, حي طيبة, QFGA3192",
+        "phones": [
+          "0503347788"
+        ],
+        "lat": null,
+        "lon": null
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-google-office-cid-15750510307391206307",
+      "old": {
+        "name": "مكتب خالد الناصر للعقار",
+        "address": "الجديدة، المذنب 56634، المملكة العربية السعودية",
+        "phones": [
+          "0503421700"
+        ],
+        "lat": 25.85793,
+        "lon": 44.22296
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-google-office-cid-2425235757254770532",
+      "old": {
+        "name": "مكتب الخلف للعقارات",
+        "address": "7795 حي ج 3، حي الجديدة، QMJA2202، 2202، المذنب 56646، المملكة العربية السعودية",
+        "phones": [
+          "0557995638"
+        ],
+        "lat": 25.85795,
+        "lon": 44.22312
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-bizmideast-office-12126482518178781264",
+      "old": {
+        "name": "النادر للعقارات",
+        "address": "FH3J+679, King Khalid Rd, Al Shifa, As Sulayyil 18651, Saudi Arabia",
+        "phones": [
+          "0565816662"
+        ],
+        "lat": 20.45304,
+        "lon": 45.58073
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-web-office-ChIJ83LlmEYAKz4RNlwPtofcf0k",
+      "old": {
+        "name": "المهيدب للعقارات",
+        "address": "HJVF+3H3 – Alqadisiyah – Hautat Sudair 15313 – Saudi Arabia",
+        "phones": [
+          "0508224887"
+        ],
+        "lat": 25.59264,
+        "lon": 45.62392
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-icuae-office-ChIJ6Ss_roc5ghUR14ShOI631yw",
+      "old": {
+        "name": "دار تجوال للعقارات",
+        "address": "3H55+7FF – Alqadisiyah – Riyadh Al Khabra 52722 – Saudi Arabia",
+        "phones": [
+          "0556556912"
+        ],
+        "lat": 26.05819,
+        "lon": 43.55867
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-icuae-office-ChIJB1u-Do-5gRURzo6f7CVR4UA",
+      "old": {
+        "name": "Reeman Real Estate",
+        "address": "V65C+RCJ – Al Hazm – Al Mithnab 56633 – Saudi Arabia",
+        "phones": [
+          "0163422244"
+        ],
+        "lat": 25.85959,
+        "lon": 44.22102
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "national-icuae-office-ChIJD1QwvX85ghURgH81NqZlA9U",
+      "old": {
+        "name": "Najed Tiara Real Estate Co.",
+        "address": "طريق الملك عبدالله – Al Nuzhah – Riyadh Al Khabra 52722 – Saudi Arabia",
+        "phones": [
+          "0539340016"
+        ],
+        "lat": null,
+        "lon": null
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "v9-office-0e1f83912ca0",
+      "old": {
+        "name": "مكتب أبو مشاري للعقارات",
+        "address": "الدوائر، ليلى 16733",
+        "phones": [],
+        "lat": 22.2944,
+        "lon": 46.71568
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "v9-office-7b5df2317620",
+      "old": {
+        "name": "مكتب آل سهل للعقارات",
+        "address": "شارع التوباد، الدوائر، ليلى",
+        "phones": [
+          "0597422640"
+        ],
+        "lat": 22.2944,
+        "lon": 46.71568
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "v9-office-0767fc47f457",
+      "old": {
+        "name": "مكتب إتقان حمدان للتطوير العقاري",
+        "address": "الدوائر، ليلى 16733",
+        "phones": [
+          "0599889656"
+        ],
+        "lat": 22.2944,
+        "lon": 46.71568
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    },
+    {
+      "id": "v9-office-334469959e0d",
+      "old": {
+        "name": "مكتب عقار أبعاد الإنماء للعقارات",
+        "address": "طريق الملك عبدالعزيز، العزيزية، ليلى",
+        "phones": [
+          "0553422529"
+        ],
+        "lat": 22.29773,
+        "lon": 46.7282
+      },
+      "new": null,
+      "evidence": "Google Maps direct-card audit not completed because CDP remained unavailable after browser reinitialization; no stored value or link was treated as proof",
+      "status": "unconfirmed_browser_unavailable_not_checked"
+    }
+  ]
+}
