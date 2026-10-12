@@ -2,10 +2,10 @@
   "schema": "office-maps-unreviewed-candidates-v1",
   "generatedAt": "2026-10-12",
   "branch": "fix/scope-counts-nhc-20261010",
-  "sourceHead": "65b04b303a55e9c71f68ce141a6a53da9e364a0e",
+  "sourceHead": "fa521c4d06669e8c3f9ffd2d6e5528927d1cb08e",
   "inventory": 1524,
-  "explicitOutcomesCount": 259,
-  "withoutRecordedIndividualOutcome": 154,
+  "explicitOutcomesCount": 263,
+  "withoutRecordedIndividualOutcome": 150,
   "method": "Rows are IDs not found with an explicit status field across committed OFFICE audit checkpoints/ledgers at sourceHead. These are candidates for individual Maps audit; do not infer correct or incorrect from absence.",
   "regionalCounts": {
     "riyadh": {
@@ -15,8 +15,8 @@
     },
     "west": {
       "total": 74,
-      "decisionRecorded": 69,
-      "remainingWithoutDecision": 5
+      "decisionRecorded": 73,
+      "remainingWithoutDecision": 1
     },
     "east": {
       "total": 40,
@@ -495,7 +495,7 @@
         "phones": [
           "0556593918"
         ],
-        "status": "verified_name_activity_phone_conflict_preserved"
+        "status": "unresolved_name_phone_identity_conflict"
       },
       {
         "id": "national-yango-office-150604911997",
@@ -522,7 +522,7 @@
         "phones": [
           "0553753729"
         ],
-        "status": "unresolved_maps_ui_timeout"
+        "status": "unresolved_maps_card_content_timeout"
       },
       {
         "id": "national-thirdparty-office-duba-0500517062",
@@ -531,7 +531,7 @@
         "phones": [
           "0500517062"
         ],
-        "status": "pending"
+        "status": "unresolved_name_match_phone_location_unverified"
       },
       {
         "id": "national-thirdparty-office-duba-0537152989",
@@ -594,7 +594,7 @@
         "phones": [
           "0507064581"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_pin"
       },
       {
         "id": "national-google-office-ChIJKYxQdgAxrBUR6qMfztPGmDw",
@@ -603,7 +603,7 @@
         "phones": [
           "0500713364"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_pin"
       },
       {
         "id": "national-google-office-ChIJKWKFCQAxrBURbS82iLA7JbY",
@@ -621,7 +621,7 @@
         "phones": [
           "0598040926"
         ],
-        "status": "pending"
+        "status": "partial_name_phone_match_location_activity_unconfirmed"
       },
       {
         "id": "national-icuae-office-ChIJDRLvGASnsBURTHMswC-dPJo",
