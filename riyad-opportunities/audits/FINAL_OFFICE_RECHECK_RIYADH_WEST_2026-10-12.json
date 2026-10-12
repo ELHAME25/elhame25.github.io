@@ -1,0 +1,199 @@
+{
+  "schema": "final-office-recheck-v1",
+  "generatedAt": "2026-10-12T22:43:00+03:00",
+  "region": "riyadh-only-after-scope-correction",
+  "sourceFile": "audits/OFFICE_MAPS_REMAINING_CANDIDATES_2026-10-12.json",
+  "sourceHead": "43e731f89e6364edfa2b33db59c01b4f08608da7",
+  "scope": {
+    "assignedRiyadh": 7,
+    "rechecked": 5,
+    "selection": "Riyadh records whose saved outcome was unresolved, partial, or had an unconfirmed pin/location.",
+    "verifiedRowsExcluded": 2,
+    "qadisiyahReadOnly": true,
+    "westExcludedAfterReassignment": true
+  },
+  "method": [
+    "Opened every selected record in the live public Google Maps interface using the saved direct place URL or an exact name, phone and city search.",
+    "Recorded the visible business name, category, published phone, address and pin when a matching place card appeared.",
+    "Kept the record unresolved when Maps returned only different businesses or a non-matching place; no absence or closure was inferred.",
+    "Preserved all stored phones and made no data edit because every reviewed Riyadh record belongs to the protected Qadisiyah set."
+  ],
+  "summary": {
+    "fullyVerifiedNameActivityPhonePinAddress": 1,
+    "partialNamePinAddressPhoneUnlistedCategoryGeneric": 1,
+    "unresolvedNoMatchingGoogleMapsCard": 3,
+    "newProvenCoordinatesObservedReadOnly": 1,
+    "proposedPatches": 0,
+    "oldPhonesDeleted": 0
+  },
+  "patches": [],
+  "patchDecision": "No patch proposed or applied. The only newly resolved location was for a protected Qadisiyah record; it is documented below for read-only evidence.",
+  "records": [
+    {
+      "id": "prior-qadisiyya-72",
+      "city": "الرياض",
+      "name": "مكتب نبراس البيت للعقارات",
+      "recordedPhones": [
+        "0504482827"
+      ],
+      "recordedAddress": "الرمال، الرياض",
+      "recordedCoordinates": {
+        "lat": 24.8539097,
+        "lon": 46.8262706
+      },
+      "previousStatus": "partial_pin_mismatch_phone_unlisted",
+      "finalDecision": "partial_name_pin_address_confirmed_phone_unlisted_activity_category_generic",
+      "checks": {
+        "name": "confirmed_exact",
+        "activity": "partial_name_indicates_real_estate_but_maps_category_is_generic_corporate_office",
+        "phone": "unlisted_on_google_maps_card",
+        "pin": "confirmed",
+        "address": "confirmed"
+      },
+      "evidence": [
+        {
+          "type": "google_maps_live_place_card",
+          "url": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%86%D8%A8%D8%B1%D8%A7%D8%B3+%D8%A7%D9%84%D8%A8%D9%8A%D8%AA+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.8539097,46.8288402,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2e55694a739557:0x8218b2b117fffae0!8m2!3d24.8539097!4d46.8262706!16s%2Fg%2F11h52rj3hm?entry=ttu",
+          "finding": "The live card showed the exact name, address الامير محمد بن سلمان، الرمال، الرياض 13265, plus code VR3G+HG and pin 24.8539097,46.8262706. The card offered 'إضافة رقم الهاتف للمكان', so 0504482827 was not published on the card. Maps category was مكتب الشركات."
+        }
+      ],
+      "phonePreserved": true,
+      "readOnlyProtected": true,
+      "proposedPatch": null
+    },
+    {
+      "id": "prior-qadisiyya-76",
+      "city": "الرياض",
+      "name": "مكتب ركن الرحمة العقاري",
+      "recordedPhones": [
+        "0554404590"
+      ],
+      "recordedAddress": "القادسية",
+      "recordedCoordinates": {
+        "lat": 24.81708,
+        "lon": 46.80837
+      },
+      "previousStatus": "unresolved_no_matching_card",
+      "finalDecision": "unresolved_no_matching_google_maps_card_after_recheck",
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "google_maps_live_search",
+          "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%83%D9%86+%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D8%A9+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+0554404590+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+          "finding": "The result list contained different businesses such as الركن العقاري (+966550001502), شركة ركن المؤشر and ركن الرسالة. No card matched the stored full name or 0554404590."
+        }
+      ],
+      "phonePreserved": true,
+      "readOnlyProtected": true,
+      "proposedPatch": null
+    },
+    {
+      "id": "prior-qadisiyya-77",
+      "city": "الرياض",
+      "name": "مكتب خيمة اليرموك للعقارات",
+      "recordedPhones": [
+        "0112229823"
+      ],
+      "recordedAddress": "ابي جعفر المنصور",
+      "recordedCoordinates": {
+        "lat": null,
+        "lon": null
+      },
+      "previousStatus": "verified_name_and_phone_location_pin_unconfirmed",
+      "finalDecision": "verified_name_activity_phone_pin_address",
+      "checks": {
+        "name": "confirmed_exact",
+        "activity": "confirmed_real_estate_agent",
+        "phone": "confirmed_exact_0112229823",
+        "pin": "confirmed_24.8166431_46.8001003",
+        "address": "confirmed_ابي_جعفر_المنصور_اليرموك_الرياض_13251"
+      },
+      "evidence": [
+        {
+          "type": "google_maps_live_place_card",
+          "url": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%AE%D9%8A%D9%85%D8%A9+%D8%A7%D9%84%D9%8A%D8%B1%D9%85%D9%88%D9%83+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.8166431,46.8001003,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2effbb6a236ff7:0x40ad171f5f0a7137!8m2!3d24.8166431!4d46.8001003!16s%2Fg%2F11c430z6bh?entry=ttu",
+          "placeId": "ChIJ928jarv_Lj4RN3EKXx8XrUA",
+          "finding": "The live card showed the exact name, category وكيل عقاري, phone +966 11 222 9823, address ابي جعفر المنصور، اليرموك، الرياض 13251, plus code RR82+M2 and pin 24.8166431,46.8001003."
+        }
+      ],
+      "phonePreserved": true,
+      "readOnlyProtected": true,
+      "observedReadOnlyCorrection": {
+        "lat": 24.8166431,
+        "lon": 46.8001003,
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%AE%D9%8A%D9%85%D8%A9+%D8%A7%D9%84%D9%8A%D8%B1%D9%85%D9%88%D9%83+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.8166431,46.8001003,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2effbb6a236ff7:0x40ad171f5f0a7137!8m2!3d24.8166431!4d46.8001003!16s%2Fg%2F11c430z6bh?entry=ttu"
+      },
+      "proposedPatch": null
+    },
+    {
+      "id": "prior-qadisiyya-78",
+      "city": "الرياض",
+      "name": "مكتب نور اليرموك للعقارات",
+      "recordedPhones": [
+        "0566996999"
+      ],
+      "recordedAddress": "اليرموك",
+      "recordedCoordinates": {
+        "lat": 24.79947,
+        "lon": 46.74757
+      },
+      "previousStatus": "unresolved_no_matching_card",
+      "finalDecision": "unresolved_no_matching_google_maps_card_after_recheck",
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "google_maps_live_search",
+          "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D9%86%D9%88%D8%B1+%D8%A7%D9%84%D9%8A%D8%B1%D9%85%D9%88%D9%83+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+0566996999+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+          "finding": "Maps returned other businesses and buildings in Al Yarmouk, including خيمة اليرموك, أسس اليرموك and residential entries. No result matched مكتب نور اليرموك or 0566996999."
+        }
+      ],
+      "phonePreserved": true,
+      "readOnlyProtected": true,
+      "proposedPatch": null
+    },
+    {
+      "id": "prior-qadisiyya-79",
+      "city": "الرياض",
+      "name": "مكتب واجهة الخليج للخدمات العقارية",
+      "recordedPhones": [
+        "0590144410"
+      ],
+      "recordedAddress": "الخليج",
+      "recordedCoordinates": {
+        "lat": 24.77938,
+        "lon": 46.79488
+      },
+      "previousStatus": "unresolved_no_matching_card",
+      "finalDecision": "unresolved_no_matching_google_maps_card_after_recheck",
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "google_maps_live_search",
+          "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D9%88%D8%A7%D8%AC%D9%87%D8%A9+%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+0590144410+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+          "finding": "Maps returned differently named businesses such as واجهة القادسية (+966554483305), واجهة الفلاح and عقارات الخليج. No card matched the stored full name or 0590144410."
+        }
+      ],
+      "phonePreserved": true,
+      "readOnlyProtected": true,
+      "proposedPatch": null
+    }
+  ]
+}

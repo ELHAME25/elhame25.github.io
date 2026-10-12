@@ -1,0 +1,70 @@
+{
+  "schema": "office-final-recheck-completion-v1",
+  "generatedAt": "2026-10-12",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "baseCommit": "43e731f89e6364edfa2b33db59c01b4f08608da7",
+  "inventory": {
+    "records": 1524,
+    "uniqueIds": 1524
+  },
+  "scope": {
+    "targetedPriorPartialOrUnresolved": 209,
+    "targetedReviewed": 209,
+    "additionalReviewed": 1,
+    "missing": 0
+  },
+  "lanes": {
+    "riyadh": {
+      "reviewed": 5
+    },
+    "west": {
+      "reviewed": 45
+    },
+    "east": {
+      "reviewed": 28
+    },
+    "north": {
+      "reviewed": 29
+    },
+    "south": {
+      "reviewed": 40
+    },
+    "centralAndRemainingSouth": {
+      "reviewed": 63
+    }
+  },
+  "recheckOutcomeCounts": {
+    "confirmedOrCorrected": 29,
+    "partialOrConflictRecorded": 52,
+    "unresolvedAfterRecheck": 127,
+    "alreadyArchivedConfirmed": 2
+  },
+  "application": {
+    "recordsWithProposedPatch": 25,
+    "recordsPatched": 25,
+    "qadisiyahProtectedRecordsChanged": 0,
+    "recordCountBefore": 1524,
+    "recordCountAfter": 1524,
+    "oldPhoneRemovals": 1,
+    "oldPhoneRemovalEvidence": {
+      "id": "national-icuae-office-ChIJPeSmeLoNbBURlcEqlo8SlL0",
+      "removed": "0146610216",
+      "reason": "independently tied to an unrelated granite/marble factory; Google Maps publishes 0538999342 for the real-estate office"
+    }
+  },
+  "auditFiles": [
+    "audits/FINAL_OFFICE_RECHECK_RIYADH_WEST_2026-10-12.json",
+    "audits/FINAL_OFFICE_RECHECK_WEST_2026-10-12.json",
+    "audits/FINAL_OFFICE_RECHECK_EAST_2026-10-12.json",
+    "audits/FINAL_OFFICE_RECHECK_NORTH_2026-10-12.json",
+    "audits/FINAL_OFFICE_RECHECK_SOUTH_2026-10-12.json",
+    "audits/FINAL_OFFICE_RECHECK_CENTRAL_2026-10-12.json"
+  ],
+  "qa": {
+    "localFullQa": "passed",
+    "desktopMobileCi": "pending_on_push"
+  },
+  "merge": false,
+  "publish": false
+}

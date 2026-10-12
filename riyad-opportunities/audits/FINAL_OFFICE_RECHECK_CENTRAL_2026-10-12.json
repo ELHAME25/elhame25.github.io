@@ -1,0 +1,3609 @@
+{
+  "schema": "final-office-recheck-central-v1",
+  "checkedAt": "2026-10-12",
+  "source": "Google Maps public place cards via maps embed result payload",
+  "scope": {
+    "requiredIds": 63,
+    "completed": 63,
+    "missing": []
+  },
+  "summary": {
+    "correct": 3,
+    "partial": 20,
+    "unresolved": 30,
+    "corrected": 8,
+    "archived": 2
+  },
+  "entries": [
+    {
+      "id": "office-maps-2cab8d33f0f2",
+      "city": "عنيزة",
+      "stored": {
+        "name": "مكتب نجد الخاص للعقارات",
+        "phones": [
+          "0163631411"
+        ],
+        "address": "3435 الطريق الدائري الداخلي - الضلع الجنوبي، حي الجوهرة",
+        "maps": "https://www.google.com/maps/search/?api=1&query=26.065783,43.9665151&query_place_id=ChIJ2xbzI6HtgRURYiiARzZ8xWo",
+        "lat": 26.06578,
+        "lon": 43.96652
+      },
+      "previousStatus": "unresolved_maps_timeout",
+      "decisionClass": "correct",
+      "status": "verified_name_activity_phone_and_pin",
+      "note": "تطابقت بطاقة Google Maps في الاسم والنشاط والهاتف والدبوس/العنوان.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب نجد الخاص للعقارات عنيزة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D9%86%D8%AC%D8%AF+%D8%A7%D9%84%D8%AE%D8%A7%D8%B5+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B9%D9%86%D9%8A%D8%B2%D8%A9",
+          "card": {
+            "name": "مكتب نجد الخاص للعقارات",
+            "fullAddress": "مكتب نجد الخاص للعقارات، 3435 الطريق الدائري الداخلي - الضلع الجنوبي، 8275، حي الجوهرة، عنيزة 56247، المملكة العربية السعودية",
+            "addressParts": [
+              "3435 الطريق الدائري الداخلي - الضلع الجنوبي",
+              "8275، حي الجوهرة",
+              "عنيزة 56247، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              26.065783,
+              43.9665151
+            ],
+            "phone": "+966 16 363 1411",
+            "category": "شركة إدارة عقارات",
+            "address": "3435 الطريق الدائري الداخلي - الضلع الجنوبي، 8275، حي الجوهرة، عنيزة 56247، المملكة العربية السعودية",
+            "placeId": "ChIJ2xbzI6HtgRURYiiARzZ8xWo"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب نجد الخاص للعقارات عنيزة 0163631411",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D9%86%D8%AC%D8%AF+%D8%A7%D9%84%D8%AE%D8%A7%D8%B5+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B9%D9%86%D9%8A%D8%B2%D8%A9+0163631411",
+          "card": {
+            "name": "مكتب نجد الخاص للعقارات",
+            "fullAddress": "مكتب نجد الخاص للعقارات، 3435 الطريق الدائري الداخلي - الضلع الجنوبي، 8275، حي الجوهرة، عنيزة 56247، المملكة العربية السعودية",
+            "addressParts": [
+              "3435 الطريق الدائري الداخلي - الضلع الجنوبي",
+              "8275، حي الجوهرة",
+              "عنيزة 56247، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              26.065783,
+              43.9665151
+            ],
+            "phone": "+966 16 363 1411",
+            "category": "شركة إدارة عقارات",
+            "address": "3435 الطريق الدائري الداخلي - الضلع الجنوبي، 8275، حي الجوهرة، عنيزة 56247، المملكة العربية السعودية",
+            "placeId": "ChIJ2xbzI6HtgRURYiiARzZ8xWo"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "office-maps-ab7241fd2e3a",
+      "city": "الرس",
+      "stored": {
+        "name": "مكتب زواية الاطلال ((ابو طلال البطاح)) للعقار",
+        "phones": [
+          "0505326619"
+        ],
+        "address": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=25.8815658,43.4872648&query_place_id=ChIJjanW2J7KgxURt__BvmyL_bk",
+        "lat": 25.8815658,
+        "lon": 43.4872648
+      },
+      "previousStatus": "verified_name_phone_location_activity_ambiguous",
+      "decisionClass": "partial",
+      "status": "verified_name_phone_and_pin_activity_category_ambiguous",
+      "note": "تطابق الاسم والهاتف والدبوس؛ تصنيف Maps هو «مكتب الشركات» أو تصنيف عام ولا يثبت النشاط العقاري تفصيليًا.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب زواية الاطلال ((ابو طلال البطاح)) للعقار الرس",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B2%D9%88%D8%A7%D9%8A%D8%A9+%D8%A7%D9%84%D8%A7%D8%B7%D9%84%D8%A7%D9%84+%28%28%D8%A7%D8%A8%D9%88+%D8%B7%D9%84%D8%A7%D9%84+%D8%A7%D9%84%D8%A8%D8%B7%D8%A7%D8%AD%29%29+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%A7%D9%84%D8%B1%D8%B3",
+          "card": {
+            "name": "مكتب زواية الاطلال ((ابو طلال البطاح)) للعقار",
+            "fullAddress": "مكتب زواية الاطلال ((ابو طلال البطاح)) للعقار، الملك خالد، الرس 58876، المملكة العربية السعودية",
+            "addressParts": [
+              "الملك خالد",
+              "الرس 58876",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              25.8815658,
+              43.4872648
+            ],
+            "phone": "+966 50 532 6619",
+            "category": "مكتب الشركات",
+            "address": "الملك خالد، الرس 58876، المملكة العربية السعودية",
+            "placeId": "ChIJjanW2J7KgxURt__BvmyL_bk"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب زواية الاطلال ((ابو طلال البطاح)) للعقار الرس 0505326619",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B2%D9%88%D8%A7%D9%8A%D8%A9+%D8%A7%D9%84%D8%A7%D8%B7%D9%84%D8%A7%D9%84+%28%28%D8%A7%D8%A8%D9%88+%D8%B7%D9%84%D8%A7%D9%84+%D8%A7%D9%84%D8%A8%D8%B7%D8%A7%D8%AD%29%29+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%A7%D9%84%D8%B1%D8%B3+0505326619",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "office-maps-4684bdde238f",
+      "city": "الرس",
+      "stored": {
+        "name": "مكتب درة الرس للعقارات",
+        "phones": [
+          "0505137544"
+        ],
+        "address": "VFHQ+QMJ، طريق الملك فهد",
+        "maps": "https://www.google.com/maps/search/?api=1&query=25.8794614,43.4891358&query_place_id=ChIJDdvKOEnLgxURIa6vnQmsE1g",
+        "lat": 25.8794614,
+        "lon": 43.4891358
+      },
+      "previousStatus": "verified_name_phone_location_activity_ambiguous",
+      "decisionClass": "partial",
+      "status": "verified_name_phone_and_pin_activity_category_ambiguous",
+      "note": "تطابق الاسم والهاتف والدبوس؛ تصنيف Maps هو «مكتب الشركات» أو تصنيف عام ولا يثبت النشاط العقاري تفصيليًا.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب درة الرس للعقارات الرس",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%AF%D8%B1%D8%A9+%D8%A7%D9%84%D8%B1%D8%B3+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D8%B1%D8%B3",
+          "card": {
+            "name": "مكتب درة الرس للعقارات",
+            "fullAddress": "VFHQ+QMJ مكتب درة الرس للعقارات، طريق الملك فهد، الملك خالد، الرس 58883، المملكة العربية السعودية",
+            "addressParts": [
+              "VFHQ+QMJ",
+              "طريق الملك فهد، الملك خالد",
+              "الرس 58883، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              25.8794614,
+              43.4891358
+            ],
+            "phone": "+966 50 513 7544",
+            "category": "مكتب الشركات",
+            "address": "VFHQ+QMJ، طريق الملك فهد، الملك خالد، الرس 58883، المملكة العربية السعودية",
+            "placeId": "ChIJDdvKOEnLgxURIa6vnQmsE1g"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب درة الرس للعقارات الرس 0505137544",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%AF%D8%B1%D8%A9+%D8%A7%D9%84%D8%B1%D8%B3+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D8%B1%D8%B3+0505137544",
+          "card": {
+            "name": "مكتب درة الرس للعقارات",
+            "fullAddress": "VFHQ+QMJ مكتب درة الرس للعقارات، طريق الملك فهد، الملك خالد، الرس 58883، المملكة العربية السعودية",
+            "addressParts": [
+              "VFHQ+QMJ",
+              "طريق الملك فهد، الملك خالد",
+              "الرس 58883، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              25.8794614,
+              43.4891358
+            ],
+            "phone": "+966 50 513 7544",
+            "category": "مكتب الشركات",
+            "address": "VFHQ+QMJ، طريق الملك فهد، الملك خالد، الرس 58883، المملكة العربية السعودية",
+            "placeId": "ChIJDdvKOEnLgxURIa6vnQmsE1g"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "office-maps-8649fd5374dc",
+      "city": "الرس",
+      "stored": {
+        "name": "مكتب الحميدي للعقار",
+        "phones": [
+          "0509966090"
+        ],
+        "address": "VGR4+Q3J",
+        "maps": "https://www.google.com/maps/search/?api=1&query=25.8919639,43.5051456&query_place_id=ChIJb8juvr_LgxURo68q-jxdUH4",
+        "lat": 25.8919639,
+        "lon": 43.5051456
+      },
+      "previousStatus": "verified_name_phone_location_activity_ambiguous",
+      "decisionClass": "partial",
+      "status": "verified_name_phone_and_pin_activity_category_ambiguous",
+      "note": "تطابق الاسم والهاتف والدبوس؛ تصنيف Maps هو «مكتب الشركات» أو تصنيف عام ولا يثبت النشاط العقاري تفصيليًا.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب الحميدي للعقار الرس",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AD%D9%85%D9%8A%D8%AF%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%A7%D9%84%D8%B1%D8%B3",
+          "card": {
+            "name": "مكتب الحميدي للعقار",
+            "fullAddress": "VGR4+Q3J مكتب الحميدي للعقار، وادي الرمة، الرس 58884، المملكة العربية السعودية",
+            "addressParts": [
+              "VGR4+Q3J",
+              "وادي الرمة",
+              "الرس 58884، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              25.8919639,
+              43.5051456
+            ],
+            "phone": "+966 50 996 6090",
+            "category": "مكتب الشركات",
+            "address": "VGR4+Q3J، وادي الرمة، الرس 58884، المملكة العربية السعودية",
+            "placeId": "ChIJb8juvr_LgxURo68q-jxdUH4"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب الحميدي للعقار الرس 0509966090",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AD%D9%85%D9%8A%D8%AF%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%A7%D9%84%D8%B1%D8%B3+0509966090",
+          "card": {
+            "name": "مكتب الحميدي للعقار",
+            "fullAddress": "VGR4+Q3J مكتب الحميدي للعقار، وادي الرمة، الرس 58884، المملكة العربية السعودية",
+            "addressParts": [
+              "VGR4+Q3J",
+              "وادي الرمة",
+              "الرس 58884، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              25.8919639,
+              43.5051456
+            ],
+            "phone": "+966 50 996 6090",
+            "category": "مكتب الشركات",
+            "address": "VGR4+Q3J، وادي الرمة، الرس 58884، المملكة العربية السعودية",
+            "placeId": "ChIJb8juvr_LgxURo68q-jxdUH4"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "office-maps-2cc3ca16faa9",
+      "city": "الرس",
+      "stored": {
+        "name": "شركة عبدالعزيز القريان العقارية",
+        "phones": [
+          "0556236333"
+        ],
+        "address": "شارع الشنانة",
+        "maps": "https://www.google.com/maps/search/?api=1&query=25.8764891,43.4811153&query_place_id=ChIJlcrB1Hy1gxURtBX-0vJToRY",
+        "lat": 25.8764891,
+        "lon": 43.4811153
+      },
+      "previousStatus": "verified_name_phone_location_activity_ambiguous",
+      "decisionClass": "partial",
+      "status": "verified_name_phone_and_pin_activity_category_ambiguous",
+      "note": "تطابق الاسم والهاتف والدبوس؛ تصنيف Maps هو «مكتب الشركات» أو تصنيف عام ولا يثبت النشاط العقاري تفصيليًا.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "شركة عبدالعزيز القريان العقارية الرس",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D8%B4%D8%B1%D9%83%D8%A9+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2+%D8%A7%D9%84%D9%82%D8%B1%D9%8A%D8%A7%D9%86+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%A7%D9%84%D8%B1%D8%B3",
+          "card": {
+            "name": "شركة عبدالعزيز القريان العقارية",
+            "fullAddress": "شركة عبدالعزيز القريان العقارية، شارع الشنانة، الملك خالد، الرس 58883، المملكة العربية السعودية",
+            "addressParts": [
+              "شارع الشنانة",
+              "الملك خالد",
+              "الرس 58883، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              25.8764891,
+              43.4811153
+            ],
+            "phone": "+966 55 623 6333",
+            "category": "مكتب الشركات",
+            "address": "شارع الشنانة، الملك خالد، الرس 58883، المملكة العربية السعودية",
+            "placeId": "ChIJlcrB1Hy1gxURtBX-0vJToRY"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "شركة عبدالعزيز القريان العقارية الرس 0556236333",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D8%B4%D8%B1%D9%83%D8%A9+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2+%D8%A7%D9%84%D9%82%D8%B1%D9%8A%D8%A7%D9%86+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%A7%D9%84%D8%B1%D8%B3+0556236333",
+          "card": {
+            "name": "شركة عبدالعزيز القريان العقارية",
+            "fullAddress": "شركة عبدالعزيز القريان العقارية، شارع الشنانة، الملك خالد، الرس 58883، المملكة العربية السعودية",
+            "addressParts": [
+              "شارع الشنانة",
+              "الملك خالد",
+              "الرس 58883، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              25.8764891,
+              43.4811153
+            ],
+            "phone": "+966 55 623 6333",
+            "category": "مكتب الشركات",
+            "address": "شارع الشنانة، الملك خالد، الرس 58883، المملكة العربية السعودية",
+            "placeId": "ChIJlcrB1Hy1gxURtBX-0vJToRY"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "office-maps-1e6e0e7fa290",
+      "city": "الرس",
+      "stored": {
+        "name": "مكتب روابي ديرتي للخدمات العقاريّة",
+        "phones": [
+          "0555658732"
+        ],
+        "address": "طريق الملك فهد",
+        "maps": "https://www.google.com/maps/search/?api=1&query=25.8819592,43.4868998&query_place_id=ChIJqYdh357KgxURIhnE3Yko-4g",
+        "lat": 25.8819592,
+        "lon": 43.4868998
+      },
+      "previousStatus": "verified_name_phone_location_activity_ambiguous",
+      "decisionClass": "partial",
+      "status": "verified_name_phone_and_pin_activity_category_ambiguous",
+      "note": "تطابق الاسم والهاتف والدبوس؛ تصنيف Maps هو «مكتب الشركات» أو تصنيف عام ولا يثبت النشاط العقاري تفصيليًا.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب روابي ديرتي للخدمات العقاريّة الرس",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%88%D8%A7%D8%A8%D9%8A+%D8%AF%D9%8A%D8%B1%D8%AA%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%91%D8%A9+%D8%A7%D9%84%D8%B1%D8%B3",
+          "card": {
+            "name": "مكتب روابي ديرتي للخدمات العقاريّة",
+            "fullAddress": "مكتب روابي ديرتي للخدمات العقاريّة، طريق الملك فهد، الملك خالد، الرس 58876، المملكة العربية السعودية",
+            "addressParts": [
+              "طريق الملك فهد",
+              "الملك خالد",
+              "الرس 58876، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              25.8819592,
+              43.4868998
+            ],
+            "phone": "+966 55 565 8732",
+            "category": "مكتب الشركات",
+            "address": "طريق الملك فهد، الملك خالد، الرس 58876، المملكة العربية السعودية",
+            "placeId": "ChIJqYdh357KgxURIhnE3Yko-4g"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب روابي ديرتي للخدمات العقاريّة الرس 0555658732",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%88%D8%A7%D8%A8%D9%8A+%D8%AF%D9%8A%D8%B1%D8%AA%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%91%D8%A9+%D8%A7%D9%84%D8%B1%D8%B3+0555658732",
+          "card": {
+            "name": "مكتب روابي ديرتي للخدمات العقاريّة",
+            "fullAddress": "مكتب روابي ديرتي للخدمات العقاريّة، طريق الملك فهد، الملك خالد، الرس 58876، المملكة العربية السعودية",
+            "addressParts": [
+              "طريق الملك فهد",
+              "الملك خالد",
+              "الرس 58876، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              25.8819592,
+              43.4868998
+            ],
+            "phone": "+966 55 565 8732",
+            "category": "مكتب الشركات",
+            "address": "طريق الملك فهد، الملك خالد، الرس 58876، المملكة العربية السعودية",
+            "placeId": "ChIJqYdh357KgxURIhnE3Yko-4g"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "office-maps-0d81cb25cde4",
+      "city": "خميس مشيط",
+      "stored": {
+        "name": "مكتب شبكة الزبيري للعقارات",
+        "phones": [
+          "0557553598"
+        ],
+        "address": "ورقة بن نوفل، شباعة، خميس مشيط 62458، المملكة العربية السعودية",
+        "maps": "https://www.google.com/maps/search/?api=1&query=18.3206891,42.7331964&query_place_id=ChIJ0yrKIUda-xURfAZQuz_y0Kc",
+        "lat": 18.32069,
+        "lon": 42.7332
+      },
+      "previousStatus": "verified_name_phone_location_activity_ambiguous",
+      "decisionClass": "partial",
+      "status": "verified_name_phone_and_pin_activity_category_ambiguous",
+      "note": "تطابق الاسم والهاتف والدبوس؛ تصنيف Maps هو «مكتب الشركات» أو تصنيف عام ولا يثبت النشاط العقاري تفصيليًا.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب شبكة الزبيري للعقارات خميس مشيط",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B4%D8%A8%D9%83%D8%A9+%D8%A7%D9%84%D8%B2%D8%A8%D9%8A%D8%B1%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%AE%D9%85%D9%8A%D8%B3+%D9%85%D8%B4%D9%8A%D8%B7",
+          "card": {
+            "name": "مكتب شبكة الزبيري للعقارات",
+            "fullAddress": "مكتب شبكة الزبيري للعقارات، ورقة بن نوفل، شباعة، خميس مشيط 62458، المملكة العربية السعودية",
+            "addressParts": [
+              "ورقة بن نوفل",
+              "شباعة",
+              "خميس مشيط 62458، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              18.3206891,
+              42.7331964
+            ],
+            "phone": "+966 55 755 3598",
+            "category": "مكتب الشركات",
+            "address": "ورقة بن نوفل، شباعة، خميس مشيط 62458، المملكة العربية السعودية",
+            "placeId": "ChIJ0yrKIUda-xURfAZQuz_y0Kc"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب شبكة الزبيري للعقارات خميس مشيط 0557553598",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B4%D8%A8%D9%83%D8%A9+%D8%A7%D9%84%D8%B2%D8%A8%D9%8A%D8%B1%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%AE%D9%85%D9%8A%D8%B3+%D9%85%D8%B4%D9%8A%D8%B7+0557553598",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-192087",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب ركن الروز للخدمات العامة",
+        "phones": [
+          "0500075051"
+        ],
+        "address": "المملكة العربية السعودية طريق الملك عبدالعزيز، الضيافة، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%83%D9%86%20%D8%A7%D9%84%D8%B1%D9%88%D8%B2%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%200500075051",
+        "lat": 17.53369,
+        "lon": 44.21271
+      },
+      "previousStatus": "verified_name_activity_location_phone_unlisted",
+      "decisionClass": "partial",
+      "status": "verified_name_activity_and_pin_phone_unlisted",
+      "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب ركن الروز للخدمات العامة نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%83%D9%86+%D8%A7%D9%84%D8%B1%D9%88%D8%B2+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": {
+            "name": "مكتب ركن الروز للخدمات العامة",
+            "fullAddress": "G6M7+92X مكتب ركن الروز للخدمات العامة، نجران 66262، المملكة العربية السعودية",
+            "addressParts": [
+              "G6M7+92X",
+              "نجران 66262",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.5334998,
+              44.2126033
+            ],
+            "phone": null,
+            "category": "وكالة عقارات",
+            "address": "G6M7+92X، نجران 66262، المملكة العربية السعودية",
+            "placeId": "ChIJle1lTFXD_hURcYmT-OwJ_6M"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب ركن الروز للخدمات العامة نجران 0500075051",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%83%D9%86+%D8%A7%D9%84%D8%B1%D9%88%D8%B2+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0500075051",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.5334998,44.2126033&query_place_id=ChIJle1lTFXD_hURcYmT-OwJ_6M",
+        "lat": 17.5334998,
+        "lon": 44.2126033,
+        "nb": "G6M7+92X، نجران 66262، المملكة العربية السعودية"
+      }
+    },
+    {
+      "id": "national-ejar-office-192560",
+      "city": "نجران",
+      "stored": {
+        "name": "شركة العرب الحديثه للعقارات",
+        "phones": [],
+        "address": "نايف بن عبدالعزيز، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%20%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%20",
+        "lat": 17.49234,
+        "lon": 44.11663
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "شركة العرب الحديثه للعقارات نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%B9%D8%B1%D8%A8+%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D9%87+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-192222",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب رواد الانجاز للعقارات",
+        "phones": [
+          "0506791596"
+        ],
+        "address": "طريق بدون اسم، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%88%D8%A7%D8%AF%20%D8%A7%D9%84%D8%A5%D9%86%D8%AC%D8%A7%D8%B2%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%200506791596",
+        "lat": 17.64293,
+        "lon": 44.47744
+      },
+      "previousStatus": "unresolved_no_matching_card",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب رواد الانجاز للعقارات نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%88%D8%A7%D8%AF+%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D8%A7%D8%B2+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب رواد الانجاز للعقارات نجران 0506791596",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%88%D8%A7%D8%AF+%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D8%A7%D8%B2+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0506791596",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-194652",
+      "city": "نجران",
+      "stored": {
+        "name": "مؤسسة علي ظافر ظافر الشمراني للعقار",
+        "phones": [
+          "0505725867"
+        ],
+        "address": "خالد بن عبدالعزيز، الفهد، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B9%D9%84%D9%8A%20%D8%B8%D8%A7%D9%81%D8%B1%20%D8%A7%D9%84%D8%B4%D9%85%D8%B1%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%200505725867",
+        "lat": 17.58556,
+        "lon": 44.23035
+      },
+      "previousStatus": "partial_identity_activity_phone_unverified",
+      "decisionClass": "partial",
+      "status": "verified_name_activity_and_pin_phone_unlisted",
+      "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مؤسسة علي ظافر ظافر الشمراني للعقار نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B9%D9%84%D9%8A+%D8%B8%D8%A7%D9%81%D8%B1+%D8%B8%D8%A7%D9%81%D8%B1+%D8%A7%D9%84%D8%B4%D9%85%D8%B1%D8%A7%D9%86%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "HTTPError: HTTP Error 502: Bad Gateway"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مؤسسة علي ظافر ظافر الشمراني للعقار نجران 0505725867",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B9%D9%84%D9%8A+%D8%B8%D8%A7%D9%81%D8%B1+%D8%B8%D8%A7%D9%81%D8%B1+%D8%A7%D9%84%D8%B4%D9%85%D8%B1%D8%A7%D9%86%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0505725867",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "HTTPError: HTTP Error 502: Bad Gateway"
+        },
+        {
+          "queryType": "short_name",
+          "query": "مكتب علي ظافر للعقار والخدمات نجران",
+          "outcome": "card_read",
+          "card": {
+            "name": "مكتب علي ظافر للعقار والخدمات",
+            "phone": null,
+            "category": "عقار شقق مفروشة",
+            "address": "NJMD7939، 7939 خالد بن عبدالعزيز، نجران 66256، المملكة العربية السعودية",
+            "coordinates": [
+              17.5854684,
+              44.2302731
+            ],
+            "placeId": "ChIJIa9fWHTF_hURfMQJTTDWfHQ"
+          }
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.5854684,44.2302731&query_place_id=ChIJIa9fWHTF_hURfMQJTTDWfHQ",
+        "lat": 17.5854684,
+        "lon": 44.2302731,
+        "nb": "NJMD7939، 7939 خالد بن عبدالعزيز، نجران 66256، المملكة العربية السعودية"
+      }
+    },
+    {
+      "id": "national-ejar-office-196395",
+      "city": "نجران",
+      "stored": {
+        "name": "مؤسسة ناجز الابداع للخدمات العقارية",
+        "phones": [
+          "0507119478",
+          "0550890449"
+        ],
+        "address": "عمر بن الخطاب، الفيصلية، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%86%D8%A7%D8%AC%D8%B2%20%D8%A7%D9%84%D8%A5%D8%A8%D8%AF%D8%A7%D8%B9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%200550890449",
+        "lat": "0550890449",
+        "lon": null
+      },
+      "previousStatus": "verified_name_activity_phone_conflict_preserved",
+      "decisionClass": "partial",
+      "status": "verified_prior_name_activity_phone_conflict_current_card_unavailable",
+      "note": "التدقيق السابق ربط بطاقة ناجز الإبداع بالهاتف المنشور 0550890449 وحفظ الرقم القديم؛ إعادة الاستعلام لم تعرض البطاقة الآن. بقي القرار السابق محفوظًا، مع رصد أن lat يحتوي هاتفًا بدل إحداثية.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مؤسسة ناجز الابداع للخدمات العقارية نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D9%86%D8%A7%D8%AC%D8%B2+%D8%A7%D9%84%D8%A7%D8%A8%D8%AF%D8%A7%D8%B9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "HTTPError: HTTP Error 502: Bad Gateway"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مؤسسة ناجز الابداع للخدمات العقارية نجران 0507119478",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D9%86%D8%A7%D8%AC%D8%B2+%D8%A7%D9%84%D8%A7%D8%A8%D8%AF%D8%A7%D8%B9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0507119478",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "HTTPError: HTTP Error 502: Bad Gateway"
+        }
+      ],
+      "proposedPatch": {
+        "lat": 17.5498625,
+        "lon": 44.2208594
+      }
+    },
+    {
+      "id": "national-ejar-office-195555",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب الأفلاك للخدمات العقارية",
+        "phones": [
+          "0566669896"
+        ],
+        "address": "نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.616944,44.419464",
+        "lat": 17.61694,
+        "lon": 44.41946
+      },
+      "previousStatus": "unresolved_no_matching_maps_card",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب الأفلاك للخدمات العقارية نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%A3%D9%81%D9%84%D8%A7%D9%83+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "HTTPError: HTTP Error 502: Bad Gateway"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب الأفلاك للخدمات العقارية نجران 0566669896",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%A3%D9%81%D9%84%D8%A7%D9%83+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0566669896",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "HTTPError: HTTP Error 502: Bad Gateway"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-198603",
+      "city": "نجران",
+      "stored": {
+        "name": "مؤسسة بصمة السمو للخدمات العقارية",
+        "phones": [
+          "0500671811"
+        ],
+        "address": "طريق بدون اسم، المطار، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.64337711,44.47599213",
+        "lat": 17.64338,
+        "lon": 44.47599
+      },
+      "previousStatus": "unresolved_identity_phone_conflict",
+      "decisionClass": "corrected",
+      "status": "verified_name_activity_pin_phone_corrected_from_maps",
+      "note": "تطابقت هوية المكان والدبوس، وأظهرت بطاقة Maps رقمًا مختلفًا؛ اقترح الرقم المنشور أولًا مع حفظ الرقم السابق.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مؤسسة بصمة السمو للخدمات العقارية نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%A8%D8%B5%D9%85%D8%A9+%D8%A7%D9%84%D8%B3%D9%85%D9%88+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": {
+            "name": "مكتب بصمة السمو للخدمات العامة و العقارية",
+            "fullAddress": "مكتب بصمة السمو للخدمات العامة و العقارية، حي الروضة، 4783 الامان، NAJC4783، 9205، نجران 66441، المملكة العربية السعودية",
+            "addressParts": [
+              "حي الروضة",
+              "4783 الامان، NAJC4783، 9205",
+              "نجران 66441، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.6417797,
+              44.4799234
+            ],
+            "phone": "+966 53 457 0409",
+            "category": "وكالة عقارات",
+            "address": "حي الروضة، 4783 الامان، NAJC4783، 9205، نجران 66441، المملكة العربية السعودية",
+            "placeId": "ChIJOeeJVgAv_xURyx6AESt9PSo"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مؤسسة بصمة السمو للخدمات العقارية نجران 0500671811",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%A8%D8%B5%D9%85%D8%A9+%D8%A7%D9%84%D8%B3%D9%85%D9%88+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0500671811",
+          "card": {
+            "name": "مكتب بصمة السمو للخدمات العامة و العقارية",
+            "fullAddress": "مكتب بصمة السمو للخدمات العامة و العقارية، حي الروضة، 4783 الامان، NAJC4783، 9205، نجران 66441، المملكة العربية السعودية",
+            "addressParts": [
+              "حي الروضة",
+              "4783 الامان، NAJC4783، 9205",
+              "نجران 66441، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.6417797,
+              44.4799234
+            ],
+            "phone": "+966 53 457 0409",
+            "category": "وكالة عقارات",
+            "address": "حي الروضة، 4783 الامان، NAJC4783، 9205، نجران 66441، المملكة العربية السعودية",
+            "placeId": "ChIJOeeJVgAv_xURyx6AESt9PSo"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.6417797,44.4799234&query_place_id=ChIJOeeJVgAv_xURyx6AESt9PSo",
+        "lat": 17.6417797,
+        "lon": 44.4799234,
+        "nb": "حي الروضة، 4783 الامان، NAJC4783، 9205، نجران 66441، المملكة العربية السعودية",
+        "phones": [
+          "0534570409",
+          "0500671811"
+        ]
+      }
+    },
+    {
+      "id": "national-ejar-office-197226",
+      "city": "نجران",
+      "stored": {
+        "name": "مؤسسة اعمار الشرفة للعقار",
+        "phones": [
+          "0538356309"
+        ],
+        "address": "الامير سلطان بن عبدالعزيز، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.50487552,44.34696163",
+        "lat": 17.50488,
+        "lon": 44.34696
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "corrected",
+      "status": "verified_name_activity_pin_phone_corrected_from_maps",
+      "note": "تطابقت هوية المكان والدبوس، وأظهرت بطاقة Maps رقمًا مختلفًا؛ اقترح الرقم المنشور أولًا مع حفظ الرقم السابق.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مؤسسة اعمار الشرفة للعقار نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%A7%D8%B9%D9%85%D8%A7%D8%B1+%D8%A7%D9%84%D8%B4%D8%B1%D9%81%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": {
+            "name": "مكتب اعمار الشرفه للعقار",
+            "fullAddress": "G83W+XWX مكتب اعمار الشرفه للعقار، شارع الامير سلطان، نجران 66248، المملكة العربية السعودية",
+            "addressParts": [
+              "G83W+XWX",
+              "شارع الامير سلطان",
+              "نجران 66248، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.5049785,
+              44.3473451
+            ],
+            "phone": "+966 55 572 3011",
+            "category": "فندق",
+            "address": "G83W+XWX، شارع الامير سلطان، نجران 66248، المملكة العربية السعودية",
+            "placeId": "ChIJe3V7qVze_hURlxEvjO5fpsI"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مؤسسة اعمار الشرفة للعقار نجران 0538356309",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%A7%D8%B9%D9%85%D8%A7%D8%B1+%D8%A7%D9%84%D8%B4%D8%B1%D9%81%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0538356309",
+          "card": {
+            "name": "مكتب اعمار الشرفه للعقار",
+            "fullAddress": "G83W+XWX مكتب اعمار الشرفه للعقار، شارع الامير سلطان، نجران 66248، المملكة العربية السعودية",
+            "addressParts": [
+              "G83W+XWX",
+              "شارع الامير سلطان",
+              "نجران 66248، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.5049785,
+              44.3473451
+            ],
+            "phone": "+966 55 572 3011",
+            "category": "فندق",
+            "address": "G83W+XWX، شارع الامير سلطان، نجران 66248، المملكة العربية السعودية",
+            "placeId": "ChIJe3V7qVze_hURlxEvjO5fpsI"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.5049785,44.3473451&query_place_id=ChIJe3V7qVze_hURlxEvjO5fpsI",
+        "lat": 17.5049785,
+        "lon": 44.3473451,
+        "nb": "G83W+XWX، شارع الامير سلطان، نجران 66248، المملكة العربية السعودية",
+        "phones": [
+          "0555723011",
+          "0538356309"
+        ]
+      }
+    },
+    {
+      "id": "national-ejar-office-194497",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب جوهرة الجوافة للعقار",
+        "phones": [
+          "0552335512"
+        ],
+        "address": "حمزة بن عبدالمطلب، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.55692535,44.23518906",
+        "lat": 17.55692,
+        "lon": 44.23519
+      },
+      "previousStatus": "unresolved_no_matching_maps_card",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب جوهرة الجوافة للعقار نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%AC%D9%88%D9%87%D8%B1%D8%A9+%D8%A7%D9%84%D8%AC%D9%88%D8%A7%D9%81%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب جوهرة الجوافة للعقار نجران 0552335512",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%AC%D9%88%D9%87%D8%B1%D8%A9+%D8%A7%D9%84%D8%AC%D9%88%D8%A7%D9%81%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0552335512",
+          "card": {
+            "name": "نجران",
+            "fullAddress": "نجران السعودية",
+            "addressParts": [
+              "السعودية"
+            ],
+            "coordinates": [
+              17.5656036,
+              44.2289441
+            ],
+            "phone": null,
+            "category": null,
+            "address": "السعودية",
+            "placeId": "ChIJVZGPyAfr_hURhfSUiBJ5p9E"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-194223",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب حمد عبدالله حمد آل عباس للعقار",
+        "phones": [
+          "0532909084"
+        ],
+        "address": "سلطان بن عبد العزيز، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.51735628,44.28471784",
+        "lat": 17.51736,
+        "lon": 44.28472
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب حمد عبدالله حمد آل عباس للعقار نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%AD%D9%85%D8%AF+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%AD%D9%85%D8%AF+%D8%A2%D9%84+%D8%B9%D8%A8%D8%A7%D8%B3+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب حمد عبدالله حمد آل عباس للعقار نجران 0532909084",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%AD%D9%85%D8%AF+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%AD%D9%85%D8%AF+%D8%A2%D9%84+%D8%B9%D8%A8%D8%A7%D8%B3+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0532909084",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-192117",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب اطياف الجنوب للخدمات العقارية",
+        "phones": [
+          "0544041333"
+        ],
+        "address": "الخالدية، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.53998061,44.21937944",
+        "lat": 17.53998,
+        "lon": 44.21938
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب اطياف الجنوب للخدمات العقارية نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D8%B7%D9%8A%D8%A7%D9%81+%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب اطياف الجنوب للخدمات العقارية نجران 0544041333",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D8%B7%D9%8A%D8%A7%D9%81+%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0544041333",
+          "card": {
+            "name": "نجران",
+            "fullAddress": "نجران السعودية",
+            "addressParts": [
+              "السعودية"
+            ],
+            "coordinates": [
+              17.5656036,
+              44.2289441
+            ],
+            "phone": null,
+            "category": null,
+            "address": "السعودية",
+            "placeId": "ChIJVZGPyAfr_hURhfSUiBJ5p9E"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-193129",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب افنان العزيزية للعقارات",
+        "phones": [
+          "0541123718"
+        ],
+        "address": "الملك فيصل بن عبدالعزيز، الفيصلية، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.53280047,44.19911099",
+        "lat": 17.5328,
+        "lon": 44.19911
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب افنان العزيزية للعقارات نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%81%D9%86%D8%A7%D9%86+%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب افنان العزيزية للعقارات نجران 0541123718",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%81%D9%86%D8%A7%D9%86+%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0541123718",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-196558",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب شموخ نجران للعقار",
+        "phones": [
+          "0500982411"
+        ],
+        "address": "خالد بن عبدالعزيز، الفهد، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.5808791,44.2273531",
+        "lat": 17.58088,
+        "lon": 44.22735
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "corrected",
+      "status": "verified_name_activity_pin_phone_corrected_from_maps",
+      "note": "تطابقت هوية المكان والدبوس، وأظهرت بطاقة Maps رقمًا مختلفًا؛ اقترح الرقم المنشور أولًا مع حفظ الرقم السابق.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب شموخ نجران للعقار نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B4%D9%85%D9%88%D8%AE+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": {
+            "name": "مكتب شموخ نجران للعقار",
+            "fullAddress": "مكتب شموخ نجران للعقار، NJMB7447 7447 خالد بن عبدالعزيز، شمال الفهد، نجران 66256، المملكة العربية السعودية",
+            "addressParts": [
+              "NJMB7447 7447 خالد بن عبدالعزيز",
+              "شمال الفهد",
+              "نجران 66256، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.5810301,
+              44.2269544
+            ],
+            "phone": "+966 55 665 6839",
+            "category": "سمسار رهن عقاري",
+            "address": "NJMB7447 7447 خالد بن عبدالعزيز، شمال الفهد، نجران 66256، المملكة العربية السعودية",
+            "placeId": "ChIJqTPmN6rD_hURR__fvfMRDxw"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب شموخ نجران للعقار نجران 0500982411",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B4%D9%85%D9%88%D8%AE+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0500982411",
+          "card": {
+            "name": "مكتب شموخ نجران للعقار",
+            "fullAddress": "مكتب شموخ نجران للعقار، NJMB7447 7447 خالد بن عبدالعزيز، شمال الفهد، نجران 66256، المملكة العربية السعودية",
+            "addressParts": [
+              "NJMB7447 7447 خالد بن عبدالعزيز",
+              "شمال الفهد",
+              "نجران 66256، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.5810301,
+              44.2269544
+            ],
+            "phone": "+966 55 665 6839",
+            "category": "سمسار رهن عقاري",
+            "address": "NJMB7447 7447 خالد بن عبدالعزيز، شمال الفهد، نجران 66256، المملكة العربية السعودية",
+            "placeId": "ChIJqTPmN6rD_hURR__fvfMRDxw"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.5810301,44.2269544&query_place_id=ChIJqTPmN6rD_hURR__fvfMRDxw",
+        "lat": 17.5810301,
+        "lon": 44.2269544,
+        "nb": "NJMB7447 7447 خالد بن عبدالعزيز، شمال الفهد، نجران 66256، المملكة العربية السعودية",
+        "phones": [
+          "0556656839",
+          "0500982411"
+        ]
+      }
+    },
+    {
+      "id": "national-ejar-office-192537",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب فايز بن حمد بن مبارك اليامي للعقارات",
+        "phones": [
+          "0508961112"
+        ],
+        "address": "فهد بن عبدالعزيز، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.56665478,44.33078349",
+        "lat": 17.56666,
+        "lon": 44.33078
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب فايز بن حمد بن مبارك اليامي للعقارات نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D9%81%D8%A7%D9%8A%D8%B2+%D8%A8%D9%86+%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D9%85%D8%A8%D8%A7%D8%B1%D9%83+%D8%A7%D9%84%D9%8A%D8%A7%D9%85%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب فايز بن حمد بن مبارك اليامي للعقارات نجران 0508961112",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D9%81%D8%A7%D9%8A%D8%B2+%D8%A8%D9%86+%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D9%85%D8%A8%D8%A7%D8%B1%D9%83+%D8%A7%D9%84%D9%8A%D8%A7%D9%85%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0508961112",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-197107",
+      "city": "نجران",
+      "stored": {
+        "name": "مؤسسة عوض بن مساعد بن مساعد مساعد للعقار",
+        "phones": [
+          "0555726744"
+        ],
+        "address": "سعد بن ابي وقاص، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.55012977,44.2321621",
+        "lat": 17.55013,
+        "lon": 44.23216
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مؤسسة عوض بن مساعد بن مساعد مساعد للعقار نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B9%D9%88%D8%B6+%D8%A8%D9%86+%D9%85%D8%B3%D8%A7%D8%B9%D8%AF+%D8%A8%D9%86+%D9%85%D8%B3%D8%A7%D8%B9%D8%AF+%D9%85%D8%B3%D8%A7%D8%B9%D8%AF+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مؤسسة عوض بن مساعد بن مساعد مساعد للعقار نجران 0555726744",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B9%D9%88%D8%B6+%D8%A8%D9%86+%D9%85%D8%B3%D8%A7%D8%B9%D8%AF+%D8%A8%D9%86+%D9%85%D8%B3%D8%A7%D8%B9%D8%AF+%D9%85%D8%B3%D8%A7%D8%B9%D8%AF+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0555726744",
+          "card": {
+            "name": "نجران",
+            "fullAddress": "نجران السعودية",
+            "addressParts": [
+              "السعودية"
+            ],
+            "coordinates": [
+              17.5656036,
+              44.2289441
+            ],
+            "phone": null,
+            "category": null,
+            "address": "السعودية",
+            "placeId": "ChIJVZGPyAfr_hURhfSUiBJ5p9E"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-194158",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب التم للخدمات العقارية",
+        "phones": [
+          "0506308963"
+        ],
+        "address": "الاسكان 86، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.58632206,44.24247035",
+        "lat": 17.58632,
+        "lon": 44.24247
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب التم للخدمات العقارية نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AA%D9%85+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب التم للخدمات العقارية نجران 0506308963",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AA%D9%85+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0506308963",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-195166",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب منصة الدارة للخدمات العقارية",
+        "phones": [
+          "0559024555"
+        ],
+        "address": "ناصر بن عبدالعزيز، الروضة، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.63462041,44.50293406",
+        "lat": 17.63462,
+        "lon": 44.50293
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "partial",
+      "status": "verified_name_activity_and_pin_phone_unlisted",
+      "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب منصة الدارة للخدمات العقارية نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D9%85%D9%86%D8%B5%D8%A9+%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب منصة الدارة للخدمات العقارية نجران 0559024555",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D9%85%D9%86%D8%B5%D8%A9+%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0559024555",
+          "card": {
+            "name": "مكتب منصة الدارة للخدمات العقاريه",
+            "fullAddress": "JGM3+V66 مكتب منصة الدارة للخدمات العقاريه، مخططات الغويلا الزراعية 66446، المملكة العربية السعودية",
+            "addressParts": [
+              "JGM3+V66",
+              "مخططات الغويلا الزراعية 66446",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.6346736,
+              44.5030157
+            ],
+            "phone": null,
+            "category": "وكالة عقارات",
+            "address": "JGM3+V66، مخططات الغويلا الزراعية 66446، المملكة العربية السعودية",
+            "placeId": "ChIJBwK9IaMv_xURZ0h7TUNoBgc"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.6346736,44.5030157&query_place_id=ChIJBwK9IaMv_xURZ0h7TUNoBgc",
+        "lat": 17.6346736,
+        "lon": 44.5030157,
+        "nb": "JGM3+V66، مخططات الغويلا الزراعية 66446، المملكة العربية السعودية"
+      }
+    },
+    {
+      "id": "national-ejar-office-196309",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب لوامع البناء المميز للعقار",
+        "phones": [
+          "0566601372"
+        ],
+        "address": "الملك عبد العزيز، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.486839,44.130474",
+        "lat": 17.48684,
+        "lon": 44.13047
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب لوامع البناء المميز للعقار نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D9%84%D9%88%D8%A7%D9%85%D8%B9+%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1+%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب لوامع البناء المميز للعقار نجران 0566601372",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D9%84%D9%88%D8%A7%D9%85%D8%B9+%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1+%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0566601372",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-192834",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب بصمة خدماتي العقاري",
+        "phones": [
+          "0500667377"
+        ],
+        "address": "العام، الصناعية، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.5907085,44.3419574",
+        "lat": 17.59071,
+        "lon": 44.34196
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب بصمة خدماتي العقاري نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A8%D8%B5%D9%85%D8%A9+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%8A+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب بصمة خدماتي العقاري نجران 0500667377",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A8%D8%B5%D9%85%D8%A9+%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%8A+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0500667377",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-196051",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب الصملة للخدمات العقارية",
+        "phones": [
+          "0509840427"
+        ],
+        "address": "امتداد شارع صهيب بن سنان، الفهد، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.5518785,44.2277726",
+        "lat": 17.55188,
+        "lon": 44.22777
+      },
+      "previousStatus": "verified_name_activity_location_phone_unlisted",
+      "decisionClass": "partial",
+      "status": "verified_name_activity_and_pin_phone_unlisted",
+      "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب الصملة للخدمات العقارية نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B5%D9%85%D9%84%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": {
+            "name": "مكتب الصمله للخدمات العقاريه",
+            "fullAddress": "مكتب الصمله للخدمات العقاريه، NJMB7757، 3512 شارع صهيب بن سنان، 7757، نجران 66256، المملكة العربية السعودية",
+            "addressParts": [
+              "NJMB7757",
+              "3512 شارع صهيب بن سنان، 7757",
+              "نجران 66256، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.5837995,
+              44.23646859999999
+            ],
+            "phone": null,
+            "category": "مطوّر عقارات",
+            "address": "NJMB7757، 3512 شارع صهيب بن سنان، 7757، نجران 66256، المملكة العربية السعودية",
+            "placeId": "ChIJ10vVHaPF_hUR4vw0YIfsaMk"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب الصملة للخدمات العقارية نجران 0509840427",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B5%D9%85%D9%84%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0509840427",
+          "card": {
+            "name": "مكتب الصمله للخدمات العقاريه",
+            "fullAddress": "مكتب الصمله للخدمات العقاريه، NJMB7757، 3512 شارع صهيب بن سنان، 7757، نجران 66256، المملكة العربية السعودية",
+            "addressParts": [
+              "NJMB7757",
+              "3512 شارع صهيب بن سنان، 7757",
+              "نجران 66256، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.5837995,
+              44.23646859999999
+            ],
+            "phone": null,
+            "category": "مطوّر عقارات",
+            "address": "NJMB7757، 3512 شارع صهيب بن سنان، 7757، نجران 66256، المملكة العربية السعودية",
+            "placeId": "ChIJ10vVHaPF_hUR4vw0YIfsaMk"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.5837995,44.23646859999999&query_place_id=ChIJ10vVHaPF_hUR4vw0YIfsaMk",
+        "lat": 17.5837995,
+        "lon": 44.23646859999999,
+        "nb": "NJMB7757، 3512 شارع صهيب بن سنان، 7757، نجران 66256، المملكة العربية السعودية"
+      }
+    },
+    {
+      "id": "national-ejar-office-192377",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب فاطمه أحمد بن علي حميره العقاري",
+        "phones": [
+          "0592796666"
+        ],
+        "address": "خالد بن عبدالعزيز، الفهد، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.58430322,44.22913313",
+        "lat": 17.5843,
+        "lon": 44.22913
+      },
+      "previousStatus": "unresolved_no_matching_maps_card",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب فاطمه أحمد بن علي حميره العقاري نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D9%81%D8%A7%D8%B7%D9%85%D9%87+%D8%A3%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D8%B9%D9%84%D9%8A+%D8%AD%D9%85%D9%8A%D8%B1%D9%87+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب فاطمه أحمد بن علي حميره العقاري نجران 0592796666",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D9%81%D8%A7%D8%B7%D9%85%D9%87+%D8%A3%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D8%B9%D9%84%D9%8A+%D8%AD%D9%85%D9%8A%D8%B1%D9%87+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0592796666",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-196084",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب لوامع الجنوب العقارية",
+        "phones": [
+          "0552271319"
+        ],
+        "address": "طريق الملك سلمان بن عبدالعزيز، الفيصلية، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.54783901,44.21727599",
+        "lat": 17.54784,
+        "lon": 44.21728
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "correct",
+      "status": "verified_name_activity_phone_and_pin",
+      "note": "تطابقت بطاقة Google Maps في الاسم والنشاط والهاتف والدبوس/العنوان.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب لوامع الجنوب العقارية نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D9%84%D9%88%D8%A7%D9%85%D8%B9+%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": {
+            "name": "مكتب لوامع الجنوب العقاري",
+            "fullAddress": "G6X8+4X2 مكتب لوامع الجنوب العقاري، نجران 66251، المملكة العربية السعودية",
+            "addressParts": [
+              "G6X8+4X2",
+              "نجران 66251",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.5477508,
+              44.2173765
+            ],
+            "phone": "+966 55 227 1319",
+            "category": "وكالة عقارات",
+            "address": "G6X8+4X2، نجران 66251، المملكة العربية السعودية",
+            "placeId": "ChIJCU18KgDD_hURRHDnZELw7eQ"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب لوامع الجنوب العقارية نجران 0552271319",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D9%84%D9%88%D8%A7%D9%85%D8%B9+%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0552271319",
+          "card": {
+            "name": "مكتب لوامع الجنوب العقاري",
+            "fullAddress": "G6X8+4X2 مكتب لوامع الجنوب العقاري، نجران 66251، المملكة العربية السعودية",
+            "addressParts": [
+              "G6X8+4X2",
+              "نجران 66251",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.5477508,
+              44.2173765
+            ],
+            "phone": "+966 55 227 1319",
+            "category": "وكالة عقارات",
+            "address": "G6X8+4X2، نجران 66251، المملكة العربية السعودية",
+            "placeId": "ChIJCU18KgDD_hURRHDnZELw7eQ"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-198660",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب دليل المستأجر للعقار",
+        "phones": [
+          "0506795560"
+        ],
+        "address": "خالد بن عبدالعزيز، الفهد، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.58122545,44.22759272",
+        "lat": 17.58122,
+        "lon": 44.22759
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "correct",
+      "status": "verified_name_activity_phone_and_pin",
+      "note": "تطابقت بطاقة Google Maps في الاسم والنشاط والهاتف والدبوس/العنوان.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب دليل المستأجر للعقار نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%A3%D8%AC%D8%B1+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": {
+            "name": "مكتب الشمراني للعقار(دليل المستاجر)",
+            "fullAddress": "مكتب الشمراني للعقار(دليل المستاجر)، شمال الفهد، نجران 66256، المملكة العربية السعودية",
+            "addressParts": [
+              "شمال الفهد، نجران 66256،",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.5813194,
+              44.22758169999999
+            ],
+            "phone": "+966 50 679 5560",
+            "category": "وكالة عقارات",
+            "address": "شمال الفهد، نجران 66256، المملكة العربية السعودية",
+            "placeId": "ChIJ7esQvqbD_hUR-v6VCagcOK0"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب دليل المستأجر للعقار نجران 0506795560",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%A3%D8%AC%D8%B1+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0506795560",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-198712",
+      "city": "نجران",
+      "stored": {
+        "name": "مكتب القمري للعقارات",
+        "phones": [
+          "0555723728"
+        ],
+        "address": "الملك فيصل بن عبدالعزيز، الفيصلية، نجران، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.52489605,44.18805705",
+        "lat": 17.5249,
+        "lon": 44.18806
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "corrected",
+      "status": "verified_name_activity_pin_phone_corrected_from_maps",
+      "note": "تطابقت هوية المكان والدبوس، وأظهرت بطاقة Maps رقمًا مختلفًا؛ اقترح الرقم المنشور أولًا مع حفظ الرقم السابق.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب القمري للعقارات نجران",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%82%D9%85%D8%B1%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "card": {
+            "name": "مكتب القمري للعقارات",
+            "fullAddress": "مكتب القمري للعقارات, خلف المرور، طريق الملك فيصل، نجران 66271، المملكة العربية السعودية",
+            "addressParts": [
+              "خلف المرور",
+              "طريق الملك فيصل",
+              "نجران 66271، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.524881,
+              44.18799569999999
+            ],
+            "phone": "+966 55 888 5318",
+            "category": "شركة إدارة عقارات",
+            "address": "خلف المرور, طريق الملك فيصل، نجران 66271، المملكة العربية السعودية",
+            "placeId": "ChIJBZjxlwvC_hURljoVNkfx2A0"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب القمري للعقارات نجران 0555723728",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%82%D9%85%D8%B1%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D9%86%D8%AC%D8%B1%D8%A7%D9%86+0555723728",
+          "card": {
+            "name": "مكتب القمري للعقارات",
+            "fullAddress": "مكتب القمري للعقارات, خلف المرور، طريق الملك فيصل، نجران 66271، المملكة العربية السعودية",
+            "addressParts": [
+              "خلف المرور",
+              "طريق الملك فيصل",
+              "نجران 66271، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.524881,
+              44.18799569999999
+            ],
+            "phone": "+966 55 888 5318",
+            "category": "شركة إدارة عقارات",
+            "address": "خلف المرور, طريق الملك فيصل، نجران 66271، المملكة العربية السعودية",
+            "placeId": "ChIJBZjxlwvC_hURljoVNkfx2A0"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.524881,44.18799569999999&query_place_id=ChIJBZjxlwvC_hURljoVNkfx2A0",
+        "lat": 17.524881,
+        "lon": 44.18799569999999,
+        "nb": "خلف المرور, طريق الملك فيصل، نجران 66271، المملكة العربية السعودية",
+        "phones": [
+          "0558885318",
+          "0555723728"
+        ]
+      }
+    },
+    {
+      "id": "national-ejar-office-192859",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب الواء الاخضر للعقارات",
+        "phones": [
+          "0501824055"
+        ],
+        "address": "شارع عبد الله الفزاري، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.4886862,47.1120239",
+        "lat": 17.48869,
+        "lon": 47.11202
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب الواء الاخضر للعقارات شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%88%D8%A7%D8%A1+%D8%A7%D9%84%D8%A7%D8%AE%D8%B6%D8%B1+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب الواء الاخضر للعقارات شرورة 0501824055",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%88%D8%A7%D8%A1+%D8%A7%D9%84%D8%A7%D8%AE%D8%B6%D8%B1+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0501824055",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-202596",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب زاوية الوطن للعقارات",
+        "phones": [
+          "0559108846"
+        ],
+        "address": "عمر بن الخطاب، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.49109344,47.11538235",
+        "lat": 17.49109,
+        "lon": 47.11538
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "partial",
+      "status": "verified_name_activity_and_pin_phone_unlisted",
+      "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب زاوية الوطن للعقارات شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B2%D8%A7%D9%88%D9%8A%D8%A9+%D8%A7%D9%84%D9%88%D8%B7%D9%86+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "مكتب زاوية الوطن",
+            "fullAddress": "مكتب زاوية الوطن، NSSB3989، 3989 شارع عمر بن الخطاب، 7871، حي الفيصلية، شرورة 68372، المملكة العربية السعودية",
+            "addressParts": [
+              "NSSB3989، 3989 شارع عمر بن الخطاب، 7871",
+              "حي الفيصلية",
+              "شرورة 68372، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4911737,
+              47.1153748
+            ],
+            "phone": null,
+            "category": "وكالة عقارات",
+            "address": "NSSB3989، 3989 شارع عمر بن الخطاب، 7871، حي الفيصلية، شرورة 68372، المملكة العربية السعودية",
+            "placeId": "ChIJiS2lHgC3Bz4RdPSRKZ7H9_I"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب زاوية الوطن للعقارات شرورة 0559108846",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B2%D8%A7%D9%88%D9%8A%D8%A9+%D8%A7%D9%84%D9%88%D8%B7%D9%86+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0559108846",
+          "card": {
+            "name": "مكتب زاوية الوطن",
+            "fullAddress": "مكتب زاوية الوطن، NSSB3989، 3989 شارع عمر بن الخطاب، 7871، حي الفيصلية، شرورة 68372، المملكة العربية السعودية",
+            "addressParts": [
+              "NSSB3989، 3989 شارع عمر بن الخطاب، 7871",
+              "حي الفيصلية",
+              "شرورة 68372، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4911737,
+              47.1153748
+            ],
+            "phone": null,
+            "category": "وكالة عقارات",
+            "address": "NSSB3989، 3989 شارع عمر بن الخطاب، 7871، حي الفيصلية، شرورة 68372، المملكة العربية السعودية",
+            "placeId": "ChIJiS2lHgC3Bz4RdPSRKZ7H9_I"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.4911737,47.1153748&query_place_id=ChIJiS2lHgC3Bz4RdPSRKZ7H9_I",
+        "lat": 17.4911737,
+        "lon": 47.1153748,
+        "nb": "NSSB3989، 3989 شارع عمر بن الخطاب، 7871، حي الفيصلية، شرورة 68372، المملكة العربية السعودية"
+      }
+    },
+    {
+      "id": "national-ejar-office-197788",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب روابي للخدمات العقارية",
+        "phones": [
+          "0504564151"
+        ],
+        "address": "شارع علي بن إبي طالب، العزيزية، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.4931967,47.1126437",
+        "lat": 17.4932,
+        "lon": 47.11264
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "partial",
+      "status": "verified_name_activity_and_pin_phone_unlisted",
+      "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب روابي للخدمات العقارية شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%88%D8%A7%D8%A8%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "مكتب روابي العقاري",
+            "fullAddress": "F4V7+73V مكتب روابي العقاري، 30، شرورة 67832، المملكة العربية السعودية",
+            "addressParts": [
+              "F4V7+73V",
+              "30",
+              "شرورة 67832، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4932485,
+              47.112666
+            ],
+            "phone": null,
+            "category": "شركة إدارة عقارات",
+            "address": "F4V7+73V، 30، شرورة 67832، المملكة العربية السعودية",
+            "placeId": "ChIJJa9ZpUm3Bz4R93OerwmS_wU"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب روابي للخدمات العقارية شرورة 0504564151",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%88%D8%A7%D8%A8%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0504564151",
+          "card": {
+            "name": "مكتب روابي العقاري",
+            "fullAddress": "F4V7+73V مكتب روابي العقاري، 30، شرورة 67832، المملكة العربية السعودية",
+            "addressParts": [
+              "F4V7+73V",
+              "30",
+              "شرورة 67832، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4932485,
+              47.112666
+            ],
+            "phone": null,
+            "category": "شركة إدارة عقارات",
+            "address": "F4V7+73V، 30، شرورة 67832، المملكة العربية السعودية",
+            "placeId": "ChIJJa9ZpUm3Bz4R93OerwmS_wU"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.4932485,47.112666&query_place_id=ChIJJa9ZpUm3Bz4R93OerwmS_wU",
+        "lat": 17.4932485,
+        "lon": 47.112666,
+        "nb": "F4V7+73V، 30، شرورة 67832، المملكة العربية السعودية"
+      }
+    },
+    {
+      "id": "national-ejar-office-197748",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب ركن الرائد للعقار",
+        "phones": [
+          "0508462711"
+        ],
+        "address": "شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.49357926,47.08326725",
+        "lat": 17.49358,
+        "lon": 47.08327
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "corrected",
+      "status": "verified_name_activity_pin_phone_corrected_from_maps",
+      "note": "تطابقت هوية المكان والدبوس، وأظهرت بطاقة Maps رقمًا مختلفًا؛ اقترح الرقم المنشور أولًا مع حفظ الرقم السابق.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب ركن الرائد للعقار شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%83%D9%86+%D8%A7%D9%84%D8%B1%D8%A7%D8%A6%D8%AF+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "مكتب ركن الرائد للعقار",
+            "fullAddress": "F3VM+F83 مكتب ركن الرائد للعقار، مخطط ا، شرورة 68342، المملكة العربية السعودية",
+            "addressParts": [
+              "F3VM+F83",
+              "مخطط ا",
+              "شرورة 68342، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4936373,
+              47.0832932
+            ],
+            "phone": "+966 55 754 0236",
+            "category": "شركة إدارة عقارات",
+            "address": "F3VM+F83، مخطط ا، شرورة 68342، المملكة العربية السعودية",
+            "placeId": "ChIJpbX5Prq3Bz4R2U5aNEbSb7Y"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب ركن الرائد للعقار شرورة 0508462711",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%83%D9%86+%D8%A7%D9%84%D8%B1%D8%A7%D8%A6%D8%AF+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0508462711",
+          "card": {
+            "name": "مكتب ركن الرائد للعقار",
+            "fullAddress": "F3VM+F83 مكتب ركن الرائد للعقار، مخطط ا، شرورة 68342، المملكة العربية السعودية",
+            "addressParts": [
+              "F3VM+F83",
+              "مخطط ا",
+              "شرورة 68342، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4936373,
+              47.0832932
+            ],
+            "phone": "+966 55 754 0236",
+            "category": "شركة إدارة عقارات",
+            "address": "F3VM+F83، مخطط ا، شرورة 68342، المملكة العربية السعودية",
+            "placeId": "ChIJpbX5Prq3Bz4R2U5aNEbSb7Y"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.4936373,47.0832932&query_place_id=ChIJpbX5Prq3Bz4R2U5aNEbSb7Y",
+        "lat": 17.4936373,
+        "lon": 47.0832932,
+        "nb": "F3VM+F83، مخطط ا، شرورة 68342، المملكة العربية السعودية",
+        "phones": [
+          "0557540236",
+          "0508462711"
+        ]
+      }
+    },
+    {
+      "id": "national-ejar-office-196236",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب امتياز الوسيط للعقار",
+        "phones": [
+          "0530728461"
+        ],
+        "address": "السند، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.48088273,47.08242164",
+        "lat": 17.48088,
+        "lon": 47.08242
+      },
+      "previousStatus": "unresolved_maps_card_content_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_google_maps_card_identity_or_activity_conflict",
+      "note": "ظهرت بطاقة Maps، لكنها لا تطابق الاسم/النشاط/الهاتف بما يكفي لربطها بالسجل؛ لم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب امتياز الوسيط للعقار شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%85%D8%AA%D9%8A%D8%A7%D8%B2+%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "مكتب الوسيط للعقار",
+            "fullAddress": "مكتب الوسيط للعقار، الملك سلمان، مخطط ا، شرورة 68342، المملكة العربية السعودية",
+            "addressParts": [
+              "الملك سلمان",
+              "مخطط ا",
+              "شرورة 68342، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4937905,
+              47.0833092
+            ],
+            "phone": "+966 53 636 2637",
+            "category": "وكالة عقارات",
+            "address": "الملك سلمان، مخطط ا، شرورة 68342، المملكة العربية السعودية",
+            "placeId": "ChIJAawG57O3Bz4RTX_0QPpkItg"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب امتياز الوسيط للعقار شرورة 0530728461",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%85%D8%AA%D9%8A%D8%A7%D8%B2+%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0530728461",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-241858",
+      "city": "شرورة",
+      "stored": {
+        "name": "مؤسسة الدليل الذهبي للخدمات العقارية",
+        "phones": [
+          "0509958889"
+        ],
+        "address": "الملك سعود بن عبدالعزيز، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.497119,47.11441928",
+        "lat": 17.49712,
+        "lon": 47.11442
+      },
+      "previousStatus": "unresolved_no_matching_maps_card",
+      "decisionClass": "unresolved",
+      "status": "unresolved_google_maps_card_identity_or_activity_conflict",
+      "note": "ظهرت بطاقة Maps، لكنها لا تطابق الاسم/النشاط/الهاتف بما يكفي لربطها بالسجل؛ لم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مؤسسة الدليل الذهبي للخدمات العقارية شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "مكتب الدليل العقاري شروره",
+            "fullAddress": "مكتب الدليل العقاري شروره، العزيزية شارع الملك سعود، مقابل محطة الجزيرة، شروره المملكة العربية السعودية",
+            "addressParts": [
+              "العزيزية شارع الملك سعود، مقابل محطة الجزيرة",
+              "شروره",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4971397,
+              47.1144143
+            ],
+            "phone": "+966 58 008 2424",
+            "category": "عقار شقق مفروشة",
+            "address": "العزيزية شارع الملك سعود، مقابل محطة الجزيرة، شروره المملكة العربية السعودية",
+            "placeId": "ChIJC9jqsVu3Bz4RjtfufE3AKgU"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مؤسسة الدليل الذهبي للخدمات العقارية شرورة 0509958889",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0509958889",
+          "card": {
+            "name": "مكتب الدليل العقاري شروره",
+            "fullAddress": "مكتب الدليل العقاري شروره، العزيزية شارع الملك سعود، مقابل محطة الجزيرة، شروره المملكة العربية السعودية",
+            "addressParts": [
+              "العزيزية شارع الملك سعود، مقابل محطة الجزيرة",
+              "شروره",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4971397,
+              47.1144143
+            ],
+            "phone": "+966 58 008 2424",
+            "category": "عقار شقق مفروشة",
+            "address": "العزيزية شارع الملك سعود، مقابل محطة الجزيرة، شروره المملكة العربية السعودية",
+            "placeId": "ChIJC9jqsVu3Bz4RjtfufE3AKgU"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-197035",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب الجزيرة الذهبية للعقارات",
+        "phones": [
+          "0551555960"
+        ],
+        "address": "40، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.4806576,47.0826363",
+        "lat": 17.48066,
+        "lon": 47.08264
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "corrected",
+      "status": "verified_name_activity_phone_location_corrected_from_maps",
+      "note": "تطابق الاسم والنشاط والهاتف، لكن الدبوس المسجل يبعد عن بطاقة المكان؛ اقترح دبوس Maps المباشر وعنوانه.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب الجزيرة الذهبية للعقارات شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9+%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "مكتب الجزيرة الذهبية للعقار فرع مشعل",
+            "fullAddress": "F3VM+F44 مكتب الجزيرة الذهبية للعقار فرع مشعل، مخطط ب، شرورة 68342، المملكة العربية السعودية",
+            "addressParts": [
+              "F3VM+F44",
+              "مخطط ب",
+              "شرورة 68342، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4936379,
+              47.0828174
+            ],
+            "phone": "+966 55 155 5960",
+            "category": "مكتب الشركات",
+            "address": "F3VM+F44، مخطط ب، شرورة 68342، المملكة العربية السعودية",
+            "placeId": "ChIJyfigJhm3Bz4RY7CBR8cd7k0"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب الجزيرة الذهبية للعقارات شرورة 0551555960",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9+%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0551555960",
+          "card": {
+            "name": "مكتب الدليل العقاري شروره",
+            "fullAddress": "مكتب الدليل العقاري شروره، العزيزية شارع الملك سعود، مقابل محطة الجزيرة، شروره المملكة العربية السعودية",
+            "addressParts": [
+              "العزيزية شارع الملك سعود، مقابل محطة الجزيرة",
+              "شروره",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4971397,
+              47.1144143
+            ],
+            "phone": "+966 58 008 2424",
+            "category": "عقار شقق مفروشة",
+            "address": "العزيزية شارع الملك سعود، مقابل محطة الجزيرة، شروره المملكة العربية السعودية",
+            "placeId": "ChIJC9jqsVu3Bz4RjtfufE3AKgU"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.4936379,47.0828174&query_place_id=ChIJyfigJhm3Bz4RY7CBR8cd7k0",
+        "lat": 17.4936379,
+        "lon": 47.0828174,
+        "nb": "F3VM+F44، مخطط ب، شرورة 68342، المملكة العربية السعودية"
+      }
+    },
+    {
+      "id": "national-ejar-office-197388",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب زاوية الجنوب للخدمات العقارية",
+        "phones": [
+          "0591888843"
+        ],
+        "address": "شارع علي بن إبي طالب، العزيزية، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.4884386,47.1118527",
+        "lat": 17.48844,
+        "lon": 47.11185
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "corrected",
+      "status": "verified_name_activity_pin_phone_corrected_from_maps",
+      "note": "تطابقت هوية المكان والدبوس، وأظهرت بطاقة Maps رقمًا مختلفًا؛ اقترح الرقم المنشور أولًا مع حفظ الرقم السابق.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب زاوية الجنوب للخدمات العقارية شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B2%D8%A7%D9%88%D9%8A%D8%A9+%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "مكتب زاوية الجنوب للخدمات العقارية",
+            "fullAddress": "مكتب زاوية الجنوب للخدمات العقارية، الملك سلمان بن عبدالعزيز، مخطط ا، شرورة 68342، المملكة العربية السعودية",
+            "addressParts": [
+              "الملك سلمان بن عبدالعزيز",
+              "مخطط ا",
+              "شرورة 68342، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4818033,
+              47.0794653
+            ],
+            "phone": "+966 55 337 2221",
+            "category": "وكيل عقاري",
+            "address": "الملك سلمان بن عبدالعزيز، مخطط ا، شرورة 68342، المملكة العربية السعودية",
+            "placeId": "ChIJ-3B56cO3Bz4RE37liC8f3BA"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب زاوية الجنوب للخدمات العقارية شرورة 0591888843",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B2%D8%A7%D9%88%D9%8A%D8%A9+%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0591888843",
+          "card": {
+            "name": "مكتب زاوية الجنوب للخدمات العقارية",
+            "fullAddress": "مكتب زاوية الجنوب للخدمات العقارية، الملك سلمان بن عبدالعزيز، مخطط ا، شرورة 68342، المملكة العربية السعودية",
+            "addressParts": [
+              "الملك سلمان بن عبدالعزيز",
+              "مخطط ا",
+              "شرورة 68342، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4818033,
+              47.0794653
+            ],
+            "phone": "+966 55 337 2221",
+            "category": "وكيل عقاري",
+            "address": "الملك سلمان بن عبدالعزيز، مخطط ا، شرورة 68342، المملكة العربية السعودية",
+            "placeId": "ChIJ-3B56cO3Bz4RE37liC8f3BA"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.4818033,47.0794653&query_place_id=ChIJ-3B56cO3Bz4RE37liC8f3BA",
+        "lat": 17.4818033,
+        "lon": 47.0794653,
+        "nb": "الملك سلمان بن عبدالعزيز، مخطط ا، شرورة 68342، المملكة العربية السعودية",
+        "phones": [
+          "0553372221",
+          "0591888843"
+        ]
+      }
+    },
+    {
+      "id": "national-ejar-office-201296",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب الصرح الوافي العقاري",
+        "phones": [
+          "0559805005"
+        ],
+        "address": "شارع 30، العزيزية، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.49650941,47.11438537",
+        "lat": 17.49651,
+        "lon": 47.11438
+      },
+      "previousStatus": "unresolved_no_matching_maps_card",
+      "decisionClass": "unresolved",
+      "status": "unresolved_google_maps_card_identity_or_activity_conflict",
+      "note": "ظهرت بطاقة Maps، لكنها لا تطابق الاسم/النشاط/الهاتف بما يكفي لربطها بالسجل؛ لم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب الصرح الوافي العقاري شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B5%D8%B1%D8%AD+%D8%A7%D9%84%D9%88%D8%A7%D9%81%D9%8A+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "شقق الصرح الوافي",
+            "fullAddress": "شقق الصرح الوافي، 7353، شرورة 68341 2784، المملكة العربية السعودية",
+            "addressParts": [
+              "7353، شرورة 68341 2784،",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.5056238,
+              47.0749455
+            ],
+            "phone": null,
+            "category": "فندق",
+            "address": "7353، شرورة 68341 2784، المملكة العربية السعودية",
+            "placeId": "ChIJN1uOime1Bz4RCVSxcvno0U4"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب الصرح الوافي العقاري شرورة 0559805005",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B5%D8%B1%D8%AD+%D8%A7%D9%84%D9%88%D8%A7%D9%81%D9%8A+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0559805005",
+          "card": {
+            "name": "شقق الصرح الوافي",
+            "fullAddress": "شقق الصرح الوافي، 7353، شرورة 68341 2784، المملكة العربية السعودية",
+            "addressParts": [
+              "7353، شرورة 68341 2784،",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.5056238,
+              47.0749455
+            ],
+            "phone": null,
+            "category": "فندق",
+            "address": "7353، شرورة 68341 2784، المملكة العربية السعودية",
+            "placeId": "ChIJN1uOime1Bz4RCVSxcvno0U4"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-195198",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب الركن الغالي للخدمات العقارية",
+        "phones": [
+          "0530706737"
+        ],
+        "address": "علي بن أبي طالب، العزيزية، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.49325366,47.1129852",
+        "lat": 17.49325,
+        "lon": 47.11299
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_google_maps_card_identity_or_activity_conflict",
+      "note": "ظهرت بطاقة Maps، لكنها لا تطابق الاسم/النشاط/الهاتف بما يكفي لربطها بالسجل؛ لم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب الركن الغالي للخدمات العقارية شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B1%D9%83%D9%86+%D8%A7%D9%84%D8%BA%D8%A7%D9%84%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "مكتب الربع الغالي للعقارات",
+            "fullAddress": "F3VG+78R مكتب الربع الغالي للعقارات، مخطط ب، شرورة 68342، المملكة العربية السعودية",
+            "addressParts": [
+              "F3VG+78R",
+              "مخطط ب",
+              "شرورة 68342، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4932286,
+              47.0757606
+            ],
+            "phone": "+966 50 616 2755",
+            "category": "عقار شقق مفروشة",
+            "address": "F3VG+78R، مخطط ب، شرورة 68342، المملكة العربية السعودية",
+            "placeId": "ChIJZXT_qU21Bz4Rx8fSGNlRLpk"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب الركن الغالي للخدمات العقارية شرورة 0530706737",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B1%D9%83%D9%86+%D8%A7%D9%84%D8%BA%D8%A7%D9%84%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0530706737",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-218534",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب راية الحزم للعقارات",
+        "phones": [
+          "0559048913"
+        ],
+        "address": "سعد بن معاذ، السوق، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.4864762,47.1105224",
+        "lat": 17.48648,
+        "lon": 47.11052
+      },
+      "previousStatus": "unresolved_no_matching_maps_card",
+      "decisionClass": "unresolved",
+      "status": "unresolved_google_maps_card_identity_or_activity_conflict",
+      "note": "ظهرت بطاقة Maps، لكنها لا تطابق الاسم/النشاط/الهاتف بما يكفي لربطها بالسجل؛ لم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب راية الحزم للعقارات شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D8%A7%D9%8A%D8%A9+%D8%A7%D9%84%D8%AD%D8%B2%D9%85+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "مكتب عقار",
+            "fullAddress": "G33P+WHF مكتب عقار، مخطط ب، حي الامير مشعل،، شرورة 68341، المملكة العربية السعودية",
+            "addressParts": [
+              "G33P+WHF، مخطط ب",
+              "حي الامير مشعل،",
+              "شرورة 68341، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.5048241,
+              47.086431
+            ],
+            "phone": null,
+            "category": "عقار شقق مفروشة",
+            "address": "G33P+WHF، مخطط ب، حي الامير مشعل،، شرورة 68341، المملكة العربية السعودية",
+            "placeId": "ChIJgVOSc0q1Bz4Rd9vybCOtuuo"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب راية الحزم للعقارات شرورة 0559048913",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D8%A7%D9%8A%D8%A9+%D8%A7%D9%84%D8%AD%D8%B2%D9%85+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0559048913",
+          "card": {
+            "name": "شرورة",
+            "fullAddress": "شرورة السعودية",
+            "addressParts": [
+              "السعودية"
+            ],
+            "coordinates": [
+              17.4850321,
+              47.11672369999999
+            ],
+            "phone": null,
+            "category": null,
+            "address": "السعودية",
+            "placeId": "ChIJFQOVdqK2Bz4RHzjSkhb_TDk"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-202424",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب خلود يسلم بن صالح الصيعري العقاري",
+        "phones": [
+          "0555313116"
+        ],
+        "address": "شارع الملك سلمان بن عبد العزيز، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.49369689,47.08330216",
+        "lat": 17.4937,
+        "lon": 47.0833
+      },
+      "previousStatus": "unresolved_city_only",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب خلود يسلم بن صالح الصيعري العقاري شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%AE%D9%84%D9%88%D8%AF+%D9%8A%D8%B3%D9%84%D9%85+%D8%A8%D9%86+%D8%B5%D8%A7%D9%84%D8%AD+%D8%A7%D9%84%D8%B5%D9%8A%D8%B9%D8%B1%D9%8A+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "شرورة",
+            "fullAddress": "شرورة السعودية",
+            "addressParts": [
+              "السعودية"
+            ],
+            "coordinates": [
+              17.4850321,
+              47.11672369999999
+            ],
+            "phone": null,
+            "category": null,
+            "address": "السعودية",
+            "placeId": "ChIJFQOVdqK2Bz4RHzjSkhb_TDk"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب خلود يسلم بن صالح الصيعري العقاري شرورة 0555313116",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%AE%D9%84%D9%88%D8%AF+%D9%8A%D8%B3%D9%84%D9%85+%D8%A8%D9%86+%D8%B5%D8%A7%D9%84%D8%AD+%D8%A7%D9%84%D8%B5%D9%8A%D8%B9%D8%B1%D9%8A+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0555313116",
+          "card": {
+            "name": "شرورة",
+            "fullAddress": "شرورة السعودية",
+            "addressParts": [
+              "السعودية"
+            ],
+            "coordinates": [
+              17.4850321,
+              47.11672369999999
+            ],
+            "phone": null,
+            "category": null,
+            "address": "السعودية",
+            "placeId": "ChIJFQOVdqK2Bz4RHzjSkhb_TDk"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-211473",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب سالم علي الهمامي للعقار",
+        "phones": [
+          "0558305557"
+        ],
+        "address": "شارع الملك عبدالله بن عبد العزيز، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.49458669,47.10781171",
+        "lat": 17.49459,
+        "lon": 47.10781
+      },
+      "previousStatus": "unresolved_maps_search_no_match",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب سالم علي الهمامي للعقار شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B3%D8%A7%D9%84%D9%85+%D8%B9%D9%84%D9%8A+%D8%A7%D9%84%D9%87%D9%85%D8%A7%D9%85%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب سالم علي الهمامي للعقار شرورة 0558305557",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B3%D8%A7%D9%84%D9%85+%D8%B9%D9%84%D9%8A+%D8%A7%D9%84%D9%87%D9%85%D8%A7%D9%85%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0558305557",
+          "card": {
+            "name": "شرورة",
+            "fullAddress": "شرورة السعودية",
+            "addressParts": [
+              "السعودية"
+            ],
+            "coordinates": [
+              17.4850321,
+              47.11672369999999
+            ],
+            "phone": null,
+            "category": null,
+            "address": "السعودية",
+            "placeId": "ChIJFQOVdqK2Bz4RHzjSkhb_TDk"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-203088",
+      "city": "شرورة",
+      "stored": {
+        "name": "مؤسسة جسر التواصل للخدمات العقارية",
+        "phones": [
+          "0558818655"
+        ],
+        "address": "شارع علي بن إبي طالب، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.49284446,47.1137017",
+        "lat": 17.49284,
+        "lon": 47.1137
+      },
+      "previousStatus": "unresolved_maps_search_no_match",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مؤسسة جسر التواصل للخدمات العقارية شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%AC%D8%B3%D8%B1+%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مؤسسة جسر التواصل للخدمات العقارية شرورة 0558818655",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%AC%D8%B3%D8%B1+%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0558818655",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-199284",
+      "city": "شرورة",
+      "stored": {
+        "name": "مؤسسة تماني الخير للعقارات",
+        "phones": [
+          "0535025934"
+        ],
+        "address": "الملك عبدالله بن عبدالعزيز، العزيزية، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.4942737,47.1083959",
+        "lat": 17.49427,
+        "lon": 47.1084
+      },
+      "previousStatus": "unresolved_name_phone_conflict",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مؤسسة تماني الخير للعقارات شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%AA%D9%85%D8%A7%D9%86%D9%8A+%D8%A7%D9%84%D8%AE%D9%8A%D8%B1+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مؤسسة تماني الخير للعقارات شرورة 0535025934",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%AA%D9%85%D8%A7%D9%86%D9%8A+%D8%A7%D9%84%D8%AE%D9%8A%D8%B1+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0535025934",
+          "card": {
+            "name": "شرورة",
+            "fullAddress": "شرورة السعودية",
+            "addressParts": [
+              "السعودية"
+            ],
+            "coordinates": [
+              17.4850321,
+              47.11672369999999
+            ],
+            "phone": null,
+            "category": null,
+            "address": "السعودية",
+            "placeId": "ChIJFQOVdqK2Bz4RHzjSkhb_TDk"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-217576",
+      "city": "شرورة",
+      "stored": {
+        "name": "مؤسسة حسن مبخوت حمد الصيعري للعقارات",
+        "phones": [
+          "0532465017"
+        ],
+        "address": "السوق، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.48622549,47.11065173",
+        "lat": 17.48623,
+        "lon": 47.11065
+      },
+      "previousStatus": "partial_name_location_phone_unverified",
+      "decisionClass": "partial",
+      "status": "verified_name_activity_and_pin_phone_unlisted",
+      "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مؤسسة حسن مبخوت حمد الصيعري للعقارات شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%AD%D8%B3%D9%86+%D9%85%D8%A8%D8%AE%D9%88%D8%AA+%D8%AD%D9%85%D8%AF+%D8%A7%D9%84%D8%B5%D9%8A%D8%B9%D8%B1%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "حسن مبخوت بن ناصر الصيعري للعقارات",
+            "fullAddress": "حسن مبخوت بن ناصر الصيعري للعقارات، 3534 شارع عكاشة بن محصن الأسدي، الفهد، NSSA7308، 7308، شرورة 68372، المملكة العربية السعودية",
+            "addressParts": [
+              "3534 شارع عكاشة بن محصن الأسدي، الفهد",
+              "NSSA7308، 7308",
+              "شرورة 68372، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4861283,
+              47.1111379
+            ],
+            "phone": null,
+            "category": "شركة إدارة عقارات",
+            "address": "3534 شارع عكاشة بن محصن الأسدي، الفهد، NSSA7308، 7308، شرورة 68372، المملكة العربية السعودية",
+            "placeId": "ChIJqT94JAC3Bz4Rk1sRQYIT-LY"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مؤسسة حسن مبخوت حمد الصيعري للعقارات شرورة 0532465017",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%AD%D8%B3%D9%86+%D9%85%D8%A8%D8%AE%D9%88%D8%AA+%D8%AD%D9%85%D8%AF+%D8%A7%D9%84%D8%B5%D9%8A%D8%B9%D8%B1%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0532465017",
+          "card": {
+            "name": "حسن مبخوت بن ناصر الصيعري للعقارات",
+            "fullAddress": "حسن مبخوت بن ناصر الصيعري للعقارات، 3534 شارع عكاشة بن محصن الأسدي، الفهد، NSSA7308، 7308، شرورة 68372، المملكة العربية السعودية",
+            "addressParts": [
+              "3534 شارع عكاشة بن محصن الأسدي، الفهد",
+              "NSSA7308، 7308",
+              "شرورة 68372، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4861283,
+              47.1111379
+            ],
+            "phone": null,
+            "category": "شركة إدارة عقارات",
+            "address": "3534 شارع عكاشة بن محصن الأسدي، الفهد، NSSA7308، 7308، شرورة 68372، المملكة العربية السعودية",
+            "placeId": "ChIJqT94JAC3Bz4Rk1sRQYIT-LY"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.4861283,47.1111379&query_place_id=ChIJqT94JAC3Bz4Rk1sRQYIT-LY",
+        "lat": 17.4861283,
+        "lon": 47.1111379,
+        "nb": "3534 شارع عكاشة بن محصن الأسدي، الفهد، NSSA7308، 7308، شرورة 68372، المملكة العربية السعودية"
+      }
+    },
+    {
+      "id": "national-ejar-office-204481",
+      "city": "شرورة",
+      "stored": {
+        "name": "مؤسسة صالح بن سليمان بن مسعد الصيعري للتطوير والاستثمار العقاري",
+        "phones": [
+          "0554189333"
+        ],
+        "address": "شارع الحارث بن ميناء، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.47806543,47.11292799",
+        "lat": 17.47807,
+        "lon": 47.11293
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مؤسسة صالح بن سليمان بن مسعد الصيعري للتطوير والاستثمار العقاري شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B5%D8%A7%D9%84%D8%AD+%D8%A8%D9%86+%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86+%D8%A8%D9%86+%D9%85%D8%B3%D8%B9%D8%AF+%D8%A7%D9%84%D8%B5%D9%8A%D8%B9%D8%B1%D9%8A+%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1+%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مؤسسة صالح بن سليمان بن مسعد الصيعري للتطوير والاستثمار العقاري شرورة 0554189333",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B5%D8%A7%D9%84%D8%AD+%D8%A8%D9%86+%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86+%D8%A8%D9%86+%D9%85%D8%B3%D8%B9%D8%AF+%D8%A7%D9%84%D8%B5%D9%8A%D8%B9%D8%B1%D9%8A+%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1+%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0554189333",
+          "card": {
+            "name": "شرورة",
+            "fullAddress": "شرورة السعودية",
+            "addressParts": [
+              "السعودية"
+            ],
+            "coordinates": [
+              17.4850321,
+              47.11672369999999
+            ],
+            "phone": null,
+            "category": null,
+            "address": "السعودية",
+            "placeId": "ChIJFQOVdqK2Bz4RHzjSkhb_TDk"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-217480",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب بصمة شرورة العقاري",
+        "phones": [
+          "0552276163"
+        ],
+        "address": "شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.4850321,47.1167237",
+        "lat": 17.48503,
+        "lon": 47.11672
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_google_maps_card_identity_or_activity_conflict",
+      "note": "ظهرت بطاقة Maps، لكنها لا تطابق الاسم/النشاط/الهاتف بما يكفي لربطها بالسجل؛ لم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب بصمة شرورة العقاري شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A8%D8%B5%D9%85%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "ركن شروره العقاري",
+            "fullAddress": "ركن شروره العقاري، 5232، الفيصلية، شرورة 68372 7291 المملكة العربية السعودية",
+            "addressParts": [
+              "5232، الفيصلية، شرورة 68372 7291",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.485609,
+              47.1269634
+            ],
+            "phone": null,
+            "category": "شركة إدارة عقارات",
+            "address": "5232، الفيصلية، شرورة 68372 7291 المملكة العربية السعودية",
+            "placeId": "ChIJT4vglum3Bz4Rfg6kECRXruY"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب بصمة شرورة العقاري شرورة 0552276163",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A8%D8%B5%D9%85%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0552276163",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-195389",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب زاوية المستقبل للعقارات",
+        "phones": [
+          "0557373063"
+        ],
+        "address": "شارع الملك سلمان بن عبد العزيز، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.49343232,47.08272722",
+        "lat": 17.49343,
+        "lon": 47.08273
+      },
+      "previousStatus": "unresolved_maps_ui_timeout",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب زاوية المستقبل للعقارات شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B2%D8%A7%D9%88%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب زاوية المستقبل للعقارات شرورة 0557373063",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B2%D8%A7%D9%88%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0557373063",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-488287",
+      "city": "شرورة",
+      "stored": {
+        "name": "مؤسسة منارة الدليل الذهبي للخدمات العقارية",
+        "phones": [
+          "0500224917"
+        ],
+        "address": "الملك سعود بن عبدالعزيز، العزيزية، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.49693292,47.11439996",
+        "lat": 17.49693,
+        "lon": 47.1144
+      },
+      "previousStatus": "unresolved_no_matching_maps_card",
+      "decisionClass": "unresolved",
+      "status": "unresolved_google_maps_card_identity_or_activity_conflict",
+      "note": "ظهرت بطاقة Maps، لكنها لا تطابق الاسم/النشاط/الهاتف بما يكفي لربطها بالسجل؛ لم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مؤسسة منارة الدليل الذهبي للخدمات العقارية شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D9%85%D9%86%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "مكتب الدليل العقاري شروره",
+            "fullAddress": "مكتب الدليل العقاري شروره، العزيزية شارع الملك سعود، مقابل محطة الجزيرة، شروره المملكة العربية السعودية",
+            "addressParts": [
+              "العزيزية شارع الملك سعود، مقابل محطة الجزيرة",
+              "شروره",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4971397,
+              47.1144143
+            ],
+            "phone": "+966 58 008 2424",
+            "category": "عقار شقق مفروشة",
+            "address": "العزيزية شارع الملك سعود، مقابل محطة الجزيرة، شروره المملكة العربية السعودية",
+            "placeId": "ChIJC9jqsVu3Bz4RjtfufE3AKgU"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مؤسسة منارة الدليل الذهبي للخدمات العقارية شرورة 0500224917",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D9%85%D9%86%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0500224917",
+          "card": {
+            "name": "مكتب الدليل العقاري شروره",
+            "fullAddress": "مكتب الدليل العقاري شروره، العزيزية شارع الملك سعود، مقابل محطة الجزيرة، شروره المملكة العربية السعودية",
+            "addressParts": [
+              "العزيزية شارع الملك سعود، مقابل محطة الجزيرة",
+              "شروره",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4971397,
+              47.1144143
+            ],
+            "phone": "+966 58 008 2424",
+            "category": "عقار شقق مفروشة",
+            "address": "العزيزية شارع الملك سعود، مقابل محطة الجزيرة، شروره المملكة العربية السعودية",
+            "placeId": "ChIJC9jqsVu3Bz4RjtfufE3AKgU"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-204553",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب ركن دار الاجواد للعقار",
+        "phones": [
+          "0581453711"
+        ],
+        "address": "عمر بن الخطاب، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.49094413,47.12182303",
+        "lat": 17.49094,
+        "lon": 47.12182
+      },
+      "previousStatus": "unresolved_no_matching_maps_card",
+      "decisionClass": "unresolved",
+      "status": "unresolved_google_maps_card_identity_or_activity_conflict",
+      "note": "ظهرت بطاقة Maps، لكنها لا تطابق الاسم/النشاط/الهاتف بما يكفي لربطها بالسجل؛ لم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب ركن دار الاجواد للعقار شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%83%D9%86+%D8%AF%D8%A7%D8%B1+%D8%A7%D9%84%D8%A7%D8%AC%D9%88%D8%A7%D8%AF+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "مكتب الدليل العقاري شروره",
+            "fullAddress": "مكتب الدليل العقاري شروره، العزيزية شارع الملك سعود، مقابل محطة الجزيرة، شروره المملكة العربية السعودية",
+            "addressParts": [
+              "العزيزية شارع الملك سعود، مقابل محطة الجزيرة",
+              "شروره",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4971397,
+              47.1144143
+            ],
+            "phone": "+966 58 008 2424",
+            "category": "عقار شقق مفروشة",
+            "address": "العزيزية شارع الملك سعود، مقابل محطة الجزيرة، شروره المملكة العربية السعودية",
+            "placeId": "ChIJC9jqsVu3Bz4RjtfufE3AKgU"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب ركن دار الاجواد للعقار شرورة 0581453711",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%83%D9%86+%D8%AF%D8%A7%D8%B1+%D8%A7%D9%84%D8%A7%D8%AC%D9%88%D8%A7%D8%AF+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0581453711",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-ejar-office-213195",
+      "city": "شرورة",
+      "stored": {
+        "name": "مكتب درع شرورة للعقارات",
+        "phones": [
+          "0544558810"
+        ],
+        "address": "شارع عمر بن الخطاب، شرورة، نجران، المملكة العربية السعودية",
+        "maps": "https://maps.google.com/maps?q=17.49140958,47.1181668",
+        "lat": 17.49141,
+        "lon": 47.11817
+      },
+      "previousStatus": "unresolved_no_matching_maps_card",
+      "decisionClass": "unresolved",
+      "status": "unresolved_google_maps_card_identity_or_activity_conflict",
+      "note": "ظهرت بطاقة Maps، لكنها لا تطابق الاسم/النشاط/الهاتف بما يكفي لربطها بالسجل؛ لم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب درع شرورة للعقارات شرورة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%AF%D8%B1%D8%B9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "card": {
+            "name": "ديار الأجداد للخدمات العقارية والتسويق العقارات.Diyar Al Ajdad Real Estate Office",
+            "fullAddress": "ديار الأجداد للخدمات العقارية والتسويق العقارات.Diyar Al Ajdad Real Estate Office, ابو بكر الصديق، سلطانة، شرورة 68372، المملكة العربية السعودية",
+            "addressParts": [
+              "ابو بكر الصديق",
+              "سلطانة",
+              "شرورة 68372، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.4821943,
+              47.1135683
+            ],
+            "phone": "+966 54 800 9701",
+            "category": "وكالة عقارات",
+            "address": "ابو بكر الصديق, سلطانة، شرورة 68372، المملكة العربية السعودية",
+            "placeId": "ChIJ3b5lj_C3Bz4Rsu1rj7ILaj4"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب درع شرورة للعقارات شرورة 0544558810",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%AF%D8%B1%D8%B9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9+0544558810",
+          "card": {
+            "name": "شرورة",
+            "fullAddress": "شرورة السعودية",
+            "addressParts": [
+              "السعودية"
+            ],
+            "coordinates": [
+              17.4850321,
+              47.11672369999999
+            ],
+            "phone": null,
+            "category": null,
+            "address": "السعودية",
+            "placeId": "ChIJFQOVdqK2Bz4RHzjSkhb_TDk"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "office-maps-2ae22144b796",
+      "city": "بيشة",
+      "stored": {
+        "name": "مكتب الثريا المميز للعقار والخدمات العامه",
+        "phones": [
+          "0509980021"
+        ],
+        "address": "XHWX+CVM، شارع الخالدية، الفهد، بيشة 61361، المملكة العربية السعودية",
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AB%D8%B1%D9%8A%D8%A7+%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%87%E2%80%AD/@19.9960994,42.5996569,17z/data=!3m1!4b1!4m6!3m5!1s0x15f029986129aca1:0x7e9b49c590c078bb!8m2!3d19.9960994!4d42.5996569!16s%2Fg%2F11j4ldcsc2",
+        "lat": 19.9961,
+        "lon": 42.59966
+      },
+      "previousStatus": "verified_name_phone_location_activity_ambiguous",
+      "decisionClass": "partial",
+      "status": "verified_name_phone_and_pin_activity_category_ambiguous",
+      "note": "تطابق الاسم والهاتف والدبوس؛ تصنيف Maps هو «مكتب الشركات» أو تصنيف عام ولا يثبت النشاط العقاري تفصيليًا.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب الثريا المميز للعقار والخدمات العامه بيشة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AB%D8%B1%D9%8A%D8%A7+%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%87+%D8%A8%D9%8A%D8%B4%D8%A9",
+          "card": {
+            "name": "مكتب الثريا المميز للعقار والخدمات العامه",
+            "fullAddress": "XHWX+CVM مكتب الثريا المميز للعقار والخدمات العامه، شارع الخالدية، الفهد، بيشة 61361، المملكة العربية السعودية",
+            "addressParts": [
+              "XHWX+CVM",
+              "شارع الخالدية، الفهد",
+              "بيشة 61361، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              19.9960994,
+              42.5996569
+            ],
+            "phone": "+966 50 998 0021",
+            "category": "مكتب الشركات",
+            "address": "XHWX+CVM، شارع الخالدية، الفهد، بيشة 61361، المملكة العربية السعودية",
+            "placeId": "ChIJoawpYZgp8BURu3jAkMVJm34"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب الثريا المميز للعقار والخدمات العامه بيشة 0509980021",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AB%D8%B1%D9%8A%D8%A7+%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%87+%D8%A8%D9%8A%D8%B4%D8%A9+0509980021",
+          "card": {
+            "name": "مكتب الثريا المميز للعقار والخدمات العامه",
+            "fullAddress": "XHWX+CVM مكتب الثريا المميز للعقار والخدمات العامه، شارع الخالدية، الفهد، بيشة 61361، المملكة العربية السعودية",
+            "addressParts": [
+              "XHWX+CVM",
+              "شارع الخالدية، الفهد",
+              "بيشة 61361، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              19.9960994,
+              42.5996569
+            ],
+            "phone": "+966 50 998 0021",
+            "category": "مكتب الشركات",
+            "address": "XHWX+CVM، شارع الخالدية، الفهد، بيشة 61361، المملكة العربية السعودية",
+            "placeId": "ChIJoawpYZgp8BURu3jAkMVJm34"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-yango-office-17922235385",
+      "city": "بيشة",
+      "stored": {
+        "name": "مكتب ركن الاعمال للخدمات الالكترونيه",
+        "phones": [
+          "0567930789"
+        ],
+        "address": "بيشة, حي الخزامى, ALAB4346",
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%83%D9%86+%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%E2%80%AD/@20.0225837,42.623621,17z/data=!3m1!4b1!4m6!3m5!1s0x15f029a4bbe4b12b:0x11d9185e64088b5a!8m2!3d20.0225837!4d42.623621!16s%2Fg%2F11t6pkp0j_",
+        "lat": 20.01468,
+        "lon": 42.61744
+      },
+      "previousStatus": "verified_name_phone_location_unconfirmed",
+      "decisionClass": "corrected",
+      "status": "verified_identity_phone_pin_non_real_estate_activity",
+      "note": "تطابق الاسم والهاتف في Maps، لكن النشاط المنشور «خدمات المعلومات» وليس نشاطًا عقاريًا؛ اقترح استبعاده من مكاتب العقار وتصحيح الدبوس.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب ركن الاعمال للخدمات الالكترونيه بيشة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%83%D9%86+%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%A7%D9%84+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D9%87+%D8%A8%D9%8A%D8%B4%D8%A9",
+          "card": {
+            "name": "مكتب ركن الأعمال",
+            "fullAddress": "مكتب ركن الأعمال، بجوار محطة بي جروب، الخزامى - الحزام الشمالي، الخزامى، بيشة 63611، المملكة العربية السعودية",
+            "addressParts": [
+              "بجوار محطة بي جروب",
+              "الخزامى - الحزام الشمالي، الخزامى",
+              "بيشة 63611، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              20.0225837,
+              42.623621
+            ],
+            "phone": "+966 56 793 0789",
+            "category": "خدمات المعلومات",
+            "address": "بجوار محطة بي جروب، الخزامى - الحزام الشمالي، الخزامى، بيشة 63611، المملكة العربية السعودية",
+            "placeId": "ChIJK7Hku6Qp8BURWosIZF4Y2RE"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب ركن الاعمال للخدمات الالكترونيه بيشة 0567930789",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%83%D9%86+%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%A7%D9%84+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D9%87+%D8%A8%D9%8A%D8%B4%D8%A9+0567930789",
+          "card": {
+            "name": "مكتب ركن الأعمال",
+            "fullAddress": "مكتب ركن الأعمال، بجوار محطة بي جروب، الخزامى - الحزام الشمالي، الخزامى، بيشة 63611، المملكة العربية السعودية",
+            "addressParts": [
+              "بجوار محطة بي جروب",
+              "الخزامى - الحزام الشمالي، الخزامى",
+              "بيشة 63611، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              20.0225837,
+              42.623621
+            ],
+            "phone": "+966 56 793 0789",
+            "category": "خدمات المعلومات",
+            "address": "بجوار محطة بي جروب، الخزامى - الحزام الشمالي، الخزامى، بيشة 63611، المملكة العربية السعودية",
+            "placeId": "ChIJK7Hku6Qp8BURWosIZF4Y2RE"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=20.0225837,42.623621&query_place_id=ChIJK7Hku6Qp8BURWosIZF4Y2RE",
+        "lat": 20.0225837,
+        "lon": 42.623621,
+        "nb": "بجوار محطة بي جروب، الخزامى - الحزام الشمالي، الخزامى، بيشة 63611، المملكة العربية السعودية",
+        "activityReviewStatus": "archived_non_real_estate",
+        "archiveReason": "بطاقة Google Maps تصنف النشاط خدمات معلومات، ولا تعرضه كمكتب عقاري."
+      }
+    },
+    {
+      "id": "national-google-office-ChIJV_TW6sgb5RUR4aUYHPXoCUw",
+      "city": "النماص",
+      "stored": {
+        "name": "مكتب الريان العقاري",
+        "phones": [
+          "0172820648"
+        ],
+        "address": "44GJ+PR5، طريق الأمير سلطان بن عبدالعزيز، السلام، النماص 67387، المملكة العربية السعودية",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJV_TW6sgb5RUR4aUYHPXoCUw",
+        "lat": 19.12676,
+        "lon": 42.13211
+      },
+      "previousStatus": "verified_name_phone_location_activity_ambiguous",
+      "decisionClass": "partial",
+      "status": "verified_name_phone_and_pin_activity_category_ambiguous",
+      "note": "تطابق الاسم والهاتف والدبوس؛ تصنيف Maps هو «مكتب الشركات» أو تصنيف عام ولا يثبت النشاط العقاري تفصيليًا.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب الريان العقاري النماص",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%A7%D9%84%D9%86%D9%85%D8%A7%D8%B5",
+          "card": {
+            "name": "مكتب الريان العقاري",
+            "fullAddress": "44GJ+PR5 مكتب الريان العقاري، طريق الأمير سلطان بن عبدالعزيز، السلام، النماص 67387، المملكة العربية السعودية",
+            "addressParts": [
+              "44GJ+PR5",
+              "طريق الأمير سلطان بن عبدالعزيز، السلام",
+              "النماص 67387، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              19.1267603,
+              42.132107
+            ],
+            "phone": "+966 17 282 0648",
+            "category": "مكتب الشركات",
+            "address": "44GJ+PR5، طريق الأمير سلطان بن عبدالعزيز، السلام، النماص 67387، المملكة العربية السعودية",
+            "placeId": "ChIJV_TW6sgb5RUR4aUYHPXoCUw"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب الريان العقاري النماص 0172820648",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%A7%D9%84%D9%86%D9%85%D8%A7%D8%B5+0172820648",
+          "card": {
+            "name": "مكتب الريان العقاري",
+            "fullAddress": "44GJ+PR5 مكتب الريان العقاري، طريق الأمير سلطان بن عبدالعزيز، السلام، النماص 67387، المملكة العربية السعودية",
+            "addressParts": [
+              "44GJ+PR5",
+              "طريق الأمير سلطان بن عبدالعزيز، السلام",
+              "النماص 67387، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              19.1267603,
+              42.132107
+            ],
+            "phone": "+966 17 282 0648",
+            "category": "مكتب الشركات",
+            "address": "44GJ+PR5، طريق الأمير سلطان بن عبدالعزيز، السلام، النماص 67387، المملكة العربية السعودية",
+            "placeId": "ChIJV_TW6sgb5RUR4aUYHPXoCUw"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-google-office-ChIJ00i8UKa-BxYRbIat6CzAxjM",
+      "city": "صامطة",
+      "stored": {
+        "name": "المذكور للعقار",
+        "phones": [
+          "0504571418"
+        ],
+        "address": "JW2Q+6FG، صامطة 86735، المملكة العربية السعودية",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ00i8UKa-BxYRbIat6CzAxjM",
+        "lat": 16.60057,
+        "lon": 42.93871
+      },
+      "previousStatus": "verified_name_phone_activity_category_ambiguous",
+      "decisionClass": "partial",
+      "status": "verified_name_phone_and_pin_activity_category_ambiguous",
+      "note": "تطابق الاسم والهاتف والدبوس؛ تصنيف Maps هو «مكتب الشركات» أو تصنيف عام ولا يثبت النشاط العقاري تفصيليًا.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "المذكور للعقار صامطة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D8%A7%D9%84%D9%85%D8%B0%D9%83%D9%88%D8%B1+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%B5%D8%A7%D9%85%D8%B7%D8%A9",
+          "card": {
+            "name": "المذكور للعقار",
+            "fullAddress": "JW2Q+6FG المذكور للعقار، صامطة 86735، المملكة العربية السعودية",
+            "addressParts": [
+              "JW2Q+6FG",
+              "صامطة 86735",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              16.600571,
+              42.938708
+            ],
+            "phone": "+966 50 457 1418",
+            "category": "مكتب الشركات",
+            "address": "JW2Q+6FG، صامطة 86735، المملكة العربية السعودية",
+            "placeId": "ChIJ00i8UKa-BxYRbIat6CzAxjM"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "المذكور للعقار صامطة 0504571418",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D8%A7%D9%84%D9%85%D8%B0%D9%83%D9%88%D8%B1+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%B5%D8%A7%D9%85%D8%B7%D8%A9+0504571418",
+          "card": {
+            "name": "المذكور للعقار",
+            "fullAddress": "JW2Q+6FG المذكور للعقار، صامطة 86735، المملكة العربية السعودية",
+            "addressParts": [
+              "JW2Q+6FG",
+              "صامطة 86735",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              16.600571,
+              42.938708
+            ],
+            "phone": "+966 50 457 1418",
+            "category": "مكتب الشركات",
+            "address": "JW2Q+6FG، صامطة 86735، المملكة العربية السعودية",
+            "placeId": "ChIJ00i8UKa-BxYRbIat6CzAxjM"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-google-office-ChIJTRnGNSO_BxYRMfpssHNVszw",
+      "city": "صامطة",
+      "stored": {
+        "name": "خدمات عقارية",
+        "phones": [
+          "0537072586"
+        ],
+        "address": "الملك فيصل، صامطة 86736، المملكة العربية السعودية",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJTRnGNSO_BxYRMfpssHNVszw",
+        "lat": 16.59528,
+        "lon": 42.93685
+      },
+      "previousStatus": "verified_name_phone_location_activity_ambiguous",
+      "decisionClass": "unresolved",
+      "status": "unresolved_no_matching_google_maps_place_card",
+      "note": "لم تعرض استعلامات الاسم/المدينة والاسم/الهاتف بطاقة مكان مطابقة يمكن ربطها بالسجل؛ بقي الاسم والهاتف والدبوس غير محسومين ولم يُقترح تعديل.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "خدمات عقارية صامطة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B5%D8%A7%D9%85%D8%B7%D8%A9",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "خدمات عقارية صامطة 0537072586",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B5%D8%A7%D9%85%D8%B7%D8%A9+0537072586",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "v9-office-8084eb1ba210",
+      "city": "بيش",
+      "stored": {
+        "name": "مكتب المريع للعقار",
+        "phones": [],
+        "address": "طريق الملك عبدالله، بيش",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%85%D8%B1%D9%8A%D8%B9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A8%D9%8A%D8%B4",
+        "lat": null,
+        "lon": null
+      },
+      "previousStatus": "verified_name_activity_location_phone_unlisted",
+      "decisionClass": "partial",
+      "status": "verified_name_activity_and_pin_phone_unlisted",
+      "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب المريع للعقار بيش",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%85%D8%B1%D9%8A%D8%B9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%A8%D9%8A%D8%B4",
+          "card": {
+            "name": "مكتب المريع للعقار",
+            "fullAddress": "مكتب المريع للعقار، طريق الملك عبدالله، بيش 87312، المملكة العربية السعودية",
+            "addressParts": [
+              "طريق الملك عبدالله",
+              "بيش 87312",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              17.3749935,
+              42.522061
+            ],
+            "phone": null,
+            "category": "مُصفٍّ عقاري",
+            "address": "طريق الملك عبدالله، بيش 87312، المملكة العربية السعودية",
+            "placeId": "ChIJ5QwB6B7L4hURyK2H0XiohXU"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.3749935,42.522061&query_place_id=ChIJ5QwB6B7L4hURyK2H0XiohXU",
+        "lat": 17.3749935,
+        "lon": 42.522061,
+        "nb": "طريق الملك عبدالله، بيش 87312، المملكة العربية السعودية"
+      }
+    },
+    {
+      "id": "v9-office-8c11ea4278b3",
+      "city": "سبت العلايا",
+      "stored": {
+        "name": "مكتب الديرة",
+        "phones": [],
+        "address": "الواحة، سبت العلايا",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7",
+        "lat": 19.62859,
+        "lon": 42.00734
+      },
+      "previousStatus": "verified_name_activity_location_phone_unlisted",
+      "decisionClass": "partial",
+      "status": "verified_name_activity_and_pin_phone_unlisted",
+      "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب الديرة سبت العلايا",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9+%D8%B3%D8%A8%D8%AA+%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7",
+          "card": {
+            "name": "مكتب الديرة",
+            "fullAddress": "مكتب الديرة، 2190 بلقرن 2، حي الواحة، AIDB7745، 7745، سبت العلاية 67314، المملكة العربية السعودية",
+            "addressParts": [
+              "2190 بلقرن 2، حي الواحة",
+              "AIDB7745، 7745",
+              "سبت العلاية 67314، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              19.6290836,
+              41.9910336
+            ],
+            "phone": null,
+            "category": "وكالة عقارات",
+            "address": "2190 بلقرن 2، حي الواحة، AIDB7745، 7745، سبت العلاية 67314، المملكة العربية السعودية",
+            "placeId": "ChIJv9DtXgB_5RURqMgm6pNffTU"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=19.6290836,41.9910336&query_place_id=ChIJv9DtXgB_5RURqMgm6pNffTU",
+        "lat": 19.6290836,
+        "lon": 41.9910336,
+        "nb": "2190 بلقرن 2، حي الواحة، AIDB7745، 7745، سبت العلاية 67314، المملكة العربية السعودية"
+      }
+    },
+    {
+      "id": "v9-office-aea1d102e95c",
+      "city": "سبت العلايا",
+      "stored": {
+        "name": "مؤسسة الديرة للخدمات العقارية",
+        "phones": [
+          "0551133423"
+        ],
+        "address": "سبت العلايا",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200551133423%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7",
+        "lat": null,
+        "lon": null
+      },
+      "previousStatus": "verified_name_phone_location_activity_ambiguous",
+      "decisionClass": "partial",
+      "status": "verified_name_phone_and_pin_activity_category_ambiguous",
+      "note": "تطابق الاسم والهاتف والدبوس؛ تصنيف Maps هو «مكتب الشركات» أو تصنيف عام ولا يثبت النشاط العقاري تفصيليًا.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مؤسسة الديرة للخدمات العقارية سبت العلايا",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B3%D8%A8%D8%AA+%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7",
+          "card": {
+            "name": "مؤسسة الديرة للخدمات العقارية",
+            "fullAddress": "JXHR+H9G مؤسسة الديرة للخدمات العقارية, 30، الواحة، سبت العلاية 67533،، المملكة العربية السعودية",
+            "addressParts": [
+              "JXHR+H9G",
+              "30، الواحة",
+              "سبت العلاية 67533،، المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              19.6289414,
+              41.9909566
+            ],
+            "phone": "+966 55 113 3423",
+            "category": "مكتب الشركات",
+            "address": "JXHR+H9G, 30، الواحة، سبت العلاية 67533،، المملكة العربية السعودية",
+            "placeId": "ChIJc8fZ6Y1_5RURQFgoA3CY6UY"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مؤسسة الديرة للخدمات العقارية سبت العلايا 0551133423",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B3%D8%A8%D8%AA+%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7+0551133423",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "entity-f92d70951d09",
+      "city": "الباحة",
+      "stored": {
+        "name": "مكتب عقار الباحة",
+        "phones": [
+          "0555775450"
+        ],
+        "address": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200555775450%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9",
+        "lat": null,
+        "lon": null
+      },
+      "previousStatus": "verified_name_activity_phone_conflict_preserved",
+      "decisionClass": "archived",
+      "status": "verified_duplicate_preserved_current_card_not_returned",
+      "note": "السجل محفوظ كنسخة مكررة من البطاقة الأساسية؛ استعلام الإعادة لم يعرض بطاقة مستقلة، ولم يُقترح تعديل جديد.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب عقار الباحة الباحة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B9%D9%82%D8%A7%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9+%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب عقار الباحة الباحة 0555775450",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B9%D9%82%D8%A7%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9+%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9+0555775450",
+          "card": null,
+          "outcome": "no_place_card",
+          "error": "no_place_card"
+        }
+      ],
+      "proposedPatch": null
+    },
+    {
+      "id": "national-yango-office-227054884773",
+      "city": "بيشة",
+      "stored": {
+        "name": "مكتب أصول الشارقة للعقار",
+        "phones": [
+          "0534200412"
+        ],
+        "address": "عسير, بيشة, حي الخزامى",
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A3%D8%B5%D9%88%D9%84+%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D9%82%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1/@20.0070475,42.6183296,17z/data=!3m1!4b1!4m6!3m5!1s0x15f02b65276ac4a7:0xce5490afb6b60bc9!8m2!3d20.0070475!4d42.6183296!16s%2Fg%2F11q8yhy47l",
+        "lat": 20.01468,
+        "lon": 42.61744
+      },
+      "previousStatus": "verified_name_activity_phone_unlisted_permanently_closed",
+      "decisionClass": "archived",
+      "status": "verified_name_activity_pin_permanently_closed_phone_unlisted",
+      "note": "بطاقة Maps المطابقة موسومة مغلق نهائيًا ولا تعرض هاتفًا؛ حالة الأرشفة الحالية صحيحة.",
+      "evidence": [
+        {
+          "queryType": "name_city",
+          "query": "مكتب أصول الشارقة للعقار بيشة",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A3%D8%B5%D9%88%D9%84+%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D9%82%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%A8%D9%8A%D8%B4%D8%A9",
+          "card": {
+            "name": "مكتب أصول الشارقة للعقار",
+            "fullAddress": "مكتب أصول الشارقة للعقار، 7416، الخزامى، بيشة 67711 3790، المملكة العربية السعودية",
+            "addressParts": [
+              "7416، الخزامى، بيشة 67711 3790،",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              20.0070475,
+              42.6183296
+            ],
+            "phone": null,
+            "category": "وكالة عقارات",
+            "address": "7416، الخزامى، بيشة 67711 3790، المملكة العربية السعودية",
+            "placeId": "ChIJp8RqJ2Ur8BURyQu2tq-QVM4"
+          },
+          "outcome": "card_read",
+          "error": null
+        },
+        {
+          "queryType": "name_phone",
+          "query": "مكتب أصول الشارقة للعقار بيشة 0534200412",
+          "mapsEmbedUrl": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A3%D8%B5%D9%88%D9%84+%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D9%82%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D8%A8%D9%8A%D8%B4%D8%A9+0534200412",
+          "card": {
+            "name": "مكتب أصول الشارقة للعقار",
+            "fullAddress": "مكتب أصول الشارقة للعقار، 7416، الخزامى، بيشة 67711 3790، المملكة العربية السعودية",
+            "addressParts": [
+              "7416، الخزامى، بيشة 67711 3790،",
+              "المملكة العربية السعودية"
+            ],
+            "coordinates": [
+              20.0070475,
+              42.6183296
+            ],
+            "phone": null,
+            "category": "وكالة عقارات",
+            "address": "7416، الخزامى، بيشة 67711 3790، المملكة العربية السعودية",
+            "placeId": "ChIJp8RqJ2Ur8BURyQu2tq-QVM4"
+          },
+          "outcome": "card_read",
+          "error": null
+        }
+      ],
+      "proposedPatch": null
+    }
+  ]
+}

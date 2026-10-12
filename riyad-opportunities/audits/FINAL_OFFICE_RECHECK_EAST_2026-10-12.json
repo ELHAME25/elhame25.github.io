@@ -1,0 +1,923 @@
+{
+  "schema": "final-office-recheck-v1",
+  "region": "east",
+  "generatedAt": "2026-10-12",
+  "sourceCandidates": "audits/OFFICE_MAPS_REMAINING_CANDIDATES_2026-10-12.json",
+  "sourceOffices": "data/offices.json",
+  "scopeRule": "East records requiring recheck: unresolved/partial statuses plus four verified/name statuses with phone, category, place-field or unlisted-phone ambiguity.",
+  "summary": {
+    "assignedEast": 40,
+    "rechecked": 28,
+    "unresolved": 22,
+    "partial": 6,
+    "newProvenCorrections": 0,
+    "oldPhonesDeleted": 0
+  },
+  "method": "Downloaded each assigned public Google Maps URL with redirects enabled and inspected the returned Maps payload for an exact name, activity, published phone, address and pin. Conflicting or missing cards were left unresolved; stored phones were preserved.",
+  "results": [
+    {
+      "id": "national-ejar-office-197979",
+      "city": "الظهران",
+      "storedName": "مكتب يافال للعقارات",
+      "storedPhones": [
+        "0535644555"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_maps_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%8A%D8%A7%D9%81%D8%A7%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200535644555%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 229205
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "ابن بطوطة، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.34846,
+        "lon": 50.1345
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "No exact name/phone result. Different real estate office and residential compound appeared; unresolved.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-196211",
+      "city": "الظهران",
+      "storedName": "مكتب فلاالشرق للخدمات العقارية",
+      "storedPhones": [
+        "0500978590",
+        "0554733279"
+      ],
+      "decision": "partial",
+      "sourceStatus": "verified_name_activity_phone_conflict_preserved",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/place/%D9%81%D9%84%D8%A7+%D8%A7%D9%84%D8%B4%D8%B1%D9%82+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9/@26.3504767,50.138793,17z/data=!3m1!4b1!4m6!3m5!1s0x3e49e44bb2c196d3:0x811d41539699a851!8m2!3d26.3504767!4d50.138793!16s/g/11gdjpq3pf",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 223737
+      },
+      "checks": {
+        "name": "verified",
+        "activity": "verified_real_estate",
+        "phone": "conflict_preserved",
+        "pin": "verified",
+        "address": "verified",
+        "observedPhone": "0554733279"
+      },
+      "addressStored": "سعيد ابن المسيب، الجامعة، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.3504767,
+        "lon": 50.138793
+      },
+      "evidence": "بطاقة فلا الشرق تطابق الاسم والنشاط والحي والدبوس 26.3504767,50.138793. الهاتف المنشور 0554733279 أضيف سابقًا، وبقي الرقم القديم 0500978590 محفوظًا لأن البطاقة لا تثبت بطلانه.",
+      "previousMapsNote": "الاسم/المدينة/الحي ونشاط وكالة العقارات مطابق؛ الهاتف المنشور 0554733279 يختلف عن المسجل، فحُفظ الرقم القديم وأضيف المنشور.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-197258",
+      "city": "الظهران",
+      "storedName": "مكتب مصعب عبدالله الاحيدب للعقارات",
+      "storedPhones": [
+        "0509072228"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_maps_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%B5%D8%B9%D8%A8%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%A7%D9%84%D8%A7%D8%AD%D9%8A%D8%AF%D8%A8%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200509072228%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 227973
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "طريق الأمير محمد بن فهد بن عبدالعزيز، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.34994,
+        "lon": 50.13931
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "Nearby result was a residential complex with different phone; no match.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-206891",
+      "city": "الظهران",
+      "storedName": "شركة الخالدي العقارية",
+      "storedPhones": [],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_maps_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 227222
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "1 الجامعة، الدانة الشمالية، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.33628,
+        "lon": 50.1295
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "No exact card; similar-name real estate result in Dammam without phone is insufficient.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-199883",
+      "city": "الظهران",
+      "storedName": "بنك العقارات فرع شركة مجموعة ناف",
+      "storedPhones": [],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_maps_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%81%D8%B1%D8%B9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20%D9%86%D8%A7%D9%81%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 227623
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "طريق الامير سلطان، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.33207,
+        "lon": 50.14601
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "Maps showed a shopping center and a different developer; no matching office.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-203726",
+      "city": "الظهران",
+      "storedName": "مؤسسة درة الربوة العقارية",
+      "storedPhones": [
+        "0567458444"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_maps_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%AF%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A8%D9%88%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200567458444%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 232697
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "سعيد بن المسيب، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.35021,
+        "lon": 50.13903
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "Nearby result had a different name and no confirming phone; unresolved.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-206870",
+      "city": "الظهران",
+      "storedName": "مكتب خالد محمد حميد العريقي للخدمات العقارية",
+      "storedPhones": [
+        "0505806845"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_maps_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AE%D8%A7%D9%84%D8%AF%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%AD%D9%85%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B9%D8%B1%D9%8A%D9%82%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200505806845%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 228787
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "عبدالله بن عباس، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.3299,
+        "lon": 50.16797
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "Generic Al-Areeqi result appeared; phone and office identity not confirmed.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-202057",
+      "city": "الظهران",
+      "storedName": "مكتب المنفذون الوسطاء للخدمات العقارية",
+      "storedPhones": [
+        "0566436116"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_maps_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%85%D9%86%D9%81%D8%B0%D9%88%D9%86%20%D8%A7%D9%84%D9%88%D8%B3%D8%B7%D8%A7%D8%A1%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200566436116%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 227772
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "طريق الامير محمد بن فهد، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.35046,
+        "lon": 50.13871
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "No exact name/phone result; different developer and residential building appeared.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-200067",
+      "city": "الظهران",
+      "storedName": "مؤسسة درهام العقارية",
+      "storedPhones": [
+        "0551777713"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/مؤسسة+درهام+العقارية+الظهران",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 227636
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "11ب، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.34343,
+        "lon": 50.15297
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "لا بطاقة عقارية مطابقة للاسم والهاتف 0551777713؛ بحث المدينة فقط لا يكفي.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-200076",
+      "city": "الظهران",
+      "storedName": "مؤسسة فيصل بن عبدالرحيم بن حبيب الله جمعه للعقارات",
+      "storedPhones": [
+        "0504917218"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/مؤسسة+فيصل+بن+عبدالرحيم+بن+حبيب+الله+جمعه+للعقارات+الظهران",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 233109
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "تميم ابو الفتوح، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.3223,
+        "lon": 50.17549
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "لم تظهر بطاقة الاسم أو الهاتف 0504917218؛ نتيجة شركة تطبيق ديل مختلفة بالاسم والهاتف.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-210984",
+      "city": "الظهران",
+      "storedName": "مؤسسة مساعد محمد عبدالرحمن العبدالكريم للخدمات العقارية",
+      "storedPhones": [
+        "0552555552"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_identity_phone_conflict",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/مؤسسة+مساعد+محمد+عبدالرحمن+العبدالكريم+للخدمات+العقارية+الظهران",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 227938
+      },
+      "checks": {
+        "name": "conflict",
+        "activity": "conflict",
+        "phone": "conflict",
+        "pin": "conflict",
+        "address": "conflict",
+        "observedPhone": "0552934822"
+      },
+      "addressStored": "شارع الملك فهد، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.37323,
+        "lon": 50.17571
+      },
+      "evidence": "بطاقة ظاهرة لهوية مختلفة: عبدالرحمن سامي العبدالقادر، بهاتف 0552934822؛ لا تربط بالسجل.",
+      "previousMapsNote": "ظهرت شركة عبدالرحمن سامي العبدالقادر برقم 0552934822؛ الاسم والهاتف والعنوان لا تطابق، لا تعديل.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-510883",
+      "city": "الظهران",
+      "storedName": "مكتب ليان حسن الشهري للعقارات",
+      "storedPhones": [
+        "0550467977"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/مكتب+ليان+حسن+الشهري+للعقارات+الظهران",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 231379
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "71، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.31543,
+        "lon": 50.13026
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "لم تظهر بطاقة الاسم أو الهاتف 0550467977؛ المقترحات الأخرى بهويات وأرقام مختلفة.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-393100",
+      "city": "الظهران",
+      "storedName": "شركة أملاك القصور",
+      "storedPhones": [
+        "0540401991"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_identity_phone_conflict",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/شركة+أملاك+القصور+الظهران",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 227030
+      },
+      "checks": {
+        "name": "conflict",
+        "activity": "partial",
+        "phone": "conflict",
+        "pin": "unverified",
+        "address": "unverified",
+        "observedPhone": "0544951991"
+      },
+      "addressStored": "شارع سعيد بن المسيب، الجامعة، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.34862,
+        "lon": 50.14058
+      },
+      "evidence": "البطاقة الأقرب باسم أملاك العقارية وهاتف 0544951991، ولا تطابق شركة أملاك القصور أو رقمها.",
+      "previousMapsNote": "لم تظهر أملاك القصور/0540401991؛ أقرب بطاقة أملاك العقارية بهاتف 0544951991، لا تطابق مؤكد.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-400222",
+      "city": "الظهران",
+      "storedName": "مكتب علياء القصور العقاري",
+      "storedPhones": [
+        "0555051001"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/مكتب+علياء+القصور+العقاري+الظهران",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 227416
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "ع، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.34552,
+        "lon": 50.15639
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "نتائج عوالي الظهران لا تطابق المكتب أو الهاتف 0555051001.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-218035",
+      "city": "الظهران",
+      "storedName": "مؤسسة عبدالله حسين اليامي العقارية",
+      "storedPhones": [
+        "0555802111"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%AD%D8%B3%D9%8A%D9%86+%D8%A7%D9%84%D9%8A%D8%A7%D9%85%D9%8A+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 227905
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "ابن بطوطة، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 26.34661,
+        "lon": 50.13594
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "Maps لم يعرض بطاقة مطابقة للاسم أو الهاتف؛ النتائج الأخرى مختلفة، ولا استنتاج لإغلاق أو خطأ.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-google-office-ChIJq6qqqvp1zT8RjGPWDyXauUQ",
+      "city": "قرية العليا",
+      "storedName": "مكتب ركن مدهال للعقار",
+      "storedPhones": [
+        "0133860555"
+      ],
+      "decision": "partial",
+      "sourceStatus": "name_phone_location_match_activity_category_ambiguous",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%83%D9%86+%D9%85%D8%AF%D9%87%D8%A7%D9%84+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x3fcd75faaaaaaaab:0x44b9da250fd6638c!8m2!3d27.5548015!4d47.6946634!16s%2Fg%2F11g85jhr0l!19sChIJq6qqqvp1zT8RjGPWDyXauUQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 226258
+      },
+      "checks": {
+        "name": "verified",
+        "activity": "ambiguous_google_category",
+        "phone": "verified",
+        "pin": "verified",
+        "address": "verified",
+        "observedPhone": "0133860555"
+      },
+      "addressStored": "HM3V+WVF، المروج، قرية العليا 37633، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 27.5548,
+        "lon": 47.69466
+      },
+      "evidence": "بطاقة ركن مدهال تطابق الاسم والهاتف والعنوان والدبوس 27.5548015,47.6946634؛ تصنيف Google الظاهر مكتب الشركات، لذلك بقي النشاط العقاري جزئيًا اعتمادًا على الاسم فقط.",
+      "previousMapsNote": "بطاقة ركن مدهال تعرض 0133860555 المطابق والاسم/العنوان؛ تصنيف Google هو مكتب الشركات، لذا النشاط العقاري يحتاج حسمًا رغم الاسم.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-google-office-ChIJdzK1HQB1zT8RP1hCK6MaRIM",
+      "city": "قرية العليا",
+      "storedName": "مكتب الصمان للعقارات",
+      "storedPhones": [
+        "0536670238"
+      ],
+      "decision": "partial",
+      "sourceStatus": "verified_name_activity_phone_pin_place_field_conflict",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B5%D9%85%D8%A7%D9%86+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@27.5625711,47.7006925,17z/data=!3m1!4b1!4m6!3m5!1s0x3fcd75001db53277:0x83441aa32b42583f!8m2!3d27.5625711!4d47.7006925!16s/g/11ygl79wpp",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 223054
+      },
+      "checks": {
+        "name": "verified",
+        "activity": "verified_real_estate",
+        "phone": "verified",
+        "pin": "verified",
+        "address": "verified",
+        "observedPhone": "0536670238",
+        "placeField": "conflict"
+      },
+      "addressStored": "HP72+27G، الزهور، قرية العليا 37661، المملكة العربية السعودية",
+      "coordinatesStored": {
+        "lat": 27.5625711,
+        "lon": 47.7006925
+      },
+      "evidence": "بطاقة الصمان تطابق الاسم والنشاط والهاتف والحي والدبوس 27.5625711,47.7006925؛ خانة الموقع في البطاقة تربط بمكتب الجزيرة، لذلك بقي تعارض حقل الموقع موثقًا دون تغيير هوية المكتب.",
+      "previousMapsNote": "بطاقة الصمان تعرض الرقم 0536670238 والنشاط والحي المطابقين؛ خانة «الموقع» تربط بمكتب الجزيرة، لذا علاقة الموقع تحتاج حسمًا.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-yango-office-239017421555",
+      "city": "حفر الباطن",
+      "storedName": "مكتب العوض العقاري",
+      "storedPhones": [
+        "0501019227"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B9%D9%88%D8%B6+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%AD%D9%81%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 226351
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "حفر الباطن, حي الربوة, الامير سلطان بن عبد العزيز, CNMD7714",
+      "coordinatesStored": {
+        "lat": null,
+        "lon": null
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "لم تظهر بطاقة أو هاتف مطابق؛ النتائج المحلية مختلفة، لا استنتاج إغلاق.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-yango-office-108112364856",
+      "city": "حفر الباطن",
+      "storedName": "العارضي للخدمات العقارية",
+      "storedPhones": [
+        "0505944124"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%AD%D9%81%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 227786
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "Hafar Al Batin, Al Aziziyah District, الملك خالد بن عبدالعزيز, CNMF3824",
+      "coordinatesStored": {
+        "lat": null,
+        "lon": null
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "نتائج الاسم المشابه كانت خارج المملكة وبلا هاتف مطابق؛ لا بطاقة مطابقة.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-yango-office-83646496556",
+      "city": "حفر الباطن",
+      "storedName": "مكتب الفال الافضل العقاري",
+      "storedPhones": [
+        "0566794333"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%81%D8%A7%D9%84+%D8%A7%D9%84%D8%A3%D9%81%D8%B6%D9%84+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%AD%D9%81%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 227918
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "حفر الباطن, حي السليمانية, الملك عبداللة بن عبدالعزيز, CNMD2893",
+      "coordinatesStored": {
+        "lat": 28.39874,
+        "lon": 45.93564
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "الاسم/الهاتف لم يظهرا على بطاقة؛ نتيجة الفاو قريبة بالاسم لكنها برقم مختلف.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-yango-office-18092931849",
+      "city": "حفر الباطن",
+      "storedName": "النادر للتطوير العقاري",
+      "storedPhones": [
+        "0539722201"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_name_similar_phone_conflict",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D8%A7%D9%84%D9%86%D8%A7%D8%AF%D8%B1+%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%AD%D9%81%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 226678
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "المنطقة الشرقية, حفر الباطن, حي الريان, سعد بن عبادة",
+      "coordinatesStored": {
+        "lat": null,
+        "lon": null
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "ظهرت شركات مشابهة بالاسم لكن أرقامها مختلفة عن 0539722201؛ لم يربط بينها وبين المكتب.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-yango-office-172404322366",
+      "city": "حفر الباطن",
+      "storedName": "اليوسف للمقاولات العامة والخدمات",
+      "storedPhones": [
+        "0137239071"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D8%A7%D9%84%D9%8A%D9%88%D8%B3%D9%81+%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9+%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%AD%D9%81%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 228708
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "Hafar Al Batin, Al Faisaliyah District, الامير سلطان بن عبد العزيز, CNMA8920",
+      "coordinatesStored": {
+        "lat": null,
+        "lon": null
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "لم تظهر بطاقة بالاسم/الهاتف؛ النتائج لمقاولين آخرين.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-yango-office-113991381361",
+      "city": "حفر الباطن",
+      "storedName": "مكتب الســمو العقاري",
+      "storedPhones": [
+        "0531180091"
+      ],
+      "decision": "partial",
+      "sourceStatus": "partial_name_phone_conflict_unresolved",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B3%D9%85%D9%88+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%AD%D9%81%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 227656
+      },
+      "checks": {
+        "name": "partial",
+        "activity": "verified_real_estate",
+        "phone": "conflict",
+        "pin": "conflict",
+        "address": "conflict",
+        "observedPhone": "0505943221"
+      },
+      "addressStored": "حفر الباطن, حي السليمانية, الملك فهد بن عبدالعزيز, CNMC3126",
+      "coordinatesStored": {
+        "lat": 28.39874,
+        "lon": 45.93564
+      },
+      "evidence": "ظهرت بطاقة مكتب سمو العقار، لكن الهاتف والعنوان والدبوس تختلف عن السجل؛ لا استبدال.",
+      "previousMapsNote": "بطاقة قريبة باسم مكتب سمو العقار برقم 0505943221 مختلف وموقع/عنوان بعيد؛ لا استبدال أو حذف الرقم المسجل.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-yango-office-118644541594",
+      "city": "قرية العليا",
+      "storedName": "مؤسسة دمث للخدمات العقارية",
+      "storedPhones": [
+        "0559909449"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_no_matching_card",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%AF%D9%85%D8%AB+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%82%D8%B1%D9%8A%D8%A9+%D8%A7%D9%84%D8%B9%D9%84%D9%8A%D8%A7",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 231065
+      },
+      "checks": {
+        "name": "unverified",
+        "activity": "unverified",
+        "phone": "unverified",
+        "pin": "unverified",
+        "address": "unverified"
+      },
+      "addressStored": "قرية العليا, حي الروضة, الامير فهد بن محمد بن عبدالعزيز, CIMA4878",
+      "coordinatesStored": {
+        "lat": 27.56583,
+        "lon": 47.70028
+      },
+      "evidence": "لم تظهر بطاقة Google Maps تطابق الاسم والرقم والمدينة؛ بقيت نتيجة البحث غير كافية لقرار تصحيح.",
+      "previousMapsNote": "لم تظهر بطاقة مطابقة للاسم/الهاتف/المدينة؛ لا تغيير.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-yango-office-176431236509",
+      "city": "حفر الباطن",
+      "storedName": "مكتب السسعد للعقارات حفر الباطن فرع رقم 1",
+      "storedPhones": [
+        "0555247722"
+      ],
+      "decision": "partial",
+      "sourceStatus": "partial_company_name_phone_match_branch_unresolved",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D8%AF+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x3fd739f1f376bf4b:0xc08554dbe3b4ba6a!8m2!3d28.4122103!4d45.9843768!16s/g/11h1djktvr",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 224248
+      },
+      "checks": {
+        "name": "partial",
+        "activity": "verified_real_estate",
+        "phone": "verified",
+        "pin": "unverified_for_claimed_branch",
+        "address": "unverified_for_claimed_branch",
+        "observedPhone": "0555247722"
+      },
+      "addressStored": "المنطقة الشرقية, حفر الباطن, حي الصفاء, الملك فيصل بن عبدالعزيز",
+      "coordinatesStored": {
+        "lat": null,
+        "lon": null
+      },
+      "evidence": "بطاقة شركة السعد العقارية تطابق الهاتف والنشاط، لكنها لا تثبت اسم مكتب السسعد أو عبارة فرع رقم 1.",
+      "previousMapsNote": "بطاقة شركة السعد العقارية تعرض رقم الهاتف 0555247722 المطابق، لكن الاسم لا يثبت فرع مكتب السسعد رقم 1.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-yango-office-180233777212",
+      "city": "حفر الباطن",
+      "storedName": "مكتب الشباك العقاري",
+      "storedPhones": [
+        "0552901449"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_duplicate_cards_location_status_conflict",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B4%D8%A8%D8%A7%D9%83+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x3fd73f40eb39240b:0x1076b67b03316c77!8m2!3d28.3595215!4d45.9420117!16s/g/11ghq3yfz2",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 226141
+      },
+      "checks": {
+        "name": "verified",
+        "activity": "verified_real_estate",
+        "phone": "verified",
+        "pin": "conflict_between_cards",
+        "address": "conflict_between_cards",
+        "observedPhone": "0552901449"
+      },
+      "addressStored": "المنطقة الشرقية, حفر الباطن",
+      "coordinatesStored": {
+        "lat": 28.45394,
+        "lon": 45.99566
+      },
+      "evidence": "بطاقتان بالاسم والهاتف نفسيهما تعرضان موقعين وحالة تشغيل مختلفة؛ لا يوجد دليل يحدد الدبوس الصحيح.",
+      "previousMapsNote": "بطاقتان بالاسم والهاتف نفسيهما لكن بدبوسين وحالة تشغيل مختلفة؛ يلزم تحديد الفرع، فلم يعدل الموقع.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-yango-office-38070204429",
+      "city": "بقيق",
+      "storedName": "مكتب القمة العقاري",
+      "storedPhones": [
+        "0501063838"
+      ],
+      "decision": "partial",
+      "sourceStatus": "verified_name_activity_location_phone_unlisted",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/مكتب+القمة+العقاري+بقيق",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 226809
+      },
+      "checks": {
+        "name": "verified",
+        "activity": "verified_real_estate",
+        "phone": "unlisted_on_maps",
+        "pin": "unverified",
+        "address": "verified",
+        "observedPhone": null
+      },
+      "addressStored": "بقيق, حي المدينة, شارع الملك فيصل, FBPA5220",
+      "coordinatesStored": {
+        "lat": null,
+        "lon": null
+      },
+      "evidence": "بطاقة مكتب القمة في بقيق تطابق الاسم والنشاط وعنوان شارع 39/حي المدينة ورمز WMG7+34؛ لم تنشر البطاقة رقمًا، لذلك بقي 0501063838 محفوظًا دون اعتباره مؤكدًا من Maps.",
+      "previousMapsNote": "مكتب القمة العقاري؛ نشاط وكالة عقارات وعنوان شارع 39/المدينة، بقيق، WMG7+34؛ لم يظهر هاتف، أُبقي الرقم المسجل كما هو.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    },
+    {
+      "id": "v9-office-ca323e9433dc",
+      "city": "قرية العليا",
+      "storedName": "ثفال للعقارات",
+      "storedPhones": [
+        "0550735550"
+      ],
+      "decision": "unresolved",
+      "sourceStatus": "unresolved_city_phone_conflict",
+      "checkedAt": "2026-10-12",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%D8%AB%D9%81%D8%A7%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D9%8A%D8%A7",
+      "httpFetch": {
+        "status": 200,
+        "bytes": 227274
+      },
+      "checks": {
+        "name": "partial",
+        "activity": "verified_real_estate",
+        "phone": "conflict",
+        "pin": "city_conflict",
+        "address": "city_conflict",
+        "observedPhone": "0550735552"
+      },
+      "addressStored": "الرفيعة، قرية العليا",
+      "coordinatesStored": {
+        "lat": null,
+        "lon": null
+      },
+      "evidence": "بطاقة ثفال تعرض 0550735552 وموقع الرفيعة؛ لا تثبت سجل قرية العليا ذي الرقم 0550735550.",
+      "previousMapsNote": "بطاقة ثفال تعرض هاتف 0550735552 لكن عنوانها بالرفيعة وليس قرية العليا؛ لا دليل أنها السجل المقصود، أبقينا الرقم والدبوس دون تغيير.",
+      "phonePreserved": true,
+      "proposedPatch": {}
+    }
+  ]
+}

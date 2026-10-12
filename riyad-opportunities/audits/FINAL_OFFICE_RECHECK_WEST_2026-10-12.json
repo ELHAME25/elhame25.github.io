@@ -1,0 +1,1214 @@
+{
+  "schema": "final-office-recheck-west-v1",
+  "generatedAt": "2026-10-12",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "sourceHead": "43e731f89e6364edfa2b33db59c01b4f08608da7",
+  "scope": "Exact 45 west-region IDs supplied in /tmp/west_required_45.json; Riyadh excluded.",
+  "method": [
+    "Reused explicit same-day per-office Google Maps place-card decisions already stored in data/offices.json; confirmed records were not re-searched.",
+    "Re-ran direct Google Maps searches for previously unresolved candidates where the live card became available.",
+    "A proposedPatch is emitted only when the direct place card established a correction; data/offices.json was not modified."
+  ],
+  "summary": {
+    "total": 45,
+    "partial": 13,
+    "corrected": 2,
+    "unresolved": 30,
+    "proposedPatches": 2
+  },
+  "records": [
+    {
+      "id": "phase5-office-59b80113287f",
+      "city": "جدة",
+      "name": "مكتب الغانمي العقاري",
+      "storedPhones": [
+        "0567888710"
+      ],
+      "inputStatus": "verified_name_phone_and_pin_activity_category_ambiguous",
+      "decision": "partial",
+      "finalStatus": "verified_name_phone_and_pin_activity_category_ambiguous",
+      "checks": {
+        "name": "matched",
+        "activity": "ambiguous",
+        "phone": "matched",
+        "pin": "matched",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%BA%D8%A7%D9%86%D9%85%D9%8A+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x15c3cb35a861e7e1:0xc93e1c2525427499!8m2!3d21.3992047!4d39.2652308!16s%2Fg%2F11h4kx0nm9!19sChIJ4edhqDXLwxURmXRCJSUcPsk?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+        "lat": 21.3992047,
+        "lon": 39.2652308,
+        "note": "بطاقة الاسم والهاتف 0567888710 والدبوس تطابق؛ تصنيف Maps هو الوسيط التجاري، لذلك التصنيف العقاري يحتاج مراجعة.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "phase5-office-3f96801c1a5a",
+      "city": "الطائف",
+      "name": "مكتب الماجد للعقار",
+      "storedPhones": [
+        "0505440034"
+      ],
+      "inputStatus": "verified_name_activity_location_phone_unlisted",
+      "decision": "partial",
+      "finalStatus": "verified_name_activity_location_phone_unlisted",
+      "checks": {
+        "name": "matched",
+        "activity": "matched",
+        "phone": "not_published",
+        "pin": "matched",
+        "address": "matched"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/?q=21.5401796,40.6129565",
+        "lat": 21.5401796,
+        "lon": 40.6129565,
+        "note": "مكتب الماجد للعقار؛ شركة عقارية بالطائف؛ لم يظهر هاتف منشور، أُبقي الرقم المسجل دون تغيير.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "phase5-office-ec2bd607c79a",
+      "city": "الطائف",
+      "name": "الوبيل العقارية",
+      "storedPhones": [
+        "0500741144"
+      ],
+      "inputStatus": "verified_name_activity_location_phone_unlisted",
+      "decision": "partial",
+      "finalStatus": "verified_name_activity_location_phone_unlisted",
+      "checks": {
+        "name": "matched",
+        "activity": "matched",
+        "phone": "not_published",
+        "pin": "matched",
+        "address": "matched"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/?q=21.2607904,40.4098874",
+        "lat": 21.2607904,
+        "lon": 40.4098874,
+        "note": "الوبيل العقارية؛ بطاقة نشاط عقاري في الطائف عند 7C65+8X6، لم يظهر هاتف منشور؛ الرقم المسجل محفوظ.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-195301",
+      "city": "ينبع",
+      "name": "مكتب فهد قليل الثقفي للعقارات",
+      "storedPhones": [
+        "0503342155"
+      ],
+      "inputStatus": "unresolved_city_only",
+      "decision": "corrected",
+      "finalStatus": "verified_name_activity_phone_and_pin",
+      "checks": {
+        "name": "matched",
+        "activity": "matched",
+        "phone": "matched",
+        "pin": "matched",
+        "address": "matched"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/place/%D8%A7%D9%84%D8%AB%D9%82%D9%81%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x15b9071f162a983d:0xd7ca90e3d2115743!8m2!3d24.1060166!4d38.0177396!16s%2Fg%2F11svhqy5hn",
+        "observedName": "الثقفي للعقار",
+        "observedActivity": "وكالة عقارات",
+        "observedPhone": "0503342155",
+        "observedAddress": "4249+C35، ينبع",
+        "lat": 24.1060166,
+        "lon": 38.0177396,
+        "note": "أظهرت إعادة البحث بطاقة الثقفي للعقار في ينبع: وكالة عقارات، الهاتف +966 50 334 2155 مطابق، والدبوس مباشر."
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/%D8%A7%D9%84%D8%AB%D9%82%D9%81%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x15b9071f162a983d:0xd7ca90e3d2115743!8m2!3d24.1060166!4d38.0177396!16s%2Fg%2F11svhqy5hn",
+        "lat": 24.1060166,
+        "lon": 38.0177396,
+        "nb": "4249+C35، ينبع",
+        "activity": "وكالة عقارات",
+        "activitySource": "Google Maps",
+        "mapsAudit.status": "verified_name_activity_phone_and_pin"
+      }
+    },
+    {
+      "id": "national-ejar-office-194902",
+      "city": "ينبع",
+      "name": "مؤسسة حسام وجهتك العقارية",
+      "storedPhones": [
+        "0540557744"
+      ],
+      "inputStatus": "unresolved_city_only",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_city_only",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%AD%D8%B3%D8%A7%D9%85+%D9%88%D8%AC%D9%87%D8%AA%D9%83+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%8A%D9%86%D8%A8%D8%B9",
+        "lat": 24.08434,
+        "lon": 38.09681,
+        "note": "Maps أعاد مدينة ينبع فقط دون بطاقة مكتب أو هاتف؛ غير محسوم.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-192096",
+      "city": "ينبع",
+      "name": "مكتب محمد مرشود مرشد الجهنى العقاري",
+      "storedPhones": [
+        "0504393240"
+      ],
+      "inputStatus": "unresolved_city_only",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_city_only",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D9%85%D8%AD%D9%85%D8%AF+%D9%85%D8%B1%D8%B4%D9%88%D8%AF+%D9%85%D8%B1%D8%B4%D8%AF+%D8%A7%D9%84%D8%AC%D9%87%D9%86%D9%89+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D9%8A%D9%86%D8%A8%D8%B9",
+        "lat": 24.08602,
+        "lon": 38.09131,
+        "note": "Maps أعاد المدينة فقط دون بطاقة مكتب أو هاتف؛ غير محسوم.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-201011",
+      "city": "ينبع",
+      "name": "مكتب ناجي عبدالله حسن معوض للعقار",
+      "storedPhones": [
+        "0558697340"
+      ],
+      "inputStatus": "unresolved_no_matching_card",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_no_matching_card",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D9%86%D8%A7%D8%AC%D9%8A+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%AD%D8%B3%D9%86+%D9%85%D8%B9%D9%88%D8%B6+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%8A%D9%86%D8%A8%D8%B9",
+        "lat": 24.08322,
+        "lon": 38.06177,
+        "note": "لم تظهر بطاقة بالاسم/الهاتف؛ ظهرت نتائج غير مرتبطة. غير محسوم.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-199383",
+      "city": "ينبع",
+      "name": "مؤسسة سكن القمم للعقار",
+      "storedPhones": [
+        "0565190148",
+        "0542558090"
+      ],
+      "inputStatus": "verified_name_activity_phone_conflict_preserved",
+      "decision": "partial",
+      "finalStatus": "verified_name_activity_phone_conflict_preserved",
+      "checks": {
+        "name": "matched",
+        "activity": "matched",
+        "phone": "conflict",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B3%D9%83%D9%86+%D8%A7%D9%84%D9%82%D9%85%D9%85+%D8%B9%D9%82%D8%A7%D8%B1+%D9%84%D9%84%D8%AA%D8%B3%D9%88%D9%8A%D9%82+%D9%88%D8%A7%D9%84%D8%A5%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D9%8A%D9%86%D8%A8%D8%B9+%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15b91b19208da3b3:0xd952f32b82f13b87!8m2!3d24.0145055!4d38.2151353!16s%2Fg%2F11mf97r05f!19sChIJs6ONIBkbuRURhzvxgivzUtk?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+        "lat": 24.0145055,
+        "lon": 38.2151353,
+        "note": "الاسم والنشاط العقاري مطابقان؛ الهاتف المنشور مختلف، فحُفظ المسجل 0565190148 وأضيف 0542558090.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-193445",
+      "city": "ينبع",
+      "name": "مؤسسة الخزنة العقارية",
+      "storedPhones": [
+        "0564466443"
+      ],
+      "inputStatus": "verified_name_activity_location_phone_unlisted",
+      "decision": "partial",
+      "finalStatus": "verified_name_activity_location_phone_unlisted",
+      "checks": {
+        "name": "matched",
+        "activity": "matched",
+        "phone": "not_published",
+        "pin": "matched",
+        "address": "matched"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/place/%D8%A7%D9%84%D8%AE%D8%B2%D9%86%D8%A9+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+Khazna+Real+Estates%E2%80%AD/@24.0740011,38.098351,17z/data=!3m1!4b1!4m6!3m5!1s0x15b905996d0ddc77:0x5fddd3fe0bba2310!8m2!3d24.0740011!4d38.098351!16s%2Fg%2F11c6lblqqt?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 24.0740011,
+        "lon": 38.098351,
+        "note": "بطاقة الخزنة العقارية ونشاط وكيل عقاري والموقع مطابقة؛ Maps لا يعرض هاتفًا، فأبقي الرقم المسجل كما هو.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-192502",
+      "city": "ينبع",
+      "name": "مكتب ج للعقار",
+      "storedPhones": [
+        "0500042550"
+      ],
+      "inputStatus": "unresolved_no_matching_card",
+      "decision": "corrected",
+      "finalStatus": "verified_name_activity_phone_and_pin",
+      "checks": {
+        "name": "matched_close",
+        "activity": "matched",
+        "phone": "matched",
+        "pin": "matched",
+        "address": "not_published"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/place/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D9%85%D9%83%D8%AA%D8%A8+%D8%AC+%D9%84%D9%84%D9%82%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x15b90534e243990d:0xe865df89982e16e4!8m2!3d24.0853885!4d38.0921628!16s%2Fg%2F11yv74pcgm",
+        "observedName": "مؤسسة مكتب ج للقار",
+        "observedActivity": "عقار شقق مفروشة",
+        "observedPhone": "0500042550",
+        "observedAddress": null,
+        "lat": 24.0853885,
+        "lon": 38.0921628,
+        "note": "أظهرت إعادة البحث بطاقة باسم قريب جدًا «مؤسسة مكتب ج للقار»؛ الهاتف +966 50 004 2550 مطابق تمامًا والنشاط عقاري والدبوس مباشر في ينبع. لم يُقترح تغيير الاسم لأن بطاقة Maps تحتوي خطأ كتابيًا محتملاً."
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D9%85%D9%83%D8%AA%D8%A8+%D8%AC+%D9%84%D9%84%D9%82%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x15b90534e243990d:0xe865df89982e16e4!8m2!3d24.0853885!4d38.0921628!16s%2Fg%2F11yv74pcgm",
+        "lat": 24.0853885,
+        "lon": 38.0921628,
+        "activity": "عقار شقق مفروشة",
+        "activitySource": "Google Maps",
+        "mapsAudit.status": "verified_name_activity_phone_and_pin"
+      }
+    },
+    {
+      "id": "national-ejar-office-193976",
+      "city": "ينبع",
+      "name": "مكتب رواسي ينبع للخدمات العقارية",
+      "storedPhones": [
+        "0541800031",
+        "0550181652"
+      ],
+      "inputStatus": "verified_name_activity_location_phone_conflict",
+      "decision": "partial",
+      "finalStatus": "verified_name_activity_location_phone_conflict",
+      "checks": {
+        "name": "matched",
+        "activity": "matched",
+        "phone": "conflict",
+        "pin": "matched",
+        "address": "matched"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%88%D8%A7%D8%B3%D9%8A+%D9%8A%D9%86%D8%A8%D8%B9%E2%80%AD/data=!4m7!3m6!1s0x15b9075e1da3ae51:0xcf12eab8dd24b441!8m2!3d24.1077009!4d38.0155311!16s%2Fg%2F11s7dn1rlm!19sChIJUa6jHV4HuRURQbQk3bjqEs8?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+        "lat": 24.1077009,
+        "lon": 38.0155311,
+        "note": "بطاقة مكتب رواسي ينبع، وكالة عقارات، العنوان والدبوس مطابقان؛ الهاتف المنشور مختلف عن المسجل فحُفظ كلاهما.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-217095",
+      "city": "ينبع",
+      "name": "مكتب الريان العربية للخدمات العقارية",
+      "storedPhones": [
+        "0566066076"
+      ],
+      "inputStatus": "unresolved_no_matching_card",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_no_matching_card",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86+%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%8A%D9%86%D8%A8%D8%B9",
+        "lat": 24.09878,
+        "lon": 38.09414,
+        "note": "لم تظهر بطاقة بالاسم أو الهاتف؛ النتائج ليست المكتب. غير محسوم.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-198086",
+      "city": "ينبع",
+      "name": "مكتب عقار الغربية",
+      "storedPhones": [
+        "0544008859"
+      ],
+      "inputStatus": "unresolved_no_matching_card",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_no_matching_card",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D8%B9%D9%82%D8%A7%D8%B1+%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9+%D9%8A%D9%86%D8%A8%D8%B9",
+        "lat": 24.02064,
+        "lon": 38.21432,
+        "note": "لم تظهر بطاقة بالاسم أو الهاتف؛ نتائج غير مطابقة. غير محسوم.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-196083",
+      "city": "ينبع",
+      "name": "مكتب عزم الأيام للخدمات العقارية",
+      "storedPhones": [
+        "0551308889",
+        "0501192592"
+      ],
+      "inputStatus": "verified_name_activity_location_phone_conflict",
+      "decision": "partial",
+      "finalStatus": "verified_name_activity_location_phone_conflict",
+      "checks": {
+        "name": "matched",
+        "activity": "matched",
+        "phone": "conflict",
+        "pin": "matched",
+        "address": "matched"
+      },
+      "googleMaps": {
+        "source": "https://maps.google.com/maps?q=24.09387334,38.0599119",
+        "lat": 24.0939605,
+        "lon": 38.0599293,
+        "note": "عزم الأيام بينبع؛ بطاقة باسم عزم الأيام ونشاط عقاري وموقع مطابق؛ Maps يعرض 0501192592 بدل المسجل 0551308889، احتُفظ بالرقم القديم وأضيف المنشور.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-195174",
+      "city": "العلا",
+      "name": "مكتب عبد الرحمن محمد المبارك للعقارات",
+      "storedPhones": [
+        "0504351887"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%83%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200504351887",
+        "lat": 26.57397,
+        "lon": 37.94944,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-201194",
+      "city": "العلا",
+      "name": "مؤسسة امينه عصمان الكحلاني للخدمات العقارية",
+      "storedPhones": [
+        "0555043333"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%85%D9%8A%D9%86%D9%87%20%D8%B9%D8%B5%D9%85%D8%A7%D9%86%20%D8%A7%D9%84%D9%83%D8%AD%D9%84%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200555043333",
+        "lat": 26.60317,
+        "lon": 37.92889,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-215722",
+      "city": "العلا",
+      "name": "مؤسسة سكة البخور للخدمات العقارية",
+      "storedPhones": [
+        "0544464180"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B3%D9%83%D8%A9%20%D8%A7%D9%84%D8%A8%D8%AE%D9%88%D8%B1%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200544464180",
+        "lat": 26.57182,
+        "lon": 37.94519,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-197921",
+      "city": "العلا",
+      "name": "مكتب قمة العلا للعقارات",
+      "storedPhones": [
+        "0533379031"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200533379031",
+        "lat": 26.64941,
+        "lon": 37.90772,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-218624",
+      "city": "العلا",
+      "name": "مكتب دليل سكن العقاري",
+      "storedPhones": [
+        "0565233695"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%B3%D9%83%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200565233695",
+        "lat": 26.57122,
+        "lon": 37.94745,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-208038",
+      "city": "العلا",
+      "name": "مؤسسة مساكن العلا العقارية",
+      "storedPhones": [
+        "0500511101"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D8%B3%D8%A7%D9%83%D9%86%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200500511101",
+        "lat": 26.6025,
+        "lon": 37.92262,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-332578",
+      "city": "العلا",
+      "name": "مكتب ركائز الوسيط العقاري",
+      "storedPhones": [
+        "0535250700"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%83%D8%A7%D8%A6%D8%B2%20%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200535250700",
+        "lat": 26.56522,
+        "lon": 37.95536,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-202761",
+      "city": "العلا",
+      "name": "مؤسسة مكتب قمة المدائن للعقار",
+      "storedPhones": [
+        "0566842266"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%A6%D9%86%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200566842266",
+        "lat": 26.59978,
+        "lon": 37.92017,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-207189",
+      "city": "العلا",
+      "name": "مكتب افق الإتحاد للخدمات العقارية",
+      "storedPhones": [
+        "0506330424"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%81%D9%82%20%D8%A7%D9%84%D8%A5%D8%AA%D8%AD%D8%A7%D8%AF%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200506330424",
+        "lat": 26.56575,
+        "lon": 37.96052,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-213851",
+      "city": "العلا",
+      "name": "مؤسسة محمد عبدي سالم العنزي للعقارات",
+      "storedPhones": [
+        "0501639896"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B9%D8%A8%D8%AF%D9%8A%20%D8%B3%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200501639896",
+        "lat": 26.60464,
+        "lon": 37.92551,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-203405",
+      "city": "العلا",
+      "name": "مؤسسة مساكن العهد للخدمات العقارية",
+      "storedPhones": [
+        "0540050011"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D8%B3%D8%A7%D9%83%D9%86%20%D8%A7%D9%84%D8%B9%D9%87%D8%AF%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200540050011",
+        "lat": 26.59666,
+        "lon": 37.93398,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-338770",
+      "city": "العلا",
+      "name": "مكتب دور التقدم للعقارات",
+      "storedPhones": [
+        "0508684181"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%85%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200508684181",
+        "lat": 26.60408,
+        "lon": 37.91829,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-211073",
+      "city": "العلا",
+      "name": "مكتب رؤية العلا للخدمات العقارية",
+      "storedPhones": [
+        "0544211206"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D8%A4%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200544211206",
+        "lat": 26.5716,
+        "lon": 37.94522,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-214465",
+      "city": "العلا",
+      "name": "مكتب تلال اراك لادارة الأملاك",
+      "storedPhones": [
+        "0554427426"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AA%D9%84%D8%A7%D9%84%20%D8%A7%D8%B1%D8%A7%D9%83%20%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A3%D9%85%D9%84%D8%A7%D9%83%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200554427426",
+        "lat": 26.57096,
+        "lon": 37.9477,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-213513",
+      "city": "العلا",
+      "name": "مؤسسة بلاد العز العقارية",
+      "storedPhones": [
+        "0555000212"
+      ],
+      "inputStatus": "partial_name_pin_mismatch_phone_unverified",
+      "decision": "partial",
+      "finalStatus": "partial_name_pin_mismatch_phone_unverified",
+      "checks": {
+        "name": "mismatch",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "mismatch",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A8%D9%84%D8%A7%D8%AF%20%D8%A7%D9%84%D8%B9%D8%B2%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200555000212",
+        "lat": 26.56789,
+        "lon": 37.94202,
+        "note": "نتيجة بحث خرائط باسم مؤسسة بلاد العز عند 26.6029431,37.922834 تختلف عن دبوس السجل؛ تعذر فتح البطاقة والهاتف، لا تعديل.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-192308",
+      "city": "بدر",
+      "name": "مكتب صفوة الجود للخدمات العقارية",
+      "storedPhones": [
+        "0503341020"
+      ],
+      "inputStatus": "verified_name_activity_location_phone_unlisted",
+      "decision": "partial",
+      "finalStatus": "verified_name_activity_location_phone_unlisted",
+      "checks": {
+        "name": "matched",
+        "activity": "matched",
+        "phone": "not_published",
+        "pin": "matched",
+        "address": "matched"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B5%D9%81%D9%88%D8%A9+%D8%A7%D9%84%D8%AC%D9%88%D8%AF+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@23.779367,38.788425,17z/data=!3m1!4b1!4m6!3m5!1s0x15bed7001d65967d:0x66f04e4e916e0dfa!8m2!3d23.779367!4d38.788425!16s%2Fg%2F11x1svw317?entry=ttu",
+        "lat": 23.779367,
+        "lon": 38.788425,
+        "note": "مكتب صفوة الجود للخدمات العقارية؛ وكالة عقارات، الشهداء، بدر 46357، Plus QQHQ+QC3؛ البطاقة لا تعرض هاتفًا؛ الدبوس 23.779367,38.788425.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-238771",
+      "city": "بدر",
+      "name": "مكتب المفتاح الرقمي للعقار",
+      "storedPhones": [
+        "0534306337"
+      ],
+      "inputStatus": "partial_pin_mismatch_phone_unverified",
+      "decision": "partial",
+      "finalStatus": "partial_pin_mismatch_phone_unverified",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "mismatch",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%85%D9%81%D8%AA%D8%A7%D8%AD+%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/@23.7629101,38.7409022,17z/data=!3m1!4b1!4m6!3m5!1s0x15bed70048770747:0x6273c479be82d582!8m2!3d23.7629101!4d38.7409022!16s%2Fg%2F11vqx3wdj3?entry=ttu",
+        "lat": 23.78482,
+        "lon": 38.78654,
+        "note": "مكتب المفتاح الرقمي للعقار؛ بطاقة مكان مباشرة ودبوس 23.7629101,38.7409022 يختلف عن المخزن؛ الهاتف/محتوى البطاقة لم يُقرأ، لذلك لم يُعدّل الدبوس.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-199494",
+      "city": "بدر",
+      "name": "مكتب قمة بدر للعقار",
+      "storedPhones": [
+        "0541905028"
+      ],
+      "inputStatus": "unresolved_maps_ui_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_ui_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%82%D9%85%D8%A9%20%D8%A8%D8%AF%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A8%D8%AF%D8%B1%200541905028",
+        "lat": 23.78526,
+        "lon": 38.77577,
+        "note": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-yango-office-27617025406",
+      "city": "ضباء",
+      "name": "مكتب الفيصل للعقارات",
+      "storedPhones": [
+        "0556593918"
+      ],
+      "inputStatus": "unresolved_name_phone_identity_conflict",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_name_phone_identity_conflict",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%81%D9%8A%D8%B5%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B6%D8%A8%D8%A7%D8%A1%200556593918",
+        "lat": null,
+        "lon": null,
+        "note": "ظهرت بطاقة باسم قريب/مطابق جزئيًا في ضباء لكن رقمها 0506581546 يخالف المسجل، ولم يثبت أنها المكتب نفسه؛ لم يُربط الرقم المنشور بالسجل ولم يُحذف الرقم المسجل.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-cybo-office-cid4539478834288316074",
+      "city": "بدر",
+      "name": "مكتب الصفوة العقاري",
+      "storedPhones": [
+        "0530307475"
+      ],
+      "inputStatus": "unresolved_no_matching_card",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_no_matching_card",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B5%D9%81%D9%88%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A8%D8%AF%D8%B1%200530307475",
+        "lat": null,
+        "lon": null,
+        "note": "بحث Maps أعاد تعذر العثور على نتيجة مطابقة؛ لا استنتاج حول صحة السجل أو إغلاقه.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-thirdparty-office-cid1605959927093973537",
+      "city": "أملج",
+      "name": "مكتب الساعه للخدمات العامه والعقاريه",
+      "storedPhones": [
+        "0553753729"
+      ],
+      "inputStatus": "unresolved_maps_card_content_timeout",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_card_content_timeout",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9+%D9%88%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9/data=!4m7!3m6!1s0x15b0a75255de2afd:0x1649840b81f2d221!8m2!3d25.0383353!4d37.259181!16s/g/11rsc05j_w!19sChIJ_SreVVKnsBURIdLygQuESRY?authuser=0&hl=ar",
+        "lat": 25.03834,
+        "lon": 37.25918,
+        "note": "تظهر صفحة Maps اسم مكتب الساعة ودبوسًا في رابطها، لكن التطبيق حمّل خريطة افتراضية ولم يعرض تفاصيل البطاقة أو رقم الهاتف؛ لم يُعتمد الدبوس ولا الرقم.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-thirdparty-office-duba-0500517062",
+      "city": "ضباء",
+      "name": "مكتب العيسوي للعقار والخدمات الالكترونية ضباء",
+      "storedPhones": [
+        "0500517062"
+      ],
+      "inputStatus": "unresolved_name_match_phone_location_unverified",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_name_match_phone_location_unverified",
+      "checks": {
+        "name": "matched",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B9%D9%8A%D8%B3%D9%88%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9%20%D8%B6%D8%A8%D8%A7%D8%A1%200500517062",
+        "lat": 27.34521,
+        "lon": 35.71136,
+        "note": "ظهرت نتيجة ذات اسم قريب «مكتب العيسوي للعقار والخدمات الإلكترونية ضباء» دون رقم/موقع كافٍ لإثبات أنها السجل؛ لا تغيير.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-218623",
+      "city": "ضباء",
+      "name": "مكتب إتقان ضباء للخدمات العامة",
+      "storedPhones": [
+        "0550890479",
+        "0595299311"
+      ],
+      "inputStatus": "verified_name_phone_conflict_activity_unresolved",
+      "decision": "partial",
+      "finalStatus": "verified_name_phone_conflict_activity_unresolved",
+      "checks": {
+        "name": "matched",
+        "activity": "ambiguous",
+        "phone": "conflict",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A5%D8%AA%D9%82%D8%A7%D9%86%20%D8%B6%D8%A8%D8%A7%D8%A1%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%200550890479",
+        "lat": 27.3462,
+        "lon": 35.70303,
+        "note": "بطاقة باسم مكتب إتقان ضباء للخدمات العامة؛ الرقم المنشور 0595299311 يختلف عن المسجل 0550890479؛ تصنيف/مطابقة النشاط لم تحسم، حُفظ القديم وأضيف المنشور دون استبدال.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-icuae-office-ChIJvyhrr2-nsBURiKZMvaQ0X8s",
+      "city": "أملج",
+      "name": "مكتب عبدالله عتيق",
+      "storedPhones": [
+        "0598040926"
+      ],
+      "inputStatus": "partial_name_phone_match_location_activity_unconfirmed",
+      "decision": "partial",
+      "finalStatus": "partial_name_phone_match_location_activity_unconfirmed",
+      "checks": {
+        "name": "unresolved",
+        "activity": "ambiguous",
+        "phone": "matched",
+        "pin": "matched",
+        "address": "matched"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%B9%D8%AA%D9%8A%D9%82/data=!4m7!3m6!1s0x15b0a76faf6b28bf:0xcb5f34a4bd4ca688!8m2!3d25.0260548!4d37.2658744!16s/g/11sz5kyrvp!19sChIJvyhrr2-nsBURiKZMvaQ0X8s?authuser=0&hl=ar",
+        "lat": 25.02605,
+        "lon": 37.26587,
+        "note": "بطاقة باسم مكتب عبدالله عتيق أظهرت هاتف 0598040926 مطابقًا؛ تعذر تحميل النشاط والعنوان لتأكيد موقع أملج، لذا لم يُعدّل الدبوس.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-215510",
+      "city": "بدر",
+      "name": "مكتب يسر بدر للعقار",
+      "storedPhones": [
+        "0538400175"
+      ],
+      "inputStatus": "unresolved_no_matching_card",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_no_matching_card",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%8A%D8%B3%D8%B1%20%D8%A8%D8%AF%D8%B1%200538400175",
+        "lat": 23.78628,
+        "lon": 38.78785,
+        "note": "بحث Maps بالاسم والهاتف لم يعثر على موقع يسر بدر.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-209056",
+      "city": "بدر",
+      "name": "مؤسسة مكتب الغزوة للخدمات العقارية",
+      "storedPhones": [
+        "0533315552"
+      ],
+      "inputStatus": "unresolved_no_matching_card",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_no_matching_card",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%BA%D8%B2%D9%88%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A8%D8%AF%D8%B1%200533315552",
+        "lat": 23.77981,
+        "lon": 38.78428,
+        "note": "لم تظهر بطاقة بالاسم أو الهاتف؛ النتائج صفوة الجود والبدر للعقار مختلفة.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-205522",
+      "city": "بدر",
+      "name": "مكتب عبدالله عيد الصبحى للعقارات",
+      "storedPhones": [
+        "0555361351"
+      ],
+      "inputStatus": "unresolved_no_matching_card",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_no_matching_card",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%B9%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B5%D8%A8%D8%AD%D9%8A%20%D8%A8%D8%AF%D8%B1%200555014348",
+        "lat": 23.78891,
+        "lon": 38.79087,
+        "note": "بحث Maps بالاسم/الهاتف لم يجد نتيجة مطابقة.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-204440",
+      "city": "بدر",
+      "name": "مؤسسة عبدالعزيز وليد عاتق الحربي للخدمات العقارية",
+      "storedPhones": [
+        "0553880947"
+      ],
+      "inputStatus": "unresolved_maps_card_not_confirmed",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_card_not_confirmed",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D9%88%D9%84%D9%8A%D8%AF%20%D8%B9%D8%A7%D8%AA%D9%82%20%D8%A7%D9%84%D8%AD%D8%B1%D8%A8%D9%8A%20%D8%A8%D8%AF%D8%B1%200553880947",
+        "lat": 23.77888,
+        "lon": 38.79134,
+        "note": "تعذر تأكيد بطاقة Maps مطابقة؛ لا تغيير للرقم أو الموقع.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-328204",
+      "city": "بدر",
+      "name": "مؤسسة جمع الأعمال التجارية",
+      "storedPhones": [
+        "0557021911"
+      ],
+      "inputStatus": "unresolved_foreign_search_result",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_foreign_search_result",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A8%D8%AF%D8%B1%200504726520",
+        "lat": 23.77907,
+        "lon": 38.79196,
+        "note": "النتيجة باسم جمعية رجال أعمال ومستثمري مدينة بدر المصرية ورقم مصري؛ ليست المكتب السعودي، ولا دليل كافٍ على تصحيح السجل.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "national-ejar-office-212595",
+      "city": "بدر",
+      "name": "مؤسسة فاطمه واصل بن عبدالعالي الحربي التجارية",
+      "storedPhones": [
+        "0558669692"
+      ],
+      "inputStatus": "unresolved_maps_card_not_confirmed",
+      "decision": "unresolved",
+      "finalStatus": "unresolved_maps_card_not_confirmed",
+      "checks": {
+        "name": "unresolved",
+        "activity": "unresolved",
+        "phone": "unresolved",
+        "pin": "unresolved",
+        "address": "unresolved"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D9%81%D8%A7%D8%B7%D9%85%D8%A9%20%D9%88%D8%A7%D8%B5%D9%84%20%D8%A8%D9%86%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A%20%D8%A7%D9%84%D8%AD%D8%B1%D8%A8%D9%8A%20%D8%A8%D8%AF%D8%B1%200553880947",
+        "lat": 23.77794,
+        "lon": 38.79635,
+        "note": "لم تظهر بطاقة مؤكدة بالاسم/الهاتف؛ لا تغيير.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    },
+    {
+      "id": "v9-office-76c14bc4a676",
+      "city": "الوجه",
+      "name": "ركن الجوهرة للعقار",
+      "storedPhones": [],
+      "inputStatus": "verified_name_activity_location_phone_unlisted",
+      "decision": "partial",
+      "finalStatus": "verified_name_activity_location_phone_unlisted",
+      "checks": {
+        "name": "matched",
+        "activity": "matched",
+        "phone": "not_published",
+        "pin": "matched",
+        "address": "matched"
+      },
+      "googleMaps": {
+        "source": "https://www.google.com/maps/search/%D8%B1%D9%83%D9%86%20%D8%A7%D9%84%D8%AC%D9%88%D9%87%D8%B1%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%88%D8%AC%D9%87",
+        "lat": null,
+        "lon": null,
+        "note": "ركن الجوهرة للعقار؛ وكالة عقارات، البلد، الوجه 48719، Plus 6FP4+3C؛ البطاقة لا تعرض هاتفًا ولم يُضف رقم إلى السجل.",
+        "checkedAt": "2026-10-12"
+      },
+      "proposedPatch": {}
+    }
+  ]
+}
