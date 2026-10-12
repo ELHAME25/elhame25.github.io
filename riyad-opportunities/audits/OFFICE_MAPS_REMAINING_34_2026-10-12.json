@@ -1,0 +1,89 @@
+{
+  "schema": "office-maps-final-remaining-checkpoint-v1",
+  "updatedAt": "2026-10-12",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "sourceHead": "8de69c5f3e7595b947a985a54a6f42db5aed2b44",
+  "inventory": 1524,
+  "latestSavedOutcomes": 1490,
+  "remainingCount": 34,
+  "selectionBasis": "Latest Wave5 progress file lists remainingCities: Dhahran 8, Safwa 7, Saihat 7, Umm al-Hammam 1, Thuqbah 7, Buqayq 1, Ras Tanura 3. These 34 IDs partition those city counts.",
+  "lanes": [
+    {
+      "city": "الظهران",
+      "lane": "audit_east",
+      "ids": [
+        "national-ejar-office-193842",
+        "national-ejar-office-201378",
+        "national-ejar-office-198288",
+        "national-ejar-office-200787",
+        "national-ejar-office-198634",
+        "national-ejar-office-192275",
+        "national-ejar-office-192302"
+      ],
+      "status": "pending_maps_card_verification"
+    },
+    {
+      "city": "صفوى",
+      "lane": "east_audit",
+      "ids": [
+        "national-gulfmap-office-ebea8a251a8c1ef",
+        "national-gulfmap-office-6b4acc4496a441a",
+        "national-yango-office-47459509296",
+        "national-web-office-ChIJv2mbaeL5NT4RzkAz84rE5xU",
+        "national-icuae-office-ChIJRZBmn0P7NT4R45vHoAvnkqw",
+        "national-icuae-office-ChIJDepG6e7xNT4RgM13oYmeV4M",
+        "national-icuae-office-ChIJzaMCLpz3NT4RD-M6oph4RPI"
+      ],
+      "status": "pending_maps_card_verification"
+    },
+    {
+      "city": "سيهات",
+      "lane": "audit_riyadh",
+      "ids": [
+        "national-gulfmap-office-bc01b29da6512bb",
+        "national-gulfmap-office-1a810d05b9808b9",
+        "national-gulfmap-office-7b208c97d279353",
+        "national-gulfmap-office-f05ec02eb3b92c0",
+        "national-icuae-office-ChIJTbZjpir_ST4RfTAIHWWDzsc",
+        "national-icuae-office-ChIJn-ucRjL_ST4R_bzMcCJKrLE",
+        "national-yango-office-164558638376"
+      ],
+      "status": "pending_maps_card_verification"
+    },
+    {
+      "city": "الثقبة",
+      "lane": "audit_north",
+      "ids": [
+        "national-yango-office-20425363680",
+        "national-yango-office-115631845718",
+        "national-icuae-office-ChIJWZI_4abCST4RVHjutgdkYRM",
+        "national-icuae-office-ChIJAeGp6T7pST4R8DuqMWvJnD4",
+        "national-google-office-ChIJy-c3oBvDST4RkwCfTeHvnyM",
+        "national-google-office-ChIJ4Sjk2onpST4RCx0Q4J1bBqg",
+        "national-google-office-ChIJNbbz5dvpST4R9qW00qFiaMM"
+      ],
+      "status": "pending_maps_card_verification"
+    },
+    {
+      "city": "شرقية (استكمال)",
+      "lane": "audit_west",
+      "ids": [
+        "national-ejar-office-215647",
+        "national-google-office-ChIJb4iRjgoANj4RbrlqN2zXyVY",
+        "national-ejar-office-198248",
+        "national-icuae-office-ChIJKTxo27MJSj4RkDPj2zeM2hA",
+        "national-icuae-office-ChIJNzjgHrAJSj4RSjdqDZjH2ns",
+        "national-yango-office-124363988655"
+      ],
+      "status": "pending_maps_card_verification"
+    }
+  ],
+  "rules": [
+    "Verify direct Google Maps business card, name/activity, city/district/pin, and published phone.",
+    "Keep stored phone unless evidence clearly proves wrong; retain old value in history.",
+    "No merge or publish. Lead agent alone applies approved changes."
+  ],
+  "merge": false,
+  "publish": false
+}
