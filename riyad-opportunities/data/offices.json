@@ -9944,7 +9944,14 @@
     "lat": 26.34661,
     "lon": 50.13594,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "unresolved_no_matching_card",
+      "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%AD%D8%B3%D9%8A%D9%86+%D8%A7%D9%84%D9%8A%D8%A7%D9%85%D9%8A+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "Maps لم يعرض بطاقة مطابقة للاسم أو الهاتف؛ النتائج الأخرى مختلفة، ولا استنتاج لإغلاق أو خطأ."
+    }
   },
   {
     "id": "national-ejar-office-196063",
@@ -19289,11 +19296,18 @@
       "0536670238"
     ],
     "web": "",
-    "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B5%D9%85%D8%A7%D9%86+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x3fcd75001db53277:0x83441aa32b42583f!8m2!3d27.5625711!4d47.7006925!16s%2Fg%2F11ygl79wpp!19sChIJdzK1HQB1zT8RP1hCK6MaRIM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
-    "lat": 27.56257,
-    "lon": 47.70069,
+    "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B5%D9%85%D8%A7%D9%86+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@27.5625711,47.7006925,17z/data=!3m1!4b1!4m6!3m5!1s0x3fcd75001db53277:0x83441aa32b42583f!8m2!3d27.5625711!4d47.7006925!16s/g/11ygl79wpp",
+    "lat": 27.5625711,
+    "lon": 47.7006925,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_pin_place_field_conflict",
+      "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B5%D9%85%D8%A7%D9%86+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@27.5625711,47.7006925,17z/data=!3m1!4b1!4m6!3m5!1s0x3fcd75001db53277:0x83441aa32b42583f!8m2!3d27.5625711!4d47.7006925!16s/g/11ygl79wpp",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "بطاقة الصمان تعرض الرقم 0536670238 والنشاط والحي المطابقين؛ خانة «الموقع» تربط بمكتب الجزيرة، لذا علاقة الموقع تحتاج حسمًا."
+    }
   },
   {
     "id": "national-google-office-ChIJb4iRjgoANj4RbrlqN2zXyVY",
@@ -20379,16 +20393,25 @@
     "id": "national-yango-office-66192423770",
     "n": "المحامي فهد الرحيمان",
     "city": "حفر الباطن",
-    "nb": "حفر الباطن, حي الفيصلية, ابن بطوطة, CNML3528",
+    "nb": "حي الفيصلية، حفر الباطن 39951",
     "phones": [
       "0534696007"
     ],
     "web": "",
-    "maps": "https://maps.yango.com/ar-sa/org/66192423770/?lang=ar",
-    "lat": 28.39442,
-    "lon": 45.9577,
+    "maps": "https://www.google.com/maps/place/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%85%D9%8A+%D9%81%D9%87%D8%AF+%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85%D8%A7%D9%86%E2%80%AD/@28.3949872,45.961932,17z/data=!3m1!4b1!4m6!3m5!1s0x3fd73f0022bf82b1:0x3cad421564b49762!8m2!3d28.3949872!4d45.961932!16s%2Fg%2F11vk1rq7cy",
+    "lat": 28.3949872,
+    "lon": 45.961932,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activity": "وكالة عقارات",
+    "activitySource": "Google Maps",
+    "mapsAudit": {
+      "status": "verified_name_activity_phone_and_pin",
+      "source": "https://www.google.com/maps/place/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%85%D9%8A+%D9%81%D9%87%D8%AF+%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85%D8%A7%D9%86%E2%80%AD/@28.3949872,45.961932,17z/data=!3m1!4b1!4m6!3m5!1s0x3fd73f0022bf82b1:0x3cad421564b49762!8m2!3d28.3949872!4d45.961932!16s%2Fg%2F11vk1rq7cy",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "بطاقة بنفس الاسم تعرض وكالة عقارات والهاتف 0534696007 المطابق؛ ثبت العنوان والدبوس."
+    }
   },
   {
     "id": "national-yango-office-131282140959",
@@ -20442,7 +20465,14 @@
     "maps": "https://maps.yango.com/ar-sa/org/108112364856/?lang=ar",
     "lat": null,
     "lon": null,
-    "sec": ""
+    "sec": "",
+    "mapsAudit": {
+      "status": "unresolved_no_matching_card",
+      "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%AD%D9%81%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "نتائج الاسم المشابه كانت خارج المملكة وبلا هاتف مطابق؛ لا بطاقة مطابقة."
+    }
   },
   {
     "id": "national-yango-office-83646496556",
@@ -20457,7 +20487,14 @@
     "lat": 28.39874,
     "lon": 45.93564,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "mapsAudit": {
+      "status": "unresolved_no_matching_card",
+      "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%81%D8%A7%D9%84+%D8%A7%D9%84%D8%A3%D9%81%D8%B6%D9%84+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%AD%D9%81%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+      "checkedAt": "2026-10-12",
+      "reference": "Google Maps place card",
+      "note": "الاسم/الهاتف لم يظهرا على بطاقة؛ نتيجة الفاو قريبة بالاسم لكنها برقم مختلف."
+    }
   },
   {
     "id": "national-yango-office-18092931849",
