@@ -1,0 +1,856 @@
+{
+  "schema": "office-final-audit-checkpoint-v1",
+  "date": "2026-10-12",
+  "scope": [
+    "الخرج",
+    "الدلم",
+    "المجمعة",
+    "المزاحمية",
+    "الزلفي",
+    "الدوادمي",
+    "شقراء",
+    "القويعية",
+    "ضرماء",
+    "وادي الدواسر",
+    "السليل",
+    "ليلى",
+    "حوطة سدير",
+    "الأرطاوية",
+    "الغاط"
+  ],
+  "excludedCoveredIdsSource": "/tmp/office_audit_covered_ids.txt",
+  "summary": {
+    "records": 45,
+    "verifiedNameLocationPhone": 2,
+    "correctionCandidates": 13,
+    "partial": 4,
+    "activityConflict": 2,
+    "unresolved": 24
+  },
+  "records": [
+    {
+      "id": "national-ejar-office-196063",
+      "old": {
+        "name": "مكتب صكوك الديار للعقارات",
+        "address": "طريق الخرج الدلم، الخالدية، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0564055507"
+        ],
+        "lat": 24.05844965,
+        "lon": 47.17232417
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; no readable business card returned",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-195510",
+      "old": {
+        "name": "مكتب فرسان الدلم للعقارات",
+        "address": "الملك فيصل، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0531819020"
+        ],
+        "lat": 23.98931089,
+        "lon": 47.13076025
+      },
+      "new": {
+        "name": "مكتب فرسان الدلم للعقارت",
+        "address": "4955، 6929 شارع الثلاثين، الشفاء، الدلم",
+        "phones": [
+          "0531819020"
+        ],
+        "activity": "مكتب الشركات",
+        "lat": 23.9893599,
+        "lon": 47.1307981
+      },
+      "evidence": "Google Maps exact result 0x3e2515530cdea219:0x7ab10cb62af44346",
+      "status": "verified_match_live_2026-10-12",
+      "note": "Maps category is generic مكتب الشركات; listed name and reviews identify real-estate activity."
+    },
+    {
+      "id": "national-ejar-office-438733",
+      "old": {
+        "name": "مؤسسة يوسف زيد عبدالعزيز بن مانع للعقار",
+        "address": "الملك فيصل بن عبدالعزيز، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505451915"
+        ],
+        "lat": 23.99065811,
+        "lon": 47.13082854
+      },
+      "new": {
+        "name": "المانع للعقارات",
+        "address": "ODDA7070، 4937 الملك فيصل بن عبدالعزيز، 7070، الدلم",
+        "phones": [
+          "0505451915"
+        ],
+        "activity": "وكالة عقارات",
+        "lat": 23.990528,
+        "lon": 47.1308031
+      },
+      "evidence": "Google Maps exact phone and near-identical stored pin, place 0x3e256b007f9828d1:0x879e525140861cb0",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-223909",
+      "old": {
+        "name": "مكتب عبدالله راشد سالم الحويطان للعقارات",
+        "address": "الملك عبدالعزيز، الناصرية، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505104450"
+        ],
+        "lat": 23.99294251,
+        "lon": 47.16463387
+      },
+      "new": {
+        "name": "مكتب الحويطان الدلم",
+        "lat": 23.9929373,
+        "lon": 47.1646938
+      },
+      "evidence": "Google Maps search result place 0x3e253f8f426a0a71:0x570bbfb397c823d2 at stored pin; phone not exposed in result",
+      "status": "partial_name_location_phone_unverified"
+    },
+    {
+      "id": "national-ejar-office-200589",
+      "old": {
+        "name": "مكتب خالد محمد مسعود المسعود للعقارات",
+        "address": "الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0551593093"
+        ],
+        "lat": 24.0185703,
+        "lon": 47.1800893
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; no readable card returned",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-208544",
+      "old": {
+        "name": "مكتب عبدالاله محمد حمد التميمي للعقارات",
+        "address": "العام، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0504189693"
+        ],
+        "lat": 23.9797328,
+        "lon": 47.1508339
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; no matching card at stored identity/pin",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-202809",
+      "old": {
+        "name": "مكتب أسما محمد بن حمد التميمي للخدمات العقارية",
+        "address": "طريق الخرج الدلم، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0535738680"
+        ],
+        "lat": 23.99093709,
+        "lon": 47.13767588
+      },
+      "new": {
+        "name": "مكتب عبدالإله بن محمد السعيس التميمي للخدمات",
+        "address": "X4RQ+938، الدلم",
+        "phones": [
+          "0550412201"
+        ],
+        "activity": "وكالة عقارات",
+        "lat": 23.9908905,
+        "lon": 47.1376311
+      },
+      "evidence": "Google Maps exact-name search resolved to current card at near-identical stored pin, place 0x3e2541f2be517d2b:0xb4b43d500ab27839",
+      "status": "correction_candidate_identity_phone_at_same_pin",
+      "note": "Strong current Maps replacement at stored pin; main writer should match old value before any change."
+    },
+    {
+      "id": "national-ejar-office-214024",
+      "old": {
+        "name": "مكتب ارض المختص للعقارات",
+        "address": "الملك فيصل بن عبدالعزيز، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0532266677"
+        ],
+        "lat": 23.990482234132,
+        "lon": 47.130842059851
+      },
+      "new": {
+        "name": "مكتب الجاسر للعقارات",
+        "address": "X4RJ+59R، شارع الثلاثين، الدلم",
+        "phones": [
+          "0532266677"
+        ],
+        "activity": "وكالة عقارات",
+        "lat": 23.9904822,
+        "lon": 47.1308783
+      },
+      "evidence": "Google Maps result with identical phone and near-identical stored pin, place 0x3e256aac719d6cc3:0x1d53b23ea2d36044",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-192584",
+      "old": {
+        "name": "مكتب فدغوش هزاع العجمي للعقارات",
+        "address": "الامام البخاري، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0554777419"
+        ],
+        "lat": 24.01581302095,
+        "lon": 47.133058905602
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search returned only a residential villa 'فيلا الشيخ فدغوش بن هزاع العجمي' at 23.9862309,47.1169224, not stored pin, with no phone",
+      "status": "activity_conflict_search_result_not_same_pin",
+      "note": "Do not archive from this alone; no exact office card was found."
+    },
+    {
+      "id": "national-ejar-office-194572",
+      "old": {
+        "name": "مؤسسة عبدالرحمن سعد عبدالرحمن الدريهم للعقارات",
+        "address": "طريق الملك عبد العزيز شمال، الخالدية، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555108041"
+        ],
+        "lat": 24.00967662,
+        "lon": 47.16500715
+      },
+      "new": {
+        "name": "مكتب أبو سعد للعقارات",
+        "address": "2558+V26، طريق الملك عبدالعزيز، الدلم",
+        "phones": [
+          "0555108041"
+        ],
+        "activity": "وكالة عقارات",
+        "lat": 24.0096659,
+        "lon": 47.1650262
+      },
+      "evidence": "Google Maps exact phone and near-identical stored pin, place 0x3e25406f8d3ecde5:0x45a80e9814803bd3",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-217696",
+      "old": {
+        "name": "مؤسسة مكتب عبدالرحمن محمد الدخيني للعقارات",
+        "address": "طريق الخرج الدلم، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0554446050"
+        ],
+        "lat": 24.01599231,
+        "lon": 47.13615423
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; card unreadable",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-211591",
+      "old": {
+        "name": "مكتب بصمة الجود للعقارات",
+        "address": "سلمان بن محمد، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0504494179"
+        ],
+        "lat": 23.99772271,
+        "lon": 47.11128852
+      },
+      "new": null,
+      "evidence": "Google Maps reported partial match but no office listing; only city result appeared",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-327301",
+      "old": {
+        "name": "مؤسسة سعد عبدالعزيز بن سعد العرفج العقارية",
+        "address": "الأمير سلمان بن محمد، النخيل، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0538383419"
+        ],
+        "lat": 23.995417508604,
+        "lon": 47.147981199527
+      },
+      "new": {
+        "name": "مكتب العرفج العقارية",
+        "address": "الأمير سلمان بن محمد آل سعود، الدلم",
+        "phones": [
+          "0538383419"
+        ],
+        "activity": "وكالة عقارات تجارية",
+        "lat": 23.9954365,
+        "lon": 47.1480219
+      },
+      "evidence": "Google Maps exact phone and near-identical stored pin, place 0x3e25410b81967ca1:0x7cb5df94180318d6",
+      "status": "verified_match_live_2026-10-12"
+    },
+    {
+      "id": "national-ejar-office-215057",
+      "old": {
+        "name": "مكتب الحقباني للعقارات",
+        "address": "طريق الملك عبدالعزيز، الديرة، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0541333900"
+        ],
+        "lat": 23.988683681386,
+        "lon": 47.16326771231
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search returned unrelated Riyadh listing and residences; no matching الدلم card",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-216888",
+      "old": {
+        "name": "مكتب سامي عيسى ناصر العبداللطيف العقاري",
+        "address": "الامير سلطان بن عبدالعزيز، الصناعية، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0557475775"
+        ],
+        "lat": 23.98647913,
+        "lon": 47.12310254
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search returned different businesses/pins; no matching card",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-216899",
+      "old": {
+        "name": "مكتب سعد ناصر العبدان للعقارات",
+        "address": "ابو سعد النفيس، الخالدية، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555108634"
+        ],
+        "lat": 24.0115344,
+        "lon": 47.16789363
+      },
+      "new": null,
+      "evidence": "Google Maps returned 'مكتب العبدان' at 23.9932072,47.1647254 with no phone, materially different from stored pin",
+      "status": "unresolved_possible_name_location_mismatch"
+    },
+    {
+      "id": "national-ejar-office-211815",
+      "old": {
+        "name": "شركة عبدالله عبدالرحمن الحقباني للتطوير والاستثمار العقاري",
+        "address": "طريق الامير محمد بن سلمان بن عبدالعزيز، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505109610"
+        ],
+        "lat": 23.98713995473,
+        "lon": 47.139556355404
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search resolved to an unrelated investment company in Riyadh with phone 0560070002",
+      "status": "unresolved_wrong_search_result"
+    },
+    {
+      "id": "national-ejar-office-270000",
+      "old": {
+        "name": "مكتب سبيل الخير للعقارات",
+        "address": "طريق الخرج الدلم، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0556644036"
+        ],
+        "lat": 23.99977247,
+        "lon": 47.13765639
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search returned other offices only; no exact listing",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-365296",
+      "old": {
+        "name": "مكتب ابداع المسوق للعقارات",
+        "address": "عثمان بن بديل، الديرة، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0535559834"
+        ],
+        "lat": 23.992393090546,
+        "lon": 47.162777434553
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; card unreadable",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-312262",
+      "old": {
+        "name": "مكتب السهم المبهر للخدمات العقارية",
+        "address": "الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0508187717"
+        ],
+        "lat": 23.99408504928,
+        "lon": 47.137434855631
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search returned unrelated Bahrain listing and فرسان الدلم; no exact local card",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-472294",
+      "old": {
+        "name": "مكتب واجهة المحمدية العقارية",
+        "address": "طريق الخرج الدلم، الفلاح، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0504446050"
+        ],
+        "lat": 24.01548,
+        "lon": 47.13512
+      },
+      "new": {
+        "name": "مكتب واجهة المحمدية العقارية",
+        "address": "طريق الخرج، السعيدان، الدلم 16324",
+        "phones": [
+          "0554446050"
+        ],
+        "activity": "شركة إدارة عقارات",
+        "plusCode": "248P+GF"
+      },
+      "evidence": "Google Maps live exact-name card 0x3e2541f9ada9506b:0x8c94490b64373491",
+      "status": "correction_candidate_phone_address",
+      "note": "Live Maps phone differs by one digit from stored value; main writer must match old value before correction."
+    },
+    {
+      "id": "national-ejar-office-216042",
+      "old": {
+        "name": "مكتب أسس الثقة للخدمات العقارية",
+        "address": "الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505108522"
+        ],
+        "lat": 23.99493,
+        "lon": 47.13061
+      },
+      "new": null,
+      "evidence": "Google Maps search title resolved to 'مكتب أسس الثقة للاستثمار العقاري' but card details were unreadable",
+      "status": "unresolved_name_variant_only"
+    },
+    {
+      "id": "national-ejar-office-198249",
+      "old": {
+        "name": "مكتب ركن المستقل للخدمات العقارية",
+        "address": "العام، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555115556"
+        ],
+        "lat": 23.9984,
+        "lon": 47.12159
+      },
+      "new": null,
+      "evidence": "Google Maps reported partial match and displayed only the city; no office card",
+      "status": "unresolved_no_exact_match"
+    },
+    {
+      "id": "national-ejar-office-209518",
+      "old": {
+        "name": "مكتب نقاء القصر للعقارات",
+        "address": "الملك فيصل بن عبدالعزيز، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555107889"
+        ],
+        "lat": 23.99249,
+        "lon": 47.13121
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; no readable card returned",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-580141",
+      "old": {
+        "name": "مؤسسة فريم برو للعقارات",
+        "address": "الملك فيصل، الدلم، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0543999801"
+        ],
+        "lat": 23.99074,
+        "lon": 47.13135
+      },
+      "new": {
+        "name": "فريم العقارية"
+      },
+      "evidence": "Google Maps search resolved title to 'فريم العقارية'; phone/address/activity card details remained unreadable",
+      "status": "partial_name_variant_only"
+    },
+    {
+      "id": "national-ejar-office-197553",
+      "old": {
+        "name": "مؤسسة مكتب أبراج يوسف للتطوير والاستثمار العقاري",
+        "address": "شارع جعفر بن ابي طالب، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500115955"
+        ],
+        "lat": 24.12229,
+        "lon": 47.27607
+      },
+      "new": {
+        "name": "مكتب ابراج اليوسف للاستثمار والتطوير العقاري"
+      },
+      "evidence": "Google Maps exact-name search resolved the tab title to 'مكتب ابراج اليوسف للاستثمار والتطوير العقاري'; the card body and phone did not become readable",
+      "status": "partial_name_variant_only"
+    },
+    {
+      "id": "national-ejar-office-208345",
+      "old": {
+        "name": "مكتب خالد محمد العرفج للعقارات",
+        "address": "فيصل بن عبدالعزيز، السيح، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505102162"
+        ],
+        "lat": 24.15459,
+        "lon": 47.30592
+      },
+      "new": {
+        "name": "عقارات بن عرفج",
+        "address": "طريق الملك فيصل، الخرج",
+        "phones": [
+          "0505102162"
+        ],
+        "activity": "وكالة عقارات",
+        "lat": 24.1548503,
+        "lon": 47.3058329
+      },
+      "evidence": "Google Maps direct result place 0x3e254f004e7fed09:0x1a9f8f6bedbda29c; exact stored phone and near-identical pin",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-194868",
+      "old": {
+        "name": "مكتب تطوير واصل للعقارات",
+        "address": "الإمام مالك بن أنس، النهضة، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0508192698"
+        ],
+        "lat": 24.16164,
+        "lon": 47.34017
+      },
+      "new": {
+        "name": "واصل للعقارات",
+        "phones": [
+          "0550027252"
+        ],
+        "lat": 24.1615414,
+        "lon": 47.3398393
+      },
+      "evidence": "Google Maps direct card title and tel link at near-identical stored pin; address/category text did not become readable",
+      "status": "correction_candidate_identity_phone_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-195760",
+      "old": {
+        "name": "شركة مقر المعتمد للعقارات",
+        "address": "الرازي، مشرف، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0502809902"
+        ],
+        "lat": 24.11922,
+        "lon": 47.28827
+      },
+      "new": {
+        "name": "شركة المعتمد للعقارات",
+        "address": "شارع الأمير محمد بن سلمان، الخرج",
+        "phones": [
+          "0502809902"
+        ],
+        "activity": "وكيل عقاري",
+        "lat": 24.1192388,
+        "lon": 47.2882641
+      },
+      "evidence": "Google Maps search result with exact stored phone and near-identical pin",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-194928",
+      "old": {
+        "name": "مكتب تميز الزعيم للعقارات",
+        "address": "شارع طارق بن زياد، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0509922998"
+        ],
+        "lat": 24.14006,
+        "lon": 47.35363
+      },
+      "new": {
+        "name": "مكتب تميز الزعيم للعقارات بالخرج",
+        "phones": [
+          "0555355812"
+        ],
+        "lat": 24.1400491,
+        "lon": 47.3536278
+      },
+      "evidence": "Google Maps direct exact-name card and tel link at the stored pin; address/category text did not become readable",
+      "status": "correction_candidate_identity_phone_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-195123",
+      "old": {
+        "name": "مكتب انماء المساكن للعقارات",
+        "address": "طريق الملك سعود، الخالدية، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0504246171"
+        ],
+        "lat": 24.13758,
+        "lon": 47.29024
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; the page remained in loading state and no business card was readable",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-193613",
+      "old": {
+        "name": "مكتب دارة العقار للعقارات",
+        "address": "طريق الملك سلمان بن عبدالعزيز، طويق، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555100033"
+        ],
+        "lat": 24.15151,
+        "lon": 47.34115
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; no readable card returned",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-197985",
+      "old": {
+        "name": "مكتب مزايا الابنية العقاري",
+        "address": "ابن الشيخ، الورود، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0507438346"
+        ],
+        "lat": 24.16473,
+        "lon": 47.30558
+      },
+      "new": {
+        "name": "مكتب مزايا العقاري",
+        "address": "شارع الورود العام، الخرج",
+        "phones": [
+          "0507438346"
+        ],
+        "activity": "مكتب تسجيل أراضي",
+        "lat": 24.1648024,
+        "lon": 47.3055922
+      },
+      "evidence": "Google Maps search result with exact stored phone and near-identical pin",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-195432",
+      "old": {
+        "name": "مكتب عجلان هيزع عجلان الشهري للعقارات",
+        "address": "عثمان بن عفان، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0506418744"
+        ],
+        "lat": 24.14521,
+        "lon": 47.30662
+      },
+      "new": {
+        "name": "مكتب عجلان للعقارات",
+        "address": "حي السليمانية، طريق عثمان بن عفان، الخرج",
+        "activity": "شركة إدارة عقارات"
+      },
+      "evidence": "Google Maps direct card at the stored-area pin; card says phone information is missing, so the stored phone was not treated as disproved",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-202034",
+      "old": {
+        "name": "مكتب رونق فال للخدمات العقارية",
+        "address": "شارع، الفيصلية، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555241233"
+        ],
+        "lat": 24.15876,
+        "lon": 47.3364
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; no readable card returned",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-200478",
+      "old": {
+        "name": "مؤسسة قمر الخرج العقارية",
+        "address": "عرفة، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0532640393"
+        ],
+        "lat": 24.13908,
+        "lon": 47.35478
+      },
+      "new": {
+        "name": "قمر الخرج",
+        "address": "طارق بن زياد، الزاهر، الخرج",
+        "phones": [
+          "0561824815"
+        ],
+        "activity": "مكتب الشركات",
+        "lat": 24.1390756,
+        "lon": 47.3547821
+      },
+      "evidence": "Google Maps direct card at the exact stored pin, but current category is generic 'مكتب الشركات' and does not independently prove real-estate activity",
+      "status": "activity_conflict_current_card_same_pin"
+    },
+    {
+      "id": "national-ejar-office-196350",
+      "old": {
+        "name": "مكتب سليمان عبدالعزيز سليمان الميمان للخدمات العقارية",
+        "address": "شارع الامير محمد بن عبدالعزيز، النهضة، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505105315"
+        ],
+        "lat": 24.15429,
+        "lon": 47.3273
+      },
+      "new": {
+        "name": "مكتب الميمان للعقارات",
+        "address": "شارع الملك عبدالله بن عبدالعزيز، النهضة، الخرج",
+        "phones": [
+          "0505105315"
+        ],
+        "activity": "مكتب الشركات",
+        "lat": 24.154329,
+        "lon": 47.3274649
+      },
+      "evidence": "Google Maps exact result with exact stored phone and near-identical pin; business name explicitly identifies real-estate activity",
+      "status": "correction_candidate_name_at_same_pin"
+    },
+    {
+      "id": "national-ejar-office-197489",
+      "old": {
+        "name": "مكتب العفراء للخدمات العقارية",
+        "address": "جعفر بن أبي طالب، الخالدية، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0555108028"
+        ],
+        "lat": 24.12111,
+        "lon": 47.27438
+      },
+      "new": null,
+      "evidence": "Google Maps exact-name search attempted 2026-10-12; the card extraction timed out",
+      "status": "unresolved_maps_card_unreadable"
+    },
+    {
+      "id": "national-ejar-office-196812",
+      "old": {
+        "name": "مكتب اصول المثمن للعقارات",
+        "address": "الأمير نايف بن عبد العزيز، الورود، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0564459524"
+        ],
+        "lat": 24.15901,
+        "lon": 47.30414
+      },
+      "new": {
+        "name": "أصول المثمن للعقارات والمقاولات",
+        "address": "شارع قس بن ساعده، الورود، الخرج",
+        "phones": [
+          "0555331610"
+        ],
+        "activity": "شركة إدارة عقارات",
+        "lat": 24.1754439,
+        "lon": 47.3096936
+      },
+      "evidence": "Google Maps direct exact-name card; current phone/address/pin differ materially from stored values",
+      "status": "correction_candidate_exact_card_phone_address_pin"
+    },
+    {
+      "id": "national-ejar-office-195124",
+      "old": {
+        "name": "مجموعة التعمير العقارية",
+        "address": "طريق بدون اسم، اليرموك، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [],
+        "lat": 24.17678,
+        "lon": 47.3714
+      },
+      "new": {
+        "name": "مكتب مجموعة التعمير العقارية",
+        "activity": "مكتب الشركات",
+        "lat": 24.1781645,
+        "lon": 47.2784762
+      },
+      "evidence": "Google Maps returned an exact-name candidate and a second similarly named real-estate office, neither at the stored pin; phone absent on the exact-name candidate",
+      "status": "partial_ambiguous_name_location_mismatch"
+    },
+    {
+      "id": "national-ejar-office-210236",
+      "old": {
+        "name": "مكتب صكوك الإعمار للعقارات",
+        "address": "طريق عثمان بن عفان، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505103354"
+        ],
+        "lat": 24.14724,
+        "lon": 47.30573
+      },
+      "new": null,
+      "evidence": "Google Maps batch could not start this card because the browser tab command timed out; no value inferred",
+      "status": "unresolved_browser_timeout_before_card"
+    },
+    {
+      "id": "national-ejar-office-212040",
+      "old": {
+        "name": "مكتب عبدالله عجب عايض القحطاني للعقارات",
+        "address": "سعد بن معاذ، السلام، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505103740"
+        ],
+        "lat": 24.15293,
+        "lon": 47.31214
+      },
+      "new": null,
+      "evidence": "Google Maps batch could not start this card because the browser tab command timed out; no value inferred",
+      "status": "unresolved_browser_timeout_before_card"
+    },
+    {
+      "id": "national-ejar-office-196845",
+      "old": {
+        "name": "مكتب انجاز الوضوح للعقارات",
+        "address": "شرحبيل بن حسنه، الزاهر، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0500033572"
+        ],
+        "lat": 24.13667,
+        "lon": 47.35597
+      },
+      "new": null,
+      "evidence": "Google Maps batch could not start this card because the browser tab command timed out; no value inferred",
+      "status": "unresolved_browser_timeout_before_card"
+    },
+    {
+      "id": "national-ejar-office-201336",
+      "old": {
+        "name": "مؤسسة نيشان المجد للعقارات",
+        "address": "طريق أبي بكر الصديق، السلام، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505592725"
+        ],
+        "lat": 24.1534,
+        "lon": 47.31788
+      },
+      "new": null,
+      "evidence": "Google Maps batch could not start this card because the browser tab command timed out; no value inferred",
+      "status": "unresolved_browser_timeout_before_card"
+    },
+    {
+      "id": "national-ejar-office-206284",
+      "old": {
+        "name": "مكتب عبدالله حشر العتيبي للعقارات",
+        "address": "شارع الامير محمد بن عبدالعزيز، الخرج، الرياض، المملكة العربية السعودية",
+        "phones": [
+          "0505104458"
+        ],
+        "lat": 24.15967,
+        "lon": 47.33517
+      },
+      "new": null,
+      "evidence": "Google Maps batch could not start this card because the browser tab command timed out; no value inferred",
+      "status": "unresolved_browser_timeout_before_card"
+    }
+  ]
+}
