@@ -2,10 +2,10 @@
   "schema": "office-maps-unreviewed-candidates-v1",
   "generatedAt": "2026-10-12",
   "branch": "fix/scope-counts-nhc-20261010",
-  "sourceHead": "1aa7bd0d08da9012f6774491e9b874b0eb7ee18d",
+  "sourceHead": "75d72fa7020cf041c9d905a6aeff7a6e2988232e",
   "inventory": 1524,
-  "explicitOutcomesCount": 177,
-  "withoutRecordedIndividualOutcome": 236,
+  "explicitOutcomesCount": 237,
+  "withoutRecordedIndividualOutcome": 176,
   "method": "Rows are IDs not found with an explicit status field across committed OFFICE audit checkpoints/ledgers at sourceHead. These are candidates for individual Maps audit; do not infer correct or incorrect from absence.",
   "regionalCounts": {
     "riyadh": {
@@ -15,8 +15,8 @@
     },
     "west": {
       "total": 74,
-      "decisionRecorded": 28,
-      "remainingWithoutDecision": 46
+      "decisionRecorded": 62,
+      "remainingWithoutDecision": 12
     },
     "east": {
       "total": 40,
@@ -25,13 +25,13 @@
     },
     "north": {
       "total": 49,
-      "decisionRecorded": 38,
-      "remainingWithoutDecision": 11
+      "decisionRecorded": 49,
+      "remainingWithoutDecision": 0
     },
     "southCentral": {
       "total": 243,
-      "decisionRecorded": 64,
-      "remainingWithoutDecision": 179
+      "decisionRecorded": 79,
+      "remainingWithoutDecision": 164
     }
   },
   "assignments": {
@@ -324,7 +324,7 @@
         "phones": [
           "0504351887"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-201194",
@@ -333,7 +333,7 @@
         "phones": [
           "0555043333"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-215722",
@@ -342,7 +342,7 @@
         "phones": [
           "0544464180"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-197921",
@@ -351,7 +351,7 @@
         "phones": [
           "0533379031"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-218624",
@@ -360,7 +360,7 @@
         "phones": [
           "0565233695"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-208038",
@@ -369,7 +369,7 @@
         "phones": [
           "0500511101"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-332578",
@@ -378,7 +378,7 @@
         "phones": [
           "0535250700"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-202761",
@@ -387,7 +387,7 @@
         "phones": [
           "0566842266"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-207189",
@@ -396,7 +396,7 @@
         "phones": [
           "0506330424"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-213851",
@@ -405,7 +405,7 @@
         "phones": [
           "0501639896"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-203405",
@@ -414,7 +414,7 @@
         "phones": [
           "0540050011"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-338770",
@@ -423,7 +423,7 @@
         "phones": [
           "0508684181"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-211073",
@@ -432,7 +432,7 @@
         "phones": [
           "0544211206"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-214465",
@@ -441,7 +441,7 @@
         "phones": [
           "0554427426"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-ejar-office-213513",
@@ -477,7 +477,7 @@
         "phones": [
           "0541905028"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_ui_timeout"
       },
       {
         "id": "national-yango-office-198642908166",
@@ -495,7 +495,7 @@
         "phones": [
           "0556593918"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_conflict_preserved"
       },
       {
         "id": "national-yango-office-150604911997",
@@ -504,7 +504,7 @@
         "phones": [
           "0541360723"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "national-cybo-office-cid4539478834288316074",
@@ -513,7 +513,7 @@
         "phones": [
           "0530307475"
         ],
-        "status": "pending"
+        "status": "unresolved_no_matching_card"
       },
       {
         "id": "national-thirdparty-office-cid1605959927093973537",
@@ -540,7 +540,7 @@
         "phones": [
           "0537152989"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "national-ejar-office-218623",
@@ -630,7 +630,7 @@
         "phones": [
           "0505798375"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_pin"
       },
       {
         "id": "national-google-office-ChIJTeZA_zmnsBURu839VIBUpXI",
@@ -639,7 +639,7 @@
         "phones": [
           "0504551242"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_pin"
       },
       {
         "id": "national-google-office-ChIJLaO4VM2nsBUR8ipz9k32sIM",
@@ -648,7 +648,7 @@
         "phones": [
           "0536415758"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_pin"
       },
       {
         "id": "national-google-office-ChIJc-EeGwCnsBUR7BZSZMy2tS0",
@@ -657,7 +657,7 @@
         "phones": [
           "0506583080"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_pin"
       },
       {
         "id": "national-google-office-ChIJxc17X3qnsBURSYpUv6EViRo",
@@ -666,7 +666,7 @@
         "phones": [
           "0504559252"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_pin"
       },
       {
         "id": "national-ejar-office-215510",
@@ -675,7 +675,7 @@
         "phones": [
           "0538400175"
         ],
-        "status": "pending"
+        "status": "unresolved_no_matching_card"
       },
       {
         "id": "national-ejar-office-209056",
@@ -684,7 +684,7 @@
         "phones": [
           "0533315552"
         ],
-        "status": "pending"
+        "status": "unresolved_no_matching_card"
       },
       {
         "id": "national-ejar-office-205522",
@@ -693,7 +693,7 @@
         "phones": [
           "0555361351"
         ],
-        "status": "pending"
+        "status": "unresolved_no_matching_card"
       },
       {
         "id": "national-ejar-office-204440",
@@ -702,7 +702,7 @@
         "phones": [
           "0553880947"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_card_not_confirmed"
       },
       {
         "id": "national-ejar-office-328204",
@@ -711,7 +711,7 @@
         "phones": [
           "0557021911"
         ],
-        "status": "pending"
+        "status": "unresolved_foreign_search_result"
       },
       {
         "id": "national-ejar-office-212595",
@@ -720,7 +720,7 @@
         "phones": [
           "0558669692"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_card_not_confirmed"
       },
       {
         "id": "national-google-office-cid-13805103704243743602",
@@ -729,7 +729,7 @@
         "phones": [
           "0558990067"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "v9-office-d8f3d9515850",
@@ -738,14 +738,14 @@
         "phones": [
           "0530007949"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "v9-office-76c14bc4a676",
         "city": "الوجه",
         "name": "ركن الجوهرة للعقار",
         "phones": [],
-        "status": "pending"
+        "status": "verified_name_activity_location_phone_unlisted"
       },
       {
         "id": "v9-office-689c11e2b111",
@@ -754,7 +754,7 @@
         "phones": [
           "0500109309"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "v9-office-a49fc1c319a4",
@@ -1447,7 +1447,7 @@
         "phones": [
           "0555386656"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "national-icuae-office-ChIJPeSmeLoNbBURlcEqlo8SlL0",
@@ -1483,7 +1483,7 @@
         "phones": [
           "0533539664"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "national-icuae-office-ChIJwdFiCs4NbBURDZkpuLuhk3s",
@@ -1492,7 +1492,7 @@
         "phones": [
           "0507387668"
         ],
-        "status": "pending"
+        "status": "unresolved_maps_card_blank"
       },
       {
         "id": "national-icuae-office-ChIJeYt_-NgNbBURu3-iklJPa34",
@@ -1501,7 +1501,7 @@
         "phones": [
           "0506796792"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "national-icuae-office-ChIJEwm3TZYNbBURLQJ1aQsGZ38",
@@ -1510,7 +1510,7 @@
         "phones": [
           "0506060712"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "national-yango-office-200310352671",
@@ -1519,7 +1519,7 @@
         "phones": [
           "0552607980"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "national-google-office-ChIJ03_r07GZqhUR-YVo9Vqg4-s",
@@ -1528,7 +1528,7 @@
         "phones": [
           "0553999747"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "national-google-office-ChIJ6cgmWQCZqhURzRqEY_TK_Vc",
@@ -1537,7 +1537,7 @@
         "phones": [
           "0532015634"
         ],
-        "status": "pending"
+        "status": "partial_card_location_mismatch"
       },
       {
         "id": "national-google-office-ChIJJSVBEQCZqhURsvN0Su0GDNQ",
@@ -1546,7 +1546,7 @@
         "phones": [
           "0531661300"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "national-google-office-ChIJbzvIl0CZqhURjCEXyT0ecbw",
@@ -1555,7 +1555,7 @@
         "phones": [
           "0537008110"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "national-ejar-office-283731",
@@ -1564,7 +1564,7 @@
         "phones": [
           "0553614009"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       }
     ],
     "southCentral": [
@@ -1909,7 +1909,7 @@
         "phones": [
           "0163645545"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-5b0a704f7146",
@@ -1918,7 +1918,7 @@
         "phones": [
           "0542993223"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-2560bb597761",
@@ -1927,7 +1927,7 @@
         "phones": [
           "0598334444"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-763647e6dbcb",
@@ -1936,7 +1936,7 @@
         "phones": [
           "0591741111"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-4b699835384b",
@@ -1945,7 +1945,7 @@
         "phones": [
           "0553625544"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-7ffc0f3994e5",
@@ -2198,7 +2198,7 @@
         "phones": [
           "0163352099"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-f2ac79ff7e2e",
@@ -2207,7 +2207,7 @@
         "phones": [
           "0531331300"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-e7ed9a52503d",
@@ -2216,7 +2216,7 @@
         "phones": [
           "0503138834"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-8eb1cefa98de",
@@ -2225,7 +2225,7 @@
         "phones": [
           "920033163"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_pin"
       },
       {
         "id": "office-maps-dc6f4e469673",
@@ -2234,7 +2234,7 @@
         "phones": [
           "0541981515"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-8a9110a04a01",
@@ -2243,7 +2243,7 @@
         "phones": [
           "0553141219"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-eb124139f1fa",
@@ -2252,7 +2252,7 @@
         "phones": [
           "0508992508"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-d807542ecab7",
@@ -2261,7 +2261,7 @@
         "phones": [
           "0163352044"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_pin"
       },
       {
         "id": "office-maps-29b0ab8519d5",
@@ -2270,7 +2270,7 @@
         "phones": [
           "0554400010"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-9ad88f710669",
@@ -2279,7 +2279,7 @@
         "phones": [
           "0551298370"
         ],
-        "status": "pending"
+        "status": "verified_name_activity_phone_address"
       },
       {
         "id": "office-maps-fc8245413e25",
@@ -3758,5 +3758,5 @@
       }
     ]
   },
-  "note": "Statuses reconciled against mapsAudit for unique candidate IDs in committed data; unresolved findings count as individual decisions."
+  "note": "Statuses reconciled against per-office mapsAudit in committed data. Timeout/unresolved results remain recorded as unresolved decisions; pending entries have no saved decision."
 }
