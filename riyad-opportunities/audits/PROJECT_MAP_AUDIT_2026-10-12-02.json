@@ -1,0 +1,153 @@
+{
+  "schema": "record-map-audit-batch-v1",
+  "audit_date": "2026-10-12",
+  "head_confirmed_before_batch": "dbdeeefc86c72c4590369b14207420dbcc56d962",
+  "records": [
+    {
+      "id": "P036",
+      "name": "اسوار السكني",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_multiple_candidate_pins",
+        "evidence": "Maps showed two close results: مشروع أسوار السكني ٢ at 26.1321898,50.1548751 and مشروع اسوار المرحلة الثانية at 26.1323125,50.1554375. Developer page refers to فيلل أسوار 02 in العزيزية, while SPA report describes project at الأمواج. No exact pin selected."
+      },
+      "phone": {
+        "status": "no phone stored"
+      },
+      "whatsapp": {
+        "status": "empty"
+      },
+      "website": {
+        "status": "page/source available; no dedicated contact web field stored"
+      },
+      "sources": [
+        "https://aswar.com.sa/our-projects",
+        "https://www.spa.gov.sa/2210622"
+      ]
+    },
+    {
+      "id": "P038",
+      "name": "بارك فيو",
+      "map": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_search_result_name_city_neighborhood",
+        "observed": "Google Maps place بارك فيو at 26.0920994,50.1333202",
+        "evidence": "Maps opened a named place matching Park View; official Sakani project 627 identifies it in Al-Aziziyah, Al Khobar. No direct Place URL pin copied into the data row; its mapsQ query stays as existing fallback."
+      },
+      "phone": {
+        "status": "no phone stored"
+      },
+      "whatsapp": {
+        "status": "empty"
+      },
+      "website": {
+        "status": "official Sakani page verified as project source, no dedicated website stored"
+      },
+      "sources": [
+        "https://sakani.sa/app/offplan-projects/627"
+      ]
+    },
+    {
+      "id": "P039",
+      "name": "إطلالة البحر",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_wrong_named_result",
+        "evidence": "Maps showed Aknan AlBahar, not إطلالة البحر. Official Anan report places the project near King Fahd Causeway and Gulf coast but gives no exact pin."
+      },
+      "phone": {
+        "status": "no phone stored"
+      },
+      "whatsapp": {
+        "status": "empty"
+      },
+      "website": {
+        "status": "official project brochure/source"
+      },
+      "sources": [
+        "https://anan.com.sa/images/projects/17548182667488.pdf"
+      ]
+    },
+    {
+      "id": "P040",
+      "name": "نسيم",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_developer_office_not_project",
+        "evidence": "Maps displayed MADC real estate office in العليا، الخبر, not a project place card. Sakani lists Naseem in Khobar without exact district; office pin cannot substitute."
+      },
+      "phone": {
+        "status": "no phone stored"
+      },
+      "whatsapp": {
+        "status": "empty"
+      },
+      "website": {
+        "status": "official project source"
+      },
+      "sources": [
+        "https://madc.sa/",
+        "https://sakani.sa/app/units/859367"
+      ]
+    },
+    {
+      "id": "P041",
+      "name": "ماريون فيلا",
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_developer_or_locality_conflict",
+        "evidence": "Maps returned Maryon Real Estate developer, not villa. Official page says درة النخيل/حي الصدفة but elsewhere describes حي البستان; no direct villa pin accepted."
+      },
+      "phone": {
+        "status": "no phone stored; official page phone is developer-level and not copied"
+      },
+      "whatsapp": {
+        "status": "empty"
+      },
+      "website": {
+        "status": "official project page"
+      },
+      "sources": [
+        "https://www.maryoncorp.com/ar/properties/maryon-villa"
+      ]
+    },
+    {
+      "id": "P042",
+      "name": "نمو باتيو",
+      "map": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_search_result_name_city_neighborhood",
+        "observed": "Google Maps independent place «نمو باتيو» at 26.3860407,50.1938077 / 95PV+CG7",
+        "evidence": "Maps showed a separately named project place. Official developer brochure identifies حي السيف (مخطط سمو الخبر); match city and project locality. No exact Place URL copied into data row; existing mapsQ left unchanged."
+      },
+      "phone": {
+        "status": "no phone stored; developer brochure mentions project contact numbers but not in record"
+      },
+      "whatsapp": {
+        "status": "empty"
+      },
+      "website": {
+        "status": "official developer project brochure available"
+      },
+      "sources": [
+        "https://numou-realestate.com/wp-content/uploads/2023/12/Numou-Patio-Profile-2-2.pdf",
+        "https://www.linkedin.com/posts/numousa_%D9%86%D9%85%D9%88%D8%A8%D8%A7%D8%AA%D9%8A%D9%88-%D8%B3%D9%85%D9%88%D8%A7%D9%84%D8%AE%D8%A8%D8%B1-%D9%86%D9%85%D9%88%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9-activity-7153687507069526017-pN2Y"
+      ]
+    }
+  ],
+  "counts": {
+    "opened_maps": 6,
+    "place_results_matched_name_location": 2,
+    "verified_direct_pin_links": 0,
+    "wrong_links_corrected_and_retested": 0,
+    "unresolved": 4,
+    "not_opened_in_batch": 0
+  },
+  "note": "All six queries were opened in Google Maps. Two map results were positively matched to the project and official locality sources, but no direct Place URL was captured and no map field was edited; those two are location matches, not post-edit-tested direct pins. The other four remain unresolved. Record-level phone/WhatsApp fields are absent, so not invented."
+}
