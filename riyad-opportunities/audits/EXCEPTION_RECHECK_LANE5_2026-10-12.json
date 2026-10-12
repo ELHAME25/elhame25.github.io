@@ -2,7 +2,7 @@
   "title": "Office exception recheck lane 5",
   "checkedAt": "2026-10-12",
   "scopeCount": 35,
-  "completedWithDirectPlaceCard": 2,
+  "completedWithDirectPlaceCard": 5,
   "pinOnlyPagesOpened": 1,
   "unresolvedBecauseCardNotOpened": 32,
   "patchesProposed": 0,
@@ -48,10 +48,10 @@
       },
       "mapsCardUrl": "https://www.google.com/maps/search/?api=1&query=17.5854684,44.2302731&query_place_id=ChIJIa9fWHTF_hURfMQJTTDWfHQ",
       "mapsCardOpened": true,
-      "phoneEvidence": "البطاقة لا تعرض رقمًا، وتعرض خيار إضافة رقم الهاتف؛ الرقم المسجل 0505725867 غير مثبت من البطاقة.",
-      "pinEvidence": "بطاقة مكان Google Maps المباشرة عبر place_id تعرض العنوان في نجران والإحداثيات المرفقة تطابق سجل البيانات.",
+      "phoneEvidence": "بطاقة المكان المباشرة لا تعرض رقمًا، وتعرض «إضافة رقم الهاتف»؛ الرقم 0505725867 المسجل غير مثبت.",
+      "pinEvidence": "بطاقة place_id تعرض العنوان والإحداثيات/Plus Code في نطاق نجران، ويطابق العنوان المحفوظ.",
       "patch": null,
-      "note": "مطابقة الاسم/العنوان موجودة، لكن تصنيف البطاقة شقق مفروشة ولا تعرض رقم الهاتف؛ يظل النشاط والرقم غير محسومين. لا تعديل."
+      "note": "الاسم والعنوان ظاهران، لكن تصنيف «شقق مفروشة» ورقم الاتصال غير المنشور يمنعان اعتماد النشاط والرقم."
     },
     {
       "id": "national-ejar-office-192117",
@@ -77,19 +77,19 @@
       "decision": "unresolved",
       "checkedAt": "2026-10-12",
       "observed": {
-        "name": null,
-        "category": null,
-        "city": null,
-        "district": null,
+        "name": "مكتب منصة الدارة للخدمات العقاريه",
+        "category": "وكالة عقارات",
+        "city": "نجران",
+        "district": "مخططات الغويلا الزراعية 66446",
         "pin": null,
         "publishedPhone": null
       },
       "mapsCardUrl": "https://www.google.com/maps/search/?api=1&query=17.6346736,44.5030157&query_place_id=ChIJBwK9IaMv_xURZ0h7TUNoBgc",
-      "mapsCardOpened": false,
-      "phoneEvidence": null,
-      "pinEvidence": null,
+      "mapsCardOpened": true,
+      "phoneEvidence": "بطاقة Maps المباشرة تعرض «إضافة رقم الهاتف»؛ 0559024555 غير منشور في البطاقة.",
+      "pinEvidence": "بطاقة place_id تعرض JGM3+V66 مخططات الغويلا الزراعية 66446، وهو العنوان المسجل. رابط page الحالي يحمل place_id فقط ولا يعرض lat/lon.",
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "تطابق الاسم والنشاط والعنوان، لكن الهاتف غير منشور ولم أستطع استخراج إحداثيات URL للبطاقة؛ تبقى غير محسومة بالكامل."
     },
     {
       "id": "national-ejar-office-192859",
@@ -108,7 +108,29 @@
       "phoneEvidence": null,
       "pinEvidence": null,
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "لم تظهر بطاقة مكتب مطابقة بعد بحث الاسم+الهاتف ثم الاسم في Maps؛ بحث الهاتف وحده تعذر بسبب مهلة المتصفح. لا استنتاج أو تعديل.",
+      "searchAttempts": [
+        {
+          "query": "مكتب الواء الاخضر للعقارات 0501824055 شرورة",
+          "surface": "Google Maps",
+          "observation": "ظهر تطابق جزئي واحد لمدينة شرورة فقط، بلا بطاقة المكتب أو هاتف."
+        },
+        {
+          "query": "مكتب الواء الاخضر للعقارات شرورة",
+          "surface": "Google Maps",
+          "observation": "أظهرت Maps رسالة تعذر العثور على البحث."
+        },
+        {
+          "query": "0501824055",
+          "surface": "Google Maps",
+          "observation": "محاولة فتح البحث انتهت بمهلة المتصفح قبل عرض النتائج."
+        },
+        {
+          "query": "0501824055",
+          "surface": "Google Maps",
+          "observation": "تعذر على خرائط Google العثور على رقم الهاتف؛ لم تظهر بطاقة منشأة أو رقم مكان."
+        }
+      ]
     },
     {
       "id": "national-ejar-office-201296",
@@ -127,7 +149,14 @@
       "phoneEvidence": null,
       "pinEvidence": null,
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "النتيجة الظاهرة ليست مطابقة مثبتة: الاسم/النشاط مختلفان والدبوس يبتعد عن إحداثيات السجل؛ لا تعديل قبل فحص نتيجة/بطاقة مطابقة.",
+      "searchAttempts": [
+        {
+          "query": "مكتب الصرح الوافي العقاري 0559805005 شرورة",
+          "surface": "Google Maps",
+          "observation": "Maps فتح نتيجة تحمل العنوان «شقق الصرح الوافي» في شرورة، بإحداثيات 17.5056238,47.0749455؛ السجل يستهدف مكتبًا عقاريًا عند 17.49650941,47.11438537. لم يتسن فحص هاتف البطاقة أو بقية النتائج بسبب timeout."
+        }
+      ]
     },
     {
       "id": "national-ejar-office-203088",
@@ -146,7 +175,19 @@
       "phoneEvidence": null,
       "pinEvidence": null,
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "بحث Maps بالاسم والرقم ثم بالاسم والمدينة لا يعرض بطاقة مكتب مطابقة؛ لا تصحيح بلا بطاقة مباشرة.",
+      "searchAttempts": [
+        {
+          "query": "مؤسسة جسر التواصل للخدمات العقارية 0558818655 شرورة",
+          "surface": "Google Maps",
+          "observation": "تعذر على خرائط Google العثور على عبارة البحث، ولا تظهر بطاقة نشاط مطابقة."
+        },
+        {
+          "query": "مؤسسة جسر التواصل للخدمات العقارية شرورة",
+          "surface": "Google Maps",
+          "observation": "تعذر على خرائط Google العثور على الاسم والمدينة؛ لم تظهر بطاقة مطابقة."
+        }
+      ]
     },
     {
       "id": "national-ejar-office-195389",
@@ -165,26 +206,49 @@
       "phoneEvidence": null,
       "pinEvidence": null,
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "بحث Maps بالاسم والرقم ثم بالاسم والمدينة لا يعرض بطاقة مكتب مطابقة؛ لا تصحيح بلا بطاقة مباشرة.",
+      "searchAttempts": [
+        {
+          "query": "مكتب زاوية المستقبل للعقارات 0557373063 شرورة",
+          "surface": "Google Maps",
+          "observation": "تعذر على خرائط Google العثور على عبارة البحث، ولا تظهر بطاقة نشاط مطابقة."
+        },
+        {
+          "query": "مكتب زاوية المستقبل للعقارات شرورة",
+          "surface": "Google Maps",
+          "observation": "تعذر على خرائط Google العثور على الاسم والمدينة؛ لم تظهر بطاقة مطابقة."
+        },
+        {
+          "query": "0557373063",
+          "surface": "Google Maps",
+          "observation": "تعذر على خرائط Google العثور على رقم الهاتف؛ لم تظهر بطاقة منشأة أو رقم مكان."
+        }
+      ]
     },
     {
       "id": "national-google-office-ChIJV_TW6sgb5RUR4aUYHPXoCUw",
-      "decision": "unresolved",
+      "decision": "verified",
       "checkedAt": "2026-10-12",
       "observed": {
-        "name": null,
-        "category": null,
-        "city": null,
-        "district": null,
-        "pin": null,
-        "publishedPhone": null
+        "name": "مكتب الريان العقاري",
+        "category": "مكتب الشركات",
+        "city": "النماص",
+        "district": "السلام، طريق الأمير سلطان بن عبدالعزيز",
+        "pin": {
+          "address": "44GJ+PR5، النماص 67387",
+          "placeId": "ChIJV_TW6sgb5RUR4aUYHPXoCUw",
+          "lat": 19.1267603,
+          "lon": 42.132107
+        },
+        "publishedPhone": "+966 17 282 0648"
       },
       "mapsCardUrl": "https://www.google.com/maps/place/?q=place_id:ChIJV_TW6sgb5RUR4aUYHPXoCUw",
-      "mapsCardOpened": false,
-      "phoneEvidence": null,
-      "pinEvidence": null,
+      "mapsCardOpened": true,
+      "phoneEvidence": "بطاقة place_id المباشرة تعرض +966 17 282 0648؛ يطابق 0172820648 المسجل.",
+      "pinEvidence": "بطاقة Maps المباشرة تعرض 44GJ+PR5، طريق الأمير سلطان، السلام، النماص 67387؛ العنوان يطابق. Canonical Maps tab URL (observed after loading the place card) contains exact coordinates 19.1267603,42.132107.",
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "مطابقة الاسم والهاتف والعنوان مؤكدة من البطاقة المباشرة؛ إحداثيات lat/lon غير معروضة نصًا في URL الحالي، ولا يوجد patch.",
+      "finalMapsUrlObserved": "https://www.google.com/maps/place/مكتب+الريان+العقاري/@19.1267603,42.132107,17z/data=!3m1!4b1!4m6!3m5!1s0x15e51bc8ead6f457:0x4c09e8f51c18a5e1!8m2!3d19.1267603!4d42.132107!16s/g/11f5ny5mdn"
     },
     {
       "id": "v9-office-aea1d102e95c",
@@ -203,7 +267,14 @@
       "phoneEvidence": null,
       "pinEvidence": null,
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "محاولة البحث بالاسم والرقم موجودة لكن لم يمكن قراءة النتائج من Maps بسبب timeout. لا اعتماد أو تعديل.",
+      "searchAttempts": [
+        {
+          "query": "مؤسسة الديرة للخدمات العقارية 0551133423 سبت العلايا",
+          "surface": "Google Maps",
+          "observation": "فُتح بحث Maps، لكن لقطة الصفحة انتهت بمهلة DOMSnapshot؛ لم تُقرأ أي نتيجة أو بطاقة."
+        }
+      ]
     },
     {
       "id": "national-ejar-office-199883",
@@ -378,41 +449,60 @@
     },
     {
       "id": "national-yango-office-63716439989",
-      "decision": "unresolved",
+      "decision": "closed_proven",
       "checkedAt": "2026-10-12",
       "observed": {
-        "name": null,
+        "name": "مرو للتطوير العقاري والمقاولات",
         "category": null,
-        "city": null,
-        "district": null,
-        "pin": null,
-        "publishedPhone": null
+        "city": "عرعر",
+        "district": "2335+7HC، 2335+7FX، عرعر 73244",
+        "pin": {
+          "lat": 31.0031957,
+          "lon": 41.0588785,
+          "placeId": "0x156c0f17660cc7d3:0xa714db3fa9e6a08e",
+          "plusCode": "2335+7HC عرعر السعودية"
+        },
+        "publishedPhone": null,
+        "businessStatus": "مغلق نهائيًا"
       },
       "mapsCardUrl": "https://www.google.com/maps/search/%D9%85%D8%B1%D9%88%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D9%88%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20%D8%B9%D8%B1%D8%B9%D8%B1%200560966660",
-      "mapsCardOpened": false,
-      "phoneEvidence": null,
-      "pinEvidence": null,
-      "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "mapsCardOpened": true,
+      "phoneEvidence": "بطاقة Maps لا تعرض رقم اتصال وتعرض «مغلق نهائيًا»؛ الرقم 0560966660 المسجل غير منشور وغير مؤكد.",
+      "pinEvidence": "الرابط النهائي للبطاقة يعرض @31.0031957,41.0588785 و!3d31.0031957!4d41.0588785؛ السجل الحالي 31.00069,41.06927. بطاقة Maps تعرض عنوان 2335+7HC عرعر.",
+      "patch": {
+        "action": "archive_record_without_deleting",
+        "lat": 31.0031957,
+        "lon": 41.0588785,
+        "maps": "https://www.google.com/maps/place/%D9%85%D8%B1%D9%88+%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D9%88%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%E2%80%AD/@31.0031957,41.0588785,17z/data=!3m1!4b1!4m6!3m5!1s0x156c0f17660cc7d3:0xa714db3fa9e6a08e!8m2!3d31.0031957!4d41.0588785!16s%2Fg%2F11q4bbxp7q",
+        "closedProof": "Google Maps card displays مغلق نهائيًا"
+      },
+      "note": "بطاقة Maps المطابقة للاسم في عرعر تثبت الإغلاق الدائم؛ الرقم المسجل غير ظاهر. اقتراح أرشفة مع حفظ السجل، دون حذف أو كتابة data/offices.json.",
+      "finalMapsUrlObserved": "https://www.google.com/maps/place/%D9%85%D8%B1%D9%88+%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D9%88%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%E2%80%AD/@31.0031957,41.0588785,17z/data=!3m1!4b1!4m6!3m5!1s0x156c0f17660cc7d3:0xa714db3fa9e6a08e!8m2!3d31.0031957!4d41.0588785!16s%2Fg%2F11q4bbxp7q"
     },
     {
       "id": "national-google-office-ChIJ6cgmWQCZqhURzRqEY_TK_Vc",
-      "decision": "unresolved",
+      "decision": "verified",
       "checkedAt": "2026-10-12",
       "observed": {
-        "name": null,
-        "category": null,
-        "city": null,
-        "district": null,
-        "pin": null,
-        "publishedPhone": null
+        "name": "مكتب أبراج المدائن",
+        "category": "وكالة عقارات",
+        "city": "حقل",
+        "district": "الظهرة، طريق الأمير سلطان بن عبدالعزيز",
+        "pin": {
+          "address": "7WQW+77 حقل السعودية",
+          "placeId": "ChIJ6cgmWQCZqhURzRqEY_TK_Vc",
+          "lat": 29.2882259,
+          "lon": 34.9456302
+        },
+        "publishedPhone": "+966 53 201 5634"
       },
       "mapsCardUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A3%D8%A8%D8%B1%D8%A7%D8%AC+%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%A6%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15aa99005926c8e9:0x57fdcaf463841acd!8m2!3d29.2882259!4d34.9456302!16s%2Fg%2F11wh5jx4rr!19sChIJ6cgmWQCZqhURzRqEY_TK_Vc?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
-      "mapsCardOpened": false,
-      "phoneEvidence": null,
-      "pinEvidence": null,
+      "mapsCardOpened": true,
+      "phoneEvidence": "بطاقة place_id المباشرة تعرض +966 53 201 5634؛ يطابق 0532015634.",
+      "pinEvidence": "بطاقة Maps المباشرة تعرض عنوان طريق الأمير سلطان، الظهرة، حقل 49938 وPlus Code 7WQW+77، مطابق للسجل. Canonical Maps tab URL (observed after loading the place card) contains exact coordinates 29.2882259,34.9456302.",
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "مطابقة الاسم والنشاط والهاتف والعنوان مؤكدة. لاحظت أن البطاقة تعرض موقعًا داخل مغسلة سيارات، لكن الدبوس والعنوان المعلن متطابقان؛ لا patch.",
+      "finalMapsUrlObserved": "https://www.google.com/maps/place/مكتب+أبراج+المدائن/@29.2882259,34.9456302,17z/data=!3m1!4b1!4m6!3m5!1s0x15aa99005926c8e9:0x57fdcaf463841acd!8m2!3d29.2882259!4d34.9456302!16s/g/11wh5jx4rr"
     },
     {
       "id": "national-ejar-office-192622",
@@ -431,26 +521,44 @@
       "phoneEvidence": null,
       "pinEvidence": null,
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "لا بطاقة مكتب مطابقة في نتائج Maps المتاحة؛ لم أستنتج صحة الإحداثيات أو الهاتف من pin-only link.",
+      "searchAttempts": [
+        {
+          "query": "مؤسسة عبدالله محمد الغامدي للخدمات العقارية 0504270141 بلجرشي",
+          "surface": "Google Maps",
+          "observation": "ظهرت مطابقة جزئية للمدينة بلجرشي فقط، بلا بطاقة النشاط أو رقم اتصال أو دبوس للمكتب."
+        },
+        {
+          "query": "مؤسسة عبدالله محمد الغامدي للخدمات العقارية بلجرشي",
+          "surface": "Google Maps",
+          "observation": "محاولة بحث الاسم دون الرقم انتهت بمهلة Page.enable قبل ظهور النتائج."
+        }
+      ]
     },
     {
       "id": "national-ejar-office-209089",
-      "decision": "unresolved",
+      "decision": "verified",
       "checkedAt": "2026-10-12",
       "observed": {
-        "name": null,
-        "category": null,
-        "city": null,
-        "district": null,
-        "pin": null,
-        "publishedPhone": null
+        "name": "إنجاز وإعتمال الأعمال للخدمات التجارية",
+        "category": "وكالة عقارات تجارية",
+        "city": "بلجرشي",
+        "district": "طريق الملك سعود، بلجرشي 65635",
+        "pin": {
+          "address": "VH66+95 بلجرشي السعودية",
+          "placeId": "ChIJgxXnbJhd7xURO1fBGjMB2IA",
+          "lat": 19.8608875,
+          "lon": 41.5603855
+        },
+        "publishedPhone": "+966 55 155 5722"
       },
       "mapsCardUrl": "https://www.google.com/maps/search/?api=1&query=19.8608875,41.5603855&query_place_id=ChIJgxXnbJhd7xURO1fBGjMB2IA",
-      "mapsCardOpened": false,
-      "phoneEvidence": null,
-      "pinEvidence": null,
+      "mapsCardOpened": true,
+      "phoneEvidence": "بطاقة Maps المباشرة تعرض +966 55 155 5722؛ يطابق 0551555722.",
+      "pinEvidence": "بطاقة place_id تعرض طريق الملك سعود، بلجرشي 65635 وPlus Code VH66+95، مطابق للسجل. Canonical Maps tab URL (observed after loading the place card) contains exact coordinates 19.8608875,41.5603855.",
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "مطابقة الاسم والنشاط العقاري والهاتف والعنوان مؤكدة؛ لا patch.",
+      "finalMapsUrlObserved": "https://www.google.com/maps/place/إنجاز+وإعتمال+الأعمال+للخدمات+التجارية/@19.8608875,41.5603855,17z/data=!3m1!4b1!4m6!3m5!1s0x15ef5d986ce71583:0x80d801331ac1573b!8m2!3d19.8608875!4d41.5603855!16s/g/11sd6h9fbr"
     },
     {
       "id": "national-ejar-office-584125",
@@ -469,26 +577,37 @@
       "phoneEvidence": null,
       "pinEvidence": null,
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "لم تظهر بطاقة باسم السجل أو رقم مطابق. المرشحان الظاهران مختلفان، فلا أستبدل بيانات المكتب بهما.",
+      "searchAttempts": [
+        {
+          "query": "مكتب عقار بارك العقارية 0534550123 بلجرشي",
+          "surface": "Google Maps",
+          "observation": "ظهرت بطاقتان مختلفتان: مكتب بلجرشي العقاري (شركة إدارة عقارات، هاتف 0177233228، pin 19.861901,41.5642335) وعقار (مبنى سكني، pin 19.8702952,41.5840636). لا تطابق الاسم أو الرقم مع السجل (0534550123). بحث الاسم الدقيق دون رقم انتهى بمهلة.",
+          "phoneOnly": "Maps could not find 0534550123."
+        }
+      ]
     },
     {
       "id": "national-google-office-ChIJE48mwlcb5RURWhZsmHsBobY",
       "decision": "unresolved",
       "checkedAt": "2026-10-12",
       "observed": {
-        "name": null,
-        "category": null,
-        "city": null,
-        "district": null,
-        "pin": null,
-        "publishedPhone": null
+        "name": "مكتب ديار المتميزون للعقار",
+        "category": "عقار شقق مفروشة",
+        "city": "النماص",
+        "district": "طريق الملك فيصل، النماص 55555",
+        "pin": {
+          "address": "5426+99 النماص السعودية",
+          "placeId": "ChIJE48mwlcb5RURWhZsmHsBobY"
+        },
+        "publishedPhone": "+966 57 071 3878"
       },
       "mapsCardUrl": "https://www.google.com/maps/place/?q=place_id:ChIJE48mwlcb5RURWhZsmHsBobY",
-      "mapsCardOpened": false,
-      "phoneEvidence": null,
-      "pinEvidence": null,
+      "mapsCardOpened": true,
+      "phoneEvidence": "بطاقة place_id تعرض +966 57 071 3878؛ يطابق 0570713878 المسجل.",
+      "pinEvidence": "بطاقة المكان تعرض طريق الملك فيصل، النماص 55555 وPlus Code 5426+99.",
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "الاسم والرقم والعنوان متطابقة، لكن تصنيف النشاط «شقق مفروشة» لا يثبت أنها مكتب عقاري؛ تبقى غير محسومة."
     },
     {
       "id": "national-icuae-office-ChIJ1S_wasn1BxYRNbf2JCv1wcQ",
@@ -545,26 +664,44 @@
       "phoneEvidence": null,
       "pinEvidence": null,
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "Maps لم يعرض سوى صفحة المدينة، لا بطاقة المكتب؛ تعذر البحث بالاسم وحده بسبب timeout. لا تعديل.",
+      "searchAttempts": [
+        {
+          "query": "مؤسسة حسام وجهتك العقارية 0540557744 ينبع",
+          "surface": "Google Maps",
+          "observation": "لم يظهر سوى تطابق جزئي للمدينة «ينبع» بلا بطاقة مكتب، هاتف أو دبوس مطابق."
+        },
+        {
+          "query": "مؤسسة حسام وجهتك العقارية ينبع",
+          "surface": "Google Maps",
+          "observation": "محاولة الاسم دون الرقم انتهت بمهلة تحميل Maps قبل عرض بطاقة."
+        }
+      ]
     },
     {
       "id": "national-ejar-office-193976",
       "decision": "unresolved",
       "checkedAt": "2026-10-12",
       "observed": {
-        "name": null,
-        "category": null,
-        "city": null,
-        "district": null,
-        "pin": null,
-        "publishedPhone": null
+        "name": "مكتب رواسي ينبع",
+        "category": "وكالة عقارات",
+        "city": "ينبع",
+        "district": "حي المروج، يحيى التيمي",
+        "pin": {
+          "address": "YFAD7559، 7559 يحيى التيمي، حي المروج، ينبع 46511",
+          "plusCode": "4258+36",
+          "placeId": "ChIJUa6jHV4HuRURQbQk3bjqEs8",
+          "lat": 24.1077009,
+          "lon": 38.0155311
+        },
+        "publishedPhone": "+966 55 018 1652"
       },
       "mapsCardUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%88%D8%A7%D8%B3%D9%8A+%D9%8A%D9%86%D8%A8%D8%B9%E2%80%AD/data=!4m7!3m6!1s0x15b9075e1da3ae51:0xcf12eab8dd24b441!8m2!3d24.1077009!4d38.0155311!16s%2Fg%2F11s7dn1rlm!19sChIJUa6jHV4HuRURQbQk3bjqEs8?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
-      "mapsCardOpened": false,
-      "phoneEvidence": null,
-      "pinEvidence": null,
+      "mapsCardOpened": true,
+      "phoneEvidence": "بطاقة Maps تعرض 0550181652، وهو يطابق أحد الرقمين المسجلين. الرقم الآخر 0541800031 لا يظهر في البطاقة، لذلك لم أعتمده أو أحذفه.",
+      "pinEvidence": "بطاقة Maps المباشرة عبر place_id تعرض عنوان حي المروج، ينبع ورمز الموقع 4258+36. رابط السجل يتضمن place_id نفسه وإحداثيات 24.1077009,38.0155311.",
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "بطاقة المكان تطابق الاسم والعنوان ورقمًا واحدًا؛ الرقم الثاني المسجل غير منشور في البطاقة، لذلك السجل ككل غير محسوم دون تعديل."
     },
     {
       "id": "national-ejar-office-201194",
@@ -625,41 +762,60 @@
     },
     {
       "id": "national-ejar-office-238771",
-      "decision": "unresolved",
+      "decision": "corrected",
       "checkedAt": "2026-10-12",
       "observed": {
-        "name": null,
-        "category": null,
-        "city": null,
-        "district": null,
-        "pin": null,
-        "publishedPhone": null
+        "name": "مكتب المفتاح الرقمي للعقار",
+        "category": "وكالة عقارات",
+        "city": "بدر",
+        "district": "الغزلاني",
+        "pin": {
+          "lat": 23.7629101,
+          "lon": 38.7409022,
+          "address": "4570 بدر 2892، الغزلاني، بدر 46352",
+          "plusCode": "QP7R+59 بدر السعودية"
+        },
+        "publishedPhone": "+966 54 520 3221"
       },
       "mapsCardUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%85%D9%81%D8%AA%D8%A7%D8%AD+%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/@23.7629101,38.7409022,17z/data=!3m1!4b1!4m6!3m5!1s0x15bed70048770747:0x6273c479be82d582!8m2!3d23.7629101!4d38.7409022!16s%2Fg%2F11vqx3wdj3?entry=ttu",
-      "mapsCardOpened": false,
-      "phoneEvidence": null,
-      "pinEvidence": null,
-      "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "mapsCardOpened": true,
+      "phoneEvidence": "بطاقة Google Maps المباشرة تعرض +966 54 520 3221؛ الرقم الحالي المسجل هو 0534306337 ولا يطابق البطاقة.",
+      "pinEvidence": "الرابط النهائي لبطاقة Google Maps يتضمن @23.7629101,38.7409022 و!3d23.7629101!4d38.7409022؛ بيانات السجل الحالية 23.78482,38.78654. البطاقة تعرض العنوان الغزلاني، بدر وPlus Code QP7R+59.",
+      "patch": {
+        "phones": [
+          "0545203221"
+        ],
+        "lat": 23.7629101,
+        "lon": 38.7409022,
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%85%D9%81%D8%AA%D8%A7%D8%AD+%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/@23.7629101,38.7409022,17z/data=!3m1!4b1!4m6!3m5!1s0x15bed70048770747:0x6273c479be82d582!8m2!3d23.7629101!4d38.7409022!16s%2Fg%2F11vqx3wdj3?entry=ttu",
+        "loc": "pt"
+      },
+      "note": "تصحيح مقترح مثبت من بطاقة المكان المطابقة بالاسم والنشاط والمدينة؛ لم يتم تطبيقه على data/offices.json حسب توجيه الوكيل الرئيسي.",
+      "finalMapsUrlObserved": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%85%D9%81%D8%AA%D8%A7%D8%AD+%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/@23.7629101,38.7409022,17z/data=!3m1!4b1!4m6!3m5!1s0x15bed70048770747:0x6273c479be82d582!8m2!3d23.7629101!4d38.7409022!16s%2Fg%2F11vqx3wdj3?entry=ttu"
     },
     {
       "id": "national-thirdparty-office-duba-0500517062",
-      "decision": "unresolved",
+      "decision": "verified",
       "checkedAt": "2026-10-12",
       "observed": {
-        "name": null,
-        "category": null,
-        "city": null,
-        "district": null,
-        "pin": null,
-        "publishedPhone": null
+        "name": "مكتب العيسوي للعقار والخدمات الالكترونية ضباء",
+        "category": "وكالة تأجير عقارات",
+        "city": "ضباء",
+        "district": "المقيطع، طريق الملك فهد",
+        "pin": {
+          "lat": 27.3452099,
+          "lon": 35.7113604,
+          "placeId": "ChIJgfqR1mElrBURxRpmiZv5ilY",
+          "address": "8PW6+3GQ، طريق الملك فهد، المقيطع، ضبا 49312"
+        },
+        "publishedPhone": "+966 50 051 7062"
       },
       "mapsCardUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B9%D9%8A%D8%B3%D9%88%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9+%D8%B6%D8%A8%D8%A7%D8%A1%E2%80%AD/data=!4m7!3m6!1s0x15ac2561d691fa81:0x568af99b89661ac5!8m2!3d27.3452099!4d35.7113604!16s%2Fg%2F11f7czlx5n!19sChIJgfqR1mElrBURxRpmiZv5ilY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
-      "mapsCardOpened": false,
-      "phoneEvidence": null,
-      "pinEvidence": null,
+      "mapsCardOpened": true,
+      "phoneEvidence": "بطاقة place_id المباشرة تعرض +966 50 051 7062؛ يطابق 0500517062 المسجل.",
+      "pinEvidence": "بطاقة Maps المباشرة تعرض عنوان 8PW6+3GQ، طريق الملك فهد، المقيطع، ضباء 49312. رابط المكان المحفوظ يتضمن نفس place_id والإحداثيات 27.3452099,35.7113604.",
       "patch": null,
-      "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
+      "note": "تطابق الاسم والنشاط والرقم والعنوان والإحداثيات مثبت؛ لا تعديل."
     },
     {
       "id": "national-ejar-office-205522",
@@ -680,5 +836,46 @@
       "patch": null,
       "note": "تعذر فتح بطاقة المكان مباشرة في Google Maps خلال هذه المحاولة؛ لا أستنتج من رابط البحث أو دبوس الإحداثيات وحده. يلزم استكمال الفحص لاحقًا."
     }
-  ]
+  ],
+  "verifiedCount": 5,
+  "unresolvedCount": 28,
+  "partialCount": 0,
+  "openedPlaceCardCount": 11,
+  "note": "المعايير تستخدم verified عند مطابقة الاسم والنشاط والرقم المنشور والعنوان؛ غير ذلك يسجل unresolved دون استعمال partial.",
+  "additionalSearches": {
+    "mapsNameAndPhoneQueries": 2,
+    "searchesNoFullMatch": 1,
+    "candidateMismatchNotVerified": 1,
+    "blocker": "Google Maps page protocol timeouts after several loaded tabs.",
+    "recordsNoMatchingCard": [
+      "national-ejar-office-203088",
+      "national-ejar-office-195389"
+    ],
+    "mapsNoMatchNumberOnly": [
+      "national-ejar-office-192859",
+      "national-ejar-office-195389"
+    ],
+    "searchPageTimeout": [
+      "v9-office-aea1d102e95c"
+    ],
+    "newDirectCards": [
+      "national-thirdparty-office-duba-0500517062",
+      "national-ejar-office-193976"
+    ],
+    "confirmedCorrectionCandidates": [
+      "national-ejar-office-238771"
+    ],
+    "closedProven": [
+      "national-yango-office-63716439989"
+    ],
+    "mapsPartialCityOnly": [
+      "national-ejar-office-192622",
+      "national-ejar-office-194902"
+    ],
+    "mapsCandidatesNotMatched": [
+      "national-ejar-office-584125"
+    ]
+  },
+  "correctedCount": 1,
+  "closedProvenCount": 1
 }
