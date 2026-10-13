@@ -35,7 +35,7 @@ const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  const aflajCar=D.cars.filter(o=>Q.sameCity(o.city,'ليلى')&&(o.phones||[]).includes('0501144220'));
  assert.strictEqual(aflajCar.length,1,'regional Aflaaj listing must deduplicate with Layla source record');
  const sabtOffices=D.offices.filter(o=>Q.sameCity(o.city,'سبت العلاية'));
- assert.strictEqual(sabtOffices.length,5,'all five offices with variant spelling must attach to the branch city');
+ assert.strictEqual(sabtOffices.length,4,'all remaining offices with variant spelling and Maps brokerage evidence must attach to the branch city');
  const branchSearch=els['q-branch'], citySelect=els['q-city'];
  const branchCities=[...new Set(D.branches.map(b=>b.city).filter(Boolean))].sort();
  assert(branchCities.length>50,'national test must cover the nationwide branch-city set');
