@@ -113,7 +113,35 @@
       "previousMapsAuditNote": "تعذرت قراءة بطاقة Google Maps بسبب انتهاء مهلة تحميل الواجهة؛ لم يُستنتج عدم وجود المكتب ولم تُغيّر بياناته.",
       "patchProposed": null,
       "reason": "بحث Maps بالاسم والمدينة والهاتف أظهر مكاتب عقارية أخرى، ولم يظهر المكتب المستهدف أو رقمه؛ لا تُنسب النتائج له.",
-      "protected": false
+      "protected": false,
+      "followupAttempts": [
+        {
+          "source": "Google Maps direct search",
+          "query": "مكتب حمد عبدالله حمد آل عباس للعقار نجران 0532909084",
+          "liveObservation": true,
+          "observedCards": [
+            {
+              "name": "مكتب زابن الحله للعقارات",
+              "phoneIntl": "+966 17 542 0666",
+              "coordinates": "17.4922835,44.1389568"
+            },
+            {
+              "name": "مكتب غنام للعقارات",
+              "category": "وكالة عقارات",
+              "phoneIntl": "+966 55 959 5738",
+              "coordinates": "17.5860093,44.2302483"
+            },
+            {
+              "name": "عقارات ابن رحمة",
+              "category": "وكالة عقارات",
+              "phoneIntl": "+966 50 043 1531",
+              "coordinates": "17.5666309,44.3307338"
+            }
+          ],
+          "targetCardMatched": false,
+          "result": "لم تظهر بطاقة المكتب أو الرقم المسجل؛ البطاقات العقارية المعروضة تخص مكاتب أخرى ولا تنسب للسجل."
+        }
+      ]
     },
     {
       "id": "national-ejar-office-194158",
@@ -146,7 +174,16 @@
       "previousMapsAuditNote": "تعذرت قراءة بطاقة Google Maps بسبب انتهاء مهلة تحميل الواجهة؛ لم يُستنتج عدم وجود المكتب ولم تُغيّر بياناته.",
       "patchProposed": null,
       "reason": "تم فتح موضع الإحداثيات وبحث خرائط Google عن الاسم؛ لم تظهر بطاقة مطابقة، والنتائج كانت مكاتب أخرى. لا أستنتج أن دبوس الإحداثيات يعود للمكتب.",
-      "protected": false
+      "protected": false,
+      "followupAttempts": [
+        {
+          "source": "Google Maps direct search",
+          "query": "مكتب التم للخدمات العقارية نجران 0506308963",
+          "pageOpened": true,
+          "cardSnapshot": false,
+          "outcome": "انتهت مهلة واجهة Maps قبل ظهور بطاقة؛ لا استنتاج ولا تعديل."
+        }
+      ]
     },
     {
       "id": "national-ejar-office-192377",
