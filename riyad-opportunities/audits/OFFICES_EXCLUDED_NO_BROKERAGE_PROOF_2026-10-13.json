@@ -1,0 +1,714 @@
+{
+  "schema": "office-maps-exclusions-v1",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "checkedAt": "2026-10-13",
+  "rule": "Remove target office records whose Google Maps card/search does not establish brokerage activity or whose card is another business; preserve full records and evidence here.",
+  "counts": {
+    "before": 1524,
+    "after": 1499,
+    "removed": 25,
+    "uniqueAfter": 1499
+  },
+  "excluded": [
+    {
+      "record": {
+        "id": "office-maps-8649fd5374dc",
+        "n": "مكتب الحميدي للعقار",
+        "city": "الرس",
+        "nb": "VGR4+Q3J",
+        "phones": [
+          "0509966090"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=25.8919639,43.5051456&query_place_id=ChIJb8juvr_LgxURo68q-jxdUH4",
+        "lat": 25.8919639,
+        "lon": 43.5051456,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "verified_name_phone_location_activity_ambiguous",
+          "source": "https://www.google.com/maps/search/?api=1&query=25.8919639,43.5051456&query_place_id=ChIJb8juvr_LgxURo68q-jxdUH4",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card",
+          "observedPhoneIntl": "0509966090",
+          "note": "مكتب الحميدي للعقار؛ Maps تصنيف مكتب الشركات، فلا تثبت النشاط العقاري؛ الهاتف 0509966090 والموقع مطابقان."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بطاقة Maps تعرض «مكتب الشركات» فقط؛ لا يظهر فيها ما يثبت نشاط الوساطة العقارية.",
+      "evidenceUrl": "https://www.google.com/maps/search/?api=1&query=25.8919639,43.5051456&query_place_id=ChIJb8juvr_LgxURo68q-jxdUH4",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-192560",
+        "n": "شركة العرب الحديثه للعقارات",
+        "city": "نجران",
+        "nb": "نايف بن عبدالعزيز، نجران، نجران، المملكة العربية السعودية",
+        "phones": [],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%20%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%20",
+        "lat": 17.49234,
+        "lon": 44.11663,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_maps_ui_timeout",
+          "source": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%20%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%20",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card or search review",
+          "note": "تعذر عرض إطار بطاقة Maps؛ لا استنتاج حول وجود الشركة أو الرقم."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بحث Maps بالاسم والمدينة لم يجد بطاقة مطابقة؛ النتائج العقارية تخص جهات مختلفة ومغلقة، فلا تثبت هوية المكتب.",
+      "evidenceUrl": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%20%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%20",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-194497",
+        "n": "مكتب جوهرة الجوافة للعقار",
+        "city": "نجران",
+        "nb": "حمزة بن عبدالمطلب، نجران، نجران، المملكة العربية السعودية",
+        "phones": [
+          "0552335512"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=17.55692535,44.23518906",
+        "lat": 17.55692,
+        "lon": 44.23519,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_no_matching_maps_card",
+          "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AC%D9%88%D9%87%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AC%D9%88%D8%A7%D9%81%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "note": "نتائج خرائط Google عرضت مكاتب بأسماء أخرى ولا تطابق الاسم أو الرقم؛ لا يوجد دليل كافٍ لربط أي بطاقة بالسجل."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "رابط Maps يفتح إحداثيات فقط بلا بطاقة منشأة أو نشاط وساطة.",
+      "evidenceUrl": "https://maps.google.com/maps?q=17.55692535,44.23518906",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-196051",
+        "n": "مكتب الصملة للخدمات العقارية",
+        "city": "نجران",
+        "nb": "NJMB7757، 3512 شارع صهيب بن سنان، 7757، نجران 66256، المملكة العربية السعودية",
+        "phones": [
+          "0509840427"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.5837995,44.23646859999999&query_place_id=ChIJ10vVHaPF_hUR4vw0YIfsaMk",
+        "lat": 17.5837995,
+        "lon": 44.23646859999999,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "verified_name_activity_and_pin_phone_unlisted",
+          "source": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B5%D9%85%D9%84%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بطاقة Maps تصنف الجهة «مطوّر عقارات»، وليس وكالة/وساطة عقارية.",
+      "evidenceUrl": "https://www.google.com/maps/search/?api=1&query=17.5837995,44.23646859999999&query_place_id=ChIJ10vVHaPF_hUR4vw0YIfsaMk",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-icuae-office-ChIJm5s9NXwPbBUR-4Wm3fcn_t8",
+        "n": "مكتب الدار الشمالي العقاري",
+        "city": "عرعر",
+        "nb": "Prince Fahd Bin Jalawi Rd – Naseem – Arar 73241 – Saudi Arabia",
+        "phones": [
+          "0503367797"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJm5s9NXwPbBUR-4Wm3fcn_t8",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "mapsAudit": {
+          "status": "unresolved_name_location_conflict",
+          "source": "https://www.google.com/maps/place/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%A5%D8%AA%D8%AC%D8%A7%D9%87%D8%A7%D8%AA+%D8%B0%D9%83%D9%8A%D8%A9+%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1+%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%E2%80%AD/@30.9663628,41.0487257,17z/data=!3m1!4b1!4m6!3m5!1s0x156c0d1b7cb1ae9b:0x19df862908b580ea!8m2!3d30.9663628!4d41.0487257!16s%2Fg%2F11wfkdh5ps",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card or search review",
+          "note": "الرابط يفتح بطاقة مؤسسة اتجاهات ذكية للتطوير والاستثمار العقاري بدبوس 30.9663628,41.0487257؛ اسم مختلف عن مكتب الدار الشمالي، لا ربط مؤكد ولا تعديل."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "Place ID يفتح جهة مختلفة باسم مؤسسة اتجاهات ذكية للتطوير والاستثمار العقاري في عرعر؛ الرابط لا يثبت هوية السجل.",
+      "evidenceUrl": "https://www.google.com/maps/place/?q=place_id:ChIJm5s9NXwPbBUR-4Wm3fcn_t8",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-google-office-ChIJVfFmPAob5RURCegkz5cw3e4",
+        "n": "مكتب محمد عوض الشهري للخدمات العقاريه",
+        "city": "النماص",
+        "nb": "44CR+4HM، Unnamed Road، النماص 67395، المملكة العربية السعودية",
+        "phones": [
+          "0505763491"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJVfFmPAob5RURCegkz5cw3e4",
+        "lat": 19.12035,
+        "lon": 42.14143,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "partial_name_phone_match_activity_unconfirmed",
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJVfFmPAob5RURCegkz5cw3e4",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "observedPhoneIntl": "+966 50 576 3491",
+          "note": "بطاقة مكتب محمد عوض الشهري تعرض الهاتف 0505763491 المطابق؛ 44CR+4HM، طريق غير مسمى، النماص 67395؛ تصنيف البطاقة مركز تسوق، والنشاط العقاري غير مؤكد."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بطاقة Maps تعرض «مركز تسوق»، والمراجعات لا تثبت وساطة عقارية.",
+      "evidenceUrl": "https://www.google.com/maps/place/?q=place_id:ChIJVfFmPAob5RURCegkz5cw3e4",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-194652",
+        "n": "مؤسسة علي ظافر ظافر الشمراني للعقار",
+        "city": "نجران",
+        "nb": "NJMD7939، 7939 خالد بن عبدالعزيز، نجران 66256، المملكة العربية السعودية",
+        "phones": [
+          "0505725867"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.5854684,44.2302731&query_place_id=ChIJIa9fWHTF_hURfMQJTTDWfHQ",
+        "lat": 17.5854684,
+        "lon": 44.2302731,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "verified_name_activity_and_pin_phone_unlisted",
+          "source": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B9%D9%84%D9%8A+%D8%B8%D8%A7%D9%81%D8%B1+%D8%B8%D8%A7%D9%81%D8%B1+%D8%A7%D9%84%D8%B4%D9%85%D8%B1%D8%A7%D9%86%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد.",
+          "observedPhoneIntl": "0505725867"
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بطاقة Maps تطابق الاسم والعنوان والدبوس، لكن التصنيف الوحيد «عقار شقق مفروشة» ولا يثبت الوساطة؛ لا رقم منشور.",
+      "evidenceUrl": "https://www.google.com/maps/search/?api=1&query=17.5854684,44.2302731&query_place_id=ChIJIa9fWHTF_hURfMQJTTDWfHQ",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-google-office-ChIJE48mwlcb5RURWhZsmHsBobY",
+        "n": "مكتب ديار المتميزون للعقار",
+        "city": "النماص",
+        "nb": "طريق الملك فيصل، النماص 55555، المملكة العربية السعودية",
+        "phones": [
+          "0570713878"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJE48mwlcb5RURWhZsmHsBobY",
+        "lat": 19.15093,
+        "lon": 42.11097,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "partial_name_phone_match_activity_unconfirmed",
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJE48mwlcb5RURWhZsmHsBobY",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "observedPhoneIntl": "+966 57 071 3878",
+          "note": "بطاقة ديار المتميزون تعرض الهاتف 0570713878 المطابق؛ طريق الملك فيصل، النماص؛ Plus 5426+99؛ تصنيف البطاقة عقار شقق مفروشة."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بطاقة Maps تعرض «عقار شقق مفروشة» فقط؛ لا تثبت نشاط الوساطة رغم تطابق الهاتف والعنوان.",
+      "evidenceUrl": "https://www.google.com/maps/place/?q=place_id:ChIJE48mwlcb5RURWhZsmHsBobY",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-201296",
+        "n": "مكتب الصرح الوافي العقاري",
+        "city": "شرورة",
+        "nb": "شارع 30، العزيزية، شرورة، نجران، المملكة العربية السعودية",
+        "phones": [
+          "0559805005"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=17.49650941,47.11438537",
+        "lat": 17.49651,
+        "lon": 47.11438,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_no_matching_maps_card",
+          "source": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D8%A7%D9%84%D8%B5%D8%B1%D8%AD%20%D8%A7%D9%84%D9%88%D8%A7%D9%81%D9%8A",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "note": "النتيجة الظاهرة شقق وليست مكتبًا عقاريًا؛ لا تطابق مثبت."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "Maps يعرض «شقق الصرح الوافي» بتصنيف فندق، والاسم/الدبوس لا يطابقان مكتب الصرح الوافي المسجل.",
+      "evidenceUrl": "https://maps.google.com/maps?q=17.49650941,47.11438537",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-195555",
+        "n": "مكتب الأفلاك للخدمات العقارية",
+        "city": "نجران",
+        "nb": "نجران، نجران، المملكة العربية السعودية",
+        "phones": [
+          "0566669896"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=17.616944,44.419464",
+        "lat": 17.61694,
+        "lon": 44.41946,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_no_matching_maps_card",
+          "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%A3%D9%81%D9%84%D8%A7%D9%83%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "note": "بحث خرائط Google لنجران أظهر أماكن أخرى دون بطاقة تطابق الاسم والهاتف؛ لا تطابق مثبت، ولم يتغير السجل."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بحث Maps بالاسم والهاتف أظهر بطاقة مدينة نجران فقط، بلا بطاقة مكتب أو رقم/دبوس مطابق.",
+      "evidenceUrl": "https://maps.google.com/maps?q=17.616944,44.419464",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-192537",
+        "n": "مكتب فايز بن حمد بن مبارك اليامي للعقارات",
+        "city": "نجران",
+        "nb": "فهد بن عبدالعزيز، نجران، نجران، المملكة العربية السعودية",
+        "phones": [
+          "0508961112"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=17.56665478,44.33078349",
+        "lat": 17.56666,
+        "lon": 44.33078,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_maps_ui_timeout",
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%81%D8%A7%D9%8A%D8%B2%20%D8%A8%D9%86%20%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D9%85%D8%A8%D8%A7%D8%B1%D9%83%20%D8%A7%D9%84%D9%8A%D8%A7%D9%85%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "note": "تعذرت قراءة بطاقة Google Maps بسبب انتهاء مهلة تحميل الواجهة؛ لم يُستنتج عدم وجود المكتب ولم تُغيّر بياناته."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بحث Maps بالاسم والهاتف لا يظهر بطاقة مطابقة؛ البطاقات الأخرى ذات أسماء وأرقام مختلفة.",
+      "evidenceUrl": "https://maps.google.com/maps?q=17.56665478,44.33078349",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-192834",
+        "n": "مكتب بصمة خدماتي العقاري",
+        "city": "نجران",
+        "nb": "العام، الصناعية، نجران، نجران، المملكة العربية السعودية",
+        "phones": [
+          "0500667377"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=17.5907085,44.3419574",
+        "lat": 17.59071,
+        "lon": 44.34196,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_maps_ui_timeout",
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D8%B5%D9%85%D8%A9%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "note": "تعذرت قراءة بطاقة Google Maps بسبب انتهاء مهلة تحميل الواجهة؛ لم يُستنتج عدم وجود المكتب ولم تُغيّر بياناته."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "البطاقة المعروضة مصنفة «مكتب التسجيل» ورقمها مختلف؛ المكتب العقاري الآخر الظاهر جهة منفصلة.",
+      "evidenceUrl": "https://maps.google.com/maps?q=17.5907085,44.3419574",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-197788",
+        "n": "مكتب روابي للخدمات العقارية",
+        "city": "شرورة",
+        "nb": "F4V7+73V، 30، شرورة 67832، المملكة العربية السعودية",
+        "phones": [
+          "0504564151"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.4932485,47.112666&query_place_id=ChIJJa9ZpUm3Bz4R93OerwmS_wU",
+        "lat": 17.4932485,
+        "lon": 47.112666,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "verified_name_activity_and_pin_phone_unlisted",
+          "source": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%88%D8%A7%D8%A8%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بحث Maps بالاسم والهاتف أظهر بطاقة المدينة فقط؛ لا بطاقة مكتب أو اتصال مطابق.",
+      "evidenceUrl": "https://www.google.com/maps/search/?api=1&query=17.4932485,47.112666&query_place_id=ChIJJa9ZpUm3Bz4R93OerwmS_wU",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-204553",
+        "n": "مكتب ركن دار الاجواد للعقار",
+        "city": "شرورة",
+        "nb": "عمر بن الخطاب، شرورة، نجران، المملكة العربية السعودية",
+        "phones": [
+          "0581453711"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=17.49094413,47.12182303",
+        "lat": 17.49094,
+        "lon": 47.12182,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_no_matching_maps_card",
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%83%D9%86%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A3%D8%AC%D9%88%D8%A7%D8%AF%20%D8%B4%D8%B1%D9%88%D8%B1%D8%A9%200581453711",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "note": "بحث الاسم لم يُظهر البطاقة المستهدفة؛ النتائج الأخرى لا تطابق."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بحث Maps بالاسم والهاتف أظهر بطاقة المدينة فقط؛ لا بطاقة مكتب أو اتصال مطابق.",
+      "evidenceUrl": "https://maps.google.com/maps?q=17.49094413,47.12182303",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-217576",
+        "n": "مؤسسة حسن مبخوت حمد الصيعري للعقارات",
+        "city": "شرورة",
+        "nb": "3534 شارع عكاشة بن محصن الأسدي، الفهد، NSSA7308، 7308، شرورة 68372، المملكة العربية السعودية",
+        "phones": [
+          "0532465017"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.4861283,47.1111379&query_place_id=ChIJqT94JAC3Bz4Rk1sRQYIT-LY",
+        "lat": 17.4861283,
+        "lon": 47.1111379,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "verified_name_activity_and_pin_phone_unlisted",
+          "source": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%AD%D8%B3%D9%86+%D9%85%D8%A8%D8%AE%D9%88%D8%AA+%D8%AD%D9%85%D8%AF+%D8%A7%D9%84%D8%B5%D9%8A%D8%B9%D8%B1%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "البطاقة المطابقة جزئيًا تصنف «شركة إدارة عقارات»، مع اختلاف الاسم وعدم ظهور رقم؛ لا تثبت الوساطة.",
+      "evidenceUrl": "https://www.google.com/maps/search/?api=1&query=17.4861283,47.1111379&query_place_id=ChIJqT94JAC3Bz4Rk1sRQYIT-LY",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "office-maps-4684bdde238f",
+        "n": "مكتب درة الرس للعقارات",
+        "city": "الرس",
+        "nb": "VFHQ+QMJ، طريق الملك فهد",
+        "phones": [
+          "0505137544"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/?api=1&query=25.8794614,43.4891358&query_place_id=ChIJDdvKOEnLgxURIa6vnQmsE1g",
+        "lat": 25.8794614,
+        "lon": 43.4891358,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "verified_name_phone_location_activity_ambiguous",
+          "source": "https://www.google.com/maps/search/?api=1&query=25.8794614,43.4891358&query_place_id=ChIJDdvKOEnLgxURIa6vnQmsE1g",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card",
+          "observedPhoneIntl": "0505137544",
+          "note": "مكتب درة الرس للعقارات؛ Maps تعرض تصنيف مكتب الشركات، فلا تثبت النشاط العقاري؛ الهاتف والموقع مطابقان."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "رابط Maps فتح خريطة بدبوس عام دون بطاقة منشأة أو نشاط أو هاتف ظاهر.",
+      "evidenceUrl": "https://www.google.com/maps/search/?api=1&query=25.8794614,43.4891358&query_place_id=ChIJDdvKOEnLgxURIa6vnQmsE1g",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-199883",
+        "n": "بنك العقارات فرع شركة مجموعة ناف",
+        "city": "الظهران",
+        "nb": "طريق الامير سلطان، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+        "phones": [],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%81%D8%B1%D8%B9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20%D9%86%D8%A7%D9%81%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+        "lat": 26.33207,
+        "lon": 50.14601,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_no_matching_maps_card",
+          "source": "https://www.google.com/maps/search/%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%81%D8%B1%D8%B9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20%D9%86%D8%A7%D9%81%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps search/card review",
+          "note": "Maps showed a shopping center and a different developer; no matching office."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بحث Maps لم يجد بطاقة مطابقة لفرع بنك العقارات في الظهران؛ النتائج لجهات أخرى في مدن وأنشطة مختلفة.",
+      "evidenceUrl": "https://www.google.com/maps/search/%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%81%D8%B1%D8%B9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20%D9%86%D8%A7%D9%81%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-200076",
+        "n": "مؤسسة فيصل بن عبدالرحيم بن حبيب الله جمعه للعقارات",
+        "city": "الظهران",
+        "nb": "تميم ابو الفتوح، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+        "phones": [
+          "0504917218"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/مؤسسة+فيصل+بن+عبدالرحيم+بن+حبيب+الله+جمعه+للعقارات+الظهران",
+        "lat": 26.3223,
+        "lon": 50.17549,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_no_matching_card",
+          "source": "https://www.google.com/maps/search/مؤسسة+فيصل+بن+عبدالرحيم+بن+حبيب+الله+جمعه+للعقارات+الظهران",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card or search review",
+          "note": "لم تظهر بطاقة الاسم أو الهاتف 0504917218؛ نتيجة شركة تطبيق ديل مختلفة بالاسم والهاتف."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بحث Maps أظهر بطاقة جهة أخرى باسم شركة تطبيق ديل ورقم مختلف؛ لا بطاقة مطابقة للمؤسسة.",
+      "evidenceUrl": "https://www.google.com/maps/search/مؤسسة+فيصل+بن+عبدالرحيم+بن+حبيب+الله+جمعه+للعقارات+الظهران",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-218035",
+        "n": "مؤسسة عبدالله حسين اليامي العقارية",
+        "city": "الظهران",
+        "nb": "ابن بطوطة، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+        "phones": [
+          "0555802111"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%AD%D8%B3%D9%8A%D9%86+%D8%A7%D9%84%D9%8A%D8%A7%D9%85%D9%8A+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+        "lat": 26.34661,
+        "lon": 50.13594,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_no_matching_card",
+          "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%AD%D8%B3%D9%8A%D9%86+%D8%A7%D9%84%D9%8A%D8%A7%D9%85%D9%8A+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card",
+          "note": "Maps لم يعرض بطاقة مطابقة للاسم أو الهاتف؛ النتائج الأخرى مختلفة، ولا استنتاج لإغلاق أو خطأ."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بحث Maps أظهر مكاتب ومطورين آخرين فقط؛ لا بطاقة باسم المؤسسة أو رقمها.",
+      "evidenceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%AD%D8%B3%D9%8A%D9%86+%D8%A7%D9%84%D9%8A%D8%A7%D9%85%D9%8A+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-192117",
+        "n": "مكتب اطياف الجنوب للخدمات العقارية",
+        "city": "نجران",
+        "nb": "الخالدية، نجران، نجران، المملكة العربية السعودية",
+        "phones": [
+          "0544041333"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=17.53998061,44.21937944",
+        "lat": 17.53998,
+        "lon": 44.21938,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_maps_ui_timeout",
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%B7%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "note": "تعذرت قراءة بطاقة Google Maps بسبب انتهاء مهلة تحميل الواجهة؛ لم يُستنتج عدم وجود المكتب ولم تُغيّر بياناته."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "المطابقة الوحيدة الظاهرة «بوفيه أطياف الجنوب» مطعم، ولا توجد بطاقة للمكتب أو الرقم؛ لا تنسب له.",
+      "evidenceUrl": "https://maps.google.com/maps?q=17.53998061,44.21937944",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-192859",
+        "n": "مكتب الواء الاخضر للعقارات",
+        "city": "شرورة",
+        "nb": "شارع عبد الله الفزاري، شرورة، نجران، المملكة العربية السعودية",
+        "phones": [
+          "0501824055"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=17.4886862,47.1120239",
+        "lat": 17.48869,
+        "lon": 47.11202,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_maps_ui_timeout",
+          "source": "https://www.google.com/maps/search/?api=1&query=national-ejar-office-192859",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "note": "تعذرت قراءة بطاقة Maps بعد انتهاء مهلة الواجهة؛ لم يُستنتج عدم وجود المكتب."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بحث Maps بالاسم والهاتف أظهر مدينة شرورة فقط دون بطاقة منشأة أو بيانات مطابقة.",
+      "evidenceUrl": "https://maps.google.com/maps?q=17.4886862,47.1120239",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-203088",
+        "n": "مؤسسة جسر التواصل للخدمات العقارية",
+        "city": "شرورة",
+        "nb": "شارع علي بن إبي طالب، شرورة، نجران، المملكة العربية السعودية",
+        "phones": [
+          "0558818655"
+        ],
+        "web": "",
+        "maps": "https://maps.google.com/maps?q=17.49284446,47.1137017",
+        "lat": 17.49284,
+        "lon": 47.1137,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_maps_search_no_match",
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%AC%D8%B3%D8%B1%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card / direct Maps search",
+          "note": "لم يعثر بحث Maps على بطاقة مطابقة؛ لا استنتاج بشأن وجود المكتب."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بحث Maps بالاسم والهاتف والشارع أظهر مدينة شرورة فقط، دون بطاقة للمؤسسة.",
+      "evidenceUrl": "https://maps.google.com/maps?q=17.49284446,47.1137017",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-ejar-office-192755",
+        "n": "مكتب ايمن معزي معتق الرشيدي للعقارات",
+        "city": "خيبر",
+        "nb": "العباس بن مرداس، الروضة، خيبر، المدينة المنورة، المملكة العربية السعودية",
+        "phones": [
+          "0592380032"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%8A%D9%85%D9%86%20%D9%85%D8%B9%D8%B2%D9%8A%20%D9%85%D8%B9%D8%AA%D9%82%20%D8%A7%D9%84%D8%B1%D8%B4%D9%8A%D8%AF%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200592380032%20%D8%AE%D9%8A%D8%A8%D8%B1",
+        "lat": 25.69041,
+        "lon": 39.29297,
+        "sec": "",
+        "loc": "pt",
+        "mapsAudit": {
+          "status": "unresolved_no_matching_maps_card",
+          "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%8A%D9%85%D9%86%20%D9%85%D8%B9%D8%B2%D9%8A%20%D9%85%D8%B9%D8%AA%D9%82%20%D8%A7%D9%84%D8%B1%D8%B4%D9%8A%D8%AF%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200592380032%20%D8%AE%D9%8A%D8%A8%D8%B1",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps search/card review",
+          "note": "Maps returned Khaybar city only; no matching office card, phone, or pin."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بحث Maps لم يُظهر بطاقة المكتب أو نشاطًا/هاتفًا/دبوسًا مطابقًا.",
+      "evidenceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%8A%D9%85%D9%86%20%D9%85%D8%B9%D8%B2%D9%8A%20%D9%85%D8%B9%D8%AA%D9%82%20%D8%A7%D9%84%D8%B1%D8%B4%D9%8A%D8%AF%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200592380032%20%D8%AE%D9%8A%D8%A8%D8%B1",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-yango-office-176431236509",
+        "n": "مكتب السسعد للعقارات حفر الباطن فرع رقم 1",
+        "city": "حفر الباطن",
+        "nb": "المنطقة الشرقية, حفر الباطن, حي الصفاء, الملك فيصل بن عبدالعزيز",
+        "phones": [
+          "0555247722"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D8%AF+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x3fd739f1f376bf4b:0xc08554dbe3b4ba6a!8m2!3d28.4122103!4d45.9843768!16s/g/11h1djktvr",
+        "lat": null,
+        "lon": null,
+        "sec": "",
+        "mapsAudit": {
+          "status": "partial_company_name_phone_match_branch_unresolved",
+          "source": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D8%AF+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x3fd739f1f376bf4b:0xc08554dbe3b4ba6a!8m2!3d28.4122103!4d45.9843768!16s/g/11h1djktvr",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps place card",
+          "note": "بطاقة شركة السعد العقارية تعرض رقم الهاتف 0555247722 المطابق، لكن الاسم لا يثبت فرع مكتب السسعد رقم 1."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بطاقة Maps مصنفة «شركة إدارة عقارات»؛ لا دليل ظاهر يثبت وساطة عقارية لهذا السجل.",
+      "evidenceUrl": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D8%AF+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x3fd739f1f376bf4b:0xc08554dbe3b4ba6a!8m2!3d28.4122103!4d45.9843768!16s/g/11h1djktvr",
+      "recordedAt": "2026-10-13"
+    },
+    {
+      "record": {
+        "id": "national-yango-office-234237984975",
+        "n": "مكتب العربية العقارية",
+        "city": "عرعر",
+        "nb": "الحدود الشمالية, عرعر, حي المنصورية, شارع مكة المكرمة",
+        "phones": [
+          "0550304305"
+        ],
+        "web": "",
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@30.9842259,41.0670797,17z/data=!3m1!4b1!4m6!3m5!1s0x156c0f9680f68bf3:0xcb1df22a6a6e6b25!8m2!3d30.9842259!4d41.0670797!16s%2Fg%2F11q95jz5d1?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 30.9842259,
+        "lon": 41.0670797,
+        "sec": "",
+        "loc": "nb",
+        "mapsAudit": {
+          "status": "corrected_pin_from_direct_google_maps_card",
+          "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@30.9842259,41.0670797,17z/data=!3m1!4b1!4m6!3m5!1s0x156c0f9680f68bf3:0xcb1df22a6a6e6b25!8m2!3d30.9842259!4d41.0670797!16s%2Fg%2F11q95jz5d1?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+          "checkedAt": "2026-10-12",
+          "reference": "Google Maps direct place card",
+          "note": "بطاقة مباشرة تطابق الاسم والنشاط العقاري والهاتف +966550304305 والمنصورية/شارع مكة بعرعر؛ استُبدل الدبوس المخزن 30.98908,41.06067 بالدبوس المنشور 30.9842259,41.0670797. لم يُحذف أو يغيّر رقم الهاتف."
+        }
+      },
+      "disposition": "removed_from_active_office_list",
+      "googleMapsFinding": "بطاقة Maps المثبتة تعرض المكتب مغلقًا نهائيًا؛ أزيل من القائمة النشطة مع حفظ السجل.",
+      "evidenceUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@30.9842259,41.0670797,17z/data=!3m1!4b1!4m6!3m5!1s0x156c0f9680f68bf3:0xcb1df22a6a6e6b25!8m2!3d30.9842259!4d41.0670797!16s%2Fg%2F11q95jz5d1?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+      "recordedAt": "2026-10-13"
+    }
+  ]
+}
