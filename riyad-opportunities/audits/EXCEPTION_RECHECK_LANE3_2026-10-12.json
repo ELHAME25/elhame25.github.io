@@ -178,14 +178,14 @@
       "maps_card_url": "https://www.google.com/maps/place/?q=place_id:ChIJ10vVHaPF_hUR4vw0YIfsaMk",
       "opened_directly": true,
       "evidence": {
-        "name": "عنوان بطاقة Google Maps المحملة يظهر مكتب الصملة للخدمات العقارية.",
-        "phone": "لم تُقرأ البطاقة لتأكيد رقم الهاتف.",
-        "activity": "الاسم الظاهر يصف خدمات عقارية، لكن تفاصيل التصنيف لم تقرأ في هذه المحاولة.",
-        "address": "تعذر استخراج العنوان من AX في إعادة الفتح؛ لا تأكيد جديد.",
-        "pin": "لم يمكن مقارنة إحداثيات URL النهائي في هذه المحاولة."
+        "name": "مطابق حرفيًا لاسم السجل: مكتب الصملة للخدمات العقارية.",
+        "activity": "بطاقة Maps تصنف المكان مطوّر عقارات، وهو نشاط عقاري.",
+        "address": "NJMB7757، 3512 شارع صهيب بن سنان، 7757، نجران 66256؛ يطابق العنوان المخزن.",
+        "phone": "رقم الهاتف غير معروض على بطاقة Maps؛ الرقم المخزن 0509840427 لا يمكن مطابقته أو نفيه من البطاقة.",
+        "pin": "الدبوس ظاهر على بطاقة Maps المباشرة؛ لم أتمكن من استخراج إحداثيات رابط البطاقة لمقارنته مع المخزن 17.5837995,44.2364686."
       },
       "proposed_patch": null,
-      "note": "تم تحميل البطاقة المباشرة وعنوانها، لكن قراءة AX انتهت بمهلة؛ القراءات التفصيلية السابقة غير كافية لإثبات الرقم.",
+      "note": "قراءة مباشرة للبطاقة أكدت الاسم والنشاط والعنوان. Maps لا تعرض هاتفًا، وإحداثيات الدبوس لم تُستخرج بسبب مهلة قراءة المتصفح؛ لا تغيير بيانات دون إثبات.",
       "historicalMapsAudit": {
         "status": "verified_name_activity_and_pin_phone_unlisted",
         "source": "https://maps.google.com/maps?output=embed&hl=ar&gl=sa&q=%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B5%D9%85%D9%84%D8%A9+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
@@ -193,8 +193,13 @@
         "reference": "Google Maps place card / direct Maps search",
         "note": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد."
       },
-      "attemptStatus": "place_id_card_title_loaded_AX_read_timed_out",
-      "protected_record": false
+      "attemptStatus": "direct_place_id_card_read_2026-10-13",
+      "protected_record": false,
+      "direct_place_id_attempt": {
+        "url": "https://www.google.com/maps/place/?q=place_id:ChIJ10vVHaPF_hUR4vw0YIfsaMk",
+        "status": "card_read_visible_map_pin_exact_coords_not_retrieved",
+        "evidence": "بطاقة Google Maps المباشرة: مكتب الصملة للخدمات العقارية؛ التصنيف الظاهر مطوّر عقارات؛ العنوان NJMB7757، 3512 شارع صهيب بن سنان، 7757، نجران 66256؛ لم يظهر هاتف في البطاقة. الدبوس ظاهر على الخريطة، لكن قراءة إحداثياته من URL تعذرت بسبب مهلة المتصفح."
+      }
     },
     {
       "id": "national-ejar-office-196236",
