@@ -6,6 +6,8 @@ const auditById=new Map(audit.entries.map(x=>[x.id,x]));
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'CAR_CORRECTION_APPLICATION_MANIFEST_212_R1_SAFE_PREVIEW_2026-10-11.json'),'utf8'));
 const finalApplication=JSON.parse(fs.readFileSync(path.join(root,'audits/FINAL_CAR_APPLICATION_REPORT_2026-10-12.json'),'utf8'));
 const finalRemovedIds=new Set(finalApplication.removed_ids||[]);
+const officeExclusions=JSON.parse(fs.readFileSync(path.join(root,'audits/OFFICES_EXCLUDED_NO_BROKERAGE_PROOF_2026-10-13.json'),'utf8'));
+const officeArchivedById=new Map((officeExclusions.excluded||[]).map(x=>[x.record?.id,x]));
 const finalDecisions=new Map();
 for(const name of finalApplication.audits_considered||[]){
  const doc=JSON.parse(fs.readFileSync(path.join(root,'audits',name),'utf8'));
@@ -33,12 +35,14 @@ for(const [kind,rows] of Object.entries(baseline.records)){
    const properlyArchived=kind==='cars'&&archive?.id===prior.id&&entry.archiveReason&&['excluded_official_dealer','excluded_from_unverified_city_alias'].includes(entry.decision)&&!byId.has(prior.id);
    const migratedDealer=kind==='cars'?dealerById.get(dealerMigrations.get(prior.id)):null;
    const properlyMigrated=!!migratedDealer&&migratedDealer.city==='القنفذة'&&migratedDealer.kind==='وكالة سيارات رسمية'&&migratedDealer.web==='https://mbabgi.sa/findcenter'&&!!migratedDealer.maps;
+   const officeArchive=kind==='offices'?officeArchivedById.get(prior.id):null;
+   const properlyOfficeArchived=!!officeArchive&&officeArchive.record?.id===prior.id&&!!officeArchive.googleMapsFinding;
    const approvedExclusion=kind==='cars'?approvedExclusions.get(prior.id):null;
    const retainedCanonical=approvedExclusion?.retain_id&&!approvedExclusions.has(approvedExclusion.retain_id)?byId.get(approvedExclusion.retain_id):null;
    const canonicalFinallyArchived=approvedExclusion?.retain_id&&finalRemovedIds.has(approvedExclusion.retain_id);
    const properlyExcluded=!!approvedExclusion&&(!!retainedCanonical||properlyMigrated||canonicalFinallyArchived)&&((approvedExclusion.evidence||[]).length>0||(approvedExclusion.proof||[]).length>0);
-   assert(properlyArchived||properlyExcluded||properlyFinalArchived,kind+' missing '+prior.id);
-   const preserved=properlyFinalArchived?prior:(properlyMigrated?migratedDealer:(properlyExcluded?approvedExclusion.current_record:archive));
+   assert(properlyArchived||properlyExcluded||properlyFinalArchived||properlyOfficeArchived,kind+' missing '+prior.id);
+   const preserved=properlyOfficeArchived?officeArchive.record:(properlyFinalArchived?prior:(properlyMigrated?migratedDealer:(properlyExcluded?approvedExclusion.current_record:archive)));
    for(const p of prior.phones||[])assert((preserved.phones||[]).includes(p),prior.id+' preserved without source phone '+p);
    if(prior.contact)assert.equal(preserved.contact,prior.contact,prior.id+' preserved without named contact');
    assert.equal(preserved.img||'',prior.img,prior.id+' changed a deferred image during preservation');
