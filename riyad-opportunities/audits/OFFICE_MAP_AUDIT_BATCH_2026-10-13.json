@@ -1,0 +1,165 @@
+{
+  "schema": "record-map-audit-batch-v1",
+  "audit_date": "2026-10-13",
+  "records": [
+    {
+      "id": "phase5-google-office-fd0d77b8c82a",
+      "name": "مكتب الشواف العقاري",
+      "map": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_place_card_name_city_address",
+        "observed": "25.3841505,49.5916303; near Hawfuf Hotel / Ali ibn Abi Talib St, Al Ahsa"
+      },
+      "phone": {
+        "stored": "0541570902",
+        "status": "matches Maps; voice-call endpoint not independently tested"
+      },
+      "whatsapp": {
+        "status": "official website links wa.me/966541570902; destination checked by auditor"
+      },
+      "website": {
+        "stored": "https://alshawaf.com.sa/",
+        "status": "official website opened/working"
+      },
+      "sources": [
+        "https://alshawaf.com.sa/"
+      ]
+    },
+    {
+      "id": "phase5-google-office-06fe66ba0ad2",
+      "name": "مكتب الأركان للعقار - فرع المبرز",
+      "map": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_place_card_name_city_neighborhood",
+        "observed": "25.4517849,49.596122; Al Nuzhah, King Abdullah St, Al Mubarraz"
+      },
+      "phone": {
+        "stored": "0561388000",
+        "status": "matches Maps"
+      },
+      "whatsapp": {
+        "status": "not listed/verified"
+      },
+      "website": {
+        "stored": "https://www.alarkann.com/",
+        "status": "502 and certificate hostname mismatch; unresolved. Similar-name arkaanalaqar.com belongs to a different party and was not substituted."
+      },
+      "sources": [
+        "https://www.alarkann.com/"
+      ]
+    },
+    {
+      "id": "phase5-google-office-9d5685c0d420",
+      "name": "مكتب الهزوم للعقارات وإدارة الأملاك",
+      "map": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_place_card_name_city",
+        "observed": "25.422733,49.5810502; Al Shurufiyah, Al Mubarraz"
+      },
+      "phone": {
+        "stored": "0542199754",
+        "status": "matches Maps and official website contact page"
+      },
+      "whatsapp": {
+        "status": "not independently verified; wa.me links found on site point to listings, not proven office WhatsApp"
+      },
+      "website": {
+        "stored": "http://alhuzum.com/",
+        "status": "official site opened and phone confirmed"
+      },
+      "sources": [
+        "https://alhuzum.com/"
+      ]
+    },
+    {
+      "id": "phase5-google-office-c08681366f5a",
+      "name": "مكتب الهودي للعقارات",
+      "map": {
+        "opened": true,
+        "matched": true,
+        "status": "partial_name_city_match",
+        "observed": "25.3177105,49.5795682; Unnamed Road, Al Ahsa"
+      },
+      "phone": {
+        "stored": [
+          "0541114090",
+          "0561000542"
+        ],
+        "status": "Maps lists +966541114090; second stored phone not independently checked"
+      },
+      "whatsapp": {
+        "status": "not independently verified"
+      },
+      "website": {
+        "stored": "http://www.alhoodi.com/",
+        "status": "direct site request timed out; unresolved"
+      },
+      "sources": [
+        "http://www.alhoodi.com/"
+      ]
+    },
+    {
+      "id": "phase5-google-office-69e4545dc6a2",
+      "name": "مكتب العتيق للخدمات العقارية",
+      "map": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_place_card_name_city_address",
+        "observed": "25.3526675,49.615549; Al Ruwaidhah / Prince Sultan bin Abdulaziz Rd, Al Hofuf; 9J38+36"
+      },
+      "phone": {
+        "stored": "0135817083",
+        "status": "matches Maps"
+      },
+      "whatsapp": {
+        "status": "not independently verified"
+      },
+      "website": {
+        "stored": "Akari agent profile",
+        "status": "platform profile, not a dedicated office website; page gives location, not direct phone/WA proof"
+      },
+      "sources": [
+        "https://akari.sa/agent/%D9%90abdullah-alateeq/"
+      ]
+    },
+    {
+      "id": "phase5-google-office-7eaa11c6220e",
+      "name": "مكتب عقارات المحيسن",
+      "map": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_place_card_name_city_address",
+        "observed": "CMR7+5R6 / 8J39+36; King Abdullah Branch Rd, Al Madinah"
+      },
+      "phone": {
+        "stored": "0148488888",
+        "status": "matches Maps card"
+      },
+      "whatsapp": {
+        "status": "not independently verified"
+      },
+      "website": {
+        "stored": "http://mohysen.com/",
+        "status": "opens directory index only, not a usable office site"
+      },
+      "sources": [
+        "http://mohysen.com/"
+      ]
+    }
+  ],
+  "counts": {
+    "maps_opened_and_read": 6,
+    "place_cards_name_city_match": 6,
+    "phones_matching_maps": 6,
+    "phone_independently_confirmed_officially": 1,
+    "official_whatsapp_verified": 1,
+    "websites_working_official": 2,
+    "wrong_maps_links_fixed_and_retested": 0,
+    "unresolved_field_or_neighborhood": 4,
+    "not_opened": 0
+  },
+  "note": "No map pin was changed. Maps cards were read for all six. Website and contact statuses are independent of map status. Several rows omit a neighborhood; this batch does not infer or fill one."
+}
