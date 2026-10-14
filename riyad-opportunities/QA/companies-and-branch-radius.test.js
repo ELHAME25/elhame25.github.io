@@ -29,7 +29,7 @@ const fetch = async url => {
 };
 const jsFile = path.join(root, 'assets/app.js');
 let source = fs.readFileSync(jsFile, 'utf8').replace('  boot();',
-  "  window.__qa={selectBranch,renderBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,companyKey,radiusApplies,card,phoneLine,cityCompanyRecords,data:()=>D,state:()=>S,setScope:(scope,radius)=>{S.scope=scope;if(radius)S.radius=radius;return compute();}}; boot();");
+  "  window.__qa={choose:code=>{S=fresh();S.branch=D.branchByCode[code];S.scope=(S.branch.lat==null||S.branch.lon==null)&&sectorCity(S.branch.city)?'city':'branch';},selectBranch,renderBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,companyKey,radiusApplies,card,phoneLine,cityCompanyRecords,data:()=>D,state:()=>S,setScope:(scope,radius)=>{S.scope=scope;if(radius)S.radius=radius;}}; boot();");
 vm.runInNewContext(source, {document,window,location,history:{replaceState(){}},localStorage,navigator:{},fetch,setTimeout,clearTimeout,console,URL,Blob,Intl,Date});
 const sleep = ms => new Promise(resolve=>setTimeout(resolve,ms));
 const results=[];
@@ -42,32 +42,31 @@ function check(name, fn) {
   const Q=window.__qa, D=Q.data();
   assert(Q && D.branches.length, 'app did not initialize');
 
-  check('Small-city offices and showrooms remain city-wide for every branch', () => {
-    Q.selectBranch('607', true); // الرس: فرع واحد، بإحداثيات موثقة
-    assert.equal(Q.radiusApplies('offices','branch'), false);
+  check('Small-city offices use branch radius while showroom behavior remains city-wide', () => {
+    Q.selectBranch('607', true); Q.setScope('branch',5);
+    assert.equal(Q.radiusApplies('offices','branch'), true);
     assert.equal(Q.radiusApplies('cars','branch'), false);
     Q.state().tab='offices'; Q.renderBranch();
-    assert(!els.app.innerHTML.includes('id="radius"'), 'small cities must not expose a branch radius');
-    const officeCity=Q.itemsFor('offices','','city').map(x=>x.o.id).sort();
-    const officeBranch=Q.itemsFor('offices','','branch').map(x=>x.o.id).sort();
-    const carCity=Q.itemsFor('cars','','city').map(x=>x.o.id).sort();
-    const carBranch=Q.itemsFor('cars','','branch').map(x=>x.o.id).sort();
-    assert.deepEqual(officeBranch,officeCity,'small-city offices should be city-wide');
-    assert.deepEqual(carBranch,carCity,'small-city showrooms should be city-wide');
-    return {branch:'607', city:D.branchByCode['607'].city, offices:officeCity.length, cars:carCity.length};
+    assert(els.app.innerHTML.includes('id="radius"'), 'verified small-city branch needs office radius');
+    const officeCity=Q.itemsFor('offices','','city');
+    const officeBranch=Q.itemsFor('offices','','branch');
+    assert(officeBranch.every(x=>x.rankD!=null&&x.rankD<=5),'unknown/far office in radius');
+    assert.deepEqual(officeBranch.map(x=>x.o.id).sort(),officeCity.filter(x=>x.rankD!=null&&x.rankD<=5).map(x=>x.o.id).sort());
+    assert.deepEqual(Q.itemsFor('cars','','branch').map(x=>x.o.id).sort(),Q.itemsFor('cars','','city').map(x=>x.o.id).sort());
+    return {branch:'607',offices:officeBranch.length,cityOffices:officeCity.length};
   });
 
-  check('Branch scope never hides records in non-sector cities', () => {
+  check('Office radii are inclusive and monotone outside sector cities; cars stay unchanged', () => {
     Q.selectBranch('607', true);
+    let previous=[]; const cars=Q.itemsFor('cars','','city').map(x=>x.o.id).sort();
     const counts=[5,10,15,20].map(r=>{
-      Q.setScope('branch',r);
-      return {offices:Q.itemsFor('offices').map(x=>x.o.id).sort(),cars:Q.itemsFor('cars').map(x=>x.o.id).sort()};
+      Q.setScope('branch',r); const rows=Q.itemsFor('offices');
+      assert(rows.every(x=>x.rankD!=null&&x.rankD<=r));
+      assert(previous.every(id=>rows.some(x=>x.o.id===id))); previous=rows.map(x=>x.o.id);
+      assert.deepEqual(Q.itemsFor('cars').map(x=>x.o.id).sort(),cars);
+      return {radius:r,offices:rows.length};
     });
-    assert(counts.every(x=>JSON.stringify(x.offices)===JSON.stringify(counts[0].offices)), 'office results changed with radius in a city-wide mode');
-    assert(counts.every(x=>JSON.stringify(x.cars)===JSON.stringify(counts[0].cars)), 'car results changed with radius in a city-wide mode');
-    Q.setScope('city',20);
-    assert.deepEqual(Q.itemsFor('offices').map(x=>x.o.id).sort(),counts[0].offices,'city scope must match branch scope outside sector cities');
-    return {branch:'607', offices:counts[0].offices.length, cars:counts[0].cars.length};
+    return counts;
   });
 
   check('Central Safa row does not overwrite local Jeddah data and is deduplicated', () => {
@@ -102,17 +101,17 @@ function check(name, fn) {
     const b=D.branches.find(x=>x.city==='الرياض'&&x.sec==='غرب'&&x.lat!=null&&x.lon!=null);
     assert(b,'West Riyadh branch missing'); Q.selectBranch(b.c,true); Q.setScope('branch',5);
     const x=Q.itemsFor('companies').find(y=>Q.companyKey(y.o.n)==='صفا');
-    assert(x&&x.serviceMatch,'explicit city coverage did not make Safa visible');
-    assert.equal(x.displayD,null,'no location is tied to the west Riyadh service area');
+    assert(x,'city coverage did not make Safa visible');
+    assert.equal(x.displayD,x.d,'only the recorded city-local company location may be used');
     assert.deepEqual(Array.from(x.o.sectors||[]),['شرق','شمال','وسط'],'city-local sectors were lost or imported');
-    assert(Q.card('companies',x.o,x.displayD,true,false,x).includes('تخدم هذا النطاق'));
+    assert(Q.card('companies',x.o,x.displayD,true,false,x).includes(x.o.n));
     return {branch:b.c,reason:x.coverageMatchReason,localSectors:x.o.sectors};
   });
 
   check('No duplicate normalized company brand in any branch city', () => {
     const failures=[];
     for (const b of D.branches) {
-      Q.selectBranch(b.c,true); Q.setScope('city');
+      Q.choose(b.c); Q.setScope('city');
       const seen=new Set();
       for (const x of Q.itemsFor('companies','','city')) {
         const key=Q.companyKey(x.o.n);
@@ -148,14 +147,14 @@ function check(name, fn) {
     return {jeddahProjects:jp,riyadhProjects:rp[0].o.projects};
   });
 
-  check('Multisector Rakez matches all Riyadh sectors without fictitious distance', () => {
+  check('Rakez is visible across Riyadh sectors independently of radius', () => {
     const sectors=['شرق','غرب','شمال','جنوب','وسط'], coverage=[];
     for (const sector of sectors) {
       const b=D.branches.find(x=>x.city==='الرياض'&&x.sec===sector&&x.lat!=null&&x.lon!=null);
       assert(b,'missing Riyadh '+sector+' branch'); Q.selectBranch(b.c,true); Q.setScope('branch',5);
       const x=Q.itemsFor('companies').find(y=>Q.companyKey(y.o.n)==='راكز');
-      assert(x,'Rakez absent for '+sector); assert(x.serviceMatch,'no sector coverage evidence for '+sector);
-      assert.equal(x.displayD,null,'Rakez sector match must not show HQ distance');
+      assert(x,'Rakez absent for '+sector);
+      assert.equal(x.displayD,x.d,'company distance must refer to recorded company location, never a project');
       coverage.push(sector);
     }
     return coverage;
@@ -195,8 +194,8 @@ function check(name, fn) {
     return {phones:o.phones,contacts:o.phoneContacts};
   });
 
-  check('All non-metro branches show complete city inventory across every section', () => {
-    const kinds=['projects','opps','nhc','selfbuild','companies','offices','cars'];
+  check('Non-metro city-wide categories remain complete; offices use verified branch radius', () => {
+    const kinds=['projects','opps','nhc','selfbuild','companies','cars'];
     const metroCities=new Set(['الرياض','جدة']);
     const sameCityForAudit=(a,b)=>{const norm=v=>String(v||'').replace(/[أإآ]/g,'ا').replace(/ة/g,'ه').replace(/ى/g,'ي');const key=v=>['الاحساء','الهفوف','المبرز'].includes(norm(v))?'الاحساء':norm(v);return key(a)===key(b);};
     const cities=[...new Set(D.branches.map(b=>b.city).filter(city=>!metroCities.has(city)))];
@@ -204,16 +203,15 @@ function check(name, fn) {
     for(const city of cities){
       const branches=D.branches.filter(b=>b.city===city);
       assert(branches.length,'no branch for '+city);
-      Q.selectBranch(branches[0].c,true);
+      Q.choose(branches[0].c);
       const expected=Object.fromEntries(kinds.map(kind=>[
         kind,Q.itemsFor(kind,'','city').map(x=>x.o.id).sort()
       ]));
       for(const b of branches){
-        Q.selectBranch(b.c,true);
+        Q.choose(b.c);
         Q.state().tab='offices';
         Q.setScope('branch',15);
-        Q.renderBranch();
-        if(els.app.innerHTML.includes('data-scope="city"')) failures.push({city,branch:b.c,error:'city-wide button exposed'});
+        if(b.lat!=null&&b.lon!=null){const offices=Q.itemsFor('offices','','branch');if(!Q.radiusApplies('offices','branch')||offices.some(x=>x.rankD==null||x.rankD>15))failures.push({city,branch:b.c,error:'offices are not radius-bound'});}
         for(const kind of kinds){
           const actual=Q.itemsFor(kind,'','branch').map(x=>x.o.id).sort();
           const foreign=Q.itemsFor(kind,'','branch').filter(x=>kind!=='companies' && (!Q.state().branch || (x.o.originCity && !sameCityForAudit(x.o.originCity,Q.state().branch.city))));
@@ -284,3 +282,4 @@ function check(name, fn) {
   console.log(JSON.stringify({root,passed:results.length-failures.length,total:results.length,results},null,2));
   if (failures.length) process.exitCode=1;
 })().catch(e=>{console.error(e);process.exitCode=1;});
+

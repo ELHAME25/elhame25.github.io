@@ -112,6 +112,8 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   els['go-branch'].dispatch('click');
   assert('city-assisted choice selects first and opens only with Go', selectedOnly && A.state().branch.c === '242' && branchList.includes('242'));
 
+  // Office radius is available in every city; projects never inherit this control.
+  A.state().tab = 'offices'; A.state().scope = 'branch'; A.renderBranch();
   // Exercise every radius through the actual select change listener, then the city scope button.
   const radiusResults = [];
   for (const r of [5, 10, 15, 20]) {
@@ -123,15 +125,17 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   fireDocument('click', target({ 'data-scope': 'city' }));
   assert('all-city scope is explicit and applied', A.state().scope === 'city' && els.app.innerHTML.includes('كل ' + A.state().branch.city));
 
-  // Branch totals include only geographically verifiable projects; city view retains unlocated projects.
-  A.selectBranch('243'); A.state().radius = 5; A.state().scope = 'branch'; A.renderBranch();
+  // A branch shows its whole project sector, including far and unlocated records.
+  A.selectBranch('243'); A.state().tab = 'projects'; A.state().radius = 5; A.state().scope = 'branch'; A.renderBranch();
   const projectCount5 = A.itemsFor('projects', '', 'branch');
   const cityProjectCount = A.itemsFor('projects', '', 'city');
-  const unknownInBranch = projectCount5.filter(x => x.rankD == null).length;
-  const unknownInCity = cityProjectCount.filter(x => x.rankD == null).length;
-  els.radius.value = '10'; els.radius.dispatch('change');
-  const projectCount10 = A.itemsFor('projects', '', 'branch').length;
-  assert('branch radius excludes unlocated records while city view retains them', A.state().radius === 10 && A.state().scope === 'branch' && projectCount10 >= projectCount5.length && unknownInBranch === 0 && unknownInCity > 0);
+  const expectedEast = cityProjectCount.filter(x => (x.o.sectors || (x.o.sec ? [x.o.sec] : [])).includes('شرق'));
+  A.state().radius = 20;
+  const projectCount20 = A.itemsFor('projects', '', 'branch');
+  assert('projects show the complete branch sector independently of radius',
+    projectCount5.length > 0 && projectCount5.map(x=>x.o.id).sort().join('|') === expectedEast.map(x=>x.o.id).sort().join('|') &&
+    projectCount5.map(x=>x.o.id).sort().join('|') === projectCount20.map(x=>x.o.id).sort().join('|') &&
+    projectCount5.some(x=>x.rankD == null) && projectCount5.some(x=>x.rankD > 5) && !els.app.innerHTML.includes('id="radius"'));
 
   // The search control and live filtering are exercised independently for each populated section.
   const searchable = ['projects', 'opps', 'nhc', 'selfbuild', 'companies', 'offices', 'cars'];
@@ -151,10 +155,10 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const approximateCount = counterRows.filter(x => x.rankD != null && x.o.loc === 'nb').length;
   const exactCount = counterRows.length - unknownCount - approximateCount;
   const cityUnknownCount = A.itemsFor('projects', '', 'city').filter(x => x.rankD == null).length;
-  const branchCounter = counterRows.length > 0 && exactCount > 0 && unknownCount === 0 &&
-    els.content.innerHTML.includes(counterRows.length + ' مشروعًا ضمن نطاق الفرع');
+  const branchCounter = counterRows.length > 0 && exactCount > 0 && unknownCount > 0 &&
+    els.content.innerHTML.includes(counterRows.length + ' مشاريع معتمدة في شرق الرياض');
   els['q-sec'].value = '__qa_no_such_record__'; els['q-sec'].dispatch('input');
-  assert('Riyadh branch count excludes unknown location and city view preserves those projects', branchCounter && cityUnknownCount > 0 && els.content.innerHTML.includes('0 مشروعًا ضمن نطاق الفرع') && !els.content.innerHTML.includes('موقع غير محدد') && els.content.innerHTML.includes('لا نتائج مطابقة'));
+  assert('Riyadh project count includes the whole sector and search updates its total', branchCounter && cityUnknownCount >= unknownCount && els.content.innerHTML.includes('0 مشاريع معتمدة في شرق الرياض') && !els.content.innerHTML.includes('ضمن نطاق الفرع') && els.content.innerHTML.includes('لا نتائج مطابقة'));
 
   // NHC destinations stay separate from project rows and follow the selected sector.
   A.selectBranch('243', true); A.state().scope = 'branch'; A.state().tab = 'nhc';
@@ -299,8 +303,8 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   assert('small-city showrooms stay city-wide with no branch radius control', rassCars === rassCityCars && noSmallCityCarRadius);
   const noSmallCityScopeToggle = !els.app.innerHTML.includes('data-scope="city"') && !els.content.innerHTML.includes('data-scope="city"') && !els.app.innerHTML.includes('<div class="controls">');
   A.state().tab = 'offices'; A.renderBranch();
-  const smallCityOfficeBranchScope = !els.app.innerHTML.includes('data-scope="branch"') && !els.app.innerHTML.includes('data-scope="city"') && !els.app.innerHTML.includes('id="radius"') && A.itemsFor('offices', '', 'branch').map(x=>x.o.id).sort().join('|') === A.itemsFor('offices', '', 'city').map(x=>x.o.id).sort().join('|');
-  assert('small-city offices show the complete city without redundant scope controls', noSmallCityScopeToggle && smallCityOfficeBranchScope);
+  const smallCityOfficeBranchScope = els.app.innerHTML.includes('id="radius"') && A.itemsFor('offices', '', 'branch').every(x=>x.rankD != null && x.rankD <= A.state().radius);
+  assert('small-city offices use radius while showrooms retain city-wide controls', noSmallCityScopeToggle && smallCityOfficeBranchScope);
   const buraydahCodes = ['602', '249', '273'];
   const buraydahCars = buraydahCodes.map(code => {
     const b = d.branchByCode[code]; if (!b || !A.sameCity(b.city, 'بريدة')) return null;
@@ -316,16 +320,16 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   assert('Makkah projects show the full city without radius controls', makkahBranch.length > 0 && makkahBranch.map(x=>x.o.id).sort().join('|') === makkahCity.map(x=>x.o.id).sort().join('|') && makkahBranch.every(x => A.sameCity(x.o.city,'مكة المكرمة')) && !els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-scope="city"'));
   A.selectBranch('105'); const medinaCars = A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|'); const medinaOffices = A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|');
   A.selectBranch('168');
-  assert('Medina showrooms and offices remain city-level across branches', medinaCars === A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|') && medinaOffices === A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|'));
+  assert('Medina showrooms remain city-level and offices stay within branch radius', medinaCars === A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|') && A.itemsFor('offices', '', 'branch').every(x=>x.rankD != null && x.rankD <= A.state().radius));
   A.selectBranch('304'); const ahsaCityCars = A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|'); const ahsaProjects = A.itemsFor('projects', '', 'branch').map(x => x.o.id).sort().join('|'); const ahsaOffices = A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|');
   A.selectBranch('324');
-  assert('Ahsa showrooms, projects and offices stay city-wide across branches', ahsaCityCars === A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|') && ahsaProjects === A.itemsFor('projects', '', 'branch').map(x => x.o.id).sort().join('|') && ahsaOffices === A.itemsFor('offices', '', 'branch').map(x => x.o.id).sort().join('|'));
+  assert('Ahsa showrooms and projects stay city-wide while offices use branch radius', ahsaCityCars === A.itemsFor('cars', '', 'branch').map(x => x.o.id).sort().join('|') && ahsaProjects === A.itemsFor('projects', '', 'branch').map(x => x.o.id).sort().join('|') && A.itemsFor('offices', '', 'branch').every(x=>x.rankD != null && x.rankD <= A.state().radius));
   A.selectBranch('161'); A.state().tab = 'offices'; A.state().radius = 5; A.state().scope = 'branch'; A.renderBranch();
   const abha5 = A.itemsFor('offices', '', 'branch'); A.state().radius = 10; const abha10 = A.itemsFor('offices', '', 'branch');
-  assert('Abha remains city-wide without radius or sector controls', abha10.length > 0 && abha10.map(x=>x.o.id).sort().join('|') === abha5.map(x=>x.o.id).sort().join('|') && abha10.every(x => A.sameCity(x.o.city,'أبها')) && !els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-explore='));
+  assert('Abha offices use radius without sector controls', abha10.length > 0 && abha5.every(x=>x.rankD != null && x.rankD <= 5) && abha10.every(x=>x.rankD != null && x.rankD <= 10 && A.sameCity(x.o.city,'أبها')) && abha5.every(x=>abha10.some(y=>y.o.id===x.o.id)) && els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-explore='));
   A.selectBranch('111'); A.state().tab = 'offices'; A.state().radius = 15; A.state().scope = 'branch'; A.renderBranch();
   const yanbu15 = A.itemsFor('offices', '', 'branch'); A.state().radius = 20; const yanbu20 = A.itemsFor('offices', '', 'branch');
-  assert('Yanbu remains city-wide without radius or sector controls', yanbu20.length > 0 && yanbu20.map(x=>x.o.id).sort().join('|') === yanbu15.map(x=>x.o.id).sort().join('|') && yanbu20.every(x => A.sameCity(x.o.city,'ينبع')) && !els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-explore='));
+  assert('Yanbu offices use radius without sector controls', yanbu20.length > 0 && yanbu15.every(x=>x.rankD != null && x.rankD <= 15) && yanbu20.every(x=>x.rankD != null && x.rankD <= 20 && A.sameCity(x.o.city,'ينبع')) && yanbu15.every(x=>yanbu20.some(y=>y.o.id===x.o.id)) && els.app.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('data-explore='));
   A.selectBranch('302', true); A.state().radius = 15; A.state().scope = 'branch';
   const dammamProject = A.itemsFor('projects', '', 'branch').find(x => x.o.id === 'P128');
   const dammamOffice = A.itemsFor('offices', '', 'branch').find(x => x.o.id === 'national-ejar-office-201861');
@@ -400,4 +404,5 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   console.log(JSON.stringify({ suite: 'VM UI behavior regression', tests, passed: Object.values(tests).filter(Boolean).length, total: Object.keys(tests).length, failed }, null, 2));
   if (failed.length) process.exitCode = 1;
 })().catch(err => { console.error(err.stack || err); process.exitCode = 1; });
+
 
