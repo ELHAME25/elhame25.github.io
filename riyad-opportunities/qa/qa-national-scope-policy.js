@@ -63,8 +63,21 @@ function assertNearFirst(rows,label){let last=-Infinity,unknown=false;for(const 
   env.els['company-sort'].value='distance';env.els['company-sort'].handlers.change();assertNearFirst(A.itemsFor('companies'),'company distance ordering');assert.deepEqual(ids(A.itemsFor('companies')),ids(allCompanies),'sort must not hide companies');
   A.selectBranch('607',true);assert(!A.state().companyActivity&&A.state().companySort!=='distance','company filters leaked across branches');
   for(const b of riyadhBranches.filter(b=>['شرق','شمال'].includes(b.sec))){A.choose(b.c);A.state().tab='cars';A.renderBranch();assert(env.els.content.innerHTML.indexOf('data-car-area="qadisiyah"')<env.els.content.innerHTML.indexOf('data-car-area="shifa"'),'Qadisiyah is not first for '+b.c);}
+  // The selected sector, not the original branch sector, sets showroom card order and subtitle.
+  let showroomSectorSwitches=0;
+  for(const [branchSector,selected,first,label] of [
+    ['جنوب','شرق','qadisiyah','القادسية'], ['جنوب','شمال','qadisiyah','القادسية'],
+    ['شرق','غرب','shifa','الشفا'], ['شرق','وسط','shifa','القادسية والشفا']
+  ]){
+    const b=riyadhBranches.find(x=>x.sec===branchSector);assert(b,'missing Riyadh '+branchSector+' branch');
+    A.choose(b.c);A.state().tab='cars';A.state().scope='sector';A.state().explore=selected;A.renderBranch();
+    const html=env.els.content.innerHTML,other=first==='qadisiyah'?'shifa':'qadisiyah';
+    assert(html.indexOf('data-car-area="'+first+'"')<html.indexOf('data-car-area="'+other+'"'),'showroom order follows original branch, not '+selected);
+    assert(html.includes('معرضًا في '+label),'showroom subtitle does not follow '+selected);
+    assert.equal(A.state().branch.sec,branchSector,'sector browsing mutated branch metadata');showroomSectorSwitches++;
+  }
   // If supplied, compare exact car result IDs/order with a read-only pre-change app.
   let carComparisons=0;const baseline=process.env.NATIONAL_POLICY_BASELINE_APP;
   if(baseline){const old=boot(baseline);await new Promise(r=>setTimeout(r,350));const B=old.window.__policy;for(const b of D.branches){A.choose(b.c);B.choose(b.c);for(const scope of ['branch','city'])for(const radius of [5,20]){for(const q of [A,B]){q.state().scope=scope;q.state().radius=radius;}assert.deepEqual(Array.from(A.itemsFor('cars','',''+scope),x=>x.o.id),Array.from(B.itemsFor('cars','',''+scope),x=>x.o.id),'car behavior changed at '+b.c+'/'+scope+'/'+radius);carComparisons++;}if(A.sameCity(b.city,'الرياض'))for(const sec of ['شرق','شمال','جنوب','غرب','وسط'])for(const q of [A,B]){q.state().scope='sector';q.state().explore=sec;if(q===B){assert.deepEqual(Array.from(A.itemsFor('cars',sec,'sector'),x=>x.o.id),Array.from(B.itemsFor('cars',sec,'sector'),x=>x.o.id),'Riyadh sector car behavior changed '+b.c+'/'+sec);carComparisons++;}}}}
-  console.log(JSON.stringify({suite:'National category scope policy',ok:true,...totals,carComparisons,activityFilters:4},null,2));
+  console.log(JSON.stringify({suite:'National category scope policy',ok:true,...totals,carComparisons,activityFilters:4,showroomSectorSwitches},null,2));
 })().catch(error=>{console.error(error.stack||error);process.exitCode=1;});
