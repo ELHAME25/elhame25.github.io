@@ -4,7 +4,7 @@ class El { constructor(id){this.id=id;this.innerHTML='';this.textContent='';this
 const els={};const document={title:'',body:{appendChild(){}},getElementById(id){if(id==='site-config')return null;return els[id]||(els[id]=new El(id));},querySelector(){return null;},querySelectorAll(){return [];},addEventListener(){},createElement(){return new El('new');}};
 const location={hash:'',pathname:'/',search:''};const localStorage={getItem(){return null},setItem(){},removeItem(){}};const window={location,scrollTo(){},addEventListener(){}};
 const fetch=async u=>{const p=path.join(root,u.split('?')[0]);return {ok:fs.existsSync(p),json:async()=>JSON.parse(fs.readFileSync(p,'utf8'))}};
-let src=fs.readFileSync(path.join(root,'assets/app.js'),'utf8').replace('  boot();',`  window.__t={selectBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,employeeGreeting,cities,sameCity,radiusApplies,card,renderBranch,setScope:(x,r)=>{S.scope=x;S.radius=r||15;return compute()},data:()=>D,state:()=>S}; boot();`);
+let src=fs.readFileSync(path.join(root,'assets/app.js'),'utf8').replace('  boot();',`  window.__t={choose:code=>{S=fresh();S.branch=D.branchByCode[code];S.scope=(S.branch.lat==null||S.branch.lon==null)&&sectorCity(S.branch.city)?'city':'branch';},selectBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,employeeGreeting,cities,sameCity,radiusApplies,card,renderBranch,setScope:(x,r)=>{S.scope=x;S.radius=r||15;},data:()=>D,state:()=>S}; boot();`);
 vm.runInNewContext(src,{document,window,location,history:{replaceState(){}},localStorage,navigator:{},fetch,setTimeout,clearTimeout,console,URL,Blob});
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 (async()=>{await sleep(1200);const A=window.__t,D=A.data(), kinds=['projects','opps','nhc','selfbuild','companies','offices','cars'];
@@ -14,7 +14,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  for(const row of csv.slice(1).filter(r=>r.length>1)){
  const code=row[ix['الرمز']],kind=row[ix['القسم']];if(!kinds.includes(kind))continue;
  result.scopeRows++;const b=D.branchByCode[code];if(!b){result.failures.push({code,kind,error:'branch missing'});continue;}
- A.selectBranch(code,true);const vis=A.itemsFor(kind,''),city=A.itemsFor(kind,'','city'),applies=A.radiusApplies(kind,'branch');
+ A.choose(code);const vis=A.itemsFor(kind,''),city=A.itemsFor(kind,'','city'),applies=A.radiusApplies(kind,'branch');
  const ids=xs=>xs.map(x=>x.o.id||x.o.n).sort().join('|');
  const sectorCity=D.meta.sectorCities.some(c=>A.sameCity(c,b.city));
  let expected=city;
