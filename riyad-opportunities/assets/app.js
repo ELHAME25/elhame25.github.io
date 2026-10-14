@@ -14,7 +14,7 @@
               pageSize: 24, officeLimit: 12, updatedLabel: 'آخر تحديث للبيانات' };
   var D = {};
   var S = fresh();
-  function fresh() { return { branch: null, scope: 'branch', radius: 15, explore: '', tab: '', q: {}, limit: {}, employee: (S && S.employee) || '', origin: null, nearestBranchDistance: null, carArea: '', companyActivity: '', companySort: 'name' }; }
+  function fresh() { return { branch: null, scope: 'branch', radius: 15, explore: '', tab: '', q: {}, limit: {}, employee: (S && S.employee) || '', origin: null, nearestBranchDistance: null, carArea: '' }; }
   function employeeGreeting(name) {
     name = String(name || '').trim(); if (!name) return '';
     // تحية محايدة زمنيًا تمنع عرض صباح الخير ليلًا عند اختلاف ساعة الجهاز.
@@ -23,8 +23,8 @@
   var app = document.getElementById('app');
   var SECTORS = ['شرق', 'شمال', 'جنوب', 'غرب', 'وسط'];
   var SECTIONS = ['projects', 'opps', 'nhc', 'selfbuild', 'companies', 'offices', 'cars', 'dealers', 'nearby'];
-  var LABEL = { opps: 'فرص عقارية حالية', selfbuild: 'البناء الذاتي', projects: 'المشاريع المعتمدة', nhc: 'وجهات NHC', companies: 'شركات التسويق والاستثمار العقاري', offices: 'مكاتب العقار', cars: 'معارض السيارات', dealers: 'وكالات السيارات الرسمية', nearby: 'فرص قريبة من الفرع' };
-  var SHORT = { opps: 'فرص حالية', selfbuild: 'البناء الذاتي', projects: 'المشاريع', nhc: 'وجهات NHC', companies: 'شركات التسويق والاستثمار العقاري', offices: 'المكاتب', cars: 'المعارض', dealers: 'الوكالات الرسمية', nearby: 'قريبة' };
+  var LABEL = { opps: 'فرص عقارية حالية', selfbuild: 'البناء الذاتي', projects: 'المشاريع المعتمدة', nhc: 'وجهات NHC', companies: 'شركات الوساطة والاستثمار العقاري', offices: 'مكاتب العقار', cars: 'معارض السيارات', dealers: 'وكالات السيارات الرسمية', nearby: 'فرص قريبة من الفرع' };
+  var SHORT = { opps: 'فرص حالية', selfbuild: 'البناء الذاتي', projects: 'المشاريع', nhc: 'وجهات NHC', companies: 'شركات الوساطة والاستثمار العقاري', offices: 'المكاتب', cars: 'المعارض', dealers: 'الوكالات الرسمية', nearby: 'قريبة' };
   var NOUN = { opps: 'فرص عقارية حالية', selfbuild: 'مخططات للبناء الذاتي', projects: 'مشاريع معتمدة', nhc: 'وجهات NHC', companies: 'شركات تسويق أو تطوير', offices: 'مكاتب عقار', cars: 'معارض سيارات', dealers: 'وكالات سيارات رسمية', nearby: 'فرص' };
   var SEARCH_PH = { opps: 'ابحث باسم المشروع أو المطور', selfbuild: 'ابحث عن مخطط', projects: 'ابحث باسم المشروع أو المطور أو الحي', nhc: 'ابحث عن وجهة', companies: 'ابحث عن شركة', offices: 'ابحث باسم المكتب أو الحي', cars: 'ابحث باسم المعرض أو الحي', dealers: 'ابحث باسم الوكالة أو المدينة', nearby: 'ابحث في الفرص القريبة' };
   var NEARBY_MODE = { metro_support: 5, nearby_auto_if_category_sparse: 5, nearby_optional: 1 };
@@ -643,7 +643,7 @@
     if (kind === 'projects' || kind === 'opps') {
       out.sort(function (x, y) { return byDist(x, y) || fallbackCompare(x, y, sec) || (!!y.o.img - !!x.o.img) || (!!y.o.price - !!x.o.price) || ((TIER[x.o.tier] || 0) - (TIER[y.o.tier] || 0)) || x.o.n.localeCompare(y.o.n, 'ar'); });
     } else out.sort(function (x, y) {
-      if (kind === 'companies' && S.companySort !== 'distance') return x.o.n.localeCompare(y.o.n, 'ar');
+      if (kind === 'companies') return x.o.n.localeCompare(y.o.n, 'ar');
       if (kind === 'cars' && sec === 'وسط' && sameCity(S.branch.city, 'الرياض')) {
         var zx = carAreaOf(x.o) === 'shifa' ? 0 : 1, zy = carAreaOf(y.o) === 'shifa' ? 0 : 1;
         if (zx !== zy) return zx - zy;
@@ -746,15 +746,9 @@
     REG.length = 0;
     var c = pre || compute(), k = S.tab, el = document.getElementById('content'), b = S.branch;
     var all = c[k] ? c[k].items : [], items = filterQuery(k, all);
-    if (k === 'companies' && S.companyActivity) items = items.filter(function (x) { return companyActivities(x.o).indexOf(S.companyActivity) >= 0; });
     var limit = S.limit[k] || CFG.pageSize, shown = items.slice(0, limit);
     var head = '<div class="sec-head"><div><h2>' + esc(LABEL[k]) + '</h2><p>' + esc(intro(k, items.length, items)) + '</p></div>' +
       '<div class="search">' + ICON.search + '<input id="q-sec" class="input" type="search" placeholder="' + esc(SEARCH_PH[k]) + '" value="' + esc(S.q[k] || '') + '" aria-label="' + esc(SEARCH_PH[k]) + '"></div></div>';
-    if (k === 'companies') {
-      head += '<div class="controls company-controls"><label>النشاط <select id="company-activity" aria-label="نشاط الشركة">' +
-        ['', 'تطوير', 'استثمار', 'تسويق ووساطة'].map(function (v) { return '<option value="' + esc(v) + '"' + (S.companyActivity === v ? ' selected' : '') + '>' + esc(v || 'كل الأنشطة') + '</option>'; }).join('') +
-        '</select></label><label>الترتيب <select id="company-sort" aria-label="ترتيب الشركات"><option value="name"' + (S.companySort !== 'distance' ? ' selected' : '') + '>اسم الشركة</option><option value="distance"' + (S.companySort === 'distance' ? ' selected' : '') + '>الأقرب حسب الموقع المسجل</option></select></label></div>';
-    }
     if (k === 'nhc' && sectorCity(b.city)) {
       var nhcSector = activeSector() || b.sec || '';
       if (nhcSector) {
@@ -786,9 +780,6 @@
     }
     el.innerHTML = head + body;
     bindImages(el);
-    var activity = document.getElementById('company-activity'), companySort = document.getElementById('company-sort');
-    if (activity) activity.addEventListener('change', function () { S.companyActivity = activity.value; S.limit.companies = CFG.pageSize; renderSection(); });
-    if (companySort) companySort.addEventListener('change', function () { S.companySort = companySort.value; S.limit.companies = CFG.pageSize; renderSection(); });
     var qi = document.getElementById('q-sec');
     if (qi) qi.addEventListener('input', function () {
       S.q[k] = qi.value; S.limit[k] = CFG.pageSize; var pos = qi.selectionStart; renderSection();
@@ -805,7 +796,7 @@
   }
   function intro(k, n, rows) {
     var b = S.branch;
-    if (k === 'companies') return fmt(n) + ' شركة تخدم ' + b.city + ' · جميع القطاعات' + (S.companySort === 'distance' ? ' · ترتيب تقريبي حسب الموقع المسجل' : '');
+    if (k === 'companies') return fmt(n) + ' شركة تخدم ' + b.city;
     if ((k === 'projects' || k === 'opps') && sectorCity(b.city) && (activeSector() || b.sec) && S.scope !== 'city') return fmt(n) + ' ' + NOUN[k] + ' في ' + (activeSector() || b.sec) + ' ' + b.city + ' · الأقرب أولًا';
     if (k === 'projects' && S.scope === 'branch' && radiusApplies(k, 'branch') && rows) {
       return fmt(n) + ' مشروعًا ضمن نطاق الفرع';
@@ -835,13 +826,6 @@
     }
     if (cityScopeAvailable(k)) h += '<button class="btn primary" data-scope="city">كل ' + esc(b.city) + ' · <span class="num">' + fmt(c[k].total) + '</span></button>';
     return h + '</div></div>';
-  }
-  function companyActivities(o) {
-    var value = String(o.kind || '') + ' ' + String(o.n || ''), out = [];
-    if (/تطوير|مطوّر|مطور/.test(value)) out.push('تطوير');
-    if (/استثمار/.test(value)) out.push('استثمار');
-    if (/تسويق|وساطة|وساطه|جهة بيع/.test(value)) out.push('تسويق ووساطة');
-    return out;
   }
   function filterQuery(k, items) {
     var q = norm(S.q[k] || ''); if (!q) return items;
@@ -961,13 +945,12 @@
       var companyInitial = (o.n.replace(/^(الشركة|شركة|مؤسسة|مكتب)\s+/, '') || o.n).charAt(0);
       var companyAvatar = o.img ? '<img class="avatar company-avatar" data-src="' + esc(o.img) + '" data-initial="' + esc(companyInitial) + '" alt="' + esc(o.imgAlt || ('شعار ' + o.n)) + '" loading="lazy" decoding="async">' : '<span class="avatar">' + esc(companyInitial) + '</span>';
       return '<article class="lcard"><div class="head">' + companyAvatar + '<div><h3>' + esc(o.n) + '</h3>' +
-        '<div class="sub">' + esc(o.kind) + ' · ' + esc(o.coverageCities && !sameCity(S.branch.city, o.city) ? ('تغطية: ' + o.coverageCities.join('، ')) : o.scope) + '</div></div></div>' +
-        '<div class="tags">' + (showCity ? '<span class="tag city">' + esc(o.coverageCities && o.coverageCities.some(function (city) { return sameCity(city, S.branch.city); }) ? S.branch.city : o.city) + '</span>' : '') + ((sameCity(S.branch.city, o.city) && sectorsOf(o).length) ? '<span class="tag">' + esc(sectorsOf(o).join(' / ')) + '</span>' : '') + (item && item.serviceMatch ? '<span class="tag">تخدم هذا النطاق</span>' : '') +
+        '<div class="sub">' + esc(o.kind) + '</div></div></div>' +
+        '<div class="tags">' + (showCity ? '<span class="tag city">' + esc(o.coverageCities && o.coverageCities.some(function (city) { return sameCity(city, S.branch.city); }) ? S.branch.city : o.city) + '</span>' : '') + (item && item.serviceMatch ? '<span class="tag">تخدم هذا النطاق</span>' : '') +
         
         (o.contact ? '<span class="tag">المسؤول: ' + esc(o.contact) + '</span>' : '') + unknownTag + '</div>' +
-        (o.projects && o.projects.length ? '<p class="sub" style="margin:0">' + esc(o.projects.slice(0, 4).join('، ')) + (o.projects.length > 4 ? '…' : '') + '</p>' : '') +
         phoneLine(o.phones, id, o.phoneContacts) +
-        (o.salesCenters || []).map(function (center) { return '<div class="sub"><a target="_blank" rel="noopener" href="' + esc(center.maps) + '">' + esc(center.n) + ' — خرائط Google</a></div>'; }).join('') +
+        (o.salesCenters || []).map(function (center) { return '<div class="sub"><a target="_blank" rel="noopener" href="' + esc(center.maps) + '">' + esc('مركز مبيعات الشركة') + ' — خرائط Google</a></div>'; }).join('') +
         '<div class="acts">' + actions(id, o, 'ibtn') + '</div></article>';
     }
     return '<article class="lcard"><div class="head"><span class="avatar">' + ICON[kind === 'cars' || kind === 'dealers' ? 'cars' : 'offices'] + '</span><div><h3>' + esc(o.n) + '</h3>' +
