@@ -12,8 +12,9 @@
     "pre_edit_partial_match": 1,
     "pre_edit_unresolved": 3,
     "direct_pins_saved": 2,
-    "post_edit_retested": 0,
-    "official_phone_fields_checked": 5
+    "post_edit_retested": 2,
+    "official_phone_fields_checked": 5,
+    "verified_correct_after_retest": 2
   },
   "records": [
     {
@@ -98,10 +99,11 @@
       "previous_map": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B1%D8%AA%D8%A7%D9%84%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%85%D8%B1%D8%A7%D9%86%D9%8A%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
       "map": {
         "opened": true,
-        "status": "post_save_retest_pending",
+        "status": "verified_direct_place_post_edit_retested",
         "saved": "https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%B1%D8%AA%D8%A7%D9%84+%D9%84%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84+%7C+%D8%B4%D8%B1%D9%83%D8%A9+%D8%B1%D8%AA%D8%A7%D9%84+%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1+%D8%A7%D9%84%D8%B9%D9%85%D8%B1%D8%A7%D9%86%D9%8A%E2%80%AD/@26.3328125,50.2120625,17z/data=!3m1!4b1!4m6!3m5!1s0x3e49e62f08476d37:0xd7b0c8ad9518770b!8m2!3d26.3328125!4d50.2120625!16s%2Fg%2F11gf97zywj?entry=ttu",
         "evidence": "بطاقة Maps المباشرة «مركز رتال للأعمال | شركة رتال للتطوير العمراني»، حي الروابي، الخبر 34421؛ الهاتف الرسمي 8003030888 والموقع الرسمي retal.com.sa. يلزم اختبار الرابط بعد الحفظ.",
-        "verified": false
+        "verified": true,
+        "post_edit_retest": "Passed after save: exact Place URL opened; card title «مركز رتال للأعمال | شركة رتال للتطوير العمراني», Robawi, Khobar 34421, 8003030888, retal.com.sa."
       },
       "duplicate_prior_open": false,
       "fields": {
@@ -122,10 +124,11 @@
       "previous_map": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D8%AD%D8%A8%D9%8A%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
       "map": {
         "opened": true,
-        "status": "post_save_retest_pending",
+        "status": "verified_direct_place_post_edit_retested",
         "saved": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D9%85%D8%AD%D9%85%D8%AF+%D8%A7%D9%84%D8%AD%D8%A8%D9%8A%D8%A8+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@24.7412264,46.5990449,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2f0135e036c42b:0xb5a59cd80a22b511!8m2!3d24.7412264!4d46.5990449!16s%2Fg%2F11bxc590n3?entry=ttu",
         "evidence": "بطاقة Maps المباشرة «شركة محمد الحبيب العقارية» بحي حطين، الرياض 13514. صفحة الاتصال الرسمية تؤكد العنوان ورقم 920033157؛ أرقام الجوال الأخرى غير مؤكدة. يلزم اختبار الرابط بعد الحفظ.",
-        "verified": false
+        "verified": true,
+        "post_edit_retest": "Passed after save: exact Place URL opened; card title «شركة محمد الحبيب العقارية», North Ring Rd branch, Hittin, Riyadh 13514, Plus Code PHRX+FJ, 920033157, alhabibinv.com."
       },
       "duplicate_prior_open": false,
       "fields": {
@@ -145,6 +148,7 @@
   "notes": [
     "تمت مطابقة IDs مع ledger الموجود في المستودع: cp-d4a0d3f6e1 فُتح سابقًا ولا يُحتسب جديدًا؛ IDs الخمسة الأخرى لا يظهر لها opened في ledger.",
     "تم حفظ Place مباشر لرتال الخبر ومحمد الحبيب الرياض استنادًا لبطاقتي Maps المفتوحتين ومصادر الاتصال الرسمية. لا تحتسب الروابط المصححة نجاحًا نهائيًا قبل إعادة الفتح بعد الحفظ.",
-    "أجدان قادت إلى مؤسسة أخرى؛ الرمز والرائم وتلال لم يثبت لها دبوس الشركة الدقيق؛ لم تُغير أرقام أو واتساب غير مثبتة."
+    "أجدان قادت إلى مؤسسة أخرى؛ الرمز والرائم وتلال لم يثبت لها دبوس الشركة الدقيق؛ لم تُغير أرقام أو واتساب غير مثبتة.",
+    "تم فتح الرابطين المحفوظين حرفيًا بعد الحفظ في commit 91ec3e1؛ كلاهما عرض بطاقة المكان والعنوان/الهاتف/الموقع المتطابقة. لا واتساب مخزن أو مختبر."
   ]
 }
