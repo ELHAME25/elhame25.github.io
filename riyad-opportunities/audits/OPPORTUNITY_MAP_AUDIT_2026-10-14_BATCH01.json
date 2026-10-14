@@ -9,11 +9,12 @@
     "opened": 6,
     "verified_location": 4,
     "unresolved_location": 2,
-    "corrected_and_retested": 0,
+    "corrected_and_retested": 1,
     "phone_verified_official": 4,
     "whatsapp_verified": 0,
     "website_verified": 6,
-    "corrected": 1
+    "corrected": 1,
+    "unresolved": 2
   },
   "records": [
     {
@@ -41,12 +42,13 @@
       "name": "النقرة 78",
       "map": {
         "opened": true,
-        "status": "post_edit_retest_no_place_card",
+        "status": "verified_corrected_direct_cid_retested",
         "matched": true,
-        "verified": false,
-        "post_edit_retest": "Maps reopened saved value from data; rendered search results with «فلل متمم 78» but did not open the Place card. Direct pin not confirmed after save.",
-        "evidence": "بطاقة Maps المقروءة «فلل متمم 78»، العنوان النقرة، حائل؛ إحداثيات البطاقة 27.474134,41.671017. صفحة عقر تؤكد مشروع النقرة 78 بحي النقرة، حائل.",
-        "corrected_source": "opened Google Maps card plus Aqar project listing"
+        "verified": true,
+        "post_edit_retest": "passed after commit 1e3b469fb5cb4a00f56aef38673c37be92c5f1fb; exact saved CID opened the «فلل متمم 78» Place card, showing حي النقرة, HAGC3631 / 3631 أبي الفتح السعدي, حائل 55431, Plus Code FMFC+MC. Card displays 0558739704, which conflicts with the stored company-level official number 920031975; not changed.",
+        "evidence": "Maps card «فلل متمم 78» shows title, address at أبي الفتح السعدي/حي النقرة, Hail and Plus Code; Aqar listing confirms project in حي النقرة. Direct CID was saved and reopened successfully. The official company contact number 920031975 remains separately sourced; Maps card shows different 0558739704 and no attribution proof.",
+        "corrected_source": "opened Google Maps card plus Aqar project listing",
+        "saved": "https://www.google.com/maps?cid=13229183284052691890"
       },
       "fields": {
         "phone": "920031975 موثق كرقم الشركة بموقع متمم؛ ليس رقمًا مستقلًا للمشروع",
@@ -140,6 +142,7 @@
     "الحي الدقيق لم يثبت لجيدا أو كاردن 25؛ جيرة لا يثبت دبوسها انتماءه للمشروع.",
     "اختبار الهاتف/واتساب/الموقع سجل مستقل؛ وجود رقم رسمي على صفحة مطور لا يعني رقمًا خاصًا بالمشروع.",
     "تم تطبيق دبوس Place مباشر للسجل op-91e60fc473 وتحديث الإحداثيات إلى البطاقة؛ إعادة الفتح بعد الحفظ لم تكتمل بعد، لذلك لا يدخل ضمن corrected_and_retested.",
-    "Post-edit Maps test for the saved URL op-91e60fc473 returned a result list rather than opening the Place card; correction is not counted as retested. CID candidate will be tested separately before any further change."
+    "Post-edit Maps test for the saved URL op-91e60fc473 returned a result list rather than opening the Place card; correction is not counted as retested. CID candidate will be tested separately before any further change.",
+    "Final direct CID was saved in the record and reopened verbatim after commit; the named Place card and حي النقرة/حائل match. Phone discrepancy between the business card and official company-level number remains an independent unresolved field; no phone was changed."
   ]
 }
