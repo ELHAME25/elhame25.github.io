@@ -41,10 +41,10 @@
       "name": "النقرة 78",
       "map": {
         "opened": true,
-        "status": "corrected_retest_pending",
+        "status": "post_edit_retest_no_place_card",
         "matched": true,
-        "verified": true,
-        "post_edit_retest": "pending; data/opportunities.json updated in c7753edc26c9c541dfa307cc4bce579967ed922a; agent to reopen saved URL",
+        "verified": false,
+        "post_edit_retest": "Maps reopened saved value from data; rendered search results with «فلل متمم 78» but did not open the Place card. Direct pin not confirmed after save.",
         "evidence": "بطاقة Maps المقروءة «فلل متمم 78»، العنوان النقرة، حائل؛ إحداثيات البطاقة 27.474134,41.671017. صفحة عقر تؤكد مشروع النقرة 78 بحي النقرة، حائل.",
         "corrected_source": "opened Google Maps card plus Aqar project listing"
       },
@@ -139,6 +139,7 @@
     "لا تغيير إلى روابط data: هذه الدفعة توثق الأدلة فقط. لا يمكن عد النقرة 78 تصحيحًا ناجحًا قبل تطبيق المرشح ثم إعادة فتحه بعد الحفظ.",
     "الحي الدقيق لم يثبت لجيدا أو كاردن 25؛ جيرة لا يثبت دبوسها انتماءه للمشروع.",
     "اختبار الهاتف/واتساب/الموقع سجل مستقل؛ وجود رقم رسمي على صفحة مطور لا يعني رقمًا خاصًا بالمشروع.",
-    "تم تطبيق دبوس Place مباشر للسجل op-91e60fc473 وتحديث الإحداثيات إلى البطاقة؛ إعادة الفتح بعد الحفظ لم تكتمل بعد، لذلك لا يدخل ضمن corrected_and_retested."
+    "تم تطبيق دبوس Place مباشر للسجل op-91e60fc473 وتحديث الإحداثيات إلى البطاقة؛ إعادة الفتح بعد الحفظ لم تكتمل بعد، لذلك لا يدخل ضمن corrected_and_retested.",
+    "Post-edit Maps test for the saved URL op-91e60fc473 returned a result list rather than opening the Place card; correction is not counted as retested. CID candidate will be tested separately before any further change."
   ]
 }
