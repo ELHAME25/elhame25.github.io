@@ -88,11 +88,12 @@ const server=http.createServer((req,res)=>{
     assert(!await page.locator('#radius').count(),'projects must not use a branch radius');
     await section('companies');
     assert(!await page.locator('#radius').count()&&!await page.locator('[data-explore]').count(),'companies exposed geographic filtering');
-    assert.equal(await page.locator('#company-activity').count(),1);
-    await page.locator('#company-activity').selectOption('تطوير');
-    await page.locator('#company-activity').selectOption('');
-    await page.locator('#company-sort').selectOption('distance');
-    await page.locator('#company-sort').selectOption('name');
+    assert.equal(await page.locator('#company-activity').count(),0);
+    assert.equal(await page.locator('#company-sort').count(),0);
+    assert((await page.locator('#app').innerText()).includes('شركات الوساطة والاستثمار العقاري'));
+    await page.locator('#q-sec').fill('راكز');
+    assert.equal(await page.locator('#content article.lcard').count(),1);
+    await page.locator('#q-sec').fill('');
    // Seven independent search controls: Riyadh's six categories and Hail self-build.
    let searchSections=0;
    for(const [code,k] of [['243','projects'],['243','opps'],['243','nhc'],['243','companies'],['243','offices'],['243','cars'],['610','selfbuild']]){
