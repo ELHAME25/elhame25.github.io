@@ -56,7 +56,18 @@ function assertNearFirst(rows,label){let last=-Infinity,unknown=false;for(const 
   assert(env.els.content.innerHTML.includes('id="q-sec"'),'company search missing');
   assert(env.els.app.innerHTML.includes('شركات الوساطة والاستثمار العقاري'),'company title incorrect');
   assert(!/الياقوت A|الياقوت14/.test(env.els.content.innerHTML),'company card leaks project names');
-  for(const name of ['راكز','مكين'])assert.equal(A.itemsFor('companies').filter(x=>x.o.n.includes(name)).length,1,name+' duplicated or missing');
+  for(const id of ['cp-48de384477','cp-center-riyadh-asas-makeen'])assert.equal(A.itemsFor('companies').filter(x=>x.o.id===id).length,1,id+' duplicated or missing');
+  // Small cities remain independent; their projects are complete city lists.
+  for(const city of ['الدمام','الخبر','الظهران','الجبيل','بريدة','عنيزة']){
+    const b=D.branches.find(x=>A.sameCity(x.city,city));assert(b,'missing '+city);A.choose(b.c);
+    for(const kind of ['projects','opps']){
+      const rows=A.itemsFor(kind);
+      assert(rows.every(x=>A.sameCity(x.o.city,city)),city+' imports neighboring projects');
+      assert.deepEqual(ids(rows),ids(A.itemsFor(kind,'','city')),city+' is incorrectly sector-limited');
+    }
+    assert(A.itemsFor('companies').every(x=>A.sameCity(x.o.city,city)),city+' imports neighboring company locations');
+  }
+  A.choose('243');
   let projectSeparationCases=0;
   for(const sec of ['شرق','غرب','شمال','جنوب']){
     A.state().scope='sector';A.state().explore=sec;
