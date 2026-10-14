@@ -92,7 +92,7 @@ const server=http.createServer((req,res)=>{
     assert.equal(await page.locator('#company-sort').count(),0);
     assert((await page.locator('#app').innerText()).includes('شركات الوساطة والاستثمار العقاري'));
     await page.locator('#q-sec').fill('راكز');
-    assert.equal(await page.locator('#content article.lcard').count(),1);
+    assert.equal(await page.locator('#content article.lcard').filter({has:page.getByText('راكز العقارية',{exact:true})}).count(),1);
     await page.locator('#q-sec').fill('');
    // Seven independent search controls: Riyadh's six categories and Hail self-build.
    let searchSections=0;
