@@ -1,0 +1,87 @@
+{
+  "schema": "nhc-map-field-audit-batch-v1",
+  "audit_date": "2026-10-14",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "head_at_start": "112d353e523b172cda012b3d616be40fea25710c",
+  "counts": {
+    "records_checked": 3,
+    "stored_map_links_opened": 3,
+    "verified_location": 1,
+    "corrected_and_retested": 0,
+    "unresolved": 2,
+    "phone_verified": 0,
+    "whatsapp_verified": 0,
+    "official_websites_verified": 3
+  },
+  "records": [
+    {
+      "record_key": "nhc:السديم|خميس مشيط",
+      "name": "السديم",
+      "city": "خميس مشيط",
+      "map": {
+        "opened": true,
+        "status": "corrected_retest_pending",
+        "matched": true,
+        "verified": true,
+        "saved": "https://www.google.com/maps/place/%D9%88%D8%AC%D9%87%D8%A9+%D8%A7%D9%84%D8%B3%D8%AF%D9%8A%D9%85%D8%8C+%D8%AE%D9%85%D9%8A%D8%B3+%D9%85%D8%B4%D9%8A%D8%B7%E2%80%AD/@18.3587813,42.7476884,15z/data=!3m1!4b1!4m6!3m5!1s0x15fb5b276decc4e3:0x5bb2b5fca415a8fd!8m2!3d18.3595025!4d42.7474727!16s%2Fg%2F11tfp55m1y",
+        "post_edit_retest": "pending after commit 8003bb965fe83fddcc5625a61846cef41286e359",
+        "evidence": "بطاقة خرائط «وجهة السديم، خميس مشيط» تطابق الاسم والمدينة، وصفحة NHC الرسمية تؤكد الوجهة وخميس مشيط و5,068 وحدة. البطاقة لا تثبت الحي/حدود الموقع."
+      },
+      "fields": {
+        "phone": "لا يوجد رقم خاص بالوجهة في السجل أو صفحة NHC المفتوحة",
+        "whatsapp": "لا يوجد رابط خاص بالوجهة؛ رابط NHC عام غير قابل للتحقق كوجهة",
+        "website": "صفحة NHC الرسمية"
+      },
+      "sources": [
+        "https://www.nhc.sa/real-estate-development/suburbs/293/16/"
+      ]
+    },
+    {
+      "record_key": "nhc:وديانا|الطائف",
+      "name": "وديانا",
+      "city": "الطائف",
+      "map": {
+        "opened": true,
+        "status": "unresolved_exact_location",
+        "matched": false,
+        "verified": false,
+        "candidate": "https://www.google.com/maps/place/%D9%88%D8%AC%D9%87%D8%A9+%D9%88%D8%AF%D9%8A%D8%A7%D9%86%D8%A7%E2%80%AD/@21.4307683,40.5172482,17z/data=!3m1!4b1!4m6!3m5!1s0x15ea2f003bbbc30f:0x2cecb95d81acc2c8!8m2!3d21.4307683!4d40.5172482!16s%2Fg%2F11xv1cc_10",
+        "evidence": "بطاقة Maps «وجهة وديانا» (جمعية الإسكان)، حي الخضيرة، الطائف 26575؛ الاسم والمدينة يتطابقان. NHC يصف وجهة وديانا/مشروع دانية وديانا بالحوية شمال الطائف، ولم يثبت مصدر أن دبوس الخضيرة يطابق حدود الوجهة؛ لذلك يبقى الموقع الدقيق غير محسوم ولا يُحفظ كتصحيح."
+      },
+      "fields": {
+        "phone": "غير موجود بصف السجل/المصدر الرسمي",
+        "whatsapp": "رابط NHC عام لا يثبت رقم/وجهة خاصة بالمشروع",
+        "website": "صفحة NHC الرسمية"
+      },
+      "sources": [
+        "https://nhc.sa/ar/real-estate-development/communities/47516/",
+        "https://nhc.sa/ar/real-estate-development/projects/47517/"
+      ]
+    },
+    {
+      "record_key": "nhc:النخلة|عنيزة",
+      "name": "النخلة",
+      "city": "عنيزة",
+      "map": {
+        "opened": true,
+        "status": "unresolved_wrong_result",
+        "matched": false,
+        "verified": false,
+        "evidence": "نتيجة Maps الوحيدة المسماة النخلة بطاقة فندق/منتجع بحي الحمراء، عنيزة 56263، هاتف 0543676743؛ تطابق الاسم والحي والمدينة وحده لا يثبت أنها مشروع NHC. لا تنقل رقم الفندق ولا تحفظ هذا الدبوس. NHC الرسمي يؤكد المشروع في عنيزة، حي الحمراء، 169 وحدة، دون دبوس دقيق."
+      },
+      "fields": {
+        "phone": "غير موجود خاصًا بالمشروع؛ رقم بطاقة الفندق غير منسوب إلى NHC",
+        "whatsapp": "لا رابط خاص بالمشروع",
+        "website": "صفحة NHC الرسمية"
+      },
+      "sources": [
+        "https://www.nhc.sa/ar/real-estate-development/projects/47325/"
+      ]
+    }
+  ],
+  "notes": [
+    "السجلات الثلاثة كانت آخر ثلاثة وجهات NHC مثبتة كغير مفتوحة قبل الجولة. السجلان النخلة ووديانا لا يُحتسبان كمواقع صحيحة.",
+    "لا تُنقل أرقام جهات تجارية أخرى بسبب تشابه الاسم/الحي؛ لا تعديل لسجلي وديانا أو النخلة."
+  ]
+}
