@@ -29,7 +29,7 @@ const fetch = async url => {
 };
 const jsFile = path.join(root, 'assets/app.js');
 let source = fs.readFileSync(jsFile, 'utf8').replace('  boot();',
-  "  window.__qa={selectBranch,renderBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,companyKey,radiusApplies,card,phoneLine,cityCompanyRecords,data:()=>D,state:()=>S,setScope:(scope,radius)=>{S.scope=scope;if(radius)S.radius=radius;return compute();}}; boot();");
+  "  window.__qa={choose:code=>{S=fresh();S.branch=D.branchByCode[code];S.scope=(S.branch.lat==null||S.branch.lon==null)&&sectorCity(S.branch.city)?'city':'branch';},selectBranch,renderBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,companyKey,radiusApplies,card,phoneLine,cityCompanyRecords,data:()=>D,state:()=>S,setScope:(scope,radius)=>{S.scope=scope;if(radius)S.radius=radius;}}; boot();");
 vm.runInNewContext(source, {document,window,location,history:{replaceState(){}},localStorage,navigator:{},fetch,setTimeout,clearTimeout,console,URL,Blob,Intl,Date});
 const sleep = ms => new Promise(resolve=>setTimeout(resolve,ms));
 const results=[];
@@ -111,7 +111,7 @@ function check(name, fn) {
   check('No duplicate normalized company brand in any branch city', () => {
     const failures=[];
     for (const b of D.branches) {
-      Q.selectBranch(b.c,true); Q.setScope('city');
+      Q.choose(b.c); Q.setScope('city');
       const seen=new Set();
       for (const x of Q.itemsFor('companies','','city')) {
         const key=Q.companyKey(x.o.n);
@@ -203,15 +203,14 @@ function check(name, fn) {
     for(const city of cities){
       const branches=D.branches.filter(b=>b.city===city);
       assert(branches.length,'no branch for '+city);
-      Q.selectBranch(branches[0].c,true);
+      Q.choose(branches[0].c);
       const expected=Object.fromEntries(kinds.map(kind=>[
         kind,Q.itemsFor(kind,'','city').map(x=>x.o.id).sort()
       ]));
       for(const b of branches){
-        Q.selectBranch(b.c,true);
+        Q.choose(b.c);
         Q.state().tab='offices';
         Q.setScope('branch',15);
-        Q.renderBranch();
         if(b.lat!=null&&b.lon!=null){const offices=Q.itemsFor('offices','','branch');if(!Q.radiusApplies('offices','branch')||offices.some(x=>x.rankD==null||x.rankD>15))failures.push({city,branch:b.c,error:'offices are not radius-bound'});}
         for(const kind of kinds){
           const actual=Q.itemsFor(kind,'','branch').map(x=>x.o.id).sort();
