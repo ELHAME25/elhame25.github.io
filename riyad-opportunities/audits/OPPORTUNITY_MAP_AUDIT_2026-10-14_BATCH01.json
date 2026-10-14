@@ -12,7 +12,8 @@
     "corrected_and_retested": 0,
     "phone_verified_official": 4,
     "whatsapp_verified": 0,
-    "website_verified": 6
+    "website_verified": 6,
+    "corrected": 1
   },
   "records": [
     {
@@ -40,12 +41,12 @@
       "name": "النقرة 78",
       "map": {
         "opened": true,
-        "status": "verified_named_place_candidate",
+        "status": "corrected_retest_pending",
         "matched": true,
         "verified": true,
-        "saved": "https://www.google.com/maps/place/%D9%81%D9%84%D9%84+%D9%85%D8%AA%D9%85%D9%85+78%E2%80%AD/@27.4762862,41.6599681,14z/data=!4m10!1m2!2m1!1z2KfZhNmG2YLYsdipIDc42Iwg2LTYp9ix2Lkg2KfZhNmG2YLYsdipIDQy2Iwg2K3ZiiDYp9mE2YbZgtix2KnYjCDYrdin2KbZhA!3m6!1s0x15763f00467e2827:0xb797801b0a7f0bb2!8m2!3d27.474134!4d41.671017!15sCknYp9mE2YbZgtix2KkgNzjYjCDYtNin2LHYuSDYp9mE2YbZgtix2KkgNDLYjCDYrdmKINin2YTZhtmC2LHYqdiMINit2KfYptmEkgESYXBhcnRtZW50X2J1aWxkaW5n4AEA!16s%2Fg%2F11vz6k6jz3?entry=ttu",
-        "post_edit_retest": "pending; not saved into data yet",
-        "evidence": "بطاقة Maps المقروءة «فلل متمم 78»، العنوان النقرة، حائل؛ إحداثيات البطاقة 27.474134,41.671017. صفحة عقر تؤكد مشروع النقرة 78 بحي النقرة، حائل."
+        "post_edit_retest": "pending; data/opportunities.json updated in c7753edc26c9c541dfa307cc4bce579967ed922a; agent to reopen saved URL",
+        "evidence": "بطاقة Maps المقروءة «فلل متمم 78»، العنوان النقرة، حائل؛ إحداثيات البطاقة 27.474134,41.671017. صفحة عقر تؤكد مشروع النقرة 78 بحي النقرة، حائل.",
+        "corrected_source": "opened Google Maps card plus Aqar project listing"
       },
       "fields": {
         "phone": "920031975 موثق كرقم الشركة بموقع متمم؛ ليس رقمًا مستقلًا للمشروع",
@@ -137,6 +138,7 @@
   "notes": [
     "لا تغيير إلى روابط data: هذه الدفعة توثق الأدلة فقط. لا يمكن عد النقرة 78 تصحيحًا ناجحًا قبل تطبيق المرشح ثم إعادة فتحه بعد الحفظ.",
     "الحي الدقيق لم يثبت لجيدا أو كاردن 25؛ جيرة لا يثبت دبوسها انتماءه للمشروع.",
-    "اختبار الهاتف/واتساب/الموقع سجل مستقل؛ وجود رقم رسمي على صفحة مطور لا يعني رقمًا خاصًا بالمشروع."
+    "اختبار الهاتف/واتساب/الموقع سجل مستقل؛ وجود رقم رسمي على صفحة مطور لا يعني رقمًا خاصًا بالمشروع.",
+    "تم تطبيق دبوس Place مباشر للسجل op-91e60fc473 وتحديث الإحداثيات إلى البطاقة؛ إعادة الفتح بعد الحفظ لم تكتمل بعد، لذلك لا يدخل ضمن corrected_and_retested."
   ]
 }
