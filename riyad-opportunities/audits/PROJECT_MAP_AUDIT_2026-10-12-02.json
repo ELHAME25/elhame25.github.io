@@ -31,19 +31,19 @@
       "name": "بارك فيو",
       "map": {
         "opened": true,
-        "matched": true,
-        "status": "verified_search_result_name_city_neighborhood",
-        "observed": "Google Maps place بارك فيو at 26.0920994,50.1333202",
-        "evidence": "Maps opened a named place matching Park View; official Sakani project 627 identifies it in Al-Aziziyah, Al Khobar. No direct Place URL pin copied into the data row; its mapsQ query stays as existing fallback."
+        "matched": false,
+        "status": "unresolved_neighborhood_not_proven",
+        "candidate": "https://www.google.com/maps/place/%D8%A8%D8%A7%D8%B1%D9%83+%D9%81%D9%8A%D9%88%E2%80%AD/@26.0920994,50.1333202,1003m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e49db21754fc003:0xe39b953cf0138d7a!8m2!3d26.0920994!4d50.1333202!16s%2Fg%2F11sprwttjj?entry=ttu",
+        "evidence": "Direct Google Maps place card «بارك فيو» was reopened; it shows Khobar and address 2100 Al Aqif/7206, 34RM+R8. Sakani identifies Park View in العزيزية، الخبر, but map card does not state the neighborhood; neighborhood-level pin match remains unresolved. Direct URL not saved in data file, whose maps field remains empty."
       },
       "phone": {
-        "status": "no phone stored"
+        "status": "Map card +966 9200 22076 is developer-level; record has no stored phone"
       },
       "whatsapp": {
         "status": "empty"
       },
       "website": {
-        "status": "official Sakani page verified as project source, no dedicated website stored"
+        "status": "Map card listed sumoualasalah.com; not stored as record website and not independently validated"
       },
       "sources": [
         "https://sakani.sa/app/offplan-projects/627"
@@ -121,13 +121,13 @@
       "name": "نمو باتيو",
       "map": {
         "opened": true,
-        "matched": true,
-        "status": "verified_search_result_name_city_neighborhood",
-        "observed": "Google Maps independent place «نمو باتيو» at 26.3860407,50.1938077 / 95PV+CG7",
-        "evidence": "Maps showed a separately named project place. Official developer brochure identifies حي السيف (مخطط سمو الخبر); match city and project locality. No exact Place URL copied into data row; existing mapsQ left unchanged."
+        "matched": false,
+        "status": "unresolved_city_conflict",
+        "candidate": "https://www.google.com/maps/place/%D9%86%D9%85%D9%88+%D8%A8%D8%A7%D8%AA%D9%8A%D9%88%E2%80%AD/data=!4m7!3m6!1s0x3e49ef003ad16453:0xe9e34a379c3d90c4!8m2!3d26.3860407!4d50.1938077!16s%2Fg%2F11lng64ljy!19sChIJU2TROgDvST4RxJA9nDdK4-k?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+        "evidence": "Named Maps place «نمو باتيو», but the opened/reopened card explicitly gives السيف، الدمام while the record says الخبر. Developer brochure says حي السيف (مخطط سمو الخبر), so primary sources conflict on locality/city. Keep record, do not change city or pin until resolved; maps field remains empty."
       },
       "phone": {
-        "status": "no phone stored; developer brochure mentions project contact numbers but not in record"
+        "status": "official project brochure lists developer contacts; record has no stored phone"
       },
       "whatsapp": {
         "status": "empty"
@@ -143,11 +143,12 @@
   ],
   "counts": {
     "opened_maps": 6,
-    "place_results_matched_name_location": 2,
-    "verified_direct_pin_links": 0,
+    "place_results_with_name": 2,
+    "fully_matched_name_city_neighborhood": 0,
+    "verified_correct_links": 0,
     "wrong_links_corrected_and_retested": 0,
-    "unresolved": 4,
+    "unresolved": 6,
     "not_opened_in_batch": 0
   },
-  "note": "All six queries were opened in Google Maps. Two map results were positively matched to the project and official locality sources, but no direct Place URL was captured and no map field was edited; those two are location matches, not post-edit-tested direct pins. The other four remain unresolved. Record-level phone/WhatsApp fields are absent, so not invented."
+  "note": "Correction after opening direct Google Maps Place URLs: P038's map card doesn't show Aziziyah, so exact neighborhood is unconfirmed; P042 is explicitly in Dammam while row says Khobar. No project row pin is counted verified and no data file change was made."
 }
