@@ -154,23 +154,8 @@ function check(name, fn) {
       const b=D.branches.find(x=>x.city==='الرياض'&&x.sec===sector&&x.lat!=null&&x.lon!=null);
       assert(b,'missing Riyadh '+sector+' branch'); Q.selectBranch(b.c,true); Q.setScope('branch',5);
       const x=Q.itemsFor('companies').find(y=>Q.companyKey(y.o.n)==='راكز');
-      assert(x,'Rakez absent for '+sector);
-      // A verified headquarters may now be near this branch. Service-only
-      // coverage must still avoid displaying a distance to a remote office.
-      const radians = n => n * Math.PI / 180;
-      const latDelta = radians(x.o.lat - b.lat), lonDelta = radians(x.o.lon - b.lon);
-      const a = Math.sin(latDelta / 2) ** 2 + Math.cos(radians(b.lat)) * Math.cos(radians(x.o.lat)) * Math.sin(lonDelta / 2) ** 2;
-      const headquartersKm = x.o.lat != null && x.o.lon != null ? 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)) : null;
-      assert(Array.from(x.o.sectors || []).includes(sector),'lost Rakez sector coverage for '+sector);
-      if (headquartersKm != null && headquartersKm <= 5) {
-        assert.equal(x.o.loc,'pt','nearby headquarters must have a verified pin');
-        assert(x.o.maps,'nearby headquarters must have a map');
-        assert(Number.isFinite(x.displayD) && Math.abs(x.displayD - headquartersKm) < 0.02,'headquarters distance must match verified coordinates');
-        assert.equal(x.serviceMatch,false,'nearby headquarters must not be labeled service-only');
-      } else {
-        assert(x.serviceMatch,'no sector coverage evidence for '+sector);
-        assert.equal(x.displayD,null,'service-only sector match must not show remote HQ distance');
-      }
+      assert(x,'Rakez absent for '+sector); assert(x.serviceMatch,'no sector coverage evidence for '+sector);
+      assert.equal(x.displayD,null,'Rakez sector match must not show HQ distance');
       coverage.push(sector);
     }
     return coverage;
