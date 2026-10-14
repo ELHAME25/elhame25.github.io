@@ -70,15 +70,29 @@ const server=http.createServer((req,res)=>{
    assert((await page.locator('#content').innerText()).includes('الشفا'));
    await page.locator('[data-car-area="qadisiyah"]').click();
    assert((await page.locator('#content').innerText()).includes('القادسية'));
-   // City-wide behavior through actual controls, including the branch without a pin.
-   for(const code of ['602','105','304','302','401','307']){
-    await open(code);
-    const q=await page.evaluate(()=>window.__rogQA());
-    assert(!await page.locator('#radius').count(),code+' exposed radius outside Riyadh/Jeddah');
-    assert(!await page.locator('[data-scope="city"]').count(),code+' exposed redundant city control');
-    assert(q.branch===code);
-   }
-   await open('176');assert(!await page.locator('#radius').count());
+    // Car behavior remains city-wide outside the established metro policy.
+    // Offices have verified radius controls nationally, not just in Riyadh/Jeddah.
+    for(const code of ['602','105','304','302','401']){
+     await open(code); await section('cars');
+     assert(!await page.locator('#radius').count(),code+' changed showroom radius behavior');
+     await section('offices');
+     assert.equal(await page.locator('#radius').count(),1,code+' is missing the office radius');
+     for(const radius of ['5','10','15','20']) await page.locator('#radius').selectOption(radius);
+     assert(!await page.locator('[data-explore]').count(),code+' exposed office sector controls');
+    }
+    for(const code of ['176','307']){
+     await open(code); await section('offices');
+     assert(!await page.locator('#radius').count(),code+' invented a radius for an unverified branch pin');
+    }
+    await open('243'); await section('projects');
+    assert(!await page.locator('#radius').count(),'projects must not use a branch radius');
+    await section('companies');
+    assert(!await page.locator('#radius').count()&&!await page.locator('[data-explore]').count(),'companies exposed geographic filtering');
+    assert.equal(await page.locator('#company-activity').count(),1);
+    await page.locator('#company-activity').selectOption('تطوير');
+    await page.locator('#company-activity').selectOption('');
+    await page.locator('#company-sort').selectOption('distance');
+    await page.locator('#company-sort').selectOption('name');
    // Seven independent search controls: Riyadh's six categories and Hail self-build.
    let searchSections=0;
    for(const [code,k] of [['243','projects'],['243','opps'],['243','nhc'],['243','companies'],['243','offices'],['243','cars'],['610','selfbuild']]){
@@ -94,3 +108,4 @@ const server=http.createServer((req,res)=>{
  }finally{await browser.close();}
  console.log(JSON.stringify({suite:'Chromium real browser interactions',results,ok:true},null,2));
 })().catch(err=>{console.error(err);process.exitCode=1;}).finally(()=>server.close());
+
