@@ -1,0 +1,161 @@
+{
+  "schema": "project-map-audit-batch-v1",
+  "audit_date": "2026-10-14",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "head_at_start": "112d353e523b172cda012b3d616be40fea25710c",
+  "counts": {
+    "map_links_opened": 6,
+    "unique_not_previously_opened_by_ledger": 4,
+    "repeated_prior_open": 2,
+    "verified_current_search_resolutions": 2,
+    "unresolved": 4,
+    "corrected": 0,
+    "corrected_and_retested": 0
+  },
+  "records": [
+    {
+      "id": "P043",
+      "name": "بيوتات رايز",
+      "city": "الخبر",
+      "neighborhood": "",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D9%88%D8%AA%D8%A7%D8%AA%20%D8%B1%D8%A7%D9%8A%D8%B2%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B1%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "preexisting_opened": false,
+      "map": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_search_result_card",
+        "evidence": "Maps result card «Beutat Rise - بيوتات رايز», residential complex, شارع سكاكا, phone 0552423849, ryadah.sa/rise; developer's official rise.ryadah.com.sa locates project at البحيرة/حي الحمراء، الخبر. Search resolved to exact named project card; neighborhood confirmation official."
+      },
+      "fields": {
+        "phone": [],
+        "whatsapp": "none stored",
+        "website": "none stored"
+      }
+    },
+    {
+      "id": "P044",
+      "name": "داره الفرسان",
+      "city": "الرياض",
+      "neighborhood": "",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%A7%D8%B1%D9%87%20%D8%A7%D9%84%D9%81%D8%B1%D8%B3%D8%A7%D9%86%20%D8%A7%D8%AC%D8%AF%D8%A7%D9%86%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+      "preexisting_opened": true,
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_multiple_similar_places",
+        "evidence": "Maps shows separate villa-showroom card at 24.9448775,46.8185714 (Ajdan), another «مشروع دارة الفرسان» at 24.9549377,46.8353706, and «الفرسان 2». NHC confirms Ajdan project in Riyadh but not exact neighborhood/pin. Do not choose a candidate."
+      },
+      "fields": {
+        "phone": [
+          "920008416"
+        ],
+        "whatsapp": "none stored",
+        "website": "https://www.nhc.sa/real-estate-development/projects/47211/"
+      }
+    },
+    {
+      "id": "P045",
+      "name": "منصات ثروة",
+      "city": "الخبر",
+      "neighborhood": "",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%86%D8%B5%D8%A7%D8%AA%20%D8%AB%D8%B1%D9%88%D8%A9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%B5%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "preexisting_opened": false,
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_city_and_pin_conflict",
+        "evidence": "Maps results are company offices in Riyadh and Khobar, not project. Sakani official project 1320 names «منصات ثروة ... الدمام», conflicting with record city Khobar. No project pin/district verified; retain record and city pending further reconciliation."
+      },
+      "fields": {
+        "phone": [],
+        "whatsapp": "none stored",
+        "website": "none stored"
+      }
+    },
+    {
+      "id": "P046",
+      "name": "نساج تاون الفرسان 2",
+      "city": "الرياض",
+      "neighborhood": "",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=%D9%86%D8%B3%D8%A7%D8%AC%20%D8%AA%D8%A7%D9%88%D9%86%20%D8%A7%D9%84%D9%81%D8%B1%D8%B3%D8%A7%D9%86%202%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B1%D8%AA%D8%A7%D9%84%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%85%D8%B1%D8%A7%D9%86%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+      "preexisting_opened": true,
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_phase_identity",
+        "evidence": "Maps card «نساج الفرسان» near Al Fursan but no Phase 2 label; another «نساج تاون الرياض - رتال» is at a different site. Retal/Wafi confirm Nasaj Al-Fursan 2 in Riyadh but exact phase pin unresolved."
+      },
+      "fields": {
+        "phone": [
+          "8003030888"
+        ],
+        "whatsapp": "none stored",
+        "website": "https://retal.com.sa"
+      }
+    },
+    {
+      "id": "P047",
+      "name": "الاندلس السكني",
+      "city": "الخبر",
+      "neighborhood": "",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A7%D9%86%D8%AF%D9%84%D8%B3%20%D8%A7%D9%84%D8%B3%D9%83%D9%86%D9%8A%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B9%D9%84%D9%8A%20%D8%A8%D9%86%20%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D9%88%20%D8%A7%D8%AE%D9%88%D8%A7%D9%86%D9%87%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "preexisting_opened": false,
+      "map": {
+        "opened": true,
+        "matched": false,
+        "status": "unresolved_multiple_nearby_pins",
+        "evidence": "Maps returns three nearby but different cards (residential complex, agency, closed sales center) with no basis to select the project's current site. Developer confirms Al Andalus in Khobar; sources suggest Gold Belt/Andalus but exact direct pin unresolved."
+      },
+      "fields": {
+        "phone": [],
+        "whatsapp": "none stored",
+        "website": "none stored"
+      }
+    },
+    {
+      "id": "P048",
+      "name": "جود 1",
+      "city": "الخبر",
+      "neighborhood": "",
+      "previous_map": "https://www.google.com/maps/search/?api=1&query=%D8%AC%D9%88%D8%AF%201%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AF%D9%89%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+      "preexisting_opened": false,
+      "map": {
+        "opened": true,
+        "matched": true,
+        "status": "verified_named_project_card",
+        "evidence": "Maps card «(جود - jood) المطور شركة مدي الشرقية للتطوير العقاري مشروع», اللؤلؤ، الخبر 34763 / Plus Code 44GH+3Q. Developer page confirms project Jood 1 in حي اللؤلؤ، الخبر. No phone on card."
+      },
+      "fields": {
+        "phone": [],
+        "whatsapp": "none stored",
+        "website": "none stored"
+      }
+    }
+  ],
+  "sources": {
+    "P043": [
+      "https://rise.ryadah.com.sa/"
+    ],
+    "P044": [
+      "https://www.nhc.sa/ar/real-estate-development/projects/47211/"
+    ],
+    "P045": [
+      "https://sakani.sa/app/offplan-projects/1320"
+    ],
+    "P046": [
+      "https://retal.com.sa/properties/نساج-الفرسان-2/",
+      "https://rega.gov.sa/rega-services/platforms/wafi-off-plan-sales-and-lease/"
+    ],
+    "P047": [
+      "https://bin-sultan.com/andulus/"
+    ],
+    "P048": [
+      "https://madc.sa/project/jood1/"
+    ]
+  },
+  "notes": [
+    "P044 وP046 مثبتان كروابط سبق فتحها في ledger؛ تمت إعادة فتحهما لهذه الجولة، لكنهما لا يدخلان كـIDs جديدة.",
+    "لم تُغيّر أسماء أو مدن أو أرقام، ولم يختَر أي دبوس من نتائج متعارضة. السجل P045 يبقى محفوظًا مع تعارض المدينة (Dammam مقابل Khobar) غير محسوم."
+  ]
+}
