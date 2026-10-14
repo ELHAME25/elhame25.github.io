@@ -752,7 +752,7 @@
       '<div class="search">' + ICON.search + '<input id="q-sec" class="input" type="search" placeholder="' + esc(SEARCH_PH[k]) + '" value="' + esc(S.q[k] || '') + '" aria-label="' + esc(SEARCH_PH[k]) + '"></div></div>';
     if (k === 'companies') {
       head += '<div class="controls company-controls"><label>النشاط <select id="company-activity" aria-label="نشاط الشركة">' +
-        ['', 'تطوير', 'استثمار', 'تسويق ووساطة', 'سداد'].map(function (v) { return '<option value="' + esc(v) + '"' + (S.companyActivity === v ? ' selected' : '') + '>' + esc(v || 'كل الأنشطة') + '</option>'; }).join('') +
+        ['', 'تطوير', 'استثمار', 'تسويق ووساطة'].map(function (v) { return '<option value="' + esc(v) + '"' + (S.companyActivity === v ? ' selected' : '') + '>' + esc(v || 'كل الأنشطة') + '</option>'; }).join('') +
         '</select></label><label>الترتيب <select id="company-sort" aria-label="ترتيب الشركات"><option value="name"' + (S.companySort !== 'distance' ? ' selected' : '') + '>اسم الشركة</option><option value="distance"' + (S.companySort === 'distance' ? ' selected' : '') + '>الأقرب حسب الموقع المسجل</option></select></label></div>';
     }
     if (k === 'nhc' && sectorCity(b.city)) {
@@ -841,7 +841,6 @@
     if (/تطوير|مطوّر|مطور/.test(value)) out.push('تطوير');
     if (/استثمار/.test(value)) out.push('استثمار');
     if (/تسويق|وساطة|وساطه|جهة بيع/.test(value)) out.push('تسويق ووساطة');
-    if (/سداد|تسديد/.test(value)) out.push('سداد');
     return out;
   }
   function filterQuery(k, items) {
