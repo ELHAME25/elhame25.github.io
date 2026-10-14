@@ -14,7 +14,7 @@
               pageSize: 24, officeLimit: 12, updatedLabel: 'آخر تحديث للبيانات' };
   var D = {};
   var S = fresh();
-  function fresh() { return { branch: null, scope: 'branch', radius: 15, explore: '', tab: '', q: {}, limit: {}, employee: (S && S.employee) || '', origin: null, nearestBranchDistance: null, carArea: '' }; }
+  function fresh() { return { branch: null, scope: 'branch', radius: 15, explore: '', tab: '', q: {}, limit: {}, employee: (S && S.employee) || '', origin: null, nearestBranchDistance: null, carArea: '', companyActivity: '', companySort: 'name' }; }
   function employeeGreeting(name) {
     name = String(name || '').trim(); if (!name) return '';
     // تحية محايدة زمنيًا تمنع عرض صباح الخير ليلًا عند اختلاف ساعة الجهاز.
@@ -371,18 +371,19 @@
   var TIER = { full: 0, partial: 1, dev: 2, basic: 3 };
   var companyProjectCache = {};
   function nearScope() { return !!S.branch && (S.scope === 'branch' || S.scope === 'sector'); }
-  var CITY_LEVEL = { nhc: 1, selfbuild: 1 };   // الوجهات والمخططات تخدم المدينة كلها
+  var CITY_LEVEL = { nhc: 1, selfbuild: 1, companies: 1 };   // الوجهات والمخططات تخدم المدينة كلها
   var DAMMAM_NEIGHBOR_CITIES = [];
   function easternNeighborCity(city) { return DAMMAM_NEIGHBOR_CITIES.some(function (name) { return sameCity(name, city); }); }
   function isDammamBranch() { return !!S.branch && sameCity(S.branch.city, 'الدمام'); }
   // الفرع يحدد القطاع والنطاق في الرياض وجدة؛ بقية المدن تعرض فرص المدينة كاملة.
   function branchScopedKind(kind) {
     if (!S.branch || !kind || kind === 'nearby' || CITY_LEVEL[kind]) return false;
-    return sectorCity(S.branch.city);
+    return kind === 'offices' || sectorCity(S.branch.city);
   }
-  function cityScopeAvailable(kind) { return !!S.branch && sectorCity(S.branch.city) && branchScopedKind(kind); }
+  function cityScopeAvailable(kind) { return !!S.branch && branchScopedKind(kind); }
   function radiusApplies(kind, scope) {
     scope = scope || S.scope;
+    if (kind === 'projects' || kind === 'opps' || kind === 'companies') return false;
     // الفرع بلا دبوس مؤكد يعرض نطاق المدينة.
     if (S.branch && (typeof S.branch.lat !== 'number' || !isFinite(S.branch.lat) || typeof S.branch.lon !== 'number' || !isFinite(S.branch.lon))) return false;
     var anchor = S.origin || S.branch;
@@ -562,7 +563,13 @@
   }
   function itemsFor(kind, sec, scope) {
     scope = scope || S.scope;
+    // الشركات دليل المدينة؛ المكاتب تتبع المسافة ولا ترث اختيار قطاع من تبويب آخر.
+    if (kind === 'companies') scope = 'city';
+    if (kind === 'offices' && scope !== 'city') { scope = S.branch.lat != null && S.branch.lon != null ? 'branch' : 'city'; sec = ''; }
     var out = rawItems(kind, scope);
+    if (kind === 'companies') out = out.map(function (x) {
+      return Object.assign({}, x, { rankD: x.d, displayD: x.d, serviceMatch: x.d == null });
+    });
     // سجلات بلا موقع تبقى ضمن النتائج بلا مسافة؛ النطاق يرشح المواقع المعروفة فقط.
     if (radiusApplies(kind, scope)) {
       var radius = Number(S.radius || 15);
@@ -584,7 +591,7 @@
         if (x.rankD != null) return x.rankD <= radius;
         // Projects without a verified location stay available in city view,
         // but cannot be represented as inside a branch radius.
-        return kind !== 'projects' && kind !== 'opps';
+        return kind !== 'projects' && kind !== 'opps' && kind !== 'offices';
       });
     }
     // نطاق الفرع الذي لا يملك دبوسًا يعتمد الحي المطابق، ثم القطاع عند غياب الحي.
@@ -602,7 +609,7 @@
     if (scope === 'branch' && sectorCity(S.branch.city) && S.branch.sec && (kind === 'projects' || kind === 'opps')) {
       if (isDammamBranch()) out = out.filter(function (x) { if (easternNeighborCity(x.o.city)) return true; var sectors = sectorsOf(x.o); return !sectors.length || sectors.indexOf(S.branch.sec) >= 0; });
       else
-      out = out.filter(function (x) { var sectors = sectorsOf(x.o); return !sectors.length || sectors.indexOf(S.branch.sec) >= 0; });
+      out = out.filter(function (x) { var sectors = sectorsOf(x.o); return sectors.indexOf(S.branch.sec) >= 0; });
     } else if (scope === 'branch' && sectorCity(S.branch.city) && S.branch.sec && kind === 'nhc') {
       out = out.filter(function (x) { return sectorsOf(x.o).indexOf(S.branch.sec) >= 0; });
     }
@@ -636,6 +643,7 @@
     if (kind === 'projects' || kind === 'opps') {
       out.sort(function (x, y) { return byDist(x, y) || fallbackCompare(x, y, sec) || (!!y.o.img - !!x.o.img) || (!!y.o.price - !!x.o.price) || ((TIER[x.o.tier] || 0) - (TIER[y.o.tier] || 0)) || x.o.n.localeCompare(y.o.n, 'ar'); });
     } else out.sort(function (x, y) {
+      if (kind === 'companies' && S.companySort !== 'distance') return x.o.n.localeCompare(y.o.n, 'ar');
       if (kind === 'cars' && sec === 'وسط' && sameCity(S.branch.city, 'الرياض')) {
         var zx = carAreaOf(x.o) === 'shifa' ? 0 : 1, zy = carAreaOf(y.o) === 'shifa' ? 0 : 1;
         if (zx !== zy) return zx - zy;
@@ -701,6 +709,7 @@
   };
   /* ---------------- branch page ---------------- */
   function renderBranch(pre) {
+    if (S.tab === 'offices' && S.scope === 'sector') { S.scope = 'branch'; S.explore = ''; pre = null; }
     var b = S.branch, c = pre || compute(), sc = sectorCity(b.city), sec = activeSector();
     var tabs = SECTIONS.filter(function (k) { return c[k].total || (k === 'nearby' && c[k].items.length); });
     if (tabs.indexOf(S.tab) < 0) S.tab = tabs[0] || 'projects';
@@ -713,8 +722,8 @@
     var showBranchScope = branchScopedKind(S.tab) && hasBranchPin;
     var showCityScope = cityScopeAvailable(S.tab);
     var ctl = '<div class="seg" role="group" aria-label="النطاق">' +
-      (showBranchScope ? btn('branch', S.origin ? 'حول موقعي' : 'نطاق الفرع', S.scope === 'branch') : '') +
-      (sc ? SECTORS.map(function (sector) { return '<button data-explore="' + esc(sector) + '" aria-pressed="' + (S.scope === 'sector' && selectedSectors().indexOf(sector) >= 0) + '">' + esc(sector) + ' ' + esc(b.city) + '</button>'; }).join('') : '') +
+      (showBranchScope ? btn('branch', (S.tab === 'projects' || S.tab === 'opps') && sc ? (b.sec ? 'قطاع الفرع' : 'المدينة') : (S.origin ? 'حول موقعي' : 'نطاق الفرع'), S.scope === 'branch') : '') +
+      (sc && S.tab !== 'companies' && S.tab !== 'offices' ? SECTORS.map(function (sector) { return '<button data-explore="' + esc(sector) + '" aria-pressed="' + (S.scope === 'sector' && selectedSectors().indexOf(sector) >= 0) + '">' + esc(sector) + ' ' + esc(b.city) + '</button>'; }).join('') : '') +
       (showCityScope ? btn('city', 'كل ' + esc(b.city), S.scope === 'city' || !showBranchScope) : '') + '</div>';
     if (showBranchScope && radiusApplies(S.tab, 'branch') && S.scope === 'branch') ctl += '<label class="explore distance-control">المسافة<select id="radius" aria-label="مسافة الفرص من نقطة المرجع">' + [5, 10, 15, 20].map(function (r) { return '<option value="' + r + '"' + (Number(S.radius) === r ? ' selected' : '') + '>أقرب ' + fmt(r) + ' كم</option>'; }).join('') + '</select></label>';
     var controlsMarkup = /data-(?:scope|explore)|<select id="radius"/.test(ctl) ? '<div class="controls"><div class="wrap"><div class="ctl-row">' + ctl + '</div></div></div>' : '';
@@ -737,9 +746,15 @@
     REG.length = 0;
     var c = pre || compute(), k = S.tab, el = document.getElementById('content'), b = S.branch;
     var all = c[k] ? c[k].items : [], items = filterQuery(k, all);
+    if (k === 'companies' && S.companyActivity) items = items.filter(function (x) { return companyActivities(x.o).indexOf(S.companyActivity) >= 0; });
     var limit = S.limit[k] || CFG.pageSize, shown = items.slice(0, limit);
     var head = '<div class="sec-head"><div><h2>' + esc(LABEL[k]) + '</h2><p>' + esc(intro(k, items.length, items)) + '</p></div>' +
       '<div class="search">' + ICON.search + '<input id="q-sec" class="input" type="search" placeholder="' + esc(SEARCH_PH[k]) + '" value="' + esc(S.q[k] || '') + '" aria-label="' + esc(SEARCH_PH[k]) + '"></div></div>';
+    if (k === 'companies') {
+      head += '<div class="controls company-controls"><label>النشاط <select id="company-activity" aria-label="نشاط الشركة">' +
+        ['', 'تطوير', 'استثمار', 'تسويق ووساطة', 'سداد'].map(function (v) { return '<option value="' + esc(v) + '"' + (S.companyActivity === v ? ' selected' : '') + '>' + esc(v || 'كل الأنشطة') + '</option>'; }).join('') +
+        '</select></label><label>الترتيب <select id="company-sort" aria-label="ترتيب الشركات"><option value="name"' + (S.companySort !== 'distance' ? ' selected' : '') + '>اسم الشركة</option><option value="distance"' + (S.companySort === 'distance' ? ' selected' : '') + '>الأقرب حسب الموقع المسجل</option></select></label></div>';
+    }
     if (k === 'nhc' && sectorCity(b.city)) {
       var nhcSector = activeSector() || b.sec || '';
       if (nhcSector) {
@@ -753,10 +768,12 @@
     if (k === 'cars' && sameCity(S.branch.city, 'الرياض')) {
       var shifaCount = (D.cars || []).filter(function (o) { return carAreaOf(o) === 'shifa'; }).length;
       var qadisiyahCount = (D.cars || []).filter(function (o) { return carAreaOf(o) === 'qadisiyah'; }).length;
+      var prioritySector = activeSector() || S.branch.sec;
+      var firstArea = prioritySector === 'شرق' || prioritySector === 'شمال' ? 'qadisiyah' : 'shifa';
+      var areas = firstArea === 'qadisiyah' ? ['qadisiyah', 'shifa'] : ['shifa', 'qadisiyah'];
       head += '<div class="car-zone-cards" role="group" aria-label="معارض الرياض">' +
-      '<button class="car-zone-card" data-car-area="shifa" aria-pressed="' + carAreaSelected('shifa') + '"><span>معارض الشفا</span><strong>' + fmt(shifaCount) + '</strong></button>' +
-      '<button class="car-zone-card" data-car-area="qadisiyah" aria-pressed="' + carAreaSelected('qadisiyah') + '"><span>معارض القادسية</span><strong>' + fmt(qadisiyahCount) + '</strong></button>' +
-      '<button class="car-zone-card car-zone-all" data-car-area="all" aria-pressed="' + carAreaSelected('all') + '"><span>كل معارض الرياض</span><strong>' + fmt((D.cityCount.cars || {}).الرياض || 0) + '</strong></button></div>';
+        areas.map(function (area) { return '<button class="car-zone-card" data-car-area="' + area + '" aria-pressed="' + carAreaSelected(area) + '"><span>معارض ' + (area === 'qadisiyah' ? 'القادسية' : 'الشفا') + '</span><strong>' + fmt(area === 'qadisiyah' ? qadisiyahCount : shifaCount) + '</strong></button>'; }).join('') +
+        '<button class="car-zone-card car-zone-all" data-car-area="all" aria-pressed="' + carAreaSelected('all') + '"><span>كل معارض الرياض</span><strong>' + fmt((D.cityCount.cars || {}).الرياض || 0) + '</strong></button></div>';
     }
     var body;
     if (!all.length) body = emptyState(k, c);
@@ -769,6 +786,9 @@
     }
     el.innerHTML = head + body;
     bindImages(el);
+    var activity = document.getElementById('company-activity'), companySort = document.getElementById('company-sort');
+    if (activity) activity.addEventListener('change', function () { S.companyActivity = activity.value; S.limit.companies = CFG.pageSize; renderSection(); });
+    if (companySort) companySort.addEventListener('change', function () { S.companySort = companySort.value; S.limit.companies = CFG.pageSize; renderSection(); });
     var qi = document.getElementById('q-sec');
     if (qi) qi.addEventListener('input', function () {
       S.q[k] = qi.value; S.limit[k] = CFG.pageSize; var pos = qi.selectionStart; renderSection();
@@ -779,17 +799,21 @@
   function widen(k, c) {
     var b = S.branch, h = '';
     
-    if (cityScopeAvailable(k) && sectorCity(b.city) && b.sec && S.scope !== 'sector') h += '<button class="btn" data-explore="' + esc(b.sec) + '">' + esc(b.sec) + ' ' + esc(b.city) + ' · <span class="num">' + fmt(itemsFor(k, b.sec, 'sector').length) + '</span></button>';
+    if (k !== 'offices' && cityScopeAvailable(k) && sectorCity(b.city) && b.sec && S.scope !== 'sector') h += '<button class="btn" data-explore="' + esc(b.sec) + '">' + esc(b.sec) + ' ' + esc(b.city) + ' · <span class="num">' + fmt(itemsFor(k, b.sec, 'sector').length) + '</span></button>';
     if (cityScopeAvailable(k)) h += '<button class="btn primary" data-scope="city">كل ' + esc(b.city) + ' · <span class="num">' + fmt(c[k].total) + '</span></button>';
     return '<div class="more-row">' + h + '</div>';
   }
   function intro(k, n, rows) {
     var b = S.branch;
+    if (k === 'companies') return fmt(n) + ' شركة تخدم ' + b.city + ' · جميع القطاعات' + (S.companySort === 'distance' ? ' · ترتيب تقريبي حسب الموقع المسجل' : '');
+    if ((k === 'projects' || k === 'opps') && sectorCity(b.city) && (activeSector() || b.sec) && S.scope !== 'city') return fmt(n) + ' ' + NOUN[k] + ' في ' + (activeSector() || b.sec) + ' ' + b.city + ' · الأقرب أولًا';
     if (k === 'projects' && S.scope === 'branch' && radiusApplies(k, 'branch') && rows) {
       return fmt(n) + ' مشروعًا ضمن نطاق الفرع';
     }
     if (k === 'cars' && sameCity(b.city, 'الرياض') && S.scope !== 'city') {
-      var area = S.carArea || defaultCarArea(b);
+      var chosen = activeSector();
+      if (chosen === 'وسط') return fmt(n) + ' معرضًا في القادسية والشفا';
+      var area = chosen ? (chosen === 'شرق' || chosen === 'شمال' ? 'qadisiyah' : 'shifa') : (S.carArea || defaultCarArea(b));
       return area === 'all' ? fmt(n) + ' معرضًا في الرياض' : fmt(n) + ' معرضًا في ' + (area === 'shifa' ? 'الشفا' : 'القادسية');
     }
     if (k === 'nearby') { var g = nearbyInfo(); return g ? 'فرص من ' + g.support : ''; }
@@ -797,20 +821,28 @@
   }
   function emptyState(k, c) {
     var sec = activeSector(), b = S.branch;
-    if (S.scope === 'city' && !sec) return '<div class="empty"><h3>لا توجد ' + esc(NOUN[k]) + ' مسجلة في ' + esc(b.city) + '</h3></div>';
+    if ((S.scope === 'city' && !sec) || k === 'companies') return '<div class="empty"><h3>لا توجد ' + esc(NOUN[k]) + ' مسجلة في ' + esc(b.city) + '</h3></div>';
     var emptyTitle = sec ? 'لا توجد ' + NOUN[k] + ' في ' + sec + ' ' + b.city : (radiusApplies(k, S.scope) ? 'لا توجد ' + NOUN[k] + ' ضمن ' + fmt(S.radius) + ' كم من نقطة المرجع' : 'لا توجد ' + NOUN[k] + ' في ' + b.city);
     var h = '<div class="empty"><h3>' + esc(emptyTitle) + '</h3><div class="row">';
     if (sec) h += SECTORS.filter(function (s) { return s !== sec; }).map(function (s) { return { s: s, n: itemsFor(k, s, 'sector').length }; }).filter(function (x) { return x.n; })
       .map(function (x) { return '<button class="btn" data-explore="' + x.s + '">' + esc(x.s) + ' · <span class="num">' + fmt(x.n) + '</span></button>'; }).join('');
     else {
-      if (S.scope === 'branch' && b.lat != null && b.lon != null) {
+      if (S.scope === 'branch' && radiusApplies(k, 'branch') && b.lat != null && b.lon != null) {
         var nextRadius = [5, 10, 15, 20].filter(function (r) { return r > Number(S.radius); })[0];
         if (nextRadius) h += '<button class="btn" data-radius="' + nextRadius + '">وسّع البحث إلى ' + fmt(nextRadius) + ' كم</button>';
       }
-      if (sectorCity(b.city) && b.sec) h += '<button class="btn" data-explore="' + esc(b.sec) + '">' + esc(b.sec) + ' ' + esc(b.city) + '</button>';
+      if (k !== 'offices' && sectorCity(b.city) && b.sec) h += '<button class="btn" data-explore="' + esc(b.sec) + '">' + esc(b.sec) + ' ' + esc(b.city) + '</button>';
     }
     if (cityScopeAvailable(k)) h += '<button class="btn primary" data-scope="city">كل ' + esc(b.city) + ' · <span class="num">' + fmt(c[k].total) + '</span></button>';
     return h + '</div></div>';
+  }
+  function companyActivities(o) {
+    var value = String(o.kind || '') + ' ' + String(o.n || ''), out = [];
+    if (/تطوير|مطوّر|مطور/.test(value)) out.push('تطوير');
+    if (/استثمار/.test(value)) out.push('استثمار');
+    if (/تسويق|وساطة|وساطه|جهة بيع/.test(value)) out.push('تسويق ووساطة');
+    if (/سداد|تسديد/.test(value)) out.push('سداد');
+    return out;
   }
   function filterQuery(k, items) {
     var q = norm(S.q[k] || ''); if (!q) return items;
@@ -1030,7 +1062,7 @@
     var t = e.target.closest('[data-act],[data-tab],[data-scope],[data-radius],[data-explore],[data-car-area],[data-nhc-view],[data-more],[data-share],[data-vcard],[data-close],[data-call],[data-wa],[data-detail]');
     if (!t) { if (e.target === document.getElementById('detail')) closeDlg(); return; }
     if (t.hasAttribute('data-act')) { e.preventDefault(); try { localStorage.removeItem('rog.branch'); } catch (x) { /* ignore */ } history.replaceState(null, '', location.pathname + location.search); renderStart(); window.scrollTo(0, 0); return; }
-    if (t.hasAttribute('data-tab')) { S.tab = t.dataset.tab; renderBranch(); var c = document.querySelector('.controls'); if (c && window.scrollY > c.offsetTop) window.scrollTo(0, c.offsetTop); return; }
+    if (t.hasAttribute('data-tab')) { S.tab = t.dataset.tab; if (S.tab === 'offices') { S.scope = 'branch'; S.explore = ''; } renderBranch(); var c = document.querySelector('.controls'); if (c && window.scrollY > c.offsetTop) window.scrollTo(0, c.offsetTop); return; }
     if (t.hasAttribute('data-nhc-view')) { if (t.dataset.nhcView === 'city') { S.scope = 'city'; S.explore = ''; } else { S.scope = 'sector'; S.explore = activeSector() || S.branch.sec || ''; } S.q = {}; S.limit = {}; renderBranch(); return; }
     if (t.hasAttribute('data-scope')) { S.scope = t.dataset.scope; S.explore = ''; S.carArea = ''; S.q = {}; S.limit = {}; renderBranch(); return; }
     if (t.hasAttribute('data-radius')) { S.radius = Number(t.dataset.radius) || S.radius; S.scope = 'branch'; S.carArea = ''; S.explore = ''; S.q = {}; S.limit = {}; renderBranch(); return; }
