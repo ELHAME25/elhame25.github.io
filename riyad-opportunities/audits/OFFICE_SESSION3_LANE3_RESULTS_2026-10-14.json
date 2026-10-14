@@ -1,0 +1,45 @@
+{
+  "lane": 3,
+  "checkedAt": "2026-10-14",
+  "scopeCount": 211,
+  "scopeCompleted": false,
+  "mapsAccess": "Google Maps direct card blocked by unusual traffic reCAPTCHA; no circumvention; alternative sources in progress",
+  "results": [
+    {
+      "id": "office-maps-fa81565c9aea",
+      "name": "مكتب أصول للعقارات",
+      "fullyVerified": true,
+      "identityLinkedToStoredOffice": true,
+      "allStoredPhonesConfirmed": true,
+      "fieldCertainty": {"name": true, "brokerageActivity": true, "mapsPin": true, "publicPhone": true},
+      "inheritedEvidence": "audits/OFFICE_SESSION2_LANE3_SCOPE_2026-10-14.json priorFields: name, mapsPin, publicPhone; data/offices.json mapsAudit direct place card ChIJTXa9XFzugRUReQbEBWren3I",
+      "newEvidence": [{"source": "https://haraj.com.sa/11184935510/%D9%84%D9%84%D8%A8%D9%8A%D8%B9_%D8%A7%D8%B1%D8%B6%D9%8A_%D8%A8%D8%AD%D9%8A_%D8%A7%D9%84%D8%B5%D9%87%D9%8A%D9%84_%D8%A8%D8%B9%D9%86%D9%8A%D8%B2%D9%87/", "observed": "Licensed sales listing; license owner مكتب أصول عنيزة العقاري; advertiser license 1200013491; staff contact 0569353535 matching stored office. Property pin is not office pin."}],
+      "proposedPatch": {},
+      "decision": "verified_by_prior_card_and_current_licensed_brokerage_listing"
+    },
+    {
+      "id": "office-maps-5b0a704f7146",
+      "name": "مكتب حمد بن رشيد الموسى للعقارات",
+      "fullyVerified": true,
+      "identityLinkedToStoredOffice": true,
+      "allStoredPhonesConfirmed": true,
+      "fieldCertainty": {"name": true, "brokerageActivity": true, "mapsPin": true, "publicPhone": true},
+      "inheritedEvidence": "audits/OFFICE_SESSION2_LANE3_SCOPE_2026-10-14.json priorFields: name, mapsPin, publicPhone; stored direct Maps card ChIJZYmFSPfvgRURGdl6w1vpERM",
+      "newEvidence": [{"source": "https://eservicesredp.rega.gov.sa/public/OfficesBroker/ElanDetails/08de68b2-de45-4fc5-8adb-b75ea3c819e8", "observed": "Official indexed REGA advertisement: مكتب حمد بن رشيد بن حمد الموسى للعقارات; unified establishment 7029990111; Fal brokerage and marketing 1200013316. Live endpoint fetched with no readable text."}, {"source": "https://www.linkin1.com/hrhm361", "observed": "Office self-published contacts 0542993223 and 0552993223, Prince Sultan Road Unaizah; social handle hrhm361 publishes sales/investment offers."}],
+      "proposedPatch": {},
+      "decision": "verified_by_prior_card_and_official_brokerage_license"
+    },
+    {
+      "id": "office-maps-2560bb597761",
+      "name": "مكتب عبدالله الرشيد العقاري",
+      "fullyVerified": true,
+      "identityLinkedToStoredOffice": true,
+      "allStoredPhonesConfirmed": true,
+      "fieldCertainty": {"name": true, "brokerageActivity": true, "mapsPin": true, "publicPhone": true},
+      "inheritedEvidence": "audits/OFFICE_SESSION2_LANE3_SCOPE_2026-10-14.json priorFields: name, mapsPin, publicPhone; prior Maps card ChIJGWlpUsvvgRURCp5eT0Wrksc",
+      "newEvidence": [{"source": "https://x.com/Abda_alrashed", "observed": "Indexed office-owned sale offer Unaizah phone 0598334444; X fetch returned 403."}, {"source": "https://sa.aqar.fm/%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D8%B9%D9%86%D9%8A%D8%B2%D8%A9/%D8%AD%D9%8A-%D8%A7%D9%84%D9%81%D9%8A%D8%AD%D8%A7%D8%A1/%D8%B4%D8%A7%D8%B1%D8%B9-%D9%85%D8%AD%D9%85%D8%AF-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%B6%D8%A8%D9%8A%D8%A8%D8%A7%D9%86-%D8%AD%D9%8A-%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D9%8A%D8%A9-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%B9%D9%86%D9%8A%D8%B2%D8%A9-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85-6763272", "observed": "Licensed land sale offer; advertiser مكتب عبدالله بن ابراهيم بن محمد الرشيد العقاري; advertisement license 7201030876; added 2026-07-07, license expiry 2027-07-06."}],
+      "proposedPatch": {},
+      "decision": "verified_by_prior_card_and_current_licensed_brokerage_listing"
+    }
+  ]
+}

@@ -1,0 +1,3457 @@
+{
+  "scopeCount": 203,
+  "priorVerifiedCount": 77,
+  "retainedCount": 55,
+  "downgradeIds": [
+    "entity-87a5a9b08ec8",
+    "phase5-office-483d36251674",
+    "phase6-office-92243ca02780",
+    "phase6-office-8797e8c48ab7",
+    "phase6-office-bd9606a2182f",
+    "phase6-office-68c66091e332",
+    "phase6-office-e6ef146a4dd1",
+    "phase6-office-60a6a01b7bd2",
+    "phase6-office-0d3c5bff16fb",
+    "phase6-office-574e482206a6",
+    "phase6-office-67b00dab12c0",
+    "national-ejar-office-194436",
+    "national-ejar-office-197402",
+    "national-ejar-office-199383",
+    "national-ejar-office-194530",
+    "national-ejar-office-199547",
+    "national-ejar-office-198956",
+    "national-ejar-office-197754",
+    "national-ejar-office-303197",
+    "national-ejar-office-195624",
+    "national-ejar-office-238771",
+    "national-yango-office-55037224817"
+  ],
+  "rule": "Same saved Maps card must explicitly show name, brokerage category, all stored phones and independently observed pin matching within12m. Bare pinMatch true with no coordinates insufficient.",
+  "records": [
+    {
+      "id": "entity-66da99c79421",
+      "name": "نواهل العقارية",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "نواهل العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0530703222"
+          ],
+          "pin": {
+            "lat": 24.462513,
+            "lon": 39.6577295
+          },
+          "source": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D9%87+%D9%86%D9%88%D8%A7%D9%87%D9%84+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%87%E2%80%AD/@24.4625179,39.6551492,933m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15bd95e65d8afecf:0x1415e824ece90459!8m2!3d24.462513!4d39.6577295!16s%2Fg%2F11sgxqjqsp?authuser=0&entry=ttu"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "entity-947efe20e1ce",
+      "name": "مؤسسة آفاق المدينة للعقار",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مؤسسة آفاق المدينة للعقار",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0553314228"
+          ],
+          "pin": {
+            "lat": 24.4702413,
+            "lon": 39.5611813
+          },
+          "source": "https://www.google.com/maps/?cid=11900506792965067280"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "entity-2fa2c7120ef0",
+      "name": "مكتب الفجر المتقدمة للعقار",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب الفجر المتقدمة للعقار",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0551869766"
+          ],
+          "pin": {
+            "lat": 24.4671136,
+            "lon": 39.6631733
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%81%D8%AC%D8%B1%20%D8%A7%D9%84%D9%85%D8%AA%D9%82%D8%AF%D9%85%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJ24QBPJCVvRURXtK54SctXHk"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "entity-87a5a9b08ec8",
+      "name": "دار يوسف العقارية",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": false
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": false
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": false
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "entity-7e066a8424db",
+      "name": "صكوك الحجاز للخدمات العقارية",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "صكوك الحجاز للخدمات العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0560593450"
+          ],
+          "pin": {
+            "lat": 24.498047,
+            "lon": 39.6316831
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B5%D9%83%D9%88%D9%83%20%D8%A7%D9%84%D8%AD%D8%AC%D8%A7%D8%B2%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJZz09Xfy_vRURDyJpL5yTuDc"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "entity-c03de6d5c825",
+      "name": "الرحيلي للعقار",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "الرحيلي للعقار",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0502399378"
+          ],
+          "pin": {
+            "lat": 24.430902,
+            "lon": 39.595279
+          },
+          "source": "https://www.google.com/maps/?cid=4983598368357350440"
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "entity-aedb2f4e1585",
+      "name": "عقارية إنماء",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "عقارية إنماء",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0560980011"
+          ],
+          "pin": {
+            "lat": 24.4407563,
+            "lon": 39.6751223
+          },
+          "source": "https://www.google.com/maps/?cid=15284852672824062300"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-office-483d36251674",
+      "name": "شركة علامات العقارية",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": false
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": false
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": false
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "phase5-office-d8a679fc236e",
+      "name": "بصمة آراء للخدمات للعقارية",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "بصمة آراء للخدمات للعقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0559793213"
+          ],
+          "pin": {
+            "lat": 24.4585876,
+            "lon": 39.636181
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%B5%D9%85%D8%A9%20%D8%A2%D8%B1%D8%A7%D8%A1%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJlUCsWsm_vRUR4PI_mTX2ZIs"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-office-1800d7dacf5f",
+      "name": "مكتب عقارات المدينة",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب عقارات المدينة",
+          "category": "وكيل عقاري",
+          "phones": [
+            "0566629555"
+          ],
+          "pin": {
+            "lat": 24.427724,
+            "lon": 39.6194704
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJF-UhSHjAvRURdxnxJySi5m0"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-google-office-3e2cc201adae",
+      "name": "مكتب عالية المدينة للعقار",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب عالية المدينة للعقار",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0548639461"
+          ],
+          "pin": {
+            "lat": 24.3941356,
+            "lon": 39.5938122
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJxXEXR8TBvRURUSvn5AFgOWE"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-google-office-fc8d72b12797",
+      "name": "مكتب عقار عين المدينة Madina Eye Real Estate",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب عقار عين المدينة Madina Eye Real Estate",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0540264422"
+          ],
+          "pin": {
+            "lat": 24.4503589,
+            "lon": 39.6151496
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%B9%D9%8A%D9%86%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20Madina%20Eye%20Real%20Estate%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJZTXWU5-_vRURfmbqsSWGL_0"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-google-office-7eaa11c6220e",
+      "name": "مكتب عقارات المحيسن",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب عقارات المحيسن",
+          "category": "وكيل عقاري",
+          "phones": [
+            "0148488888"
+          ],
+          "pin": {
+            "lat": 24.44042,
+            "lon": 39.6645123
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AD%D9%8A%D8%B3%D9%86%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJm8ExK2-VvRURl7V6JmDY4-M"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-google-office-b8cb615e8795",
+      "name": "صقر طيبه للعقار",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "صقر طيبه للعقار",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0540400404"
+          ],
+          "pin": {
+            "lat": 24.5575787,
+            "lon": 39.6866923
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D8%B5%D9%82%D8%B1%20%D8%B7%D9%8A%D8%A8%D9%87%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJDXgDSsSXvRURSTPHWyLJDjo"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-google-office-e38a5d1a378b",
+      "name": "مكتب المرجع للعقارات",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب المرجع للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0567025000"
+          ],
+          "pin": {
+            "lat": 24.4477597,
+            "lon": 39.6882537
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%85%D8%B1%D8%AC%D8%B9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJXS4aAaqVvRURUuyVXoJ2iwM"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-google-office-6d470c83d372",
+      "name": "مكتب أرياف المدينة للعقارات",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب أرياف المدينة للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0505303576"
+          ],
+          "pin": {
+            "lat": 24.3818068,
+            "lon": 39.5258739
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A3%D8%B1%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJiZYoJEzHvRURLfk2-3fHasM"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-google-office-40dc42f3f9f3",
+      "name": "مكتب نبراس المدينة للعقار",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب نبراس المدينة للعقار",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0500355348"
+          ],
+          "pin": {
+            "lat": 24.562191,
+            "lon": 39.7598742
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJkz5vfGmbvRURf8Vls5YPp10"
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-google-office-ea9aff74c98b",
+      "name": "مكتب فرسان المدينة للخدمات العقارية",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب فرسان المدينة للخدمات العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0580444437"
+          ],
+          "pin": {
+            "lat": 24.4374949,
+            "lon": 39.5135083
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%81%D8%B1%D8%B3%D8%A7%D9%86%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJOS3ML0_HvRURK6QIWaXnKEA"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-google-office-ec4a399342c6",
+      "name": "مكتب لؤلؤة المدينة للعقار",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب لؤلؤة المدينة للعقار",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0538349906"
+          ],
+          "pin": {
+            "lat": 24.3989561,
+            "lon": 39.596987
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%84%D8%A4%D9%84%D8%A4%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJ-7FqUOLAvRURtnRauah3XUU"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-google-office-c97ff968c0e1",
+      "name": "مكتب بيرحاء للخدمات العقارية",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب بيرحاء للخدمات العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0555303349"
+          ],
+          "pin": {
+            "lat": 24.5097354,
+            "lon": 39.6944143
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D9%8A%D8%B1%D8%AD%D8%A7%D8%A1%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJhV0REO-XvRUR6lO_bDujJLU"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-google-office-f2bd2380a387",
+      "name": "مكتب الجزيرة البركة للخدمات العقاريه",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب الجزيرة البركة للخدمات العقاريه",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0564160119"
+          ],
+          "pin": {
+            "lat": 24.515559,
+            "lon": 39.5725487
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A8%D8%B1%D9%83%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%87%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJdzh-sK2-vRURAKaDUYFEQ64"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase5-google-office-98b67d6efba1",
+      "name": "مكتب صروح شاكي للعقار",
+      "city": "المدينة المنورة",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب صروح شاكي للعقار",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0506626979"
+          ],
+          "pin": {
+            "lat": 24.4936339,
+            "lon": 39.7016107
+          },
+          "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B5%D8%B1%D9%88%D8%AD%20%D8%B4%D8%A7%D9%83%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJCeEOjo-WvRURRLT_7TaNHdI"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-7cf680f350a4",
+      "name": "مكتب أضواء تبوك للعقارات",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "name": "مكتب أضواء تبوك للعقارات",
+          "category": "وكالة عقارات تجارية",
+          "phones": [
+            "0535198882"
+          ],
+          "pin": [
+            28.459373,
+            36.5512271
+          ],
+          "source": "ChIJLfid2Y6zqRURzsV664nZHII",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "name": "مكتب أضواء تبوك للعقارات",
+          "category": "وكالة عقارات تجارية",
+          "phones": [
+            "0535198882"
+          ],
+          "pin": [
+            28.459373,
+            36.5512271
+          ],
+          "source": "ChIJLfid2Y6zqRURzsV664nZHII",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "name": "مكتب أضواء تبوك للعقارات",
+          "category": "وكالة عقارات تجارية",
+          "phones": [
+            "0535198882"
+          ],
+          "pin": [
+            28.459373,
+            36.5512271
+          ],
+          "source": "ChIJLfid2Y6zqRURzsV664nZHII",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب أضواء تبوك للعقارات",
+          "category": "وكالة عقارات تجارية",
+          "phones": [
+            "0535198882"
+          ],
+          "pin": [
+            28.459373,
+            36.5512271
+          ],
+          "source": "ChIJLfid2Y6zqRURzsV664nZHII",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-57f9778ed835",
+      "name": "مكتب الفلاح للخدمات العقارية",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "name": "مكتب الفلاح للخدمات العقارية",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0144220700"
+          ],
+          "pin": [
+            28.3871356,
+            36.5560425
+          ],
+          "source": "ChIJV3crUK2tqRURfzo-cmZIT9w",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "name": "مكتب الفلاح للخدمات العقارية",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0144220700"
+          ],
+          "pin": [
+            28.3871356,
+            36.5560425
+          ],
+          "source": "ChIJV3crUK2tqRURfzo-cmZIT9w",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "name": "مكتب الفلاح للخدمات العقارية",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0144220700"
+          ],
+          "pin": [
+            28.3871356,
+            36.5560425
+          ],
+          "source": "ChIJV3crUK2tqRURfzo-cmZIT9w",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب الفلاح للخدمات العقارية",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0144220700"
+          ],
+          "pin": [
+            28.3871356,
+            36.5560425
+          ],
+          "source": "ChIJV3crUK2tqRURfzo-cmZIT9w",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-92243ca02780",
+      "name": "مكتب نخبة تبوك للعقارات",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "phase6-office-e50c2ae22235",
+      "name": "مكتب الفال للعقار تبوك",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "name": "مكتب الفال للعقار تبوك",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0553049908"
+          ],
+          "pin": [
+            28.4297913,
+            36.5623614
+          ],
+          "source": "ChIJp3BNFnazqRURIGNXDlgCE7I",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "name": "مكتب الفال للعقار تبوك",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0553049908"
+          ],
+          "pin": [
+            28.4297913,
+            36.5623614
+          ],
+          "source": "ChIJp3BNFnazqRURIGNXDlgCE7I",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "name": "مكتب الفال للعقار تبوك",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0553049908"
+          ],
+          "pin": [
+            28.4297913,
+            36.5623614
+          ],
+          "source": "ChIJp3BNFnazqRURIGNXDlgCE7I",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب الفال للعقار تبوك",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0553049908"
+          ],
+          "pin": [
+            28.4297913,
+            36.5623614
+          ],
+          "source": "ChIJp3BNFnazqRURIGNXDlgCE7I",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-92ca2adb8509",
+      "name": "مكتب الريان الشمالي للعقارات",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "name": "مكتب الريان الشمالي للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0506587472"
+          ],
+          "pin": [
+            28.4018473,
+            36.5187958
+          ],
+          "source": "ChIJa62oGuCvqRURxs9LreSVOh8",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "name": "مكتب الريان الشمالي للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0506587472"
+          ],
+          "pin": [
+            28.4018473,
+            36.5187958
+          ],
+          "source": "ChIJa62oGuCvqRURxs9LreSVOh8",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "name": "مكتب الريان الشمالي للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0506587472"
+          ],
+          "pin": [
+            28.4018473,
+            36.5187958
+          ],
+          "source": "ChIJa62oGuCvqRURxs9LreSVOh8",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب الريان الشمالي للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0506587472"
+          ],
+          "pin": [
+            28.4018473,
+            36.5187958
+          ],
+          "source": "ChIJa62oGuCvqRURxs9LreSVOh8",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-39d95d88166e",
+      "name": "مكتب دارك الراقي للعقار سابقا حاليا مكتب نورة عبدالله للخدمات العقاريه",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "name": "مكتب دارك الراقي للعقار سابقا حاليا مكتب نورة عبدالله للخدمات العقاريه",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0555200249"
+          ],
+          "pin": [
+            28.4403639,
+            36.536807
+          ],
+          "source": "ChIJAyK8-A6yqRURDPYkclCuoDQ",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "name": "مكتب دارك الراقي للعقار سابقا حاليا مكتب نورة عبدالله للخدمات العقاريه",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0555200249"
+          ],
+          "pin": [
+            28.4403639,
+            36.536807
+          ],
+          "source": "ChIJAyK8-A6yqRURDPYkclCuoDQ",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "name": "مكتب دارك الراقي للعقار سابقا حاليا مكتب نورة عبدالله للخدمات العقاريه",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0555200249"
+          ],
+          "pin": [
+            28.4403639,
+            36.536807
+          ],
+          "source": "ChIJAyK8-A6yqRURDPYkclCuoDQ",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب دارك الراقي للعقار سابقا حاليا مكتب نورة عبدالله للخدمات العقاريه",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0555200249"
+          ],
+          "pin": [
+            28.4403639,
+            36.536807
+          ],
+          "source": "ChIJAyK8-A6yqRURDPYkclCuoDQ",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-3614aedf09a0",
+      "name": "مكتب أنوار تبوك للخدمات العقارية",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "name": "مكتب أنوار تبوك للخدمات العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0554695605"
+          ],
+          "pin": [
+            28.3673141,
+            36.5728164
+          ],
+          "source": "ChIJwXRNYLStqRUReMLTJUEKd4w",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "name": "مكتب أنوار تبوك للخدمات العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0554695605"
+          ],
+          "pin": [
+            28.3673141,
+            36.5728164
+          ],
+          "source": "ChIJwXRNYLStqRUReMLTJUEKd4w",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "name": "مكتب أنوار تبوك للخدمات العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0554695605"
+          ],
+          "pin": [
+            28.3673141,
+            36.5728164
+          ],
+          "source": "ChIJwXRNYLStqRUReMLTJUEKd4w",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب أنوار تبوك للخدمات العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0554695605"
+          ],
+          "pin": [
+            28.3673141,
+            36.5728164
+          ],
+          "source": "ChIJwXRNYLStqRUReMLTJUEKd4w",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-d88d98750f43",
+      "name": "مجموعة ركائز النخبه العقاريه",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "name": "مجموعة ركائز النخبه العقاريه",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0509068459"
+          ],
+          "pin": [
+            28.3700007,
+            36.5147126
+          ],
+          "source": "ChIJMaCiuiCzqRURT-B9M-HXU2I",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "name": "مجموعة ركائز النخبه العقاريه",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0509068459"
+          ],
+          "pin": [
+            28.3700007,
+            36.5147126
+          ],
+          "source": "ChIJMaCiuiCzqRURT-B9M-HXU2I",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "name": "مجموعة ركائز النخبه العقاريه",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0509068459"
+          ],
+          "pin": [
+            28.3700007,
+            36.5147126
+          ],
+          "source": "ChIJMaCiuiCzqRURT-B9M-HXU2I",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مجموعة ركائز النخبه العقاريه",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0509068459"
+          ],
+          "pin": [
+            28.3700007,
+            36.5147126
+          ],
+          "source": "ChIJMaCiuiCzqRURT-B9M-HXU2I",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-0516d42908c1",
+      "name": "بصمة تبوك العقارية",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "name": "بصمة تبوك العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0595992000"
+          ],
+          "pin": [
+            28.387853,
+            36.5822708
+          ],
+          "source": "ChIJaRICawCtqRURRnOlcL9jpkw",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "name": "بصمة تبوك العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0595992000"
+          ],
+          "pin": [
+            28.387853,
+            36.5822708
+          ],
+          "source": "ChIJaRICawCtqRURRnOlcL9jpkw",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "name": "بصمة تبوك العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0595992000"
+          ],
+          "pin": [
+            28.387853,
+            36.5822708
+          ],
+          "source": "ChIJaRICawCtqRURRnOlcL9jpkw",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "بصمة تبوك العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0595992000"
+          ],
+          "pin": [
+            28.387853,
+            36.5822708
+          ],
+          "source": "ChIJaRICawCtqRURRnOlcL9jpkw",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-b592a6d07512",
+      "name": "مكتب عبدالله عيد الرموثي",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "name": "مكتب عبدالله عيد الرموثي",
+          "category": "وكيل عقاري",
+          "phones": [
+            "0500294429"
+          ],
+          "pin": [
+            28.3976709,
+            36.5274198
+          ],
+          "source": "ChIJRyuJa1StqRURFt-2N9a_I-w",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "name": "مكتب عبدالله عيد الرموثي",
+          "category": "وكيل عقاري",
+          "phones": [
+            "0500294429"
+          ],
+          "pin": [
+            28.3976709,
+            36.5274198
+          ],
+          "source": "ChIJRyuJa1StqRURFt-2N9a_I-w",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "name": "مكتب عبدالله عيد الرموثي",
+          "category": "وكيل عقاري",
+          "phones": [
+            "0500294429"
+          ],
+          "pin": [
+            28.3976709,
+            36.5274198
+          ],
+          "source": "ChIJRyuJa1StqRURFt-2N9a_I-w",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب عبدالله عيد الرموثي",
+          "category": "وكيل عقاري",
+          "phones": [
+            "0500294429"
+          ],
+          "pin": [
+            28.3976709,
+            36.5274198
+          ],
+          "source": "ChIJRyuJa1StqRURFt-2N9a_I-w",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-e94d30d5d742",
+      "name": "مكتب سفير تبوك للعقار",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "name": "مكتب سفير تبوك للعقار",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0508700222"
+          ],
+          "pin": [
+            28.4021716,
+            36.5296149
+          ],
+          "source": "ChIJQ9MUn12tqRURtDFmR6oKRH4",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "name": "مكتب سفير تبوك للعقار",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0508700222"
+          ],
+          "pin": [
+            28.4021716,
+            36.5296149
+          ],
+          "source": "ChIJQ9MUn12tqRURtDFmR6oKRH4",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "name": "مكتب سفير تبوك للعقار",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0508700222"
+          ],
+          "pin": [
+            28.4021716,
+            36.5296149
+          ],
+          "source": "ChIJQ9MUn12tqRURtDFmR6oKRH4",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب سفير تبوك للعقار",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0508700222"
+          ],
+          "pin": [
+            28.4021716,
+            36.5296149
+          ],
+          "source": "ChIJQ9MUn12tqRURtDFmR6oKRH4",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-e4ea42b08af3",
+      "name": "شركة حسني القبلي العقارية",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "name": "شركة حسني القبلي العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0541341030"
+          ],
+          "pin": [
+            28.3806576,
+            36.5820526
+          ],
+          "source": "ChIJW-5BSq2tqRURzPnUeIx7cgc",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "name": "شركة حسني القبلي العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0541341030"
+          ],
+          "pin": [
+            28.3806576,
+            36.5820526
+          ],
+          "source": "ChIJW-5BSq2tqRURzPnUeIx7cgc",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "name": "شركة حسني القبلي العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0541341030"
+          ],
+          "pin": [
+            28.3806576,
+            36.5820526
+          ],
+          "source": "ChIJW-5BSq2tqRURzPnUeIx7cgc",
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "شركة حسني القبلي العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0541341030"
+          ],
+          "pin": [
+            28.3806576,
+            36.5820526
+          ],
+          "source": "ChIJW-5BSq2tqRURzPnUeIx7cgc",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-8797e8c48ab7",
+      "name": "شركة أصالة بلا حدود العقارية",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "phase6-office-bd9606a2182f",
+      "name": "مكتب راحة الاعمار للعقار",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "",
+          "brokerage": false,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "",
+          "brokerage": false,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "",
+          "brokerage": false,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "",
+          "brokerage": false,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "phase6-office-68c66091e332",
+      "name": "مؤسسة فرسان الذهبية للعقارات",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة تأجير عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة تأجير عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة تأجير عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة تأجير عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "phase6-office-e6ef146a4dd1",
+      "name": "مكتب أمجاد تبوك للخدمات العقارية",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "phase6-office-60a6a01b7bd2",
+      "name": "مكتب صالح سليمان البلوي للخدمات العقارية",
+      "city": "تبوك",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "phase6-office-f2222126ba00",
+      "name": "مكتب عبدالكريم الفهاد للعقارات",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "name": "مكتب عبدالكريم الفهاد للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0555169788"
+          ],
+          "pin": [
+            27.53584,
+            41.68296
+          ],
+          "source": null,
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "name": "مكتب عبدالكريم الفهاد للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0555169788"
+          ],
+          "pin": [
+            27.53584,
+            41.68296
+          ],
+          "source": null,
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "name": "مكتب عبدالكريم الفهاد للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0555169788"
+          ],
+          "pin": [
+            27.53584,
+            41.68296
+          ],
+          "source": null,
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب عبدالكريم الفهاد للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0555169788"
+          ],
+          "pin": [
+            27.53584,
+            41.68296
+          ],
+          "source": null,
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-3158bfcad9ae",
+      "name": "مكتب رمز الماجد للعقارات",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "name": "مكتب رمز الماجد للعقارات",
+          "category": "وكالة عقارات تجارية",
+          "phones": [
+            "0547744686"
+          ],
+          "pin": [
+            27.56243,
+            41.72053
+          ],
+          "source": null,
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "name": "مكتب رمز الماجد للعقارات",
+          "category": "وكالة عقارات تجارية",
+          "phones": [
+            "0547744686"
+          ],
+          "pin": [
+            27.56243,
+            41.72053
+          ],
+          "source": null,
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "name": "مكتب رمز الماجد للعقارات",
+          "category": "وكالة عقارات تجارية",
+          "phones": [
+            "0547744686"
+          ],
+          "pin": [
+            27.56243,
+            41.72053
+          ],
+          "source": null,
+          "pinMatch": null
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب رمز الماجد للعقارات",
+          "category": "وكالة عقارات تجارية",
+          "phones": [
+            "0547744686"
+          ],
+          "pin": [
+            27.56243,
+            41.72053
+          ],
+          "source": null,
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-eaa7e6467ca2",
+      "name": "مكتب معالم حائل العقاري",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب معالم حائل العقاري",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0554875554"
+          ],
+          "pin": {
+            "lat": 27.4730575,
+            "lon": 41.6537514
+          },
+          "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%85%D8%B9%D8%A7%D9%84%D9%85+%D8%AD%D8%A7%D8%A6%D9%84+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x15763fa8477939e7:0xd540c1d52d7419cc!8m2!3d27.4730575!4d41.6537514!16s%2Fg%2F11svfj31k2!19sChIJ5zl5R6g_dhURzBl0LdXBQNU?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-0d3c5bff16fb",
+      "name": "مكتب الشاعر للعقارات",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "مستشار عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "مستشار عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "مستشار عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "category": "مستشار عقارات",
+          "brokerage": false,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "مستشار عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "phase6-office-3b765d1d8401",
+      "name": "مكتب الماضي للعقارات",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب الماضي للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0561038263"
+          ],
+          "pin": {
+            "lat": 27.566158,
+            "lon": 41.6848237
+          },
+          "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%85%D8%A7%D8%B6%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x1576454e8555c2dd:0x65789573e171283d!8m2!3d27.566158!4d41.6848237!16s%2Fg%2F11st67swtb!19sChIJ3cJVhU5FdhURPShx4XOVeGU?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-c42c4914ef61",
+      "name": "الافق العقارية",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "الافق العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0555182821"
+          ],
+          "pin": {
+            "lat": 27.448246,
+            "lon": 41.6209033
+          },
+          "source": "https://www.google.com/maps/place/%D8%A7%D9%84%D8%A7%D9%81%D9%82+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15764552814c2de1:0x17293f8e797c5ec0!8m2!3d27.448246!4d41.6209033!16s%2Fg%2F11m_rv3f6b!19sChIJ4S1MgVJFdhURwF58eY4_KRc?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-5c1243223c91",
+      "name": "مكتب مازال للعقارات",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب مازال للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0533981881"
+          ],
+          "pin": {
+            "lat": 27.570836,
+            "lon": 41.7221654
+          },
+          "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%85%D8%A7%D8%B2%D8%A7%D9%84+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x157645a238e56081:0xb600eab4a1311446!8m2!3d27.570836!4d41.7221654!16s%2Fg%2F11q25m09nc!19sChIJgWDlOKJFdhURRhQxobTqALY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-574e482206a6",
+      "name": "مكتب الهياف للعقارات",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "phase6-office-280a50f4eef8",
+      "name": "مكتب شرق حائل للعقارات",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب شرق حائل للعقارات",
+          "category": "وكيل عقاري",
+          "phones": [
+            "0555909866"
+          ],
+          "pin": {
+            "lat": 27.4025405,
+            "lon": 41.7226688
+          },
+          "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B4%D8%B1%D9%82+%D8%AD%D8%A7%D8%A6%D9%84+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15763b4421f57ebb:0x424eedd8b213a316!8m2!3d27.4025405!4d41.7226688!16s%2Fg%2F11hy_x2m_k!19sChIJu371IUQ7dhURFqMTstjtTkI?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-5331c67186b3",
+      "name": "مكتب الوسيط المباشر العقاري",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب الوسيط المباشر العقاري",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0566144774"
+          ],
+          "pin": {
+            "lat": 27.510807,
+            "lon": 41.6654148
+          },
+          "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7+%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B4%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x157640bf30d7b9c7:0xd9771d7db05ddc00!8m2!3d27.510807!4d41.6654148!16s%2Fg%2F11crzw21pp!19sChIJx7nXML9AdhURANxdsH0dd9k?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة تأجير عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة تأجير عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة تأجير عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة تأجير عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-0066a0e8d732",
+      "name": "مكتب مستقر العقاري",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب مستقر العقاري",
+          "category": "وكيل عقاري",
+          "phones": [
+            "0597888872"
+          ],
+          "pin": {
+            "lat": 27.5566571,
+            "lon": 41.6865072
+          },
+          "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%85%D8%B3%D8%AA%D9%82%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x157645042afa22c1:0x3dcb529481361dfe!8m2!3d27.5566571!4d41.6865072!16s%2Fg%2F11vds6rxfc!19sChIJwSL6KgRFdhUR_h02gZRSyz0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-5a4cd141d9b8",
+      "name": "مكتب أضواء حائل للخدمات العقارية",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب أضواء حائل للخدمات العقارية",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0538188000"
+          ],
+          "pin": {
+            "lat": 27.44833,
+            "lon": 41.6219553
+          },
+          "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A3%D8%B6%D9%88%D8%A7%D8%A1+%D8%AD%D8%A7%D8%A6%D9%84+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15763f00470eb0d5:0x81fbace24ad21ba0!8m2!3d27.44833!4d41.6219553!16s%2Fg%2F11ld61l209!19sChIJ1bAORwA_dhURoBvSSuKs-4E?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "phase6-office-67b00dab12c0",
+      "name": "مكتب المزون العقاري",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "phase6-office-31741b5c5a66",
+      "name": "مكتب البلاد العقاري حائل",
+      "city": "حائل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب البلاد العقاري حائل",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0534842200"
+          ],
+          "pin": {
+            "lat": 27.5942937,
+            "lon": 41.7142776
+          },
+          "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%AF+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%AD%D8%A7%D8%A6%D9%84%E2%80%AD/data=!4m7!3m6!1s0x15764588e68d0305:0x6301f8013e1780d6!8m2!3d27.5942937!4d41.7142776!16s%2Fg%2F11rkhtql_m!19sChIJBQON5ohFdhUR1oAXPgH4AWM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "national-ejar-office-194436",
+      "name": "شركة سمو الماسة",
+      "city": "ينبع",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": false
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": false
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": false
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "national-ejar-office-197402",
+      "name": "مكتب النصرين للعقار",
+      "city": "ينبع",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": false
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": false
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": false
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "national-ejar-office-195301",
+      "name": "مكتب فهد قليل الثقفي للعقارات",
+      "city": "ينبع",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب فهد قليل الثقفي للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0503342155"
+          ],
+          "pin": {
+            "lat": 24.1060166,
+            "lon": 38.0177396
+          },
+          "source": "https://www.google.com/maps/place/%D8%A7%D9%84%D8%AB%D9%82%D9%81%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x15b9071f162a983d:0xd7ca90e3d2115743!8m2!3d24.1060166!4d38.0177396!16s%2Fg%2F11svhqy5hn"
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "national-ejar-office-195170",
+      "name": "مكتب دليل ينبع للعقارات",
+      "city": "ينبع",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب دليل ينبع للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0550010510"
+          ],
+          "pin": {
+            "lat": 24.1262607,
+            "lon": 38.0108919
+          },
+          "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%AF%D9%84%D9%8A%D9%84+%D9%8A%D9%86%D8%A8%D8%B9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.1262607,38.0108919,17z/data=!3m1!4b1!4m6!3m5!1s0x15b909b43f2f6d95:0x43fe99b361bbd521!8m2!3d24.1262607!4d38.0108919!16s%2Fg%2F11kpgrh4sy?entry=ttu"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "national-ejar-office-199383",
+      "name": "مؤسسة سكن القمم للعقار",
+      "city": "ينبع",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": false
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "national-ejar-office-209261",
+      "name": "مؤسسة نواف بن حمود بن حاجي المطيري العقارية",
+      "city": "ينبع",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مؤسسة نواف بن حمود بن حاجي المطيري",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0545400098"
+          ],
+          "pin": {
+            "lat": 24.0806331,
+            "lon": 38.1010303
+          },
+          "source": "https://maps.google.com/maps?q=24.0782536,38.09090892"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات تجارية",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "national-ejar-office-194530",
+      "name": "مكتب البديوي للعقارات",
+      "city": "سكاكا",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة تأجير عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة تأجير عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة تأجير عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة تأجير عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "national-ejar-office-199547",
+      "name": "مكتب اعمال فارس العقاري",
+      "city": "سكاكا",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "national-ejar-office-198956",
+      "name": "مكتب بيت المهند العقاري بسكاكا الجوف",
+      "city": "سكاكا",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "بائع عقارات بالمزاد",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "بائع عقارات بالمزاد",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "بائع عقارات بالمزاد",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "بائع عقارات بالمزاد",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "national-ejar-office-197754",
+      "name": "مكتب سهم العقاري",
+      "city": "سكاكا",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "national-ejar-office-303197",
+      "name": "مكتب المربع للعقارات والتطوير العقاري والمقاولات",
+      "city": "سكاكا",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "national-ejar-office-195624",
+      "name": "مكتب المجال للعقار والاستثمار",
+      "city": "القريات",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": false
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": false
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": false
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "شركة إدارة عقارات",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": false
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "national-ejar-office-195881",
+      "name": "شركة مكتب دليل القريات للعقار شركة ذات مسئولية محدودة مختلطة",
+      "city": "القريات",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "شركة مكتب دليل القريات للعقار شركة ذات مسئولية محدودة مختلطة",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0537273753"
+          ],
+          "pin": {
+            "lat": 31.3175887,
+            "lon": 37.3363798
+          },
+          "source": "https://www.google.com/maps/?cid=1432051686968142962"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_CHECKPOINT_2026-10-12.json",
+          "category": "",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "",
+          "brokerage": false,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "national-ejar-office-322231",
+      "name": "مكتب المنجز بلس للخدمات العقارية",
+      "city": "القريات",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+          "name": "مكتب المنجز بلس للخدمات العقارية",
+          "category": "وكيل عقاري",
+          "phones": [
+            "0508592503"
+          ],
+          "pin": {
+            "lat": 31.3195705,
+            "lon": 37.3376636
+          },
+          "source": "https://maps.google.com/maps?q=31.32041671,37.33336303"
+        }
+      ],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE4_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/OFFICE_FINAL_AUDIT_NORTH_WAVE3_2026-10-12.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكيل عقاري",
+          "brokerage": true,
+          "pinMatched": false,
+          "allStoredPhonesOnCard": true
+        }
+      ],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "national-ejar-office-332578",
+      "name": "مكتب ركائز الوسيط العقاري",
+      "city": "العلا",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب ركائز الوسيط العقاري",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0535250700"
+          ],
+          "pin": [
+            26.565295199999998,
+            37.955422999999996
+          ],
+          "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%83%D8%A7%D8%A6%D8%B2%20%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200535250700%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7?hl=ar&gl=sa",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "national-ejar-office-238771",
+      "name": "مكتب المفتاح الرقمي للعقار",
+      "city": "بدر",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": false
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "national-bizmideast-office-1489677254523019010",
+      "name": "مكتب جوف العقاري",
+      "city": "طريف",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب جوف العقاري",
+          "category": "وكيل عقاري",
+          "phones": [
+            "0531811551"
+          ],
+          "pin": [
+            31.6716314,
+            38.666974599999996
+          ],
+          "source": "https://www.google.com/maps/?cid=1489677254523019010&hl=ar&gl=sa",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "national-bizmideast-office-6924307141860146646",
+      "name": "مكتب مكه العقاري",
+      "city": "طريف",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب مكه العقاري",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0556784488"
+          ],
+          "pin": [
+            31.657676,
+            38.677915299999995
+          ],
+          "source": "https://www.google.com/maps/?cid=6924307141860146646&hl=ar&gl=sa",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "national-yango-office-44080244478",
+      "name": "مكتب النهضة العقاري",
+      "city": "طريف",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب النهضة العقاري",
+          "category": "وكالة تأجير عقارات",
+          "phones": [
+            "0503053416"
+          ],
+          "pin": [
+            31.663023799999998,
+            38.6741416
+          ],
+          "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%86%D9%87%D8%B6%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200503053416%20%D8%B7%D8%B1%D9%8A%D9%81?hl=ar&gl=sa",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "national-yango-office-55037224817",
+      "name": "مكتب انجاز الخدمات",
+      "city": "دومة الجندل",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": false,
+      "matchingSavedCards": [],
+      "insufficientSavedCardEvidence": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "category": "وكالة عقارات",
+          "brokerage": true,
+          "pinMatched": true,
+          "allStoredPhonesOnCard": false
+        }
+      ],
+      "decision": "downgrade_unresolved"
+    },
+    {
+      "id": "national-yango-office-192988370309",
+      "name": "مكتب الفجر البعيد العقاري",
+      "city": "طريف",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب الفجر البعيد العقاري",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0554834914"
+          ],
+          "pin": [
+            31.678694399999998,
+            38.6541199
+          ],
+          "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%81%D8%AC%D8%B1%20%D8%A7%D9%84%D8%A8%D8%B9%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200554834914%20%D8%B7%D8%B1%D9%8A%D9%81?hl=ar&gl=sa",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "national-yango-office-202682836844",
+      "name": "مكتب المرقب العقاري",
+      "city": "طريف",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+          "name": "مكتب المرقب للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "+966566696963"
+          ],
+          "pin": [
+            31.6652006,
+            38.6746587
+          ],
+          "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%85%D8%B1%D9%82%D8%A8+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@31.6652006,38.6746587,17z/data=!3m1!4b1!4m6!3m5!1s0x1513dfa9ef2302a5:0x801ccea3b25d2d92!8m2!3d31.6652006!4d38.6746587!16s%2Fg%2F11hdf1ml84?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب المرقب للعقارات",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0566696963"
+          ],
+          "pin": [
+            31.6652006,
+            38.674658699999995
+          ],
+          "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%85%D8%B1%D9%82%D8%A8%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200566696963%20%D8%B7%D8%B1%D9%8A%D9%81?hl=ar&gl=sa",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "national-yango-office-84223561230",
+      "name": "مكتب الواحة العقاري",
+      "city": "طريف",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "مكتب الواحة العقاري",
+          "category": "وكالة عقارات تجارية",
+          "phones": [
+            "0508857477"
+          ],
+          "pin": [
+            31.652534499999998,
+            38.685677999999996
+          ],
+          "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%88%D8%A7%D8%AD%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200508857477%20%D8%B7%D8%B1%D9%8A%D9%81?hl=ar&gl=sa",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    },
+    {
+      "id": "national-google-office-cid-13805103704243743602",
+      "name": "نوادر التصاميم",
+      "city": "العلا",
+      "previousFullyVerified": true,
+      "strictSameCardVerified": true,
+      "matchingSavedCards": [
+        {
+          "file": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+          "name": "نوادر التصاميم",
+          "category": "وكالة عقارات",
+          "phones": [
+            "0558990067"
+          ],
+          "pin": [
+            26.6033993,
+            37.9293966
+          ],
+          "source": "https://www.google.com/maps/?cid=13805103704243743602&hl=ar&gl=sa",
+          "pinMatch": null
+        }
+      ],
+      "insufficientSavedCardEvidence": [],
+      "decision": "retain_verified"
+    }
+  ]
+}

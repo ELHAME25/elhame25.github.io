@@ -1,0 +1,3157 @@
+{
+  "schema": "office-final-audit-checkpoint-v1",
+  "scope": "Riyadh city only; Qadisiyah protected records excluded without opening",
+  "generatedAt": "2026-10-12T11:23:24Z",
+  "inventory": {
+    "riyadhRecords": 69,
+    "qadisiyahProtectedExcluded": 14,
+    "eligibleOutsideQadisiyah": 55,
+    "checked": 55,
+    "statusCounts": {
+      "needs_correction": 24,
+      "verified": 18,
+      "unconfirmed": 10,
+      "excluded_non_real_estate": 3
+    },
+    "locationsVerified": 45,
+    "phonesMatched": 38,
+    "excludedNonRealEstate": 3
+  },
+  "protectedIdsNotOpened": [
+    "prior-qadisiyya-21",
+    "prior-qadisiyya-23",
+    "prior-qadisiyya-26",
+    "prior-qadisiyya-69",
+    "prior-qadisiyya-70",
+    "prior-qadisiyya-71",
+    "prior-qadisiyya-72",
+    "prior-qadisiyya-73",
+    "prior-qadisiyya-74",
+    "prior-qadisiyya-75",
+    "prior-qadisiyya-76",
+    "prior-qadisiyya-77",
+    "prior-qadisiyya-78",
+    "prior-qadisiyya-79"
+  ],
+  "records": [
+    {
+      "id": "entity-30e6808c384f",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب الناصع للعقارات",
+        "address": "عريض",
+        "phones": [
+          "0549577008"
+        ],
+        "coordinates": [
+          24.44898,
+          46.72753
+        ],
+        "maps": "",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%86%D8%A7%D8%B5%D8%B9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200549577008%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:07Z",
+      "new": {
+        "name": "مكتب الناصع للعقارات حي عريض - مخططات عريض",
+        "categories": [
+          "وكالة عقارات",
+          "وكالة عقارات تجارية",
+          "مُصفٍّ عقاري",
+          "وكيل عقاري",
+          "مستشار عقارات"
+        ],
+        "district": "عريض",
+        "address": "مكتب الناصع للعقارات حي عريض - مخططات عريض، حي، جبل حضن، عريض، الرياض 14753",
+        "phone": "0549577008",
+        "coordinates": [
+          24.452663599999998,
+          46.7447908
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f05534ac6ea6f:0x8659776ce1ecf280"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.667,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.003683599999998677,
+          "lon": 0.017260799999995413
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 14.33,
+      "recommendedChanges": {
+        "name": "مكتب الناصع للعقارات حي عريض - مخططات عريض",
+        "coordinates": [
+          24.452663599999998,
+          46.7447908
+        ],
+        "address": "مكتب الناصع للعقارات حي عريض - مخططات عريض، حي، جبل حضن، عريض، الرياض 14753",
+        "maps": "https://www.google.com/maps/?cid=9680900183540167296"
+      }
+    },
+    {
+      "id": "entity-63d0298fe4aa",
+      "city": "الرياض",
+      "old": {
+        "name": "نزيل العقارية",
+        "address": "التعاون",
+        "phones": [
+          "0566780235"
+        ],
+        "coordinates": [
+          24.76755,
+          46.69213
+        ],
+        "maps": "https://maps.app.goo.gl/aQkrUsbeixpWzANG8",
+        "activity": null
+      },
+      "sourceUrl": "https://maps.app.goo.gl/aQkrUsbeixpWzANG8?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:12:19Z",
+      "new": {
+        "name": "شركة نزيل العقارية",
+        "categories": [
+          "Real estate agency"
+        ],
+        "district": "At Taawun",
+        "address": "شركة نزيل العقارية, Abi Bakr As Siddiq Rd, At Taawun, Riyadh 12475, Saudi Arabia",
+        "phone": "+966594738744",
+        "coordinates": [
+          24.7675469,
+          46.6921294
+        ],
+        "placeId": null,
+        "featureId": "0x3e2ee32a37f9ddc7:0x4262c10bbf96ba5b"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -3.1000000006997652e-06,
+          "lon": -5.999999999062311e-07
+        },
+        "nameSimilarity": 0.839
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 17.41,
+      "recommendedChanges": {
+        "name": "شركة نزيل العقارية",
+        "phones": [
+          "0566780235",
+          "966594738744"
+        ],
+        "maps": "https://www.google.com/maps/?cid=4783598010424015451"
+      }
+    },
+    {
+      "id": "entity-8438aa400dcf",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب رواد العقود للعقارات",
+        "address": "المونسية",
+        "phones": [
+          "0555038551"
+        ],
+        "coordinates": [
+          24.82191,
+          46.77116
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=24.821913,46.771164",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%88%D8%A7%D8%AF%20%D8%A7%D9%84%D8%B9%D9%82%D9%88%D8%AF%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200555038551%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:07Z",
+      "new": {
+        "name": "مكتب رواد العقود للعقارات",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": "المونسية",
+        "address": "مكتب رواد العقود للعقارات، 4179، المونسية، الرياض 13246 7598،",
+        "phone": "0555038551",
+        "coordinates": [
+          24.821913,
+          46.771164
+        ],
+        "placeId": null,
+        "featureId": "0x3e2eff86de92e8ad:0x17b265e0d777fdb2"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 2.9999999995311555e-06,
+          "lon": 3.999999997006398e-06
+        }
+      },
+      "status": "verified",
+      "elapsedSeconds": 13.94,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "entity-bd9121973107",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب قواعد الأندلس",
+        "address": "الرمال",
+        "phones": [
+          "0558648755",
+          "0505539095"
+        ],
+        "coordinates": [
+          24.96493,
+          46.76536
+        ],
+        "maps": "https://www.google.com/maps/?cid=15391395510121292153",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/?cid=15391395510121292153&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:12:19Z",
+      "new": {
+        "name": "مكتب قواعد الاندلس",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "الرمال",
+        "address": "مكتب قواعد الاندلس، الرمال، الرياض 13254",
+        "phone": "0505539095",
+        "coordinates": [
+          24.8415441,
+          46.806023499999995
+        ],
+        "placeId": null,
+        "featureId": "0x3e2e559bb396d2a9:0xd59938ab5a526179"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.12338589999999883,
+          "lon": 0.040663499999993746
+        },
+        "nameSimilarity": 1.0
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 17.39,
+      "recommendedChanges": {
+        "coordinates": [
+          24.8415441,
+          46.806023499999995
+        ],
+        "address": "مكتب قواعد الاندلس، الرمال، الرياض 13254",
+        "maps": "https://www.google.com/maps/?cid=15391395510121292153"
+      }
+    },
+    {
+      "id": "entity-d206eae500b8",
+      "city": "الرياض",
+      "old": {
+        "name": "بهجة الرمال للعقارات",
+        "address": "سعيد بن الحاجب، الرمال، الرياض 13265",
+        "phones": [
+          "0555499441"
+        ],
+        "coordinates": [
+          24.8522267,
+          46.8283421
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%87%D8%AC%D8%A9%20%D8%A7%D9%84%D8%B1%D9%85%D8%A7%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJqz9b2otVLj4Rgb1LGLWu8Ns",
+        "activity": "مطوّر عقارات"
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%87%D8%AC%D8%A9%20%D8%A7%D9%84%D8%B1%D9%85%D8%A7%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJqz9b2otVLj4Rgb1LGLWu8Ns&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:12:19Z",
+      "new": {
+        "name": "بهجة الرمال للعقارات",
+        "categories": [
+          "مطوّر عقارات",
+          "وكالة عقارات تجارية",
+          "مفتش عقارات تجارية",
+          "مُثمِّن عقاري",
+          "مُصفٍّ عقاري",
+          "عقار شقق مفروشة",
+          "شركة إدارة عقارات",
+          "وكيل عقاري",
+          "مثمّن عقارات",
+          "مستشار عقارات"
+        ],
+        "district": "الرمال",
+        "address": "بهجة الرمال للعقارات، سعيد بن الحاجب، الرمال، الرياض 13265",
+        "phone": "0555499441",
+        "coordinates": [
+          24.8522267,
+          46.8283421
+        ],
+        "placeId": "ChIJqz9b2otVLj4Rgb1LGLWu8Ns",
+        "featureId": "0x3e2e558bda5b3fab:0xdbf0aeb5184bbd81"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.0,
+          "lon": 0.0
+        },
+        "nameSimilarity": 1.0
+      },
+      "status": "verified",
+      "elapsedSeconds": 17.36,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "entity-f23bd4322c3f",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب أعمال العقاري",
+        "address": "السعادة",
+        "phones": [
+          "0555068571"
+        ],
+        "coordinates": [
+          24.69601,
+          46.83935
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200555068571%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:07Z",
+      "new": {
+        "name": "مكتب أعمال اليسر للعقارات",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "العليا",
+        "address": "مكتب أعمال اليسر للعقارات، شارع الأمير عبدالعزيز بن مساعد بن جلوي، العليا، الرياض 11543",
+        "phone": "0555208798",
+        "coordinates": [
+          24.6935731,
+          46.701757
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f049d95095523:0x83d292b1930951a2"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.791,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.0024369000000028507,
+          "lon": -0.13759300000000252
+        }
+      },
+      "status": "unconfirmed",
+      "elapsedSeconds": 14.4,
+      "recommendedChanges": {
+        "name": "مكتب أعمال اليسر للعقارات",
+        "phones": [
+          "0555068571",
+          "0555208798"
+        ],
+        "coordinates": [
+          24.6935731,
+          46.701757
+        ],
+        "address": "مكتب أعمال اليسر للعقارات، شارع الأمير عبدالعزيز بن مساعد بن جلوي، العليا، الرياض 11543",
+        "maps": "https://www.google.com/maps/?cid=9498815855451525538"
+      }
+    },
+    {
+      "id": "gap-office-01e5cd937f",
+      "city": "الرياض",
+      "old": {
+        "name": "شركة سعودي برايم للعقارات",
+        "address": "المروج، شارع الأمير تركي بن عبدالعزيز الثاني، المروج، الرياض",
+        "phones": [
+          "0556469626"
+        ],
+        "coordinates": [
+          24.75723,
+          46.66197
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%20%D8%A8%D8%B1%D8%A7%D9%8A%D9%85%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%20%D8%A8%D8%B1%D8%A7%D9%8A%D9%85%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200556469626%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:46Z",
+      "new": {
+        "name": "شركة آل سعيدان للعقارات",
+        "categories": [
+          "مطوّر عقارات"
+        ],
+        "district": "المروج",
+        "address": "شركة آل سعيدان للعقارات، Dist، 9059 طريق الملك فهد، المروج، الرياض 12264",
+        "phone": "920004365",
+        "coordinates": [
+          24.7555142,
+          46.6507043
+        ],
+        "placeId": null,
+        "featureId": "0x3e2ee2eaa420cfa7:0x2c7b867e9624b27f"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.75,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.00171579999999949,
+          "lon": -0.011265699999995604
+        }
+      },
+      "status": "unconfirmed",
+      "elapsedSeconds": 13.83,
+      "recommendedChanges": {
+        "name": "شركة آل سعيدان للعقارات",
+        "phones": [
+          "0556469626",
+          "920004365"
+        ],
+        "coordinates": [
+          24.7555142,
+          46.6507043
+        ],
+        "address": "شركة آل سعيدان للعقارات، Dist، 9059 طريق الملك فهد، المروج، الرياض 12264",
+        "maps": "https://www.google.com/maps/?cid=3205303438047228543"
+      }
+    },
+    {
+      "id": "gap-office-208470666c",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب اعمار البديعه للعقارات",
+        "address": "Unnamed Road، ظهرة البديعة، الرياض 12981",
+        "phones": [
+          "0558782212",
+          "0551122921"
+        ],
+        "coordinates": [
+          24.59771,
+          46.64951
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A5%D8%B9%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%AF%D9%8A%D8%B9%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": "مكتب الشركات"
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%B9%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%AF%D9%8A%D8%B9%D9%87%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200558782212%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:46Z",
+      "new": {
+        "name": "مكتب اعمار البديعه للعقارات",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "ظهرة البديعة",
+        "address": "مكتب اعمار البديعه للعقارات، Unnamed Road، ظهرة البديعة، الرياض 12981",
+        "phone": "0551122921",
+        "coordinates": [
+          24.5916681,
+          46.635995699999995
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f1bd56b1c4c13:0x17cc031cba1e162f"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.0060418999999996,
+          "lon": -0.013514300000004198
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 13.31,
+      "recommendedChanges": {
+        "coordinates": [
+          24.5916681,
+          46.635995699999995
+        ],
+        "address": "مكتب اعمار البديعه للعقارات، Unnamed Road، ظهرة البديعة، الرياض 12981",
+        "maps": "https://www.google.com/maps/?cid=1714748980037817903"
+      }
+    },
+    {
+      "id": "gap-office-26f2e86275",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب واجهة النرجس للعقارات",
+        "address": "النرجس، شمال طريق الملك سلمان على طريق عثمان بن عفان - حي النرجس",
+        "phones": [
+          "0550666633"
+        ],
+        "coordinates": [
+          24.88682,
+          46.64525
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D9%86%D8%B1%D8%AC%D8%B3%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D9%86%D8%B1%D8%AC%D8%B3%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200550666633%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:50Z",
+      "new": {
+        "name": "واجهة النرجس للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "النرجس",
+        "address": "واجهة النرجس للعقارات، 8685 طريق عثمان بن عفان، حي النرجس، الرياض 13333 4172،",
+        "phone": "0500329966",
+        "coordinates": [
+          24.864584999999998,
+          46.664654999999996
+        ],
+        "placeId": null,
+        "featureId": "0x3e2ee532c8a89a55:0x1e2faba87a6c4183"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.894,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.022235000000002003,
+          "lon": 0.019404999999999006
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 14.39,
+      "recommendedChanges": {
+        "name": "واجهة النرجس للعقارات",
+        "phones": [
+          "0550666633",
+          "0500329966"
+        ],
+        "coordinates": [
+          24.864584999999998,
+          46.664654999999996
+        ],
+        "address": "واجهة النرجس للعقارات، 8685 طريق عثمان بن عفان، حي النرجس، الرياض 13333 4172،",
+        "maps": "https://www.google.com/maps/?cid=2175145885140009347"
+      }
+    },
+    {
+      "id": "gap-office-509365365f",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب ريلام الملز للعقارات",
+        "address": "النزهة، شارع حائل، النزهة، الرياض",
+        "phones": [
+          "0508051084"
+        ],
+        "coordinates": [
+          24.75643,
+          46.70789
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%8A%D9%84%D8%A7%D9%85%20%D8%A7%D9%84%D9%85%D9%84%D8%B2%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%8A%D9%84%D8%A7%D9%85%20%D8%A7%D9%84%D9%85%D9%84%D8%B2%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200508051084%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:32Z",
+      "new": {
+        "name": "درة الملز للعقارات",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": "جرير",
+        "address": "درة الملز للعقارات، 4651، 7401، جرير، 7401، الرياض 12837",
+        "phone": "0505237277",
+        "coordinates": [
+          24.6732504,
+          46.7526496
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f07bb2803908f:0x8308424f8eaed5cf"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.744,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.08317960000000113,
+          "lon": 0.04475959999999901
+        }
+      },
+      "status": "unconfirmed",
+      "elapsedSeconds": 14.05,
+      "recommendedChanges": {
+        "name": "درة الملز للعقارات",
+        "phones": [
+          "0508051084",
+          "0505237277"
+        ],
+        "coordinates": [
+          24.6732504,
+          46.7526496
+        ],
+        "address": "درة الملز للعقارات، 4651، 7401، جرير، 7401، الرياض 12837",
+        "maps": "https://www.google.com/maps/?cid=9441869528245917135"
+      }
+    },
+    {
+      "id": "gap-office-6297b78215",
+      "city": "الرياض",
+      "old": {
+        "name": "شركة طوابق الرياض العقارية",
+        "address": "الصحافة، حي الصحافة، الرياض",
+        "phones": [
+          "0114509481"
+        ],
+        "coordinates": [
+          24.79994,
+          46.63902
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B7%D9%88%D8%A7%D8%A8%D9%82%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B7%D9%88%D8%A7%D8%A8%D9%82%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200114509481%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:04Z",
+      "new": {
+        "name": "شركة طوابق الرياض",
+        "categories": [
+          "مقاول بناء المنازل المخصّصة"
+        ],
+        "district": "الربيع",
+        "address": "شركة طوابق الرياض، طريق الملك عبدالعزيز، الربيع، الرياض 13316",
+        "phone": null,
+        "coordinates": [
+          24.796032099999998,
+          46.655732799999996
+        ],
+        "placeId": null,
+        "featureId": "0x3e2ee3e88087c2a5:0x2a06a57f6841fe49"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.791,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": -0.0039079000000015185,
+          "lon": 0.016712799999993422
+        }
+      },
+      "status": "excluded_non_real_estate",
+      "elapsedSeconds": 13.76,
+      "recommendedChanges": {
+        "activityReviewStatus": "non_real_estate",
+        "activity": "مقاول بناء المنازل المخصّصة"
+      }
+    },
+    {
+      "id": "gap-office-87334f9772",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب فارس عبدالكريم عبدالرحمن الشويعر للعقار",
+        "address": "الغدير، حي الغدير / حي العارض، الرياض",
+        "phones": [
+          "0557777763"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%81%D8%A7%D8%B1%D8%B3%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86%20%D8%A7%D9%84%D8%B4%D9%88%D9%8A%D8%B9%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%81%D8%A7%D8%B1%D8%B3%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86%20%D8%A7%D9%84%D8%B4%D9%88%D9%8A%D8%B9%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200557777763%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:32Z",
+      "new": {
+        "name": "مكتب الشويعر للعقارات",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "الغدير",
+        "address": "مكتب الشويعر للعقارات، 3045 شارع السيل الكبير، الغدير، الرياض 13311",
+        "phone": "0569180185",
+        "coordinates": [
+          24.770451299999998,
+          46.6492065
+        ],
+        "placeId": null,
+        "featureId": "0x3e2ee2e0f9926aa9:0x7685a8c925513be4"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.585,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": null
+      },
+      "status": "unconfirmed",
+      "elapsedSeconds": 14.11,
+      "recommendedChanges": {
+        "name": "مكتب الشويعر للعقارات",
+        "phones": [
+          "0557777763",
+          "0569180185"
+        ],
+        "coordinates": [
+          24.770451299999998,
+          46.6492065
+        ],
+        "address": "مكتب الشويعر للعقارات، 3045 شارع السيل الكبير، الغدير، الرياض 13311",
+        "maps": "https://www.google.com/maps/?cid=8540417850245987300"
+      }
+    },
+    {
+      "id": "gap-office-970dfb7549",
+      "city": "الرياض",
+      "old": {
+        "name": "مؤسسة فيصل عبدالله علي المطلق للعقارات",
+        "address": "العليا، شارع موسى بن نصير، العليا، الرياض",
+        "phones": [
+          "0505102808"
+        ],
+        "coordinates": [
+          24.69314,
+          46.68447
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%81%D9%8A%D8%B5%D9%84%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%B9%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%82%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%81%D9%8A%D8%B5%D9%84%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%B9%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%82%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200505102808%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:32Z",
+      "new": {
+        "name": "مكتب المطلق للعقارات",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "الفلاح",
+        "address": "QPW3+GXP مكتب المطلق للعقارات، الفلاح، الرياض 13314",
+        "phone": null,
+        "coordinates": [
+          24.7963395,
+          46.7049483
+        ],
+        "placeId": null,
+        "featureId": "0x3e2efdef0d587b5f:0xd6e465c82c70ee32"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.621,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 0.10319949999999878,
+          "lon": 0.020478300000000615
+        }
+      },
+      "status": "unconfirmed",
+      "elapsedSeconds": 13.51,
+      "recommendedChanges": {
+        "name": "مكتب المطلق للعقارات",
+        "coordinates": [
+          24.7963395,
+          46.7049483
+        ],
+        "address": "QPW3+GXP مكتب المطلق للعقارات، الفلاح، الرياض 13314",
+        "maps": "https://www.google.com/maps/?cid=15484613329220070962"
+      }
+    },
+    {
+      "id": "gap-office-a19cb92f33",
+      "city": "الرياض",
+      "old": {
+        "name": "شركة اليمامة للاستثمار والتطوير العقاري",
+        "address": "العليا، شارع الأمير سلطان بن عبدالعزيز، العليا، الرياض",
+        "phones": [
+          "0561166669"
+        ],
+        "coordinates": [
+          24.69314,
+          46.68447
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D9%8A%D9%85%D8%A7%D9%85%D8%A9%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D9%8A%D9%85%D8%A7%D9%85%D8%A9%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200561166669%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:46Z",
+      "new": {
+        "name": "شركة اليمامة للإستثمار والتطوير العقاري - Alyamama Investment and Real Estate Development",
+        "categories": [
+          "شركة استثمار عقاري"
+        ],
+        "district": "العليا",
+        "address": "شركة اليمامة للإستثمار والتطوير العقاري - Alyamama Investment and Real Estate Development، طريق الأمير سلطان بن عبدالعزيز، العليا، الرياض 12313",
+        "phone": "920003349",
+        "coordinates": [
+          24.6860233,
+          46.6780274
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f038ff8c09127:0xce724a8ff9203e6"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.619,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.007116700000000975,
+          "lon": -0.006442599999999743
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 13.79,
+      "recommendedChanges": {
+        "name": "شركة اليمامة للإستثمار والتطوير العقاري - Alyamama Investment and Real Estate Development",
+        "phones": [
+          "0561166669",
+          "920003349"
+        ],
+        "coordinates": [
+          24.6860233,
+          46.6780274
+        ],
+        "address": "شركة اليمامة للإستثمار والتطوير العقاري - Alyamama Investment and Real Estate Development، طريق الأمير سلطان بن عبدالعزيز، العليا، الرياض 12313",
+        "maps": "https://www.google.com/maps/?cid=929752156336161766"
+      }
+    },
+    {
+      "id": "gap-office-a465eda7bc",
+      "city": "الرياض",
+      "old": {
+        "name": "مؤسسة ركائز الغد العقارية",
+        "address": "الملقا، شارع الحناكية، الملقا، الرياض",
+        "phones": [
+          "0537081014"
+        ],
+        "coordinates": [
+          24.79897,
+          46.59756
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B1%D9%83%D8%A7%D8%A6%D8%B2%20%D8%A7%D9%84%D8%BA%D8%AF%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B1%D9%83%D8%A7%D8%A6%D8%B2%20%D8%A7%D9%84%D8%BA%D8%AF%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200537081014%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:18Z",
+      "new": {
+        "name": "ركيز العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "القيروان",
+        "address": "ركيز العقارية، محمد بن عبدالعزيز العجاجي، القيروان، الرياض 13531",
+        "phone": null,
+        "coordinates": [
+          24.834600899999998,
+          46.606701
+        ],
+        "placeId": null,
+        "featureId": "0x3e2ee58696f4df7d:0xf439693c45a4f119"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.684,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 0.03563089999999747,
+          "lon": 0.009140999999999622
+        }
+      },
+      "status": "unconfirmed",
+      "elapsedSeconds": 14.41,
+      "recommendedChanges": {
+        "name": "ركيز العقارية",
+        "coordinates": [
+          24.834600899999998,
+          46.606701
+        ],
+        "address": "ركيز العقارية، محمد بن عبدالعزيز العجاجي، القيروان، الرياض 13531",
+        "maps": "https://www.google.com/maps/?cid=17598212726514315545"
+      }
+    },
+    {
+      "id": "gap-office-a4cf48477f",
+      "city": "الرياض",
+      "old": {
+        "name": "مؤسسة منصة ربوة الأعمال",
+        "address": "القيروان، شارع إبراهيم بن أبي موسى الأشعري، القيروان، الرياض",
+        "phones": [
+          "0560095629"
+        ],
+        "coordinates": [
+          24.87609,
+          46.56081
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%86%D8%B5%D8%A9%20%D8%B1%D8%A8%D9%88%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%86%D8%B5%D8%A9%20%D8%B1%D8%A8%D9%88%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%200560095629%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:18Z",
+      "new": {
+        "name": "شركة منصة الأعمال",
+        "categories": [
+          "خدمات الاستثمار",
+          "مكتب الشركات",
+          "خدمات المعلومات",
+          "خدمات قانونية"
+        ],
+        "district": "العارض",
+        "address": "شركة منصة الأعمال، مجمع شارك للأعمال، طريق الملك سلمان بن عبدالعزيز، العارض، الرياض 13331",
+        "phone": "0552088807",
+        "coordinates": [
+          24.832495299999998,
+          46.6268076
+        ],
+        "placeId": null,
+        "featureId": "0x3e2ee38aeb91e525:0xabd5a803f1a6617a"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.7,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.04359470000000343,
+          "lon": 0.06599760000000288
+        }
+      },
+      "status": "unconfirmed",
+      "elapsedSeconds": 14.11,
+      "recommendedChanges": {
+        "name": "شركة منصة الأعمال",
+        "phones": [
+          "0560095629",
+          "0552088807"
+        ],
+        "coordinates": [
+          24.832495299999998,
+          46.6268076
+        ],
+        "address": "شركة منصة الأعمال، مجمع شارك للأعمال، طريق الملك سلمان بن عبدالعزيز، العارض، الرياض 13331",
+        "maps": "https://www.google.com/maps/?cid=12381987485417628026"
+      }
+    },
+    {
+      "id": "gap-office-a55dd41a4b",
+      "city": "الرياض",
+      "old": {
+        "name": "شركة الياسمين لإدارة و تطوير العقارات",
+        "address": "الصحافة، طريق الملك فهد، الصحافة، الرياض",
+        "phones": [
+          "0544448322"
+        ],
+        "coordinates": [
+          24.79994,
+          46.63902
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D9%8A%D8%A7%D8%B3%D9%85%D9%8A%D9%86%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D9%88%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D9%8A%D8%A7%D8%B3%D9%85%D9%8A%D9%86%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D9%88%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200544448322%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:04Z",
+      "new": {
+        "name": "شركة السويلم للتطوير العقاري",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "النرجس",
+        "address": "شركة السويلم للتطوير العقاري، 4534 طريق ابي بكر الصديق، النرجس، RAYB6959، 6959، الرياض 13326",
+        "phone": null,
+        "coordinates": [
+          24.8275826,
+          46.6603826
+        ],
+        "placeId": null,
+        "featureId": "0x3e2ee54ba7d44699:0x40371f62069501bd"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.708,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 0.027642600000000073,
+          "lon": 0.021362599999996235
+        }
+      },
+      "status": "unconfirmed",
+      "elapsedSeconds": 14.1,
+      "recommendedChanges": {
+        "name": "شركة السويلم للتطوير العقاري",
+        "coordinates": [
+          24.8275826,
+          46.6603826
+        ],
+        "address": "شركة السويلم للتطوير العقاري، 4534 طريق ابي بكر الصديق، النرجس، RAYB6959، 6959، الرياض 13326",
+        "maps": "https://www.google.com/maps/?cid=4627201648024158653"
+      }
+    },
+    {
+      "id": "gap-office-aa10044e5b",
+      "city": "الرياض",
+      "old": {
+        "name": "شركة مسكن الين العقارية",
+        "address": "الملقا، وادي وج، الملقا، الرياض",
+        "phones": [
+          "0538387778"
+        ],
+        "coordinates": [
+          24.79897,
+          46.59756
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%B3%D9%83%D9%86%20%D8%A7%D9%84%D9%8A%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%B3%D9%83%D9%86%20%D8%A7%D9%84%D9%8A%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200538387778%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:18Z",
+      "new": {
+        "name": "شركة مسكن ألين العقارية",
+        "categories": [
+          "شركة إنشاء"
+        ],
+        "district": "حي الملقا",
+        "address": "شركة مسكن ألين العقارية, 7378 وادي هجر، حي الملقا، 3548، الرياض 13524",
+        "phone": "920004989",
+        "coordinates": [
+          24.814693,
+          46.6109264
+        ],
+        "placeId": null,
+        "featureId": "0x3e2ee57625cfa9b9:0xe3c917ced8f2a965"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.01572299999999771,
+          "lon": 0.013366399999995338
+        }
+      },
+      "status": "excluded_non_real_estate",
+      "elapsedSeconds": 13.83,
+      "recommendedChanges": {
+        "activityReviewStatus": "non_real_estate",
+        "activity": "شركة إنشاء"
+      }
+    },
+    {
+      "id": "gap-office-bb2d57d59a",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب زياد حمد العواد للعقارات",
+        "address": "الوادي، شارع وادي السرح، الوادي، الرياض",
+        "phones": [
+          "0559911667"
+        ],
+        "coordinates": [
+          24.78945,
+          46.69124
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B2%D9%8A%D8%A7%D8%AF%20%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D8%AF%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B2%D9%8A%D8%A7%D8%AF%20%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D8%AF%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200559911667%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:32Z",
+      "new": {
+        "name": "مكتب زياد حمد العواد للعقارات",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "الوادي",
+        "address": "مكتب زياد حمد العواد للعقارات، 3658 وادي السرح، 6848 وادي السرح، الوادي، الرياض 13313، الرياض 13313",
+        "phone": "0541719999",
+        "coordinates": [
+          24.785035399999998,
+          46.6943414
+        ],
+        "placeId": null,
+        "featureId": "0x3e2efd1eabd4cf25:0x6165b58a000b419d"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.00441460000000049,
+          "lon": 0.0031013999999984776
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 14.14,
+      "recommendedChanges": {
+        "phones": [
+          "0559911667",
+          "0541719999"
+        ],
+        "coordinates": [
+          24.785035399999998,
+          46.6943414
+        ],
+        "address": "مكتب زياد حمد العواد للعقارات، 3658 وادي السرح، 6848 وادي السرح، الوادي، الرياض 13313، الرياض 13313",
+        "maps": "https://www.google.com/maps/?cid=7018215198637638045"
+      }
+    },
+    {
+      "id": "gap-office-bbca2edfb9",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب اصالة الرياض للعقارات",
+        "address": "المحمدية، شارع الشارقة، المحمدية، الرياض",
+        "phones": [
+          "0505256562"
+        ],
+        "coordinates": [
+          24.73257,
+          46.65019
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%B5%D8%A7%D9%84%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%B5%D8%A7%D9%84%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200505256562%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:46Z",
+      "new": {
+        "name": "اصالة القابضة",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "العليا",
+        "address": "اصالة القابضة، 3774 شارع حوطة بني تميم، 3774، 8592 شارع حوطة بني تميم،، الرياض 12333",
+        "phone": "920009467",
+        "coordinates": [
+          24.711206999999998,
+          46.671732
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f02d33e29a7e7:0x975925d28d522a59"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.513,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.02136300000000091,
+          "lon": 0.02154199999999662
+        }
+      },
+      "status": "unconfirmed",
+      "elapsedSeconds": 13.76,
+      "recommendedChanges": {
+        "name": "اصالة القابضة",
+        "phones": [
+          "0505256562",
+          "920009467"
+        ],
+        "coordinates": [
+          24.711206999999998,
+          46.671732
+        ],
+        "address": "اصالة القابضة، 3774 شارع حوطة بني تميم، 3774، 8592 شارع حوطة بني تميم،، الرياض 12333",
+        "maps": "https://www.google.com/maps/?cid=10905789558898698841"
+      }
+    },
+    {
+      "id": "gap-office-c8915e537d",
+      "city": "الرياض",
+      "old": {
+        "name": "مؤسسة غزارة العقارية",
+        "address": "النرجس، حي النرجس - طريق عثمان بن عفان",
+        "phones": [
+          "0553008888",
+          "0555337768",
+          "0555337728",
+          "0555337791"
+        ],
+        "coordinates": [
+          24.88682,
+          46.64525
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%BA%D8%B2%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%BA%D8%B2%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200553008888%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:04Z",
+      "new": {
+        "name": "شركة غزارة العقارية",
+        "categories": [
+          "وكالة عقارات",
+          "مكتب الشركات"
+        ],
+        "district": "النرجس",
+        "address": "شركة غزارة العقارية، طريق عثمان بن عفان الفرعي، النرجس، الرياض 11564",
+        "phone": "0555337728",
+        "coordinates": [
+          24.845221199999997,
+          46.674529899999996
+        ],
+        "placeId": null,
+        "featureId": "0x3e2efbc0a43e8ae7:0x8004d8815c1ce0a1"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.821,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.04159880000000271,
+          "lon": 0.029279899999998804
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 13.72,
+      "recommendedChanges": {
+        "name": "شركة غزارة العقارية",
+        "coordinates": [
+          24.845221199999997,
+          46.674529899999996
+        ],
+        "address": "شركة غزارة العقارية، طريق عثمان بن عفان الفرعي، النرجس، الرياض 11564",
+        "maps": "https://www.google.com/maps/?cid=9224735986869395617"
+      }
+    },
+    {
+      "id": "gap-office-cb782422f5",
+      "city": "الرياض",
+      "old": {
+        "name": "شركة نقش للاستثمار",
+        "address": "طريق الثمامة الفرعي، الياسمين، الرياض 13322",
+        "phones": [
+          "0551990160",
+          "0550500613"
+        ],
+        "coordinates": [
+          24.8071686,
+          46.661853
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%86%D9%82%D8%B4%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": "شركة استثمار"
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%86%D9%82%D8%B4%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%200551990160%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:04Z",
+      "new": {
+        "name": "شركة نقش للاستثمار",
+        "categories": [
+          "شركة استثمار"
+        ],
+        "district": "الياسمين",
+        "address": "شركة نقش للاستثمار، طريق الثمامة الفرعي، الياسمين، الرياض 13322",
+        "phone": "0550500613",
+        "coordinates": [
+          24.807168599999997,
+          46.661853
+        ],
+        "placeId": null,
+        "featureId": "0x3e2ee38a4f8f19c7:0x268d93bc6bc06811"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -3.552713678800501e-15,
+          "lon": 0.0
+        }
+      },
+      "status": "excluded_non_real_estate",
+      "elapsedSeconds": 13.19,
+      "recommendedChanges": {
+        "activityReviewStatus": "non_real_estate",
+        "activity": "شركة استثمار"
+      }
+    },
+    {
+      "id": "gap-office-d2adfaf252",
+      "city": "الرياض",
+      "old": {
+        "name": "شركة مهارة للاستثمارات العقارية المحدودة",
+        "address": "الملقا، طريق الأمير محمد بن سعد بن عبدالعزيز، الملقا، الرياض",
+        "phones": [
+          "0500977737"
+        ],
+        "coordinates": [
+          24.79897,
+          46.59756
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D9%87%D8%A7%D8%B1%D8%A9%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D9%87%D8%A7%D8%B1%D8%A9%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9%200500977737%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:19:18Z",
+      "new": {
+        "name": "شركة مهارة للموارد البشرية",
+        "categories": [
+          "وكالة توظيف عمالة مؤقتة"
+        ],
+        "district": "التعاون",
+        "address": "شركة مهارة للموارد البشرية، حي، مخرج 6، الطريق الدائري الشمالي، التعاون، الرياض 12477",
+        "phone": "920011151",
+        "coordinates": [
+          24.7782861,
+          46.6896959
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f03ed69ad3cc5:0xde268bd0df9f7119"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.667,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.020683900000001643,
+          "lon": 0.09213589999999527
+        }
+      },
+      "status": "unconfirmed",
+      "elapsedSeconds": 14.39,
+      "recommendedChanges": {
+        "name": "شركة مهارة للموارد البشرية",
+        "phones": [
+          "0500977737",
+          "920011151"
+        ],
+        "coordinates": [
+          24.7782861,
+          46.6896959
+        ],
+        "address": "شركة مهارة للموارد البشرية، حي، مخرج 6، الطريق الدائري الشمالي، التعاون، الرياض 12477",
+        "maps": "https://www.google.com/maps/?cid=16007635654756233497"
+      }
+    },
+    {
+      "id": "phase5-google-office-088ad61410d3",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب ريادة الشرق للعقارات",
+        "address": "QQ5G+CG3",
+        "phones": [
+          "0112399832"
+        ],
+        "coordinates": [
+          24.75851,
+          46.7763
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ0UC02rkBLz4RYQTIl6L-rhM",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ0UC02rkBLz4RYQTIl6L-rhM&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:16:13Z",
+      "new": {
+        "name": "مكتب ريادة الشرق للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الملك فيصل",
+        "address": "QQ5G+CG3 مكتب ريادة الشرق للعقارات، الملك فيصل، الرياض 13215",
+        "phone": "0112399832",
+        "coordinates": [
+          24.7585123,
+          46.776282099999996
+        ],
+        "placeId": "ChIJ0UC02rkBLz4RYQTIl6L-rhM",
+        "featureId": "0x3e2f01b9dab440d1:0x13aefea297c80461"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 2.2999999984563146e-06,
+          "lon": -1.790000000312375e-05
+        }
+      },
+      "status": "verified",
+      "elapsedSeconds": 13.49,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-146ab753a6f1",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب مدى الشرق للعقارات",
+        "address": "شارع حليمة السعدية",
+        "phones": [
+          "0507013383"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%AF%D9%89%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJfxsrowsFLz4R4bCU1Qgrrkw",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%AF%D9%89%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJfxsrowsFLz4R4bCU1Qgrrkw&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:13:18Z",
+      "new": {
+        "name": "مكتب مدى الشرق للعقارات",
+        "categories": [
+          "وكالة عقارات",
+          "خدمة ترميم المباني",
+          "وكيل عقاري"
+        ],
+        "district": "منفوحة الجديدة",
+        "address": "مكتب مدى الشرق للعقارات، شارع حليمة السعدية، منفوحة الجديدة، الرياض 12656",
+        "phone": "0507013383",
+        "coordinates": [
+          24.611876499999997,
+          46.7196393
+        ],
+        "placeId": "ChIJfxsrowsFLz4R4bCU1Qgrrkw",
+        "featureId": "0x3e2f050ba32b1b7f:0x4cae2b08d594b0e1"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "nameSimilarity": 1.0
+      },
+      "status": "verified",
+      "elapsedSeconds": 14.73,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-1bd1f1702e97",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب منصة الشرق للخدمات العقارية",
+        "address": "7072، الجنادرية، الرياض 13615 2441",
+        "phones": [
+          "0502202103"
+        ],
+        "coordinates": [
+          24.87442,
+          46.91436
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D9%86%D8%B5%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJebozaPdVLj4R94jdsnAbFv4",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D9%86%D8%B5%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJebozaPdVLj4R94jdsnAbFv4&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:16:13Z",
+      "new": {
+        "name": "مكتب منصة الشرق للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الجنادرية",
+        "address": "مكتب منصة الشرق للخدمات العقارية، 7072، الجنادرية، الرياض 13615 2441،، الرياض 13615",
+        "phone": "0502202103",
+        "coordinates": [
+          24.8479775,
+          46.8644974
+        ],
+        "placeId": "ChIJebozaPdVLj4R94jdsnAbFv4",
+        "featureId": "0x3e2e55f76833ba79:0xfe161b70b2dd88f7"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.0264425000000017,
+          "lon": -0.04986260000000442
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 13.58,
+      "recommendedChanges": {
+        "coordinates": [
+          24.8479775,
+          46.8644974
+        ],
+        "address": "مكتب منصة الشرق للخدمات العقارية، 7072، الجنادرية، الرياض 13615 2441،، الرياض 13615",
+        "maps": "https://www.google.com/maps/?cid=18308851505972480247"
+      }
+    },
+    {
+      "id": "phase5-google-office-23c526045757",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب واجهة الخير للعقارات",
+        "address": "الشرق، الرياض 13618",
+        "phones": [
+          "0509994277"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJhzWwOutVLj4RGYfNQcXPr7g",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJhzWwOutVLj4RGYfNQcXPr7g&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:07Z",
+      "new": {
+        "name": "مكتب واجهة الخير للعقارات",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "الشرق",
+        "address": "مكتب واجهة الخير للعقارات، الشرق، الرياض 13618",
+        "phone": "0509994277",
+        "coordinates": [
+          24.871375,
+          46.8631542
+        ],
+        "placeId": "ChIJhzWwOutVLj4RGYfNQcXPr7g",
+        "featureId": "0x3e2e55eb3ab03587:0xb8afcfc541cd8719"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null
+      },
+      "status": "verified",
+      "elapsedSeconds": 13.83,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-597bfd1cf554",
+      "city": "الرياض",
+      "old": {
+        "name": "درة البركات للعقارات",
+        "address": "ابن الهيثم",
+        "phones": [
+          "0502200883"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A8%D8%B1%D9%83%D8%A7%D8%AA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ-WdCiwsALz4RSPUqlqhmFSw",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A8%D8%B1%D9%83%D8%A7%D8%AA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ-WdCiwsALz4RSPUqlqhmFSw&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:12:27Z",
+      "new": {
+        "name": "درة البركات للعقارات",
+        "categories": [
+          "وكالة عقارات",
+          "وكالة عقارات تجارية",
+          "شركة إدارة عقارات",
+          "وكيل عقاري",
+          "وكالة تأجير عقارات"
+        ],
+        "district": "الخليج",
+        "address": "درة البركات للعقارات، ابن الهيثم، الخليج، الرياض 13224",
+        "phone": "0502200883",
+        "coordinates": [
+          24.780958599999998,
+          46.8208225
+        ],
+        "placeId": "ChIJ-WdCiwsALz4RSPUqlqhmFSw",
+        "featureId": "0x3e2f000b8b4267f9:0x2c1566a8962af548"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "nameSimilarity": 1.0
+      },
+      "status": "verified",
+      "elapsedSeconds": 16.57,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-5ae20d45b5c6",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب لوامع للعقارات",
+        "address": "طريق ابي بكر الصديق",
+        "phones": [
+          "0536611153"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%84%D9%88%D8%A7%D9%85%D8%B9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJj62P-1L9Lj4RYEhI2r85ZtI",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%84%D9%88%D8%A7%D9%85%D8%B9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJj62P-1L9Lj4RYEhI2r85ZtI&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:15:59Z",
+      "new": {
+        "name": "مكتب لوامع للعقارات",
+        "categories": [
+          "وكيل عقاري",
+          "وكالة عقارات"
+        ],
+        "district": "المصيف",
+        "address": "مكتب لوامع للعقارات، طريق ابي بكر الصديق، المصيف، الرياض 12467",
+        "phone": "0536611153",
+        "coordinates": [
+          24.761654399999998,
+          46.674207599999995
+        ],
+        "placeId": "ChIJj62P-1L9Lj4RYEhI2r85ZtI",
+        "featureId": "0x3e2efd52fb8fad8f:0xd26639bfda484860"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null
+      },
+      "status": "verified",
+      "elapsedSeconds": 13.69,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-5b0ff9f66c62",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب شرق النسيم للعقارات",
+        "address": "حي، الشيخ علي بن حسين بن محمد",
+        "phones": [
+          "0504225225"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D9%86%D8%B3%D9%8A%D9%85%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJX7dN1RGqLz4RYo2Fgcnk4rk",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D9%86%D8%B3%D9%8A%D9%85%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJX7dN1RGqLz4RYo2Fgcnk4rk&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:12:26Z",
+      "new": {
+        "name": "مكتب شرق النسيم للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "النسيم الشرقي",
+        "address": "مكتب شرق النسيم للعقارات، حي، الشيخ علي بن حسين بن محمد، النسيم الشرقي، الرياض 14243",
+        "phone": "0504225225",
+        "coordinates": [
+          24.737202399999997,
+          46.835016499999995
+        ],
+        "placeId": "ChIJX7dN1RGqLz4RYo2Fgcnk4rk",
+        "featureId": "0x3e2faa11d54db75f:0xb9e2e4c981858d62"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "nameSimilarity": 1.0
+      },
+      "status": "verified",
+      "elapsedSeconds": 16.73,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-5ed012338eac",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب يوسف إبراهيم الجندل للعقارات",
+        "address": "الشيخ عبدالعزيز بن عبدالرحمن بن بشر",
+        "phones": [
+          "0533366886"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%8A%D9%88%D8%B3%D9%81%20%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D8%A7%D9%84%D8%AC%D9%86%D8%AF%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJKdPrPmUBLz4Rv-Qtjewr9wM",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%8A%D9%88%D8%B3%D9%81%20%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D8%A7%D9%84%D8%AC%D9%86%D8%AF%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJKdPrPmUBLz4Rv-Qtjewr9wM&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:16:27Z",
+      "new": {
+        "name": "مكتب يوسف إبراهيم الجندل للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الخليج",
+        "address": "مكتب يوسف إبراهيم الجندل للعقارات، الشيخ عبدالعزيز بن عبدالرحمن بن بشر، الخليج، الرياض 13224",
+        "phone": "0533366886",
+        "coordinates": [
+          24.7825861,
+          46.8000377
+        ],
+        "placeId": "ChIJKdPrPmUBLz4Rv-Qtjewr9wM",
+        "featureId": "0x3e2f01653eebd329:0x3f72bec8d2de4bf"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null
+      },
+      "status": "verified",
+      "elapsedSeconds": 14.38,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-5f2c88b2ddfd",
+      "city": "الرياض",
+      "old": {
+        "name": "ملتقى الشرق الاوسط للعقارات",
+        "address": "RMDB2963، 8531 طريق عرفات الفرعي",
+        "phones": [
+          "0540579001"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%84%D8%AA%D9%82%D9%89%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%A7%D9%88%D8%B3%D8%B7%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ4ensKTQJLz4RS5O0-wecwDc",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%84%D8%AA%D9%82%D9%89%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%A7%D9%88%D8%B3%D8%B7%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ4ensKTQJLz4RS5O0-wecwDc&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:16:06Z",
+      "new": {
+        "name": "ملتقى الشرق الاوسط للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "2963",
+        "address": "ملتقى الشرق الاوسط للعقارات، RMDB2963، 8531 طريق عرفات الفرعي، 2963، الرياض 14519",
+        "phone": "0540579001",
+        "coordinates": [
+          24.5656747,
+          46.7675282
+        ],
+        "placeId": "ChIJ4ensKTQJLz4RS5O0-wecwDc",
+        "featureId": "0x3e2f093429ece9e1:0x37c09c07fbb4934b"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null
+      },
+      "status": "verified",
+      "elapsedSeconds": 13.4,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-5f5389efb147",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب عقارات الفيحاء",
+        "address": "2738 البيان",
+        "phones": [
+          "0543999778"
+        ],
+        "coordinates": [
+          24.87727,
+          46.86154
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%81%D9%8A%D8%AD%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJk0ePNX4HLz4RRC7F2gTfbog",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%81%D9%8A%D8%AD%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJk0ePNX4HLz4RRC7F2gTfbog&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:12:19Z",
+      "new": {
+        "name": "مكتب عقارات الفيحاء",
+        "categories": [
+          "وكالة عقارات",
+          "وكالة تأجير عقارات"
+        ],
+        "district": "السعادة",
+        "address": "مكتب عقارات الفيحاء، 2738 البيان، السعادة، الرياض 14255",
+        "phone": "0543999778",
+        "coordinates": [
+          24.685795499999998,
+          46.823934099999995
+        ],
+        "placeId": "ChIJk0ePNX4HLz4RRC7F2gTfbog",
+        "featureId": "0x3e2f077e358f4793:0x886edf04dac52e44"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.19147450000000177,
+          "lon": -0.037605900000002634
+        },
+        "nameSimilarity": 1.0
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 17.35,
+      "recommendedChanges": {
+        "coordinates": [
+          24.685795499999998,
+          46.823934099999995
+        ],
+        "address": "مكتب عقارات الفيحاء، 2738 البيان، السعادة، الرياض 14255",
+        "maps": "https://www.google.com/maps/?cid=9831040248539590212"
+      }
+    },
+    {
+      "id": "phase5-google-office-7ebac3796afc",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب مساكن الخليج للعقارات",
+        "address": "QRH4+6J3, خالد بن أحمد السديري، حي",
+        "phones": [
+          "0500899092"
+        ],
+        "coordinates": [
+          24.77801,
+          46.80655
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%B3%D8%A7%D9%83%D9%86%20%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ2aCpEBYALz4RM-3-m54Ofok",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%B3%D8%A7%D9%83%D9%86%20%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ2aCpEBYALz4RM-3-m54Ofok&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:12:19Z",
+      "new": {
+        "name": "مكتب مساكن الخليج للعقارات",
+        "categories": [
+          "وكالة عقارات",
+          "شركة إدارة عقارات"
+        ],
+        "district": "الخليج",
+        "address": "QRH4+6J3 مكتب مساكن الخليج للعقارات, خالد بن أحمد السديري، حي، الخليج، الرياض 13224",
+        "phone": "0500899092",
+        "coordinates": [
+          24.778014,
+          46.8065432
+        ],
+        "placeId": "ChIJ2aCpEBYALz4RM-3-m54Ofok",
+        "featureId": "0x3e2f001610a9a0d9:0x897e0e9e9bfeed33"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 4.000000000559112e-06,
+          "lon": -6.8000000013057615e-06
+        },
+        "nameSimilarity": 1.0
+      },
+      "status": "verified",
+      "elapsedSeconds": 17.35,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-892b9f63fe65",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب انوار نجد للخدمات العقارية",
+        "address": "3763، المونسية، الرياض 13249 7445",
+        "phones": [
+          "0502886202"
+        ],
+        "coordinates": [
+          24.83215,
+          46.76761
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%86%D9%88%D8%A7%D8%B1%20%D9%86%D8%AC%D8%AF%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ9X3Ttez_Lj4RTWqVU_hYTVY",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%86%D9%88%D8%A7%D8%B1%20%D9%86%D8%AC%D8%AF%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ9X3Ttez_Lj4RTWqVU_hYTVY&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:15:59Z",
+      "new": {
+        "name": "مكتب انوار نجد للخدمات العقارية",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "المونسية",
+        "address": "مكتب انوار نجد للخدمات العقارية، 3763، المونسية، الرياض 13249 7445،، الرياض 13255",
+        "phone": "0502886202",
+        "coordinates": [
+          24.8372603,
+          46.7601125
+        ],
+        "placeId": "ChIJ9X3Ttez_Lj4RTWqVU_hYTVY",
+        "featureId": "0x3e2effecb5d37df5:0x564d58f853956a4d"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.0051103000000018994,
+          "lon": -0.007497499999999491
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 13.69,
+      "recommendedChanges": {
+        "coordinates": [
+          24.8372603,
+          46.7601125
+        ],
+        "address": "مكتب انوار نجد للخدمات العقارية، 3763، المونسية، الرياض 13249 7445،، الرياض 13255",
+        "maps": "https://www.google.com/maps/?cid=6218724484045957709"
+      }
+    },
+    {
+      "id": "phase5-google-office-8f42c1373bde",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب فيحاء الشرق للعقارات",
+        "address": "PQF5+JH5، حفصة بنت عمر",
+        "phones": [
+          "0110508143"
+        ],
+        "coordinates": [
+          24.72401,
+          46.75898
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%81%D9%8A%D8%AD%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ-WYWDG8BLz4R6MLExkvoG6U",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%81%D9%8A%D8%AD%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ-WYWDG8BLz4R6MLExkvoG6U&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:16:27Z",
+      "new": {
+        "name": "مكتب فيحاء الشرق للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "حي الروضة",
+        "address": "PQF5+JH5 مكتب فيحاء الشرق للعقارات، حفصة بنت عمر, حي الروضة، الرياض 13211",
+        "phone": "0110508143",
+        "coordinates": [
+          24.7240039,
+          46.7589809
+        ],
+        "placeId": "ChIJ-WYWDG8BLz4R6MLExkvoG6U",
+        "featureId": "0x3e2f016f0c1666f9:0xa51be84bc6c4c2e8"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -6.100000000230921e-06,
+          "lon": 8.99999996306633e-07
+        }
+      },
+      "status": "verified",
+      "elapsedSeconds": 14.31,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-a168e131dcfe",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب ضاحية الشرق للعقارات",
+        "address": "طريق الصحابة",
+        "phones": [
+          "920001384"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJRbqiLkr-Lj4RisoujIM8JF4",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJRbqiLkr-Lj4RisoujIM8JF4&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:12:19Z",
+      "new": {
+        "name": "مكتب ضاحية الشرق للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "اليرموك",
+        "address": "مكتب ضاحية الشرق للعقارات، طريق الصحابة، اليرموك، الرياض 13251",
+        "phone": "920001384",
+        "coordinates": [
+          24.8038773,
+          46.782128
+        ],
+        "placeId": "ChIJRbqiLkr-Lj4RisoujIM8JF4",
+        "featureId": "0x3e2efe4a2ea2ba45:0x5e243c838c2eca8a"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "nameSimilarity": 1.0
+      },
+      "status": "verified",
+      "elapsedSeconds": 17.42,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-a38ba32cf81d",
+      "city": "الرياض",
+      "old": {
+        "name": "عقود المستقبل للعقارت فرع رقم ٢ - فرع شرق الرياض - حي المونسية - شارع القماري",
+        "address": "شارع القماري",
+        "phones": [
+          "0501111404"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B9%D9%82%D9%88%D8%AF%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%AA%20%D9%81%D8%B1%D8%B9%20%D8%B1%D9%82%D9%85%20%D9%A2%20-%20%D9%81%D8%B1%D8%B9%20%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D9%88%D9%86%D8%B3%D9%8A%D8%A9%20-%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D9%82%D9%85%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ0bWlDA3_Lj4RjJ6MUmnMUZY",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D8%B9%D9%82%D9%88%D8%AF%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%AA%20%D9%81%D8%B1%D8%B9%20%D8%B1%D9%82%D9%85%20%D9%A2%20-%20%D9%81%D8%B1%D8%B9%20%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D9%88%D9%86%D8%B3%D9%8A%D8%A9%20-%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D9%82%D9%85%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ0bWlDA3_Lj4RjJ6MUmnMUZY&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:12:19Z",
+      "new": {
+        "name": "عقود المستقبل للعقارت فرع رقم ٢ - فرع شرق الرياض - حي المونسية - شارع القماري",
+        "categories": [
+          "مستشار عقارات",
+          "شركة إدارة عقارات",
+          "وكالة عقارات",
+          "وكيل عقاري"
+        ],
+        "district": "المونسية",
+        "address": "عقود المستقبل للعقارت فرع رقم ٢ - فرع شرق الرياض - حي المونسية - شارع القماري، شارع القماري، المونسية، الرياض 13255",
+        "phone": "0501111404",
+        "coordinates": [
+          24.841532899999997,
+          46.7704168
+        ],
+        "placeId": "ChIJ0bWlDA3_Lj4RjJ6MUmnMUZY",
+        "featureId": "0x3e2eff0d0ca5b5d1:0x9651cc69528c9e8c"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "nameSimilarity": 1.0
+      },
+      "status": "verified",
+      "elapsedSeconds": 17.33,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-b4b2898375a7",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب مدار المؤشر للعقارات",
+        "address": "6558 الخزنه، اشبيلية، الرياض 13225 3723",
+        "phones": [
+          "0504272796"
+        ],
+        "coordinates": [
+          24.79237,
+          46.7921
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%A4%D8%B4%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJXX8yjxgBLz4RDZ5isXGyTuw",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%A4%D8%B4%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJXX8yjxgBLz4RDZ5isXGyTuw&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:12:19Z",
+      "new": {
+        "name": "مكتب مدار المؤشر للعقارات",
+        "categories": [
+          "وكالة عقارات",
+          "وكيل عقاري",
+          "مستشار عقارات",
+          "مطوّر عقارات"
+        ],
+        "district": "اشبيلية",
+        "address": "مكتب مدار المؤشر للعقارات، 6558 الخزنه، اشبيلية، الرياض 13225 3723،، الرياض 13225",
+        "phone": "0504272796",
+        "coordinates": [
+          24.781371699999998,
+          46.7831634
+        ],
+        "placeId": "ChIJXX8yjxgBLz4RDZ5isXGyTuw",
+        "featureId": "0x3e2f01188f327f5d:0xec4eb271b1629e0d"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.010998300000000683,
+          "lon": -0.008936599999998407
+        },
+        "nameSimilarity": 1.0
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 17.46,
+      "recommendedChanges": {
+        "coordinates": [
+          24.781371699999998,
+          46.7831634
+        ],
+        "address": "مكتب مدار المؤشر للعقارات، 6558 الخزنه، اشبيلية، الرياض 13225 3723،، الرياض 13225",
+        "maps": "https://www.google.com/maps/?cid=17027743442511502861"
+      }
+    },
+    {
+      "id": "phase5-google-office-b97783925b63",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب شرق الرياض للخدمات العقارية",
+        "address": "PR2R+FGG، يزيد بن مزيد",
+        "phones": [
+          "0533085660"
+        ],
+        "coordinates": [
+          24.70119,
+          46.84133
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJAd3sZ72pLz4RfR0nfwCEvmA",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJAd3sZ72pLz4RfR0nfwCEvmA&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:12:19Z",
+      "new": {
+        "name": "مكتب شرق الرياض للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "السعادة",
+        "address": "PR2R+FGG مكتب شرق الرياض للخدمات العقارية، يزيد بن مزيد، السعادة، الرياض 14257",
+        "phone": "0533085660",
+        "coordinates": [
+          24.7011888,
+          46.8413196
+        ],
+        "placeId": "ChIJAd3sZ72pLz4RfR0nfwCEvmA",
+        "featureId": "0x3e2fa9bd67ecdd01:0x60be84007f271d7d"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -1.1999999998124622e-06,
+          "lon": -1.0400000000743148e-05
+        },
+        "nameSimilarity": 1.0
+      },
+      "status": "verified",
+      "elapsedSeconds": 17.34,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-c5dc379ac471",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب سحابة العارض للعقارات",
+        "address": "PRX6+C6G، عبيدة بن الحارث",
+        "phones": [
+          "0560013999"
+        ],
+        "coordinates": [
+          24.74856,
+          46.81058
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B3%D8%AD%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ3aA_J4wALz4RA7qSptnoxHw",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B3%D8%AD%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ3aA_J4wALz4RA7qSptnoxHw&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:15:53Z",
+      "new": {
+        "name": "مكتب سحابة العارض للعقارات",
+        "categories": [
+          "وكالة عقارات",
+          "مدير ممتلكات",
+          "وكالة تأجير عقارات"
+        ],
+        "district": "النهضة",
+        "address": "PRX6+C6G مكتب سحابة العارض للعقارات، عبيدة بن الحارث، النهضة، الرياض 13221",
+        "phone": "0560013999",
+        "coordinates": [
+          24.748568,
+          46.8105712
+        ],
+        "placeId": "ChIJ3aA_J4wALz4RA7qSptnoxHw",
+        "featureId": "0x3e2f008c273fa0dd:0x7cc4e8d9a692ba03"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 7.99999999756551e-06,
+          "lon": -8.800000003361674e-06
+        }
+      },
+      "status": "verified",
+      "elapsedSeconds": 13.75,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-f26cd7c8b2bd",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب العواد للعقارات",
+        "address": "3284 حفصة بنت عمر",
+        "phones": [
+          "0547743344"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D8%AF%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ54mRCP4ALz4RDVT5SIhgxb8",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D8%AF%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJ54mRCP4ALz4RDVT5SIhgxb8&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:16:20Z",
+      "new": {
+        "name": "مكتب العواد للعقارات",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": "الاندلس",
+        "address": "مكتب العواد للعقارات، 3284 حفصة بنت عمر، الاندلس، الرياض 13212",
+        "phone": "0547743344",
+        "coordinates": [
+          24.7420014,
+          46.7874473
+        ],
+        "placeId": "ChIJ54mRCP4ALz4RDVT5SIhgxb8",
+        "featureId": "0x3e2f00fe089189e7:0xbfc5608848f9540d"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null
+      },
+      "status": "verified",
+      "elapsedSeconds": 14.06,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "phase5-google-office-f526d18e8f63",
+      "city": "الرياض",
+      "old": {
+        "name": "الصخور الشامخه للعقارات",
+        "address": "3869، المونسية، الرياض 13249 6918",
+        "phones": [
+          "0115166939"
+        ],
+        "coordinates": [
+          24.83215,
+          46.76761
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%B5%D8%AE%D9%88%D8%B1%20%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D8%AE%D9%87%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJz0FNA9T_Lj4RW7wEh8lKkWI",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%B5%D8%AE%D9%88%D8%B1%20%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D8%AE%D9%87%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJz0FNA9T_Lj4RW7wEh8lKkWI&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:15:59Z",
+      "new": {
+        "name": "الصخور الشامخه للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "المونسية",
+        "address": "الصخور الشامخه للعقارات، 3869، المونسية، الرياض 13249 6918،",
+        "phone": "0115166939",
+        "coordinates": [
+          24.8324137,
+          46.761113599999995
+        ],
+        "placeId": "ChIJz0FNA9T_Lj4RW7wEh8lKkWI",
+        "featureId": "0x3e2effd4034d41cf:0x62914ac98704bc5b"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.00026370000000142113,
+          "lon": -0.006496400000003177
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 13.74,
+      "recommendedChanges": {
+        "coordinates": [
+          24.8324137,
+          46.761113599999995
+        ],
+        "address": "الصخور الشامخه للعقارات، 3869، المونسية، الرياض 13249 6918،",
+        "maps": "https://www.google.com/maps/?cid=7102540316754099291"
+      }
+    },
+    {
+      "id": "phase5-google-office-f7169839e11d",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب عالم الأمنيات للعقارات",
+        "address": "حي، شارع سبأ",
+        "phones": [
+          "0559304404"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D8%A3%D9%85%D9%86%D9%8A%D8%A7%D8%AA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJn0g8ThWqLz4REg3z5EnC3oU",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D8%A3%D9%85%D9%86%D9%8A%D8%A7%D8%AA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&query_place_id=ChIJn0g8ThWqLz4REg3z5EnC3oU&hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:12:27Z",
+      "new": {
+        "name": "مكتب عالم الأمنيات للعقارات",
+        "categories": [
+          "وكالة عقارات",
+          "وكالة تأجير عقارات"
+        ],
+        "district": "النسيم الشرقي",
+        "address": "مكتب عالم الأمنيات للعقارات، حي، شارع سبأ، النسيم الشرقي، الرياض 14242",
+        "phone": "0559304404",
+        "coordinates": [
+          24.7471689,
+          46.8440042
+        ],
+        "placeId": "ChIJn0g8ThWqLz4REg3z5EnC3oU",
+        "featureId": "0x3e2faa154e3c489f:0x85dec249e4f30d12"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "nameSimilarity": 1.0
+      },
+      "status": "verified",
+      "elapsedSeconds": 16.57,
+      "recommendedChanges": {}
+    },
+    {
+      "id": "v9-office-149ab6a6d011",
+      "city": "الرياض",
+      "old": {
+        "name": "عقارات غرب الرياض طويق",
+        "address": "طويق/العوالي",
+        "phones": [
+          "0560821297"
+        ],
+        "coordinates": [
+          24.55916,
+          46.61259
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B1%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%B7%D9%88%D9%8A%D9%82%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%BA%D8%B1%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%B7%D9%88%D9%8A%D9%82%200560821297%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:49Z",
+      "new": {
+        "name": "عقارات غرب الرياض طويق",
+        "categories": [
+          "التنمية السكنية",
+          "خدمات الاستثمار",
+          "وكالة عقارات",
+          "مطوّر عقارات"
+        ],
+        "district": "العوالي",
+        "address": "عقارات غرب الرياض طويق، طريق نجم الدين الأيوبي الفرعي، العوالي، الرياض 14924، 14924،، الرياض 14924",
+        "phone": "0560821297",
+        "coordinates": [
+          24.552482299999998,
+          46.618102
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f115651a585ad:0xa04d05777a3f0158"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.006677700000000897,
+          "lon": 0.00551200000000307
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 14.52,
+      "recommendedChanges": {
+        "coordinates": [
+          24.552482299999998,
+          46.618102
+        ],
+        "address": "عقارات غرب الرياض طويق، طريق نجم الدين الأيوبي الفرعي، العوالي، الرياض 14924، 14924،، الرياض 14924",
+        "maps": "https://www.google.com/maps/?cid=11550894629985386840"
+      }
+    },
+    {
+      "id": "v9-office-2b1f50bb5a1d",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب الشقحاء للعقارات",
+        "address": "الشفا",
+        "phones": [
+          "0583871048"
+        ],
+        "coordinates": [
+          24.56495,
+          46.6985
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B4%D9%82%D8%AD%D8%A7%D8%A1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B4%D9%82%D8%AD%D8%A7%D8%A1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200583871048%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:35Z",
+      "new": {
+        "name": "مكتب الشقحاء للعقارات حي الشفا",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الشفا",
+        "address": "مكتب الشقحاء للعقارات حي الشفا، 3820 زيد بن علي الجريسي، 7602، الشفا، الرياض 14713،",
+        "phone": "0583871048",
+        "coordinates": [
+          24.565729599999997,
+          46.6997382
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f0fed64cd468b:0x90b903af25ea09d7"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.824,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.000779599999997771,
+          "lon": 0.0012381999999959703
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 14.62,
+      "recommendedChanges": {
+        "name": "مكتب الشقحاء للعقارات حي الشفا",
+        "maps": "https://www.google.com/maps/?cid=10428370462943349207"
+      }
+    },
+    {
+      "id": "v9-office-4ac416a3f7eb",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب عقار الدار البيضاء",
+        "address": "الدار البيضاء",
+        "phones": [
+          "0544651438"
+        ],
+        "coordinates": [
+          24.56523,
+          46.7915
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D9%8A%D8%B6%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D9%8A%D8%B6%D8%A7%D8%A1%200544651438%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:35Z",
+      "new": {
+        "name": "مكتب عقار الدار البيضاء",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "الدار البيضاء",
+        "address": "مكتب عقار الدار البيضاء، 3537 محمد رشيد رضا، الدار البيضاء، 8442، الرياض 14519",
+        "phone": "0544651438",
+        "coordinates": [
+          24.5648268,
+          46.7733639
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f090013950a43:0xac08affb68e5b895"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.00040320000000093614,
+          "lon": -0.018136099999999544
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 14.69,
+      "recommendedChanges": {
+        "coordinates": [
+          24.5648268,
+          46.7733639
+        ],
+        "address": "مكتب عقار الدار البيضاء، 3537 محمد رشيد رضا، الدار البيضاء، 8442، الرياض 14519",
+        "maps": "https://www.google.com/maps/?cid=12396351468668827797"
+      }
+    },
+    {
+      "id": "v9-office-88679d34dc25",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب نجد النسيم",
+        "address": "النسيم الغربي",
+        "phones": [
+          "0555227902"
+        ],
+        "coordinates": [
+          24.72564,
+          46.82399
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%86%D8%AC%D8%AF%20%D8%A7%D9%84%D9%86%D8%B3%D9%8A%D9%85%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%86%D8%AC%D8%AF%20%D8%A7%D9%84%D9%86%D8%B3%D9%8A%D9%85%200555227902%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:21Z",
+      "new": {
+        "name": "مكتب نجد النسيم",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "النسيم الغربي",
+        "address": "مكتب نجد النسيم، شارع أسامة بن زيد، النسيم الغربي، الرياض 14235",
+        "phone": "0555227902",
+        "coordinates": [
+          24.7177348,
+          46.8326466
+        ],
+        "placeId": null,
+        "featureId": "0x3e2fa9a6cdfde981:0xf557c116cd1936f1"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.007905199999999724,
+          "lon": 0.008656599999994796
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 13.71,
+      "recommendedChanges": {
+        "coordinates": [
+          24.7177348,
+          46.8326466
+        ],
+        "address": "مكتب نجد النسيم، شارع أسامة بن زيد، النسيم الغربي، الرياض 14235",
+        "maps": "https://www.google.com/maps/?cid=17678811165940594417"
+      }
+    },
+    {
+      "id": "v9-office-a9e9462a6025",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب العواد للعقارات",
+        "address": "المروة",
+        "phones": [
+          "0552890803"
+        ],
+        "coordinates": [
+          24.54057,
+          46.67578
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D8%AF%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D8%AF%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200552890803%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:21Z",
+      "new": {
+        "name": "مكتب العواد للعقارات",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": "المروة",
+        "address": "مكتب العواد للعقارات، حي، نجران، المروة، الرياض 11428",
+        "phone": "0552890803",
+        "coordinates": [
+          24.5388445,
+          46.6705551
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f0e2758d70d25:0x464349496a1d9942"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.0017254999999991583,
+          "lon": -0.005224900000001753
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 13.78,
+      "recommendedChanges": {
+        "coordinates": [
+          24.5388445,
+          46.6705551
+        ],
+        "address": "مكتب العواد للعقارات، حي، نجران، المروة، الرياض 11428",
+        "maps": "https://www.google.com/maps/?cid=5062970985756334402"
+      }
+    },
+    {
+      "id": "v9-office-abfd36f385b5",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب زاوية نمار للعقارات",
+        "address": "نمار",
+        "phones": [
+          "0554202149"
+        ],
+        "coordinates": [
+          24.5691,
+          46.67786
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B2%D8%A7%D9%88%D9%8A%D8%A9%20%D9%86%D9%85%D8%A7%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B2%D8%A7%D9%88%D9%8A%D8%A9%20%D9%86%D9%85%D8%A7%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200554202149%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:49Z",
+      "new": {
+        "name": "مكتب زاوية نمار للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "نمار",
+        "address": "مكتب زاوية نمار للعقارات، الشيخ محمد بن عبداللطيف بن عبدالرحمن، نمار، الرياض 14961",
+        "phone": "0554202149",
+        "coordinates": [
+          24.576808699999997,
+          46.6923226
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f0fde1f425011:0xbd761696b927fa49"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.0077086999999984585,
+          "lon": 0.014462599999994552
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 14.57,
+      "recommendedChanges": {
+        "coordinates": [
+          24.576808699999997,
+          46.6923226
+        ],
+        "address": "مكتب زاوية نمار للعقارات، الشيخ محمد بن عبداللطيف بن عبدالرحمن، نمار، الرياض 14961",
+        "maps": "https://www.google.com/maps/?cid=13652124157027547721"
+      }
+    },
+    {
+      "id": "v9-office-ad5038609aba",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب عقار العزيزية",
+        "address": "العزيزية",
+        "phones": [
+          "0544651438"
+        ],
+        "coordinates": [
+          24.58763,
+          46.77009
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9%200544651438%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:35Z",
+      "new": {
+        "name": "مكتب عقار العزيزية",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "العزيزية",
+        "address": "JQ23+FCJ مكتب عقار العزيزية، شارع الشباب، العزيزية، الرياض 14512",
+        "phone": "0544651438",
+        "coordinates": [
+          24.601157099999998,
+          46.7535477
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f090031c689ab:0x990c2867a184dcd8"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.01352709999999746,
+          "lon": -0.016542300000004673
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 14.62,
+      "recommendedChanges": {
+        "coordinates": [
+          24.601157099999998,
+          46.7535477
+        ],
+        "address": "JQ23+FCJ مكتب عقار العزيزية، شارع الشباب، العزيزية، الرياض 14512",
+        "maps": "https://www.google.com/maps/?cid=11028234013080083672"
+      }
+    },
+    {
+      "id": "v9-office-b3274bcf0c8f",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب النسيم الشرقي العقاري",
+        "address": "النسيم الشرقي",
+        "phones": [
+          "0559042849"
+        ],
+        "coordinates": [
+          24.73868,
+          46.84553
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%86%D8%B3%D9%8A%D9%85%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%86%D8%B3%D9%8A%D9%85%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200559042849%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:22Z",
+      "new": {
+        "name": "مكتب النسيم الشرقي",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "حي النسيم الشرقي",
+        "address": "مكتب النسيم الشرقي، 8889 محمد بن هندي، حي النسيم الشرقي، RQNA2429، 2429، الرياض 14243",
+        "phone": "0558064448",
+        "coordinates": [
+          24.7394534,
+          46.834759999999996
+        ],
+        "placeId": null,
+        "featureId": "0x3e2fab550f993acb:0x24c8c8c494dac0e"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.818,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.0007733999999999241,
+          "lon": -0.010770000000000834
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 13.23,
+      "recommendedChanges": {
+        "name": "مكتب النسيم الشرقي",
+        "phones": [
+          "0559042849",
+          "0558064448"
+        ],
+        "coordinates": [
+          24.7394534,
+          46.834759999999996
+        ],
+        "address": "مكتب النسيم الشرقي، 8889 محمد بن هندي، حي النسيم الشرقي، RQNA2429، 2429، الرياض 14243",
+        "maps": "https://www.google.com/maps/?cid=165661820459002894"
+      }
+    },
+    {
+      "id": "v9-office-c42ff1081666",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب مدن العقار للعقارات",
+        "address": "ظهرة لبن",
+        "phones": [
+          "0554127237"
+        ],
+        "coordinates": [
+          24.62903,
+          46.54172
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%AF%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%AF%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200554127237%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:49Z",
+      "new": {
+        "name": "مكتب مدن العقار للعقارات",
+        "categories": [
+          "وكالة عقارات",
+          "وكالة تأجير شقق",
+          "تأجير مصانع وآلات"
+        ],
+        "district": "ظهرة لبن",
+        "address": "مكتب مدن العقار للعقارات، شارع الطائف، ظهرة لبن، الرياض 11590",
+        "phone": "0554127237",
+        "coordinates": [
+          24.6479319,
+          46.5531132
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f1f763d3e7105:0xaa28e64e4d71c938"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.018901899999999472,
+          "lon": 0.011393200000000547
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 15.07,
+      "recommendedChanges": {
+        "coordinates": [
+          24.6479319,
+          46.5531132
+        ],
+        "address": "مكتب مدن العقار للعقارات، شارع الطائف، ظهرة لبن، الرياض 11590",
+        "maps": "https://www.google.com/maps/?cid=12261303209497315640"
+      }
+    },
+    {
+      "id": "v9-office-cc17b967bdb0",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب تطوير البدر للعقارات",
+        "address": "بدر",
+        "phones": [
+          "0557973223"
+        ],
+        "coordinates": [
+          24.52552,
+          46.72609
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A8%D8%AF%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A8%D8%AF%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200557973223%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:35Z",
+      "new": {
+        "name": "مكتب تطوير البدر للعقارات",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "بدر",
+        "address": "مكتب تطوير البدر للعقارات، ثنيان ابا الخيل، بدر، الرياض 14724",
+        "phone": "0557973223",
+        "coordinates": [
+          24.558352199999998,
+          46.7107156
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f0f48bf82c321:0x356ab8e645fe0d1c"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.03283219999999787,
+          "lon": -0.0153743999999989
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 14.53,
+      "recommendedChanges": {
+        "coordinates": [
+          24.558352199999998,
+          46.7107156
+        ],
+        "address": "مكتب تطوير البدر للعقارات، ثنيان ابا الخيل، بدر، الرياض 14724",
+        "maps": "https://www.google.com/maps/?cid=3849092130697776412"
+      }
+    },
+    {
+      "id": "v9-office-ceaf0f7539cb",
+      "city": "الرياض",
+      "old": {
+        "name": "مكتب الخريف للعقارات",
+        "address": "السلام",
+        "phones": [
+          "0554581854"
+        ],
+        "coordinates": [
+          24.70724,
+          46.81094
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D9%81%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "activity": null
+      },
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D9%81%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200554581854%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6?hl=ar&gl=sa",
+      "source": "live Google Maps preview card",
+      "checkedAt": "2026-10-12T11:18:22Z",
+      "new": {
+        "name": "مكتب الخريف للعقارات",
+        "categories": [
+          "شركة إدارة عقارات",
+          "وكالة تأجير شقق",
+          "مستشار تسويق"
+        ],
+        "district": "حي، السلام",
+        "address": "مكتب الخريف للعقارات، الزبير بن العوام، حي، السلام، الرياض 14214",
+        "phone": "0554581854",
+        "coordinates": [
+          24.7103817,
+          46.8162733
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f07461d331ce7:0x988bb37239c98d51"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.003141700000000469,
+          "lon": 0.005333299999996655
+        }
+      },
+      "status": "needs_correction",
+      "elapsedSeconds": 13.22,
+      "recommendedChanges": {
+        "coordinates": [
+          24.7103817,
+          46.8162733
+        ],
+        "address": "مكتب الخريف للعقارات، الزبير بن العوام، حي، السلام، الرياض 14214",
+        "maps": "https://www.google.com/maps/?cid=10992076618704981329"
+      }
+    }
+  ]
+}

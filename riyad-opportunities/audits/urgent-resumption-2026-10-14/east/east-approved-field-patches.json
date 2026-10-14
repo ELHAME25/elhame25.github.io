@@ -1,0 +1,126 @@
+{
+  "patches": [
+    {
+      "id": "phase5-google-office-528cd374f4e9",
+      "expected": {
+        "activity": null,
+        "lat": null,
+        "lon": null
+      },
+      "patch": {
+        "activity": "وكالة عقارات",
+        "lat": 26.4304421,
+        "lon": 50.0269579
+      },
+      "evidenceFile": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_SESSION2_LANE3_RESULTS_2026-10-14.json",
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJe2KK6PL9ST4RRWpPrrwqaHc",
+      "observed": {
+        "name": "مكتب ابراج النور ٤",
+        "activity": "وكالة عقارات",
+        "phone": "0571329769",
+        "lat": 26.4304421,
+        "lon": 50.0269579
+      },
+      "directUIRead": true,
+      "reviewDecision": "recover_explicit_saved_card_observations_no_new_verification"
+    },
+    {
+      "id": "phase5-google-office-4071a820c49b",
+      "expected": {
+        "activity": null,
+        "lat": null,
+        "lon": null
+      },
+      "patch": {
+        "activity": "وكالة تأجير عقارات",
+        "lat": 26.4520254,
+        "lon": 50.0919648
+      },
+      "evidenceFile": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_SESSION2_LANE3_RESULTS_2026-10-14.json",
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJ6d8EgdX9ST4RAaSYqq6rXuk",
+      "observed": {
+        "name": "مكتب الفانوس الذهبي للعقارات",
+        "activity": "وكالة تأجير عقارات",
+        "phone": "0504806548",
+        "lat": 26.4520254,
+        "lon": 50.0919648
+      },
+      "directUIRead": true,
+      "reviewDecision": "recover_explicit_saved_card_observations_no_new_verification"
+    },
+    {
+      "id": "phase5-google-office-4e77b798bab6",
+      "expected": {
+        "activity": null,
+        "lat": null,
+        "lon": null
+      },
+      "patch": {
+        "activity": "وكالة عقارات",
+        "lat": 26.4072609,
+        "lon": 50.0428302
+      },
+      "evidenceFile": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_SESSION2_LANE3_RESULTS_2026-10-14.json",
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJ9Y51TAz9ST4RWiwVeV1Pv0Y",
+      "observed": {
+        "name": "مكتب المحرقي للخدمات العقارية",
+        "activity": "وكالة عقارات",
+        "phone": "0553941916",
+        "lat": 26.4072609,
+        "lon": 50.0428302
+      },
+      "directUIRead": true,
+      "reviewDecision": "recover_explicit_saved_card_observations_no_new_verification"
+    },
+    {
+      "id": "phase5-google-office-644d77a455d9",
+      "expected": {
+        "activity": null,
+        "lat": null,
+        "lon": null
+      },
+      "patch": {
+        "activity": "وكالة عقارات",
+        "lat": 26.3659148,
+        "lon": 50.0314396
+      },
+      "evidenceFile": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_SESSION2_LANE3_RESULTS_2026-10-14.json",
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJ6fVb_3DjST4RoOR69yKADLU",
+      "observed": {
+        "name": "مكتب الادارة الحصرية للخدمات العقارية",
+        "activity": "وكالة عقارات",
+        "phone": "0548491066",
+        "lat": 26.3659148,
+        "lon": 50.0314396
+      },
+      "directUIRead": true,
+      "reviewDecision": "recover_explicit_saved_card_observations_no_new_verification"
+    },
+    {
+      "id": "phase5-google-office-5d91b7ae218b",
+      "expected": {
+        "activity": null,
+        "lat": null,
+        "lon": null
+      },
+      "patch": {
+        "activity": "وكالة عقارات",
+        "lat": 26.4138902,
+        "lon": 50.1121966
+      },
+      "evidenceFile": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_SESSION2_LANE3_RESULTS_2026-10-14.json",
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJHd2sQ0P7ST4RxaEouDhn4IY",
+      "observed": {
+        "name": "البيت السعيد للخدمات العقارية",
+        "activity": "وكالة عقارات",
+        "phone": "0550553088",
+        "lat": 26.4138902,
+        "lon": 50.1121966
+      },
+      "directUIRead": true,
+      "reviewDecision": "recover_explicit_saved_card_observations_no_new_verification"
+    }
+  ],
+  "excludedDeltaCount": 7,
+  "excludedReason": "2 web edits,4 mere Maps URL conversion,1 country suffix formatting; no needed correction"
+}

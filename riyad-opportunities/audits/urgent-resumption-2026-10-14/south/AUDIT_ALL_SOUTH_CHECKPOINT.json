@@ -1,0 +1,620 @@
+{
+  "schema": "office-maps-audit-checkpoint-v1",
+  "updatedAt": "2026-10-12T18:20:00+03:00",
+  "scope": "route-5-qassim-asir-jazan-najran-baha-and-unassigned-cities",
+  "sourceBranch": "fix/scope-counts-nhc-20261010",
+  "sourceHead": "4c032904",
+  "priorVerifiedIdsFile": "/tmp/prior_verified_office_ids.txt",
+  "priorVerifiedNationalCount": 213,
+  "policy": {
+    "googleMapsCardRequired": true,
+    "websitesChecked": false,
+    "whatsappChecked": false,
+    "qadisiyahModified": false,
+    "dataFileModified": false,
+    "githubModified": false
+  },
+  "summary": {
+    "recordsInCheckpoint": 161,
+    "routeRecordsInCheckpoint": 152,
+    "centralRecordsExcludedFromRouteTotal": 9,
+    "fullyVerifiedNameActivityLocationPhone": 64,
+    "verifiedLocation": 73,
+    "verifiedPhone": 71,
+    "noPhonePublishedOnMaps": 2,
+    "correctionCandidates": 10,
+    "closedOrExcludedCandidates": 2,
+    "partiallyVerified": 14,
+    "unconfirmed": 62,
+    "note": "The first 9 records (Artaweiyah/Ghat) were completed before route reassignment and are excluded from this route's totals; the active scope here is Al Baha and southern regions only."
+  },
+  "excludedCentralIds": [
+    "national-google-office-ChIJ1Vd3wXIT1T8RFLWAWHWGkzM",
+    "national-google-office-ChIJPyQqw0sT1T8RdhZJ_kPNxmY",
+    "national-google-office-ChIJUc8ZCgAT1T8ReqUgEMbNvyg",
+    "national-google-office-ChIJB0Cn10YN1T8RCsXQ59a02CM",
+    "national-google-office-ChIJOyxhVlYT1T8Rah6Z8aqRbdc",
+    "national-google-office-ChIJQcmVrgP9fxURV5Z-IriT6hI",
+    "national-google-office-ChIJJwjtFQD9fxURiN0H1atu7-g",
+    "national-google-office-ChIJgRulCSP8fxURzsxi0OvN3XY",
+    "national-google-office-ChIJxXlwOwD9fxURfSTqoJ6vC-s"
+  ],
+  "records": [
+    {
+      "id": "national-google-office-ChIJ1Vd3wXIT1T8RFLWAWHWGkzM",
+      "city": "الأرطاوية",
+      "old": {"name": "عقار الأرطاوية", "phone": "0552701483", "address": "G86X+C5W، طريق 50، الأرطاوية 15727"},
+      "new": {"name": "عقار الأرطاوية", "phone": "0552701483", "address": "G86X+C5W، طريق 50، الأرطاوية 15727", "activity": "شركة إدارة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJ1Vd3wXIT1T8RFLWAWHWGkzM", "observed": "title, real-estate category, Artaweiyah address and +966552701483"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "national-google-office-ChIJPyQqw0sT1T8RdhZJ_kPNxmY",
+      "city": "الأرطاوية",
+      "old": {"name": "منارة التميز للعقارات والمقاولات العامة", "phone": "0501919747", "address": "كعب بن مالك، الأرطاوية 15738"},
+      "new": {"name": "منارة التميز للعقارات والمقاولات العامة", "phone": "0501919747", "address": "كعب بن مالك، الأرطاوية 15738", "activity": "وكالة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJPyQqw0sT1T8RdhZJ_kPNxmY", "observed": "title, real-estate category, Artaweiyah address and +966501919747"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "national-google-office-ChIJUc8ZCgAT1T8ReqUgEMbNvyg",
+      "city": "الأرطاوية",
+      "old": {"name": "مبدى الثقة العقاري", "phone": "0557971666", "address": "حي سلطانة، الأرطاوية 15738"},
+      "new": {"name": "مبدى الثقة العقاري", "phone": "0557971666", "address": "حي سلطانة، الأرطاوية 15738", "activity": "وكالة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJUc8ZCgAT1T8ReqUgEMbNvyg", "observed": "title, real-estate category, full Sultana address, plus code F9X2+XH and +966557971666"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "national-google-office-ChIJB0Cn10YN1T8RCsXQ59a02CM",
+      "city": "الأرطاوية",
+      "old": {"name": "اليمامة للعقارات", "phone": "0531020955", "address": "طريق حفرالباطن المجمعة، الأرطاوية 15971"},
+      "new": {"name": "اليمامة للعقارات", "phone": "0531020955", "address": "طريق حفرالباطن المجمعة، الأرطاوية 15971", "activity": "وكالة عقارات تجارية"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJB0Cn10YN1T8RCsXQ59a02CM", "observed": "title, commercial real-estate category, address, plus code G87X+MF and +966531020955"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "national-google-office-ChIJOyxhVlYT1T8Rah6Z8aqRbdc",
+      "city": "الأرطاوية",
+      "old": {"name": "مكتب الرخيمي العقاري", "phone": "0553241376", "address": "طريق الملك خالد، الأرطاوية 15738"},
+      "new": {"name": "مكتب الرخيمي العقاري", "phone": "0553241376", "address": "طريق الملك خالد، الأرطاوية 15738", "activity": "مكتب الشركات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJOyxhVlYT1T8Rah6Z8aqRbdc", "observed": "title, office category, address, plus code G85X+J9 and +966553241376"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "national-google-office-ChIJQcmVrgP9fxURV5Z-IriT6hI",
+      "city": "الغاط",
+      "old": {"name": "مكتب الغنيم للعقارات", "phone": "0504481278", "address": "طريق الملك عبدالعزيز، الخزامي، الغاط 11914"},
+      "new": {"name": "مكتب الغنيم للعقارات", "phone": "0504481278", "address": "طريق الملك عبدالعزيز، الخزامي، الغاط 11914", "activity": "مكتب الشركات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJQcmVrgP9fxURV5Z-IriT6hI", "observed": "title, office category, full Al-Ghat address, plus code 2WGX+PF and +966504481278"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "national-google-office-ChIJJwjtFQD9fxURiN0H1atu7-g",
+      "city": "الغاط",
+      "old": {"name": "مكتب الحصين للخدمات العقارية", "phone": "0509399777", "address": "حي الورود، الغاط 15723"},
+      "new": {"name": "مكتب الحصين للخدمات العقارية", "phone": "0509399777", "address": "حي الورود، الغاط 15723", "activity": "شركة إدارة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJJwjtFQD9fxURiN0H1atu7-g", "observed": "title, real-estate category, full address, plus code 2XG5+C2 and +966509399777"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "national-google-office-ChIJgRulCSP8fxURzsxi0OvN3XY",
+      "city": "الغاط",
+      "old": {"name": "ابوابراهيم للعقارات", "phone": "0505121968", "address": "الخزامي، الغاط 15721"},
+      "new": {"name": "ابوابراهيم للعقارات", "phone": "0505121968", "address": "الخزامي، الغاط 15721", "activity": "شركة إدارة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJgRulCSP8fxURzsxi0OvN3XY", "observed": "title, real-estate category, plus-code address 2WHW+FR9 and +966505121968"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "national-google-office-ChIJxXlwOwD9fxURfSTqoJ6vC-s",
+      "city": "الغاط",
+      "old": {"name": "مكتب عبدالرزاق الفوزان للعقارات", "phone": "0553846754", "address": "طريق الملك عبدالعزيز، المصيف، الغاط 15911"},
+      "new": {"name": "مكتب عبدالرزاق الفوزان للعقارات", "phone": "0553846754", "address": "طريق الملك عبدالعزيز، المصيف، الغاط 15911", "activity": "شركة إدارة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJxXlwOwD9fxURfSTqoJ6vC-s", "observed": "title, real-estate category, full address, plus code 2WQV+V4 and +966553846754"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-69fc316f4c01",
+      "city": "الباحة",
+      "old": {"name": "مكتب عقار الباحة للخدمات العقارية", "phone": "0558191926", "address": "طريق الملك فهد، الحاوية، الباحة 65525"},
+      "new": {"name": "مكتب عقار الباحة للخدمات العقارية", "phone": "0558191926", "address": "طريق الملك فهد، الحاوية، الباحة 65525", "activity": "وكالة عقارات تجارية"},
+      "evidence": {"source": "restored direct Maps evidence plus live card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJh7oQ6QJF7xURSApn68_CQFE", "observed": "same live Place ID and tel:+966558191926; prior duplicate audit proves same title, phone and pin"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-7749c06a6df9",
+      "city": "الباحة",
+      "old": {"name": "مكتب وسيط الباحة للعقار", "phone": "0599901456", "address": "طريق الملك فهد، الراعب، الباحة 65528"},
+      "new": {"name": "مكتب وسيط الباحة للعقار", "phone": "0599901456", "address": "طريق الملك فهد، الراعب، الباحة 65528", "activity": "وكالة عقارات"},
+      "evidence": {"source": "restored direct Maps evidence", "url": "https://www.google.com/maps/place/?q=place_id:ChIJNXZZj4hF7xURROfdhPq4-gQ", "observed": "prior duplicate audit proves same live title, phone, coordinates and Place ID; current Maps related-card title/category also matched"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-d630b3a7aeee",
+      "city": "الباحة",
+      "old": {"name": "مكتب السوادي للخدمات العقارية والعامة والطلابية", "phone": "0177226224", "address": "طريق الملك فهد، حي الباهر، الباحة 65525"},
+      "new": {"name": "مكتب السوادي للخدمات العقارية والعامة والطلابية", "phone": "0177226224", "address": "طريق الملك فهد، حي الباهر، الباحة 65525", "activity": "وكالة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJ-4-3NwBF7xURJZIJHy7tAm4", "observed": "same Place ID resolved; tel:+966177226224 displayed; title and real-estate category also appeared in live related listings"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-da1f3b79b583",
+      "city": "الباحة",
+      "old": {"name": "مكتب ميدكم للعقارات عقار الباحة", "phone": "0557272999", "address": "طريق العقيق، الباحة 65711"},
+      "new": {"name": "مكتب ميدكم للعقارات عقار الباحة", "phone": "0557272999", "address": "طريق العقيق، الباحة 65711", "activity": "شركة إدارة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJzRa0HnpF7xURhpr_WW1O0wU", "observed": "same Place ID resolved; tel:+966557272999 displayed; title and category matched live related listings"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-72785d10d4a7",
+      "city": "الباحة",
+      "old": {"name": "مكتب باحة الضباب للعقارات", "phone": "0556586393", "address": "طريق الملك فهد، الباهر، الباحة 65525"},
+      "new": {"name": "مكتب باحة الضباب للعقارات", "phone": "0556586393", "address": "طريق الملك فهد، الباهر، الباحة 65525", "activity": "شركة إدارة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJgW5n7n9F7xURQVp9Ie_DtPw", "observed": "title, real-estate category, full address, plus code 2F9F+63 and +966556586393"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-f917cca96206",
+      "city": "الباحة",
+      "old": {"name": "وسيطكم العقاري", "phone": "0556556899", "address": "طريق الملك فهد، مقابل أسواق بنده، الباحة 65711"},
+      "new": {"name": "وسيطكم العقاري", "phone": "0556556899", "address": "طريق الملك فهد، مقابل أسواق بنده، الباحة 65711", "activity": "وكيل عقاري"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJn4nBkw1H7xURLEfHzI5vr8A", "observed": "same Place ID resolved; tel:+966556556899 displayed; current title/category also matched live related listing"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-8988560de6a7",
+      "city": "الباحة",
+      "old": {"name": "شيخ طائفة العقار بالباحة", "phone": "0555775345", "address": "2F7J+28V، النزهة، الباحة 65528"},
+      "new": {"name": "شيخ طائفة العقار بالباحة", "phone": "0555775345", "address": "2F7J+28V، النزهة، الباحة 65528", "activity": "مثمّن عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJre8ggdpF7xUR7AlVrxUFx9g", "observed": "title, real-estate valuation category, full plus-code address and +966555775345"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-409e36716de3",
+      "city": "الباحة",
+      "old": {"name": "القنديل المضاء للعقار", "phone": "0505774274", "address": "طريق الملك عبدالعزيز، الربوة، الباحة 65515"},
+      "new": {"name": "القنديل المضاء للعقار", "phone": "0505774274", "address": "طريق الملك عبدالعزيز، الربوة، الباحة 65515", "activity": "مكتب الشركات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJlwxzhrdF7xURkC0WhLDHg9s", "observed": "title, office category, full address, plus code XGQ9+X4 and +966505774274"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-d85967d62913",
+      "city": "الباحة",
+      "old": {"name": "مكتب فاضل الغامدي للخدمات العامة والعقارية", "phone": "0507136226", "address": "2F4F+29G، الظفير، الباحة 65526"},
+      "new": {"name": "مكتب فاضل الغامدي للخدمات العامة والعقارية", "phone": "0507136226", "address": "2F4F+29G، الظفير، الباحة 65526", "activity": "وكالة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJDTG2slZF7xURMN5-X4xnUTQ", "observed": "title, real-estate category, full plus-code address and +966507136226"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-e449066a2dcd",
+      "city": "الباحة",
+      "old": {"name": "مؤسسة نواف العقارية", "phone": "0560282193", "address": "طريق الملك عبدالعزيز، الباحة 65737"},
+      "new": {"name": "مؤسسة نواف العقارية", "phone": "0560282193", "address": "طريق الملك عبدالعزيز، الباحة 65737", "activity": "وكيل عقاري"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJhQksAOY37xURTwCXZqBF0SU", "observed": "title, real-estate agent category, full address, plus code 49QR+VG and +966560282193"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-3fcf79e69570",
+      "city": "الباحة",
+      "old": {"name": "العلي العقارية | AlAli Real Estate Co", "phone": "0505220889", "address": "طريق الملك فهد، شهبة، الباحة"},
+      "new": {"name": "العلي العقارية | AlAli Real Estate Co", "phone": "0505220889", "address": "طريق الملك فهد، شهبة، الباحة", "activity": "شركة إدارة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJc6YqWLdH7xURJ5Z4tqNQlFw", "observed": "title, real-estate category, address, plus code 2FPM+6R and +966505220889"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-034c031c34af",
+      "city": "الباحة",
+      "old": {"name": "تكريت للعقار", "phone": "0555779210", "address": "طريق الجنوب، بني سار، الباحة 65723"},
+      "new": {"name": "تكريت للعقار", "phone": "0555779210", "address": "طريق الجنوب، بني سار، الباحة 65723", "activity": "وكالة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJM-V8MgBH7xURXwdSmYIj7og", "observed": "title, real-estate category, full address, plus code 3CRR+7X and +966555779210"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-d450a577006d",
+      "city": "الباحة",
+      "old": {"name": "مكتب خضران مسفر للخدمات العقارية", "phone": null, "address": "طريق الملك فهد، حي النزهة، الباحة 65711"},
+      "new": {"name": "مكتب خضران مسفر للخدمات العقارية", "phone": null, "address": "طريق الملك فهد، حي النزهة، الباحة 65711", "activity": "وكالة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJ5__zTwBH7xURRv_tBoLeXZI", "observed": "title, real-estate category, full address and plus code 2FMM+QM; card explicitly offers adding a phone, so no Maps phone is currently published"},
+      "status": "verified_no_change_no_phone_published"
+    },
+    {
+      "id": "office-maps-657461bffbe9",
+      "city": "الباحة",
+      "old": {"name": "مجموعة بن جبران العقارية", "phone": "0566025566", "address": "طريق الملك عبدالعزيز، الباحة 65723"},
+      "new": {"name": "مجموعة بن جبران العقارية", "phone": "0566025566", "address": "طريق الملك عبدالعزيز، الباحة 65723", "activity": "مكتب الشركات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJ61Jmud9H7xURmimVgBXxsVA", "observed": "title, office category, full plus-code address 3CWV+95R and +966566025566"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-1535875a7ab6",
+      "city": "الباحة",
+      "old": {"name": "الفرص الذهبية للاستثمار العقاري", "phone": "0504583884", "address": "الباهر، الباحة 61008"},
+      "new": {"name": "الفرص الذهبية للاستثمار العقاري", "phone": "0504583884", "address": "الباهر، الباحة 61008", "activity": "وكالة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJa4WHdONF7xUREYLcE232nZU", "observed": "same Place ID resolved and tel:+966504583884 displayed; current title/category also matched the live related listing on the Nawaf card"},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-8e320aec59be",
+      "city": "الباحة",
+      "old": {"name": "مكتب اعمار للعقارات", "phone": null, "address": "زيد بن أرقم، حي الباهر، الباحة 65525"},
+      "new": {"name": "مكتب اعمار للعقارات", "phone": null, "address": "زيد بن أرقم، حي الباهر، الباحة 65525", "activity": "شركة إدارة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJfepfR-NF7xURaP5B63mlJsU", "observed": "same Place ID resolved; title/category matched a live related listing; current card exposed no phone and stored record also has no phone"},
+      "status": "verified_no_change_no_phone_published"
+    },
+    {
+      "id": "entity-29771352cb30", "city": "الباحة",
+      "old": {"name": "أصول الدار العقارية", "phone": "0563329988", "address": ""},
+      "new": {"name": "أصول الدار العقارية", "phone": "0563329988", "address": ""},
+      "evidence": {"source": "live Google Maps name+city search", "url": "https://www.google.com/maps/search/أصول+الدار+العقارية+الباحة", "observed": "Only a partial generic Al Baha result appeared; no exact business card was found."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "entity-a4e2a8ee6f6f", "city": "الباحة",
+      "old": {"name": "مكتب عقار الباحة الفريني", "phone": "0532970731", "address": ""},
+      "new": {"name": "مكتب الفريني للخدمات العامه الباحة خدمات عن بعد الرقم المعتمد لدينا هو الذي في الموقع غيره لا يخصنا", "phone": "0537501700", "address": "Unnamed Road", "activity": "مكتب الشركات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/search/مكتب+عقار+الباحة+الفريني", "observed": "Current card title changed, category is company office rather than real estate, and phone is +966537501700; stored phone differs."},
+      "status": "correction_candidate_non_real_estate_or_identity_changed"
+    },
+    {
+      "id": "office-maps-f8b02f3040c9", "city": "الباحة",
+      "old": {"name": "مكتب اركان الوسيط العقاري", "phone": "0531122441", "address": "طريق ابوبكر الصديق، الحاوية، الباحة 65525"},
+      "new": {"name": "مكتب اركان الوسيط العقاري", "phone": "0531122441", "address": "طريق ابوبكر الصديق، الحاوية، الباحة 65525", "activity": "مكتب ترخيص"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJzWh-2lBF7xUR3d48NAcSB5k", "observed": "Exact title, licensing-office category, address, plus code 2F78+87 and +966531122441."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "national-ejar-office-195077", "city": "الباحة",
+      "old": {"name": "مكتب رواسي الانجاز للخدمات العقارية", "phone": "0507020045", "address": "ابو بكر الصديق، الباحة", "maps": "20.01358409,41.46604046"},
+      "new": {"name": "مكتب رواسي الإنجاز للخدمات العامه والعقارية", "phone": "0507020045", "address": "الحاويه بجانب جوزات", "maps": "20.0141158,41.4668031", "activity": "مكتب ترخيص"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/search/مكتب+رواسي+الانجاز+للخدمات+العقارية+الباحة", "observed": "Active exact-name card at 20.0141158,41.4668031 with +966507020045; a second similarly named card at the stored pin is permanently closed and has a different phone."},
+      "status": "correction_candidate_identity_location"
+    },
+    {
+      "id": "national-ejar-office-262084", "city": "الباحة",
+      "old": {"name": "مكتب الحلول المتقدمة للخدمات العقارية", "phone": "0552822601", "address": "العام، النزهة، الباحة", "maps": "20.0214556,41.4637692"},
+      "new": {"name": "مكتب الحلول المتقدمة للخدمات العقارية", "phone": "0552822601", "address": "العام، النزهة، الباحة", "maps": "20.0214556,41.4637692", "activity": "عقار شقق مفروشة"},
+      "evidence": {"source": "live Google Maps related listing", "url": "https://www.google.com/maps/search/مكتب+الحلول+المتقدمة+للخدمات+العقارية+الباحة", "observed": "Title and real-estate/furnished-apartments category appeared in live Maps; card phone could not be opened reliably."},
+      "status": "partially_verified_phone_unconfirmed"
+    },
+    {
+      "id": "national-ejar-office-195201", "city": "الباحة",
+      "old": {"name": "مؤسسة نواف عبدالله محمد الزهراني العقارية", "phone": "0567277782", "address": "طريق الطائف، الروضة، الباحة", "maps": "20.13967236,41.39123873"},
+      "new": {"canonicalId": "office-maps-e449066a2dcd", "name": "مؤسسة نواف العقارية", "phone": "0560282193", "address": "طريق الملك عبدالعزيز، الباحة 65737", "maps": "20.1397318,41.3912964", "activity": "وكيل عقاري"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مؤسسة+نواف+عبدالله+محمد+الزهراني+العقارية", "observed": "Search resolved to canonical مؤسسة نواف العقارية at a near-identical pin with +966560282193; canonical ID already exists in dataset."},
+      "status": "archive_candidate_duplicate"
+    },
+    {
+      "id": "national-ejar-office-207912", "city": "الباحة",
+      "old": {"name": "مكتب أصول الدار للخدمات العقارية", "phone": "0555077344", "address": "طريق الملك فهد، الضباب، الباحة", "maps": "20.04771258,41.49893396"},
+      "new": {"name": "مكتب أصول الدار للخدمات العقارية", "phone": "0555077344", "address": "طريق الملك فهد، الضباب، الباحة", "maps": "20.04771258,41.49893396"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+أصول+الدار+للخدمات+العقارية+الباحة", "observed": "No exact card found; only unrelated nearby offices were returned."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-197747", "city": "الباحة",
+      "old": {"name": "مكتب علي محمد الزهراني للخدمات العقارية", "phone": "0551771772", "address": "الملك عبدالعزيز، الباحة", "maps": "20.0179342,41.4545623"},
+      "new": {"name": "مكتب علي محمد الزهراني للخدمات العامة والمقاولات", "phone": null, "address": "الملك عبدالعزيز، الباحة", "maps": "20.0179342,41.4545623", "activity": "مكتب الشركات"},
+      "evidence": {"source": "live Google Maps search/result card", "url": "https://www.google.com/maps/search/مكتب+علي+محمد+الزهراني+للخدمات+العقارية+الباحة", "observed": "Current title says general services and contracting; related listing category is company office. Phone was not exposed reliably."},
+      "status": "correction_candidate_identity_activity_phone_unconfirmed"
+    },
+    {
+      "id": "national-ejar-office-227493", "city": "الباحة",
+      "old": {"name": "مكتب المساكن الشامخة للخدمات العقارية", "phone": "0535560502", "address": "الأحوص بن امية، النزهة، الباحة", "maps": "20.04599371,41.51045914"},
+      "new": {"name": "مكتب المساكن الشامخة للخدمات العقارية", "phone": "0535560502", "address": "الأحوص بن امية، النزهة، الباحة", "maps": "20.04599371,41.51045914"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+المساكن+الشامخة+للخدمات+العقارية+الباحة", "observed": "Search resolved to another office rather than an exact card."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-193512", "city": "الباحة",
+      "old": {"name": "مؤسسة الارياف الخضراء للخدمات العقارية", "phone": "0505773410", "address": "طريق الملك فهد، الباحة", "maps": "20.0261717,41.47618487"},
+      "new": {"name": "مؤسسة الارياف الخضراء للخدمات العقارية", "phone": "0505773410", "address": "طريق الملك فهد، الباحة", "maps": "20.0261717,41.47618487"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مؤسسة+الارياف+الخضراء+للخدمات+العقارية+الباحة", "observed": "No exact visible business card was returned."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-215065", "city": "الباحة",
+      "old": {"name": "مكتب هامات الأعمال للخدمات العقارية", "phone": "0590266408", "address": "عدي بن حاتم، الباحة", "maps": "20.01414878,41.46837492"},
+      "new": {"name": "مكتب هامات الأعمال للخدمات العقارية", "phone": "0590266408", "address": "عدي بن حاتم، الباحة", "maps": "20.01414878,41.46837492"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+هامات+الأعمال+للخدمات+العقارية+الباحة", "observed": "No exact visible business card was returned."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-216597", "city": "الباحة",
+      "old": {"name": "مكتب عمر محفوظ غرم الله الغامدي للعقارات", "phone": "0550775112", "address": "الباحة", "maps": "20.02643601,41.47505255"},
+      "new": {"name": "مكتب عمر محفوظ غرم الله الغامدي للعقارات", "phone": "0550775112", "address": "الباحة", "maps": "20.02643601,41.47505255"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+عمر+محفوظ+غرم+الله+الغامدي+للعقارات", "observed": "Only other nearby offices appeared; no exact card."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-205842", "city": "الباحة",
+      "old": {"name": "مكتب أملاك الباحة للعقارات", "phone": "0553245678", "address": "شارع البلدية، السوق، الباحة", "maps": "20.00772251,41.46086732"},
+      "new": {"name": "مكتب أملاك الباحة للعقارات", "phone": "0553245678", "address": "شارع البلدية، السوق، الباحة", "maps": "20.00772251,41.46086732"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+أملاك+الباحة+للعقارات", "observed": "A different أملاك للعقار listing appeared at 19.8672131,41.5637117; identity match was not sufficient."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-346792", "city": "الباحة",
+      "old": {"name": "مؤسسة تكريت العقارية", "phone": "0507647658", "address": "طريق الملك عبدالعزيز، الربيع، الباحة", "maps": "20.09056824,41.44253345"},
+      "new": {"canonicalId": "office-maps-034c031c34af", "name": "تكريت للعقار", "phone": "0555779210", "address": "2379 طريق الجنوب، 7195، بني سار، الباحة 65723", "maps": "20.0906315,41.4424152", "activity": "وكالة عقارات"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مؤسسة+تكريت+العقارية+الباحة", "observed": "Resolved to canonical تكريت للعقار at near-identical pin, +966555779210 and plus code 3CRR+7X; canonical ID already exists in dataset."},
+      "status": "archive_candidate_duplicate"
+    },
+    {
+      "id": "national-ejar-office-347863", "city": "الباحة",
+      "old": {"name": "مكتب الثامنة للخدمات العقارية", "phone": "0556240120", "address": "المروج، الباحة", "maps": "19.98108695,41.51427507"},
+      "new": {"name": "مكتب الثامنة للخدمات العقارية", "phone": "0556240120", "address": "المروج، الباحة", "maps": "19.98108695,41.51427507"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+الثامنة+للخدمات+العقارية+الباحة", "observed": "No exact card found; other offices were returned."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-317140", "city": "الباحة",
+      "old": {"name": "مكتب عقد ودار للخدمات العقارية", "phone": "0557785550", "address": "جابر بن صخر، السحاب، الباحة", "maps": "20.06132991,41.44126271"},
+      "new": {"name": "مكتب عقد ودار للخدمات العقارية", "phone": "0557785550", "address": "جابر بن صخر، السحاب، الباحة", "maps": "20.06132991,41.44126271"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+عقد+ودار+للخدمات+العقارية+الباحة", "observed": "Only broad nearby results appeared; no exact card."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-198771", "city": "الباحة",
+      "old": {"name": "مكتب الأبراج الشامخة للخدمات العقارية", "phone": "0541517333", "address": "عبدالله ابن سعود ابن عبدالعزيز، النزهة، الباحة", "maps": "20.04593659,41.51046647"},
+      "new": {"name": "مكتب الأبراج الشامخة للخدمات العقارية", "phone": "0541517333", "address": "عبدالله ابن سعود ابن عبدالعزيز، النزهة، الباحة", "maps": "20.04593659,41.51046647"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+الأبراج+الشامخة+الباحة", "observed": "Maps explicitly showed a partial match and only the generic Al Baha place; no exact business card."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-197138", "city": "الباحة",
+      "old": {"name": "مكتب أبراج الباحة للعقارات", "phone": "0552120607", "address": "الملك فهد، الباحة", "maps": "20.024211,41.4764368"},
+      "new": {"name": "مكتب أبراج الباحة للعقارات", "phone": "0552120607", "address": "الملك فهد، الباحة", "maps": "20.024211,41.4764368"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+أبراج+الباحة+للعقارات", "observed": "No exact card could be verified during this pass."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-331120", "city": "الباحة",
+      "old": {"name": "مكتب وسيط اليسر للعقارات", "phone": "0530501000", "address": "السوق، الباحة", "maps": "20.02109419,41.46052138"},
+      "new": {"name": "مكتب وسيط اليسر للعقارات", "phone": "0530501000", "address": "السوق، الباحة", "maps": "20.02109419,41.46052138"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+وسيط+اليسر+للعقارات+الباحة", "observed": "No exact card could be verified during this pass."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-202520", "city": "الباحة",
+      "old": {"name": "مكتب العهد التاسع العقارية", "phone": "0564157999", "address": "الباحة", "maps": "20.04121506,41.49656332"},
+      "new": {"name": "مكتب العهد التاسع العقارية", "phone": "0564157999", "address": "الباحة", "maps": "20.04121506,41.49656332"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+العهد+التاسع+العقارية+الباحة", "observed": "No exact card could be verified during this pass."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-210208", "city": "الباحة",
+      "old": {"name": "مكتب المكنون للعقارات", "phone": "0567016536", "address": "ابن ابي المختار، الباحة", "maps": "20.03286986,41.48625524"},
+      "new": {"name": "مكتب المكنون للعقارات", "phone": "0567016536", "address": "ابن ابي المختار، الباحة", "maps": "20.03286986,41.48625524"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+المكنون+للعقارات+الباحة", "observed": "Maps showed partial match and only generic Al Baha place; no exact card."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-212894", "city": "الباحة",
+      "old": {"name": "شركة جيدانة العقارية شركة شخص واحد", "phone": "920033785", "address": "الأمير سعود بن عبد الرحمن، البساتين، الباحة", "maps": "20.00489648,41.4583937"},
+      "new": {"name": "شركة جيدانة العقارية شركة شخص واحد", "phone": "920033785", "address": "الأمير سعود بن عبد الرحمن، البساتين، الباحة", "maps": "20.00489648,41.4583937"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/شركة+جيدانة+العقارية+الباحة", "observed": "No exact business card could be verified."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-ejar-office-283476", "city": "الباحة",
+      "old": {"name": "مكتب يحي ابن سعيد ابن غرم الله الزهراني للعقارات", "phone": "0500626129", "address": "الباحة", "maps": "20.0159361,41.4670688"},
+      "new": {"name": "مكتب يحي ابن سعيد ابن غرم الله الزهراني للعقارات", "phone": "0500626129", "address": "الباحة", "maps": "20.0159361,41.4670688"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+يحي+ابن+سعيد+الزهراني+للعقارات", "observed": "Only unrelated similarly named offices in other cities appeared; no exact Al Baha card."},
+      "status": "unconfirmed_no_exact_maps_card"
+    },
+    {
+      "id": "national-yango-office-38048748339", "city": "الباحة",
+      "old": {"name": "مكتب الوافي للخدمات العامة", "phone": "0537501700", "address": "الباحة، حي الباهر"},
+      "new": {"name": "مكتب الوافي للخدمات العامة", "phone": "0537501700", "address": "الباحة، حي الباهر"},
+      "evidence": {"source": "live Google Maps exact-name search", "url": "https://www.google.com/maps/search/مكتب+الوافي+للخدمات+العامة+الباحة", "observed": "No exact card loaded. The phone matches the current Fureini general-services card, but identity is insufficient to merge."},
+      "status": "unconfirmed_possible_duplicate_phone"
+    },
+    {
+      "id": "office-maps-ed93a354e226", "city": "أبها",
+      "old": {"name": "مؤسسة شرق ابها للخدمات العقارية", "phone": "0504746662", "address": "4530، 8188، أبها 62527"},
+      "new": {"name": "مؤسسة شرق ابها للخدمات العقارية", "phone": "0504746662", "address": "4530، 8188، أبها 62527", "activity": "مكتب الشركات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJ1zlY-rmr_BURUOda-0jVrYc", "observed": "Exact title, category, address, plus code 6HF3+5H and +966504746662."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-478f7d9e8c44", "city": "أبها",
+      "old": {"name": "أعيان الصفوة للخدمات العقارية", "phone": "0502773652", "address": "القابل، أبها 62521"},
+      "new": {"name": "أعيان الصفوة للخدمات العقارية", "phone": "0502773652", "address": "القابل، أبها 62521", "activity": "وكالة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJ7ZY-rkhV4xURg5-OPBbj3CE", "observed": "Exact title, real-estate category, address, plus code 6FGX+H5 and +966502773652."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-b2c3b21b622d", "city": "أبها",
+      "old": {"name": "مكتب السعداء للخدمات العقارية", "phone": "0503754331", "address": "8760 طريق الملك عبدالعزيز، المنهل، أبها 62521"},
+      "new": {"name": "مكتب السعداء للخدمات العقارية", "phone": "0503754331", "address": "8760 طريق الملك عبدالعزيز، المنهل، أبها 62521", "activity": "مستشار عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJJ_qSq1VV4xURrN5eONCRO-E", "observed": "Same Place ID resolved exact title and tel:+966503754331; live related listing shows real-estate consultant category."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-eca33d9ab398", "city": "أبها",
+      "old": {"name": "ملتقى الوسطاء للخدمات العقارية", "phone": "0554108444", "address": "النزهة، أبها 62521"},
+      "new": {"name": "ملتقى الوسطاء للخدمات العقارية", "phone": "0554108444", "address": "النزهة، أبها 62521", "activity": "وكالة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJV5OVd35U4xURBoWJI-nHXEc", "observed": "Exact title/category/address, plus code 6G75+FX and +966554108444."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-137e10d5a5e6", "city": "أبها",
+      "old": {"name": "مكتب ريف المستقبل العقاري", "phone": "0530331313", "address": "6H8J+FV5، البديع، أبها 62581"},
+      "new": {"name": "مكتب ريف المستقبل العقاري", "phone": "0530331313", "address": "6H8J+FV5، البديع، أبها 62581", "activity": "وكالة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJ8Tl0SROr_BURwVVis6-IEDg", "observed": "Exact title/category/address and +966530331313."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-020a76a2c581", "city": "أبها",
+      "old": {"name": "مكتب الزهراني للعقار", "phone": "0172240055", "address": "6G65+8W4، النزهة، أبها 62521"},
+      "new": {"name": "مكتب الزهراني للعقار", "phone": "0172240055", "address": "6G65+8W4، النزهة، أبها 62521", "activity": "مكتب الشركات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJH1fjr39U4xURRn7BM5RWa7Q", "observed": "Exact title/category/address and +966172240055; reviews explicitly describe real-estate activity."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-9f7f2c55efa8", "city": "أبها",
+      "old": {"name": "مكتب آل ثابت للخدمات العقارية", "phone": "0557524260", "address": "طريق أبو هريرة، أبها 62527"},
+      "new": {"name": "مكتب آل ثابت للخدمات العقارية", "phone": "0557524260", "address": "طريق أبو هريرة، أبها 62527", "activity": "شركة إدارة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJX0AzErWr_BURDkzQeHTWfuo", "observed": "Exact title/category/address, plus code 6HH4+WV and +966557524260."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-5f85af85ca34", "city": "أبها",
+      "old": {"name": "مكتب رحاب ابها للخدمات العقاريه", "phone": "0542288986", "address": "شارع موسى بن عقبة، الموظفين، أبها 62583"},
+      "new": {"name": "مكتب رحاب ابها للخدمات العقاريه", "phone": "0542288986", "address": "شارع موسى بن عقبة، الموظفين، أبها 62583", "activity": "وكالة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJUcEn9xCr_BUR5DNs6MGMews", "observed": "Exact title/category/address, plus code 6HHX+PG and +966542288986."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-863682dcaa51", "city": "أبها",
+      "old": {"name": "شركة سديم الريادة للعقارات التجارية", "phone": "0550414488", "address": "شارع الحارث الاشعري، أبها 62527"},
+      "new": {"name": "شركة سديم الريادة للعقارات التجارية", "phone": "0550414488", "address": "شارع الحارث الاشعري، أبها 62527"},
+      "evidence": {"source": "live Google Maps Place-ID open", "url": "https://www.google.com/maps/place/?q=place_id:ChIJ03Qxl-er_BUR5NQISDuOJtw", "observed": "Card failed to render beyond a blank Maps container in this pass."},
+      "status": "unconfirmed_maps_card_render_failure"
+    },
+    {
+      "id": "office-maps-7dd919bc1896", "city": "أبها",
+      "old": {"name": "مكتب الحزام للخدمات العقارية", "phone": "0503060842", "address": "6G8C+RQP، طريق الملك عبدالعزيز، الاندلس، أبها 62521"},
+      "new": {"name": "مكتب الحزام للخدمات العقارية", "phone": "0503060842", "address": "6G8C+RQP، طريق الملك عبدالعزيز، الاندلس، أبها 62521", "activity": "شركة إدارة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJbThRjiZV4xURfIu_YLopYGM", "observed": "Exact title/category/address and +966503060842."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-61df8b76193d", "city": "أبها",
+      "old": {"name": "إثمار أبها العقارية", "phone": "0501230101", "address": "سلطان، المحالة، أبها 62562"},
+      "new": {"name": "إثمار أبها العقارية", "phone": "0501230101", "address": "سلطان، المحالة، أبها 62562", "activity": "وكالة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJvVkTDtNV-xURqDbprrYIi5E", "observed": "Exact title/category/address, plus code 7J96+96 and +966501230101."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-c0914e78df46", "city": "أبها",
+      "old": {"name": "حسام ابوعبثان العقارية ( لايوجد ايجارات )", "phone": "0541250303", "address": "8854 4918، أبها 62527"},
+      "new": {"name": "حسام ابوعبثان العقارية ( لايوجد ايجارات )", "phone": "0541250303", "address": "8854 4918، أبها 62527"},
+      "evidence": {"source": "live Google Maps Place-ID open", "url": "https://www.google.com/maps/place/?q=place_id:ChIJDTq1zS6r_BURSYwWEUn25Xc", "observed": "Card failed to render beyond a blank Maps container in this pass."},
+      "status": "unconfirmed_maps_card_render_failure"
+    },
+    {
+      "id": "office-maps-69dfb25fae9c", "city": "أبها",
+      "old": {"name": "مكتب الأمل العقاري", "phone": "0172271674", "address": "6HPV+Q52، الموظفين، أبها 62583"},
+      "new": {"name": "مكتب الأمل العقاري", "phone": "0172271674", "address": "6HPV+Q52، الموظفين، أبها 62583", "activity": "وكالة تأجير عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJ3ZB_HFmq_BURlx7gQYMEtq4", "observed": "Exact title/category/address and +966172271674; card itself is not marked closed."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-1183e6aa9003", "city": "أبها",
+      "old": {"name": "مكتب عالم العقار", "phone": "0555761508", "address": "7H6V+CJR، طريق المحالة، المحالة، أبها 62562"},
+      "new": {"name": "مكتب عالم العقار", "phone": "0555761508", "address": "7H6V+CJR، طريق المحالة، المحالة، أبها 62562", "activity": "مطوّر عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJB98dQ3-q_BURbJw2Z8vnJeM", "observed": "Exact title/category/address and +966555761508."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-ec3cb991a7b9", "city": "أبها",
+      "old": {"name": "الحجاز للعقار", "phone": "0560006490", "address": "6307 طريق السودة، الخالدية، أبها 62541"},
+      "new": {"name": "الحجاز للعقار", "phone": "0560006490", "address": "6307 طريق السودة، الخالدية، أبها 62541", "activity": "شركة إدارة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJdWR0b0ZV4xURz4I8Y8ufbwU", "observed": "Exact title/category/address, plus code 6FCH+87 and +966560006490."},
+      "status": "verified_no_change"
+    },
+    {
+      "id": "office-maps-ed256f38c592", "city": "أبها",
+      "old": {"name": "مؤسسة خبراء التمليك العقارية", "phone": "0530777127", "address": "المحالة، أبها 62564"},
+      "new": {"name": "مؤسسة خبراء التمليك العقارية", "phone": "0530777127", "address": "المحالة، أبها 62564", "activity": "شركة إدارة عقارات"},
+      "evidence": {"source": "live Google Maps card", "url": "https://www.google.com/maps/place/?q=place_id:ChIJU1lHK95V-xURoTo1udUHF6s", "observed": "Exact title/category/address, plus code 7HFX+QG and +966530777127."},
+      "status": "verified_no_change"
+    },
+    {"id":"office-maps-0abf607921a2","city":"أبها","old":{"name":"مكتب الفارس للعقار بالمنسك","phone":"0555744422","address":"أبها 62527"},"new":{"name":"مكتب الفارس للعقار بالمنسك","phone":"0555744422","address":"أبها 62527","activity":"وكالة عقارات تجارية"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJ-Q8ibmZV4xURge6MXCt98lM","observed":"Exact title/category/address, plus code 6GCX+3W and +966555744422."},"status":"verified_no_change"},
+    {"id":"office-maps-b85b6ef68ee4","city":"أبها","old":{"name":"مكتب أبو قحاص للمقاولات والعقارات","phone":"0566755757","address":"شمسان، أبها 62521"},"new":{"name":"مكتب أبو قحاص للمقاولات والعقارات","phone":"0566755757","address":"شمسان، أبها 62521","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJL0j7GG9U4xURbsuyWr_Rsx0","observed":"Exact title/category/address, plus code 6FFX+XX and +966566755757."},"status":"verified_no_change"},
+    {"id":"office-maps-a2c21693d431","city":"أبها","old":{"name":"مكتب درة الصفا للخدمات العقارية","phone":"0540077779","address":"6HHP+3P9 حي، البديع، أبها 62581"},"new":{"name":"مكتب درة الصفا للخدمات العقارية","phone":"0565755291","address":"6HHP+3P9 حي، البديع، أبها 62581","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJq_OEawCr_BUR42fvwAbim4M","observed":"Exact title/category/address; current published phone is +966565755291, differing from stored 0540077779."},"status":"correction_candidate_phone"},
+    {"id":"office-maps-a19ff0a89c2e","city":"أبها","old":{"name":"روعة الصفا للعقارات","phone":"0504740602","address":"6G75+2JG، النزهة، أبها 62521"},"new":{"name":"روعة الصفا للعقارات","phone":"0504740602","address":"6G75+2JG، النزهة، أبها 62521","activity":"وكالة تأجير عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJk-ul9n5U4xURUqgZWj8B2ps","observed":"Same Place ID resolved exact title and tel:+966504740602; live related listing confirms real-estate rental category."},"status":"verified_no_change"},
+    {"id":"office-maps-875ef9860cea","city":"أبها","old":{"name":"مكتب أنهار للعقار مكتب عقار","phone":"0172263092","address":"6G8X+FVH، شارع البادية، أبها 62527"},"new":{"name":"مكتب أنهار للعقار مكتب عقار","phone":"0172263092","address":"6G8X+FVH، شارع البادية، أبها 62527","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJy9YBPQBV4xUR6tvrFxwom8w","observed":"Exact title/category/address and +966172263092."},"status":"verified_no_change"},
+    {"id":"office-maps-14fdee54f307","city":"أبها","old":{"name":"البكور للعقار","phone":"0172273224","address":"الموظفين، أبها 62583"},"new":{"name":"البكور للعقار","phone":"0172273224","address":"الموظفين، أبها 62583"},"evidence":{"source":"live Google Maps Place-ID open","url":"https://www.google.com/maps/place/?q=place_id:ChIJ-Xkiiamr_BURGnCgY6FyBrk","observed":"Card failed to render beyond a blank Maps container in this pass."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"office-maps-049588be32e7","city":"أبها","old":{"name":"سما عسير العقارية","phone":"0547446446","address":"طريق الملك فيصل، النصب، أبها 62521"},"new":{"name":"سما عسير العقارية","phone":"0547446446","address":"طريق الملك فيصل، النصب، أبها 62521","activity":"شركة استثمار عقاري"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJAYgjS-tV4xURupZrJniWXgo","observed":"Exact title/category/address, plus code 6G85+8R and +966547446446."},"status":"verified_no_change"},
+    {"id":"office-maps-6375894339ea","city":"أبها","old":{"name":"وسم المنهل العقاريه","phone":"0503377070","address":"بجوار البريد السعودي، طريق مكة المكرمة، المنهل، أبها 65251"},"new":{"name":"وسم المنهل العقاريه","phone":"0503377070","address":"بجوار البريد السعودي، طريق مكة المكرمة، المنهل، أبها 65251","activity":"وكيل عقاري"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJhwRoLmxV4xURUt39Ggejk2E","observed":"Exact title/category/address, plus code 6GC6+6G and +966503377070."},"status":"verified_no_change"},
+    {"id":"office-maps-d58b54853fff","city":"أبها","old":{"name":"الشبلي للعقارات","phone":"0500177922","address":"شارع الاربعين، المنسك، أبها 62527"},"new":{"name":"الشبلي للعقارات","phone":"0500177922","address":"شارع الاربعين، المنسك، أبها 62527","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJASZPNv6q_BURL0C2nAMyua4","observed":"Exact title/category/address, plus code 6HH4+HW and +966500177922."},"status":"verified_no_change"},
+    {"id":"office-maps-237773739c99","city":"خميس مشيط","old":{"name":"شركة جُرش العقارية","phone":"0509663434","address":"الإمام محمد بن سعود، الخالدية، خميس مشيط 62461"},"new":{"name":"شركة جُرش العقارية","phone":"0509663434","address":"الإمام محمد بن سعود، الخالدية، خميس مشيط 62461","activity":"شركة إدارة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJ2U2LvxVZ-xURWaHJnkl6oHw","observed":"Exact title/category/address, plus code 8P2G+72 and +966509663434."},"status":"verified_no_change"},
+    {"id":"office-maps-28271e452018","city":"خميس مشيط","old":{"name":"مكتب عقارات بن مشيط","phone":"0555638973","address":"الشيخ سعيد بن مشيط، الروضة، خميس مشيط 62461"},"new":{"name":"مكتب عقارات بن مشيط","phone":"0555638973","address":"الشيخ سعيد بن مشيط، الروضة، خميس مشيط 62461","activity":"مكتب الشركات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJb5OZx1dZ-xUR_xaBNL8ANMo","observed":"Same Place ID resolved exact title and tel:+966555638973; related live listing confirms company-office category."},"status":"verified_no_change"},
+    {"id":"office-maps-5e4e6bff98a2","city":"خميس مشيط","old":{"name":"مكتب موطن العز للعقار","phone":"0553150379","address":"8QP4+WV7، خميس مشيط 84849"},"new":{"name":"مكتب موطن العز للعقار","phone":"0553150379","address":"8QP4+WV7، خميس مشيط 84849","activity":"وكيل عقاري"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJider1XRb-xURWgSDrxFwhKE","observed":"Exact title/category/address and +966553150379."},"status":"verified_no_change"},
+    {"id":"office-maps-98376508cfd9","city":"خميس مشيط","old":{"name":"سمو الجنوب للعقارات","phone":"0506295376","address":"شارع الثمانين، خميس مشيط 62493"},"new":{"name":"سمو الجنوب للعقارات","phone":"0506295376","address":"شارع الثمانين، خميس مشيط 62493","activity":"مستشار عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJofGPmMNb-xURx8t5856MgIY","observed":"Exact title/category/address, plus code 9P75+HV and +966506295376."},"status":"verified_no_change"},
+    {"id":"office-maps-afd6f14a4b43","city":"خميس مشيط","old":{"name":"ال ساري للعقارات","phone":"0553191907","address":"جدة، المنتزه، خميس مشيط 62461"},"new":{"name":"ال ساري للعقارات","phone":"0553191907","address":"جدة، المنتزه، خميس مشيط 62461","activity":"مكتب الشركات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJO_un7x1a-xUR6eqpUA0BFyU","observed":"Same Place ID resolved exact title and tel:+966553191907; live related listing confirms category."},"status":"verified_no_change"},
+    {"id":"office-maps-0845f9e2b08c","city":"خميس مشيط","old":{"name":"مكتب اوصاف للخدمات العقارية","phone":"0504433608","address":"الرصراص شارع الاربعين، خميس مشيط"},"new":{"name":"مكتب اوصاف للخدمات العقارية","phone":"0504433608","address":"الرصراص شارع الاربعين، خميس مشيط","activity":"مُصفٍّ عقاري"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJHeo1Wm9Z-xURVcooDz8YBEc","observed":"Same Place ID resolved exact title and tel:+966504433608; live related listing confirms real-estate liquidator category."},"status":"verified_no_change"},
+    {"id":"office-maps-90442ab2dbe2","city":"خميس مشيط","old":{"name":"إعمار عادل للخدمات العقارية","phone":"0563200109","address":"أم سرور، خميس مشيط 62461"},"new":{"name":"إعمار عادل للخدمات العقارية","phone":"0563200109","address":"أم سرور، خميس مشيط 62461"},"evidence":{"source":"live Google Maps Place-ID open","url":"https://www.google.com/maps/place/?q=place_id:ChIJtyhgPqpZ-xUROzhnWyN4qLw","observed":"Card failed to render beyond a blank Maps container in this pass."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"office-maps-2d0cd6113ebb","city":"خميس مشيط","old":{"name":"مكتب أعمال الزبيري للعقارات","phone":"0172222996","address":"4702، المعمورة، خميس مشيط 62458 7425"},"new":{"name":"مكتب أعمال الزبيري للعقارات","phone":"0172222996","address":"4702، المعمورة، خميس مشيط 62458 7425","activity":"مكتب الشركات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJr8_VDEtb-xURwB3rLSiLbVc","observed":"Exact title/category/address, plus code 8PFJ+9V and +966172222996."},"status":"verified_no_change"},
+    {"id":"office-maps-a4ae8d2ef497","city":"خميس مشيط","old":{"name":"مكتب ربوة الخميس للعقارات","phone":"0501005577","address":"الوسام، حي الوسام شارع الثلاثين، خميس مشيط"},"new":{"name":"مكتب ربوة الخميس للعقارات","phone":"0501005577","address":"الوسام، حي الوسام شارع الثلاثين، خميس مشيط","activity":"شركة إدارة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJUaxOBdNb-xURt2jfDxP6RKk","observed":"Exact title/category/address, plus code 8QW6+MX and +966501005577."},"status":"verified_no_change"},
+    {"id":"office-maps-4ce7819ee6d1","city":"خميس مشيط","old":{"name":"مكتب معمار مشيط للعقارات","phone":"0503221553","address":"7PXG+PJH، الخالدية، خميس مشيط 62461"},"new":{"name":"مكتب معمار مشيط للعقارات","phone":"0503221553","address":"7PXG+PJH، الخالدية، خميس مشيط 62461","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJ-5mqTWlb-xURydLTSa7PtrY","observed":"Exact title/category/address and +966503221553."},"status":"verified_no_change"},
+    {"id":"office-maps-ef13241e91a9","city":"خميس مشيط","old":{"name":"مكتب آفاق الخميس للعقارات .","phone":"0504544440","address":"ورقة بن نوفل، شباعة، خميس مشيط 62458"},"new":{"name":"مكتب آفاق الخميس للعقارات .","phone":"0504544440","address":"ورقة بن نوفل، شباعة، خميس مشيط 62458","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJ2wn0Jkda-xUR-WVehgQX2KA","observed":"Exact title/category/address, plus code 8PCJ+6W and +966504544440."},"status":"verified_no_change"},
+    {"id":"office-maps-fc8245413e25","city":"خميس مشيط","old":{"name":"مكتب عقار سالم عبدالله الشهري","phone":"0505757345","address":"5137، النسيم، خميس مشيط 62465 8989"},"new":{"name":"مكتب عقار سالم عبدالله الشهري","phone":"0505757345","address":"5137، النسيم، خميس مشيط 62465 8989","activity":"مطوّر عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/search/?api=1&query=18.2928138,42.7616517&query_place_id=ChIJX8wx7Jdb-xUR0IZsTudL1uM","observed":"Exact title, real-estate developer category, address, plus code 7QV6+4M and +966505757345."},"status":"verified_no_change"},
+    {"id":"office-maps-56a846330786","city":"خميس مشيط","old":{"name":"مكتب فارهين العقاري","phone":"0556878879","address":"الدعوة، الربيع، خميس مشيط 62454"},"new":{"name":"مكتب فارهين العقاري","phone":"0556878879","address":"الدعوة، الربيع، خميس مشيط 62454","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/search/?api=1&query=18.3183969,42.68498&query_place_id=ChIJM6-be8lQ-xUR3RsJG0JqJTg","observed":"Exact title/category/address, plus code 8M9M+9X and +966556878879."},"status":"verified_no_change"},
+    {"id":"office-maps-6c79fd5d8b04","city":"خميس مشيط","old":{"name":"شركة أعمال الزبيري للعقارات","phone":"0560568086","address":"8251 الشيخ سعيد بن مشيط، الخالدية، خميس مشيط 62461"},"new":{"name":"شركة أعمال الزبيري للعقارات","phone":"0560568086","address":"8251 الشيخ سعيد بن مشيط، الخالدية، خميس مشيط 62461","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJEXS28x9a-xURtwNc-fOqgtc","observed":"Exact title/category/address, plus code 8P2G+WM and +966560568086."},"status":"verified_no_change"},
+    {"id":"office-maps-0d81cb25cde4","city":"خميس مشيط","old":{"name":"مكتب شبكة الزبيري للعقارات","phone":"0557553598","address":"ورقة بن نوفل، شباعة، خميس مشيط 62458"},"new":{"name":"مكتب شبكة الزبيري للعقارات","phone":"0557553598","address":"ورقة بن نوفل، شباعة، خميس مشيط 62458","activity":"مكتب الشركات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/search/?api=1&query=18.3206891,42.7331964&query_place_id=ChIJ0yrKIUda-xURfAZQuz_y0Kc","observed":"Exact title/category/address, plus code 8PCM+77 and +966557553598."},"status":"verified_no_change"},
+    {"id":"office-maps-5e88a5a271aa","city":"خميس مشيط","old":{"name":"مكتب أوائل الخميس للخدمات العقارية والإلكترونية","phone":"0555643271","address":"طريق الملك خالد، ذلالة، خميس مشيط 62411"},"new":{"name":"مكتب أوائل الخميس للخدمات العقارية والإلكترونية","phone":"0555643271","address":"طريق الملك خالد، ذلالة، خميس مشيط 62411","activity":"وكالة عقارات تجارية"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/search/?api=1&query=18.2493664,42.7513909&query_place_id=ChIJP3qqbDNZ-xURusFsZIgg2w4","observed":"Exact title/category/address, plus code 6QX2+PH and +966555643271."},"status":"verified_no_change"},
+    {"id":"office-maps-df931061798b","city":"خميس مشيط","old":{"name":"مكتب نجم الخميس للعقارات","phone":"0503016803","address":"7QH4+V76، النزهة، خميس مشيط 62465"},"new":{"name":"مكتب نجم الخميس للعقارات","phone":"0503016803","address":"7QH4+V76، النزهة، خميس مشيط 62465","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/search/?api=1&query=18.2796708,42.7556478&query_place_id=ChIJIQLE8XFZ-xURcEOrvXKaxqQ","observed":"Same Place ID resolved exact title and tel:+966503016803; the card is a real-estate office."},"status":"verified_no_change"},
+    {"id":"office-maps-9a6606417d51","city":"خميس مشيط","old":{"name":"مكتب ورود الرصراص الخدمات العقاريه","phone":"0559091352","address":"AKJA4789، 7746 ثابت ابن النعمان، 4789، خميس مشيط 62441"},"new":{"name":"مكتب ورود الرصراص الخدمات العقاريه","phone":"0559091352","address":"AKJA4789، 7746 ثابت ابن النعمان، 4789، خميس مشيط 62441","activity":"وكالة عقارات تجارية"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJO3bcaP9Z-xURJB-rCzsIPG8","observed":"Exact title/category/address, plus code 7Q3M+5C and +966559091352."},"status":"verified_no_change"},
+    {"id":"office-maps-23f6b85e0d11","city":"خميس مشيط","old":{"name":"مؤسسة بن جريس","phone":"0544454646","address":"طريق صلاح الدين، حي الضيافة، خميس مشيط 62431"},"new":{"name":"مؤسسة بن جريس","phone":"0544454646","address":"طريق صلاح الدين، حي الضيافة، خميس مشيط 62431","activity":"وكالة تأجير عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/search/?api=1&query=18.289651,42.709563&query_place_id=ChIJ8y4LreFZ-xUR3GaQsbJbagc","observed":"Exact title/category/address, plus code 7PQ5+VR and +966544454646."},"status":"verified_no_change"},
+    {"id":"office-maps-502cb049e6e5","city":"خميس مشيط","old":{"name":"هدى الشهري للعقارات","phone":"0552575244","address":"7PR5+7H6، طريق صلاح الدين، السد، خميس مشيط 62432"},"new":{"name":"هدى الشهري للعقارات","phone":"0552575244","address":"7PR5+7H6، طريق صلاح الدين، السد، خميس مشيط 62432","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJGaHYdnpZ-xURvXu1moxlY08","observed":"Exact title/category/address and +966552575244."},"status":"verified_no_change"},
+    {"id":"national-ejar-office-192560","city":"نجران","old":{"name":"شركة العرب الحديثه للعقارات","phone":null,"address":"نايف بن عبدالعزيز، نجران"},"new":{"name":"شركة العرب الحديثه للعقارات","phone":null,"address":"نايف بن عبدالعزيز، نجران"},"evidence":{"source":"live Google Maps exact-name search","url":"https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%B9%D8%B1%D8%A8+%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No exact Maps business card; only unrelated Arab-company and other-office results appeared."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-192222","city":"نجران","old":{"name":"مكتب رواد الانجاز للعقارات","phone":"0506791596","address":"طريق بدون اسم، نجران"},"new":{"name":"مكتب رواد الانجاز للعقارات","phone":"0506791596","address":"طريق بدون اسم، نجران"},"evidence":{"source":"live Google Maps exact-name search","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%88%D8%A7%D8%AF%20%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D8%A7%D8%B2%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No exact Maps business card; only unrelated results with similar generic words appeared."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-194652","city":"نجران","old":{"name":"مؤسسة علي ظافر ظافر الشمراني للعقار","phone":"0505725867","address":"خالد بن عبدالعزيز، الفهد، نجران"},"new":{"name":"مؤسسة علي ظافر ظافر الشمراني للعقار","phone":"0505725867","address":"خالد بن عبدالعزيز، الفهد، نجران"},"evidence":{"source":"live Google Maps exact-name search","url":"https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B9%D9%84%D9%8A+%D8%B8%D8%A7%D9%81%D8%B1+%D8%B8%D8%A7%D9%81%D8%B1+%D8%A7%D9%84%D8%B4%D9%85%D8%B1%D8%A7%D9%86%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"Exact-name search was issued, but the Maps card did not render sufficiently to verify identity, activity, or phone."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-ejar-office-196395","city":"نجران","old":{"name":"مؤسسة ناجز الابداع للخدمات العقارية","phone":"0507119478","address":"عمر بن الخطاب، الفيصلية، نجران"},"new":{"name":"مؤسسة ناجز الابداع للخدمات العقارية","phone":"0507119478","address":"عمر بن الخطاب، الفيصلية، نجران"},"evidence":{"source":"live Google Maps exact-name search","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%86%D8%A7%D8%AC%D8%B2%20%D8%A7%D9%84%D8%A7%D8%A8%D8%AF%D8%A7%D8%B9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"Exact-name search was issued, but the Maps card did not render sufficiently to verify identity, activity, or phone."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-ejar-office-195780","city":"نجران","old":{"name":"مكتب غنام هادي الشريف للعقارات","phone":"0559595738","address":"خالد بن عبدالعزيز، الفهد، نجران"},"new":{"name":"مكتب غنام للعقارات","phone":"0559595738","address":"H6PJ+C35، شمال الفهد، نجران 66256","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card from exact old-name search","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%BA%D9%86%D8%A7%D9%85%20%D9%87%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B4%D8%B1%D9%8A%D9%81%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"Exact old-name query resolved a live card titled مكتب غنام للعقارات, category وكالة عقارات, North Al Fahd address and +966559595738; stored phone is correct but displayed name/address differ."},"status":"correction_candidate_name_address"},
+    {"id":"national-ejar-office-195555","city":"نجران","old":{"name":"مكتب الأفلاك للخدمات العقارية","phone":"0566669896","address":"نجران"},"new":{"name":"مكتب الأفلاك للخدمات العقارية","phone":"0566669896","address":"نجران"},"evidence":{"source":"live Google Maps exact-name search","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%A3%D9%81%D9%84%D8%A7%D9%83%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No exact card; the complete result list contained only مكتب دليلك أول and مكتب ابن بلابل."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-198603","city":"نجران","old":{"name":"مؤسسة بصمة السمو للخدمات العقارية","phone":"0500671811","address":"طريق بدون اسم، المطار، نجران"},"new":{"name":"مكتب بصمة السمو للخدمات العامة و العقارية","phone":"0534570409","address":"حي الروضة، 4783 الامان، NAJC4783، 9205، نجران 66441","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card from exact old-name search","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A8%D8%B5%D9%85%D8%A9%20%D8%A7%D9%84%D8%B3%D9%85%D9%88%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"Live card title/category/address, plus code JFRH+PX and current phone +966534570409; stored title, address and phone differ."},"status":"correction_candidate_name_address_phone"},
+    {"id":"national-ejar-office-197226","city":"نجران","old":{"name":"مؤسسة اعمار الشرفة للعقار","phone":"0538356309","address":"الامير سلطان بن عبدالعزيز، نجران"},"new":{"name":"مكتب اعمار الشرفه للعقار","phone":"0555723011","address":"G83W+XWX، شارع الامير سلطان، نجران","activity":"فندق"},"evidence":{"source":"live Google Maps card surfaced in exact-name result context","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%B9%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B4%D8%B1%D9%81%D9%87%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"Live card at 17.5049785,44.3473451 near stored pin; Maps currently labels it فندق and publishes +966555723011, differing from stored phone. Requires exclusion/reclassification review because current Maps category is non-real-estate."},"status":"correction_candidate_activity_phone_location"},
+    {"id":"national-ejar-office-194497","city":"نجران","old":{"name":"مكتب جوهرة الجوافة للعقار","phone":"0552335512","address":"حمزة بن عبدالمطلب، نجران"},"new":{"name":"مكتب جوهرة الجوافة للعقار","phone":"0552335512","address":"حمزة بن عبدالمطلب، نجران"},"evidence":{"source":"live Google Maps exact-name search","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%AC%D9%88%D9%87%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AC%D9%88%D8%A7%D9%81%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"Exact-name search was issued, but the Maps card failed to render sufficiently for verification."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-ejar-office-194223","city":"نجران","old":{"name":"مكتب حمد عبدالله حمد آل عباس للعقار","phone":"0532909084","address":"سلطان بن عبد العزيز، نجران"},"new":{"name":"مكتب حمد عبدالله حمد آل عباس للعقار","phone":"0532909084","address":"سلطان بن عبد العزيز، نجران"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%AD%D9%85%D8%AF%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%AD%D9%85%D8%AF%20%D8%A2%D9%84%20%D8%B9%D8%A8%D8%A7%D8%B3%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-192117","city":"نجران","old":{"name":"مكتب اطياف الجنوب للخدمات العقارية","phone":"0544041333","address":"الخالدية، نجران"},"new":{"name":"مكتب اطياف الجنوب للخدمات العقارية","phone":"0544041333","address":"الخالدية، نجران"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%B7%D9%8A%D8%A7%D9%81%20%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-193129","city":"نجران","old":{"name":"مكتب افنان العزيزية للعقارات","phone":"0541123718","address":"الملك فيصل بن عبدالعزيز، الفيصلية، نجران"},"new":{"name":"مكتب افنان العزيزية للعقارات","phone":"0541123718","address":"الملك فيصل بن عبدالعزيز، الفيصلية، نجران"},"evidence":{"source":"live Google Maps exact-name search","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%81%D9%86%D8%A7%D9%86%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"Exact-name Maps search was opened, but the browser card could not be rendered sufficiently for authoritative verification."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-ejar-office-196558","city":"نجران","old":{"name":"مكتب شموخ نجران للعقار","phone":"0500982411","address":"خالد بن عبدالعزيز، الفهد، نجران"},"new":{"name":"مكتب شموخ نجران للعقار","phone":"0500982411","address":"خالد بن عبدالعزيز، الفهد، نجران","activity":"سمسار رهن عقاري"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B4%D9%85%D9%88%D8%AE%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1","observed":"A live Maps related-place item showed the exact title and real-estate mortgage-broker category; phone and exact pin were not exposed in that view."},"status":"partially_verified_phone_unconfirmed"},
+    {"id":"national-ejar-office-192537","city":"نجران","old":{"name":"مكتب فايز بن حمد بن مبارك اليامي للعقارات","phone":"0508961112","address":"فهد بن عبدالعزيز، نجران"},"new":{"name":"مكتب فايز بن حمد بن مبارك اليامي للعقارات","phone":"0508961112","address":"فهد بن عبدالعزيز، نجران"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%81%D8%A7%D9%8A%D8%B2%20%D8%A8%D9%86%20%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D9%85%D8%A8%D8%A7%D8%B1%D9%83%20%D8%A7%D9%84%D9%8A%D8%A7%D9%85%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-197107","city":"نجران","old":{"name":"مؤسسة عوض بن مساعد بن مساعد مساعد للعقار","phone":"0555726744","address":"سعد بن ابي وقاص، نجران"},"new":{"name":"مؤسسة عوض بن مساعد بن مساعد مساعد للعقار","phone":"0555726744","address":"سعد بن ابي وقاص، نجران"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B9%D9%88%D8%B6%20%D8%A8%D9%86%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%20%D8%A8%D9%86%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-194158","city":"نجران","old":{"name":"مكتب التم للخدمات العقارية","phone":"0506308963","address":"الاسكان 86، نجران"},"new":{"name":"مكتب التم للخدمات العقارية","phone":"0506308963","address":"الاسكان 86، نجران"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AA%D9%85%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-195166","city":"نجران","old":{"name":"مكتب منصة الدارة للخدمات العقارية","phone":"0559024555","address":"ناصر بن عبدالعزيز، الروضة، نجران"},"new":{"name":"مكتب منصة الدارة للخدمات العقارية","phone":"0559024555","address":"ناصر بن عبدالعزيز، الروضة، نجران"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D9%86%D8%B5%D8%A9%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-196309","city":"نجران","old":{"name":"مكتب لوامع البناء المميز للعقار","phone":"0566601372","address":"الملك عبد العزيز، نجران"},"new":{"name":"مكتب لوامع البناء المميز للعقار","phone":"0566601372","address":"الملك عبد العزيز، نجران"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%84%D9%88%D8%A7%D9%85%D8%B9%20%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1%20%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-192834","city":"نجران","old":{"name":"مكتب بصمة خدماتي العقاري","phone":"0500667377","address":"العام، الصناعية، نجران"},"new":{"name":"مكتب بصمة خدماتي العقاري","phone":"0500667377","address":"العام، الصناعية، نجران"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D8%B5%D9%85%D8%A9%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-196051","city":"نجران","old":{"name":"مكتب الصملة للخدمات العقارية","phone":"0509840427","address":"امتداد شارع صهيب بن سنان، الفهد، نجران"},"new":{"name":"مكتب الصملة للخدمات العقارية","phone":"0509840427","address":"امتداد شارع صهيب بن سنان، الفهد، نجران"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B5%D9%85%D9%84%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-192377","city":"نجران","old":{"name":"مكتب فاطمه أحمد بن علي حميره العقاري","phone":"0592796666","address":"خالد بن عبدالعزيز، الفهد، نجران"},"new":{"name":"مكتب فاطمه أحمد بن علي حميره العقاري","phone":"0592796666","address":"خالد بن عبدالعزيز، الفهد، نجران"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%81%D8%A7%D8%B7%D9%85%D9%87%20%D8%A3%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D8%B9%D9%84%D9%8A%20%D8%AD%D9%85%D9%8A%D8%B1%D9%87%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-196084","city":"نجران","old":{"name":"مكتب لوامع الجنوب العقارية","phone":"0552271319","address":"طريق الملك سلمان بن عبدالعزيز، الفيصلية، نجران"},"new":{"name":"مكتب لوامع الجنوب العقارية","phone":"0552271319","address":"طريق الملك سلمان بن عبدالعزيز، الفيصلية، نجران"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%84%D9%88%D8%A7%D9%85%D8%B9%20%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-198660","city":"نجران","old":{"name":"مكتب دليل المستأجر للعقار","phone":"0506795560","address":"خالد بن عبدالعزيز، الفهد، نجران"},"new":{"name":"مكتب دليل المستأجر للعقار","phone":"0506795560","address":"خالد بن عبدالعزيز، الفهد، نجران"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%A3%D8%AC%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-ejar-office-198712","city":"نجران","old":{"name":"مكتب القمري للعقارات","phone":"0555723728","address":"الملك فيصل بن عبدالعزيز، الفيصلية، نجران"},"new":{"name":"مكتب القمري للعقارات","phone":"0555723728","address":"الملك فيصل بن عبدالعزيز، الفيصلية، نجران"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%82%D9%85%D8%B1%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"office-maps-a449dc340d3e","city":"نجران","old":{"name":"مكتب صحاري للعقارات وادارة الاملاك","phone":"0506386616","address":"سعد بن وقاص، المفرق، نجران 66262"},"new":{"name":"مكتب صحاري للعقارات وادارة الاملاك","phone":"0506386616","address":"سعد بن وقاص، المفرق، نجران 66262"},"evidence":{"source":"live Google Maps place URL open attempted","url":"https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B5%D8%AD%D8%A7%D8%B1%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D8%A7%D9%85%D9%84%D8%A7%D9%83%E2%80%AD/@17.5501222,44.2319932,17z/data=!3m1!4b1!4m6!3m5!1s0x15fec31e31eea36d:0x78ac94c6fbf2bfc6!8m2!3d17.5501222!4d44.2319932!16s%2Fg%2F11rj31b4h8","observed":"The exact place URL was attempted, but the Maps card did not render sufficiently in this pass to reconfirm the published phone."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"office-maps-4df0444ece21","city":"بيشة","old":{"name":"مكتب رونق بيشة للعقار","phone":"0557973111","address":"4022 الأمير ماجد بن عبدالعزيز، الخزامى، حي, ALAB8832, 8832، بيشة 67711"},"new":{"name":"مكتب رونق بيشة للعقار","phone":"0557973111","address":"4022 الأمير ماجد بن عبدالعزيز، الخزامى، حي, ALAB8832, 8832، بيشة 67711","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJTYSLagAr8BUR5BET9bIAGX8","observed":"Exact title/category/address, plus code 2J9C+W3 and +966557973111."},"status":"verified_no_change"},
+    {"id":"office-maps-0c8acfd16b95","city":"بيشة","old":{"name":"مكتب وتد للعقار","phone":"0539344410","address":"4482، الفهد، بيشة 67712 7773"},"new":{"name":"مكتب وتد للعقار","phone":"0539344410","address":"4482، الفهد، بيشة 67712 7773","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJa32hgiIp8BURGwA7Q7D3sYY","observed":"Same exact Place ID resolved title مكتب وتد للعقار and tel:+966539344410; the live related listing identifies it as وكالة عقارات."},"status":"verified_no_change"},
+    {"id":"office-maps-c33b8e3e876b","city":"بيشة","old":{"name":"المبارك للعقار والخدمات العامة","phone":"0558485785","address":"7434 طريق الملك فهد، الفهد, 3925، بيشة 67712"},"new":{"name":"المبارك للعقار والخدمات العامة","phone":"0558485785","address":"7434 طريق الملك فهد، الفهد, 3925، بيشة 67712","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJh9f5xhMp8BUR4x4s_GHuOdM","observed":"Exact title/category/address, plus code XJV3+7C and +966558485785."},"status":"verified_no_change"},
+    {"id":"office-maps-20b51571176e","city":"بيشة","old":{"name":"مكتب نهضة بيشة للعقار","phone":"0503001775","address":"9306 شارع خالد بن الوليد، الملك عبدالله، 3925، بيشة 67713"},"new":{"name":"مكتب نهضة بيشة للعقار","phone":"0503001775","address":"9306 شارع خالد بن الوليد، الملك عبدالله، 3925، بيشة 67713","activity":"وكالة عقارات تجارية"},"evidence":{"source":"live Google Maps card","url":"https://www.google.com/maps/place/?q=place_id:ChIJ2USdYt8p8BURnEBPHWIeVsA","observed":"Exact title/category/address, plus code XHJW+6C and +966503001775."},"status":"verified_no_change"},
+    {"id":"office-maps-2ae22144b796","city":"بيشة","old":{"name":"مكتب الثريا المميز للعقار والخدمات العامه","phone":"0509980021","address":"XHWX+CVM، شارع الخالدية، الفهد، بيشة 61361"},"new":{"name":"مكتب الثريا المميز للعقار والخدمات العامه","phone":"0509980021","address":"XHWX+CVM، شارع الخالدية، الفهد، بيشة 61361","activity":"مكتب الشركات"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/place/?q=place_id:ChIJoawpYZgp8BURu3jAkMVJm34","observed":"Exact title and office category appeared in a live related-place item; direct card render failed before phone reconfirmation."},"status":"partially_verified_phone_unconfirmed"},
+    {"id":"national-yango-office-198909582195","city":"بيشة","old":{"name":"مكتب عقار","phone":"0536021175","address":"حي الخزامى، ALAC7212، بيشة"},"new":{"name":"مكتب عقار","phone":"0536021175","address":"حي الخزامى، ALAC7212، بيشة"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A8%D9%8A%D8%B4%D8%A9%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%AE%D8%B2%D8%A7%D9%85%D9%89","observed":"Generic name produced no uniquely attributable authoritative Maps card; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-yango-office-28655674620","city":"بيشة","old":{"name":"مكتب معالي بيشة للعقارات","phone":"0503535919","address":"حي الملك عبدالله، ALAC3955، بيشة"},"new":{"name":"مكتب معالي بيشة للعقارات","phone":"0503535919","address":"حي الملك عبدالله، ALAC3955، بيشة"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%B9%D8%A7%D9%84%D9%8A%20%D8%A8%D9%8A%D8%B4%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA","observed":"No authoritative exact Maps card was available; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-yango-office-17922235385","city":"بيشة","old":{"name":"مكتب ركن الاعمال للخدمات الالكترونيه","phone":"0567930789","address":"حي الخزامى، ALAB4346، بيشة"},"new":{"name":"مكتب ركن الاعمال للخدمات الالكترونيه","phone":"0567930789","address":"حي الخزامى، ALAB4346، بيشة"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%83%D9%86%20%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%A7%D9%84%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D9%87%20%D8%A8%D9%8A%D8%B4%D8%A9","observed":"No authoritative real-estate Maps card was available; activity remains unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-yango-office-243195522634","city":"بيشة","old":{"name":"مكتب جنوب المدينة للخدمات العقارية","phone":"0176222232","address":"حي الملك عبدالله، بيشة"},"new":{"name":"مكتب جنوب المدينة للخدمات العقارية","phone":"0176222232","address":"حي الملك عبدالله، بيشة"},"evidence":{"source":"Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%AC%D9%86%D9%88%D8%A8%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A8%D9%8A%D8%B4%D8%A9","observed":"No authoritative exact Maps card was available; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-yango-office-69635635496","city":"بيشة","old":{"name":"مكتب السمو الاقليمي للعقارات","phone":"0505764616","address":"حي الامير سلطان، ALDA5195، بيشة"},"new":{"name":"مكتب السمو الاقليمي للعقارات","phone":"0505764616","address":"حي الامير سلطان، ALDA5195، بيشة","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B3%D9%85%D9%88%20%D8%A7%D9%84%D8%A7%D9%82%D9%84%D9%8A%D9%85%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A8%D9%8A%D8%B4%D8%A9","observed":"Exact title and وكالة عقارات category appeared in a live Maps related-place item; phone and exact pin were not exposed there."},"status":"partially_verified_phone_unconfirmed"},
+    {"id":"national-google-office-ChIJx2GTBggr8BURwc2oWfqJtAU","city":"بيشة","old":{"name":"مكتب جبال المتن للخدمات العقارية","phone":"0534200412","address":"دوار، الخزامى، بيشة 67711"},"new":{"name":"مكتب جبال المتن للخدمات العقارية","phone":"0534200412","address":"دوار، الخزامى، بيشة 67711"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJx2GTBggr8BURwc2oWfqJtAU","observed":"Direct Place-ID card did not render sufficiently for phone/category reconfirmation."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-google-office-ChIJjeGyySUp8BURPB3HIKoUZXo","city":"بيشة","old":{"name":"مكتب سفير بيشة للعقارات","phone":"0503127837","address":"شارع الإمام محمد بن عبدالوهاب، الملك عبدالله، بيشة 67712"},"new":{"name":"مكتب سفير بيشة للعقارات","phone":"0503127837","address":"شارع الإمام محمد بن عبدالوهاب، الملك عبدالله، بيشة 67712"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJjeGyySUp8BURPB3HIKoUZXo","observed":"Direct Place-ID card did not render sufficiently for phone/category reconfirmation."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-google-office-ChIJURG3KQAp8BURvSU2Rn3nNkM","city":"بيشة","old":{"name":"مكتب ساعي البركة للعقارات عقار بيشه","phone":"0571127875","address":"شارع النخل مقابل مسجد خالد بن الوليد، بيشة"},"new":{"name":"مكتب ساعي البركة للعقارات عقار بيشه","phone":"0571127875","address":"شارع النخل مقابل مسجد خالد بن الوليد، بيشة","activity":"شركة إدارة عقارات"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/place/?q=place_id:ChIJURG3KQAp8BURvSU2Rn3nNkM","observed":"Exact title and شركة إدارة عقارات category appeared repeatedly in live related-place items; phone was not exposed there."},"status":"partially_verified_phone_unconfirmed"},
+    {"id":"national-google-office-ChIJCxhlGgAr8BURXIUZXO5f3jw","city":"بيشة","old":{"name":"مكتب سالم للعقار والخدمات العامة","phone":"0501795906","address":"الخزامى، بيشة 67711"},"new":{"name":"مكتب سالم للعقار والخدمات العامة","phone":"0501795906","address":"الخزامى، بيشة 67711"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJCxhlGgAr8BURXIUZXO5f3jw","observed":"Direct Place-ID card did not render sufficiently for full verification."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-google-office-ChIJL1DEHW4r8BURm1HxDB-GUqE","city":"بيشة","old":{"name":"ركن الوسيط للعقار","phone":"0552362323","address":"Unnamed Road، الخزامى، بيشة 67711"},"new":{"name":"ركن الوسيط للعقار","phone":"0552362323","address":"Unnamed Road، الخزامى، بيشة 67711"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJL1DEHW4r8BURm1HxDB-GUqE","observed":"Direct Place-ID card did not render sufficiently for full verification."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-google-office-ChIJ8f2BCMop8BURuaJyD1d275c","city":"بيشة","old":{"name":"مكتب النايف للعقار","phone":"0507525357","address":"XHJW+9HC، الإمام الشيخ محمد بن مسعود بن هادي، الملك عبدالله، بيشة 67712"},"new":{"name":"مكتب النايف للعقار","phone":"0507525357","address":"XHJW+9HC، الإمام الشيخ محمد بن مسعود بن هادي، الملك عبدالله، بيشة 67712","activity":"مستشار عقارات"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/place/?q=place_id:ChIJ8f2BCMop8BURuaJyD1d275c","observed":"Exact title and مستشار عقارات category appeared in a live related-place item; phone was not exposed there."},"status":"partially_verified_phone_unconfirmed"},
+    {"id":"national-google-office-ChIJNw7IFgAr8BUR4lYhYHyZa3U","city":"بيشة","old":{"name":"شركة أساس العقارية","phone":"0506022001","address":"الخزامى، 8045, 4087, بيشة 67711"},"new":{"name":"شركة أساس العقارية","phone":"0506022001","address":"الخزامى، 8045, 4087, بيشة 67711"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJNw7IFgAr8BUR4lYhYHyZa3U","observed":"Direct Place-ID card did not render sufficiently for full verification."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-google-office-ChIJ61qedHIp8BURhG6oqQif81s","city":"بيشة","old":{"name":"مكتب بيرق بيشة فرع ثاني لمكتب ابوحمدان للعقارات","phone":"0500215785","address":"3511 طريق الملك فهد، الفهد، بيشة 67712"},"new":{"name":"مكتب بيرق بيشة فرع ثاني لمكتب ابوحمدان للعقارات","phone":"0500215785","address":"3511 طريق الملك فهد، الفهد، بيشة 67712"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJ61qedHIp8BURhG6oqQif81s","observed":"Direct Place-ID card did not render sufficiently for full verification."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-google-office-ChIJiwzYpJgr8BURacBH17yRueQ","city":"بيشة","old":{"name":"كيان التميز للخدمات العقارية","phone":"0531917101","address":"الخزامى، بيشة 14556"},"new":{"name":"كيان التميز للخدمات العقارية","phone":"0531917101","address":"الخزامى، بيشة 14556"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJiwzYpJgr8BURacBH17yRueQ","observed":"Direct Place-ID card did not render sufficiently for full verification."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-google-office-ChIJhxovWQAr8BURmkLSHt12kbA","city":"بيشة","old":{"name":"مكتب خدمات الابداع للخدمات العقارية","phone":"0532481622","address":"7936، الخزامى، بيشة 67711"},"new":{"name":"مكتب خدمات الابداع للخدمات العقارية","phone":"0532481622","address":"7936، الخزامى، بيشة 67711","activity":"خدمات الاستثمار"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/place/?q=place_id:ChIJhxovWQAr8BURmkLSHt12kbA","observed":"Exact title and خدمات الاستثمار category appeared in a live related-place item; phone was not exposed there."},"status":"partially_verified_phone_unconfirmed"},
+    {"id":"national-google-office-ChIJLaXFVu4p8BURyqXNYIvYKTc","city":"بيشة","old":{"name":"مكتب السادس للخدمات العقارية","phone":"0537200902","address":"XJR4+R4M، الفهد، بيشة 67712"},"new":{"name":"مكتب السادس للخدمات العقارية","phone":"0537200902","address":"XJR4+R4M، الفهد، بيشة 67712"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJLaXFVu4p8BURyqXNYIvYKTc","observed":"Direct Place-ID card did not render sufficiently for full verification."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-google-office-ChIJHY-CMEYr8BURSXWXiHfRzkI","city":"بيشة","old":{"name":"ابحر للخدمات العقارية","phone":"0552165204","address":"ALAB8124، 8124 شارع عمر بن الخطاب، 4045، بيشة 67711"},"new":{"name":"ابحر للخدمات العقارية","phone":"0552165204","address":"ALAB8124، 8124 شارع عمر بن الخطاب، 4045، بيشة 67711"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJHY-CMEYr8BURSXWXiHfRzkI","observed":"Direct Place-ID card did not render sufficiently for full verification."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-google-office-ChIJN_yhBSUr8BURzxT9PjxtSCg","city":"بيشة","old":{"name":"مكتب شموخ بيشة للخدمات العقارية","phone":"0537242400","address":"عمر بن الخطاب، الخزامى، بيشة 67711"},"new":{"name":"مكتب شموخ بيشة للخدمات العقارية","phone":"0537242400","address":"عمر بن الخطاب، الخزامى، بيشة 67711","activity":"وكالة عقارات تجارية"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/place/?q=place_id:ChIJN_yhBSUr8BURzxT9PjxtSCg","observed":"Exact title and وكالة عقارات تجارية category appeared in a live related-place item; phone was not exposed there."},"status":"partially_verified_phone_unconfirmed"},
+    {"id":"national-google-office-ChIJkXjcTCAp8BURHS5MK6mgMNY","city":"بيشة","old":{"name":"شركة النايف العقارية","phone":"0500521400","address":"6942 طريق الملك سعود، الخزامى، بيشة 67711 3869"},"new":{"name":"شركة النايف العقارية","phone":"0500521400","address":"6942 طريق الملك سعود، الخزامى، بيشة 67711 3869"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJkXjcTCAp8BURHS5MK6mgMNY","observed":"Direct Place-ID card did not render sufficiently for full verification."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-google-office-ChIJc2CCzn-b5BURilAqSZrTYvI","city":"محايل عسير","old":{"name":"ركن الحلول للعقارات","phone":"0506667018","address":"Unnamed Road، الخالدية، محايل عسير 63731"},"new":{"name":"ركن الحلول للعقارات","phone":"0506667018","address":"Unnamed Road، الخالدية، محايل عسير 63731","activity":"شركة إدارة عقارات"},"evidence":{"source":"live Google Maps Place-ID card","url":"https://www.google.com/maps/place/?q=place_id:ChIJc2CCzn-b5BURilAqSZrTYvI","observed":"Exact title, real-estate-management category, stored address, plus code G2WP+3X, and phone +966506667018 were visible on the live card."},"status":"verified_no_change"},
+    {"id":"national-google-office-ChIJg2bc-ZOF5BURW5tbvPEDjPA","city":"محايل عسير","old":{"name":"مكتب الأتمام للخدمات العقارية","phone":"0502518958","address":"5727 رشدان الجهني، الحيلة الغربي، AHAB8472، 8472، محايل عسير 61913"},"new":{"name":"مكتب الأتمام للخدمات العقارية","phone":"0502518958","address":"5727 رشدان الجهني، الحيلة الغربي، AHAB8472، 8472، محايل عسير 61913","activity":"شركة إدارة عقارات"},"evidence":{"source":"live Google Maps Place-ID card","url":"https://www.google.com/maps/place/?q=place_id:ChIJg2bc-ZOF5BURW5tbvPEDjPA","observed":"Exact title, real-estate-management category, stored address, plus code G337+3G, and phone +966502518958 were visible on the live card."},"status":"verified_no_change"},
+    {"id":"national-google-office-ChIJj6LDJMqP5BUR74rBPM4FM2A","city":"محايل عسير","old":{"name":"مكتب حي الوعد للعقار","phone":"0549497019","address":"H397+JPH حي، الوعد، محايل عسير 63712"},"new":{"name":"مكتب حي الوعد للعقار","phone":"0549497019","address":"H397+JPH حي، الوعد، محايل عسير 63712","activity":"مستشار عقارات"},"evidence":{"source":"live Google Maps Place-ID card","url":"https://www.google.com/maps/place/?q=place_id:ChIJj6LDJMqP5BUR74rBPM4FM2A","observed":"Exact title, real-estate-consultant category, stored address and phone +966549497019 were visible on the live card."},"status":"verified_no_change"},
+    {"id":"national-google-office-ChIJvb_yUlKF5BURNV0gjX7yXvI","city":"محايل عسير","old":{"name":"مؤسسة إنماء المستقبل للخدمات العقارية والمقاولات والخدمات العامه","phone":"0530077107","address":"شارع سلمان الفارسي، الضرس، محايل عسير 63751"},"new":{"name":"مؤسسة إنماء المستقبل للخدمات العقارية والمقاولات والخدمات العامه","phone":"0530077107","address":"شارع سلمان الفارسي، الضرس، محايل عسير 63751","activity":"مكتب الشركات"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/place/?q=place_id:ChIJvb_yUlKF5BURNV0gjX7yXvI","observed":"Exact title and current مكتب الشركات category appeared in a live related-place item; phone and exact pin were not exposed there."},"status":"partially_verified_phone_unconfirmed"},
+    {"id":"national-google-office-ChIJbQZcsnSF5BUR7V9K6YquJTQ","city":"محايل عسير","old":{"name":"رواسي الجنوب للخدمات العقارية","phone":"0504609620","address":"G336+65V، حي الحيلة الغربي، محايل عسير 63312"},"new":{"name":"رواسي الجنوب للخدمات العقارية","phone":"0504609620","address":"G336+65V، حي الحيلة الغربي، محايل عسير 63312","activity":"شركة إدارة عقارات"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/place/?q=place_id:ChIJbQZcsnSF5BUR7V9K6YquJTQ","observed":"Exact title and real-estate-management category appeared in live related-place items; phone and exact pin were not exposed there."},"status":"partially_verified_phone_unconfirmed"},
+    {"id":"national-google-office-ChIJk4P6WwiF5BURXjLhGnMklXo","city":"محايل عسير","old":{"name":"صروح العقاريه","phone":"0555899402","address":"طريق الملك فيصل، النزهة، محايل عسير 63711"},"new":{"name":"صروح العقاريه","phone":"0555899402","address":"طريق الملك فيصل، النزهة، محايل عسير 63711"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJk4P6WwiF5BURXjLhGnMklXo","observed":"Direct Place-ID card did not render sufficiently for authoritative verification."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-google-office-ChIJf3rK5wOF5BURjGDOPBgv6Ww","city":"محايل عسير","old":{"name":"مقر النخيل للعقارات محايل عسير","phone":"0550061507","address":"مقر النخيل للعقارات، الخالدية، محايل عسير 63731"},"new":{"name":"مقر النخيل للعقارات محايل عسير","phone":"0550061507","address":"مقر النخيل للعقارات، الخالدية، محايل عسير 63731","activity":"وكالة عقارات تجارية"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/place/?q=place_id:ChIJf3rK5wOF5BURjGDOPBgv6Ww","observed":"Exact title and commercial-real-estate category appeared in a live related-place item; phone and exact pin were not exposed there."},"status":"partially_verified_phone_unconfirmed"},
+    {"id":"national-google-office-ChIJA6UeM3CF5BUR3R58E373d8I","city":"محايل عسير","old":{"name":"مقيم عقاري معتمد","phone":"0554329717","address":"H326+RFR، طريق الملك فيصل، محايل عسير 63711"},"new":{"name":"مقيم عقاري معتمد","phone":"0554329717","address":"H326+RFR، طريق الملك فيصل، محايل عسير 63711","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/place/?q=place_id:ChIJA6UeM3CF5BUR3R58E373d8I","observed":"Exact title and real-estate-agency category appeared in a live related-place item; phone and exact pin were not exposed there."},"status":"partially_verified_phone_unconfirmed"},
+    {"id":"national-google-office-ChIJhTDGblOF5BURDVa7_xAT4gI","city":"محايل عسير","old":{"name":"مكتب زاهر علي للعقار","phone":"0505243531","address":"حي الروضة، AHAC3927، 3927، محايل عسير 63714"},"new":{"name":"مكتب زاهر علي للعقار","phone":"0505243531","address":"حي الروضة، AHAC3927، 3927، محايل عسير 63714"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJhTDGblOF5BURDVa7_xAT4gI","observed":"Direct Place-ID card did not render sufficiently for authoritative verification."},"status":"unconfirmed_maps_card_render_failure"},
+    {"id":"national-yango-office-201301267794","city":"محايل عسير","old":{"name":"مكتب سروي للعقار","phone":"0505250818","address":"عسير، محائل"},"new":{"name":"مكتب سروي للعقار","phone":"0505250818","address":"عسير، محائل"},"evidence":{"source":"live Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B3%D8%B1%D9%88%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%85%D8%AD%D8%A7%D9%8A%D9%84%20%D8%B9%D8%B3%D9%8A%D8%B1","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-google-office-ChIJQe666aaF5BURRhjNHq-g_aU","city":"محايل عسير","old":{"name":"مكتب راية وطني للخدمات العقارية","phone":"0582228836","address":"حي الحيلة الغربي، محايل عسير 63312"},"new":{"name":"مكتب راية وطني للخدمات العقارية","phone":"0582228836","address":"حي الحيلة الغربي، محايل عسير 63312","activity":"شركة إدارة عقارات"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/place/?q=place_id:ChIJQe666aaF5BURRhjNHq-g_aU","observed":"Exact title and real-estate-management category appeared in live related-place items; phone and exact pin were not exposed there."},"status":"partially_verified_phone_unconfirmed"},
+    {"id":"national-thirdparty-office-cid8934779096754221356","city":"محايل عسير","old":{"name":"مكتب الفتح للعقار محايل عسير","phone":"0558991555","address":"مكتب الفتح للعقار، حي الحيلة الغربي، Muhayil 63312"},"new":{"name":"مكتب الفتح للعقار محايل عسير","phone":"0558991555","address":"مكتب الفتح للعقار، حي الحيلة الغربي، Muhayil 63312"},"evidence":{"source":"live Google Maps exact-name lookup attempted","url":"https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%81%D8%AA%D8%AD%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%85%D8%AD%D8%A7%D9%8A%D9%84%20%D8%B9%D8%B3%D9%8A%D8%B1","observed":"No authoritative exact Maps card was available in this pass; retained unchanged and unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-google-office-ChIJG1i9mskb5RURJT0Tkr24Cz8","city":"النماص","old":{"name":"مكتب جسور الانجاز للخدمات العامه والعقار","phone":"0172801040","address":"طريق الأمير سلطان بن عبدالعزيز، السلام، النماص 67387"},"new":{"name":"مكتب جسور الانجاز للخدمات العامه والعقار","phone":"0172801040","address":"طريق الأمير سلطان بن عبدالعزيز، السلام، النماص 67387","activity":"خدمات قانونية"},"evidence":{"source":"live Google Maps Place-ID card","url":"https://www.google.com/maps/place/?q=place_id:ChIJG1i9mskb5RURJT0Tkr24Cz8","observed":"Exact title, stored address, plus code 44GJ+HM and phone +966172801040 matched, but the current Maps category is خدمات قانونية rather than a real-estate activity."},"status":"correction_candidate_non_real_estate_activity"},
+    {"id":"national-google-office-ChIJVfFmPAob5RURCegkz5cw3e4","city":"النماص","old":{"name":"مكتب محمد عوض الشهري للخدمات العقاريه","phone":"0505763491","address":"44CR+4HM، Unnamed Road، النماص 67395"},"new":{"name":"مكتب محمد عوض الشهري للخدمات العقاريه","phone":"0505763491","address":"44CR+4HM، Unnamed Road، النماص 67395","activity":"مركز تسوق"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/place/?q=place_id:ChIJVfFmPAob5RURCegkz5cw3e4","observed":"Exact title appeared in a live Maps related-place item, but its current category was مركز تسوق; phone and exact pin were not exposed in that view."},"status":"correction_candidate_non_real_estate_activity_phone_unconfirmed"},
+    {"id":"national-google-office-ChIJPYWGRgAb5RURBizz3JyFeAY","city":"النماص","old":{"name":"مكتب سرعة المنجز","phone":"0509399811","address":"7413 أبو بكر الصديق، السلام، النماص 67387"},"new":{"name":"مكتب سرعة المنجز","phone":"0509399811","address":"7413 أبو بكر الصديق، السلام، النماص 67387","activity":"وكالة عقارات"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/place/?q=place_id:ChIJPYWGRgAb5RURBizz3JyFeAY","observed":"Exact title and real-estate-agency category appeared in a live related-place item; phone and exact pin were not exposed there."},"status":"partially_verified_phone_unconfirmed"},
+    {"id":"national-google-office-ChIJV_TW6sgb5RUR4aUYHPXoCUw","city":"النماص","old":{"name":"مكتب الريان العقاري","phone":"0172820648","address":"44GJ+PR5، طريق الأمير سلطان بن عبدالعزيز، السلام، النماص 67387"},"new":{"name":"مكتب الريان العقاري","phone":"0172820648","address":"44GJ+PR5، طريق الأمير سلطان بن عبدالعزيز، السلام، النماص 67387"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJV_TW6sgb5RUR4aUYHPXoCUw","observed":"A different listing named مكتب انجاز الريان للخدمات العامة appeared nearby; it was not treated as the stored office, and the stored office remained unconfirmed."},"status":"unconfirmed_no_exact_maps_card"},
+    {"id":"national-google-office-ChIJTTocWQAb5RURMyGJ14XzxVQ","city":"النماص","old":{"name":"مكتب المهند للعقار بالنماص","phone":"0504780767","address":"السلام، النماص 67387"},"new":{"name":"مكتب المهند للعقار بالنماص","phone":"0504780767","address":"السلام، النماص 67387","activity":"عقار شقق مفروشة"},"evidence":{"source":"live Google Maps related-place card","url":"https://www.google.com/maps/place/?q=place_id:ChIJTTocWQAb5RURMyGJ14XzxVQ","observed":"Exact title appeared in a live Maps related-place item, but the current category was عقار شقق مفروشة rather than a standard brokerage; phone and exact pin were not exposed there."},"status":"correction_candidate_non_real_estate_activity_phone_unconfirmed"},
+    {"id":"national-google-office-ChIJE48mwlcb5RURWhZsmHsBobY","city":"النماص","old":{"name":"مكتب ديار المتميزون للعقار","phone":"0570713878","address":"طريق الملك فيصل، النماص 55555"},"new":{"name":"مكتب ديار المتميزون للعقار","phone":"0570713878","address":"طريق الملك فيصل، النماص 55555"},"evidence":{"source":"live Google Maps Place-ID open attempted","url":"https://www.google.com/maps/place/?q=place_id:ChIJE48mwlcb5RURWhZsmHsBobY","observed":"Direct Place-ID card did not render sufficiently for authoritative verification."},"status":"unconfirmed_maps_card_render_failure"}
+  ]
+}

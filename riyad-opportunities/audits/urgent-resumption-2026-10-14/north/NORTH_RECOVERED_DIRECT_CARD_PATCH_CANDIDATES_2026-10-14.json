@@ -1,0 +1,58 @@
+[
+  {
+    "id": "phase5-google-office-9e68099b4224",
+    "sourceFile": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+    "currentRecord": {
+      "id": "phase5-google-office-9e68099b4224",
+      "n": "بن زابن للعقار",
+      "city": "المدينة المنورة",
+      "nb": "4781 خالد بن عقبة القرشي",
+      "phones": [
+        "0569990222",
+        "0546264672"
+      ],
+      "web": "http://www.bnzabn.com/",
+      "maps": "https://www.google.com/maps/place/%D8%A8%D9%86+%D8%B2%D8%A7%D8%A8%D9%86+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/@24.4964333,39.7068992,17z/data=!3m1!4b1!4m6!3m5!1s0x15bd969188a2fb7b:0xe56103e6d746ce21!8m2!3d24.4964333!4d39.7068992!16s%2Fg%2F11dzdvh1qy?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+      "lat": 24.4964333,
+      "lon": 39.7068992,
+      "sec": "",
+      "unverifiedPhones": [
+        "0546264672"
+      ]
+    },
+    "proposedPatch": {
+      "phones": [
+        "0569990222"
+      ]
+    },
+    "criteria": {
+      "name": true,
+      "brokerageActivity": true,
+      "mapsPin": true,
+      "publicPhone": false
+    },
+    "mapsObservation": {
+      "checkedAt": "2026-10-13",
+      "directCardOpened": true,
+      "observedName": "بن زابن للعقار",
+      "category": "وكالة عقارات",
+      "phone": "0569990222",
+      "finalCardCoordinates": {
+        "lat": 24.4964333,
+        "lon": 39.7068992
+      },
+      "inputSource": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%86%20%D8%B2%D8%A7%D8%A8%D9%86%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJe_uiiJGWvRURIc5G1-YDYeU",
+      "status": "Current live card read through CUA; final URL !3d and !4d captured after rendering",
+      "candidateIdentityMatched": true,
+      "storedPinDifferenceMeters": null,
+      "oldPhonesUnconfirmed": [
+        "0546264672"
+      ],
+      "phoneCorrectionProven": "Exact existing placeId/card name and location, public Maps telephone differs. Retain old phone only in audit.",
+      "observedFinalUrl": "https://www.google.com/maps/place/%D8%A8%D9%86+%D8%B2%D8%A7%D8%A8%D9%86+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/@24.4964333,39.7068992,17z/data=!3m1!4b1!4m6!3m5!1s0x15bd969188a2fb7b:0xe56103e6d746ce21!8m2!3d24.4964333!4d39.7068992!16s%2Fg%2F11dzdvh1qy?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+    },
+    "allStoredPhoneCertainty": {
+      "0546264672": false
+    }
+  }
+]

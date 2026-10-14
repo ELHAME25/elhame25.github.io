@@ -1,0 +1,43 @@
+{
+  "patches": [
+    {
+      "id": "phase5-google-office-fd0d77b8c82a",
+      "expected": {
+        "lat": null,
+        "lon": null,
+        "activity": null
+      },
+      "patch": {
+        "lat": 25.3841505,
+        "lon": 49.5916303,
+        "activity": "وكالة عقارات"
+      },
+      "sourceEvidenceFile": "OFFICE_FINAL_AUDIT_EAST_CHECKPOINT_2026-10-12.json",
+      "sourceEvidencePath": "/new",
+      "observed": {
+        "file": "OFFICE_FINAL_AUDIT_EAST_CHECKPOINT_2026-10-12.json",
+        "path": "/new",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": false,
+          "publicPhone": true
+        },
+        "observedName": "مكتب الشواف العقاري",
+        "category": [
+          "وكالة عقارات"
+        ],
+        "pinDistanceM": null,
+        "coordinates": [
+          25.3841505,
+          49.5916303
+        ],
+        "publishedPhones": [
+          "0541570902"
+        ]
+      },
+      "currentMaps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B4%D9%88%D8%A7%D9%81%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1&query_place_id=ChIJbwoN6wSXNz4RP8HOcjhmIdk",
+      "reason": "Safe recovery of explicit saved same-card numeric pin into empty fields; name brokerage and all stored phones match"
+    }
+  ]
+}

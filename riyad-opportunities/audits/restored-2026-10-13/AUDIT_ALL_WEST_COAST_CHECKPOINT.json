@@ -1,0 +1,3224 @@
+{
+  "schema": "office-final-audit-checkpoint-v1",
+  "generatedAt": "2026-10-12T12:15:44Z",
+  "scope": [
+    "القنفذة",
+    "تربة",
+    "رابغ"
+  ],
+  "policy": "Google Maps cards only; prior covered IDs and all prior checkpoints excluded; Qadisiyah untouched",
+  "inventory": {
+    "cityInventory": 63,
+    "excludedAlreadyCovered": 1,
+    "eligible": 62,
+    "checked": 62,
+    "byCity": {
+      "القنفذة": 25,
+      "رابغ": 24,
+      "تربة": 13
+    },
+    "statusCounts": {
+      "unconfirmed": 51,
+      "needs_correction": 8,
+      "verified": 2,
+      "partially_verified_phone_unconfirmed": 1
+    },
+    "locationsMatched": 12,
+    "phonesMatched": 14,
+    "phonesDifferent": 34
+  },
+  "records": [
+    {
+      "id": "national-ejar-office-192431",
+      "city": "القنفذة",
+      "old": {
+        "name": "مكتب رواسي القمه للخدمات العقارية",
+        "address": "خالد بن زيد بن كليب، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0505333900"
+        ],
+        "coordinates": [
+          18.982266,
+          41.308458
+        ],
+        "maps": "https://maps.google.com/maps?q=18.9822659,41.3084582",
+        "activity": null
+      },
+      "new": {
+        "name": "ركن المشورة للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الخالدية",
+        "address": "ركن المشورة للعقارات، شارع الرياض، الخالدية، القنفذة 28818",
+        "phone": "0507004109",
+        "coordinates": [
+          19.1510023,
+          41.0717279
+        ],
+        "placeId": null,
+        "featureId": "0x15e68f93310636f7:0x4f5d66036c9d0223"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.491,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.16873629999999906,
+          "lon": -0.2367301000000026
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%88%D8%A7%D8%B3%D9%8A%20%D8%A7%D9%84%D9%82%D9%85%D9%87%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:44:35Z",
+      "recheckAttempts": [
+        {
+          "query": "مكتب رواسي القمه للخدمات العقارية القنفذة",
+          "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%88%D8%A7%D8%B3%D9%8A%20%D8%A7%D9%84%D9%82%D9%85%D9%87%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+          "checkedAt": "2026-10-12T12:44:35Z",
+          "status": "unconfirmed",
+          "reason": null,
+          "observedName": "ركن المشورة للعقارات",
+          "observedPhone": "0507004109"
+        },
+        {
+          "query": "0505333900 القنفذة",
+          "sourceUrl": "https://www.google.com/maps/search/0505333900%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+          "checkedAt": "2026-10-12T12:44:51Z",
+          "status": "unconfirmed",
+          "reason": "Google Maps response did not resolve to one business card",
+          "observedName": null,
+          "observedPhone": null
+        }
+      ],
+      "previousAuditStatus": "unconfirmed"
+    },
+    {
+      "id": "national-ejar-office-192440",
+      "city": "رابغ",
+      "old": {
+        "name": "مؤسسة ثمار رابغ للعقارات",
+        "address": "عائشة بنت ابي بكر، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0550504415"
+        ],
+        "coordinates": [
+          22.80079,
+          39.05335
+        ],
+        "maps": "https://maps.google.com/maps?q=22.80078678,39.05335204",
+        "activity": null
+      },
+      "new": {
+        "name": "ثمار رابغ للعقار",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الفرنيسية الشرقية",
+        "address": "ثمار رابغ للعقار، 9724، الفرنيسية الشرقية، رابغ 25753 4062،، رابغ 25757",
+        "phone": "0550504415",
+        "coordinates": [
+          22.8009144,
+          39.053308
+        ],
+        "placeId": null,
+        "featureId": "0x15c097c1ab8ac707:0xf65a7ad9960c7d9f"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.8,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.00012440000000069062,
+          "lon": -4.2000000000541604e-05
+        }
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "name": "ثمار رابغ للعقار",
+        "maps": "https://www.google.com/maps/?cid=17751635956178124191"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%AB%D9%85%D8%A7%D8%B1%20%D8%B1%D8%A7%D8%A8%D8%BA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200550504415%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:09:51Z"
+    },
+    {
+      "id": "national-ejar-office-192615",
+      "city": "رابغ",
+      "old": {
+        "name": "مؤسسة ضياء رابغ للخدمات العقارية",
+        "address": "رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0566060470"
+        ],
+        "coordinates": [
+          22.79215,
+          39.03084
+        ],
+        "maps": "https://maps.google.com/maps?q=22.79215407,39.0308404",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب ضياء رابغ للعقار",
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "district": "الصمد",
+        "address": "مكتب ضياء رابغ للعقار، الصمد، 8689، 5158، رابغ 25728",
+        "phone": "0566060470",
+        "coordinates": [
+          22.7921424,
+          39.0308717
+        ],
+        "placeId": null,
+        "featureId": "0x15c097b8eb01ade9:0xd3367bfffa997692"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.679,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.0000075999999999964984,
+          "lon": 0.000031700000000967066
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B6%D9%8A%D8%A7%D8%A1%20%D8%B1%D8%A7%D8%A8%D8%BA%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:44:35Z",
+      "recheckAttempts": [
+        {
+          "query": "مؤسسة ضياء رابغ للخدمات العقارية رابغ",
+          "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B6%D9%8A%D8%A7%D8%A1%20%D8%B1%D8%A7%D8%A8%D8%BA%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+          "checkedAt": "2026-10-12T12:44:35Z",
+          "status": "verified",
+          "reason": null,
+          "observedName": "مكتب ضياء رابغ للعقار",
+          "observedPhone": "0566060470"
+        }
+      ],
+      "previousAuditStatus": "unconfirmed"
+    },
+    {
+      "id": "national-ejar-office-192799",
+      "city": "رابغ",
+      "old": {
+        "name": "مكتب السبر المحترف العقارية",
+        "address": "طريق عبيدة بن الحارث، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0555256541"
+        ],
+        "coordinates": [
+          22.82781,
+          39.03575
+        ],
+        "maps": "https://maps.google.com/maps?q=22.827806274164,39.035751098695",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب السبر المحترف العقارية",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "الصليب الشرقي",
+        "address": "مكتب السبر المحترف العقارية، الصليب الشرقي، رابغ 25754",
+        "phone": "0555256541",
+        "coordinates": [
+          22.828079,
+          39.035763599999996
+        ],
+        "placeId": null,
+        "featureId": "0x15c09787d35d38e9:0x50ab7d569492f466"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.0002689999999994086,
+          "lon": 1.3599999995506096e-05
+        }
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B3%D8%A8%D8%B1%20%D8%A7%D9%84%D9%85%D8%AD%D8%AA%D8%B1%D9%81%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200555256541%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:18Z"
+    },
+    {
+      "id": "national-ejar-office-192922",
+      "city": "رابغ",
+      "old": {
+        "name": "مكتب ابشر المتميزون للخدمات العقارية",
+        "address": "طريق الملك عبدالله، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0530374973"
+        ],
+        "coordinates": [
+          22.80018,
+          39.04103
+        ],
+        "maps": "https://maps.google.com/maps?q=22.80018044,39.04102891",
+        "activity": null
+      },
+      "new": {
+        "name": "ابشر للعقار",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "الفرنيسية الشرقية",
+        "address": "ابشر للعقار، 2803، الفرنيسية الشرقية، الفرنيسية الشرقية، 9624, رابغ 25753",
+        "phone": "0530374973",
+        "coordinates": [
+          22.8000746,
+          39.0409441
+        ],
+        "placeId": null,
+        "featureId": "0x15c096ee14c704fb:0xcc2f2dadc3c954ec"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.468,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.00010540000000247574,
+          "lon": -0.00008590000000197051
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%A8%D8%B4%D8%B1%20%D8%A7%D9%84%D9%85%D8%AA%D9%85%D9%8A%D8%B2%D9%88%D9%86%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:44:35Z",
+      "recheckAttempts": [
+        {
+          "query": "مكتب ابشر المتميزون للخدمات العقارية رابغ",
+          "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%A8%D8%B4%D8%B1%20%D8%A7%D9%84%D9%85%D8%AA%D9%85%D9%8A%D8%B2%D9%88%D9%86%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+          "checkedAt": "2026-10-12T12:44:35Z",
+          "status": "verified",
+          "reason": null,
+          "observedName": "ابشر للعقار",
+          "observedPhone": "0530374973"
+        }
+      ],
+      "previousAuditStatus": "unconfirmed"
+    },
+    {
+      "id": "national-ejar-office-193067",
+      "city": "القنفذة",
+      "old": {
+        "name": "مكتب بوابة القنفذة للعقارات",
+        "address": "شارع الرياض، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0540783355"
+        ],
+        "coordinates": [
+          19.15111,
+          41.07445
+        ],
+        "maps": "https://maps.google.com/maps?q=19.15110746,41.07445047",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب بوابة القنفذة للعقارات",
+        "categories": [
+          "مكتب الشركات",
+          "مبنى سكني"
+        ],
+        "district": "الخالدية",
+        "address": "مكتب بوابة القنفذة للعقارات، القنفذة شارع الرياض مقابل ملعب الخالدية بعد مغسلة امواج، القنفذة 28821",
+        "phone": "0540783355",
+        "coordinates": [
+          19.1507829,
+          41.0769903
+        ],
+        "placeId": null,
+        "featureId": "0x15e68f00457edbe3:0xcf78e470e4017475"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.00032709999999980255,
+          "lon": 0.002540299999999718
+        }
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200540783355%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:32Z"
+    },
+    {
+      "id": "national-ejar-office-193819",
+      "city": "رابغ",
+      "old": {
+        "name": "شركة منازل روشن العقارية شركة شخص واحد",
+        "address": "طريق العلا بن الحضومي، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0509179000"
+        ],
+        "coordinates": [
+          22.82453,
+          39.0386
+        ],
+        "maps": "https://maps.google.com/maps?q=22.8245268,39.0386013",
+        "activity": null
+      },
+      "new": {
+        "name": "مجموعة روشن",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "King Abdullah",
+        "address": "مجموعة روشن, King Abdullah، الرياض 13519",
+        "phone": "920022288",
+        "coordinates": [
+          24.7628125,
+          46.6388125
+        ],
+        "placeId": null,
+        "featureId": "0x3e2ee3f238a96cc5:0xb7d162357013d9bd"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.245,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 1.9382824999999997,
+          "lon": 7.600212499999998
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D9%86%D8%A7%D8%B2%D9%84%20%D8%B1%D9%88%D8%B4%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B4%D8%AE%D8%B5%20%D9%88%D8%A7%D8%AD%D8%AF%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:44:35Z",
+      "recheckAttempts": [
+        {
+          "query": "شركة منازل روشن العقارية شركة شخص واحد رابغ",
+          "sourceUrl": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D9%86%D8%A7%D8%B2%D9%84%20%D8%B1%D9%88%D8%B4%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B4%D8%AE%D8%B5%20%D9%88%D8%A7%D8%AD%D8%AF%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+          "checkedAt": "2026-10-12T12:44:35Z",
+          "status": "unconfirmed",
+          "reason": null,
+          "observedName": "مجموعة روشن",
+          "observedPhone": "920022288"
+        },
+        {
+          "query": "0509179000 رابغ",
+          "sourceUrl": "https://www.google.com/maps/search/0509179000%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+          "checkedAt": "2026-10-12T12:44:51Z",
+          "status": "unconfirmed",
+          "reason": "Google Maps response did not resolve to one business card",
+          "observedName": null,
+          "observedPhone": null
+        }
+      ],
+      "previousAuditStatus": "unconfirmed"
+    },
+    {
+      "id": "national-ejar-office-193836",
+      "city": "القنفذة",
+      "old": {
+        "name": "مكتب حمد علي حمد الرحماني للعقارات",
+        "address": "الرياض، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0533006101"
+        ],
+        "coordinates": [
+          19.15084,
+          41.07201
+        ],
+        "maps": "https://maps.google.com/maps?q=19.1508427,41.0720093",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب حمد الرحماني للعقارات",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "الخالدية",
+        "address": "مكتب حمد الرحماني للعقارات، شارع الرياض، الخالدية، القنفذة 28821",
+        "phone": "0533006101",
+        "coordinates": [
+          19.1509114,
+          41.0721372
+        ],
+        "placeId": null,
+        "featureId": "0x15e68e372750db9d:0x5ea9d6a4463e0775"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.867,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.00007139999999949964,
+          "lon": 0.00012720000000143727
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AD%D9%85%D8%AF%20%D8%B9%D9%84%D9%8A%20%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:44:35Z",
+      "recheckAttempts": [
+        {
+          "query": "مكتب حمد علي حمد الرحماني للعقارات القنفذة",
+          "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AD%D9%85%D8%AF%20%D8%B9%D9%84%D9%8A%20%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+          "checkedAt": "2026-10-12T12:44:35Z",
+          "status": "verified",
+          "reason": null,
+          "observedName": "مكتب حمد الرحماني للعقارات",
+          "observedPhone": "0533006101"
+        }
+      ],
+      "previousAuditStatus": "unconfirmed"
+    },
+    {
+      "id": "national-ejar-office-193909",
+      "city": "القنفذة",
+      "old": {
+        "name": "مكتب اتون للعقار",
+        "address": "الشيخ هادي، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0535873801"
+        ],
+        "coordinates": [
+          19.14262,
+          41.07846
+        ],
+        "maps": "https://maps.google.com/maps?q=19.142615891059,41.078458136473",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب اتون للعقار",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "حي الخالدية ج",
+        "address": "مكتب اتون للعقار، 7081 الاشعث ابن قيس الكندي، حي الخالدية ج، JQDB4557، 4557، القنفذة 28821",
+        "phone": null,
+        "coordinates": [
+          19.1426549,
+          41.0795616
+        ],
+        "placeId": null,
+        "featureId": "0x15e68f005ba8fc4f:0x9578ff1fc6946e5b"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 3.489999999928273e-05,
+          "lon": 0.0011015999999983705
+        }
+      },
+      "status": "partially_verified_phone_unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%AA%D9%88%D9%86%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200535873801%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:12Z"
+    },
+    {
+      "id": "national-ejar-office-193917",
+      "city": "رابغ",
+      "old": {
+        "name": "مكتب الريان رابغ للعقارات",
+        "address": "عبيد بن الحارث، النعيم، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0546427406"
+        ],
+        "coordinates": [
+          22.83172,
+          39.03558
+        ],
+        "maps": "https://maps.google.com/maps?q=22.83172548,39.03558516",
+        "activity": null
+      },
+      "new": {
+        "name": "الريان رابغ للعقار",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "حي النعيم",
+        "address": "الريان رابغ للعقار، شارع الشريان، حي النعيم، رابغ 25766",
+        "phone": "0546389082",
+        "coordinates": [
+          22.8316563,
+          39.0354752
+        ],
+        "placeId": null,
+        "featureId": "0x15c0979290d06e63:0x35f59bba6c7c0873"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.837,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -6.370000000188725e-05,
+          "lon": -0.0001048000000025695
+        }
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "name": "الريان رابغ للعقار",
+        "phones": [
+          "0546427406",
+          "0546389082"
+        ],
+        "maps": "https://www.google.com/maps/?cid=3888185078290581619"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86%20%D8%B1%D8%A7%D8%A8%D8%BA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200546427406%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:09:51Z"
+    },
+    {
+      "id": "national-ejar-office-193918",
+      "city": "رابغ",
+      "old": {
+        "name": "مكتب انجاز رابغ للخدمات العقارية",
+        "address": "طريق علي بن ابي طالب، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0590690059"
+        ],
+        "coordinates": [
+          22.82779,
+          39.03596
+        ],
+        "maps": "https://maps.google.com/maps?q=22.82778999,39.03595778",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الإنجاز للعقار",
+        "categories": [
+          "عقار شقق مفروشة"
+        ],
+        "district": "الصليب الشرقي",
+        "address": "مكتب الإنجاز للعقار، الصليب الشرقي، شارغ ابو زر الفقارحي النعيم، رابغ",
+        "phone": "0590690059",
+        "coordinates": [
+          22.830400599999997,
+          39.0336182
+        ],
+        "placeId": null,
+        "featureId": "0x15c0979461ea84f1:0x37fc041413adae16"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.667,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.002610599999997021,
+          "lon": -0.002341800000003502
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%86%D8%AC%D8%A7%D8%B2%20%D8%B1%D8%A7%D8%A8%D8%BA%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:44:51Z",
+      "recheckAttempts": [
+        {
+          "query": "مكتب انجاز رابغ للخدمات العقارية رابغ",
+          "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%86%D8%AC%D8%A7%D8%B2%20%D8%B1%D8%A7%D8%A8%D8%BA%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+          "checkedAt": "2026-10-12T12:44:51Z",
+          "status": "verified",
+          "reason": null,
+          "observedName": "مكتب الإنجاز للعقار",
+          "observedPhone": "0590690059"
+        }
+      ],
+      "previousAuditStatus": "unconfirmed"
+    },
+    {
+      "id": "national-ejar-office-194626",
+      "city": "رابغ",
+      "old": {
+        "name": "مؤسسة زرعه المجد للعقارات",
+        "address": "الريان، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0509098487"
+        ],
+        "coordinates": [
+          22.79808,
+          39.04768
+        ],
+        "maps": "https://maps.google.com/maps?q=22.7980798,39.0476807",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب ابو زرعه للعقار",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الفرنيسية الشرقية",
+        "address": "مكتب ابو زرعه للعقار، الفرنيسية الشرقية، رابغ 25753",
+        "phone": "0509098487",
+        "coordinates": [
+          22.7980175,
+          39.0480391
+        ],
+        "placeId": null,
+        "featureId": "0x15c097754486a677:0x26604fedb57b67aa"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.622,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.00006249999999852207,
+          "lon": 0.00035909999999717
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B2%D8%B1%D8%B9%D9%87%20%D8%A7%D9%84%D9%85%D8%AC%D8%AF%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:44:51Z",
+      "recheckAttempts": [
+        {
+          "query": "مؤسسة زرعه المجد للعقارات رابغ",
+          "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B2%D8%B1%D8%B9%D9%87%20%D8%A7%D9%84%D9%85%D8%AC%D8%AF%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+          "checkedAt": "2026-10-12T12:44:51Z",
+          "status": "verified",
+          "reason": null,
+          "observedName": "مكتب ابو زرعه للعقار",
+          "observedPhone": "0509098487"
+        }
+      ],
+      "previousAuditStatus": "unconfirmed"
+    },
+    {
+      "id": "national-ejar-office-194890",
+      "city": "تربة",
+      "old": {
+        "name": "مكتب فاطمه محمد موفق ال جعره للعقارات",
+        "address": "طريق بدون اسم، تربة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0538148726"
+        ],
+        "coordinates": [
+          21.21256,
+          41.63411
+        ],
+        "maps": "https://maps.google.com/maps?q=21.21255787,41.63410816",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب فاطمة محمد الجوهر للمحاماة والاستشارات القانونية",
+        "categories": [
+          "محامٍ"
+        ],
+        "district": "السلمانية الثالث",
+        "address": "مكتب فاطمة محمد الجوهر للمحاماة والاستشارات القانونية، شارع الأمير سلمان، السلمانية الثالث، الهفوف‎ 36441",
+        "phone": "0538448445",
+        "coordinates": [
+          25.347582199999998,
+          49.559736
+        ],
+        "placeId": null,
+        "featureId": "0x3e379193d056f28f:0x389fe629ac44943"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.6,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 4.135022199999998,
+          "lon": 7.925626000000001
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%81%D8%A7%D8%B7%D9%85%D9%87%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%85%D9%88%D9%81%D9%82%20%D8%A7%D9%84%20%D8%AC%D8%B9%D8%B1%D9%87%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200538148726%20%D8%AA%D8%B1%D8%A8%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:54Z"
+    },
+    {
+      "id": "national-ejar-office-195004",
+      "city": "رابغ",
+      "old": {
+        "name": "مكتب سالم سليم مسلم الغانمي للعقار",
+        "address": "طريق مواصلات، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0503014313"
+        ],
+        "coordinates": [
+          22.78637,
+          39.04242
+        ],
+        "maps": "https://maps.google.com/maps?q=22.7863726,39.0424185",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب عبدالعزيز السلمي للعقار",
+        "categories": [
+          "مطوّر عقارات",
+          "مقاول مرافق عامة"
+        ],
+        "district": "الفرنيسية الشرقية",
+        "address": "مكتب عبدالعزيز السلمي للعقار، الفرنيسية الشرقية، رابغ 25753",
+        "phone": "0566269536",
+        "coordinates": [
+          22.802204699999997,
+          39.0557424
+        ],
+        "placeId": null,
+        "featureId": "0x15c096c10030a7c7:0x5ef1056c3888ac16"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.645,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.01583469999999565,
+          "lon": 0.013322399999999845
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B3%D8%A7%D9%84%D9%85%20%D8%B3%D9%84%D9%8A%D9%85%20%D9%85%D8%B3%D9%84%D9%85%20%D8%A7%D9%84%D8%BA%D8%A7%D9%86%D9%85%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200503014313%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:09:31Z"
+    },
+    {
+      "id": "national-ejar-office-195576",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة مكتب ابراهيم أحمد بروجي السلامي للخدمات العقارية",
+        "address": "ابو سفيان بن حرب، الشرقية، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0509896540"
+        ],
+        "coordinates": [
+          19.1263,
+          41.08821
+        ],
+        "maps": "https://maps.google.com/maps?q=19.12630491,41.08820603",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسة إبراهيم الجدعاني للعقار",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الخالدية",
+        "address": "مؤسسة إبراهيم الجدعاني للعقار، الخالدية، القنفذة 28821",
+        "phone": "0506526997",
+        "coordinates": [
+          19.150924399999997,
+          41.075480999999996
+        ],
+        "placeId": null,
+        "featureId": "0x15e68f0061a539b3:0xe070d87d8a97dc30"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.602,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.024624399999996882,
+          "lon": -0.012729000000000212
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D8%A3%D8%AD%D9%85%D8%AF%20%D8%A8%D8%B1%D9%88%D8%AC%D9%8A%20%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200509896540%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:45Z"
+    },
+    {
+      "id": "national-ejar-office-196593",
+      "city": "رابغ",
+      "old": {
+        "name": "مكتب رواد رابغ للعقار",
+        "address": "شارع الحر بن قيس، الصفاء، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0569913377"
+        ],
+        "coordinates": [
+          22.82906,
+          39.04351
+        ],
+        "maps": "https://maps.google.com/maps?q=22.82906452,39.04350769",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسه رواد رابغ للعقار والخدمات العقاريه",
+        "categories": [
+          "مستشار تسويق"
+        ],
+        "district": "الصليب الشرقي",
+        "address": "مؤسسه رواد رابغ للعقار والخدمات العقاريه، حي النعيم ـ بجوار محكمه رابغ مباشره",
+        "phone": "0505444255",
+        "coordinates": [
+          22.837260399999998,
+          39.034165099999996
+        ],
+        "placeId": null,
+        "featureId": "0x15c097046999bf23:0xcb6c2f78ca7a488c"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.59,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.008200399999999775,
+          "lon": -0.009344900000002099
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%88%D8%A7%D8%AF%20%D8%B1%D8%A7%D8%A8%D8%BA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200569913377%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:09:51Z"
+    },
+    {
+      "id": "national-ejar-office-197139",
+      "city": "رابغ",
+      "old": {
+        "name": "شركة سبل الإعمار للخدمات العقارية شركة شخص واحد",
+        "address": "طريق مواصلات، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0504606255"
+        ],
+        "coordinates": [
+          22.79531,
+          39.03708
+        ],
+        "maps": "https://maps.google.com/maps?q=22.795308908137,39.037078046614",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة سبل الاعمار للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الفرنيسية الشرقية",
+        "address": "شركة سبل الاعمار للخدمات العقارية، الفرنيسية الشرقية، رابغ 25753",
+        "phone": "0559480242",
+        "coordinates": [
+          22.7953217,
+          39.0369254
+        ],
+        "placeId": null,
+        "featureId": "0x15c0977a2f988f3f:0xe81213a72fb1e8fb"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.825,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 1.1699999998171506e-05,
+          "lon": -0.0001546000000018921
+        }
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "name": "شركة سبل الاعمار للخدمات العقارية",
+        "phones": [
+          "0504606255",
+          "0559480242"
+        ],
+        "maps": "https://www.google.com/maps/?cid=16722449975160727803"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B3%D8%A8%D9%84%20%D8%A7%D9%84%D8%A5%D8%B9%D9%85%D8%A7%D8%B1%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B4%D8%AE%D8%B5%20%D9%88%D8%A7%D8%AD%D8%AF%200504606255%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:05Z"
+    },
+    {
+      "id": "national-ejar-office-197240",
+      "city": "تربة",
+      "old": {
+        "name": "مكتب شبيب سعد سعود البقمي للعقارات",
+        "address": "تربة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0555635660"
+        ],
+        "coordinates": [
+          21.2076,
+          41.62114
+        ],
+        "maps": "https://maps.google.com/maps?q=21.2075957,41.62114",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب شبيب للعقارات",
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "district": "السلام",
+        "address": "مكتب شبيب للعقارات، شارع الطائف، السلام، تربة 29571",
+        "phone": null,
+        "coordinates": [
+          21.2126174,
+          41.6351498
+        ],
+        "placeId": null,
+        "featureId": "0x15ec3da0d59ca7df:0xd02fed9e0bf2bc73"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.692,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 0.005017399999999839,
+          "lon": 0.014009800000003736
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B4%D8%A8%D9%8A%D8%A8%20%D8%B3%D8%B9%D8%AF%20%D8%B3%D8%B9%D9%88%D8%AF%20%D8%A7%D9%84%D8%A8%D9%82%D9%85%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200555635660%20%D8%AA%D8%B1%D8%A8%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:54Z"
+    },
+    {
+      "id": "national-ejar-office-197365",
+      "city": "القنفذة",
+      "old": {
+        "name": "مكتب الوسيط الداعم للعقار",
+        "address": "شارع الرياض، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0569164870"
+        ],
+        "coordinates": [
+          19.15095,
+          41.07338
+        ],
+        "maps": "https://maps.google.com/maps?q=19.150951779175,41.073379245365",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الوسيط المحترف للعقار",
+        "categories": [
+          "وكالة عقارات",
+          "وسيط تمويل"
+        ],
+        "district": "الخالدية",
+        "address": "مكتب الوسيط المحترف للعقار، Akhalidiah District, Alriyadh Street، الخالدية،، القنفذة 28821",
+        "phone": "0532124852",
+        "coordinates": [
+          19.1508774,
+          41.074732399999995
+        ],
+        "placeId": null,
+        "featureId": "0x15e68f4539258b3b:0x55b321175369c554"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.863,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -7.260000000286482e-05,
+          "lon": 0.0013523999999947023
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B9%D9%85%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200569164870%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:27Z"
+    },
+    {
+      "id": "national-ejar-office-197723",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة الوسيط المحترف للعقار",
+        "address": "شارع الرياض، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0532124852"
+        ],
+        "coordinates": [
+          19.15075,
+          41.07473
+        ],
+        "maps": "https://maps.google.com/maps?q=19.150753,41.0747315",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الوسيط المحترف للعقار",
+        "categories": [
+          "وكالة عقارات",
+          "وسيط تمويل"
+        ],
+        "district": "الخالدية",
+        "address": "مكتب الوسيط المحترف للعقار، Akhalidiah District, Alriyadh Street، الخالدية،، القنفذة 28821",
+        "phone": "0532124852",
+        "coordinates": [
+          19.1508774,
+          41.074732399999995
+        ],
+        "placeId": null,
+        "featureId": "0x15e68f4539258b3b:0x55b321175369c554"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.868,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.00012740000000022178,
+          "lon": 2.399999992519497e-06
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7%20%D8%A7%D9%84%D9%85%D8%AD%D8%AA%D8%B1%D9%81%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200532124852%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:45Z"
+    },
+    {
+      "id": "national-ejar-office-198536",
+      "city": "تربة",
+      "old": {
+        "name": "مكتب بدر عاضه محمد البقمي للعقارات",
+        "address": "الربيع الجرمي، تربة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0566914762"
+        ],
+        "coordinates": [
+          21.20746,
+          41.62155
+        ],
+        "maps": "https://maps.google.com/maps?q=21.207458825075,41.621545610701",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب بدر الموسى للعقارات",
+        "categories": [
+          "مطوّر عقارات"
+        ],
+        "district": "العارض",
+        "address": "VJF8+W2W مكتب بدر الموسى للعقارات, العارض، الرياض 13337",
+        "phone": "0555531766",
+        "coordinates": [
+          24.874863599999998,
+          46.6150814
+        ],
+        "placeId": null,
+        "featureId": "0x3e2ee58a7ded3161:0x840e574e9f0bfb5e"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.759,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 3.6674035999999965,
+          "lon": 4.993531400000002
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D8%AF%D8%B1%20%D8%B9%D8%A7%D8%B6%D9%87%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D8%A8%D9%82%D9%85%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200566914762%20%D8%AA%D8%B1%D8%A8%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:41Z"
+    },
+    {
+      "id": "national-ejar-office-198592",
+      "city": "رابغ",
+      "old": {
+        "name": "مؤسسة عمر سليم سالم اليوبي العقارية",
+        "address": "طريق عبيدة بن الحارث، النعيم، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0504691435"
+        ],
+        "coordinates": [
+          22.82668,
+          39.03583
+        ],
+        "maps": "https://maps.google.com/maps?q=22.82668406,39.03583447",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B9%D9%85%D8%B1%20%D8%B3%D9%84%D9%8A%D9%85%20%D8%B3%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D9%8A%D9%88%D8%A8%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200504691435%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:09:51Z"
+    },
+    {
+      "id": "national-ejar-office-199068",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة طاقات الرواد العقارية",
+        "address": "الملك فيصل بن عبدالعزيز، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0530912341"
+        ],
+        "coordinates": [
+          19.1495,
+          41.08225
+        ],
+        "maps": "https://maps.google.com/maps?q=19.149502387643,41.082244582735",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B7%D8%A7%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%AF%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200530912341%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:58Z"
+    },
+    {
+      "id": "national-ejar-office-199352",
+      "city": "القنفذة",
+      "old": {
+        "name": "شركة مكتب الداعم الأفضل للعقار",
+        "address": "شارع الرياض، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [],
+        "coordinates": [
+          19.15093,
+          41.07251
+        ],
+        "maps": "https://maps.google.com/maps?q=19.15092629,41.07250974",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة مكتب الداعم الأفضل للعقار شخص واحد ذات مسؤولية محدودة",
+        "categories": [
+          "شركة قابضة"
+        ],
+        "district": "الخالدية",
+        "address": "شركة مكتب الداعم الأفضل للعقار شخص واحد ذات مسؤولية محدودة، شارع الرياض مقابل لمدرسة دلة قيادة السيارات سابقاً، القنفذة",
+        "phone": "0559434914",
+        "coordinates": [
+          19.1510095,
+          41.07063
+        ],
+        "placeId": null,
+        "featureId": "0x15e68f7a171e14f7:0xed9e7b5b831cbb66"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.682,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 7.950000000178647e-05,
+          "lon": -0.0018799999999998818
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B9%D9%85%20%D8%A7%D9%84%D8%A3%D9%81%D8%B6%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:45Z"
+    },
+    {
+      "id": "national-ejar-office-200574",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة آفاق الوعد للخدمات العقارية",
+        "address": "شارع الرياض، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0535792934"
+        ],
+        "coordinates": [
+          19.15083,
+          41.07661
+        ],
+        "maps": "https://maps.google.com/maps?q=19.150828758373,41.076606741487",
+        "activity": null
+      },
+      "new": {
+        "name": "افاق الوعد للخدمات العقاريه",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الخالدية",
+        "address": "افاق الوعد للخدمات العقاريه، شارع الرياض، الخالدية، القنفذة 21912",
+        "phone": "0555611077",
+        "coordinates": [
+          19.1507684,
+          41.0768193
+        ],
+        "placeId": null,
+        "featureId": "0x15e68f8766e5876f:0xa012610edba27aff"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.9,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -6.159999999866272e-05,
+          "lon": 0.00020929999999452775
+        }
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "name": "افاق الوعد للخدمات العقاريه",
+        "phones": [
+          "0535792934",
+          "0555611077"
+        ],
+        "maps": "https://www.google.com/maps/?cid=11534388312091556607"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A2%D9%81%D8%A7%D9%82%20%D8%A7%D9%84%D9%88%D8%B9%D8%AF%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200535792934%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:12Z"
+    },
+    {
+      "id": "national-ejar-office-200786",
+      "city": "رابغ",
+      "old": {
+        "name": "مؤسسة سعد بن محمد سعد بن محمد سعيد المحمدي للعقار",
+        "address": "طريق عثمان بن عفان، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0503634688"
+        ],
+        "coordinates": [
+          22.82482,
+          39.04132
+        ],
+        "maps": "https://maps.google.com/maps?q=22.82482026737,39.041316656613",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب سعدالمحمدي للعقار",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "الصليب الشرقي",
+        "address": "مكتب سعدالمحمدي للعقار، 3760، 8840، الصليب الشرقي، الصليب الشرقي،، رابغ 25754",
+        "phone": "0503634688",
+        "coordinates": [
+          22.825297199999998,
+          39.041247999999996
+        ],
+        "placeId": null,
+        "featureId": "0x15c097106da4582b:0xc69d5f3d4c441af0"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.535,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.0004771999999988452,
+          "lon": -7.200000000295859e-05
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B3%D8%B9%D8%AF%20%D8%A8%D9%86%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B3%D8%B9%D8%AF%20%D8%A8%D9%86%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B3%D8%B9%D9%8A%D8%AF%20%D8%A7%D9%84%D9%85%D8%AD%D9%85%D8%AF%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200503634688%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:09:31Z"
+    },
+    {
+      "id": "national-ejar-office-201061",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة بوابة البندر العقارية",
+        "address": "طريق مكة، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0505983479"
+        ],
+        "coordinates": [
+          19.11952,
+          41.09994
+        ],
+        "maps": "https://maps.google.com/maps?q=19.1195194,41.09993468",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب بوابة القنفذة للعقارات",
+        "categories": [
+          "مكتب الشركات",
+          "مبنى سكني"
+        ],
+        "district": "الخالدية",
+        "address": "مكتب بوابة القنفذة للعقارات، القنفذة شارع الرياض مقابل ملعب الخالدية بعد مغسلة امواج، القنفذة 28821",
+        "phone": "0540783355",
+        "coordinates": [
+          19.1507829,
+          41.0769903
+        ],
+        "placeId": null,
+        "featureId": "0x15e68f00457edbe3:0xcf78e470e4017475"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.63,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.031262899999997984,
+          "lon": -0.022949699999998074
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D8%A8%D9%86%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200505983479%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:11Z"
+    },
+    {
+      "id": "national-ejar-office-201209",
+      "city": "القنفذة",
+      "old": {
+        "name": "مكتب محمد بن علي بن عبدالله الهيلي للخدمات العقارية",
+        "address": "الملك فيصل بن عبدالعزيز، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0503026508"
+        ],
+        "coordinates": [
+          19.14587,
+          41.0821
+        ],
+        "maps": "https://maps.google.com/maps?q=19.14587448,41.08210212",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب حمد الرحماني للعقارات",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "الخالدية",
+        "address": "مكتب حمد الرحماني للعقارات، شارع الرياض، الخالدية، القنفذة 28821",
+        "phone": "0533006101",
+        "coordinates": [
+          19.1509114,
+          41.0721372
+        ],
+        "placeId": null,
+        "featureId": "0x15e68e372750db9d:0x5ea9d6a4463e0775"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.519,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.005041399999999641,
+          "lon": -0.009962799999996719
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D8%B9%D9%84%D9%8A%20%D8%A8%D9%86%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%A7%D9%84%D9%87%D9%8A%D9%84%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200503026508%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:58Z"
+    },
+    {
+      "id": "national-ejar-office-201295",
+      "city": "تربة",
+      "old": {
+        "name": "مكتب مناحي عايش زايد البقمي للخدمات العقارية",
+        "address": "الطائف، تربة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0534513227"
+        ],
+        "coordinates": [
+          21.20443,
+          41.62363
+        ],
+        "maps": "https://maps.google.com/maps?q=21.2044261,41.6236343",
+        "activity": null
+      },
+      "new": {
+        "name": "الخيار الصحيح للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "ظهرة لبن",
+        "address": "JGMQ+2HV الخيار الصحيح للخدمات العقارية، 13784 شارع حائل، ظهرة لبن، الرياض 13786",
+        "phone": null,
+        "coordinates": [
+          24.6325625,
+          46.538937499999996
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f1f828c0279e1:0xe772a2458e850fee"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.649,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 3.4281325000000002,
+          "lon": 4.915307499999997
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D9%86%D8%A7%D8%AD%D9%8A%20%D8%B9%D8%A7%D9%8A%D8%B4%20%D8%B2%D8%A7%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A8%D9%82%D9%85%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200534513227%20%D8%AA%D8%B1%D8%A8%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:12:07Z"
+    },
+    {
+      "id": "national-ejar-office-201344",
+      "city": "تربة",
+      "old": {
+        "name": "مؤسسة بيوت الجزيرة العقارية",
+        "address": "حضن، الإسكان، تربة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0505826610"
+        ],
+        "coordinates": [
+          21.22801,
+          41.5796
+        ],
+        "maps": "https://maps.google.com/maps?q=21.22801506,41.57960343",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A8%D9%8A%D9%88%D8%AA%20%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200505826610%20%D8%AA%D8%B1%D8%A8%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:54Z"
+    },
+    {
+      "id": "national-ejar-office-201599",
+      "city": "القنفذة",
+      "old": {
+        "name": "مكتب ابراهيم حويس عطيه القوزي للعقار",
+        "address": "طريق أحمد بن عبد العزيز، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0554582800"
+        ],
+        "coordinates": [
+          18.970544,
+          41.320865
+        ],
+        "maps": "https://maps.google.com/maps?q=18.97054402,41.32086486",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسة إبراهيم الجدعاني للعقار",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الخالدية",
+        "address": "مؤسسة إبراهيم الجدعاني للعقار، الخالدية، القنفذة 28821",
+        "phone": "0506526997",
+        "coordinates": [
+          19.150924399999997,
+          41.075480999999996
+        ],
+        "placeId": null,
+        "featureId": "0x15e68f0061a539b3:0xe070d87d8a97dc30"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.615,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.1803803999999971,
+          "lon": -0.24538400000000138
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D8%AD%D9%88%D9%8A%D8%B3%20%D8%B9%D8%B7%D9%8A%D9%87%20%D8%A7%D9%84%D9%82%D9%88%D8%B2%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200554582800%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:58Z"
+    },
+    {
+      "id": "national-ejar-office-202689",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة نبع المراسيل للخدمات العقارية",
+        "address": "جندب ابن جنادة ابو ذر الغفاري، الكورنيش، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0509328921"
+        ],
+        "coordinates": [
+          19.11941,
+          41.08033
+        ],
+        "maps": "https://maps.google.com/maps?q=19.11941165,41.08032558",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب نبراس نجد للخدمات العقارية",
+        "categories": [
+          "بائع العقارات بالمزاد"
+        ],
+        "district": "الإحتفالات",
+        "address": "مكتب نبراس نجد للخدمات العقارية، أحمد بن حنبل، الإحتفالات، الرس 51921",
+        "phone": "0500529215",
+        "coordinates": [
+          25.8512843,
+          43.472789399999996
+        ],
+        "placeId": null,
+        "featureId": "0x1583b56ac4d1cf5d:0x98df28aa94406e3c"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.727,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 6.731874300000001,
+          "lon": 2.3924594
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%86%D8%A8%D8%B9%20%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%B3%D9%8A%D9%84%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200509328921%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:45Z"
+    },
+    {
+      "id": "national-ejar-office-203155",
+      "city": "تربة",
+      "old": {
+        "name": "مكتب راك الجزيرة للخدمات العقارية",
+        "address": "طريق بدون اسم، تربة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0555696065"
+        ],
+        "coordinates": [
+          21.22085,
+          41.63641
+        ],
+        "maps": "https://maps.google.com/maps?q=21.22084645,41.63641421",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة راك الجزيرة للمقاولات",
+        "categories": [
+          "شركة إنشاء"
+        ],
+        "district": "المرجان",
+        "address": "شركة راك الجزيرة للمقاولات, جبله بن عمرو الأنصاري، المرجان، جدة 23714",
+        "phone": "0598937304",
+        "coordinates": [
+          21.688173499999998,
+          39.1090197
+        ],
+        "placeId": null,
+        "featureId": "0x15c3d9770b58f365:0x335544da3f7108f2"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.644,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.4673234999999991,
+          "lon": -2.5273903000000004
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D8%A7%D9%83%20%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200555696065%20%D8%AA%D8%B1%D8%A8%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:12:07Z"
+    },
+    {
+      "id": "national-ejar-office-204475",
+      "city": "القنفذة",
+      "old": {
+        "name": "مكتب الوسام بلص العقاري",
+        "address": "القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0537381964"
+        ],
+        "coordinates": [
+          19.12814,
+          41.07874
+        ],
+        "maps": "https://maps.google.com/maps?q=19.1281398,41.0787392",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الوسيط المحترف للعقار",
+        "categories": [
+          "وكالة عقارات",
+          "وسيط تمويل"
+        ],
+        "district": "الخالدية",
+        "address": "مكتب الوسيط المحترف للعقار، Akhalidiah District, Alriyadh Street، الخالدية،، القنفذة 28821",
+        "phone": "0532124852",
+        "coordinates": [
+          19.1508774,
+          41.074732399999995
+        ],
+        "placeId": null,
+        "featureId": "0x15e68f4539258b3b:0x55b321175369c554"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.653,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.022737400000000463,
+          "lon": -0.004007600000008438
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%88%D8%B3%D8%A7%D9%85%20%D8%A8%D9%84%D8%B5%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200537381964%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:27Z"
+    },
+    {
+      "id": "national-ejar-office-206545",
+      "city": "رابغ",
+      "old": {
+        "name": "مؤسسة دار رابغ للعقار",
+        "address": "رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0505640129"
+        ],
+        "coordinates": [
+          22.80152,
+          39.03214
+        ],
+        "maps": "https://maps.google.com/maps?q=22.801520612885,39.032135903835",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب ضياء رابغ للعقار",
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "district": "الصمد",
+        "address": "مكتب ضياء رابغ للعقار، الصمد، 8689، 5158، رابغ 25728",
+        "phone": "0566060470",
+        "coordinates": [
+          22.7921424,
+          39.0308717
+        ],
+        "placeId": null,
+        "featureId": "0x15c097b8eb01ade9:0xd3367bfffa997692"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.714,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.009377600000000541,
+          "lon": -0.001268299999999556
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%AF%D8%A7%D8%B1%20%D8%B1%D8%A7%D8%A8%D8%BA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200505640129%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:18Z"
+    },
+    {
+      "id": "national-ejar-office-207688",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة بوابة الإحلام العقارية",
+        "address": "العام، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0544878574"
+        ],
+        "coordinates": [
+          19.11487,
+          41.09483
+        ],
+        "maps": "https://maps.google.com/maps?q=19.1148662,41.0948277",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب بوابة القنفذة للعقارات",
+        "categories": [
+          "مكتب الشركات",
+          "مبنى سكني"
+        ],
+        "district": "الخالدية",
+        "address": "مكتب بوابة القنفذة للعقارات، القنفذة شارع الرياض مقابل ملعب الخالدية بعد مغسلة امواج، القنفذة 28821",
+        "phone": "0540783355",
+        "coordinates": [
+          19.1507829,
+          41.0769903
+        ],
+        "placeId": null,
+        "featureId": "0x15e68f00457edbe3:0xcf78e470e4017475"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.582,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.03591289999999958,
+          "lon": -0.017839700000003234
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D8%A5%D8%AD%D9%84%D8%A7%D9%85%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200544878574%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:41Z"
+    },
+    {
+      "id": "national-ejar-office-208463",
+      "city": "رابغ",
+      "old": {
+        "name": "مكتب التقييم الحديث للعقارات",
+        "address": "اسعد بن سهل، الصفاء، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0500354695"
+        ],
+        "coordinates": [
+          22.83143,
+          39.04364
+        ],
+        "maps": "https://maps.google.com/maps?q=22.83143178,39.0436401",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب التقييم الحديث للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "النعيم",
+        "address": "مكتب التقييم الحديث للخدمات العقارية، النعيم، رابغ 25766",
+        "phone": "0500354695",
+        "coordinates": [
+          22.851954499999998,
+          39.0407867
+        ],
+        "placeId": null,
+        "featureId": "0x15c0970044732893:0xe2020b42f749e757"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.812,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.020524499999996948,
+          "lon": -0.0028533000000052766
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AA%D9%82%D9%8A%D9%8A%D9%85%20%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200500354695%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:05Z"
+    },
+    {
+      "id": "national-ejar-office-209603",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة مكتب ياسين محمد ياسين العذيقي للخدمات العقارية",
+        "address": "القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0553815359"
+        ],
+        "coordinates": [
+          19.12062,
+          41.14517
+        ],
+        "maps": "https://maps.google.com/maps?q=19.1206201,41.1451667",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D9%8A%D8%A7%D8%B3%D9%8A%D9%86%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%8A%D8%A7%D8%B3%D9%8A%D9%86%20%D8%A7%D9%84%D8%B9%D8%B0%D9%8A%D9%82%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200553815359%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:45Z"
+    },
+    {
+      "id": "national-ejar-office-209656",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة الخبراء الاولى للخدمات العقارية",
+        "address": "الملك فيصل بن عبدالعزيز، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0555909961"
+        ],
+        "coordinates": [
+          19.13516,
+          41.08188
+        ],
+        "maps": "https://maps.google.com/maps?q=19.1351643,41.08188101",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%D9%89%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200555909961%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:27Z"
+    },
+    {
+      "id": "national-ejar-office-209865",
+      "city": "تربة",
+      "old": {
+        "name": "مؤسسة رزان رده بن محسن البقمي للخدمات العقارية",
+        "address": "طريق بدون اسم، تربة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0553653863"
+        ],
+        "coordinates": [
+          21.20679,
+          41.6272
+        ],
+        "maps": "https://maps.google.com/maps?q=21.20679204,41.62720419",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B1%D8%B2%D8%A7%D9%86%20%D8%B1%D8%AF%D9%87%20%D8%A8%D9%86%20%D9%85%D8%AD%D8%B3%D9%86%20%D8%A7%D9%84%D8%A8%D9%82%D9%85%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200553653863%20%D8%AA%D8%B1%D8%A8%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:54Z"
+    },
+    {
+      "id": "national-ejar-office-210971",
+      "city": "تربة",
+      "old": {
+        "name": "مكتب نياف عبدالله شديد البقمى العقارية",
+        "address": "إبراهيم الدمشقي، تربة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0531308959"
+        ],
+        "coordinates": [
+          21.18473,
+          41.59698
+        ],
+        "maps": "https://maps.google.com/maps?q=21.18472688,41.59698084",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الأكلبي للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "المعذر",
+        "address": "مكتب الأكلبي للعقارات، الطيور، المعذر، مقابل قصر الملك خالد، الرياض",
+        "phone": "0597987878",
+        "coordinates": [
+          24.670863699999998,
+          46.663337
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f1caefe171a21:0x7fcfcf5e8ffe386"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.576,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 3.4861337,
+          "lon": 5.0663569999999964
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%86%D9%8A%D8%A7%D9%81%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%B4%D8%AF%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A8%D9%82%D9%85%D9%89%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200531308959%20%D8%AA%D8%B1%D8%A8%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:12:07Z"
+    },
+    {
+      "id": "national-ejar-office-212102",
+      "city": "رابغ",
+      "old": {
+        "name": "مكتب ابشر المميزة للخدمات العقارية",
+        "address": "طريق الملك عبدالله، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0505677030"
+        ],
+        "coordinates": [
+          22.80016,
+          39.04093
+        ],
+        "maps": "https://maps.google.com/maps?q=22.800155729709,39.040928184986",
+        "activity": null
+      },
+      "new": {
+        "name": "ابشر للخدمات العقارية",
+        "categories": [
+          "وكالة تأجير عقارات"
+        ],
+        "district": "ابو كوارة",
+        "address": "ابشر للخدمات العقارية, Building, 2040 طريق 2727، الرفاع 973، البحرين",
+        "phone": "+97338488809",
+        "coordinates": [
+          26.1242694,
+          50.574736599999994
+        ],
+        "placeId": null,
+        "featureId": "0x3e49ad0eb7d91fdd:0xa88eba8ea51ad672"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.764,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 3.3241093999999975,
+          "lon": 11.533806599999991
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%A8%D8%B4%D8%B1%20%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200505677030%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:32Z"
+    },
+    {
+      "id": "national-ejar-office-214586",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة خالد محمد بن حمدان الغامدي للعقارات",
+        "address": "شارع الرياض، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0544405240"
+        ],
+        "coordinates": [
+          19.15104,
+          41.07161
+        ],
+        "maps": "https://maps.google.com/maps?q=19.15103646,41.07161007",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب حمد الرحماني للعقارات",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "الخالدية",
+        "address": "مكتب حمد الرحماني للعقارات، شارع الرياض، الخالدية، القنفذة 28821",
+        "phone": "0533006101",
+        "coordinates": [
+          19.1509114,
+          41.0721372
+        ],
+        "placeId": null,
+        "featureId": "0x15e68e372750db9d:0x5ea9d6a4463e0775"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.597,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.00012860000000003424,
+          "lon": 0.000527200000000505
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%AE%D8%A7%D9%84%D8%AF%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D8%AD%D9%85%D8%AF%D8%A7%D9%86%20%D8%A7%D9%84%D8%BA%D8%A7%D9%85%D8%AF%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200544405240%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:41Z"
+    },
+    {
+      "id": "national-ejar-office-214847",
+      "city": "تربة",
+      "old": {
+        "name": "مؤسسة درب التيسير العقارية",
+        "address": "طريق بدون اسم، تربة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0500287688"
+        ],
+        "coordinates": [
+          21.21623,
+          41.63114
+        ],
+        "maps": "https://maps.google.com/maps?q=21.21623044,41.63114548",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة درة التيسير لمواد الإعمار",
+        "categories": [
+          "بناء منازل"
+        ],
+        "district": "حي الواحة",
+        "address": "شركة درة التيسير لمواد الإعمار، 2555 شارع فلسطين الفرعي، حي الواحة، JCWA7153، 7153، جدة 23351",
+        "phone": null,
+        "coordinates": [
+          21.550217699999997,
+          39.236222999999995
+        ],
+        "placeId": null,
+        "featureId": "0x15c3d1000594e9a3:0x3687f951ff629e30"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.643,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 0.333987699999998,
+          "lon": -2.3949170000000066
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%AF%D8%B1%D8%A8%20%D8%A7%D9%84%D8%AA%D9%8A%D8%B3%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200500287688%20%D8%AA%D8%B1%D8%A8%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:12:07Z"
+    },
+    {
+      "id": "national-ejar-office-215259",
+      "city": "تربة",
+      "old": {
+        "name": "مؤسسة ركائز البناء الذاتي للعقارات",
+        "address": "الدائري، الخالدية، تربة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0504716404"
+        ],
+        "coordinates": [
+          21.21194,
+          41.6154
+        ],
+        "maps": "https://maps.google.com/maps?q=21.211939667826,41.615395545959",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة ركائز البناء للخدمات العقارية",
+        "categories": [
+          "مستشار عقارات"
+        ],
+        "district": "الياسمين",
+        "address": "شركة ركائز البناء للخدمات العقارية، طريق أنس ابن مالك، الياسمين، الرياض 13325",
+        "phone": "0531636402",
+        "coordinates": [
+          24.817613599999998,
+          46.639341699999996
+        ],
+        "placeId": null,
+        "featureId": "0x3e2ee578f812b6fd:0x5c1b85a3b4e76ff0"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.706,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 3.6056735999999994,
+          "lon": 5.023941699999995
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B1%D9%83%D8%A7%D8%A6%D8%B2%20%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B0%D8%A7%D8%AA%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200504716404%20%D8%AA%D8%B1%D8%A8%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:54Z"
+    },
+    {
+      "id": "national-ejar-office-216621",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة ركن المشورة للعقارات",
+        "address": "شارع الرياض، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0564662337"
+        ],
+        "coordinates": [
+          19.15068,
+          41.07712
+        ],
+        "maps": "https://maps.google.com/maps?q=19.1506826,41.0771196",
+        "activity": null
+      },
+      "new": {
+        "name": "ركن المشورة للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الخالدية",
+        "address": "ركن المشورة للعقارات، شارع الرياض، الخالدية، القنفذة 28818",
+        "phone": "0507004109",
+        "coordinates": [
+          19.1510023,
+          41.0717279
+        ],
+        "placeId": null,
+        "featureId": "0x15e68f93310636f7:0x4f5d66036c9d0223"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.87,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.000322299999997,
+          "lon": -0.005392100000001676
+        }
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "name": "ركن المشورة للعقارات",
+        "phones": [
+          "0564662337",
+          "0507004109"
+        ],
+        "coordinates": [
+          19.1510023,
+          41.0717279
+        ],
+        "address": "ركن المشورة للعقارات، شارع الرياض، الخالدية، القنفذة 28818",
+        "maps": "https://www.google.com/maps/?cid=5718839266723562019"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B1%D9%83%D9%86%20%D8%A7%D9%84%D9%85%D8%B4%D9%88%D8%B1%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200564662337%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:12Z"
+    },
+    {
+      "id": "national-ejar-office-216972",
+      "city": "رابغ",
+      "old": {
+        "name": "مؤسسة محمدحافظ حامد حمد الغانمي للعقارات",
+        "address": "رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0506600578"
+        ],
+        "coordinates": [
+          22.79067,
+          39.01896
+        ],
+        "maps": "https://maps.google.com/maps?q=22.7906701,39.0189623",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D8%AD%D9%85%D8%AF%D8%AD%D8%A7%D9%81%D8%B8%20%D8%AD%D8%A7%D9%85%D8%AF%20%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D8%BA%D8%A7%D9%86%D9%85%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200506600578%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:05Z"
+    },
+    {
+      "id": "national-ejar-office-217917",
+      "city": "القنفذة",
+      "old": {
+        "name": "مكتب اعمار ستي للخدمات العقارية",
+        "address": "العلاء ابن سعد، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0566577177"
+        ],
+        "coordinates": [
+          19.12773,
+          41.08502
+        ],
+        "maps": "https://maps.google.com/maps?q=19.127726731628,41.085020899773",
+        "activity": null
+      },
+      "new": {
+        "name": "عقار ستي للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الجبيل البلد",
+        "address": "عقار ستي للخدمات العقارية، 3579 طريق الملك عبدالله، الجبيل البلد, 9589، الجبيل 35518",
+        "phone": "0505907293",
+        "coordinates": [
+          26.9912229,
+          49.6491182
+        ],
+        "placeId": null,
+        "featureId": "0x3e35a1832929cf39:0xe2860e8ef2e13055"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.857,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 7.863492900000001,
+          "lon": 8.564098199999997
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%B9%D9%85%D8%A7%D8%B1%20%D8%B3%D8%AA%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200566577177%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:41Z"
+    },
+    {
+      "id": "national-ejar-office-218095",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة عبدالله ابن احمد ابن محمد الغامدي للخدمات العقارية",
+        "address": "شارع الرياض، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0555775401"
+        ],
+        "coordinates": [
+          19.1508,
+          41.07665
+        ],
+        "maps": "https://maps.google.com/maps?q=19.15079833,41.07664973",
+        "activity": null
+      },
+      "new": {
+        "name": "عبدالله الغامدي",
+        "categories": [
+          "مبنى سكني"
+        ],
+        "district": "3176،",
+        "address": "عبدالله الغامدي، ابراهيم بن حجر،، 3176،، JQAB7990، 7990، القنفذة 28814،",
+        "phone": null,
+        "coordinates": [
+          19.178456399999998,
+          41.082523699999996
+        ],
+        "placeId": null,
+        "featureId": "0x15e68fd550a1f3b5:0x1d39b45e10d98bf8"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.423,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 0.027656399999997916,
+          "lon": 0.005873699999995097
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%A7%D8%A8%D9%86%20%D8%A7%D8%AD%D9%85%D8%AF%20%D8%A7%D8%A8%D9%86%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D8%BA%D8%A7%D9%85%D8%AF%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200555775401%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:41Z"
+    },
+    {
+      "id": "national-ejar-office-218554",
+      "city": "رابغ",
+      "old": {
+        "name": "مؤسسة عبدالعزيز عقل عقيل السلمي للعقار",
+        "address": "رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0555364299"
+        ],
+        "coordinates": [
+          22.79657,
+          39.05625
+        ],
+        "maps": "https://maps.google.com/maps?q=22.7965738,39.056247",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب عبدالعزيز السلمي للعقار",
+        "categories": [
+          "مطوّر عقارات",
+          "مقاول مرافق عامة"
+        ],
+        "district": "الفرنيسية الشرقية",
+        "address": "مكتب عبدالعزيز السلمي للعقار، الفرنيسية الشرقية، رابغ 25753",
+        "phone": "0566269536",
+        "coordinates": [
+          22.802204699999997,
+          39.0557424
+        ],
+        "placeId": null,
+        "featureId": "0x15c096c10030a7c7:0x5ef1056c3888ac16"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.758,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.005634699999998105,
+          "lon": -0.0005075999999988312
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%B9%D9%82%D9%84%20%D8%B9%D9%82%D9%8A%D9%84%20%D8%A7%D9%84%D8%B3%D9%84%D9%85%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200555364299%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:09:51Z"
+    },
+    {
+      "id": "national-ejar-office-218666",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة مكتب هنا الرواد للخدمات العقارية",
+        "address": "الملك فيصل بن عبدالعزيز، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0504521767"
+        ],
+        "coordinates": [
+          19.14993,
+          41.08243
+        ],
+        "maps": "https://maps.google.com/maps?q=19.14993431,41.08242452",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب رواد القنفذة العقاري",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "4506",
+        "address": "مكتب رواد القنفذة العقاري، JUMA4506، 7833 مراره بن الربيع، 4506، الفريق 28953",
+        "phone": "0505269428",
+        "coordinates": [
+          18.6962361,
+          41.3911102
+        ],
+        "placeId": null,
+        "featureId": "0x15e405fbaa8359a7:0x610ac3d8ca9d9801"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.603,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.4536939000000011,
+          "lon": 0.30868019999999774
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D9%87%D9%86%D8%A7%20%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%AF%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200504521767%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:27Z"
+    },
+    {
+      "id": "national-ejar-office-220681",
+      "city": "القنفذة",
+      "old": {
+        "name": "مؤسسة صروح الاصول والصكوك العقارية",
+        "address": "شارع الملك فيصل، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0537963990"
+        ],
+        "coordinates": [
+          19.13293,
+          41.08134
+        ],
+        "maps": "https://maps.google.com/maps?q=19.13293,41.0813425",
+        "activity": null
+      },
+      "new": {
+        "name": "مجموعة اصول وصكوك للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": null,
+        "address": "43RJ+XQ4 مجموعة اصول وصكوك للخدمات العقارية, القنفذة 28821",
+        "phone": "0552365416",
+        "coordinates": [
+          19.1423934,
+          41.081964
+        ],
+        "placeId": null,
+        "featureId": "0x15e69184bff79bb1:0x12b12ace2d0507a9"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.676,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.00946339999999779,
+          "lon": 0.0006240000000019563
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B5%D8%B1%D9%88%D8%AD%20%D8%A7%D9%84%D8%A7%D8%B5%D9%88%D9%84%20%D9%88%D8%A7%D9%84%D8%B5%D9%83%D9%88%D9%83%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200537963990%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:27Z"
+    },
+    {
+      "id": "national-ejar-office-223684",
+      "city": "رابغ",
+      "old": {
+        "name": "مؤسسة الخطوط العالية للخدمات العقارية",
+        "address": "العام، النسيم، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0547744144"
+        ],
+        "coordinates": [
+          22.78719,
+          39.01375
+        ],
+        "maps": "https://maps.google.com/maps?q=22.7871923,39.0137487",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسة ألتا للخدمات العقارية",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": "سنتر العوالي",
+        "address": "مؤسسة ألتا للخدمات العقارية، الشيخ محمد بن مانع، سنتر العوالي، مكة 24211",
+        "phone": "920003470",
+        "coordinates": [
+          21.362286899999997,
+          39.891127999999995
+        ],
+        "placeId": null,
+        "featureId": "0x15c205f7fc58c44f:0x8b56eb5ae06d1ddf"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.812,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -1.4249031000000016,
+          "lon": 0.8773779999999931
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AE%D8%B7%D9%88%D8%B7%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200547744144%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:32Z"
+    },
+    {
+      "id": "national-ejar-office-230296",
+      "city": "رابغ",
+      "old": {
+        "name": "مؤسسة صدى المدينة العقارية",
+        "address": "طريق عامر بن فهيره، النعيم، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0558000299"
+        ],
+        "coordinates": [
+          22.84017,
+          39.03356
+        ],
+        "maps": "https://maps.google.com/maps?q=22.84017331,39.03355826",
+        "activity": null
+      },
+      "new": {
+        "name": "صدى المدينة العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الصليب الشرقي",
+        "address": "صدى المدينة العقارية، 6977 طريق عامر بن فهيره، الصليب الشرقي، MRPA3482، 3482، رابغ 25766",
+        "phone": "0558000299",
+        "coordinates": [
+          22.840180699999998,
+          39.033583
+        ],
+        "placeId": null,
+        "featureId": "0x15c097467b97be6f:0x3d4bd15e75d1f538"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.87,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 1.069999999714355e-05,
+          "lon": 2.2999999998774e-05
+        }
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "name": "صدى المدينة العقارية",
+        "maps": "https://www.google.com/maps/?cid=4416854063200728376"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B5%D8%AF%D9%89%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200558000299%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:18Z"
+    },
+    {
+      "id": "national-ejar-office-242052",
+      "city": "رابغ",
+      "old": {
+        "name": "مكتب روز رابغ للعقار",
+        "address": "شارع عكاظ، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0568178959"
+        ],
+        "coordinates": [
+          22.79763,
+          39.05965
+        ],
+        "maps": "https://maps.google.com/maps?q=22.79762621,39.05964732",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب وسيط رابغ للعقار",
+        "categories": [
+          "وكالة عقارات",
+          "وكالة تأجير عقارات"
+        ],
+        "district": "الصليب الشرقي",
+        "address": "مكتب وسيط رابغ للعقار، الصليب الشرقي، رابغ 25754",
+        "phone": "0537511732",
+        "coordinates": [
+          22.8306324,
+          39.0355195
+        ],
+        "placeId": null,
+        "featureId": "0x15c0970c1e7f447d:0xfdd4793ba0e6a975"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.878,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.03300239999999732,
+          "lon": -0.02413049999999828
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%88%D8%B2%20%D8%B1%D8%A7%D8%A8%D8%BA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200568178959%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:32Z"
+    },
+    {
+      "id": "national-ejar-office-269930",
+      "city": "القنفذة",
+      "old": {
+        "name": "مكتب رواد القنفذة للخدمات العقارية",
+        "address": "مراره بن الربيع، القنفذة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0505269428"
+        ],
+        "coordinates": [
+          18.70423,
+          41.37477
+        ],
+        "maps": "https://maps.google.com/maps?q=18.704233011827,41.374766528606",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب رواد القنفذة العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": null,
+        "address": "مكتب رواد القنفذة العقارية، محطة الوسام، حلي 28953",
+        "phone": "0505269428",
+        "coordinates": [
+          18.696222499999998,
+          41.3911112
+        ],
+        "placeId": null,
+        "featureId": "0x15e4050055daa5c1:0x72ee38bd08089f1"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.867,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.0080075000000015,
+          "lon": 0.01634119999999939
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%88%D8%A7%D8%AF%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200505269428%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:11:12Z"
+    },
+    {
+      "id": "national-ejar-office-318391",
+      "city": "رابغ",
+      "old": {
+        "name": "مؤسسة مستقر الديار العقارية",
+        "address": "الربوة، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0508877119"
+        ],
+        "coordinates": [
+          22.77629,
+          39.03522
+        ],
+        "maps": "https://maps.google.com/maps?q=22.7762882,39.03521872",
+        "activity": null
+      },
+      "new": {
+        "name": "مستقر الديار العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الجود",
+        "address": "مستقر الديار العقارية, MRMA6993، طريق الكورنيش، الجود، رابغ 25753",
+        "phone": "0550111630",
+        "coordinates": [
+          22.7762881,
+          39.0352187
+        ],
+        "placeId": null,
+        "featureId": "0x15c09700409fc1f1:0xb433174677dd1dfe"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.875,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -1.900000000887303e-06,
+          "lon": -1.300000000981072e-06
+        }
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "name": "مستقر الديار العقارية",
+        "phones": [
+          "0508877119",
+          "0550111630"
+        ],
+        "maps": "https://www.google.com/maps/?cid=12984747742065401342"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D8%B3%D8%AA%D9%82%D8%B1%20%D8%A7%D9%84%D8%AF%D9%8A%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200508877119%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:18Z"
+    },
+    {
+      "id": "national-ejar-office-318805",
+      "city": "رابغ",
+      "old": {
+        "name": "مكتب البدر الافضل للخدمات العقارية",
+        "address": "طريق الملك عبدالله، النسيم، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0504664914"
+        ],
+        "coordinates": [
+          22.78376,
+          39.03402
+        ],
+        "maps": "https://maps.google.com/maps?q=22.78376017,39.03401572",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب البدر للخدمات العامه الإلكترونية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "القافلة",
+        "address": "مكتب البدر للخدمات العامه الإلكترونية، 4869، خميس مشيط 62454",
+        "phone": "0530719151",
+        "coordinates": [
+          18.3191031,
+          42.6971469
+        ],
+        "placeId": null,
+        "featureId": "0x15fb510b81422b2b:0x7ecf3cba77dc4e3c"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.732,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -4.464656900000001,
+          "lon": 3.6631269000000017
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%A8%D8%AF%D8%B1%20%D8%A7%D9%84%D8%A7%D9%81%D8%B6%D9%84%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200504664914%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:05Z"
+    },
+    {
+      "id": "national-ejar-office-319954",
+      "city": "تربة",
+      "old": {
+        "name": "مؤسسة سطام عائض بن ثامر الراجحي العقارية",
+        "address": "تربة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0598910045"
+        ],
+        "coordinates": [
+          21.20051,
+          41.60299
+        ],
+        "maps": "https://maps.google.com/maps?q=21.20050795,41.60299205",
+        "activity": null
+      },
+      "new": {
+        "name": "جامعة الأمير سطام بن عبد العزيز",
+        "categories": [
+          "جامعة"
+        ],
+        "district": null,
+        "address": "جامعة الأمير سطام بن عبد العزيز, 18، الخرج 11942",
+        "phone": "0115888888",
+        "coordinates": [
+          24.1486679,
+          47.270135499999995
+        ],
+        "placeId": null,
+        "featureId": "0x3e2545a1eaaaaac5:0x40c7a6a0cd362b93"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.451,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 2.948157899999998,
+          "lon": 5.667145499999997
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B3%D8%B7%D8%A7%D9%85%20%D8%B9%D8%A7%D8%A6%D8%B6%20%D8%A8%D9%86%20%D8%AB%D8%A7%D9%85%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A7%D8%AC%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200598910045%20%D8%AA%D8%B1%D8%A8%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:12:07Z"
+    },
+    {
+      "id": "national-ejar-office-337039",
+      "city": "رابغ",
+      "old": {
+        "name": "مكتب التوفيق الذهبي للخدمات العقارية",
+        "address": "النسيم، رابغ، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0550938848"
+        ],
+        "coordinates": [
+          22.80048,
+          39.03231
+        ],
+        "maps": "https://maps.google.com/maps?q=22.8004796,39.03230654",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D9%82%20%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200550938848%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:10:32Z"
+    },
+    {
+      "id": "national-ejar-office-572314",
+      "city": "تربة",
+      "old": {
+        "name": "مؤسسة إلاتمام الذاتي للتطوير العقاري",
+        "address": "شارع الطائف، الخالدية، تربة، مكة المكرمة، المملكة العربية السعودية",
+        "phones": [
+          "0555848829"
+        ],
+        "coordinates": [
+          21.21573,
+          41.62729
+        ],
+        "maps": "https://maps.google.com/maps?q=21.21572853,41.62728678",
+        "activity": null
+      },
+      "new": {
+        "name": "الاتمام الذاتي للتطوير العقاري",
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "district": "الحوية",
+        "address": "الاتمام الذاتي للتطوير العقاري، الحوية 457، الحوية، الطائف 26571",
+        "phone": "0555848829",
+        "coordinates": [
+          21.4364976,
+          40.4854384
+        ],
+        "placeId": null,
+        "featureId": "0x15ea2fc4c2c61d79:0xfe21f42283c53a7f"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.909,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.2207675999999985,
+          "lon": -1.1418516000000025
+        }
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A5%D9%84%D8%A7%D8%AA%D9%85%D8%A7%D9%85%20%D8%A7%D9%84%D8%B0%D8%A7%D8%AA%D9%8A%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200555848829%20%D8%AA%D8%B1%D8%A8%D8%A9?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:12:20Z"
+    },
+    {
+      "id": "national-google-office-ChIJrRj1pdw97BURFahko3egUlg",
+      "city": "تربة",
+      "old": {
+        "name": "مكتب الفواز للعقار",
+        "address": "",
+        "phones": [
+          "0501530920"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/?cid=6364325659130767381",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الفواز للعقار",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "السلام",
+        "address": "مكتب الفواز للعقار، بلدية، السلام، تربة 29719",
+        "phone": "0501530920",
+        "coordinates": [
+          21.216485199999997,
+          41.625730999999995
+        ],
+        "placeId": null,
+        "featureId": "0x15ec3ddca5f518ad:0x5852a077a364a815"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          21.216485199999997,
+          41.625730999999995
+        ],
+        "address": "مكتب الفواز للعقار، بلدية، السلام، تربة 29719",
+        "maps": "https://www.google.com/maps/?cid=6364325659130767381"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/?cid=6364325659130767381&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:12:20Z"
+    }
+  ]
+}

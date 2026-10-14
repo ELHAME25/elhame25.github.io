@@ -1,0 +1,35 @@
+{
+  "schema": "office-session4-field-evidence-v1",
+  "date": "2026-10-14",
+  "lane": 1,
+  "scopeCount": 155,
+  "status": "in_progress",
+  "records": [
+    {
+      "id": "phase5-office-7100bfbe2905",
+      "name": "مكتب درة الهجرة للعقار معتمد",
+      "identityLinkedToStoredOffice": true,
+      "allStoredPhonesConfirmed": true,
+      "fullyVerified": true,
+      "fieldCertainty": {"name": true, "brokerageActivity": true, "mapsPin": true, "publicPhone": true},
+      "inheritedFieldEvidence": "OFFICE_FIELD_EVIDENCE_RECONCILIATION_2026-10-13.json: name, mapsPin, publicPhone already observed; only brokerageActivity pending",
+      "sources": ["https://haraj.com.sa/11188169680/بيت_شعبي_للبيع/", "https://sa.aqar.fm/en/land-for-sale/medina/jabal-ayr/land-for-sale-6642964"],
+      "observation": "Property advertising identifies license holder مكتب درة الهجرة للعقارات and responsible advertiser 0569996744, matching the stored office telephone. Aqar advertiser institution likewise offers land for sale with 0569996744. This proves actual brokerage activity; advertised-property map is not used as office-pin evidence.",
+      "proposedPatch": null,
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase5-google-office-9e68099b4224",
+      "name": "بن زابن للعقار",
+      "identityLinkedToStoredOffice": true,
+      "allStoredPhonesConfirmed": true,
+      "fullyVerified": true,
+      "fieldCertainty": {"name": true, "brokerageActivity": true, "mapsPin": true, "publicPhone": true},
+      "inheritedFieldEvidence": "OFFICE_FIELD_EVIDENCE_RECONCILIATION_2026-10-13.json: all four observed; former phone pending",
+      "sources": ["https://www.bnzabn.com/index.php?id=174", "https://www.aqar.fm/user/32242"],
+      "observation": "Official bnzabn.com property-sale page footer identifies بن زابن للعقار والمقاولات and publishes 0569990222 and 0546264672. Both currently stored phones are explicitly linked to the same office. No extra numbers added.",
+      "proposedPatch": null,
+      "unconfirmedFields": []
+    }
+  ]
+}

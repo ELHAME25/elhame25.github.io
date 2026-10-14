@@ -1,0 +1,1184 @@
+{
+  "schema": "office-final-audit-checkpoint-v1",
+  "generatedAt": "2026-10-12T12:34:26Z",
+  "scope": [
+    "حفر الباطن",
+    "النعيرية",
+    "قرية العليا"
+  ],
+  "policy": "Google Maps cards only; prior and EAST checkpoint IDs excluded; Qadisiyah untouched",
+  "inventory": {
+    "cityInventory": 54,
+    "excludedAlreadyCovered": 32,
+    "eligible": 22,
+    "checked": 22,
+    "byCity": {
+      "حفر الباطن": 17,
+      "قرية العليا": 5
+    },
+    "statusCounts": {
+      "unconfirmed": 9,
+      "needs_correction": 10,
+      "verified": 3
+    },
+    "locationsMatched": 14,
+    "phonesMatched": 14,
+    "phonesDifferent": 5
+  },
+  "records": [
+    {
+      "id": "national-yango-office-108112364856",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "العارضي للخدمات العقارية",
+        "address": "Hafar Al Batin, Al Aziziyah District, الملك خالد بن عبدالعزيز, CNMF3824",
+        "phones": [
+          "0505944124"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/108112364856/?lang=ar",
+        "activity": null
+      },
+      "new": {
+        "name": "للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "المحمدية",
+        "address": "للخدمات العقارية، 3455 أبو بكر الصديق، المحمدية، حفر الباطن 39911",
+        "phone": "0509115115",
+        "coordinates": [
+          28.3973119,
+          45.977184699999995
+        ],
+        "placeId": null,
+        "featureId": "0x3fd73f4c7189152d:0x32e231be792a4b04"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.8,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "generic truncated card title and different phone; identity not established",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200505944124%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:34:08Z"
+    },
+    {
+      "id": "national-yango-office-113991381361",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "مكتب الســمو العقاري",
+        "address": "حفر الباطن, حي السليمانية, الملك فهد بن عبدالعزيز, CNMC3126",
+        "phones": [
+          "0531180091"
+        ],
+        "coordinates": [
+          28.39874,
+          45.93564
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/113991381361/?lang=ar",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B3%D9%80%D9%80%D9%85%D9%88%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200531180091%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:53Z"
+    },
+    {
+      "id": "national-yango-office-131282140959",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "مطلق لتحصيل الديون",
+        "address": "حفر الباطن, حي الفيصلية, الامير سلطان بن عبد العزيز, CNMA9016",
+        "phones": [
+          "0533332031"
+        ],
+        "coordinates": [
+          28.39442,
+          45.9577
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/131282140959/?lang=ar",
+        "activity": null
+      },
+      "new": {
+        "name": "مطلق لتحصيل الديون",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الفيصلية",
+        "address": "CX44+8XR مطلق لتحصيل الديون، الفيصلية، حفر الباطن 39951",
+        "phone": "0533332031",
+        "coordinates": [
+          28.405852799999998,
+          45.9574031
+        ],
+        "placeId": null,
+        "featureId": "0x3fd741ab3b9c7b2b:0xd91e4e39c83b1081"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.011432799999997911,
+          "lon": -0.0002969000000021538
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          28.405852799999998,
+          45.9574031
+        ],
+        "address": "CX44+8XR مطلق لتحصيل الديون، الفيصلية، حفر الباطن 39951",
+        "maps": "https://www.google.com/maps/?cid=15645028165611098241"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%B7%D9%84%D9%82%20%D9%84%D8%AA%D8%AD%D8%B5%D9%8A%D9%84%20%D8%A7%D9%84%D8%AF%D9%8A%D9%88%D9%86%200533332031%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:37Z"
+    },
+    {
+      "id": "national-yango-office-13937853672",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "أصول الجعيثن العقارية",
+        "address": "حفر الباطن, حي الخالدية, الامير طلال بن عبد العزيز, CNME8602",
+        "phones": [
+          "0550979596"
+        ],
+        "coordinates": [
+          28.42169,
+          45.96309
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/13937853672/?lang=ar",
+        "activity": null
+      },
+      "new": {
+        "name": "أصول الجعيثن العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الخالدية",
+        "address": "أصول الجعيثن العقارية، الامير محمد بن فهد، الخالدية، حفر الباطن 39921",
+        "phone": "0550979596",
+        "coordinates": [
+          28.4302682,
+          45.968578799999996
+        ],
+        "placeId": null,
+        "featureId": "0x3fd741a2646266bf:0x84f09065d183f55c"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.008578199999998759,
+          "lon": 0.005488799999994853
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          28.4302682,
+          45.968578799999996
+        ],
+        "address": "أصول الجعيثن العقارية، الامير محمد بن فهد، الخالدية، حفر الباطن 39921",
+        "maps": "https://www.google.com/maps/?cid=9579315174398227804"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D8%A3%D8%B5%D9%88%D9%84%20%D8%A7%D9%84%D8%AC%D8%B9%D9%8A%D8%AB%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200550979596%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:21Z"
+    },
+    {
+      "id": "national-yango-office-159696511897",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "مكتب السيف للعقار",
+        "address": "حفر الباطن, حي الريان, سعد بن عبادة, CMAA5189",
+        "phones": [
+          "0555246830"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/159696511897/",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب السيف للعقار",
+        "categories": [
+          "سمسار رهن عقاري"
+        ],
+        "district": "الريان",
+        "address": "9X34+VJC مكتب السيف للعقار، سعد بن عبادة، الريان، حفر الباطن 39812",
+        "phone": "0555246830",
+        "coordinates": [
+          28.354631299999998,
+          45.9565305
+        ],
+        "placeId": null,
+        "featureId": "0x3fd73f80e1cfbcf7:0xcf52d92cfed73db0"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          28.354631299999998,
+          45.9565305
+        ],
+        "address": "9X34+VJC مكتب السيف للعقار، سعد بن عبادة، الريان، حفر الباطن 39812",
+        "maps": "https://www.google.com/maps/?cid=14939241701218663856"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B3%D9%8A%D9%81%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200555246830%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:53Z"
+    },
+    {
+      "id": "national-yango-office-160309343745",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "مكتب العبدالله للعقارات",
+        "address": "حفر الباطن, حي الخالدية, خالد بن وليد, CNMB2267",
+        "phones": [
+          "0556230359"
+        ],
+        "coordinates": [
+          28.42169,
+          45.96309
+        ],
+        "maps": "https://maps.yango.com/ar/org/160309343745/",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب العبدالله للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "حي الخالدية",
+        "address": "مكتب العبدالله للعقارات، 8125 خالد بن وليد، حي الخالدية، CNMB2267، 2267، حفر الباطن 39953",
+        "phone": "0556230359",
+        "coordinates": [
+          28.4261485,
+          45.9537057
+        ],
+        "placeId": null,
+        "featureId": "0x3fd74121a8d4cb55:0x3dc3c27f8f1d2a9a"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.0044584999999983665,
+          "lon": -0.009384300000000678
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          28.4261485,
+          45.9537057
+        ],
+        "address": "مكتب العبدالله للعقارات، 8125 خالد بن وليد، حي الخالدية، CNMB2267، 2267، حفر الباطن 39953",
+        "maps": "https://www.google.com/maps/?cid=4450614709889870490"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200556230359%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:54Z"
+    },
+    {
+      "id": "national-yango-office-172404322366",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "اليوسف للمقاولات العامة والخدمات",
+        "address": "Hafar Al Batin, Al Faisaliyah District, الامير سلطان بن عبد العزيز, CNMA8920",
+        "phones": [
+          "0137239071"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/172404322366/?lang=ar",
+        "activity": null
+      },
+      "new": {
+        "name": "مقاولات العامه",
+        "categories": [
+          "بناء منازل"
+        ],
+        "district": "حي العزيزية",
+        "address": "مقاولات العامه، حي العزيزية، CNMA4520، 4520 العزيزية 57، 6638، حفر الباطن 39956",
+        "phone": null,
+        "coordinates": [
+          28.4351821,
+          45.9682349
+        ],
+        "placeId": null,
+        "featureId": "0x3fd741004404cced:0xadf3c8d15c7af548"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.609,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null,
+        "identityMatch": true
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D8%A7%D9%84%D9%8A%D9%88%D8%B3%D9%81%20%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%200137239071%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:53Z"
+    },
+    {
+      "id": "national-yango-office-176431236509",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "مكتب السسعد للعقارات حفر الباطن فرع رقم 1",
+        "address": "المنطقة الشرقية, حفر الباطن, حي الصفاء, الملك فيصل بن عبدالعزيز",
+        "phones": [
+          "0555247722"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/176431236509/",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة السعد العقارية",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "المصيف",
+        "address": "شركة السعد العقارية، طريق الملك عبدالله، المصيف، حفر الباطن 39913",
+        "phone": "0555247722",
+        "coordinates": [
+          28.412210299999998,
+          45.9843768
+        ],
+        "placeId": null,
+        "featureId": "0x3fd739f1f376bf4b:0xc08554dbe3b4ba6a"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.433,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          28.412210299999998,
+          45.9843768
+        ],
+        "address": "شركة السعد العقارية، طريق الملك عبدالله، المصيف، حفر الباطن 39913",
+        "maps": "https://www.google.com/maps/?cid=13872587530579524202"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B3%D8%B3%D8%B9%D8%AF%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86%20%D9%81%D8%B1%D8%B9%20%D8%B1%D9%82%D9%85%201%200555247722%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:54Z"
+    },
+    {
+      "id": "national-yango-office-180233777212",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "مكتب الشباك العقاري",
+        "address": "المنطقة الشرقية, حفر الباطن",
+        "phones": [
+          "0552901449"
+        ],
+        "coordinates": [
+          28.45394,
+          45.99566
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/180233777212/?lang=ar",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الشباك العقاري",
+        "categories": [
+          "خدمات الاستثمار"
+        ],
+        "district": null,
+        "address": "9W5R+RR2 مكتب الشباك العقاري، حفر الباطن - حي ابو موسى الأشعري مكتب الشباك العقاري،، حفر الباطن",
+        "phone": "0552901449",
+        "coordinates": [
+          28.3595215,
+          45.942011699999995
+        ],
+        "placeId": null,
+        "featureId": "0x3fd73f40eb39240b:0x1076b67b03316c77"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.09441849999999974,
+          "lon": -0.05364830000000609
+        },
+        "identityMatch": true
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B4%D8%A8%D8%A7%D9%83%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200552901449%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:33:09Z"
+    },
+    {
+      "id": "national-yango-office-18092931849",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "النادر للتطوير العقاري",
+        "address": "المنطقة الشرقية, حفر الباطن, حي الريان, سعد بن عبادة",
+        "phones": [
+          "0539722201"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/18092931849/?lang=ar",
+        "activity": null
+      },
+      "new": {
+        "name": "شركه النادر العقاريه",
+        "categories": [
+          "وكالة عقارات تجارية",
+          "وكالة عقارات"
+        ],
+        "district": "حي المروج",
+        "address": "شركه النادر العقاريه، طريق الملك فيصل، حي المروج، حفر الباطن 39511",
+        "phone": "0557374430",
+        "coordinates": [
+          28.3782633,
+          45.9736118
+        ],
+        "placeId": null,
+        "featureId": "0x3fd73f0014df121b:0xcc84b359684296d"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.667,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D8%A7%D9%84%D9%86%D8%A7%D8%AF%D8%B1%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200539722201%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:38Z"
+    },
+    {
+      "id": "national-yango-office-208977239890",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "مكتب الدهام العقاري",
+        "address": "حفر الباطن, حي الخالدية, الملك عبد العزيز, CNMB8074",
+        "phones": [
+          "0534944494"
+        ],
+        "coordinates": [
+          28.42169,
+          45.96309
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/208977239890/?lang=ar",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الدهام للعقارات",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": "الخالدية",
+        "address": "مكتب الدهام للعقارات، 8060 طريق الملك عبدالعزيز، الخالدية، حفر الباطن 39953",
+        "phone": "0534944494",
+        "coordinates": [
+          28.4253292,
+          45.9727506
+        ],
+        "placeId": null,
+        "featureId": "0x3fd740b70313f72f:0x5aebb081824b3884"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.872,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.0036391999999985103,
+          "lon": 0.009660599999996577
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          28.4253292,
+          45.9727506
+        ],
+        "address": "مكتب الدهام للعقارات، 8060 طريق الملك عبدالعزيز، الخالدية، حفر الباطن 39953",
+        "maps": "https://www.google.com/maps/?cid=6551524153223755908"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AF%D9%87%D8%A7%D9%85%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200534944494%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:33:09Z"
+    },
+    {
+      "id": "national-yango-office-214784593424",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "مكتب همس المستقبل للعقارات",
+        "address": "حفر الباطن, حي المروج, الاحنف بن قيس, CNAA4406",
+        "phones": [
+          "0583560000"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/214784593424/?lang=ar",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب همس المستقبل للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "المروج",
+        "address": "مكتب همس المستقبل للعقارات، حي، المروج، حفر الباطن 39913",
+        "phone": "0583560000",
+        "coordinates": [
+          28.3831608,
+          45.988439
+        ],
+        "placeId": null,
+        "featureId": "0x3fd739c7ba45ff39:0x1495be16c6a4f128"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          28.3831608,
+          45.988439
+        ],
+        "address": "مكتب همس المستقبل للعقارات، حي، المروج، حفر الباطن 39913",
+        "maps": "https://www.google.com/maps/?cid=1483300657319702824"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%87%D9%85%D8%B3%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200583560000%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:37Z"
+    },
+    {
+      "id": "national-yango-office-225072134083",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "بيت التسهيلات العقارية",
+        "address": "المنطقة الشرقية, حفر الباطن, حي البلدية, الجدى",
+        "phones": [
+          "0547455444"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/225072134083/?lang=ar",
+        "activity": null
+      },
+      "new": {
+        "name": "بيت التسهيلات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "البلدية",
+        "address": "بيت التسهيلات العقارية، 6784 الجدى، البلدية، حفر الباطن 39921 2736،",
+        "phone": "0547455444",
+        "coordinates": [
+          28.416192499999998,
+          45.975860499999996
+        ],
+        "placeId": null,
+        "featureId": "0x3fd7410018ca55ed:0xe1ff39a9a3c09294"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          28.416192499999998,
+          45.975860499999996
+        ],
+        "address": "بيت التسهيلات العقارية، 6784 الجدى، البلدية، حفر الباطن 39921 2736،",
+        "maps": "https://www.google.com/maps/?cid=16284798178354565780"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D8%A8%D9%8A%D8%AA%20%D8%A7%D9%84%D8%AA%D8%B3%D9%87%D9%8A%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200547455444%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:21Z"
+    },
+    {
+      "id": "national-yango-office-239017421555",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "مكتب العوض العقاري",
+        "address": "حفر الباطن, حي الربوة, الامير سلطان بن عبد العزيز, CNMD7714",
+        "phones": [
+          "0501019227"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/239017421555/?lang=ar",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B9%D9%88%D8%B6%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200501019227%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:21Z"
+    },
+    {
+      "id": "national-yango-office-66192423770",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "المحامي فهد الرحيمان",
+        "address": "حفر الباطن, حي الفيصلية, ابن بطوطة, CNML3528",
+        "phones": [
+          "0534696007"
+        ],
+        "coordinates": [
+          28.39442,
+          45.9577
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/66192423770/?lang=ar",
+        "activity": null
+      },
+      "new": {
+        "name": "المحامي فهد الرحيمان",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الفيصلية",
+        "address": "9XV6+XQV المحامي فهد الرحيمان، أبو بكر الصديق، الفيصلية، حفر الباطن 39951",
+        "phone": "0534696007",
+        "coordinates": [
+          28.3949872,
+          45.961932
+        ],
+        "placeId": null,
+        "featureId": "0x3fd73f0022bf82b1:0x3cad421564b49762"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.0005671999999989907,
+          "lon": 0.0042319999999946845
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          28.3949872,
+          45.961932
+        ],
+        "address": "9XV6+XQV المحامي فهد الرحيمان، أبو بكر الصديق، الفيصلية، حفر الباطن 39951",
+        "maps": "https://www.google.com/maps/?cid=4372223472897922914"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%85%D9%8A%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85%D8%A7%D9%86%200534696007%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:21Z"
+    },
+    {
+      "id": "national-yango-office-83646496556",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "مكتب الفال الافضل العقاري",
+        "address": "حفر الباطن, حي السليمانية, الملك عبداللة بن عبدالعزيز, CNMD2893",
+        "phones": [
+          "0566794333"
+        ],
+        "coordinates": [
+          28.39874,
+          45.93564
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/83646496556/?lang=ar",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الفال للعقار تبوك",
+        "categories": [
+          "وكالة تأجير عقارات"
+        ],
+        "district": "مروج الأمير",
+        "address": "مكتب الفال للعقار تبوك، شارع البازعي، مروج الأمير، تبوك 47315",
+        "phone": "0553049908",
+        "coordinates": [
+          28.429791299999998,
+          36.5623614
+        ],
+        "placeId": null,
+        "featureId": "0x15a9b376164d70a7:0xb21302580e576320"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.723,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.031051299999997894,
+          "lon": -9.373278599999999
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%81%D8%A7%D9%84%20%D8%A7%D9%84%D8%A7%D9%81%D8%B6%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200566794333%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:38Z"
+    },
+    {
+      "id": "national-yango-office-99477656014",
+      "city": "حفر الباطن",
+      "old": {
+        "name": "مكتب تساهيل العقاري",
+        "address": "Hafar Al Batin, Al Muhammadiyah District, ابو بكر الصديق, CNAC3455",
+        "phones": [
+          "0595220088"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/99477656014/?lang=ar",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب تساهيل العقاري",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "المحمدية",
+        "address": "مكتب تساهيل العقاري, حي, CNAA3763، 9484 أبو بكر الصديق، المحمدية، 3763، حفر الباطن 39911",
+        "phone": "0595220088",
+        "coordinates": [
+          28.397851799999998,
+          45.9807226
+        ],
+        "placeId": null,
+        "featureId": "0x3fd739001d0d74ab:0x93e3293c7a455759"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          28.397851799999998,
+          45.9807226
+        ],
+        "address": "مكتب تساهيل العقاري, حي, CNAA3763، 9484 أبو بكر الصديق، المحمدية، 3763، حفر الباطن 39911",
+        "maps": "https://www.google.com/maps/?cid=10656406483014866777"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AA%D8%B3%D8%A7%D9%87%D9%8A%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200595220088%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:32:21Z"
+    },
+    {
+      "id": "national-google-office-ChIJ8Ux8A0d1zT8RPmT70PF4-JU",
+      "city": "قرية العليا",
+      "old": {
+        "name": "مكتب عبدالله للعقارات",
+        "address": "شارع الأمير محمد بن فهد بن عبدالعزيز، الاندلس، قرية العليا 37661، المملكة العربية السعودية",
+        "phones": [
+          "0559779721"
+        ],
+        "coordinates": [
+          27.55962,
+          47.69554
+        ],
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x3fcd7547037c4cf1:0x95f878f1d0fb643e!8m2!3d27.5596238!4d47.695538!16s%2Fg%2F11njn7ljw7!19sChIJ8Ux8A0d1zT8RPmT70PF4-JU?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب عبدالله للعقارات",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": "الاندلس",
+        "address": "مكتب عبدالله للعقارات، شارع الأمير محمد بن فهد بن عبدالعزيز، الاندلس، قرية العليا 37661",
+        "phone": "0559779721",
+        "coordinates": [
+          27.559623799999997,
+          47.695538
+        ],
+        "placeId": null,
+        "featureId": "0x3fcd7547037c4cf1:0x95f878f1d0fb643e"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 3.7999999982218924e-06,
+          "lon": -2.0000000020559128e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x3fcd7547037c4cf1:0x95f878f1d0fb643e!8m2!3d27.5596238!4d47.695538!16s%2Fg%2F11njn7ljw7!19sChIJ8Ux8A0d1zT8RPmT70PF4-JU?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:33:09Z"
+    },
+    {
+      "id": "national-google-office-ChIJdzK1HQB1zT8RP1hCK6MaRIM",
+      "city": "قرية العليا",
+      "old": {
+        "name": "مكتب الصمان للعقارات",
+        "address": "HP72+27G، الزهور، قرية العليا 37661، المملكة العربية السعودية",
+        "phones": [
+          "0536670238"
+        ],
+        "coordinates": [
+          27.56257,
+          47.70069
+        ],
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B5%D9%85%D8%A7%D9%86+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x3fcd75001db53277:0x83441aa32b42583f!8m2!3d27.5625711!4d47.7006925!16s%2Fg%2F11ygl79wpp!19sChIJdzK1HQB1zT8RP1hCK6MaRIM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الصمان للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الزهور",
+        "address": "HP72+27G مكتب الصمان للعقارات، الزهور، قرية العليا 37661",
+        "phone": "0536670238",
+        "coordinates": [
+          27.5625711,
+          47.700692499999995
+        ],
+        "placeId": null,
+        "featureId": "0x3fcd75001db53277:0x83441aa32b42583f"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 1.0999999986438525e-06,
+          "lon": 2.4999999936881068e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B5%D9%85%D8%A7%D9%86+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x3fcd75001db53277:0x83441aa32b42583f!8m2!3d27.5625711!4d47.7006925!16s%2Fg%2F11ygl79wpp!19sChIJdzK1HQB1zT8RP1hCK6MaRIM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:33:09Z"
+    },
+    {
+      "id": "national-google-office-ChIJq6qqqvp1zT8RjGPWDyXauUQ",
+      "city": "قرية العليا",
+      "old": {
+        "name": "مكتب ركن مدهال للعقار",
+        "address": "HM3V+WVF، المروج، قرية العليا 37633، المملكة العربية السعودية",
+        "phones": [
+          "0133860555"
+        ],
+        "coordinates": [
+          27.5548,
+          47.69466
+        ],
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%83%D9%86+%D9%85%D8%AF%D9%87%D8%A7%D9%84+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x3fcd75faaaaaaaab:0x44b9da250fd6638c!8m2!3d27.5548015!4d47.6946634!16s%2Fg%2F11g85jhr0l!19sChIJq6qqqvp1zT8RjGPWDyXauUQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب ركن مدهال للعقار",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "المروج",
+        "address": "HM3V+WVF مكتب ركن مدهال للعقار، المروج، قرية العليا 37633",
+        "phone": "0133860555",
+        "coordinates": [
+          27.5548015,
+          47.694663399999996
+        ],
+        "placeId": null,
+        "featureId": "0x3fcd75faaaaaaaab:0x44b9da250fd6638c"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 1.4999999997655777e-06,
+          "lon": 3.399999997100167e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%83%D9%86+%D9%85%D8%AF%D9%87%D8%A7%D9%84+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x3fcd75faaaaaaaab:0x44b9da250fd6638c!8m2!3d27.5548015!4d47.6946634!16s%2Fg%2F11g85jhr0l!19sChIJq6qqqvp1zT8RjGPWDyXauUQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:33:09Z"
+    },
+    {
+      "id": "national-yango-office-118644541594",
+      "city": "قرية العليا",
+      "old": {
+        "name": "مؤسسة دمث للخدمات العقارية",
+        "address": "قرية العليا, حي الروضة, الامير فهد بن محمد بن عبدالعزيز, CIMA4878",
+        "phones": [
+          "0559909449"
+        ],
+        "coordinates": [
+          27.56583,
+          47.70028
+        ],
+        "maps": "https://maps.yango.com/ar-sa/org/118644541594/",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة الهدى للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "district": "السليمانية",
+        "address": "شركة الهدى للخدمات العقارية، السليمانية، الرياض 12245",
+        "phone": "0535233407",
+        "coordinates": [
+          24.700345499999997,
+          46.7094465
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f039ab8e1f097:0x438c8063541b4b8a"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.755,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -2.865484500000001,
+          "lon": -0.9908335000000008
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%AF%D9%85%D8%AB%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200559909449%20%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:33:24Z"
+    },
+    {
+      "id": "v9-office-ca323e9433dc",
+      "city": "قرية العليا",
+      "old": {
+        "name": "ثفال للعقارات",
+        "address": "الرفيعة، قرية العليا",
+        "phones": [
+          "0550735550"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%AB%D9%81%D8%A7%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D9%8A%D8%A7",
+        "activity": null
+      },
+      "new": {
+        "name": "ثفال للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "8277",
+        "address": "ثفال للعقارات، CGSA8277، 4669 الزهور 8، 8277، الرفيعة 37779",
+        "phone": "0550735552",
+        "coordinates": [
+          27.0140806,
+          47.0652956
+        ],
+        "placeId": null,
+        "featureId": "0x3fd2c1006eadea41:0x94c7b1ef10e5755"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D8%AB%D9%81%D8%A7%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200550735550%20%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:33:24Z"
+    }
+  ]
+}

@@ -1,0 +1,725 @@
+{
+  "baseline": "audits/OFFICE_FINAL_RECONCILIATION_SAFE_2026-10-14.json",
+  "reviewed": 29,
+  "rule": "Single saved Google Maps card observation must jointly establish name, brokerage category, all stored phones, and coordinates matching stored pin within12m. External activity confirmations excluded. No live browsing. Missing proof means unresolved, not wrong.",
+  "verifiedIds": [
+    "national-ejar-office-192849",
+    "national-ejar-office-195081",
+    "national-google-office-ChIJ03_r07GZqhUR-YVo9Vqg4-s",
+    "national-google-office-ChIJ6cgmWQCZqhURzRqEY_TK_Vc",
+    "national-google-office-ChIJB2-geuYxrBURgR1tK4z-wlA",
+    "national-google-office-ChIJF0f8bJkxrBURbaC90CBimOQ",
+    "national-google-office-ChIJJSVBEQCZqhURsvN0Su0GDNQ",
+    "national-google-office-ChIJKWKFCQAxrBURbS82iLA7JbY",
+    "national-google-office-ChIJKYxQdgAxrBUR6qMfztPGmDw",
+    "national-google-office-ChIJTeZA_zmnsBURu839VIBUpXI",
+    "national-google-office-ChIJbzvIl0CZqhURjCEXyT0ecbw",
+    "national-google-office-ChIJc-EeGwCnsBUR7BZSZMy2tS0",
+    "national-google-office-ChIJlWLEyVIxrBURmsC2lSl6KD8",
+    "national-google-office-ChIJxc17X3qnsBURSYpUv6EViRo",
+    "national-icuae-office-ChIJDRLvGASnsBURTHMswC-dPJo",
+    "national-icuae-office-ChIJvyhrr2-nsBURiKZMvaQ0X8s",
+    "national-thirdparty-office-cid1605959927093973537",
+    "national-thirdparty-office-duba-0500517062",
+    "national-thirdparty-office-duba-0537152989",
+    "national-yango-office-150604911997",
+    "national-yango-office-76852548075",
+    "v9-office-689c11e2b111",
+    "v9-office-a49fc1c319a4",
+    "v9-office-d8f3d9515850"
+  ],
+  "unresolvedIds": [
+    "national-ejar-office-198369",
+    "national-ejar-office-205516",
+    "national-google-office-ChIJLaO4VM2nsBUR8ipz9k32sIM",
+    "national-google-office-ChIJUWcVSKcxrBURgTAMZGa5vl8",
+    "national-icuae-office-ChIJD1QwvX85ghURgH81NqZlA9U"
+  ],
+  "records": [
+    {
+      "id": "national-ejar-office-192849",
+      "name": "شركة تاج نجد العقارية",
+      "city": "رياض الخبراء",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "شركة تاج نجد العقارية",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 2.7159672949351927,
+        "source": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AA%D8%A7%D8%AC%20%D9%86%D8%AC%D8%AF%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%20%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%D8%A7%D8%A1?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-195081",
+      "name": "مكتب عالم الوسيط للعقارات",
+      "city": "رياض الخبراء",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب عالم الوسيط للعقارات",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 1.856278389037712,
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200500575000%20%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%D8%A7%D8%A1?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-198369",
+      "name": "مجموعة شخصيات للعقارات",
+      "city": "رياض الخبراء",
+      "fullyVerified": false,
+      "proof": {
+        "file": "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json",
+        "checks": {
+          "name": false,
+          "brokerageActivity": false,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مجموعة شخصيات العقارية",
+        "observedCategory": [
+          "مكتب الشركات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/search/%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20%D8%B4%D8%AE%D8%B5%D9%8A%D8%A7%D8%AA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200566661234%20%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%D8%A7%D8%A1?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "national-ejar-office-205516",
+      "name": "مكتب عبدالله محمد بن صالح الحبيب للعقار",
+      "city": "رياض الخبراء",
+      "fullyVerified": false,
+      "proof": {
+        "file": "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json",
+        "checks": {
+          "name": false,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب عبدالله الحبيب للعقار",
+        "observedCategory": [
+          "وكيل عقاري"
+        ],
+        "distanceMeters": 53.69815503710172,
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D8%B5%D8%A7%D9%84%D8%AD%20%D8%A7%D9%84%D8%AD%D8%A8%D9%8A%D8%A8%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200505136510%20%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%D8%A7%D8%A1?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": [
+        "name",
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJ03_r07GZqhUR-YVo9Vqg4-s",
+      "name": "مكتب منصة الأوائل للعقارات",
+      "city": "حقل",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب منصة الأوائل للعقارات",
+        "observedCategory": [
+          "وكالة عقارات تجارية"
+        ],
+        "distanceMeters": 0.3358328655686758,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%85%D9%86%D8%B5%D8%A9+%D8%A7%D9%84%D8%A3%D9%88%D8%A7%D8%A6%D9%84+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15aa99b1d3eb7fd3:0xebe3a05af56885f9!8m2!3d29.286113!4d34.9405296!16s%2Fg%2F11vk6rx21m!19sChIJ03_r07GZqhUR-YVo9Vqg4-s?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-google-office-ChIJ6cgmWQCZqhURzRqEY_TK_Vc",
+      "name": "مكتب أبراج المدائن",
+      "city": "حقل",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب أبراج المدائن",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.45631161657011055,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A3%D8%A8%D8%B1%D8%A7%D8%AC+%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%A6%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15aa99005926c8e9:0x57fdcaf463841acd!8m2!3d29.2882259!4d34.9456302!16s%2Fg%2F11wh5jx4rr!19sChIJ6cgmWQCZqhURzRqEY_TK_Vc?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-google-office-ChIJB2-geuYxrBURgR1tK4z-wlA",
+      "name": "مكتب إتقان الشمال للخدمات العقارية",
+      "city": "ضباء",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب إتقان الشمال للخدمات العقارية",
+        "observedCategory": [
+          "وكالة تأجير عقارات"
+        ],
+        "distanceMeters": 3.536615444943436e-10,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A5%D8%AA%D9%82%D8%A7%D9%86+%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15ac31e67aa06f07:0x50c2fe8c2b6d1d81!8m2!3d27.3474217!4d35.7059508!16s%2Fg%2F11x6xt36xt!19sChIJB2-geuYxrBURgR1tK4z-wlA?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-google-office-ChIJF0f8bJkxrBURbaC90CBimOQ",
+      "name": "مكتب ديلان للخدمات العقارية",
+      "city": "ضباء",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب ديلان للخدمات العقارية",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%AF%D9%8A%D9%84%D8%A7%D9%86+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15ac31996cfc4717:0xe4986220d0bda06d!8m2!3d27.3501011!4d35.6911147!16s%2Fg%2F11kqlv_36g!19sChIJF0f8bJkxrBURbaC90CBimOQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-google-office-ChIJJSVBEQCZqhURsvN0Su0GDNQ",
+      "name": "مكتب محمد الفايز للخدمات العقاريه",
+      "city": "حقل",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب محمد الفايز للخدمات العقاريه",
+        "observedCategory": [
+          "وكالة عقارات صناعية"
+        ],
+        "distanceMeters": 0.6874411763183552,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%85%D8%AD%D9%85%D8%AF+%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%B2+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%87%E2%80%AD/data=!4m7!3m6!1s0x15aa990011412525:0xd40c06ed4a74f3b2!8m2!3d29.2874639!4d34.9462545!16s%2Fg%2F11npf11w_t!19sChIJJSVBEQCZqhURsvN0Su0GDNQ?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-google-office-ChIJKWKFCQAxrBURbS82iLA7JbY",
+      "name": "مكتب للخدمات العامة",
+      "city": "ضباء",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب للخدمات العامة",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.40078879123614036,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15ac310009856229:0xb6253bb088362f6d!8m2!3d27.3509864!4d35.6959902!16s%2Fg%2F11lts2ffqj!19sChIJKWKFCQAxrBURbS82iLA7JbY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-google-office-ChIJKYxQdgAxrBUR6qMfztPGmDw",
+      "name": "درة المعاملات للخدمات العامه",
+      "city": "ضباء",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "درة المعاملات للخدمات العامه",
+        "observedCategory": [
+          "وكالة عقارات تجارية"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/%D8%AF%D8%B1%D8%A9+%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%87%E2%80%AD/data=!4m7!3m6!1s0x15ac310076508c29:0x3c98c6d3ce1fa3ea!8m2!3d27.3520254!4d35.6885927!16s%2Fg%2F11vrcp840p!19sChIJKYxQdgAxrBUR6qMfztPGmDw?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-google-office-ChIJLaO4VM2nsBUR8ipz9k32sIM",
+      "name": "مكتب فترة الانجاز للخدمات العقارية وادارة الاملاك والتاجير العقاري",
+      "city": "أملج",
+      "fullyVerified": false,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": false,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب فترة الانجاز للخدمات العقارية وادارة الاملاك والتاجير العقاري Office of the completion period for the management and rental of real estate, apartments and electronic rental contracts",
+        "observedCategory": [
+          "وكالة تأجير عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%81%D8%AA%D8%B1%D8%A9+%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D8%A7%D8%B2+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D8%A7%D9%85%D9%84%D8%A7%D9%83+%D9%88%D8%A7%D9%84%D8%AA%D8%A7%D8%AC%D9%8A%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+Office+of+the+completion+period+for+the+management+and+rental+of+real+estate,+apartments+and+electronic+rental+contracts%E2%80%AD/data=!4m7!3m6!1s0x15b0a7cd54b8a32d:0x83b0f64df6732af2!8m2!3d25.0303816!4d37.2600057!16s%2Fg%2F11qpt8q_vs!19sChIJLaO4VM2nsBUR8ipz9k32sIM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": [
+        "name"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJTeZA_zmnsBURu839VIBUpXI",
+      "name": "مكتب الفتح عقار أملج",
+      "city": "أملج",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الفتح عقار أملج",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 6.408665722089436e-10,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%81%D8%AA%D8%AD+%D8%B9%D9%82%D8%A7%D8%B1+%D8%A3%D9%85%D9%84%D8%AC%E2%80%AD/data=!4m7!3m6!1s0x15b0a739ff40e64d:0x72a5548054fdcdbb!8m2!3d25.0355986!4d37.2582925!16s%2Fg%2F11f9gmwfwb!19sChIJTeZA_zmnsBURu839VIBUpXI?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-google-office-ChIJUWcVSKcxrBURgTAMZGa5vl8",
+      "name": "الوسيط العقاري علي غانم",
+      "city": "ضباء",
+      "fullyVerified": false,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": false,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "الوسيط العقاري علي غانم",
+        "observedCategory": [
+          "مستشار عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B9%D9%84%D9%8A+%D8%BA%D8%A7%D9%86%D9%85%E2%80%AD/data=!4m7!3m6!1s0x15ac31a748156751:0x5fbeb966640c3081!8m2!3d27.3558313!4d35.6963247!16s%2Fg%2F11vrrbnl_c!19sChIJUWcVSKcxrBURgTAMZGa5vl8?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJbzvIl0CZqhURjCEXyT0ecbw",
+      "name": "مكتب الشاطئ الشمالي للعقارات",
+      "city": "حقل",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الشاطئ الشمالي للعقارات",
+        "observedCategory": [
+          "وكيل عقاري"
+        ],
+        "distanceMeters": 0.6387291546303614,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B4%D8%A7%D8%B7%D8%A6+%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15aa994097c83b6f:0xbc711e3dc917218c!8m2!3d29.2860955!4d34.9478119!16s%2Fg%2F11zck5jmm6!19sChIJbzvIl0CZqhURjCEXyT0ecbw?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-google-office-ChIJc-EeGwCnsBUR7BZSZMy2tS0",
+      "name": "مجموعة الناشط العقاري",
+      "city": "أملج",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مجموعة الناشط العقاري",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9+%D8%A7%D9%84%D9%86%D8%A7%D8%B4%D8%B7+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x15b0a7001b1ee173:0x2db5b6cc645216ec!8m2!3d25.0380617!4d37.2634532!16s%2Fg%2F11vpzj92np!19sChIJc-EeGwCnsBUR7BZSZMy2tS0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-google-office-ChIJlWLEyVIxrBURmsC2lSl6KD8",
+      "name": "الوسيط الماسي للعقارات",
+      "city": "ضباء",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "الوسيط الماسي للعقارات",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 3.536615444943436e-10,
+        "source": "https://www.google.com/maps/place/%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7+%D8%A7%D9%84%D9%85%D8%A7%D8%B3%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15ac3152c9c46295:0x3f287a2995b6c09a!8m2!3d27.3477679!4d35.6921703!16s%2Fg%2F11kjjww0zs!19sChIJlWLEyVIxrBURmsC2lSl6KD8?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-google-office-ChIJxc17X3qnsBURSYpUv6EViRo",
+      "name": "مكتب ناجي سالم للعقار",
+      "city": "أملج",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب ناجي سالم للعقار",
+        "observedCategory": [
+          "وكالة عقارات تجارية"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%86%D8%A7%D8%AC%D9%8A+%D8%B3%D8%A7%D9%84%D9%85+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x15b0a77a5f7bcdc5:0x1a8915a1bf548a49!8m2!3d25.0307016!4d37.2637073!16s%2Fg%2F11yd1dxcmv!19sChIJxc17X3qnsBURSYpUv6EViRo?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-icuae-office-ChIJD1QwvX85ghURgH81NqZlA9U",
+      "name": "Najed Tiara Real Estate Co.",
+      "city": "رياض الخبراء",
+      "fullyVerified": false,
+      "proof": {
+        "file": "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json",
+        "checks": {
+          "name": false,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "شركة تاج نجد العقارية",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/?q=place_id:ChIJD1QwvX85ghURgH81NqZlA9U&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": [
+        "name"
+      ]
+    },
+    {
+      "id": "national-icuae-office-ChIJDRLvGASnsBURTHMswC-dPJo",
+      "name": "مكتب فارس الحوراء للخدمات العقارية",
+      "city": "أملج",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب فارس الحوراء للخدمات العقارية",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 1.28169729559617e-09,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%81%D8%A7%D8%B1%D8%B3+%D8%A7%D9%84%D8%AD%D9%88%D8%B1%D8%A7%D8%A1+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15b0a70418ef120d:0x9a3c9d2fc02c734c!8m2!3d25.0390294!4d37.2632861!16s%2Fg%2F11rcd2w3c5!19sChIJDRLvGASnsBURTHMswC-dPJo?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-icuae-office-ChIJvyhrr2-nsBURiKZMvaQ0X8s",
+      "name": "مكتب عبدالله عتيق",
+      "city": "أملج",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب عبدالله عتيق",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.6938370786034039,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%B9%D8%AA%D9%8A%D9%82%E2%80%AD/data=!4m7!3m6!1s0x15b0a76faf6b28bf:0xcb5f34a4bd4ca688!8m2!3d25.0260548!4d37.2658744!16s%2Fg%2F11sz5kyrvp!19sChIJvyhrr2-nsBURiKZMvaQ0X8s?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-thirdparty-office-cid1605959927093973537",
+      "name": "مكتب الساعه للخدمات العامه والعقاريه",
+      "city": "أملج",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الساعه للخدمات العامه والعقاريه",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.5322379858709254,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D9%87+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%87+%D9%88%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%87%E2%80%AD/data=!4m7!3m6!1s0x15b0a75255de2afd:0x1649840b81f2d221!8m2!3d25.0383353!4d37.259181!16s%2Fg%2F11rsc05j_w!19sChIJ_SreVVKnsBURIdLygQuESRY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-thirdparty-office-duba-0500517062",
+      "name": "مكتب العيسوي للعقار والخدمات الالكترونية ضباء",
+      "city": "ضباء",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب العيسوي للعقار والخدمات الالكترونية ضباء",
+        "observedCategory": [
+          "وكالة تأجير عقارات"
+        ],
+        "distanceMeters": 0.041042757643389785,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B9%D9%8A%D8%B3%D9%88%D9%8A+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9+%D8%B6%D8%A8%D8%A7%D8%A1%E2%80%AD/data=!4m7!3m6!1s0x15ac2561d691fa81:0x568af99b89661ac5!8m2!3d27.3452099!4d35.7113604!16s%2Fg%2F11f7czlx5n!19sChIJgfqR1mElrBURxRpmiZv5ilY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-thirdparty-office-duba-0537152989",
+      "name": "مكتب راما ضباء للخدمات العقارية",
+      "city": "ضباء",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب راما ضباء للخدمات العقارية",
+        "observedCategory": [
+          "وكالة عقارات تجارية",
+          "مُصفٍّ عقاري",
+          "عقار شقق مفروشة",
+          "مثمّن عقارات",
+          "بائع العقارات بالمزاد",
+          "مستشار عقارات",
+          "مطوّر عقارات"
+        ],
+        "distanceMeters": 0.5624241262096276,
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D8%A7%D9%85%D8%A7%20%D8%B6%D8%A8%D8%A7%D8%A1%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200537152989%20%D8%B6%D8%A8%D8%A7%D8%A1?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-yango-office-150604911997",
+      "name": "موقع خالدالسعيد ضباء",
+      "city": "ضباء",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "موقع خالدالسعيد ضباء",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/search/%D9%85%D9%88%D9%82%D8%B9%20%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D8%B3%D8%B9%D9%8A%D8%AF%20%D8%B6%D8%A8%D8%A7%D8%A1%200541360723%20%D8%B6%D8%A8%D8%A7%D8%A1?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-yango-office-76852548075",
+      "name": "مكتب الخبير العقاري",
+      "city": "رياض الخبراء",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الخبير العقاري",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AE%D8%A8%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D9%A0%D9%A5%D9%A0%D9%A3%D9%A3%D9%A4%D9%A7%D9%A7%D9%A8%D9%A8%200503347788%20%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%D8%A7%D8%A1?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "v9-office-689c11e2b111",
+      "name": "مكتب الخلف للعقار",
+      "city": "الوجه",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الخلف للعقار",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200500109309%20%D8%A7%D9%84%D9%88%D8%AC%D9%87?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "v9-office-a49fc1c319a4",
+      "name": "مكتب أبو طلال للعقار",
+      "city": "الوجه",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب أبو طلال للعقار",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 3.536615444943436e-10,
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A3%D8%A8%D9%88%20%D8%B7%D9%84%D8%A7%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200553026422%20%D8%A7%D9%84%D9%88%D8%AC%D9%87?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "v9-office-d8f3d9515850",
+      "name": "مكتب رواد العنان للعقارات",
+      "city": "الوجه",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/restored-2026-10-13/AUDIT_ALL_NORTH_CHECKPOINT.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب رواد العنان للعقارات",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 3.536615444943436e-10,
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%88%D8%A7%D8%AF%20%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D9%86%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200530007949%20%D8%A7%D9%84%D9%88%D8%AC%D9%87?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    }
+  ]
+}

@@ -1,0 +1,626 @@
+{
+  "schema": "central-office-strict-resumption-v1",
+  "checkedAt": "2026-10-14T06:27:16.661179+00:00",
+  "source": "/workspace/scratch/77dd3543db67/repo/riyad-opportunities/audits/OFFICE_FIELD_EVIDENCE_RECONCILIATION_2026-10-13.json",
+  "remainingRiyadhCount": 28,
+  "newMapsVerified": 0,
+  "blockedAttempt": {
+    "id": "entity-f23bd4322c3f",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=مكتب%20أعمال%20العقاري%20السعادة%20الرياض",
+    "observedPage": "google.com/sorry/index",
+    "observedText": "اكتشفت أنظمتنا حركة مرور غير معتادة من شبكة الكمبيوتر.",
+    "challenge": "reCAPTCHA checkbox أنا لست برنامج روبوت",
+    "result": "not_verified_bot_challenge",
+    "attemptTime": "2026-10-14T06:26:51Z",
+    "noBypassAttempted": true
+  },
+  "records": [
+    {
+      "id": "entity-f23bd4322c3f",
+      "name": "مكتب أعمال العقاري",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "evidence": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE5_2026-10-13.json",
+        "audits/SESSION2_LANE5_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-23",
+      "name": "السديس للعقارات",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-26",
+      "name": "مكتب أدق العقود للعقارات",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-70",
+      "name": "مكتب حي الرمال للعقار",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "audits/SESSION2_LANE5_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone",
+        "additionalPhones"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-72",
+      "name": "مكتب نبراس البيت للعقارات",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "evidence": [
+        "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE1_2026-10-13.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE1_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "brokerageActivity",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-73",
+      "name": "مكتب عبدالله حمدان عواد المطيري للعقارات",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "audits/SESSION2_LANE5_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone",
+        "additionalPhones"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-75",
+      "name": "مكتب بصمة وعد للتطوير والاستثمار العقاري",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "audits/SESSION2_LANE5_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone",
+        "additionalPhones"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-76",
+      "name": "مكتب ركن الرحمة العقاري",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-78",
+      "name": "مكتب نور اليرموك للعقارات",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-79",
+      "name": "مكتب واجهة الخليج للخدمات العقارية",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "phase5-google-office-23c526045757",
+      "name": "مكتب واجهة الخير للعقارات",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "evidence": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "brokerageActivity",
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "v9-office-cc17b967bdb0",
+      "name": "مكتب تطوير البدر للعقارات",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "evidence": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "v9-office-ad5038609aba",
+      "name": "مكتب عقار العزيزية",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "evidence": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "v9-office-4ac416a3f7eb",
+      "name": "مكتب عقار الدار البيضاء",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "evidence": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "gap-office-a55dd41a4b",
+      "name": "شركة الياسمين لإدارة و تطوير العقارات",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "audits/SESSION2_LANE5_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone",
+        "additionalPhones"
+      ]
+    },
+    {
+      "id": "gap-office-6297b78215",
+      "name": "شركة طوابق الرياض العقارية",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "gap-office-cb782422f5",
+      "name": "شركة نقش للاستثمار",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "evidence": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "gap-office-a465eda7bc",
+      "name": "مؤسسة ركائز الغد العقارية",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "audits/SESSION2_LANE5_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone",
+        "additionalPhones"
+      ]
+    },
+    {
+      "id": "gap-office-d2adfaf252",
+      "name": "شركة مهارة للاستثمارات العقارية المحدودة",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "audits/SESSION2_LANE5_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone",
+        "additionalPhones"
+      ]
+    },
+    {
+      "id": "gap-office-aa10044e5b",
+      "name": "شركة مسكن الين العقارية",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "gap-office-a4cf48477f",
+      "name": "مؤسسة منصة ربوة الأعمال",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "audits/SESSION2_LANE5_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone",
+        "additionalPhones"
+      ]
+    },
+    {
+      "id": "gap-office-bb2d57d59a",
+      "name": "مكتب زياد حمد العواد للعقارات",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "evidence": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "gap-office-87334f9772",
+      "name": "مكتب فارس عبدالكريم عبدالرحمن الشويعر للعقار",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "evidence": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE5_2026-10-13.json",
+        "audits/SESSION2_LANE5_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "gap-office-509365365f",
+      "name": "مكتب ريلام الملز للعقارات",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE5_2026-10-13.json",
+        "audits/SESSION2_LANE5_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "mapsPin",
+        "publicPhone",
+        "additionalPhones"
+      ]
+    },
+    {
+      "id": "gap-office-970dfb7549",
+      "name": "مؤسسة فيصل عبدالله علي المطلق للعقارات",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "audits/SESSION2_LANE5_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone",
+        "additionalPhones"
+      ]
+    },
+    {
+      "id": "gap-office-a19cb92f33",
+      "name": "شركة اليمامة للإستثمار والتطوير العقاري - Alyamama Investment and Real Estate Development",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "evidence": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "gap-office-01e5cd937f",
+      "name": "شركة سعودي برايم للعقارات",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "audits/SESSION2_LANE5_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone",
+        "additionalPhones"
+      ]
+    },
+    {
+      "id": "gap-office-bbca2edfb9",
+      "name": "مكتب اصالة الرياض للعقارات",
+      "city": "الرياض",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "evidence": [
+        "audits/SESSION2_LANE5_2026-10-14.json"
+      ],
+      "unverifiedPhones": [],
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone",
+        "additionalPhones"
+      ]
+    }
+  ]
+}

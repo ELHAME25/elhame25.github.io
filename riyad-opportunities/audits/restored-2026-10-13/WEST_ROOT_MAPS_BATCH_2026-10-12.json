@@ -1,0 +1,78 @@
+{
+  "schema": "office-google-maps-root-batch-v1",
+  "date": "2026-10-12",
+  "scope": "west",
+  "source": "live Google Maps place cards opened by the primary agent",
+  "records": [
+    {
+      "id": "entity-df152bc53422",
+      "name": "بن سعود للعقار",
+      "maps": "https://www.google.com/maps/?cid=11908823938881024999",
+      "observed": {"category": "وكالة تأجير عقارات", "address": "97VJ+WXV، السنابل، جدة 22444", "phone": "0566345999"},
+      "result": "verified_match; no correction"
+    },
+    {
+      "id": "entity-b9b320bc53c2",
+      "name": "مكتب عقار الشهري",
+      "maps": "https://www.google.com/maps/?cid=8043384602504712394",
+      "observed": {"category": "وكالة عقارات", "address": "حي السنابل، 8529 المقتدر بالله، جدة 22444", "phone": "0592026869"},
+      "result": "verified_match; no correction"
+    },
+    {
+      "id": "entity-264a4480ae2f",
+      "name": "مكتب غيثان الكثيري للعقار",
+      "maps": "https://www.google.com/maps/?cid=16527342493965407063",
+      "observed": {"category": "مؤسسة غير ربحية", "address": "97RM+6V9، حي السنابل، جدة 22444", "phone": "0505671560"},
+      "result": "name/address/phone match; Maps category conflicts with real-estate title; activity unresolved; no correction"
+    },
+    {
+      "id": "entity-d940a5fb455b",
+      "name": "مكتب اسكان الوليد للخدمات العقارية",
+      "maps": "https://www.google.com/maps/?cid=4976800161263478407",
+      "observed": {"phone": "0556705969", "cardLoaded": "partial"},
+      "result": "phone link matches; title/category/address did not finish loading; unresolved; no correction"
+    },
+    {
+      "id": "entity-8bafc5e0effb",
+      "name": "مكتب الشهري للعقار والخدمات العامة",
+      "maps": "https://www.google.com/maps/?cid=7960203040284680749",
+      "observed": {"category": "مطوّر عقارات", "address": "Unnamed Road، الأجاويد، جدة 22442", "plusCode": "C74W+9C", "phone": "0551156677"},
+      "result": "name/address/phone match; activity classified as developer; no correction"
+    },
+    {
+      "id": "entity-aa1b43280948",
+      "name": "مكتب بن زهير العقاري",
+      "maps": "https://www.google.com/maps/?cid=15541987398226106324",
+      "observed": {"category": "وكالة عقارات", "address": "4083 سهل بن عمرو، جدة 22442", "plusCode": "C79X+8H الأجاويد", "phone": "0505661555"},
+      "result": "verified_match; no correction"
+    },
+    {
+      "id": "phase5-office-0c6d0e32c965",
+      "name": "إعمار الدالة العقارية",
+      "maps": "https://www.google.com/maps/?cid=3039818975087822553",
+      "observed": {"category": "وكالة عقارات", "address": "JJSA7780، 3169، جدة 22444", "plusCode": "97PM+R3 السنابل", "phone": "0556003838"},
+      "result": "verified_match; no correction"
+    },
+    {
+      "id": "phase5-office-3aafaa0309d4",
+      "name": "مكتب الهدى للعقار حي الاجاويد - السنابل - الهدى",
+      "maps": "https://www.google.com/maps/?cid=15159283663424947940",
+      "observed": {"category": "مكتب الشركات", "address": "الهدا، شارع جدة، الشقيقه 22444", "plusCode": "97QX+QJ الهدا، جدة", "phone": "0554647316"},
+      "result": "name/phone/city match; neighborhood wording differs from stored السنابل جنوب جدة; no correction without stronger pin comparison"
+    },
+    {
+      "id": "phase5-office-b88b535e7e70",
+      "name": "مكتب الصيرفي للعقار",
+      "maps": "https://www.google.com/maps/?cid=5405282056236093409",
+      "observed": {"businessCardResolved": false},
+      "result": "unresolved; CID opened a blank unnamed card; no correction"
+    },
+    {
+      "id": "phase5-office-3ffe65135e61",
+      "name": "مكتب ابن رشود للعقار",
+      "maps": "https://www.google.com/maps/?cid=8412597266801076584",
+      "observed": {"category": "مجمع عمارات", "address": "CFPQ+VQQ، شارع الستين، الحوية، الطائف 26576", "phone": "0127271257"},
+      "result": "name/address/phone match; Maps category differs from office type; no correction"
+    }
+  ]
+}

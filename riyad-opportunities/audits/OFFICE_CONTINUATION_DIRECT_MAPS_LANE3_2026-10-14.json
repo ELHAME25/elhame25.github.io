@@ -1,0 +1,882 @@
+{
+  "lane": 3,
+  "checkedAt": "2026-10-14",
+  "count": 18,
+  "results": [
+    {
+      "id": "phase5-google-office-abafc2264cab",
+      "name": "مكتب أفضل عقار",
+      "checkedAt": "2026-10-14",
+      "decision": "verified_pending_patch",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJz6Iz1PTQwxURr1ADgqfl3jM",
+          "observed": "مكتب أفضل عقار"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://x.com/bestrealestate9",
+          "observed": "مكتب الشركات"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJz6Iz1PTQwxURr1ADgqfl3jM",
+          "observed": {
+            "lat": 21.5835851,
+            "lon": 39.1754433,
+            "plusCode": null
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJz6Iz1PTQwxURr1ADgqfl3jM",
+          "observed": "0554662979"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJz6Iz1PTQwxURr1ADgqfl3jM",
+        "lat": 21.5835851,
+        "lon": 39.1754433
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "مكتب أفضل عقار",
+        "activity": "مكتب الشركات",
+        "phone": "0554662979",
+        "plusCode": null,
+        "lat": 21.5835851,
+        "lon": 39.1754433
+      },
+      "storedCoordinateConflict": true,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJz6Iz1PTQwxURr1ADgqfl3jM"
+    },
+    {
+      "id": "phase5-google-office-5775ebcf7c1c",
+      "name": "محاور التقدم العقارية بجده",
+      "checkedAt": "2026-10-14",
+      "decision": "verified_pending_patch",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJfxbQkv3QwxUR_kMIdRVWRf4",
+          "observed": "محاور التقدم العقارية بجده"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://sa.aqar.fm/user/4665747",
+          "observed": "شركة إدارة عقارات"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJfxbQkv3QwxUR_kMIdRVWRf4",
+          "observed": {
+            "lat": null,
+            "lon": null,
+            "plusCode": "H5JW+J6"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJfxbQkv3QwxUR_kMIdRVWRf4",
+          "observed": "0564888666"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJfxbQkv3QwxUR_kMIdRVWRf4"
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "محاور التقدم العقارية بجده",
+        "activity": "شركة إدارة عقارات",
+        "phone": "0564888666",
+        "plusCode": "H5JW+J6",
+        "lat": null,
+        "lon": null
+      },
+      "storedCoordinateConflict": false,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJfxbQkv3QwxUR_kMIdRVWRf4"
+    },
+    {
+      "id": "phase5-google-office-7c23e5a31ab7",
+      "name": "مؤسسة خبير جدة للعقار",
+      "checkedAt": "2026-10-14",
+      "decision": "partial",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ1UA1ZpnRwxURogdxU7uom6Y",
+          "observed": "مؤسسة خبير جدة للعقار"
+        },
+        "brokerageActivity": {
+          "confirmed": false,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ1UA1ZpnRwxURogdxU7uom6Y",
+          "observed": "شركة إدارة عقارات"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ1UA1ZpnRwxURogdxU7uom6Y",
+          "observed": {
+            "lat": null,
+            "lon": null,
+            "plusCode": "G58J+MQ"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ1UA1ZpnRwxURogdxU7uom6Y",
+          "observed": "0501123451"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ1UA1ZpnRwxURogdxU7uom6Y"
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "مؤسسة خبير جدة للعقار",
+        "activity": "شركة إدارة عقارات",
+        "phone": "0501123451",
+        "plusCode": "G58J+MQ",
+        "lat": null,
+        "lon": null
+      },
+      "storedCoordinateConflict": false,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJ1UA1ZpnRwxURogdxU7uom6Y"
+    },
+    {
+      "id": "phase5-google-office-5a9925ec633c",
+      "name": "مكتب القوس للعقار",
+      "checkedAt": "2026-10-14",
+      "decision": "verified_pending_patch",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ89xpMcnRwxUR5BoIisFZYos",
+          "observed": "مكتب القوس للعقار"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ89xpMcnRwxUR5BoIisFZYos",
+          "observed": "وكالة عقارات"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ89xpMcnRwxUR5BoIisFZYos",
+          "observed": {
+            "lat": 21.595873,
+            "lon": 39.2136182,
+            "plusCode": "H6W7+8C"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ89xpMcnRwxUR5BoIisFZYos",
+          "observed": "0566681001"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ89xpMcnRwxUR5BoIisFZYos",
+        "lat": 21.595873,
+        "lon": 39.2136182
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "مكتب القوس للعقار",
+        "activity": "وكالة عقارات",
+        "phone": "0566681001",
+        "plusCode": "H6W7+8C",
+        "lat": 21.595873,
+        "lon": 39.2136182
+      },
+      "storedCoordinateConflict": true,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJ89xpMcnRwxUR5BoIisFZYos"
+    },
+    {
+      "id": "phase5-google-office-3a97124df713",
+      "name": "مكتب الشهري للعقار جدة",
+      "checkedAt": "2026-10-14",
+      "decision": "partial",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJIwGVrgPUwxUR7_ruLGUY7iQ",
+          "observed": "مكتب الشهري للعقار جدة"
+        },
+        "brokerageActivity": {
+          "confirmed": false,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJIwGVrgPUwxUR7_ruLGUY7iQ",
+          "observed": null
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJIwGVrgPUwxUR7_ruLGUY7iQ",
+          "observed": {
+            "lat": null,
+            "lon": null,
+            "plusCode": "J65R+R6"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJIwGVrgPUwxUR7_ruLGUY7iQ",
+          "observed": "0557751516"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJIwGVrgPUwxUR7_ruLGUY7iQ"
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "مكتب الشهري للعقار جدة",
+        "activity": null,
+        "phone": "0557751516",
+        "plusCode": "J65R+R6",
+        "lat": null,
+        "lon": null
+      },
+      "storedCoordinateConflict": false,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJIwGVrgPUwxUR7_ruLGUY7iQ"
+    },
+    {
+      "id": "phase5-google-office-9ecac6050573",
+      "name": "مؤسسة محاور جدة العقارية",
+      "checkedAt": "2026-10-14",
+      "decision": "verified_pending_patch",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ-dd3ev3NwxURdy-0pkHVy70",
+          "observed": "مؤسسة محاور جدة العقارية"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ-dd3ev3NwxURdy-0pkHVy70",
+          "observed": "وكيل عقاري"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ-dd3ev3NwxURdy-0pkHVy70",
+          "observed": {
+            "lat": 21.5158029,
+            "lon": 39.2382002,
+            "plusCode": "G68Q+87"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ-dd3ev3NwxURdy-0pkHVy70",
+          "observed": "0580033055"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ-dd3ev3NwxURdy-0pkHVy70",
+        "lat": 21.5158029,
+        "lon": 39.2382002
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "مؤسسة محاور جدة العقارية",
+        "activity": "وكيل عقاري",
+        "phone": "0580033055",
+        "plusCode": "G68Q+87",
+        "lat": 21.5158029,
+        "lon": 39.2382002
+      },
+      "storedCoordinateConflict": true,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJ-dd3ev3NwxURdy-0pkHVy70",
+      "coordinateExtraction": "actual visible browser URL !3d/!4d"
+    },
+    {
+      "id": "phase5-google-office-5fb46f31832c",
+      "name": "عمر المربعي للعقار",
+      "checkedAt": "2026-10-14",
+      "decision": "partial",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJEfzaZmLOwxURbp2-PktblJQ",
+          "observed": "عمر المربعي للعقار"
+        },
+        "brokerageActivity": {
+          "confirmed": false,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJEfzaZmLOwxURbp2-PktblJQ",
+          "observed": "شركة إدارة عقارات"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJEfzaZmLOwxURbp2-PktblJQ",
+          "observed": {
+            "lat": null,
+            "lon": null,
+            "plusCode": "F6QF+HM"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJEfzaZmLOwxURbp2-PktblJQ",
+          "observed": "0565522026"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJEfzaZmLOwxURbp2-PktblJQ"
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "عمر المربعي للعقار",
+        "activity": "شركة إدارة عقارات",
+        "phone": "0565522026",
+        "plusCode": "F6QF+HM",
+        "lat": null,
+        "lon": null
+      },
+      "storedCoordinateConflict": false,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJEfzaZmLOwxURbp2-PktblJQ"
+    },
+    {
+      "id": "phase5-google-office-b1e241fc515b",
+      "name": "باعبدالله للعقار",
+      "checkedAt": "2026-10-14",
+      "decision": "partial",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ3xesTWLOwxURFnKZHk-0pfA",
+          "observed": "باعبدالله للعقار"
+        },
+        "brokerageActivity": {
+          "confirmed": false,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ3xesTWLOwxURFnKZHk-0pfA",
+          "observed": "مستشار عقارات"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ3xesTWLOwxURFnKZHk-0pfA",
+          "observed": {
+            "lat": null,
+            "lon": null,
+            "plusCode": "F6VC+G3R"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ3xesTWLOwxURFnKZHk-0pfA",
+          "observed": "0591511117"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ3xesTWLOwxURFnKZHk-0pfA"
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "باعبدالله للعقار",
+        "activity": "مستشار عقارات",
+        "phone": "0591511117",
+        "plusCode": "F6VC+G3R",
+        "lat": null,
+        "lon": null
+      },
+      "storedCoordinateConflict": false,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJ3xesTWLOwxURFnKZHk-0pfA"
+    },
+    {
+      "id": "phase5-google-office-ecfff67a10fa",
+      "name": "ركائب الجود للعقار",
+      "checkedAt": "2026-10-14",
+      "decision": "verified_pending_patch",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJg5wlbKnRwxURs1HdpaRMlfk",
+          "observed": "ركائب الجود للعقار"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJg5wlbKnRwxURs1HdpaRMlfk",
+          "observed": "وكالة عقارات تجارية"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJg5wlbKnRwxURs1HdpaRMlfk",
+          "observed": {
+            "lat": null,
+            "lon": null,
+            "plusCode": "H6C2+6RF"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJg5wlbKnRwxURs1HdpaRMlfk",
+          "observed": "0126933551"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJg5wlbKnRwxURs1HdpaRMlfk"
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "ركائب الجود للعقار",
+        "activity": "وكالة عقارات تجارية",
+        "phone": "0126933551",
+        "plusCode": "H6C2+6RF",
+        "lat": null,
+        "lon": null
+      },
+      "storedCoordinateConflict": false,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJg5wlbKnRwxURs1HdpaRMlfk"
+    },
+    {
+      "id": "phase5-office-ef39d6ad0493",
+      "name": "مكتب الغذامي للعقار",
+      "checkedAt": "2026-10-14",
+      "decision": "verified_pending_patch",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJG3XKp-KI6RURawMX1WkUW_8",
+          "observed": "مكتب الغذامي للعقار"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJG3XKp-KI6RURawMX1WkUW_8",
+          "observed": "وكالة عقارات"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJG3XKp-KI6RURawMX1WkUW_8",
+          "observed": {
+            "lat": 21.2932593,
+            "lon": 40.4311888,
+            "plusCode": "7CVJ+8F"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJG3XKp-KI6RURawMX1WkUW_8",
+          "observed": "0505714549"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJG3XKp-KI6RURawMX1WkUW_8",
+        "lat": 21.2932593,
+        "lon": 40.4311888
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "مكتب الغذامي للعقار",
+        "activity": "وكالة عقارات",
+        "phone": "0505714549",
+        "plusCode": "7CVJ+8F",
+        "lat": 21.2932593,
+        "lon": 40.4311888
+      },
+      "storedCoordinateConflict": true,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJG3XKp-KI6RURawMX1WkUW_8",
+      "coordinateExtraction": "actual visible browser URL !3d/!4d"
+    },
+    {
+      "id": "phase5-office-4e3ee0f3ddf8",
+      "name": "مكتب الإبداع للعقار والخدمات",
+      "checkedAt": "2026-10-14",
+      "decision": "verified_pending_patch",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJFTT9AVEv6hUR-qS2Ja73euo",
+          "observed": "مكتب الإبداع للعقار والخدمات"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJFTT9AVEv6hUR-qS2Ja73euo",
+          "observed": "وكالة عقارات تجارية"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJFTT9AVEv6hUR-qS2Ja73euo",
+          "observed": {
+            "lat": 21.442953,
+            "lon": 40.4847264,
+            "plusCode": "CFVM+5V"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJFTT9AVEv6hUR-qS2Ja73euo",
+          "observed": "0500727285"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJFTT9AVEv6hUR-qS2Ja73euo",
+        "lat": 21.442953,
+        "lon": 40.4847264
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "مكتب الإبداع للعقار والخدمات",
+        "activity": "وكالة عقارات تجارية",
+        "phone": "0500727285",
+        "plusCode": "CFVM+5V",
+        "lat": 21.442953,
+        "lon": 40.4847264
+      },
+      "storedCoordinateConflict": true,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJFTT9AVEv6hUR-qS2Ja73euo",
+      "coordinateExtraction": "actual visible browser URL !3d/!4d"
+    },
+    {
+      "id": "phase5-office-3075523138f6",
+      "name": "مكتب النجم الساطع للعقارات والمقاولات العامه وحجز الطيران والفنادق",
+      "checkedAt": "2026-10-14",
+      "decision": "verified_pending_patch",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJe92sNR-J6RURSwUxJde0ZVo",
+          "observed": "مكتب النجم الساطع للعقارات والمقاولات العامه وحجز الطيران والفنادق"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJe92sNR-J6RURSwUxJde0ZVo",
+          "observed": "وكيل عقاري"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJe92sNR-J6RURSwUxJde0ZVo",
+          "observed": {
+            "lat": 21.2670718,
+            "lon": 40.4315178,
+            "plusCode": "7C8J+RJ"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJe92sNR-J6RURSwUxJde0ZVo",
+          "observed": "0555703808"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJe92sNR-J6RURSwUxJde0ZVo",
+        "lat": 21.2670718,
+        "lon": 40.4315178,
+        "name": "مكتب النجم الساطع للعقارات والمقاولات العامه وحجز الطيران والفنادق"
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "مكتب النجم الساطع للعقارات والمقاولات العامه وحجز الطيران والفنادق",
+        "activity": "وكيل عقاري",
+        "phone": "0555703808",
+        "plusCode": "7C8J+RJ",
+        "lat": 21.2670718,
+        "lon": 40.4315178
+      },
+      "storedCoordinateConflict": false,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJe92sNR-J6RURSwUxJde0ZVo"
+    },
+    {
+      "id": "phase5-office-020cdceef4ac",
+      "name": "مكتب البراق للعقار",
+      "checkedAt": "2026-10-14",
+      "decision": "verified_pending_patch",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJNxNroTqJ6RURFAr7hB_QO28",
+          "observed": "مكتب البراق للعقار"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJNxNroTqJ6RURFAr7hB_QO28",
+          "observed": "وكالة عقارات"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJNxNroTqJ6RURFAr7hB_QO28",
+          "observed": {
+            "lat": null,
+            "lon": null,
+            "plusCode": "7CRM+PW"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJNxNroTqJ6RURFAr7hB_QO28",
+          "observed": "0557842569"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJNxNroTqJ6RURFAr7hB_QO28"
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "مكتب البراق للعقار",
+        "activity": "وكالة عقارات",
+        "phone": "0557842569",
+        "plusCode": "7CRM+PW",
+        "lat": null,
+        "lon": null
+      },
+      "storedCoordinateConflict": false,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJNxNroTqJ6RURFAr7hB_QO28"
+    },
+    {
+      "id": "phase5-google-office-b5e378969292",
+      "name": "مكتب الخمري للعقار الطائف",
+      "checkedAt": "2026-10-14",
+      "decision": "verified_pending_patch",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJZRTQwIqP6RURy-eUJyZHV70",
+          "observed": "مكتب الخمري للعقار الطائف"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJZRTQwIqP6RURy-eUJyZHV70",
+          "observed": "وكالة عقارات تجارية"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJZRTQwIqP6RURy-eUJyZHV70",
+          "observed": {
+            "lat": null,
+            "lon": null,
+            "plusCode": "7C8G+6G"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJZRTQwIqP6RURy-eUJyZHV70",
+          "observed": "0504702604"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJZRTQwIqP6RURy-eUJyZHV70"
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "مكتب الخمري للعقار الطائف",
+        "activity": "وكالة عقارات تجارية",
+        "phone": "0504702604",
+        "plusCode": "7C8G+6G",
+        "lat": null,
+        "lon": null
+      },
+      "storedCoordinateConflict": false,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJZRTQwIqP6RURy-eUJyZHV70"
+    },
+    {
+      "id": "phase5-google-office-187e825c13c7",
+      "name": "شركة عقارات الرقمية",
+      "checkedAt": "2026-10-14",
+      "decision": "verified_pending_patch",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJoZMeQDGJ6RURPh6aVPZGZzQ",
+          "observed": "شركة عقارات الرقمية"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://redd.sa/real-estate/673",
+          "observed": "شركة إدارة عقارات"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJoZMeQDGJ6RURPh6aVPZGZzQ",
+          "observed": {
+            "lat": null,
+            "lon": null,
+            "plusCode": "7CXH+F4"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJoZMeQDGJ6RURPh6aVPZGZzQ",
+          "observed": "0127337000"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJoZMeQDGJ6RURPh6aVPZGZzQ"
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "شركة عقارات الرقمية",
+        "activity": "شركة إدارة عقارات",
+        "phone": "0127337000",
+        "plusCode": "7CXH+F4",
+        "lat": null,
+        "lon": null
+      },
+      "storedCoordinateConflict": false,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJoZMeQDGJ6RURPh6aVPZGZzQ"
+    },
+    {
+      "id": "phase5-google-office-836f228bd5eb",
+      "name": "شبل الحجاز للعقار",
+      "checkedAt": "2026-10-14",
+      "decision": "verified_pending_patch",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJibKeGauJ6RURvRI-acE8akc",
+          "observed": "شبل الحجاز للعقار"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJibKeGauJ6RURvRI-acE8akc",
+          "observed": "وكالة عقارات تجارية"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJibKeGauJ6RURvRI-acE8akc",
+          "observed": {
+            "lat": null,
+            "lon": null,
+            "plusCode": "7C9F+47"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJibKeGauJ6RURvRI-acE8akc",
+          "observed": "0580833443"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJibKeGauJ6RURvRI-acE8akc"
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "شبل الحجاز للعقار",
+        "activity": "وكالة عقارات تجارية",
+        "phone": "0580833443",
+        "plusCode": "7C9F+47",
+        "lat": null,
+        "lon": null
+      },
+      "storedCoordinateConflict": false,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJibKeGauJ6RURvRI-acE8akc"
+    },
+    {
+      "id": "national-web-office-ChIJ83LlmEYAKz4RNlwPtofcf0k",
+      "name": "المهيدب للعقارات",
+      "checkedAt": "2026-10-14",
+      "decision": "partial",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ83LlmEYAKz4RNlwPtofcf0k",
+          "observed": "المهيدب للعقارات"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://x.com/mm0554470990",
+          "observed": "شركة إدارة عقارات"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ83LlmEYAKz4RNlwPtofcf0k",
+          "observed": {
+            "lat": null,
+            "lon": null,
+            "plusCode": "HJVF+3H3"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": false,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJ83LlmEYAKz4RNlwPtofcf0k",
+          "observed": null
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ83LlmEYAKz4RNlwPtofcf0k"
+      },
+      "storedPhonesStillUnconfirmed": [
+        "0508224887"
+      ],
+      "rawObservation": {
+        "name": "المهيدب للعقارات",
+        "activity": "شركة إدارة عقارات",
+        "phone": null,
+        "plusCode": "HJVF+3H3",
+        "lat": null,
+        "lon": null
+      },
+      "storedCoordinateConflict": false,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJ83LlmEYAKz4RNlwPtofcf0k"
+    },
+    {
+      "id": "national-google-office-ChIJPYWGRgAb5RURBizz3JyFeAY",
+      "name": "مكتب سرعة المنجز",
+      "checkedAt": "2026-10-14",
+      "decision": "verified_pending_patch",
+      "fieldCertainty": {
+        "name": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJPYWGRgAb5RURBizz3JyFeAY",
+          "observed": "مكتب سرعة المنجز"
+        },
+        "brokerageActivity": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJPYWGRgAb5RURBizz3JyFeAY",
+          "observed": "وكالة عقارات"
+        },
+        "mapsPin": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJPYWGRgAb5RURBizz3JyFeAY",
+          "observed": {
+            "lat": 19.1263406,
+            "lon": 42.1305175,
+            "plusCode": "44GJ+G6"
+          },
+          "note": "actual office place card, not search list or coordinate marker"
+        },
+        "publicPhone": {
+          "confirmed": true,
+          "source": "https://www.google.com/maps/place/?q=place_id:ChIJPYWGRgAb5RURBizz3JyFeAY",
+          "observed": "0509399811"
+        }
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJPYWGRgAb5RURBizz3JyFeAY",
+        "lat": 19.1263406,
+        "lon": 42.1305175
+      },
+      "storedPhonesStillUnconfirmed": [],
+      "rawObservation": {
+        "name": "مكتب سرعة المنجز",
+        "activity": "وكالة عقارات",
+        "phone": "0509399811",
+        "plusCode": "44GJ+G6",
+        "lat": 19.1263406,
+        "lon": 42.1305175
+      },
+      "storedCoordinateConflict": false,
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJPYWGRgAb5RURBizz3JyFeAY"
+    }
+  ],
+  "decisionCounts": {
+    "verified_pending_patch": 13,
+    "partial": 5
+  },
+  "directUI": true,
+  "scopeCompleted": false,
+  "continuationClosed": true,
+  "closureReason": "Lead agent requested closure after current direct-card attempts; remaining cases retain unresolved fields. Not all source checks completed.",
+  "observedCardCount": 18
+}

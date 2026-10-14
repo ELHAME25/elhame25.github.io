@@ -1,0 +1,3117 @@
+{
+  "schema": "central-strict-same-card-partition-v1",
+  "date": "2026-10-14",
+  "baseline": "audits/OFFICE_FINAL_RECONCILIATION_SAFE_2026-10-14.json",
+  "rule": "One saved Maps observation must contain observed identity name (normalized exact or explicit saved identity-match statement in the same record), explicit brokerage category, every current stored phone, independently observed coordinates within12m. Missing proof reopens record; does not imply data wrong. New live Maps blocked by CAPTCHA.",
+  "reviewedCount": 84,
+  "verifiedIds": [
+    "entity-d206eae500b8",
+    "entity-8438aa400dcf",
+    "entity-30e6808c384f",
+    "prior-qadisiyya-21",
+    "prior-qadisiyya-74",
+    "prior-qadisiyya-77",
+    "phase5-google-office-b97783925b63",
+    "phase5-google-office-a168e131dcfe",
+    "phase5-google-office-5f5389efb147",
+    "phase5-google-office-a38ba32cf81d",
+    "phase5-google-office-7ebac3796afc",
+    "phase5-google-office-b4b2898375a7",
+    "phase5-google-office-5b0ff9f66c62",
+    "phase5-google-office-597bfd1cf554",
+    "phase5-google-office-f7169839e11d",
+    "phase5-google-office-c5dc379ac471",
+    "phase5-google-office-f526d18e8f63",
+    "phase5-google-office-5ae20d45b5c6",
+    "phase5-google-office-5f2c88b2ddfd",
+    "phase5-google-office-1bd1f1702e97",
+    "phase5-google-office-088ad61410d3",
+    "phase5-google-office-f26cd7c8b2bd",
+    "v9-office-a9e9462a6025",
+    "phase5-google-office-5ed012338eac",
+    "phase5-google-office-8f42c1373bde",
+    "phase5-google-office-146ab753a6f1",
+    "national-ejar-office-438733",
+    "national-ejar-office-214024",
+    "national-ejar-office-194572",
+    "national-ejar-office-327301",
+    "national-ejar-office-208345",
+    "national-ejar-office-195760",
+    "national-ejar-office-213857",
+    "national-ejar-office-210516",
+    "national-ejar-office-215605",
+    "national-ejar-office-195232",
+    "national-ejar-office-415015",
+    "national-google-office-ChIJX-BRQ08AKz4Re_bUV-8MQ9k",
+    "national-google-office-ChIJi5CqHyABKz4RYu4ltfrEtPk",
+    "national-google-office-ChIJ24eeWgABKz4RtSGM4lEu0L4",
+    "v9-office-88679d34dc25",
+    "v9-office-2b1f50bb5a1d",
+    "v9-office-c42ff1081666",
+    "v9-office-abfd36f385b5",
+    "v9-office-149ab6a6d011"
+  ],
+  "unresolvedIds": [
+    "entity-bd9121973107",
+    "entity-63d0298fe4aa",
+    "prior-qadisiyya-69",
+    "prior-qadisiyya-71",
+    "phase5-google-office-892b9f63fe65",
+    "national-ejar-office-195510",
+    "national-ejar-office-202809",
+    "national-ejar-office-194773",
+    "national-ejar-office-200239",
+    "national-ejar-office-382663",
+    "national-ejar-office-520210",
+    "national-ejar-office-197645",
+    "national-ejar-office-193331",
+    "national-ejar-office-194808",
+    "national-ejar-office-201611",
+    "national-ejar-office-197381",
+    "national-ejar-office-192501",
+    "national-ejar-office-215891",
+    "national-ejar-office-199946",
+    "national-ejar-office-198651",
+    "national-ejar-office-199803",
+    "national-ejar-office-194482",
+    "national-ejar-office-200172",
+    "national-ejar-office-195487",
+    "national-ejar-office-200080",
+    "national-ejar-office-208043",
+    "national-ejar-office-218727",
+    "national-ejar-office-328531",
+    "national-ejar-office-206130",
+    "national-ejar-office-220309",
+    "national-ejar-office-194813",
+    "national-ejar-office-205615",
+    "national-google-office-ChIJN6zAF0wAKz4Rns9ApAb7974",
+    "national-google-office-ChIJxXlwOwD9fxURfSTqoJ6vC-s",
+    "v9-office-b3274bcf0c8f",
+    "v9-office-ceaf0f7539cb",
+    "gap-office-26f2e86275",
+    "gap-office-c8915e537d",
+    "gap-office-208470666c"
+  ],
+  "records": [
+    {
+      "id": "entity-d206eae500b8",
+      "city": "الرياض",
+      "name": "بهجة الرمال للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "بهجة الرمال للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "مطوّر عقارات",
+          "وكالة عقارات تجارية",
+          "مفتش عقارات تجارية",
+          "مُثمِّن عقاري",
+          "مُصفٍّ عقاري",
+          "عقار شقق مفروشة",
+          "شركة إدارة عقارات",
+          "وكيل عقاري",
+          "مثمّن عقارات",
+          "مستشار عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "entity-8438aa400dcf",
+      "city": "الرياض",
+      "name": "مكتب رواد العقود للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب رواد العقود للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "observedCoordinateDeltaMeters": 0.52,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "entity-bd9121973107",
+      "city": "الرياض",
+      "name": "مكتب قواعد الأندلس",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "brokerageActivity",
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب قواعد الاندلس",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "entity-63d0298fe4aa",
+      "city": "الرياض",
+      "name": "شركة نزيل العقارية",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "شركة نزيل العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "Real estate agency"
+        ],
+        "observedCoordinateDeltaMeters": 0.35,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "entity-30e6808c384f",
+      "city": "الرياض",
+      "name": "مكتب الناصع للعقارات حي عريض - مخططات عريض",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب الناصع للعقارات حي عريض - مخططات عريض",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات",
+          "وكالة عقارات تجارية",
+          "مُصفٍّ عقاري",
+          "وكيل عقاري",
+          "مستشار عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-21",
+      "city": "الرياض",
+      "name": "شركة سكن المعالي العقارية",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json",
+        "observationPath": ".googleMapsCard",
+        "observedName": "شركة سكن المعالي العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-69",
+      "city": "الرياض",
+      "name": "مكتب سليميات المونسية للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json",
+        "observationPath": ".googleMapsCard",
+        "observedName": "مكتب سليميات المونسية للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "observedCoordinateDeltaMeters": 11.84,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-71",
+      "city": "الرياض",
+      "name": "مكتب تحالف أشبيليا للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json",
+        "observationPath": ".googleMapsCard",
+        "observedName": "مكتب تحالف اشبيليا للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "observedCoordinateDeltaMeters": 10.51,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-74",
+      "city": "الرياض",
+      "name": "مكتب صهوة نجد للخدمات العقارية",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json",
+        "observationPath": ".googleMapsCard",
+        "observedName": "مكتب صهوة نجد للخدمات العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json"
+      ]
+    },
+    {
+      "id": "prior-qadisiyya-77",
+      "city": "الرياض",
+      "name": "مكتب خيمة اليرموك للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json",
+        "observationPath": ".googleMapsCard",
+        "observedName": "مكتب خيمة اليرموك للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-b97783925b63",
+      "city": "الرياض",
+      "name": "مكتب شرق الرياض للخدمات العقارية",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب شرق الرياض للخدمات العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 1.06,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-a168e131dcfe",
+      "city": "الرياض",
+      "name": "مكتب ضاحية الشرق للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب ضاحية الشرق للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-5f5389efb147",
+      "city": "الرياض",
+      "name": "مكتب عقارات الفيحاء",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب عقارات الفيحاء",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات",
+          "وكالة تأجير عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-a38ba32cf81d",
+      "city": "الرياض",
+      "name": "عقود المستقبل للعقارت فرع رقم ٢ - فرع شرق الرياض - حي المونسية - شارع القماري",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "عقود المستقبل للعقارت فرع رقم ٢ - فرع شرق الرياض - حي المونسية - شارع القماري",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "مستشار عقارات",
+          "شركة إدارة عقارات",
+          "وكالة عقارات",
+          "وكيل عقاري"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-7ebac3796afc",
+      "city": "الرياض",
+      "name": "مكتب مساكن الخليج للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب مساكن الخليج للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات",
+          "شركة إدارة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.82,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-b4b2898375a7",
+      "city": "الرياض",
+      "name": "مكتب مدار المؤشر للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب مدار المؤشر للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات",
+          "وكيل عقاري",
+          "مستشار عقارات",
+          "مطوّر عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-5b0ff9f66c62",
+      "city": "الرياض",
+      "name": "مكتب شرق النسيم للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب شرق النسيم للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-597bfd1cf554",
+      "city": "الرياض",
+      "name": "درة البركات للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "درة البركات للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات",
+          "وكالة عقارات تجارية",
+          "شركة إدارة عقارات",
+          "وكيل عقاري",
+          "وكالة تأجير عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-f7169839e11d",
+      "city": "الرياض",
+      "name": "مكتب عالم الأمنيات للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب عالم الأمنيات للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات",
+          "وكالة تأجير عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-c5dc379ac471",
+      "city": "الرياض",
+      "name": "مكتب سحابة العارض للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب سحابة العارض للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات",
+          "مدير ممتلكات",
+          "وكالة تأجير عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 1.26,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-892b9f63fe65",
+      "city": "الرياض",
+      "name": "مكتب انوار نجد للخدمات العقارية",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب انوار نجد للخدمات العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-f526d18e8f63",
+      "city": "الرياض",
+      "name": "الصخور الشامخه للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "الصخور الشامخه للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-5ae20d45b5c6",
+      "city": "الرياض",
+      "name": "مكتب لوامع للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب لوامع للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكيل عقاري",
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-5f2c88b2ddfd",
+      "city": "الرياض",
+      "name": "ملتقى الشرق الاوسط للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "ملتقى الشرق الاوسط للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-1bd1f1702e97",
+      "city": "الرياض",
+      "name": "مكتب منصة الشرق للخدمات العقارية",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب منصة الشرق للخدمات العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-088ad61410d3",
+      "city": "الرياض",
+      "name": "مكتب ريادة الشرق للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب ريادة الشرق للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 1.83,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-f26cd7c8b2bd",
+      "city": "الرياض",
+      "name": "مكتب العواد للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب العواد للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "v9-office-a9e9462a6025",
+      "city": "الرياض",
+      "name": "مكتب العواد للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب العواد للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-5ed012338eac",
+      "city": "الرياض",
+      "name": "مكتب يوسف إبراهيم الجندل للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب يوسف إبراهيم الجندل للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-8f42c1373bde",
+      "city": "الرياض",
+      "name": "مكتب فيحاء الشرق للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب فيحاء الشرق للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.68,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "phase5-google-office-146ab753a6f1",
+      "city": "الرياض",
+      "name": "مكتب مدى الشرق للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب مدى الشرق للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات",
+          "خدمة ترميم المباني",
+          "وكيل عقاري"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-195510",
+      "city": "الدلم",
+      "name": "مكتب فرسان الدلم للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".evidence.maps",
+        "observedName": "مكتب فرسان الدلم للعقارت",
+        "nameSimilarity": 0.977,
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "observedCoordinateDeltaMeters": 6.77,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE4_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-438733",
+      "city": "الدلم",
+      "name": "المانع للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "المانع للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE4_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-202809",
+      "city": "الدلم",
+      "name": "مكتب عبدالإله بن محمد السعيس التميمي للخدمات",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب عبدالإله بن محمد السعيس التميمي للخدمات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE4_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-214024",
+      "city": "الدلم",
+      "name": "مكتب الجاسر للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب الجاسر للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE4_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-194572",
+      "city": "الدلم",
+      "name": "مكتب أبو سعد للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب أبو سعد للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE4_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-327301",
+      "city": "الدلم",
+      "name": "مؤسسة سعد عبدالعزيز بن سعد العرفج العقارية",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".evidence.maps",
+        "observedName": "مكتب العرفج العقارية",
+        "nameSimilarity": 0.593,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 4.64,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE4_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE1_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-208345",
+      "city": "الخرج",
+      "name": "عقارات بن عرفج",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "عقارات بن عرفج",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE4_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-195760",
+      "city": "الخرج",
+      "name": "شركة المعتمد للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "شركة المعتمد للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE3_2026-10-12.json",
+        "OFFICE_FINAL_AUDIT_CENTRAL_WAVE4_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-194773",
+      "city": "وادي الدواسر",
+      "name": "مكتب عايد مبارك الدوسري للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "name"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".mapsObservation",
+        "observedName": "مكتب عايد للعقارات",
+        "nameSimilarity": 0.727,
+        "categories": [
+          "وكالة تأجير عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 2.12,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": false,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-213857",
+      "city": "وادي الدواسر",
+      "name": "مؤسسة أبراج المملكة للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".latestDirectMapsContinuation.evidence.observedMapsCard",
+        "observedName": "مؤسسة أبراج المملكة للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة تأجير عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 3.01,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE1_2026-10-13.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE1_2026-10-14.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-200239",
+      "city": "وادي الدواسر",
+      "name": "مكتب أنوار الساحه للعقار",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".latestDirectMapsContinuation.evidence.observedMapsCard",
+        "observedName": "مكتب أنوار الساحة للعقارات",
+        "nameSimilarity": 0.955,
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": false,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE1_2026-10-13.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE1_2026-10-14.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-382663",
+      "city": "وادي الدواسر",
+      "name": "مكتب قمة النادرة العقارية",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "brokerageActivity",
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".latestDirectMapsContinuation.evidence.observedMapsCard",
+        "observedName": "مكتب قمة النادرة العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "عقار شقق مفروشة"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE1_2026-10-13.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE1_2026-10-14.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-520210",
+      "city": "وادي الدواسر",
+      "name": "مكتب بوصلة الوادي للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "brokerageActivity",
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".latestDirectMapsContinuation.evidence.observedMapsCard",
+        "observedName": "مكتب بوصلة الوادي للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE1_2026-10-13.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE1_2026-10-14.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-197645",
+      "city": "الدوادمي",
+      "name": "مكتب مهمة الانجاز للخدمات العقارية",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "fields": {
+          "name": false,
+          "brokerageActivity": false,
+          "mapsPin": false,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE1_2026-10-13.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE1_2026-10-14.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-193331",
+      "city": "الدوادمي",
+      "name": "مكتب الركن النافذ للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "name"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".latestDirectMapsContinuation.evidence.observedMapsCard",
+        "observedName": "مكتب الركن النافذ للعقارات بالدوادمي",
+        "nameSimilarity": 0.836,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": false,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE1_2026-10-13.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE1_2026-10-14.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-194808",
+      "city": "الدوادمي",
+      "name": "مكتب ارض البادية للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".latestDirectMapsContinuation.evidence.observedMapsCard",
+        "observedName": "مكتب عقارات أرض الباديه",
+        "nameSimilarity": 0.667,
+        "categories": [
+          null
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": false,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE1_2026-10-13.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE1_2026-10-14.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-201611",
+      "city": "الدوادمي",
+      "name": "مكتب اعمال الرائد العقارية",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".latestDirectMapsContinuation.evidence.observedMapsCard",
+        "observedName": "اعمال الرائد العقارية",
+        "nameSimilarity": 0.905,
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": false,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE1_2026-10-13.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE1_2026-10-14.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-197381",
+      "city": "الدوادمي",
+      "name": "مكتب الفايز للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".latestDirectMapsContinuation.evidence.observedMapsCard",
+        "observedName": "مكتب الفايز للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 1.74,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE1_2026-10-13.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE1_2026-10-14.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-192501",
+      "city": "المجمعة",
+      "name": "مكتب مسار التطور العقاري",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "name"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".mapsObservation",
+        "observedName": "مسار التطور العقاري",
+        "nameSimilarity": 0.895,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.45,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": false,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-215891",
+      "city": "المجمعة",
+      "name": "شركة عاصم عبدالعزيز بن علي الحمد للعقارات شركة شخص واحد",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".latestDirectMapsContinuation.evidence.observedMapsCard",
+        "observedName": "الحمد للاستثمار والتطوير العقاري",
+        "nameSimilarity": 0.293,
+        "categories": [
+          "مستشار عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.37,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": false,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE1_2026-10-13.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE1_2026-10-14.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-199946",
+      "city": "المجمعة",
+      "name": "مكتب الشارع الثاني العقاري",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".mapsObservation",
+        "observedName": "مكتب الشارع الثاني العقاري",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "مستشار عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-198651",
+      "city": "المجمعة",
+      "name": "مؤسسة إنماء العقارية",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".mapsObservation",
+        "observedName": "مؤسسة إنماء العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-199803",
+      "city": "المجمعة",
+      "name": "مكتب صالح خالد بن صالح المديهيم للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".mapsObservation",
+        "observedName": "مكتب المديهيم للعقارات",
+        "nameSimilarity": 0.741,
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 1.92,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": false,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-194482",
+      "city": "المجمعة",
+      "name": "مكتب عبدالله عبدالمحسن الجاسر العقاري",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".latestDirectMapsContinuation.evidence.observedMapsCard",
+        "observedName": "شركة عبدالله الجاسر للعقارات و المقاولات و إدارة الاملاك",
+        "nameSimilarity": 0.469,
+        "categories": [
+          null
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": false,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE1_2026-10-13.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE1_2026-10-14.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-200172",
+      "city": "المجمعة",
+      "name": "مكتب قصر مساعد للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "observationPath": ".latestDirectMapsContinuation.evidence.observedMapsCard",
+        "observedName": "مكتب قصر مساعد للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE1_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE1_2026-10-13.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE1_2026-10-14.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-195487",
+      "city": "المزاحمية",
+      "name": "مكتب صرح لجين",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "مكتب صرح لجين",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_CONTINUATION_DIRECT_MAPS_LANE2_2026-10-14.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-210516",
+      "city": "المزاحمية",
+      "name": "سكب المدينة للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "سكب المدينة للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "observedCoordinateDeltaMeters": 5.03,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-200080",
+      "city": "المزاحمية",
+      "name": "دروب للخدمات العقارية",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "دروب للخدمات العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-208043",
+      "city": "المزاحمية",
+      "name": "مكتب سعود عبدالله بن عبدالعزيز المبدل للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "name"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "مكتب سعود بن عبدالله المبدل",
+        "nameSimilarity": 0.667,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 6.93,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": false,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-215605",
+      "city": "المزاحمية",
+      "name": "الرشيد للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "الرشيد للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 4.33,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-218727",
+      "city": "المزاحمية",
+      "name": "مكتب اول مجال للخدمات العقارية",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "مكتب اول مجال للخدمات العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 25.48,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": false,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-328531",
+      "city": "المزاحمية",
+      "name": "بصمة عرين العقارية",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "mapsPin",
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "بصمة عرين العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 21.58,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": false,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-206130",
+      "city": "المزاحمية",
+      "name": "مكتب تأسيس المستقبل العقارية",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "name"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "مكتب تأسيس المستقبل للعقارات",
+        "nameSimilarity": 0.88,
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "observedCoordinateDeltaMeters": 5.39,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": false,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-220309",
+      "city": "المزاحمية",
+      "name": "مؤسسة محمد سالم الشبوي القحطاني للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "name"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "مكتب محمد بن سالم للعقارات بالمزاحمية",
+        "nameSimilarity": 0.507,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 8.05,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": false,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-194813",
+      "city": "ضرماء",
+      "name": "مكتب روائع نسران للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "مكتب روائع نسران للعقارات Rawaa Nisran Real Estate Office",
+        "nameSimilarity": 0.62,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 17.06,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": false,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-205615",
+      "city": "ضرماء",
+      "name": "مكتب رمز العطاء للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "mapsPin",
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "مكتب رمز العطاء للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 47.24,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": false,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-195232",
+      "city": "القويعية",
+      "name": "مكتب ثقة التشييد للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "مكتب ثقة التشييد للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 8.33,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "national-ejar-office-415015",
+      "city": "القويعية",
+      "name": "مؤسسة أمواج أصول العقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "أمواج أصول العقارات",
+        "nameSimilarity": 0.872,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 9.85,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJX-BRQ08AKz4Re_bUV-8MQ9k",
+      "city": "حوطة سدير",
+      "name": "مكتب فهد الرعيدان للعقارات بحوطة سدير",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "مكتب فهد الرعيدان للعقارات بحوطة سدير",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE3_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJN6zAF0wAKz4Rns9ApAb7974",
+      "city": "حوطة سدير",
+      "name": "مكتب خالد للعقارات بحوطة سدير",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "brokerageActivity",
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "مكتب خالد للعقارات بحوطة سدير",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "مستشار عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.63,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE3_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJi5CqHyABKz4RYu4ltfrEtPk",
+      "city": "حوطة سدير",
+      "name": "مكتب أساس نجد للخدمات العقارية",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "مكتب أساس نجد للخدمات العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE3_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJ24eeWgABKz4RtSGM4lEu0L4",
+      "city": "حوطة سدير",
+      "name": "العريج للخدمات العقارية",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "observationPath": ".new",
+        "observedName": "العريج للخدمات العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "audits/restored-2026-10-13/AUDIT_ALL_CENTRAL_CHECKPOINT.json",
+        "audits/OFFICE_ADDITIONAL_RESULTS_LANE3_2026-10-13.json",
+        "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJxXlwOwD9fxURfSTqoJ6vC-s",
+      "city": "الغاط",
+      "name": "مكتب عبدالرزاق الفوزان للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "brokerageActivity",
+        "mapsPin"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_SOUTH_CHECKPOINT_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب عبدالرزاق الفوزان للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": null,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": false,
+          "mapsPin": false,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_SOUTH_CHECKPOINT_2026-10-12.json",
+        "OFFICE_FINAL_AUDIT_SOUTH_WAVE3_2026-10-12.json",
+        "OFFICE_FINAL_AUDIT_SOUTH_WAVE4_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_SOUTH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "v9-office-88679d34dc25",
+      "city": "الرياض",
+      "name": "مكتب نجد النسيم",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب نجد النسيم",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "v9-office-b3274bcf0c8f",
+      "city": "الرياض",
+      "name": "مكتب النسيم الشرقي",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب النسيم الشرقي",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "v9-office-ceaf0f7539cb",
+      "city": "الرياض",
+      "name": "مكتب الخريف للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب الخريف للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "شركة إدارة عقارات",
+          "وكالة تأجير شقق",
+          "مستشار تسويق"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "v9-office-2b1f50bb5a1d",
+      "city": "الرياض",
+      "name": "مكتب الشقحاء للعقارات حي الشفا",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب الشقحاء للعقارات حي الشفا",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    },
+    {
+      "id": "v9-office-c42ff1081666",
+      "city": "الرياض",
+      "name": "مكتب مدن العقار للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب مدن العقار للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات",
+          "وكالة تأجير شقق",
+          "تأجير مصانع وآلات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "v9-office-abfd36f385b5",
+      "city": "الرياض",
+      "name": "مكتب زاوية نمار للعقارات",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب زاوية نمار للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "v9-office-149ab6a6d011",
+      "city": "الرياض",
+      "name": "عقارات غرب الرياض طويق",
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "unconfirmedFields": [],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "عقارات غرب الرياض طويق",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "التنمية السكنية",
+          "خدمات الاستثمار",
+          "وكالة عقارات",
+          "مطوّر عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": true,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": true
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "gap-office-26f2e86275",
+      "city": "الرياض",
+      "name": "واجهة النرجس للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "واجهة النرجس للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "gap-office-c8915e537d",
+      "city": "الرياض",
+      "name": "شركة غزارة العقارية",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "شركة غزارة العقارية",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "وكالة عقارات",
+          "مكتب الشركات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": true,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json"
+      ]
+    },
+    {
+      "id": "gap-office-208470666c",
+      "city": "الرياض",
+      "name": "مكتب اعمار البديعه للعقارات",
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "unconfirmedFields": [
+        "brokerageActivity",
+        "publicPhone"
+      ],
+      "bestSavedSameCardObservation": {
+        "sourceFile": "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "observationPath": ".new",
+        "observedName": "مكتب اعمار البديعه للعقارات",
+        "nameSimilarity": 1.0,
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "observedCoordinateDeltaMeters": 0.0,
+        "allCurrentPhonesPublishedInThisCard": false,
+        "fields": {
+          "name": true,
+          "brokerageActivity": false,
+          "mapsPin": true,
+          "publicPhone": false
+        }
+      },
+      "evidenceFiles": [
+        "OFFICE_FINAL_AUDIT_RIYADH_2026-10-12.json",
+        "audits/restored-2026-10-13/AUDIT_ALL_RIYADH_CHECKPOINT.json",
+        "audits/OFFICE_COVERAGE_RESULTS_LANE2_2026-10-13.json"
+      ]
+    }
+  ]
+}

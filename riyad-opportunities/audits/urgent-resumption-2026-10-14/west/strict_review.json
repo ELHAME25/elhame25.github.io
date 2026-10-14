@@ -1,0 +1,1208 @@
+{
+  "baseline": "audits/OFFICE_FINAL_RECONCILIATION_SAFE_2026-10-14.json",
+  "reviewed": 50,
+  "rule": "Single saved Google Maps card observation must jointly establish name, brokerage category, all stored phones, and coordinates matching stored pin within12m. External activity confirmations excluded. No live browsing. Missing proof means unresolved, not wrong.",
+  "verifiedIds": [
+    "national-ejar-office-192440",
+    "national-ejar-office-197723",
+    "national-ejar-office-230296",
+    "national-google-office-ChIJrRj1pdw97BURFahko3egUlg",
+    "phase5-google-office-39e6290aedb7",
+    "phase5-google-office-5a9925ec633c",
+    "phase5-google-office-9ecac6050573",
+    "phase5-office-014df7b49eb4",
+    "phase5-office-3075523138f6",
+    "phase5-office-455bf081dca3",
+    "phase5-office-4e3ee0f3ddf8",
+    "phase5-office-8768084b4722",
+    "phase5-office-ac257febcae9",
+    "phase5-office-ef39d6ad0493",
+    "phase5-office-f2f555a6a880",
+    "phase6-office-49e2304599d3",
+    "phase6-office-4b840c557bfb",
+    "phase6-office-723b50623bd1",
+    "phase6-office-7e4a8e299b7d",
+    "phase6-office-af1f067b1212",
+    "phase6-office-d64b65a91c02",
+    "phase6-office-fb14f228a325"
+  ],
+  "unresolvedIds": [
+    "entity-731df6329aa2",
+    "entity-b9b320bc53c2",
+    "entity-df152bc53422",
+    "national-ejar-office-192615",
+    "national-ejar-office-193917",
+    "national-ejar-office-197139",
+    "national-ejar-office-199352",
+    "national-ejar-office-200574",
+    "national-ejar-office-216621",
+    "national-ejar-office-318391",
+    "phase5-google-office-187e825c13c7",
+    "phase5-google-office-3246e2fbdc0e",
+    "phase5-google-office-47554c54c4bc",
+    "phase5-google-office-5516da989557",
+    "phase5-google-office-5775ebcf7c1c",
+    "phase5-google-office-836f228bd5eb",
+    "phase5-google-office-abafc2264cab",
+    "phase5-google-office-b5e378969292",
+    "phase5-google-office-e77e41ddcced",
+    "phase5-google-office-ecfff67a10fa",
+    "phase5-office-020cdceef4ac",
+    "phase5-office-0c6d0e32c965",
+    "phase5-office-b7620ed1ad75",
+    "phase5-office-c212622cc21d",
+    "phase5-office-e19f58c9677d",
+    "phase6-office-226b9aff12b4",
+    "phase6-office-ac0e8174c015",
+    "phase6-office-d85e66598948"
+  ],
+  "records": [
+    {
+      "id": "entity-731df6329aa2",
+      "name": "مكتب بصمة وسيط للعقار",
+      "city": "مكة المكرمة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": false,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب بصمة وسيط للعقار",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8%2B%D8%A8%D8%B5%D9%85%D8%A9%2B%D9%88%D8%B3%D9%8A%D8%B7%2B%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x15c201f49f53613f:0xd6d3f36ba3a3b952!8m2!3d21.4681793!4d39.952387!16s%2Fg%2F11k9s3dmvf"
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "entity-b9b320bc53c2",
+      "name": "مكتب عقار الشهري",
+      "city": "جدة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب عقار الشهري",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": null,
+        "source": "https://www.google.com/maps/?cid=8043384602504712394"
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "entity-df152bc53422",
+      "name": "بن سعود للعقار",
+      "city": "جدة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "بن سعود للعقار",
+        "observedCategory": "وكالة تأجير عقارات",
+        "distanceMeters": null,
+        "source": "https://www.google.com/maps/?cid=11908823938881024999"
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "national-ejar-office-192440",
+      "name": "ثمار رابغ للعقار",
+      "city": "رابغ",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COAST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "ثمار رابغ للعقار",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%AB%D9%85%D8%A7%D8%B1%20%D8%B1%D8%A7%D8%A8%D8%BA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200550504415%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-192615",
+      "name": "مؤسسة ضياء رابغ للخدمات العقارية",
+      "city": "رابغ",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COAST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": false,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب ضياء رابغ للعقار",
+        "observedCategory": [
+          "وكالة عقارات تجارية"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B6%D9%8A%D8%A7%D8%A1%20%D8%B1%D8%A7%D8%A8%D8%BA%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200566060470%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": [
+        "name"
+      ]
+    },
+    {
+      "id": "national-ejar-office-193917",
+      "name": "الريان رابغ للعقار",
+      "city": "رابغ",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COAST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": false,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "الريان رابغ للعقار",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86%20%D8%B1%D8%A7%D8%A8%D8%BA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200546427406%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-197139",
+      "name": "شركة سبل الاعمار للخدمات العقارية",
+      "city": "رابغ",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COAST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": false,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "شركة سبل الاعمار للخدمات العقارية",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B3%D8%A8%D9%84%20%D8%A7%D9%84%D8%A5%D8%B9%D9%85%D8%A7%D8%B1%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B4%D8%AE%D8%B5%20%D9%88%D8%A7%D8%AD%D8%AF%200504606255%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-197723",
+      "name": "مؤسسة الوسيط المحترف للعقار",
+      "city": "القنفذة",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COAST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الوسيط المحترف للعقار",
+        "observedCategory": [
+          "وكالة عقارات",
+          "وسيط تمويل"
+        ],
+        "distanceMeters": 6.681783985446707e-10,
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7%20%D8%A7%D9%84%D9%85%D8%AD%D8%AA%D8%B1%D9%81%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200532124852%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-199352",
+      "name": "شركة مكتب الداعم الأفضل للعقار شخص واحد ذات مسؤولية محدودة",
+      "city": "القنفذة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COAST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": false,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "شركة مكتب الداعم الأفضل للعقار شخص واحد ذات مسؤولية محدودة",
+        "observedCategory": [
+          "شركة قابضة"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B9%D9%85%20%D8%A7%D9%84%D8%A3%D9%81%D8%B6%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "national-ejar-office-200574",
+      "name": "افاق الوعد للخدمات العقاريه",
+      "city": "القنفذة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COAST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": false,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "افاق الوعد للخدمات العقاريه",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A2%D9%81%D8%A7%D9%82%20%D8%A7%D9%84%D9%88%D8%B9%D8%AF%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200535792934%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-216621",
+      "name": "ركن المشورة للعقارات",
+      "city": "القنفذة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COAST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": false,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "ركن المشورة للعقارات",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B1%D9%83%D9%86%20%D8%A7%D9%84%D9%85%D8%B4%D9%88%D8%B1%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200564662337%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-230296",
+      "name": "صدى المدينة العقارية",
+      "city": "رابغ",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COAST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "صدى المدينة العقارية",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B5%D8%AF%D9%89%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200558000299%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-318391",
+      "name": "مستقر الديار العقارية",
+      "city": "رابغ",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COAST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": false,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مستقر الديار العقارية",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D8%B3%D8%AA%D9%82%D8%B1%20%D8%A7%D9%84%D8%AF%D9%8A%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200508877119%20%D8%B1%D8%A7%D8%A8%D8%BA?hl=ar&gl=sa"
+      },
+      "unconfirmedFields": [
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJrRj1pdw97BURFahko3egUlg",
+      "name": "مكتب الفواز للعقار",
+      "city": "تربة",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COAST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الفواز للعقار",
+        "observedCategory": [
+          "وكالة عقارات"
+        ],
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/?cid=6364325659130767381&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase5-google-office-187e825c13c7",
+      "name": "شركة عقارات الرقمية",
+      "city": "الطائف",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": false,
+          "brokerageActivity": false,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "",
+        "observedCategory": "",
+        "distanceMeters": null,
+        "source": "Google Maps place card ChIJoZMeQDGJ6RURPh6aVPZGZzQ; tel link visible"
+      },
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-google-office-3246e2fbdc0e",
+      "name": "مكتب المملكة للعقار",
+      "city": "الطائف",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب المملكة للعقار",
+        "observedCategory": "وكالة تأجير عقارات",
+        "distanceMeters": null,
+        "source": "Google Maps place card ChIJm8daYNqJ6RURNvNlto6bi1Q"
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-google-office-39e6290aedb7",
+      "name": "مكتب العبور الذهبي للعقارات",
+      "city": "الطائف",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب العبور الذهبي للعقارات",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/?q=place_id:ChIJmft5qdqJ6RUR8O4M1VRC6WE"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase5-google-office-47554c54c4bc",
+      "name": "المحضار للعقار",
+      "city": "جدة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": false,
+          "brokerageActivity": false,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "",
+        "observedCategory": "",
+        "distanceMeters": null,
+        "source": "Google Maps place card ChIJCSQF8FHRwxURA-SYpJAYISk; tel link visible"
+      },
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-google-office-5516da989557",
+      "name": "اتجاهات الاعمال للعقارات",
+      "city": "الطائف",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "اتجاهات الاعمال للعقارات",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": null,
+        "source": "Google Maps place card ChIJa8r3MVOJ6RURf7-uf3ytZMw"
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-google-office-5775ebcf7c1c",
+      "name": "محاور التقدم العقارية بجده",
+      "city": "جدة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": false,
+          "brokerageActivity": false,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "",
+        "observedCategory": "",
+        "distanceMeters": null,
+        "source": "Google Maps place card ChIJfxbQkv3QwxUR_kMIdRVWRf4; tel link visible"
+      },
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-google-office-5a9925ec633c",
+      "name": "مكتب القوس للعقار",
+      "city": "جدة",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب القوس للعقار",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/?q=place_id:ChIJ89xpMcnRwxUR5BoIisFZYos"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase5-google-office-836f228bd5eb",
+      "name": "شبل الحجاز للعقار",
+      "city": "الطائف",
+      "fullyVerified": false,
+      "proof": {
+        "file": "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "شبل الحجاز للعقار",
+        "observedCategory": "وكالة عقارات تجارية",
+        "distanceMeters": null,
+        "source": "https://www.google.com/maps/place/?q=place_id:ChIJibKeGauJ6RURvRI-acE8akc"
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-google-office-9ecac6050573",
+      "name": "مؤسسة محاور جدة العقارية",
+      "city": "جدة",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مؤسسة محاور جدة العقارية",
+        "observedCategory": "وكيل عقاري",
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/?q=place_id:ChIJ-dd3ev3NwxURdy-0pkHVy70"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase5-google-office-abafc2264cab",
+      "name": "مكتب أفضل عقار",
+      "city": "جدة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": false,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": false
+        },
+        "observedName": "مكتب أفضل عقار",
+        "observedCategory": "مكتب الشركات",
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/?q=place_id:ChIJz6Iz1PTQwxURr1ADgqfl3jM"
+      },
+      "unconfirmedFields": [
+        "brokerageActivity",
+        "sameMapsCard"
+      ]
+    },
+    {
+      "id": "phase5-google-office-b5e378969292",
+      "name": "مكتب الخمري للعقار الطائف",
+      "city": "الطائف",
+      "fullyVerified": false,
+      "proof": {
+        "file": "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الخمري للعقار الطائف",
+        "observedCategory": "وكالة عقارات تجارية",
+        "distanceMeters": null,
+        "source": "https://www.google.com/maps/place/?q=place_id:ChIJZRTQwIqP6RURy-eUJyZHV70"
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-google-office-e77e41ddcced",
+      "name": "النسور العقاريه لخدمات العقار",
+      "city": "جدة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "النسور العقاريه لخدمات العقار",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": null,
+        "source": "WEST_DIRECT_MAPS_BATCH_2026-10-12.json; direct Google Maps card"
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-google-office-ecfff67a10fa",
+      "name": "ركائب الجود للعقار",
+      "city": "جدة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "ركائب الجود للعقار",
+        "observedCategory": "وكالة عقارات تجارية",
+        "distanceMeters": null,
+        "source": "https://www.google.com/maps/place/?q=place_id:ChIJg5wlbKnRwxURs1HdpaRMlfk"
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-office-014df7b49eb4",
+      "name": "مكتب الأحمدي للعقار",
+      "city": "الطائف",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_WEST_COMPLETION_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الأحمدي للعقار",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/?cid=243440047378198572"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase5-office-020cdceef4ac",
+      "name": "مكتب البراق للعقار",
+      "city": "الطائف",
+      "fullyVerified": false,
+      "proof": {
+        "file": "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب البراق للعقار",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": null,
+        "source": "https://www.google.com/maps/place/?q=place_id:ChIJNxNroTqJ6RURFAr7hB_QO28"
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-office-0c6d0e32c965",
+      "name": "إعمار الدالة العقارية",
+      "city": "جدة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "إعمار الدالة العقارية",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": null,
+        "source": "https://www.google.com/maps/?cid=3039818975087822553"
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-office-3075523138f6",
+      "name": "مكتب النجم الساطع للعقارات والمقاولات العامه وحجز الطيران والفنادق",
+      "city": "الطائف",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب النجم الساطع للعقارات والمقاولات العامه وحجز الطيران والفنادق",
+        "observedCategory": "وكيل عقاري",
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/?q=place_id:ChIJe92sNR-J6RURSwUxJde0ZVo"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase5-office-455bf081dca3",
+      "name": "مكتب الوتار للعقارات والمقاولات بالطائف",
+      "city": "الطائف",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_WEST_COMPLETION_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الوتار للعقارات والمقاولات بالطائف",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/?cid=3386530780803766232"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase5-office-4e3ee0f3ddf8",
+      "name": "مكتب الإبداع للعقار والخدمات",
+      "city": "الطائف",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الإبداع للعقار والخدمات",
+        "observedCategory": "وكالة عقارات تجارية",
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/?q=place_id:ChIJFTT9AVEv6hUR-qS2Ja73euo"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase5-office-8768084b4722",
+      "name": "مكتب السكب السعودي",
+      "city": "جدة",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_WEST_COMPLETION_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب السكب السعودي",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/?cid=5776640672961015109"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase5-office-ac257febcae9",
+      "name": "مؤسسة بوابة الطائف العقارية",
+      "city": "الطائف",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_WEST_COMPLETION_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مؤسسة بوابة الطائف العقارية",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/مؤسسة+بوابة+الطائف+العقارية/@21.5352421,40.6213166"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase5-office-b7620ed1ad75",
+      "name": "مكتب بدر للعقار",
+      "city": "الطائف",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب بدر للعقار",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": null,
+        "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D8%AF%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81&query_place_id=ChIJDSVQSQgl6hURbRDtrfxVnNw"
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-office-c212622cc21d",
+      "name": "مؤسسة الفايز للعقار وأدارة الأملاك",
+      "city": "الطائف",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": false,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "مؤسسة الفايز للعقار وأدارة الأملاك",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": null,
+        "source": "https://www.google.com/maps/?cid=2514137569141450377"
+      },
+      "unconfirmedFields": [
+        "publicPhone",
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-office-e19f58c9677d",
+      "name": "مكتب الخديدي للعقار",
+      "city": "الطائف",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الخديدي للعقار",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": null,
+        "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AE%D8%AF%D9%8A%D8%AF%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81&query_place_id=ChIJ717okq6I6RUR6HVxSmsYbYs"
+      },
+      "unconfirmedFields": [
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase5-office-ef39d6ad0493",
+      "name": "مكتب الغذامي للعقار",
+      "city": "الطائف",
+      "fullyVerified": true,
+      "proof": {
+        "file": "audits/OFFICE_MAPS_CLOSURE_LANE3_2026-10-13.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الغذامي للعقار",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/?q=place_id:ChIJG3XKp-KI6RURawMX1WkUW_8"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase5-office-f2f555a6a880",
+      "name": "مصاطب",
+      "city": "الطائف",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_WEST_COMPLETION_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مصاطب",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.0,
+        "source": "https://www.google.com/maps/place/مصاطب/@21.2658268,40.4276757"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase6-office-226b9aff12b4",
+      "name": "مكتب الهجرة الراقي للعقار",
+      "city": "مكة المكرمة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": false,
+          "brokerageActivity": false,
+          "publicPhone": false,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "",
+        "observedCategory": "",
+        "distanceMeters": null,
+        "source": "Google Maps direct place URL attempted 2026-10-12"
+      },
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "publicPhone",
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase6-office-49e2304599d3",
+      "name": "مكتب الرائد للعقار",
+      "city": "مكة المكرمة",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الرائد للعقار",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.45164220556437934,
+        "source": "Google Maps direct place card 0x741af12d0bcae109"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase6-office-4b840c557bfb",
+      "name": "مكتب مكة للعقار",
+      "city": "مكة المكرمة",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب مكة للعقار",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.5873512754182983,
+        "source": "Google Maps live place card 0x15c201c7e3742393:0x1f6750de281bc6b"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase6-office-723b50623bd1",
+      "name": "مكتب التعاون للعقار",
+      "city": "مكة المكرمة",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب التعاون للعقار",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.4573943100499736,
+        "source": "Google Maps direct place card 0xc4f4625aa7f26c4a"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase6-office-7e4a8e299b7d",
+      "name": "القرشي للعقار",
+      "city": "مكة المكرمة",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "القرشي للعقار",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.5774197048709853,
+        "source": "Google Maps live place card 0x15c21b0054bc6495:0x1b8912967921c9e"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase6-office-ac0e8174c015",
+      "name": "مكتب الرؤية العقارية",
+      "city": "مكة المكرمة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": false,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب الرؤية العقارية",
+        "observedCategory": "شركة إدارة عقارات",
+        "distanceMeters": 0.7653263952671762,
+        "source": "Google Maps direct place card 0x508be94f3474a919"
+      },
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "phase6-office-af1f067b1212",
+      "name": "مكتب أبو صالح للعقار",
+      "city": "مكة المكرمة",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب أبو صالح للعقار",
+        "observedCategory": "وكالة عقارات",
+        "distanceMeters": 0.4753632878486761,
+        "source": "Google Maps search result exact place card 0x15c2060e9513f5f7:0xbd71e258c911fcb0"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase6-office-d64b65a91c02",
+      "name": "مكتب المروان العقاري",
+      "city": "مكة المكرمة",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "مكتب المروان العقاري",
+        "observedCategory": "وكالة تأجير عقارات",
+        "distanceMeters": 0.4577752230766638,
+        "source": "Google Maps direct place card 0x4d4c022ea9a60950"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase6-office-d85e66598948",
+      "name": "مكتب اللحياني للعقار",
+      "city": "مكة المكرمة",
+      "fullyVerified": false,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_WEST_COMPLETE_2026-10-12.json",
+        "checks": {
+          "name": false,
+          "brokerageActivity": false,
+          "publicPhone": false,
+          "mapsPin": false,
+          "sameMapsCard": true
+        },
+        "observedName": "",
+        "observedCategory": "",
+        "distanceMeters": null,
+        "source": "Google Maps direct/search place card attempted 2026-10-12; card remained unreadable after one reload"
+      },
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "publicPhone",
+        "mapsPin"
+      ]
+    },
+    {
+      "id": "phase6-office-fb14f228a325",
+      "name": "رسملة العقارية",
+      "city": "مكة المكرمة",
+      "fullyVerified": true,
+      "proof": {
+        "file": "OFFICE_FINAL_AUDIT_QADISIYAH_READONLY_2026-10-12.json",
+        "checks": {
+          "name": true,
+          "brokerageActivity": true,
+          "publicPhone": true,
+          "mapsPin": true,
+          "sameMapsCard": true
+        },
+        "observedName": "رسملة العقارية",
+        "observedCategory": [
+          "وكالة عقارات",
+          "عقار شقق مفروشة",
+          "بائع العقارات بالمزاد"
+        ],
+        "distanceMeters": 0.6494061278878654,
+        "source": "https://www.google.com/maps/place/%D8%B1%D8%B3%D9%85%D9%84%D8%A9+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15c200151e4c85ad:0x721b0030bf8a2aca!8m2!3d21.4596145!4d39.962974!16s%2Fg%2F11gg650cj7!19sChIJrYVMHhUAwhURyiqKvzAAG3I?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1&hl=ar&gl=sa"
+      },
+      "unconfirmedFields": []
+    }
+  ]
+}

@@ -1,0 +1,968 @@
+{
+  "schema": "office-final-audit-checkpoint-v1",
+  "generatedAt": "2026-10-12T12:39:12Z",
+  "scope": [
+    "بلجرشي",
+    "سبت العلايا"
+  ],
+  "policy": "Google Maps cards only; all prior checkpoint IDs excluded; Qadisiyah untouched",
+  "inventory": {
+    "cityInventory": 21,
+    "excludedAlreadyCovered": 2,
+    "eligible": 19,
+    "checked": 19,
+    "byCity": {
+      "بلجرشي": 14,
+      "سبت العلايا": 5
+    },
+    "statusCounts": {
+      "unconfirmed": 12,
+      "needs_correction": 5,
+      "needs_correction_phone_unconfirmed": 2
+    },
+    "locationsMatched": 7,
+    "phonesMatched": 6,
+    "phonesDifferent": 5
+  },
+  "records": [
+    {
+      "id": "national-ejar-office-192622",
+      "city": "بلجرشي",
+      "old": {
+        "name": "مؤسسة عبدالله محمد الغامدي للخدمات العقارية",
+        "address": "أبي محمد عبد الله التاجر، السلام، بلجرشي، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0504270141"
+        ],
+        "coordinates": [
+          19.86218,
+          41.56421
+        ],
+        "maps": "https://maps.google.com/maps?q=19.8621788,41.5642051",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D8%BA%D8%A7%D9%85%D8%AF%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200504270141%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:21Z"
+    },
+    {
+      "id": "national-ejar-office-192648",
+      "city": "بلجرشي",
+      "old": {
+        "name": "مكتب خلود للخدمات العقارية",
+        "address": "طريق الملك سعود، بلجرشي، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0557659240"
+        ],
+        "coordinates": [
+          19.86177,
+          41.56202
+        ],
+        "maps": "https://maps.google.com/maps?q=19.86176556,41.56201959",
+        "activity": null
+      },
+      "new": {
+        "name": "الخلود للعقارات",
+        "categories": [
+          "وكالة عقارات",
+          "تأجير عقارات"
+        ],
+        "district": null,
+        "address": "VH77+C8X الخلود للعقارات، طريق الملك سعود، بلجرشي 65635",
+        "phone": "0554000826",
+        "coordinates": [
+          19.863604799999997,
+          41.5633537
+        ],
+        "placeId": null,
+        "featureId": "0x15ef5dccf14c855b:0xa98c228716be446"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.537,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.0018347999999974718,
+          "lon": 0.001333700000003546
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "different phone and insufficiently specific name match; identity not established",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AE%D9%84%D9%88%D8%AF%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200557659240%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:21Z"
+    },
+    {
+      "id": "national-ejar-office-194017",
+      "city": "بلجرشي",
+      "old": {
+        "name": "مكتب مدار الأرض للعقارات",
+        "address": "اللملك سعود، الرائد، بلجرشي، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0505773917"
+        ],
+        "coordinates": [
+          19.86434,
+          41.56549
+        ],
+        "maps": "https://maps.google.com/maps?q=19.86434408,41.56548827",
+        "activity": null
+      },
+      "new": {
+        "name": "المدار للعقار",
+        "categories": [
+          "مثمّن عقارات"
+        ],
+        "district": null,
+        "address": "VH78+V35 المدار للعقار، بلجرشي 65635",
+        "phone": "0533805181",
+        "coordinates": [
+          19.8646279,
+          41.5652447
+        ],
+        "placeId": null,
+        "featureId": "0x15ef5dcbf67a184d:0x7d13f6a468ca63c5"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.595,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 0.0002879000000000076,
+          "lon": -0.00024529999999600705
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "different phone and insufficiently specific name match; identity not established",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A3%D8%B1%D8%B6%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200505773917%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:21Z"
+    },
+    {
+      "id": "national-ejar-office-194160",
+      "city": "بلجرشي",
+      "old": {
+        "name": "مكتب أملاكي للخدمات العقارية",
+        "address": "طريق الملك عبدالعزيز، بلجرشي، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0558184737"
+        ],
+        "coordinates": [
+          19.88398,
+          41.56763
+        ],
+        "maps": "https://maps.google.com/maps?q=19.88398357,41.56763077",
+        "activity": null
+      },
+      "new": {
+        "name": "أملاك للعقار",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": null,
+        "address": "أملاك للعقار، السراة، بلجرشي 65628",
+        "phone": "0540950421",
+        "coordinates": [
+          19.8672131,
+          41.5637117
+        ],
+        "placeId": null,
+        "featureId": "0x15ef5d6d10e1fc23:0x1788d6c41705b2b2"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.6,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.016766900000000362,
+          "lon": -0.003918300000002262
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "different phone and insufficiently specific name match; identity not established",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A3%D9%85%D9%84%D8%A7%D9%83%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200558184737%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:36Z"
+    },
+    {
+      "id": "national-ejar-office-195982",
+      "city": "بلجرشي",
+      "old": {
+        "name": "مكتب رواسي الصقر للعقار",
+        "address": "طريق الملك عبدالعزيز، بلجرشي، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0598888801"
+        ],
+        "coordinates": [
+          19.91537,
+          41.5609
+        ],
+        "maps": "https://maps.google.com/maps?q=19.91536486,41.56089507",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%88%D8%A7%D8%B3%D9%8A%20%D8%A7%D9%84%D8%B5%D9%82%D8%B1%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200598888801%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:21Z"
+    },
+    {
+      "id": "national-ejar-office-209089",
+      "city": "بلجرشي",
+      "old": {
+        "name": "مكتب الوسيط سلمان للخدمات العقارية",
+        "address": "الشهيل، بلجرشي، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0551555722"
+        ],
+        "coordinates": [
+          19.86096,
+          41.56042
+        ],
+        "maps": "https://maps.google.com/maps?q=19.86095964,41.56042067",
+        "activity": null
+      },
+      "new": {
+        "name": "إنجاز وإعتمال الأعمال للخدمات التجارية",
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "district": null,
+        "address": "إنجاز وإعتمال الأعمال للخدمات التجارية، طريق الملك سعود، بلجرشي 65635",
+        "phone": "0551555722",
+        "coordinates": [
+          19.8608875,
+          41.560385499999995
+        ],
+        "placeId": null,
+        "featureId": "0x15ef5d986ce71583:0x80d801331ac1573b"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.583,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -7.24999999981435e-05,
+          "lon": -3.450000000526643e-05
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "name": "إنجاز وإعتمال الأعمال للخدمات التجارية",
+        "address": "إنجاز وإعتمال الأعمال للخدمات التجارية، طريق الملك سعود، بلجرشي 65635",
+        "maps": "https://www.google.com/maps/?cid=9284171950828115771"
+      },
+      "reason": "same phone and pin; current Google Maps title differs",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7%20%D8%B3%D9%84%D9%85%D8%A7%D9%86%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200551555722%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:36Z"
+    },
+    {
+      "id": "national-ejar-office-218211",
+      "city": "بلجرشي",
+      "old": {
+        "name": "مكتب صدى الوقت للعقار",
+        "address": "عثمان بن عفان، الفيصلية، بلجرشي، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0501552226"
+        ],
+        "coordinates": [
+          19.85538,
+          41.59597
+        ],
+        "maps": "https://maps.google.com/maps?q=19.85538058,41.59597145",
+        "activity": null
+      },
+      "new": {
+        "name": "صدى الوقت للعقار",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": "الشطيبة",
+        "address": "صدى الوقت للعقار، شارع الفيصليه، الشطيبة، بلجرشي 65651",
+        "phone": "0501552226",
+        "coordinates": [
+          19.855400799999998,
+          41.595935999999995
+        ],
+        "placeId": null,
+        "featureId": "0x15ef5d2e5858dfd1:0x8fd8012ffd4a2d9b"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.865,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 2.0799999997933583e-05,
+          "lon": -3.400000000652881e-05
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "name": "صدى الوقت للعقار",
+        "maps": "https://www.google.com/maps/?cid=10365035848017784219"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B5%D8%AF%D9%89%20%D8%A7%D9%84%D9%88%D9%82%D8%AA%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200501552226%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:36Z"
+    },
+    {
+      "id": "national-ejar-office-246079",
+      "city": "بلجرشي",
+      "old": {
+        "name": "مكتب ديار الكرم للخدمات العقارية",
+        "address": "طريق الملك عبدالعزيز، بلجرشي، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0555618325"
+        ],
+        "coordinates": [
+          19.89149,
+          41.57052
+        ],
+        "maps": "https://maps.google.com/maps?q=19.89149266,41.57052438",
+        "activity": null
+      },
+      "new": {
+        "name": "ديار الكرم للشقق المفروشة المخدومة",
+        "categories": [
+          "عقار شقق مفروشة",
+          "شقق فندقية",
+          "شقق عطلات للإيجار"
+        ],
+        "district": null,
+        "address": "ديار الكرم للشقق المفروشة المخدومة، طريق الملك عبدالعزيز، بلجرشي 65644",
+        "phone": "0557309070",
+        "coordinates": [
+          19.8914998,
+          41.5704949
+        ],
+        "placeId": null,
+        "featureId": "0x15ef5d00738dff69:0x8d4417030b892df3"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.545,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 9.799999997284203e-06,
+          "lon": -2.5100000001998524e-05
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "different phone and insufficiently specific name match; identity not established",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AF%D9%8A%D8%A7%D8%B1%20%D8%A7%D9%84%D9%83%D8%B1%D9%85%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200555618325%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:37Z"
+    },
+    {
+      "id": "national-ejar-office-270160",
+      "city": "بلجرشي",
+      "old": {
+        "name": "مكتب بدر علي ابن صالح الغامدي للعقارات",
+        "address": "الملك سعود، الرائد، بلجرشي، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0508340660"
+        ],
+        "coordinates": [
+          19.86368,
+          41.56322
+        ],
+        "maps": "https://maps.google.com/maps?q=19.86367631,41.56322124",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D8%AF%D8%B1%20%D8%B9%D9%84%D9%8A%20%D8%A7%D8%A8%D9%86%20%D8%B5%D8%A7%D9%84%D8%AD%20%D8%A7%D9%84%D8%BA%D8%A7%D9%85%D8%AF%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200508340660%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:21Z"
+    },
+    {
+      "id": "national-ejar-office-415657",
+      "city": "بلجرشي",
+      "old": {
+        "name": "مكتب خبراء التوثيق للعقارات",
+        "address": "الملك سعود، الرائد، بلجرشي، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0536544808"
+        ],
+        "coordinates": [
+          19.86686,
+          41.57023
+        ],
+        "maps": "https://maps.google.com/maps?q=19.86685991,41.57023415",
+        "activity": null
+      },
+      "new": {
+        "name": "خبراء التوثيق للخدمات العامة",
+        "categories": [
+          "دعم الكمبيوتر والخدمات"
+        ],
+        "district": null,
+        "address": "خبراء التوثيق للخدمات العامة، طريق الملك سعود، بلجرشي 65629",
+        "phone": "0540093500",
+        "coordinates": [
+          19.8663488,
+          41.5703639
+        ],
+        "placeId": null,
+        "featureId": "0x15ef5d054cf6461d:0x4c69ba19196f7ed2"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.655,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.0005111999999982686,
+          "lon": 0.000133899999994469
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "different phone and insufficiently specific name match; identity not established",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AE%D8%A8%D8%B1%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AA%D9%88%D8%AB%D9%8A%D9%82%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200536544808%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:37Z"
+    },
+    {
+      "id": "national-ejar-office-415930",
+      "city": "بلجرشي",
+      "old": {
+        "name": "مكتب مرادك العقارية",
+        "address": "الملك عبدالعزيز، بلجرشي، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0564343585"
+        ],
+        "coordinates": [
+          19.94151,
+          41.55202
+        ],
+        "maps": "https://maps.google.com/maps?q=19.94151328,41.55201581",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%B1%D8%A7%D8%AF%D9%83%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200564343585%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:52Z"
+    },
+    {
+      "id": "national-ejar-office-584125",
+      "city": "بلجرشي",
+      "old": {
+        "name": "مكتب عقار بارك العقارية",
+        "address": "طريق الملك فيصل، الرائد، بلجرشي، الباحة، المملكة العربية السعودية",
+        "phones": [
+          "0534550123"
+        ],
+        "coordinates": [
+          19.85848,
+          41.56419
+        ],
+        "maps": "https://maps.google.com/maps?q=19.85847802,41.56419114",
+        "activity": null
+      },
+      "new": {
+        "name": "عقار",
+        "categories": [
+          "مبنى سكني"
+        ],
+        "district": "حي طيلان",
+        "address": "عقار، حي طيلان، BGMA3183، 3183 الأمانة، 7880، 🇸🇦، بلجرشي 65651",
+        "phone": null,
+        "coordinates": [
+          19.870295199999997,
+          41.5840636
+        ],
+        "placeId": null,
+        "featureId": "0x15ef5d006451a83f:0xda98eaa439c424b3"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.296,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 0.011815199999997361,
+          "lon": 0.019873599999996827
+        },
+        "identityMatch": true
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A8%D8%A7%D8%B1%D9%83%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200534550123%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:52Z"
+    },
+    {
+      "id": "national-icuae-office-ChIJR3Tv-MZd7xURJTKM7Otv48Q",
+      "city": "بلجرشي",
+      "old": {
+        "name": "مؤسسة صيد الفرص العقارية. شيخ طائفة العقار",
+        "address": "Baljurashi 65651 – Saudi Arabia –  –",
+        "phones": [
+          "0550650334"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJR3Tv-MZd7xURJTKM7Otv48Q",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسة صيد الفرص العقارية. شيخ طائفة العقار",
+        "categories": [
+          "شركة إدارة عقارات",
+          "مقاول عام"
+        ],
+        "district": null,
+        "address": "مؤسسة صيد الفرص العقارية. شيخ طائفة العقار، بن دغيس، بلجرشي 65635",
+        "phone": "0550650334",
+        "coordinates": [
+          19.8619794,
+          41.5641606
+        ],
+        "placeId": null,
+        "featureId": "0x15ef5dc6f8ef7447:0xc4e36febec8c3225"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          19.8619794,
+          41.5641606
+        ],
+        "address": "مؤسسة صيد الفرص العقارية. شيخ طائفة العقار، بن دغيس، بلجرشي 65635",
+        "maps": "https://www.google.com/maps/?cid=14187306310223802917"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/place/?q=place_id:ChIJR3Tv-MZd7xURJTKM7Otv48Q&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:52Z"
+    },
+    {
+      "id": "national-yango-office-58667948407",
+      "city": "بلجرشي",
+      "old": {
+        "name": "Al Moasher Real Estate Services Office",
+        "address": "Town of Baljurshi, طريق الملك فهد, BGGA7723",
+        "phones": [
+          "0177228806"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://yandex.com/maps/org/al_moasher_real_estate_services_office/58667948407/",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/Al%20Moasher%20Real%20Estate%20Services%20Office%200177228806%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:37:52Z"
+    },
+    {
+      "id": "v9-office-8c11ea4278b3",
+      "city": "سبت العلايا",
+      "old": {
+        "name": "مكتب الديرة",
+        "address": "الواحة، سبت العلايا",
+        "phones": [],
+        "coordinates": [
+          19.62859,
+          42.00734
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الديرة",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "حي الواحة",
+        "address": "مكتب الديرة، 2190 بلقرن 2، حي الواحة، AIDB7745، 7745، سبت العلاية 67314",
+        "phone": null,
+        "coordinates": [
+          19.629083599999998,
+          41.9910336
+        ],
+        "placeId": null,
+        "featureId": "0x15e57f005eedd0bf:0x357d5f93ea26c8a8"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 0.0004935999999986507,
+          "lon": -0.016306399999997723
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction_phone_unconfirmed",
+      "recommendedChanges": {
+        "coordinates": [
+          19.629083599999998,
+          41.9910336
+        ],
+        "address": "مكتب الديرة، 2190 بلقرن 2، حي الواحة، AIDB7745، 7745، سبت العلاية 67314",
+        "maps": "https://www.google.com/maps/?cid=3854341944992254120"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9%20%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:38:51Z"
+    },
+    {
+      "id": "v9-office-aea1d102e95c",
+      "city": "سبت العلايا",
+      "old": {
+        "name": "مؤسسة الديرة للخدمات العقارية",
+        "address": "سبت العلايا",
+        "phones": [
+          "0551133423"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسة الديرة للخدمات العقارية",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "الواحة",
+        "address": "JXHR+H9G مؤسسة الديرة للخدمات العقارية, 30، الواحة، سبت العلاية 67533،",
+        "phone": "0551133423",
+        "coordinates": [
+          19.6289414,
+          41.9909566
+        ],
+        "placeId": null,
+        "featureId": "0x15e57f8de9d9c773:0x46e9987003285840"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          19.6289414,
+          41.9909566
+        ],
+        "address": "JXHR+H9G مؤسسة الديرة للخدمات العقارية, 30، الواحة، سبت العلاية 67533،",
+        "maps": "https://www.google.com/maps/?cid=5109782859085273152"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200551133423%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:38:51Z"
+    },
+    {
+      "id": "v9-office-b5e40da4e1da",
+      "city": "سبت العلايا",
+      "old": {
+        "name": "السبعاني للعقار",
+        "address": "الشاطئ، سبت العلايا",
+        "phones": [
+          "0176301010"
+        ],
+        "coordinates": [
+          19.5618,
+          41.9689
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%B3%D8%A8%D8%B9%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7",
+        "activity": null
+      },
+      "new": {
+        "name": "السبعاني للعقار والادوات المنزلية",
+        "categories": [
+          "متجر أثاث",
+          "وكيل عقاري"
+        ],
+        "district": "الشاطئ",
+        "address": "HX75+H8V السبعاني للعقار والادوات المنزلية، جده، الشاطئ، سبت العلاية 67321",
+        "phone": "0176301010",
+        "coordinates": [
+          19.5639872,
+          41.9583052
+        ],
+        "placeId": null,
+        "featureId": "0x15e578e041eec66f:0x97a7c387eed701c7"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.625,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.0021871999999980574,
+          "lon": -0.010594799999999793
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "name": "السبعاني للعقار والادوات المنزلية",
+        "coordinates": [
+          19.5639872,
+          41.9583052
+        ],
+        "address": "HX75+H8V السبعاني للعقار والادوات المنزلية، جده، الشاطئ، سبت العلاية 67321",
+        "maps": "https://www.google.com/maps/?cid=10927918009432867271"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D8%A7%D9%84%D8%B3%D8%A8%D8%B9%D8%A7%D9%86%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200176301010%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:38:51Z"
+    },
+    {
+      "id": "v9-office-e84a171a279e",
+      "city": "سبت العلايا",
+      "old": {
+        "name": "مكتب البرج العقاري",
+        "address": "عفراء 67523",
+        "phones": [
+          "0569100109"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%A8%D8%B1%D8%AC%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب البرج العقاري",
+        "categories": [
+          "وكالة عقارات",
+          "مكتب الشركات"
+        ],
+        "district": null,
+        "address": "مكتب البرج العقاري، عفراء 67523",
+        "phone": "0569100109",
+        "coordinates": [
+          19.6473099,
+          42.000783999999996
+        ],
+        "placeId": null,
+        "featureId": "0x15e57d68070aab2d:0xf4c85e35d1dd9163"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%A8%D8%B1%D8%AC%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200569100109%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:38:51Z"
+    },
+    {
+      "id": "v9-office-f539317f30bd",
+      "city": "سبت العلايا",
+      "old": {
+        "name": "مكتب أبو ياسر العقاري",
+        "address": "الواحة، سبت العلايا 67314",
+        "phones": [],
+        "coordinates": [
+          19.62859,
+          42.00734
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A3%D8%A8%D9%88%20%D9%8A%D8%A7%D8%B3%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب ابو ياسر العقاري",
+        "categories": [
+          "مستشار عقارات"
+        ],
+        "district": "الواحة",
+        "address": "JXHR+F85 مكتب ابو ياسر العقاري، الواحة، سبت العلاية 67314",
+        "phone": null,
+        "coordinates": [
+          19.6286484,
+          41.9908636
+        ],
+        "placeId": null,
+        "featureId": "0x15e57e72254426cb:0x3e8af15899e3b90c"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 5.840000000034706e-05,
+          "lon": -0.016476400000001945
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction_phone_unconfirmed",
+      "recommendedChanges": {
+        "coordinates": [
+          19.6286484,
+          41.9908636
+        ],
+        "address": "JXHR+F85 مكتب ابو ياسر العقاري، الواحة، سبت العلاية 67314",
+        "maps": "https://www.google.com/maps/?cid=4506679739978856716"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A3%D8%A8%D9%88%20%D9%8A%D8%A7%D8%B3%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%20%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:38:51Z"
+    }
+  ]
+}

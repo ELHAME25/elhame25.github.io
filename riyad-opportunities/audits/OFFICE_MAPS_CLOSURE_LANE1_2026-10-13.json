@@ -1,0 +1,3393 @@
+{
+  "schema": "direct-maps-continuation-v2",
+  "date": "2026-10-14",
+  "lane": 1,
+  "scopeCount": 165,
+  "attemptedCount": 63,
+  "counts": {
+    "partial": 13,
+    "verified": 10,
+    "verified_requires_patch": 10,
+    "unresolved": 29,
+    "closed_proven": 1
+  },
+  "records": [
+    {
+      "id": "national-ejar-office-202596",
+      "index": 3,
+      "nameStored": "مكتب زاوية الوطن للعقارات",
+      "city": "شرورة",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "partial",
+      "status": "partial",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 3,
+          "lat": 17.4911737,
+          "lon": 47.1153748,
+          "name": "مكتب زاوية الوطن",
+          "phone": null,
+          "category": "وكالة عقارات",
+          "pinDifferenceMeters": 0.0
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJiS2lHgC3Bz4RdPSRKZ7H9_I",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0559108846"
+      ],
+      "phoneCertainty": {
+        "0559108846": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJ00i8UKa-BxYRbIat6CzAxjM",
+      "index": 7,
+      "nameStored": "المذكور للعقار",
+      "city": "صامطة",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": false,
+      "decision": "partial",
+      "status": "partial",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 7,
+          "lat": 16.600571,
+          "lon": 42.938708,
+          "name": "المذكور للعقار",
+          "phone": "0504571418",
+          "category": "مكتب الشركات",
+          "pinDifferenceMeters": 0.24
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJ00i8UKa-BxYRbIat6CzAxjM",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0504571418"
+      ],
+      "phoneCertainty": {
+        "0504571418": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "office-maps-dc01f03b0c17",
+      "index": 141,
+      "nameStored": "مكتب نهضة وطن العقاري",
+      "city": "البكيرية",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified",
+      "status": "verified",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 141,
+          "lat": 26.1432039,
+          "lon": 43.6026539,
+          "name": "مكتب نهضة وطن العقاري",
+          "phone": "0534555618",
+          "category": "وكالة عقارات",
+          "pinDifferenceMeters": 0.58,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJ4cWOOgA9ghURhVGeLiTskt8",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0534555618"
+      ],
+      "phoneCertainty": {
+        "0534555618": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": []
+    },
+    {
+      "id": "office-maps-45c552a59cbe",
+      "index": 140,
+      "nameStored": "عنوان الاستثمار الأول للعقارات",
+      "city": "البكيرية",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": false,
+      "decision": "partial",
+      "status": "partial",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 140,
+          "lat": 26.1255167,
+          "lon": 43.6468853,
+          "name": "عنوان الاستثمار الأول للعقارات",
+          "phone": "0537070806",
+          "category": "شركة إدارة عقارات",
+          "pinDifferenceMeters": 0.64,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJwXMcj-EXghURON_HZpxeZBI",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0537070806"
+      ],
+      "phoneCertainty": {
+        "0537070806": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "national-ejar-office-194958",
+      "index": 23,
+      "nameStored": "مؤسسة وسيط الباحه للعقارات",
+      "city": "الباحة",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified_requires_patch",
+      "status": "verified_requires_patch",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 23,
+          "lat": 20.0161143,
+          "lon": 41.4711521,
+          "name": "مكتب وسيط الباحة للعقار",
+          "phone": "0599901456",
+          "category": "وكالة عقارات",
+          "feature": "0x15ef45888f597635:0x4fab8fa84dde744",
+          "gcode": "11gm_7s06s",
+          "pinDifferenceMeters": 80.98
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJNXZZj4hF7xURROfdhPq4-gQ",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0509950527"
+      ],
+      "phoneCertainty": {
+        "0509950527": false
+      },
+      "proposedPatch": {
+        "lat": 20.0161143,
+        "lon": 41.4711521,
+        "phones": [
+          "0599901456"
+        ],
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%88%D8%B3%D9%8A%D8%B7+%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/@20.0161143,41.4711521,17z/data=!3m1!4b1!4m6!3m5!1s0x15ef45888f597635:0x4fab8fa84dde744!8m2!3d20.0161143!4d41.4711521!16s%2Fg%2F11gm_7s06s?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-bizmideast-office-10619088870718593562",
+      "index": 17,
+      "nameStored": "مكتب حلا الشمال العقاري",
+      "city": "عرعر",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": false,
+      "decision": "partial",
+      "status": "partial",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 17,
+          "lat": 30.9925931,
+          "lon": 41.0596138,
+          "name": "مكتب حلا الشمال العقاري",
+          "phone": "0554399563",
+          "category": "مكتب الشركات",
+          "pinDifferenceMeters": 0.5
+        },
+        "sourceInput": "https://www.google.com/maps/?cid=10619088870718593562",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0557051418"
+      ],
+      "phoneCertainty": {
+        "0557051418": false
+      },
+      "proposedPatch": {
+        "phones": [
+          "0554399563"
+        ]
+      },
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJqQWJne29BxYRNbORRJ4LgKU",
+      "index": 21,
+      "nameStored": "مكتب",
+      "city": "صامطة",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 21,
+          "lat": 16.6020607,
+          "lon": 42.9467599,
+          "name": "مكتب",
+          "phone": "0579216050",
+          "category": "وكالة عقارات"
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJqQWJne29BxYRNbORRJ4LgKU",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0579216050"
+      ],
+      "phoneCertainty": {
+        "0579216050": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJq6qqqvp1zT8RjGPWDyXauUQ",
+      "index": 11,
+      "nameStored": "مكتب ركن مدهال للعقار",
+      "city": "قرية العليا",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": false,
+      "decision": "partial",
+      "status": "partial",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 11,
+          "lat": 27.5548015,
+          "lon": 47.6946634,
+          "name": "مكتب ركن مدهال للعقار",
+          "phone": "0133860555",
+          "category": "مكتب الشركات",
+          "pinDifferenceMeters": 0.37
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJq6qqqvp1zT8RjGPWDyXauUQ",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0133860555"
+      ],
+      "phoneCertainty": {
+        "0133860555": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "office-maps-393364f8d13c",
+      "index": 143,
+      "nameStored": "مكتب السلامة للعقارات",
+      "city": "البكيرية",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified",
+      "status": "verified",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 143,
+          "lat": 26.1342657,
+          "lon": 43.6667733,
+          "name": "مكتب السلامة للعقارات",
+          "phone": "0591719990",
+          "category": "وكيل عقاري",
+          "pinDifferenceMeters": 0.58,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJ2cyrKAAjghURfJynDR5N-RE",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0591719990"
+      ],
+      "phoneCertainty": {
+        "0591719990": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": []
+    },
+    {
+      "id": "office-maps-5ecefee5de6f",
+      "index": 145,
+      "nameStored": "مكتب دار النزيه للعقارات",
+      "city": "البكيرية",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified",
+      "status": "verified",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 145,
+          "lat": 26.1317562,
+          "lon": 43.6133122,
+          "name": "مكتب دار النزيه للعقارات",
+          "phone": "0531804870",
+          "category": "وكالة عقارات",
+          "pinDifferenceMeters": 0.48,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJKftM-kk9ghURFnhCvEZXSB8",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0531804870"
+      ],
+      "phoneCertainty": {
+        "0531804870": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-google-office-ChIJCxhlGgAr8BURXIUZXO5f3jw",
+      "index": 158,
+      "nameStored": "مكتب سالم للعقار والخدمات العامة",
+      "city": "بيشة",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified",
+      "status": "verified",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 158,
+          "lat": 20.0128388,
+          "lon": 42.6153765,
+          "name": "مكتب سالم للعقار والخدمات العامة",
+          "phone": "0501795906",
+          "category": "وكالة عقارات تجارية",
+          "pinDifferenceMeters": 0.39,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJCxhlGgAr8BURXIUZXO5f3jw",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0501795906"
+      ],
+      "phoneCertainty": {
+        "0501795906": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": []
+    },
+    {
+      "id": "office-maps-1d2491682cf8",
+      "index": 146,
+      "nameStored": "نهضة البلاد للعقارات",
+      "city": "البكيرية",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": false,
+      "decision": "partial",
+      "status": "partial",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 146,
+          "lat": 26.1373086,
+          "lon": 43.6628164,
+          "name": "نهضة البلاد للعقارات",
+          "phone": "0112233667",
+          "category": "مكتب الشركات",
+          "pinDifferenceMeters": 0.39,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJA1WwR5wighURjUOpwkLTa7Y",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0112233667"
+      ],
+      "phoneCertainty": {
+        "0112233667": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "office-maps-d546e47015c8",
+      "index": 144,
+      "nameStored": "مكتب عقار الحربي",
+      "city": "البكيرية",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": false,
+      "decision": "partial",
+      "status": "partial",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 144,
+          "lat": 26.1316047,
+          "lon": 43.6139014,
+          "name": "مكتب عقار الحربي",
+          "phone": "0559001354",
+          "category": "بائع العقارات بالمزاد",
+          "pinDifferenceMeters": 0.61,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJs0MUHgA9ghUR6XB3Fc33imk",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0559001354"
+      ],
+      "phoneCertainty": {
+        "0559001354": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "national-yango-office-69635635496",
+      "index": 157,
+      "nameStored": "مكتب السمو الاقليمي للعقارات",
+      "city": "بيشة",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified",
+      "status": "verified",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 157,
+          "lat": 19.9285569,
+          "lon": 42.6053409,
+          "name": "مكتب السمو الاقليمي للعقارات",
+          "phone": "0505764616",
+          "category": "وكالة عقارات",
+          "pinDifferenceMeters": 0.0,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJC0v3QgYn8BURbW4wSfnhzgo",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0505764616"
+      ],
+      "phoneCertainty": {
+        "0505764616": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-yango-office-17922235385",
+      "index": 155,
+      "nameStored": "مكتب ركن الاعمال للخدمات الالكترونيه",
+      "city": "بيشة",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": false,
+      "decision": "partial",
+      "status": "partial",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 155,
+          "lat": 20.0225837,
+          "lon": 42.623621,
+          "name": "مكتب ركن الأعمال",
+          "phone": "0567930789",
+          "category": null,
+          "pinDifferenceMeters": 0.0,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJK7Hku6Qp8BURWosIZF4Y2RE",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0567930789"
+      ],
+      "phoneCertainty": {
+        "0567930789": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "office-maps-8d50e9d63246",
+      "index": 142,
+      "nameStored": "مكتب صالح الدخيّل للعقارات والمقاولات",
+      "city": "البكيرية",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": false,
+      "decision": "partial",
+      "status": "partial",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 142,
+          "lat": 26.1428903,
+          "lon": 43.6589183,
+          "name": "مكتب صالح الدخيّل للعقارات والمقاولات",
+          "phone": "0163359985",
+          "category": "مكتب الشركات",
+          "pinDifferenceMeters": 0.17,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJR_qdrrcZghURdmNbR9tlBOk",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0163359985"
+      ],
+      "phoneCertainty": {
+        "0163359985": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "brokerageActivity"
+      ]
+    },
+    {
+      "id": "national-ejar-office-196767",
+      "index": 50,
+      "nameStored": "مؤسسة المسبار الذهبي للعقارات",
+      "city": "المجمعة",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 50,
+          "lat": 25.9154787,
+          "lon": 45.3624857,
+          "name": "مسار التطور العقاري",
+          "phone": "0532233005",
+          "category": "وكالة عقارات",
+          "identityMatch": false
+        },
+        "sourceInput": "https://www.google.com/maps/search/مؤسسة المسبار الذهبي للعقارات المجمعة 0561022650",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/196767",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0561022650"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0561022650"
+      ],
+      "phoneCertainty": {
+        "0561022650": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-200172",
+      "index": 43,
+      "nameStored": "مكتب قصر مساعد للعقارات",
+      "city": "المجمعة",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified_requires_patch",
+      "status": "verified_requires_patch",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 43,
+          "lat": 25.9172092,
+          "lon": 45.363803,
+          "name": "مكتب قصر مساعد للعقارات",
+          "phone": "0563083358",
+          "category": "وكالة عقارات",
+          "feature": "0x3e2ac785e74b45d5:0xee840872daa70559",
+          "gcode": "11sbsh164s",
+          "pinDifferenceMeters": 38.25
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب قصر مساعد للعقارات المجمعة 0505124271",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/200172",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0505124271"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0505124271"
+      ],
+      "phoneCertainty": {
+        "0505124271": true
+      },
+      "proposedPatch": {
+        "lat": 25.9172092,
+        "lon": 45.363803,
+        "phones": [
+          "0563083358",
+          "0505124271"
+        ],
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%82%D8%B5%D8%B1+%D9%85%D8%B3%D8%A7%D8%B9%D8%AF+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@25.9172092,45.363803,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2ac785e74b45d5:0xee840872daa70559!8m2!3d25.9172092!4d45.363803!16s%2Fg%2F11sbsh164s?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-199305",
+      "index": 39,
+      "nameStored": "مكتب مقبل بجاد المطيري العقاري",
+      "city": "المجمعة",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 39,
+          "matchedCard": false
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب مقبل بجاد المطيري العقاري المجمعة 0508998947",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/199305",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0508998947"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0508998947"
+      ],
+      "phoneCertainty": {
+        "0508998947": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-196695",
+      "index": 40,
+      "nameStored": "مؤسسة مكتب ريان عبدالعزيز الحمد العقاري",
+      "city": "المجمعة",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 40,
+          "matchedCard": false
+        },
+        "sourceInput": "https://www.google.com/maps/search/مؤسسة مكتب ريان عبدالعزيز الحمد العقاري المجمعة 0553130703",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0553130703"
+      ],
+      "phoneCertainty": {
+        "0553130703": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-215891",
+      "index": 32,
+      "nameStored": "شركة عاصم عبدالعزيز بن علي الحمد للعقارات شركة شخص واحد",
+      "city": "المجمعة",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": false,
+      "decision": "partial",
+      "status": "partial",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 32,
+          "lat": 25.9051875,
+          "lon": 45.3675625,
+          "name": "الحمد للاستثمار والتطوير العقاري",
+          "phone": "0583846010",
+          "category": "مستشار عقارات",
+          "feature": "0x3e2ac74000d58d83:0xf3b1205db0d584f3",
+          "gcode": "11c6dv5hgr",
+          "pinDifferenceMeters": 0.37
+        },
+        "sourceInput": "https://www.google.com/maps/search/شركة عاصم عبدالعزيز بن علي الحمد للعقارات شركة شخص واحد المجمعة ",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof",
+        "identityLimit": "Maps trade brand الحمد للاستثمار والتطوير العقاري and registered company عاصم الحمد share recorded physical location; legal-name-to-brand linkage not independently proven. Do not add candidate phone to legal company record without linkage."
+      },
+      "oldPhonesPreservedInAudit": [],
+      "phoneCertainty": {},
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name"
+      ]
+    },
+    {
+      "id": "national-ejar-office-195202",
+      "index": 36,
+      "nameStored": "مكتب فواز متعب المطيري للعقارات",
+      "city": "المجمعة",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 36,
+          "matchedCard": false
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب فواز متعب المطيري للعقارات المجمعة 0505129125",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/195202",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0505129125"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0505129125"
+      ],
+      "phoneCertainty": {
+        "0505129125": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-194482",
+      "index": 38,
+      "nameStored": "مكتب عبدالله عبدالمحسن الجاسر العقاري",
+      "city": "المجمعة",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified_requires_patch",
+      "status": "verified_requires_patch",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 38,
+          "lat": 25.909464,
+          "lon": 45.3668342,
+          "name": "شركة عبدالله الجاسر للعقارات و المقاولات و إدارة الاملاك",
+          "phone": "0562114488",
+          "category": null,
+          "feature": "0x3e2ac60f90b7fc7f:0x92f3f0c9baf35944",
+          "gcode": "11ckrz9pv6",
+          "pinDifferenceMeters": 16.01
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب عبدالله عبدالمحسن الجاسر العقاري المجمعة 0562114488",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/194482",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0562114488"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0562114488"
+      ],
+      "phoneCertainty": {
+        "0562114488": true
+      },
+      "proposedPatch": {
+        "lat": 25.909464,
+        "lon": 45.3668342,
+        "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87+%D8%A7%D9%84%D8%AC%D8%A7%D8%B3%D8%B1+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D9%88+%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA+%D9%88+%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D8%A7%D9%85%D9%84%D8%A7%D9%83%E2%80%AD/@25.909464,45.3668342,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2ac60f90b7fc7f:0x92f3f0c9baf35944!8m2!3d25.909464!4d45.3668342!16s%2Fg%2F11ckrz9pv6?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-200827",
+      "index": 45,
+      "nameStored": "مكتب خالد بدين العازمي العقاري",
+      "city": "المجمعة",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 45,
+          "matchedCard": false
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب خالد بدين العازمي العقاري المجمعة 0554245632",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/200827",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0554245632"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0554245632"
+      ],
+      "phoneCertainty": {
+        "0554245632": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJL1DEHW4r8BURm1HxDB-GUqE",
+      "index": 159,
+      "nameStored": "ركن الوسيط للعقار",
+      "city": "بيشة",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified",
+      "status": "verified",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 159,
+          "lat": 20.0124062,
+          "lon": 42.6151785,
+          "name": "ركن الوسيط للعقار",
+          "phone": "0552362323",
+          "category": "وكالة عقارات",
+          "pinDifferenceMeters": 0.45,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJL1DEHW4r8BURm1HxDB-GUqE",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0552362323"
+      ],
+      "phoneCertainty": {
+        "0552362323": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-icuae-office-ChIJTbZjpir_ST4RfTAIHWWDzsc",
+      "index": 161,
+      "nameStored": "شركة بصمة كيان العقارية",
+      "city": "سيهات",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 161,
+          "matchedCard": false
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJTbZjpir_ST4RfTAIHWWDzsc",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0576388999"
+      ],
+      "phoneCertainty": {
+        "0576388999": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "v9-office-f539317f30bd",
+      "index": 164,
+      "nameStored": "مكتب أبو ياسر العقاري",
+      "city": "سبت العلايا",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "partial",
+      "status": "partial",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 164,
+          "lat": 19.6286484,
+          "lon": 41.9908636,
+          "name": "مكتب ابو ياسر العقاري",
+          "phone": null,
+          "category": "مستشار عقارات",
+          "pinDifferenceMeters": 0.0,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJyyZEJXJ-5RURDLnjmVjxij4",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [],
+      "phoneCertainty": {},
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "brokerageActivity",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJNw7IFgAr8BUR4lYhYHyZa3U",
+      "index": 160,
+      "nameStored": "شركة أساس العقارية",
+      "city": "بيشة",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified",
+      "status": "verified",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 160,
+          "lat": 20.0128328,
+          "lon": 42.6208425,
+          "name": "شركة أساس العقارية",
+          "phone": "0506022001",
+          "category": "وكالة عقارات صناعية",
+          "pinDifferenceMeters": 0.41,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJNw7IFgAr8BUR4lYhYHyZa3U",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0506022001"
+      ],
+      "phoneCertainty": {
+        "0506022001": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": []
+    },
+    {
+      "id": "prior-qadisiyya-72",
+      "index": 18,
+      "nameStored": "مكتب نبراس البيت للعقارات",
+      "city": "الرياض",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "partial",
+      "status": "partial",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 18,
+          "lat": 24.8539097,
+          "lon": 46.8262706,
+          "name": "مكتب نبراس البيت للعقارات",
+          "phone": null,
+          "category": "مكتب الشركات",
+          "pinDifferenceMeters": 0.0
+        },
+        "sourceInput": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%86%D8%A8%D8%B1%D8%A7%D8%B3+%D8%A7%D9%84%D8%A8%D9%8A%D8%AA+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.8539097,46.8288402,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2e55694a739557:0x8218b2b117fffae0!8m2!3d24.8539097!4d46.8262706!16s%2Fg%2F11h52rj3hm?entry=ttu",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0504482827"
+      ],
+      "phoneCertainty": {
+        "0504482827": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "brokerageActivity",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-icuae-office-ChIJn-ucRjL_ST4R_bzMcCJKrLE",
+      "index": 162,
+      "nameStored": "مكتب مهدي حسن السواد للخدمات العقارية",
+      "city": "سيهات",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified_requires_patch",
+      "status": "verified_requires_patch",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 162,
+          "lat": 26.4857775,
+          "lon": 50.0332309,
+          "name": "مكتب مهدي حسن السواد للخدمات العقارية",
+          "phone": "0138371000",
+          "category": "وكالة عقارات",
+          "pinDifferenceMeters": null
+        },
+        "sourceInput": "https://www.google.com/maps/place/?q=place_id:ChIJn-ucRjL_ST4R_bzMcCJKrLE&hl=ar&gl=sa",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0138371000"
+      ],
+      "phoneCertainty": {
+        "0138371000": true
+      },
+      "proposedPatch": {
+        "lat": 26.4857775,
+        "lon": 50.0332309
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-yango-office-180233777212",
+      "index": 13,
+      "nameStored": "مكتب الشباك العقاري",
+      "city": "حفر الباطن",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 13,
+          "matchedCard": false
+        },
+        "sourceInput": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B4%D8%A8%D8%A7%D9%83+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%E2%80%AD/data=!4m7!3m6!1s0x3fd73f40eb39240b:0x1076b67b03316c77!8m2!3d28.3595215!4d45.9420117!16s/g/11ghq3yfz2",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0552901449"
+      ],
+      "phoneCertainty": {
+        "0552901449": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-196395",
+      "index": 0,
+      "nameStored": "مؤسسة ناجز الابداع للخدمات العقارية",
+      "city": "نجران",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "partial",
+      "status": "partial",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 0,
+          "lat": 17.5498723,
+          "lon": 44.2208636,
+          "name": "مكتب ناجز الابداع الاكترونيه و العقاريه",
+          "phone": "0550890449",
+          "category": "وكالة عقارات",
+          "pinDifferenceMeters": 1.18
+        },
+        "sourceInput": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%86%D8%A7%D8%AC%D8%B2+%D8%A7%D9%84%D8%A7%D8%A8%D8%AF%D8%A7%D8%B9+%D8%A7%D9%84%D8%A7%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D9%87+%D9%88+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%87%E2%80%AD/@17.5498723,44.2208636,17z/data=!3m1!4b1!4m6!3m5!1s0x15fec35a16767e45:0x17a070c5afd5b0f0!8m2!3d17.5498723!4d44.2208636!16s%2Fg%2F11sbd6jc_v?entry=ttu",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0507119478",
+        "0550890449"
+      ],
+      "phoneCertainty": {
+        "0507119478": false,
+        "0550890449": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-gulfmap-office-7b208c97d279353",
+      "index": 163,
+      "nameStored": "مؤسسة دومين العقارية",
+      "city": "سيهات",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified",
+      "status": "verified",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 163,
+          "lat": 26.4884321,
+          "lon": 50.0342772,
+          "name": "مؤسسة دومين العقارية",
+          "phone": "0598504463",
+          "category": "وكالة عقارات",
+          "pinDifferenceMeters": 0.0
+        },
+        "sourceInput": "https://www.google.com/maps/place/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%AF%D9%88%D9%85%D9%8A%D9%86+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@26.4884321,50.0342772,17z/data=!3m1!4b1!4m6!3m5!1s0x3e49ffb708844edf:0x8c7d538f05fd660a!8m2!3d26.4884321!4d50.0342772!16s%2Fg%2F11n5_6km5_?hl=ar",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0598504463"
+      ],
+      "phoneCertainty": {
+        "0598504463": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-193129",
+      "index": 1,
+      "nameStored": "مكتب افنان العزيزية للعقارات",
+      "city": "نجران",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 1,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب افنان العزيزية للعقارات نجران 0541123718",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0541123718"
+      ],
+      "phoneCertainty": {
+        "0541123718": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-197979",
+      "index": 8,
+      "nameStored": "مكتب يافال للعقارات",
+      "city": "الظهران",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 8,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب يافال للعقارات الظهران 0535644555",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0535644555"
+      ],
+      "phoneCertainty": {
+        "0535644555": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-203726",
+      "index": 9,
+      "nameStored": "مؤسسة درة الربوة العقارية",
+      "city": "الظهران",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 9,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مؤسسة درة الربوة العقارية الظهران 0567458444",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0567458444"
+      ],
+      "phoneCertainty": {
+        "0567458444": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-195198",
+      "index": 4,
+      "nameStored": "مكتب الركن الغالي للخدمات العقارية",
+      "city": "شرورة",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 4,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب الركن الغالي للخدمات العقارية شرورة 0530706737",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0530706737"
+      ],
+      "phoneCertainty": {
+        "0530706737": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-196309",
+      "index": 2,
+      "nameStored": "مكتب لوامع البناء المميز للعقار",
+      "city": "نجران",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 2,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب لوامع البناء المميز للعقار نجران 0566601372",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0566601372"
+      ],
+      "phoneCertainty": {
+        "0566601372": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-488287",
+      "index": 6,
+      "nameStored": "مؤسسة منارة الدليل الذهبي للخدمات العقارية",
+      "city": "شرورة",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 6,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مؤسسة منارة الدليل الذهبي للخدمات العقارية شرورة 0500224917",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0500224917"
+      ],
+      "phoneCertainty": {
+        "0500224917": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-192802",
+      "index": 54,
+      "nameStored": "مكتب فهد محسن بصيص الكثيري للخدمات العقارية",
+      "city": "الدوادمي",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 54,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب فهد محسن بصيص الكثيري للخدمات العقارية الدوادمي 0550071193",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/192802",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0550499173"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0550071193"
+      ],
+      "phoneCertainty": {
+        "0550071193": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-195541",
+      "index": 63,
+      "nameStored": "مؤسسة مكتب محمد مقعد شارع العتيبي العقاري",
+      "city": "الدوادمي",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 63,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مؤسسة مكتب محمد مقعد شارع العتيبي العقاري الدوادمي 0555853584",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/195541",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0552530448"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0555853584"
+      ],
+      "phoneCertainty": {
+        "0555853584": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-195659",
+      "index": 62,
+      "nameStored": "مكتب نوادر السلطان للخدمات العقارية",
+      "city": "الدوادمي",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 62,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب نوادر السلطان للخدمات العقارية الدوادمي 0538080986",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/195659",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0538080986"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0538080986"
+      ],
+      "phoneCertainty": {
+        "0538080986": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-208479",
+      "index": 70,
+      "nameStored": "مكتب عبدالمجيد علي الزامل للعقارات",
+      "city": "الدوادمي",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 70,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب عبدالمجيد علي الزامل للعقارات الدوادمي 0506816681",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/208479",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0537588899"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0506816681"
+      ],
+      "phoneCertainty": {
+        "0506816681": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-215210",
+      "index": 69,
+      "nameStored": "مكتب بن عدل للعقارات",
+      "city": "الدوادمي",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 69,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب بن عدل للعقارات الدوادمي 0562380208",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/215210",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0562380208"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0562380208"
+      ],
+      "phoneCertainty": {
+        "0562380208": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-350773",
+      "index": 71,
+      "nameStored": "مكتب بداية باب للعقار",
+      "city": "الدوادمي",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 71,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب بداية باب للعقار الدوادمي 0557076222",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/350773",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0557076222"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0557076222"
+      ],
+      "phoneCertainty": {
+        "0557076222": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-206657",
+      "index": 73,
+      "nameStored": "مكتب عصر الأوائل للعقارات",
+      "city": "الدوادمي",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 73,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب عصر الأوائل للعقارات الدوادمي 0500860689",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/206657",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0500860689"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0500860689"
+      ],
+      "phoneCertainty": {
+        "0500860689": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-217696",
+      "index": 99,
+      "nameStored": "مؤسسة مكتب عبدالرحمن محمد الدخيني للعقارات",
+      "city": "الدلم",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 99,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مؤسسة مكتب عبدالرحمن محمد الدخيني للعقارات الدلم 0554446050",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/217696",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0504446050"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0554446050"
+      ],
+      "phoneCertainty": {
+        "0554446050": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-215057",
+      "index": 101,
+      "nameStored": "مكتب الحقباني للعقارات",
+      "city": "الدلم",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 101,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب الحقباني للعقارات الدلم 0541333900",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/215057",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0541333900"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0541333900"
+      ],
+      "phoneCertainty": {
+        "0541333900": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-216899",
+      "index": 103,
+      "nameStored": "مكتب سعد ناصر العبدان للعقارات",
+      "city": "الدلم",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 103,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب سعد ناصر العبدان للعقارات الدلم 0555108634",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/216899",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0536910992"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0555108634"
+      ],
+      "phoneCertainty": {
+        "0555108634": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-208544",
+      "index": 97,
+      "nameStored": "مكتب عبدالاله محمد حمد التميمي للعقارات",
+      "city": "الدلم",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 97,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب عبدالاله محمد حمد التميمي للعقارات الدلم 0504189693",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/208544",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0504189693"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0504189693"
+      ],
+      "phoneCertainty": {
+        "0504189693": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-216888",
+      "index": 102,
+      "nameStored": "مكتب سامي عيسى ناصر العبداللطيف العقاري",
+      "city": "الدلم",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 102,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب سامي عيسى ناصر العبداللطيف العقاري الدلم 0557475775",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0557475775"
+      ],
+      "phoneCertainty": {
+        "0557475775": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-211591",
+      "index": 100,
+      "nameStored": "مكتب بصمة الجود للعقارات",
+      "city": "الدلم",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 100,
+          "matchedCard": false,
+          "observation": "Rendered Maps search did not yield direct exact matching office card; unrelated candidate results rejected. No inference that office invalid or closed."
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب بصمة الجود للعقارات الدلم 0504494179",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/211591",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0504494179"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": false,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0504494179"
+      ],
+      "phoneCertainty": {
+        "0504494179": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-193331",
+      "index": 57,
+      "nameStored": "مكتب الركن النافذ للعقارات",
+      "city": "الدوادمي",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified_requires_patch",
+      "status": "verified_requires_patch",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 57,
+          "lat": 24.5221851,
+          "lon": 44.4189708,
+          "name": "مكتب الركن النافذ للعقارات بالدوادمي",
+          "phone": "0531144438",
+          "category": "وكالة عقارات",
+          "pinDifferenceMeters": 11.56,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب الركن النافذ للعقارات الدوادمي 0531144438",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/193331",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0561114498"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0531144438"
+      ],
+      "phoneCertainty": {
+        "0531144438": true
+      },
+      "proposedPatch": {
+        "lat": 24.5221851,
+        "lon": 44.4189708
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-201611",
+      "index": 61,
+      "nameStored": "مكتب اعمال الرائد العقارية",
+      "city": "الدوادمي",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified_requires_patch",
+      "status": "verified_requires_patch",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 61,
+          "lat": 24.5378336,
+          "lon": 44.409527,
+          "name": "اعمال الرائد العقارية",
+          "phone": "0537771300",
+          "category": "شركة إدارة عقارات",
+          "pinDifferenceMeters": 10651.79,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب اعمال الرائد العقارية الدوادمي 0537771300",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/201611",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0537771300"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0537771300"
+      ],
+      "phoneCertainty": {
+        "0537771300": true
+      },
+      "proposedPatch": {
+        "lat": 24.5378336,
+        "lon": 44.409527
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-194808",
+      "index": 58,
+      "nameStored": "مكتب ارض البادية للعقارات",
+      "city": "الدوادمي",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified_requires_patch",
+      "status": "verified_requires_patch",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 58,
+          "lat": 24.5064373,
+          "lon": 44.3854449,
+          "name": "مكتب عقارات أرض الباديه",
+          "phone": "0545512827",
+          "category": null,
+          "pinDifferenceMeters": 19.34,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب ارض البادية للعقارات الدوادمي 0542664702",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/194808",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0542664702"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0542664702"
+      ],
+      "phoneCertainty": {
+        "0542664702": true
+      },
+      "proposedPatch": {
+        "lat": 24.5064373,
+        "lon": 44.3854449,
+        "phones": [
+          "0545512827",
+          "0542664702"
+        ]
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-197381",
+      "index": 65,
+      "nameStored": "مكتب الفايز للعقارات",
+      "city": "الدوادمي",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified",
+      "status": "verified",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 65,
+          "lat": 24.5485686,
+          "lon": 44.4194618,
+          "name": "مكتب الفايز للعقارات",
+          "phone": "0558822044",
+          "category": "شركة إدارة عقارات",
+          "pinDifferenceMeters": 1.74,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب الفايز للعقارات الدوادمي 0558822044",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/197381",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0558822044"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0558822044"
+      ],
+      "phoneCertainty": {
+        "0558822044": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-197645",
+      "index": 56,
+      "nameStored": "مكتب مهمة الانجاز للخدمات العقارية",
+      "city": "الدوادمي",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": false,
+      "decision": "closed_proven",
+      "status": "closed_proven",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 56,
+          "lat": 24.5356944,
+          "lon": 44.4146056,
+          "name": "مهمة الانجاز للخدمات العقارية",
+          "phone": "0532035381",
+          "closedPermanently": true
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب مهمة الانجاز للخدمات العقارية الدوادمي 0532035381",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/197645",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0532035381"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0532035381"
+      ],
+      "phoneCertainty": {
+        "0532035381": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-213857",
+      "index": 79,
+      "nameStored": "مؤسسة أبراج المملكة للعقارات",
+      "city": "وادي الدواسر",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified",
+      "status": "verified",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 79,
+          "lat": 20.4613534,
+          "lon": 44.7808749,
+          "name": "مؤسسة أبراج المملكة للعقارات",
+          "phone": "0545656786",
+          "category": "وكالة تأجير عقارات",
+          "pinDifferenceMeters": 3.01,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/search/مؤسسة أبراج المملكة للعقارات وادي الدواسر 0545656786",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/213857",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0545656786"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0545656786"
+      ],
+      "phoneCertainty": {
+        "0545656786": true
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-200239",
+      "index": 82,
+      "nameStored": "مكتب أنوار الساحه للعقار",
+      "city": "وادي الدواسر",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified_requires_patch",
+      "status": "verified_requires_patch",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 82,
+          "lat": 20.4505026,
+          "lon": 44.8575274,
+          "name": "مكتب أنوار الساحة للعقارات",
+          "phone": "0555265143",
+          "category": "مكتب الشركات",
+          "pinDifferenceMeters": 23.56,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب أنوار الساحه للعقار وادي الدواسر 0551182200",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/200239",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0551182200"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0551182200"
+      ],
+      "phoneCertainty": {
+        "0551182200": true
+      },
+      "proposedPatch": {
+        "lat": 20.4505026,
+        "lon": 44.8575274,
+        "phones": [
+          "0555265143",
+          "0551182200"
+        ]
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-215964",
+      "index": 81,
+      "nameStored": "مكتب درة الشرق الأوسط للعقارات",
+      "city": "وادي الدواسر",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 81,
+          "lat": 20.4303626,
+          "lon": 44.8760433,
+          "name": "مكتب شرق الوادي للعقارات",
+          "phone": "0500499227",
+          "category": "محامي عقارات",
+          "identityMatch": false
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب درة الشرق الأوسط للعقارات وادي الدواسر 0555267769",
+        "additionalSources": [],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0555267769"
+      ],
+      "phoneCertainty": {
+        "0555267769": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-382663",
+      "index": 84,
+      "nameStored": "مكتب قمة النادرة العقارية",
+      "city": "وادي الدواسر",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified_requires_patch",
+      "status": "verified_requires_patch",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 84,
+          "lat": 20.4310053,
+          "lon": 44.8767058,
+          "name": "مكتب قمة النادرة العقارية",
+          "phone": "0534040460",
+          "category": "عقار شقق مفروشة",
+          "pinDifferenceMeters": 1225.1,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب قمة النادرة العقارية وادي الدواسر 0535006773",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/382663",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0534040460"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0535006773"
+      ],
+      "phoneCertainty": {
+        "0535006773": false
+      },
+      "proposedPatch": {
+        "lat": 20.4310053,
+        "lon": 44.8767058,
+        "phones": [
+          "0534040460"
+        ]
+      },
+      "unconfirmedFields": []
+    },
+    {
+      "id": "national-ejar-office-196063",
+      "index": 94,
+      "nameStored": "مكتب صكوك الديار للعقارات",
+      "city": "الدلم",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldCertainty": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fullyVerified": false,
+      "decision": "unresolved",
+      "status": "unresolved",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 94,
+          "lat": 24.1582158,
+          "lon": 47.3137685,
+          "name": "صكوك الديار للعقارات",
+          "phone": "0115479999",
+          "category": "وكالة عقارات",
+          "identityMatch": false,
+          "observation": "Candidate in الخرج different storedphone and city; no identity/branch confirmation"
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب صكوك الديار للعقارات الدلم 0564055507",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/196063",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0554454942"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0564055507"
+      ],
+      "phoneCertainty": {
+        "0564055507": false
+      },
+      "proposedPatch": null,
+      "unconfirmedFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-520210",
+      "index": 87,
+      "nameStored": "مكتب بوصلة الوادي للعقارات",
+      "city": "وادي الدواسر",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldCertainty": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fullyVerified": true,
+      "decision": "verified_requires_patch",
+      "status": "verified_requires_patch",
+      "mapsAttempted": true,
+      "evidence": {
+        "observedMapsCard": {
+          "i": 87,
+          "lat": 20.4230831,
+          "lon": 44.8743414,
+          "name": "مكتب بوصلة الوادي للعقارات",
+          "phone": "0551092501",
+          "category": "شركة إدارة عقارات",
+          "pinDifferenceMeters": 12.78,
+          "finalMapLocatorPendingPersistence": true
+        },
+        "sourceInput": "https://www.google.com/maps/search/مكتب بوصلة الوادي للعقارات وادي الدواسر 0538860635",
+        "additionalSources": [
+          {
+            "source": "https://www.ejar.sa/ar/node/520210",
+            "type": "official brokerage identity/activity/phone",
+            "observations": [
+              "0538860635"
+            ]
+          }
+        ],
+        "checkedAt": "2026-10-14",
+        "directCardOpened": true,
+        "sourcePolicy": "Rendered Maps UI and finalURL !3d/!4d only; no query location treated as pin proof"
+      },
+      "oldPhonesPreservedInAudit": [
+        "0538860635"
+      ],
+      "phoneCertainty": {
+        "0538860635": true
+      },
+      "proposedPatch": {
+        "lat": 20.4230831,
+        "lon": 44.8743414,
+        "phones": [
+          "0551092501",
+          "0538860635"
+        ]
+      },
+      "unconfirmedFields": []
+    }
+  ],
+  "unattemptedIds": [
+    "national-ejar-office-199284",
+    "national-ejar-office-210984",
+    "national-yango-office-18092931849",
+    "national-ejar-office-317332",
+    "national-ejar-office-205514",
+    "national-ejar-office-202549",
+    "national-ejar-office-270160",
+    "national-ejar-office-194160",
+    "national-icuae-office-ChIJxdWZ5OiLBxYR-q9NQcfZXEY",
+    "national-ejar-office-192096",
+    "national-ejar-office-217095",
+    "national-ejar-office-215722",
+    "national-ejar-office-202761",
+    "national-ejar-office-199494",
+    "national-ejar-office-218623",
+    "national-ejar-office-204440",
+    "national-ejar-office-192014",
+    "national-ejar-office-192854",
+    "national-ejar-office-193102",
+    "national-ejar-office-194010",
+    "national-ejar-office-200744",
+    "national-ejar-office-196938",
+    "national-ejar-office-205383",
+    "national-ejar-office-200688",
+    "national-ejar-office-239906",
+    "national-ejar-office-215963",
+    "national-ejar-office-201992",
+    "national-ejar-office-211923",
+    "national-ejar-office-200108",
+    "national-ejar-office-197944",
+    "national-ejar-office-197255",
+    "national-ejar-office-231243",
+    "national-ejar-office-329161",
+    "national-ejar-office-197100",
+    "national-ejar-office-213841",
+    "national-ejar-office-219936",
+    "national-ejar-office-208253",
+    "national-ejar-office-363916",
+    "national-ejar-office-196770",
+    "national-ejar-office-197493",
+    "national-ejar-office-199601",
+    "national-ejar-office-195963",
+    "national-ejar-office-216164",
+    "national-ejar-office-197170",
+    "national-ejar-office-214260",
+    "national-ejar-office-218732",
+    "national-ejar-office-214822",
+    "national-ejar-office-214913",
+    "national-ejar-office-329950",
+    "national-ejar-office-210215",
+    "national-ejar-office-211470",
+    "national-ejar-office-200818",
+    "national-ejar-office-205895",
+    "national-ejar-office-580006",
+    "national-ejar-office-223909",
+    "national-ejar-office-200589",
+    "national-ejar-office-192584",
+    "national-ejar-office-211815",
+    "national-ejar-office-270000",
+    "national-ejar-office-365296",
+    "national-ejar-office-312262",
+    "national-ejar-office-216042",
+    "national-ejar-office-198249",
+    "national-ejar-office-209518",
+    "national-ejar-office-580141",
+    "national-ejar-office-198248",
+    "national-ejar-office-195419",
+    "national-yango-office-73138787232",
+    "national-ejar-office-195774",
+    "national-ejar-office-192856",
+    "national-ejar-office-231301",
+    "national-ejar-office-194365",
+    "national-ejar-office-194793",
+    "national-ejar-office-262708",
+    "national-ejar-office-205878",
+    "national-ejar-office-217194",
+    "national-ejar-office-209542",
+    "national-ejar-office-211018",
+    "national-ejar-office-518041",
+    "national-ejar-office-578815",
+    "national-ejar-office-192370",
+    "national-ejar-office-197181",
+    "national-ejar-office-192609",
+    "national-ejar-office-202059",
+    "national-ejar-office-195072",
+    "national-ejar-office-194494",
+    "national-ejar-office-197363",
+    "national-ejar-office-212554",
+    "national-ejar-office-200120",
+    "national-ejar-office-202425",
+    "national-ejar-office-200808",
+    "national-ejar-office-206455",
+    "national-ejar-office-194942",
+    "national-ejar-office-192898",
+    "national-ejar-office-195047",
+    "national-ejar-office-194787",
+    "national-ejar-office-195830",
+    "national-ejar-office-194569",
+    "national-ejar-office-200640",
+    "national-ejar-office-207958",
+    "national-ejar-office-198814",
+    "national-yango-office-243195522634"
+  ],
+  "closeReason": "Parent explicitly instructed closing this lane after current attempts. Remaining unattempted scope retained; not claimed checked.",
+  "dataMutation": false
+}

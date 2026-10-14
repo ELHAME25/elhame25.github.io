@@ -1,0 +1,4608 @@
+{
+  "schema": "office-final-audit-checkpoint-v1",
+  "generatedAt": "2026-10-12T12:23:15Z",
+  "scope": [
+    "أبو عريش",
+    "أحد المسارحة",
+    "بيش",
+    "جازان",
+    "صامطة",
+    "صبيا"
+  ],
+  "policy": "Google Maps cards only; prior covered IDs and checkpoints excluded; no Qadisiyah records",
+  "inventory": {
+    "cityInventory": 94,
+    "excludedAlreadyCovered": 6,
+    "eligible": 88,
+    "checked": 88,
+    "byCity": {
+      "صبيا": 25,
+      "صامطة": 12,
+      "أبو عريش": 14,
+      "أحد المسارحة": 8,
+      "جازان": 24,
+      "بيش": 5
+    },
+    "statusCounts": {
+      "unconfirmed": 23,
+      "verified": 54,
+      "needs_correction_phone_unconfirmed": 4,
+      "partially_verified_phone_unconfirmed": 1,
+      "needs_correction": 6
+    },
+    "locationsMatched": 69,
+    "phonesMatched": 63,
+    "phonesDifferent": 13
+  },
+  "records": [
+    {
+      "id": "national-ejar-office-192042",
+      "city": "صبيا",
+      "old": {
+        "name": "مؤسسة مكتب إنجاز الاتحاد لادارت الاملاك",
+        "address": "أبو خيثمة، المروج، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0500250912"
+        ],
+        "coordinates": [
+          17.16657,
+          42.64274
+        ],
+        "maps": "https://maps.google.com/maps?q=17.16657313,42.64273524",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب قامات التميز للعقارات",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": null,
+        "address": "مكتب قامات التميز للعقارات، حي، شارع فرعي، صبيا 85299",
+        "phone": null,
+        "coordinates": [
+          17.1521872,
+          42.640507799999995
+        ],
+        "placeId": null,
+        "featureId": "0x15fd5117e5447077:0x1b7c4d47d5b98e8c"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.4,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": -0.014382799999999918,
+          "lon": -0.0022322000000087883
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A5%D9%86%D8%AC%D8%A7%D8%B2%20%D8%A7%D9%84%D8%A7%D8%AA%D8%AD%D8%A7%D8%AF%20%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D8%AA%20%D8%A7%D9%84%D8%A7%D9%85%D9%84%D8%A7%D9%83%200500250912%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:29Z"
+    },
+    {
+      "id": "national-ejar-office-192062",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب ديار العمده للخدمات العقارية",
+        "address": "أبو جندل، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0544480373"
+        ],
+        "coordinates": [
+          17.16573,
+          42.6442
+        ],
+        "maps": "https://maps.google.com/maps?q=17.16573155,42.64419527",
+        "activity": null
+      },
+      "new": {
+        "name": "موسسة ديار العمده للخدمات العقارية",
+        "categories": [
+          "مؤسسة"
+        ],
+        "district": "الرحاب",
+        "address": "موسسة ديار العمده للخدمات العقارية، الرحاب، ‏حي، صبيا 85457",
+        "phone": "0544480373",
+        "coordinates": [
+          17.1648894,
+          42.6446547
+        ],
+        "placeId": null,
+        "featureId": "0x15fd51cf5e2ae0bd:0x71cf4c7d78f256cf"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.896,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.0008406000000000802,
+          "lon": 0.00045469999999880883
+        },
+        "identityMatch": true
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AF%D9%8A%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%85%D8%AF%D9%87%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200544480373%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:15Z"
+    },
+    {
+      "id": "national-ejar-office-192245",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب درة صبيا العقاري",
+        "address": "حي الرحاب، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0552169382"
+        ],
+        "coordinates": [
+          17.16759,
+          42.64248
+        ],
+        "maps": "https://maps.google.com/maps?q=17.1675917,42.6424766",
+        "activity": null
+      },
+      "new": {
+        "name": "درة صبيا للخدمات العقارية",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "حي الرحاب",
+        "address": "درة صبيا للخدمات العقارية، حي الرحاب، المحمديه، صبيا",
+        "phone": "0552169382",
+        "coordinates": [
+          17.1664706,
+          42.641926399999996
+        ],
+        "placeId": null,
+        "featureId": "0x15fd51e4fc400995:0x41f048d44e977b2d"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.696,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.0011194000000003257,
+          "lon": -0.0005536000000034846
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AF%D8%B1%D8%A9%20%D8%B5%D8%A8%D9%8A%D8%A7%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200552169382%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:02Z"
+    },
+    {
+      "id": "national-ejar-office-192535",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب احمد محمد احمد علي شاجري العقارية",
+        "address": "سراقة بن مالك، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0502737715"
+        ],
+        "coordinates": [
+          17.1144,
+          42.66168
+        ],
+        "maps": "https://maps.google.com/maps?q=17.1143991,42.66168505",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب المحامي | محمد عريشي",
+        "categories": [
+          "شركة محاماة",
+          "مستشار",
+          "محامٍ",
+          "خدمات قانونية"
+        ],
+        "district": null,
+        "address": "مكتب المحامي | محمد عريشي، بن عبدالعزيز، شارع الأمير سلطان، جيزان",
+        "phone": "0503881595",
+        "coordinates": [
+          16.9018135,
+          42.5568169
+        ],
+        "placeId": null,
+        "featureId": "0x1607e3c0275c4901:0xf88c71c67c11aa48"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.59,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.21258650000000046,
+          "lon": -0.10486309999999577
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%AD%D9%85%D8%AF%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D8%AD%D9%85%D8%AF%20%D8%B9%D9%84%D9%8A%20%D8%B4%D8%A7%D8%AC%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200502737715%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:02Z"
+    },
+    {
+      "id": "national-ejar-office-192823",
+      "city": "صبيا",
+      "old": {
+        "name": "مؤسسة مكتب منار الانجاز للخدمات العقارية",
+        "address": "العام، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0553070618"
+        ],
+        "coordinates": [
+          17.1548,
+          42.6269
+        ],
+        "maps": "https://maps.google.com/maps?q=17.1547981,42.6268969",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب منصة آنال للخدمات العقارية",
+        "categories": [
+          "عقار شقق مفروشة",
+          "Service establishment"
+        ],
+        "district": null,
+        "address": null,
+        "phone": "0580299946",
+        "coordinates": [
+          24.222141999999998,
+          45.0740834
+        ],
+        "placeId": null,
+        "featureId": "0x15fd51908eaf97cb:0x369dbe7367dc7acd"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.761,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 7.0673419999999965,
+          "lon": 2.4471834
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D9%86%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D8%A7%D8%B2%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200553070618%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:02Z"
+    },
+    {
+      "id": "national-ejar-office-193244",
+      "city": "صبيا",
+      "old": {
+        "name": "مؤسسة مكتب علي جابر علي عسيري للخدمات العقارية",
+        "address": "شارع الأمير سلطان، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0555771417"
+        ],
+        "coordinates": [
+          17.15295,
+          42.639
+        ],
+        "maps": "https://maps.google.com/maps?q=17.15295307,42.63900053",
+        "activity": null
+      },
+      "new": {
+        "name": "منصة الخير للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "حي الملك فهد",
+        "address": "منصة الخير للخدمات العقارية، 6956 شارع الأمير سلطان، حي الملك فهد، GBSA3812، 3812، صبيا 85299",
+        "phone": null,
+        "coordinates": [
+          17.1536729,
+          42.6424057
+        ],
+        "placeId": null,
+        "featureId": "0x15fd510016603e29:0xfb5d41c57827e53b"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.63,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 0.0007228999999995267,
+          "lon": 0.003405699999994738
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%84%D9%8A%20%D8%AC%D8%A7%D8%A8%D8%B1%20%D8%B9%D9%84%D9%8A%20%D8%B9%D8%B3%D9%8A%D8%B1%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200555771417%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:16Z"
+    },
+    {
+      "id": "national-ejar-office-195338",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب برج الوسام للخدمات العقارية",
+        "address": "الحارث بن حكيم السلمي، المروج، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0556684446"
+        ],
+        "coordinates": [
+          17.1464,
+          42.62832
+        ],
+        "maps": "https://maps.google.com/maps?q=17.1463966,42.62831584",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب تاج الوسام للخدمات العقارية والخدمات العامة",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "السعادة",
+        "address": "مكتب تاج الوسام للخدمات العقارية والخدمات العامة، 6161الحارث بن يزيد السلمي، حي السعادة /مقابل العريشي للهريسة، صبياء 85299",
+        "phone": "0556840903",
+        "coordinates": [
+          17.146445699999997,
+          42.628310299999995
+        ],
+        "placeId": null,
+        "featureId": "0x15fd537dc1041547:0x687405d6ad05d938"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.75,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 4.569999999759489e-05,
+          "lon": -9.700000006773735e-06
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D8%B1%D8%AC%20%D8%A7%D9%84%D9%88%D8%B3%D8%A7%D9%85%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200556684446%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:02Z"
+    },
+    {
+      "id": "national-ejar-office-195848",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب يامن الجنوب للخدمات العقارية",
+        "address": "صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0555793671"
+        ],
+        "coordinates": [
+          17.12506,
+          42.60875
+        ],
+        "maps": "https://maps.google.com/maps?q=17.1250599,42.6087457",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة يامن للتطوير والاستثمار العقاري",
+        "categories": [
+          "شركة استثمار عقاري"
+        ],
+        "district": "الحزام الأخضر",
+        "address": "شركة يامن للتطوير والاستثمار العقاري، 6174 طريق الملك فهد، الحزام الأخضر، الخبر 34433",
+        "phone": "0138651333",
+        "coordinates": [
+          26.3038895,
+          50.2095358
+        ],
+        "placeId": null,
+        "featureId": "0x3e49e9001fe472fb:0x324a40fd111e6f3f"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.551,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 9.178829499999999,
+          "lon": 7.600785799999997
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%8A%D8%A7%D9%85%D9%86%20%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200555793671%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:42Z"
+    },
+    {
+      "id": "national-ejar-office-196148",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب نجم المدار العقاري",
+        "address": "طريق الملك فيصل، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0505770775"
+        ],
+        "coordinates": [
+          17.14916,
+          42.63772
+        ],
+        "maps": "https://maps.google.com/maps?q=17.14916483,42.63771745",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%86%D8%AC%D9%85%20%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200505770775%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:29Z"
+    },
+    {
+      "id": "national-ejar-office-198739",
+      "city": "صبيا",
+      "old": {
+        "name": "مؤسسة الوادي الراقي العقاري",
+        "address": "ابن سيرين، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0595555481"
+        ],
+        "coordinates": [
+          17.14841,
+          42.62473
+        ],
+        "maps": "https://maps.google.com/maps?q=17.14841413,42.62473251",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة المسكن الراقي للتطوير العقاري",
+        "categories": [
+          "مطوّر عقارات",
+          "المقاول"
+        ],
+        "district": "الرانوناء",
+        "address": "شركة المسكن الراقي للتطوير العقاري, حي, شارع سهل بن سعد، الرانوناء، المدينة المنورة 42392",
+        "phone": "920016082",
+        "coordinates": [
+          24.3793381,
+          39.6044242
+        ],
+        "placeId": null,
+        "featureId": "0x15bdc16d7d70ccd7:0xaaaf39e9129cdcc5"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.623,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 7.2309281,
+          "lon": -3.0203058000000027
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200595555481%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:42Z"
+    },
+    {
+      "id": "national-ejar-office-198758",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب المشوره للعقارات",
+        "address": "أبو جندل، الفيصلية، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0558282555"
+        ],
+        "coordinates": [
+          17.16373,
+          42.6448
+        ],
+        "maps": "https://maps.google.com/maps?q=17.16372849,42.64479518",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب المشورة العقارية",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "الرحاب",
+        "address": "مكتب المشورة العقارية، 6353، الرحاب، صبيا 85457 2932، صبيا 85457",
+        "phone": "0536226070",
+        "coordinates": [
+          17.1637262,
+          42.6447998
+        ],
+        "placeId": null,
+        "featureId": "0x15fd51fa28a7d6f9:0x46d6d7e375bf6cf4"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.857,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -3.800000001774606e-06,
+          "lon": -1.9999999523179213e-07
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%85%D8%B4%D9%88%D8%B1%D9%87%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200558282555%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:02Z"
+    },
+    {
+      "id": "national-ejar-office-199419",
+      "city": "صبيا",
+      "old": {
+        "name": "مؤسسة مكتب المتعهد بالعمل للخدمات العقارية",
+        "address": "شارع الامير سلطان بن العزيز، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0599996900"
+        ],
+        "coordinates": [
+          17.15368,
+          42.64242
+        ],
+        "maps": "https://maps.google.com/maps?q=17.15368478,42.64241894",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب المتعهد بالعمل",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": null,
+        "address": "مكتب المتعهد بالعمل، 3834-3744 شارع الأمير سلطان، صبيا 85299",
+        "phone": null,
+        "coordinates": [
+          17.1537891,
+          42.6423377
+        ],
+        "placeId": null,
+        "featureId": "0x15fd511e54c76527:0x9e1dfb90083d4249"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.623,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 0.00010909999999952902,
+          "lon": -8.230000000253312e-05
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction_phone_unconfirmed",
+      "recommendedChanges": {
+        "name": "مكتب المتعهد بالعمل",
+        "maps": "https://www.google.com/maps/?cid=11393539228349317705"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%85%D8%AA%D8%B9%D9%87%D8%AF%20%D8%A8%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200599996900%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:16Z"
+    },
+    {
+      "id": "national-ejar-office-199546",
+      "city": "صبيا",
+      "old": {
+        "name": "مؤسسة بصمة خبير للخدمات العقارية",
+        "address": "أبو جندل، الفيصلية، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0542052840"
+        ],
+        "coordinates": [
+          17.16388,
+          42.6451
+        ],
+        "maps": "https://maps.google.com/maps?q=17.16388384,42.64510118",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسة بصمة التقني للخدمات العقارية و الإلكترونية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الملك فهد",
+        "address": "XR6G+F6G مؤسسة بصمة التقني للخدمات العقارية و الإلكترونية، الملك فهد، أبو عريش 84521",
+        "phone": "0552988779",
+        "coordinates": [
+          16.961199099999998,
+          42.825575
+        ],
+        "placeId": null,
+        "featureId": "0x1607f50023a9e491:0xc76dd8c6864f1066"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.725,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.20268090000000072,
+          "lon": 0.18047500000000127
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A8%D8%B5%D9%85%D8%A9%20%D8%AE%D8%A8%D9%8A%D8%B1%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200542052840%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:42Z"
+    },
+    {
+      "id": "national-ejar-office-200971",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب الوسيط العربي للعقارات",
+        "address": "أبو عيسى، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0555266969"
+        ],
+        "coordinates": [
+          17.16697,
+          42.64534
+        ],
+        "maps": "https://maps.google.com/maps?q=17.16696876,42.64534513",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الوسيط العربي للعقارات",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الرحاب",
+        "address": "مكتب الوسيط العربي للعقارات، 6718، الرحاب، 2990، صبيا 85457",
+        "phone": null,
+        "coordinates": [
+          17.1669909,
+          42.6453918
+        ],
+        "placeId": null,
+        "featureId": "0x15fd5161cb9c0e43:0xf8422d981c7cb9fb"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 2.0899999999102192e-05,
+          "lon": 5.180000000137852e-05
+        },
+        "identityMatch": true
+      },
+      "status": "partially_verified_phone_unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%88%D8%B3%D9%8A%D8%B7%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200555266969%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:29Z"
+    },
+    {
+      "id": "national-ejar-office-204540",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب آلاسكان الراقي للعقار",
+        "address": "الصناعية 26، الصناعية، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0554847888"
+        ],
+        "coordinates": [
+          17.18587,
+          42.75338
+        ],
+        "maps": "https://maps.google.com/maps?q=17.18587231,42.75338003",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الهجرة الراقي للعقار",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "حي الهجرة",
+        "address": "مكتب الهجرة الراقي للعقار، الفرقان، حي الهجرة، كدي مخطط الامير أحمد، مكة 24234",
+        "phone": "0555526763",
+        "coordinates": [
+          21.389414199999997,
+          39.839745799999996
+        ],
+        "placeId": null,
+        "featureId": "0x15c2052278e80847:0xcc508836e0e8de13"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.824,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 4.203544199999996,
+          "lon": -2.913634200000004
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A2%D9%84%D8%A7%D8%B3%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200554847888%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:16Z"
+    },
+    {
+      "id": "national-ejar-office-205690",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب اليسر للخدمات العقارية",
+        "address": "ابن تغلب، النهضة، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0506766700"
+        ],
+        "coordinates": [
+          17.17072,
+          42.65098
+        ],
+        "maps": "https://maps.google.com/maps?q=17.17071693,42.65097494",
+        "activity": null
+      },
+      "new": {
+        "name": "اليسر للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "النهضة",
+        "address": "اليسر للخدمات العقارية, 6953، النهضة، 2669, Saudi Arabia, صبيا 85541",
+        "phone": "0570100311",
+        "coordinates": [
+          17.1706903,
+          42.6510056
+        ],
+        "placeId": null,
+        "featureId": "0x15fd516705048053:0x9717535ec4ef01"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.898,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -2.9699999998911153e-05,
+          "lon": 2.5600000000736145e-05
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "name": "اليسر للخدمات العقارية",
+        "phones": [
+          "0506766700",
+          "0570100311"
+        ],
+        "maps": "https://www.google.com/maps/?cid=42528368322998017"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%8A%D8%B3%D8%B1%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200506766700%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:16Z"
+    },
+    {
+      "id": "national-ejar-office-210731",
+      "city": "صبيا",
+      "old": {
+        "name": "مؤسسة منار صبيا للخدمات العقارية",
+        "address": "صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0505759733"
+        ],
+        "coordinates": [
+          17.15173,
+          42.62489
+        ],
+        "maps": "https://maps.google.com/maps?q=17.1517332,42.6248889",
+        "activity": null
+      },
+      "new": {
+        "name": "منار صبيا",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "حي الملك فهد",
+        "address": "منار صبيا، GBSC6958، 6958 طريق الملك عبدالعزيز، 4018، حي الملك فهد، صبيا 85299",
+        "phone": "0505759733",
+        "coordinates": [
+          17.1538219,
+          42.6442644
+        ],
+        "placeId": null,
+        "featureId": "0x15fd519e0b299205:0xcf61be0c6480557e"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.439,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 0.0020918999999999244,
+          "lon": 0.019374399999996683
+        },
+        "identityMatch": true
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%86%D8%A7%D8%B1%20%D8%B5%D8%A8%D9%8A%D8%A7%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200505759733%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:55Z"
+    },
+    {
+      "id": "national-ejar-office-210865",
+      "city": "صبيا",
+      "old": {
+        "name": "مؤسسة محمد ابراهيم محمد قاضي للخدمات العقارية",
+        "address": "أبو يحيى بن صهيب، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0555775848"
+        ],
+        "coordinates": [
+          17.16306,
+          42.64312
+        ],
+        "maps": "https://maps.google.com/maps?q=17.16305882,42.64312108",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة إبراهيم بن محمد القباع العقارية",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "عرقة",
+        "address": "شركة إبراهيم بن محمد القباع العقارية، شارع مانع المريدي، عرقة، الرياض 12588",
+        "phone": "920017578",
+        "coordinates": [
+          24.689058,
+          46.5810063
+        ],
+        "placeId": null,
+        "featureId": "0x3e2f1ff3c663e155:0xddc9560769d5c70f"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.642,
+        "cityMatch": false,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": 7.525997999999998,
+          "lon": 3.9378862999999953
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%82%D8%A7%D8%B6%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200555775848%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:42Z"
+    },
+    {
+      "id": "national-ejar-office-213197",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب الإنجاز المتميز للخدمات العقارية",
+        "address": "المروج 13، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0583555573"
+        ],
+        "coordinates": [
+          17.14304,
+          42.62562
+        ],
+        "maps": "https://maps.google.com/maps?q=17.14304076,42.62561738",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الانجاز المتميز للخدمات العامة والعقارات بصبياء",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": null,
+        "address": "مكتب الانجاز المتميز للخدمات العامة والعقارات بصبياء، 8490 ابن الحنيفية، GBSB3421، 3421 الامير ناصر بن عبدالعزيز، صبيا 85296",
+        "phone": "0550666819",
+        "coordinates": [
+          17.1430369,
+          42.6256199
+        ],
+        "placeId": null,
+        "featureId": "0x15fd531b7babec2f:0xb60b9d2cb266551e"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.809,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -3.1000000006997652e-06,
+          "lon": -1.0000000116860974e-07
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%A5%D9%86%D8%AC%D8%A7%D8%B2%20%D8%A7%D9%84%D9%85%D8%AA%D9%85%D9%8A%D8%B2%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200583555573%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:55Z"
+    },
+    {
+      "id": "national-ejar-office-218774",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب عبدالرزاق محمد احمد ادريس للعقارات",
+        "address": "شارع الامير سلطان بن العزيز، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0553133490"
+        ],
+        "coordinates": [
+          17.15316,
+          42.6405
+        ],
+        "maps": "https://maps.google.com/maps?q=17.15315487,42.64050332",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب عبد الرزاق محمد ادريس للعقارات",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": null,
+        "address": "مكتب عبد الرزاق محمد ادريس للعقارات، شارع الأمير سلطان، صبيا 85299",
+        "phone": "0500883402",
+        "coordinates": [
+          17.152613499999998,
+          42.637783899999995
+        ],
+        "placeId": null,
+        "featureId": "0x15fd51b58186f2b5:0x8f922d8abb3d3e30"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.919,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -0.0005465000000022258,
+          "lon": -0.0027161000000077706
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%B2%D8%A7%D9%82%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D8%AD%D9%85%D8%AF%20%D8%A7%D8%AF%D8%B1%D9%8A%D8%B3%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200553133490%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:42Z"
+    },
+    {
+      "id": "national-ejar-office-228546",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب منصة الخير للخدمات العقارية",
+        "address": "شارع الأمير سلطان، الناصرية، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0533140807"
+        ],
+        "coordinates": [
+          17.15384,
+          42.64248
+        ],
+        "maps": "https://maps.google.com/maps?q=17.1538401,42.6424795",
+        "activity": null
+      },
+      "new": {
+        "name": "منصة الخير للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "حي الملك فهد",
+        "address": "منصة الخير للخدمات العقارية، 6956 شارع الأمير سلطان، حي الملك فهد، GBSA3812، 3812، صبيا 85299",
+        "phone": null,
+        "coordinates": [
+          17.1536729,
+          42.6424057
+        ],
+        "placeId": null,
+        "featureId": "0x15fd510016603e29:0xfb5d41c57827e53b"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.915,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": -0.00016709999999875436,
+          "lon": -7.43000000014149e-05
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction_phone_unconfirmed",
+      "recommendedChanges": {
+        "name": "منصة الخير للخدمات العقارية",
+        "maps": "https://www.google.com/maps/?cid=18112705592734246203"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D9%86%D8%B5%D8%A9%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200533140807%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:55Z"
+    },
+    {
+      "id": "national-ejar-office-237937",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب مسارات العطاء للخدمات العقارية",
+        "address": "طريق الملك عبدالعزيز، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0508097100"
+        ],
+        "coordinates": [
+          17.2873,
+          42.60343
+        ],
+        "maps": "https://maps.google.com/maps?q=17.28729683,42.60342506",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب مسارات العطاء للخدمات العقارية",
+        "categories": [
+          "التنمية السكنية"
+        ],
+        "district": null,
+        "address": "7JR3+F4G مكتب مسارات العطاء للخدمات العقارية، طريق الملك عبدالعزيز، المحلة الجنوبية 85498",
+        "phone": null,
+        "coordinates": [
+          17.291864099999998,
+          42.6030521
+        ],
+        "placeId": null,
+        "featureId": "0x15fd4b3d00b19eef:0xc61faac79e3800f6"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 0.004564099999999627,
+          "lon": -0.00037790000000370583
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%B7%D8%A7%D8%A1%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200508097100%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:55Z"
+    },
+    {
+      "id": "national-ejar-office-262443",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب ركن الرحاب للخدمات العقارية",
+        "address": "ابو جندل، الفيصلية، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0533511715"
+        ],
+        "coordinates": [
+          17.1658,
+          42.64462
+        ],
+        "maps": "https://maps.google.com/maps?q=17.16579583,42.64462161",
+        "activity": null
+      },
+      "new": {
+        "name": "ركن الرحاب للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الرحاب",
+        "address": "5J8V+9R5 ركن الرحاب للخدمات العقارية، الرحاب، صبيا 85457",
+        "phone": null,
+        "coordinates": [
+          17.1658841,
+          42.6446178
+        ],
+        "placeId": null,
+        "featureId": "0x15fd51001e83401f:0xdb9e672aa012c106"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 0.915,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": {
+          "lat": 8.40999999986991e-05,
+          "lon": -2.2000000043931323e-06
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction_phone_unconfirmed",
+      "recommendedChanges": {
+        "name": "ركن الرحاب للخدمات العقارية",
+        "maps": "https://www.google.com/maps/?cid=15825199573398372614"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%83%D9%86%20%D8%A7%D9%84%D8%B1%D8%AD%D8%A7%D8%A8%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200533511715%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:50Z"
+    },
+    {
+      "id": "national-ejar-office-276943",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب ركن التسهيل العقارية",
+        "address": "الامير محمد بن عبدالعزيز، الناصرية، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0562929952"
+        ],
+        "coordinates": [
+          17.16052,
+          42.66051
+        ],
+        "maps": "https://maps.google.com/maps?q=17.1605244,42.6605047",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب ركن التسهيل للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات تجارية",
+          "مكتب الشركات"
+        ],
+        "district": null,
+        "address": "مكتب ركن التسهيل للخدمات العقارية، الأمير سلطان بن عبدالعزيز، صبيا 85299",
+        "phone": "0562929952",
+        "coordinates": [
+          17.156218799999998,
+          42.6338964
+        ],
+        "placeId": null,
+        "featureId": "0x15fd51eef77acccd:0xe82d3093b511c8ac"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.862,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -0.004301200000004002,
+          "lon": -0.026613600000004567
+        },
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          17.156218799999998,
+          42.6338964
+        ],
+        "address": "مكتب ركن التسهيل للخدمات العقارية، الأمير سلطان بن عبدالعزيز، صبيا 85299",
+        "maps": "https://www.google.com/maps/?cid=16730081601707428012"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%83%D9%86%20%D8%A7%D9%84%D8%AA%D8%B3%D9%87%D9%8A%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200562929952%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:29Z"
+    },
+    {
+      "id": "national-ejar-office-317740",
+      "city": "صبيا",
+      "old": {
+        "name": "مكتب احمد محمد عبده ابوالفضائل للخدمات العقارية",
+        "address": "خالد، الفيصلية، صبياء، جازان، المملكة العربية السعودية",
+        "phones": [
+          "0532550950"
+        ],
+        "coordinates": [
+          17.16066,
+          42.62478
+        ],
+        "maps": "https://maps.google.com/maps?q=17.16065589,42.62478391",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسة احمد ابو الفضائل للخدمات العقاريه",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الربيع",
+        "address": "مؤسسة احمد ابو الفضائل للخدمات العقاريه، حي، الربيع، صبيا 85451",
+        "phone": "0582332665",
+        "coordinates": [
+          17.1606392,
+          42.6249336
+        ],
+        "placeId": null,
+        "featureId": "0x15fd530015b1309b:0x2573b1dffd6074cb"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": false,
+        "nameSimilarity": 0.791,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": false,
+        "coordinateDelta": {
+          "lat": -2.0800000001486296e-05,
+          "lon": 0.00015359999999731144
+        },
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%AD%D9%85%D8%AF%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B9%D8%A8%D8%AF%D9%87%20%D8%A7%D8%A8%D9%88%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A6%D9%84%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200532550950%20%D8%B5%D8%A8%D9%8A%D8%A7?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:29Z"
+    },
+    {
+      "id": "national-google-office-ChIJ00i8UKa-BxYRbIat6CzAxjM",
+      "city": "صامطة",
+      "old": {
+        "name": "المذكور للعقار",
+        "address": "JW2Q+6FG، صامطة 86735، المملكة العربية السعودية",
+        "phones": [
+          "0504571418"
+        ],
+        "coordinates": [
+          16.60057,
+          42.93871
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.600571,42.938708&query_place_id=ChIJ00i8UKa-BxYRbIat6CzAxjM",
+        "activity": null
+      },
+      "new": {
+        "name": "المذكور للعقار",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": null,
+        "address": "JW2Q+6FG المذكور للعقار، صامطة 86735",
+        "phone": "0504571418",
+        "coordinates": [
+          16.600571,
+          42.938708
+        ],
+        "placeId": "ChIJ00i8UKa-BxYRbIat6CzAxjM",
+        "featureId": "0x1607bea650bc48d3:0x33c6c02ce8ad866c"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 9.999999974752427e-07,
+          "lon": -2.0000000020559128e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.600571,42.938708&query_place_id=ChIJ00i8UKa-BxYRbIat6CzAxjM&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:42Z"
+    },
+    {
+      "id": "national-google-office-ChIJ4QpCBgS9BxYREBq1qBaqgyo",
+      "city": "صامطة",
+      "old": {
+        "name": "أصداف الجنوب العقارية",
+        "address": "55M، صامطة 86772، المملكة العربية السعودية",
+        "phones": [
+          "0558686688"
+        ],
+        "coordinates": [
+          16.62128,
+          42.94708
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.6212783,42.9470759&query_place_id=ChIJ4QpCBgS9BxYREBq1qBaqgyo",
+        "activity": null
+      },
+      "new": {
+        "name": "أصداف الجنوب العقارية",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": null,
+        "address": "أصداف الجنوب العقارية, 55M، صامطة 86772",
+        "phone": "0558686688",
+        "coordinates": [
+          16.6212783,
+          42.9470759
+        ],
+        "placeId": "ChIJ4QpCBgS9BxYREBq1qBaqgyo",
+        "featureId": "0x1607bd0406420ae1:0x2a83aa16a8b51a10"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -1.6999999985500835e-06,
+          "lon": -4.099999998175008e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.6212783,42.9470759&query_place_id=ChIJ4QpCBgS9BxYREBq1qBaqgyo&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:55Z"
+    },
+    {
+      "id": "national-google-office-ChIJ5zS1FWC_BxYRakXieH8FYY0",
+      "city": "صامطة",
+      "old": {
+        "name": "مكتب ابداع الضاحيه العقاري 2",
+        "address": "الضاحيه، طريق الملك سلمان، صامطة 84535، المملكة العربية السعودية",
+        "phones": [
+          "0506026667"
+        ],
+        "coordinates": [
+          16.63311,
+          42.90712
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.633107,42.9071185&query_place_id=ChIJ5zS1FWC_BxYRakXieH8FYY0",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب ابداع الضاحيه العقاري 2",
+        "categories": [
+          "بائع العقارات بالمزاد"
+        ],
+        "district": null,
+        "address": "مكتب ابداع الضاحيه العقاري 2، الضاحيه، طريق الملك سلمان، صامطة 84535",
+        "phone": "0506026667",
+        "coordinates": [
+          16.633107,
+          42.907118499999996
+        ],
+        "placeId": "ChIJ5zS1FWC_BxYRakXieH8FYY0",
+        "featureId": "0x1607bf6015b534e7:0x8d61057f78e2456a"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -2.9999999995311555e-06,
+          "lon": -1.5000000033182914e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.633107,42.9071185&query_place_id=ChIJ5zS1FWC_BxYRakXieH8FYY0&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:55Z"
+    },
+    {
+      "id": "national-google-office-ChIJ8xCxD831BxYRHlxuCj3z7Tk",
+      "city": "أبو عريش",
+      "old": {
+        "name": "مؤسسة وطن التعاون للخدمات العقارية",
+        "address": "شارع الملك عبدالعزيز، النهضة، أبو عريش 84717، المملكة العربية السعودية",
+        "phones": [
+          "0173241573"
+        ],
+        "coordinates": [
+          16.97823,
+          42.82571
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9782298,42.8257093&query_place_id=ChIJ8xCxD831BxYRHlxuCj3z7Tk",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسة وطن التعاون للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "النهضة",
+        "address": "مؤسسة وطن التعاون للخدمات العقارية، شارع الملك عبدالعزيز، النهضة، أبو عريش 84717",
+        "phone": "0173241573",
+        "coordinates": [
+          16.978229799999998,
+          42.8257093
+        ],
+        "placeId": "ChIJ8xCxD831BxYRHlxuCj3z7Tk",
+        "featureId": "0x1607f5cd0fb110f3:0x39edf33d0a6e5c1e"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -2.0000000233721948e-07,
+          "lon": -7.000000010748408e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9782298,42.8257093&query_place_id=ChIJ8xCxD831BxYRHlxuCj3z7Tk&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:09Z"
+    },
+    {
+      "id": "national-google-office-ChIJ9fLEoXT1BxYRX6um9DJAx0A",
+      "city": "أبو عريش",
+      "old": {
+        "name": "مؤسسة منى حكمي للعقارات",
+        "address": "شارع الأمير محمد بن ناصر، النسيم، أبو عريش 84715، المملكة العربية السعودية",
+        "phones": [
+          "0551064668"
+        ],
+        "coordinates": [
+          16.97017,
+          42.81782
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9701724,42.8178187&query_place_id=ChIJ9fLEoXT1BxYRX6um9DJAx0A",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسة منى حكمي للعقارات",
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "district": "النسيم",
+        "address": "مؤسسة منى حكمي للعقارات، شارع الأمير محمد بن ناصر، النسيم، أبو عريش 84715",
+        "phone": "0551064668",
+        "coordinates": [
+          16.9701724,
+          42.8178187
+        ],
+        "placeId": "ChIJ9fLEoXT1BxYRX6um9DJAx0A",
+        "featureId": "0x1607f574a1c4f2f5:0x40c74032f4a6ab5f"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 2.3999999996249244e-06,
+          "lon": -1.300000000981072e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9701724,42.8178187&query_place_id=ChIJ9fLEoXT1BxYRX6um9DJAx0A&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:22Z"
+    },
+    {
+      "id": "national-google-office-ChIJDV4DvK_1BxYRqG-JHpYQw_M",
+      "city": "أبو عريش",
+      "old": {
+        "name": "مكتب بيوت المعالي للعقار",
+        "address": "XR7P+G2C، النهضة، أبو عريش 84711، المملكة العربية السعودية",
+        "phones": [
+          "0553409267"
+        ],
+        "coordinates": [
+          16.96381,
+          42.83502
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9638103,42.835022&query_place_id=ChIJDV4DvK_1BxYRqG-JHpYQw_M",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب بيوت المعالي للعقار",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "النهضة",
+        "address": "XR7P+G2C مكتب بيوت المعالي للعقار، النهضة، أبو عريش 84711",
+        "phone": "0553409267",
+        "coordinates": [
+          16.9638103,
+          42.835021999999995
+        ],
+        "placeId": "ChIJDV4DvK_1BxYRqG-JHpYQw_M",
+        "featureId": "0x1607f5afbc035e0d:0xf3c310961e896fa8"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 2.9999999995311555e-07,
+          "lon": 1.9999999949504854e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9638103,42.835022&query_place_id=ChIJDV4DvK_1BxYRqG-JHpYQw_M&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:09Z"
+    },
+    {
+      "id": "national-google-office-ChIJESJXoBT1BxYRel9oDRlRKes",
+      "city": "أبو عريش",
+      "old": {
+        "name": "مكتب اساس المنزل للخدمات العقارية",
+        "address": "XVJ7+2F7، XVJ7+4C9، أبو عريش 84413، المملكة العربية السعودية",
+        "phones": [
+          "0501688601"
+        ],
+        "coordinates": [
+          16.98031,
+          42.86356
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9803125,42.8635625&query_place_id=ChIJESJXoBT1BxYRel9oDRlRKes",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب اساس المنزل للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "حي قنبوره",
+        "address": "XVJ7+2F7 مكتب اساس المنزل للخدمات العقارية، XVJ7+4C9، أبو عريش 84413",
+        "phone": "0501688601",
+        "coordinates": [
+          16.9803125,
+          42.8635625
+        ],
+        "placeId": "ChIJESJXoBT1BxYRel9oDRlRKes",
+        "featureId": "0x1607f514a0572211:0xeb2951190d685f7a"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 2.500000000793534e-06,
+          "lon": 2.500000000793534e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9803125,42.8635625&query_place_id=ChIJESJXoBT1BxYRel9oDRlRKes&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:09Z"
+    },
+    {
+      "id": "national-google-office-ChIJM5IFsxm9BxYR4CbP6QCqtx0",
+      "city": "صامطة",
+      "old": {
+        "name": "مؤسسة عبد الروؤف مرعي احمد القحطاني للعقار",
+        "address": "حزام صامطة مقابل مدخل الخضراء، صامطة 45922، المملكة العربية السعودية",
+        "phones": [
+          "0505766908"
+        ],
+        "coordinates": [
+          16.5954,
+          42.94766
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.5954049,42.9476624&query_place_id=ChIJM5IFsxm9BxYR4CbP6QCqtx0",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسة عبد الروؤف مرعي احمد القحطاني للعقار",
+        "categories": [
+          "مستشار عقارات"
+        ],
+        "district": null,
+        "address": "مؤسسة عبد الروؤف مرعي احمد القحطاني للعقار، حزام صامطة مقابل مدخل الخضراء، صامطة 45922",
+        "phone": "0505766908",
+        "coordinates": [
+          16.5954049,
+          42.9476624
+        ],
+        "placeId": "ChIJM5IFsxm9BxYR4CbP6QCqtx0",
+        "featureId": "0x1607bd19b3059233:0x1db7aa00e9cf26e0"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 4.899999996865745e-06,
+          "lon": 2.3999999996249244e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.5954049,42.9476624&query_place_id=ChIJM5IFsxm9BxYR4CbP6QCqtx0&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:42Z"
+    },
+    {
+      "id": "national-google-office-ChIJSeWiFaz1BxYR6rzQwgsFCm4",
+      "city": "أبو عريش",
+      "old": {
+        "name": "مكتب المالكي للعقار",
+        "address": "XR69+8G7، شارع الأمير محمد بن ناصر، الخالدية، أبو عريش 84712، المملكة العربية السعودية",
+        "phones": [
+          "0173246022"
+        ],
+        "coordinates": [
+          16.9608,
+          42.81881
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9607947,42.8188107&query_place_id=ChIJSeWiFaz1BxYR6rzQwgsFCm4",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب المالكي للعقار",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": "الخالدية",
+        "address": "XR69+8G7 مكتب المالكي للعقار، شارع الأمير محمد بن ناصر، الخالدية، أبو عريش 84712",
+        "phone": "0173246022",
+        "coordinates": [
+          16.9607947,
+          42.8188107
+        ],
+        "placeId": "ChIJSeWiFaz1BxYR6rzQwgsFCm4",
+        "featureId": "0x1607f5ac15a2e549:0x6e0a050bc2d0bcea"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -5.29999999798747e-06,
+          "lon": 7.000000010748408e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9607947,42.8188107&query_place_id=ChIJSeWiFaz1BxYR6rzQwgsFCm4&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:18:55Z"
+    },
+    {
+      "id": "national-google-office-ChIJTRnGNSO_BxYRMfpssHNVszw",
+      "city": "صامطة",
+      "old": {
+        "name": "خدمات عقارية",
+        "address": "الملك فيصل، صامطة 86736، المملكة العربية السعودية",
+        "phones": [
+          "0537072586"
+        ],
+        "coordinates": [
+          16.59528,
+          42.93685
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.5952755,42.9368519&query_place_id=ChIJTRnGNSO_BxYRMfpssHNVszw",
+        "activity": null
+      },
+      "new": {
+        "name": "خدمات عقارية",
+        "categories": [
+          "الوسيط التجاري"
+        ],
+        "district": null,
+        "address": "خدمات عقارية، الملك فيصل، صامطة 86736",
+        "phone": "0537072586",
+        "coordinates": [
+          16.5952755,
+          42.9368519
+        ],
+        "placeId": "ChIJTRnGNSO_BxYRMfpssHNVszw",
+        "featureId": "0x1607bf2335c6194d:0x3cb35573b06cfa31"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -4.499999999296733e-06,
+          "lon": 1.900000000887303e-06
+        },
+        "identityMatch": true
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.5952755,42.9368519&query_place_id=ChIJTRnGNSO_BxYRMfpssHNVszw&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:08Z"
+    },
+    {
+      "id": "national-google-office-ChIJUagP4vG_BxYRvRHs0ktGIN4",
+      "city": "صامطة",
+      "old": {
+        "name": "مكتب الشرق المتحدون",
+        "address": "حي الورود، صامطة 87667، المملكة العربية السعودية",
+        "phones": [
+          "0559532031"
+        ],
+        "coordinates": [
+          16.60184,
+          42.93537
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.601837,42.9353694&query_place_id=ChIJUagP4vG_BxYRvRHs0ktGIN4",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الشرق المتحدون",
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "district": "حي الورود",
+        "address": "مكتب الشرق المتحدون، حي الورود، صامطة 87667",
+        "phone": "0559532031",
+        "coordinates": [
+          16.601837,
+          42.9353694
+        ],
+        "placeId": "ChIJUagP4vG_BxYRvRHs0ktGIN4",
+        "featureId": "0x1607bff1e20fa851:0xde20464bd2ec11bd"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -2.9999999995311555e-06,
+          "lon": -5.999999999062311e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.601837,42.9353694&query_place_id=ChIJUagP4vG_BxYRvRHs0ktGIN4&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:55Z"
+    },
+    {
+      "id": "national-google-office-ChIJV_EpGAD1BxYRtg-kmgx4Jpc",
+      "city": "أبو عريش",
+      "old": {
+        "name": "مكتب ربيع الجنوب للخدمات العقاريه",
+        "address": "XR7M+GR8، النهضة، أبو عريش 84711، المملكة العربية السعودية",
+        "phones": [
+          "0555788227"
+        ],
+        "coordinates": [
+          16.96379,
+          42.83459
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9637921,42.834592&query_place_id=ChIJV_EpGAD1BxYRtg-kmgx4Jpc",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب ربيع الجنوب للخدمات العقاريه",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "النهضة",
+        "address": "XR7M+GR8 مكتب ربيع الجنوب للخدمات العقاريه، النهضة، أبو عريش 84711",
+        "phone": "0555788227",
+        "coordinates": [
+          16.9637921,
+          42.834592
+        ],
+        "placeId": "ChIJV_EpGAD1BxYRtg-kmgx4Jpc",
+        "featureId": "0x1607f5001829f157:0x9726780c9aa40fb6"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 2.099999999671809e-06,
+          "lon": 2.0000000020559128e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9637921,42.834592&query_place_id=ChIJV_EpGAD1BxYRtg-kmgx4Jpc&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:09Z"
+    },
+    {
+      "id": "national-google-office-ChIJeSeBSNS_BxYRowr36SXMTAM",
+      "city": "صامطة",
+      "old": {
+        "name": "مكتب شروق الجنوب للعقار صامطة الضاحية",
+        "address": "طريق الملك فهد، صامطة 86383، المملكة العربية السعودية",
+        "phones": [
+          "0554906916"
+        ],
+        "coordinates": [
+          16.63943,
+          42.90558
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.6394353,42.9055768&query_place_id=ChIJeSeBSNS_BxYRowr36SXMTAM",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب شروق الجنوب للعقار صامطة الضاحية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": null,
+        "address": "مكتب شروق الجنوب للعقار صامطة الضاحية، طريق الملك فهد، صامطة 86383",
+        "phone": "0554906916",
+        "coordinates": [
+          16.6394353,
+          42.9055768
+        ],
+        "placeId": "ChIJeSeBSNS_BxYRowr36SXMTAM",
+        "featureId": "0x1607bfd448812779:0x34ccc25e9f70aa3"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 5.29999999798747e-06,
+          "lon": -3.200000001868375e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.6394353,42.9055768&query_place_id=ChIJeSeBSNS_BxYRowr36SXMTAM&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:42Z"
+    },
+    {
+      "id": "national-google-office-ChIJfSOA1Ke_BxYRSxXKJIMyiLk",
+      "city": "صامطة",
+      "old": {
+        "name": "مكتب عقار/ الرمال البيضاء للخدمات العقارية",
+        "address": "العام، صامطة 86387، المملكة العربية السعودية",
+        "phones": [
+          "0550767260"
+        ],
+        "coordinates": [
+          16.6386,
+          42.94972
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.6386047,42.9497207&query_place_id=ChIJfSOA1Ke_BxYRSxXKJIMyiLk",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب عقار/ الرمال البيضاء للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "العام",
+        "address": "مكتب عقار/ الرمال البيضاء للخدمات العقارية، العام، صامطة 86387",
+        "phone": "0550767260",
+        "coordinates": [
+          16.6386047,
+          42.9497207
+        ],
+        "placeId": "ChIJfSOA1Ke_BxYRSxXKJIMyiLk",
+        "featureId": "0x1607bfa7d480237d:0xb988328324ca154b"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 4.699999998081239e-06,
+          "lon": 7.000000010748408e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.6386047,42.9497207&query_place_id=ChIJfSOA1Ke_BxYRSxXKJIMyiLk&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:55Z"
+    },
+    {
+      "id": "national-google-office-ChIJgxiAO631BxYRQiXp5T7oNc4",
+      "city": "أبو عريش",
+      "old": {
+        "name": "مكتب روابي المخلاف للعقار",
+        "address": "طريق الامير سلطان، الملك فهد، أبو عريش 84713، المملكة العربية السعودية",
+        "phones": [
+          "0504578910"
+        ],
+        "coordinates": [
+          16.95848,
+          42.81609
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.958476,42.8160904&query_place_id=ChIJgxiAO631BxYRQiXp5T7oNc4",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب روابي المخلاف للعقار",
+        "categories": [
+          "مُصفٍّ عقاري"
+        ],
+        "district": "الملك فهد",
+        "address": "مكتب روابي المخلاف للعقار، طريق الامير سلطان، الملك فهد، أبو عريش 84713",
+        "phone": "0504578910",
+        "coordinates": [
+          16.958476,
+          42.8160904
+        ],
+        "placeId": "ChIJgxiAO631BxYRQiXp5T7oNc4",
+        "featureId": "0x1607f5ad3b801883:0xce35e83ee5e92542"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -4.000000000559112e-06,
+          "lon": 3.999999975690116e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.958476,42.8160904&query_place_id=ChIJgxiAO631BxYRQiXp5T7oNc4&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:22Z"
+    },
+    {
+      "id": "national-google-office-ChIJjQO0_saXBxYR5TXKYTE4QWI",
+      "city": "أحد المسارحة",
+      "old": {
+        "name": "مكتب الركن الازرق للخدمات العقارية",
+        "address": "طريق الملك فهد، الواسط، أحد المسارحة 86628، المملكة العربية السعودية",
+        "phones": [
+          "0536273439"
+        ],
+        "coordinates": [
+          16.71191,
+          42.96147
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.7119134,42.9614686&query_place_id=ChIJjQO0_saXBxYR5TXKYTE4QWI",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الركن الازرق للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الواسط",
+        "address": "مكتب الركن الازرق للخدمات العقارية، طريق الملك فهد، الواسط، أحد المسارحة 86628",
+        "phone": "0536273439",
+        "coordinates": [
+          16.7119134,
+          42.961468599999996
+        ],
+        "placeId": "ChIJjQO0_saXBxYR5TXKYTE4QWI",
+        "featureId": "0x160797c6feb4038d:0x6241383161ca35e5"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 3.4000000006528808e-06,
+          "lon": -1.4000000021496817e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.7119134,42.9614686&query_place_id=ChIJjQO0_saXBxYR5TXKYTE4QWI&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:32Z"
+    },
+    {
+      "id": "national-google-office-ChIJl4O9Q9W_BxYR08gJulr6lG0",
+      "city": "صامطة",
+      "old": {
+        "name": "مكتب علي حسن عبدالله حمدي",
+        "address": "JW3P+7W9، صامطة 86735، المملكة العربية السعودية",
+        "phones": [
+          "0506762617"
+        ],
+        "coordinates": [
+          16.60318,
+          42.93737
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.6031746,42.937366&query_place_id=ChIJl4O9Q9W_BxYR08gJulr6lG0",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب علي حسن عبدالله حمدي",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": null,
+        "address": "JW3P+7W9 مكتب علي حسن عبدالله حمدي، صامطة 86735",
+        "phone": "0506762617",
+        "coordinates": [
+          16.6031746,
+          42.937366
+        ],
+        "placeId": "ChIJl4O9Q9W_BxYR08gJulr6lG0",
+        "featureId": "0x1607bfd543bd8397:0x6d94fa5aba09c8d3"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -5.39999999915608e-06,
+          "lon": -4.0000000041118255e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.6031746,42.937366&query_place_id=ChIJl4O9Q9W_BxYR08gJulr6lG0&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:42Z"
+    },
+    {
+      "id": "national-google-office-ChIJly1RbCOXBxYRfK9tcx_94Jo",
+      "city": "أحد المسارحة",
+      "old": {
+        "name": "مكتب المنارات المعمارية للعقار وخدمات العقار",
+        "address": "طريق الملك فهد، الواسط، أحد المسارحة 86628، المملكة العربية السعودية",
+        "phones": [
+          "0554662083"
+        ],
+        "coordinates": [
+          16.71193,
+          42.96151
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.7119325,42.9615082&query_place_id=ChIJly1RbCOXBxYRfK9tcx_94Jo",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب المنارات المعمارية للعقار وخدمات العقار",
+        "categories": [
+          "شركة إدارة عقارات",
+          "مكتب الشركات"
+        ],
+        "district": "الواسط",
+        "address": "مكتب المنارات المعمارية للعقار وخدمات العقار، طريق الملك فهد، الواسط، أحد المسارحة 86628",
+        "phone": "0554662083",
+        "coordinates": [
+          16.7119325,
+          42.9615082
+        ],
+        "placeId": "ChIJly1RbCOXBxYRfK9tcx_94Jo",
+        "featureId": "0x160797236c512d97:0x9ae0fd1f736daf7c"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 2.500000000793534e-06,
+          "lon": -1.7999999997186933e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.7119325,42.9615082&query_place_id=ChIJly1RbCOXBxYRfK9tcx_94Jo&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:08Z"
+    },
+    {
+      "id": "national-google-office-ChIJmfx2_tj1BxYRtxZ1GYE_sac",
+      "city": "أبو عريش",
+      "old": {
+        "name": "ثقة وإعمار للعقار",
+        "address": "طريق الامير سلطان، أبو عريش 84531، المملكة العربية السعودية",
+        "phones": [
+          "0501927812"
+        ],
+        "coordinates": [
+          16.9495,
+          42.79647
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9494969,42.7964667&query_place_id=ChIJmfx2_tj1BxYRtxZ1GYE_sac",
+        "activity": null
+      },
+      "new": {
+        "name": "ثقة وإعمار للعقار",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": null,
+        "address": "ثقة وإعمار للعقار، طريق الامير سلطان، أبو عريش 84531",
+        "phone": "0501927812",
+        "coordinates": [
+          16.9494969,
+          42.796466699999996
+        ],
+        "placeId": "ChIJmfx2_tj1BxYRtxZ1GYE_sac",
+        "featureId": "0x1607f5d8fe76fc99:0xa7b13f81197516b7"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -3.1000000006997652e-06,
+          "lon": -3.3000000030369847e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9494969,42.7964667&query_place_id=ChIJmfx2_tj1BxYRtxZ1GYE_sac&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:08Z"
+    },
+    {
+      "id": "national-google-office-ChIJnbST9JSXBxYRs30UmF9iJeY",
+      "city": "أحد المسارحة",
+      "old": {
+        "name": "مكتب المتطور الرئيسي",
+        "address": "2904 طريق الأمير محمد بن ناصر، القسوم، أحد المسارحة 86211، المملكة العربية السعودية",
+        "phones": [
+          "0556956285"
+        ],
+        "coordinates": [
+          16.72,
+          42.95067
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.7200032,42.9506657&query_place_id=ChIJnbST9JSXBxYRs30UmF9iJeY",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب المتطور الرئيسي",
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "district": "القسوم",
+        "address": "مكتب المتطور الرئيسي، 2904 طريق الأمير محمد بن ناصر، القسوم، أحد المسارحة 86211",
+        "phone": "0556956285",
+        "coordinates": [
+          16.7200032,
+          42.950665699999995
+        ],
+        "placeId": "ChIJnbST9JSXBxYRs30UmF9iJeY",
+        "featureId": "0x16079794f493b49d:0xe625625f98147db3"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 3.200000001868375e-06,
+          "lon": -4.300000007617655e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.7200032,42.9506657&query_place_id=ChIJnbST9JSXBxYRs30UmF9iJeY&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:32Z"
+    },
+    {
+      "id": "national-google-office-ChIJoSadRqD1BxYR8JqXlg7kEhE",
+      "city": "أبو عريش",
+      "old": {
+        "name": "مكتب اعمار العقاري ولأدارة الاملاك وللاستشارات الهندسيه",
+        "address": "XR7M+GW7، النهضة، أبو عريش 84711، المملكة العربية السعودية",
+        "phones": [
+          "0500650595"
+        ],
+        "coordinates": [
+          16.9638,
+          42.83486
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9637994,42.8348579&query_place_id=ChIJoSadRqD1BxYR8JqXlg7kEhE",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب اعمار العقاري ولأدارة الاملاك وللاستشارات الهندسيه",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "النهضة",
+        "address": "مكتب اعمار العقاري ولأدارة الاملاك وللاستشارات الهندسيه، XR7M+GW7، النهضة،، أبو عريش 84711",
+        "phone": "0500650595",
+        "coordinates": [
+          16.9637994,
+          42.834857899999996
+        ],
+        "placeId": "ChIJoSadRqD1BxYR8JqXlg7kEhE",
+        "featureId": "0x1607f5a0469d26a1:0x1112e40e96979af0"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -5.999999999062311e-07,
+          "lon": -2.1000000032245225e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9637994,42.8348579&query_place_id=ChIJoSadRqD1BxYR8JqXlg7kEhE&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:22Z"
+    },
+    {
+      "id": "national-google-office-ChIJp6sXSQBh_RURn9l4YLvBwjk",
+      "city": "أبو عريش",
+      "old": {
+        "name": "مؤسسه جياد الراية للعقار",
+        "address": "2V69+8C4، أبو عريش 84428، المملكة العربية السعودية",
+        "phones": [
+          "0564770845"
+        ],
+        "coordinates": [
+          17.01076,
+          42.86856
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=17.0107622,42.8685648&query_place_id=ChIJp6sXSQBh_RURn9l4YLvBwjk",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسه جياد الراية للعقار",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": null,
+        "address": "2V69+8C4 مؤسسه جياد الراية للعقار، أبو عريش 84428",
+        "phone": "0564770845",
+        "coordinates": [
+          17.0107622,
+          42.8685648
+        ],
+        "placeId": "ChIJp6sXSQBh_RURn9l4YLvBwjk",
+        "featureId": "0x15fd61004917aba7:0x39c2c1bb6078d99f"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 2.199999997287705e-06,
+          "lon": 4.799999999249849e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=17.0107622,42.8685648&query_place_id=ChIJp6sXSQBh_RURn9l4YLvBwjk&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:22Z"
+    },
+    {
+      "id": "national-google-office-ChIJpc_6tDuXBxYRSUyZM-bevDs",
+      "city": "أحد المسارحة",
+      "old": {
+        "name": "مكتب عقار الحدادي",
+        "address": "طريق الأمير محمد بن ناصر، العمارية، أحد المسارحة 86211، المملكة العربية السعودية",
+        "phones": [
+          "0503278403"
+        ],
+        "coordinates": [
+          16.72002,
+          42.95085
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.7200238,42.95085&query_place_id=ChIJpc_6tDuXBxYRSUyZM-bevDs",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب عقار الحدادي",
+        "categories": [
+          "بائع العقارات بالمزاد"
+        ],
+        "district": "العمارية",
+        "address": "مكتب عقار الحدادي، طريق الأمير محمد بن ناصر، العمارية، أحد المسارحة 86211",
+        "phone": "0503278403",
+        "coordinates": [
+          16.7200238,
+          42.950849999999996
+        ],
+        "placeId": "ChIJpc_6tDuXBxYRSUyZM-bevDs",
+        "featureId": "0x1607973bb4facfa5:0x3bbcdee633994c49"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 3.7999999982218924e-06,
+          "lon": -7.105427357601002e-15
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.7200238,42.95085&query_place_id=ChIJpc_6tDuXBxYRSUyZM-bevDs&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:09Z"
+    },
+    {
+      "id": "national-google-office-ChIJpf78GpiXBxYRU5DPeiDqkwU",
+      "city": "أحد المسارحة",
+      "old": {
+        "name": "مكتب المخلاف لخدمات ناجز ومعين ولجان الفصل",
+        "address": "طريق الأمير سلطان، العمارية، أحد المسارحة 86621، المملكة العربية السعودية",
+        "phones": [
+          "0552587562"
+        ],
+        "coordinates": [
+          16.71631,
+          42.95024
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.7163145,42.9502367&query_place_id=ChIJpf78GpiXBxYRU5DPeiDqkwU",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب المخلاف لخدمات ناجز ومعين ولجان الفصل",
+        "categories": [
+          "شركة إدارة عقارات",
+          "خدمة أمان الكمبيوتر"
+        ],
+        "district": "العمارية",
+        "address": "مكتب المخلاف لخدمات ناجز ومعين ولجان الفصل، طريق الأمير سلطان، العمارية، أحد المسارحة 86621",
+        "phone": "0552587562",
+        "coordinates": [
+          16.7163145,
+          42.9502367
+        ],
+        "placeId": "ChIJpf78GpiXBxYRU5DPeiDqkwU",
+        "featureId": "0x160797981afcfea5:0x593ea207acf9053"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 4.499999999296733e-06,
+          "lon": -3.3000000030369847e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.7163145,42.9502367&query_place_id=ChIJpf78GpiXBxYRU5DPeiDqkwU&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:32Z"
+    },
+    {
+      "id": "national-google-office-ChIJqQWJne29BxYRNbORRJ4LgKU",
+      "city": "صامطة",
+      "old": {
+        "name": "مكتب",
+        "address": "JW2W+RPC، JW2W+RH2، صامطة 86766، المملكة العربية السعودية",
+        "phones": [
+          "0579216050"
+        ],
+        "coordinates": [
+          16.60206,
+          42.94676
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.6020607,42.9467599&query_place_id=ChIJqQWJne29BxYRNbORRJ4LgKU",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "JW2W+RH2،",
+        "address": "JW2W+RPC مكتب، JW2W+RH2،، صامطة 86766،",
+        "phone": "0579216050",
+        "coordinates": [
+          16.6020607,
+          42.946759899999996
+        ],
+        "placeId": "ChIJqQWJne29BxYRNbORRJ4LgKU",
+        "featureId": "0x1607bded9d8905a9:0xa5800b9e4491b335"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 6.999999975221272e-07,
+          "lon": -1.0000000116860974e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.6020607,42.9467599&query_place_id=ChIJqQWJne29BxYRNbORRJ4LgKU&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:42Z"
+    },
+    {
+      "id": "national-google-office-ChIJqWwfXAG_BxYREy8W6MmNYns",
+      "city": "صامطة",
+      "old": {
+        "name": "مكتب ابداع الضاحيه العقاري",
+        "address": "شارع الامير محمد بن سلمان، صامطة 86768، المملكة العربية السعودية",
+        "phones": [
+          "0555828861"
+        ],
+        "coordinates": [
+          16.60689,
+          42.93263
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.6068916,42.9326315&query_place_id=ChIJqWwfXAG_BxYREy8W6MmNYns",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب ابداع الضاحيه العقاري",
+        "categories": [
+          "بائع العقارات بالمزاد"
+        ],
+        "district": null,
+        "address": "مكتب ابداع الضاحيه العقاري، شارع الامير محمد بن سلمان، صامطة 86768",
+        "phone": "0555828861",
+        "coordinates": [
+          16.6068916,
+          42.9326315
+        ],
+        "placeId": "ChIJqWwfXAG_BxYREy8W6MmNYns",
+        "featureId": "0x1607bf015c1f6ca9:0x7b628dc9e8162f13"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 1.6000000009341875e-06,
+          "lon": 1.499999996212864e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.6068916,42.9326315&query_place_id=ChIJqWwfXAG_BxYREy8W6MmNYns&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:55Z"
+    },
+    {
+      "id": "national-google-office-ChIJqbzcHK-XBxYRZoBYMXUkIS8",
+      "city": "أحد المسارحة",
+      "old": {
+        "name": "مكتب فجر المسارحة للخدمات والعقار",
+        "address": "المطلع، أحد المسارحة 86622، المملكة العربية السعودية",
+        "phones": [
+          "0566334466"
+        ],
+        "coordinates": [
+          16.70827,
+          42.95371
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.708268,42.9537058&query_place_id=ChIJqbzcHK-XBxYRZoBYMXUkIS8",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب فجر المسارحة للخدمات والعقار",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "المطلع",
+        "address": "مكتب فجر المسارحة للخدمات والعقار، المطلع، أحد المسارحة 86622",
+        "phone": "0566334466",
+        "coordinates": [
+          16.708268,
+          42.9537058
+        ],
+        "placeId": "ChIJqbzcHK-XBxYRZoBYMXUkIS8",
+        "featureId": "0x160797af1cdcbca9:0x2f21247531588066"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -1.999999998503199e-06,
+          "lon": -4.199999999343618e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.708268,42.9537058&query_place_id=ChIJqbzcHK-XBxYRZoBYMXUkIS8&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:09Z"
+    },
+    {
+      "id": "national-google-office-ChIJz47sDcGXBxYRXpJyzVixwDY",
+      "city": "أحد المسارحة",
+      "old": {
+        "name": "مكتب المسعودي للعقار",
+        "address": "GTJA2411، 6773 طريق الملك فهد، الواسط، أحد المسارحة 86628، المملكة العربية السعودية",
+        "phones": [
+          "0505769333"
+        ],
+        "coordinates": [
+          16.71185,
+          42.96167
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.7118472,42.9616701&query_place_id=ChIJz47sDcGXBxYRXpJyzVixwDY",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب المسعودي للعقار",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الواسط",
+        "address": "مكتب المسعودي للعقار، GTJA2411، 6773 طريق الملك فهد، الواسط، أحد المسارحة 86628",
+        "phone": "0505769333",
+        "coordinates": [
+          16.711847199999998,
+          42.9616701
+        ],
+        "placeId": "ChIJz47sDcGXBxYRXpJyzVixwDY",
+        "featureId": "0x160797c10dec8ecf:0x36c0b158cd72925e"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -2.8000000007466497e-06,
+          "lon": 1.0000000116860974e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.7118472,42.9616701&query_place_id=ChIJz47sDcGXBxYRXpJyzVixwDY&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:32Z"
+    },
+    {
+      "id": "national-google-office-ChIJzb7ZYVSXBxYR0BM_vWKyjWI",
+      "city": "أحد المسارحة",
+      "old": {
+        "name": "مكتب البعد الجديد للعقارات في أحد المسارحة",
+        "address": "طريق الملك فهد، المطلع، أحد المسارحة 45952، المملكة العربية السعودية",
+        "phones": [
+          "0509035431"
+        ],
+        "coordinates": [
+          16.71145,
+          42.95118
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.7114544,42.9511842&query_place_id=ChIJzb7ZYVSXBxYR0BM_vWKyjWI",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب البعد الجديد للعقارات في أحد المسارحة",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "المطلع",
+        "address": "مكتب البعد الجديد للعقارات في أحد المسارحة، طريق الملك فهد، المطلع، أحد المسارحة 45952",
+        "phone": "0509035431",
+        "coordinates": [
+          16.7114544,
+          42.9511842
+        ],
+        "placeId": "ChIJzb7ZYVSXBxYR0BM_vWKyjWI",
+        "featureId": "0x1607975461d9becd:0x628db262bd3f13d0"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 4.400000001680837e-06,
+          "lon": 4.199999999343618e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.7114544,42.9511842&query_place_id=ChIJzb7ZYVSXBxYR0BM_vWKyjWI&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:08Z"
+    },
+    {
+      "id": "national-google-office-ChIJzyk39x71BxYRqzY6vSo_tq8",
+      "city": "أبو عريش",
+      "old": {
+        "name": "مكتب بصمة المستشار العقاري",
+        "address": "XR6F+HM6، طريق الملك فهد، الخالدية، أبو عريش 00000، المملكة العربية السعودية",
+        "phones": [
+          "0592927070"
+        ],
+        "coordinates": [
+          16.96142,
+          42.82413
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9614235,42.8241304&query_place_id=ChIJzyk39x71BxYRqzY6vSo_tq8",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب بصمة المستشار العقاري",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "الخالدية",
+        "address": "XR6F+HM6 مكتب بصمة المستشار العقاري، طريق الملك فهد، الخالدية، أبو عريش 00000",
+        "phone": "0592927070",
+        "coordinates": [
+          16.9614235,
+          42.8241304
+        ],
+        "placeId": "ChIJzyk39x71BxYRqzY6vSo_tq8",
+        "featureId": "0x1607f51ef73729cf:0xafb63f2abd3a36ab"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 3.499999998268777e-06,
+          "lon": 4.0000000467443897e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9614235,42.8241304&query_place_id=ChIJzyk39x71BxYRqzY6vSo_tq8&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:19:22Z"
+    },
+    {
+      "id": "national-icuae-office-ChIJ1S_wasn1BxYRNbf2JCv1wcQ",
+      "city": "أبو عريش",
+      "old": {
+        "name": "مكتب نفاذ وطني للخدمات العقارية",
+        "address": "شارع النهضة – Al Wurud – Abu Arish 84211 – Saudi Arabia",
+        "phones": [
+          "0550915577"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJ1S_wasn1BxYRNbf2JCv1wcQ",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/place/?q=place_id:ChIJ1S_wasn1BxYRNbf2JCv1wcQ&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:47Z"
+    },
+    {
+      "id": "national-icuae-office-ChIJP2atdar1BxYRKnCBk0IYUk0",
+      "city": "أبو عريش",
+      "old": {
+        "name": "جياد الراية للعقارات",
+        "address": "XR9V+MPV – Al Wurud – Abu Arish 84211 – Saudi Arabia",
+        "phones": [
+          "0503768536"
+        ],
+        "coordinates": [
+          16.96924,
+          42.8443
+        ],
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJP2atdar1BxYRKnCBk0IYUk0",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/place/?q=place_id:ChIJP2atdar1BxYRKnCBk0IYUk0&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:32Z"
+    },
+    {
+      "id": "national-icuae-office-ChIJx53oWRO_BxYRdKW1AZqXC4Y",
+      "city": "صامطة",
+      "old": {
+        "name": "مكتب بروج الضاحية للخدمات العقارية",
+        "address": "JWM4+4C2 – حي الضاحية – Samtah 86383 – Saudi Arabia",
+        "phones": [
+          "0553234565"
+        ],
+        "coordinates": [
+          16.63276,
+          42.90602
+        ],
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJx53oWRO_BxYRdKW1AZqXC4Y",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب بروج الضاحية للخدمات العقارية",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "حي الضاحية",
+        "address": "JWM4+4C2 مكتب بروج الضاحية للخدمات العقارية، حي الضاحية، صامطة 86383",
+        "phone": "0553234565",
+        "coordinates": [
+          16.6327629,
+          42.9060288
+        ],
+        "placeId": null,
+        "featureId": "0x1607bf1359e89dc7:0x860b979a01b5a574"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 2.8999999983625457e-06,
+          "lon": 8.800000003361674e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/place/?q=place_id:ChIJx53oWRO_BxYRdKW1AZqXC4Y&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:47Z"
+    },
+    {
+      "id": "national-icuae-office-ChIJxdWZ5OiLBxYR-q9NQcfZXEY",
+      "city": "أبو عريش",
+      "old": {
+        "name": "عقارات شعبة الجربه",
+        "address": "طريق السر – القديم – Abu Arish 48551 – Saudi Arabia",
+        "phones": [
+          "0504162465"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJxdWZ5OiLBxYR-q9NQcfZXEY",
+        "activity": null
+      },
+      "new": null,
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": false,
+        "nameMatch": false,
+        "nameSimilarity": 0,
+        "cityMatch": false,
+        "realEstateActivity": false,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null,
+        "identityMatch": false
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": "Google Maps response did not resolve to one business card",
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/place/?q=place_id:ChIJxdWZ5OiLBxYR-q9NQcfZXEY&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:47Z"
+    },
+    {
+      "id": "office-maps-055750e9d69b",
+      "city": "جازان",
+      "old": {
+        "name": "مكتب جنى جازان للخدمات العقارية",
+        "address": "حي السويس، شارع أبو عبيدة عامر بن الجراح جازان، 82617، المملكة العربية السعودية",
+        "phones": [
+          "0504577307"
+        ],
+        "coordinates": [
+          16.87464,
+          42.57514
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.8746362,42.5751382&query_place_id=ChIJoSLKop3jBxYR0bY9-LqgZms",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب جنى جازان للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "السويس",
+        "address": "مكتب جنى جازان للخدمات العقارية, حي، السويس، حي السويس، شارع أبو عبيدة عامر بن الجراح جازان، 82617",
+        "phone": "0504577307",
+        "coordinates": [
+          16.874636199999998,
+          42.5751382
+        ],
+        "placeId": "ChIJoSLKop3jBxYR0bY9-LqgZms",
+        "featureId": "0x1607e39da2ca22a1:0x6b66a0baf83db6d1"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -3.800000001774606e-06,
+          "lon": -1.7999999997186933e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.8746362,42.5751382&query_place_id=ChIJoSLKop3jBxYR0bY9-LqgZms&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:16:51Z"
+    },
+    {
+      "id": "office-maps-06abb5ac6dcb",
+      "city": "جازان",
+      "old": {
+        "name": "مكتب ستة الف للعقار",
+        "address": "شارع سعد بن أبي وقاص، السويس، جيزان 83863، المملكة العربية السعودية",
+        "phones": [
+          "0533385034"
+        ],
+        "coordinates": [
+          16.86832,
+          42.58619
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.8683214,42.5861848&query_place_id=ChIJZ_RTvHfjBxYR5dDg9KN5bX0",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب ستة الف للعقار",
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "district": "السويس",
+        "address": "مكتب ستة الف للعقار، شارع سعد بن أبي وقاص، السويس، جيزان 83863",
+        "phone": "0533385034",
+        "coordinates": [
+          16.8683214,
+          42.5861848
+        ],
+        "placeId": "ChIJZ_RTvHfjBxYR5dDg9KN5bX0",
+        "featureId": "0x1607e377bc53f467:0x7d6d79a3f4e0d0e5"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 1.399999998596968e-06,
+          "lon": -5.200000003924288e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.8683214,42.5861848&query_place_id=ChIJZ_RTvHfjBxYR5dDg9KN5bX0&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:30Z"
+    },
+    {
+      "id": "office-maps-11917080544c",
+      "city": "جازان",
+      "old": {
+        "name": "مكتب عضل للخدمات العقارية",
+        "address": "قرب النقل الجماعي سابتكو، السويس، طريق الامير ناصر بن عبد العزيز، جيزان 56799، المملكة العربية السعودية",
+        "phones": [
+          "0550095088"
+        ],
+        "coordinates": [
+          16.88092,
+          42.57842
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.8809186,42.5784212&query_place_id=ChIJUfByHMDjBxYRwTpy8jBgW5k",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب عضل للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "السويس",
+        "address": "مكتب عضل للخدمات العقارية، قرب النقل الجماعي سابتكو، السويس، طريق الامير ناصر بن عبد العزيز حي، جيزان 56799",
+        "phone": "0550095088",
+        "coordinates": [
+          16.880918599999998,
+          42.5784212
+        ],
+        "placeId": "ChIJUfByHMDjBxYRwTpy8jBgW5k",
+        "featureId": "0x1607e3c01c72f051:0x995b6030f2723ac1"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -1.4000000021496817e-06,
+          "lon": 1.1999999998124622e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.8809186,42.5784212&query_place_id=ChIJUfByHMDjBxYRwTpy8jBgW5k&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:18Z"
+    },
+    {
+      "id": "office-maps-24bcce103950",
+      "city": "جازان",
+      "old": {
+        "name": "شركة روابط الجنوب العقارية",
+        "address": "حي الشاطئ، جيزان 82811، المملكة العربية السعودية",
+        "phones": [
+          "920032240"
+        ],
+        "coordinates": [
+          16.92287,
+          42.54908
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9228735,42.5490772&query_place_id=ChIJfaaU2fvjBxYRi26nctLt_is",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة روابط الجنوب العقارية",
+        "categories": [
+          "التنمية السكنية"
+        ],
+        "district": "الشاطئ",
+        "address": "شركة روابط الجنوب العقارية، حي، الشاطئ، جيزان 82811",
+        "phone": "920032240",
+        "coordinates": [
+          16.922873499999998,
+          42.5490772
+        ],
+        "placeId": "ChIJfaaU2fvjBxYRi26nctLt_is",
+        "featureId": "0x1607e3fbd994a67d:0x2bfeedd272a76e8b"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": false,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 3.499999998268777e-06,
+          "lon": -2.799999997193936e-06
+        },
+        "identityMatch": true
+      },
+      "status": "unconfirmed",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9228735,42.5490772&query_place_id=ChIJfaaU2fvjBxYRi26nctLt_is&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:17Z"
+    },
+    {
+      "id": "office-maps-5259c0f0aba4",
+      "city": "جازان",
+      "old": {
+        "name": "سكب للخدمات العقارية",
+        "address": "2542 شارع المدينة المنورة، حي الشاطئ، GGGE6213، 6213، جيزان 82816، المملكة العربية السعودية",
+        "phones": [
+          "0551887211"
+        ],
+        "coordinates": [
+          16.94708,
+          42.5575
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.947075,42.557497&query_place_id=ChIJO664cQD9BxYRRpeFS9JHJ14",
+        "activity": null
+      },
+      "new": {
+        "name": "سكب للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "حي الشاطئ",
+        "address": "سكب للخدمات العقارية، 2542 شارع المدينة المنورة، حي الشاطئ، GGGE6213، 6213، جيزان 82816",
+        "phone": "0551887211",
+        "coordinates": [
+          16.947074999999998,
+          42.557497
+        ],
+        "placeId": "ChIJO664cQD9BxYRRpeFS9JHJ14",
+        "featureId": "0x1607fd0071b8ae3b:0x5e2747d24b859746"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -5.000000001587068e-06,
+          "lon": -2.9999999995311555e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.947075,42.557497&query_place_id=ChIJO664cQD9BxYRRpeFS9JHJ14&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:49Z"
+    },
+    {
+      "id": "office-maps-6e6ac9c163fe",
+      "city": "جازان",
+      "old": {
+        "name": "أبو الحسن للعقارات",
+        "address": "VH3X+QMQ Naser bn abdalazez، السويس، جيزان 82613، المملكة العربية السعودية",
+        "phones": [
+          "0554579992"
+        ],
+        "coordinates": [
+          16.85446,
+          42.59922
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.8544614,42.599225&query_place_id=ChIJrRHA76_jBxYR4xWCF-HakRI",
+        "activity": null
+      },
+      "new": {
+        "name": "أبو الحسن للعقارات",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": "السويس",
+        "address": "VH3X+QMQ أبو الحسن للعقارات، Naser bn abdalazez، السويس، جيزان 82613",
+        "phone": "0554579992",
+        "coordinates": [
+          16.854461399999998,
+          42.599225
+        ],
+        "placeId": "ChIJrRHA76_jBxYR4xWCF-HakRI",
+        "featureId": "0x1607e3afefc011ad:0x1291dae1178215e3"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 1.399999998596968e-06,
+          "lon": 4.999999994481641e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.8544614,42.599225&query_place_id=ChIJrRHA76_jBxYR4xWCF-HakRI&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:49Z"
+    },
+    {
+      "id": "office-maps-6f8f61ed07d4",
+      "city": "جازان",
+      "old": {
+        "name": "شركة روشن فيو العقارية",
+        "address": "شارع أبو بكر الصديق، السويس، جيزان 82722، المملكة العربية السعودية",
+        "phones": [
+          "0500795552"
+        ],
+        "coordinates": [
+          16.8702,
+          42.58473
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.8701962,42.5847307&query_place_id=ChIJo1C8R7XjBxYRvqm_n_CZUKg",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة روشن فيو العقارية",
+        "categories": [
+          "وكالة عقارات تجارية"
+        ],
+        "district": "السويس",
+        "address": "شركة روشن فيو العقارية، شارع أبو بكر الصديق، السويس، جيزان 82722",
+        "phone": "0500795552",
+        "coordinates": [
+          16.8701962,
+          42.5847307
+        ],
+        "placeId": "ChIJo1C8R7XjBxYRvqm_n_CZUKg",
+        "featureId": "0x1607e3b547bc50a3:0xa85099f09fbfa9be"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -3.800000001774606e-06,
+          "lon": 7.000000010748408e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.8701962,42.5847307&query_place_id=ChIJo1C8R7XjBxYRvqm_n_CZUKg&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:30Z"
+    },
+    {
+      "id": "office-maps-76265fe7a278",
+      "city": "جازان",
+      "old": {
+        "name": "آمال المستقبل للعقارات",
+        "address": "حي المحمدية، شارع الامير بندر بجانب كتابة العدل، جيزان 82511، المملكة العربية السعودية",
+        "phones": [
+          "0555335967"
+        ],
+        "coordinates": [
+          16.94546,
+          42.56472
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9454645,42.5647228&query_place_id=ChIJo_-1Zqv9BxYRg5PFSLbHbY8",
+        "activity": null
+      },
+      "new": {
+        "name": "آمال المستقبل للعقارات",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": "حي المحمدية",
+        "address": "آمال المستقبل للعقارات، حي المحمدية، شارع الامير بندر بجانب كتابة العدل، جيزان 82511",
+        "phone": "0555335967",
+        "coordinates": [
+          16.9454645,
+          42.5647228
+        ],
+        "placeId": "ChIJo_-1Zqv9BxYRg5PFSLbHbY8",
+        "featureId": "0x1607fdab66b5ffa3:0x8f6dc7b648c59383"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 4.499999999296733e-06,
+          "lon": 2.799999997193936e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9454645,42.5647228&query_place_id=ChIJo_-1Zqv9BxYRg5PFSLbHbY8&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:04Z"
+    },
+    {
+      "id": "office-maps-7ad5827a22f6",
+      "city": "جازان",
+      "old": {
+        "name": "مؤسسة قواعد سكنية للخدمات العقارية",
+        "address": "طريق الأمير محمد بن ناصر، الشاطئ، جيزان 82725، المملكة العربية السعودية",
+        "phones": [
+          "0550559928"
+        ],
+        "coordinates": [
+          16.92152,
+          42.55317
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9215225,42.5531713&query_place_id=ChIJA9dRmOjjBxYRuIybj_2hXU0",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسة قواعد سكنية للخدمات العقارية",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "الشاطئ",
+        "address": "مؤسسة قواعد سكنية للخدمات العقارية، طريق الأمير محمد بن ناصر، الشاطئ، جيزان 82725",
+        "phone": "0550559928",
+        "coordinates": [
+          16.9215225,
+          42.553171299999995
+        ],
+        "placeId": "ChIJA9dRmOjjBxYRuIybj_2hXU0",
+        "featureId": "0x1607e3e89851d703:0x4d5da1fd8f9b8cb8"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 2.4999999972408204e-06,
+          "lon": 1.2999999938756446e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9215225,42.5531713&query_place_id=ChIJA9dRmOjjBxYRuIybj_2hXU0&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:17Z"
+    },
+    {
+      "id": "office-maps-7bfbf117ee8d",
+      "city": "جازان",
+      "old": {
+        "name": "شركة واحة التمليك العقارية",
+        "address": "3473-3681 شارع الأمير محمد بن عبد العزيز، الشاطئ، جيزان 82812، المملكة العربية السعودية",
+        "phones": [
+          "0558561118"
+        ],
+        "coordinates": [
+          16.92875,
+          42.55732
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9287515,42.557318&query_place_id=ChIJ0WPhu139BxYRaUcaZjZX5rs",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة واحة التمليك العقارية",
+        "categories": [
+          "شركة إدارة عقارات"
+        ],
+        "district": "الشاطئ",
+        "address": "شركة واحة التمليك العقارية، 3473-3681 شارع الأمير محمد بن عبد العزيز، الشاطئ، جيزان 82812",
+        "phone": "0558561118",
+        "coordinates": [
+          16.9287515,
+          42.557317999999995
+        ],
+        "placeId": "ChIJ0WPhu139BxYRaUcaZjZX5rs",
+        "featureId": "0x1607fd5dbbe163d1:0xbbe65736661a4769"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 1.4999999997655777e-06,
+          "lon": -2.0000000020559128e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9287515,42.557318&query_place_id=ChIJ0WPhu139BxYRaUcaZjZX5rs&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:50Z"
+    },
+    {
+      "id": "office-maps-7c4088f409d5",
+      "city": "جازان",
+      "old": {
+        "name": "مكتب ركن العمده للخدمات العقاريه",
+        "address": "خالد بن طفيل، حي النسيم، جيزان 82732، المملكة العربية السعودية",
+        "phones": [
+          "0501278003"
+        ],
+        "coordinates": [
+          16.89782,
+          42.59582
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.8978174,42.5958237&query_place_id=ChIJs9xveW_jBxYRNHIJSqb8SaQ",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب ركن العمده للخدمات العقاريه",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": "حي النسيم",
+        "address": "مكتب ركن العمده للخدمات العقاريه، خالد بن طفيل, حي النسيم، جيزان 82732",
+        "phone": "0501278003",
+        "coordinates": [
+          16.8978174,
+          42.5958237
+        ],
+        "placeId": "ChIJs9xveW_jBxYRNHIJSqb8SaQ",
+        "featureId": "0x1607e36f796fdcb3:0xa449fca64a097234"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -2.59999999840943e-06,
+          "lon": 3.699999993500569e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.8978174,42.5958237&query_place_id=ChIJs9xveW_jBxYRNHIJSqb8SaQ&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:04Z"
+    },
+    {
+      "id": "office-maps-8050a7015e73",
+      "city": "جازان",
+      "old": {
+        "name": "إعمار الضاحية للخدمات العقارية",
+        "address": "مبنى مسار الاعمال، الشاطئ، جيزان 82816، المملكة العربية السعودية",
+        "phones": [
+          "0590874123"
+        ],
+        "coordinates": [
+          16.93102,
+          42.55121
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9310234,42.5512141&query_place_id=ChIJFRnypoH9BxYRrdaMfUNi3yQ",
+        "activity": null
+      },
+      "new": {
+        "name": "إعمار الضاحية للخدمات العقارية",
+        "categories": [
+          "مستشار عقارات"
+        ],
+        "district": "الشاطئ",
+        "address": "إعمار الضاحية للخدمات العقارية، مبنى مسار الاعمال، الشاطئ، جيزان 82816",
+        "phone": "0590874123",
+        "coordinates": [
+          16.9310234,
+          42.551214099999996
+        ],
+        "placeId": "ChIJFRnypoH9BxYRrdaMfUNi3yQ",
+        "featureId": "0x1607fd81a6f21915:0x24df62437d8cd6ad"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 3.4000000006528808e-06,
+          "lon": 4.099999998175008e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9310234,42.5512141&query_place_id=ChIJFRnypoH9BxYRrdaMfUNi3yQ&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:04Z"
+    },
+    {
+      "id": "office-maps-8186f3c47071",
+      "city": "جازان",
+      "old": {
+        "name": "مكتب خمسه أمتار للخدمات العقارية",
+        "address": "شارع الأمير عبدالمجيد بن عبدالعزيز، الشاطئ، جيزان 82727، المملكة العربية السعودية",
+        "phones": [
+          "0502965042"
+        ],
+        "coordinates": [
+          16.921,
+          42.56153
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9210006,42.5615295&query_place_id=ChIJr5Jp1t_9BxYRFoaNZVQUWT4",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب خمسه أمتار للخدمات العقارية",
+        "categories": [
+          "وكيل عقاري",
+          "وسيط تمويل",
+          "خدمات الاستثمار"
+        ],
+        "district": "الشاطئ",
+        "address": "مكتب خمسه أمتار للخدمات العقارية، شارع الأمير عبدالمجيد بن عبدالعزيز، الشاطئ، جيزان 82727",
+        "phone": "0502965042",
+        "coordinates": [
+          16.9210006,
+          42.5615295
+        ],
+        "placeId": "ChIJr5Jp1t_9BxYRFoaNZVQUWT4",
+        "featureId": "0x1607fddfd66992af:0x3e591454658d8616"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 5.999999999062311e-07,
+          "lon": -4.999999987376214e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9210006,42.5615295&query_place_id=ChIJr5Jp1t_9BxYRFoaNZVQUWT4&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:17Z"
+    },
+    {
+      "id": "office-maps-84b8fd5f4d0e",
+      "city": "جازان",
+      "old": {
+        "name": "مكتب عبدالعزيز للعقارات",
+        "address": "شارع جعفر بن أبي طالب، جيزان 82722، المملكة العربية السعودية",
+        "phones": [
+          "0550215506"
+        ],
+        "coordinates": [
+          16.88899,
+          42.57792
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.8889917,42.5779202&query_place_id=ChIJJyR2XbTjBxYRL6IMjN65W6U",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب عبدالعزيز للعقارات",
+        "categories": [
+          "وكالة تأجير عقارات"
+        ],
+        "district": null,
+        "address": "مكتب عبدالعزيز للعقارات، شارع جعفر بن أبي طالب، جيزان 82722",
+        "phone": "0550215506",
+        "coordinates": [
+          16.8889917,
+          42.5779202
+        ],
+        "placeId": "ChIJJyR2XbTjBxYRL6IMjN65W6U",
+        "featureId": "0x1607e3b45d762427:0xa55bb9de8c0ca22f"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 1.6999999985500835e-06,
+          "lon": 2.0000000233721948e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.8889917,42.5779202&query_place_id=ChIJJyR2XbTjBxYRL6IMjN65W6U&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:49Z"
+    },
+    {
+      "id": "office-maps-88467abb514f",
+      "city": "جازان",
+      "old": {
+        "name": "مكتب صفوة جازان العقاري",
+        "address": "WH76+49R، طريق الملك فهد، جيزان 82726، المملكة العربية السعودية",
+        "phones": [
+          "0504795655"
+        ],
+        "coordinates": [
+          16.91286,
+          42.56088
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9128549,42.5608803&query_place_id=ChIJf74Y5ML9BxYRnW3Sk6kLHnQ",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب صفوة جازان العقاري",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": null,
+        "address": "WH76+49R مكتب صفوة جازان العقاري، طريق الملك فهد، جيزان 82726",
+        "phone": "0504795655",
+        "coordinates": [
+          16.9128549,
+          42.5608803
+        ],
+        "placeId": "ChIJf74Y5ML9BxYRnW3Sk6kLHnQ",
+        "featureId": "0x1607fdc2e418be7f:0x741e0ba993d26d9d"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -5.099999999202964e-06,
+          "lon": 3.0000000350582923e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9128549,42.5608803&query_place_id=ChIJf74Y5ML9BxYRnW3Sk6kLHnQ&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:04Z"
+    },
+    {
+      "id": "office-maps-ab85d714c343",
+      "city": "جازان",
+      "old": {
+        "name": "مؤسسة إيمان التميز العقارية",
+        "address": "9556 طريق الأمير متعب بن عبدالعزيز، الشاطئ، 3597، جيزان 82727، المملكة العربية السعودية",
+        "phones": [
+          "0554545267"
+        ],
+        "coordinates": [
+          16.92377,
+          42.55763
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9237691,42.5576289&query_place_id=ChIJM_mvwRr9BxYRd3EApMO4myU",
+        "activity": null
+      },
+      "new": {
+        "name": "مؤسسة إيمان التميز العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الشاطئ",
+        "address": "مؤسسة إيمان التميز العقارية، 9556 طريق الأمير متعب بن عبدالعزيز، الشاطئ، 3597, جيزان 82727",
+        "phone": "0554545267",
+        "coordinates": [
+          16.923769099999998,
+          42.5576289
+        ],
+        "placeId": "ChIJM_mvwRr9BxYRd3EApMO4myU",
+        "featureId": "0x1607fd1ac1aff933:0x259bb8c3a4007177"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -9.000000034120603e-07,
+          "lon": -1.1000000057492798e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9237691,42.5576289&query_place_id=ChIJM_mvwRr9BxYRd3EApMO4myU&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:30Z"
+    },
+    {
+      "id": "office-maps-bfcdb504fd91",
+      "city": "جازان",
+      "old": {
+        "name": "مكتب مستشار جازان للخدمات العقارية",
+        "address": "7014 شارع الأمير محمد بن عبد العزيز، الشاطئ، 4192، جيزان 82812، المملكة العربية السعودية",
+        "phones": [
+          "0592906499"
+        ],
+        "coordinates": [
+          16.92899,
+          42.56422
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9289897,42.5642168&query_place_id=ChIJ97kL3139BxYRMxZwdyQEino",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب مستشار جازان للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "الشاطئ",
+        "address": "مكتب مستشار جازان للخدمات العقارية، 7014 شارع الأمير محمد بن عبد العزيز، الشاطئ، 4192، جيزان 82812",
+        "phone": "0592906499",
+        "coordinates": [
+          16.9289897,
+          42.5642168
+        ],
+        "placeId": "ChIJ97kL3139BxYRMxZwdyQEino",
+        "featureId": "0x1607fd5ddf0bb9f7:0x7a8a042477701633"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -2.9999999995311555e-07,
+          "lon": -3.200000001868375e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9289897,42.5642168&query_place_id=ChIJ97kL3139BxYRMxZwdyQEino&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:16:51Z"
+    },
+    {
+      "id": "office-maps-cbebacc12918",
+      "city": "جازان",
+      "old": {
+        "name": "مكتب عقار جازان لجميع انواع الاراضي بيع وشراء",
+        "address": "دوار الصدفه، شارع 45 حي الشاطي قرب، جيزان المملكة العربية السعودية",
+        "phones": [
+          "0533677461"
+        ],
+        "coordinates": [
+          16.92876,
+          42.55663
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9287581,42.5566275&query_place_id=ChIJZ4Ii6Rv9BxYRqyV-0SPGfYw",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب عقار جازان لجميع انواع الاراضي بيع وشراء",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": "الشاطئ",
+        "address": "مكتب عقار جازان لجميع انواع الاراضي بيع وشراء، دوار الصدفه، شارع 45 حي الشاطي قرب، جيزان",
+        "phone": "0533677461",
+        "coordinates": [
+          16.9287581,
+          42.5566275
+        ],
+        "placeId": "ChIJZ4Ii6Rv9BxYRqyV-0SPGfYw",
+        "featureId": "0x1607fd1be9228267:0x8c7dc623d17e25ab"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -1.900000000887303e-06,
+          "lon": -2.500000000793534e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9287581,42.5566275&query_place_id=ChIJZ4Ii6Rv9BxYRqyV-0SPGfYw&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:04Z"
+    },
+    {
+      "id": "office-maps-ce4cd45ded3d",
+      "city": "جازان",
+      "old": {
+        "name": "النمري للعقار",
+        "address": "8178 المطلع، 5210، الجبل، جيزان 82715، المملكة العربية السعودية",
+        "phones": [
+          "0173175589"
+        ],
+        "coordinates": [
+          16.89205,
+          42.55584
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.8920543,42.5558357&query_place_id=ChIJjT-hs5jiBxYROX2PPebees0",
+        "activity": null
+      },
+      "new": {
+        "name": "النمري للعقار",
+        "categories": [
+          "وكالة تأجير عقارات"
+        ],
+        "district": "الجبل",
+        "address": "النمري للعقار، 8178 المطلع، 5210، الجبل، جيزان 82715",
+        "phone": "0173175589",
+        "coordinates": [
+          16.892054299999998,
+          42.555835699999996
+        ],
+        "placeId": "ChIJjT-hs5jiBxYROX2PPebees0",
+        "featureId": "0x1607e298b3a13f8d:0xcd7adee63d8f7d39"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 4.299999996959514e-06,
+          "lon": -4.300000007617655e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.8920543,42.5558357&query_place_id=ChIJjT-hs5jiBxYROX2PPebees0&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:17Z"
+    },
+    {
+      "id": "office-maps-d6ce3e698640",
+      "city": "جازان",
+      "old": {
+        "name": "مكتب المحترف الذهبي للخدمات العقارية",
+        "address": "7523 شارع مكة المكرمة، حي الشاطئ، 3595، جيزان 82812، المملكة العربية السعودية",
+        "phones": [
+          "0533667792"
+        ],
+        "coordinates": [
+          16.93342,
+          42.5584
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9334235,42.5583958&query_place_id=ChIJJRhZo3z9BxYR4Wr13mY4fbk",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب المحترف الذهبي للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "حي الشاطئ",
+        "address": "مكتب المحترف الذهبي للخدمات العقارية، 7523 شارع مكة المكرمة، حي الشاطئ، 3595، جيزان 82812",
+        "phone": "0533667792",
+        "coordinates": [
+          16.9334235,
+          42.5583958
+        ],
+        "placeId": "ChIJJRhZo3z9BxYR4Wr13mY4fbk",
+        "featureId": "0x1607fd7ca3591825:0xb97d3866def56ae1"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 3.499999998268777e-06,
+          "lon": -4.199999999343618e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9334235,42.5583958&query_place_id=ChIJJRhZo3z9BxYR4Wr13mY4fbk&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:30Z"
+    },
+    {
+      "id": "office-maps-efd877d2101f",
+      "city": "جازان",
+      "old": {
+        "name": "الطالبي للعقار - Al Talbi Estates",
+        "address": "VHV5+2J6، طريق المطار، جيزان 82722، المملكة العربية السعودية",
+        "phones": [
+          "0594446633"
+        ],
+        "coordinates": [
+          16.89254,
+          42.55902
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.8925358,42.5590148&query_place_id=ChIJ1apjVnTjBxYRoE7wkPdqpWU",
+        "activity": null
+      },
+      "new": {
+        "name": "الطالبي للعقار - Al Talbi Estates",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": null,
+        "address": "VHV5+2J6 الطالبي للعقار - Al Talbi Estates، طريق المطار، جيزان 82722",
+        "phone": "0594446633",
+        "coordinates": [
+          16.8925358,
+          42.5590148
+        ],
+        "placeId": "ChIJ1apjVnTjBxYRoE7wkPdqpWU",
+        "featureId": "0x1607e3745663aad5:0x65a56af790f04ea0"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -4.199999999343618e-06,
+          "lon": -5.19999999681886e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.8925358,42.5590148&query_place_id=ChIJ1apjVnTjBxYRoE7wkPdqpWU&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:17:30Z"
+    },
+    {
+      "id": "office-maps-f01a9b89d0ce",
+      "city": "جازان",
+      "old": {
+        "name": "مكتب جازان وطن للخدمات العقارية",
+        "address": "7103 طريق الامير سلطان بن عبدالعزيز، السويس، جازان 82613 2654، المملكة العربية السعودية",
+        "phones": [
+          "920031858"
+        ],
+        "coordinates": [
+          16.8485,
+          42.59184
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.8484987,42.591845&query_place_id=ChIJBea0NYXjBxYRubBsb0hyTD0",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب جازان وطن للخدمات العقارية",
+        "categories": [
+          "شركة إدارة عقارات",
+          "وكالة عقارات تجارية",
+          "مُصفٍّ عقاري",
+          "عقار شقق مفروشة",
+          "وكالة عقارات",
+          "وكيل عقاري",
+          "مثمّن عقارات",
+          "بائع العقارات بالمزاد",
+          "مستشار عقارات",
+          "مطوّر عقارات"
+        ],
+        "district": "السويس",
+        "address": "مكتب جازان وطن للخدمات العقارية، 7103 طريق الامير سلطان بن عبدالعزيز، السويس، جازان 82613 2654،",
+        "phone": "920031858",
+        "coordinates": [
+          16.8484987,
+          42.591845
+        ],
+        "placeId": "ChIJBea0NYXjBxYRubBsb0hyTD0",
+        "featureId": "0x1607e38535b4e605:0x3d4c72486f6cb0b9"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -1.300000000981072e-06,
+          "lon": 5.000000001587068e-06
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.8484987,42.591845&query_place_id=ChIJBea0NYXjBxYRubBsb0hyTD0&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:16:51Z"
+    },
+    {
+      "id": "office-maps-f9118afc05ad",
+      "city": "جازان",
+      "old": {
+        "name": "شركة السكن العقاري",
+        "address": "شارع الأمير بندر بن عبدالعزيز، الشاطئ، جيزان 82814، المملكة العربية السعودية",
+        "phones": [
+          "0175107366"
+        ],
+        "coordinates": [
+          16.94514,
+          42.56444
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.9451353,42.5644395&query_place_id=ChIJ-zNcFAv9BxYRItZ4iK51InQ",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة السكن العقاري",
+        "categories": [
+          "شركة إدارة عقارات",
+          "وكالة عقارات"
+        ],
+        "district": "الشاطئ",
+        "address": "شركة السكن العقاري، شارع الأمير بندر بن عبدالعزيز،، الشاطئ، جيزان 82814",
+        "phone": "0175107366",
+        "coordinates": [
+          16.9451353,
+          42.5644395
+        ],
+        "placeId": "ChIJ-zNcFAv9BxYRItZ4iK51InQ",
+        "featureId": "0x1607fd0b145c33fb:0x742275ae8878d622"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": -4.699999998081239e-06,
+          "lon": -4.999999987376214e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.9451353,42.5644395&query_place_id=ChIJ-zNcFAv9BxYRItZ4iK51InQ&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:16:51Z"
+    },
+    {
+      "id": "office-maps-fc93c074161b",
+      "city": "جازان",
+      "old": {
+        "name": "مكتب درة المطار للعقار",
+        "address": "Prince Faisal bin Fahad street، جيزان 82731، المملكة العربية السعودية",
+        "phones": [
+          "0501721000"
+        ],
+        "coordinates": [
+          16.88934,
+          42.58254
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=16.8893419,42.5825408&query_place_id=ChIJFT2TQRjjBxYRZGGOMDMT14U",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب درة المطار للعقار",
+        "categories": [
+          "وكيل عقاري"
+        ],
+        "district": null,
+        "address": "مكتب درة المطار للعقار، Prince Faisal bin Fahad street، جيزان 82731",
+        "phone": "0501721000",
+        "coordinates": [
+          16.889341899999998,
+          42.5825408
+        ],
+        "placeId": "ChIJFT2TQRjjBxYRZGGOMDMT14U",
+        "featureId": "0x1607e31841933d15:0x85d71333308e6164"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": {
+          "lat": 1.8999999973345894e-06,
+          "lon": 7.999999951380232e-07
+        },
+        "identityMatch": true
+      },
+      "status": "verified",
+      "recommendedChanges": {},
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=16.8893419,42.5825408&query_place_id=ChIJFT2TQRjjBxYRZGGOMDMT14U&hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:16:51Z"
+    },
+    {
+      "id": "v9-office-19e310b3d076",
+      "city": "بيش",
+      "old": {
+        "name": "شركة صفقة عشير للوساطة الرقمية",
+        "address": "طريق الأمير محمد بن ناصر، بيش 87311",
+        "phones": [
+          "0567778098"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B5%D9%81%D9%82%D8%A9%20%D8%B9%D8%B4%D9%8A%D8%B1%20%D9%84%D9%84%D9%88%D8%B3%D8%A7%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9%20%D8%A8%D9%8A%D8%B4",
+        "activity": null
+      },
+      "new": {
+        "name": "شركة صفقة عشير للوساطة الرقمية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": null,
+        "address": "شركة صفقة عشير للوساطة الرقمية، طريق الامير محمد بن ناصر، بيش 87311",
+        "phone": "0567778098",
+        "coordinates": [
+          17.376179399999998,
+          42.5281205
+        ],
+        "placeId": null,
+        "featureId": "0x15e2cb9d5338c235:0x499ab773f984c7fb"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          17.376179399999998,
+          42.5281205
+        ],
+        "address": "شركة صفقة عشير للوساطة الرقمية، طريق الامير محمد بن ناصر، بيش 87311",
+        "maps": "https://www.google.com/maps/?cid=5303753219917531131"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B5%D9%81%D9%82%D8%A9%20%D8%B9%D8%B4%D9%8A%D8%B1%20%D9%84%D9%84%D9%88%D8%B3%D8%A7%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9%200567778098%20%D8%A8%D9%8A%D8%B4?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:47Z"
+    },
+    {
+      "id": "v9-office-33e19b291f37",
+      "city": "بيش",
+      "old": {
+        "name": "مكتب أساس الجودة للخدمات العقارية",
+        "address": "شارع الثلاثين، بيش",
+        "phones": [
+          "0506966422"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A3%D8%B3%D8%A7%D8%B3%20%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A8%D9%8A%D8%B4",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب اساس الجودة للخدمات العقارية",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": null,
+        "address": "مكتب اساس الجودة للخدمات العقارية، شارع الثلاثين، بيش 87311",
+        "phone": "0506966422",
+        "coordinates": [
+          17.379074799999998,
+          42.535738599999995
+        ],
+        "placeId": null,
+        "featureId": "0x15e2cb02957166b1:0x367810041788ecca"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          17.379074799999998,
+          42.535738599999995
+        ],
+        "address": "مكتب اساس الجودة للخدمات العقارية، شارع الثلاثين، بيش 87311",
+        "maps": "https://www.google.com/maps/?cid=3924904685014150346"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A3%D8%B3%D8%A7%D8%B3%20%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200506966422%20%D8%A8%D9%8A%D8%B4?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:20:47Z"
+    },
+    {
+      "id": "v9-office-3af1d6a8ebfa",
+      "city": "بيش",
+      "old": {
+        "name": "مكتب الغانم للعقار والخدمات العامة",
+        "address": "بيش 87311",
+        "phones": [
+          "0505770203"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%BA%D8%A7%D9%86%D9%85%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D8%A8%D9%8A%D8%B4",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب الغانم للعقار والخدمات العامة",
+        "categories": [
+          "مكتب الشركات"
+        ],
+        "district": null,
+        "address": "مكتب الغانم للعقار والخدمات العامة، بيش 87311",
+        "phone": "0505770203",
+        "coordinates": [
+          17.3760625,
+          42.544062499999995
+        ],
+        "placeId": null,
+        "featureId": "0x15e2caae2fda7beb:0xd7fc7fe3b56b642f"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          17.3760625,
+          42.544062499999995
+        ],
+        "address": "مكتب الغانم للعقار والخدمات العامة، بيش 87311",
+        "maps": "https://www.google.com/maps/?cid=15563455028263609391"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%BA%D8%A7%D9%86%D9%85%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%200505770203%20%D8%A8%D9%8A%D8%B4?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:21:16Z"
+    },
+    {
+      "id": "v9-office-6f48609b6a84",
+      "city": "بيش",
+      "old": {
+        "name": "مكتب إبداع بيش للخدمات العامة",
+        "address": "بيش",
+        "phones": [
+          "0577532372"
+        ],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A5%D8%A8%D8%AF%D8%A7%D8%B9%20%D8%A8%D9%8A%D8%B4%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D8%A8%D9%8A%D8%B4",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب ابداع بيش للخدمات العامة",
+        "categories": [
+          "وكالة عقارات"
+        ],
+        "district": "9GGW+R9J،",
+        "address": "9GGW+R97 مكتب ابداع بيش للخدمات العامة، 9GGW+R9J،، بيش 87311،",
+        "phone": "0577532372",
+        "coordinates": [
+          17.37704,
+          42.545919
+        ],
+        "placeId": null,
+        "featureId": "0x15e2cb2d0a71b4d7:0x83ab7c342000b182"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": true,
+        "phoneMatchesAnyStored": true,
+        "coordinateDelta": null,
+        "identityMatch": true
+      },
+      "status": "needs_correction",
+      "recommendedChanges": {
+        "coordinates": [
+          17.37704,
+          42.545919
+        ],
+        "address": "9GGW+R97 مكتب ابداع بيش للخدمات العامة، 9GGW+R9J،، بيش 87311،",
+        "maps": "https://www.google.com/maps/?cid=9487813603303141762"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A5%D8%A8%D8%AF%D8%A7%D8%B9%20%D8%A8%D9%8A%D8%B4%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%200577532372%20%D8%A8%D9%8A%D8%B4?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:21:16Z"
+    },
+    {
+      "id": "v9-office-8084eb1ba210",
+      "city": "بيش",
+      "old": {
+        "name": "مكتب المريع للعقار",
+        "address": "طريق الملك عبدالله، بيش",
+        "phones": [],
+        "coordinates": [
+          null,
+          null
+        ],
+        "maps": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%85%D8%B1%D9%8A%D8%B9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A8%D9%8A%D8%B4",
+        "activity": null
+      },
+      "new": {
+        "name": "مكتب المريع للعقار",
+        "categories": [
+          "مُصفٍّ عقاري"
+        ],
+        "district": null,
+        "address": "مكتب المريع للعقار، طريق الملك عبدالله، بيش 87312",
+        "phone": null,
+        "coordinates": [
+          17.3749935,
+          42.522061
+        ],
+        "placeId": null,
+        "featureId": "0x15e2cb1ee8010ce5:0x7585a878d187adc8"
+      },
+      "evidence": {
+        "observedFromLiveGoogleMapsCard": true,
+        "nameMatch": true,
+        "nameSimilarity": 1.0,
+        "cityMatch": true,
+        "realEstateActivity": true,
+        "phoneShown": false,
+        "phoneMatchesAnyStored": null,
+        "coordinateDelta": null,
+        "identityMatch": true
+      },
+      "status": "needs_correction_phone_unconfirmed",
+      "recommendedChanges": {
+        "coordinates": [
+          17.3749935,
+          42.522061
+        ],
+        "address": "مكتب المريع للعقار، طريق الملك عبدالله، بيش 87312",
+        "maps": "https://www.google.com/maps/?cid=8468359911204957640"
+      },
+      "reason": null,
+      "source": "live Google Maps card",
+      "sourceUrl": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%85%D8%B1%D9%8A%D8%B9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%20%D8%A8%D9%8A%D8%B4?hl=ar&gl=sa",
+      "checkedAt": "2026-10-12T12:21:16Z"
+    }
+  ]
+}

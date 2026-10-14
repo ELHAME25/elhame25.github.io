@@ -1,0 +1,2457 @@
+{
+  "schema": "office-recheck-evidence-v2",
+  "date": "2026-10-13",
+  "lane": 4,
+  "coverage": 36,
+  "results": [
+    {
+      "id": "office-maps-2cc3ca16faa9",
+      "name": "شركة عبدالعزيز القريان العقارية",
+      "city": "الرس",
+      "excludedInCurrentInventory": false,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "office-maps-2cc3ca16faa9",
+        "decision": "verified",
+        "fieldsObserved": {
+          "name": "شركة عبدالعزيز القريان العقارية",
+          "activity": "اسم البطاقة يثبت النشاط العقاري؛ تصنيف Maps الظاهر عام «مكتب الشركات»",
+          "city": "الرس",
+          "district": "شارع الشنانة، الملك خالد، الرس 58883",
+          "phone": "+966 55 623 6333",
+          "pin": {
+            "lat": 25.8764891,
+            "lon": 43.4811153,
+            "plusCode": "VFGJ+HC الرس السعودية"
+          },
+          "liveObservation": true
+        },
+        "directPlaceLink": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2+%D8%A7%D9%84%D9%82%D8%B1%D9%8A%D8%A7%D9%86+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@25.8764891,43.4811153,17z/data=!3m1!4b1!4m6!3m5!1s0x1583b57cd4c1ca95:0x16a153f2d2fe15b4!8m2!3d25.8764891!4d43.4811153!16s%2Fg%2F11cs23nl8r",
+        "phoneEvidence": "بطاقة Google Maps المباشرة تعرض +966 55 623 6333، مطابقًا للرقم المخزن 0556236333.",
+        "pinEvidence": "رابط بطاقة المكان المباشر يفتح ذات المكان بإحداثيات 25.8764891,43.4811153 المطابقة تمامًا للدبوس المخزن؛ العنوان والمدينة مطابقان.",
+        "previousMapsAuditStatus": "verified_name_phone_location_activity_ambiguous",
+        "previousMapsAuditNote": "شركة عبدالعزيز القريان العقارية؛ البطاقة تصنف مكتب الشركات دون فئة عقارية، فالنشاط يحتاج تأكيدًا؛ الهاتف والموقع مطابقان.",
+        "patchProposed": null,
+        "reason": "مطابقة الاسم العقاري، رقم الهاتف المنشور، المدينة والعنوان، وإحداثيات بطاقة Google Maps المباشرة.",
+        "protected": false,
+        "verificationCriteria": {
+          "identityAndRealEstateActivity": true,
+          "pin": true,
+          "publicPhoneMatched": true,
+          "verifiedBy": "parent live Maps check"
+        }
+      },
+      "newQueries": [
+        "\"عبدالعزيز القريان\" عقار الرس 0556236333"
+      ],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "decision": "unresolved_activity",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "brokerageActivity"
+      ],
+      "note": "الاسم العقاري وتصنيف مكتب الشركات والتقييمات العامة لا تثبت الوساطة؛ لم يظهر دليل مستقل مطابق."
+    },
+    {
+      "id": "national-ejar-office-192222",
+      "name": "مكتب رواد الانجاز للعقارات",
+      "city": "نجران",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-192222",
+        "decision": null,
+        "fieldsObserved": {
+          "searchQuery": "مكتب رواد الانجاز للعقارات نجران",
+          "candidateCards": [
+            {
+              "name": "مكتب انجاز البركة للعقار",
+              "phone": "+966500181171"
+            },
+            {
+              "name": "مكتب رواد نجران للاستقدام"
+            }
+          ],
+          "exactTargetCard": false,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب رواد الانجاز للعقارات",
+            "city": "نجران",
+            "district": "طريق بدون اسم، نجران، نجران، المملكة العربية السعودية",
+            "phones": [
+              "0506791596"
+            ],
+            "lat": 17.64293,
+            "lon": 44.47744
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%88%D8%A7%D8%AF%20%D8%A7%D9%84%D8%A5%D9%86%D8%AC%D8%A7%D8%B2%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%200506791596",
+        "phoneEvidence": null,
+        "pinEvidence": null,
+        "previousMapsAuditStatus": "unresolved_no_matching_card",
+        "previousMapsAuditNote": "النتائج الظاهرة مكاتب استقدام/خدمات أخرى وليست بطاقة عقارية مطابقة للاسم والهاتف.",
+        "patchProposed": null,
+        "reason": "نتائج Maps المتاحة سابقًا أظهرت أنشطة مختلفة عن المكتب المستهدف؛ لا بطاقة باسمه أو هاتفه.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"رواد الانجاز\" نجران عقار",
+        "\"فاطمه\" \"حميره\" عقار نجران",
+        "\"رواد الانجاز\" عقارات نجران 0506791596",
+        "\"حمد عبدالله\" \"آل عباس\" عقار نجران",
+        "\"التم\" عقارات نجران 0506308963"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-194223",
+      "name": "مكتب حمد عبدالله حمد آل عباس للعقار",
+      "city": "نجران",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-194223",
+        "decision": null,
+        "fieldsObserved": {
+          "searchQuery": "مكتب حمد عبدالله حمد آل عباس للعقار نجران 0532909084",
+          "candidateCards": [
+            {
+              "name": "مكتب زابن الحله للعقارات",
+              "phone": "+966175420666",
+              "coords": "17.4922835,44.1389568"
+            },
+            {
+              "name": "مكتب غنام للعقارات",
+              "activity": "وكالة عقارات",
+              "phone": "+966559595738",
+              "coords": "17.5860093,44.2302483"
+            },
+            {
+              "name": "عقارات ابن رحمة",
+              "phone": "+966500431531",
+              "coords": "17.5666309,44.3307338"
+            }
+          ],
+          "exactTargetCard": false,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب حمد عبدالله حمد آل عباس للعقار",
+            "city": "نجران",
+            "district": "سلطان بن عبد العزيز، نجران، نجران، المملكة العربية السعودية",
+            "phones": [
+              "0532909084"
+            ],
+            "lat": 17.51736,
+            "lon": 44.28472
+          }
+        },
+        "directPlaceLink": "https://maps.google.com/maps?q=17.51735628,44.28471784",
+        "phoneEvidence": null,
+        "pinEvidence": null,
+        "previousMapsAuditStatus": "unresolved_maps_ui_timeout",
+        "previousMapsAuditNote": "تعذرت قراءة بطاقة Google Maps بسبب انتهاء مهلة تحميل الواجهة؛ لم يُستنتج عدم وجود المكتب ولم تُغيّر بياناته.",
+        "patchProposed": null,
+        "reason": "بحث Maps بالاسم والمدينة والهاتف أظهر مكاتب عقارية أخرى، ولم يظهر المكتب المستهدف أو رقمه؛ لا تُنسب النتائج له.",
+        "protected": false,
+        "followupAttempts": [
+          {
+            "source": "Google Maps direct search",
+            "query": "مكتب حمد عبدالله حمد آل عباس للعقار نجران 0532909084",
+            "liveObservation": true,
+            "observedCards": [
+              {
+                "name": "مكتب زابن الحله للعقارات",
+                "phoneIntl": "+966 17 542 0666",
+                "coordinates": "17.4922835,44.1389568"
+              },
+              {
+                "name": "مكتب غنام للعقارات",
+                "category": "وكالة عقارات",
+                "phoneIntl": "+966 55 959 5738",
+                "coordinates": "17.5860093,44.2302483"
+              },
+              {
+                "name": "عقارات ابن رحمة",
+                "category": "وكالة عقارات",
+                "phoneIntl": "+966 50 043 1531",
+                "coordinates": "17.5666309,44.3307338"
+              }
+            ],
+            "targetCardMatched": false,
+            "result": "لم تظهر بطاقة المكتب أو الرقم المسجل؛ البطاقات العقارية المعروضة تخص مكاتب أخرى ولا تنسب للسجل."
+          }
+        ]
+      },
+      "newQueries": [
+        "\"رواد الانجاز\" نجران عقار",
+        "\"فاطمه\" \"حميره\" عقار نجران",
+        "\"رواد الانجاز\" عقارات نجران 0506791596",
+        "\"حمد عبدالله\" \"آل عباس\" عقار نجران",
+        "\"التم\" عقارات نجران 0506308963"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-194158",
+      "name": "مكتب التم للخدمات العقارية",
+      "city": "نجران",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-194158",
+        "decision": null,
+        "fieldsObserved": {
+          "name": null,
+          "activity": null,
+          "city": "نجران",
+          "district": null,
+          "pin": "17.5863221,44.2424704 (موضع الإحداثيات المسجل، لا بطاقة نشاط)",
+          "phone": null,
+          "liveObservation": true,
+          "searchQuery": "مكتب التم للخدمات العقارية نجران",
+          "searchResultExactMatch": false,
+          "storedRecord": {
+            "name": "مكتب التم للخدمات العقارية",
+            "city": "نجران",
+            "district": "الاسكان 86، نجران، نجران، المملكة العربية السعودية",
+            "phones": [
+              "0506308963"
+            ],
+            "lat": 17.58632,
+            "lon": 44.24247
+          }
+        },
+        "directPlaceLink": "https://maps.google.com/maps?q=17.58632206,44.24247035",
+        "phoneEvidence": "لا بطاقة مستهدفة مطابقة للتحقق من الهاتف.",
+        "pinEvidence": "الإحداثيات من رابط الموضع المسجل فقط وليست دبوس بطاقة نشاط مطابقة.",
+        "previousMapsAuditStatus": "unresolved_maps_ui_timeout",
+        "previousMapsAuditNote": "تعذرت قراءة بطاقة Google Maps بسبب انتهاء مهلة تحميل الواجهة؛ لم يُستنتج عدم وجود المكتب ولم تُغيّر بياناته.",
+        "patchProposed": null,
+        "reason": "تم فتح موضع الإحداثيات وبحث خرائط Google عن الاسم؛ لم تظهر بطاقة مطابقة، والنتائج كانت مكاتب أخرى. لا أستنتج أن دبوس الإحداثيات يعود للمكتب.",
+        "protected": false,
+        "followupAttempts": [
+          {
+            "source": "Google Maps direct search",
+            "query": "مكتب التم للخدمات العقارية نجران 0506308963",
+            "pageOpened": true,
+            "cardSnapshot": false,
+            "outcome": "انتهت مهلة واجهة Maps قبل ظهور بطاقة؛ لا استنتاج ولا تعديل."
+          }
+        ]
+      },
+      "newQueries": [
+        "\"رواد الانجاز\" نجران عقار",
+        "\"فاطمه\" \"حميره\" عقار نجران",
+        "\"رواد الانجاز\" عقارات نجران 0506791596",
+        "\"حمد عبدالله\" \"آل عباس\" عقار نجران",
+        "\"التم\" عقارات نجران 0506308963"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-192377",
+      "name": "مكتب فاطمه أحمد بن علي حميره العقاري",
+      "city": "نجران",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-192377",
+        "decision": null,
+        "fieldsObserved": {
+          "searchQuery": "مكتب فاطمه أحمد بن علي حميره العقاري نجران 0592796666",
+          "candidateCards": [
+            {
+              "name": "مكتب غنام للعقارات",
+              "activity": "وكالة عقارات",
+              "phone": "+966559595738",
+              "coords": "17.5860093,44.2302483"
+            },
+            {
+              "name": "عقارات ابن رحمة",
+              "phone": "+966500431531",
+              "coords": "17.5666309,44.3307338"
+            }
+          ],
+          "exactTargetCard": false,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب فاطمه أحمد بن علي حميره العقاري",
+            "city": "نجران",
+            "district": "خالد بن عبدالعزيز، الفهد، نجران، نجران، المملكة العربية السعودية",
+            "phones": [
+              "0592796666"
+            ],
+            "lat": 17.5843,
+            "lon": 44.22913
+          }
+        },
+        "directPlaceLink": "https://maps.google.com/maps?q=17.58430322,44.22913313",
+        "phoneEvidence": null,
+        "pinEvidence": null,
+        "previousMapsAuditStatus": "unresolved_no_matching_maps_card",
+        "previousMapsAuditNote": "بحث Maps أظهر أماكن أخرى بأسماء وأرقام مختلفة دون بطاقة مطابقة؛ لا تعديل على السجل.",
+        "patchProposed": null,
+        "reason": "بحث Maps بالاسم والمدينة والهاتف أظهر نشاطات عقارية أخرى دون بطاقة بالاسم أو الرقم المستهدف؛ لا تصحيح.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"رواد الانجاز\" نجران عقار",
+        "\"فاطمه\" \"حميره\" عقار نجران",
+        "\"رواد الانجاز\" عقارات نجران 0506791596",
+        "\"حمد عبدالله\" \"آل عباس\" عقار نجران",
+        "\"التم\" عقارات نجران 0506308963"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-241858",
+      "name": "مؤسسة الدليل الذهبي للخدمات العقارية",
+      "city": "شرورة",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-241858",
+        "decision": null,
+        "fieldsObserved": {
+          "name": "مكتب الدليل العقاري شروره",
+          "activity": "عقار شقق مفروشة",
+          "city": "شرورة",
+          "district": "العزيزية، شارع الملك سعود، مقابل محطة الجزيرة",
+          "pin": "Plus Code F4W7+VQ شرورة",
+          "phone": "+966580082424",
+          "liveObservation": true,
+          "searchQuery": "مؤسسة الدليل الذهبي للخدمات العقارية شرورة شارع الملك سعود",
+          "storedRecord": {
+            "name": "مؤسسة الدليل الذهبي للخدمات العقارية",
+            "city": "شرورة",
+            "district": "الملك سعود بن عبدالعزيز، شرورة، نجران، المملكة العربية السعودية",
+            "phones": [
+              "0509958889"
+            ],
+            "lat": 17.49712,
+            "lon": 47.11442
+          }
+        },
+        "directPlaceLink": null,
+        "phoneEvidence": "البطاقة المرئية تعرض +966580082424، وليس الرقم المسجل 0509958889.",
+        "pinEvidence": "Plus Code مرئي F4W7+VQ؛ تعذر استخراج URL النهائي ذي الإحداثيات. يلزم تأكيد أن بطاقة «مكتب الدليل العقاري» هي نفس كيان «الدليل الذهبي» قبل تغيير الدبوس أو الهاتف.",
+        "previousMapsAuditStatus": "unresolved_no_matching_maps_card",
+        "previousMapsAuditNote": "نتيجة Maps الظاهرة «مكتب الدليل العقاري شرورة» لا تطابق الاسم المسجل؛ لا دليل لربطها بالسجل.",
+        "patchProposed": null,
+        "reason": "ظهرت بطاقة نشاط عقاري في شارع الملك سعود بالعزيزية، لكن اسمها «مكتب الدليل العقاري شروره» والهاتف مختلف عن السجل. صلة الكيان غير مثبتة، فلا أستبدل الهاتف أو الموقع.",
+        "protected": false,
+        "mapsAttempted": true
+      },
+      "newQueries": [
+        "\"الدليل الذهبي\" شرورة عقار",
+        "\"بصمة شرورة\" عقار",
+        "\"سالم علي الهمامي\" شرورة",
+        "\"بصمة شرورة\" العقاري"
+      ],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-211473",
+      "name": "مكتب سالم علي الهمامي للعقار",
+      "city": "شرورة",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-211473",
+        "decision": null,
+        "fieldsObserved": {
+          "name": null,
+          "activity": null,
+          "city": "شرورة",
+          "district": null,
+          "pin": null,
+          "phone": null,
+          "liveObservation": true,
+          "searchQuery": "مكتب سالم علي الهمامي للعقار شرورة شارع الملك عبدالله 0558305557",
+          "exactTargetCard": false,
+          "mapsVisibleMessage": "تعذّر على خرائط Google العثور على النتيجة المطابقة",
+          "storedRecord": {
+            "name": "مكتب سالم علي الهمامي للعقار",
+            "city": "شرورة",
+            "district": "شارع الملك عبدالله بن عبد العزيز، شرورة، نجران، المملكة العربية السعودية",
+            "phones": [
+              "0558305557"
+            ],
+            "lat": 17.49459,
+            "lon": 47.10781
+          }
+        },
+        "directPlaceLink": "https://maps.google.com/maps?q=17.49458669,47.10781171",
+        "phoneEvidence": "لا توجد بطاقة لقراءة رقم منشور.",
+        "pinEvidence": "لا توجد بطاقة أو إحداثيات مباشرة لمكان مستهدف.",
+        "previousMapsAuditStatus": "unresolved_maps_search_no_match",
+        "previousMapsAuditNote": "لم يعثر بحث Maps على بطاقة مطابقة للاسم أو الرقم.",
+        "patchProposed": null,
+        "reason": "بحث مباشر في خرائط Google بالاسم والمدينة والهاتف عرض رسالة عدم العثور على نتيجة؛ لا بطاقة مكان للتحقق أو التصحيح.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"الدليل الذهبي\" شرورة عقار",
+        "\"بصمة شرورة\" عقار",
+        "\"سالم علي الهمامي\" شرورة",
+        "\"بصمة شرورة\" العقاري"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-217480",
+      "name": "مكتب بصمة شرورة العقاري",
+      "city": "شرورة",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-217480",
+        "decision": null,
+        "fieldsObserved": {
+          "name": null,
+          "activity": null,
+          "city": "شرورة",
+          "district": null,
+          "pin": null,
+          "phone": null,
+          "liveObservation": true,
+          "searchQuery": "مكتب بصمة شرورة العقاري شرورة 0552276163",
+          "exactTargetCard": false,
+          "mapsVisibleMessage": "تعذّر على خرائط Google العثور على النتيجة المطابقة",
+          "storedRecord": {
+            "name": "مكتب بصمة شرورة العقاري",
+            "city": "شرورة",
+            "district": "شرورة، نجران، المملكة العربية السعودية",
+            "phones": [
+              "0552276163"
+            ],
+            "lat": 17.48503,
+            "lon": 47.11672
+          }
+        },
+        "directPlaceLink": "https://maps.google.com/maps?q=17.4850321,47.1167237",
+        "phoneEvidence": "لا توجد بطاقة لقراءة رقم منشور.",
+        "pinEvidence": "لا توجد بطاقة أو إحداثيات مباشرة لمكان مستهدف.",
+        "previousMapsAuditStatus": "unresolved_maps_ui_timeout",
+        "previousMapsAuditNote": "تعذرت قراءة بطاقة مطابقة بعد انتهاء المهلة؛ لم يُستنتج عدم وجود المكتب.",
+        "patchProposed": null,
+        "reason": "بحث مباشر في خرائط Google بالاسم والمدينة والهاتف عرض رسالة عدم العثور على نتيجة؛ لا بطاقة مكان للتحقق أو التصحيح.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"الدليل الذهبي\" شرورة عقار",
+        "\"بصمة شرورة\" عقار",
+        "\"سالم علي الهمامي\" شرورة",
+        "\"بصمة شرورة\" العقاري"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "office-maps-2ae22144b796",
+      "name": "مكتب الثريا المميز للعقار والخدمات العامه",
+      "city": "بيشة",
+      "excludedInCurrentInventory": false,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "office-maps-2ae22144b796",
+        "decision": "verified",
+        "fieldsObserved": {
+          "name": "مكتب الثريا المميز للعقار والخدمات العامه",
+          "activity": "مكتب الشركات (تقييمات تشير لخدمات عقارية)",
+          "city": "بيشة",
+          "district": "XHWX+CVM، شارع الخالدية، الفهد، بيشة 61361",
+          "pin": "19.9960994,42.5996569",
+          "phone": "+966509980021",
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب الثريا المميز للعقار والخدمات العامه",
+            "city": "بيشة",
+            "district": "XHWX+CVM، شارع الخالدية، الفهد، بيشة 61361، المملكة العربية السعودية",
+            "phones": [
+              "0509980021"
+            ],
+            "lat": 19.9961,
+            "lon": 42.59966
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AB%D8%B1%D9%8A%D8%A7+%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%87%E2%80%AD/@19.9960994,42.5996569,17z/data=!3m1!4b1!4m6!3m5!1s0x15f029986129aca1:0x7e9b49c590c078bb!8m2!3d19.9960994!4d42.5996569!16s%2Fg%2F11j4ldcsc2",
+        "phoneEvidence": "+966 50 998 0021 يطابق 0509980021 المخزن.",
+        "pinEvidence": "URL البطاقة 19.9960994,42.5996569 ويطابق 19.9961,42.59966 بالتقريب.",
+        "previousMapsAuditStatus": "verified_name_phone_location_activity_ambiguous",
+        "previousMapsAuditNote": "بطاقة الثريا المميز؛ الهاتف 0509980021 مطابق؛ تصنيف Maps «مكتب الشركات»؛ العنوان شارع الخالدية، الفهد، بيشة؛ الدبوس 19.9960994,42.5996569.",
+        "patchProposed": null,
+        "reason": "بطاقة Maps المباشرة تطابق الاسم والمدينة والعنوان والهاتف والدبوس. التصنيف الظاهر عام «مكتب الشركات» لكن المراجعات تصف نشاط المكتب العقاري.",
+        "protected": false,
+        "directPlaceUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AB%D8%B1%D9%8A%D8%A7+%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%87%E2%80%AD/@19.9960994,42.5996569,17z/data=!3m1!4b1!4m6!3m5!1s0x15f029986129aca1:0x7e9b49c590c078bb!8m2!3d19.9960994!4d42.5996569!16s%2Fg%2F11j4ldcsc2",
+        "observedFields": {
+          "name": "مكتب الثريا المميز للعقار والخدمات العامه",
+          "category": "مكتب الشركات",
+          "activityEvidence": "المراجعات الظاهرة تصف المكتب بخدمات العقارات في بيشة",
+          "city": "بيشة",
+          "address": "XHWX+CVM، شارع الخالدية، الفهد، بيشة 61361، المملكة العربية السعودية",
+          "publishedPhoneIntl": "+966 50 998 0021",
+          "urlCoordinates": [
+            19.9960994,
+            42.5996569
+          ]
+        },
+        "storedFields": {
+          "phones": [
+            "0509980021"
+          ],
+          "coordinates": [
+            19.9961,
+            42.59966
+          ]
+        },
+        "evidence": "الاسم والهاتف والعنوان متطابقة؛ إحداثيات URL النهائي تطابق المخزن بعد التقريب؛ النشاط مدعوم بنص المراجعات المعروضة.",
+        "liveCardOpened": true,
+        "verificationCriteria": {
+          "identityAndRealEstateActivity": true,
+          "pin": true,
+          "publicPhoneMatched": true
+        }
+      },
+      "newQueries": [
+        "\"الثريا المميز\" بيشة عقار",
+        "\"الثريا المميز\" عقار بيشة 0509980021"
+      ],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "decision": "unresolved_activity",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "brokerageActivity"
+      ],
+      "note": "الاسم العقاري وتصنيف مكتب الشركات والتقييمات العامة لا تثبت الوساطة؛ لم يظهر دليل مستقل مطابق."
+    },
+    {
+      "id": "v9-office-8c11ea4278b3",
+      "name": "مكتب الديرة",
+      "city": "سبت العلايا",
+      "excludedInCurrentInventory": false,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "v9-office-8c11ea4278b3",
+        "decision": null,
+        "fieldsObserved": {
+          "name": "مكتب الديرة",
+          "activity": "وكالة عقارات",
+          "city": "سبت العلاية",
+          "district": "2190 بلقرن 2، حي الواحة، سبت العلاية 67314",
+          "pin": "19.6290836,41.9910336",
+          "phone": null,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب الديرة",
+            "city": "سبت العلايا",
+            "district": "2190 بلقرن 2، حي الواحة، AIDB7745، 7745، سبت العلاية 67314، المملكة العربية السعودية",
+            "phones": [],
+            "lat": 19.6290836,
+            "lon": 41.9910336
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9%E2%80%AD/@19.6290836,41.9910336,17z/data=!3m1!4b1!4m6!3m5!1s0x15e57f005eedd0bf:0x357d5f93ea26c8a8!8m2!3d19.6290836!4d41.9910336!16s%2Fg%2F11xg5lvx75?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+        "phoneEvidence": "بطاقة Maps لا تنشر رقم اتصال؛ قائمة أرقام السجل فارغة.",
+        "pinEvidence": "URL البطاقة النهائي 19.6290836,41.9910336 مطابق لإحداثيات السجل.",
+        "previousMapsAuditStatus": "verified_name_activity_and_pin_phone_unlisted",
+        "previousMapsAuditNote": "تطابق الاسم والنشاط والدبوس/العنوان؛ بطاقة Maps لا تعرض هاتفًا، لذلك بقي الرقم المسجل غير مؤكد.",
+        "patchProposed": null,
+        "reason": "الاسم والنشاط والحي والدبوس تطابقوا، لكن Maps لا ينشر رقمًا ولا يوجد رقم مخزن؛ لا أعد المكتب مؤكدًا بالكامل وفق شرط مطابقة الهاتف.",
+        "protected": false,
+        "directPlaceUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%AF%D9%8A%D8%B1%D8%A9%E2%80%AD/@19.6290836,41.9910336,17z/data=!3m1!4b1!4m6!3m5!1s0x15e57f005eedd0bf:0x357d5f93ea26c8a8!8m2!3d19.6290836!4d41.9910336!16s%2Fg%2F11xg5lvx75?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+        "observedFields": {
+          "name": "مكتب الديرة",
+          "category": "وكالة عقارات",
+          "city": "سبت العلاية",
+          "address": "2190 بلقرن 2، حي الواحة، AIDB7745، 7745، سبت العلاية 67314، المملكة العربية السعودية",
+          "publishedPhone": null,
+          "urlCoordinates": [
+            19.6290836,
+            41.9910336
+          ]
+        },
+        "storedFields": {
+          "phones": [],
+          "coordinates": [
+            19.6290836,
+            41.9910336
+          ]
+        },
+        "evidence": "البطاقة تعرض الاسم والنشاط والعنوان دون رقم اتصال منشور؛ لا يوجد رقم مسجل. إحداثيات URL النهائي مطابقة للمخزن.",
+        "liveCardOpened": true,
+        "verificationCriteria": {
+          "identityAndRealEstateActivity": true,
+          "pin": true,
+          "publicPhoneMatched": false
+        }
+      },
+      "newQueries": [
+        "\"الديرة\" \"سبت\" عقار مكتب"
+      ],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-206891",
+      "name": "شركة الخالدي العقارية",
+      "city": "الظهران",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-206891",
+        "decision": null,
+        "fieldsObserved": {
+          "searchQuery": "شركة الخالدي العقارية الظهران",
+          "candidateCards": [
+            {
+              "name": "برج الخالدي Alkhaldi Tower",
+              "category": "مكتب الشركات",
+              "phone": "+966138064999",
+              "coords": "26.3361022,50.1295176"
+            },
+            {
+              "name": "موسسة راكان الخالدي للخدمات العقارية",
+              "category": "وكالة عقارات",
+              "coords": "26.2719424,50.2117104"
+            }
+          ],
+          "exactTargetCard": false,
+          "storedPinNearTower": true,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "شركة الخالدي العقارية",
+            "city": "الظهران",
+            "district": "1 الجامعة، الدانة الشمالية، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+            "phones": [],
+            "lat": 26.33628,
+            "lon": 50.1295
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/search/%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+        "phoneEvidence": null,
+        "pinEvidence": null,
+        "previousMapsAuditStatus": "unresolved_no_matching_maps_card",
+        "previousMapsAuditNote": "No exact card; similar-name real estate result in Dammam without phone is insufficient.",
+        "patchProposed": null,
+        "reason": "بحث Maps أظهر برجًا باسم الخالدي ونشاطًا عقاريًا آخر باسم راكان؛ لا توجد بطاقة باسم السجل. إحداثيات برج الخالدي قريبة من دبوس السجل، لكن تعذر فتح بطاقته للتحقق من الصلة؛ لا تصحيح أو مطابقة.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"الخالدي العقارية\" الظهران",
+        "\"الخالدي العقارية\" الظهران"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-200067",
+      "name": "مؤسسة درهام العقارية",
+      "city": "الظهران",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-200067",
+        "decision": null,
+        "fieldsObserved": {
+          "searchQuery": "مؤسسة درهام العقارية الظهران الدانة الشمالية 0551777713",
+          "candidate": "الدانة الشمالية",
+          "candidateType": "neighborhood only",
+          "candidateCoordinates": "26.3373843,50.1492764",
+          "exactBusinessCard": false,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مؤسسة درهام العقارية",
+            "city": "الظهران",
+            "district": "11ب، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+            "phones": [
+              "0551777713"
+            ],
+            "lat": 26.34343,
+            "lon": 50.15297
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/search/مؤسسة+درهام+العقارية+الظهران",
+        "phoneEvidence": null,
+        "pinEvidence": null,
+        "previousMapsAuditStatus": "unresolved_no_matching_card",
+        "previousMapsAuditNote": "لا بطاقة عقارية مطابقة للاسم والهاتف 0551777713؛ بحث المدينة فقط لا يكفي.",
+        "patchProposed": null,
+        "reason": "بحث خرائط لم يُظهر مؤسسة درهام؛ النتيجة الظاهرة حي الدانة الشمالية فقط ولا تثبت نشاط المكتب أو الهاتف.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"الخالدي العقارية\" الظهران",
+        "\"درهام العقارية\"",
+        "\"الخالدي العقارية\" الظهران",
+        "\"درهام العقارية\" 0551777713"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-400222",
+      "name": "مكتب علياء القصور العقاري",
+      "city": "الظهران",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-400222",
+        "decision": null,
+        "fieldsObserved": {
+          "searchQuery": "مكتب علياء القصور العقاري الظهران",
+          "candidateCards": [
+            {
+              "name": "مكتب عوالي الظهران للخدمات العقارية",
+              "activity": "شركة إدارة عقارات",
+              "phone": "+966539000997",
+              "coords": "26.3455214,50.0767407"
+            },
+            {
+              "name": "عوالي الظهران",
+              "type": "مجمع سكني",
+              "coords": "26.3497975,50.0960389"
+            }
+          ],
+          "exactTargetCard": false,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب علياء القصور العقاري",
+            "city": "الظهران",
+            "district": "ع، الظهران، المنطقة الشرقية، المملكة العربية السعودية",
+            "phones": [
+              "0555051001"
+            ],
+            "lat": 26.34552,
+            "lon": 50.15639
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/search/مكتب+علياء+القصور+العقاري+الظهران",
+        "phoneEvidence": "الرقم المنشور لبطاقة عوالي مختلف عن 0555051001.",
+        "pinEvidence": "إحداثيات بطاقة عوالي 26.3455214,50.0767407 لا تطابق 26.34552,50.15639 المخزنة.",
+        "previousMapsAuditStatus": "unresolved_no_matching_card",
+        "previousMapsAuditNote": "نتائج عوالي الظهران لا تطابق المكتب أو الهاتف 0555051001.",
+        "patchProposed": null,
+        "reason": "بحث Maps أظهر مكتبًا عقاريًا آخر باسم عوالي الظهران في إحداثيات بعيدة عن دبوس السجل؛ لا بطاقة «علياء القصور» ولا رقمها.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"الخالدي العقارية\" الظهران",
+        "\"الخالدي العقارية\" الظهران"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-yango-office-108112364856",
+      "name": "العارضي للخدمات العقارية",
+      "city": "حفر الباطن",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-yango-office-108112364856",
+        "decision": null,
+        "fieldsObserved": {
+          "name": null,
+          "activity": null,
+          "city": "حفر الباطن",
+          "district": null,
+          "pin": null,
+          "phone": null,
+          "liveObservation": true,
+          "searchQuery": "العارضي للخدمات العقارية حفر الباطن الملك خالد 0505944124",
+          "candidateCards": [
+            {
+              "name": "شركة داركوسي العقارية",
+              "city": "الكويت",
+              "phone": "+966534929474",
+              "coords": "28.4396767,46.0390386"
+            },
+            {
+              "name": "مكتب الفياض للعقارات",
+              "phone": "+966137226777",
+              "coords": "28.4396741,46.038857"
+            },
+            {
+              "name": "مكتب العارضي للعقار",
+              "coords": "32.0502316,44.3401185 (خارج السعودية)"
+            }
+          ],
+          "exactTargetCard": false,
+          "storedRecord": {
+            "name": "العارضي للخدمات العقارية",
+            "city": "حفر الباطن",
+            "district": "Hafar Al Batin, Al Aziziyah District, الملك خالد بن عبدالعزيز, CNMF3824",
+            "phones": [
+              "0505944124"
+            ],
+            "lat": null,
+            "lon": null
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6%D9%8A+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%AD%D9%81%D8%B1+%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+        "phoneEvidence": "لا رقم منشور لبطاقة مستهدفة.",
+        "pinEvidence": "لا إحداثي لبطاقة مستهدفة.",
+        "previousMapsAuditStatus": "unresolved_no_matching_card",
+        "previousMapsAuditNote": "نتائج الاسم المشابه كانت خارج المملكة وبلا هاتف مطابق؛ لا بطاقة مطابقة.",
+        "patchProposed": null,
+        "reason": "لم تظهر بطاقة العارضي المستهدفة في حفر الباطن. النتائج كانت لمكاتب أخرى، وأقرب تشابه اسمي عُرض بدبوس خارج السعودية، فلا يطابق السجل.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"العارضي للخدمات العقارية\""
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-yango-office-118644541594",
+      "name": "مؤسسة دمث للخدمات العقارية",
+      "city": "قرية العليا",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-yango-office-118644541594",
+        "decision": null,
+        "fieldsObserved": {
+          "name": null,
+          "activity": null,
+          "city": "قرية العليا",
+          "district": null,
+          "pin": null,
+          "phone": null,
+          "liveObservation": true,
+          "searchQuery": "مؤسسة دمث للخدمات العقارية قرية العليا 0559909449",
+          "candidateCards": [
+            {
+              "name": "قرية العليا",
+              "coords": "27.5548049,47.6947512",
+              "type": "مدينة فقط"
+            }
+          ],
+          "exactTargetCard": false,
+          "storedRecord": {
+            "name": "مؤسسة دمث للخدمات العقارية",
+            "city": "قرية العليا",
+            "district": "قرية العليا, حي الروضة, الامير فهد بن محمد بن عبدالعزيز, CIMA4878",
+            "phones": [
+              "0559909449"
+            ],
+            "lat": 27.56583,
+            "lon": 47.70028
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%AF%D9%85%D8%AB+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%82%D8%B1%D9%8A%D8%A9+%D8%A7%D9%84%D8%B9%D9%84%D9%8A%D8%A7",
+        "phoneEvidence": "لا رقم منشور لبطاقة مستهدفة.",
+        "pinEvidence": "لا إحداثي لبطاقة مستهدفة.",
+        "previousMapsAuditStatus": "unresolved_no_matching_card",
+        "previousMapsAuditNote": "لم تظهر بطاقة مطابقة للاسم/الهاتف/المدينة؛ لا تغيير.",
+        "patchProposed": null,
+        "reason": "Maps عرض نتيجة مطابقة جزئية للبلدة فقط، ولم يعرض بطاقة للمؤسسة أو الهاتف أو دبوس النشاط.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"دمث للخدمات العقارية\""
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-194986",
+      "name": "مكتب طلال بشير رحيل الرشيدي العقاري",
+      "city": "خيبر",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-194986",
+        "decision": null,
+        "fieldsObserved": {
+          "searchQuery": "مكتب طلال بشير رحيل الرشيدي العقاري خيبر 0554598013",
+          "exactTargetCard": false,
+          "visibleResult": "خيبر (مكان جغرافي عام فقط)",
+          "visiblePhone": null,
+          "visibleCoordinates": "25.6857666,39.29208",
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب طلال بشير رحيل الرشيدي العقاري",
+            "city": "خيبر",
+            "district": "شارع الزبير بن العوام، العزيزية، خيبر، المدينة المنورة، المملكة العربية السعودية",
+            "phones": [
+              "0554598013"
+            ],
+            "lat": 25.70778,
+            "lon": 39.27408
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B7%D9%84%D8%A7%D9%84%20%D8%A8%D8%B4%D9%8A%D8%B1%20%D8%B1%D8%AD%D9%8A%D9%84%20%D8%A7%D9%84%D8%B1%D8%B4%D9%8A%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200554598013%20%D8%AE%D9%8A%D8%A8%D8%B1",
+        "phoneEvidence": null,
+        "pinEvidence": null,
+        "previousMapsAuditStatus": "unresolved_no_matching_maps_card",
+        "previousMapsAuditNote": "Maps returned Khaybar city only; no matching office card, phone, or pin.",
+        "patchProposed": null,
+        "reason": "بحث Maps أظهر نتيجة جغرافية عامة لمدينة خيبر لا بطاقة مكتب. لا مطابقة للهاتف أو الموقع.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"خيرات طيبة\" خيبر"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-285435",
+      "name": "مكتب خيرات طيبة للخدمات العقارية",
+      "city": "خيبر",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-285435",
+        "decision": null,
+        "fieldsObserved": {
+          "searchQuery": "مكتب خيرات طيبة للخدمات العقارية خيبر 0561378972",
+          "visibleResult": "خيبر",
+          "visibleCoordinates": "25.6857666,39.29208 (مدينة عامة)",
+          "exactTargetCard": false,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب خيرات طيبة للخدمات العقارية",
+            "city": "خيبر",
+            "district": "طريق الملك عبدالعزيز، خيبر، المدينة المنورة، المملكة العربية السعودية",
+            "phones": [
+              "0561378972"
+            ],
+            "lat": 25.68977,
+            "lon": 39.2954
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D8%AD%D9%85%D8%AF+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%87+%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15a327005c52e677:0xaad1be146b63c44b!8m2!3d25.6897952!4d39.2952273!16s%2Fg%2F11vwz5gc6s",
+        "phoneEvidence": "لا توجد بطاقة مستهدفة ورقم الهاتف غير ظاهر على نتيجة المدينة.",
+        "pinEvidence": "نتيجة المدينة العامة لا تثبت دبوس المكتب؛ موضع رابط مكتب أحمد غير كافٍ لإسناده للهدف.",
+        "previousMapsAuditStatus": "unresolved_same_phone_different_name_closed",
+        "previousMapsAuditNote": "نفس رقم الهاتف على بطاقة باسم مختلف ومغلقة نهائيًا؛ لم يثبت أنها تخص خيرات طيبة، لم يؤرشف المكتب ولم يعدل الهاتف.",
+        "patchProposed": null,
+        "reason": "بحث Maps بالاسم والهاتف أظهر مدينة خيبر فقط. الرابط المباشر المسجل باسم مكتب أحمد للخدمات العقارية الإلكترونية لا يعرض بطاقة تفاصيل، ولا يثبت اسم خيرات طيبة.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"خيرات طيبة\" خيبر"
+      ],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [
+        {
+          "url": "https://haraj.com.sa/11178651110/",
+          "ref": "turn35search1",
+          "observed": "إعلان صادر باسم صاحب الترخيص مكتب خيرات طيبة للخدمات العقارية؛ هاتف مسؤول الإعلان0561378972 مطابق؛ رابط الإعلان موقع عقار معروض لا المكتب.",
+          "proves": [
+            "name",
+            "brokerageActivity",
+            "publicPhone"
+          ],
+          "doesNotProve": [
+            "mapsPin"
+          ]
+        }
+      ],
+      "remainingUnprovenFields": [
+        "mapsPin"
+      ],
+      "restorationRecommended": true
+    },
+    {
+      "id": "national-bizmideast-office-14965302872305815554",
+      "name": "مكتب الخليج العقاري",
+      "city": "طريف",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-bizmideast-office-14965302872305815554",
+        "decision": null,
+        "fieldsObserved": {
+          "searchQuery": "مكتب الخليج العقاري طريف طريق عثمان بن عفان 0553186324",
+          "candidateCards": [
+            {
+              "name": "مكتب أعمال طريف العقاري",
+              "phone": "+966506770131",
+              "address": "شارع مكة المكرمة"
+            },
+            {
+              "name": "مكتب مكه العقاري",
+              "activity": "وكالة عقارات",
+              "phone": "+966556784488",
+              "plusCode": "MM5H+35F"
+            },
+            {
+              "name": "مكتب الزيتون العقاري",
+              "address": "MM5H+V73"
+            }
+          ],
+          "exactTargetCard": false,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب الخليج العقاري",
+            "city": "طريف",
+            "district": "طريق عثمان بن عفان, Al Khalij, Turaif 75311, Saudi Arabia",
+            "phones": [
+              "0553186324"
+            ],
+            "lat": null,
+            "lon": null
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/?cid=14965302872305815554",
+        "phoneEvidence": "الأرقام المنشورة للنتائج الأخرى مختلفة عن 0553186324.",
+        "pinEvidence": "لا يوجد رابط دبوس لبطاقة الهدف؛ لا إحداثيات مخزنة للمقارنة.",
+        "previousMapsAuditStatus": "unresolved_no_matching_maps_card",
+        "previousMapsAuditNote": "Other Turaif offices appeared; no matching name or number.",
+        "patchProposed": null,
+        "reason": "بحث Maps في طريف أظهر عدة مكاتب عقارية أخرى قريبة بالاسم/المنطقة، ولم تظهر بطاقة مكتب الخليج أو الرقم المسجل؛ لا أُنسب بطاقة بديلة للسجل.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"الخليج العقاري\" طريف",
+        "\"مكتب الخليج العقاري\" طريف 0553186324"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-528127",
+      "name": "مكتب محمد أبراهيم ألفايز للخدمات العقارية",
+      "city": "حقل",
+      "excludedInCurrentInventory": false,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-528127",
+        "decision": null,
+        "fieldsObserved": {
+          "name": "مكتب محمد الفايز للخدمات العقاريه",
+          "activity": "وكالة عقارات صناعية",
+          "city": "حقل",
+          "district": "3756 الأمير سلطان بن عبدالعزيز، الظهرة، حقل 49938",
+          "pin": "29.2874639,34.9462545",
+          "phone": "+966531661300",
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب محمد أبراهيم ألفايز للخدمات العقارية",
+            "city": "حقل",
+            "district": "الامير سلطان بن عبدالعزيز، حقل، تبوك، المملكة العربية السعودية",
+            "phones": [
+              "0594333318"
+            ],
+            "lat": 29.28753,
+            "lon": 34.94631
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%85%D8%AD%D9%85%D8%AF+%D8%A7%D9%84%D9%81%D8%A7%D9%8A%D8%B2+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%87%E2%80%AD/@29.2874639,34.9462545,17z/data=!3m1!4b1!4m6!3m5!1s0x15aa990011412525:0xd40c06ed4a74f3b2!8m2!3d29.2874639!4d34.9462545!16s%2Fg%2F11npf11w_t?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+        "phoneEvidence": "الهاتف المنشور +966 53 166 1300 لا يطابق رقم السجل 0594333318. لا أستبدل/أحذف الرقم القديم دون تأكيد كون بطاقة Google تخص الكيان نفسه رغم تقارب الاسم والنشاط والمدينة.",
+        "pinEvidence": "إحداثيات URL البطاقة المباشرة 29.2874639,34.9462545 في حقل؛ لا توجد إحداثيات مسجلة للمقارنة.",
+        "previousMapsAuditStatus": "unresolved_no_matching_card",
+        "previousMapsAuditNote": "مكتب محمد إبراهيم ألفايز بحقل؛ لم تظهر بطاقة مطابقة للاسم أو الهاتف 0594333318.",
+        "patchProposed": null,
+        "reason": "بطاقة مباشرة باسم قريب ونشاط عقاري ومدينة حقل؛ العنوان في حي الظهرة. الاسم مختصر عن اسم السجل، ورقم الهاتف مختلف. الحالة تحتاج حسم هوية المكتب/الرقم قبل تعديل البيانات.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"محمد ابراهيم الفايز\" حقل عقار"
+      ],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-yango-office-202682836844",
+      "name": "مكتب المرقب العقاري",
+      "city": "طريف",
+      "excludedInCurrentInventory": false,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-yango-office-202682836844",
+        "decision": "verified",
+        "fieldsObserved": {
+          "name": "مكتب المرقب للعقارات",
+          "activity": "وكالة عقارات",
+          "city": "طريف",
+          "district": "طريق عثمان بن عفان، سلطانة، طريف 75311",
+          "pin": "31.6652006,38.6746587",
+          "phone": "+966566696963",
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب المرقب العقاري",
+            "city": "طريف",
+            "district": "الحدود الشمالية, طريف, حي السلطانة",
+            "phones": [
+              "0566696963"
+            ],
+            "lat": 31.6652,
+            "lon": 38.67466
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%85%D8%B1%D9%82%D8%A8+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@31.6652006,38.6746587,17z/data=!3m1!4b1!4m6!3m5!1s0x1513dfa9ef2302a5:0x801ccea3b25d2d92!8m2!3d31.6652006!4d38.6746587!16s%2Fg%2F11hdf1ml84?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+        "phoneEvidence": "رقم البطاقة +966 56 669 6963 يطابق الرقم المسجل 0566696963.",
+        "pinEvidence": "إحداثيات URL المباشر 31.6652006,38.6746587 تطابق المخزن 31.6652,38.67466 بالتقريب.",
+        "previousMapsAuditStatus": "unresolved_no_matching_card",
+        "previousMapsAuditNote": "مكتب المرقب العقاري بطريف؛ لم تظهر بطاقة مطابقة للاسم والهاتف 0566696963.",
+        "patchProposed": null,
+        "reason": "البطاقة المباشرة مطابقة للاسم والنشاط والمدينة والحي والهاتف والدبوس.",
+        "protected": false,
+        "verificationCriteria": {
+          "identityAndRealEstateActivity": true,
+          "pin": true,
+          "publicPhoneMatched": true
+        }
+      },
+      "newQueries": [
+        "\"الخليج العقاري\" طريف",
+        "\"مكتب الخليج العقاري\" طريف 0553186324"
+      ],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "decision": "verified_from_preserved_sufficient_evidence",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": []
+    },
+    {
+      "id": "national-icuae-office-ChIJwdFiCs4NbBURDZkpuLuhk3s",
+      "name": "مكتب الرميح العقاري",
+      "city": "عرعر",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-icuae-office-ChIJwdFiCs4NbBURDZkpuLuhk3s",
+        "decision": null,
+        "fieldsObserved": {
+          "name": "مكتب مبارك العقاري العقاري",
+          "activity": "وكالة عقارات",
+          "city": "عرعر",
+          "district": "X3R8+896، شارع القدس، المنصورية، عرعر 73244",
+          "phone": "+966508512183",
+          "pin": null,
+          "liveObservation": true,
+          "searchQuery": "مكتب الرميح العقاري عرعر الاصفر 73311 0507387668",
+          "exactTargetCard": false,
+          "storedRecord": {
+            "name": "مكتب الرميح العقاري",
+            "city": "عرعر",
+            "district": "الاصفر – Arar 73311 – Saudi Arabia –",
+            "phones": [
+              "0507387668"
+            ],
+            "lat": null,
+            "lon": null
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/place/?q=place_id:ChIJwdFiCs4NbBURDZkpuLuhk3s",
+        "phoneEvidence": "النتيجة المرئية باسم مكتب مبارك، ورقمها مختلف؛ لا تُنسب إلى الرميح.",
+        "pinEvidence": "النتيجة في عرعر لكن الحي والعنوان واسم النشاط مختلفان عن السجل؛ لم تُستخرج إحداثيات البطاقة لارتباطها غير المثبت.",
+        "previousMapsAuditStatus": "unresolved_maps_card_blank",
+        "previousMapsAuditNote": "مكتب الرميح العقاري بعرعر؛ محاولة فتح Place ID ثم البحث بالاسم/الهاتف لم تعرض بطاقة قابلة للقراءة. لا تغيير على السجل.",
+        "patchProposed": null,
+        "reason": "بحث Maps بالاسم والهاتف والمدينة أظهر بطاقة مكتب مبارك العقاري بشارع القدس، لا مكتب الرميح في الأصفر. اختلاف الاسم والعنوان والهاتف يمنع اعتبارها بطاقة الهدف.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"الرميح العقاري\" عرعر",
+        "\"الرميح العقاري\" عرعر 0507387668"
+      ],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ],
+      "directMapsContinuation": {
+        "id": "national-icuae-office-ChIJwdFiCs4NbBURDZkpuLuhk3s",
+        "actualAttempt": true,
+        "decision": "unresolved_fields",
+        "source": "https://www.google.com/maps/place/?q=place_id:ChIJwdFiCs4NbBURDZkpuLuhk3s",
+        "note": "Stored Place-ID produced blank unnamed Maps card; exact name+city+phone via visible Maps search UI also blank unnamed panel. No office field confirmed.",
+        "criteria": {
+          "name": true,
+          "brokerageActivity": false,
+          "mapsPin": false,
+          "publicPhone": false
+        },
+        "fieldEvidence": {
+          "name": {
+            "source": "prior saved audit",
+            "file": "OFFICE_RECHECK_2026-10-13_LANE4.json",
+            "inheritedCriterion": true
+          }
+        },
+        "proposedPatch": null,
+        "remainingUnprovenFields": [
+          "brokerageActivity",
+          "mapsPin",
+          "publicPhone"
+        ],
+        "patchProposed": null
+      },
+      "fieldEvidence": {
+        "name": {
+          "source": "prior saved audit",
+          "file": "OFFICE_RECHECK_2026-10-13_LANE4.json",
+          "inheritedCriterion": true
+        }
+      }
+    },
+    {
+      "id": "prior-qadisiyya-79",
+      "name": "مكتب واجهة الخليج للخدمات العقارية",
+      "city": "الرياض",
+      "excludedInCurrentInventory": false,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "prior-qadisiyya-79",
+        "decision": "unresolved",
+        "fieldsObserved": {
+          "name": null,
+          "activity": null,
+          "city": null,
+          "district": null,
+          "pin": null,
+          "phone": null,
+          "liveObservation": false,
+          "storedRecord": {
+            "name": "مكتب واجهة الخليج للخدمات العقارية",
+            "city": "الرياض",
+            "district": "الخليج",
+            "phones": [
+              "0590144410"
+            ],
+            "lat": 24.77938,
+            "lon": 46.79488
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps?q=24.779379789495,46.794878940488",
+        "phoneEvidence": null,
+        "pinEvidence": null,
+        "previousMapsAuditStatus": "unresolved_no_matching_card",
+        "previousMapsAuditNote": "لم تظهر بطاقة مطابقة للاسم أو الهاتف؛ لا استنتاج إغلاق.",
+        "patchProposed": null,
+        "reason": "سجل القادسية محمي؛ لم يُفتح ولم يُفحص.",
+        "protected": true
+      },
+      "newQueries": [
+        "\"واجهة الخليج\" عقار الرياض 0590144410"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-195982",
+      "name": "مكتب رواسي الصقر للعقار",
+      "city": "بلجرشي",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-195982",
+        "decision": null,
+        "fieldsObserved": {
+          "searchQuery": "مكتب رواسي الصقر للعقار بلجرشي 0598888801",
+          "result": "بلجرشي (مدينة عامة فقط)",
+          "exactTargetCard": false,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب رواسي الصقر للعقار",
+            "city": "بلجرشي",
+            "district": "طريق الملك عبدالعزيز، بلجرشي، الباحة، المملكة العربية السعودية",
+            "phones": [
+              "0598888801"
+            ],
+            "lat": 19.91537,
+            "lon": 41.5609
+          }
+        },
+        "directPlaceLink": "https://maps.google.com/maps?q=19.91536486,41.56089507",
+        "phoneEvidence": "لم يظهر هاتف لنشاط مستهدف.",
+        "pinEvidence": "نتيجة المدينة العامة لا تثبت الدبوس المسجل.",
+        "previousMapsAuditStatus": "unresolved_no_matching_maps_card",
+        "previousMapsAuditNote": "لم تظهر بطاقة مطابقة؛ بحث المدينة فقط لا يثبت الهاتف أو الموقع.",
+        "patchProposed": null,
+        "reason": "بحث Maps أظهر نتيجة بلجرشي العامة فقط، لا بطاقة مكتب بالاسم أو الهاتف المسجل.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"مرادك العقارية\" بلجرشي",
+        "\"رواسي الصقر\" بلجرشي",
+        "\"مرادك العقارية\" بلجرشي"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-415930",
+      "name": "مكتب مرادك العقارية",
+      "city": "بلجرشي",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-415930",
+        "decision": null,
+        "fieldsObserved": {
+          "searchQuery": "مكتب مرادك العقارية بلجرشي 0564343585",
+          "result": "بلجرشي (مدينة عامة فقط)",
+          "exactTargetCard": false,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب مرادك العقارية",
+            "city": "بلجرشي",
+            "district": "الملك عبدالعزيز، بلجرشي، الباحة، المملكة العربية السعودية",
+            "phones": [
+              "0564343585"
+            ],
+            "lat": 19.94151,
+            "lon": 41.55202
+          }
+        },
+        "directPlaceLink": "https://maps.google.com/maps?q=19.94151328,41.55201581",
+        "phoneEvidence": "لم يظهر هاتف لنشاط مستهدف.",
+        "pinEvidence": "نتيجة المدينة العامة لا تثبت الدبوس المسجل.",
+        "previousMapsAuditStatus": "unresolved_no_matching_maps_card",
+        "previousMapsAuditNote": "لم تظهر بطاقة مكتب مطابقة؛ نتائج المدينة فقط.",
+        "patchProposed": null,
+        "reason": "بحث Maps أظهر نتيجة بلجرشي العامة فقط، لا بطاقة مكتب بالاسم أو الهاتف المسجل.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"مرادك العقارية\" بلجرشي",
+        "\"رواسي الصقر\" بلجرشي",
+        "\"مرادك العقارية\" بلجرشي"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-google-office-ChIJTTocWQAb5RURMyGJ14XzxVQ",
+      "name": "مكتب المهند للعقار بالنماص",
+      "city": "النماص",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-google-office-ChIJTTocWQAb5RURMyGJ14XzxVQ",
+        "decision": null,
+        "fieldsObserved": {
+          "name": "مكتب المهند للعقار بالنماص",
+          "activity": "عقار شقق مفروشة",
+          "city": "النماص",
+          "district": "السلام، النماص 67387",
+          "pin": null,
+          "phone": "+966504780767",
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب المهند للعقار بالنماص",
+            "city": "النماص",
+            "district": "السلام، النماص 67387، المملكة العربية السعودية",
+            "phones": [
+              "0504780767"
+            ],
+            "lat": 19.12847,
+            "lon": 42.1315
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/place/?q=place_id:ChIJTTocWQAb5RURMyGJ14XzxVQ",
+        "phoneEvidence": "رقم البطاقة +966504780767 يطابق رقمًا مسجلًا.",
+        "pinEvidence": "لم تظهر إحداثيات من URL البطاقة النهائي.",
+        "previousMapsAuditStatus": "partial_name_phone_match_activity_unconfirmed",
+        "previousMapsAuditNote": "بطاقة مكتب المهند للعقار تعرض الهاتف 0504780767 المطابق؛ السلام، النماص 67387، Plus 44HJ+9J؛ تصنيف البطاقة عقار شقق مفروشة.",
+        "patchProposed": null,
+        "reason": "البطاقة المباشرة مفتوحة؛ الاسم والهاتف والعنوان مطابقون. بطاقة place_id لم تعرض إحداثيات URL نهائية قابلة للمطابقة، لذلك لا أقرر مطابقة الموقع.",
+        "protected": false,
+        "directPlaceUrl": "https://www.google.com/maps/place/?q=place_id:ChIJTTocWQAb5RURMyGJ14XzxVQ",
+        "liveCardOpened": true,
+        "observedFields": {
+          "name": "مكتب المهند للعقار بالنماص",
+          "category": "عقار شقق مفروشة",
+          "address": "السلام، النماص 67387، المملكة العربية السعودية",
+          "plusCode": "44HJ+9J النماص السعودية",
+          "phoneIntl": "+966 50 478 0767",
+          "finalUrlCoordinates": null
+        },
+        "storedFields": {
+          "name": "مكتب المهند للعقار بالنماص",
+          "city": "النماص",
+          "districtOrAddress": null,
+          "phones": [
+            "0504780767"
+          ]
+        },
+        "evidence": "بطاقة Maps المباشرة طابقت الاسم ورقم الهاتف والعنوان والمدينة؛ إحداثيات URL النهائي لا تظهر في مسار place_id، ولم أتمكن من مقارنة الدبوس بعد ظهور مهلة protocolTimeout. لا يعتمد هذا كسجل مؤكد بالكامل.",
+        "decisionNotMadeReason": "إحداثيات الدبوس غير متاحة من URL النهائي الظاهر."
+      },
+      "newQueries": [
+        "\"المهند للعقار\" النماص"
+      ],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "decision": "partial_brokerage_entity_link_unproven",
+      "patchProposed": null,
+      "newEvidence": [
+        {
+          "url": "https://haraj.com.sa/11187090823/",
+          "ref": "turn117view2",
+          "observed": "إعلان نجم المهند المرخص فال1200002919 بالنماص وهاتف0504780767 مطابق لبطاقة المهند؛ الاسم أطول من البطاقة، فلا تغيير اسم دون إثبات الكيان؛ رابط المعروض لا يثبت موقع المكتب.",
+          "proves": [
+            "publicPhone"
+          ],
+          "partiallySupports": [
+            "brokerageActivity"
+          ],
+          "doesNotProve": [
+            "mapsPin"
+          ]
+        },
+        {
+          "source": "live Google Maps card",
+          "observedBy": "office_lane1",
+          "url": "https://www.google.com/maps/place/?q=place_id:ChIJTTocWQAb5RURMyGJ14XzxVQ",
+          "observed": "الهاتف0504780767، السلام النماص67387، فئة عقار شقق مفروشة، إحداثيات URL19.1284705,42.1315035 مطابقة بالتقريب.",
+          "proves": [
+            "name",
+            "mapsPin",
+            "publicPhone"
+          ],
+          "mapsUrlWorks": true
+        }
+      ],
+      "remainingUnprovenFields": [
+        "brokerageActivity"
+      ],
+      "restorationReviewRecommended": true
+    },
+    {
+      "id": "national-icuae-office-ChIJP2atdar1BxYRKnCBk0IYUk0",
+      "name": "مؤسسه جياد الراية للعقار",
+      "city": "أبو عريش",
+      "excludedInCurrentInventory": false,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-icuae-office-ChIJP2atdar1BxYRKnCBk0IYUk0",
+        "decision": null,
+        "fieldsObserved": {
+          "name": "مؤسسه جياد الراية للعقار",
+          "activity": "وكالة عقارات",
+          "city": "أبو عريش",
+          "district": "2V69+8C4، أبو عريش 84428",
+          "pin": null,
+          "phone": "+966564770845",
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مؤسسه جياد الراية للعقار",
+            "city": "أبو عريش",
+            "district": "2V69+8C4، أبو عريش 84428",
+            "phones": [
+              "0503768536",
+              "0564770845"
+            ],
+            "lat": 17.0107622,
+            "lon": 42.8685648
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/search/?api=1&query=17.0107622,42.8685648&query_place_id=ChIJp6sXSQBh_RURn9l4YLvBwjk",
+        "phoneEvidence": "رقم البطاقة +966564770845 يطابق رقمًا مسجلًا.",
+        "pinEvidence": "لم تظهر إحداثيات من URL البطاقة النهائي.",
+        "previousMapsAuditStatus": "partial_name_location_phone_unverified",
+        "previousMapsAuditNote": "بطاقة جياد الراية للعقار بالاسم القريب في أبو عريش؛ دبوس 17.0107622,42.8685648؛ لم يمكن إثبات هاتف 0503768536.",
+        "patchProposed": null,
+        "reason": "البطاقة المباشرة مفتوحة؛ الاسم والنشاط والعنوان ورقم واحد من الرقمين المسجلين مطابق. URL بطاقة place_id لم يعرض إحداثيات، فلا أقرر مطابقة الموقع.",
+        "protected": false,
+        "directPlaceUrl": "https://www.google.com/maps/place/?q=place_id:ChIJp6sXSQBh_RURn9l4YLvBwjk",
+        "liveCardOpened": true,
+        "observedFields": {
+          "name": "مؤسسه جياد الراية للعقار",
+          "category": "وكالة عقارات",
+          "address": "2V69+8C4، أبو عريش 84428، المملكة العربية السعودية",
+          "city": "أبو عريش",
+          "phoneIntl": "+966 56 477 0845",
+          "finalUrlCoordinates": null
+        },
+        "storedFields": {
+          "name": "مؤسسه جياد الراية للعقار",
+          "city": "أبو عريش",
+          "phones": [
+            "0503768536",
+            "0564770845"
+          ]
+        },
+        "evidence": "بطاقة Place ID المباشرة تطابق الاسم والنشاط والمدينة، وتعرض رقمًا يطابق أحد رقمي السجل. الرابط النهائي المتاح بقي بصيغة place_id ولا يعرض إحداثيات؛ محاولة قراءة تفاصيل مشاركة البطاقة انتهت بمهلة متصفح، لذلك لم يُحسم تطابق الدبوس.",
+        "decisionNotMadeReason": "إحداثيات البطاقة لم تظهر في URL النهائي لربط الدبوس المخزن."
+      },
+      "newQueries": [],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "decision": "verified_all_fields",
+      "patchProposed": null,
+      "newEvidence": [
+        {
+          "url": "https://www.muktamel.com/agencies/968/جياد-الراية-للعقار",
+          "ref": "turn117view0",
+          "observed": "ملف منشأة وساطة في أبو عريش؛ رخصة فال1200019734؛ الرقم0503768536. الرقم0564770845 مثبت ببطاقة Maps السابقة.",
+          "proves": [
+            "brokerageActivity",
+            "publicPhone"
+          ],
+          "doesNotProve": [
+            "mapsPin"
+          ]
+        },
+        {
+          "source": "live Google Maps card",
+          "observedBy": "office_lane1",
+          "url": "https://www.google.com/maps/place/?q=place_id:ChIJp6sXSQBh_RURn9l4YLvBwjk",
+          "observed": "وكالة عقارات، الهاتف0564770845، العنوان2V69+8C4 أبو عريش84428، إحداثيات URL النهائي17.0107622,42.8685648 مطابقة للمخزن.",
+          "proves": [
+            "name",
+            "brokerageActivity",
+            "mapsPin",
+            "publicPhone"
+          ],
+          "mapsUrlWorks": true
+        }
+      ],
+      "remainingUnprovenFields": [],
+      "restorationRecommended": false
+    },
+    {
+      "id": "national-icuae-office-ChIJCV_itnz1BxYR247nAn0D8h0",
+      "name": "شركة أربى العالمية للمقاولات العامة",
+      "city": "أبو عريش",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-icuae-office-ChIJCV_itnz1BxYR247nAn0D8h0",
+        "decision": null,
+        "fieldsObserved": {
+          "name": "شركة أربى العالمية للمقاولات العامة",
+          "activity": "شركة إنشاء",
+          "city": "أبو عريش",
+          "district": "6090 طريق الملك فهد، حي الزهور، أبو عريش 84415",
+          "pin": "16.9801298,42.8299733",
+          "phone": "+966533111604",
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "شركة أربى العالمية للمقاولات العامة",
+            "city": "أبو عريش",
+            "district": "An Nahdah – GMJD2840، 2840 طريق الملك فهد، 6090، حي الزهور – Abu Arish 84415 – Saudi Arabia",
+            "phones": [
+              "0590732110",
+              "0533111604"
+            ],
+            "lat": 16.9801298,
+            "lon": 42.8299733
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A3%D8%B1%D8%A8%D9%89+%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9+%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%E2%80%AD/@16.9801298,42.8299733,17z/data=!3m1!4b1!4m6!3m5!1s0x1607f57cb6e25f09:0x1df2037d02e78edb!8m2!3d16.9801298!4d42.8299733!16s%2Fg%2F11kr9nqkzc?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+        "phoneEvidence": "رقم البطاقة +966533111604 يطابق الرقم الثاني المسجل 0533111604؛ لا يُحذف الرقم الآخر.",
+        "pinEvidence": "إحداثيات البطاقة المباشرة تطابق 16.9801298,42.8299733 المخزنة تمامًا.",
+        "previousMapsAuditStatus": "partial_name_phone_match_activity_unconfirmed",
+        "previousMapsAuditNote": "شركة أربى؛ 0533111604 يطابق ثاني رقم مسجل؛ طريق الملك فهد، الزهور، أبو عريش؛ XRJH+3X. تصنيف شركة إنشاء، فالنشاط العقاري غير مؤكد.",
+        "patchProposed": null,
+        "reason": "الاسم والعنوان والدبوس والهاتف تؤكد هوية الكيان، لكن تصنيف Google Maps هو «شركة إنشاء» وليس مكتب/وكالة عقارية؛ لا يمكن حسم ملاءمته لمجموعة بيانات المكاتب من البطاقة وحدها.",
+        "protected": false
+      },
+      "newQueries": [],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "phase5-office-ec2bd607c79a",
+      "name": "الوبيل العقارية",
+      "city": "الطائف",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "phase5-office-ec2bd607c79a",
+        "decision": null,
+        "fieldsObserved": {
+          "searchQuery": "الوبيل العقارية الطائف حوايا الجنوبية 0500741144",
+          "pageOpened": true,
+          "cardSnapshot": false,
+          "liveObservation": false,
+          "storedRecord": {
+            "name": "الوبيل العقارية",
+            "city": "الطائف",
+            "district": "7C65+8X6، حوايا الجنوبية، الطائف 26513",
+            "phones": [
+              "0500741144"
+            ],
+            "lat": 21.2607904,
+            "lon": 40.4098874
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/?q=21.2607904,40.4098874",
+        "phoneEvidence": "لا يوجد رقم منشور لبطاقة مستهدفة مطابقة.",
+        "pinEvidence": "لم يظهر دبوس بطاقة مستهدفة مطابقة.",
+        "previousMapsAuditStatus": "verified_name_activity_location_phone_unlisted",
+        "previousMapsAuditNote": "الوبيل العقارية؛ بطاقة نشاط عقاري في الطائف عند 7C65+8X6، لم يظهر هاتف منشور؛ الرقم المسجل محفوظ.",
+        "patchProposed": null,
+        "reason": "أعيدت المحاولة ببحث كامل، ثم اسم مختصر في تبويب جديد، ثم رابط دبوس الإحداثيات؛ انتهت اللقطات/الاتصال بمهلات. لا بطاقة مرئية ولا دليل كافٍ على الهاتف أو هوية الدبوس.",
+        "protected": false,
+        "attempts": [
+          {
+            "source": "Google Maps",
+            "query": "الوبيل العقارية الطائف حوايا الجنوبية 0500741144",
+            "result": "Search snapshot timed out"
+          },
+          {
+            "source": "Google Maps",
+            "query": "الوبيل العقارية الطائف",
+            "result": "new tab opened; AX snapshot timed out"
+          },
+          {
+            "source": "Google Maps",
+            "url": "https://maps.google.com/maps?q=21.2607904,40.4098874",
+            "result": "new tab creation/protocol timed out"
+          }
+        ]
+      },
+      "newQueries": [
+        "\"الوبيل العقارية\" الطائف"
+      ],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [
+        {
+          "url": "https://www.muktamel.com/agencies/1699/مؤسسة-الوبيل-العقارية",
+          "ref": "turn150view0",
+          "observed": "ملف منشأة وساطة مرخصة فال1200021341، الطائف حوايا الجنوبية، رقم0500741144 مطابق.",
+          "proves": [
+            "name",
+            "brokerageActivity",
+            "publicPhone"
+          ],
+          "doesNotProve": [
+            "mapsPin"
+          ]
+        }
+      ],
+      "remainingUnprovenFields": [
+        "mapsPin"
+      ],
+      "restorationRecommended": true
+    },
+    {
+      "id": "national-ejar-office-193445",
+      "name": "مؤسسة الخزنة العقارية",
+      "city": "ينبع",
+      "excludedInCurrentInventory": false,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-193445",
+        "decision": null,
+        "fieldsObserved": {
+          "name": "الخزنة العقارية للعقار Khazna Real Estates",
+          "activity": "وكيل عقاري",
+          "city": "ينبع",
+          "district": "طريق الأمير مقرن بن عبدالعزيز، جنوب ينبع",
+          "pin": "24.0740011,38.098351",
+          "phone": null,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مؤسسة الخزنة العقارية",
+            "city": "ينبع",
+            "district": "طريق الأمير مقرن بن عبدالعزيز، ينبع 46431",
+            "phones": [
+              "0564466443"
+            ],
+            "lat": 24.0740011,
+            "lon": 38.098351
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/place/%D8%A7%D9%84%D8%AE%D8%B2%D9%86%D8%A9+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1+Khazna+Real+Estates%E2%80%AD/@24.0740011,38.098351,17z/data=!3m1!4b1!4m6!3m5!1s0x15b905996d0ddc77:0x5fddd3fe0bba2310!8m2!3d24.0740011!4d38.098351!16s%2Fg%2F11c6lblqqt?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+        "phoneEvidence": "لا يظهر رقم اتصال على بطاقة Maps؛ لا استنتاج بشأن صحة الرقم المحفوظ.",
+        "pinEvidence": "إحداثيات URL النهائي 24.0740011,38.098351 تطابق المسجل.",
+        "previousMapsAuditStatus": "verified_name_activity_location_phone_unlisted",
+        "previousMapsAuditNote": "بطاقة الخزنة العقارية ونشاط وكيل عقاري والموقع مطابقة؛ Maps لا يعرض هاتفًا، فأبقي الرقم المسجل كما هو.",
+        "patchProposed": null,
+        "reason": "الاسم والنشاط والعنوان والدبوس تطابقوا، لكن Maps لا ينشر رقمًا بينما يوجد رقم مخزن؛ يلزم إثبات الرقم قبل اعتماد التحقق الكامل.",
+        "protected": false,
+        "verificationCriteria": {
+          "identityAndRealEstateActivity": true,
+          "pin": true,
+          "publicPhoneMatched": false
+        }
+      },
+      "newQueries": [
+        "\"الخزنة العقارية\" \"0564466443\"",
+        "\"الخزنة العقارية\" ينبع 0564466443"
+      ],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-195174",
+      "name": "مكتب عبد الرحمن محمد المبارك للعقارات",
+      "city": "العلا",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-195174",
+        "decision": null,
+        "fieldsObserved": {
+          "name": null,
+          "activity": null,
+          "city": "العلا",
+          "district": null,
+          "pin": null,
+          "phone": null,
+          "liveObservation": true,
+          "searchQuery": "اسم + العلا + الهاتف 0504351887",
+          "exactTargetCard": false,
+          "storedRecord": {
+            "name": "مكتب عبد الرحمن محمد المبارك للعقارات",
+            "city": "العلا",
+            "district": "وادي القرى، العلا، المدينة المنورة، المملكة العربية السعودية",
+            "phones": [
+              "0504351887"
+            ],
+            "lat": 26.57397,
+            "lon": 37.94944
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%83%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200504351887",
+        "phoneEvidence": "لم تعرض نتيجة البطاقة رقمًا مستهدفًا.",
+        "pinEvidence": "لم تعرض بطاقة مطابقة بدبوس.",
+        "previousMapsAuditStatus": "unresolved_maps_ui_timeout",
+        "previousMapsAuditNote": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "patchProposed": null,
+        "reason": "بحث Google Maps المباشر لا توجد تفاصيل بطاقة؛ ظهر إطار صفحة بحث خالٍ من بطاقات النشاط.؛ لا دليل يثبت الاسم أو الهاتف أو دبوس المكتب.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"عبد الرحمن محمد المبارك\" العلا عقار",
+        "\"مساكن العلا\" عقار",
+        "\"مساكن العهد\" العلا",
+        "\"عبد الرحمن محمد المبارك\" عقار العلا",
+        "\"مساكن العلا العقارية\"",
+        "\"مساكن العهد\" عقار العلا"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-208038",
+      "name": "مؤسسة مساكن العلا العقارية",
+      "city": "العلا",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-208038",
+        "decision": null,
+        "fieldsObserved": {
+          "name": null,
+          "activity": null,
+          "city": "العلا",
+          "district": null,
+          "pin": null,
+          "phone": null,
+          "liveObservation": true,
+          "searchQuery": "اسم + العلا + الهاتف 0500511101",
+          "exactTargetCard": false,
+          "storedRecord": {
+            "name": "مؤسسة مساكن العلا العقارية",
+            "city": "العلا",
+            "district": "الملك عبدالعزيز، العلا، المدينة المنورة، المملكة العربية السعودية",
+            "phones": [
+              "0500511101"
+            ],
+            "lat": 26.6025,
+            "lon": 37.92262
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D8%B3%D8%A7%D9%83%D9%86%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200500511101",
+        "phoneEvidence": "لم تعرض نتيجة البطاقة رقمًا مستهدفًا.",
+        "pinEvidence": "لم تعرض بطاقة مطابقة بدبوس.",
+        "previousMapsAuditStatus": "unresolved_maps_ui_timeout",
+        "previousMapsAuditNote": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "patchProposed": null,
+        "reason": "بحث Google Maps المباشر لا توجد بطاقة نشاط في النتائج المقروءة؛ لا يظهر إلا رابط بحث Google.؛ لا دليل يثبت الاسم أو الهاتف أو دبوس المكتب.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"عبد الرحمن محمد المبارك\" العلا عقار",
+        "\"مساكن العلا\" عقار",
+        "\"مساكن العهد\" العلا",
+        "\"عبد الرحمن محمد المبارك\" عقار العلا",
+        "\"مساكن العلا العقارية\"",
+        "\"مساكن العهد\" عقار العلا"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-203405",
+      "name": "مؤسسة مساكن العهد للخدمات العقارية",
+      "city": "العلا",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-203405",
+        "decision": null,
+        "fieldsObserved": {
+          "name": null,
+          "activity": null,
+          "city": "العلا",
+          "district": null,
+          "pin": null,
+          "phone": null,
+          "liveObservation": true,
+          "searchQuery": "اسم + العلا + الهاتف 0540050011",
+          "exactTargetCard": false,
+          "storedRecord": {
+            "name": "مؤسسة مساكن العهد للخدمات العقارية",
+            "city": "العلا",
+            "district": "الامير عبد المجيد، الجامعة، العلا، المدينة المنورة، المملكة العربية السعودية",
+            "phones": [
+              "0540050011"
+            ],
+            "lat": 26.59666,
+            "lon": 37.93398
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D8%B3%D8%A7%D9%83%D9%86%20%D8%A7%D9%84%D8%B9%D9%87%D8%AF%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%200540050011",
+        "phoneEvidence": "لم تعرض نتيجة البطاقة رقمًا مستهدفًا.",
+        "pinEvidence": "لم تعرض بطاقة مطابقة بدبوس.",
+        "previousMapsAuditStatus": "unresolved_maps_ui_timeout",
+        "previousMapsAuditNote": "تعذر تحميل/قراءة بطاقة Google Maps بعد محاولات إعادة الاتصال؛ لا استنتاج بشأن وجود المكتب أو صحة الهاتف أو الموقع، ولم تُجرَ أي تغييرات على البيانات.",
+        "patchProposed": null,
+        "reason": "بحث Google Maps المباشر نتيجة مطابقة جزئية لمدينة العلا فقط؛ لم تظهر بطاقة للمؤسسة أو رقم اتصال.؛ لا دليل يثبت الاسم أو الهاتف أو دبوس المكتب.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"عبد الرحمن محمد المبارك\" العلا عقار",
+        "\"مساكن العلا\" عقار",
+        "\"مساكن العهد\" العلا",
+        "\"عبد الرحمن محمد المبارك\" عقار العلا",
+        "\"مساكن العلا العقارية\"",
+        "\"مساكن العهد\" عقار العلا"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-ejar-office-192308",
+      "name": "مكتب صفوة الجود للخدمات العقارية",
+      "city": "بدر",
+      "excludedInCurrentInventory": false,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-192308",
+        "decision": null,
+        "fieldsObserved": {
+          "name": "مكتب صفوة الجود للخدمات العقارية",
+          "activity": "وكالة عقارات",
+          "city": "بدر",
+          "district": "QQHQ+QC3، الشهداء، بدر 46357",
+          "pin": "23.779367,38.788425",
+          "phone": null,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب صفوة الجود للخدمات العقارية",
+            "city": "بدر",
+            "district": "ممر عبدالرحمن بن ابي بكر، الشهداء، بدر، المدينة المنورة، المملكة العربية السعودية",
+            "phones": [
+              "0503341020"
+            ],
+            "lat": 23.779367,
+            "lon": 38.788425
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B5%D9%81%D9%88%D8%A9+%D8%A7%D9%84%D8%AC%D9%88%D8%AF+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@23.779367,38.788425,17z/data=!3m1!4b1!4m6!3m5!1s0x15bed7001d65967d:0x66f04e4e916e0dfa!8m2!3d23.779367!4d38.788425!16s%2Fg%2F11x1svw317?entry=ttu",
+        "phoneEvidence": "لا تعرض البطاقة رقم هاتف؛ لا توجد مقارنة إيجابية لرقم الاتصال المسجل.",
+        "pinEvidence": "إحداثيات URL البطاقة المفتوحة 23.779367,38.788425 تطابق الإحداثيات المسجلة؛ العنوان يحدد حي الشهداء، بدر.",
+        "previousMapsAuditStatus": "verified_name_activity_location_phone_unlisted",
+        "previousMapsAuditNote": "مكتب صفوة الجود للخدمات العقارية؛ وكالة عقارات، الشهداء، بدر 46357، Plus QQHQ+QC3؛ البطاقة لا تعرض هاتفًا؛ الدبوس 23.779367,38.788425.",
+        "patchProposed": null,
+        "reason": "الاسم والنشاط والعنوان والدبوس تطابقوا، لكن Maps لا ينشر رقمًا بينما يوجد رقم مخزن؛ يلزم إثبات الرقم قبل اعتماد التحقق الكامل.",
+        "protected": false,
+        "verificationCriteria": {
+          "identityAndRealEstateActivity": true,
+          "pin": true,
+          "publicPhoneMatched": false
+        }
+      },
+      "newQueries": [
+        "\"صفوة الجود\" عقار بدر 0503341020",
+        "\"الغزوة\" عقار بدر 0533315552"
+      ],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "national-thirdparty-office-cid1605959927093973537",
+      "name": "مكتب الساعه للخدمات العامه والعقاريه",
+      "city": "أملج",
+      "excludedInCurrentInventory": false,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-thirdparty-office-cid1605959927093973537",
+        "decision": "verified",
+        "fieldsObserved": {
+          "name": "مكتب الساعه للخدمات العامه والعقاريه",
+          "activity": "وكالة عقارات",
+          "city": "أملج",
+          "district": "سلمة بن عاصم، ابو شجرة، أملج 48321",
+          "pin": "25.0383353,37.259181",
+          "phone": "+966553753729",
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مكتب الساعه للخدمات العامه والعقاريه",
+            "city": "أملج",
+            "district": "سلمة بن عاصم، ابو شجرة،، املج 48321، المملكة العربية السعودية",
+            "phones": [
+              "0553753729"
+            ],
+            "lat": 25.03834,
+            "lon": 37.25918
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D9%87+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%87+%D9%88%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%87%E2%80%AD/data=!4m7!3m6!1s0x15b0a75255de2afd:0x1649840b81f2d221!8m2!3d25.0383353!4d37.259181!16s%2Fg%2F11rsc05j_w!19sChIJ_SreVVKnsBURIdLygQuESRY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "phoneEvidence": "+966553753729 يطابق 0553753729.",
+        "pinEvidence": "إحداثيات URL النهائي 25.0383353,37.259181 تطابق المسجل 25.03834,37.25918 بعد التقريب.",
+        "previousMapsAuditStatus": "unresolved_maps_card_content_timeout",
+        "previousMapsAuditNote": "تظهر صفحة Maps اسم مكتب الساعة ودبوسًا في رابطها، لكن التطبيق حمّل خريطة افتراضية ولم يعرض تفاصيل البطاقة أو رقم الهاتف؛ لم يُعتمد الدبوس ولا الرقم.",
+        "patchProposed": null,
+        "reason": "بطاقة Maps مطابقة للاسم والنشاط والعنوان والهاتف.",
+        "protected": false,
+        "directPlaceUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D9%87+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%87+%D9%88%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%87%E2%80%AD/data=!4m7!3m6!1s0x15b0a75255de2afd:0x1649840b81f2d221!8m2!3d25.0383353!4d37.259181!16s%2Fg%2F11rsc05j_w!19sChIJ_SreVVKnsBURIdLygQuESRY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "liveCardOpened": true,
+        "observedFields": {
+          "name": "مكتب الساعه للخدمات العامه والعقاريه",
+          "category": "وكالة عقارات",
+          "address": "سلمة بن عاصم، ابو شجرة، املج 48321، المملكة العربية السعودية",
+          "city": "أملج",
+          "plusCode": "27Q5+8M أملج السعودية",
+          "phoneIntl": "+966 55 375 3729",
+          "pinFromFinalUrl": {
+            "lat": 25.0383353,
+            "lon": 37.259181
+          }
+        },
+        "storedFields": {
+          "phones": [
+            "0553753729"
+          ],
+          "pin": {
+            "lat": 25.03834,
+            "lon": 37.25918
+          }
+        },
+        "evidence": "بطاقة المكان المفتوحة مباشرة عبر Place ID تطابق الاسم والنشاط والعنوان والهاتف؛ URL النهائي يعرض الإحداثيات المطابقة بعد التقريب.",
+        "verificationCriteria": {
+          "identityAndRealEstateActivity": true,
+          "pin": true,
+          "publicPhoneMatched": true
+        }
+      },
+      "newQueries": [],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "decision": "verified_from_preserved_sufficient_evidence",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": []
+    },
+    {
+      "id": "national-ejar-office-209056",
+      "name": "مؤسسة مكتب الغزوة للخدمات العقارية",
+      "city": "بدر",
+      "excludedInCurrentInventory": true,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "national-ejar-office-209056",
+        "decision": null,
+        "fieldsObserved": {
+          "searchQuery": "مؤسسة مكتب الغزوة للخدمات العقارية بدر 0533315552",
+          "candidateCards": [
+            {
+              "name": "مكتب صفوة الجود للخدمات العقارية",
+              "activity": "وكالة عقارات",
+              "plusCode": "QQHQ+QC3"
+            },
+            {
+              "name": "مكتب البدر للعقار",
+              "activity": "شركة إدارة عقارات",
+              "plusCode": "QQPG+4F3",
+              "phone": "+966541905028"
+            }
+          ],
+          "exactTargetCard": false,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "مؤسسة مكتب الغزوة للخدمات العقارية",
+            "city": "بدر",
+            "district": "الشهداء 91، بدر، المدينة المنورة، المملكة العربية السعودية",
+            "phones": [
+              "0533315552"
+            ],
+            "lat": 23.77981,
+            "lon": 38.78428
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%BA%D8%B2%D9%88%D8%A9%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A8%D8%AF%D8%B1%200533315552",
+        "phoneEvidence": "لا يوجد رقم منشور لبطاقة مستهدفة مطابقة.",
+        "pinEvidence": "لم يظهر دبوس بطاقة مستهدفة مطابقة.",
+        "previousMapsAuditStatus": "unresolved_no_matching_card",
+        "previousMapsAuditNote": "لم تظهر بطاقة بالاسم أو الهاتف؛ النتائج صفوة الجود والبدر للعقار مختلفة.",
+        "patchProposed": null,
+        "reason": "بحث Maps عن المكتب أظهر صفوة الجود ومكتب البدر، ولم يظهر مكتب الغزوة أو الهاتف المسجل.",
+        "protected": false
+      },
+      "newQueries": [
+        "\"صفوة الجود\" عقار بدر 0503341020",
+        "\"الغزوة\" عقار بدر 0533315552"
+      ],
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ]
+    },
+    {
+      "id": "v9-office-76c14bc4a676",
+      "name": "ركن الجوهرة للعقار",
+      "city": "الوجه",
+      "excludedInCurrentInventory": false,
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE4_2026-10-12.json",
+      "inheritedEvidence": {
+        "id": "v9-office-76c14bc4a676",
+        "decision": "corrected",
+        "fieldsObserved": {
+          "name": "ركن الجوهرة للعقار",
+          "activity": "وكالة عقارات",
+          "city": "الوجه",
+          "district": "البلد، الوجه 48719",
+          "pin": "26.2351391,36.456067",
+          "phone": null,
+          "liveObservation": true,
+          "storedRecord": {
+            "name": "ركن الجوهرة للعقار",
+            "city": "الوجه",
+            "district": "البلد، الوجه 48719",
+            "phones": [],
+            "lat": null,
+            "lon": null
+          }
+        },
+        "directPlaceLink": "https://www.google.com/maps/place/%D8%B1%D9%83%D9%86+%D8%A7%D9%84%D8%AC%D9%88%D9%87%D8%B1%D8%A9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%E2%80%AD/@26.2351391,36.456067,17z/data=!3m1!4b1!4m6!3m5!1s0x15b1d10048bb7659:0xe22e6ae1a21d4d4!8m2!3d26.2351391!4d36.456067!16s%2Fg%2F11z9bv6nq5?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+        "phoneEvidence": "بطاقة Maps لا تعرض رقمًا؛ السجل لا يحتوي رقم هاتف.",
+        "pinEvidence": "الرابط المباشر للبطاقة يحدد الإحداثيات 26.2351391,36.456067؛ الموقع داخل البلد بالوجه المطابق للعنوان المسجل. الإحداثيات كانت فارغة في السجل.",
+        "previousMapsAuditStatus": "verified_name_activity_location_phone_unlisted",
+        "previousMapsAuditNote": "ركن الجوهرة للعقار؛ وكالة عقارات، البلد، الوجه 48719، Plus 6FP4+3C؛ البطاقة لا تعرض هاتفًا ولم يُضف رقم إلى السجل.",
+        "patchProposed": {
+          "set": {
+            "lat": 26.2351391,
+            "lon": 36.456067
+          },
+          "basis": "Google Maps direct place card for exact name and category in البلد، الوجه"
+        },
+        "reason": "تأكيد بطاقة المكان للاسم والنشاط والمدينة والحي. تصحيح مثبت مقترح: إضافة الدبوس المنشور على البطاقة إلى سجل بلا إحداثيات.",
+        "protected": false,
+        "verificationCriteria": {
+          "identityAndRealEstateActivity": true,
+          "pin": true,
+          "publicPhoneMatched": false,
+          "changeProposed": "add missing pin; phone not published"
+        }
+      },
+      "newQueries": [],
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": false
+      },
+      "decision": "unresolved_fields",
+      "patchProposed": null,
+      "newEvidence": [],
+      "remainingUnprovenFields": [
+        "publicPhone"
+      ],
+      "note": "الدبوس المقترح السابق مثبت؛ الهاتف غير منشور. تحقق الوكيل الرئيسي من تطبيق lat/lon الحالي قبل أي patch."
+    }
+  ],
+  "searchLogs": [
+    "OFFICE_RECHECK_2026-10-13_LANE4_SEARCH_RAW.json",
+    "OFFICE_RECHECK_2026-10-13_LANE4_SEARCH_PRIMARY.json"
+  ],
+  "note": "الأدلة السابقة محفوظة ولا تعاد الحالات الكافية. البحث عبر محركين استنفد محاولات الأسماء/الأرقام المتاحة دون اختراع إثبات. عدم ظهور نتيجة ليس عدم وجود المكتب. لا تغيير بيانات مشتركة أو Git من هذا المسار.",
+  "fullyVerified": 3
+}

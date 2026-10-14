@@ -1,0 +1,837 @@
+{
+  "schema": "office-recheck-v1",
+  "lane": 5,
+  "checkedAt": "2026-10-13",
+  "scopeCount": 35,
+  "activeAtStart": 11,
+  "limitations": "Direct Google Maps browser reserved to lane1; web extractor cannot open Maps. New evidence is explicit per source. No claims that all sources universally exhausted. Prior sufficient verified records not re-audited.",
+  "results": [
+    {
+      "id": "office-maps-1e6e0e7fa290",
+      "name": "مكتب روابي ديرتي للخدمات العقاريّة",
+      "city": "الرس",
+      "activeAtStart": true,
+      "previousDecision": "verified",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "verified",
+      "patch": null,
+      "newEvidence": [
+        {
+          "url": "https://haraj.com.sa/11122861505/الرس_حي_الزهرة_مكتب_روابي_ديرتي_للعقار/",
+          "observation": "Indexed property offering titled الرس حي الزهرة مكتب روابي ديرتي للعقار supports actual property marketing. Generic platform Fal footer is not this office license.",
+          "retrievalRef": "turn55search7",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [],
+      "unknownFields": [],
+      "outcome": "Previous direct card identity/phone/pin retained; independent actual property offering supports activity."
+    },
+    {
+      "id": "national-ejar-office-194652",
+      "name": "مؤسسة علي ظافر ظافر الشمراني للعقار",
+      "city": "نجران",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [
+        {
+          "url": "https://www.ejar.sa/ar/node/194652",
+          "observation": "Official Ejar source open unavailable; cannot treat existing source ID as current proof.",
+          "retrievalRef": "turn174view1",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [
+        "\"علي ظافر\" عقار نجران \"0505725867\"",
+        "\"مكتب علي ظافر\" نجران عقار"
+      ],
+      "unknownFields": [
+        "activity",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-192117",
+      "name": "مكتب اطياف الجنوب للخدمات العقارية",
+      "city": "نجران",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [
+        {
+          "url": "https://za.maptons.com/p/12122094380",
+          "observation": "Candidate named مكتب أطياف الجنوب للعقار والخدمات العامه in الخالدية; category property management; phone 0543011998 differs existing 0544041333. No Google place card confirmation, no patch.",
+          "retrievalRef": "turn172search1",
+          "checkedAt": "2026-10-13"
+        },
+        {
+          "url": "https://www.ejar.sa/ar/node/192117",
+          "observation": "Official Ejar source open unavailable; cannot treat existing source ID as current proof.",
+          "retrievalRef": "turn174view0",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [
+        "\"أطياف الجنوب\" \"0544041333\"",
+        "\"مكتب أطياف الجنوب\" نجران عقار"
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-195166",
+      "name": "مكتب منصة الدارة للخدمات العقارية",
+      "city": "نجران",
+      "activeAtStart": true,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [
+        {
+          "url": "https://www.aldaarah.sa/",
+          "observation": "Official platform publishes 00966559024555, activity enabling broker property ads; address Najran university district/Bukhari/Nayrouz Park conflicts old Maps location. Phone established by official source, not Google card.",
+          "retrievalRef": "turn156view0",
+          "checkedAt": "2026-10-13"
+        },
+        {
+          "url": "https://dealapp.sa/ar/profile/621d106ac8b7c12d47c29b4c",
+          "observation": "Indexed Dealapp broker profile: مانع منصور وسيط عقاري مرخص، نجران، مكتب منصة الدارة العقارية. Open failed; indexed evidence only.",
+          "retrievalRef": "turn55search16",
+          "checkedAt": "2026-10-13"
+        },
+        {
+          "url": "https://www.google.com/maps/search/?api=1&query=17.6346736,44.5030157&query_place_id=ChIJBwK9IaMv_xURZ0h7TUNoBgc",
+          "observation": "Current direct Google Maps extraction unavailable in web tool; prior actual card evidence retained without new confirmation.",
+          "retrievalRef": "turn162view0",
+          "checkedAt": "2026-10-13"
+        },
+        {
+          "url": "https://www.ejar.sa/ar/node/195166",
+          "observation": "Official Ejar source open unavailable; cannot treat existing source ID as current proof.",
+          "retrievalRef": "turn174view2",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [
+        "\"منصة الدارة\" \"0559024555\"",
+        "\"منصة الدارة\" عقارية نجران"
+      ],
+      "unknownFields": [
+        "googleMapsLocation",
+        "phonePublishedOnGoogleMaps"
+      ],
+      "outcome": "Official phone corroborated; location conflicts; do not change pin."
+    },
+    {
+      "id": "national-ejar-office-192859",
+      "name": "مكتب الواء الاخضر للعقارات",
+      "city": "شرورة",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [
+        {
+          "url": "https://www.ejar.sa/ar/node/192859",
+          "observation": "Official Ejar source open unavailable; cannot treat existing source ID as current proof.",
+          "retrievalRef": "turn174view3",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [
+        "\"اللواء الاخضر\" عقارات شرورة",
+        "\"مكتب الواء الاخضر\" شرورة"
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-201296",
+      "name": "مكتب الصرح الوافي العقاري",
+      "city": "شرورة",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"الصرح الوافي\" عقاري شرورة",
+        "\"مكتب الصرح الوافي العقاري\" شرورة"
+      ],
+      "unknownFields": [
+        "activity",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-203088",
+      "name": "مؤسسة جسر التواصل للخدمات العقارية",
+      "city": "شرورة",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"جسر التواصل\" \"0558818655\"",
+        "\"مؤسسة جسر التواصل للخدمات العقارية\""
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-195389",
+      "name": "مكتب زاوية المستقبل للعقارات",
+      "city": "شرورة",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"زاوية المستقبل\" \"0557373063\"",
+        "\"مكتب زاوية المستقبل\" شرورة"
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-google-office-ChIJV_TW6sgb5RUR4aUYHPXoCUw",
+      "name": "مكتب الريان العقاري",
+      "city": "النماص",
+      "activeAtStart": true,
+      "previousDecision": "verified",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [
+        {
+          "url": "https://www.google.com/maps/place/?q=place_id:ChIJV_TW6sgb5RUR4aUYHPXoCUw",
+          "observation": "Current direct Google Maps extraction unavailable in web tool; prior actual card evidence retained without new confirmation.",
+          "retrievalRef": "turn162view2",
+          "checkedAt": "2026-10-13"
+        },
+        {
+          "url": "https://www.google.com/maps/place/?q=place_id:ChIJV_TW6sgb5RUR4aUYHPXoCUw",
+          "source": "Live Google Maps AX tab85",
+          "name": "مكتب الريان العقاري",
+          "category": "مكتب الشركات",
+          "phone": "0172820648",
+          "address": "44GJ+PR5، طريق الأمير سلطان بن عبدالعزيز، السلام، النماص 67387",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [],
+      "unknownFields": [
+        "activity"
+      ],
+      "outcome": "Corporate-office Maps category alone does not prove brokerage."
+    },
+    {
+      "id": "v9-office-aea1d102e95c",
+      "name": "مؤسسة الديرة للخدمات العقارية",
+      "city": "سبت العلايا",
+      "activeAtStart": true,
+      "previousDecision": "corrected",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [],
+      "unknownFields": [
+        "activity"
+      ],
+      "outcome": "Prior corrections retained; corporate category or preserved unverified phone prevents complete verification."
+    },
+    {
+      "id": "national-ejar-office-199883",
+      "name": "بنك العقارات فرع شركة مجموعة ناف",
+      "city": "الظهران",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [
+        {
+          "url": "https://directoryksa.com/public/search?page=17&text=عقارات",
+          "observation": "Directory name/مدينة الظهران found; name alone not brokerage activity/Google location/phone proof.",
+          "retrievalRef": "turn114search1",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [
+        "\"بنك العقارات\" \"مجموعة ناف\""
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-200076",
+      "name": "مؤسسة فيصل بن عبدالرحيم بن حبيب الله جمعه للعقارات",
+      "city": "الظهران",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"فيصل\" عقارات \"0504917218\"",
+        "\"فيصل بن عبدالرحيم بن حبيب الله جمعه\" عقارات"
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-218035",
+      "name": "مؤسسة عبدالله حسين اليامي العقارية",
+      "city": "الظهران",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"عبدالله حسين اليامي\" \"0555802111\"",
+        "\"مؤسسة عبدالله حسين اليامي العقارية\""
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-yango-office-83646496556",
+      "name": "مكتب الفال الافضل العقاري",
+      "city": "حفر الباطن",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [
+        {
+          "url": "https://sa.linkedin.com/in/فيصل-الفايز-716535200",
+          "observation": "Indexed employment names مكتب الفال الافضل العقاري in Hafar Al Batin; no phone/pin proof.",
+          "retrievalRef": "turn165search6",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [
+        "\"الفال الافضل\" عقاري حفر الباطن",
+        "\"مكتب الفال الافضل العقاري\""
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-yango-office-176431236509",
+      "name": "مكتب السسعد للعقارات حفر الباطن فرع رقم 1",
+      "city": "حفر الباطن",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [
+        {
+          "url": "https://www.instagram.com/",
+          "observation": "Search index shows شركة السعد العقارية with 0555247722 accepting property offers. Generic Instagram URL/uncertain city not sufficient identity proof; no restore yet.",
+          "retrievalRef": "turn121search0",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [
+        "\"السسعد\" \"0555247722\"",
+        "\"السعد العقارية\" \"حفر الباطن\" 0555247722"
+      ],
+      "unknownFields": [
+        "activity"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-192755",
+      "name": "مكتب ايمن معزي معتق الرشيدي للعقارات",
+      "city": "خيبر",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"ايمن معزي معتق\" عقارات",
+        "\"مكتب ايمن\" \"0592380032\""
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-200167",
+      "name": "مؤسسة مكتب عبدالرحمن عبدالله عباس الرشيدي العقاري",
+      "city": "خيبر",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"عبدالرحمن عبدالله عباس الرشيدي\" عقاري",
+        "\"الرشيدي العقاري\" \"0555155198\""
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-218822",
+      "name": "مكتب ركن الشاري للخدمات العقارية",
+      "city": "حقل",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"ركن الشاري\" عقارات حقل",
+        "\"مكتب ركن الشاري\" \"0557977544\""
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-yango-office-55037224817",
+      "name": "مكتب انجاز الخدمات",
+      "city": "دومة الجندل",
+      "activeAtStart": true,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [
+        {
+          "url": "https://www.google.com/maps/search/مكتب+انجاز+الخدمات+دومة+الجندل+0590932840",
+          "source": "Live Google Maps AX tab85",
+          "name": "مكتب انجاز الخدمات",
+          "category": "وكالة عقارات",
+          "phone": "0551953155",
+          "address": "WPGB4581، 4581 الأمير سلطان بن عبد العزيز، 7460، حي الفيصلية، دومة الجندل 74632",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [
+        "\"0551953155\"",
+        "\"مكتب انجاز الخدمات\" \"دومة\" عقارات",
+        "\"مكتب انجاز الخدمات\" \"0590932840\""
+      ],
+      "unknownFields": [
+        "additionalPhone0590932840"
+      ],
+      "outcome": "Prior card agency name/pin/0551953155 retained; second phone not corroborated."
+    },
+    {
+      "id": "national-yango-office-63716439989",
+      "name": "مرو للتطوير العقاري والمقاولات",
+      "city": "عرعر",
+      "activeAtStart": false,
+      "previousDecision": "closed_proven",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "closed_proven",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [],
+      "unknownFields": []
+    },
+    {
+      "id": "national-google-office-ChIJ6cgmWQCZqhURzRqEY_TK_Vc",
+      "name": "مكتب أبراج المدائن",
+      "city": "حقل",
+      "activeAtStart": true,
+      "previousDecision": "verified",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "verified",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [],
+      "unknownFields": []
+    },
+    {
+      "id": "national-ejar-office-192622",
+      "name": "مؤسسة عبدالله محمد الغامدي للخدمات العقارية",
+      "city": "بلجرشي",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"عبدالله محمد الغامدي\" \"0504270141\""
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-209089",
+      "name": "إنجاز وإعتمال الأعمال للخدمات التجارية",
+      "city": "بلجرشي",
+      "activeAtStart": true,
+      "previousDecision": "verified",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "verified",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [],
+      "unknownFields": []
+    },
+    {
+      "id": "national-ejar-office-584125",
+      "name": "مكتب عقار بارك العقارية",
+      "city": "بلجرشي",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"عقار بارك\" \"0534550123\"",
+        "\"مكتب عقار بارك\" بلجرشي"
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-google-office-ChIJE48mwlcb5RURWhZsmHsBobY",
+      "name": "مكتب ديار المتميزون للعقار",
+      "city": "النماص",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"ديار المتميزون\" \"0570713878\"",
+        "\"مكتب ديار المتميزون\" النماص"
+      ],
+      "unknownFields": [
+        "activity"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-icuae-office-ChIJ1S_wasn1BxYRNbf2JCv1wcQ",
+      "name": "مكتب نفاذ وطني للخدمات العقارية",
+      "city": "أبو عريش",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [
+        {
+          "url": "https://www.cybo.com/SA/abu-%60arish/real-estate-agency",
+          "observation": "Cybo indexed agency listing matches نفاذ وطني, شارع النهضة الورود أبو عريش, 0550915577. Third-party activity category not independently confirmed primary brokerage evidence.",
+          "retrievalRef": "turn163search5",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [
+        "\"نفاذ وطني\" عقارية \"0550915577\"",
+        "\"مكتب نفاذ وطني\" \"أبو عريش\""
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "entity-eb6a252fffd5",
+      "name": "شرق أبها للخدمات العقارية",
+      "city": "أبها",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": {
+        "web": "https://eastabha.sa/"
+      },
+      "newEvidence": [
+        {
+          "url": "https://eastabha.sa/contact-us/",
+          "observation": "Official source publishes 0504746662 and explicitly offers selling/renting/marketing/transactions. Main address المروج and footer المنسك; prior two Google cards unresolved.",
+          "retrievalRef": "turn156view1",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [
+        "\"شرق أبها\" \"0504746662\""
+      ],
+      "unknownFields": [
+        "googleMapsLocation"
+      ],
+      "outcome": "Brokerage and phone corroborated; restore original archived record, preserve location uncertainty.",
+      "restoreRecommended": true
+    },
+    {
+      "id": "national-ejar-office-194902",
+      "name": "مؤسسة حسام وجهتك العقارية",
+      "city": "ينبع",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"حسام وجهتك\" عقارية",
+        "\"مكتب حسام\" \"وجهتك\" ينبع"
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-193976",
+      "name": "مكتب رواسي ينبع للخدمات العقارية",
+      "city": "ينبع",
+      "activeAtStart": true,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [
+        {
+          "url": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B1%D9%88%D8%A7%D8%B3%D9%8A+%D9%8A%D9%86%D8%A8%D8%B9%E2%80%AD/data=!4m7!3m6!1s0x15b9075e1da3ae51:0xcf12eab8dd24b441!8m2!3d24.1077009!4d38.0155311!16s%2Fg%2F11s7dn1rlm!19sChIJUa6jHV4HuRURQbQk3bjqEs8?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+          "observation": "Current direct Google Maps extraction unavailable in web tool; prior actual card evidence retained without new confirmation.",
+          "retrievalRef": "turn162view1",
+          "checkedAt": "2026-10-13"
+        },
+        {
+          "url": "https://www.google.com/maps/place/?q=place_id:ChIJUa6jHV4HuRURQbQk3bjqEs8",
+          "source": "Live Google Maps AX tab85",
+          "name": "مكتب رواسي ينبع",
+          "category": "وكالة عقارات",
+          "phone": "0550181652",
+          "address": "YFAD7559، 7559 يحيىى التيمي، 4407، حي المروج، ينبع 46511",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [
+        "\"0541800031\" \"رواسي\"",
+        "\"مكتب رواسي ينبع\" \"0541800031\""
+      ],
+      "unknownFields": [
+        "additionalPhone0541800031"
+      ],
+      "outcome": "Prior card proves 0550181652; 0541800031 remains unverified; retain without false confirmation."
+    },
+    {
+      "id": "national-ejar-office-201194",
+      "name": "مؤسسة امينه عصمان الكحلاني للخدمات العقارية",
+      "city": "العلا",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"امينه عصمان الكحلاني\" عقارات"
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-332578",
+      "name": "مكتب ركائز الوسيط العقاري",
+      "city": "العلا",
+      "activeAtStart": true,
+      "previousDecision": "verified",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "verified",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [],
+      "unknownFields": []
+    },
+    {
+      "id": "national-ejar-office-338770",
+      "name": "مكتب دور التقدم للعقارات",
+      "city": "العلا",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"دور التقدم\" عقارات العلا"
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    },
+    {
+      "id": "national-ejar-office-238771",
+      "name": "مكتب المفتاح الرقمي للعقار",
+      "city": "بدر",
+      "activeAtStart": true,
+      "previousDecision": "corrected",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [
+        "\"مكتب المفتاح الرقمي\" \"0534306337\""
+      ],
+      "unknownFields": [
+        "previousPhone"
+      ],
+      "outcome": "Prior corrections retained; corporate category or preserved unverified phone prevents complete verification."
+    },
+    {
+      "id": "national-thirdparty-office-duba-0500517062",
+      "name": "مكتب العيسوي للعقار والخدمات الالكترونية ضباء",
+      "city": "ضباء",
+      "activeAtStart": true,
+      "previousDecision": "verified",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "verified",
+      "patch": null,
+      "newEvidence": [],
+      "searchQueries": [],
+      "unknownFields": []
+    },
+    {
+      "id": "national-ejar-office-205522",
+      "name": "مكتب عبدالله عيد الصبحى للعقارات",
+      "city": "بدر",
+      "activeAtStart": false,
+      "previousDecision": "unresolved",
+      "priorEvidenceFile": "EXCEPTION_RECHECK_LANE5_2026-10-12.json",
+      "decision": "unresolved",
+      "patch": null,
+      "newEvidence": [
+        {
+          "url": "https://www.al-madina.com/article/335342/وفاة-رجل-الأعمال-عيد-الصبحي",
+          "observation": "2014 obituary associates 0555361351 with Abdullah in Badr, not current brokerage office; insufficient for current office phone verification.",
+          "retrievalRef": "turn148search9",
+          "checkedAt": "2026-10-13"
+        }
+      ],
+      "searchQueries": [
+        "\"عبدالله عيد الصبحي\" \"0555361351\""
+      ],
+      "unknownFields": [
+        "name",
+        "activity",
+        "googleMapsLocation",
+        "phone"
+      ],
+      "outcome": "No new matching authoritative evidence; prior uncertainty remains."
+    }
+  ],
+  "proposedRestoreIds": [
+    "entity-eb6a252fffd5"
+  ],
+  "patchCount": 1,
+  "fullyVerifiedCount": 5,
+  "unresolvedCount": 29
+}

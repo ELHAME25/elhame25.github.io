@@ -1,0 +1,1009 @@
+{
+  "date": "2026-10-13",
+  "lane": 2,
+  "scope": "30 unresolved EXCEPTION_RECHECK_LANE2 entries",
+  "attemptedCount": 30,
+  "fullyProvenCount": 1,
+  "partialOrUnresolvedCount": 29,
+  "records": [
+    {
+      "id": "national-ejar-office-192087",
+      "storedName": "مكتب ركن الروز للخدمات العامة",
+      "city": "نجران",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب ركن الروز للخدمات العامة نجران 0500075051",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        },
+        {
+          "method": "one recovery using exact name-city Google Maps search after legacy direct card failed to render readable fields",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%83%D9%86%20%D8%A7%D9%84%D8%B1%D9%88%D8%B2%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%200500075051%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-195555",
+      "storedName": "مكتب الأفلاك للخدمات العقارية",
+      "city": "نجران",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب الأفلاك للخدمات العقارية نجران 0566669896",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%A3%D9%81%D9%84%D8%A7%D9%83%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200566669896%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-192537",
+      "storedName": "مكتب فايز بن حمد بن مبارك اليامي للعقارات",
+      "city": "نجران",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب فايز بن حمد بن مبارك اليامي للعقارات نجران 0508961112",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%81%D8%A7%D9%8A%D8%B2%20%D8%A8%D9%86%20%D8%AD%D9%85%D8%AF%20%D8%A8%D9%86%20%D9%85%D8%A8%D8%A7%D8%B1%D9%83%20%D8%A7%D9%84%D9%8A%D8%A7%D9%85%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200508961112%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-192834",
+      "storedName": "مكتب بصمة خدماتي العقاري",
+      "city": "نجران",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب بصمة خدماتي العقاري نجران 0500667377",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A8%D8%B5%D9%85%D8%A9%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200500667377%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-197788",
+      "storedName": "مكتب روابي للخدمات العقارية",
+      "city": "شرورة",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب روابي للخدمات العقارية شرورة 0504564151",
+          "result": "matching_place_card_phone_not_published"
+        }
+      ],
+      "observed": {
+        "name": "مكتب روابي العقاري",
+        "category": "شركة إدارة عقارات",
+        "phone": null,
+        "address": "F4V7+73V، 30، شرورة 67832",
+        "pin": [
+          17.4932485,
+          47.112666
+        ],
+        "outcome": "matching_place_card_phone_not_published",
+        "url": "https://www.google.com/maps/place/?q=place_id:ChIJJa9ZpUm3Bz4R93OerwmS_wU"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-218534",
+      "storedName": "مكتب راية الحزم للعقارات",
+      "city": "شرورة",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب راية الحزم للعقارات شرورة 0559048913",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%B2%D9%85%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200559048913%20%D8%B4%D8%B1%D9%88%D8%B1%D8%A9"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-217576",
+      "storedName": "مؤسسة حسن مبخوت حمد الصيعري للعقارات",
+      "city": "شرورة",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مؤسسة حسن مبخوت حمد الصيعري للعقارات شرورة 0532465017",
+          "result": "partial_name_variant_phone_not_published"
+        },
+        {
+          "method": "one recovery using exact name-city Google Maps search after legacy direct card failed to render readable fields",
+          "result": "partial_name_variant_phone_not_published"
+        }
+      ],
+      "observed": {
+        "name": "حسن مبخوت بن ناصر الصيعري للعقارات",
+        "category": "شركة إدارة عقارات",
+        "phone": null,
+        "address": "3534 شارع عكاشة بن محصن الأسدي، الفهد، NSSA7308، 7308، شرورة 68372",
+        "plus": "F4P6+FF",
+        "outcome": "partial_name_variant_phone_not_published",
+        "url": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%AD%D8%B3%D9%86%20%D9%85%D8%A8%D8%AE%D9%88%D8%AA%20%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D8%B5%D9%8A%D8%B9%D8%B1%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200532465017%20%D8%B4%D8%B1%D9%88%D8%B1%D8%A9"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-204553",
+      "storedName": "مكتب ركن دار الاجواد للعقار",
+      "city": "شرورة",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب ركن دار الاجواد للعقار شرورة 0581453711",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%83%D9%86%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A7%D8%AC%D9%88%D8%A7%D8%AF%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200581453711%20%D8%B4%D8%B1%D9%88%D8%B1%D8%A9"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-206870",
+      "storedName": "مكتب خالد محمد حميد العريقي للخدمات العقارية",
+      "city": "الظهران",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب خالد محمد حميد العريقي للخدمات العقارية الظهران 0505806845",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AE%D8%A7%D9%84%D8%AF%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%AD%D9%85%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B9%D8%B1%D9%8A%D9%82%D9%8A%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200505806845%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-510883",
+      "storedName": "مكتب ليان حسن الشهري للعقارات",
+      "city": "الظهران",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب ليان حسن الشهري للعقارات الظهران 0550467977",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%84%D9%8A%D8%A7%D9%86%20%D8%AD%D8%B3%D9%86%20%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200550467977%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-google-office-ChIJdzK1HQB1zT8RP1hCK6MaRIM",
+      "storedName": "مكتب الصمان للعقارات",
+      "city": "قرية العليا",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب الصمان للعقارات قرية العليا 0536670238",
+          "result": "fully_proven"
+        }
+      ],
+      "observed": {
+        "name": "مكتب الصمان للعقارات",
+        "category": "وكالة عقارات",
+        "phone": "0536670238",
+        "address": "HP72+27G، الزهور، قرية العليا 37661",
+        "plus": "HP72+27G",
+        "outcome": "fully_proven",
+        "url": "https://www.google.com/maps/place/?q=place_id:ChIJdzK1HQB1zT8RP1hCK6MaRIM",
+        "previousObservedPin": [
+          27.5625711,
+          47.7006925
+        ]
+      },
+      "fullyVerified": true,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "decision": "fully_proven",
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJdzK1HQB1zT8RP1hCK6MaRIM",
+        "activity": "وكالة عقارات",
+        "activitySource": "Google Maps"
+      },
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json",
+      "pinMatchMethod": "Live card observed Plus Code HP72+27G corresponds to prior observed numeric pin27.5625711,47.7006925 and identical stored direct Place ID."
+    },
+    {
+      "id": "national-yango-office-172404322366",
+      "storedName": "اليوسف للمقاولات العامة والخدمات",
+      "city": "حفر الباطن",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "اليوسف للمقاولات العامة والخدمات حفر الباطن 0137239071",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D8%A7%D9%84%D9%8A%D9%88%D8%B3%D9%81%20%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%200137239071%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-yango-office-38070204429",
+      "storedName": "مكتب القمة العقاري",
+      "city": "بقيق",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب القمة العقاري بقيق 0501063838",
+          "result": "matching_place_card_phone_not_published"
+        }
+      ],
+      "observed": {
+        "name": "مكتب القمة العقاري",
+        "category": "وكالة عقارات",
+        "phone": null,
+        "address": "5176،، 7241 الشارع التاسع والثلاثون، المدينة،، بقيق 33261",
+        "plus": "WMG7+34",
+        "outcome": "matching_place_card_phone_not_published",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200501063838%20%D8%A8%D9%82%D9%8A%D9%82"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-199447",
+      "storedName": "مؤسسة رمح الشمال للتطوير العقاري",
+      "city": "خيبر",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مؤسسة رمح الشمال للتطوير العقاري خيبر 0595959186",
+          "result": "unrelated_card_different_name_city"
+        }
+      ],
+      "observed": {
+        "name": "مكتب ربوة الشمال للعقارات والمزادات",
+        "category": "وكيل عقاري",
+        "phone": null,
+        "address": "حي, 3492 شارع عبدالله بن العاص، العارض، الرياض 13338 7562،",
+        "plus": "VJJG+R5",
+        "outcome": "unrelated_card_different_name_city",
+        "url": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%B1%D9%85%D8%AD%20%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200595959186%20%D8%AE%D9%8A%D8%A8%D8%B1"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-259707",
+      "storedName": "مكتب أبراج خيبر العقاري",
+      "city": "خيبر",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب أبراج خيبر العقاري خيبر 0557858456",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A3%D8%A8%D8%B1%D8%A7%D8%AC%20%D8%AE%D9%8A%D8%A8%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200557858456%20%D8%AE%D9%8A%D8%A8%D8%B1"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-216654",
+      "storedName": "مكتب اليخت للخدمات العقارية",
+      "city": "حقل",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب اليخت للخدمات العقارية حقل 0557724181",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%8A%D8%AE%D8%AA%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200557724181%20%D8%AD%D9%82%D9%84"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-bizmideast-office-987028042178622047",
+      "storedName": "مكتب أوتار الشمال العقاري",
+      "city": "عرعر",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب أوتار الشمال العقاري عرعر 0538189569",
+          "result": "matching_phone_place_numeric_pin_not_extracted"
+        }
+      ],
+      "observed": {
+        "name": "مكتب أوتار الشمال العقاري",
+        "category": "شركة إدارة عقارات",
+        "phone": "0538189569",
+        "address": "X2RQ+R6H، الربوة، عرعر 73315",
+        "plus": "X2RQ+R6H",
+        "outcome": "matching_phone_place_numeric_pin_not_extracted",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A3%D9%88%D8%AA%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200538189569%20%D8%B9%D8%B1%D8%B9%D8%B1"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-web-office-ChIJUQd_HWQObBURbztnfApsK64",
+      "storedName": "Elite Real Estate Group",
+      "city": "عرعر",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "Elite Real Estate Group عرعر 0593760016",
+          "result": "unrelated_card_city_phone_mismatch"
+        },
+        {
+          "method": "one recovery using exact name-city Google Maps search after legacy direct card failed to render readable fields",
+          "result": "unrelated_card_city_phone_mismatch"
+        }
+      ],
+      "observed": {
+        "name": "Elite real estate",
+        "category": "وكالة عقارات صناعية",
+        "phone": "0544512410",
+        "address": "8529 عبدالله الشربتلي، الصفا، جدة 23454",
+        "plus": "H6PC+2W",
+        "outcome": "unrelated_card_city_phone_mismatch",
+        "url": "https://www.google.com/maps/search/Elite%20Real%20Estate%20Group%200593760016%20%D8%B9%D8%B1%D8%B9%D8%B1"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "prior-qadisiyya-76",
+      "storedName": "مكتب ركن الرحمة العقاري",
+      "city": "الرياض",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب ركن الرحمة العقاري الرياض 0554404590",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B1%D9%83%D9%86%20%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%200554404590%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-192648",
+      "storedName": "مكتب خلود للخدمات العقارية",
+      "city": "بلجرشي",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب خلود للخدمات العقارية بلجرشي 0557659240",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AE%D9%84%D9%88%D8%AF%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200557659240%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-246079",
+      "storedName": "مكتب ديار الكرم للخدمات العقارية",
+      "city": "بلجرشي",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب ديار الكرم للخدمات العقارية بلجرشي 0555618325",
+          "result": "unrelated_accommodation_card_phone_activity_mismatch"
+        }
+      ],
+      "observed": {
+        "name": "ديار الكرم للشقق المفروشة المخدومة",
+        "category": "فندق وشقق مفروشة",
+        "phone": "0557309070",
+        "address": "طريق الملك عبدالعزيز، بلجرشي 65644",
+        "plus": "VHRC+H5",
+        "outcome": "unrelated_accommodation_card_phone_activity_mismatch",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AF%D9%8A%D8%A7%D8%B1%20%D8%A7%D9%84%D9%83%D8%B1%D9%85%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200555618325%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-google-office-ChIJG1i9mskb5RURJT0Tkr24Cz8",
+      "storedName": "مكتب جسور الانجاز للخدمات العامه والعقار",
+      "city": "النماص",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب جسور الانجاز للخدمات العامه والعقار النماص 0172801040",
+          "result": "matching_identity_phone_brokerage_not_extracted"
+        }
+      ],
+      "observed": {
+        "name": "مكتب جسور الانجاز للخدمات العامه والعقار",
+        "category": null,
+        "phone": "0172801040",
+        "address": "طريق الأمير سلطان بن عبدالعزيز، السلام، النماص 67387",
+        "plus": "44GJ+HM",
+        "outcome": "matching_identity_phone_brokerage_not_extracted",
+        "url": "https://www.google.com/maps/place/?q=place_id:ChIJG1i9mskb5RURJT0Tkr24Cz8"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-thirdparty-office-cid8934779096754221356",
+      "storedName": "مكتب الفتح للعقار محايل عسير",
+      "city": "محايل عسير",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب الفتح للعقار محايل عسير محايل عسير 0558991555",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        },
+        {
+          "method": "one recovery using exact name-city Google Maps search after legacy direct card failed to render readable fields",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%81%D8%AA%D8%AD%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D9%85%D8%AD%D8%A7%D9%8A%D9%84%20%D8%B9%D8%B3%D9%8A%D8%B1%200558991555%20%D9%85%D8%AD%D8%A7%D9%8A%D9%84%20%D8%B9%D8%B3%D9%8A%D8%B1"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-201011",
+      "storedName": "مكتب ناجي عبدالله حسن معوض للعقار",
+      "city": "ينبع",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب ناجي عبدالله حسن معوض للعقار ينبع 0558697340",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%86%D8%A7%D8%AC%D9%8A%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%AD%D8%B3%D9%86%20%D9%85%D8%B9%D9%88%D8%B6%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%200558697340%20%D9%8A%D9%86%D8%A8%D8%B9"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-198086",
+      "storedName": "مكتب عقار الغربية",
+      "city": "ينبع",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب عقار الغربية ينبع 0544008859",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9%200544008859%20%D9%8A%D9%86%D8%A8%D8%B9"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-197921",
+      "storedName": "مكتب قمة العلا للعقارات",
+      "city": "العلا",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب قمة العلا للعقارات العلا 0533379031",
+          "result": "matching_identity_phone_brokerage_not_extracted"
+        }
+      ],
+      "observed": {
+        "name": "مكتب قمة العلا للعقارات",
+        "category": null,
+        "phone": "0533379031",
+        "address": "عمر بن الخطاب، الصخيرات، العلا 43522",
+        "plus": "JW4H+69",
+        "outcome": "matching_identity_phone_brokerage_not_extracted",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D9%82%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200533379031%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-207189",
+      "storedName": "مكتب افق الإتحاد للخدمات العقارية",
+      "city": "العلا",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب افق الإتحاد للخدمات العقارية العلا 0506330424",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%81%D9%82%20%D8%A7%D9%84%D8%A5%D8%AA%D8%AD%D8%A7%D8%AF%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%200506330424%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-214465",
+      "storedName": "مكتب تلال اراك لادارة الأملاك",
+      "city": "العلا",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب تلال اراك لادارة الأملاك العلا 0554427426",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%AA%D9%84%D8%A7%D9%84%20%D8%A7%D8%B1%D8%A7%D9%83%20%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A3%D9%85%D9%84%D8%A7%D9%83%200554427426%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-yango-office-27617025406",
+      "storedName": "مكتب الفيصل للعقارات",
+      "city": "ضباء",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مكتب الفيصل للعقارات ضباء 0556593918",
+          "result": "same_name_city_published_phone_conflict_identity_not_resolved"
+        }
+      ],
+      "observed": {
+        "name": "مكتب الفيصل للعقارات",
+        "category": "وكالة عقارات",
+        "phone": "0506581546",
+        "address": "7780شارع الشيخ محمد بن عبد الوهاب تبوك",
+        "plus": "8PQ8+2M",
+        "outcome": "same_name_city_published_phone_conflict_identity_not_resolved",
+        "url": "https://www.google.com/maps/search/%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D9%81%D9%8A%D8%B5%D9%84%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%200556593918%20%D8%B6%D8%A8%D8%A7%D8%A1"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    },
+    {
+      "id": "national-ejar-office-328204",
+      "storedName": "مؤسسة جمع الأعمال التجارية",
+      "city": "بدر",
+      "attempted": true,
+      "attempts": [
+        {
+          "method": "live Google Maps browser navigation",
+          "query": "مؤسسة جمع الأعمال التجارية بدر 0557021911",
+          "result": "no_matching_target_place_card_extracted_after_actual_live_navigation"
+        }
+      ],
+      "observed": {
+        "name": null,
+        "category": null,
+        "phone": null,
+        "address": null,
+        "outcome": "no_matching_target_place_card_extracted_after_actual_live_navigation",
+        "url": "https://www.google.com/maps/search/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%200557021911%20%D8%A8%D8%AF%D8%B1"
+      },
+      "fullyVerified": false,
+      "fields": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "decision": "partial_or_unresolved",
+      "proposedPatch": null,
+      "criterion": "Only same-office name, explicit real-estate agency category, matching published Google phone and prior matching business pin plus address count. Unrelated cards/search result/viewport coordinates do not count.",
+      "priorEvidenceFile": "audits/OFFICE_RECHECK_2026-10-13_LANE2.json"
+    }
+  ]
+}

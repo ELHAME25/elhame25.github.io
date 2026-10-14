@@ -1,0 +1,462 @@
+{
+  "date": "2026-10-14",
+  "lane": 4,
+  "actualAttemptedIds": [
+    "national-icuae-office-ChIJwdFiCs4NbBURDZkpuLuhk3s",
+    "phase6-office-226b9aff12b4",
+    "phase6-office-5641a2dfa5b4",
+    "phase6-office-3878c6919884",
+    "phase6-office-d85e66598948",
+    "phase6-office-5fd58d707ce8",
+    "phase6-office-59358e076e9c",
+    "phase6-office-cddf1399e1e8",
+    "phase6-office-f58fc5095383",
+    "phase6-office-24d817b34575",
+    "phase6-office-71f5db8c16ec",
+    "phase6-office-f2736ed100ec",
+    "phase6-office-21e5007625c1"
+  ],
+  "actualAttemptsWithReturnedObservation": 13,
+  "fullyVerified": 2,
+  "results": [
+    {
+      "id": "national-icuae-office-ChIJwdFiCs4NbBURDZkpuLuhk3s",
+      "actualAttempt": true,
+      "decision": "unresolved_fields",
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJwdFiCs4NbBURDZkpuLuhk3s",
+      "note": "Stored Place-ID produced blank unnamed Maps card; exact name+city+phone via visible Maps search UI also blank unnamed panel. No office field confirmed.",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldEvidence": {
+        "name": {
+          "source": "prior saved audit",
+          "file": "OFFICE_ADDITIONAL_RESULTS_LANE4_2026-10-13.json",
+          "inheritedCriterion": true
+        }
+      },
+      "proposedPatch": null,
+      "remainingUnprovenFields": [
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ],
+      "patchProposed": null
+    },
+    {
+      "id": "phase6-office-226b9aff12b4",
+      "actualAttempt": true,
+      "name": "مكتب الهجرة الراقي للعقار",
+      "category": "وكالة عقارات",
+      "phone": "0555526763",
+      "address": "الفرقان، حي الهجرة، كدي مخطط الامير أحمد، مكة 24234",
+      "lat": 21.3894142,
+      "lon": 39.8397458,
+      "source": "https://www.google.com/maps/?cid=14722416951157120531",
+      "pinBasis": "Live directions final URL !3d21.3894142!4d39.8397458",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldEvidence": {
+        "name": {
+          "source": "https://www.google.com/maps/?cid=14722416951157120531",
+          "observed": "مكتب الهجرة الراقي للعقار"
+        },
+        "publicPhone": {
+          "source": "https://www.google.com/maps/?cid=14722416951157120531",
+          "observed": "0555526763"
+        },
+        "brokerageActivity": {
+          "source": "https://www.google.com/maps/?cid=14722416951157120531",
+          "observed": "وكالة عقارات"
+        },
+        "mapsPin": {
+          "source": "https://www.google.com/maps/?cid=14722416951157120531",
+          "observed": [
+            21.3894142,
+            39.8397458
+          ],
+          "basis": "Live directions final URL !3d21.3894142!4d39.8397458"
+        }
+      },
+      "proposedPatch": null,
+      "remainingUnprovenFields": [],
+      "decision": "verified_all_fields",
+      "patchProposed": null
+    },
+    {
+      "id": "phase6-office-5641a2dfa5b4",
+      "actualAttempt": true,
+      "name": "ابو ايوب للعقار",
+      "category": "وكالة عقارات",
+      "phone": "0504531474",
+      "address": "الشارع العام، بطحاء قريش، مكة 24352",
+      "source": "https://www.google.com/maps/?cid=8172275861553669655",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "fieldEvidence": {
+        "name": {
+          "source": "https://www.google.com/maps/?cid=8172275861553669655",
+          "observed": "ابو ايوب للعقار"
+        },
+        "publicPhone": {
+          "source": "https://www.google.com/maps/?cid=8172275861553669655",
+          "observed": "0504531474"
+        },
+        "brokerageActivity": {
+          "source": "https://www.google.com/maps/?cid=8172275861553669655",
+          "observed": "وكالة عقارات"
+        }
+      },
+      "proposedPatch": null,
+      "remainingUnprovenFields": [
+        "mapsPin"
+      ],
+      "decision": "unresolved_fields",
+      "patchProposed": null
+    },
+    {
+      "id": "phase6-office-3878c6919884",
+      "actualAttempt": true,
+      "name": "مكتب الكليبي للعقار",
+      "category": "وكالة عقارات",
+      "phone": "0580582454",
+      "address": "9081 الصحابة، الراشدية، مكة 24268 4147،، مكة",
+      "source": "https://www.google.com/maps/?cid=485201596816091332",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "fieldEvidence": {
+        "name": {
+          "source": "https://www.google.com/maps/?cid=485201596816091332",
+          "observed": "مكتب الكليبي للعقار"
+        },
+        "publicPhone": {
+          "source": "https://www.google.com/maps/?cid=485201596816091332",
+          "observed": "0580582454"
+        },
+        "brokerageActivity": {
+          "source": "https://www.google.com/maps/?cid=485201596816091332",
+          "observed": "وكالة عقارات"
+        }
+      },
+      "proposedPatch": null,
+      "remainingUnprovenFields": [
+        "mapsPin"
+      ],
+      "decision": "unresolved_fields",
+      "patchProposed": null
+    },
+    {
+      "id": "phase6-office-d85e66598948",
+      "actualAttempt": true,
+      "name": "مكتب اللحياني للعقار",
+      "category": "وكيل عقاري",
+      "phone": "0555549303",
+      "address": "سعيد الشيباني، الزاهر، مكة 24222",
+      "lat": 21.4485051,
+      "lon": 39.8049932,
+      "source": "https://www.google.com/maps/?cid=3275364988883841844",
+      "pinBasis": "Live directions final URL !3d21.4485051!4d39.8049932",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": true,
+        "publicPhone": true
+      },
+      "fieldEvidence": {
+        "name": {
+          "source": "https://www.google.com/maps/?cid=3275364988883841844",
+          "observed": "مكتب اللحياني للعقار"
+        },
+        "publicPhone": {
+          "source": "https://www.google.com/maps/?cid=3275364988883841844",
+          "observed": "0555549303"
+        },
+        "brokerageActivity": {
+          "source": "https://www.google.com/maps/?cid=3275364988883841844",
+          "observed": "وكيل عقاري"
+        },
+        "mapsPin": {
+          "source": "https://www.google.com/maps/?cid=3275364988883841844",
+          "observed": [
+            21.4485051,
+            39.8049932
+          ],
+          "basis": "Live directions final URL !3d21.4485051!4d39.8049932"
+        }
+      },
+      "proposedPatch": null,
+      "remainingUnprovenFields": [],
+      "decision": "verified_all_fields",
+      "patchProposed": null
+    },
+    {
+      "id": "phase6-office-5fd58d707ce8",
+      "actualAttempt": true,
+      "source": "https://www.google.com/maps/?cid=2369032440549303296",
+      "error": "Runtime.evaluate/protocolTimeout; heading locator unreadable",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldEvidence": {},
+      "proposedPatch": null,
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ],
+      "decision": "unresolved_fields",
+      "patchProposed": null
+    },
+    {
+      "id": "phase6-office-59358e076e9c",
+      "actualAttempt": true,
+      "source": "https://www.google.com/maps/?cid=5030898563047375322",
+      "error": "Runtime.evaluate/protocolTimeout; heading locator unreadable",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldEvidence": {
+        "name": {
+          "source": "prior saved audit",
+          "file": "OFFICE_ADDITIONAL_RESULTS_LANE4_2026-10-13.json",
+          "inheritedCriterion": true
+        },
+        "brokerageActivity": {
+          "source": "prior saved audit",
+          "file": "OFFICE_ADDITIONAL_RESULTS_LANE4_2026-10-13.json",
+          "inheritedCriterion": true
+        }
+      },
+      "proposedPatch": null,
+      "remainingUnprovenFields": [
+        "mapsPin",
+        "publicPhone"
+      ],
+      "decision": "unresolved_fields",
+      "patchProposed": null
+    },
+    {
+      "id": "phase6-office-cddf1399e1e8",
+      "actualAttempt": true,
+      "source": "https://www.google.com/maps/?cid=1174047357211131280",
+      "error": "Runtime.evaluate/protocolTimeout; heading locator unreadable",
+      "criteria": {
+        "name": false,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": false
+      },
+      "fieldEvidence": {},
+      "proposedPatch": null,
+      "remainingUnprovenFields": [
+        "name",
+        "brokerageActivity",
+        "mapsPin",
+        "publicPhone"
+      ],
+      "decision": "unresolved_fields",
+      "patchProposed": null
+    },
+    {
+      "id": "phase6-office-f58fc5095383",
+      "actualAttempt": true,
+      "name": "مكتب ابوبدر للعقار",
+      "category": "مكتب الشركات",
+      "phone": "0504799591",
+      "address": "محمد صالح ابراهيم خزامي، الخضراء، مكة 24267",
+      "source": "https://www.google.com/maps/?cid=15675967310044099815",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": false,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "fieldEvidence": {
+        "name": {
+          "source": "https://www.google.com/maps/?cid=15675967310044099815",
+          "observed": "مكتب ابوبدر للعقار"
+        },
+        "publicPhone": {
+          "source": "https://www.google.com/maps/?cid=15675967310044099815",
+          "observed": "0504799591"
+        }
+      },
+      "proposedPatch": null,
+      "remainingUnprovenFields": [
+        "brokerageActivity",
+        "mapsPin"
+      ],
+      "decision": "unresolved_fields",
+      "patchProposed": null
+    },
+    {
+      "id": "phase6-office-24d817b34575",
+      "actualAttempt": true,
+      "name": "مكتب الزعيم للعقار",
+      "category": "وكالة عقارات",
+      "phone": "0565708339",
+      "address": "ابومراغ، العمرة الجديدة، مكة 24414",
+      "source": "https://www.google.com/maps/?cid=7201665504583081600",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "fieldEvidence": {
+        "name": {
+          "source": "https://www.google.com/maps/?cid=7201665504583081600",
+          "observed": "مكتب الزعيم للعقار"
+        },
+        "publicPhone": {
+          "source": "https://www.google.com/maps/?cid=7201665504583081600",
+          "observed": "0565708339"
+        },
+        "brokerageActivity": {
+          "source": "https://www.google.com/maps/?cid=7201665504583081600",
+          "observed": "وكالة عقارات"
+        }
+      },
+      "proposedPatch": null,
+      "remainingUnprovenFields": [
+        "mapsPin"
+      ],
+      "decision": "unresolved_fields",
+      "patchProposed": null
+    },
+    {
+      "id": "phase6-office-71f5db8c16ec",
+      "actualAttempt": true,
+      "name": "سلطان الخطابي للخدمات العقارية",
+      "category": "وكالة عقارات",
+      "phone": "0541415554",
+      "address": "النوارية، مكة 24416",
+      "source": "https://www.google.com/maps/?cid=963626482042499865",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "fieldEvidence": {
+        "name": {
+          "source": "https://www.google.com/maps/?cid=963626482042499865",
+          "observed": "سلطان الخطابي للخدمات العقارية"
+        },
+        "publicPhone": {
+          "source": "https://www.google.com/maps/?cid=963626482042499865",
+          "observed": "0541415554"
+        },
+        "brokerageActivity": {
+          "source": "https://www.google.com/maps/?cid=963626482042499865",
+          "observed": "وكالة عقارات"
+        }
+      },
+      "proposedPatch": null,
+      "remainingUnprovenFields": [
+        "mapsPin"
+      ],
+      "decision": "unresolved_fields",
+      "patchProposed": null
+    },
+    {
+      "id": "phase6-office-f2736ed100ec",
+      "actualAttempt": true,
+      "name": "المسكن الواسع للعقار",
+      "category": "وكالة عقارات",
+      "phone": "0125401007",
+      "address": "9QHC+6JF حي, الشوقية، مكة 24353",
+      "source": "https://www.google.com/maps/?cid=11800222491494178235",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "fieldEvidence": {
+        "name": {
+          "source": "https://www.google.com/maps/?cid=11800222491494178235",
+          "observed": "المسكن الواسع للعقار"
+        },
+        "publicPhone": {
+          "source": "https://www.google.com/maps/?cid=11800222491494178235",
+          "observed": "0125401007"
+        },
+        "brokerageActivity": {
+          "source": "https://www.google.com/maps/?cid=11800222491494178235",
+          "observed": "وكالة عقارات"
+        }
+      },
+      "proposedPatch": null,
+      "remainingUnprovenFields": [
+        "mapsPin"
+      ],
+      "decision": "unresolved_fields",
+      "patchProposed": null
+    },
+    {
+      "id": "phase6-office-21e5007625c1",
+      "actualAttempt": true,
+      "name": "قمم الرواسي العقارية",
+      "category": "وكالة عقارات",
+      "phone": "0565503387",
+      "address": "شارع الدكتور عبدالقادر كوشك، ولي العهد، مكة 24351",
+      "source": "https://www.google.com/maps/?cid=17735420001266874937",
+      "criteria": {
+        "name": true,
+        "brokerageActivity": true,
+        "mapsPin": false,
+        "publicPhone": true
+      },
+      "fieldEvidence": {
+        "name": {
+          "source": "https://www.google.com/maps/?cid=17735420001266874937",
+          "observed": "قمم الرواسي العقارية"
+        },
+        "publicPhone": {
+          "source": "https://www.google.com/maps/?cid=17735420001266874937",
+          "observed": "0565503387"
+        },
+        "brokerageActivity": {
+          "source": "https://www.google.com/maps/?cid=17735420001266874937",
+          "observed": "وكالة عقارات"
+        }
+      },
+      "proposedPatch": null,
+      "remainingUnprovenFields": [
+        "mapsPin"
+      ],
+      "decision": "unresolved_fields",
+      "patchProposed": null
+    }
+  ],
+  "browserExhaustion": "After fresh recovery tab118, repeated Runtime.evaluate/Page.getFrameTree timeouts occurred; final batch call exceeded60 seconds and reset browser REPL kernel. No unreturned field observation treated as proof.",
+  "lastBatchUnreturnedTargets": [
+    "phase6-office-4fcc4eb6f7d2",
+    "phase6-office-b27722693b12",
+    "phase6-office-a8a7d425a404"
+  ],
+  "noSharedMutation": true
+}

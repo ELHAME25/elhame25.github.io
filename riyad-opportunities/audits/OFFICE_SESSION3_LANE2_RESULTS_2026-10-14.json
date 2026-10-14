@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-14",
+  "lane": 2,
+  "scopeCount": 183,
+  "state": "in_progress",
+  "liveMapsBlocker": "Google Maps direct cid returned reCAPTCHA with unusual-traffic message; not bypassed. No blocked card treated as proof or exhausted sources.",
+  "records": [
+    {
+      "id": "entity-5ba616b31ae7",
+      "fullyVerified": true,
+      "allStoredPhonesConfirmed": true,
+      "identityLinkedToStoredOffice": true,
+      "fields": {"name": true, "brokerageActivity": true, "mapsPin": true, "publicPhone": true},
+      "evidence": [{"url": "https://hajaraqar.com.sa/apartments", "observation": "Current official website identifies مكتب واحات هجر العقاري, الأحساء الهفوف المباركية, phone 0542090000 and publishes dated sale/rental listings."}, {"url": "https://hajaraqar.com.sa/contact", "observation": "Official contact page publishes 0542090000."}],
+      "priorEvidence": "OFFICE_SESSION2_LANE2_SCOPE_2026-10-14.json retains proven name/activity/mapsPin for same unique office; only publicPhone was outstanding.",
+      "proposedPatch": {"web": "https://hajaraqar.com.sa/"},
+      "unconfirmedFields": []
+    },
+    {
+      "id": "phase5-google-office-5efc02e7d79e",
+      "fullyVerified": true,
+      "allStoredPhonesConfirmed": true,
+      "identityLinkedToStoredOffice": true,
+      "fields": {"name": true, "brokerageActivity": true, "mapsPin": true, "publicPhone": true},
+      "evidence": [{"url": "https://www.shomoalaqar.com.sa/", "observation": "Official office site publishes current 13 October 2026 sale/rental property listings, identifies مكتب شموع العقار للاستثمار والتطوير العقاري, الأحساء المبرز المشرفة قرب الدانوب, and phone 0553928287."}],
+      "priorEvidence": "OFFICE_SESSION2_LANE2_SCOPE_2026-10-14.json retains name and Maps pin; phone and brokerage outstanding, now matched by unique office/phone/address near Danube.",
+      "proposedPatch": {"web": "https://www.shomoalaqar.com.sa/"},
+      "unconfirmedFields": []
+    },
+    {
+      "id": "entity-18c3e23a8f02",
+      "fullyVerified": false,
+      "allStoredPhonesConfirmed": true,
+      "identityLinkedToStoredOffice": true,
+      "fields": {"name": true, "brokerageActivity": false, "mapsPin": false, "publicPhone": true},
+      "evidence": [{"url": "https://www.bizmideast.com/SA/مكتب-شمعة-وطن-للعقار-050-850-5505", "observation": "Business directory associates exact office name with 0508505505 and address عمرو بن العاص الراشدية, matching stored office. Generic activity category does not establish actual brokerage."}],
+      "proposedPatch": null,
+      "unconfirmedFields": ["brokerageActivity", "mapsPin"]
+    },
+    {
+      "id": "entity-275f48bd3b79",
+      "fullyVerified": false,
+      "allStoredPhonesConfirmed": true,
+      "identityLinkedToStoredOffice": true,
+      "fields": {"name": true, "brokerageActivity": false, "mapsPin": true, "publicPhone": true},
+      "evidence": [{"url": "https://gulfmap.net/place/مكتب-الرمز-العقاري", "observation": "Matching name and عين نجم address; only agency category found, no actual sale/rental brokerage evidence."}],
+      "proposedPatch": null,
+      "unconfirmedFields": ["brokerageActivity"]
+    }
+  ]
+}
