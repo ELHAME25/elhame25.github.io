@@ -1,0 +1,30 @@
+{
+  "baseCommit": "dce5d5542e1a76f5f6496d29bce5578035b2c3fd",
+  "inventory": 1395,
+  "noLostRecords": true,
+  "noDuplicateIds": true,
+  "originalOrderPreserved": true,
+  "allLegacyPhonesRetained": true,
+  "allProvenCorrectionsApplied": true,
+  "changedRecords": 490,
+  "changedFields": {
+    "maps": 208,
+    "activity": 433,
+    "lon": 207,
+    "lat": 207,
+    "n": 58,
+    "phones": 8
+  },
+  "carsUnchanged": true,
+  "fullyVerified": 640,
+  "notFullyVerified": 755,
+  "qa": {
+    "command": "sh riyad-opportunities/qa/run.sh",
+    "exitCode": 0,
+    "passed": true,
+    "runCount": 1,
+    "note": "QA validates application/inventory integrity; it does not prove business data."
+  },
+  "compressedRawResponseArchiveUploaded": false,
+  "publicationEvidence": "Readable public business name/activity/phone/pin observations and exact Maps place links; full compressed response excluded after auto-review rejection."
+}

@@ -1,0 +1,16 @@
+{
+  "lane": 1,
+  "assigned": 1,
+  "results": [
+    {
+      "id": "phase5-google-office-69e4545dc6a2",
+      "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B9%D8%AA%D9%8A%D9%82%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1&query_place_id=ChIJJXDPfJ-TNz4RzaPSva3jYDY",
+      "status": "unresolved_browser_runtime_error",
+      "attempted": true,
+      "observed": null,
+      "proposedPatch": null,
+      "blocker": "cua.createBrowserTab failed Attempted to exit cancel scope in a different task than it was entered in; js_reset succeeded but first getState repeated identical error. No card rendered; no fields inferred.",
+      "requiredAction": "Restore working browser runtime or inspect this known-place-ID link in a working browser."
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "lane": 3,
+  "checkedAt": "2026-10-14T14:25:26.852246+00:00",
+  "processed": 4,
+  "results": [
+    {
+      "id": "phase5-google-office-300c10edcc1f",
+      "storedName": "مكتب اركان العقار - فرع المبرز",
+      "status": "partial_activity_category_marketing_agency",
+      "observed": {
+        "name": "مكتب اركان العقار - فرع المبرز",
+        "activity": "وكالة تسويق",
+        "phone": "0549114303",
+        "address": "شارع المدينة المنورة، 36342، حي الراشدية،، المبرز 36342",
+        "lat": 25.4367732,
+        "lon": 49.5832301,
+        "plusCode": "CHPM+P7 المبرز"
+      },
+      "canonicalUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D8%B1%D9%83%D8%A7%D9%86+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1+-+%D9%81%D8%B1%D8%B9+%D8%A7%D9%84%D9%85%D8%A8%D8%B1%D8%B2%E2%80%AD/@25.4367732,49.5832301,17z/data=!3m1!4b1!4m6!3m5!1s0x3e37bd1c885d349d:0xac94d3fc6a568f74!8m2!3d25.4367732!4d49.5832301!16s%2Fg%2F11pdvtt59z?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+      "source": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D8%B1%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20-%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D8%A8%D8%B1%D8%B2%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1&query_place_id=ChIJnTRdiBy9Nz4RdI9WavzTlKw",
+      "evidenceMethod": "Live Google Maps UI accessibility tree and DOM snapshot; canonical URL read via tab.url after card load. Coordinates from canonical place !3d/!4d fields, not viewport center.",
+      "visibleEvidence": {
+        "heading": "مكتب اركان العقار - فرع المبرز",
+        "categoryButton": "وكالة تسويق",
+        "phoneButton": "الهاتف: 0549114303",
+        "addressButton": "العنوان: شارع المدينة المنورة، 36342، حي الراشدية،، المبرز 36342",
+        "missingPhoneButton": null,
+        "closureText": null
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D8%B1%D9%83%D8%A7%D9%86+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1+-+%D9%81%D8%B1%D8%B9+%D8%A7%D9%84%D9%85%D8%A8%D8%B1%D8%B2%E2%80%AD/@25.4367732,49.5832301,17z/data=!3m1!4b1!4m6!3m5!1s0x3e37bd1c885d349d:0xac94d3fc6a568f74!8m2!3d25.4367732!4d49.5832301!16s%2Fg%2F11pdvtt59z?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 25.4367732,
+        "lon": 49.5832301
+      },
+      "reason": "Exact office title and stored phone, but Maps category is وكالة تسويق; cannot assert real estate service category from card title alone.",
+      "allStoredPhonesProven": true
+    },
+    {
+      "id": "phase5-office-0a76689cbbc1",
+      "storedName": "وتد النخيل للخدمات العقارية والعامة",
+      "status": "verified_live_maps_requires_patch",
+      "observed": {
+        "name": "وتد النخيل للخدمات العقارية و العامة",
+        "activity": "وكالة عقارات",
+        "phone": "0582866519",
+        "address": "محاسن، حي القادسية، المبرز 36422",
+        "lat": 25.408971,
+        "lon": 49.5726225,
+        "plusCode": "CH5F+H2 المبرز"
+      },
+      "canonicalUrl": "https://www.google.com/maps/place/%D9%88%D8%AA%D8%AF+%D8%A7%D9%84%D9%86%D8%AE%D9%8A%D9%84+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%88+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%E2%80%AD/@25.408971,49.5726225,17z/data=!3m1!4b1!4m6!3m5!1s0x3e37977c5204a85b:0x1e5b068eba29a452!8m2!3d25.408971!4d49.5726225!16s%2Fg%2F11sf4z44h6?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+      "source": "https://www.google.com/maps/search/?api=1&query=%D9%88%D8%AA%D8%AF%20%D8%A7%D9%84%D9%86%D8%AE%D9%8A%D9%84%20%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%88%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1&query_place_id=ChIJW6gEUnyXNz4RUqQpuo4GWx4",
+      "evidenceMethod": "Live Google Maps UI accessibility tree and DOM snapshot; canonical URL read via tab.url after card load. Coordinates from canonical place !3d/!4d fields, not viewport center.",
+      "visibleEvidence": {
+        "heading": "وتد النخيل للخدمات العقارية و العامة",
+        "categoryButton": "وكالة عقارات",
+        "phoneButton": "الهاتف: 0582866519",
+        "addressButton": "العنوان: محاسن، حي القادسية، المبرز 36422",
+        "missingPhoneButton": null,
+        "closureText": null
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/%D9%88%D8%AA%D8%AF+%D8%A7%D9%84%D9%86%D8%AE%D9%8A%D9%84+%D9%84%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D9%88+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9%E2%80%AD/@25.408971,49.5726225,17z/data=!3m1!4b1!4m6!3m5!1s0x3e37977c5204a85b:0x1e5b068eba29a452!8m2!3d25.408971!4d49.5726225!16s%2Fg%2F11sf4z44h6?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 25.408971,
+        "lon": 49.5726225
+      },
+      "reason": "Exact distinctive title, real estate category, published stored phone, Mubarraz locality and actual canonical place pin.",
+      "allStoredPhonesProven": true
+    },
+    {
+      "id": "prior-qadisiyya-75",
+      "storedName": "مكتب بصمة وعد للتطوير والاستثمار العقاري",
+      "status": "partial_phone_not_published",
+      "observed": {
+        "name": "بصمة وعد للعقارات",
+        "activity": "شركة إدارة عقارات",
+        "phone": null,
+        "address": "القادسية، 7716، القادسية، الرياض 13252 3233، الرياض 13252",
+        "lat": 24.8219972,
+        "lon": 46.8062653,
+        "plusCode": "RRC4+QG القادسية، الرياض"
+      },
+      "canonicalUrl": "https://www.google.com/maps/place/%D8%A8%D8%B5%D9%85%D8%A9+%D9%88%D8%B9%D8%AF+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.8219972,46.8062653,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2eff004cebcb9d:0x233029fcdcaa26b6!8m2!3d24.8219972!4d46.8062653!16s%2Fg%2F11wbfft8m9?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+      "source": "https://www.google.com/maps/place/%D8%A8%D8%B5%D9%85%D8%A9+%D9%88%D8%B9%D8%AF+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x3e2eff004cebcb9d:0x233029fcdcaa26b6!8m2!3d24.8219972!4d46.8062653!16s%2Fg%2F11wbfft8m9!19sChIJncvrTAD_Lj4Rtiaq3PwpMCM?authuser=0&hl=ar&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+      "evidenceMethod": "Live Google Maps UI accessibility tree and DOM snapshot; canonical URL read via tab.url after card load. Coordinates from canonical place !3d/!4d fields, not viewport center.",
+      "visibleEvidence": {
+        "heading": "بصمة وعد للعقارات",
+        "categoryButton": "شركة إدارة عقارات",
+        "phoneButton": null,
+        "addressButton": "العنوان: القادسية، 7716، القادسية، الرياض 13252 3233، الرياض 13252",
+        "missingPhoneButton": "إضافة رقم الهاتف للمكان",
+        "closureText": null
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/%D8%A8%D8%B5%D9%85%D8%A9+%D9%88%D8%B9%D8%AF+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.8219972,46.8062653,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2eff004cebcb9d:0x233029fcdcaa26b6!8m2!3d24.8219972!4d46.8062653!16s%2Fg%2F11wbfft8m9?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 24.8219972,
+        "lon": 46.8062653,
+        "n": "بصمة وعد للعقارات"
+      },
+      "reason": "Name variant same known stored Place ID and Qadisiyyah address; no phone, explicit إضافة رقم الهاتف للمكان button. Preserve stored phone unverified.",
+      "allStoredPhonesProven": false
+    },
+    {
+      "id": "national-icuae-office-ChIJsSwh3_YPbBURhWCKuUlSYLw",
+      "storedName": "مكتب طلال العقاري",
+      "status": "verified_closed_permanently_identity_phone_pin_activity_not_visible",
+      "observed": {
+        "name": "مكتب طلال العقاري",
+        "activity": null,
+        "phone": "0502583421",
+        "address": "2335+8JV، شارع الاربعين، عرعر 73244",
+        "lat": 31.0033729,
+        "lon": 41.0590411,
+        "operationalStatus": "مغلق نهائيًا"
+      },
+      "canonicalUrl": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B7%D9%84%D8%A7%D9%84+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%E2%80%AD/@31.0033729,41.0590411,17z/data=!3m1!4b1!4m6!3m5!1s0x156c0ff6df212cb1:0xbc605249b98a6085!8m2!3d31.0033729!4d41.0590411!16s%2Fg%2F11rq3_379n?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+      "source": "https://www.google.com/maps/place/?q=place_id:ChIJsSwh3_YPbBURhWCKuUlSYLw",
+      "evidenceMethod": "Live Google Maps UI accessibility tree and DOM snapshot; canonical URL read via tab.url after card load. Coordinates from canonical place !3d/!4d fields, not viewport center.",
+      "visibleEvidence": {
+        "heading": "مكتب طلال العقاري",
+        "categoryButton": null,
+        "phoneButton": "الهاتف: 0502583421",
+        "addressButton": "العنوان: 2335+8JV، شارع الاربعين، عرعر 73244",
+        "missingPhoneButton": null,
+        "closureText": "مغلق نهائيًا"
+      },
+      "proposedPatch": {
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B7%D9%84%D8%A7%D9%84+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%E2%80%AD/@31.0033729,41.0590411,17z/data=!3m1!4b1!4m6!3m5!1s0x156c0ff6df212cb1:0xbc605249b98a6085!8m2!3d31.0033729!4d41.0590411!16s%2Fg%2F11rq3_379n?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 31.0033729,
+        "lon": 41.0590411,
+        "activityReviewStatus": "closed_permanently"
+      },
+      "reason": "Exact name and phone on stored place ID. Maps explicitly مغلق نهائيًا; no activity-category button visible. Existing closed status remains, no deletion.",
+      "allStoredPhonesProven": true
+    }
+  ]
+}
