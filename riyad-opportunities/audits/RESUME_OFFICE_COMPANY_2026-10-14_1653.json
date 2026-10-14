@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T16:53:00Z",
+  "updatedAt": "2026-10-14T17:19:00Z",
   "repository": "ELHAME25/elhame25.github.io",
   "workBranch": "audit/office-company-readiness-20261014",
   "lastConfirmedCommit": "ad3b7720f4aed7d5caced330891c8a740fda2869",
@@ -19,7 +19,7 @@
     "national-ejar-office-193842",
     "national-ejar-office-194827"
   ],
-  "note": "271 observations or attempts saved in OFFICE_LIVE_LANE1..5_2026-10-14_1645.json. Attempts include partial cards, candidates and search lists; do not call all verified. Three office corrections applied on work branch in132329d3. Legacy phones retained. User authorized public repository and live publication; release must preserve unrelated changes and pass checks. No site deployment yet.",
+  "note": "All 271 observations or attempts are saved; not all verified. Three office corrections are deployed on main, preserving all 1524 main records. Audit branch has 1395 records and MUST NOT replace main offices wholesale. Reconcile IDs and newer changes before integration. Rakez headquarters correction is in PR 11, pending checks. Bulk audit remains incomplete and parallel workers stopped on usage limit.",
   "lanes": {
     "1": {
       "assigned": 153,
@@ -541,6 +541,21 @@
       "savedResults": "riyad-opportunities/audits/OFFICE_LIVE_LANE5_2026-10-14_1645.json"
     }
   },
-  "publicationAuthorized": true
+  "publicationAuthorized": true,
+  "publication": {
+    "offices": {
+      "pr": 10,
+      "mainCommit": "0d5577c0b8034288fa07fe23d9af30d20817ad8d",
+      "pagesRun": 38603529656,
+      "status": "deployed",
+      "liveOfficeChecked": "national-ejar-office-203024"
+    },
+    "rakez": {
+      "pr": 11,
+      "branch": "fix/rakez-headquarters-20261014",
+      "head": "cea5894101ae7419f2b87b89a10eaaa3a730edd8",
+      "status": "QA running; not merged",
+      "run": 38605677538
+    }
+  }
 }
-
