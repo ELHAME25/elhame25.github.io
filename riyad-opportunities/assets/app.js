@@ -829,7 +829,7 @@
   }
   function filterQuery(k, items) {
     var q = norm(S.q[k] || ''); if (!q) return items;
-    return items.filter(function (x) { var o = x.o; return norm([o.n, o.dev, o.nb, o.type, o.city, o.dir, o.kind, o.scope, o.contact].join(' ')).indexOf(q) >= 0; });
+    return items.filter(function (x) { var o = x.o; return norm((k === 'companies' ? [o.n, o.city, o.kind, o.contact] : [o.n, o.dev, o.nb, o.type, o.city, o.dir, o.kind, o.scope, o.contact]).join(' ')).indexOf(q) >= 0; });
   }
 
   /* ---------------- cards ---------------- */
