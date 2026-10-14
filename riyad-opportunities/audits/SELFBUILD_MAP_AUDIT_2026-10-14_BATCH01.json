@@ -1,0 +1,104 @@
+{
+  "schema": "selfbuild-map-field-audit-batch-v1",
+  "audit_date": "2026-10-14",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "head_at_start": "112d353e523b172cda012b3d616be40fea25710c",
+  "counts": {
+    "records_checked": 4,
+    "stored_map_links_opened": 1,
+    "stored_links_verified": 1,
+    "verified_map_candidates_not_applied": 2,
+    "unresolved": 1,
+    "corrected_and_retested": 0,
+    "phone_verified": 2,
+    "whatsapp_verified": 0,
+    "website_officially_checked": 3
+  },
+  "records": [
+    {
+      "id": "sb-b59040d5c2",
+      "name": "مخطط مسرة الطائف",
+      "map": {
+        "opened": true,
+        "matched": true,
+        "verified": true,
+        "status": "verified_correct",
+        "evidence": "الرابط المخزن فُتح إلى بطاقة «مخطط مسرة الطائف - الزاملية للاستثمار»، طريق الهدا/مسرة 2، الطائف 26713. بطاقة Maps فيها رقم 920031404 وموقع alzamiliah.com، متطابقان مع بيانات السجل/المطور.",
+        "saved": "https://www.google.com/maps/place/%D9%85%D8%AE%D8%B7%D8%B7+%D9%85%D8%B3%D8%B1%D8%A9+%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81+-+%D8%A7%D9%84%D8%B2%D8%A7%D9%85%D9%84%D9%8A%D8%A9+%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x15e98bbed2f4996d:0xafc06599b4a96a47!8m2!3d21.3088075!4d40.3663116!16s%2Fg%2F11zd5zjzb0!19sChIJbZn00r6L6RURR2qptJllwK8"
+      },
+      "fields": {
+        "phone": "920031404 — تطابق Maps والمطور",
+        "whatsapp": "لا يوجد في السجل؛ لم يتحقق",
+        "website": "alzamiliah.com ظاهر في Maps/المطور"
+      },
+      "sources": [
+        "https://alzamiliah.com/ar/projects/13"
+      ]
+    },
+    {
+      "id": "sb-da0652bb09",
+      "name": "مخطط الرحمانية",
+      "map": {
+        "opened": false,
+        "matched": true,
+        "verified": true,
+        "status": "verified_named_place_candidate_not_saved",
+        "candidate": "https://www.google.com/maps/place/%D9%85%D8%AE%D8%B7%D8%B7+-+%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D8%A7%D9%86%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15a9b30049a4b235:0x61096c438c824b8!8m2!3d28.4556375!4d36.5519531!16s%2Fg%2F11yp5c6mzz!19sChIJNbKkSQCzqRURuCTIOMSWEAY",
+        "post_edit_retest": "not applicable; candidate not yet saved",
+        "evidence": "لا رابط خرائط حالي في السجل. بطاقة Maps الفعلية باسم «مخطط - الرحمانية» على FH42+7Q4، حي الريان، تبوك 47325؛ موقع alhnaki.com ورقم 0555059812 ظاهرين على البطاقة. صفحة المطور تثبت مشروع الرحمانية بطريق الملك فيصل/حي الريان."
+      },
+      "fields": {
+        "phone": "0555059812 على بطاقة Maps والمطور",
+        "whatsapp": "لم يتحقق",
+        "website": "alhnaki.com رسمي"
+      },
+      "sources": [
+        "https://alhnaki.com/"
+      ]
+    },
+    {
+      "id": "sb-70b4b23d81",
+      "name": "مخطط الأندلس",
+      "map": {
+        "opened": false,
+        "matched": true,
+        "verified": true,
+        "status": "official_coordinate_pin_candidate_not_saved",
+        "candidate": "https://www.google.com/maps/search/?api=1&query=27.4982532360397%2C41.6667309356096",
+        "post_edit_retest": "not applicable; candidate not yet saved",
+        "evidence": "لا رابط خرائط حالي. صفحة بصمة الرسمية تطابق اسم المشروع/مدينة حائل/حي الأندلس وتحدد «موقع المشروع» عند 27.4982532360397,41.6667309356096. فتح خرائط على الإحداثية أظهر نقطة coordinate-only (FMX8+8M5)، لا بطاقة باسم المشروع؛ مثبت كموقع صادر عن المطور لا كتطابق مسمى Maps."
+      },
+      "fields": {
+        "phone": "920002033 مطابق لبصمة الرسمية",
+        "whatsapp": "لا رابط مخزن/لم يتحقق",
+        "website": "https://www.gobussma.com/Project/ProjectDetail/57"
+      },
+      "sources": [
+        "https://www.gobussma.com/Project/ProjectDetail/57"
+      ]
+    },
+    {
+      "id": "sb-85c233314b",
+      "name": "مخطط المساعدية",
+      "map": {
+        "opened": false,
+        "matched": false,
+        "status": "unresolved_no_proven_pin",
+        "evidence": "لا رابط خرائط في السجل. المصدر الرسمي يثبت اسم المشروع والمدينة تبوك لكنه لا يذكر الحي. بحث Maps أظهر نتائج مختلفة (مخطط الفيصل/حي المساعدية/مخططات أخرى) ولا دليل لربط دبوس بعينه؛ لم يخترع موقع."
+      },
+      "fields": {
+        "phone": "لا يوجد في السجل؛ لم يتحقق مستقلًا",
+        "whatsapp": "لا يوجد في السجل؛ لم يتحقق",
+        "website": "موقع بن سعيدان رسمي"
+      },
+      "sources": [
+        "https://h-saedan.sa/product/%D9%85%D8%AE%D8%B7%D8%B7-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D9%8A%D8%A9"
+      ]
+    }
+  ],
+  "notes": [
+    "لا تعد هذه الدفعة تصحيحات مطبقة؛ سجلان لديهما مرشح خريطة موثق لكنه لم يحفظ أو يختبر بعد الحفظ.",
+    "فقط سجل مسرة كان لديه رابط Maps مخزن وتم فتحه؛ سجلات الرحمانية والأندلس لا تحتوي رابط Maps في البيانات الحالية."
+  ]
+}
