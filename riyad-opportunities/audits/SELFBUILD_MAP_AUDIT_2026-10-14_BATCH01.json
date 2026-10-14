@@ -6,14 +6,16 @@
   "head_at_start": "112d353e523b172cda012b3d616be40fea25710c",
   "counts": {
     "records_checked": 4,
-    "stored_map_links_opened": 1,
+    "stored_map_links_opened": 3,
     "stored_links_verified": 1,
-    "verified_map_candidates_not_applied": 2,
+    "verified_map_candidates_not_applied": 0,
     "unresolved": 1,
     "corrected_and_retested": 0,
     "phone_verified": 2,
     "whatsapp_verified": 0,
-    "website_officially_checked": 3
+    "website_officially_checked": 3,
+    "verified_location": 3,
+    "new_map_links_saved_and_post_save_tested": 2
   },
   "records": [
     {
@@ -40,13 +42,14 @@
       "id": "sb-da0652bb09",
       "name": "مخطط الرحمانية",
       "map": {
-        "opened": false,
+        "opened": true,
         "matched": true,
         "verified": true,
-        "status": "verified_named_place_candidate_not_saved",
+        "status": "verified_named_place_post_save_retest",
         "candidate": "https://www.google.com/maps/place/%D9%85%D8%AE%D8%B7%D8%B7+-+%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D8%A7%D9%86%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15a9b30049a4b235:0x61096c438c824b8!8m2!3d28.4556375!4d36.5519531!16s%2Fg%2F11yp5c6mzz!19sChIJNbKkSQCzqRURuCTIOMSWEAY",
-        "post_edit_retest": "not applicable; candidate not yet saved",
-        "evidence": "لا رابط خرائط حالي في السجل. بطاقة Maps الفعلية باسم «مخطط - الرحمانية» على FH42+7Q4، حي الريان، تبوك 47325؛ موقع alhnaki.com ورقم 0555059812 ظاهرين على البطاقة. صفحة المطور تثبت مشروع الرحمانية بطريق الملك فيصل/حي الريان."
+        "post_edit_retest": "reopened exact saved value after commit 9cf471c4be4c3eec130c21b5e30afe946495afc7; card «مخطط - الرحمانية», FH42+7Q4, Al Rayyan, Tabuk 47325, official alhnaki.com, coords 28.4556375,36.5519531",
+        "evidence": "لا رابط خرائط حالي في السجل. بطاقة Maps الفعلية باسم «مخطط - الرحمانية» على FH42+7Q4، حي الريان، تبوك 47325؛ موقع alhnaki.com ورقم 0555059812 ظاهرين على البطاقة. صفحة المطور تثبت مشروع الرحمانية بطريق الملك فيصل/حي الريان. Post-save UI reopened the exact saved URL and showed matching named place/address.",
+        "saved": "https://www.google.com/maps/place/%D9%85%D8%AE%D8%B7%D8%B7+-+%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D8%A7%D9%86%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15a9b30049a4b235:0x61096c438c824b8!8m2!3d28.4556375!4d36.5519531!16s%2Fg%2F11yp5c6mzz!19sChIJNbKkSQCzqRURuCTIOMSWEAY"
       },
       "fields": {
         "phone": "0555059812 على بطاقة Maps والمطور",
@@ -61,13 +64,14 @@
       "id": "sb-70b4b23d81",
       "name": "مخطط الأندلس",
       "map": {
-        "opened": false,
+        "opened": true,
         "matched": true,
         "verified": true,
-        "status": "official_coordinate_pin_candidate_not_saved",
+        "status": "official_coordinate_pin_post_save_retested_name_not_in_card",
         "candidate": "https://www.google.com/maps/search/?api=1&query=27.4982532360397%2C41.6667309356096",
-        "post_edit_retest": "not applicable; candidate not yet saved",
-        "evidence": "لا رابط خرائط حالي. صفحة بصمة الرسمية تطابق اسم المشروع/مدينة حائل/حي الأندلس وتحدد «موقع المشروع» عند 27.4982532360397,41.6667309356096. فتح خرائط على الإحداثية أظهر نقطة coordinate-only (FMX8+8M5)، لا بطاقة باسم المشروع؛ مثبت كموقع صادر عن المطور لا كتطابق مسمى Maps."
+        "post_edit_retest": "reopened exact saved value after commit 9cf471c4be4c3eec130c21b5e30afe946495afc7; Maps resolved to 27.498253,41.666731 / FMX8+8M5; no name/locality on map card, but coordinates equal developer's official project map.",
+        "evidence": "لا رابط خرائط حالي. صفحة بصمة الرسمية تطابق اسم المشروع/مدينة حائل/حي الأندلس وتحدد «موقع المشروع» عند 27.4982532360397,41.6667309356096. فتح خرائط على الإحداثية أظهر نقطة coordinate-only (FMX8+8M5)، لا بطاقة باسم المشروع؛ مثبت كموقع صادر عن المطور لا كتطابق مسمى Maps. Post-save UI confirms exact official developer coordinates, not a named project card.",
+        "saved": "https://www.google.com/maps/search/?api=1&query=27.4982532360397%2C41.6667309356096"
       },
       "fields": {
         "phone": "920002033 مطابق لبصمة الرسمية",
@@ -99,6 +103,7 @@
   ],
   "notes": [
     "لا تعد هذه الدفعة تصحيحات مطبقة؛ سجلان لديهما مرشح خريطة موثق لكنه لم يحفظ أو يختبر بعد الحفظ.",
-    "فقط سجل مسرة كان لديه رابط Maps مخزن وتم فتحه؛ سجلات الرحمانية والأندلس لا تحتوي رابط Maps في البيانات الحالية."
+    "فقط سجل مسرة كان لديه رابط Maps مخزن وتم فتحه؛ سجلات الرحمانية والأندلس لا تحتوي رابط Maps في البيانات الحالية.",
+    "Both previously blank map fields were saved and reopened. Rahmaniyah has a matching named place card; Al-Andalus has an official source-linked coordinate pin only (no named card/neighborhood text), so its verification is explicitly coordinate-level."
   ]
 }
