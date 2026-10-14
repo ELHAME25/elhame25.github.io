@@ -48,5 +48,31 @@
     "unresolved": 2,
     "restored": 0
   },
-  "note": "The report's 44 removals reconcile arithmetically (821 - 44 + 4 = 781). This focused review found the two unresolved cross-city IDs are not supported as distinct active opportunities; canonical counterparts remain. One canonical listing has unresolved identity/address details. pdf-smalltown-005 had no saved Maps link and has a current Khamis canonical counterpart."
+  "note": "The report's 44 removals reconcile arithmetically (821 - 44 + 4 = 781). This focused review found the two unresolved cross-city IDs are not supported as distinct active opportunities; canonical counterparts remain. One canonical listing has unresolved identity/address details. pdf-smalltown-005 had no saved Maps link and has a current Khamis canonical counterpart. Canonical record links re-opened on 2026-10-14; this was a removed-ID follow-up, not an additional untouched active-row audit.",
+  "canonical_rechecks_2026_10_14": [
+    {
+      "id": "regional-pdf-entity-90e0b0e360dd-011",
+      "canonical_id": "entity-90e0b0e360dd",
+      "opened": true,
+      "matched": false,
+      "status": "unresolved_no_matching_place",
+      "evidence": "Canonical Khamis Mushait map link opened; Maps showed ~8 local results with no card matching name/phone. Nearest generic «معارض خميس مشيط» had no phone; unrelated «أضواء خميس مشيط» had a different number. No alternative pin verified.",
+      "phone": "0172383788 (record phone; not independently confirmed on official source)",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%AE%D9%85%D9%8A%D8%B3%20%D9%85%D8%B4%D9%8A%D8%B7%200172383788"
+      ]
+    },
+    {
+      "id": "regional-pdf-entity-faa8a7e44fe6-014",
+      "canonical_id": "entity-faa8a7e44fe6",
+      "opened": true,
+      "matched": false,
+      "status": "unresolved_name_conflict",
+      "evidence": "Canonical Abha search opened card «معرض سعيد عبدالله للسيارات» at same address and phone 0506484537 as expected for Bin Qazzan listing; display name differs, so do not substitute or call it verified. No direct pin confirmed.",
+      "phone": "0506484537 appears on the Maps card but business identity conflicts",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A8%D9%86%20%D9%82%D8%B2%D8%A7%D9%86%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%200506484537%20%D8%A3%D8%A8%D9%87%D8%A7"
+      ]
+    }
+  ]
 }
