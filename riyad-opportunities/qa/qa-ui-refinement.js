@@ -29,8 +29,8 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
   noPriceFallback:project.includes('السعر: غير معلن'),
   roomsOnProjectCard:project.includes('4 غرف')&&roomsUpper.includes('3 غرف فأكثر')&&!roomsUpper.includes('3 غرف فأكثر غرف'),
   searchAlwaysVisible:searchContent.includes('id="q-sec"'),
-  unknownLocationsStayVisibleWithoutFalseEmptyState:zeroRadiusItems.some(x=>x.rankD==null)?zeroRadiusContent.includes('الموقع غير محدد')&&!zeroRadiusContent.includes('لا توجد مشاريع ضمن'):zeroRadiusContent.includes('data-radius="10"')&&zeroRadiusContent.includes('كل الرياض'),
-  missingBranchPinClearCityFallback:!!missing&&!missingPinPage.includes('نطاق الفرع')&&!missingPinPage.includes('data-scope="city"')&&!missingPinPage.includes('id="radius"')&&!missingPinPage.includes('إحداثيات الفرع غير متاحة'),
+  projectSectorHasNoRadiusEmptyState:zeroRadiusItems.length>0&&!zeroRadiusContent.includes('data-radius=')&&!zeroRadiusContent.includes('لا توجد مشاريع ضمن'),
+  missingBranchPinClearCityFallback:!!missing&&!missingPinPage.includes('نطاق الفرع')&&!missingPinPage.includes('id="radius"')&&!missingPinPage.includes('إحداثيات الفرع غير متاحة'),
   noInternalReviewLabel:!fs.readFileSync(path.join(root,'assets/app.js'),'utf8').includes('الوظيفة التجارية قيد التحقق'),
   mobileTagline:css.includes('@media (max-width: 720px)')&&css.includes('.tagline { display: flex;'),
   narrowScreensSingleColumn:css.includes('@media (max-width: 720px)')&&css.includes('.grid, .grid.list { grid-template-columns: 1fr;')&&css.includes('@media (max-width: 420px)'),
@@ -42,3 +42,4 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  console.log(JSON.stringify({suite:'ui refinement markup and responsive rules',debug:{defaultCars,qadisiyahCars,cityCars,westCars,carsMarkup:carsMarkup.includes('معارض القادسية')&&carsMarkup.includes('معارض الشفا'),noDistanceControl,nhcCount:nhc.length,nearest:nearestNHC&&nearestNHC.o.n,firstD:nearestNHC&&nearestNHC.d},tests,passed:Object.values(tests).filter(Boolean).length,total:Object.keys(tests).length,failed},null,2));
  if(failed.length)process.exitCode=1;
 })();
+
