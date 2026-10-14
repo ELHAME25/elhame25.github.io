@@ -1,0 +1,142 @@
+{
+  "schema": "opportunity-map-field-audit-batch-v1",
+  "audit_date": "2026-10-14",
+  "repository": "ELHAME25/elhame25.github.io",
+  "branch": "fix/scope-counts-nhc-20261010",
+  "head_at_start": "112d353e523b172cda012b3d616be40fea25710c",
+  "source_claim": "فتح فعلي لروابط Google Maps، مع قراءة البطاقة/الإحداثية ومقارنة الصفحات الرسمية المذكورة. لا تعديل على data/opportunities.json في هذه الدفعة.",
+  "counts": {
+    "opened": 6,
+    "verified_location": 4,
+    "unresolved_location": 2,
+    "corrected_and_retested": 0,
+    "phone_verified_official": 4,
+    "whatsapp_verified": 0,
+    "website_verified": 6
+  },
+  "records": [
+    {
+      "id": "op-c4e61f63eb",
+      "name": "جيدا",
+      "map": {
+        "opened": true,
+        "status": "unresolved",
+        "matched": false,
+        "evidence": "رابط Maps الحالي فُتح لكنه وصل إلى خريطة عامة/بطاقة فارغة عند 25.2844029,49.5927532؛ لا يثبت نقطة جيدا. NHC project 47491 يؤكد المشروع في الهفوف/الورود و260 وحدة، ولا يثبت الحي الدقيق ولا نقطة الدبوس.",
+        "saved_current": "https://www.google.com/maps/place/"
+      },
+      "fields": {
+        "phone": "غير مخزن",
+        "whatsapp": "غير مخزن",
+        "website": "nhc.sa — صفحة المشروع الرسمية"
+      },
+      "sources": [
+        "https://www.nhc.sa/ar/real-estate-development/projects/47491/",
+        "https://www.nhc.sa/en/real-estate-development/projects/47491/"
+      ]
+    },
+    {
+      "id": "op-91e60fc473",
+      "name": "النقرة 78",
+      "map": {
+        "opened": true,
+        "status": "verified_named_place_candidate",
+        "matched": true,
+        "verified": true,
+        "saved": "https://www.google.com/maps/place/%D9%81%D9%84%D9%84+%D9%85%D8%AA%D9%85%D9%85+78%E2%80%AD/@27.4762862,41.6599681,14z/data=!4m10!1m2!2m1!1z2KfZhNmG2YLYsdipIDc42Iwg2LTYp9ix2Lkg2KfZhNmG2YLYsdipIDQy2Iwg2K3ZiiDYp9mE2YbZgtix2KnYjCDYrdin2KbZhA!3m6!1s0x15763f00467e2827:0xb797801b0a7f0bb2!8m2!3d27.474134!4d41.671017!15sCknYp9mE2YbZgtix2KkgNzjYjCDYtNin2LHYuSDYp9mE2YbZgtix2KkgNDLYjCDYrdmKINin2YTZhtmC2LHYqdiMINit2KfYptmEkgESYXBhcnRtZW50X2J1aWxkaW5n4AEA!16s%2Fg%2F11vz6k6jz3?entry=ttu",
+        "post_edit_retest": "pending; not saved into data yet",
+        "evidence": "بطاقة Maps المقروءة «فلل متمم 78»، العنوان النقرة، حائل؛ إحداثيات البطاقة 27.474134,41.671017. صفحة عقر تؤكد مشروع النقرة 78 بحي النقرة، حائل."
+      },
+      "fields": {
+        "phone": "920031975 موثق كرقم الشركة بموقع متمم؛ ليس رقمًا مستقلًا للمشروع",
+        "whatsapp": "غير مخزن/غير مثبت",
+        "website": "https://mutmim.com/اتصل-بنا/"
+      },
+      "sources": [
+        "https://mutmim.com/اتصل-بنا/",
+        "https://sa.aqar.fm/المشاريع-العقارية/شركة-متمم-للمقاولات-141/النقرة-551/6464547"
+      ]
+    },
+    {
+      "id": "op-nhc-47317",
+      "name": "جيرة",
+      "map": {
+        "opened": true,
+        "status": "unresolved_coordinate_only",
+        "matched": false,
+        "evidence": "الرابط المختصر فُتح إلى دبوس إحداثي 21.3387263,39.6773161 وPlus Code 8MQG+FWW بحي الملك فهد، مكة، دون بطاقة أو دليل يثبت ضاحية بوابة مكة. NHC يثبت جيرة في الضاحية و400 وحدة دون دبوس دقيق."
+      },
+      "fields": {
+        "phone": "920001769 غير مؤكد في مصدر رسمي بهذه الدفعة",
+        "whatsapp": "https://wa.me/message/MFDPXBNPC5ZWM1 — وجهة واتساب لم تختبر استقلالًا",
+        "website": "https://www.nhc.sa/ar/real-estate-development/projects/47317/"
+      },
+      "sources": [
+        "https://www.nhc.sa/ar/real-estate-development/projects/47317/"
+      ]
+    },
+    {
+      "id": "op-karden25-abha",
+      "name": "كاردن 25",
+      "map": {
+        "opened": true,
+        "status": "verified_official_coordinate_pin",
+        "matched": true,
+        "verified": true,
+        "evidence": "رابط Maps الحالي فُتح إلى 18.2738305,42.6494783 / 7JFX+GQQ حجلة دون بطاقة مسماة. زر «فتح في خرائط Google» بموقع المشروع الرسمي يصل إلى الإحداثيات نفسها، والصفحة تثبت المشروع في أبها و40 شقة؛ اسم الحي غير موثق."
+      },
+      "fields": {
+        "phone": "0550811151 متطابق مع صفحة الاتصال الرسمية",
+        "whatsapp": "غير مخزن",
+        "website": "https://www.karden-ksa.com/projects/كاردن-25"
+      },
+      "sources": [
+        "https://www.karden-ksa.com/projects/كاردن-25",
+        "https://www.karden-ksa.com/contact.html"
+      ]
+    },
+    {
+      "id": "op-center-riyadh-refah-57",
+      "name": "رفاه 57",
+      "map": {
+        "opened": true,
+        "status": "verified_official_coordinate_pin",
+        "matched": true,
+        "verified": true,
+        "evidence": "رابط Maps الحالي فُتح إلى 24.8532448,46.795695 / VQ3W+77W بالرمال، الرياض دون بطاقة مسماة. صفحة المشروع الرسمية تسمي مخطط سماء نجد/حي الرمال وتربط إلى الإحداثيات نفسها."
+      },
+      "fields": {
+        "phone": "920017431 ظاهر بصفحة المشروع الرسمية",
+        "whatsapp": "غير مخزن",
+        "website": "https://hemmh.sa/project.html?id=rafah57"
+      },
+      "sources": [
+        "https://hemmh.sa/project.html?id=rafah57"
+      ]
+    },
+    {
+      "id": "op-center-riyadh-aljamee-40",
+      "name": "الجميع 40",
+      "map": {
+        "opened": true,
+        "status": "verified_named_place",
+        "matched": true,
+        "verified": true,
+        "evidence": "بطاقة Maps المفتوحة «الجميع 40»، الرمال، الرياض، الإحداثيات 24.9394218,46.7914913. صفحة المطور الرسمية تقول مخطط تنال بحي الرمال وتربط لنفس البطاقة/الموقع. بطاقة Maps تعرض رقمًا آخر؛ لم يُستبدل الرقم الرسمي المسجل."
+      },
+      "fields": {
+        "phone": "920017431 مؤكد بصفحة المطور؛ لا يطابق الرقم المعروض في Maps",
+        "whatsapp": "غير مخزن",
+        "website": "https://hemmh.sa/project.html?id=aljamee40"
+      },
+      "sources": [
+        "https://hemmh.sa/project.html?id=aljamee40"
+      ]
+    }
+  ],
+  "notes": [
+    "لا تغيير إلى روابط data: هذه الدفعة توثق الأدلة فقط. لا يمكن عد النقرة 78 تصحيحًا ناجحًا قبل تطبيق المرشح ثم إعادة فتحه بعد الحفظ.",
+    "الحي الدقيق لم يثبت لجيدا أو كاردن 25؛ جيرة لا يثبت دبوسها انتماءه للمشروع.",
+    "اختبار الهاتف/واتساب/الموقع سجل مستقل؛ وجود رقم رسمي على صفحة مطور لا يعني رقمًا خاصًا بالمشروع."
+  ]
+}
