@@ -53,8 +53,9 @@ function assertNearFirst(rows,label){let last=-Infinity,unknown=false;for(const 
   assert(!env.els.app.innerHTML.includes('data-explore='),'company sector controls must be hidden');
   assert(!env.els.app.innerHTML.includes('id="radius"'),'company radius must be hidden');
   assert(env.els.content.innerHTML.includes('id="company-activity"')&&env.els.content.innerHTML.includes('id="company-sort"'),'company filters absent');
+  assert(!env.els.content.innerHTML.includes('value="سداد"'),'unapproved settlement filter exposed');
   const allCompanies=A.itemsFor('companies');
-  for(const activity of ['تطوير','استثمار','تسويق ووساطة','سداد']){
+  for(const activity of ['تطوير','استثمار','تسويق ووساطة']){
     env.els['company-activity'].value=activity;env.els['company-activity'].handlers.change();A.state().limit.companies=10000;A.renderSection();
     const expected=allCompanies.filter(x=>A.companyActivities(x.o).includes(activity));
     assert.equal((env.els.content.innerHTML.match(/<article class="lcard"/g)||[]).length,expected.length,'activity filter count mismatch '+activity);
@@ -79,5 +80,5 @@ function assertNearFirst(rows,label){let last=-Infinity,unknown=false;for(const 
   // If supplied, compare exact car result IDs/order with a read-only pre-change app.
   let carComparisons=0;const baseline=process.env.NATIONAL_POLICY_BASELINE_APP;
   if(baseline){const old=boot(baseline);await new Promise(r=>setTimeout(r,350));const B=old.window.__policy;for(const b of D.branches){A.choose(b.c);B.choose(b.c);for(const scope of ['branch','city'])for(const radius of [5,20]){for(const q of [A,B]){q.state().scope=scope;q.state().radius=radius;}assert.deepEqual(Array.from(A.itemsFor('cars','',''+scope),x=>x.o.id),Array.from(B.itemsFor('cars','',''+scope),x=>x.o.id),'car behavior changed at '+b.c+'/'+scope+'/'+radius);carComparisons++;}if(A.sameCity(b.city,'الرياض'))for(const sec of ['شرق','شمال','جنوب','غرب','وسط'])for(const q of [A,B]){q.state().scope='sector';q.state().explore=sec;if(q===B){assert.deepEqual(Array.from(A.itemsFor('cars',sec,'sector'),x=>x.o.id),Array.from(B.itemsFor('cars',sec,'sector'),x=>x.o.id),'Riyadh sector car behavior changed '+b.c+'/'+sec);carComparisons++;}}}}
-  console.log(JSON.stringify({suite:'National category scope policy',ok:true,...totals,carComparisons,activityFilters:4,showroomSectorSwitches},null,2));
+  console.log(JSON.stringify({suite:'National category scope policy',ok:true,...totals,carComparisons,activityFilters:3,showroomSectorSwitches},null,2));
 })().catch(error=>{console.error(error.stack||error);process.exitCode=1;});
