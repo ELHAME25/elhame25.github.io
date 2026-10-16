@@ -1,7 +1,7 @@
 {
   "status": "work_in_progress_not_public_release",
   "sourceBaseCommit": "864a15231f5ad655b871dbfc1e836469eb840352",
-  "checkpoint": "2026-10-16T08:10:00Z",
+  "checkpoint": "2026-10-16T08:20:00Z",
   "protectedQadisiyyahCars": 33,
   "protectedCarsDeepEquality": "passed",
   "dataCounts": {
@@ -11,7 +11,7 @@
     "offices": 1524,
     "cars": 781,
     "companies": 131,
-    "opportunities": 429,
+    "opportunities": 433,
     "selfbuild": 10,
     "dealers": 1
   },
@@ -30,9 +30,20 @@
   },
   "pending": [
     "Full individual national field audit remains incomplete",
-    "Browser screenshots and browser CI pending",
+    "Recheck screenshot image loading and right-side entry form after visual review",
     "Tabuk branch coverage has no documented mapping",
     "Some research paths stopped at service usage limit"
   ],
-  "publicDeployment": false
+  "publicDeployment": false,
+  "previousCheckpointCommit": "16d8d4e89ac2b9e64989484671463a3e137b04a9",
+  "browserQA": {
+    "status": "passed",
+    "commit": "16d8d4e89ac2b9e64989484671463a3e137b04a9",
+    "widths": [
+      1440,
+      390,
+      320
+    ],
+    "screenshots": 15
+  }
 }

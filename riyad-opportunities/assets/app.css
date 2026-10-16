@@ -21,3 +21,6 @@ dialog.detail{padding:0;border:0;border-radius:17px;width:min(760px,calc(100vw -
 .destination-actions{grid-template-columns:1.35fr 1.35fr .8fr}.destination-actions .btn{font-size:.75rem;padding-inline:6px}.destination-contacts{border-top:1px solid var(--line-2);padding-top:18px}.destination-contacts>h3{font-size:1rem;margin:0 0 6px}.destination-contact{margin-top:12px;padding:14px;border:1px solid var(--line);border-radius:10px}.destination-contact h4{margin:0 0 4px;font-size:.95rem}.destination-contact .d-acts{margin-top:9px}.destination-projects,.destination-contacts{scroll-margin-top:68px}@media(max-width:460px){.destination-actions{grid-template-columns:1fr 1fr}.destination-actions .btn{font-size:.63rem;white-space:normal;line-height:1.4}.destination-actions>.btn:last-child{grid-column:1/-1;min-height:30px}}
 
 .nhc-alternatives{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}.nhc-alternatives .btn{font-size:.78rem;min-height:40px}.nhc-alternatives .btn[aria-pressed=true]{background:var(--navy);color:#fff;border-color:var(--navy)}.nhc-alternatives .num{font-size:.7rem;opacity:.85}
+
+/* Keep employee and branch entry on the right, as approved. */
+@media(min-width:761px){.start-card{order:-1;border:1px solid var(--line-2);border-left:0;border-radius:0 20px 20px 0}.entry-visual{border-radius:20px 0 0 20px}}
