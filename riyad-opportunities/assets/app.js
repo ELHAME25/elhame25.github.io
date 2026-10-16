@@ -743,9 +743,9 @@
     return ['sold_out', 'unavailable', 'interest_only', 'booking_closed', 'fully_reserved'].indexOf((o.availability || {}).status) >= 0 || /مباع بالكامل|تم بيع كامل/.test(String(o.status || ''));
   }
   function displayEligible(kind, o, entry) {
-    if (nonSaleState(o)) return false;
+    if ((o.availability || {}).status === 'sold_out' || /مباع بالكامل|تم بيع كامل/.test(String(o.status || ''))) return false;
     if (kind === 'projects') return !bankApprovalPending() && approvalIdentityVerified(o) && !!(o.bankApproval && o.bankApproval.status === 'verified' && o.bankApproval.sourceType === 'bank_approved_inventory' && String(o.bankApproval.code || '').trim() && validEvidence(o.bankApproval));
-    if (kind === 'opps') return !!(entry && entry.hasLegacyMarketSource) || LEGACY_MARKET_IDS.has(o.id) || !!(o.availability && o.availability.status === 'available' && validEvidence(o.availability));
+    if (kind === 'opps') return !nonSaleState(o) && (!!(entry && entry.hasLegacyMarketSource) || LEGACY_MARKET_IDS.has(o.id) || !!(o.availability && o.availability.status === 'available' && validEvidence(o.availability)));
     return true;
   }
   function canonicalProjectItems(candidates) {
@@ -1053,7 +1053,7 @@
   function displayImage(kind, o) {
     var url = String(o && o.img || ''), id = String(o && o.id || ''), decoded = url;
     try { decoded = decodeURIComponent(url); } catch (e) { /* keep the source URL */ }
-    if ((kind === 'projects' && (id === 'P519' || id === 'P125' || id === 'P284')) || (kind === 'nhc' && o && o.n === 'الدار')) return '';
+    if ((kind === 'projects' && (id === 'P519' || id === 'P125' || id === 'P284' || id === 'P437')) || (kind === 'nhc' && o && o.n === 'الدار')) return '';
     if (/poster|banner|brochure|flyer|licen[cs]e|permit|screenshot|لقطة.?الشاشة/i.test(decoded)) return '';
     return url;
   }
