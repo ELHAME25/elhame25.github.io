@@ -11,7 +11,6 @@ on:
       - fix/rakez-headquarters-20261014
       - fix/national-company-sector-policy-20261014
       - fix/verified-office-release-20261014
-      - feat/approved-portal-redesign-20261016
       - main
     paths:
       - 'riyad-opportunities/**'
@@ -50,14 +49,6 @@ jobs:
           "$RUNNER_TEMP/riyad-browser/node_modules/.bin/playwright" install --with-deps chromium
       - name: Exercise desktop and mobile browser interactions
         run: NODE_PATH="$RUNNER_TEMP/riyad-browser/node_modules" node riyad-opportunities/qa/qa-browser.js
-      - name: Upload desktop and mobile screenshots
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: portal-browser-qa-${{ github.sha }}
-          path: riyad-opportunities/qa-artifacts/
-          if-no-files-found: warn
-          retention-days: 14
 
   live-smoke:
     if: github.ref == 'refs/heads/main'
@@ -70,4 +61,3 @@ jobs:
           node-version: '22'
       - name: Verify the published GitHub Pages site
         run: node riyad-opportunities/qa/qa-live-site.js
-

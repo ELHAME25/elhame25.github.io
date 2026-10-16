@@ -1,85 +1,112 @@
-/* Desktop/mobile browser regression for the approved portal. Screenshots use real
-   data only. Evidence fixtures are injected in memory for interactions and are
-   never written to the data directory or captured as production screenshots. */
 'use strict';
 const fs=require('fs'),path=require('path'),http=require('http'),assert=require('assert');
 const {chromium}=require('playwright');
-const root=path.resolve(process.argv[2]||path.join(__dirname,'..'));
-const artifacts=path.resolve(process.env.QA_ARTIFACT_DIR||path.join(root,'qa-artifacts'));fs.mkdirSync(artifacts,{recursive:true});
-const mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.png':'image/png','.webp':'image/webp','.jpg':'image/jpeg','.jpeg':'image/jpeg','.svg':'image/svg+xml'};
-let browser;
-const nhcData=JSON.parse(fs.readFileSync(path.join(root,'data/nhc.json'),'utf8'));
-const expectedEastNHC=nhcData.filter(o=>o.city==='الرياض'&&(o.serviceSectors||o.sectors||[o.sec]).includes('شرق')).length;
-const expectedCityNHC=nhcData.filter(o=>o.city==='الرياض').length;
-const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));if(file===root)file=path.join(root,'index.html');if(!file.startsWith(root+path.sep)){res.writeHead(403).end();return;}fs.readFile(file,(e,b)=>{if(e){res.writeHead(404).end();return;}res.setHeader('Content-Type',mime[path.extname(file)]||'application/octet-stream');res.end(b);});});
-(async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin='http://127.0.0.1:'+server.address().port;
- browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});let pageErrors=[],checks=[],imageChecks=[],mobileChecks=[];
- async function capture(page,name){
-  await page.evaluate(()=>document.fonts.ready);
-  await page.waitForFunction(()=>[...document.querySelectorAll('svg image')].every(i=>i.dataset.loaded==='1'),null,{timeout:15000});
-  const images=await page.evaluate(async()=>{const list=[...document.images];list.forEach(i=>i.loading='eager');await Promise.race([Promise.all(list.map(i=>i.complete?Promise.resolve():new Promise(r=>{i.addEventListener('load',r,{once:true});i.addEventListener('error',r,{once:true});}))),new Promise(r=>setTimeout(r,12000))]);await Promise.race([Promise.all(list.filter(i=>i.complete&&i.naturalWidth>0).map(i=>i.decode().catch(()=>{}))),new Promise(r=>setTimeout(r,5000))]);await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));return list.map(i=>({src:i.currentSrc||i.src,loaded:i.complete&&i.naturalWidth>0,official:i.classList.contains('official-image')}));});
-  const svgPhotos=await page.locator('svg image').evaluateAll(nodes=>nodes.map(i=>({src:i.getAttribute('href'),loaded:i.dataset.loaded==='1',displayCrop:i.parentElement.getAttribute('viewBox')})));imageChecks.push({screenshot:name,images:images.concat(svgPhotos)});await page.screenshot({path:path.join(artifacts,name),fullPage:true});
- }
- async function fit(page,label){
-  try {
-  await page.evaluate(()=>document.fonts.ready);
-  const x=await page.evaluate(()=>({width:innerWidth,doc:document.documentElement.scrollWidth}));assert(x.doc<=x.width+1,label+' horizontal overflow');
-  if(x.width<=760){
-   const controls=await page.locator((await page.locator('#detail[open]').count()?'#detail[open] ':'')+'button:visible, '+(await page.locator('#detail[open]').count()?'#detail[open] ':'')+'a.btn:visible, '+(await page.locator('#detail[open]').count()?'#detail[open] ':'')+'select:visible').evaluateAll(nodes=>nodes.map(n=>{const r=n.getBoundingClientRect();return {text:n.textContent.trim().slice(0,70),width:r.width,height:r.height,clipped:n.scrollWidth>n.clientWidth+1||n.scrollHeight>n.clientHeight+1};}));
-   assert(controls.length,label+' controls found');assert(controls.every(n=>n.width>=43.9&&n.height>=43.9),label+' targets under 44px: '+JSON.stringify(controls.filter(n=>n.width<43.9||n.height<43.9)));assert(controls.every(n=>!n.clipped),label+' clipped control text: '+JSON.stringify(controls.filter(n=>n.clipped)));
-   const titles=await page.locator('.vcard h3:visible,.lcard h3:visible,.stat span:visible').evaluateAll(nodes=>nodes.map(n=>({text:n.textContent,fontSize:parseFloat(getComputedStyle(n).fontSize),width:n.clientWidth,height:n.clientHeight,scrollWidth:n.scrollWidth,scrollHeight:n.scrollHeight,clipped:n.scrollWidth>n.clientWidth+1||n.scrollHeight>n.clientHeight+1})));assert(titles.every(n=>!n.clipped&&n.fontSize>=12),label+' title/category legibility: '+JSON.stringify(titles.filter(n=>n.clipped||n.fontSize<12)));
-   const cards=await page.locator('.vcard:visible').evaluateAll(nodes=>nodes.map(n=>{const b=n.querySelector('.body').getBoundingClientRect(),m=n.querySelector('.media').getBoundingClientRect(),a=n.querySelector('.card-actions').getBoundingClientRect();return {bodyWidth:b.width,mediaWidth:m.width,mediaHeight:m.height,actionsWidth:a.width,cardWidth:n.clientWidth};}));assert(cards.every(c=>c.mediaHeight<=101&&c.bodyWidth>c.mediaWidth&&c.actionsWidth>=c.cardWidth-2),label+' business content before compact media/full-width actions');
-   const kufiLoaded=await page.evaluate(()=>[...document.fonts].some(f=>f.family.includes('Noto Kufi Arabic')&&f.status==='loaded')&&document.fonts.check('700 16px "Noto Kufi Arabic"','دليل الفرص'));assert(kufiLoaded,label+' Noto Kufi heading font not loaded');
-   mobileChecks.push({label,viewport:x.width,controls:controls.length,minWidth:Math.min(...controls.map(n=>n.width)),minHeight:Math.min(...controls.map(n=>n.height)),noTextClipping:true,titles,font:await page.locator('.brand-name').evaluate(n=>getComputedStyle(n).fontFamily),kufiLoaded});
+const root=path.resolve(__dirname,'..');
+const server=http.createServer((req,res)=>{
+ const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+ const file=path.resolve(root,'.'+(pathname==='/'?'/index.html':pathname));
+ if(!file.startsWith(root+path.sep)){res.writeHead(403);return res.end();}
+ fs.readFile(file,(err,bytes)=>{if(err){res.writeHead(404);res.end();return;}
+ const types={'.html':'text/html','.js':'application/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp'};
+ res.setHeader('Content-Type',types[path.extname(file)]||'application/octet-stream');res.end(bytes);});
+});
+(async()=>{
+ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+ const base='http://127.0.0.1:'+server.address().port+'/';
+ const browser=await chromium.launch({headless:true});
+ const results=[];
+ try{
+  for(const [device,width,height] of [['desktop',1280,900],['mobile',390,844]]){
+   const context=await browser.newContext({viewport:{width,height},acceptDownloads:true});
+   const page=await context.newPage();const errors=[];
+   page.on('pageerror',err=>errors.push(err.message));
+   await page.addInitScript(()=>{Object.defineProperty(navigator,'share',{configurable:true,value:async(data)=>{window.__shared=data;}});});
+   await page.goto(base);await page.locator('#go-branch').waitFor();
+   await page.locator('#q-emp').fill('خالد الماطر');
+   assert((await page.locator('#greet').innerText()).includes('خالد الماطر'));
+   const open=async code=>{
+    if(await page.locator('#q-branch').count()===0)await page.locator('[data-act="change"]').first().click();
+    await page.locator('#q-branch').fill(code);await page.locator('#go-branch').click();
+    await page.waitForFunction(code=>window.__rogQA?.().branch===code,code);
+   };
+   const section=async k=>{await page.locator('[data-tab="'+k+'"]').click();await page.locator('#q-sec').waitFor();};
+   await open('243');
+   assert((await page.locator('h1').innerText()).includes('القادسية'));
+   // A single sector click must activate exactly that sector in Riyadh and Jeddah.
+   const assertExclusiveSector=async sector=>{
+    await page.locator('.seg button[data-explore="'+sector+'"]').click();
+    assert.equal(await page.locator('.seg button[data-explore][aria-pressed="true"]').count(),1,'multiple sectors activated in '+sector);
+    assert.equal(await page.locator('.seg button[data-explore="'+sector+'"]').getAttribute('aria-pressed'),'true');
+   };
+   await assertExclusiveSector('شرق');
+   assert.equal(await page.locator('.seg button[data-explore="شمال"]').getAttribute('aria-pressed'),'false');
+   await assertExclusiveSector('شمال');
+   assert.equal(await page.locator('.seg button[data-explore="شرق"]').getAttribute('aria-pressed'),'false');
+   await open('110'); // Jeddah, Hamdaniyah
+   await assertExclusiveSector('شرق');
+   await assertExclusiveSector('شمال');
+   await open('243');
+   await section('projects');
+   const before=await page.locator('[data-detail]').count();assert(before>0);
+   await page.locator('#q-sec').fill('__qa_no_such_record__');
+   await page.getByText('لا نتائج مطابقة',{exact:false}).waitFor();
+   await page.locator('#q-sec').fill('');await page.locator('[data-detail]').first().waitFor();
+   await page.locator('.vcard [data-detail]').first().click();
+   await page.locator('#detail').waitFor({state:'visible'});
+   await page.locator('#detail .btn[data-close]').click();
+    await page.locator('#detail').waitFor({state:'hidden'});
+   await section('cars');
+   assert(!(await page.locator('#content').innerText()).includes('مصدر رقم التواصل'));
+   assert(await page.locator('[data-call]').count()>0);
+   const phone=await page.locator('[data-call]').first().getAttribute('href');assert(/^tel:[+\d]+$/.test(phone));
+   const mapLinks=await page.locator('a[href*="google.com/maps"],a[href*="maps.app.goo.gl"],a[href*="goo.gl/maps"]').count();assert(mapLinks>0);
+   const downloaded=page.waitForEvent('download');
+   await page.locator('[data-vcard]').first().click();
+   const download=await downloaded;const file=await download.path();const vcf=fs.readFileSync(file,'utf8');
+   assert(vcf.includes('BEGIN:VCARD')&&/TEL;TYPE=WORK,VOICE:0\d{9}/.test(vcf));
+   await page.locator('[data-share]').first().click();
+   const shared=await page.evaluate(()=>window.__shared);assert(shared?.title&&shared?.text);
+   await page.locator('[data-car-area="shifa"]').click();
+   assert((await page.locator('#content').innerText()).includes('الشفا'));
+   await page.locator('[data-car-area="qadisiyah"]').click();
+   assert((await page.locator('#content').innerText()).includes('القادسية'));
+    // Car behavior remains city-wide outside the established metro policy.
+    // Offices have verified radius controls nationally, not just in Riyadh/Jeddah.
+    for(const code of ['602','105','304','302','401']){
+     await open(code); await section('cars');
+     assert(!await page.locator('#radius').count(),code+' changed showroom radius behavior');
+     await section('offices');
+     assert.equal(await page.locator('#radius').count(),1,code+' is missing the office radius');
+     for(const radius of ['5','10','15','20']) await page.locator('#radius').selectOption(radius);
+     assert(!await page.locator('[data-explore]').count(),code+' exposed office sector controls');
+    }
+    for(const code of ['176','307']){
+     await open(code); await section('offices');
+     assert(!await page.locator('#radius').count(),code+' invented a radius for an unverified branch pin');
+    }
+    await open('243'); await section('projects');
+    assert(!await page.locator('#radius').count(),'projects must not use a branch radius');
+    await section('companies');
+    assert(!await page.locator('#radius').count()&&!await page.locator('[data-explore]').count(),'companies exposed geographic filtering');
+    assert.equal(await page.locator('#company-activity').count(),0);
+    assert.equal(await page.locator('#company-sort').count(),0);
+    assert((await page.locator('#app').innerText()).includes('شركات الوساطة والاستثمار العقاري'));
+    await page.locator('#q-sec').fill('راكز');
+    assert.equal(await page.locator('#content article.lcard').filter({has:page.getByText('راكز العقارية',{exact:true})}).count(),1);
+    await page.locator('#q-sec').fill('');
+   // Seven independent search controls: Riyadh's six categories and Hail self-build.
+   let searchSections=0;
+   for(const [code,k] of [['243','projects'],['243','opps'],['243','nhc'],['243','companies'],['243','offices'],['243','cars'],['610','selfbuild']]){
+    await open(code);await section(k);await page.locator('#q-sec').fill('__qa_no_such_record__');
+    await page.getByText('لا نتائج مطابقة',{exact:false}).waitFor();searchSections++;
+   }
+   assert.equal(searchSections,7);
+   const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth+2);
+   assert(!overflow,device+' horizontal overflow');assert.deepEqual(errors,[]);
+   results.push({device,width,searchSections,branchNavigation:true,detailDialog:true,downloadedContact:true,share:true,localCities:true,pageErrors:errors});
+   await context.close();
   }
-  } catch(error) {
-   const name='failure-'+label.replace(/[^a-zA-Z0-9]+/g,'-').toLowerCase();
-   const measurements=await page.evaluate(()=>({width:innerWidth,docWidth:document.documentElement.scrollWidth,fonts:[...document.fonts].map(f=>({family:f.family,status:f.status})),elements:[...document.querySelectorAll('.stat,.stat b,.stat span,.vcard h3,.lcard h3,button,a.btn,select')].filter(n=>n.getClientRects().length).map(n=>{const r=n.getBoundingClientRect(),s=getComputedStyle(n);return {tag:n.tagName,className:n.className,text:n.textContent.trim().slice(0,120),box:{x:r.x,y:r.y,width:r.width,height:r.height},client:{width:n.clientWidth,height:n.clientHeight},scroll:{width:n.scrollWidth,height:n.scrollHeight},fontSize:s.fontSize,lineHeight:s.lineHeight,display:s.display,flexShrink:s.flexShrink};})}));
-   fs.writeFileSync(path.join(artifacts,name+'.json'),JSON.stringify(measurements,null,2));await page.screenshot({path:path.join(artifacts,name+'.png'),fullPage:true});throw error;
-  }
- }
- for(const viewport of [{width:1440,height:1000},{width:390,height:844},{width:320,height:800}]){
-  const context=await browser.newContext({viewport,reducedMotion:'reduce'});const page=await context.newPage();page.on('pageerror',e=>pageErrors.push(e.message));
-  await page.goto(origin,{waitUntil:'domcontentloaded'});await page.waitForSelector('#q-branch');await fit(page,'Entry '+viewport.width);
-  if(viewport.width>760){const form=await page.locator('.start-card').boundingBox(),art=await page.locator('.entry-visual').boundingBox();assert(form.x>art.x,'Entry form must be right of artwork');}
-  assert(await page.locator('.brand-logo').evaluate(i=>i.complete&&i.naturalWidth>0));assert.equal(await page.locator('body').getByText('إعداد: خالد الماطر',{exact:true}).count(),1);
-  assert.equal(await page.locator('#site-head').getByText('إعداد: خالد الماطر',{exact:true}).count(),0);assert.equal(await page.locator('#site-foot').getByText('إعداد: خالد الماطر',{exact:true}).count(),1);assert.equal(await page.locator('.tagline').innerText(),'التنفيــذ … النتائــج … الأثــر');assert.equal(await page.locator('.entry-form-heading p').innerText(),'فرص واضحة … وصول أسرع');assert.equal(await page.getByText('خطوتك الأولى',{exact:true}).count(),0);assert.equal(await page.locator('.entry-form-heading h2').innerText(),'اختر مدينتك وفرعك');const footer=await page.locator('#site-foot').evaluate(n=>{const a=n.querySelector('.footer-credit').getBoundingClientRect(),b=n.querySelector('.footer-updated').getBoundingClientRect();return {creditCenter:a.x+a.width/2,updateCenter:b.x+b.width/2,updateAlign:getComputedStyle(n.querySelector('.footer-updated')).textAlign};});assert(footer.updateCenter<footer.creditCenter);assert.equal(footer.updateAlign,'left');const head=await page.locator('.head-main').evaluate(n=>{const a=n.querySelector('.head-title').getBoundingClientRect(),b=n.querySelector('.brand-logo').getBoundingClientRect();return {titleCenter:a.x+a.width/2,logoCenter:b.x+b.width/2};});assert(Math.abs(head.titleCenter-viewport.width/2)<3);assert(head.logoCenter>head.titleCenter);
-  assert.equal(await page.locator('#site-foot').getByText('مصادر الصور',{exact:true}).count(),0);assert.equal(await page.locator('.decorative-caption:visible,.image-caption:visible').count(),0);assert.equal(await page.locator('.brand-name').count(),1);assert.equal(await page.locator('img[src*="entry-architecture"]').count(),0);
-  await page.waitForSelector('.entry-tower-photo image[data-loaded="1"]',{state:'attached'});
-  await capture(page,'entry-'+viewport.width+'.png');
-  await page.fill('#q-emp','خالد');await page.fill('#q-branch','243');assert(await page.locator('#go-branch').isEnabled());await page.click('#go-branch');await page.waitForSelector('.stat');assert.equal(await page.locator('.stat').count(),6);assert.equal(await page.locator('body').getByText('إعداد: خالد الماطر',{exact:true}).count(),1);assert.equal(await page.locator('#site-foot').getByText('إعداد: خالد الماطر',{exact:true}).count(),1);
-  await page.click('.selfbuild-link');assert.equal(await page.locator('#content h2').innerText(),'البناء الذاتي');assert.equal(await page.locator('.stat').count(),6);assert(await page.locator('#scope-select').isDisabled());await fit(page,'Self-build '+viewport.width);await capture(page,'selfbuild-'+viewport.width+'.png');await page.click('[data-tab="opps"]');
-  assert.equal(await page.locator('[data-explore],[data-scope]').count(),0);assert(await page.locator('#scope-select').isVisible());
-  const boxes=await page.locator('.stat').evaluateAll(a=>a.map(n=>{const r=n.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height};}));assert.equal(new Set(boxes.map(x=>Math.round(x.y))).size,2);assert.equal(new Set(boxes.map(x=>Math.round(x.x))).size,3);
-  await page.click('[data-tab="nhc"]');let qa=await page.evaluate(()=>window.__rogQA());assert.equal(qa.sections.nhc.length,expectedEastNHC);await page.selectOption('#scope-select','city');qa=await page.evaluate(()=>window.__rogQA());assert.equal(qa.sections.nhc.length,expectedCityNHC);await fit(page,'NHC '+viewport.width);
-  assert(await page.locator('[data-nhc-view="sector"]').isVisible());assert(await page.locator('[data-nhc-view="city"]').isVisible());await page.locator('[data-anchor="destination-contacts"]').first().click();await page.waitForSelector('#detail[open] #destination-contacts');await fit(page,'NHC contacts '+viewport.width);await page.keyboard.press('Escape');
-  await capture(page,'results-nhc-'+viewport.width+'.png');
-  await page.click('[data-tab="cars"]');assert.equal(await page.locator('#scope-select').inputValue(),'qadisiyah');qa=await page.evaluate(()=>window.__rogQA());assert.equal(qa.sections.cars.length,33);await page.selectOption('#scope-select','shifa');qa=await page.evaluate(()=>window.__rogQA());assert.equal(qa.sections.cars.length,15);
-  await page.fill('#q-sec','__no_matching_record__');await page.waitForSelector('.empty');await page.click('[data-tab="companies"]');assert(await page.locator('#scope-select').isDisabled());assert.equal(await page.locator('#q-sec').inputValue(),'');await page.click('[data-tab="cars"]');assert.equal(await page.locator('#q-sec').inputValue(),'__no_matching_record__');assert.equal(await page.locator('#scope-select').inputValue(),'shifa');
-  await page.fill('#q-sec','');await page.selectOption('#scope-select','qadisiyah');await capture(page,'results-cars-'+viewport.width+'.png');await fit(page,'Cars '+viewport.width);
-  await page.click('[data-tab="opps"]');await page.waitForSelector('.sec-head');await fit(page,'Availability '+viewport.width);await capture(page,'results-available-'+viewport.width+'.png');await page.click('[data-tab="projects"]');if((await page.evaluate(()=>window.__rogQA())).bankApprovalPending){assert.equal(await page.locator('[data-tab="projects"] .num').innerText(),'—');assert(await page.locator('.approval-pending').isVisible());assert.equal(await page.locator('.vcard').count(),0);assert(!(await page.locator('#content').innerText()).includes('0 مشاريع'));}await fit(page,'Approved '+viewport.width);await capture(page,'results-approved-'+viewport.width+'.png');
-  if(await page.locator('#content .vcard [data-detail]').count()){await page.locator('#content .vcard [data-detail]').first().click();await page.waitForSelector('#detail[open]');assert(await page.locator('#detail').evaluate(n=>n.querySelector('.primary-contact-actions').compareDocumentPosition(n.querySelector('.d-media'))&Node.DOCUMENT_POSITION_FOLLOWING));await fit(page,'Project detail '+viewport.width);await capture(page,'detail-approved-'+viewport.width+'.png');await page.keyboard.press('Escape');}
-  checks.push({viewport:viewport.width,realData:true,sixCards:true,columns:3,rows:2,nhcScope:true,qadisiyah33:true,shifa15:true,perCategoryState:true,noOverflow:true});await context.close();
- }
- // In-memory proof records exercise the gated views without pretending existing data is audited.
- const context=await browser.newContext({viewport:{width:1280,height:900}});const page=await context.newPage();page.on('pageerror',e=>pageErrors.push(e.message));
- await page.route('**/data/meta.json?*',async route=>{const meta=JSON.parse(fs.readFileSync(path.join(root,'data/meta.json'),'utf8'));meta.bankApprovalCatalog={status:'verified',source:'https://example.invalid/qa-only-bank-inventory',checkedAt:'2026-10-16'};await route.fulfill({json:meta});});
- await page.route('**/data/projects.json?*',async route=>{const rows=JSON.parse(fs.readFileSync(path.join(root,'data/projects.json'),'utf8'));for(const o of rows){o.availability={status:'available',source:'https://example.invalid/qa-only',checkedAt:'2026-10-16'};o.bankApproval={status:'verified',sourceType:'bank_approved_inventory',code:'INTERNAL-QA-ONLY',source:'https://example.invalid/qa-only',checkedAt:'2026-10-16'};}const linked=rows.find(o=>o.city==='الرياض'&&(o.sectors||[o.sec]).includes('شرق'));Object.assign(linked,{destinationName:'الفرسان',destinationCity:'الرياض',destinationSource:'https://example.invalid/qa-only-destination',phoneSource:'https://example.invalid/qa-only-contact'});await route.fulfill({json:rows});});
- await page.goto(origin+'/#b243');await page.waitForSelector('.stat');await page.click('[data-tab="opps"]');assert.equal(await page.locator('.vcard').count(),12);await page.click('[data-more="opps"]');assert.equal(await page.locator('.vcard').count(),24);
- await page.locator('.vcard').nth(15).locator('[data-detail]').click();await page.waitForSelector('#detail[open]');assert(!await page.locator('#detail').innerText().then(x=>x.includes('INTERNAL-QA-ONLY')));await page.keyboard.press('Escape');assert.equal(await page.locator('#detail[open]').count(),0);assert.equal(await page.locator('.vcard').count(),24);
- const query=await page.locator('.vcard h3').first().innerText();await page.fill('#q-sec',query);await page.locator('.vcard [data-detail]').first().click();await page.waitForSelector('#detail[open]');const before=await page.evaluate(()=>({scroll:scrollY,qa:JSON.stringify(window.__rogQA()),query:document.querySelector('#q-sec').value}));await page.goBack();assert.equal(await page.locator('#detail[open]').count(),0);assert.equal(await page.locator('#q-sec').inputValue(),before.query);assert.equal(await page.evaluate(()=>JSON.stringify(window.__rogQA())),before.qa);assert(Math.abs((await page.evaluate(()=>scrollY))-before.scroll)<3);await page.goForward();assert.equal(await page.locator('#detail[open]').count(),1);await page.click('#detail .back-results');assert.equal(await page.locator('#detail[open]').count(),0);
- await page.fill('#q-sec','');await page.click('[data-tab="projects"]');assert.equal(await page.locator('.vcard').count(),12);await page.locator('.vcard [data-detail]').first().click();await page.waitForSelector('#detail[open]');assert(await page.locator('#detail').innerText().then(x=>x.includes('موثق وفق المصدر')));assert(!await page.locator('#detail').innerText().then(x=>x.includes('INTERNAL-QA-ONLY')));await page.keyboard.press('Escape');
- await page.click('[data-tab="nhc"]');const fursan=page.locator('.vcard').filter({has:page.locator('h3',{hasText:'الفرسان'})});await fursan.locator('[data-anchor="destination-projects"]').click();await page.waitForSelector('#detail[open] #destination-projects .vcard');await page.locator('#destination-projects .vcard [data-detail]').first().click();await page.waitForSelector('#detail[open] .back-results');assert((await page.locator('#detail .back-results').innerText()).includes('العودة إلى الوجهة'));await page.locator('#detail .back-results').click();await page.waitForSelector('#detail[open] #destination-projects');await page.keyboard.press('Escape');assert.equal(await page.locator('#detail[open]').count(),0);
- checks.push({fixturesOnlyInMemory:true,initial12:true,more24:true,modalEscape:true,browserBackForward:true,filtersAndScrollPreserved:true,internalProjectCodeHidden:true,nhcExactProjectAndNestedBack:true});await context.close();
- // Missing source authority is a pending catalog, never an advertised zero.
- const pendingContext=await browser.newContext({viewport:{width:390,height:844}});const pendingPage=await pendingContext.newPage();pendingPage.on('pageerror',e=>pageErrors.push(e.message));
- await pendingPage.route('**/data/meta.json?*',async route=>{const meta=JSON.parse(fs.readFileSync(path.join(root,'data/meta.json'),'utf8'));meta.bankApprovalCatalog={status:'awaiting_original_source'};await route.fulfill({json:meta});});
- await pendingPage.goto(origin+'/#b243');await pendingPage.waitForSelector('.stat');await pendingPage.click('[data-tab="projects"]');assert.equal(await pendingPage.locator('[data-tab="projects"] .num').innerText(),'—');assert.equal(await pendingPage.locator('.approval-pending h3').innerText(),'بانتظار قائمة المشاريع المعتمدة');assert.equal(await pendingPage.locator('.vcard').count(),0);assert(!(await pendingPage.locator('#content').innerText()).includes('0 مشاريع'));const pendingQA=await pendingPage.evaluate(()=>window.__rogQA());assert(pendingQA.bankApprovalPending);assert.equal(pendingQA.releaseCounts.approved,null);await pendingPage.click('[data-tab="opps"]');assert.equal(await pendingPage.locator('.approval-pending').count(),0);checks.push({pendingCatalogInMemory:true,pendingDashNotZero:true,marketAvailabilityIndependent:true});await pendingContext.close();
- // In-scope unknowns are pending, while a genuinely empty scope remains zero.
- // Branch entry may select another populated category, so explicitly open the category under test.
- const reviewContext=await browser.newContext({viewport:{width:320,height:800}});const reviewPage=await reviewContext.newPage();reviewPage.on('pageerror',e=>pageErrors.push(e.message));let reviewRows=[{id:'qa-pending-only',n:'QA_UNVERIFIED_NOT_PUBLIC',city:'الرياض',sec:'شرق'}];
- await reviewPage.route('**/data/meta.json?*',route=>{const meta=JSON.parse(fs.readFileSync(path.join(root,'data/meta.json'),'utf8'));meta.bankApprovalCatalog={status:'verified',source:'https://example.invalid/qa-only-bank',checkedAt:'2026-10-16'};return route.fulfill({json:meta});});
- await reviewPage.route('**/data/projects.json?*',route=>route.fulfill({json:reviewRows}));await reviewPage.route('**/data/opportunities.json?*',route=>route.fulfill({json:[]}));
- await reviewPage.goto(origin+'/#b243');await reviewPage.waitForSelector('.stat');await reviewPage.click('[data-tab="opps"]');assert.equal(await reviewPage.locator('[data-tab="opps"]').getAttribute('aria-pressed'),'true');assert.equal(await reviewPage.locator('[data-tab="opps"] .num').innerText(),'—');assert(await reviewPage.locator('.verification-pending').isVisible());const reviewQA=await reviewPage.evaluate(()=>window.__rogQA());assert.equal(reviewQA.sections.opps.length,0);assert.equal(reviewQA.pendingCounts.opps,1);assert.equal(await reviewPage.locator('.vcard').count(),0);assert(!(await reviewPage.locator('body').innerText()).includes('QA_UNVERIFIED_NOT_PUBLIC'));await fit(reviewPage,'Pending verification 320');await reviewPage.fill('#q-sec','no_matching_name');assert.equal(await reviewPage.locator('.empty h3').innerText(),'لا نتائج مطابقة');reviewRows=[];await reviewPage.reload();await reviewPage.waitForSelector('.stat');await reviewPage.click('[data-tab="opps"]');assert.equal(await reviewPage.locator('[data-tab="opps"]').getAttribute('aria-pressed'),'true');assert.equal(await reviewPage.locator('[data-tab="opps"] .num').innerText(),'0');assert.equal(await reviewPage.locator('.verification-pending').count(),0);checks.push({inScopeReviewFixtureOnly:true,pendingDashNotInventory:true,trueEmptyZero:true,queryNoMatchDistinct:true});await reviewContext.close();
- assert.deepEqual(pageErrors,[]);await browser.close();await new Promise(r=>server.close(r));const result={ok:true,checks,pageErrors,imageChecks,mobileChecks,screenshots:fs.readdirSync(artifacts).filter(x=>x.endsWith('.png'))};fs.writeFileSync(path.join(artifacts,'browser-results.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
-})().catch(async e=>{console.error(e.stack||e);fs.writeFileSync(path.join(artifacts,'browser-failure.txt'),String(e.stack||e));if(browser)await browser.close();server.close();process.exitCode=1;});
+ }finally{await browser.close();}
+ console.log(JSON.stringify({suite:'Chromium real browser interactions',results,ok:true},null,2));
+})().catch(err=>{console.error(err);process.exitCode=1;}).finally(()=>server.close());
+

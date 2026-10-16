@@ -6,7 +6,7 @@ class El{constructor(id){this.id=id;this.innerHTML='';this.textContent='';this.v
 const els={};const document={title:'',body:{appendChild(){}},getElementById(id){if(id==='site-config')return null;return els[id]||(els[id]=new El(id))},querySelector(){return null},querySelectorAll(){return []},addEventListener(){},createElement(){return new El('new')}};
 const location={hash:'',pathname:'/',search:''},localStorage={getItem(){return null},setItem(){},removeItem(){}},window={location,scrollTo(){},addEventListener(){}};
 const fetch=async url=>{const file=path.join(root,url.split('?')[0]);return{ok:fs.existsSync(file),json:async()=>JSON.parse(fs.readFileSync(file,'utf8'))}};
-const source=fs.readFileSync(path.join(root,'assets/app.js'),'utf8').replace('  boot();',"  window.__cityQA={cities,cityKey,sameCity,dedupeCars,data:()=>D}; boot();");
+const source=fs.readFileSync(path.join(root,'assets/app.js'),'utf8').replace('  boot();',"  window.__cityQA={cities,cityKey,sameCity,data:()=>D}; boot();");
 vm.runInNewContext(source,{document,window,location,history:{replaceState(){}},localStorage,navigator:{},fetch,setTimeout,clearTimeout,console,URL,Blob,Intl,Date});
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 (async()=>{
@@ -34,27 +34,6 @@ const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  assert(aflajBranch&&Q.sameCity(aflajBranch.city,'الأفلاج'),'branch 215 must resolve to Layla/Aflaaj');
  const aflajCar=D.cars.filter(o=>Q.sameCity(o.city,'ليلى')&&(o.phones||[]).includes('0501144220'));
  assert.strictEqual(aflajCar.length,1,'regional Aflaaj listing must deduplicate with Layla source record');
- const rawCars=JSON.parse(fs.readFileSync(path.join(root,'data/cars.json'),'utf8'));
- const sourceCar=rawCars.find(o=>o.id==='national-car-9fe1f36a66845c');
- const regionalCar=rawCars.find(o=>o.id==='regional-pdf-national-car-9fe1f36a66845c-071');
- assert(sourceCar&&regionalCar,'retain both raw source and regional records');
- const rawBefore=JSON.stringify([sourceCar,regionalCar]);
- const corrected=Q.dedupeCars([sourceCar,regionalCar]);
- assert.strictEqual(corrected.length,1,'explicit same-CID regional identity must display once after pin correction');
- if(regionalCar.mapReviewStatus==='verified_direct_pin'){
-   assert.strictEqual(corrected[0].lat,regionalCar.lat,'display clone must prefer verified pin latitude');
-   assert.strictEqual(corrected[0].lon,regionalCar.lon,'display clone must prefer verified pin longitude');
- }
- assert.strictEqual(JSON.stringify([sourceCar,regionalCar]),rawBefore,'dedup must never mutate either raw record');
- const otherPlace={...regionalCar,maps:'https://www.google.com/maps/?cid=9651703162385704988'};
- assert.strictEqual(Q.dedupeCars([sourceCar,otherPlace]).length,2,'same name and phone with different CID must stay separate');
- const movedPin={...regionalCar,lat:sourceCar.lat+0.001};
- assert.strictEqual(Q.dedupeCars([sourceCar,{...movedPin,regionalListingOf:''}]).length,2,'same CID without explicit regional link must not cause global alias merging');
- assert.strictEqual(Q.dedupeCars([sourceCar,{...movedPin,originCity:'الرياض'}]).length,2,'contradictory physical city must prevent regional merge');
- assert.strictEqual(Q.dedupeCars([sourceCar,{...movedPin,phones:['0500000000']}]).length,2,'different phones must prevent regional merge');
- assert.strictEqual(Q.dedupeCars([sourceCar,{...movedPin,n:'معرض مختلف'}]).length,2,'different entity name must prevent regional merge');
- assert.strictEqual(Q.dedupeCars([sourceCar,{...movedPin,maps:'https://example.com/?cid=9651703162385704987'}]).length,2,'CID from unrelated host is not place evidence');
-
  const sabtOffices=D.offices.filter(o=>Q.sameCity(o.city,'سبت العلاية'));
  assert.strictEqual(sabtOffices.length,5,'all five offices with variant spelling must attach to the branch city');
  const branchSearch=els['q-branch'], citySelect=els['q-city'];
@@ -93,4 +72,3 @@ const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  for(const kind of ['projects','opps','nhc','selfbuild','companies','offices','cars'])for(const o of D[kind]||[])for(const city of [o.city,...(o.coverageCities||[])].filter(Boolean))assert(choices.some(c=>Q.sameCity(c,city)),`${kind} city/coverage missing: ${city}`);
  console.log(JSON.stringify({ok:true,cityChoices:choices.length,searchedBranchCities:branchCities.length,sabtAlAlayahOffices:sabtOffices.length}));
 })().catch(e=>{console.error(e.stack||e);process.exitCode=1;});
-

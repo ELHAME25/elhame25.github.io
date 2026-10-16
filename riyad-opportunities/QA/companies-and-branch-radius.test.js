@@ -42,15 +42,16 @@ function check(name, fn) {
   const Q=window.__qa, D=Q.data();
   assert(Q && D.branches.length, 'app did not initialize');
 
-  check('Small-city offices and showrooms default to the full city without fixed distance', () => {
+  check('Small-city offices use branch radius while showroom behavior remains city-wide', () => {
     Q.selectBranch('607', true); Q.setScope('branch',5);
-    assert.equal(Q.radiusApplies('offices','branch'), false);
+    assert.equal(Q.radiusApplies('offices','branch'), true);
     assert.equal(Q.radiusApplies('cars','branch'), false);
     Q.state().tab='offices'; Q.renderBranch();
-    assert(!els.content.innerHTML.includes('id="radius"'), 'default city must not show radius');
+    assert(els.app.innerHTML.includes('id="radius"'), 'verified small-city branch needs office radius');
     const officeCity=Q.itemsFor('offices','','city');
     const officeBranch=Q.itemsFor('offices','','branch');
-    assert.deepEqual(officeBranch.map(x=>x.o.id).sort(),officeCity.map(x=>x.o.id).sort());
+    assert(officeBranch.every(x=>x.rankD!=null&&x.rankD<=5),'unknown/far office in radius');
+    assert.deepEqual(officeBranch.map(x=>x.o.id).sort(),officeCity.filter(x=>x.rankD!=null&&x.rankD<=5).map(x=>x.o.id).sort());
     assert.deepEqual(Q.itemsFor('cars','','branch').map(x=>x.o.id).sort(),Q.itemsFor('cars','','city').map(x=>x.o.id).sort());
     return {branch:'607',offices:officeBranch.length,cityOffices:officeCity.length};
   });
@@ -59,7 +60,7 @@ function check(name, fn) {
     Q.selectBranch('607', true);
     let previous=[]; const cars=Q.itemsFor('cars','','city').map(x=>x.o.id).sort();
     const counts=[5,10,15,20].map(r=>{
-      Q.setScope('radius',r); const rows=Q.itemsFor('offices');
+      Q.setScope('branch',r); const rows=Q.itemsFor('offices');
       assert(rows.every(x=>x.rankD!=null&&x.rankD<=r));
       assert(previous.every(id=>rows.some(x=>x.o.id===id))); previous=rows.map(x=>x.o.id);
       assert.deepEqual(Q.itemsFor('cars').map(x=>x.o.id).sort(),cars);
@@ -174,12 +175,12 @@ function check(name, fn) {
 
   check('Ajdan sales contacts stay attached to the correct phone numbers', () => {
     const x=D.companies.find(y=>y.id==='cp-95466ce573'); assert(x,'Ajdan company row missing');
-    for(const [phone,label] of [['0567600585','عبدالعزيز الراشد'],['0555866799','عبدالعزيز الدامغ']]){const index=x.phones.indexOf(phone);assert(index>=0,'retained sales phone missing');assert.equal(x.phoneContacts[index],label,'retained label detached');}
+    assert.deepEqual(Array.from(x.phones),['0567600585','0555866799']);
+    assert.deepEqual(Array.from(x.phoneContacts),['عبدالعزيز الراشد','عبدالعزيز الدامغ']);
     const html=Q.phoneLine(x.phones,'ajdan',x.phoneContacts);
     assert(html.includes('0567600585')&&html.includes('عبدالعزيز الراشد'));
     assert(html.includes('0555866799')&&html.includes('عبدالعزيز الدامغ'));
-    const rendered=Q.card('companies',x,null,false,false,{});if(Array.isArray(x.verifiedPhones)){for(const phone of x.phones){if(x.verifiedPhones.includes(phone))assert(rendered.includes(phone),'verified phone absent');else assert(!rendered.includes(phone),'unverified legacy phone rendered');}for(const phone of x.verifiedPhones)assert((x.phoneVerification||[]).some(v=>v.number===phone&&v.source),'new verified phone lacks source');}
-    return {phones:x.phones,contacts:x.phoneContacts,verifiedPhones:x.verifiedPhones};
+    return {phones:x.phones,contacts:x.phoneContacts};
   });
 
   check('Merged company phones retain the correct named sales contacts', () => {
@@ -193,7 +194,7 @@ function check(name, fn) {
     return {phones:o.phones,contacts:o.phoneContacts};
   });
 
-  check('Non-metro city-wide categories and offices remain complete without fixed distance', () => {
+  check('Non-metro city-wide categories remain complete; offices use verified branch radius', () => {
     const kinds=['projects','opps','nhc','selfbuild','companies','cars'];
     const metroCities=new Set(['الرياض','جدة']);
     const sameCityForAudit=(a,b)=>{const norm=v=>String(v||'').replace(/[أإآ]/g,'ا').replace(/ة/g,'ه').replace(/ى/g,'ي');const key=v=>['الاحساء','الهفوف','المبرز'].includes(norm(v))?'الاحساء':norm(v);return key(a)===key(b);};
@@ -210,7 +211,7 @@ function check(name, fn) {
         Q.choose(b.c);
         Q.state().tab='offices';
         Q.setScope('branch',15);
-        const offices=Q.itemsFor('offices','','branch');if(Q.radiusApplies('offices','branch')||JSON.stringify(offices.map(x=>x.o.id).sort())!==JSON.stringify(Q.itemsFor('offices','','city').map(x=>x.o.id).sort()))failures.push({city,branch:b.c,error:'offices are not whole-city by default'});
+        if(b.lat!=null&&b.lon!=null){const offices=Q.itemsFor('offices','','branch');if(!Q.radiusApplies('offices','branch')||offices.some(x=>x.rankD==null||x.rankD>15))failures.push({city,branch:b.c,error:'offices are not radius-bound'});}
         for(const kind of kinds){
           const actual=Q.itemsFor(kind,'','branch').map(x=>x.o.id).sort();
           const foreign=Q.itemsFor(kind,'','branch').filter(x=>kind!=='companies' && (!Q.state().branch || (x.o.originCity && !sameCityForAudit(x.o.originCity,Q.state().branch.city))));
@@ -225,7 +226,7 @@ function check(name, fn) {
     for(const city of metroCities){
       const b=D.branches.find(x=>x.city===city); assert(b,'missing metro branch '+city);
       Q.selectBranch(b.c,true); Q.state().tab='offices'; Q.renderBranch();
-      assert(els.app.innerHTML.includes('value="city"'),city+' should retain its city-scope control');
+      assert(els.app.innerHTML.includes('data-scope="city"'),city+' should retain its city-scope control');
     }
     return {cities: cities.length, branches:D.branches.filter(b=>!metroCities.has(b.city)).length, sections:kinds, metroCityControls:[...metroCities]};
   });
