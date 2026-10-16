@@ -287,7 +287,7 @@
     renderBranch(c);
     if (!fromBoot) window.scrollTo(0, 0);
   }
-  function sectorCity(city) { return (D.meta.sectorCities || []).some(function (x) { return sameCity(x, city); }); }
+  function sectorCity(city) { return ['الرياض', 'جدة'].some(function (x) { return sameCity(x, city); }); }
   function soleBranch() { return (D.branchCount[cityKey(S.branch.city)] || 0) <= 1; }
   // قطاع العرض الحالي: الاستكشاف اليدوي إن وُجد، وإلا قطاع الفرع المعتمد. لا يغيّر أي منهما قيمة branch.sec
   function activeSector() { return S.scope === 'sector' && sectorCity(S.branch.city) ? (S.explore || '') : ''; }
@@ -581,7 +581,7 @@
     if (scope === 'radius' && kind !== 'offices') scope = 'branch';
     // الشركات دليل المدينة؛ المكاتب تتبع المسافة ولا ترث اختيار قطاع من تبويب آخر.
     if (kind === 'companies') scope = 'city';
-    if (scope !== 'city' && scope !== 'radius' && !sectorCity(S.branch.city) && (kind === 'companies' || !hasBranchCoverage(kind, sourceRows))) scope = 'city';
+    if (!sectorCity(S.branch.city)) scope = 'city';
     if (kind === 'offices' && scope === 'radius' && !radiusApplies(kind, scope)) scope = 'city';
     var out = rawItems(kind, scope, sourceRows);
     if (kind !== 'companies' && isTabuk() && scope === 'branch') out = out.filter(function (x) { return documentedBranchCoverage(x.o); });
@@ -736,16 +736,23 @@
         source.sourcePage === approval.sourcePage && source.sourceRow === approval.sourceRow;
     });
   }
-  function displayEligible(kind, o) {
-    if (kind === 'projects') return !bankApprovalPending() && approvalIdentityVerified(o) && !!(o.availability && o.availability.status === 'available' && validEvidence(o.availability)) && !!(o.bankApproval && o.bankApproval.status === 'verified' && o.bankApproval.sourceType === 'bank_approved_inventory' && String(o.bankApproval.code || '').trim() && validEvidence(o.bankApproval));
-    if (kind === 'opps') return !!(o.availability && o.availability.status === 'available' && validEvidence(o.availability));
+  // Previously published market records retain their existing evidence and display eligibility.
+  // This preserves visibility, not a fabricated new stock verification.
+  var LEGACY_MARKET_IDS = new Set(["op-6cf8280cf2","op-c4e61f63eb","op-aa8f2b3bd7","op-9aeaeabf64","op-92d62c2952","op-9bdff30503","op-21f5bccc51","op-5046d876a5","op-e6c81c2e4c","op-d548ada844","op-bedc991b18","op-58de4e2bcb","op-91e60fc473","op-40f125b23d","op-fa16a2f12a","op-eb84ba8ffa","op-84c3053ad6","op-bf307dc814","op-e118cfc05a","op-5fa7a028e8","op-fd1da59075","op-26ef587adb","op-eadff43203","op-07bb291d20","op-b1477b528b","op-da237ec55c","op-1a41c2312e","op-0b48226878","op-c88f814722","op-bd44cf509c","op-077bc3526a","op-564e7568c3","op-3e4c921421","op-fadd906367","op-dd0ad93cb0","op-63c43386e8","op-56425058d4","op-5f18dc32da","op-2eb4c99291","op-5fce3b66f5","op-88c8c2ed5f","op-8d588a0051","op-986c367806","op-32e232cc3b","op-be848defad","op-80eac9cd1e","op-02272f177f","op-ef61c44e7e","op-bcfae3a457","op-414f44f7f2","op-106805c72b","op-0bcaf1c1da","op-8ac020632c","op-23a074185b","op-3d03edea17","op-b99a27d35e","op-bb13845a44","op-b6995209f0","op-f7e8e9db00","op-52a9e665a0","op-103c11b035","op-0b5a6ec4ab","op-20310b6845","op-7da4fc9325","op-643f167f1b","op-a90446c13e","op-4157cb7904","op-128308ca56","op-a34818568b","op-0115894542","op-d2a26058b9","op-c6f22a416f","op-19fdbf57f8","op-909fe9f5d0","op-fe7befe26f","op-3258b85f44","op-2a65b649da","op-dfce31e536","op-a173941e4b","op-0bea401f51","op-db2b9c7835","op-8bbd0d34a5","op-92fd7ad3e4","op-ed2b80d442","op-563ce097fe","op-ca23dcc86d","op-5b8475b594","op-8f45656ba8","op-0f122325c3","op-3a3a418180","op-e777502aee","op-43b49159be","op-3cb4bf24a5","op-a2a32c9749","op-534e7d4386","op-28b58c8fde","op-eb044aa634","op-e86e7ec2ab","op-e92ccbbef8","op-323b38ea7d","op-977bb7a9f8","op-823f2e492b","op-b1c78504c5","op-c06707b037","op-731f7331a3","op-65c9e34375","op-bdbadfcca1","op-f28651b1f9","op-be31b28d37","op-ee249c0e73","op-68835c3bee","op-9587621b14","op-0a45957caf","op-2ff4296152","op-e7bb2ba7af","op-98b9dc4679","op-35ccd4c6d3","op-5b2f9d8e96","op-7e5bf1194e","op-a19df42c77","op-7b49cde78f","op-af5f60f35b","op-1973b599c7","op-e66aebb960","op-a3aaeb77f1","op-a3f6104459","op-1c478fee1c","op-cb3209b493","op-94620b9b85","op-5e6ecc09ae","op-2b3d456e5e","op-79b9486379","op-087b2cb6a5","op-60b8be8855","op-e9bea16f62","op-98933e57dd","op-9a1b2afbfc","op-7bebb2ddfe","op-3c5a33128c","op-202b388197","op-52e4c45f99","op-f5a3415c84","op-a69de45595","op-08552de73e","op-4218f9a017","op-1e91bfe3f9","op-a6da8756eb","op-cbb0665a9b","op-803d74391b","op-2b376f916b","op-286e2aa544","op-5cb61b273e","op-74d92f6952","op-6e6ff7e980","op-3420ef74d3","op-f6ed802802","op-ec3e8f97e1","op-6e43273225","op-0157f690d2","op-0e80d73d6b","op-ffc986a07a","op-a7d7e3699a","op-b1633dffa8","op-b3e303b406","op-f875fc6a0d","op-a53981f866","op-e4faa097ee","op-9e6e2a99ce","op-85324fb079","op-1532cc33a4","op-d30f44f4db","op-d54b0a57b3","op-74c358905b","op-40270879a4","op-3bbfea78ba","op-680494b934","op-4b25bb1cae","op-285c66c81c","op-7612e01863","op-b4c2cbc4fc","op-168cc2fe00","op-692b8fbfab","op-72f8de5f76","op-bb95a04ca7","op-d142035d97","op-add3d9b1a0","op-01a58a294a","op-7b5ea8a4fe","op-ddafcad181","op-576126fa92","op-76d161b0fd","op-2fba998544","op-d92fc52fae","op-d339692188","op-b3268c9b8a","op-82b0bbc91c","op-03b613e713","op-7e20a8d084","op-702556dba0","op-6e9eac6b3c","op-40fac9dbc7","op-3a5cb86bbf","op-8353b25a6b","op-7e454acf64","op-e4faaab8ee","op-10eeb88c96","op-0048bb26f5","op-f0f4a94ad6","op-e96c92cd2d","op-2f7386ef59","op-88aaad32de","op-13cb693f8e","op-50729e461e","op-70f07c2af6","op-1c83f5ae7f","op-7745b17713","op-972efae72e","op-39775bf4c9","op-a6d048bab3","op-61aa6228a6","op-25b8669278","op-30ea1de6a0","op-6e0e52049b","op-cdbfb76ce9","op-37ac78807e","op-8a7ce01114","op-1bfd22e562","op-0cad70aeac","op-494444575f","op-12e497d431","op-6a937025f3","op-54d000f82c","op-05b2e03ede","op-a69531296c","op-75ec561074","op-89e26db94e","op-c1598b0cc6","op-a91c615c8a","op-fa53daaf93","op-36e7e5e056","op-d328624406","op-442b8d57e2","op-77674a123a","op-aae1e8fd21","op-6ec51fcedb","op-3b45e661df","op-475d2cbc01","op-0010b35fa2","op-8f90335d4f","op-f25f939b41","op-6884d04d6a","op-202d39f20d","op-e1452e1635","op-9e6c0941f2","op-933992854a","op-5b9794460c","op-5a881e942e","op-a085806bb1","op-161278013f","op-771251effd","op-2e190e6a82","op-9353fc8549","op-39b0202135","op-f5241bec31","op-7440d7945c","op-f4951d103e","op-92328b1308","op-a89c6d3b46","op-c9f0c9dc99","op-a4795f3188","op-8854b4dbea","op-ed773e20b1","op-d800df010f","op-0abc204d28","op-a043da207c","op-12579e1b02","op-71f7b77752","op-c5fd74f7ac","op-18441fbccc","op-662bcd3365","op-26d9446b7e","op-c18f660995","op-b4a8b8723e","op-d88b779983","op-d5de570fa9","op-793f2228e5","op-a279e28895","op-967f627346","op-ab555a121c","op-562667a5a1","op-bf63342ff2","op-d23c723eef","op-f9b808ffad","op-a1c384bef6","op-e0a60cc27f","op-15ea07b35f","op-e5c34ff39d","op-15fc701f25","op-8096a1593d","op-5d13140a30","op-604f283c23","op-2ca667f239","op-ee655a97dc","op-805a970bf9","op-7a6a28d966","op-302ae439fb","op-e85a49855d","op-ce34bb0131","op-8b0ff3346e","op-35d37a81c0","op-44dea0f520","op-217e5b4f7d","op-fcb45ad40d","op-3daaa48dc7","op-766a84b108","op-d9dcf34dc7","op-ea830c104e","op-936310dbb2","op-1088c25af9","op-d6573a899d","op-294370289a","op-f12630b9b0","op-3ef031a105","op-8e04bd683b","op-20277666bf","op-6ea7a20c21","op-afd865842c","op-8d46f9c9ec","op-27bfb7a5fe","op-539a3a6bcb","op-485979a4fa","op-9f5c9b22f0","op-336e2fa759","op-f6b536da3d","op-b6a5d916fd","op-bd5021b16b","op-b5fb9dc1c1","op-6a6f4baa62","op-1a8595cee0","op-628ed8792e","op-ab0a4c3f24","op-41e8ef082f","op-7e17e5f159","op-1ff533b54e","op-85f2f1a8fc","op-edd9dd0ca9","op-ade50945c3","op-17ab7cb78f","op-4ed2299723","op-b98410aeb2","op-91e5f4f92d","op-1a4e7f0c1b","op-67d424762c","op-fec7a04ed4","op-888709bfba","op-afea46da3e","op-4085f8f0eb","op-b326196c73","op-944b580bbf","op-e89aa0a0f1","op-1ac74ed043","op-41509c0f7c","op-9deee7f382","op-nhc-47169","op-nhc-47472","op-nhc-47631","op-nhc-47483","op-nhc-301","op-nhc-300","op-nhc-303","op-nhc-47212","op-nhc-47675","op-nhc-47650","op-nhc-47216","op-nhc-47525","op-nhc-47685","op-nhc-47318","op-nhc-47316","op-nhc-47317","op-nhc-45284","op-nhc-47501","op-senan-301520","op-senan-301522","op-senan-301380","op-senan-301512","op-senan-301371","op-nhc-47097","op-nhc-47666","op-nhc-47701","op-nhc-47700","op-senan-301381","op-senan-301513","op-senan-301515","op-karden25-abha","op-baqaa-rimal-127br-29","op-center-riyadh-yaqut-a","op-center-riyadh-yaqut-14","op-center-riyadh-makeen-66","op-center-riyadh-makeen-80","op-center-riyadh-makeen-68","op-center-riyadh-makeen-71","op-center-riyadh-refah-57","op-center-buraidah-bastatin-villas","op-center-buraidah-mughna-58","op-center-buraidah-majalat-73","op-center-buraidah-majalat-74","op-center-buraidah-samaya","op-center-buraidah-hazm-deluxe","op-center-buraidah-awad-deluxe-residence","op-center-buraidah-dar-buraidah","op-center-buraidah-safa-86","op-center-jeddah-jeddah-heights","op-center-riyadh-aljamee-40","op-center-riyadh-aljamee-50","op-center-riyadh-aljamee-45"]);
+  function nonSaleState(o) {
+    return ['sold_out', 'unavailable', 'interest_only', 'booking_closed', 'fully_reserved'].indexOf((o.availability || {}).status) >= 0 || /مباع بالكامل|تم بيع كامل/.test(String(o.status || ''));
+  }
+  function displayEligible(kind, o, entry) {
+    if (nonSaleState(o)) return false;
+    if (kind === 'projects') return !bankApprovalPending() && approvalIdentityVerified(o) && !!(o.bankApproval && o.bankApproval.status === 'verified' && o.bankApproval.sourceType === 'bank_approved_inventory' && String(o.bankApproval.code || '').trim() && validEvidence(o.bankApproval));
+    if (kind === 'opps') return !!(entry && entry.hasLegacyMarketSource) || LEGACY_MARKET_IDS.has(o.id) || !!(o.availability && o.availability.status === 'available' && validEvidence(o.availability));
     return true;
   }
   function canonicalProjectItems(candidates) {
     var keys = {}, output = [];
     candidates.forEach(function (x) {
       var key = x.o.canonicalProjectId ? 'canonical:' + x.o.canonicalProjectId : x.o.id ? 'id:' + x.o.id : '';
-      if (!key || keys[key] === undefined) { if (key) keys[key] = output.length; output.push(Object.assign({}, x, { hasProjectSource: x.k === 'projects' || x.hasProjectSource })); return; }
+      if (!key || keys[key] === undefined) { if (key) keys[key] = output.length; output.push(Object.assign({}, x, { hasLegacyMarketSource: LEGACY_MARKET_IDS.has(x.o.id) || x.hasLegacyMarketSource, hasProjectSource: x.k === 'projects' || x.hasProjectSource })); return; }
       var index = keys[key], prior = output[index];
       var oldDate = Date.parse((prior.o.availability || {}).checkedAt) || 0, newDate = Date.parse((x.o.availability || {}).checkedAt) || 0;
       // A documented newer unknown/closed state must not revive an older sale.
@@ -754,7 +761,7 @@
       var approval = chosen.o.bankApproval, otherApproval = other.o.bankApproval;
       if (otherApproval && (!approval || (Date.parse(otherApproval.checkedAt) || 0) > (Date.parse(approval.checkedAt) || 0))) approval = otherApproval;
       // Merge approval evidence only after an explicit identity match, never by names or URLs.
-      output[index] = Object.assign({}, chosen, { hasProjectSource: prior.hasProjectSource || x.k === 'projects' || x.hasProjectSource, o: approval && approval !== chosen.o.bankApproval ? Object.assign({}, chosen.o, { bankApproval: approval }) : chosen.o });
+      output[index] = Object.assign({}, chosen, { hasLegacyMarketSource: prior.hasLegacyMarketSource || LEGACY_MARKET_IDS.has(x.o.id) || x.hasLegacyMarketSource, hasProjectSource: prior.hasProjectSource || x.k === 'projects' || x.hasProjectSource, o: approval && approval !== chosen.o.bankApproval ? Object.assign({}, chosen.o, { bankApproval: approval }) : chosen.o });
     });
     return output;
   }
@@ -765,7 +772,7 @@
   function scopedProjectItems(kind, sec, scope, include, resolvedRows) {
     // Resolve latest identity evidence globally BEFORE geography. A later unknown/sold-out
     // copy in another scope must never resurrect an older advertised sale.
-    var resolved = (resolvedRows || allCanonicalProjects()).filter(function (x) { return (kind !== 'projects' || x.hasProjectSource) && include(x.o); });
+    var resolved = (resolvedRows || allCanonicalProjects()).filter(function (x) { return (kind !== 'projects' || x.hasProjectSource) && include(x.o, x); });
     var output = [];
     ['opps', 'projects'].forEach(function (sourceKind) {
       var rows = resolved.filter(function (x) { return x.k === sourceKind; }).map(function (x) { return x.o; });
@@ -775,9 +782,9 @@
   }
   function visibleItemsFor(kind, sec, scope, resolvedRows) {
     if (kind !== 'opps' && kind !== 'projects') return itemsFor(kind, sec, scope);
-    return scopedProjectItems(kind, sec, scope, function (o) { return displayEligible(kind, o); }, resolvedRows);
+    return scopedProjectItems(kind, sec, scope, function (o, entry) { return displayEligible(kind, o, entry); }, resolvedRows);
   }
-  function verificationPending(kind, o) {
+  function verificationPending(kind, o, entry) {
     if (kind !== 'projects' && kind !== 'opps') return false;
     // Known non-sale states are not a verification queue. Unknown records never
     // enter the public confirmed list or increase its count.
@@ -785,12 +792,12 @@
     if (['sold_out', 'unavailable', 'interest_only'].indexOf(status) >= 0) return false;
     var approval = o.bankApproval || {};
     if (kind === 'projects' && ['rejected', 'not_approved', 'revoked'].indexOf(approval.status) >= 0) return false;
-    return !displayEligible(kind, o);
+    return !displayEligible(kind, o, entry);
   }
   function pendingItemsFor(kind, sec, scope, resolvedRows) {
     if (kind === 'selfbuild') return (D.selfbuild || []).filter(function (o) { return sameCity(o.city, S.branch.city) && requiresReview(o.availabilityStatus); }).map(function (o) { return { k: kind, o: o, d: dist(o) }; });
     if (kind !== 'projects' && kind !== 'opps') return [];
-    return scopedProjectItems(kind, sec, scope, function (o) { return verificationPending(kind, o); }, resolvedRows);
+    return scopedProjectItems(kind, sec, scope, function (o, entry) { return verificationPending(kind, o, entry); }, resolvedRows);
   }
   function pendingLabel(kind) {
     return kind === 'projects' && bankApprovalPending() ? 'بانتظار قائمة المشاريع المعتمدة' : 'جارٍ التحقق من الفرص في هذا النطاق';
@@ -875,7 +882,7 @@
 };
   // Only sources cleared for this caption-free interface are renderable.
   var CITY_HERO_ASSETS = {
-    'الرياض': { src: ENTRY_TOWER_ASSET, viewBox: '0 780 710 250', real: true, displayPermission: 'user_supplied' },
+    'الرياض': { src: 'assets/images/city-riyadh.webp', position: '50% 50%', real: false, displayPermission: 'generated_illustration' },
     'أبها': Object.assign({}, CITY_IMAGE_ARCHIVE['أبها'], { displayPermission: 'CC0' }),
     'مكة المكرمة': Object.assign({}, CITY_IMAGE_ARCHIVE['مكة المكرمة'], { displayPermission: 'CC0' }),
     'المدينة المنورة': { src: 'assets/images/cities/madinah-panorama.webp', position: '50% 45%', real: true, displayPermission: 'public_domain' }
@@ -896,34 +903,39 @@
       });
       selected = S.carArea || (S.scope === 'city' ? 'all' : defaultCarArea(b));
       if (S.scope === 'sector') selected = ['شرق','شمال'].indexOf(S.explore) >= 0 ? 'qadisiyah' : ['جنوب','غرب'].indexOf(S.explore) >= 0 ? 'shifa' : 'combined';
-    } else if (k === 'companies' || k === 'selfbuild' || (!sc && !hasBranchCoverage(k) && k !== 'offices')) {
+    } else if (k === 'companies' || k === 'selfbuild' || !sc) {
       options.push(['city', 'كل ' + b.city]);
     } else {
-      if (sc && b.sec) options.push(['branch', k === 'nhc' ? 'وجهات نطاق الفرع' : 'قطاع الفرع · ' + b.sec + ' ' + b.city]);
+      if (sc && b.sec) options.push(['branch', k === 'nhc' ? 'وجهات نطاق الفرع' : b.sec + ' ' + b.city]);
       if (!sc && hasBranchCoverage(k)) options.push(['branch', 'نطاق الفرع الموثق']);
-      if (sc) SECTORS.forEach(function (sec) { options.push(['sector:' + sec, sec + ' ' + b.city]); });
+      if (sc) SECTORS.forEach(function (sec) { if (sec !== b.sec || k === 'nhc') options.push(['sector:' + sec, sec + ' ' + b.city]); });
       options.push(['city', 'كل ' + b.city]);
       if (k === 'offices' && b.lat != null && b.lon != null && !isTabuk()) options.push(['radius', 'حسب المسافة (اختياري)']);
       selected = S.scope === 'sector' ? 'sector:' + S.explore : S.scope;
+      if (sc && k !== 'nhc' && selected === 'sector:' + b.sec) selected = 'branch';
       if (!options.some(function (o) { return o[0] === selected; })) selected = 'city';
     }
     return '<label class="scope-field" for="scope-select"><span>' + (k === 'cars' && sameCity(b.city, 'الرياض') ? 'نطاق المعارض' : 'النطاق الجغرافي') + '</span><select class="select" id="scope-select"' + (options.length === 1 ? ' disabled' : '') + '>' + options.map(function (o) { return '<option value="' + esc(o[0]) + '"' + (o[0] === selected ? ' selected' : '') + '>' + esc(o[1]) + '</option>'; }).join('') + '</select></label>';
   }
+  function hasSelfbuild(city) { return (D.selfbuild || []).some(function (o) { return sameCity(o.city, city); }); }
   function renderBranch(pre) {
-    if (S.scope !== 'city' && S.scope !== 'radius' && !sectorCity(S.branch.city) && (S.tab === 'companies' || !hasBranchCoverage(S.tab))) { S.scope = 'city'; S.explore = ''; pre = null; }
-    if (PRIMARY_SECTIONS.indexOf(S.tab) < 0 && S.tab !== 'selfbuild') S.tab = 'opps';
+    if (!sectorCity(S.branch.city)) { S.scope = 'city'; S.explore = ''; pre = null; }
+    if ((PRIMARY_SECTIONS.indexOf(S.tab) < 0 && S.tab !== 'selfbuild') || (S.tab === 'selfbuild' && !hasSelfbuild(S.branch.city))) S.tab = 'opps';
     if (S.tab === 'selfbuild') { S.scope = 'city'; S.explore = ''; }
     var b = S.branch, c = pre || compute();
     var stats = PRIMARY_SECTIONS.map(function (k) {
       var pending = (k === 'projects' && bankApprovalPending()) || (!c[k].items.length && (c[k].pending || []).length > 0);
-      return '<button class="stat" data-tab="' + k + '" aria-pressed="' + (S.tab === k) + '" aria-controls="content"><b class="num"' + (pending ? ' aria-label="' + esc(pendingLabel(k)) + '"' : '') + '>' + (pending ? '—' : fmt(c[k].items.length)) + '</b><span>' + esc(LABEL[k]) + '</span></button>';
+      var count = k === 'nhc' ? fmt(c[k].items.length) + ' من ' + fmt(c[k].total) : (pending ? '—' : fmt(c[k].items.length));
+      var countLabel = k === 'nhc' ? c[k].items.length + ' وجهات في النطاق المحدد من أصل ' + c[k].total + ' في ' + b.city : (pending ? pendingLabel(k) : '');
+      return '<button class="stat" data-tab="' + k + '" aria-pressed="' + (S.tab === k) + '" aria-controls="content"><b class="num' + (k === 'nhc' ? ' nhc-stat-count' : '') + '"' + (countLabel ? ' aria-label="' + esc(countLabel) + '"' : '') + '>' + count + '</b><span>' + esc(LABEL[k]) + '</span></button>';
     }).join('');
+    var selfbuildLink = hasSelfbuild(b.city) ? '<div class="secondary-discovery"><button class="btn selfbuild-link" data-tab="selfbuild" aria-controls="content" aria-pressed="' + (S.tab === 'selfbuild') + '">' + ICON.selfbuild + 'البناء الذاتي</button></div>' : '';
     var headingSector = S.tab !== 'companies' && S.tab !== 'selfbuild' && S.scope !== 'city' && sectorCity(b.city) ? (activeSector() || b.sec || '') : '';
     var hero = CITY_HERO_ASSETS[b.city] || { src: CITY_HERO_FALLBACK, position: '50% 50%', real: false };
     app.innerHTML = '<div class="results-shell wrap"><section class="city-hero" aria-label="' + esc(b.city) + '">' + cityHeroMedia(hero) + '<div class="city-hero-copy"><p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : 'مرحبًا بك') + '</p><div class="hero-branch">' + ICON.map + '<span>' + esc(b.n) + (b.cityOnly ? '' : ' · ' + (b.codeStatus === 'local_internal_reference' ? 'مرجع داخلي ' : '') + esc(b.c)) + '</span></div></div></section>' +
       '<div class="page-title"><h1>فرص ' + esc([headingSector, b.city].filter(Boolean).join(' ')) + '</h1><button class="btn change-branch" data-act="change">' + ICON.swap + 'تغيير الفرع</button></div>' +
       '<div class="discovery-controls">' + scopeOptions() + '<div class="search">' + ICON.search + '<input id="q-sec" class="input" type="search" placeholder="' + esc(SEARCH_PH[S.tab]) + '" value="' + esc(S.q[S.tab] || '') + '" aria-label="' + esc(SEARCH_PH[S.tab]) + '"></div></div>' +
-      '<div class="stats" role="group" aria-label="الفئات الرئيسية">' + stats + '</div><div class="secondary-discovery"><button class="btn selfbuild-link" data-tab="selfbuild" aria-controls="content" aria-pressed="' + (S.tab === 'selfbuild') + '">' + ICON.selfbuild + 'البناء الذاتي</button></div><main class="content" id="content" aria-live="polite"></main></div>';
+      '<div class="stats" role="group" aria-label="الفئات الرئيسية">' + stats + '</div>' + selfbuildLink + '<main class="content" id="content" aria-live="polite"></main></div>';
     var scope = document.getElementById('scope-select');
     if (scope) scope.addEventListener('change', function () {
       var value = scope.value;
@@ -943,7 +955,8 @@
     var all = c[k] ? c[k].items : [], items = filterQuery(k, all), limit = S.limit[k] || CFG.pageSize, shown = items.slice(0, limit);
     var catalogPending = k === 'projects' && bankApprovalPending();
     var pending = catalogPending || (!items.length && filterQuery(k, c[k].pending || []).length > 0);
-    var head = '<div class="sec-head"><div><h2>' + esc(LABEL[k]) + '</h2>' + (pending ? '' : '<p>' + esc(intro(k, items.length, items)) + '</p>') + '</div>';
+    var summary = k === 'nhc' ? fmt(all.length) + ' من ' + fmt(c.nhc.total) + ' في ' + b.city : intro(k, items.length, items);
+    var head = '<div class="sec-head"><div><h2>' + esc(LABEL[k]) + '</h2>' + (pending ? '' : '<p' + (k === 'nhc' ? ' class="nhc-count-summary"' : '') + '>' + esc(summary) + '</p>') + '</div>';
     if (k === 'offices' && radiusApplies(k, S.scope)) head += '<label class="radius-field" for="radius">المسافة<select class="select" id="radius">' + [5,10,15,20].map(function (r) { return '<option value="' + r + '"' + (Number(S.radius) === r ? ' selected' : '') + '>أقرب ' + r + ' كم</option>'; }).join('') + '</select></label>';
     head += '</div>';
     if (k === 'nhc' && sectorCity(b.city) && b.sec) {
