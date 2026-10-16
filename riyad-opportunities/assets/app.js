@@ -911,7 +911,7 @@
       selected = S.carArea || (S.scope === 'city' ? 'all' : defaultCarArea(b));
       if (S.scope === 'sector') selected = ['شرق','شمال'].indexOf(S.explore) >= 0 ? 'qadisiyah' : ['جنوب','غرب'].indexOf(S.explore) >= 0 ? 'shifa' : 'combined';
     } else if (k === 'companies' || k === 'selfbuild' || !sc) {
-      options.push(['city', 'كل ' + b.city]);
+      options.push(['city', sc ? 'كل ' + b.city : b.city]);
     } else {
       if (sc && b.sec) options.push(['branch', k === 'nhc' ? 'وجهات نطاق الفرع' : b.sec + ' ' + b.city]);
       if (!sc && hasBranchCoverage(k)) options.push(['branch', 'نطاق الفرع الموثق']);
@@ -932,7 +932,7 @@
     var b = S.branch, c = pre || compute();
     var stats = PRIMARY_SECTIONS.map(function (k) {
       var pending = (k === 'projects' && bankApprovalPending()) || (!c[k].items.length && (c[k].pending || []).length > 0);
-      var count = k === 'nhc' ? fmt(c[k].items.length) + ' من ' + fmt(c[k].total) : (pending ? '—' : fmt(c[k].items.length));
+      var count = k === 'nhc' ? (c[k].total ? fmt(c[k].items.length) + ' من ' + fmt(c[k].total) : '0') : (pending ? '—' : fmt(c[k].items.length));
       var countLabel = k === 'nhc' ? c[k].items.length + ' وجهات في النطاق المحدد من أصل ' + c[k].total + ' في ' + b.city : (pending ? pendingLabel(k) : '');
       return '<button class="stat" data-tab="' + k + '" aria-pressed="' + (S.tab === k) + '" aria-controls="content"><b class="num' + (k === 'nhc' ? ' nhc-stat-count' : '') + '"' + (countLabel ? ' aria-label="' + esc(countLabel) + '"' : '') + '>' + count + '</b><span>' + esc(LABEL[k]) + '</span></button>';
     }).join('');
@@ -962,7 +962,7 @@
     var all = c[k] ? c[k].items : [], items = filterQuery(k, all), limit = S.limit[k] || CFG.pageSize, shown = items.slice(0, limit);
     var catalogPending = k === 'projects' && bankApprovalPending();
     var pending = catalogPending || (!items.length && filterQuery(k, c[k].pending || []).length > 0);
-    var summary = k === 'nhc' ? fmt(all.length) + ' من ' + fmt(c.nhc.total) + ' في ' + b.city : intro(k, items.length, items);
+    var summary = k === 'nhc' ? (c.nhc.total ? fmt(all.length) + ' من ' + fmt(c.nhc.total) + ' في ' + b.city : 'لا توجد وجهات مسجلة في ' + b.city) : intro(k, items.length, items);
     var head = '<div class="sec-head"><div><h2>' + esc(LABEL[k]) + '</h2>' + (pending ? '' : '<p' + (k === 'nhc' ? ' class="nhc-count-summary"' : '') + '>' + esc(summary) + '</p>') + '</div>';
     if (k === 'offices' && radiusApplies(k, S.scope)) head += '<label class="radius-field" for="radius">المسافة<select class="select" id="radius">' + [5,10,15,20].map(function (r) { return '<option value="' + r + '"' + (Number(S.radius) === r ? ' selected' : '') + '>أقرب ' + r + ' كم</option>'; }).join('') + '</select></label>';
     head += '</div>';
@@ -974,7 +974,7 @@
     if (pending) body = '<div class="empty ' + (catalogPending ? 'approval-pending' : 'verification-pending') + '" role="status"><h3>' + esc(pendingLabel(k)) + '</h3>' + (catalogPending ? '' : '<p>ستظهر الفرص بعد اكتمال التحقق.</p>') + '</div>';
     else if (!all.length && !norm(S.q[k] || '')) {
       var isGated = k === 'projects' || k === 'opps';
-      body = '<div class="empty"><span class="empty-icon">' + ICON[k] + '</span><h3>' + (isGated ? 'لا توجد فرص متاحة موثقة في هذا النطاق' : 'لا توجد نتائج مسجلة في هذا النطاق') + '</h3></div>';
+      body = '<div class="empty"><span class="empty-icon">' + ICON[k] + '</span><h3>' + (isGated ? 'لا توجد سجلات معروضة في هذا النطاق' : 'لا توجد نتائج مسجلة في هذا النطاق') + '</h3></div>';
     } else if (!items.length) body = '<div class="empty"><h3>لا نتائج مطابقة</h3><p>جرّب اسمًا أو حيًا آخر.</p></div>';
     else {
       var visual = k === 'projects' || k === 'nhc' || k === 'opps';
