@@ -738,13 +738,14 @@
     });
     return output;
   }
-  function visibleItemsFor(kind, sec, scope) {
-    if (kind !== 'opps' && kind !== 'projects') return itemsFor(kind, sec, scope);
+  function allCanonicalProjects() {
+    return canonicalProjectItems((D.opps || []).map(function (o) { return { k: 'opps', o: o }; })
+      .concat((D.projects || []).map(function (o) { return { k: 'projects', o: o }; })));
+  }
+  function scopedProjectItems(kind, sec, scope, include, resolvedRows) {
     // Resolve latest identity evidence globally BEFORE geography. A later unknown/sold-out
     // copy in another scope must never resurrect an older advertised sale.
-    var candidates = (D.opps || []).map(function (o) { return { k: 'opps', o: o }; })
-      .concat((D.projects || []).map(function (o) { return { k: 'projects', o: o }; }));
-    var resolved = canonicalProjectItems(candidates).filter(function (x) { return (kind !== 'projects' || x.hasProjectSource) && displayEligible(kind, x.o); });
+    var resolved = (resolvedRows || allCanonicalProjects()).filter(function (x) { return (kind !== 'projects' || x.hasProjectSource) && include(x.o); });
     var output = [];
     ['opps', 'projects'].forEach(function (sourceKind) {
       var rows = resolved.filter(function (x) { return x.k === sourceKind; }).map(function (x) { return x.o; });
@@ -752,18 +753,40 @@
     });
     return output.sort(byDist);
   }
+  function visibleItemsFor(kind, sec, scope, resolvedRows) {
+    if (kind !== 'opps' && kind !== 'projects') return itemsFor(kind, sec, scope);
+    return scopedProjectItems(kind, sec, scope, function (o) { return displayEligible(kind, o); }, resolvedRows);
+  }
+  function verificationPending(kind, o) {
+    if (kind !== 'projects' && kind !== 'opps') return false;
+    // Known non-sale states are not a verification queue. Unknown records never
+    // enter the public confirmed list or increase its count.
+    var status = o.availability && o.availability.status;
+    if (['sold_out', 'unavailable', 'interest_only'].indexOf(status) >= 0) return false;
+    var approval = o.bankApproval || {};
+    if (kind === 'projects' && ['rejected', 'not_approved', 'revoked'].indexOf(approval.status) >= 0) return false;
+    return !displayEligible(kind, o);
+  }
+  function pendingItemsFor(kind, sec, scope, resolvedRows) {
+    if (kind === 'selfbuild') return (D.selfbuild || []).filter(function (o) { return sameCity(o.city, S.branch.city) && requiresReview(o.availabilityStatus); }).map(function (o) { return { k: kind, o: o, d: dist(o) }; });
+    if (kind !== 'projects' && kind !== 'opps') return [];
+    return scopedProjectItems(kind, sec, scope, function (o) { return verificationPending(kind, o); }, resolvedRows);
+  }
+  function pendingLabel(kind) {
+    return kind === 'projects' && bankApprovalPending() ? 'بانتظار قائمة المشاريع المعتمدة' : 'جارٍ التحقق من الفرص في هذا النطاق';
+  }
   // كل الأرقام والقوائم تُحسب من جديد في كل عرض — لا تخزين مؤقت بين الفروع
   function compute() {
-    var sec = activeSector(), out = {};
+    var sec = activeSector(), out = {}, resolvedRows = allCanonicalProjects();
     SECTIONS.forEach(function (k) {
       if (k === 'nearby') { var n = nearbyItems(); out[k] = { items: n, total: n.length }; return; }
-      out[k] = { items: visibleItemsFor(k, sec), total: visibleItemsFor(k, sec, 'city').length };
+      out[k] = { items: visibleItemsFor(k, sec, null, resolvedRows), total: visibleItemsFor(k, sec, 'city', resolvedRows).length, pending: pendingItemsFor(k, sec, null, resolvedRows) };
     });
     return out;
   }
   window.__rogQA = function () {
-    var c = compute(), o = { branch: S.branch && S.branch.c, branchSec: S.branch && S.branch.sec, scope: S.scope, explore: S.explore, active: activeSector(), sections: {}, bankApprovalPending: bankApprovalPending(), releaseCounts: { approved: bankApprovalPending() ? null : c.projects.items.length, available: c.opps.items.length } };
-    SECTIONS.forEach(function (k) { o.sections[k] = c[k].items.map(function (x) { return x.o.id || x.o.n; }); });
+    var c = compute(), o = { branch: S.branch && S.branch.c, branchSec: S.branch && S.branch.sec, scope: S.scope, explore: S.explore, active: activeSector(), sections: {}, pendingCounts: {}, bankApprovalPending: bankApprovalPending(), releaseCounts: { approved: bankApprovalPending() ? null : c.projects.items.length, available: c.opps.items.length } };
+    SECTIONS.forEach(function (k) { o.sections[k] = c[k].items.map(function (x) { return x.o.id || x.o.n; }); o.pendingCounts[k] = (c[k].pending || []).length; });
     return o;
   };
   /* ---------------- branch page ---------------- */
@@ -853,7 +876,7 @@
       });
       selected = S.carArea || (S.scope === 'city' ? 'all' : defaultCarArea(b));
       if (S.scope === 'sector') selected = ['شرق','شمال'].indexOf(S.explore) >= 0 ? 'qadisiyah' : ['جنوب','غرب'].indexOf(S.explore) >= 0 ? 'shifa' : 'combined';
-    } else if (k === 'companies' || (!sc && !hasBranchCoverage(k) && k !== 'offices')) {
+    } else if (k === 'companies' || k === 'selfbuild' || (!sc && !hasBranchCoverage(k) && k !== 'offices')) {
       options.push(['city', 'كل ' + b.city]);
     } else {
       if (sc && b.sec) options.push(['branch', k === 'nhc' ? 'وجهات نطاق الفرع' : 'قطاع الفرع · ' + b.sec + ' ' + b.city]);
@@ -868,18 +891,19 @@
   }
   function renderBranch(pre) {
     if (S.scope !== 'city' && S.scope !== 'radius' && !sectorCity(S.branch.city) && (S.tab === 'companies' || !hasBranchCoverage(S.tab))) { S.scope = 'city'; S.explore = ''; pre = null; }
-    if (PRIMARY_SECTIONS.indexOf(S.tab) < 0) S.tab = 'opps';
+    if (PRIMARY_SECTIONS.indexOf(S.tab) < 0 && S.tab !== 'selfbuild') S.tab = 'opps';
+    if (S.tab === 'selfbuild') { S.scope = 'city'; S.explore = ''; }
     var b = S.branch, c = pre || compute();
     var stats = PRIMARY_SECTIONS.map(function (k) {
-      var pending = k === 'projects' && bankApprovalPending();
-      return '<button class="stat" data-tab="' + k + '" aria-pressed="' + (S.tab === k) + '" aria-controls="content"><b class="num"' + (pending ? ' aria-label="بانتظار قائمة المشاريع المعتمدة"' : '') + '>' + (pending ? '—' : fmt(c[k].items.length)) + '</b><span>' + esc(LABEL[k]) + '</span></button>';
+      var pending = (k === 'projects' && bankApprovalPending()) || (!c[k].items.length && (c[k].pending || []).length > 0);
+      return '<button class="stat" data-tab="' + k + '" aria-pressed="' + (S.tab === k) + '" aria-controls="content"><b class="num"' + (pending ? ' aria-label="' + esc(pendingLabel(k)) + '"' : '') + '>' + (pending ? '—' : fmt(c[k].items.length)) + '</b><span>' + esc(LABEL[k]) + '</span></button>';
     }).join('');
-    var headingSector = S.tab !== 'companies' && S.scope !== 'city' && sectorCity(b.city) ? (activeSector() || b.sec || '') : '';
+    var headingSector = S.tab !== 'companies' && S.tab !== 'selfbuild' && S.scope !== 'city' && sectorCity(b.city) ? (activeSector() || b.sec || '') : '';
     var hero = CITY_HERO_ASSETS[b.city] || { src: CITY_HERO_FALLBACK, position: '50% 50%', real: false };
     app.innerHTML = '<div class="results-shell wrap"><section class="city-hero" aria-label="' + esc(b.city) + '">' + cityHeroMedia(hero) + '<div class="city-hero-copy"><p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : 'مرحبًا بك') + '</p><div class="hero-branch">' + ICON.map + '<span>' + esc(b.n) + (b.cityOnly ? '' : ' · ' + (b.codeStatus === 'local_internal_reference' ? 'مرجع داخلي ' : '') + esc(b.c)) + '</span></div></div></section>' +
       '<div class="page-title"><h1>فرص ' + esc([headingSector, b.city].filter(Boolean).join(' ')) + '</h1><button class="btn change-branch" data-act="change">' + ICON.swap + 'تغيير الفرع</button></div>' +
       '<div class="discovery-controls">' + scopeOptions() + '<div class="search">' + ICON.search + '<input id="q-sec" class="input" type="search" placeholder="' + esc(SEARCH_PH[S.tab]) + '" value="' + esc(S.q[S.tab] || '') + '" aria-label="' + esc(SEARCH_PH[S.tab]) + '"></div></div>' +
-      '<div class="stats" role="group" aria-label="الفئات الرئيسية">' + stats + '</div><main class="content" id="content" aria-live="polite"></main></div>';
+      '<div class="stats" role="group" aria-label="الفئات الرئيسية">' + stats + '</div><div class="secondary-discovery"><button class="btn selfbuild-link" data-tab="selfbuild" aria-controls="content" aria-pressed="' + (S.tab === 'selfbuild') + '">' + ICON.selfbuild + 'البناء الذاتي</button></div><main class="content" id="content" aria-live="polite"></main></div>';
     var scope = document.getElementById('scope-select');
     if (scope) scope.addEventListener('change', function () {
       var value = scope.value;
@@ -897,7 +921,8 @@
     REG.length = 0; renderRevision++;
     var c = pre || compute(), k = S.tab, el = document.getElementById('content'), b = S.branch;
     var all = c[k] ? c[k].items : [], items = filterQuery(k, all), limit = S.limit[k] || CFG.pageSize, shown = items.slice(0, limit);
-    var pending = k === 'projects' && bankApprovalPending();
+    var catalogPending = k === 'projects' && bankApprovalPending();
+    var pending = catalogPending || (!items.length && filterQuery(k, c[k].pending || []).length > 0);
     var head = '<div class="sec-head"><div><h2>' + esc(LABEL[k]) + '</h2>' + (pending ? '' : '<p>' + esc(intro(k, items.length, items)) + '</p>') + '</div>';
     if (k === 'offices' && radiusApplies(k, S.scope)) head += '<label class="radius-field" for="radius">المسافة<select class="select" id="radius">' + [5,10,15,20].map(function (r) { return '<option value="' + r + '"' + (Number(S.radius) === r ? ' selected' : '') + '>أقرب ' + r + ' كم</option>'; }).join('') + '</select></label>';
     head += '</div>';
@@ -906,8 +931,8 @@
       head += '<div class="nhc-alternatives" role="group" aria-label="نطاق وجهات NHC"><button class="btn" data-nhc-view="sector" aria-pressed="' + (S.scope !== 'city') + '">وجهات ' + esc(nhcSector) + ' <span class="num">' + fmt(nearbyCount) + '</span></button><button class="btn" data-nhc-view="city" aria-pressed="' + (S.scope === 'city') + '">كل وجهات ' + esc(b.city) + ' <span class="num">' + fmt(c.nhc.total) + '</span></button></div>';
     }
     var body;
-    if (pending) body = '<div class="empty approval-pending" role="status"><h3>بانتظار قائمة المشاريع المعتمدة</h3></div>';
-    else if (!all.length) {
+    if (pending) body = '<div class="empty ' + (catalogPending ? 'approval-pending' : 'verification-pending') + '" role="status"><h3>' + esc(pendingLabel(k)) + '</h3>' + (catalogPending ? '' : '<p>ستظهر الفرص بعد اكتمال التحقق.</p>') + '</div>';
+    else if (!all.length && !norm(S.q[k] || '')) {
       var isGated = k === 'projects' || k === 'opps';
       body = '<div class="empty"><span class="empty-icon">' + ICON[k] + '</span><h3>' + (isGated ? 'لا توجد فرص متاحة موثقة في هذا النطاق' : 'لا توجد نتائج مسجلة في هذا النطاق') + '</h3></div>';
     } else if (!items.length) body = '<div class="empty"><h3>لا نتائج مطابقة</h3><p>جرّب اسمًا أو حيًا آخر.</p></div>';
@@ -1104,9 +1129,9 @@
   function card(kind, o, d, showCity, unknown, item) {
     o = contactView(o);
     var id = reg(kind, o), visual = kind === 'projects' || kind === 'opps' || kind === 'nhc';
-    var where = kind === 'nhc' ? (o.dir || o.city) : compactLocation(o), h = '';
+    var where = kind === 'nhc' ? (o.dir || o.city) : kind === 'selfbuild' ? [o.loc, o.city].filter(Boolean).join('، ') : compactLocation(o), h = '';
     if (visual) {
-      h = '<article class="vcard" data-record-id="' + esc(o.id || o.n) + '">' + recordMedia(kind, o) + '<div class="body"><h3>' + esc(o.n) + '</h3><div class="where">' + esc(where) + '</div>' + (o.marketer ? '<div class="dev">التسويق: ' + esc(o.marketer) + '</div>' : o.dev ? '<div class="dev">' + (unclearDeveloperRole(o) ? 'جهة التواصل: ' : '') + esc(o.dev) + '</div>' : '') + (kind === 'nhc' ? destinationCardActions(id, o) : cardActions(id, o)) + '</div></article>';
+      h = '<article class="vcard" data-record-id="' + esc(o.id || o.n) + '">' + '<div class="body"><h3>' + esc(o.n) + '</h3><div class="where">' + esc(where) + '</div>' + (o.marketer ? '<div class="dev">التسويق: ' + esc(o.marketer) + '</div>' : o.dev ? '<div class="dev">' + (unclearDeveloperRole(o) ? 'جهة التواصل: ' : '') + esc(o.dev) + '</div>' : '') + (kind !== 'nhc' ? priceLine(o) : '') + '</div>' + (kind === 'nhc' ? destinationCardActions(id, o) : cardActions(id, o)) + recordMedia(kind, o) + '</article>';
     } else {
       var icon = ICON[kind] || ICON.offices;
       h = '<article class="lcard" data-record-id="' + esc(o.id || o.n) + '"><div class="head"><span class="business-icon">' + icon + '</span><div><h3>' + esc(o.n) + '</h3><div class="sub">' + esc(where || (kind === 'companies' ? S.branch.city : '')) + '</div></div></div>' +
@@ -1194,11 +1219,11 @@
       if (o.page) links += '<a class="btn primary" target="_blank" rel="noopener" href="' + esc(o.page) + '">' + ICON.web + 'صفحة المشروع</a>';
       if (o.areaSource) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.areaSource) + '">' + ICON.web + 'مصدر المساحة</a>';
       var devSite = developerSite(o);
-      if (o.imageSourceUrl) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.imageSourceUrl) + '">' + ICON.web + 'مصدر الصورة</a>';
       if (devSite && devSite !== o.page) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(devSite) + '">' + ICON.companies + (unclearDeveloperRole(o) ? 'موقع الجهة' : 'موقع المطور') + '</a>';
       if (o.sales) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.sales) + '">' + ICON.map + 'مركز المبيعات</a>';
       if (o.contactUrl) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.contactUrl) + '">' + ICON.phone + 'التواصل</a>';
     }
+    if (k === 'selfbuild') rows = [['المدينة', o.city], ['الموقع', o.loc]];
     if (k === 'companies' || k === 'offices' || k === 'cars') {
       rows = [['المدينة', o.city], ['الموقع', o.nb], ['النشاط', o.kind], ['المسؤول', o.contact]];
       (o.salesCenters || []).forEach(function (center) { if (center.maps) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(center.maps) + '">مركز مبيعات الشركة</a>'; });
@@ -1207,15 +1232,14 @@
     if ((k === 'opps' || k === 'projects') && displayEligible('opps', o)) { rows.push(['تاريخ التحقق من الإتاحة', o.availability.checkedAt]); links += evidenceLink(o.availability.source, 'مصدر الإتاحة للبيع'); }
     if (o.destinationName && (o.destinationSource || validEvidence(o.destinationEvidence))) { rows.push(['الوجهة', o.destinationName]); links += evidenceLink(o.destinationSource || o.destinationEvidence.source, 'مصدر الارتباط بالوجهة'); }
     rows = (rows || []).filter(function (r) { return r[1]; });
-    dlg.innerHTML = '<div class="d-top"><button class="btn back-results" data-close>← ' + backLabel + '</button></div>' + (k === 'projects' || k === 'opps' || k === 'nhc' ? '<div class="d-media"><button class="close-x" data-close aria-label="إغلاق">' + ICON.x + '</button>' +
-      ph(k === 'nhc' ? 'وجهة ' + o.n : o.n, [o.type, o.city].filter(Boolean).join(' · '), k, o) + (displayImage(k, o) ? '<img class="property-image official-image" alt="' + esc(o.n || 'صورة') + '" data-src="' + esc(displayImage(k, o)) + '">' : '') + '<span class="image-caption" data-illustrative="' + (!displayImage(k, o) || isIllustrative(o, displayImage(k, o))) + '">صورة توضيحية</span></div>' : '') +
-      '<div class="d-body"><h2>' + esc(o.n) + '</h2><button class="btn" data-close>العودة إلى القائمة</button>' + (k === 'projects' || k === 'opps' ? priceLine(o) : '') +
+    dlg.innerHTML = '<div class="d-top"><button class="btn back-results" data-close>← ' + backLabel + '</button></div>' +       '<div class="d-body"><h2>' + esc(o.n) + '</h2><button class="btn" data-close>العودة إلى القائمة</button>' + (k === 'projects' || k === 'opps' ? priceLine(o) : '') +
+      phoneLine(o.phones, id, o.phoneContacts) + '<div class="d-acts primary-contact-actions">' + actions(id, o, 'btn') + '</div>' +
       (verifiedField(o, 'desc') ? '<p style="margin:0;color:var(--ink-2)">' + esc(verifiedField(o, 'desc')) + '</p>' : '') +
       '<dl class="kv">' + rows.map(function (r) { return '<dt>' + esc(r[0]) + '</dt><dd>' + esc(r[1]) + '</dd>'; }).join('') + '</dl>' +
       (k === 'nhc' ? destinationProjectSection(o) + destinationContactSection(o) : '') +
-      (k === 'nhc' && (o.phones || []).length ? '<p class="d-note">التواصل المسجّل في بيانات الوجهة</p>' : '') + phoneLine(o.phones, id, o.phoneContacts) + (links ? '<div class="d-acts">' + links + '</div>' : '') +
-      '<div class="d-acts">' + actions(id, o, 'btn') + '</div>' +
-      '</div>';
+      (k === 'nhc' && (o.phones || []).length ? '<p class="d-note">التواصل المسجّل في بيانات الوجهة</p>' : '') + (links ? '<div class="d-acts">' + links + '</div>' : '') +
+      '</div>' + (k === 'projects' || k === 'opps' || k === 'nhc' ? '<div class="d-media"><button class="close-x" data-close aria-label="إغلاق">' + ICON.x + '</button>' +
+      ph(k === 'nhc' ? 'وجهة ' + o.n : o.n, [o.type, o.city].filter(Boolean).join(' · '), k, o) + (displayImage(k, o) ? '<img class="property-image official-image" alt="' + esc(o.n || 'صورة') + '" data-src="' + esc(displayImage(k, o)) + '">' : '') + '<span class="image-caption" data-illustrative="' + (!displayImage(k, o) || isIllustrative(o, displayImage(k, o))) + '">صورة توضيحية</span></div>' : '');
     bindImages(dlg);
     if (!dlg.open) { if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', ''); }
     dlg.scrollTop = 0;

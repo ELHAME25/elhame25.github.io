@@ -1194,7 +1194,57 @@
     "geoSource": "https://retal.com.sa/properties/retal-rise/",
     "geoBasis": "الإحداثيات من دبوس المشروع المطابق على خرائط Google؛ صفحة رتال الرسمية تسمي المشروع وتؤكد موقعه في الخبر.",
     "phoneLevel": "dev",
-    "phoneSource": "https://retal.com.sa/properties/retal-rise/"
+    "phoneSource": "https://retal.com.sa/properties/retal-rise/",
+    "bankApproval": {
+      "sourceType": "bank_approved_inventory",
+      "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z",
+      "sourceAuthorityCheckedAt": "2026-10-16T08:47:37Z",
+      "sourceSha256": "beb05608b2a7f99f04043146e9e15a8e38c5a3b4781c14b6b774469056a4c7be",
+      "sourceCatalogId": "bank-approved-inventory-20261016",
+      "status": "verified",
+      "code": "02-04-0040",
+      "source": "المشاريع العقارية المعتمدة - دليل الزيارات.pdf، صفحة 4، صف 26",
+      "checkedAt": "2026-10-16T09:28:06Z",
+      "sourcePage": 4,
+      "sourceRow": 26,
+      "sourceRowIndex0": 25,
+      "sourceRowKey": "confirmed-inventory:p04:r026",
+      "sourceRowBasis": "1-based visible table row; index0 retains extraction position.",
+      "sourceIdentity": {
+        "name": "رتال رايز",
+        "developer": "شركة رمال الخبر العقارية",
+        "city": "الخبر"
+      },
+      "basis": "Exact Retal Rise project and Khobar city. Source legal developer Rimal Al Khobar is explicitly tied to this project by Sakani 1106 and issuer disclosure 85788, which identifies its 50% Retal joint-venture relationship. Retal remains the marketing/developer brand; original legal identity is preserved.",
+      "legalEntityCrosswalkEvidence": {
+        "sources": [
+          "https://sakani.sa/app/offplan-projects/1106",
+          "https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-news/issuer-announcements/issuer-announcements-details/?anCat=1&anId=85788&cs=4322&locale=ar",
+          "https://retal.com.sa/properties/retal-rise/"
+        ],
+        "checkedAt": "2026-10-16T09:28:06Z",
+        "legalDeveloper": "شركة رمال الخبر العقارية",
+        "marketingDeveloperBrand": "شركة رتال للتطوير العمراني",
+        "relationshipScope": "This exact Retal Rise project in Khobar only; no global developer alias.",
+        "ownershipDisclosureDate": "2025-03-16",
+        "retalOwnershipPercentAtDisclosure": 50
+      },
+      "verificationScope": "Membership of the user-confirmed source inventory for Retal Rise only. Not live bank confirmation; not automatic approval of the separate Nobu component; no sale availability inferred from bank membership."
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://retalrise.com/",
+      "checkedAt": "2026-10-16T09:30:30Z",
+      "acquisition": "official_public_page_via_web_and_direct_http200",
+      "reportedCrawlRecency": "today",
+      "sourceStatus": "Four residence types remain; other named types sold out.",
+      "basis": "The developer-linked official microsite explicitly distinguishes four residence types still offered from three sold-out types. This is a published project sale signal, not inferred from an interest form or generic project page.",
+      "liveTransactionTested": false,
+      "remainingUnitCount": null,
+      "recheckBeforeReservation": true
+    },
+    "officialSalePage": "https://retalrise.com/",
+    "constructionStatus": "under_construction"
   },
   {
     "id": "P026",
@@ -6175,7 +6225,7 @@
     ],
     "wa": "",
     "contactUrl": "",
-    "page": "",
+    "page": "https://dirwazhalsharq.com/projects/alrozanah/",
     "dsite": "https://www.dirwazhalsharq.com/",
     "maps": "",
     "sales": "",
@@ -6183,7 +6233,55 @@
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%B1%D9%88%D8%B2%D9%86%D8%A9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AF%D8%B1%D9%88%D8%A7%D8%B2%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1",
     "imageType": "صورة رسمية للمشروع من موقع المطور",
     "imageSource": "https://dirwazhalsharq.com/projects/alrozanah/",
-    "imageSourceUrl": "https://dirwazhalsharq.com/projects/alrozanah/"
+    "imageSourceUrl": "https://dirwazhalsharq.com/projects/alrozanah/",
+    "bankApproval": {
+      "status": "verified",
+      "sourceType": "bank_approved_inventory",
+      "code": "11-1818",
+      "source": "المشاريع العقارية المعتمدة - دليل الزيارات.pdf، صفحة 5، صف 66",
+      "checkedAt": "2026-10-16T09:28:53Z",
+      "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z",
+      "sourceAuthorityCheckedAt": "2026-10-16T08:47:37Z",
+      "sourceSha256": "beb05608b2a7f99f04043146e9e15a8e38c5a3b4781c14b6b774469056a4c7be",
+      "sourceCatalogId": "bank-approved-inventory-20261016",
+      "sourcePage": 5,
+      "sourceRow": 66,
+      "sourceRowIndex0": 65,
+      "sourceRowBasis": "1-based visible table row; index0 retains extraction position.",
+      "sourceIdentity": {
+        "name": "الروزنة",
+        "developer": "شركة دروازة الشرق للتطوير و الاستثمار العقاري",
+        "city": "المبرز"
+      },
+      "verificationScope": "Source inventory membership only. No availability, construction status, physical city, phase identity or canonical merge is inferred.",
+      "basis": "Exact source project and developer identity. The source uses the city within Al-Ahsa while the current record uses the enclosing governorate/urban area. Official Al-Ahsa municipality evidence establishes the administrative relationship. No global city alias is created.",
+      "administrativeHierarchyEvidence": {
+        "source": "https://unesco.alhasa.gov.sa/Ar/Details.aspx?ArticleID=3138",
+        "checkedAt": "2026-10-16T09:28:53Z",
+        "enclosingAdministrativeArea": "الأحساء",
+        "projectLocality": "المبرز",
+        "globalCityAliasCreated": false
+      },
+      "identityCorroboration": {
+        "source": "https://dirwazhalsharq.com/projects/alrozanah/",
+        "checkedAt": "2026-10-16T09:28:53Z"
+      }
+    },
+    "availability": {
+      "status": "sold_out",
+      "source": "https://dirwazhalsharq.com/projects/alrozanah/",
+      "checkedAt": "2026-10-16T09:28:53Z",
+      "basis": "Official developer project counters report all nine units sold, none reserved and none available.",
+      "sourceStatus": "المباع : 9؛ المحجوز : 0؛ المتاح : 0",
+      "availableUnits": 0,
+      "soldUnits": 9,
+      "reservedUnits": 0
+    },
+    "pageSource": {
+      "source": "https://dirwazhalsharq.com/projects/alrozanah/",
+      "checkedAt": "2026-10-16T09:28:53Z",
+      "basis": "Exact project and developer official page."
+    }
   },
   {
     "id": "P136",
@@ -6201,7 +6299,37 @@
     "maps": "",
     "sales": "",
     "tier": "basic",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%83%D9%88%D9%81%D8%A7%D9%84%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D9%84%D9%83%D8%A7%D9%86%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%83%D9%88%D9%81%D8%A7%D9%84%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D9%84%D9%83%D8%A7%D9%86%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1",
+    "bankApproval": {
+      "status": "verified",
+      "sourceType": "bank_approved_inventory",
+      "code": "02-04-0028",
+      "source": "المشاريع العقارية المعتمدة - دليل الزيارات.pdf، صفحة 5، صف 67",
+      "checkedAt": "2026-10-16T09:28:53Z",
+      "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z",
+      "sourceAuthorityCheckedAt": "2026-10-16T08:47:37Z",
+      "sourceSha256": "beb05608b2a7f99f04043146e9e15a8e38c5a3b4781c14b6b774469056a4c7be",
+      "sourceCatalogId": "bank-approved-inventory-20261016",
+      "sourcePage": 5,
+      "sourceRow": 67,
+      "sourceRowIndex0": 66,
+      "sourceRowBasis": "1-based visible table row; index0 retains extraction position.",
+      "sourceIdentity": {
+        "name": "مشروع كوفال",
+        "developer": "شركة ملكان للتطوير العقاري",
+        "city": "الهفوف"
+      },
+      "verificationScope": "Source inventory membership only. No availability, construction status, physical city, phase identity or canonical merge is inferred.",
+      "basis": "Exact source project and developer identity. The source uses the city within Al-Ahsa while the current record uses the enclosing governorate/urban area. Official Al-Ahsa municipality evidence establishes the administrative relationship. No global city alias is created.",
+      "administrativeHierarchyEvidence": {
+        "source": "https://unesco.alhasa.gov.sa/Ar/Details.aspx?ArticleID=3138",
+        "checkedAt": "2026-10-16T09:28:53Z",
+        "enclosingAdministrativeArea": "الأحساء",
+        "projectLocality": "الهفوف",
+        "globalCityAliasCreated": false
+      },
+      "verificationLimitation": "Project-specific official sale/location page was not retrieved. Approval crosswalk relies on exact source identity and administrative nesting only; no availability or precise pin is asserted."
+    }
   },
   {
     "id": "P137",
@@ -8987,7 +9115,55 @@
     "maps": "",
     "sales": "",
     "tier": "basic",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%AD%D9%88%D9%8A%D8%B2%D9%8A%20%D9%84%D9%84%D9%81%D9%84%D9%84%20%D8%A7%D9%84%D8%B3%D9%83%D9%86%D9%8A%D8%A9%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%AD%D9%88%D9%8A%D8%B2%D9%8A%20%D9%84%D9%84%D9%81%D9%84%D9%84%20%D8%A7%D9%84%D8%B3%D9%83%D9%86%D9%8A%D8%A9%20%D8%A3%D8%A8%D9%88%20%D8%B9%D8%B1%D9%8A%D8%B4",
+    "bankApproval": {
+      "status": "verified",
+      "sourceType": "bank_approved_inventory",
+      "code": "02-08-0006",
+      "source": "المشاريع العقارية المعتمدة - دليل الزيارات.pdf، صفحة 6، صف 55",
+      "checkedAt": "2026-10-16T09:28:53Z",
+      "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z",
+      "sourceAuthorityCheckedAt": "2026-10-16T08:47:37Z",
+      "sourceSha256": "beb05608b2a7f99f04043146e9e15a8e38c5a3b4781c14b6b774469056a4c7be",
+      "sourceCatalogId": "bank-approved-inventory-20261016",
+      "sourcePage": 6,
+      "sourceRow": 55,
+      "sourceRowIndex0": 54,
+      "sourceRowBasis": "1-based visible table row; index0 retains extraction position.",
+      "sourceIdentity": {
+        "name": "الحويزي للفلل السكنية",
+        "developer": "شركة عائض سعيد معيض حويزي للمقاولات العامة",
+        "city": "جازان"
+      },
+      "verificationScope": "Source inventory membership only. No availability, construction status, physical city, phase identity or canonical merge is inferred.",
+      "basis": "Exact source project name/phase and developer. Official Sakani identifies this project in the current city within Jazan region, explicitly distinguishing region from city. The original Jazan label is retained; physical locality is not overwritten.",
+      "administrativeHierarchyEvidence": {
+        "source": "https://www.moh.gov.sa/healthawareness/on-duty-healthcare-centers/pages/jazan.aspx",
+        "checkedAt": "2026-10-16T09:28:53Z",
+        "enclosingAdministrativeArea": "جازان",
+        "projectLocality": "أبو عريش",
+        "globalCityAliasCreated": false
+      },
+      "identityCorroboration": {
+        "source": "https://sakani.sa/app/units/916274",
+        "checkedAt": "2026-10-16T09:28:53Z"
+      }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/units/916274",
+      "checkedAt": "2026-10-16T09:28:53Z",
+      "basis": "Official Sakani indexed unit 916274 explicitly displays booking available for this exact project/developer in Abu Arish. A project total or historical launch is not used as stock proof.",
+      "sourceStatus": "الحجز متاح",
+      "verificationMethod": "official_public_indexed_unit_listing",
+      "retrievalLimitation": "Direct open returned cache miss; current public search retrieval contains the full unit listing, crawled within the preceding week. No booking was submitted.",
+      "unitEvidence": [
+        {
+          "unitId": "916274",
+          "unitLabel": "40-60"
+        }
+      ]
+    }
   },
   {
     "id": "P197",
@@ -9371,7 +9547,50 @@
     "maps": "",
     "sales": "",
     "tier": "dev",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3%204%20%D8%B5%D8%A8%D9%8A%D8%A7%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AF%D9%89"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3%204%20%D8%B5%D8%A8%D9%8A%D8%A7%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AF%D9%89",
+    "bankApproval": {
+      "status": "verified",
+      "sourceType": "bank_approved_inventory",
+      "code": "02-08-0019",
+      "source": "المشاريع العقارية المعتمدة - دليل الزيارات.pdf، صفحة 6، صف 66",
+      "checkedAt": "2026-10-16T09:28:53Z",
+      "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z",
+      "sourceAuthorityCheckedAt": "2026-10-16T08:47:37Z",
+      "sourceSha256": "beb05608b2a7f99f04043146e9e15a8e38c5a3b4781c14b6b774469056a4c7be",
+      "sourceCatalogId": "bank-approved-inventory-20261016",
+      "sourcePage": 6,
+      "sourceRow": 66,
+      "sourceRowIndex0": 65,
+      "sourceRowBasis": "1-based visible table row; index0 retains extraction position.",
+      "sourceIdentity": {
+        "name": "ريزيدنس 4",
+        "developer": "شركة مدى المحدودة",
+        "city": "جازان"
+      },
+      "verificationScope": "Source inventory membership only. No availability, construction status, physical city, phase identity or canonical merge is inferred.",
+      "basis": "Exact source project name/phase and developer. Official Sakani identifies this project in the current city within Jazan region, explicitly distinguishing region from city. The original Jazan label is retained; physical locality is not overwritten.",
+      "administrativeHierarchyEvidence": {
+        "source": "https://www.moh.gov.sa/healthawareness/on-duty-healthcare-centers/pages/jazan.aspx",
+        "checkedAt": "2026-10-16T09:28:53Z",
+        "enclosingAdministrativeArea": "جازان",
+        "projectLocality": "صبيا",
+        "globalCityAliasCreated": false
+      },
+      "identityCorroboration": {
+        "source": "https://sakani.sa/app/offplan-projects/1545?lang=ar",
+        "checkedAt": "2026-10-16T09:28:53Z",
+        "note": "The same official Sakani project title retains شركة مدى المحدودة while its developer body currently says شركة مدى الأولى انوفيست العقارية. Both labels are preserved; no raw developer rename."
+      }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/offplan-projects/1545?lang=ar",
+      "checkedAt": "2026-10-16T09:28:53Z",
+      "basis": "Official Sakani indexed project page displays three positive for-sale unit groups (1, 1 and 3 apartments), not only an interest form. Exact phase 4 only.",
+      "sourceStatus": "شقة معروضة للبيع",
+      "verificationMethod": "official_public_indexed_project_inventory",
+      "retrievalLimitation": "Direct open is an app shell; indexed official project content crawled within the preceding week supplies the inventory. Group counts are not asserted as a transaction-tested remaining total."
+    }
   },
   {
     "id": "P208",
@@ -9537,12 +9756,59 @@
     "phones": [],
     "wa": "",
     "contactUrl": "",
-    "page": "",
+    "page": "https://sakani.sa/app/offplan-projects/1751?lang=ar",
     "dsite": "",
     "maps": "",
     "sales": "",
     "tier": "basic",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B5%D8%A7%D9%85%D8%B7%D8%A9%20%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3%20%D8%B5%D8%A7%D9%85%D8%B7%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B5%D8%A7%D9%85%D8%B7%D8%A9%20%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3%20%D8%B5%D8%A7%D9%85%D8%B7%D8%A9",
+    "bankApproval": {
+      "status": "verified",
+      "sourceType": "bank_approved_inventory",
+      "code": "02-08-0027",
+      "source": "المشاريع العقارية المعتمدة - دليل الزيارات.pdf، صفحة 6، صف 71",
+      "checkedAt": "2026-10-16T09:28:53Z",
+      "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z",
+      "sourceAuthorityCheckedAt": "2026-10-16T08:47:37Z",
+      "sourceSha256": "beb05608b2a7f99f04043146e9e15a8e38c5a3b4781c14b6b774469056a4c7be",
+      "sourceCatalogId": "bank-approved-inventory-20261016",
+      "sourcePage": 6,
+      "sourceRow": 71,
+      "sourceRowIndex0": 70,
+      "sourceRowBasis": "1-based visible table row; index0 retains extraction position.",
+      "sourceIdentity": {
+        "name": "صامطة ريزيدنس",
+        "developer": "مؤسسة حسن محمد حسن آل السيار الوادعي للمقاولات العامة",
+        "city": "جازان"
+      },
+      "verificationScope": "Source inventory membership only. No availability, construction status, physical city, phase identity or canonical merge is inferred.",
+      "basis": "Exact source project name/phase and developer. Official Sakani identifies this project in the current city within Jazan region, explicitly distinguishing region from city. The original Jazan label is retained; physical locality is not overwritten.",
+      "administrativeHierarchyEvidence": {
+        "source": "https://www.moh.gov.sa/healthawareness/on-duty-healthcare-centers/pages/jazan.aspx",
+        "checkedAt": "2026-10-16T09:28:53Z",
+        "enclosingAdministrativeArea": "جازان",
+        "projectLocality": "صامطة",
+        "globalCityAliasCreated": false
+      },
+      "identityCorroboration": {
+        "source": "https://sakani.sa/app/offplan-projects/1751?lang=ar",
+        "checkedAt": "2026-10-16T09:28:53Z"
+      }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/offplan-projects/1751?lang=ar",
+      "checkedAt": "2026-10-16T09:28:53Z",
+      "basis": "Official Sakani indexed project page displays a positive group of four townhouses for sale for this exact project/developer, beyond the interest-registration heading.",
+      "sourceStatus": "تاون هاوس معروضة للبيع",
+      "verificationMethod": "official_public_indexed_project_inventory",
+      "retrievalLimitation": "Direct open is an app shell; indexed official project content crawled within the preceding week supplies the inventory. The project total of 14 is not remaining stock."
+    },
+    "pageSource": {
+      "source": "https://sakani.sa/app/offplan-projects/1751?lang=ar",
+      "checkedAt": "2026-10-16T09:28:53Z",
+      "basis": "Exact project and developer official page."
+    }
   },
   {
     "id": "P213",
@@ -24282,7 +24548,50 @@
     "rooms": "3-5 غرف",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=The+Ritz-Carlton+Residences+Diriyah",
     "imageSourceUrl": "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/ritz-carlton",
-    "imageType": "صورة رسمية من صفحة ريزدنسز الريتز كارلتون لدى شركة الدرعية"
+    "imageType": "صورة رسمية من صفحة ريزدنسز الريتز كارلتون لدى شركة الدرعية",
+    "bankApproval": {
+      "status": "verified",
+      "sourceType": "bank_approved_inventory",
+      "code": "52-52-52",
+      "source": "المشاريع العقارية المعتمدة - دليل الزيارات.pdf، صفحة 10، صف 61",
+      "checkedAt": "2026-10-16T09:28:53Z",
+      "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z",
+      "sourceAuthorityCheckedAt": "2026-10-16T08:47:37Z",
+      "sourceSha256": "beb05608b2a7f99f04043146e9e15a8e38c5a3b4781c14b6b774469056a4c7be",
+      "sourceCatalogId": "bank-approved-inventory-20261016",
+      "sourcePage": 10,
+      "sourceRow": 61,
+      "sourceRowIndex0": 60,
+      "sourceRowBasis": "1-based visible table row; index0 retains extraction position.",
+      "sourceIdentity": {
+        "name": "الريتز كارلتون ريزدنسز الدرعية",
+        "developer": "شركة بوابة الدرعية المحدودة",
+        "city": "الرياض"
+      },
+      "verificationScope": "Source inventory membership only. No availability, construction status, physical city, phase identity or canonical merge is inferred.",
+      "basis": "Exact named Ritz-Carlton Residences, Diriyah project and Diriyah Gate legal developer. Official project page identifies the 106-villa project; official national weather authority places Diriyah in Riyadh region. Source Riyadh label is retained separately from physical Diriyah.",
+      "administrativeHierarchyEvidence": {
+        "source": "https://www.ncm.gov.sa/ar/region/riyadh/governorates/Ad-Diriyah",
+        "checkedAt": "2026-10-16T09:28:53Z",
+        "enclosingAdministrativeArea": "الرياض",
+        "projectLocality": "الدرعية",
+        "globalCityAliasCreated": false
+      },
+      "identityCorroboration": {
+        "source": "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/ritz-carlton",
+        "checkedAt": "2026-10-16T09:28:53Z"
+      }
+    },
+    "availability": {
+      "status": "sold_out",
+      "source": "https://www.diriyahcompany.sa/en/news/diriyah-at-cityscape",
+      "checkedAt": "2026-10-16T09:28:53Z",
+      "basis": "Official developer announcement states that the initial 106 Ritz-Carlton Residences sold out. This current record points to the exact 106-villa original project, not the separately released 59-home Signature Collection. Current generic appointment CTA does not establish reopened inventory.",
+      "sourceStatus": "successful sell-out of the initial 106 Ritz Carlton Residences",
+      "sourcePublishedAt": "2024-11-11",
+      "scope": "original_106_residences_only",
+      "reopeningNotVerified": true
+    }
   },
   {
     "id": "P491",

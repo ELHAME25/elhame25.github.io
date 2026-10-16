@@ -3,6 +3,7 @@ set -eu
 ROOT="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
 node --check "$ROOT/assets/app.js"
 node "$(dirname -- "$0")/qa-brand-identity.js" "$ROOT"
+node "$(dirname -- "$0")/qa-usability.js" "$ROOT"
 node "$(dirname -- "$0")/qa-national-scope-policy.js" "$ROOT"
 node "$(dirname -- "$0")/qa-scope.js" "$ROOT"
 node "$(dirname -- "$0")/qa-city-picker.js" "$ROOT"
