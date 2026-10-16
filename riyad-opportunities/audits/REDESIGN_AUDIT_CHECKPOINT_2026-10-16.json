@@ -1,0 +1,38 @@
+{
+  "status": "work_in_progress_not_public_release",
+  "sourceBaseCommit": "864a15231f5ad655b871dbfc1e836469eb840352",
+  "checkpoint": "2026-10-16T08:10:00Z",
+  "protectedQadisiyyahCars": 33,
+  "protectedCarsDeepEquality": "passed",
+  "dataCounts": {
+    "branches": 249,
+    "projects": 647,
+    "nhc": 29,
+    "offices": 1524,
+    "cars": 781,
+    "companies": 131,
+    "opportunities": 429,
+    "selfbuild": 10,
+    "dealers": 1
+  },
+  "scopePolicy": {
+    "wholeCity": [
+      "أبها",
+      "بريدة",
+      "عنيزة",
+      "الرس",
+      "الزلفي",
+      "حائل"
+    ],
+    "tabuk": "documented_branch_coverage_only_city_alternative_when_unmapped",
+    "companies": "citywide",
+    "mandatoryRadius": false
+  },
+  "pending": [
+    "Full individual national field audit remains incomplete",
+    "Browser screenshots and browser CI pending",
+    "Tabuk branch coverage has no documented mapping",
+    "Some research paths stopped at service usage limit"
+  ],
+  "publicDeployment": false
+}
