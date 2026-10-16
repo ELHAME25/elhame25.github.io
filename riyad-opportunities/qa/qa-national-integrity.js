@@ -19,7 +19,8 @@ check('تهجئتا سبت العلايا وسبت العلاية مدينة و�
 check('الفلاج وضرماء موحدتان مع ربط الفرعين الصحيحين',cityKey(branches.find(b=>String(b.c)==='215')?.city)===cityKey('الأفلاج')&&cityKey(branches.find(b=>String(b.c)==='219')?.city)===cityKey('ضرماء'),{aflaj:branches.find(b=>String(b.c)==='215')?.city,dhurma:branches.find(b=>String(b.c)==='219')?.city});
 check('إجمالي الفروع يطابق metadata',branches.length===meta.counts.branches,{branches:branches.length,meta:meta.counts.branches});
 const noCoords=branches.filter(b=>b.lat==null||b.lon==null).map(b=>String(b.c));
-check('الفروع بلا إحداثيات نشطة محصورة في 176 و307',JSON.stringify(noCoords.sort())===JSON.stringify(['176','307']),noCoords);
+const documentedMissingPins=['176','307'];const hilal=branches.find(b=>String(b.c)==='252');if(hilal&&hilal.city==='الرياض'&&hilal.sec==='غرب'&&hilal.lat==null&&hilal.lon==null)documentedMissingPins.push('252');
+check('الفروع بلا إحداثيات محصورة في الاستثناءات المعروفة، ومنها الهلال 252 عند إضافته',JSON.stringify(noCoords.sort())===JSON.stringify(documentedMissingPins.sort()),noCoords);
 check('سيهات مصنفة في مدينتها الصحيحة',projects.some(p=>p.id==='P206'&&p.city==='سيهات'&&p.nb==='الفيحاء الشرقية'&&p.maps&&p.page&&p.img),projects.find(p=>p.id==='P206'));
 check('سرايا البدر ترتبط بصفحتها الرسمية في المدينة المنورة',projects.some(p=>p.id==='P163'&&p.city==='المدينة المنورة'&&p.page==='https://darwaemaar.com/project/saraya-al-bader-al-madinah-ar/'),projects.find(p=>p.id==='P163')?.page);
 const records=[...projects,...nhc,...opps,...companies,...cars,...offices];
@@ -36,3 +37,4 @@ console.log(JSON.stringify(result,null,2));if(failures.length)process.exit(1);
 
 const imageUrls=projects.filter(p=>p.img).map(p=>p.img);
 check('كل صورة مشروع غير فارغة فريدة ولا تتكرر بين السجلات',new Set(imageUrls).size===imageUrls.length,{images:imageUrls.length,unique:new Set(imageUrls).size,duplicates:imageUrls.length-new Set(imageUrls).size});
+

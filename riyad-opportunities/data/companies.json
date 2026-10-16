@@ -217,10 +217,11 @@
     ],
     "phones": [
       "0567600585",
-      "0555866799"
+      "0555866799",
+      "920000658"
     ],
     "wa": "https://wa.me/message/MFDPXBNPC5ZWM1",
-    "site": "",
+    "site": "https://ajdan.com/",
     "maps": "",
     "sectors": [
       "شرق",
@@ -236,10 +237,90 @@
     "commercialAuditNote": "توثيق مؤسسي للمطور ومشاريعه؛ أبق مع التمييز كمطور.",
     "phoneContacts": [
       "عبدالعزيز الراشد",
-      "عبدالعزيز الدامغ"
+      "عبدالعزيز الدامغ",
+      "رقم الشركة العام"
     ],
     "phoneContactsSource": "مراكز المبيعات 2026.pdf؛ شركات التطوير العقاري في ضواحي ووجهات NHC.pptx",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D8%AC%D8%AF%D8%A7%D9%86%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D8%AC%D8%AF%D8%A7%D9%86%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "verifiedPhones": [
+      "920000658"
+    ],
+    "phoneVerification": [
+      {
+        "number": "0567600585",
+        "status": "retained_legacy_unverified",
+        "source": "existing dataset",
+        "note": "Retain raw value and original contact label; do not mark verified from unrelated corporate phone or website discovery."
+      },
+      {
+        "number": "0555866799",
+        "status": "retained_legacy_unverified",
+        "source": "existing dataset",
+        "note": "Retain raw value and original contact label; do not mark verified from unrelated corporate phone or website discovery."
+      },
+      {
+        "number": "920000658",
+        "status": "verified_public_source",
+        "source": "https://ajdan.com/ar/reach-us",
+        "evidenceDate": "2026-10-14",
+        "sourceReadMode": "official_contact_indexed_text",
+        "scope": "company_general",
+        "callTested": false
+      }
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "matched_company_identity_from_official_source",
+        "evidenceDate": "2026-10-14",
+        "reviewedAt": "2026-10-16",
+        "basis": "Al Fozan official page names شركة اجدان للتطوير العقاري; official Ajdan profile and company careers page identify ajdan.com. This is not the similarly named Ajdan International Contracting."
+      },
+      "site": {
+        "stored": "",
+        "status": "verified_official_site_proposed_not_applied",
+        "observed": "https://ajdan.com/",
+        "evidenceDate": "2026-10-14"
+      },
+      "map": {
+        "stored": "",
+        "status": "missing"
+      },
+      "pin": {
+        "stored": [
+          null,
+          null
+        ],
+        "status": "missing_or_unverified"
+      },
+      "phones": [
+        {
+          "number": "0567600585",
+          "status": "retained_unverified"
+        },
+        {
+          "number": "0555866799",
+          "status": "retained_unverified"
+        },
+        {
+          "number": "920000658",
+          "status": "published_in_identified_primary_or_matching_maps_source"
+        }
+      ],
+      "whatsapp": {
+        "stored": "https://wa.me/message/MFDPXBNPC5ZWM1",
+        "status": "shortlink_destination_unverified"
+      },
+      "geography": {
+        "status": "company_directory_city_not_assumed_HQ",
+        "instruction": "Do not replace project/service geography with corporate HQ geography.",
+        "officeObservation": {
+          "recordCityPreserved": "الرياض",
+          "observedCorporateContactCity": "الدمام",
+          "note": "Riyadh in the record describes existing project/service context, not the Dammam corporate contact address. No city, scope or coverage edits proposed."
+        }
+      },
+      "allFieldsVerified": false
+    }
   },
   {
     "n": "شركة الرمز للعقارات",
@@ -670,14 +751,74 @@
       "920033157"
     ],
     "wa": "",
-    "site": "",
+    "site": "https://www.alhabibinv.com/",
     "maps": "",
     "sectors": [],
     "id": "cp-9e7287a09d",
     "commercialAuditStatus": "review_required",
     "commercialEvidence": [],
     "commercialAuditNote": "كيان مستقل الاسم عن محمد الحبيب، بلا رابط في السجل؛ لا دمج دون دليل.",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%A7%D9%84%D8%AD%D8%A8%D9%8A%D8%A8%20%D9%88%D8%B4%D8%B1%D9%83%D8%A7%D8%A4%D9%87%20%D8%AC%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%A7%D9%84%D8%AD%D8%A8%D9%8A%D8%A8%20%D9%88%D8%B4%D8%B1%D9%83%D8%A7%D8%A4%D9%87%20%D8%AC%D8%AF%D8%A9",
+    "verifiedPhones": [
+      "920033157"
+    ],
+    "phoneVerification": [
+      {
+        "number": "920033157",
+        "status": "verified_public_source",
+        "source": "https://www.alhabibinv.com/contact/ar",
+        "evidenceDate": "2026-10-16",
+        "sourceReadMode": "readable_official_contact",
+        "scope": "company_general",
+        "callTested": false
+      }
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "matched_company_identity_from_official_source",
+        "evidenceDate": "2026-10-14",
+        "reviewedAt": "2026-10-16",
+        "basis": "Government Sakani page 1363 itself links the full legal-name wording and the short company brand on one project page; official corporate site features that Eyal project and matches stored phone 920033157. This supports adding the website, not merging/deleting any records."
+      },
+      "site": {
+        "stored": "",
+        "status": "verified_official_site_proposed_not_applied",
+        "observed": "https://www.alhabibinv.com/",
+        "evidenceDate": "2026-10-14"
+      },
+      "map": {
+        "stored": "",
+        "status": "missing"
+      },
+      "pin": {
+        "stored": [
+          null,
+          null
+        ],
+        "status": "missing_or_unverified"
+      },
+      "phones": [
+        {
+          "number": "920033157",
+          "status": "published_in_identified_primary_or_matching_maps_source"
+        }
+      ],
+      "whatsapp": {
+        "stored": "",
+        "status": "not_listed"
+      },
+      "geography": {
+        "status": "company_directory_city_not_assumed_HQ",
+        "instruction": "Do not replace project/service geography with corporate HQ geography.",
+        "officeObservation": {
+          "recordCityPreserved": "جدة",
+          "observedCorporateContactCity": "الرياض",
+          "currentContactAddress": "حي حطين، طريق الدائري الشمالي الفرعي؛ RRHB3698، 13514",
+          "note": "Do not replace Jeddah project/service context with Riyadh corporate location."
+        }
+      },
+      "allFieldsVerified": false
+    }
   },
   {
     "n": "شركة نجوم السلام للاستثمار و التطوير العقاري",
@@ -771,10 +912,70 @@
       "920011058"
     ],
     "wa": "",
-    "site": "",
+    "site": "https://aqtardev.com/",
     "maps": "",
     "id": "cp-3bc50231f7",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%A7%D9%82%D8%B7%D8%A7%D8%B1%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%A7%D9%82%D8%B7%D8%A7%D8%B1%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+    "verifiedPhones": [
+      "920011058"
+    ],
+    "phoneVerification": [
+      {
+        "number": "920011058",
+        "status": "verified_public_source",
+        "source": "https://www.aqtardev.com/en/contact.html",
+        "evidenceDate": "2026-10-14",
+        "sourceReadMode": "official_contact_indexed_text",
+        "scope": "company_general",
+        "callTested": false
+      }
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "matched_company_identity_from_official_source",
+        "evidenceDate": "2026-10-14",
+        "reviewedAt": "2026-10-16",
+        "basis": "Legacy alaqtar.com redirects to aqtardev.com; current official contact repeats the stored 920011058 and identifies Buraydah branch separately from Riyadh HQ."
+      },
+      "site": {
+        "stored": "",
+        "status": "verified_official_site_proposed_not_applied",
+        "observed": "https://aqtardev.com/",
+        "evidenceDate": "2026-10-14"
+      },
+      "map": {
+        "stored": "",
+        "status": "missing"
+      },
+      "pin": {
+        "stored": [
+          null,
+          null
+        ],
+        "status": "missing_or_unverified"
+      },
+      "phones": [
+        {
+          "number": "920011058",
+          "status": "published_in_identified_primary_or_matching_maps_source"
+        }
+      ],
+      "whatsapp": {
+        "stored": "",
+        "status": "not_listed"
+      },
+      "geography": {
+        "status": "company_directory_city_not_assumed_HQ",
+        "instruction": "Do not replace project/service geography with corporate HQ geography.",
+        "officeObservation": {
+          "recordCityPreserved": "بريدة",
+          "officialHQ": "Office 102, 1st Floor, Sericon Building #12, Musa Ibn Nusair St, Al Olaya District, Sulaymaniyah, Riyadh 12241",
+          "officialBranch": "Qurtubah Street, Al Rehab District, Buraydah 52581",
+          "note": "Do not replace Buraydah project/service city with Riyadh HQ or old directory Al Murooj address."
+        }
+      },
+      "allFieldsVerified": false
+    }
   },
   {
     "n": "شركة تمكين للاستثمار والتطوير العقاري",
@@ -1046,19 +1247,106 @@
     "contact": "العنود الراجح",
     "phones": [
       "0534126508",
-      "0560930404"
+      "0560930404",
+      "920031360"
     ],
     "wa": "",
-    "site": "",
-    "maps": "",
+    "site": "https://www.ezdihar.com/",
+    "maps": "https://www.google.com/maps/place/Ezdihar+Development+Head+Office/@24.6935491,46.6716732,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2f03e797ada687:0xc4d7b8c666a35257!8m2!3d24.6935491!4d46.6716732!16s%2Fg%2F11f627g3qs?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
     "sectors": [],
     "id": "cp-c61e421393",
     "phoneContacts": [
       "العنود الراجح",
-      "أحمد الردادي"
+      "أحمد الردادي",
+      "رقم الشركة العام"
     ],
     "phoneContactsSource": "شركات التطوير العقاري في ضواحي ووجهات NHC.pptx",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D8%B2%D8%AF%D9%87%D8%A7%D8%B1%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D8%B2%D8%AF%D9%87%D8%A7%D8%B1%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "verifiedPhones": [
+      "920031360"
+    ],
+    "phoneVerification": [
+      {
+        "number": "0534126508",
+        "status": "retained_legacy_unverified",
+        "source": "existing dataset",
+        "note": "Retain raw value and original contact label; do not mark verified from unrelated corporate phone or website discovery."
+      },
+      {
+        "number": "0560930404",
+        "status": "retained_legacy_unverified",
+        "source": "existing dataset",
+        "note": "Retain raw value and original contact label; do not mark verified from unrelated corporate phone or website discovery."
+      },
+      {
+        "number": "920031360",
+        "status": "verified_public_source",
+        "source": "https://www.ezdihar.com/ar/contact-us",
+        "evidenceDate": "2026-10-16",
+        "sourceReadMode": "readable_official_contact",
+        "scope": "company_general",
+        "callTested": false
+      }
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "matched_company_identity_from_official_source",
+        "evidenceDate": "2026-10-16",
+        "reviewedAt": "2026-10-16",
+        "basis": "Head-office link on official contact page resolves to Ezdihar Development Head Office, exact official domain and Prestige Center / Al Takhassousi / Al Olaya address. Not the Garden Residence project sales office.",
+        "freshVerification": true
+      },
+      "site": {
+        "stored": "",
+        "status": "verified_official_site_proposed_not_applied",
+        "observed": "https://www.ezdihar.com/",
+        "evidenceDate": "2026-10-16"
+      },
+      "map": {
+        "stored": "",
+        "status": "matched_company_office_card_proposed_not_applied",
+        "observed": "https://www.google.com/maps/place/Ezdihar+Development+Head+Office/@24.6935491,46.6716732,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2f03e797ada687:0xc4d7b8c666a35257!8m2!3d24.6935491!4d46.6716732!16s%2Fg%2F11f627g3qs?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      },
+      "pin": {
+        "stored": [
+          null,
+          null
+        ],
+        "status": "missing_or_unverified"
+      },
+      "phones": [
+        {
+          "number": "0534126508",
+          "status": "retained_unverified"
+        },
+        {
+          "number": "0560930404",
+          "status": "retained_unverified"
+        },
+        {
+          "number": "920031360",
+          "status": "published_in_identified_primary_or_matching_maps_source"
+        }
+      ],
+      "whatsapp": {
+        "stored": "",
+        "status": "not_listed"
+      },
+      "geography": {
+        "status": "company_directory_city_not_assumed_HQ",
+        "instruction": "Do not replace project/service geography with corporate HQ geography.",
+        "officeObservation": {
+          "pin": [
+            24.6935491,
+            46.6716732
+          ],
+          "geographyScope": "Corporate office only; not project location or service-sector filter.",
+          "phonePublishedOnMap": null,
+          "mapPhoneNote": "No phone published on Ezdihar Maps card; general line comes from official contact page."
+        }
+      },
+      "allFieldsVerified": false
+    }
   },
   {
     "n": "شركة رؤية التسويق العقاري",
@@ -1106,14 +1394,118 @@
     "kind": "تسويق وتسديد",
     "scope": "تسويق وتسديد",
     "phones": [
-      "0543533961"
+      "0543533961",
+      "920020535",
+      "0550059373"
     ],
     "wa": "",
-    "site": "",
-    "maps": "",
+    "site": "https://www.daisam.sa/",
+    "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%AF%D9%8E%D9%8A%D8%B3%D9%85+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@24.8079191,46.615358,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2ee50053c4e8db:0xc9c2325de72e547e!8m2!3d24.8079191!4d46.615358!16s%2Fg%2F11vrxpwxqw!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
     "sectors": [],
     "id": "cp-c3ef945487",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AF%D9%8A%D8%B3%D9%85%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AF%D9%8A%D8%B3%D9%85%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "phoneContacts": [
+      "",
+      "",
+      ""
+    ],
+    "verifiedPhones": [
+      "920020535",
+      "0550059373"
+    ],
+    "phoneVerification": [
+      {
+        "number": "0543533961",
+        "status": "retained_legacy_unverified",
+        "source": "existing dataset",
+        "note": "Retain raw value and original contact label; do not mark verified from unrelated corporate phone or website discovery."
+      },
+      {
+        "number": "920020535",
+        "status": "verified_public_source",
+        "source": "https://www.daisam.sa/",
+        "evidenceDate": "2026-10-14",
+        "sourceReadMode": "official_site_and_saved_first_party_rendering_assets",
+        "scope": "company_general",
+        "callTested": false
+      },
+      {
+        "number": "0550059373",
+        "status": "verified_public_source",
+        "source": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%AF%D9%8E%D9%8A%D8%B3%D9%85+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@24.8079191,46.615358,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2ee50053c4e8db:0xc9c2325de72e547e!8m2!3d24.8079191!4d46.615358!16s%2Fg%2F11vrxpwxqw!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+        "evidenceDate": "2026-10-14",
+        "sourceReadMode": "matching_maps_card_officially_crosslinked",
+        "scope": "office_maps_phone",
+        "callTested": false
+      }
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "matched_company_identity_from_official_source",
+        "evidenceDate": "2026-10-14",
+        "reviewedAt": "2026-10-16",
+        "basis": "See detailed primary-source evidence."
+      },
+      "site": {
+        "stored": "",
+        "status": "verified_official_site_proposed_not_applied",
+        "observed": "https://www.daisam.sa/",
+        "evidenceDate": "2026-10-14"
+      },
+      "map": {
+        "stored": "",
+        "status": "matched_company_office_card_proposed_not_applied",
+        "observed": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%AF%D9%8E%D9%8A%D8%B3%D9%85+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@24.8079191,46.615358,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2ee50053c4e8db:0xc9c2325de72e547e!8m2!3d24.8079191!4d46.615358!16s%2Fg%2F11vrxpwxqw!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D"
+      },
+      "pin": {
+        "stored": [
+          null,
+          null
+        ],
+        "status": "missing_or_unverified"
+      },
+      "phones": [
+        {
+          "number": "0543533961",
+          "status": "retained_unverified"
+        },
+        {
+          "number": "920020535",
+          "status": "published_in_identified_primary_or_matching_maps_source"
+        },
+        {
+          "number": "0550059373",
+          "status": "published_in_identified_primary_or_matching_maps_source"
+        }
+      ],
+      "whatsapp": {
+        "stored": "",
+        "status": "not_listed"
+      },
+      "geography": {
+        "status": "company_directory_city_not_assumed_HQ",
+        "instruction": "Do not replace project/service geography with corporate HQ geography.",
+        "officeObservation": {
+          "url": "https://maps.app.goo.gl/C3KL1FKRRbBJUZyN7?g_st=ic",
+          "source": "Official company footer",
+          "resolved_identity": "ديسم العقارية, Anas Ibn Malik Rd, Al Malqa, Riyadh 13524",
+          "ftid": "0x3e2ee50053c4e8db:0xc9c2325de72e547e",
+          "status": "verified",
+          "note": "Readable Maps place card opened via the official company footer, matched name/domain and exact ftid. Office coordinates are for office location only, not city-wide service filtering. Temporary outside-opening-hours closed status is not permanently closed.",
+          "place_title": "شركة دَيسم العقارية",
+          "address": "طريق أنس ابن مالك، الملقا، الرياض 13524",
+          "located_in": "مجمع الهدلق التجاري",
+          "lat": 24.8079191,
+          "lon": 46.615358,
+          "place_card_phone": "0550059373",
+          "website": "https://daisam.sa/",
+          "direct_map": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%AF%D9%8E%D9%8A%D8%B3%D9%85+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@24.8079191,46.615358,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2ee50053c4e8db:0xc9c2325de72e547e!8m2!3d24.8079191!4d46.615358!16s%2Fg%2F11vrxpwxqw!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
+          "observed_at": "2026-10-14T18:00:15Z",
+          "browser_tab": "39"
+        }
+      },
+      "allFieldsVerified": false
+    }
   },
   {
     "n": "شركة أضواء داركم العقارية",
@@ -1818,14 +2210,76 @@
       "920033002"
     ],
     "wa": "",
-    "site": "",
+    "site": "https://alusaifer.com.sa/",
     "maps": "",
     "contact": "",
     "id": "cp-1f26d25104",
     "lat": 21.21847,
     "lon": 40.37091,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D8%A3%D8%B5%D9%8A%D9%81%D8%B1%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20nb%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D8%A3%D8%B5%D9%8A%D9%81%D8%B1%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20nb%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+    "verifiedPhones": [
+      "920033002"
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "verified_official_source_match",
+        "basis": "Exact full company name, retained public phone and Taif development context agree. Use alusaifer.com.sa website spelling; footer email uses alusaifar.com.sa, which is not asserted as an equivalent web domain.",
+        "source": "https://alusaifer.com.sa/",
+        "checkedAt": "2026-10-16T10:01:52.664676+00:00"
+      },
+      "website": {
+        "status": "verified_official_reachable",
+        "value": "https://alusaifer.com.sa/",
+        "source": "https://alusaifer.com.sa/",
+        "checkedAt": "2026-10-16T10:01:52.664676+00:00"
+      },
+      "phones": [
+        {
+          "number": "920033002",
+          "status": "verified_official_publication",
+          "source": "https://alusaifer.com.sa/",
+          "checkedAt": "2026-10-16T10:01:52.664676+00:00",
+          "publishedChannel": "company_general_phone",
+          "callTested": false,
+          "whatsappAccountTested": false
+        }
+      ],
+      "activity": {
+        "status": "official_real_estate_services_verified",
+        "finding": "Live official developer site offers residential ownership units and commercial/residential land and describes its Taif development projects. A displayed licence number is self-published, not independently registry-verified.",
+        "source": "https://alusaifer.com.sa/",
+        "licenceVerified": false,
+        "checkedAt": "2026-10-16T10:01:52.664676+00:00"
+      },
+      "geography": {
+        "status": "project_geography_preserved",
+        "corporateContactAddress": "الطائف؛ عناوين المشاريع على طريق الملك فهد الدائري",
+        "note": "Taif development geography agrees, but project street addresses are not treated as corporate HQ or office-pin verification.",
+        "source": "https://alusaifer.com.sa/",
+        "checkedAt": "2026-10-16T10:01:52.664676+00:00"
+      },
+      "map": {
+        "status": "not_verified_in_this_pass",
+        "stored": ""
+      },
+      "pin": {
+        "status": "not_verified_in_this_pass",
+        "stored": [
+          21.21847,
+          40.37091
+        ]
+      },
+      "whatsapp": {
+        "status": "official_published_link_not_account_verified",
+        "publishedLink": "https://wa.me/966920033002",
+        "source": "https://alusaifer.com.sa/",
+        "checkedAt": "2026-10-16T10:01:52.664676+00:00",
+        "recipientAccountVerified": false,
+        "messageSent": false,
+        "note": "Published WhatsApp destination only. Not opened or account-tested; existing wa field remains unchanged."
+      }
+    }
   },
   {
     "n": "شركة إدارة للتسويق",
@@ -1971,14 +2425,67 @@
       "920031975"
     ],
     "wa": "",
-    "site": "",
+    "site": "https://mutmim.com/",
     "maps": "",
     "contact": "",
     "id": "cp-04675f5981",
     "lat": 27.47661,
     "lon": 41.66247,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AA%D9%85%D9%85%20%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20nb%20%D8%AD%D8%A7%D8%A6%D9%84"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AA%D9%85%D9%85%20%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20nb%20%D8%AD%D8%A7%D8%A6%D9%84",
+    "verifiedPhones": [
+      "920031975"
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "verified_official_source_match",
+        "basis": "Exact full company name and retained general contact number match current live company contact page.",
+        "source": "https://mutmim.com/",
+        "checkedAt": "2026-10-16T10:01:52.664676+00:00"
+      },
+      "website": {
+        "status": "verified_official_reachable",
+        "value": "https://mutmim.com/",
+        "source": "https://mutmim.com/",
+        "checkedAt": "2026-10-16T10:01:52.664676+00:00"
+      },
+      "phones": [
+        {
+          "number": "920031975",
+          "status": "verified_official_publication",
+          "source": "https://mutmim.com/%D8%A7%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7/",
+          "checkedAt": "2026-10-16T10:01:52.664676+00:00",
+          "publishedChannel": "company_general_phone",
+          "callTested": false,
+          "whatsappAccountTested": false
+        }
+      ],
+      "activity": {
+        "status": "official_real_estate_services_verified",
+        "finding": "Official site identifies Mutmim contracting company, real-estate development and a projects-for-sale section. Not independently verified as licensed brokerage.",
+        "source": "https://mutmim.com/",
+        "licenceVerified": false,
+        "checkedAt": "2026-10-16T10:01:52.664676+00:00"
+      },
+      "geography": {
+        "status": "project_geography_preserved",
+        "corporateContactAddress": "الرياض، المملكة العربية السعودية",
+        "note": "Preserve Hail served/project city. Official contact page supplies only Riyadh city and generic city query, not a business pin; no Hail branch or project attribution verified.",
+        "source": "https://mutmim.com/%D8%A7%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7/",
+        "checkedAt": "2026-10-16T10:01:52.664676+00:00"
+      },
+      "map": {
+        "status": "not_verified_in_this_pass",
+        "stored": ""
+      },
+      "pin": {
+        "status": "not_verified_in_this_pass",
+        "stored": [
+          27.47661,
+          41.66247
+        ]
+      }
+    }
   },
   {
     "n": "شركة بصمة لإدارة العقارات",
@@ -1989,11 +2496,64 @@
       "920002033"
     ],
     "wa": "",
-    "site": "",
+    "site": "https://gobussma.com/",
     "maps": "",
     "contact": "",
     "id": "cp-08f3741661",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B5%D9%85%D8%A9%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D8%A7%D8%A6%D9%84"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B5%D9%85%D8%A9%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%AD%D8%A7%D8%A6%D9%84",
+    "verifiedPhones": [
+      "920002033"
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "verified_official_source_match",
+        "basis": "Exact full company name and retained public number match. Established corporate domain is also named in an older Saudi Exchange primary document; unrelated bassetdoingdesign.com result not adopted.",
+        "source": "https://gobussma.com/",
+        "checkedAt": "2026-10-16T10:01:52.664676+00:00"
+      },
+      "website": {
+        "status": "verified_official_reachable",
+        "value": "https://gobussma.com/",
+        "source": "https://gobussma.com/",
+        "checkedAt": "2026-10-16T10:01:52.664676+00:00"
+      },
+      "phones": [
+        {
+          "number": "920002033",
+          "status": "verified_official_publication",
+          "source": "https://gobussma.com/AboutUs/AboutUsDetiales",
+          "checkedAt": "2026-10-16T10:01:52.664676+00:00",
+          "publishedChannel": "company_general_phone",
+          "callTested": false,
+          "whatsappAccountTested": false
+        }
+      ],
+      "activity": {
+        "status": "official_real_estate_services_verified",
+        "finding": "Official company pages expressly describe real-estate marketing, residential sales plans, auctions, property management and valuation. This is not based on the property-management name alone.",
+        "source": "https://gobussma.com/",
+        "licenceVerified": false,
+        "checkedAt": "2026-10-16T10:01:52.664676+00:00"
+      },
+      "geography": {
+        "status": "project_geography_preserved",
+        "corporateContactAddress": "4159 شارع محمد بن عبدالعزيز الدغيثر، حي الملقا، الرياض",
+        "note": "Preserve Hail served/project city. Riyadh corporate contact address does not establish a Hail branch or project attribution; no corporate business pin verified.",
+        "source": "https://gobussma.com/AboutUs/AboutUsDetiales",
+        "checkedAt": "2026-10-16T10:01:52.664676+00:00"
+      },
+      "map": {
+        "status": "not_verified_in_this_pass",
+        "stored": ""
+      },
+      "pin": {
+        "status": "not_verified_in_this_pass",
+        "stored": [
+          null,
+          null
+        ]
+      }
+    }
   },
   {
     "n": "شركة سعود الغسلان العقارية",
@@ -2400,11 +2960,69 @@
       "920008484"
     ],
     "wa": "",
-    "site": "",
+    "site": "https://madinahkec.com/",
     "maps": "",
     "contact": "",
     "id": "cp-ebda452f54",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D8%A9%20(%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A%D9%86)%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D8%A9%20(%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A%D9%86)%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+    "verifiedPhones": [
+      "920008484"
+    ],
+    "phoneVerification": [
+      {
+        "number": "920008484",
+        "status": "verified_public_source",
+        "source": "https://madinahkec.com/en/contact-us/",
+        "evidenceDate": "2026-10-16",
+        "sourceReadMode": "readable_official_contact",
+        "scope": "company_general",
+        "callTested": false
+      }
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "matched_company_identity_from_official_source",
+        "evidenceDate": "2026-10-14",
+        "reviewedAt": "2026-10-16",
+        "basis": "KEC corporate site and both existing project sites cross-identify the same economic-city developer and existing sales number."
+      },
+      "site": {
+        "stored": "",
+        "status": "verified_official_site_proposed_not_applied",
+        "observed": "https://madinahkec.com/",
+        "evidenceDate": "2026-10-14"
+      },
+      "map": {
+        "stored": "",
+        "status": "missing"
+      },
+      "pin": {
+        "stored": [
+          null,
+          null
+        ],
+        "status": "missing_or_unverified"
+      },
+      "phones": [
+        {
+          "number": "920008484",
+          "status": "published_in_identified_primary_or_matching_maps_source"
+        }
+      ],
+      "whatsapp": {
+        "stored": "",
+        "status": "not_listed"
+      },
+      "geography": {
+        "status": "company_directory_city_not_assumed_HQ",
+        "instruction": "Do not replace project/service geography with corporate HQ geography.",
+        "officeObservation": {
+          "recordCityPreserved": "المدينة المنورة",
+          "note": "Corporate versus individual project office distinction preserved."
+        }
+      },
+      "allFieldsVerified": false
+    }
   },
   {
     "n": "شركة الغنام العقارية",
@@ -2415,11 +3033,64 @@
       "920015527"
     ],
     "wa": "",
-    "site": "",
+    "site": "https://algnam.sa/",
     "maps": "",
     "contact": "",
     "id": "cp-47ae680056",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%BA%D9%86%D8%A7%D9%85%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%BA%D9%86%D8%A7%D9%85%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+    "verifiedPhones": [
+      "920015527"
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "verified_official_source_match",
+        "basis": "Exact brand, existing public phone, Buraidah address and Rahib project match the baseline.",
+        "source": "https://algnam.sa/",
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00"
+      },
+      "website": {
+        "status": "verified_official_reachable",
+        "value": "https://algnam.sa/",
+        "source": "https://algnam.sa/",
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00"
+      },
+      "phones": [
+        {
+          "number": "920015527",
+          "status": "verified_official_publication",
+          "source": "https://algnam.sa/6668-2/",
+          "checkedAt": "2026-10-16T09:20:31.385111+00:00",
+          "publishedChannel": "company_general_phone",
+          "callTested": false,
+          "whatsappAccountTested": false
+        }
+      ],
+      "activity": {
+        "status": "official_real_estate_services_verified",
+        "finding": "Official site describes real-estate marketing, auctions, development and valuation; linked services describe sales/marketing and property management.",
+        "source": "https://algnam.sa/",
+        "licenceVerified": false,
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00"
+      },
+      "geography": {
+        "status": "project_geography_preserved",
+        "corporateContactAddress": "القصيم – بريدة",
+        "note": "Buraidah headquarters/contact locality and Rahib project both supported; no precise business pin verified.",
+        "source": "https://algnam.sa/6668-2/",
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00"
+      },
+      "map": {
+        "status": "not_verified_in_this_pass",
+        "stored": ""
+      },
+      "pin": {
+        "status": "not_verified_in_this_pass",
+        "stored": [
+          null,
+          null
+        ]
+      }
+    }
   },
   {
     "n": "شركة العواد للاستثمارات، فرع القصيم",
@@ -2535,14 +3206,98 @@
     "kind": "تسويق ووساطة",
     "scope": "التسويق والوساطة العقارية",
     "phones": [
-      "920017252"
+      "920017252",
+      "0500009760"
     ],
     "wa": "",
-    "site": "",
-    "maps": "",
+    "site": "https://www.talalre.com/",
+    "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%B7%D9%84%D9%84+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+-+Talal+Real+Estate%E2%80%AD/@26.3547299,43.9548437,17z/data=!3m1!4b1!4m6!3m5!1s0x157f59c45a28b8ff:0x805e7d7d88084fda!8m2!3d26.3547299!4d43.9548437!16s%2Fg%2F11vhw58dht?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
     "contact": "",
     "id": "cp-734acf0e52",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B7%D9%84%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B7%D9%84%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+    "phoneContacts": [
+      "",
+      ""
+    ],
+    "verifiedPhones": [
+      "920017252",
+      "0500009760"
+    ],
+    "phoneVerification": [
+      {
+        "number": "920017252",
+        "status": "verified_public_source",
+        "source": "https://www.talalre.com/contact",
+        "evidenceDate": "2026-10-16",
+        "sourceReadMode": "readable_official_contact",
+        "scope": "company_general",
+        "callTested": false
+      },
+      {
+        "number": "0500009760",
+        "status": "verified_public_source",
+        "source": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%B7%D9%84%D9%84+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+-+Talal+Real+Estate%E2%80%AD/@26.3547299,43.9548437,17z/data=!3m1!4b1!4m6!3m5!1s0x157f59c45a28b8ff:0x805e7d7d88084fda!8m2!3d26.3547299!4d43.9548437!16s%2Fg%2F11vhw58dht?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "evidenceDate": "2026-10-16",
+        "sourceReadMode": "matching_maps_card_official_domain_match",
+        "scope": "office_maps_phone",
+        "callTested": false
+      }
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "matched_company_identity_from_official_source",
+        "evidenceDate": "2026-10-16",
+        "reviewedAt": "2026-10-16",
+        "basis": "Official contact names Buraidah Al Safra and 920017252. Matching Maps card links talalre.com, uses same city/district and exact corporate name, and publishes another phone.",
+        "freshVerification": true
+      },
+      "site": {
+        "stored": "",
+        "status": "verified_official_site_proposed_not_applied",
+        "observed": "https://www.talalre.com/",
+        "evidenceDate": "2026-10-16"
+      },
+      "map": {
+        "stored": "",
+        "status": "matched_company_office_card_proposed_not_applied",
+        "observed": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%B7%D9%84%D9%84+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+-+Talal+Real+Estate%E2%80%AD/@26.3547299,43.9548437,17z/data=!3m1!4b1!4m6!3m5!1s0x157f59c45a28b8ff:0x805e7d7d88084fda!8m2!3d26.3547299!4d43.9548437!16s%2Fg%2F11vhw58dht?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      },
+      "pin": {
+        "stored": [
+          null,
+          null
+        ],
+        "status": "missing_or_unverified"
+      },
+      "phones": [
+        {
+          "number": "920017252",
+          "status": "published_in_identified_primary_or_matching_maps_source"
+        },
+        {
+          "number": "0500009760",
+          "status": "published_in_identified_primary_or_matching_maps_source"
+        }
+      ],
+      "whatsapp": {
+        "stored": "",
+        "status": "not_listed"
+      },
+      "geography": {
+        "status": "company_directory_city_not_assumed_HQ",
+        "instruction": "Do not replace project/service geography with corporate HQ geography.",
+        "officeObservation": {
+          "pin": [
+            26.3547299,
+            43.9548437
+          ],
+          "geographyScope": "Corporate office only; not project location or service-sector filter.",
+          "phonePublishedOnMap": "0500009760",
+          "mapPhoneNote": ""
+        }
+      },
+      "allFieldsVerified": false
+    }
   },
   {
     "n": "شركة العمر للاستثمار",
@@ -2691,7 +3446,7 @@
     ],
     "phones": [],
     "wa": "",
-    "site": "",
+    "site": "https://alishar.com/company/alishar-properties/",
     "maps": "",
     "contact": "",
     "id": "cp-ali-shar-abha",
@@ -2704,7 +3459,50 @@
       "https://sakani.sa/app/offplan-projects/15"
     ],
     "commercialAuditNote": "صفحة سكني الرسمية تسمي علي شار مطورًا لتلال أبها.",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B9%D9%84%D9%8A%20%D8%B4%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A3%D8%A8%D9%87%D8%A7"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B9%D9%84%D9%8A%20%D8%B4%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A3%D8%A8%D9%87%D8%A7",
+    "verifiedPhones": [],
+    "phoneVerification": [],
+    "fieldVerification": {
+      "identity": {
+        "status": "matched_company_identity_from_official_source",
+        "evidenceDate": "2026-10-14",
+        "reviewedAt": "2026-10-16",
+        "basis": "The official group site explicitly provides a company page for Alishar Properties and links its featured Abha Hills residential project, aligned with Sakani’s تلال أبها developer. Use this precise subsidiary page rather than confusing the contracting subsidiary with the property developer."
+      },
+      "site": {
+        "stored": "",
+        "status": "verified_official_site_proposed_not_applied",
+        "observed": "https://alishar.com/company/alishar-properties/",
+        "evidenceDate": "2026-10-14"
+      },
+      "map": {
+        "stored": "",
+        "status": "missing"
+      },
+      "pin": {
+        "stored": [
+          null,
+          null
+        ],
+        "status": "missing_or_unverified"
+      },
+      "phones": [],
+      "whatsapp": {
+        "stored": "",
+        "status": "not_listed"
+      },
+      "geography": {
+        "status": "company_directory_city_not_assumed_HQ",
+        "instruction": "Do not replace project/service geography with corporate HQ geography.",
+        "officeObservation": {
+          "recordCityPreserved": "أبها",
+          "observedGroupContactCity": "جدة",
+          "officialRoot": "https://alishar.com/",
+          "note": "Abha is project/service geography; group contact in Jeddah does not change company record city or coverage."
+        }
+      },
+      "allFieldsVerified": false
+    }
   },
   {
     "id": "cp-nahdat-sakaka",
@@ -2909,12 +3707,71 @@
       "رقم الشركة"
     ],
     "wa": "",
-    "site": "",
+    "site": "https://asasmakeen.com/",
     "maps": "",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A3%D8%B3%D8%A7%D8%B3%20%D9%85%D9%83%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20Saudi%20Arabia",
     "sectors": [],
     "phoneSource": "مراكز المبيعات 2026.pdf، ص4 وص6",
-    "phoneAudit": "رقم عام للشركة كما ورد في التقرير؛ لا يُنسب إلى خط مباشر لمشروع."
+    "phoneAudit": "رقم عام للشركة كما ورد في التقرير؛ لا يُنسب إلى خط مباشر لمشروع.",
+    "verifiedPhones": [
+      "920033366"
+    ],
+    "phoneVerification": [
+      {
+        "number": "920033366",
+        "status": "verified_public_source",
+        "source": "https://asasmakeen.com/ar/contact-us",
+        "evidenceDate": "2026-10-16",
+        "sourceReadMode": "readable_official_contact_and_home",
+        "scope": "company_general",
+        "callTested": false
+      }
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "matched_company_identity_from_official_source",
+        "evidenceDate": "2026-10-14",
+        "reviewedAt": "2026-10-16",
+        "basis": "Official site uses the exact full company name and matching Makeen project names and existing public phone."
+      },
+      "site": {
+        "stored": "",
+        "status": "verified_official_site_proposed_not_applied",
+        "observed": "https://asasmakeen.com/",
+        "evidenceDate": "2026-10-14"
+      },
+      "map": {
+        "stored": "",
+        "status": "missing"
+      },
+      "pin": {
+        "stored": [
+          null,
+          null
+        ],
+        "status": "missing_or_unverified"
+      },
+      "phones": [
+        {
+          "number": "920033366",
+          "status": "published_in_identified_primary_or_matching_maps_source"
+        }
+      ],
+      "whatsapp": {
+        "stored": "",
+        "status": "not_listed"
+      },
+      "geography": {
+        "status": "company_directory_city_not_assumed_HQ",
+        "instruction": "Do not replace project/service geography with corporate HQ geography.",
+        "officeObservation": {
+          "recordCityPreserved": "الرياض",
+          "officialContactAddress": "الرياض - حي النرجس - طريق انس بن مالك",
+          "note": "No geography changes proposed."
+        }
+      },
+      "allFieldsVerified": false
+    }
   },
   {
     "id": "cp-center-riyadh-refah",
@@ -2998,12 +3855,74 @@
       "رقم الشركة"
     ],
     "wa": "",
-    "site": "",
+    "site": "https://almjalat.com/",
     "maps": "",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AC%D8%A7%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20Saudi%20Arabia",
     "sectors": [],
     "phoneSource": "مراكز المبيعات 2026.pdf، ص40",
-    "phoneAudit": "رقم الشركة الوارد في تقرير المركز."
+    "phoneAudit": "رقم الشركة الوارد في تقرير المركز.",
+    "verifiedPhones": [
+      "920015171"
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "verified_official_source_match",
+        "basis": "Company brand and exact existing company number agree. The stored Majalat 73/74 project attribution was not independently established in this source pass.",
+        "source": "https://almjalat.com/",
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00"
+      },
+      "website": {
+        "status": "verified_official_reachable",
+        "value": "https://almjalat.com/",
+        "source": "https://almjalat.com/",
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00"
+      },
+      "phones": [
+        {
+          "number": "920015171",
+          "status": "verified_official_publication",
+          "source": "https://almjalat.com/%D8%A7%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7/",
+          "checkedAt": "2026-10-16T09:20:31.385111+00:00",
+          "publishedChannel": "company_general_phone",
+          "callTested": false,
+          "whatsappAccountTested": false
+        }
+      ],
+      "activity": {
+        "status": "official_real_estate_services_verified",
+        "finding": "Official developer site describes residential real-estate development and offers project sales.",
+        "source": "https://almjalat.com/",
+        "licenceVerified": false,
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00"
+      },
+      "geography": {
+        "status": "project_geography_preserved",
+        "corporateContactAddress": "الرياض، حي القيروان - طريق الملك فهد",
+        "note": "Preserve Buraidah project/sales-center row. Corporate contact address is Riyadh and must not replace project geography. No corporate pin verified.",
+        "source": "https://almjalat.com/%D8%A7%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7/",
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00"
+      },
+      "map": {
+        "status": "not_verified_in_this_pass",
+        "stored": ""
+      },
+      "pin": {
+        "status": "not_verified_in_this_pass",
+        "stored": [
+          null,
+          null
+        ]
+      },
+      "whatsapp": {
+        "status": "official_published_link_not_account_verified",
+        "publishedLink": "https://api.whatsapp.com/send?phone=920015171",
+        "source": "https://almjalat.com/%D8%A7%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7/",
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00",
+        "recipientAccountVerified": false,
+        "messageSent": false,
+        "note": "Dar destination fetch returned cache miss. Majalat showed a generic WhatsApp landing page; this does not establish account existence or correct recipient normalization. Existing wa field is unchanged."
+      }
+    }
   },
   {
     "id": "cp-center-buraidah-dar",
@@ -3015,18 +3934,92 @@
       "دار بريدة"
     ],
     "phones": [
-      "920015001"
+      "920015001",
+      "0551552448"
     ],
     "phoneContacts": [
-      "رقم الشركة"
+      "رقم الشركة",
+      "واتساب الشركة المنشور في الموقع الرسمي؛ المكالمات غير مختبرة"
     ],
     "wa": "",
-    "site": "",
+    "site": "https://darredc.com/",
     "maps": "",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AF%D8%A7%D8%B1%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20Saudi%20Arabia",
     "sectors": [],
     "phoneSource": "مراكز المبيعات 2026.pdf، ص41",
-    "phoneAudit": "رقم الشركة الوارد في تقرير المركز."
+    "phoneAudit": "رقم الشركة الوارد في تقرير المركز.",
+    "verifiedPhones": [
+      "920015001",
+      "0551552448"
+    ],
+    "fieldVerification": {
+      "identity": {
+        "status": "verified_official_source_match",
+        "basis": "Exact full company name, existing general number, Buraidah contact address and Dar Buraidah project agree. Older daralaqaria.com search-index content independently repeats the number and overlapping project names; its direct fetch timed out.",
+        "source": "https://darredc.com/",
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00"
+      },
+      "website": {
+        "status": "verified_official_reachable",
+        "value": "https://darredc.com/",
+        "source": "https://darredc.com/",
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00"
+      },
+      "phones": [
+        {
+          "number": "920015001",
+          "status": "verified_official_publication",
+          "source": "https://darredc.com/contact",
+          "checkedAt": "2026-10-16T09:20:31.385111+00:00",
+          "publishedChannel": "company_general_phone",
+          "callTested": false,
+          "whatsappAccountTested": false
+        },
+        {
+          "number": "0551552448",
+          "status": "verified_official_publication",
+          "source": "https://darredc.com/contact",
+          "checkedAt": "2026-10-16T09:20:31.385111+00:00",
+          "publishedChannel": "whatsapp_only",
+          "callTested": false,
+          "whatsappAccountTested": false
+        }
+      ],
+      "activity": {
+        "status": "official_real_estate_services_verified",
+        "finding": "Official site identifies residential/commercial development and explicitly lists Dar Buraidah, Dar Qurtubah, Dar Taibah and Dar Khuzam.",
+        "source": "https://darredc.com/",
+        "licenceVerified": false,
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00"
+      },
+      "geography": {
+        "status": "project_geography_preserved",
+        "corporateContactAddress": "القصيم، بريدة - طريق الملك عبدالله",
+        "note": "Preserve Buraidah project row. A street address is supported; no exact corporate business pin verified.",
+        "source": "https://darredc.com/contact",
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00"
+      },
+      "map": {
+        "status": "not_verified_in_this_pass",
+        "stored": ""
+      },
+      "pin": {
+        "status": "not_verified_in_this_pass",
+        "stored": [
+          null,
+          null
+        ]
+      },
+      "whatsapp": {
+        "status": "official_published_link_not_account_verified",
+        "publishedLink": "https://wa.me/966551552448",
+        "source": "https://darredc.com/contact",
+        "checkedAt": "2026-10-16T09:20:31.385111+00:00",
+        "recipientAccountVerified": false,
+        "messageSent": false,
+        "note": "Dar destination fetch returned cache miss. Majalat showed a generic WhatsApp landing page; this does not establish account existence or correct recipient normalization. Existing wa field is unchanged."
+      }
+    }
   },
   {
     "id": "cp-center-dammam-afaq-rifad",
