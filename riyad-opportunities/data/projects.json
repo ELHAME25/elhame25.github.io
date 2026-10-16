@@ -1802,6 +1802,14 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://retal.com.sa/en/properties/royaalnakheel/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "interest_registration_only",
+      "evidenceSummary": "The exact developer project page provides interest registration and/or a visit appointment, not verified remaining sale units. Property types and animated zero counters are not inventory evidence.",
+      "sourceType": "official_developer_project_page"
     }
   },
   {
@@ -2350,6 +2358,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47617/",
+      "checkedAt": "2026-10-16T07:19:33.829435+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. The official page body and landmarks explicitly place أراسي كوارترز in Khobar/Lazurd. Current أراسي is the core name, same NHC developer and existing exact project47617 URL. The earlier city extraction incorrectly selected a marketing caption; this is corrected only in evidence, not raw record identity.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47617",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47617/",
+      "checkedAt": "2026-10-16T07:19:33.829435+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47617",
+      "officialName": "أراسي كوارترز",
+      "officialDeveloper": "NHC",
+      "officialCity": "الخبر",
+      "basis": "The official page body and landmarks explicitly place أراسي كوارترز in Khobar/Lazurd. Current أراسي is the core name, same NHC developer and existing exact project47617 URL. The earlier city extraction incorrectly selected a marketing caption; this is corrected only in evidence, not raw record identity.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -3858,6 +3890,14 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://retal.com.sa/en/properties/nesaj-town/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "interest_registration_only",
+      "evidenceSummary": "The exact developer project page provides interest registration and/or a visit appointment, not verified remaining sale units. Property types and animated zero counters are not inventory evidence.",
+      "sourceType": "official_developer_project_page"
     }
   },
   {
@@ -4624,6 +4664,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47576/",
+      "checkedAt": "2026-10-16T07:19:29.686026+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact سرايا الشرق/Dammam/project47576. دار واعمار is the recognizable shortened brand of the current legal developer; no phase or location difference.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47576",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47576/",
+      "checkedAt": "2026-10-16T07:19:29.686026+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47576",
+      "officialName": "سرايا الشرق",
+      "officialDeveloper": "دار واعمار",
+      "officialCity": "الدمام",
+      "basis": "Exact سرايا الشرق/Dammam/project47576. دار واعمار is the recognizable shortened brand of the current legal developer; no phase or location difference.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -5520,6 +5584,22 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "unavailable",
+      "source": "https://sakani.sa/app/developers/2051035144",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "booking_closed",
+      "evidenceSummary": "The official Sakani developer listing labels this exact original project تم إغلاق الحجز. This is closed booking, not proof of sold-out stock.",
+      "rawStatus": "تم إغلاق الحجز",
+      "sourceType": "official_sakani_public_index",
+      "retrievalMode": "public_indexed_page",
+      "sourceCrawlLabel": "last week",
+      "liveBookingVerified": false,
+      "corroboratingSources": [
+        "https://darwaemaar.com/project/saraya-al-bahar/"
+      ],
+      "identityNote": "Developer labels سرايا البحر as Qatif; Sakani lists the same developer/project in Safwa. Existing exact developer page, project name and brand anchor this match. Raw city is preserved; no global city alias or physical-city correction is proposed."
     }
   },
   {
@@ -5609,6 +5689,14 @@
         "projectLocality": "صفوى"
       },
       "verificationScope": "Source inventory membership only. No availability, construction status, physical city, phase identity or canonical merge is inferred."
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://retal.com.sa/en/properties/nesaj-town-safwa/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "interest_registration_only",
+      "evidenceSummary": "The exact developer project page provides interest registration and/or a visit appointment, not verified remaining sale units. Property types and animated zero counters are not inventory evidence.",
+      "sourceType": "official_developer_project_page"
     }
   },
   {
@@ -7828,7 +7916,25 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
-    }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://nhc.sa/real-estate-development/projects/47166/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "explicit_official_project_status",
+      "evidenceSummary": "NHC labels سرايا البدر متاح with Dar Wa Emaar and Medina. Developer exact page confirms Medina and634 project-total homes, resolving NHC’s stray Gulf-coast description; the Sakani developer listing also identifies remaining offered units in Medina.",
+      "rawStatus": "متاح",
+      "sourceType": "official_nhc_project_page",
+      "corroboratingSources": [
+        "https://darwaemaar.com/project/saraya-al-bader-al-madinah-ar/",
+        "https://sakani.sa/app/developers/2051035144"
+      ],
+      "limitations": [
+        "NHC marketing description incorrectly mentions the Gulf coast and Qatif; do not import that text or coordinates.",
+        "No remaining stock quantity or current minimum price asserted."
+      ]
+    },
+    "canonicalProjectId": "nhc:47166"
   },
   {
     "id": "P164",
@@ -8013,6 +8119,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unavailable",
+      "source": "https://www.nhc.sa/real-estate-development/projects/296/",
+      "checkedAt": "2026-10-16T07:18:52.438349+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "محجوز بالكامل",
+      "reason": "fully_reserved",
+      "basis": "Exact official NHC project identity manually reviewed. الجوار versus جوار differs only by definite article, same Medina and عبر المملكة developer, exact project296. Fully reserved is not sold out.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:296",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/296/",
+      "checkedAt": "2026-10-16T07:18:52.438349+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "296",
+      "officialName": "الجوار",
+      "officialDeveloper": "عبر المملكة العقارية",
+      "officialCity": "المدينة المنورة",
+      "basis": "الجوار versus جوار differs only by definite article, same Medina and عبر المملكة developer, exact project296. Fully reserved is not sold out.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -9097,6 +9227,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47603/",
+      "checkedAt": "2026-10-16T07:19:29.693924+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. NHC explicitly calls the development أراك in its description and أراك المكيمن in its heading; exact Medina/NHC/project47603, so the place qualifier is demonstrated by primary text.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47603",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47603/",
+      "checkedAt": "2026-10-16T07:19:29.693924+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47603",
+      "officialName": "أراك المكيمن",
+      "officialDeveloper": "NHC",
+      "officialCity": "المدينة المنورة",
+      "basis": "NHC explicitly calls the development أراك in its description and أراك المكيمن in its heading; exact Medina/NHC/project47603, so the place qualifier is demonstrated by primary text.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -11335,6 +11489,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47144/",
+      "checkedAt": "2026-10-16T07:19:03.014180+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact ميان/Jeddah/project47144. Developer variation is company-prefix and grammatical wording for مكيون مطورون عمرانيون, not a different company or phase.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47144",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47144/",
+      "checkedAt": "2026-10-16T07:19:03.014180+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47144",
+      "officialName": "ميان",
+      "officialDeveloper": "مكيون مطورين وعمرانيون",
+      "officialCity": "جدة",
+      "basis": "Exact ميان/Jeddah/project47144. Developer variation is company-prefix and grammatical wording for مكيون مطورون عمرانيون, not a different company or phase.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -11912,6 +12090,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/333/",
+      "checkedAt": "2026-10-16T07:19:00.204674+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact بوفارديا سيتي/Jeddah/project333; developer الديار العربية versus ديار العربية differs only by definite article.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:333",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/333/",
+      "checkedAt": "2026-10-16T07:19:00.204674+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "333",
+      "officialName": "بوفارديا سيتي",
+      "officialDeveloper": "ديار العربية",
+      "officialCity": "جدة",
+      "basis": "Exact بوفارديا سيتي/Jeddah/project333; developer الديار العربية versus ديار العربية differs only by definite article.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -12205,6 +12407,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unavailable",
+      "source": "https://www.nhc.sa/real-estate-development/projects/304/",
+      "checkedAt": "2026-10-16T07:18:59.931573+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "محجوز بالكامل",
+      "reason": "fully_reserved",
+      "basis": "Exact official NHC project identity manually reviewed. Exact ربى جدة/Jeddah/project304, مكيون versus full brand مكيون مطورون عمرانيون. Fully reserved is not sold out.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:304",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/304/",
+      "checkedAt": "2026-10-16T07:18:59.931573+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "304",
+      "officialName": "ربى جدة",
+      "officialDeveloper": "مكيون مطورون عمرانيون",
+      "officialCity": "جدة",
+      "basis": "Exact ربى جدة/Jeddah/project304, مكيون versus full brand مكيون مطورون عمرانيون. Fully reserved is not sold out.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -12728,6 +12954,17 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://retal.com.sa/properties/ayala-al-muhammadiyah/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "interest_registration_only",
+      "evidenceSummary": "The exact developer project page provides interest registration and/or a visit appointment, not verified remaining sale units. Property types and animated zero counters are not inventory evidence.",
+      "sourceType": "official_developer_project_page",
+      "limitations": [
+        "Official linked interactive site returned no readable unit inventory."
+      ]
     }
   },
   {
@@ -12810,6 +13047,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47280/",
+      "checkedAt": "2026-10-16T07:19:09.319712+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact مسكان السدن/Jeddah/project47280; شركة مسكان is the shortened current legal-brand name. No construction percentage or completion inference.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47280",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47280/",
+      "checkedAt": "2026-10-16T07:19:09.319712+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47280",
+      "officialName": "مسكان السدن",
+      "officialDeveloper": "شركة مسكان",
+      "officialCity": "جدة",
+      "basis": "Exact مسكان السدن/Jeddah/project47280; شركة مسكان is the shortened current legal-brand name. No construction percentage or completion inference.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -13121,6 +13382,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47239/",
+      "checkedAt": "2026-10-16T07:19:09.289594+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact ايال سدايم/Jeddah/project47239; shortened named developer شركة محمد عبدالعزيز الحبيب versus full legal suffix. No other Habib project is used.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47239",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47239/",
+      "checkedAt": "2026-10-16T07:19:09.289594+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47239",
+      "officialName": "ايال سدايم",
+      "officialDeveloper": "شركة محمد عبدالعزيز الحبيب",
+      "officialCity": "جدة",
+      "basis": "Exact ايال سدايم/Jeddah/project47239; shortened named developer شركة محمد عبدالعزيز الحبيب versus full legal suffix. No other Habib project is used.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -13332,6 +13617,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47290/",
+      "checkedAt": "2026-10-16T07:19:12.365272+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact درة السدن/Jeddah/project47290. Current name adds the same city as a suffix; تلاد is the exact legal-brand core. Same official ID also identifies existing opportunity op-40f125b23d.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47290",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47290/",
+      "checkedAt": "2026-10-16T07:19:12.365272+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47290",
+      "officialName": "درة السدن",
+      "officialDeveloper": "تلاد",
+      "officialCity": "جدة",
+      "basis": "Exact درة السدن/Jeddah/project47290. Current name adds the same city as a suffix; تلاد is the exact legal-brand core. Same official ID also identifies existing opportunity op-40f125b23d.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -20174,6 +20483,30 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47177/",
+      "checkedAt": "2026-10-16T07:19:05.979726+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact جوهرة الفرسان/Riyadh/project47177; shortened عبدالرحمن الراشد legal-brand attribution. This is the original project, not phase2 project47421.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47177",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47177/",
+      "checkedAt": "2026-10-16T07:19:05.979726+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47177",
+      "officialName": "جوهرة الفرسان",
+      "officialDeveloper": "عبدالرحمن الراشد",
+      "officialCity": "الرياض",
+      "basis": "Exact جوهرة الفرسان/Riyadh/project47177; shortened عبدالرحمن الراشد legal-brand attribution. This is the original project, not phase2 project47421.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -20350,7 +20683,7 @@
     ],
     "wa": "",
     "contactUrl": "",
-    "page": "https://retal.com.sa/properties/ewan-sedra/",
+    "page": "https://retal.com.sa/en/properties/ewan-sedra-3/",
     "dsite": "https://retal.com.sa",
     "maps": "",
     "sales": "",
@@ -20377,6 +20710,22 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://retal.com.sa/en/properties/ewan-sedra-3/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "interest_registration_only",
+      "evidenceSummary": "The exact developer project page provides interest registration and/or a visit appointment, not verified remaining sale units. Property types and animated zero counters are not inventory evidence.",
+      "sourceType": "official_developer_project_page"
+    },
+    "projectLinkAudit": {
+      "status": "verified_exact_phase",
+      "source": "https://retal.com.sa/en/properties/ewan-sedra-3/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "previousUrl": "https://retal.com.sa/properties/ewan-sedra/",
+      "phase": 3,
+      "note": "Official Retal heading specifies this numbered phase in Riyadh. Replaces the generic/original phase link only; no phase stock or approval inheritance."
     }
   },
   {
@@ -21094,7 +21443,7 @@
     ],
     "wa": "",
     "contactUrl": "",
-    "page": "https://retal.com.sa/properties/ewan-sedra/",
+    "page": "https://retal.com.sa/en/properties/ewan-sedra-2/",
     "dsite": "https://retal.com.sa",
     "maps": "",
     "sales": "",
@@ -21121,6 +21470,22 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://retal.com.sa/en/properties/ewan-sedra-2/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "interest_registration_only",
+      "evidenceSummary": "The exact developer project page provides interest registration and/or a visit appointment, not verified remaining sale units. Property types and animated zero counters are not inventory evidence.",
+      "sourceType": "official_developer_project_page"
+    },
+    "projectLinkAudit": {
+      "status": "verified_exact_phase",
+      "source": "https://retal.com.sa/en/properties/ewan-sedra-2/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "previousUrl": "https://retal.com.sa/properties/ewan-sedra/",
+      "phase": 2,
+      "note": "Official Retal heading specifies this numbered phase in Riyadh. Replaces the generic/original phase link only; no phase stock or approval inheritance."
     }
   },
   {
@@ -21743,6 +22108,22 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unavailable",
+      "source": "https://sakani.sa/app/developers/2051035144",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "booking_closed",
+      "evidenceSummary": "The official Sakani developer listing labels this exact original project تم إغلاق الحجز. This is closed booking, not proof of sold-out stock.",
+      "rawStatus": "تم إغلاق الحجز",
+      "sourceType": "official_sakani_public_index",
+      "retrievalMode": "public_indexed_page",
+      "sourceCrawlLabel": "last week",
+      "liveBookingVerified": false,
+      "corroboratingSources": [
+        "https://darwaemaar.com/project/saraya-al-fursan/"
+      ],
+      "identityNote": "Original سرايا الفرسان, Sakani project1054, not separately available phase2 project1439."
     }
   },
   {
@@ -22776,6 +23157,14 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://retal.com.sa/properties/ewan-sedra/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "interest_registration_only",
+      "evidenceSummary": "The exact developer project page provides interest registration and/or a visit appointment, not verified remaining sale units. Property types and animated zero counters are not inventory evidence.",
+      "sourceType": "official_developer_project_page"
     }
   },
   {
@@ -23749,6 +24138,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unavailable",
+      "source": "https://www.nhc.sa/real-estate-development/projects/324/",
+      "checkedAt": "2026-10-16T07:19:00.200272+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "محجوز بالكامل",
+      "reason": "fully_reserved",
+      "basis": "Exact official NHC project identity manually reviewed. Exact original النرجس فيو/Riyadh/project324 with Al-Rashid developer. Do not transfer status to other phases.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:324",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/324/",
+      "checkedAt": "2026-10-16T07:19:00.200272+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "324",
+      "officialName": "النرجس فيو",
+      "officialDeveloper": "شركة عبد الرحمن سعد الراشد وأولاده",
+      "officialCity": "الرياض",
+      "basis": "Exact original النرجس فيو/Riyadh/project324 with Al-Rashid developer. Do not transfer status to other phases.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -23796,6 +24209,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unavailable",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47132/",
+      "checkedAt": "2026-10-16T07:19:02.844826+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "محجوز بالكامل",
+      "reason": "fully_reserved",
+      "basis": "Exact official NHC project identity manually reviewed. Exact النرجس فيو2/Riyadh/project47132 with Al-Rashid developer. Separate phase-specific evidence, not inherited from original.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47132",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47132/",
+      "checkedAt": "2026-10-16T07:19:02.844826+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47132",
+      "officialName": "النرجس فيو 2",
+      "officialDeveloper": "عبدالرحمن الراشد",
+      "officialCity": "الرياض",
+      "basis": "Exact النرجس فيو2/Riyadh/project47132 with Al-Rashid developer. Separate phase-specific evidence, not inherited from original.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -24158,6 +24595,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unavailable",
+      "source": "https://www.nhc.sa/real-estate-development/projects/326/",
+      "checkedAt": "2026-10-16T07:19:00.203543+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "محجوز بالكامل",
+      "reason": "fully_reserved",
+      "basis": "Exact official NHC project identity manually reviewed. Exact شمس الديار/Riyadh/project326; NHC names الديار العربية (شهم), explaining developer brand extension. Fully reserved is not sold out.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:326",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/326/",
+      "checkedAt": "2026-10-16T07:19:00.203543+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "326",
+      "officialName": "شمس الديار",
+      "officialDeveloper": "الديار العربية (شهم)",
+      "officialCity": "الرياض",
+      "basis": "Exact شمس الديار/Riyadh/project326; NHC names الديار العربية (شهم), explaining developer brand extension. Fully reserved is not sold out.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -24701,6 +25162,30 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47279/",
+      "checkedAt": "2026-10-16T07:19:09.318761+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact مسكان الأصالة/Riyadh/project47279; مسكان is the shortened current developer brand. No parent الأصالة destination status is used.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47279",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47279/",
+      "checkedAt": "2026-10-16T07:19:09.318761+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47279",
+      "officialName": "مسكان الأصالة",
+      "officialDeveloper": "مسكان",
+      "officialCity": "الرياض",
+      "basis": "Exact مسكان الأصالة/Riyadh/project47279; مسكان is the shortened current developer brand. No parent الأصالة destination status is used.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -24745,6 +25230,14 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://retal.com.sa/en/properties/nesaj-al-asala/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "interest_registration_only",
+      "evidenceSummary": "The exact developer project page provides interest registration and/or a visit appointment, not verified remaining sale units. Property types and animated zero counters are not inventory evidence.",
+      "sourceType": "official_developer_project_page"
     }
   },
   {
@@ -24791,6 +25284,14 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://retal.com.sa/en/properties/nesaj-town-al-narjis/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "interest_registration_only",
+      "evidenceSummary": "The exact developer project page provides interest registration and/or a visit appointment, not verified remaining sale units. Property types and animated zero counters are not inventory evidence.",
+      "sourceType": "official_developer_project_page"
     }
   },
   {
@@ -26084,6 +26585,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47351/",
+      "checkedAt": "2026-10-16T07:19:15.498960+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact إيال الفرسان/Riyadh/project47351; Hamza spelling and legal suffix shortened to محمد الحبيب العقارية. No parent destination availability transfer.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47351",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47351/",
+      "checkedAt": "2026-10-16T07:19:15.498960+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47351",
+      "officialName": "إيال الفرسان",
+      "officialDeveloper": "محمد الحبيب العقارية",
+      "officialCity": "الرياض",
+      "basis": "Exact إيال الفرسان/Riyadh/project47351; Hamza spelling and legal suffix shortened to محمد الحبيب العقارية. No parent destination availability transfer.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -26123,6 +26648,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47352/",
+      "checkedAt": "2026-10-16T07:19:15.502564+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact project47352/Riyadh/أروقة: سناء/سنا spelling and company legal suffix vary, with no numerical phase difference. Existing project URL anchors the identity.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47352",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47352/",
+      "checkedAt": "2026-10-16T07:19:15.502564+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47352",
+      "officialName": "سنا الجبيلة",
+      "officialDeveloper": "أروقة للإستثمار والتطوير",
+      "officialCity": "الرياض",
+      "basis": "Exact project47352/Riyadh/أروقة: سناء/سنا spelling and company legal suffix vary, with no numerical phase difference. Existing project URL anchors the identity.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -26616,6 +27165,30 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47383/",
+      "checkedAt": "2026-10-16T07:19:15.893371+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact original عبية project47383 in Riyadh/NHC, titled عبية كوارترز. The marketing descriptor does not introduce phase2. No transfer to P595 or new phase2 project47644.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47383",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47383/",
+      "checkedAt": "2026-10-16T07:19:15.893371+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47383",
+      "officialName": "عبية كوارترز",
+      "officialDeveloper": "NHC",
+      "officialCity": "الرياض",
+      "basis": "Exact original عبية project47383 in Riyadh/NHC, titled عبية كوارترز. The marketing descriptor does not introduce phase2. No transfer to P595 or new phase2 project47644.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -26900,6 +27473,30 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47421/",
+      "checkedAt": "2026-10-16T07:19:19.497452+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact phase2 project47421: المرحلة الثانية and 2 are equivalent phase labels. Same Riyadh and Al-Rashid developer; no phase1 transfer.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47421",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47421/",
+      "checkedAt": "2026-10-16T07:19:19.497452+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47421",
+      "officialName": "جوهرة الفرسان2",
+      "officialDeveloper": "عبدالرحمن الراشد وأولاده",
+      "officialCity": "الرياض",
+      "basis": "Exact phase2 project47421: المرحلة الثانية and 2 are equivalent phase labels. Same Riyadh and Al-Rashid developer; no phase1 transfer.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -27392,6 +27989,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47409/",
+      "checkedAt": "2026-10-16T07:19:15.915702+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact تالا خزام/project47409/Riyadh, current name adds a definite article. دار وإعمار is the same named developer brand; no other Tala project used.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47409",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47409/",
+      "checkedAt": "2026-10-16T07:19:15.915702+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47409",
+      "officialName": "تالا خزام",
+      "officialDeveloper": "دار وإعمار",
+      "officialCity": "الرياض",
+      "basis": "Exact تالا خزام/project47409/Riyadh, current name adds a definite article. دار وإعمار is the same named developer brand; no other Tala project used.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -27656,6 +28277,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47428/",
+      "checkedAt": "2026-10-16T07:19:22.606657+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "متاح",
+      "reason": "explicit_official_available",
+      "basis": "Exact official NHC project identity manually reviewed. Exact سرايا الفرسان2/project47428/Riyadh. المرحلة الثانية and2 are the same phase, with DarWaemaar named on the exact official page.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47428",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47428/",
+      "checkedAt": "2026-10-16T07:19:22.606657+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47428",
+      "officialName": "سرايا الفرسان 2",
+      "officialDeveloper": "دار وإعمار",
+      "officialCity": "الرياض",
+      "basis": "Exact سرايا الفرسان2/project47428/Riyadh. المرحلة الثانية and2 are the same phase, with DarWaemaar named on the exact official page.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -28103,7 +28748,7 @@
     ],
     "wa": "",
     "contactUrl": "",
-    "page": "https://retal.com.sa/properties/ewan-sedra/",
+    "page": "https://retal.com.sa/en/properties/ewan-sedra-4/",
     "dsite": "https://retal.com.sa",
     "maps": "",
     "sales": "",
@@ -28130,6 +28775,25 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://retal.com.sa/en/properties/ewan-sedra-4/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "interest_registration_only",
+      "evidenceSummary": "The exact developer project page provides interest registration and/or a visit appointment, not verified remaining sale units. Property types and animated zero counters are not inventory evidence.",
+      "sourceType": "official_developer_project_page",
+      "limitations": [
+        "The linked REGA developer page returned an application shell. Its Apply Now link is not proof of available units."
+      ]
+    },
+    "projectLinkAudit": {
+      "status": "verified_exact_phase",
+      "source": "https://retal.com.sa/en/properties/ewan-sedra-4/",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "previousUrl": "https://retal.com.sa/properties/ewan-sedra/",
+      "phase": 4,
+      "note": "Official Retal heading specifies this numbered phase in Riyadh. Replaces the generic/original phase link only; no phase stock or approval inheritance."
     }
   },
   {
@@ -28252,6 +28916,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unavailable",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47408/",
+      "checkedAt": "2026-10-16T07:19:15.896418+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "غير متاح",
+      "reason": "explicit_unavailable",
+      "basis": "Exact official NHC project identity manually reviewed. Exact إيال خزام/Riyadh/project47408; named Habib developer abbreviated in current record. NHC explicitly unavailable; reason not asserted as sold/reserved.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47408",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47408/",
+      "checkedAt": "2026-10-16T07:19:15.896418+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47408",
+      "officialName": "إيال خزام",
+      "officialDeveloper": "شركة محمد عبدالعزيز الحبيب وشركاؤه",
+      "officialCity": "الرياض",
+      "basis": "Exact إيال خزام/Riyadh/project47408; named Habib developer abbreviated in current record. NHC explicitly unavailable; reason not asserted as sold/reserved.",
+      "bankApprovalTransferred": false
     }
   },
   {
@@ -30549,7 +31237,36 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
-    }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/offplan-projects/1637?lang=ar",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "official_units_offered_for_sale",
+      "evidenceSummary": "Official Sakani project1637 names سرايا الربى in Riyadh with the exact developer, and exposes priced villas offered for sale; unit1114953 is indexed with الحجز متاح. Developer page has the same project name despite its URL ending in -2.",
+      "sourceType": "official_sakani_public_index",
+      "retrievalMode": "public_indexed_page",
+      "sourceCrawlLabel": "last month",
+      "liveBookingVerified": false,
+      "corroboratingSources": [
+        "https://darwaemaar.com/project/saraya-al-ruba-2/",
+        "https://sakani.sa/app/developers/2051035144"
+      ],
+      "limitations": [
+        "Direct non-rendered Sakani open returned an application shell; publicly indexed official content was readable.",
+        "No remaining quantity, unit reservation or financing eligibility is asserted."
+      ],
+      "unitEvidence": {
+        "source": "https://sakani.sa/app/units/1114953",
+        "unitLabel": "1-39-447",
+        "rawStatus": "الحجز متاح",
+        "retrievalMode": "public_indexed_page",
+        "sourceCrawlLabel": "last week",
+        "checkedAt": "2026-10-16T10:16:00Z",
+        "audience": "للمستحق"
+      }
+    },
+    "canonicalProjectId": "sakani:1637"
   },
   {
     "id": "P593",
@@ -32075,7 +32792,31 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
-    }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/offplan-projects/1695",
+      "checkedAt": "2026-10-16T10:16:00Z",
+      "reason": "official_units_offered_for_sale",
+      "evidenceSummary": "Official Sakani project1695 names الفرسان كوميونيتيز in Riyadh with the exact developer and exposes priced villas offered for sale. Developer Communities directory links the same1718-home project now headed سرايا الفرسان3; no phase1/2 inventory is transferred.",
+      "sourceType": "official_sakani_public_index",
+      "retrievalMode": "public_indexed_page",
+      "sourceCrawlLabel": "2 days ago",
+      "liveBookingVerified": false,
+      "corroboratingSources": [
+        "https://darwaemaar.com/project/al-fursan-3/",
+        "https://sakani.sa/app/developers/2051035144"
+      ],
+      "limitations": [
+        "Direct non-rendered Sakani open returned an application shell; publicly indexed official content was readable.",
+        "No remaining quantity, unit reservation or financing eligibility is asserted."
+      ],
+      "identitySources": [
+        "https://darwaemaar.com/ar-communities/",
+        "https://saraya-al-fursan3.darwaemaar.com/"
+      ]
+    },
+    "canonicalProjectId": "sakani:1695"
   },
   {
     "id": "P619",
@@ -33326,6 +34067,30 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unavailable",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47240/",
+      "checkedAt": "2026-10-16T07:19:09.291749+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "sourceStatus": "غير متاح",
+      "reason": "explicit_unavailable",
+      "basis": "Exact official NHC project identity manually reviewed. Exact صهيل/Riyadh/project47240, same الديار العربية developer brand. NHC explicitly unavailable; no sold-out inference.",
+      "verificationMethod": "same_day_official_http_capture_with_manual_identity_review",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "canonicalProjectId": "nhc:47240",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/real-estate-development/projects/47240/",
+      "checkedAt": "2026-10-16T07:19:09.291749+00:00",
+      "reviewedAt": "2026-10-16T09:58:00Z",
+      "officialProjectId": "47240",
+      "officialName": "صهيل",
+      "officialDeveloper": "الديار العربية",
+      "officialCity": "الرياض",
+      "basis": "Exact صهيل/Riyadh/project47240, same الديار العربية developer brand. NHC explicitly unavailable; no sold-out inference.",
+      "bankApprovalTransferred": false
     }
   },
   {
