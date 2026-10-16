@@ -3844,7 +3844,25 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
-    }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/offplan-projects/1120?lang=ar",
+      "checkedAt": "2026-10-16T10:20:26Z",
+      "reason": "official_units_offered_for_sale",
+      "evidenceSummary": "The live rendered official project page identifies the exact project, developer and city, and displays nonempty priced home groups offered for sale. Interest forms are not used as the availability basis.",
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
+      "liveListingVerified": true,
+      "bookingAttempted": false,
+      "corroboratingSources": [
+        "https://sumou.com.sa/ala/"
+      ],
+      "limitations": [
+        "No remaining project inventory count or financing eligibility is asserted."
+      ]
+    },
+    "canonicalProjectId": "sakani:1120"
   },
   {
     "id": "P083",
@@ -4530,6 +4548,18 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unavailable",
+      "source": "https://sakani.sa/app/developers/2051035144",
+      "checkedAt": "2026-10-16T10:20:26Z",
+      "reason": "booking_closed",
+      "evidenceSummary": "The live official developer page explicitly labels this exact named project and city تم إغلاق الحجز. This does not establish that every home is sold.",
+      "rawStatus": "تم إغلاق الحجز",
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
+      "liveListingVerified": true,
+      "bookingAttempted": false
     }
   },
   {
@@ -5588,18 +5618,21 @@
     "availability": {
       "status": "unavailable",
       "source": "https://sakani.sa/app/developers/2051035144",
-      "checkedAt": "2026-10-16T10:16:00Z",
+      "checkedAt": "2026-10-16T10:18:42Z",
       "reason": "booking_closed",
       "evidenceSummary": "The official Sakani developer listing labels this exact original project تم إغلاق الحجز. This is closed booking, not proof of sold-out stock.",
       "rawStatus": "تم إغلاق الحجز",
-      "sourceType": "official_sakani_public_index",
-      "retrievalMode": "public_indexed_page",
-      "sourceCrawlLabel": "last week",
-      "liveBookingVerified": false,
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
       "corroboratingSources": [
         "https://darwaemaar.com/project/saraya-al-bahar/"
       ],
-      "identityNote": "Developer labels سرايا البحر as Qatif; Sakani lists the same developer/project in Safwa. Existing exact developer page, project name and brand anchor this match. Raw city is preserved; no global city alias or physical-city correction is proposed."
+      "identityNote": "Developer labels سرايا البحر as Qatif; Sakani lists the same developer/project in Safwa. Existing exact developer page, project name and brand anchor this match. Raw city is preserved; no global city alias or physical-city correction is proposed.",
+      "liveListingVerified": true,
+      "bookingAttempted": false,
+      "limitations": [
+        "No reservation was attempted; no remaining stock count or financing eligibility is asserted."
+      ]
     }
   },
   {
@@ -7213,6 +7246,14 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unverified",
+      "source": "https://ledar.com/our-projects/worod/",
+      "checkedAt": "2026-10-16T10:23:38Z",
+      "reason": "no_current_sale_inventory_evidence",
+      "evidenceSummary": "The developer confirms Dar Al Woroud in Taif, its exact project site and product models, but publishes no current sale inventory status on this page. Project-total homes and a brochure do not prove availability.",
+      "sourceType": "official_developer_project_page"
     }
   },
   {
@@ -7654,7 +7695,23 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
-    }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/offplan-projects/1117",
+      "checkedAt": "2026-10-16T10:23:38Z",
+      "reason": "official_units_offered_for_sale",
+      "evidenceSummary": "The current rendered Sakani page names the exact project, developer and city and displays nonempty priced groups of homes explicitly offered for sale. No unit was reserved and no stock count was imported.",
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
+      "liveListingVerified": true,
+      "bookingAttempted": false,
+      "corroboratingSources": [
+        "https://nahdat.com.sa/madina-p02/"
+      ],
+      "identityNote": "The exact developer project page directly links this numbered Sakani project. No transfer between طيف طابة and طيف المدينة."
+    },
+    "canonicalProjectId": "sakani:1117"
   },
   {
     "id": "P159",
@@ -7703,7 +7760,23 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
-    }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/offplan-projects/1126",
+      "checkedAt": "2026-10-16T10:23:38Z",
+      "reason": "official_units_offered_for_sale",
+      "evidenceSummary": "The current rendered Sakani page names the exact project, developer and city and displays nonempty priced groups of homes explicitly offered for sale. No unit was reserved and no stock count was imported.",
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
+      "liveListingVerified": true,
+      "bookingAttempted": false,
+      "corroboratingSources": [
+        "https://nahdat.com.sa/madina-p01/"
+      ],
+      "identityNote": "The exact developer project page directly links this numbered Sakani project. No transfer between طيف طابة and طيف المدينة."
+    },
+    "canonicalProjectId": "sakani:1126"
   },
   {
     "id": "P160",
@@ -7919,20 +7992,22 @@
     },
     "availability": {
       "status": "available",
-      "source": "https://nhc.sa/real-estate-development/projects/47166/",
-      "checkedAt": "2026-10-16T10:16:00Z",
+      "source": "https://sakani.sa/app/developers/2051035144",
+      "checkedAt": "2026-10-16T10:18:42Z",
       "reason": "explicit_official_project_status",
-      "evidenceSummary": "NHC labels سرايا البدر متاح with Dar Wa Emaar and Medina. Developer exact page confirms Medina and634 project-total homes, resolving NHC’s stray Gulf-coast description; the Sakani developer listing also identifies remaining offered units in Medina.",
-      "rawStatus": "متاح",
-      "sourceType": "official_nhc_project_page",
+      "evidenceSummary": "The live Sakani developer page explicitly lists remaining offered units for سرايا البدر in Medina with the exact developer. NHC matches and labels the project available; its erroneous Gulf-coast caption is not imported.",
+      "rawStatus": "وحدات قليلة متبقية",
+      "sourceType": "official_sakani_live_public_page",
       "corroboratingSources": [
-        "https://darwaemaar.com/project/saraya-al-bader-al-madinah-ar/",
-        "https://sakani.sa/app/developers/2051035144"
+        "https://nhc.sa/real-estate-development/projects/47166/",
+        "https://darwaemaar.com/project/saraya-al-bader-al-madinah-ar/"
       ],
       "limitations": [
-        "NHC marketing description incorrectly mentions the Gulf coast and Qatif; do not import that text or coordinates.",
-        "No remaining stock quantity or current minimum price asserted."
-      ]
+        "No reservation was attempted; no remaining stock count or financing eligibility is asserted."
+      ],
+      "retrievalMode": "live_rendered_browser",
+      "liveListingVerified": true,
+      "bookingAttempted": false
     },
     "canonicalProjectId": "nhc:47166"
   },
@@ -12289,6 +12364,17 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://sumou.com.sa/darsumou/",
+      "checkedAt": "2026-10-16T10:20:26Z",
+      "reason": "interest_registration_only",
+      "evidenceSummary": "The exact developer page identifies Dar Sumou in Jeddah and offers interest registration. Sakani project666 confirms identity but its readable indexed content showed no offered units. Missing results do not prove sold out.",
+      "sourceType": "official_developer_project_page",
+      "corroboratingSources": [
+        "https://sakani.sa/app/offplan-projects/666"
+      ]
     }
   },
   {
@@ -14408,7 +14494,23 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
-    }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/offplan-projects/1490",
+      "checkedAt": "2026-10-16T10:23:38Z",
+      "reason": "official_units_offered_for_sale",
+      "evidenceSummary": "The current rendered Sakani page names the exact project, developer and city and displays nonempty priced groups of homes explicitly offered for sale. No unit was reserved and no stock count was imported.",
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
+      "liveListingVerified": true,
+      "bookingAttempted": false,
+      "corroboratingSources": [
+        "https://aknann.com/heights-2/"
+      ],
+      "identityNote": "ساطعة التعمير is explicitly the developer of Aknan Heights in Jeddah. Different Aknan البناء/الأولى companies and projects are not used."
+    },
+    "canonicalProjectId": "sakani:1490"
   },
   {
     "id": "P294",
@@ -18228,6 +18330,14 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://aknann.com/alwi/",
+      "checkedAt": "2026-10-16T10:23:38Z",
+      "reason": "interest_registration_only",
+      "evidenceSummary": "The existing exact developer destination page provides models and an interest-registration link but no verified currently offered units. Navigation names Aknan Al Awali. No cross-project Aknan company or unit stock is inherited.",
+      "sourceType": "official_developer_project_page"
     }
   },
   {
@@ -19418,6 +19528,21 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unverified",
+      "source": "https://sumou.com.sa/أريم-مكة/",
+      "checkedAt": "2026-10-16T10:20:26Z",
+      "reason": "similar_project_scope_requires_crosswalk",
+      "evidenceSummary": "The developer page offers interest registration for أريم مكة. Sakani distinguishes أريم project1297 from أريم مكة project1616 with different scope; availability from1297 must not transfer to this record. No current offered units were independently established for the exact linked scope.",
+      "sourceType": "official_developer_project_page",
+      "corroboratingSources": [
+        "https://sakani.sa/app/offplan-projects/1616",
+        "https://sakani.sa/app/offplan-projects/1297"
+      ],
+      "limitations": [
+        "Preserve prior O2 land-area qualification and bank source identity. No canonical merge proposed."
+      ]
     }
   },
   {
@@ -19537,7 +19662,22 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
-    }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/offplan-projects/1467",
+      "checkedAt": "2026-10-16T10:23:38Z",
+      "reason": "official_units_offered_for_sale",
+      "evidenceSummary": "The current rendered Sakani page names the exact project, developer and city and displays nonempty priced groups of homes explicitly offered for sale. No unit was reserved and no stock count was imported.",
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
+      "liveListingVerified": true,
+      "bookingAttempted": false,
+      "corroboratingSources": [
+        "https://ledar.com/our-projects/qad/"
+      ]
+    },
+    "canonicalProjectId": "sakani:1467"
   },
   {
     "id": "P367",
@@ -21654,6 +21794,21 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://alsoliman.com.sa/ar/selling/project/sakenahresidence127",
+      "checkedAt": "2026-10-16T10:29:30Z",
+      "reason": "official_scoped_units_offered_for_sale",
+      "evidenceSummary": "The developer live sale table explicitly offers at least one unit in building B of project 127; the status is verified inside this exact building, not inferred from the whole project or another building.",
+      "sourceType": "official_developer_project_page",
+      "retrievalMode": "live_rendered_browser",
+      "bookingAttempted": false,
+      "liveListingVerified": true,
+      "scope": {
+        "projectNumber": "127",
+        "building": "B"
+      }
     }
   },
   {
@@ -21701,6 +21856,21 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://alsoliman.com.sa/ar/selling/project/sakenahresidence128",
+      "checkedAt": "2026-10-16T10:29:30Z",
+      "reason": "official_scoped_units_offered_for_sale",
+      "evidenceSummary": "The developer live sale table explicitly offers at least one unit in building A of project 128; the status is verified inside this exact building, not inferred from the whole project or another building.",
+      "sourceType": "official_developer_project_page",
+      "retrievalMode": "live_rendered_browser",
+      "bookingAttempted": false,
+      "liveListingVerified": true,
+      "scope": {
+        "projectNumber": "128",
+        "building": "A"
+      }
     }
   },
   {
@@ -21751,6 +21921,21 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://alsoliman.com.sa/ar/selling/project/sakenahresidence128",
+      "checkedAt": "2026-10-16T10:29:30Z",
+      "reason": "official_scoped_units_offered_for_sale",
+      "evidenceSummary": "The developer live sale table explicitly offers at least one unit in building B of project 128; the status is verified inside this exact building, not inferred from the whole project or another building.",
+      "sourceType": "official_developer_project_page",
+      "retrievalMode": "live_rendered_browser",
+      "bookingAttempted": false,
+      "liveListingVerified": true,
+      "scope": {
+        "projectNumber": "128",
+        "building": "B"
+      }
     }
   },
   {
@@ -21802,6 +21987,22 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "unavailable",
+      "source": "https://alsoliman.com.sa/ar/selling/project/sakenahresidence125",
+      "checkedAt": "2026-10-16T10:29:30Z",
+      "reason": "all_published_scoped_units_sold_or_reserved",
+      "evidenceSummary": "Every published unit in building A of project125 is sold or reserved; no unit is marked for sale in that building. Building B has offered units, but that availability is not inherited. This is not a claim that every unit is sold.",
+      "sourceType": "official_developer_project_page",
+      "retrievalMode": "live_rendered_browser",
+      "bookingAttempted": false,
+      "liveListingVerified": true,
+      "scope": {
+        "projectNumber": "125",
+        "building": "A"
+      },
+      "soldOutClaim": false
     }
   },
   {
@@ -21847,6 +22048,21 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://alsoliman.com.sa/ar/selling/project/sakenahresidence127",
+      "checkedAt": "2026-10-16T10:29:30Z",
+      "reason": "official_scoped_units_offered_for_sale",
+      "evidenceSummary": "The developer live sale table explicitly offers at least one unit in building A of project 127; the status is verified inside this exact building, not inferred from the whole project or another building.",
+      "sourceType": "official_developer_project_page",
+      "retrievalMode": "live_rendered_browser",
+      "bookingAttempted": false,
+      "liveListingVerified": true,
+      "scope": {
+        "projectNumber": "127",
+        "building": "A"
+      }
     }
   },
   {
@@ -21897,6 +22113,21 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://alsoliman.com.sa/ar/selling/project/sakenahresidence125",
+      "checkedAt": "2026-10-16T10:29:30Z",
+      "reason": "official_scoped_units_offered_for_sale",
+      "evidenceSummary": "The developer live sale table explicitly offers at least one unit in building B of project 125; the status is verified inside this exact building, not inferred from the whole project or another building.",
+      "sourceType": "official_developer_project_page",
+      "retrievalMode": "live_rendered_browser",
+      "bookingAttempted": false,
+      "liveListingVerified": true,
+      "scope": {
+        "projectNumber": "125",
+        "building": "B"
+      }
     }
   },
   {
@@ -21942,6 +22173,21 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://alsoliman.com.sa/ar/selling",
+      "checkedAt": "2026-10-16T10:29:30Z",
+      "reason": "explicit_current_sale_directory",
+      "evidenceSummary": "The developer live selling directory explicitly lists Bludar project129 in Riyadh under residential units available for sale. The exact129 identifier distinguishes it from neighbouring130/134 entries. No current stock count or individual unit is claimed.",
+      "sourceType": "official_developer_project_page",
+      "retrievalMode": "live_rendered_browser",
+      "bookingAttempted": false,
+      "liveListingVerified": true,
+      "scope": {
+        "projectNumber": "129"
+      },
+      "unitLevelVerification": false
     }
   },
   {
@@ -22112,18 +22358,21 @@
     "availability": {
       "status": "unavailable",
       "source": "https://sakani.sa/app/developers/2051035144",
-      "checkedAt": "2026-10-16T10:16:00Z",
+      "checkedAt": "2026-10-16T10:18:42Z",
       "reason": "booking_closed",
       "evidenceSummary": "The official Sakani developer listing labels this exact original project تم إغلاق الحجز. This is closed booking, not proof of sold-out stock.",
       "rawStatus": "تم إغلاق الحجز",
-      "sourceType": "official_sakani_public_index",
-      "retrievalMode": "public_indexed_page",
-      "sourceCrawlLabel": "last week",
-      "liveBookingVerified": false,
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
       "corroboratingSources": [
         "https://darwaemaar.com/project/saraya-al-fursan/"
       ],
-      "identityNote": "Original سرايا الفرسان, Sakani project1054, not separately available phase2 project1439."
+      "identityNote": "Original سرايا الفرسان, Sakani project1054, not separately available phase2 project1439.",
+      "liveListingVerified": true,
+      "bookingAttempted": false,
+      "limitations": [
+        "No reservation was attempted; no remaining stock count or financing eligibility is asserted."
+      ]
     }
   },
   {
@@ -22386,7 +22635,26 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
-    }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/offplan-projects/1055?lang=ar",
+      "checkedAt": "2026-10-16T10:20:26Z",
+      "reason": "official_units_offered_for_sale",
+      "evidenceSummary": "The live rendered official project page identifies the exact project, developer and city, and displays nonempty priced home groups offered for sale. Interest forms are not used as the availability basis.",
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
+      "liveListingVerified": true,
+      "bookingAttempted": false,
+      "corroboratingSources": [
+        "https://sumou.com.sa/alasila/"
+      ],
+      "limitations": [
+        "No remaining project inventory count or financing eligibility is asserted."
+      ],
+      "evidenceNote": "Indexed variants showed differing group counts; the live page was inspected and nonempty groups confirmed. No count is copied."
+    },
+    "canonicalProjectId": "sakani:1055"
   },
   {
     "id": "P425",
@@ -22792,6 +23060,17 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://aknann.com/fursan/",
+      "checkedAt": "2026-10-16T10:23:38Z",
+      "reason": "interest_registration_only",
+      "evidenceSummary": "The exact developer page offers interest registration. The live Sakani project1045 confirms Aknan Al Fursan in Riyadh with Satiat but exposes no current offered unit groups. Absence of groups does not prove sold out.",
+      "sourceType": "official_developer_project_page",
+      "corroboratingSources": [
+        "https://sakani.sa/app/offplan-projects/1045"
+      ]
     }
   },
   {
@@ -24014,6 +24293,18 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unavailable",
+      "source": "https://sakani.sa/app/developers/2051035144",
+      "checkedAt": "2026-10-16T10:20:26Z",
+      "reason": "booking_closed",
+      "evidenceSummary": "The live official developer page explicitly labels this exact named project and city تم إغلاق الحجز. This does not establish that every home is sold.",
+      "rawStatus": "تم إغلاق الحجز",
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
+      "liveListingVerified": true,
+      "bookingAttempted": false
     }
   },
   {
@@ -24881,6 +25172,17 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unverified",
+      "source": "https://alsoliman.com.sa/ar/product/سكينة-ريزيدنس",
+      "checkedAt": "2026-10-16T10:29:30Z",
+      "reason": "phase_identity_not_established",
+      "evidenceSummary": "The linked developer page describes the Sakenah Residence series, not this exact numbered phase. Its interest form and series-wide totals cannot establish phase-specific sale availability; no status is inherited from125,127 or128.",
+      "sourceType": "official_developer_project_page",
+      "retrievalMode": "public_indexed_page",
+      "bookingAttempted": false,
+      "liveListingVerified": false
     }
   },
   {
@@ -24922,6 +25224,17 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unverified",
+      "source": "https://alsoliman.com.sa/ar/product/سكينة-ريزيدنس",
+      "checkedAt": "2026-10-16T10:29:30Z",
+      "reason": "phase_identity_not_established",
+      "evidenceSummary": "The linked developer page describes the Sakenah Residence series, not this exact numbered phase. Its interest form and series-wide totals cannot establish phase-specific sale availability; no status is inherited from125,127 or128.",
+      "sourceType": "official_developer_project_page",
+      "retrievalMode": "public_indexed_page",
+      "bookingAttempted": false,
+      "liveListingVerified": false
     }
   },
   {
@@ -28530,7 +28843,26 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
-    }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/offplan-projects/1445",
+      "checkedAt": "2026-10-16T10:20:26Z",
+      "reason": "official_units_offered_for_sale",
+      "evidenceSummary": "The live rendered official project page identifies the exact project, developer and city, and displays nonempty priced home groups offered for sale. Interest forms are not used as the availability basis.",
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
+      "liveListingVerified": true,
+      "bookingAttempted": false,
+      "corroboratingSources": [
+        "https://safainv.sa/project/108"
+      ],
+      "limitations": [
+        "No remaining project inventory count or financing eligibility is asserted."
+      ],
+      "identityNote": "The existing developer page explicitly calls صفا101 الفرسان صفا الفرسان and links directly to this Sakani project1445."
+    },
+    "canonicalProjectId": "sakani:1445"
   },
   {
     "id": "P545",
@@ -28834,6 +29166,15 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.alhabibinv.com/projects/details/12/%D9%83%D8%AD%D9%8A%D9%84/3",
+      "checkedAt": "2026-10-16T10:20:26Z",
+      "reason": "explicit_developer_available_category",
+      "evidenceSummary": "The exact كحيل residential project page explicitly categorizes it under المشاريع المتاحة and identifies Riyadh. The availability category, not the interest form or1492 total homes, is the basis.",
+      "rawStatus": "المشاريع المتاحة",
+      "sourceType": "official_developer_project_page"
     }
   },
   {
@@ -29782,6 +30123,23 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://safainv.sa/project/57",
+      "checkedAt": "2026-10-16T10:20:26Z",
+      "reason": "official_units_offered_for_sale",
+      "evidenceSummary": "The exact numbered Safa project page in Riyadh contains an available-units section with specifically labeled homes marked للبيع and prices. Current project totals and construction progress are not treated as remaining stock.",
+      "rawStatus": "للبيع",
+      "sourceType": "official_developer_project_page",
+      "unitEvidence": {
+        "label": "SF080-A01-F01-011-APT",
+        "source": "https://safainv.sa/project/57",
+        "checkedAt": "2026-10-16T10:20:26Z"
+      },
+      "limitations": [
+        "Individual listing prices are not imported as a project minimum."
+      ]
     }
   },
   {
@@ -30537,6 +30895,23 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://safainv.sa/project/44",
+      "checkedAt": "2026-10-16T10:20:26Z",
+      "reason": "official_units_offered_for_sale",
+      "evidenceSummary": "The exact numbered Safa project page in Riyadh contains an available-units section with specifically labeled homes marked للبيع and prices. Current project totals and construction progress are not treated as remaining stock.",
+      "rawStatus": "للبيع",
+      "sourceType": "official_developer_project_page",
+      "unitEvidence": {
+        "label": "SF078-A01-F00-002-APT",
+        "source": "https://safainv.sa/project/44",
+        "checkedAt": "2026-10-16T10:20:26Z"
+      },
+      "limitations": [
+        "Individual listing prices are not imported as a project minimum."
+      ]
     }
   },
   {
@@ -31193,7 +31568,22 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
-    }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/offplan-projects/1632",
+      "checkedAt": "2026-10-16T10:23:38Z",
+      "reason": "official_units_offered_for_sale",
+      "evidenceSummary": "The current rendered Sakani page names the exact project, developer and city and displays nonempty priced groups of homes explicitly offered for sale. No unit was reserved and no stock count was imported.",
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
+      "liveListingVerified": true,
+      "bookingAttempted": false,
+      "corroboratingSources": [
+        "https://ledar.com/our-projects/ruba/"
+      ]
+    },
+    "canonicalProjectId": "sakani:1632"
   },
   {
     "id": "P592",
@@ -31241,30 +31631,20 @@
     "availability": {
       "status": "available",
       "source": "https://sakani.sa/app/offplan-projects/1637?lang=ar",
-      "checkedAt": "2026-10-16T10:16:00Z",
+      "checkedAt": "2026-10-16T10:18:42Z",
       "reason": "official_units_offered_for_sale",
-      "evidenceSummary": "Official Sakani project1637 names سرايا الربى in Riyadh with the exact developer, and exposes priced villas offered for sale; unit1114953 is indexed with الحجز متاح. Developer page has the same project name despite its URL ending in -2.",
-      "sourceType": "official_sakani_public_index",
-      "retrievalMode": "public_indexed_page",
-      "sourceCrawlLabel": "last month",
-      "liveBookingVerified": false,
+      "evidenceSummary": "The live rendered Sakani project1637 page shows priced villas offered for sale for سرايا الربى with Dar Wa Emaar in Riyadh. The live developer listing also labels remaining units. No old indexed unit count is imported.",
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
       "corroboratingSources": [
         "https://darwaemaar.com/project/saraya-al-ruba-2/",
         "https://sakani.sa/app/developers/2051035144"
       ],
       "limitations": [
-        "Direct non-rendered Sakani open returned an application shell; publicly indexed official content was readable.",
-        "No remaining quantity, unit reservation or financing eligibility is asserted."
+        "No reservation was attempted; no remaining stock count or financing eligibility is asserted."
       ],
-      "unitEvidence": {
-        "source": "https://sakani.sa/app/units/1114953",
-        "unitLabel": "1-39-447",
-        "rawStatus": "الحجز متاح",
-        "retrievalMode": "public_indexed_page",
-        "sourceCrawlLabel": "last week",
-        "checkedAt": "2026-10-16T10:16:00Z",
-        "audience": "للمستحق"
-      }
+      "liveListingVerified": true,
+      "bookingAttempted": false
     },
     "canonicalProjectId": "sakani:1637"
   },
@@ -32411,6 +32791,18 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://sakani.sa/app/developers/2051035144",
+      "checkedAt": "2026-10-16T10:20:26Z",
+      "reason": "explicit_remaining_offered_units",
+      "evidenceSummary": "The live official developer inventory lists النرجس كوميونيتيز with Dar Wa Emaar in Riyadh and explicitly indicates remaining offered units. This is distinct from other Narjis projects.",
+      "rawStatus": "وحدات قليلة متبقية",
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
+      "liveListingVerified": true,
+      "bookingAttempted": false
     }
   },
   {
@@ -32796,25 +33188,24 @@
     "availability": {
       "status": "available",
       "source": "https://sakani.sa/app/offplan-projects/1695",
-      "checkedAt": "2026-10-16T10:16:00Z",
+      "checkedAt": "2026-10-16T10:18:42Z",
       "reason": "official_units_offered_for_sale",
-      "evidenceSummary": "Official Sakani project1695 names الفرسان كوميونيتيز in Riyadh with the exact developer and exposes priced villas offered for sale. Developer Communities directory links the same1718-home project now headed سرايا الفرسان3; no phase1/2 inventory is transferred.",
-      "sourceType": "official_sakani_public_index",
-      "retrievalMode": "public_indexed_page",
-      "sourceCrawlLabel": "2 days ago",
-      "liveBookingVerified": false,
+      "evidenceSummary": "The live rendered Sakani project1695 page shows priced villas and townhouses offered for sale for الفرسان كوميونيتيز with Dar Wa Emaar in Riyadh. Its official developer listing independently labels remaining units.",
+      "sourceType": "official_sakani_live_public_page",
+      "retrievalMode": "live_rendered_browser",
       "corroboratingSources": [
         "https://darwaemaar.com/project/al-fursan-3/",
         "https://sakani.sa/app/developers/2051035144"
       ],
       "limitations": [
-        "Direct non-rendered Sakani open returned an application shell; publicly indexed official content was readable.",
-        "No remaining quantity, unit reservation or financing eligibility is asserted."
+        "No reservation was attempted; no remaining stock count or financing eligibility is asserted."
       ],
       "identitySources": [
         "https://darwaemaar.com/ar-communities/",
         "https://saraya-al-fursan3.darwaemaar.com/"
-      ]
+      ],
+      "liveListingVerified": true,
+      "bookingAttempted": false
     },
     "canonicalProjectId": "sakani:1695"
   },
