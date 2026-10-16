@@ -1530,6 +1530,7 @@
     ]
 };
   var NON_PROJECT_IMAGE_SOURCES = {
+    "https://alajlaninvest.com/wp-content/uploads/2024/01/Riv-27.jpg": true,
     "https://aknann.com/wp-content/uploads/2025/03/alawali%404x.png": true,
     "https://aknann.com/wp-content/uploads/2025/03/heights@4x.png": true,
     "https://aknann.com/wp-content/uploads/2025/04/fursan@4x.png": true,
