@@ -391,15 +391,35 @@
     if (o && (o.pdfShowroomVerified === true || (o.city === 'الرياض' && (o.zone === 'shifa' || o.zone === 'qadisiyah')))) return false;
     return /(?:^|\s)(?:شركة|الشركة|مؤسسة)(?:\s|$)|وكالة|التوكيلات|محمد يوسف ناغي|عبد\s*اللطيف جميل|المجدوعي|شانجان|changan|جينيسيس|genesis|هيونداي|hyundai|تويوتا|toyota|كيا|kia|مازدا|mazda|شيري|chery|جيتور|jetour|دونغ\s*فينغ|dongfeng|موزع\s+جيلي/i.test(String(o && o.n || ''));
   }
+  function carPlaceCid(o) {
+    try { var u = new URL(o.maps || ''), cid = u.searchParams.get('cid'); return /(^|\.)google\.com$/.test(u.hostname) && /^\/maps(?:\/|$)/.test(u.pathname) && /^\d+$/.test(cid || '') ? cid : ''; } catch (e) { return ''; }
+  }
+  function carPhonesKey(o) { return (o.phones || []).filter(Boolean).map(String).sort().join(','); }
+  function verifiedRegionalCar(o, source) {
+    // A regional alias is not a second business. Require the explicit source link
+    // AND the same exact place CID, identity, phones and physical/display city.
+    var cid = carPlaceCid(o);
+    return !!(source && !source.regionalListingOf && o.regionalListingOf === source.id && cid && cid === carPlaceCid(source) &&
+      String(o.n || '').trim() && String(o.n).trim() === String(source.n || '').trim() && carPhonesKey(o) && carPhonesKey(o) === carPhonesKey(source) &&
+      sameCity(o.city, source.city) && sameCity(o.originCity || o.city, source.city));
+  }
   function dedupeCars(rows) {
-    var groups = {}, keys = [];
-    rows.forEach(function (o) { var phones = (o.phones || []).slice().filter(Boolean).sort().join(','); var place = [norm(o.nb), o.lat == null ? '' : String(o.lat), o.lon == null ? '' : String(o.lon), norm(o.maps || o.sales || o.mapsQ)].join('|'); var key = [cityKey(o.city), norm(o.n), phones, place].join('|'); if (!groups[key]) { groups[key] = []; keys.push(key); } groups[key].push(o); });
+    var groups = {}, keys = [], byId = {};
+    rows.forEach(function (o) { if (o.id) byId[o.id] = o; });
+    rows.forEach(function (o) {
+      var identity = verifiedRegionalCar(o, byId[o.regionalListingOf]) ? byId[o.regionalListingOf] : o;
+      var place = [norm(identity.nb), identity.lat == null ? '' : String(identity.lat), identity.lon == null ? '' : String(identity.lon), norm(identity.maps || identity.sales || identity.mapsQ)].join('|');
+      var key = [cityKey(identity.city), norm(identity.n), carPhonesKey(identity), place].join('|');
+      if (!groups[key]) { groups[key] = []; keys.push(key); } groups[key].push(o);
+    });
     return keys.map(function (key) {
       var list = groups[key].slice().sort(function (a, b) {
         function score(o) { return (o.web ? 4 : 0) + (o.maps ? 3 : 0) + (o.lat != null && o.lon != null ? 4 : 0) + (o.nb ? 1 : 0) + ((o.phones || []).length); }
         return score(b) - score(a);
       });
       var base = Object.assign({}, list[0]), phones = [];
+      var verifiedPin = list.find(function (o) { return o.mapReviewStatus === 'verified_direct_pin' && carPlaceCid(o) && typeof o.lat === 'number' && typeof o.lon === 'number' && isFinite(o.lat) && isFinite(o.lon); });
+      if (verifiedPin) ['lat', 'lon', 'loc', 'maps', 'mapReviewStatus', 'mapReviewNote'].forEach(function (field) { if (verifiedPin[field] !== undefined) base[field] = verifiedPin[field]; });
       list.forEach(function (o) { (o.phones || []).forEach(function (p) { if (p && phones.indexOf(p) < 0) phones.push(p); }); });
       if (phones.length) base.phones = phones;
       return base;
