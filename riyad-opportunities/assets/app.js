@@ -882,6 +882,12 @@
 };
   // Only sources cleared for this caption-free interface are renderable.
   var CITY_HERO_ASSETS = {
+    "الباحة": {"src": "assets/images/cities/al-baha-cc0.webp", "position": "50% 52%", "real": true, "displayPermission": "CC0"},
+    "الخبر": {"src": "assets/images/cities/khobar-pexels.webp", "position": "70% 28%", "real": true, "displayPermission": "pexels_license"},
+    "جدة": {"src": "assets/images/cities/jeddah-pexels-night.webp", "position": "65% 65%", "real": true, "displayPermission": "pexels_license"},
+    "الظهران": {"src": "assets/images/cities/dhahran-pexels.webp", "position": "50% 55%", "real": true, "displayPermission": "pexels_license"},
+    "الجبيل": {"src": "assets/images/cities/jubail-pexels.webp", "position": "65% 55%", "real": true, "displayPermission": "pexels_license"},
+    "ينبع": {"src": "assets/images/cities/yanbu-pexels.webp", "position": "50% 40%", "real": true, "displayPermission": "pexels_license"},
     'بريدة': { src: 'assets/images/city-buraidah-illustrative.webp', position: '32% 50%', real: false, displayPermission: 'generated_illustration' },
     'الرياض': { src: 'assets/images/city-riyadh.webp', position: '50% 50%', real: false, displayPermission: 'generated_illustration' },
     'أبها': Object.assign({}, CITY_IMAGE_ARCHIVE['أبها'], { displayPermission: 'CC0' }),
