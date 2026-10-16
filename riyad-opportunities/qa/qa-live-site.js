@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 "use strict";
+const fs = require("fs"), path = require("path"), crypto = require("crypto");
+const digest = text => crypto.createHash("sha256").update(text).digest("hex");
+const expectedApp = digest(fs.readFileSync(path.join(__dirname, "../assets/app.js"), "utf8"));
+const expectedIndex = digest(fs.readFileSync(path.join(__dirname, "../index.html"), "utf8"));
 const expectedSha = process.env.GITHUB_SHA || "unknown";
 const base = "https://elhame25.github.io/riyad-opportunities/";
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
@@ -27,7 +31,8 @@ async function read(path) {
       const byCode = Object.fromEntries(branches.map(branch => [String(branch.c), branch]));
       const checks = {
         page: html.includes('id="app"') && html.includes("assets/app.js"),
-        currentApp: app.includes("local_internal_reference") && app.includes("الفرع بلا دبوس مؤكد يعرض نطاق المدينة"),
+        currentApp: digest(app) === expectedApp,
+        currentIndex: digest(html) === expectedIndex,
         branchFallbacks: ["176", "307"].every(code => byCode[code] && byCode[code].lat == null && byCode[code].lon == null && byCode[code].distanceScope === "city"),
         centerLabels: ["397", "197"].every(code => byCode[code] && byCode[code].codeStatus === "local_internal_reference"),
         urbanFallbackImage: image.includes("<svg") && image.includes("مبانٍ سكنية")
