@@ -74,6 +74,18 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
  await page.fill('#q-sec','');await page.click('[data-tab="projects"]');assert.equal(await page.locator('.vcard').count(),12);await page.locator('.vcard [data-detail]').first().click();await page.waitForSelector('#detail[open]');assert(await page.locator('#detail').innerText().then(x=>x.includes('موثق وفق المصدر')));assert(!await page.locator('#detail').innerText().then(x=>x.includes('INTERNAL-QA-ONLY')));await page.keyboard.press('Escape');
  await page.click('[data-tab="nhc"]');const fursan=page.locator('.vcard').filter({has:page.locator('h3',{hasText:'الفرسان'})});await fursan.locator('[data-anchor="destination-projects"]').click();await page.waitForSelector('#detail[open] #destination-projects .vcard');await page.locator('#destination-projects .vcard [data-detail]').first().click();await page.waitForSelector('#detail[open] .back-results');assert((await page.locator('#detail .back-results').innerText()).includes('العودة إلى الوجهة'));await page.locator('#detail .back-results').click();await page.waitForSelector('#detail[open] #destination-projects');await page.keyboard.press('Escape');assert.equal(await page.locator('#detail[open]').count(),0);
  checks.push({fixturesOnlyInMemory:true,initial12:true,more24:true,modalEscape:true,browserBackForward:true,filtersAndScrollPreserved:true,internalProjectCodeHidden:true,nhcExactProjectAndNestedBack:true});await context.close();
+ // City-specific real data and image rendering, with no cross-city substitution.
+ const cityIdentityCases=[['الباحة','al-baha-cc0'],['الخبر','khobar-pexels'],['جدة','jeddah-pexels-night'],['الظهران','dhahran-pexels'],['الجبيل','jubail-pexels'],['ينبع','yanbu-pexels']];
+ for(const width of [1440,390]){
+  const cx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});const cp=await cx.newPage();cp.on('pageerror',e=>pageErrors.push(e.message));
+  for(const [city,asset] of cityIdentityCases){
+   const b=branchData.find(x=>x.city===city);assert(b,'Missing actual branch for '+city);
+   await cp.goto(origin+'/#b'+b.c);await cp.waitForSelector('.stat');
+   const hero=cp.locator('img[src="assets/images/cities/'+asset+'.webp"]');await hero.waitFor();await hero.evaluate(i=>i.decode());assert(await hero.evaluate(i=>i.complete&&i.naturalWidth>0));
+   await fit(cp,'City '+city+' '+width);await capture(cp,'city-'+asset+'-'+width+'.png');checks.push({city,width,exactCityHero:true,realData:true});
+  }
+  await cx.close();
+ }
  // Missing source authority is a pending catalog, never an advertised zero.
  const pendingContext=await browser.newContext({viewport:{width:390,height:844}});const pendingPage=await pendingContext.newPage();pendingPage.on('pageerror',e=>pageErrors.push(e.message));
  await pendingPage.route('**/data/meta.json?*',async route=>{const meta=JSON.parse(fs.readFileSync(path.join(root,'data/meta.json'),'utf8'));meta.bankApprovalCatalog={status:'awaiting_original_source'};await route.fulfill({json:meta});});
