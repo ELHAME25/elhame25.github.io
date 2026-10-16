@@ -1043,7 +1043,7 @@
     if (field === 'area' && /إجمالي|ارض|أرض|مخطط|وجهة|project|land|total/i.test(String(evidence && evidence.scope || o.areaScope || o.areaBasis || ''))) return '';
     return o[field] == null ? '' : o[field];
   }
-  function priceLine(o) {
+  function priceInfo(o) {
     var price = verifiedField(o, 'price');
     if (!price) return '';
     var bases = {
@@ -1058,7 +1058,15 @@
       'غير شامل الضريبة': ['السعر', 'غير شامل الضريبة'], 'شامل الضريبة': ['السعر', 'شامل الضريبة']
     };
     var basis = Object.prototype.hasOwnProperty.call(bases, o.priceBasis) ? bases[o.priceBasis] : ['السعر', ''];
-    return '<div class="price">' + basis[0] + ' ' + sar(price) + (basis[1] ? ' (' + basis[1] + ')' : '') + '</div>';
+    return { value: price, prefix: basis[0], suffix: basis[1] };
+  }
+  function priceText(o) {
+    var p = priceInfo(o);
+    return p ? p.prefix + ' ' + fmt(p.value) + ' ريال' + (p.suffix ? ' (' + p.suffix + ')' : '') : '';
+  }
+  function priceLine(o) {
+    var p = priceInfo(o);
+    return p ? '<div class="price">' + p.prefix + ' ' + sar(p.value) + (p.suffix ? ' (' + p.suffix + ')' : '') + '</div>' : '';
   }
   function constructionLabel(o) {
     var construction = validEvidence(o.construction) ? o.construction : null;
@@ -1259,7 +1267,7 @@
   }
   function shareItem(id, context) {
     var it = REG[id]; if (!it) return; var o = it.o;
-    var text = [o.n, o.dev, [o.nb, o.city].filter(Boolean).join('، '), verifiedField(o, 'price') ? 'تبدأ من ' + fmt(o.price) + ' ريال' : '', currentPhone(id, context), o.maps || o.url || o.page || o.web || o.site || ''].filter(Boolean).join('\n');
+    var text = [o.n, o.dev, [o.nb, o.city].filter(Boolean).join('، '), priceText(o), currentPhone(id, context), o.maps || o.url || o.page || o.web || o.site || ''].filter(Boolean).join('\n');
     if (navigator.share) navigator.share({ title: o.n, text: text }).catch(function () { /* cancelled */ }); else copy(text, 'نُسخت بيانات البطاقة');
   }
   function vcard(id, context) {
