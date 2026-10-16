@@ -67,6 +67,15 @@ for(const [kind,rows] of Object.entries(baseline.records)){
   // Reviewed replacement of the broken Asalah URL with the exact official gallery image.
   const correctedAsalah=kind==='nhc'&&prior.id==='الأصالة\u0000الرياض'&&now.img==='https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2024-02/CAM_02_Cluster_B_0.jpg';
   if(correctedAsalah){assert.equal(now.imageSource,'https://www.nhc.sa/ar/real-estate-development/communities/12592/');assert(now.imageVerifiedAt&&!isNaN(Date.parse(now.imageVerifiedAt)));assert.equal(now.imageType,'تصور معماري رسمي للوجهة');}
+  else if(kind==='projects'&&prior.id==='P029'&&now.img===''){
+   // One exact proven wrong-project image is held, not silently removed or reused.
+   const source='https://jinanfadak.sa/projects/مجمع-محيط-البركة-السكني-التجاري';
+   assert.equal(prior.img,'https://jinanfadak.sa/wp-content/uploads/2021/11/3-1024x682.jpg');
+   assert.equal(now.n,'جي برايم 1');assert.equal(now.dev,'شركة جنان فدك للتطوير و الاستثمار العقاري');assert.equal(now.city,'سيهات');
+   assert.equal(now.imageDisplayStatus,'held_wrong_project_provenance');assert.equal(now.imageType,'رسم عقاري توضيحي، وليس صورة المشروع');assert.equal(now.imagePlaceholder,'assets/images/real-estate-illustrative-apartments.svg');
+   assert.equal(decodeURIComponent(now.imageSource),source);assert.equal(decodeURIComponent(now.imageSourceUrl),source);
+   assert(Array.isArray(now.imageProvenanceHistory)&&now.imageProvenanceHistory.some(h=>h.url===prior.img&&decodeURIComponent(h.source||'')===source&&h.status==='held_from_display'&&h.sourceProjectName==='مجمع محيط البركة السكني التجاري'&&h.sourceProjectLocation==='غرب بلدة الجش بمحافظة القطيف'&&h.checkedAt&&!isNaN(Date.parse(h.checkedAt))&&String(h.reason||'').trim()),'P029 missing exact retained wrong-project provenance');
+  }
   else assert.equal(now.img||'',prior.img,prior.id+' changed a deferred image');
  }
 }

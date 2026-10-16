@@ -14,6 +14,7 @@ const src=fs.readFileSync(path.join(root,'assets/app.js'),'utf8').replace('  boo
 vm.runInNewContext(src,{window,document:doc,location,history,fetch,localStorage:{getItem(){return null},setItem(){},removeItem(){}},navigator:{},setTimeout,clearTimeout,console,URL,Blob,Date,Intl});
 const ids=rows=>Array.from(rows,x=>x.o.id||x.o.n).sort();
 (async()=>{await new Promise(r=>setTimeout(r,100));const a=window.__test,d=a.data();const passed=[];
+ assert(!elements['site-head'].innerHTML.includes('إعداد:'));assert(elements['site-head'].innerHTML.includes('التنفيــذ … النتائــج … الأثــر'));assert(elements.app.innerHTML.includes('فرص واضحة … وصول أسرع'));assert(elements.app.innerHTML.includes('فرص أقرب.<br>إنجاز أكبر.'));assert(elements.app.innerHTML.includes('ابدأ من فرعك.'));assert.equal((elements['site-foot'].innerHTML.match(/إعداد: خالد الماطر/g)||[]).length,1);assert(elements['site-foot'].innerHTML.includes('class="footer-updated"'));assert(!elements.app.innerHTML.includes('خطوتك الأولى'));assert(elements.app.innerHTML.includes('اختر مدينتك وفرعك'));passed.push('One shared footer credit, no header duplicate, direct entry instruction');
  const ev={source:'https://example.invalid/qa-only-evidence',checkedAt:'2026-10-16'};
  d.meta.bankApprovalCatalog={...ev,status:'verified'};a.selectBranch('243',true);a.state().scope='branch';
  const base={id:'qa-one',n:'فرصة قيد المراجعة',dev:'مطور',city:'الرياض',sec:'شرق',phones:['0112345678'],maps:'https://maps.google.com/?q=test'};

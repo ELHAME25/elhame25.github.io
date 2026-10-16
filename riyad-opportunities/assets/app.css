@@ -64,3 +64,14 @@ dialog.detail{padding:0;border:0;border-radius:17px;width:min(760px,calc(100vw -
   .secondary-discovery{margin:-8px 0 18px}
   .stat span{font-size:.78rem;line-height:1.6}
 }
+
+/* Keep multiline Arabic category labels at intrinsic height, never flex-shrunk. */
+@media(max-width:760px){.stat{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:min-content min-content;align-content:center;justify-items:center}.stat b,.stat span{min-width:0;max-width:100%;flex-shrink:0}}
+
+/* One credit per view, in the shared footer; update stays on the left. */
+.site-foot .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:12px;text-align:right}
+.site-foot .footer-credit{color:var(--teal);font-size:.82rem;text-align:right}
+.site-foot .footer-updated{font-size:.72rem;text-align:left;overflow-wrap:anywhere}
+
+.head-title{min-width:0}
+@media(max-width:760px){.tagline{white-space:normal}}

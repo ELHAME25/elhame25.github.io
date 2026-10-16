@@ -195,10 +195,10 @@
   function renderHeader() {
     document.title = 'دليل الفرص';
     var logo = CFG.logo ? '<img class="brand-logo" src="' + esc(CFG.logo) + '" alt="بنك الرياض">' : '';
-    document.getElementById('site-head').innerHTML = '<div class="head-main wrap"><a class="brand" href="#" data-act="home" aria-label="العودة لاختيار الفرع">' + logo + '</a><div class="head-title"><div class="brand-name">دليل الفرص</div><div class="tagline">التنفيذ · النتائج · الأثر</div></div><div class="head-credit">إعداد: خالد الماطر</div></div>';
+    document.getElementById('site-head').innerHTML = '<div class="head-main wrap"><a class="brand" href="#" data-act="home" aria-label="العودة لاختيار الفرع">' + logo + '</a><div class="head-title"><div class="brand-name">دليل الفرص</div><div class="tagline">التنفيــذ … النتائــج … الأثــر</div></div></div>';
   }
   function renderFooter() {
-    document.getElementById('site-foot').innerHTML = '<div class="wrap"><span>' + esc(CFG.updatedLabel) + ': <span class="num">' + esc((D.meta && D.meta.built) || '') + '</span></span></div>';
+    document.getElementById('site-foot').innerHTML = '<div class="wrap"><strong class="footer-credit">إعداد: خالد الماطر</strong><span class="footer-updated">' + esc(CFG.updatedLabel) + ': <span class="num">' + esc((D.meta && D.meta.built) || '') + '</span></span></div>';
   }
 
   /* ---------------- start ---------------- */
@@ -220,7 +220,7 @@
   function renderStart() {
     S = fresh();
     app.innerHTML = '<section class="start"><div class="entry-shell wrap"><div class="entry-visual has-tower">' + (ENTRY_TOWER_ASSET ? '<svg class="entry-tower-photo" viewBox="0 307 710 945" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><image href="' + esc(ENTRY_TOWER_ASSET) + '" x="0" y="0" width="710" height="1536" onload="this.dataset.loaded=1"></image></svg>' : '') + '<div class="entry-copy"><h1>فرص أقرب.<br>إنجاز أكبر.</h1><p>ابدأ من فرعك.</p></div></div><div class="start-card">' +
-      '<div class="entry-form-heading"><span class="eyebrow">خطوتك الأولى</span><h2>اختر مدينتك وفرعك</h2><p>فرص واضحة. وصول أسرع.</p></div>' +
+      '<div class="entry-form-heading"><h2>اختر مدينتك وفرعك</h2><p>فرص واضحة … وصول أسرع</p></div>' +
       '<div class="field"><label for="q-emp">اسم الموظف <small>(اختياري)</small></label><input id="q-emp" class="input" type="text" autocomplete="name" placeholder="اسم الموظف" value="' + esc(S.employee) + '"></div>' +
       '<p id="greet" class="greet start-greet" role="status" aria-live="polite" hidden></p>' +
       '<div class="field"><label for="q-branch">رمز الفرع أو اسمه</label><input id="q-branch" class="input" type="search" autocomplete="off" placeholder="مثال: 243 أو القادسية"></div>' +
