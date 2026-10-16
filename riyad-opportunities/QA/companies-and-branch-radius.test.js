@@ -55,12 +55,12 @@ function check(name, fn) {
     return {branch:'607',offices:officeBranch.length,cityOffices:officeCity.length};
   });
 
-  check('Office radii are inclusive and monotone outside sector cities; cars stay unchanged', () => {
+  check('Non-sector cities retain every office regardless of radius state; cars stay unchanged', () => {
     Q.selectBranch('607', true);
     let previous=[]; const cars=Q.itemsFor('cars','','city').map(x=>x.o.id).sort();
     const counts=[5,10,15,20].map(r=>{
       Q.setScope('radius',r); const rows=Q.itemsFor('offices');
-      assert(rows.every(x=>x.rankD!=null&&x.rankD<=r));
+      assert.deepEqual(rows.map(x=>x.o.id).sort(),Q.itemsFor('offices','','city').map(x=>x.o.id).sort());
       assert(previous.every(id=>rows.some(x=>x.o.id===id))); previous=rows.map(x=>x.o.id);
       assert.deepEqual(Q.itemsFor('cars').map(x=>x.o.id).sort(),cars);
       return {radius:r,offices:rows.length};

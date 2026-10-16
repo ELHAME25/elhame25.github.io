@@ -1,6 +1,6 @@
 # Image notices
 
-These notices accompany the distributed image files. The city photographs are licensed separately from the application. Only the CC0 Abha/Makkah photos, public-domain historical Madinah panorama, and user-supplied Riyad Bank facade are active in the caption-free employee interface. All CC BY/CC BY-SA photographs below remain archived, not displayed; other cities use a neutral illustration pending cleared replacements. Attribution, source links, modification notices and the original licenses are retained below and in [the standalone notices page](assets/images/cities/credits.html). The employee interface has no photo-source button or captions.
+These notices accompany the distributed image files. The city photographs are licensed separately from the application. Active city imagery includes the CC0 Abha/Makkah photos, public-domain Madinah panorama, and generated decorative Riyadh/Buraydah city illustrations. The user-supplied Riyad Bank facade is used only on the entry screen. All CC BY/CC BY-SA photographs below remain archived, not displayed; other cities use a neutral illustration pending cleared replacements. Attribution, source links, modification notices and the original licenses are retained below and in [the standalone notices page](assets/images/cities/credits.html). The employee interface has no photo-source button or captions.
 
 The bank logo is the existing original Riyad Bank logo. No generic building is represented as Riyad Bank headquarters. The entry photograph was supplied by the user for this requested bank-facade background. The original JPEG is distributed unchanged; its phone interface and black margins are excluded only by the SVG display viewBox. No bank signage or building pixels were generated or retouched.
 
@@ -155,3 +155,9 @@ Resized and converted to WebP. CSS display cropping varies by viewport. Image de
 ## Madinah public-domain replacement
 
 Prophet’s Mosque at sunset — Ahmed Medineli. [Original and author public-domain release](https://commons.wikimedia.org/wiki/File:Madina_Haram_at_evening.jpg). Historical photograph, 2004-04-24; resized and converted to WebP, CSS crop varies. [Distributed image](assets/images/cities/madinah-panorama.webp). Not a claim about present-day conditions.
+
+## Generated decorative imagery (2026-10-16)
+
+Riyadh results use the existing generated skyline panorama, not the user-supplied bank entrance facade. The bank facade remains on the entry screen only. `modern-apartments-illustrative.webp` and `modern-villa-illustrative.webp` are AI-generated generic contemporary Saudi architectural illustrations, not photographs or evidence of any named project. No project facts, inventory, location, developer affiliation or construction status are inferred from these images. Generated using the built-in image generation tool; originals retained with project working files.
+
+The Buraydah city banner is an AI-generated decorative interpretation inspired by the city's Water Tower, not a documentary photograph of the skyline. Landmark identity reference: https://saudipedia.com/en/buraydah-water-tower . No property location or availability is inferred from it.

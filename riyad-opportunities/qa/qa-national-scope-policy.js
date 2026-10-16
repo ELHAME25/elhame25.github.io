@@ -42,7 +42,7 @@ function assertNearFirst(rows,label){let last=-Infinity,unknown=false;for(const 
     const cityOffices=A.itemsFor('offices','','city'), isSector=D.meta.sectorCities.some(c=>A.sameCity(c,b.city));
     const defaultOffices=isSector&&b.sec?cityOffices.filter(x=>(x.o.sectors||[x.o.sec]).includes(b.sec)):cityOffices;
     assert.deepEqual(ids(A.itemsFor('offices','','branch')),ids(defaultOffices),`${b.c}: default offices not full sector/city`);assert.equal(A.radiusApplies('offices','branch'),false);
-    if(b.lat!=null&&b.lon!=null){
+    if(isSector&&b.lat!=null&&b.lon!=null){
       for(const radius of [5,10,15,20]){A.state().radius=radius;A.state().scope='radius';const expected=defaultOffices.filter(x=>x.rankD!=null&&x.rankD<=radius);const actual=A.itemsFor('offices','','radius');assert.deepEqual(ids(actual),ids(expected),`${b.c}: optional office distance ${radius}`);assertNearFirst(actual,`${b.c}/offices`);totals.officeRadii++;}
     }else{assert.equal(A.radiusApplies('offices','radius'),false);totals.missingOfficePins++;}
     if(isSector){A.state().scope='sector';A.state().explore='غرب';assert.deepEqual(ids(A.itemsFor('offices','غرب','sector')),ids(cityOffices.filter(x=>(x.o.sectors||[x.o.sec]).includes('غرب'))),`${b.c}: office selected sector not respected`);}

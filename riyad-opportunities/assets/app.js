@@ -376,7 +376,7 @@
   function radiusApplies(kind, scope) {
     scope = scope || S.scope;
     // Distance is opt-in, never the default definition of a branch catchment.
-    return kind === 'offices' && scope === 'radius' && S.branch && typeof S.branch.lat === 'number' && isFinite(S.branch.lat) && typeof S.branch.lon === 'number' && isFinite(S.branch.lon);
+    return kind === 'offices' && scope === 'radius' && S.branch && sectorCity(S.branch.city) && typeof S.branch.lat === 'number' && isFinite(S.branch.lat) && typeof S.branch.lon === 'number' && isFinite(S.branch.lon);
   }
   function isTabuk() { return S.branch && sameCity(S.branch.city, 'تبوك'); }
   function documentedBranchCoverage(o) {
@@ -882,6 +882,7 @@
 };
   // Only sources cleared for this caption-free interface are renderable.
   var CITY_HERO_ASSETS = {
+    'بريدة': { src: 'assets/images/city-buraidah-illustrative.webp', position: '32% 50%', real: false, displayPermission: 'generated_illustration' },
     'الرياض': { src: 'assets/images/city-riyadh.webp', position: '50% 50%', real: false, displayPermission: 'generated_illustration' },
     'أبها': Object.assign({}, CITY_IMAGE_ARCHIVE['أبها'], { displayPermission: 'CC0' }),
     'مكة المكرمة': Object.assign({}, CITY_IMAGE_ARCHIVE['مكة المكرمة'], { displayPermission: 'CC0' }),
@@ -1037,8 +1038,8 @@
     return view;
   }
   function reg(kind, o) { REG.push({ k: kind, o: contactView(o) }); return REG.length - 1; }
-  var GENERIC_PROPERTY_IMAGE = 'assets/images/real-estate-illustrative-apartments.svg';
-  var PROPERTY_ILLUSTRATIONS = [GENERIC_PROPERTY_IMAGE, 'assets/images/real-estate-illustrative-townhomes.svg', 'assets/images/real-estate-illustrative-courtyard.svg', 'assets/images/real-estate-illustrative-villa.svg'];
+  var GENERIC_PROPERTY_IMAGE = 'assets/images/modern-apartments-illustrative.webp';
+  var PROPERTY_ILLUSTRATIONS = [GENERIC_PROPERTY_IMAGE, 'assets/images/modern-villa-illustrative.webp', GENERIC_PROPERTY_IMAGE, 'assets/images/modern-villa-illustrative.webp'];
   function imageFallback(kind, o) {
     var type = String(o && o.type || '');
     if (/شقق|استديو/i.test(type)) return PROPERTY_ILLUSTRATIONS[0];
@@ -1047,7 +1048,7 @@
     return GENERIC_PROPERTY_IMAGE;
   }
   function ph(title, sub, kind, o) {
-    return '<img class="property-image" loading="lazy" decoding="async" alt="رسم عقاري توضيحي" data-generic="1" data-src="' + esc(imageFallback(kind, o)) + '">';
+    return '<img class="property-image" loading="lazy" decoding="async" alt="صورة عقارية توضيحية وليست تصويرًا للمشروع" data-generic="1" data-src="' + esc(imageFallback(kind, o)) + '">';
   }
   function displayImage(kind, o) {
     var url = String(o && o.img || ''), id = String(o && o.id || ''), decoded = url;
@@ -1270,7 +1271,7 @@
       (o.salesCenters || []).forEach(function (center) { if (center.maps) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(center.maps) + '">مركز مبيعات الشركة</a>'; });
     }
     if ((k === 'projects' || k === 'opps') && displayEligible('projects', o)) { rows.push(['اعتماد البنك', 'موثق وفق المصدر'], ['تاريخ التحقق', o.bankApproval.checkedAt]); links += evidenceLink(o.bankApproval.source, 'مصدر اعتماد البنك'); }
-    if ((k === 'opps' || k === 'projects') && displayEligible('opps', o)) { rows.push(['تاريخ التحقق من الإتاحة', o.availability.checkedAt]); links += evidenceLink(o.availability.source, 'مصدر الإتاحة للبيع'); }
+    if ((k === 'opps' || k === 'projects') && o.availability && o.availability.status === 'available' && validEvidence(o.availability)) { rows.push(['تاريخ التحقق من الإتاحة', o.availability.checkedAt]); links += evidenceLink(o.availability.source, 'مصدر الإتاحة للبيع'); }
     if (o.destinationName && (o.destinationSource || validEvidence(o.destinationEvidence))) { rows.push(['الوجهة', o.destinationName]); links += evidenceLink(o.destinationSource || o.destinationEvidence.source, 'مصدر الارتباط بالوجهة'); }
     rows = (rows || []).filter(function (r) { return r[1]; });
     dlg.innerHTML = '<div class="d-top"><button class="btn back-results" data-close>← ' + backLabel + '</button></div>' +       '<div class="d-body"><h2>' + esc(o.n) + '</h2><button class="btn" data-close>العودة إلى القائمة</button>' + (k === 'projects' || k === 'opps' ? priceLine(o) : '') +

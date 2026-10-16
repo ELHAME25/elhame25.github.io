@@ -78,3 +78,6 @@ dialog.detail{padding:0;border:0;border-radius:17px;width:min(760px,calc(100vw -
 
 /* Noto Arabic ink extends ~2px past its line box: reserve space, never clip it. */
 @media(max-width:760px){.stat span,.vcard h3,.lcard h3{padding-block:3px}}
+
+/* Arabic scoped count reads right-to-left without changing numeric cards. */
+.stat .num.nhc-stat-count{direction:rtl;unicode-bidi:isolate;}

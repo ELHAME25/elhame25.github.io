@@ -268,14 +268,14 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const northCars = A.itemsFor('cars', 'شمال', 'sector');
   const northMapped = northCars.length > 0 && northCars.every(x => x.o.zone === 'qadisiyah');
   A.state().explore = 'شرق'; A.state().scope = 'sector'; A.state().tab = 'projects'; A.renderBranch();
-  const eastOnlyActive = els.app.innerHTML.includes('value="sector:شرق" selected') && els.app.innerHTML.includes('value="sector:شمال">');
+  const eastOnlyActive = els.app.innerHTML.includes('value="branch" selected>شرق الرياض') && els.app.innerHTML.includes('value="sector:شمال">');
   const eastProjects = A.itemsFor('projects', 'شرق', 'sector');
   const eastSectorOnly = eastProjects.every(x => {
     const sectors = x.o.sectors && x.o.sectors.length ? x.o.sectors : (x.o.sec ? [x.o.sec] : []);
     return sectors.includes('شرق');
   });
   A.state().explore = 'شمال'; A.renderBranch();
-  const northOnlyActive = els.app.innerHTML.includes('value="sector:شمال" selected') && els.app.innerHTML.includes('value="sector:شرق">');
+  const northOnlyActive = els.app.innerHTML.includes('value="sector:شمال" selected') && els.app.innerHTML.includes('value="branch">شرق الرياض');
   const northProjects = A.itemsFor('projects', 'شمال', 'sector');
   const northSectorOnly = northProjects.every(x => {
     const sectors = x.o.sectors && x.o.sectors.length ? x.o.sectors : (x.o.sec ? [x.o.sec] : []);
