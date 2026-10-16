@@ -2463,6 +2463,24 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unverified",
+      "source": "https://thabatre.sa/maddlazurd/",
+      "checkedAt": "2026-10-16T09:54:00Z",
+      "reason": "linked_project_name_crosswalk_unresolved",
+      "basis": "Current record is سهب, but its linked developer page is titled مد لازورد and contains no سهب identifier. Same developer/city does not prove a rename or exact project identity. No availability, model details or totals are transferred.",
+      "verificationMethod": "official_public_project_page",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "projectLinkAudit": {
+      "status": "identity_unresolved",
+      "source": "https://thabatre.sa/maddlazurd/",
+      "checkedAt": "2026-10-16T09:54:00Z",
+      "recordName": "سهب",
+      "linkedPageName": "مد لازورد",
+      "renameProven": false
     }
   },
   {
@@ -2650,6 +2668,16 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://tamkean.sa/en/ezwah/",
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "sourceStatus": "سجل اهتمامك / استفسر أكثر",
+      "basis": "The exact project developer page exposes enquiry or interest registration, but no explicit current sale-open status or positively available unit was established. This classification describes the observed evidence, not proof the project has no units. Keep out of active-for-sale views.",
+      "verificationMethod": "official_public_page_read",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
     }
   },
   {
@@ -3242,6 +3270,16 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "unverified",
+      "source": "https://tamkean.sa/en/masaya2/",
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "sourceStatus": "10 sold of 40; no explicit current available unit",
+      "basis": "The exact Masaya2 page reports a partial historical sold counter and construction completion. Neither subtraction nor completed construction proves current sale availability. No explicit current sale-open status or available unit was verified.",
+      "verificationMethod": "official_public_page_read",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
     }
   },
   {
@@ -3517,6 +3555,34 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47137/",
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "sourceStatus": "متاح",
+      "basis": "NHC explicitly marks exact Noma2, Tamkean, Dammam available and links its booking page. Developer exact phase2 page independently exists; its sold/total counter is not converted into remaining inventory.",
+      "verificationMethod": "official_public_page_read",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "developerProjectUrl": "https://tamkean.sa/noma-2/",
+    "bookingUrl": "https://sakani.sa/app/offplan-projects/1099",
+    "projectTotalConflict": {
+      "status": "unresolved",
+      "values": [
+        {
+          "value": 864,
+          "source": "https://www.nhc.sa/real-estate-development/projects/47137/"
+        },
+        {
+          "value": 896,
+          "source": "https://tamkean.sa/noma-2/"
+        }
+      ],
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "scope": "total_project_units_not_remaining_inventory",
+      "displaySingleTotalAsVerified": false
     }
   },
   {
@@ -3566,6 +3632,16 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "sold_out",
+      "source": "https://tamkean.sa/noma/",
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "sourceStatus": "مباع بالكامل",
+      "basis": "Exact original Noma phase1 developer page explicitly labels the project fully sold and reports 304 sold of 304. Existing record only; retain provenance and exclude active views. Do not transfer this status to Noma2.",
+      "verificationMethod": "official_public_page_read",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
     }
   },
   {
@@ -3686,6 +3762,16 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://thabatre.sa/madd-residents-2/",
+      "checkedAt": "2026-10-16T09:54:00Z",
+      "reason": "interest_registration_only_observed",
+      "basis": "The developer project page presents models and an interest-registration link, but no explicit current sale-open status or available unit. Model totals and zero-valued animated counters are not remaining inventory. Keep outside active-sale views; no completion claim.",
+      "verificationMethod": "official_public_project_page",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
     }
   },
   {
@@ -6008,6 +6094,16 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://maya.sa.com/projects/7",
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "sourceStatus": "سجل اهتمامك / استفسر أكثر",
+      "basis": "The exact project developer page exposes enquiry or interest registration, but no explicit current sale-open status or positively available unit was established. This classification describes the observed evidence, not proof the project has no units. Keep out of active-for-sale views.",
+      "verificationMethod": "official_public_page_read",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
     }
   },
   {
@@ -7672,6 +7768,16 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://maya.sa.com/projects/2",
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "sourceStatus": "سجل اهتمامك / استفسر أكثر",
+      "basis": "The exact project developer page exposes enquiry or interest registration, but no explicit current sale-open status or positively available unit was established. This classification describes the observed evidence, not proof the project has no units. Keep out of active-for-sale views.",
+      "verificationMethod": "official_public_page_read",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
     }
   },
   {
@@ -8663,6 +8769,16 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://maya.sa.com/projects/5",
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "sourceStatus": "سجل اهتمامك / استفسر أكثر",
+      "basis": "The exact project developer page exposes enquiry or interest registration, but no explicit current sale-open status or positively available unit was established. This classification describes the observed evidence, not proof the project has no units. Keep out of active-for-sale views.",
+      "verificationMethod": "official_public_page_read",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
     }
   },
   {
@@ -20954,6 +21070,16 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "interest_only",
+      "source": "https://thabatre.sa/al-athbah/",
+      "checkedAt": "2026-10-16T09:54:00Z",
+      "reason": "interest_registration_only_observed",
+      "basis": "The developer project page presents models and an interest-registration link, but no explicit current sale-open status or available unit. Model totals and zero-valued animated counters are not remaining inventory. Keep outside active-sale views; no completion claim.",
+      "verificationMethod": "official_public_project_page",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
     }
   },
   {
@@ -21921,6 +22047,16 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "sold_out",
+      "source": "https://tamkean.sa/en/reem/",
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "sourceStatus": "مباع بالكامل",
+      "basis": "Exact Reem Residential developer page in Riyadh explicitly labels the project fully sold and reports 80 sold of 80. Generic contact forms do not override the explicit sellout. Existing record only; no new sold-out candidate.",
+      "verificationMethod": "official_public_page_read",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
     }
   },
   {
@@ -22998,6 +23134,27 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "unverified",
+      "source": "https://alajlaninvest.com/project/riv34/",
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "sourceStatus": "Conflicting priced detail cards versus all-sold unit table",
+      "basis": "The exact Riviera34 page says sale open and retains prices for units14/17 in detail cards, but the summary table marks all21 units, including14/17, sold. Conflicting official content prevents either an available or fully-sold assertion; keep out of active views until reconciled.",
+      "verificationMethod": "official_public_page_read",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "availabilityConflict": {
+      "status": "unresolved",
+      "source": "https://alajlaninvest.com/project/riv34/",
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "pricedDetailUnitLabels": [
+        "14",
+        "17"
+      ],
+      "summaryTableStatus": "all_21_rows_marked_sold",
+      "notInferredRemainingInventory": true
     }
   },
   {
@@ -23095,6 +23252,24 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://alajlaninvest.com/project/riv27/",
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "sourceStatus": "حالياً كامل المشروع معروض حصرياً على المنصة",
+      "basis": "Exact Riviera27 Al-Quds Riyadh developer page explicitly states the project is currently offered exclusively through its named partner Rawaf and links available units. This is an explicit current sale offering, not generic registration. Rawaf returned an application shell, so no specific available unit, stock quantity or successful booking is asserted.",
+      "verificationMethod": "official_public_page_read",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "saleChannel": {
+      "label": "منصة رواف",
+      "url": "https://www.rawaf.ai/",
+      "source": "https://alajlaninvest.com/project/riv27/",
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "relationship": "developer_declared_exclusive_listing_partner",
+      "unitInventoryVerified": false
     }
   },
   {
@@ -31822,6 +31997,40 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://alajlaninvest.com/project/riv-nasq/",
+      "checkedAt": "2026-10-16T09:51:00Z",
+      "sourceStatus": "Active priced units alongside separately marked sold units",
+      "basis": "The exact Riviera58 Nasq developer page in Al-Arid has a project unit table separating sold units from units carrying current sale prices, including C1. No project-wide remaining count is inferred.",
+      "verificationMethod": "official_public_page_read",
+      "remainingUnitCount": null,
+      "liveTransactionTested": false
+    },
+    "unitExamples": [
+      {
+        "label": "C1",
+        "type": "شقة",
+        "floor": "الأرضي",
+        "source": "https://alajlaninvest.com/project/riv-nasq/",
+        "checkedAt": "2026-10-16T09:51:00Z",
+        "price": 929000,
+        "currency": "SAR",
+        "priceBasis": "published_price_tax_inclusion_unspecified",
+        "areaSqm": 106.51,
+        "areaScope": "published_unit_area",
+        "bedrooms": 2,
+        "bathrooms": 4,
+        "notProjectStartingPrice": true
+      }
+    ],
+    "fieldEvidence": {
+      "unitExamples": {
+        "source": "https://alajlaninvest.com/project/riv-nasq/",
+        "checkedAt": "2026-10-16T09:51:00Z",
+        "scope": "specific_unit_example_not_remaining_total_or_project_minimum"
+      }
     }
   },
   {
