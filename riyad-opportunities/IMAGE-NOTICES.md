@@ -161,3 +161,8 @@ Prophet’s Mosque at sunset — Ahmed Medineli. [Original and author public-dom
 Riyadh results use the existing generated skyline panorama, not the user-supplied bank entrance facade. The bank facade remains on the entry screen only. `modern-apartments-illustrative.webp` and `modern-villa-illustrative.webp` are AI-generated generic contemporary Saudi architectural illustrations, not photographs or evidence of any named project. No project facts, inventory, location, developer affiliation or construction status are inferred from these images. Generated using the built-in image generation tool; originals retained with project working files.
 
 The Buraydah city banner is an AI-generated decorative interpretation inspired by the city's Water Tower, not a documentary photograph of the skyline. Landmark identity reference: https://saudipedia.com/en/buraydah-water-tower . No property location or availability is inferred from it.
+
+
+## Complete city identity illustrations — 2026-10-16
+
+The generated city identity assets listed in `assets/images/cities/generated-identities.json` are new decorative illustrations, not documentary photographs or exact property representations. Source links identify the locality/landmark used as conceptual reference; they do not claim those sites supplied these generated images. Original generation provenance and visual crop checks are retained. No on-image or employee-facing caption is added. Existing approved Riyadh and Buraydah assets remain unchanged.

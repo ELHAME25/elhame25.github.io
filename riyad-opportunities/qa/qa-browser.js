@@ -45,7 +45,7 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
   await page.goto(origin,{waitUntil:'domcontentloaded'});await page.waitForSelector('#q-branch');await fit(page,'Entry '+viewport.width);
   if(viewport.width>760){const form=await page.locator('.start-card').boundingBox(),art=await page.locator('.entry-visual').boundingBox();assert(form.x>art.x,'Entry form must be right of artwork');}
   assert(await page.locator('.brand-logo').evaluate(i=>i.complete&&i.naturalWidth>0));assert.equal(await page.locator('body').getByText('إعداد: خالد الماطر',{exact:true}).count(),1);
-  assert.equal(await page.locator('#site-head').getByText('إعداد: خالد الماطر',{exact:true}).count(),0);assert.equal(await page.locator('#site-foot').getByText('إعداد: خالد الماطر',{exact:true}).count(),1);assert.equal(await page.locator('.tagline').innerText(),'التنفيــذ … النتائــج … الأثــر');assert.equal(await page.locator('.entry-form-heading p').innerText(),'فرص واضحة … وصول أسرع');assert.equal(await page.getByText('خطوتك الأولى',{exact:true}).count(),0);assert.equal(await page.locator('.entry-form-heading h2').innerText(),'اختر مدينتك وفرعك');const footer=await page.locator('#site-foot').evaluate(n=>{const a=n.querySelector('.footer-credit').getBoundingClientRect(),b=n.querySelector('.footer-updated').getBoundingClientRect();return {creditCenter:a.x+a.width/2,updateCenter:b.x+b.width/2,updateAlign:getComputedStyle(n.querySelector('.footer-updated')).textAlign};});assert(footer.updateCenter<footer.creditCenter);assert.equal(footer.updateAlign,'left');const head=await page.locator('.head-main').evaluate(n=>{const a=n.querySelector('.head-title').getBoundingClientRect(),b=n.querySelector('.brand-logo').getBoundingClientRect();return {titleCenter:a.x+a.width/2,logoCenter:b.x+b.width/2};});assert(Math.abs(head.titleCenter-viewport.width/2)<3);assert(head.logoCenter>head.titleCenter);
+  assert.equal(await page.locator('#site-head').getByText('إعداد: خالد الماطر',{exact:true}).count(),0);assert.equal(await page.locator('#site-foot').getByText('إعداد: خالد الماطر',{exact:true}).count(),1);assert.equal(await page.locator('.tagline').innerText(),'التنفيــذ … النتائــج … الأثــر');assert.equal(await page.locator('.entry-form-heading p').count(),0);assert.equal(await page.getByText('خطوتك الأولى',{exact:true}).count(),0);assert.equal(await page.locator('.entry-form-heading h2').innerText(),'اختر مدينتك وفرعك');const footer=await page.locator('#site-foot').evaluate(n=>{const a=n.querySelector('.footer-credit').getBoundingClientRect(),b=n.querySelector('.footer-updated').getBoundingClientRect();return {creditCenter:a.x+a.width/2,updateCenter:b.x+b.width/2,updateAlign:getComputedStyle(n.querySelector('.footer-updated')).textAlign};});assert(footer.updateCenter<footer.creditCenter);assert.equal(footer.updateAlign,'left');const head=await page.locator('.head-main').evaluate(n=>{const a=n.querySelector('.head-title').getBoundingClientRect(),b=n.querySelector('.brand-logo').getBoundingClientRect();return {titleCenter:a.x+a.width/2,logoCenter:b.x+b.width/2};});assert(Math.abs(head.titleCenter-viewport.width/2)<3);assert(head.logoCenter>head.titleCenter);
   assert.equal(await page.locator('#site-foot').getByText('مصادر الصور',{exact:true}).count(),0);assert.equal(await page.locator('.decorative-caption:visible,.image-caption:visible').count(),0);assert.equal(await page.locator('.brand-name').count(),1);assert.equal(await page.locator('img[src*="entry-architecture"]').count(),0);
   await page.waitForSelector('.entry-tower-photo image[data-loaded="1"]',{state:'attached'});
   await capture(page,'entry-'+viewport.width+'.png');
@@ -74,16 +74,36 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
  await page.fill('#q-sec','');await page.click('[data-tab="projects"]');assert.equal(await page.locator('.vcard').count(),12);await page.locator('.vcard [data-detail]').first().click();await page.waitForSelector('#detail[open]');assert(await page.locator('#detail').innerText().then(x=>x.includes('موثق وفق المصدر')));assert(!await page.locator('#detail').innerText().then(x=>x.includes('INTERNAL-QA-ONLY')));await page.keyboard.press('Escape');
  await page.click('[data-tab="nhc"]');const fursan=page.locator('.vcard').filter({has:page.locator('h3',{hasText:'الفرسان'})});await fursan.locator('[data-anchor="destination-projects"]').click();await page.waitForSelector('#detail[open] #destination-projects .vcard');await page.locator('#destination-projects .vcard [data-detail]').first().click();await page.waitForSelector('#detail[open] .back-results');assert((await page.locator('#detail .back-results').innerText()).includes('العودة إلى الوجهة'));await page.locator('#detail .back-results').click();await page.waitForSelector('#detail[open] #destination-projects');await page.keyboard.press('Escape');assert.equal(await page.locator('#detail[open]').count(),0);
  checks.push({fixturesOnlyInMemory:true,initial12:true,more24:true,modalEscape:true,browserBackForward:true,filtersAndScrollPreserved:true,internalProjectCodeHidden:true,nhcExactProjectAndNestedBack:true});await context.close();
- // City-specific real data and image rendering, with no cross-city substitution.
- const cityIdentityCases=[['الباحة','al-baha-cc0'],['الخبر','khobar-pexels'],['جدة','jeddah-pexels-night'],['الظهران','dhahran-pexels'],['الجبيل','jubail-pexels'],['ينبع','yanbu-pexels']];
+ // All city-specific real-data heroes, with no cross-city substitution.
+ const expectedCityHeroes={
+ 'الرياض':'assets/images/city-riyadh.webp','بريدة':'assets/images/city-buraidah-illustrative.webp',
+ 'الباحة':'assets/images/cities/al-baha-cc0.webp','الخبر':'assets/images/cities/khobar-pexels.webp',
+ 'جدة':'assets/images/cities/jeddah-pexels-night.webp','الظهران':'assets/images/cities/dhahran-pexels.webp',
+ 'الجبيل':'assets/images/cities/jubail-pexels.webp','ينبع':'assets/images/cities/yanbu-pexels.webp'
+ };
+ const appSource=fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
+ // These established CC0/PD paths remain the app's reviewed city sources.
+ const archived=appSource.match(/var CITY_IMAGE_ARCHIVE = (\{[\s\S]*?\});/);assert(archived);
+ const archiveRows=JSON.parse(archived[1]);expectedCityHeroes['أبها']=archiveRows['أبها'].src;expectedCityHeroes['مكة المكرمة']=archiveRows['مكة المكرمة'].src;
+ expectedCityHeroes['المدينة المنورة']='assets/images/cities/madinah-panorama.webp';
+ const generatedCities=JSON.parse(fs.readFileSync(path.join(root,'assets/images/cities/generated-identities.json'),'utf8')).assets;
+ for(const x of generatedCities)expectedCityHeroes[x.city]=x.file;
+ const displayedCities=[...new Set(branchData.map(x=>x.city))];
+ for(const city of displayedCities)assert(expectedCityHeroes[city],'Missing own-city image: '+city);
  for(const width of [1440,390]){
   const cx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});const cp=await cx.newPage();cp.on('pageerror',e=>pageErrors.push(e.message));
-  for(const [city,asset] of cityIdentityCases){
-   const b=branchData.find(x=>x.city===city);assert(b,'Missing actual branch for '+city);
+  for(const city of displayedCities){
+   const b=branchData.find(x=>x.city===city),asset=expectedCityHeroes[city];
    await cp.goto(origin+'/#b'+b.c);await cp.waitForSelector('.stat');
-   const hero=cp.locator('img[src="assets/images/cities/'+asset+'.webp"]');await hero.waitFor();await hero.evaluate(i=>i.decode());assert(await hero.evaluate(i=>i.complete&&i.naturalWidth>0));
-   await fit(cp,'City '+city+' '+width);await capture(cp,'city-'+asset+'-'+width+'.png');checks.push({city,width,exactCityHero:true,realData:true});
+   const hero=cp.locator('.city-hero img');await hero.waitFor();await hero.evaluate(i=>i.decode());assert.equal(await hero.getAttribute('src'),asset);assert(await hero.evaluate(i=>i.complete&&i.naturalWidth>0));
+   await fit(cp,'City '+city+' '+width);await cp.locator('.city-hero').screenshot({path:path.join(artifacts,'city-hero-'+b.c+'-'+width+'.png')});checks.push({city,width,exactCityHero:true,realData:true});
   }
+  await cp.goto(origin);await cp.waitForSelector('#q-city');await cp.selectOption('#q-city','جازان');
+  assert.equal(await cp.locator('.branch-item').filter({hasText:'مركز مبيعات جازان'}).count(),1);
+  await cp.locator('.branch-item').filter({hasText:'مركز مبيعات جازان'}).click();await cp.click('#go-branch');await cp.waitForSelector('.hero-branch');
+  assert((await cp.locator('.hero-branch').innerText()).includes('مركز مبيعات جازان'));assert(cp.url().endsWith('#b711'));checks.push({jazanSalesCenter711:true,width,oneUnifiedCityList:true});
+  await cp.goto(origin);await cp.waitForSelector('#q-city');await cp.selectOption('#q-city','الدمام');
+  assert(!/[·]\s*(شرق|غرب|شمال|جنوب|وسط)/.test(await cp.locator('#branch-list').innerText()));
   await cx.close();
  }
  // Missing source authority is a pending catalog, never an advertised zero.
@@ -96,5 +116,13 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
  await reviewPage.route('**/data/meta.json?*',route=>{const meta=JSON.parse(fs.readFileSync(path.join(root,'data/meta.json'),'utf8'));meta.bankApprovalCatalog={status:'verified',source:'https://example.invalid/qa-only-bank',checkedAt:'2026-10-16'};return route.fulfill({json:meta});});
  await reviewPage.route('**/data/projects.json?*',route=>route.fulfill({json:reviewRows}));await reviewPage.route('**/data/opportunities.json?*',route=>route.fulfill({json:[]}));
  await reviewPage.goto(origin+'/#b243');await reviewPage.waitForSelector('.stat');await reviewPage.click('[data-tab="opps"]');assert.equal(await reviewPage.locator('[data-tab="opps"]').getAttribute('aria-pressed'),'true');assert.equal(await reviewPage.locator('[data-tab="opps"] .num').innerText(),'—');assert(await reviewPage.locator('.verification-pending').isVisible());const reviewQA=await reviewPage.evaluate(()=>window.__rogQA());assert.equal(reviewQA.sections.opps.length,0);assert.equal(reviewQA.pendingCounts.opps,1);assert.equal(await reviewPage.locator('.vcard').count(),0);assert(!(await reviewPage.locator('body').innerText()).includes('QA_UNVERIFIED_NOT_PUBLIC'));await fit(reviewPage,'Pending verification 320');await reviewPage.fill('#q-sec','no_matching_name');assert.equal(await reviewPage.locator('.empty h3').innerText(),'لا نتائج مطابقة');reviewRows=[];await reviewPage.reload();await reviewPage.waitForSelector('.stat');await reviewPage.click('[data-tab="opps"]');assert.equal(await reviewPage.locator('[data-tab="opps"]').getAttribute('aria-pressed'),'true');assert.equal(await reviewPage.locator('[data-tab="opps"] .num').innerText(),'0');assert.equal(await reviewPage.locator('.verification-pending').count(),0);checks.push({inScopeReviewFixtureOnly:true,pendingDashNotInventory:true,trueEmptyZero:true,queryNoMatchDistinct:true});await reviewContext.close();
+ // Fault injection: official photos and both bundled property images unavailable.
+ const imageFaultContext=await browser.newContext({viewport:{width:390,height:844}});const imageFaultPage=await imageFaultContext.newPage();
+ imageFaultPage.on('pageerror',e=>pageErrors.push(e.message));
+ await imageFaultPage.route('**/*',route=>{const req=route.request(),u=req.url();return req.resourceType()==='image'&&(u.includes('/modern-apartments-illustrative.webp')||u.includes('/modern-villa-illustrative.webp')||!u.startsWith(origin))?route.abort():route.continue();});
+ await imageFaultPage.goto(origin+'/#b243');await imageFaultPage.waitForSelector('.stat');await imageFaultPage.click('[data-tab="opps"]');await imageFaultPage.locator('#content img[data-generic="1"]').evaluateAll(nodes=>nodes.forEach(i=>i.loading='eager'));
+ await imageFaultPage.waitForFunction(()=>{const list=[...document.querySelectorAll('#content img[data-generic="1"]')];return list.length>0&&list.every(i=>i.src.startsWith('data:image/webp;base64,')&&i.complete&&i.naturalWidth>0);});
+ assert.equal(await imageFaultPage.locator('.image-caption:visible,.decorative-caption:visible').count(),0);
+ checks.push({actualBrowserImageFailures:true,officialAndLocalImagesBlocked:true,embeddedModernImageLoaded:true,noVisibleCaptions:true});await imageFaultContext.close();
  assert.deepEqual(pageErrors,[]);await browser.close();await new Promise(r=>server.close(r));const result={ok:true,checks,pageErrors,imageChecks,mobileChecks,screenshots:fs.readdirSync(artifacts).filter(x=>x.endsWith('.png'))};fs.writeFileSync(path.join(artifacts,'browser-results.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
 })().catch(async e=>{console.error(e.stack||e);fs.writeFileSync(path.join(artifacts,'browser-failure.txt'),String(e.stack||e));if(browser)await browser.close();server.close();process.exitCode=1;});

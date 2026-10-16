@@ -19,3 +19,4 @@ node "$(dirname -- "$0")/qa-context-phone.js" "$ROOT"
 node "$ROOT/QA/companies-and-branch-radius.test.js" "$ROOT"
 node "$(dirname -- "$0")/qa-retained-data.js" "$ROOT"
 
+node "$(dirname -- "$0")/qa-image-quality.js" "$ROOT"

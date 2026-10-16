@@ -220,7 +220,7 @@
   function renderStart() {
     S = fresh();
     app.innerHTML = '<section class="start"><div class="entry-shell wrap"><div class="entry-visual has-tower">' + (ENTRY_TOWER_ASSET ? '<svg class="entry-tower-photo" viewBox="0 307 710 945" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><image href="' + esc(ENTRY_TOWER_ASSET) + '" x="0" y="0" width="710" height="1536" onload="this.dataset.loaded=1"></image></svg>' : '') + '<div class="entry-copy"><h1>فرص أقرب.<br>إنجاز أكبر.</h1><p>ابدأ من فرعك.</p></div></div><div class="start-card">' +
-      '<div class="entry-form-heading"><h2>اختر مدينتك وفرعك</h2><p>فرص واضحة … وصول أسرع</p></div>' +
+      '<div class="entry-form-heading"><h2>اختر مدينتك وفرعك</h2></div>' +
       '<div class="field"><label for="q-emp">اسم الموظف <small>(اختياري)</small></label><input id="q-emp" class="input" type="text" autocomplete="name" placeholder="اسم الموظف" value="' + esc(S.employee) + '"></div>' +
       '<p id="greet" class="greet start-greet" role="status" aria-live="polite" hidden></p>' +
       '<div class="field"><label for="q-branch">رمز الفرع أو اسمه</label><input id="q-branch" class="input" type="search" autocomplete="off" placeholder="مثال: 243 أو القادسية"></div>' +
@@ -256,7 +256,7 @@
       selectedCode = exact && exact.codeStatus !== 'local_internal_reference' && (!city || sameCity(exact.city, city)) ? exact.c : '';
       var shown = items.slice(0, 80);
       document.getElementById('branch-list').innerHTML = shown.map(function (b) {
-        return '<button class="branch-item' + (selectedCode === b.c ? ' selected' : '') + '" type="button" role="listitem" aria-pressed="' + (selectedCode === b.c) + '" data-code="' + esc(b.c) + '"><span class="code num">' + (b.codeStatus === 'local_internal_reference' ? 'مرجع داخلي' : esc(b.c)) + '</span><span class="bn">' + esc(b.n) + '</span><span class="bc">' + esc(b.city) + (b.sec ? ' · ' + esc(b.sec) : '') + '</span></button>';
+        return '<button class="branch-item' + (selectedCode === b.c ? ' selected' : '') + '" type="button" role="listitem" aria-pressed="' + (selectedCode === b.c) + '" data-code="' + esc(b.c) + '"><span class="code num">' + (b.codeStatus === 'local_internal_reference' ? 'مرجع داخلي' : esc(b.c)) + '</span><span class="bn">' + esc(b.n) + '</span><span class="bc">' + esc(b.city) + (sectorCity(b.city) && b.sec ? ' · ' + esc(b.sec) : '') + '</span></button>';
       }).join('') + (!shown.length ? '<p class="list-note">لا يوجد فرع مطابق</p>' : '');
       go.disabled = !selectedCode;
     }
@@ -894,6 +894,461 @@
     'مكة المكرمة': Object.assign({}, CITY_IMAGE_ARCHIVE['مكة المكرمة'], { displayPermission: 'CC0' }),
     'المدينة المنورة': { src: 'assets/images/cities/madinah-panorama.webp', position: '50% 45%', real: true, displayPermission: 'public_domain' }
   };
+  // BEGIN GENERATED CITY IDENTITIES
+  var GENERATED_CITY_IDENTITIES = {
+  "عنيزة": {
+    "src": "assets/images/cities/generated/central-unaizah.webp",
+    "position": "50% 58%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الخرج": {
+    "src": "assets/images/cities/generated/central-kharj.webp",
+    "position": "50% 62%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الدرعية": {
+    "src": "assets/images/cities/generated/central-diriyah.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "البكيرية": {
+    "src": "assets/images/cities/generated/central-bukayriyah.webp",
+    "position": "50% 54%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الدوادمي": {
+    "src": "assets/images/cities/generated/central-dawadmi.webp",
+    "position": "50% 54%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الغاط": {
+    "src": "assets/images/cities/generated/central-ghat.webp",
+    "position": "50% 54%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "المجمعة": {
+    "src": "assets/images/cities/generated/central-majmaah.webp",
+    "position": "50% 54%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "المذنب": {
+    "src": "assets/images/cities/generated/central-midhnab.webp",
+    "position": "50% 60%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الدلم": {
+    "src": "assets/images/cities/generated/central-dilam.webp",
+    "position": "50% 58%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الرس": {
+    "src": "assets/images/cities/generated/central-rass.webp",
+    "position": "50% 58%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الارطاوية": {
+    "src": "assets/images/cities/generated/central-artawiyah.webp",
+    "position": "50% 58%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "رياض الخبراء": {
+    "src": "assets/images/cities/generated/central-riyad-al-khabra.webp",
+    "position": "50% 68%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "المزاحمية": {
+    "src": "assets/images/cities/generated/central-muzahmiyya.webp",
+    "position": "50% 64%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "القويعية": {
+    "src": "assets/images/cities/generated/central-quwayiyah.webp",
+    "position": "50% 54%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "وادي الدواسر": {
+    "src": "assets/images/cities/generated/central-wadi-dawasir.webp",
+    "position": "50% 54%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "السليل": {
+    "src": "assets/images/cities/generated/central-sulayyil.webp",
+    "position": "50% 64%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الزلفي": {
+    "src": "assets/images/cities/generated/central-zulfi.webp",
+    "position": "50% 62%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "حوطة سدير": {
+    "src": "assets/images/cities/generated/central-hawtat-sudair.webp",
+    "position": "50% 60%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "ضرما": {
+    "src": "assets/images/cities/generated/central-dhurma.webp",
+    "position": "50% 58%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "شقراء": {
+    "src": "assets/images/cities/generated/central-shaqra.webp",
+    "position": "50% 63%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "ليلى": {
+    "src": "assets/images/cities/generated/central-layla.webp",
+    "position": "50% 62%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "تبوك": {
+    "src": "assets/images/cities/generated/north-east-tabuk-v2.webp",
+    "position": "50% 70%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "حائل": {
+    "src": "assets/images/cities/generated/north-east-hail.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "سكاكا": {
+    "src": "assets/images/cities/generated/north-east-sakaka.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "دومة الجندل": {
+    "src": "assets/images/cities/generated/north-east-dumat-al-jandal.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "خيبر": {
+    "src": "assets/images/cities/generated/north-east-khaybar.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الدمام": {
+    "src": "assets/images/cities/generated/north-east-dammam.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الأحساء": {
+    "src": "assets/images/cities/generated/north-east-al-ahsa.webp",
+    "position": "50% 65%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "حقل": {
+    "src": "assets/images/cities/generated/north-east-haql.webp",
+    "position": "50% 32%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "ضباء": {
+    "src": "assets/images/cities/generated/north-east-duba.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الوجه": {
+    "src": "assets/images/cities/generated/north-east-al-wajh.webp",
+    "position": "50% 35%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "أملج": {
+    "src": "assets/images/cities/generated/north-east-umluj.webp",
+    "position": "50% 46%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "سيهات": {
+    "src": "assets/images/cities/generated/north-east-saihat.webp",
+    "position": "50% 40%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "رأس تنورة": {
+    "src": "assets/images/cities/generated/north-east-ras-tanura.webp",
+    "position": "50% 35%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الخفجي": {
+    "src": "assets/images/cities/generated/north-east-khafji.webp",
+    "position": "50% 35%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "القطيف": {
+    "src": "assets/images/cities/generated/north-east-qatif.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "عرعر": {
+    "src": "assets/images/cities/generated/north-east-arar.webp",
+    "position": "50% 60%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "المبرز": {
+    "src": "assets/images/cities/generated/north-east-al-mubarraz.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "العلا": {
+    "src": "assets/images/cities/generated/north-east-alula.webp",
+    "position": "50% 23%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الهفوف": {
+    "src": "assets/images/cities/generated/north-east-hofuf.webp",
+    "position": "50% 65%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "النعيرية": {
+    "src": "assets/images/cities/generated/north-east-nuairiyah.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "بقيق": {
+    "src": "assets/images/cities/generated/north-east-abqaiq.webp",
+    "position": "50% 40%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "حفر الباطن": {
+    "src": "assets/images/cities/generated/north-east-hafar-al-batin.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الرقعي": {
+    "src": "assets/images/cities/generated/north-east-al-raqai.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "أم الحمام": {
+    "src": "assets/images/cities/generated/north-east-umm-al-hammam.webp",
+    "position": "50% 60%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الثقبة": {
+    "src": "assets/images/cities/generated/north-east-al-thuqbah.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "صفوى": {
+    "src": "assets/images/cities/generated/north-east-safwa.webp",
+    "position": "50% 65%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "القريات": {
+    "src": "assets/images/cities/generated/north-east-qurayyat.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "قرية العليا": {
+    "src": "assets/images/cities/generated/north-east-qaryat-al-ulya-v2.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "طريف": {
+    "src": "assets/images/cities/generated/north-east-turaif.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "بقعاء": {
+    "src": "assets/images/cities/generated/north-east-baqaa.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الروضة": {
+    "src": "assets/images/cities/generated/north-east-rawdah-hail.webp",
+    "position": "50% 34%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الخبر": {
+    "src": "assets/images/cities/generated/north-east-khobar-wide.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الظهران": {
+    "src": "assets/images/cities/generated/north-east-dhahran-wide.webp",
+    "position": "50% 64%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "الطائف": {
+    "src": "assets/images/cities/generated/south-west-taif-illustrative.webp",
+    "position": "50% 55%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "نجران": {
+    "src": "assets/images/cities/generated/south-west-najran-illustrative.webp",
+    "position": "50% 60%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "جازان": {
+    "src": "assets/images/cities/generated/south-west-jazan-illustrative.webp",
+    "position": "50% 40%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "أبو عريش": {
+    "src": "assets/images/cities/generated/south-west-abu-arish-illustrative.webp",
+    "position": "50% 60%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "النماص": {
+    "src": "assets/images/cities/generated/south-west-namas-illustrative.webp",
+    "position": "50% 65%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "القنفذة": {
+    "src": "assets/images/cities/generated/south-west-qunfudhah-illustrative.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "بدر": {
+    "src": "assets/images/cities/generated/south-west-badr-illustrative.webp",
+    "position": "50% 85%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "بلجرشي": {
+    "src": "assets/images/cities/generated/south-west-baljurashi-illustrative.webp",
+    "position": "50% 85%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "أحد المسارحة": {
+    "src": "assets/images/cities/generated/south-west-ahad-masarihah-illustrative.webp",
+    "position": "50% 40%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "خميس مشيط": {
+    "src": "assets/images/cities/generated/south-west-khamis-mushait-illustrative.webp",
+    "position": "50% 39%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "صامطة": {
+    "src": "assets/images/cities/generated/south-west-samtah-illustrative.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "صبيا": {
+    "src": "assets/images/cities/generated/south-west-sabya-illustrative.webp",
+    "position": "50% 60%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "بيشة": {
+    "src": "assets/images/cities/generated/south-west-bisha-illustrative.webp",
+    "position": "50% 36%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "تربة": {
+    "src": "assets/images/cities/generated/south-west-turbah-illustrative.webp",
+    "position": "50% 65%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "رابغ": {
+    "src": "assets/images/cities/generated/south-west-rabigh-illustrative.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "سبت العلاية": {
+    "src": "assets/images/cities/generated/south-west-sabt-alalaya-illustrative.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "شرورة": {
+    "src": "assets/images/cities/generated/south-west-sharurah-illustrative.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "محايل عسير": {
+    "src": "assets/images/cities/generated/south-west-muhayil-asir-illustrative.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "أحد رفيدة": {
+    "src": "assets/images/cities/generated/south-west-ahad-rufaidah-illustrative.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "بيش": {
+    "src": "assets/images/cities/generated/south-west-baysh-illustrative.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  },
+  "ينبع": {
+    "src": "assets/images/cities/generated/south-west-yanbu-illustrative.webp",
+    "position": "50% 50%",
+    "real": false,
+    "displayPermission": "generated_illustration"
+  }
+};
+  Object.keys(GENERATED_CITY_IDENTITIES).forEach(function (city) { CITY_HERO_ASSETS[city] = GENERATED_CITY_IDENTITIES[city]; });
+  // END GENERATED CITY IDENTITIES
   function cityHeroMedia(hero) {
     if (hero.viewBox) return '<svg class="city-photo" viewBox="' + esc(hero.viewBox) + '" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><image href="' + esc(hero.src) + '" width="710" height="1536" onload="this.dataset.loaded=1"></image></svg>';
     return '<img src="' + esc(hero.src) + '" alt="" decoding="async" style="object-fit:' + (hero.fit || 'cover') + ';object-position:' + hero.position + '" onerror="if(!this.dataset.fallback){this.dataset.fallback=1;this.src=\'' + CITY_HERO_FALLBACK + '\'}else{this.hidden=true}">';
@@ -1045,6 +1500,8 @@
   }
   function reg(kind, o) { REG.push({ k: kind, o: contactView(o) }); return REG.length - 1; }
   var GENERIC_PROPERTY_IMAGE = 'assets/images/modern-apartments-illustrative.webp';
+  // Last-resort decorative image is embedded so a missing asset cannot leave a broken card.
+  var EMBEDDED_PROPERTY_FALLBACK = 'data:image/webp;base64,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';
   var PROPERTY_ILLUSTRATIONS = [GENERIC_PROPERTY_IMAGE, 'assets/images/modern-villa-illustrative.webp', GENERIC_PROPERTY_IMAGE, 'assets/images/modern-villa-illustrative.webp'];
   function imageFallback(kind, o) {
     var type = String(o && o.type || '');
@@ -1056,9 +1513,50 @@
   function ph(title, sub, kind, o) {
     return '<img class="property-image" loading="lazy" decoding="async" alt="صورة عقارية توضيحية وليست تصويرًا للمشروع" data-generic="1" data-src="' + esc(imageFallback(kind, o)) + '">';
   }
+  // Exact-source visual review: prefer verified project renders, reject logos/maps/text cards.
+  var REVIEWED_PROJECT_IMAGES = {
+    "P496": ["https://cms-apis.liwan.sa/media/4ialr1bx/liwan-render_page-0002.jpg", "https://cms-apis.liwan.sa/media/4ialr1bx/liwan-render_page-0002.jpg?width=1920&format=webp&quality=75&v=1dc63f1437bd790"],
+    "P111": [
+        "https://azyanaldhahran.com/wp-content/uploads/2025/02/Dhahran-Golden-1.png",
+        "https://azyanaldhahran.com/wp-content/uploads/2026/01/TYPE-A-FRONT-01.png"
+    ],
+    "P234": [
+        "https://darwaemaar.com/wp-content/uploads/2023/07/Buhirat-copy-logo-1-1024x580.png",
+        "https://darwaemaar.com/wp-content/uploads/2023/07/X2-copy-People-scaled.jpg"
+    ],
+    "P437": [
+        "https://storage.googleapis.com/marcom-roshn-sa-cms-prod/212_WAREFA_01_20dd70f863/212_WAREFA_01_20dd70f863.svg",
+        "https://storage.googleapis.com/marcom-roshn-sa-cms-prod/1806_J_02_S3_Pocket_Park_Hummingbird_R7_8_K_1_baab970dd1/1806_J_02_S3_Pocket_Park_Hummingbird_R7_8_K_1_baab970dd1.png"
+    ]
+};
+  var NON_PROJECT_IMAGE_SOURCES = {
+    "https://aknann.com/wp-content/uploads/2025/03/alawali%404x.png": true,
+    "https://aknann.com/wp-content/uploads/2025/03/heights@4x.png": true,
+    "https://aknann.com/wp-content/uploads/2025/04/fursan@4x.png": true,
+    "https://aknann.com/wp-content/uploads/2025/04/sharq@4x.png": true,
+    "https://alajlaninvest.com/wp-content/uploads/2021/11/riv34-scaled.jpg": true,
+    "https://alajlaninvest.com/wp-content/uploads/2022/03/riv42-scaled.jpg": true,
+    "https://azyanaldhahran.com/wp-content/uploads/2025/02/Dhahran-Golden-1.png": true,
+    "https://cdn.sanity.io/images/9wslge8c/production/75f1e37dc7b8372d9da160a93d07196e407dc906-2656x1784.png": true,
+    "https://darwaemaar.com/wp-content/uploads/2023/07/Buhirat-copy-logo-1-1024x580.png": true,
+    "https://dor.sa/wp-content/uploads/2017/11/alsakab-video-1100x550.jpg": true,
+    "https://momah.gov.sa/sites/default/files/styles/news_details_image/public/2022-04/alwtnyt-llaskan-tutlq-ghdaan-almrhlt-althanyt-lmshrw-sraya-aljwan-shmal-alryad-min.jpg.webp": true,
+    "https://nuzul-saas-production.s3.us-east-2.amazonaws.com/tenants/5201/t-projects/301021/8a653ed1-138b-4310-99a4-909cc09da10f_1080.webp": true,
+    "https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2024-11/Album%20size_0.jpg": true,
+    "https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-01/alsadeem.png": true,
+    "https://sakanun.com.sa/lib/images/fairooz.png": true,
+    "https://storage.googleapis.com/marcom-roshn-sa-cms-prod/SEDRA_5new_fc4cffb3d1/SEDRA_5new_fc4cffb3d1.jpg": true,
+    "https://storage.googleapis.com/marcom-roshn-sa-cms-prod/sedra_4th_432c709c57/sedra_4th_432c709c57.png": true,
+    "https://teladco.sa/wp-content/uploads/2026/05/news-5-1.jpg": true,
+    "https://thabatre.sa/wp-content/uploads/2024/12/%D9%85%D8%A8%D8%A7%D8%B9-01.png": true,
+    "https://www.alhabibinv.com/DynamicImages/HighlightsImages/Pic-M-12-638834047350310419.webp": true
+};
   function displayImage(kind, o) {
     var url = String(o && o.img || ''), id = String(o && o.id || ''), decoded = url;
     try { decoded = decodeURIComponent(url); } catch (e) { /* keep the source URL */ }
+    var reviewed = REVIEWED_PROJECT_IMAGES[id];
+    if (reviewed && url === reviewed[0]) return reviewed[1];
+    if (NON_PROJECT_IMAGE_SOURCES[url]) return '';
     if ((kind === 'projects' && (id === 'P519' || id === 'P125' || id === 'P284' || id === 'P437')) || (kind === 'nhc' && o && o.n === 'الدار')) return '';
     if (/poster|banner|brochure|flyer|licen[cs]e|permit|screenshot|لقطة.?الشاشة/i.test(decoded)) return '';
     return url;
@@ -1197,7 +1695,19 @@
       if (img.getAttribute('data-bound') === '1') return;
       img.setAttribute('data-bound', '1');
       img.addEventListener('error', function () {
-        if (img.dataset && img.dataset.generic === '1') return;
+        if (img.dataset && img.dataset.generic === '1') {
+          // Try the other bundled illustration once, then a small embedded illustration.
+          if (!img.dataset.fallbackStage) {
+            img.dataset.fallbackStage = '1';
+            img.src = img.getAttribute('data-src') === GENERIC_PROPERTY_IMAGE ? PROPERTY_ILLUSTRATIONS[1] : GENERIC_PROPERTY_IMAGE;
+          } else if (img.dataset.fallbackStage === '1') {
+            img.dataset.fallbackStage = '2';
+            img.src = EMBEDDED_PROPERTY_FALLBACK;
+          } else {
+            img.hidden = true; // Never loop or leave a broken-image icon if decoding itself fails.
+          }
+          return;
+        }
         if (img.classList.contains('company-avatar')) {
           var avatar = document.createElement('span'); avatar.className = 'avatar'; avatar.textContent = img.dataset.initial || 'ع';
           if (img.parentElement) img.parentElement.replaceChild(avatar, img);
@@ -1287,7 +1797,7 @@
       (k === 'nhc' ? destinationProjectSection(o) + destinationContactSection(o) : '') +
       (k === 'nhc' && (o.phones || []).length ? '<p class="d-note">التواصل المسجّل في بيانات الوجهة</p>' : '') + (links ? '<div class="d-acts">' + links + '</div>' : '') +
       '</div>' + (k === 'projects' || k === 'opps' || k === 'nhc' ? '<div class="d-media"><button class="close-x" data-close aria-label="إغلاق">' + ICON.x + '</button>' +
-      ph(k === 'nhc' ? 'وجهة ' + o.n : o.n, [o.type, o.city].filter(Boolean).join(' · '), k, o) + (displayImage(k, o) ? '<img class="property-image official-image" alt="' + esc(o.n || 'صورة') + '" data-src="' + esc(displayImage(k, o)) + '">' : '') + '<span class="image-caption" data-illustrative="' + (!displayImage(k, o) || isIllustrative(o, displayImage(k, o))) + '">صورة توضيحية</span></div>' : '');
+      ph(k === 'nhc' ? 'وجهة ' + o.n : o.n, [o.type, o.city].filter(Boolean).join(' · '), k, o) + (displayImage(k, o) ? '<img class="property-image official-image" alt="' + esc(isIllustrative(o, displayImage(k, o)) ? 'صورة توضيحية وليست تصويرًا موثقًا للمشروع' : (o.n || 'صورة')) + '" data-src="' + esc(displayImage(k, o)) + '">' : '') + '<span class="image-caption" data-illustrative="' + (!displayImage(k, o) || isIllustrative(o, displayImage(k, o))) + '">صورة توضيحية</span></div>' : '');
     bindImages(dlg);
     if (!dlg.open) { if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', ''); }
     dlg.scrollTop = 0;
