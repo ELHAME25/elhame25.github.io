@@ -432,7 +432,26 @@
     "lat": 21.42893,
     "lon": 40.47781,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر السيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B9%D8%AA%D9%84+%D8%B9%D8%B3%D9%8A%D9%84%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@21.4519851,40.5011033,841m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15ea2f0db2bf5745:0xe7c188af3fb85fca!8m2!3d21.4519851!4d40.5011033!16s%2Fg%2F11l14857hc?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض عتل عسيلان للسيارات»، والفئة «تاجر السيارات»، والعنوان المطابق، ورقم 0555559176."
+    },
+    "phoneEvidence": {
+      "0555559176": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B9%D8%AA%D9%84+%D8%B9%D8%B3%D9%8A%D9%84%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@21.4519851,40.5011033,841m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15ea2f0db2bf5745:0xe7c188af3fb85fca!8m2!3d21.4519851!4d40.5011033!16s%2Fg%2F11l14857hc?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "entity-12cc657e7ebd",
@@ -574,7 +593,18 @@
     "sec": "",
     "loc": "pt",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق معرض الوزاب للسيارات، الفئة تاجر سيارات، العنوان طريق الملك عبدالعزيز، الباحة 65733، والهاتف +966177255341 يطابق الرقم المحفوظ."
+    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق معرض الوزاب للسيارات، الفئة تاجر سيارات، العنوان طريق الملك عبدالعزيز، الباحة 65733، والهاتف +966177255341 يطابق الرقم المحفوظ.",
+    "activityVerification": {
+      "status": "confirmed_by_explicit_archived_testimony",
+      "supported": true,
+      "proofLevel": "archived_explicit_testimony",
+      "observedActivity": null,
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%88%D8%B2%D8%A7%D8%A8+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15ef47d8bc4a3a5b:0x7627eba66e5b21ec!8m2!3d20.0918787!4d41.4420221!16s%2Fg%2F11cmzks57c!19sChIJWzpKvNhH7xUR7CFbbqbrJ3Y?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "The current mapReviewNote explicitly records a car-dealer category, the exact business name, city/location and matching stored phone. This can support closing the activity field on archived testimony, not a fresh or raw-card verification. The generic older activity assertion alone is not used."
+    }
   },
   {
     "id": "entity-a06af30db1c2",
@@ -1017,7 +1047,18 @@
     "lat": 20.08814,
     "lon": 41.44363,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "unresolved",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": "سمسار سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%86%D8%AE%D8%A8%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15ef47d829308aa7:0xd58f183948114f94!8m2!3d20.0881417!4d41.4436304!16s%2Fg%2F11fz_j14w1!19sChIJp4owKdhH7xURlE8RSDkYj9U?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact current place is classified «سمسار سيارات» (car broker). This establishes automotive brokerage, not necessarily a genuine vehicle-selling showroom; retain explicit subtype and do not silently broaden it to car_showroom."
+    }
   },
   {
     "id": "entity-27aa36dbca26",
@@ -1032,7 +1073,18 @@
     "lat": 20.08535,
     "lon": 41.42882,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "unresolved",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": "تاجر سيارات مستعملة",
+      "sources": [
+        "https://www.google.com/maps/place/%D8%AA%D8%B3%D9%88%D9%8A%D9%82+%D8%A7%D9%84%D8%AE%D8%B1%D8%B3%D8%A7%D9%86%D9%87+%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%87+%D9%88%D8%A7%D9%84%D8%A8%D9%84%D9%83+%D9%88%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AF+%D9%88%D8%A7%D9%84%D8%A7%D8%B4%D8%B1%D8%A7%D9%81+%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D9%87+%D9%88%D9%88%D8%B3%D9%8A%D8%B7+%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%E2%80%AD/@20.0867095,41.4435776,848m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15ef47d79e8200bd:0xfb5f8196b9a3c03e!8m2!3d20.0867095!4d41.4435776!16s%2Fg%2F11g6mtzmfy?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact CID now displays «تسويق الخرسانه الجاهزه والبلك والحديد والاشراف والمتابعه ووسيط عقاري» while retaining «تاجر سيارات مستعملة» and 0177256010. Heading/category conflict requires clarification; no rename, deletion or showroom-activity confirmation is proposed."
+    }
   },
   {
     "id": "entity-faa8a7e44fe6",
@@ -2195,7 +2247,19 @@
     "sec": "جنوب",
     "loc": "nb",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق معرض جوهرة جدة، نشاط تاجر سيارات مستعملة، العنوان C7Q4+9C7 شارع ابن المكيني، الجوهرة، جدة، ورقم +966568368749 المطابق. رابط CID يعرض الإحداثيات المسجلة 21.4384052,39.2560381؛ لا تغيير للموقع."
+    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق معرض جوهرة جدة، نشاط تاجر سيارات مستعملة، العنوان C7Q4+9C7 شارع ابن المكيني، الجوهرة، جدة، ورقم +966568368749 المطابق. رابط CID يعرض الإحداثيات المسجلة 21.4384052,39.2560381؛ لا تغيير للموقع.",
+    "activityVerification": {
+      "status": "confirmed_by_explicit_archived_testimony",
+      "supported": true,
+      "proofLevel": "archived_explicit_testimony",
+      "observedActivity": null,
+      "sources": [
+        "https://www.google.com/maps/?cid=17912791641800971150",
+        "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%AC%D8%AF%D8%A9-%D8%AF%D9%84%D9%8A%D9%84-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-100-%D9%85%D8%B9%D8%B1"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "The current mapReviewNote explicitly records a car-dealer category, the exact business name, city/location and matching stored phone. This can support closing the activity field on archived testimony, not a fresh or raw-card verification. The generic older activity assertion alone is not used."
+    }
   },
   {
     "id": "phase5-car-925c596716a9",
@@ -2281,7 +2345,18 @@
     "sec": "جنوب",
     "loc": "nb",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق معرض العوفي للسيارات بجدة، عنوان حي الجوهرة جدة 22417 ورقم +966509630187. الفئة المدرجة مورد سيارات هوندا. رابط الاتجاهات يعرض دبوس المكان عند 21.4339633,39.2584257، المطابق للإحداثيات المسجلة، ورمز C7M5+H9."
+    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق معرض العوفي للسيارات بجدة، عنوان حي الجوهرة جدة 22417 ورقم +966509630187. الفئة المدرجة مورد سيارات هوندا. رابط الاتجاهات يعرض دبوس المكان عند 21.4339633,39.2584257، المطابق للإحداثيات المسجلة، ورمز C7M5+H9.",
+    "activityVerification": {
+      "status": "unresolved",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": "مورد سيارات هوندا",
+      "sources": [
+        "https://www.google.com/maps/?cid=223370248244183534"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact current place is «مورد سيارات هوندا». A visible customer review says a Suzuki Carry was bought from the showroom, supporting real multibrand sales but not conclusively establishing the business’s independent-showroom versus brand-agency scope. Do not close from the brand category alone."
+    }
   },
   {
     "id": "phase5-car-973e3c792fab",
@@ -2402,7 +2477,19 @@
     "sec": "جنوب",
     "loc": "nb",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق معرض أصالة جدة للسيارات، نشاط تاجر السيارات، حي الجوهرة جدة 22415 ورقم +966531493687. رابط الاتجاهات يعرض الدبوس عند 21.4284012,39.2527391، المطابق للإحداثيات المسجلة، ورمز C7H3+93."
+    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق معرض أصالة جدة للسيارات، نشاط تاجر السيارات، حي الجوهرة جدة 22415 ورقم +966531493687. رابط الاتجاهات يعرض الدبوس عند 21.4284012,39.2527391، المطابق للإحداثيات المسجلة، ورمز C7H3+93.",
+    "activityVerification": {
+      "status": "confirmed_by_explicit_archived_testimony",
+      "supported": true,
+      "proofLevel": "archived_explicit_testimony",
+      "observedActivity": null,
+      "sources": [
+        "https://www.google.com/maps/?cid=2487036113288248605",
+        "https://ksa.motory.com/ar/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84/%D8%B4%D8%B1%D9%83%D8%A9/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A3%D8%B5%D8%A7%D9%84%D8%A9-%D8%AC%D8%AF%D8%A9-%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "The current mapReviewNote explicitly records a car-dealer category, the exact business name, city/location and matching stored phone. This can support closing the activity field on archived testimony, not a fresh or raw-card verification. The generic older activity assertion alone is not used. The detailed legacy note additionally reports a matched Haraj account @Asalat_Jeddah with recent vehicle offers."
+    }
   },
   {
     "id": "phase5-car-91ea454a1313",
@@ -2451,7 +2538,19 @@
     "sec": "جنوب",
     "loc": "nb",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق معرض العز للسيارات، نشاط تاجر سيارات، عنوان عبدالله بن أمية الأسدي في الجوهرة جدة، ورقم +966595652844 المطابق. رابط CID يعرض الإحداثيات المسجلة 21.4362951,39.2570826 ورمز C7P4+GR؛ لا تغيير للموقع."
+    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق معرض العز للسيارات، نشاط تاجر سيارات، عنوان عبدالله بن أمية الأسدي في الجوهرة جدة، ورقم +966595652844 المطابق. رابط CID يعرض الإحداثيات المسجلة 21.4362951,39.2570826 ورمز C7P4+GR؛ لا تغيير للموقع.",
+    "activityVerification": {
+      "status": "confirmed_by_explicit_archived_testimony",
+      "supported": true,
+      "proofLevel": "archived_explicit_testimony",
+      "observedActivity": null,
+      "sources": [
+        "https://www.google.com/maps/?cid=4577936201056493848",
+        "https://blog.halacarly.com/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%AC%D8%AF%D8%A9-%D8%AF%D9%84%D9%8A%D9%84-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-100-%D9%85%D8%B9%D8%B1"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "The current mapReviewNote explicitly records a car-dealer category, the exact business name, city/location and matching stored phone. This can support closing the activity field on archived testimony, not a fresh or raw-card verification. The generic older activity assertion alone is not used."
+    }
   },
   {
     "id": "phase5-car-d4913195c092",
@@ -2523,7 +2622,19 @@
     "mapReview": "تمت مطابقة بطاقة Google Maps المباشرة بالاسم والمدينة ورقم الهاتف 0535499053، واعتماد رابط المكان وإحداثياته الظاهرة.",
     "phoneAudit": "لم يظهر مصدر مستقل مطابق لرقم الاتصال في بحث هذه الجولة؛ الرقم محفوظ لكنه غير مؤكد.",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Maps مباشرة: معرض نية الخير للسيارات، تاجر سيارات مستعملة، ضاحية الملك فهد بالدمام، الهاتف +966535499053 يطابق المحفوظ."
+    "mapReviewNote": "بطاقة Maps مباشرة: معرض نية الخير للسيارات، تاجر سيارات مستعملة، ضاحية الملك فهد بالدمام، الهاتف +966535499053 يطابق المحفوظ.",
+    "activityVerification": {
+      "status": "confirmed_by_explicit_archived_testimony",
+      "supported": true,
+      "proofLevel": "archived_explicit_testimony",
+      "observedActivity": null,
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D9%8A%D8%A9+%D8%A7%D9%84%D8%AE%D9%8A%D8%B1+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@26.3959204,50.0124726,17z/data=!3m1!4b1!4m6!3m5!1s0x3e360373f5540077:0x42bf06b81ddfc0a5!8m2!3d26.3959204!4d50.0124726!16s%2Fg%2F11ghvby_bm?entry=ttu",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AE%D9%8A%D8%B1%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2032313"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "The current mapReviewNote explicitly records a car-dealer category, the exact business name, city/location and matching stored phone. This can support closing the activity field on archived testimony, not a fresh or raw-card verification. The generic older activity assertion alone is not used."
+    }
   },
   {
     "id": "phase5-car-16dadd49d5d7",
@@ -2584,7 +2695,19 @@
     "loc": "nb",
     "mapReview": "تمت مطابقة بطاقة Google Maps المباشرة بالاسم والمدينة ورقم الهاتف 0505900086، واعتماد رابط المكان وإحداثياته الظاهرة.",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Maps مباشرة: معرض أضواء التميز، تاجر سيارات، شارع المعارض بضاحية الملك فهد بالدمام، الهاتف +966505900086 يطابق المحفوظ."
+    "mapReviewNote": "بطاقة Maps مباشرة: معرض أضواء التميز، تاجر سيارات، شارع المعارض بضاحية الملك فهد بالدمام، الهاتف +966505900086 يطابق المحفوظ.",
+    "activityVerification": {
+      "status": "confirmed_by_explicit_archived_testimony",
+      "supported": true,
+      "proofLevel": "archived_explicit_testimony",
+      "observedActivity": null,
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%B6%D9%88%D8%A7%D8%A1+%D8%A7%D9%84%D8%AA%D9%85%D9%8A%D8%B2%E2%80%AD/@26.4045384,50.0137181,17z/data=!3m1!4b1!4m6!3m5!1s0x3e360280ab22b66f:0xd09f7e27519a6d3f!8m2!3d26.4045384!4d50.0137181!16s%2Fg%2F11gbx8wfhq?entry=ttu",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D8%B6%D9%88%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AA%D9%85%D9%8A%D8%B2%20C237%2BRF8%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2032314"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "The current mapReviewNote explicitly records a car-dealer category, the exact business name, city/location and matching stored phone. This can support closing the activity field on archived testimony, not a fresh or raw-card verification. The generic older activity assertion alone is not used."
+    }
   },
   {
     "id": "phase5-car-9e24ec953233",
@@ -2683,7 +2806,19 @@
     "mapReview": "تمت مطابقة بطاقة Google Maps المباشرة بالاسم والمدينة ورقم الهاتف 0505500468، واعتماد رابط المكان وإحداثياته الظاهرة.",
     "phoneAudit": "حقل الهاتف 0505500468 غير مؤكد بعد البحث بالاسم والرقم؛ لا يوجد مصدر مطابق مستقل في هذه الجولة. لم يُحذف أو يستبدل.",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Maps مباشرة: معرض الساحل الشرقي للسيارات، تاجر سيارات، أبو حدرية بضاحية الملك فهد في الدمام، +966505500468 مطابق."
+    "mapReviewNote": "بطاقة Maps مباشرة: معرض الساحل الشرقي للسيارات، تاجر سيارات، أبو حدرية بضاحية الملك فهد في الدمام، +966505500468 مطابق.",
+    "activityVerification": {
+      "status": "confirmed_by_explicit_archived_testimony",
+      "supported": true,
+      "proofLevel": "archived_explicit_testimony",
+      "observedActivity": null,
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B3%D8%A7%D8%AD%D9%84+%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@26.3965002,50.0115253,17z/data=!3m1!4b1!4m6!3m5!1s0x3e3603fa43446705:0xe7fc321e942ebc39!8m2!3d26.3965002!4d50.0115253!16s%2Fg%2F11l1p32vnp?entry=ttu",
+        "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B3%D8%A7%D8%AD%D9%84%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D8%A8%D9%88%20%D8%AD%D8%AF%D8%B1%D9%8A%D9%87%20%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D9%81%D9%87%D8%AF%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "The current mapReviewNote explicitly records a car-dealer category, the exact business name, city/location and matching stored phone. This can support closing the activity field on archived testimony, not a fresh or raw-card verification. The generic older activity assertion alone is not used."
+    }
   },
   {
     "id": "phase5-car-ab6b4c9db134",
@@ -2879,7 +3014,26 @@
     "lat": 25.4113088,
     "lon": 49.4694601,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر السيارات",
+      "sources": [
+        "https://www.google.com/maps/?cid=14409452900423161011"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض الجنوب للسيارات بالأحساء»، والفئة «تاجر السيارات»، والعنوان المطابق، ورقم 0530562222."
+    },
+    "phoneEvidence": {
+      "0530562222": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=14409452900423161011",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-car-88bb1bdc93be",
@@ -2894,7 +3048,26 @@
     "lat": 25.4076,
     "lon": 49.47213,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/?cid=11580211686929426413"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض الفريدي للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0555915667."
+    },
+    "phoneEvidence": {
+      "0555915667": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=11580211686929426413",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-car-51a422fac578",
@@ -2909,7 +3082,26 @@
     "lat": 25.4076,
     "lon": 49.47213,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/?cid=15288575227644468507"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض الرزق للسيارات بالأحساء»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0500569870."
+    },
+    "phoneEvidence": {
+      "0500569870": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=15288575227644468507",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-car-197ca86c38ef",
@@ -3339,7 +3531,26 @@
     "sec": "",
     "loc": "nb",
     "mapReviewStatus": "direct_google_place_matched_listing_corrected_retested",
-    "mapReviewNote": "صفحة خرائط الجزيرة المطابقة تعرض الاسم، المدينة، العنوان 4885 ثابت بن الدحداح/الدار والهاتف 0500777033. زر Google فيها حوّل إلى Google Place ID g/11fktzl8k4 عند 24.5487682,39.6224816، فاستبدلت إحداثيات السجل القديمة (24.53048,39.63777). الموقع mg-albakkari.com أعاد 502 عند الاختبار، لذلك لم أضفه كوجهة web."
+    "mapReviewNote": "صفحة خرائط الجزيرة المطابقة تعرض الاسم، المدينة، العنوان 4885 ثابت بن الدحداح/الدار والهاتف 0500777033. زر Google فيها حوّل إلى Google Place ID g/11fktzl8k4 عند 24.5487682,39.6224816، فاستبدلت إحداثيات السجل القديمة (24.53048,39.63777). الموقع mg-albakkari.com أعاد 502 عند الاختبار، لذلك لم أضفه كوجهة web.",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%A8%D9%83%D8%A7%D8%B1%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.5486842,39.6224458,821m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15bdbdadc946174d:0xe16b70d10e987722!8m2!3d24.5486842!4d39.6224458!16s%2Fg%2F11fktzl8k4?hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض البكاري للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0500777033."
+    },
+    "phoneEvidence": {
+      "0500777033": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%A8%D9%83%D8%A7%D8%B1%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.5486842,39.6224458,821m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15bdbdadc946174d:0xe16b70d10e987722!8m2!3d24.5486842!4d39.6224458!16s%2Fg%2F11fktzl8k4?hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-16275502605220452806",
@@ -3385,7 +3596,26 @@
     "lon": 49.4699068,
     "sec": "",
     "geoSource": "https://www.google.com/maps/?cid=2604452144150166554",
-    "geoBasis": "بطاقة خرائط Google مطابقة للاسم والمدينة؛ الفئة تاجر سيارات؛ الموقع بالمنطقة الصناعية بالأحساء 36456، Plus Code CF69+2X؛ 112 مراجعة، ساعات عمل وهاتف؛ البطاقة ظاهرة كمفتوحة. الدبوس يحدد الموقع المطابق في الأحساء. لا توجد علامة وكالة رسمية ظاهرة."
+    "geoBasis": "بطاقة خرائط Google مطابقة للاسم والمدينة؛ الفئة تاجر سيارات؛ الموقع بالمنطقة الصناعية بالأحساء 36456، Plus Code CF69+2X؛ 112 مراجعة، ساعات عمل وهاتف؛ البطاقة ظاهرة كمفتوحة. الدبوس يحدد الموقع المطابق في الأحساء. لا توجد علامة وكالة رسمية ظاهرة.",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر السيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%AF+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A8%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1%E2%80%AD/@25.4100914,49.4699068,816m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e37a26da46ae785:0x2424df6d16933c1a!8m2!3d25.4100914!4d49.4699068!16s%2Fg%2F11c311cmn8?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض الرواد للسيارات بالأحساء»، والفئة «تاجر السيارات»، والعنوان المطابق، ورقم 0135925222."
+    },
+    "phoneEvidence": {
+      "0135925222": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%AF+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A8%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1%E2%80%AD/@25.4100914,49.4699068,816m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e37a26da46ae785:0x2424df6d16933c1a!8m2!3d25.4100914!4d49.4699068!16s%2Fg%2F11c311cmn8?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-10600651343576343549",
@@ -3415,7 +3645,26 @@
     "lon": 49.4634377,
     "sec": "",
     "geoSource": "https://www.google.com/maps/?cid=16660343768595624475",
-    "geoBasis": "بطاقة خرائط Google بالاسم المطابق؛ الفئة تاجر سيارات؛ العنوان المبرز، المنطقة الصناعية بالأحساء 31982؛ Plus Code CF67+49؛ 139 مراجعة؛ تعليقات حديثة تصف شراء سيارات من المعرض؛ دبوس الصفحة يعطي الإحداثية المذكورة."
+    "geoBasis": "بطاقة خرائط Google بالاسم المطابق؛ الفئة تاجر سيارات؛ العنوان المبرز، المنطقة الصناعية بالأحساء 31982؛ Plus Code CF67+49؛ 139 مراجعة؛ تعليقات حديثة تصف شراء سيارات من المعرض؛ دبوس الصفحة يعطي الإحداثية المذكورة.",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر السيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%81%D9%87%D8%AF+%D9%85%D8%B3%D9%81%D8%B1+%D8%A7%D9%84%D8%AF%D9%88%D8%B3%D8%B1%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@25.4103352,49.4634377,816m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e37a36fe496027b:0xe7356e632308f21b!8m2!3d25.4103352!4d49.4634377!16s%2Fg%2F11r8cy78y_?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض فهد مسفر الدوسري للسيارات»، والفئة «تاجر السيارات»، والعنوان المطابق، ورقم 0508548618."
+    },
+    "phoneEvidence": {
+      "0508548618": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%81%D9%87%D8%AF+%D9%85%D8%B3%D9%81%D8%B1+%D8%A7%D9%84%D8%AF%D9%88%D8%B3%D8%B1%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@25.4103352,49.4634377,816m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e37a36fe496027b:0xe7356e632308f21b!8m2!3d25.4103352!4d49.4634377!16s%2Fg%2F11r8cy78y_?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-14458521232215212303",
@@ -4161,7 +4410,26 @@
     "lat": 17.57938,
     "lon": 44.34072,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D9%81%D9%86%D9%8A%D8%B3+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5793809,44.3407231,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed96aac6f9625:0x2186bed8d498c20f!8m2!3d17.5793809!4d44.3407231!16s%2Fg%2F11rwq7kx01?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض ابن فنيس للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0502352555."
+    },
+    "phoneEvidence": {
+      "0502352555": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D9%81%D9%86%D9%8A%D8%B3+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5793809,44.3407231,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed96aac6f9625:0x2186bed8d498c20f!8m2!3d17.5793809!4d44.3407231!16s%2Fg%2F11rwq7kx01?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-17218785923134511703",
@@ -4176,7 +4444,26 @@
     "lat": 17.57824,
     "lon": 44.33858,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%B9%D8%A7%D9%84%D9%85+%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D9%85+%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15fed90b803e2c83:0xeef56a916bedda57!8m2!3d17.5782451!4d44.3385779!16s%2Fg%2F1thvk5j0!19sChIJgyw-gAvZ_hURV9rta5Fq9e4?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «شركة عالم العوام التجارية»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0554552077."
+    },
+    "phoneEvidence": {
+      "0554552077": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%B9%D8%A7%D9%84%D9%85+%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D9%85+%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x15fed90b803e2c83:0xeef56a916bedda57!8m2!3d17.5782451!4d44.3385779!16s%2Fg%2F1thvk5j0!19sChIJgyw-gAvZ_hURV9rta5Fq9e4?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-6913944460113285984",
@@ -4191,7 +4478,18 @@
     "lat": 17.57856,
     "lon": 44.34052,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "unresolved",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": "مورد سيارات تويوتا",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A3%D8%B5%D8%A7%D9%84%D8%A9+%D8%A7%D9%84%D8%B9%D9%8A%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed96d06c954f5:0x5ff343dad5d51360!8m2!3d17.5785608!4d44.340518!16s%2Fg%2F11d_8ddgnl!19sChIJ9VTJBm3Z_hURYBPV1dpD818?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact current place is «مورد سيارات تويوتا». No independent-showroom/multibrand sales evidence was established; do not close from a brand-specific dealer category alone."
+    }
   },
   {
     "id": "phase5-google-2584518843267675116",
@@ -4206,7 +4504,26 @@
     "lat": 17.57793,
     "lon": 44.33926,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D8%B1%D9%83%D8%A8%D8%A9+%D8%A7%D9%84%D9%81%D8%AE%D8%A7%D9%85%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5779247,44.3392569,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fec33fffffffff:0x23de0e31d045f3ec!8m2!3d17.5779247!4d44.3392569!16s%2Fg%2F11hb6_22fb?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض مركبة الفخامة للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0553158134."
+    },
+    "phoneEvidence": {
+      "0553158134": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D8%B1%D9%83%D8%A8%D8%A9+%D8%A7%D9%84%D9%81%D8%AE%D8%A7%D9%85%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5779247,44.3392569,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fec33fffffffff:0x23de0e31d045f3ec!8m2!3d17.5779247!4d44.3392569!16s%2Fg%2F11hb6_22fb?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-2751574138513083123",
@@ -4221,7 +4538,26 @@
     "lat": 17.57773,
     "lon": 44.33896,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر السيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5777294,44.3389595,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed96c3f6b6093:0x262f8e19bb394af3!8m2!3d17.5777294!4d44.3389595!16s%2Fg%2F11g892bfhr?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «شركة المركب للسيارات»، والفئة «تاجر السيارات»، والعنوان المطابق، ورقم 0558766848."
+    },
+    "phoneEvidence": {
+      "0558766848": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5777294,44.3389595,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed96c3f6b6093:0x262f8e19bb394af3!8m2!3d17.5777294!4d44.3389595!16s%2Fg%2F11g892bfhr?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-7467671698271295604",
@@ -4236,7 +4572,26 @@
     "lat": 19.62494,
     "lon": 41.98627,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AA%D8%B3%D8%A7%D9%85%D8%AD+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@19.6249356,41.9862659,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e57f02d5930595:0x67a27fd81ab2d874!8m2!3d19.6249356!4d41.9862659!16s%2Fg%2F11qg7wy5xn?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض التسامح للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0569870623."
+    },
+    "phoneEvidence": {
+      "0569870623": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AA%D8%B3%D8%A7%D9%85%D8%AD+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@19.6249356,41.9862659,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e57f02d5930595:0x67a27fd81ab2d874!8m2!3d19.6249356!4d41.9862659!16s%2Fg%2F11qg7wy5xn?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-2653276074941408079",
@@ -4251,7 +4606,26 @@
     "lat": 19.62924,
     "lon": 41.98846,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%87%D8%A8%D9%88%D8%A8+%D8%A7%D9%84%D8%AD%D8%AC%D8%A7%D8%B2+%D8%B1%D8%A6%D9%8A%D8%B3+%D8%B7%D8%A7%D8%A6%D9%81%D8%A9+%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%E2%80%AD/@19.6292437,41.9884622,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e57f9e652b987f:0x24d2548851ece34f!8m2!3d19.6292437!4d41.9884622!16s%2Fg%2F11gjm1mrwl?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض هبوب الحجاز رئيس طائفة المعارض»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0566502348."
+    },
+    "phoneEvidence": {
+      "0566502348": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%87%D8%A8%D9%88%D8%A8+%D8%A7%D9%84%D8%AD%D8%AC%D8%A7%D8%B2+%D8%B1%D8%A6%D9%8A%D8%B3+%D8%B7%D8%A7%D8%A6%D9%81%D8%A9+%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%E2%80%AD/@19.6292437,41.9884622,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e57f9e652b987f:0x24d2548851ece34f!8m2!3d19.6292437!4d41.9884622!16s%2Fg%2F11gjm1mrwl?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-5537324635070356707",
@@ -4266,7 +4640,26 @@
     "lat": 19.54448,
     "lon": 41.95302,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%88%D8%B3%D8%A7%D9%85+%D8%A7%D9%84%D9%88%D8%B7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+(+%D9%85%D8%B9%D8%B1%D8%B6+%D8%A8%D9%86+%D9%85%D8%B2%D9%87%D8%B1+)%E2%80%AD/@19.544484,41.9530203,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e5785692cba1bd:0x4cd8876ae7635ce3!8m2!3d19.544484!4d41.9530203!16s%2Fg%2F11gbr6hxy7?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض وسام الوطن للسيارات ( معرض بن مزهر )»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0510032876."
+    },
+    "phoneEvidence": {
+      "0510032876": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%88%D8%B3%D8%A7%D9%85+%D8%A7%D9%84%D9%88%D8%B7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+(+%D9%85%D8%B9%D8%B1%D8%B6+%D8%A8%D9%86+%D9%85%D8%B2%D9%87%D8%B1+)%E2%80%AD/@19.544484,41.9530203,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e5785692cba1bd:0x4cd8876ae7635ce3!8m2!3d19.544484!4d41.9530203!16s%2Fg%2F11gbr6hxy7?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-9712514117385590297",
@@ -4281,7 +4674,26 @@
     "lat": 19.53685,
     "lon": 41.95265,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D9%88%D9%82+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15e5784e479ea3e7:0x86c9c82172bc1619!8m2!3d19.5368483!4d41.9526461!16s%2Fg%2F11fy4vh6xw!19sChIJ56OeR0545RURGRa8ciHIyYY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض الفاروق للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0509574957."
+    },
+    "phoneEvidence": {
+      "0509574957": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D9%88%D9%82+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15e5784e479ea3e7:0x86c9c82172bc1619!8m2!3d19.5368483!4d41.9526461!16s%2Fg%2F11fy4vh6xw!19sChIJ56OeR0545RURGRa8ciHIyYY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-16342160566062952186",
@@ -4312,7 +4724,26 @@
     "lat": 19.63324,
     "lon": 41.99036,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر السيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B9%D8%A7%D8%A6%D8%B6+%D8%A8%D9%86+%D9%85%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D8%B5%D8%A7%D9%84%D8%AD+%D8%A7%D9%84%D9%82%D8%B1%D9%86%D9%8A%E2%80%AD/@19.6332431,41.990357,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e57fba84062d37:0xfc6a6882045c754!8m2!3d19.6332431!4d41.990357!16s%2Fg%2F11td4n9gp9?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض عائض بن محمد بن صالح القرني»، والفئة «تاجر السيارات»، والعنوان المطابق، ورقم 0505752376."
+    },
+    "phoneEvidence": {
+      "0505752376": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B9%D8%A7%D8%A6%D8%B6+%D8%A8%D9%86+%D9%85%D8%AD%D9%85%D8%AF+%D8%A8%D9%86+%D8%B5%D8%A7%D9%84%D8%AD+%D8%A7%D9%84%D9%82%D8%B1%D9%86%D9%8A%E2%80%AD/@19.6332431,41.990357,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e57fba84062d37:0xfc6a6882045c754!8m2!3d19.6332431!4d41.990357!16s%2Fg%2F11td4n9gp9?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-14217513400373619845",
@@ -4327,7 +4758,26 @@
     "lat": 19.58223,
     "lon": 41.96171,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%B5%D9%81%D8%AD+%D9%84%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%E2%80%AD/@19.5822295,41.9617115,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e579dfb7ad1201:0xc54ec11c2aa02c85!8m2!3d19.5822295!4d41.9617115!16s%2Fg%2F11y_bb4dm8?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «شركة الصفح للتجارة»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0176302266."
+    },
+    "phoneEvidence": {
+      "0176302266": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D8%B5%D9%81%D8%AD+%D9%84%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%E2%80%AD/@19.5822295,41.9617115,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e579dfb7ad1201:0xc54ec11c2aa02c85!8m2!3d19.5822295!4d41.9617115!16s%2Fg%2F11y_bb4dm8?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-16330195904412961613",
@@ -4342,7 +4792,26 @@
     "lat": 17.58473,
     "lon": 44.3457,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5847342,44.3457008,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed90b96f8bed9:0xe2a082a76b12cb4d!8m2!3d17.5847342!4d44.3457008!16s%2Fg%2F11f0l50qnc?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض الكويت للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0534338980."
+    },
+    "phoneEvidence": {
+      "0534338980": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5847342,44.3457008,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed90b96f8bed9:0xe2a082a76b12cb4d!8m2!3d17.5847342!4d44.3457008!16s%2Fg%2F11f0l50qnc?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-11310899230575500220",
@@ -4357,7 +4826,26 @@
     "lat": 17.58119,
     "lon": 44.34313,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D8%B1%D8%A7%D8%AC+%D9%85%D9%83%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5811849,44.3431282,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed9026549b137:0x9cf862ec28b11bbc!8m2!3d17.5811849!4d44.3431282!16s%2Fg%2F11pc9m67c2?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض ابراج مكة للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0593091918."
+    },
+    "phoneEvidence": {
+      "0593091918": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D8%B1%D8%A7%D8%AC+%D9%85%D9%83%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5811849,44.3431282,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed9026549b137:0x9cf862ec28b11bbc!8m2!3d17.5811849!4d44.3431282!16s%2Fg%2F11pc9m67c2?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-16115062965174592487",
@@ -4372,7 +4860,26 @@
     "lat": 17.57759,
     "lon": 44.33856,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%BA%D8%A8%D8%B4%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed96c3d886da3:0xdfa43462b448e3e7!8m2!3d17.5775884!4d44.3385581!16s%2Fg%2F11fyx5df84!19sChIJo22IPWzZ_hUR5-NItGI0pN8?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض الغبشان للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0505725961."
+    },
+    "phoneEvidence": {
+      "0505725961": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%BA%D8%A8%D8%B4%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed96c3d886da3:0xdfa43462b448e3e7!8m2!3d17.5775884!4d44.3385581!16s%2Fg%2F11fyx5df84!19sChIJo22IPWzZ_hUR5-NItGI0pN8?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-9009651310933646988",
@@ -4387,7 +4894,26 @@
     "lat": 17.58236,
     "lon": 44.34492,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D9%85%D8%AD%D9%8A%D9%85%D9%8A%D8%AF+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90cf62cbc7f:0x7d08b621d2551e8c!8m2!3d17.5823603!4d44.3449184!16s%2Fg%2F11c0xwmks9!19sChIJf7ws9gzZ_hURjB5V0iG2CH0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «شركة محيميد للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0556343807."
+    },
+    "phoneEvidence": {
+      "0556343807": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D9%85%D8%AD%D9%8A%D9%85%D9%8A%D8%AF+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90cf62cbc7f:0x7d08b621d2551e8c!8m2!3d17.5823603!4d44.3449184!16s%2Fg%2F11c0xwmks9!19sChIJf7ws9gzZ_hURjB5V0iG2CH0?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-4562917494384996548",
@@ -4402,7 +4928,26 @@
     "lat": 17.58485,
     "lon": 44.34655,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%81%D8%B1%D8%B3%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5848498,44.3465474,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed90056b65b0b:0x3f52bd49283bb0c4!8m2!3d17.5848498!4d44.3465474!16s%2Fg%2F11x5cwxdzd?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض الفرسان للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0535557203."
+    },
+    "phoneEvidence": {
+      "0535557203": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%81%D8%B1%D8%B3%D8%A7%D9%86+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5848498,44.3465474,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed90056b65b0b:0x3f52bd49283bb0c4!8m2!3d17.5848498!4d44.3465474!16s%2Fg%2F11x5cwxdzd?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-6430180122161728428",
@@ -4410,14 +4955,38 @@
     "city": "نجران",
     "nb": "7800، مخطط الصهبان، مخطط الصهبان،, نجران 66232، المملكة العربية السعودية",
     "phones": [
-      "0555724011"
+      "0555724011",
+      "0506758657"
     ],
     "web": "",
     "maps": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D8%B9%D9%82%D9%8A%D9%84%E2%80%AD/data=!4m7!3m6!1s0x15fed90cd653e18b:0x593c96c0a73a4bac!8m2!3d17.582297!4d44.3430006!16s%2Fg%2F11c1hjb8x5!19sChIJi-FT1gzZ_hURrEs6p8CWPFk?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
     "lat": 17.5823,
     "lon": 44.343,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D8%B9%D9%82%D9%8A%D9%84%E2%80%AD/@17.582297,44.3430006,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed90cd653e18b:0x593c96c0a73a4bac!8m2!3d17.582297!4d44.3430006!16s%2Fg%2F11c1hjb8x5?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض ابن عقيل»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0506758657. رقم البطاقة الحالي مختلف عن الرقم المحفوظ 0555724011؛ يُحفظ الرقم السابق ولا يُستبدل. إثبات النشاط مبني على تطابق اسم المعرض والعنوان ومعرّف المكان نفسه."
+    },
+    "phoneEvidence": {
+      "0506758657": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D8%B9%D9%82%D9%8A%D9%84%E2%80%AD/@17.582297,44.3430006,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed90cd653e18b:0x593c96c0a73a4bac!8m2!3d17.582297!4d44.3430006!16s%2Fg%2F11c1hjb8x5?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    },
+    "phoneContacts": [
+      "",
+      ""
+    ]
   },
   {
     "id": "phase5-google-11291216836251799911",
@@ -4432,7 +5001,26 @@
     "lat": 17.57888,
     "lon": 44.34046,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D8%B4%D9%86%D8%A7%D9%86%E2%80%AD/@17.5788837,44.3404568,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed96d08cb2f59:0x9cb275e39eb2d167!8m2!3d17.5788837!4d44.3404568!16s%2Fg%2F11c483nyb4?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض ابن شنان»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0175442107."
+    },
+    "phoneEvidence": {
+      "0175442107": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D8%B4%D9%86%D8%A7%D9%86%E2%80%AD/@17.5788837,44.3404568,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed96d08cb2f59:0x9cb275e39eb2d167!8m2!3d17.5788837!4d44.3404568!16s%2Fg%2F11c483nyb4?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-15321870026852806167",
@@ -4447,7 +5035,26 @@
     "lat": 17.58315,
     "lon": 44.34723,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر السيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B5%D9%82%D8%B1%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5831525,44.3472349,1722m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed90eaba63eed:0xd4a2379c55442e17!8m2!3d17.5831525!4d44.3472349!16s%2Fg%2F11df0pxhl6?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض الصقري للسيارات»، والفئة «تاجر السيارات»، والعنوان المطابق، ورقم 0545555794."
+    },
+    "phoneEvidence": {
+      "0545555794": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B5%D9%82%D8%B1%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5831525,44.3472349,1722m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed90eaba63eed:0xd4a2379c55442e17!8m2!3d17.5831525!4d44.3472349!16s%2Fg%2F11df0pxhl6?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-5284656603640253918",
@@ -4462,7 +5069,26 @@
     "lat": 17.58389,
     "lon": 44.34482,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر السيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%B3%D9%8A%D9%85+%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D9%85%D9%8A+%D9%86%D8%AC%D8%B1%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15fed97f822e9405:0x4956df2e83e64dde!8m2!3d17.5838869!4d44.3448229!16s%2Fg%2F11j0j1szjm!19sChIJBZQugn_Z_hUR3k3mgy7fVkk?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض نسيم البريمي نجران»، والفئة «تاجر السيارات»، والعنوان المطابق، ورقم 0503954276."
+    },
+    "phoneEvidence": {
+      "0503954276": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%B3%D9%8A%D9%85+%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D9%85%D9%8A+%D9%86%D8%AC%D8%B1%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15fed97f822e9405:0x4956df2e83e64dde!8m2!3d17.5838869!4d44.3448229!16s%2Fg%2F11j0j1szjm!19sChIJBZQugn_Z_hUR3k3mgy7fVkk?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-1407078795061687076",
@@ -4477,7 +5103,26 @@
     "lat": 17.58344,
     "lon": 44.34408,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D8%B4%D9%85%D9%84%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15fed9ca6c7f2393:0x1386f2b586a2f324!8m2!3d17.5834395!4d44.3440853!16s%2Fg%2F11rf090zh7!19sChIJkyN_bMrZ_hURJPOihrXyhhM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض ابن شملان»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0175442130."
+    },
+    "phoneEvidence": {
+      "0175442130": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D8%A8%D9%86+%D8%B4%D9%85%D9%84%D8%A7%D9%86%E2%80%AD/data=!4m7!3m6!1s0x15fed9ca6c7f2393:0x1386f2b586a2f324!8m2!3d17.5834395!4d44.3440853!16s%2Fg%2F11rf090zh7!19sChIJkyN_bMrZ_hURJPOihrXyhhM?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-6862480891870983680",
@@ -4492,7 +5137,26 @@
     "lat": 17.57907,
     "lon": 44.34004,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%AC%D9%85+%D8%A7%D9%84%D9%87%D9%84%D8%A7%D9%84+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5790753,44.3400442,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed90074cf9d8f:0x5f3c6e031de03600!8m2!3d17.5790753!4d44.3400442!16s%2Fg%2F11wbcxdz3z?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض نجم الهلال للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0508892661."
+    },
+    "phoneEvidence": {
+      "0508892661": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%AC%D9%85+%D8%A7%D9%84%D9%87%D9%84%D8%A7%D9%84+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5790753,44.3400442,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed90074cf9d8f:0x5f3c6e031de03600!8m2!3d17.5790753!4d44.3400442!16s%2Fg%2F11wbcxdz3z?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-2228534340415773388",
@@ -4523,7 +5187,26 @@
     "lat": 19.63344,
     "lon": 41.99034,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A8%D9%86+%D8%AD%D9%86%D8%B4+%D9%84%D8%A8%D9%8A%D8%B9+%D9%88%D8%B4%D8%B1%D8%A7%D8%A1+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@19.6334438,41.9903404,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e57f001119386d:0x3ea25f08eeb5974c!8m2!3d19.6334438!4d41.9903404!16s%2Fg%2F11y4_whtdp?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض بن حنش لبيع وشراء السيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0555752642."
+    },
+    "phoneEvidence": {
+      "0555752642": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A8%D9%86+%D8%AD%D9%86%D8%B4+%D9%84%D8%A8%D9%8A%D8%B9+%D9%88%D8%B4%D8%B1%D8%A7%D8%A1+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@19.6334438,41.9903404,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e57f001119386d:0x3ea25f08eeb5974c!8m2!3d19.6334438!4d41.9903404!16s%2Fg%2F11y4_whtdp?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-8273370937357263544",
@@ -4538,7 +5221,26 @@
     "lat": 19.63135,
     "lon": 41.98962,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات مستعملة",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B4%D8%B1%D9%82+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@19.6313486,41.9896218,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e57f006df6b16d:0x72d0eb08883862b8!8m2!3d19.6313486!4d41.9896218!16s%2Fg%2F11mkl3nt2h?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض الشرق للسيارات»، والفئة «تاجر سيارات مستعملة»، والعنوان المطابق، ورقم 0509574957."
+    },
+    "phoneEvidence": {
+      "0509574957": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B4%D8%B1%D9%82+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@19.6313486,41.9896218,851m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15e57f006df6b16d:0x72d0eb08883862b8!8m2!3d19.6313486!4d41.9896218!16s%2Fg%2F11mkl3nt2h?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase5-google-12943392054327755487",
@@ -4962,7 +5664,26 @@
     "lat": 28.43624,
     "lon": 36.46145,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AD%D8%B1%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@28.4362314,36.4614568,794m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15a9afbf6398de0b:0xdcae184cb0df1e9d!8m2!3d28.4362314!4d36.4614568!16s%2Fg%2F11c2pggycs?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض الحربي للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0535287749."
+    },
+    "phoneEvidence": {
+      "0535287749": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AD%D8%B1%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@28.4362314,36.4614568,794m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15a9afbf6398de0b:0xdcae184cb0df1e9d!8m2!3d28.4362314!4d36.4614568!16s%2Fg%2F11c2pggycs?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-google-17000952999640984371",
@@ -5853,7 +6574,26 @@
     "lat": 20.08922,
     "lon": 41.44284,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A3%D8%A8%D9%88+%D8%A3%D9%86%D9%88%D8%B1%E2%80%AD/@20.0892243,41.4428369,848m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15ef47d8474dbe79:0x36b64141d1819689!8m2!3d20.0892243!4d41.4428369!16s%2Fg%2F11c5brl2gh?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض المملكة للسيارات أبو أنور»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0559288400."
+    },
+    "phoneEvidence": {
+      "0559288400": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A3%D8%A8%D9%88+%D8%A3%D9%86%D9%88%D8%B1%E2%80%AD/@20.0892243,41.4428369,848m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15ef47d8474dbe79:0x36b64141d1819689!8m2!3d20.0892243!4d41.4428369!16s%2Fg%2F11c5brl2gh?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-9f06837fa9199d",
@@ -5868,7 +6608,26 @@
     "lat": 20.08687,
     "lon": 41.44351,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B3%D8%B9%D9%8A%D8%AF+%D8%B3%D8%B9%D8%AF+%D8%A7%D9%84%D8%B2%D9%8A%D8%B1+%D8%B4%D9%8A%D8%AE+%D8%B7%D8%A7%D8%A6%D9%81%D8%A9+%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%E2%80%AD/data=!4m7!3m6!1s0x15ef4751c425e007:0x9691dfdf6b7c03d2!8m2!3d20.0868708!4d41.4435091!16s%2Fg%2F11krdqr623!19sChIJB-AlxFFH7xUR0gN8a9_fkZY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض سعيد سعد الزير شيخ طائفة المعارض»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0505773041."
+    },
+    "phoneEvidence": {
+      "0505773041": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B3%D8%B9%D9%8A%D8%AF+%D8%B3%D8%B9%D8%AF+%D8%A7%D9%84%D8%B2%D9%8A%D8%B1+%D8%B4%D9%8A%D8%AE+%D8%B7%D8%A7%D8%A6%D9%81%D8%A9+%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%E2%80%AD/data=!4m7!3m6!1s0x15ef4751c425e007:0x9691dfdf6b7c03d2!8m2!3d20.0868708!4d41.4435091!16s%2Fg%2F11krdqr623!19sChIJB-AlxFFH7xUR0gN8a9_fkZY?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-d6773377d56e10",
@@ -5883,7 +6642,26 @@
     "lat": 20.08851,
     "lon": 41.44237,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%85%D9%82%D8%A8%D9%84+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@20.0885104,41.4423719,848m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15ef47d8184e24eb:0xc93ddfb6d4f278ce!8m2!3d20.0885104!4d41.4423719!16s%2Fg%2F11c1pmj18r?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض المقبل للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0177250246."
+    },
+    "phoneEvidence": {
+      "0177250246": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D9%85%D9%82%D8%A8%D9%84+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@20.0885104,41.4423719,848m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15ef47d8184e24eb:0xc93ddfb6d4f278ce!8m2!3d20.0885104!4d41.4423719!16s%2Fg%2F11c1pmj18r?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-9a89dd5391a2fd",
@@ -5898,7 +6676,18 @@
     "lat": 20.0882,
     "lon": 41.44191,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "unresolved",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": "سوق سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A8%D9%86%D8%AF%D8%B1+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@20.088197,41.441912,848m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15ef473b193cb899:0x1e433d468053eed5!8m2!3d20.088197!4d41.441912!16s%2Fg%2F11zj4c46v5?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact current place is «سوق سيارات» (car market), with matching name/address/phone. This is not sufficient by itself to establish that this exact entity operates a sales showroom rather than a market/grounds listing."
+    }
   },
   {
     "id": "phase6-cars-3e9451935a7160",
@@ -5913,7 +6702,26 @@
     "lat": 20.12858,
     "lon": 41.4202,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC+%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@20.1285781,41.4202031,848m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15ef37004c818f63:0xaf0554a56b2b62e7!8m2!3d20.1285781!4d41.4202031!16s%2Fg%2F11vwzqyq7j?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض الخليج العربي للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0592985195."
+    },
+    "phoneEvidence": {
+      "0592985195": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC+%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@20.1285781,41.4202031,848m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15ef37004c818f63:0xaf0554a56b2b62e7!8m2!3d20.1285781!4d41.4202031!16s%2Fg%2F11vwzqyq7j?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-36b65d0c23b39e",
@@ -6160,7 +6968,26 @@
     "lat": 17.58394,
     "lon": 44.3468,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%AC%D9%88%D9%85+%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D9%82%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5839425,44.3467946,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed90bfa966ee3:0xa335dd51016d001c!8m2!3d17.5839425!4d44.3467946!16s%2Fg%2F11bzrpq_3m?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض نجوم الشارقة للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0537999763."
+    },
+    "phoneEvidence": {
+      "0537999763": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%86%D8%AC%D9%88%D9%85+%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D9%82%D8%A9+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@17.5839425,44.3467946,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed90bfa966ee3:0xa335dd51016d001c!8m2!3d17.5839425!4d44.3467946!16s%2Fg%2F11bzrpq_3m?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-c9f0887e3fa8ce",
@@ -6175,7 +7002,26 @@
     "lat": 17.57871,
     "lon": 44.33948,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A8%D9%86%D8%AC%D8%B1%D8%A7%D9%86%E2%80%AD/@17.5787058,44.3394769,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed9cf17bb45e9:0x7dc4eadb8194e11a!8m2!3d17.5787058!4d44.3394769!16s%2Fg%2F11jmyzs_tt?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض العنزي للسيارات بنجران»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0555510547."
+    },
+    "phoneEvidence": {
+      "0555510547": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A8%D9%86%D8%AC%D8%B1%D8%A7%D9%86%E2%80%AD/@17.5787058,44.3394769,861m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15fed9cf17bb45e9:0x7dc4eadb8194e11a!8m2!3d17.5787058!4d44.3394769!16s%2Fg%2F11jmyzs_tt?authuser=0&hl=ar&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-d3d666f82da0aa",
@@ -6190,7 +7036,26 @@
     "lat": 17.58375,
     "lon": 44.34462,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "confirmed_live_car_dealer",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [
+        "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B4%D8%A7%D9%87%D9%8A%D9%86+%D8%A7%D9%84%D8%B5%D8%AD%D8%B1%D8%A7%D8%A1+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90c83f8b867:0x88cc51e6f3d42cc2!8m2!3d17.583745!4d44.344623!16s%2Fg%2F11f40q47ym!19sChIJZ7j4gwzZ_hURwizU8-ZRzIg?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1"
+      ],
+      "checkedAt": "2026-10-16",
+      "basis": "بطاقة Google Maps المباشرة تعرض «معرض شاهين الصحراء للسيارات»، والفئة «تاجر سيارات»، والعنوان المطابق، ورقم 0555814681."
+    },
+    "phoneEvidence": {
+      "0555814681": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B4%D8%A7%D9%87%D9%8A%D9%86+%D8%A7%D9%84%D8%B5%D8%AD%D8%B1%D8%A7%D8%A1+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/data=!4m7!3m6!1s0x15fed90c83f8b867:0x88cc51e6f3d42cc2!8m2!3d17.583745!4d44.344623!16s%2Fg%2F11f40q47ym!19sChIJZ7j4gwzZ_hURwizU8-ZRzIg?authuser=0&hl=ar&g_ep=EgoyMDI2MDkzMC4wIJJjKgBIAVAD&rclk=1",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-ef01771faef54a",
@@ -6486,7 +7351,24 @@
     "activityEvidenceSource": "https://haraj.com.sa/users/%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B2%D9%85%D9%8A%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/",
     "activityEvidenceLevel": "عالٍ",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Google Maps تعرض معرض الحازمي كتاجر سيارات في عرعر. الرقم +966535563764 ظاهر في البطاقة، كما ردّ مالك النشاط على مراجعة بالرقم 0535563764؛ استبدلت الرقم القديم وفق رد المالك."
+    "mapReviewNote": "بطاقة Google Maps تعرض معرض الحازمي كتاجر سيارات في عرعر. الرقم +966535563764 ظاهر في البطاقة، كما ردّ مالك النشاط على مراجعة بالرقم 0535563764؛ استبدلت الرقم القديم وفق رد المالك.",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0535563764": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%AD%D8%A7%D8%B2%D9%85%D9%8A%E2%80%AD/@31.0015192,40.9395194,17z/data=!3m1!4b1!4m6!3m5!1s0x156c738369b168d1:0x28eddc28da8358b8!8m2!3d31.0015192!4d40.9395194!16s%2Fg%2F11f75_c1vk",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-c0f221b2e1c918",
@@ -6500,7 +7382,16 @@
     "maps": "https://www.google.com/maps/?cid=11584850255152263052",
     "lat": null,
     "lon": null,
-    "sec": ""
+    "sec": "",
+    "activityVerification": {
+      "status": "unresolved_no_readable_card",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": null,
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Stored exact map link did not yield a readable business identity/category in captured state. This is not proof of closure or nonexistence; no generic search URL or other entity is substituted."
+    }
   },
   {
     "id": "national-car-f9bee8ef8c3bbf",
@@ -6516,7 +7407,24 @@
     "lon": 40.9405511,
     "sec": "",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق الاسم ونشاط تاجر السيارات وعنوان معارض السيارات في عرعر؛ رقم البطاقة يطابق الرقم المخزن."
+    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق الاسم ونشاط تاجر السيارات وعنوان معارض السيارات في عرعر؛ رقم البطاقة يطابق الرقم المخزن.",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0538391411": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D9%85%D8%B7%D8%B1+%D8%AC%D9%87%D9%8A%D9%85+%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@31.0035616,40.9405511,17z/data=!3m1!4b1!4m6!3m5!1s0x156c7307a79652d3:0x8da52195d3e95176!8m2!3d31.0035616!4d40.9405511!16s%2Fg%2F11jt7rj0vm",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-45c6b9afc76a64",
@@ -6533,7 +7441,16 @@
     "sec": "",
     "loc": "nb",
     "mapReviewStatus": "unresolved_secondary_evidence_pin_unverified",
-    "mapReviewNote": "لم يظهر في البحث مصدر حالي يؤكد استمرار النشاط أو رقم الهاتف/العنوان المسجل. صفحة حراج المتاحة قديمة/محذوفة؛ أبقيت البيانات كما هي دون اعتبارها إثباتًا حاليًا. دبوس Google والموقع وواتساب غير محسومة."
+    "mapReviewNote": "لم يظهر في البحث مصدر حالي يؤكد استمرار النشاط أو رقم الهاتف/العنوان المسجل. صفحة حراج المتاحة قديمة/محذوفة؛ أبقيت البيانات كما هي دون اعتبارها إثباتًا حاليًا. دبوس Google والموقع وواتساب غير محسومة.",
+    "activityVerification": {
+      "status": "unresolved_identity_continuity",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Stored CID now opens معرض اساس الامان والجودة with a different phone at the same address. The old أعمال الدوادمي identity cannot be assumed to continue merely because place ID/address remain."
+    }
   },
   {
     "id": "national-car-282c8990ffc2a2",
@@ -6541,7 +7458,8 @@
     "city": "الدوادمي",
     "nb": "G995+FWR، الصناعية، الدوادمي 17436، السعودية",
     "phones": [
-      "0116420011"
+      "0116420011",
+      "0553398535"
     ],
     "web": "",
     "maps": "https://www.google.com/maps/?cid=10671145211284018839",
@@ -6550,7 +7468,28 @@
     "sec": "",
     "loc": "pt",
     "mapReviewStatus": "unverified_pin_independent_listing_match",
-    "mapReviewNote": "مصادر الدليل المستقلة تطابق الاسم والنشاط والعنوان المحلي ورقم الهاتف المسجل. رابط Google Maps المحفوظ لم يُفتح في هذه الدفعة؛ لذلك دبوس المكان وإحداثياته وواتساب والموقع الرسمي لم تُحسم، ولا يُسجل كموقع مؤكد."
+    "mapReviewNote": "مصادر الدليل المستقلة تطابق الاسم والنشاط والعنوان المحلي ورقم الهاتف المسجل. رابط Google Maps المحفوظ لم يُفتح في هذه الدفعة؛ لذلك دبوس المكان وإحداثياته وواتساب والموقع الرسمي لم تُحسم، ولا يُسجل كموقع مؤكد.",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر السيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0553398535": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=10671145211284018839",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    },
+    "phoneContacts": [
+      "",
+      ""
+    ]
   },
   {
     "id": "national-car-a199c17afbdb62",
@@ -6558,7 +7497,8 @@
     "city": "الدوادمي",
     "nb": "G996+44P، طريق الملك خالد، الصناعية، الدوادمي 17436، السعودية",
     "phones": [
-      "0116420759"
+      "0116420759",
+      "0596015738"
     ],
     "web": "",
     "maps": "https://www.google.com/maps/?cid=2409049368785121446",
@@ -6567,7 +7507,28 @@
     "sec": "",
     "loc": "pt",
     "mapReviewStatus": "unverified_pin_independent_listing_match",
-    "mapReviewNote": "مصادر الدليل المستقلة تطابق الاسم والنشاط والعنوان المحلي ورقم الهاتف المسجل. رابط Google Maps المحفوظ لم يُفتح في هذه الدفعة؛ لذلك دبوس المكان وإحداثياته وواتساب والموقع الرسمي لم تُحسم، ولا يُسجل كموقع مؤكد."
+    "mapReviewNote": "مصادر الدليل المستقلة تطابق الاسم والنشاط والعنوان المحلي ورقم الهاتف المسجل. رابط Google Maps المحفوظ لم يُفتح في هذه الدفعة؛ لذلك دبوس المكان وإحداثياته وواتساب والموقع الرسمي لم تُحسم، ولا يُسجل كموقع مؤكد.",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0596015738": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=2409049368785121446",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    },
+    "phoneContacts": [
+      "",
+      ""
+    ]
   },
   {
     "id": "national-car-769929b42054d3",
@@ -6628,7 +7589,24 @@
     "lon": 49.99827,
     "sec": "",
     "loc": "nb",
-    "pdfShowroomVerified": true
+    "pdfShowroomVerified": true,
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0503852098": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=2068688951169834247",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-c80e0cb5068ed3",
@@ -6904,7 +7882,8 @@
     "city": "الخرج",
     "nb": "5CP3+VQJ، السعادة، الخرج 16443، السعودية",
     "phones": [
-      "0500047979"
+      "0500047979",
+      "0555280977"
     ],
     "web": "",
     "maps": "https://www.google.com/maps/?cid=17975153483091438440",
@@ -6912,7 +7891,28 @@
     "lon": 47.40439,
     "sec": "",
     "loc": "pt",
-    "pdfShowroomVerified": true
+    "pdfShowroomVerified": true,
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0555280977": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=17975153483091438440",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    },
+    "phoneContacts": [
+      "",
+      ""
+    ]
   },
   {
     "id": "national-car-853fb5466c5011",
@@ -7121,7 +8121,24 @@
     "lat": 27.03442,
     "lon": 49.56493,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0533337738": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=4773279917108887190",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-2eda88f7b71d96",
@@ -7136,7 +8153,16 @@
     "lat": 27.03442,
     "lon": 49.56493,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "unresolved_no_readable_card",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": null,
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Stored exact map link did not yield a readable business identity/category in captured state. This is not proof of closure or nonexistence; no generic search URL or other entity is substituted."
+    }
   },
   {
     "id": "national-car-a47ba5ce3fc5a4",
@@ -7151,7 +8177,24 @@
     "lat": 27.03442,
     "lon": 49.56493,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات مستعملة",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0555789400": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=10045740257258078088",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-6bcae457c76ea5",
@@ -7166,7 +8209,24 @@
     "lat": 27.03442,
     "lon": 49.56493,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات مستعملة",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0540603233": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=16719216804065540117",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-55fc2fe7df1733",
@@ -7181,7 +8241,24 @@
     "lat": 27.03442,
     "lon": 49.56493,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات مستعملة",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0555911200": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=13791619581874310402",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-209a262ace4a89",
@@ -7273,7 +8350,24 @@
     "lon": 40.9413961,
     "sec": "",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق معرض السعدون ونشاط بيع السيارات وموقع عرعر. تعرض البطاقة +966505585475 بدل الرقم المخزن؛ استُبدل الرقم برقم البطاقة."
+    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق معرض السعدون ونشاط بيع السيارات وموقع عرعر. تعرض البطاقة +966505585475 بدل الرقم المخزن؛ استُبدل الرقم برقم البطاقة.",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0505585475": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B3%D8%B9%D8%AF%D9%88%D9%86+%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA+%D8%B9%D8%B1%D8%B9%D8%B1%E2%80%AD/@31.0013027,40.9413961,17z/data=!3m1!4b1!4m6!3m5!1s0x156c73002f7c94f9:0x282123f6672ff8d3!8m2!3d31.0013027!4d40.9413961!16s%2Fg%2F11z8tmz43p",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-cf6f3c5b146fa1",
@@ -7296,7 +8390,8 @@
     "city": "القطيف",
     "nb": "شارع القدس، منطقة المستودعات، القطيف 32631",
     "phones": [
-      "0505847810"
+      "0505847810",
+      "0558777104"
     ],
     "web": "",
     "maps": "https://www.google.com/maps/?cid=11549186874776732353",
@@ -7304,7 +8399,28 @@
     "lon": 50.0188,
     "sec": "",
     "loc": "nb",
-    "pdfShowroomVerified": true
+    "pdfShowroomVerified": true,
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0558777104": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=11549186874776732353",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    },
+    "phoneContacts": [
+      "",
+      ""
+    ]
   },
   {
     "id": "national-car-41f8e10e641608",
@@ -7320,7 +8436,24 @@
     "lon": 50.05233,
     "sec": "",
     "loc": "pt",
-    "pdfShowroomVerified": true
+    "pdfShowroomVerified": true,
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0545174052": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=161918289725503931",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-d4e3f987928367",
@@ -7439,7 +8572,24 @@
     "lon": 42.605816,
     "sec": "",
     "geoSource": "https://www.google.com/maps/?cid=9745631141417187570",
-    "geoBasis": "بطاقة خرائط Google بالاسم المطابق؛ الفئة تاجر سيارات؛ العنوان جنوب المدينة، الأمير سلطان، بيشة 61922؛ Plus Code WJP4+48؛ هاتف منشور و68 مراجعة؛ دبوس الصفحة يعطي الإحداثية المذكورة."
+    "geoBasis": "بطاقة خرائط Google بالاسم المطابق؛ الفئة تاجر سيارات؛ العنوان جنوب المدينة، الأمير سلطان، بيشة 61922؛ Plus Code WJP4+48؛ هاتف منشور و68 مراجعة؛ دبوس الصفحة يعطي الإحداثية المذكورة.",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0548920107": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=9745631141417187570",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-9d5d9905188019",
@@ -7454,7 +8604,24 @@
     "lat": 19.99843,
     "lon": 42.60531,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0176228287": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=16590701963606646843",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-93b8851dbd48d9",
@@ -7640,7 +8807,16 @@
     "maps": "https://www.google.com/maps/?cid=9531526961148001094",
     "lat": 27.4793111,
     "lon": 41.7318162,
-    "sec": ""
+    "sec": "",
+    "activityVerification": {
+      "status": "unresolved_generic_category",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": "متجر",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact card category متجر only. Captured reviews include a purchase inquiry, not proof of completed sales, and a complaint about the old landline; no current showroom-sales proof established."
+    }
   },
   {
     "id": "phase6-google-3646076934075893210",
@@ -7775,7 +8951,24 @@
     "lon": 40.9418583,
     "sec": "",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق اسم معرض الرميح وموقعه في معارض السيارات بعرعر، ورقمها يطابق السجل. مراجعات البطاقة تذكر شراء سيارات من الفرع."
+    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق اسم معرض الرميح وموقعه في معارض السيارات بعرعر، ورقمها يطابق السجل. مراجعات البطاقة تذكر شراء سيارات من الفرع.",
+    "activityVerification": {
+      "status": "verified_live_sales_reviews",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": null,
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact local identity plus explicit first-person completed vehicle-purchase reviews support actual sales, rather than relying on generic category alone."
+    },
+    "phoneEvidence": {
+      "0503363170": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%A7%D9%84%D8%B1%D9%85%D9%8A%D8%AD+%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@31.0000829,40.9418583,17z/data=!3m1!4b1!4m6!3m5!1s0x156c73364ce9ae07:0xe7e7a8601fad7ba8!8m2!3d31.0000829!4d40.9418583!16s%2Fg%2F11gtslwvss",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-2f415413f39a6f",
@@ -7805,7 +8998,16 @@
     "lat": 30.97874,
     "lon": 41.02201,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "unresolved_no_readable_card",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": null,
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Stored exact map link did not yield a readable business identity/category in captured state. This is not proof of closure or nonexistence; no generic search URL or other entity is substituted."
+    }
   },
   {
     "id": "national-car-35bb74bba41c9a",
@@ -7850,7 +9052,16 @@
     "maps": "https://www.google.com/maps/?cid=16768009180384451108",
     "lat": null,
     "lon": null,
-    "sec": ""
+    "sec": "",
+    "activityVerification": {
+      "status": "unresolved_no_readable_card",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": null,
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Stored exact map link did not yield a readable business identity/category in captured state. This is not proof of closure or nonexistence; no generic search URL or other entity is substituted."
+    }
   },
   {
     "id": "national-car-2e75ae3e21a2b4",
@@ -7894,7 +9105,24 @@
     "maps": "https://www.google.com/maps/?cid=15799141217152998169",
     "lat": 24.1093342,
     "lon": 38.0763315,
-    "sec": ""
+    "sec": "",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0567225566": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=15799141217152998169",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-26dafbee4da12a",
@@ -7937,7 +9165,24 @@
     "lat": 24.08769,
     "lon": 38.04617,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0143908880": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=6843176698281207014",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-a46eb003b73006",
@@ -7980,7 +9225,16 @@
     "lat": 24.06934,
     "lon": 38.11558,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "activityVerification": {
+      "status": "unresolved_no_readable_card",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": null,
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Stored exact map link did not yield a readable business identity/category in captured state. This is not proof of closure or nonexistence; no generic search URL or other entity is substituted."
+    }
   },
   {
     "id": "phase6-cars-35ccb2a38cf4c9",
@@ -8022,7 +9276,24 @@
     "maps": "https://www.google.com/maps/?cid=10112693050439091468",
     "lat": 24.1081235,
     "lon": 38.0748487,
-    "sec": ""
+    "sec": "",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0545802641": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=10112693050439091468",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-dda1e9ab4ecb20",
@@ -8037,7 +9308,24 @@
     "lat": 24.10623,
     "lon": 38.07413,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0552518888": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=8040518425495881887",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-92b843e1897ce0",
@@ -8138,7 +9426,24 @@
     "maps": "https://www.google.com/maps/?cid=14570016571882771368",
     "lat": 27.4807287,
     "lon": 41.7327859,
-    "sec": ""
+    "sec": "",
+    "activityVerification": {
+      "status": "verified_live_sales_reviews",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "متجر",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact local identity plus explicit first-person completed vehicle-purchase reviews support actual sales, rather than relying on generic category alone."
+    },
+    "phoneEvidence": {
+      "0532328869": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=14570016571882771368",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-google-4156538934738978535",
@@ -8256,7 +9561,24 @@
     "lon": 50.0417,
     "sec": "",
     "loc": "pt",
-    "pdfShowroomVerified": true
+    "pdfShowroomVerified": true,
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0509515854": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=5074131212685972609",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-fc5ea0c4ea47f9",
@@ -8272,7 +9594,16 @@
     "lon": 49.99986,
     "sec": "",
     "loc": "nb",
-    "pdfShowroomVerified": true
+    "pdfShowroomVerified": true,
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    }
   },
   {
     "id": "phase6-cars-e2cafffff3f294",
@@ -8348,7 +9679,24 @@
     "lat": 24.09987,
     "lon": 38.07097,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0505360991": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=17389605020123542236",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-32923021719792",
@@ -8450,7 +9798,24 @@
     "lat": 19.93192,
     "lon": 42.59871,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0501892402": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=13261813190764410375",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-2b331e623330c4",
@@ -8515,7 +9880,8 @@
     "city": "الخرج",
     "nb": "9361، حي السعادة، الخرج16443",
     "phones": [
-      "0508086877"
+      "0508086877",
+      "0531507576"
     ],
     "web": "",
     "maps": "https://www.google.com/maps/?cid=17911804452584942703",
@@ -8524,7 +9890,28 @@
     "sec": "",
     "geoSource": "https://www.google.com/maps/?cid=17911804452584942703",
     "geoBasis": "بطاقة Google بالاسم والمدينة المطابقين؛ الفئة تاجر سيارات، والعنوان في حي السعادة بالخرج مع Plus Code 5CP2+P9؛ هاتف منشور وساعات عمل حالية والبطاقة ظاهرة كمفتوحة. 13 مراجعة؛ لا يظهر انتماء لوكالة رسمية. إحداثيات الدبوس من رابط صفحة المكان، لا من العنوان.",
-    "pdfShowroomVerified": true
+    "pdfShowroomVerified": true,
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر السيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0531507576": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=17911804452584942703",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    },
+    "phoneContacts": [
+      "",
+      ""
+    ]
   },
   {
     "id": "national-car-bda17a7164c9a4",
@@ -8849,7 +10236,16 @@
     "lat": 27.03442,
     "lon": 49.56493,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "unresolved_no_readable_card",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": null,
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Stored exact map link did not yield a readable business identity/category in captured state. This is not proof of closure or nonexistence; no generic search URL or other entity is substituted."
+    }
   },
   {
     "id": "national-car-ed107ab786b5a6",
@@ -8864,7 +10260,24 @@
     "lat": 27.03442,
     "lon": 49.56493,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "verified_live_sales_reviews",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "متجر",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact local identity plus explicit first-person completed vehicle-purchase reviews support actual sales, rather than relying on generic category alone."
+    },
+    "phoneEvidence": {
+      "0558422384": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=6690862392171866879",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-8e1ef9c80a327c",
@@ -8894,7 +10307,16 @@
     "maps": "https://www.google.com/maps/?cid=218152471808205720",
     "lat": null,
     "lon": null,
-    "sec": ""
+    "sec": "",
+    "activityVerification": {
+      "status": "unresolved_no_readable_card",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": null,
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Stored exact map link did not yield a readable business identity/category in captured state. This is not proof of closure or nonexistence; no generic search URL or other entity is substituted."
+    }
   },
   {
     "id": "national-car-40e9f76b92325e",
@@ -8925,7 +10347,24 @@
     "lon": 40.9410625,
     "sec": "",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق الاسم ونشاط تاجر السيارات والعنوان في عرعر. تعرض البطاقة +966598042520 بدل الرقم المخزن؛ استُبدل الرقم برقم البطاقة."
+    "mapReviewNote": "بطاقة Google Maps المباشرة تطابق الاسم ونشاط تاجر السيارات والعنوان في عرعر. تعرض البطاقة +966598042520 بدل الرقم المخزن؛ استُبدل الرقم برقم البطاقة.",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0598042520": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D8%B9%D8%B1%D8%B6+%D8%B3%D9%85%D8%B1%D8%A7%D8%A1+%D8%AD%D8%A7%D8%A6%D9%84%E2%80%AD/@31.0040625,40.9410625,17z/data=!3m1!4b1!4m6!3m5!1s0x156c732fec74356f:0xdc8fc66562a033d7!8m2!3d31.0040625!4d40.9410625!16s%2Fg%2F11f75zr447",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-f45c8d1dcceb9e",
@@ -9075,14 +10514,36 @@
     "city": "الجبيل",
     "nb": "الجبيل الصناعية، المملكة العربية السعودية",
     "phones": [
-      "0505907424"
+      "0505907424",
+      "0556233889"
     ],
     "web": "",
     "maps": "https://maps.google.com/?cid=18072489979886380498",
     "lat": 27.03442,
     "lon": 49.56493,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات مستعملة",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0556233889": {
+        "status": "verified",
+        "source": "https://maps.google.com/?cid=18072489979886380498",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    },
+    "phoneContacts": [
+      "",
+      ""
+    ]
   },
   {
     "id": "national-car-58093809041e50",
@@ -9090,14 +10551,36 @@
     "city": "الجبيل",
     "nb": "معارض سيارات، ميناء الملك فهد الصناعي، الجبيل 35528، المملكة العربية السعودية",
     "phones": [
-      "0534493945"
+      "0534493945",
+      "0552154455"
     ],
     "web": "",
     "maps": "https://maps.google.com/?cid=1322588638541895870",
     "lat": 27.03442,
     "lon": 49.56493,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0552154455": {
+        "status": "verified",
+        "source": "https://maps.google.com/?cid=1322588638541895870",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    },
+    "phoneContacts": [
+      "",
+      ""
+    ]
   },
   {
     "id": "national-car-8c7e4b6e73169f",
@@ -9105,14 +10588,36 @@
     "city": "الجبيل",
     "nb": "5325، 7114، ميناء الملك فهد الصناعي، الجبيل 35528، المملكة العربية السعودية",
     "phones": [
-      "0530144803"
+      "0530144803",
+      "0532930146"
     ],
     "web": "",
     "maps": "https://maps.google.com/?cid=11052611444837881573",
     "lat": 27.03442,
     "lon": 49.56493,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0532930146": {
+        "status": "verified",
+        "source": "https://maps.google.com/?cid=11052611444837881573",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    },
+    "phoneContacts": [
+      "",
+      ""
+    ]
   },
   {
     "id": "phase6-cars-c8ff42092819e8",
@@ -9127,7 +10632,16 @@
     "lat": 24.07398,
     "lon": 38.08977,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "unresolved_brand_agency_scope",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Vehicle purchases are explicitly supported, but exact Chery/Jetour branded card and review calling it Yanbu agent do not establish an independent showroom within requested scope."
+    }
   },
   {
     "id": "national-car-38a10fe36d0e71",
@@ -9174,7 +10688,24 @@
     "lon": 50.20773,
     "sec": "",
     "loc": "nb",
-    "pdfShowroomVerified": true
+    "pdfShowroomVerified": true,
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات مستعملة",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0546522225": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=7688140446062028536",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-bd9f09b15f6f98",
@@ -9190,7 +10721,24 @@
     "lon": 50.21488,
     "sec": "",
     "loc": "pt",
-    "pdfShowroomVerified": true
+    "pdfShowroomVerified": true,
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0551188933": {
+        "status": "verified",
+        "source": "https://www.google.com/maps?cid=11876543475537219853&gl=SA&hl=ar&ll=26.245968,50.214878&mapclient=embed&t=m&z=13",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-abcf3059eebb2c",
@@ -9206,7 +10754,24 @@
     "lon": 50.18704,
     "sec": "",
     "loc": "nb",
-    "pdfShowroomVerified": true
+    "pdfShowroomVerified": true,
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0599100001": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=17358073183773571856",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "phase6-cars-cf0f72a22c5f5e",
@@ -9665,7 +11230,24 @@
     "sec": "",
     "loc": "nb",
     "mapReviewStatus": "verified_direct_pin",
-    "mapReviewNote": "بطاقة Google Maps المباشرة تعرض مكتب النور كتاجر سيارات في العنوان نفسه في عرعر، ورقمها +966590483379 مطابق للسجل."
+    "mapReviewNote": "بطاقة Google Maps المباشرة تعرض مكتب النور كتاجر سيارات في العنوان نفسه في عرعر، ورقمها +966590483379 مطابق للسجل.",
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0590483379": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%86%D9%88%D8%B1%E2%80%AD/data=!4m7!3m6!1s0x156c0f1fd0689e15:0x3e39310e92a2fc4d!8m2!3d30.9636909!4d41.0492023!16s%2Fg%2F11pckk57lr!19sChIJFZ5o0B8PbBURTfyikg4xOT4",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-47cc4e68349574",
@@ -9679,7 +11261,16 @@
     "maps": "https://www.google.com/maps/place/?q=place_id:ChIJp1hR3PJzbBURtx7lCuN6U7k",
     "lat": null,
     "lon": null,
-    "sec": ""
+    "sec": "",
+    "activityVerification": {
+      "status": "unresolved_no_readable_card",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": null,
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Stored exact map link did not yield a readable business identity/category in captured state. This is not proof of closure or nonexistence; no generic search URL or other entity is substituted."
+    }
   },
   {
     "id": "national-car-112d893584cdee",
@@ -9693,7 +11284,16 @@
     "maps": "https://www.google.com/maps/place/?q=place_id:ChIJFVwlGRdzbBURxrCklMFf2E0",
     "lat": null,
     "lon": null,
-    "sec": ""
+    "sec": "",
+    "activityVerification": {
+      "status": "unresolved_no_readable_card",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": null,
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Stored exact map link did not yield a readable business identity/category in captured state. This is not proof of closure or nonexistence; no generic search URL or other entity is substituted."
+    }
   },
   {
     "id": "phase6-cars-58b6efb9ad4e84",
@@ -9708,7 +11308,16 @@
     "lat": 19.93192,
     "lon": 42.59871,
     "sec": "",
-    "loc": "nb"
+    "loc": "nb",
+    "activityVerification": {
+      "status": "unresolved_activity_scope",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": "تاجر سيارات MINI",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact card has brand-specific MINI dealer category while visible reviews describe vehicle valuation/appraisal, not completed car sales. Cannot infer qualifying independent sales activity."
+    }
   },
   {
     "id": "national-car-624b70b6a7d4b0",
@@ -9900,7 +11509,24 @@
     "lon": 50.19189,
     "sec": "",
     "loc": "nb",
-    "pdfShowroomVerified": true
+    "pdfShowroomVerified": true,
+    "activityVerification": {
+      "status": "verified_live_dealer_activity",
+      "supported": true,
+      "proofLevel": "fresh_live_exact_card",
+      "observedActivity": "تاجر سيارات",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact stored place opens matching local dealer name and a car/used-car dealer category. Name/address/place identity reviewed; activity only is proposed for closure."
+    },
+    "phoneEvidence": {
+      "0500425548": {
+        "status": "verified",
+        "source": "https://www.google.com/maps/?cid=4727680965130451960",
+        "checkedAt": "2026-10-16",
+        "scope": "matching_current_showroom_card"
+      }
+    }
   },
   {
     "id": "national-car-mas-khobar",
@@ -13081,7 +14707,16 @@
     "maps": "https://www.google.com/maps/?cid=13374098203614484521",
     "lat": 20.4668679,
     "lon": 45.5629394,
-    "sec": ""
+    "sec": "",
+    "activityVerification": {
+      "status": "unresolved_generic_category",
+      "supported": false,
+      "proofLevel": "unresolved",
+      "observedActivity": "أرض المعارض",
+      "sources": [],
+      "checkedAt": "2026-10-16",
+      "basis": "Exact identity/phone opens, but category أرض المعارض and generic service reviews do not prove actual vehicle-sales activity."
+    }
   },
   {
     "id": "v9-car-b4ca928aa450",

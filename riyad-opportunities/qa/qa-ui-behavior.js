@@ -43,7 +43,7 @@ const fetch = async u => {
 };
 let src = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');
   src = src.replace('  boot();', `  window.__behavior = {
-    selectBranch, renderBranch, renderStart, renderSection, compute, itemsFor, rawItems,
+    selectBranch, renderBranch, renderStart, renderSection, bankApprovalPending, compute, itemsFor, rawItems,
     emptyState, card, openDetail, closeDlg, sameCity, cities, data: () => D, state: () => S
   }; boot();`);
 vm.runInNewContext(src, {
@@ -146,7 +146,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     A.selectBranch(branch.c); A.state().scope = 'city'; A.state().tab = k; A.state().q[k] = ''; A.renderBranch();
     if (!els.app.innerHTML.includes('id="q-sec"')) return false;
     const q = els['q-sec']; q.value = '__qa_no_such_record__'; q.dispatch('input');
-    return A.state().q[k] === '__qa_no_such_record__' && (els.content.innerHTML.includes('لا نتائج مطابقة') || (A.compute()[k].items.length === 0 && els.content.innerHTML.includes('لا توجد فرص متاحة موثقة')));
+    return A.state().q[k] === '__qa_no_such_record__' && (els.content.innerHTML.includes('لا نتائج مطابقة') || (A.compute()[k].items.length === 0 && (els.content.innerHTML.includes('لا توجد فرص متاحة موثقة') || (k === 'projects' && A.bankApprovalPending() && els.content.innerHTML.includes('بانتظار قائمة المشاريع المعتمدة')))));
   });
   assert(`search works in each of ${searchable.length} sections using a city with data`, searchResults.every(Boolean));
   A.selectBranch('243', true); A.state().scope = 'branch'; A.state().tab = 'projects'; A.state().q.projects = ''; A.renderBranch();
@@ -156,9 +156,9 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const exactCount = counterRows.length - unknownCount - approximateCount;
   const cityUnknownCount = A.itemsFor('projects', '', 'city').filter(x => x.rankD == null).length;
   const branchCounter = counterRows.length > 0 && exactCount > 0 && unknownCount > 0 &&
-    els.content.innerHTML.includes(A.compute().projects.items.length + ' مشاريع معتمدة في شرق الرياض');
+    (A.bankApprovalPending() ? els.content.innerHTML.includes('بانتظار قائمة المشاريع المعتمدة') && els.app.innerHTML.includes('>—</b>') : els.content.innerHTML.includes(A.compute().projects.items.length + ' مشاريع معتمدة في شرق الرياض'));
   els['q-sec'].value = '__qa_no_such_record__'; els['q-sec'].dispatch('input');
-  assert('Riyadh project count includes the whole sector and search updates its total', branchCounter && cityUnknownCount >= unknownCount && els.content.innerHTML.includes('0 مشاريع معتمدة في شرق الرياض') && !els.content.innerHTML.includes('ضمن نطاق الفرع') && (els.content.innerHTML.includes('لا نتائج مطابقة') || (A.compute().projects.items.length === 0 && els.content.innerHTML.includes('لا توجد فرص متاحة موثقة'))));
+  assert('Riyadh project count includes the whole sector and search updates its total', branchCounter && cityUnknownCount >= unknownCount && (A.bankApprovalPending() ? !els.content.innerHTML.includes('0 مشاريع') && els.content.innerHTML.includes('بانتظار قائمة المشاريع المعتمدة') : els.content.innerHTML.includes('0 مشاريع معتمدة في شرق الرياض')) && !els.content.innerHTML.includes('ضمن نطاق الفرع') && (els.content.innerHTML.includes('لا نتائج مطابقة') || (A.compute().projects.items.length === 0 && (els.content.innerHTML.includes('لا توجد فرص متاحة موثقة') || (A.bankApprovalPending() && els.content.innerHTML.includes('بانتظار قائمة المشاريع المعتمدة'))))));
 
   // NHC destinations stay separate from project rows and follow the selected sector.
   A.selectBranch('243', true); A.state().scope = 'branch'; A.state().tab = 'nhc';
