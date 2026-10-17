@@ -1,0 +1,19 @@
+const fs=require('fs'),vm=require('vm'),path=require('path');
+const root=path.resolve(process.argv[2]||path.join(__dirname,'..'));
+class El { constructor(id){this.id=id;this.innerHTML='';this.textContent='';this.value='';this.dataset={};this.disabled=false;this.hidden=false;this.handlers={};this.classList={contains:()=>false};} addEventListener(k,f){this.handlers[k]=f;} querySelectorAll(){return [];} setAttribute(){} getAttribute(){return null;} focus(){} }
+const els={};const document={title:'',body:{appendChild(){}},getElementById(id){if(id==='site-config')return null;return els[id]||(els[id]=new El(id));},querySelector(){return null;},querySelectorAll(){return [];},addEventListener(){},createElement(){return new El('new');}};
+const location={hash:'',pathname:'/',search:''};const localStorage={getItem(){return null},setItem(){},removeItem(){}};const window={location,scrollTo(){},addEventListener(){}};
+const fetch=async u=>{const p=path.join(root,u.split('?')[0]);return {ok:fs.existsSync(p),json:async()=>JSON.parse(fs.readFileSync(p,'utf8'))}};
+let src=fs.readFileSync(path.join(root,'assets/app.js'),'utf8').replace('  boot();',`  window.__t={choose:code=>{S=fresh();S.branch=D.branchByCode[code];S.scope=(S.branch.lat==null||S.branch.lon==null)&&sectorCity(S.branch.city)?'city':'branch';},selectBranch,itemsFor,rawItems,unlocatedItemsFor,nearestBranch,employeeGreeting,cities,sameCity,radiusApplies,compute,displayEligible,card,renderBranch,setScope:(x,r)=>{S.scope=x;S.radius=r||15;},data:()=>D,state:()=>S}; boot();`);
+vm.runInNewContext(src,{document,window,location,history:{replaceState(){}},localStorage,navigator:{},fetch,setTimeout,clearTimeout,console,URL,Blob});
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+(async()=>{await sleep(1500);const A=window.__t,D=A.data(),failures=[],counts=[];const ids=x=>x.map(y=>y.o.id).sort().join('|');
+for(const b of D.branches){A.selectBranch(b.c,true);const c=A.compute();if(!['الرياض','جدة'].includes(b.city)){const before={projects:ids(c.projects.items),opps:ids(c.opps.items),companies:ids(c.companies.items)};A.setScope('city');const city=A.compute();for(const k of Object.keys(before))if(before[k]!==ids(city[k].items))failures.push({branch:b.c,kind:k,reason:'nonmetro_scope_mismatch'});}if(['عنيزة','بريدة','بلجرشي','سيهات','خميس مشيط','تبوك'].includes(b.city))counts.push({branch:b.c,city:b.city,projects:c.projects.items.length,opps:c.opps.items.length,companies:c.companies.items.length});}
+const uma=D.branches.filter(b=>b.city==='عنيزة');for(const b of uma){A.selectBranch(b.c,true);const c=A.compute();if(!c.opps.items.some(x=>x.o.id==='op-central-salam-unaizah')||c.companies.items.length<4)failures.push({branch:b.c,reason:'unaizah_proven_additions_missing'});}
+const sihat=D.branches.find(b=>b.city==='سيهات');A.selectBranch(sihat.c,true);const si=A.compute().projects.items.map(x=>x.o.id);for(const id of ['P076','P115','P126','P128'])if(!si.includes(id))failures.push({id,reason:'physical_city_project_missing'});
+const sold=D.projects.find(x=>x.id==='P303');if(A.displayEligible('projects',sold))failures.push({id:'P303',reason:'sold_out_visible'});
+const stable=x=>Array.isArray(x)?x.map(stable):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(k=>[k,stable(x[k])])):x;
+const digest=require('crypto').createHash('sha256').update(JSON.stringify(stable(D.projects.map(x=>[x.id,x.bankApproval||null])))).digest('hex');if(digest!=='268a1f741de3bda5cf2d2ef7ad791902707df3483a7f41b7e6c6226f2cb95b13')failures.push({reason:'bank_source_approval_changed',digest});
+const b624=D.branches.find(b=>b.c==='624');if(b624.lat!==null||b624.lon!==null||b624.officialMapStatus!=='held')failures.push({reason:'624_uncertain_pin_not_held'});
+console.log(JSON.stringify({suite:'Recovered national coverage and preserved bank provenance',ok:!failures.length,branches:D.branches.length,failures,priorityCityCounts:counts},null,2));if(failures.length)process.exitCode=1;
+})();

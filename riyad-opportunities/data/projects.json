@@ -3459,7 +3459,7 @@
     "id": "P076",
     "n": "جنان فدك 30",
     "dev": "شركة جنان فدك للتطوير و الاستثمار العقاري",
-    "city": "الدمام",
+    "city": "سيهات",
     "type": "شقق",
     "img": "https://jinanfadak.sa/wp-content/uploads/2024/07/3-scaled.jpg",
     "desc": "",
@@ -3539,7 +3539,15 @@
     "contactLabel": "رقم المطور العام",
     "phoneContacts": [
       "رقم المطور العام"
-    ]
+    ],
+    "sourceIdentityCrosswalk": {
+      "sourceCity": "الدمام",
+      "physicalCity": "سيهات",
+      "relation": "source_city_contradiction",
+      "source": "https://jinanfadak.sa/projects/jinan_fadak_30",
+      "checkedAt": "2026-10-17T05:29:00Z",
+      "basis": "Exact project and developer identity matched to developer/regulator physical city. Original bank source and approval unchanged."
+    }
   },
   {
     "id": "P077",
@@ -5488,7 +5496,7 @@
     "id": "P115",
     "n": "جنان فدك 31",
     "dev": "شركة جنان فدك للتطوير و الاستثمار العقاري",
-    "city": "القطيف",
+    "city": "سيهات",
     "type": "شقق",
     "img": "https://jinanfadak.sa/wp-content/uploads/2024/07/photo_2023-01-18_10-15-04.jpg",
     "desc": "مشروع جنان فدك 31 هو مجمع سكني تجاري، يقع على مسطح بناء أكثر من 5,300 متر مربع",
@@ -5566,7 +5574,15 @@
     "phoneContacts": [
       "رقم المطور العام",
       ""
-    ]
+    ],
+    "sourceIdentityCrosswalk": {
+      "sourceCity": "القطيف",
+      "physicalCity": "سيهات",
+      "relation": "governorate_to_city",
+      "source": "https://jinanfadak.sa/projects/jinan-fadak-31",
+      "checkedAt": "2026-10-17T05:29:00Z",
+      "basis": "Exact project and developer identity matched to developer/regulator physical city. Original bank source and approval unchanged."
+    }
   },
   {
     "id": "P116",
@@ -6087,7 +6103,7 @@
     "id": "P126",
     "n": "قرطبة ريزيدينس2",
     "dev": "شركة جنان فدك للتطوير والاستثمار العقاري",
-    "city": "القطيف",
+    "city": "سيهات",
     "type": "شقق",
     "img": "https://jinanfadak.sa/wp-content/uploads/2025/06/لقطة-الشاشة-2025-06-03-171503.png",
     "desc": "مجمع سكني تجاري على طريق الملك عبدالعزيز في حي الجميح بمدينة سيهات، يضم 9 شقق تمليك و6 معارض، وتم تسليمه في مارس 2025.",
@@ -6169,7 +6185,15 @@
     "phoneContacts": [
       "رقم المطور العام",
       ""
-    ]
+    ],
+    "sourceIdentityCrosswalk": {
+      "sourceCity": "القطيف",
+      "physicalCity": "سيهات",
+      "relation": "governorate_to_city",
+      "source": "https://jinanfadak.sa/projects",
+      "checkedAt": "2026-10-17T05:29:00Z",
+      "basis": "Exact project and developer identity matched to developer/regulator physical city. Original bank source and approval unchanged."
+    }
   },
   {
     "id": "P127",
@@ -6231,7 +6255,7 @@
     "id": "P128",
     "n": "جنان الغدير",
     "dev": "شركة جنان فدك للتطوير والاستثمار العقاري",
-    "city": "القطيف",
+    "city": "سيهات",
     "type": "فلل",
     "img": "https://jinanfadak.sa/wp-content/uploads/2025/02/صورة-واتساب-بتاريخ-1446-08-28-في-10.13.26_3e4cd0fb.jpg",
     "desc": "مشروع سكني تجاري في حي الغدير على شارع الخليج بمدينة سيهات، يضم 43 شقة تمليك و12 معرضاً تجارياً بمساحة بناء نحو 3,380 م².",
@@ -6273,6 +6297,14 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "sourceIdentityCrosswalk": {
+      "sourceCity": "القطيف",
+      "physicalCity": "سيهات",
+      "relation": "governorate_to_city",
+      "source": "https://jinanfadak.sa/projects",
+      "checkedAt": "2026-10-17T05:29:00Z",
+      "basis": "Exact project and developer identity matched to developer/regulator physical city. Original bank source and approval unchanged."
     }
   },
   {
@@ -7053,7 +7085,7 @@
     "id": "P143",
     "n": "تاون سكوير بلجرشي",
     "dev": "مؤسسة الجمعية التعاونية للإسكان",
-    "city": "الباحة",
+    "city": "بلجرشي",
     "type": "شقق",
     "img": "",
     "desc": "",
@@ -7083,13 +7115,21 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "sourceIdentityCrosswalk": {
+      "sourceCity": "الباحة",
+      "physicalCity": "بلجرشي",
+      "relation": "region_to_city",
+      "source": "https://cafhb.org.sa/-3",
+      "checkedAt": "2026-10-17T05:29:00Z",
+      "basis": "Exact project and developer identity matched to developer/regulator physical city. Original bank source and approval unchanged."
     }
   },
   {
     "id": "P144",
     "n": "تمليك المحمدية 3",
     "dev": "مؤسسة الرواد الهندسية للمقاولات العامة",
-    "city": "الباحة",
+    "city": "بلجرشي",
     "type": "شقق",
     "img": "",
     "desc": "",
@@ -7119,6 +7159,14 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "sourceIdentityCrosswalk": {
+      "sourceCity": "الباحة",
+      "physicalCity": "بلجرشي",
+      "relation": "region_to_city",
+      "source": "https://alrowad.com.sa/",
+      "checkedAt": "2026-10-17T05:29:00Z",
+      "basis": "Exact project and developer identity matched to developer/regulator physical city. Original bank source and approval unchanged."
     }
   },
   {
@@ -13624,6 +13672,16 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "source": "https://www.tamlikalnahdi.com/?project=sultan-alsulimaniyah",
+      "checkedAt": "2026-10-17T05:29:00Z",
+      "status": "available"
+    },
+    "construction": {
+      "source": "https://www.tamlikalnahdi.com/?project=sultan-alsulimaniyah",
+      "checkedAt": "2026-10-17T05:29:00Z",
+      "status": "ready"
     }
   },
   {
@@ -15062,6 +15120,17 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "source": "https://www.tamlikalnahdi.com/?project=safwat-alsalamah",
+      "checkedAt": "2026-10-17T05:29:00Z",
+      "status": "sold_out",
+      "basis": "Official matching project inventory lists all26units sold,0remaining."
+    },
+    "construction": {
+      "source": "https://www.tamlikalnahdi.com/?project=safwat-alsalamah",
+      "checkedAt": "2026-10-17T05:29:00Z",
+      "status": "under_construction"
     }
   },
   {
@@ -34685,7 +34754,13 @@
     "geoBasis": "رابط خرائط Google المنشور في صفحة المشروع الرسمية يحل إلى الإحداثيات 18.2738305, 42.6494783.",
     "units": "40 شقة",
     "status": "قيد التنفيذ",
-    "price": 406000
+    "price": 406000,
+    "construction": {
+      "status": "under_construction",
+      "source": "https://www.karden-ksa.com/",
+      "checkedAt": "2026-10-16T20:33:00Z",
+      "basis": "Official project/developer text explicitly describes construction underway; sale availability is separate."
+    }
   },
   {
     "id": "P-falek-villa-alrass",

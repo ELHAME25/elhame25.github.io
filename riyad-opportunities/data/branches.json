@@ -1846,17 +1846,40 @@
     "city": "بريدة",
     "cityRaw": "بريدة",
     "sec": "",
-    "lat": 26.3921875,
-    "lon": 43.9239375,
+    "lat": null,
+    "lon": null,
     "nb": "الريان",
     "candidateCoordinates": {
       "lat": 26.392187,
       "lon": 43.923938,
-      "status": "superseded_by_official_locator",
-      "reason": "لا يُستخدم كإحداثي نشط بعد اعتماد نقطة الدليل الرسمي برمز الفرع."
+      "status": "unmatched_map_result_not_code_verified",
+      "reason": "الإحداثي المرشح محفوظ كما كان؛ مصدره نتيجة خرائط لا تعرض كود الفرع، ولم يثبت ربطها بالفرع 624."
     },
-    "officialMapStatus": "reviewed",
-    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05"
+    "officialMapStatus": "held",
+    "coordinateSource": null,
+    "distanceScope": "city",
+    "locationReview": "conflicting_pins_unmatched_map_candidate_and_official_locator",
+    "locationReviewSource": "Riyad_Bank_Branches_By_City.xlsx، ورقة التحقق من الخرائط، A195 وB198:E198؛ محدد البنك الرسمي، الرمز 624، لقطة 2026-10-16",
+    "coordinateReview": {
+      "previousActiveCoordinates": {
+        "lat": 26.3921875,
+        "lon": 43.9239375
+      },
+      "previousCandidateCoordinates": {
+        "lat": 26.392187,
+        "lon": 43.923938,
+        "status": "superseded_by_official_locator",
+        "reason": "لا يُستخدم كإحداثي نشط بعد اعتماد نقطة الدليل الرسمي برمز الفرع."
+      },
+      "previousClaimedCoordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05",
+      "previousClaimAssessment": "unsupported_official_code_match_claim",
+      "officialLocatorCandidate": {
+        "lat": 26.37623,
+        "lon": 43.91068,
+        "address": "طريق النهضة , بريدة , بريدة"
+      },
+      "resolution": "unresolved_do_not_use_either_candidate_for_distances"
+    }
   },
   {
     "c": "309",
