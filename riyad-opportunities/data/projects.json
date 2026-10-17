@@ -13730,11 +13730,13 @@
     "type": "فلل",
     "img": "https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2024-04/%D8%AF%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D8%AF%D9%86_W1512xH858.jpg",
     "desc": "مشروع فلل ضمن وجهة السدن في جدة بالشراكة مع الشركة الوطنية للإسكان، يضم 609 فلل على مساحة نحو 262 ألف م².",
-    "phones": [],
+    "phones": [
+      "920006044"
+    ],
     "wa": "",
     "contactUrl": "",
     "page": "https://www.nhc.sa/ar/real-estate-development/projects/47290",
-    "dsite": "https://teladco.sa/ar/",
+    "dsite": "https://teladco.sa/",
     "maps": "",
     "sales": "",
     "tier": "basic",
@@ -13785,6 +13787,13 @@
       "officialCity": "جدة",
       "basis": "Exact درة السدن/Jeddah/project47290. Current name adds the same city as a suffix; تلاد is the exact legal-brand core. Same official ID also identifies existing opportunity op-40f125b23d.",
       "bankApprovalTransferred": false
+    },
+    "fieldEvidence": {
+      "dsite": {
+        "source": "https://teladco.sa/",
+        "checkedAt": "2026-10-17T08:32:18Z",
+        "basis": "Old /ar/404; root lists exact Dura Sadan Jeddah and sales phone."
+      }
     }
   },
   {
@@ -19340,9 +19349,9 @@
     ],
     "wa": "",
     "contactUrl": "",
-    "page": "",
-    "dsite": "",
-    "maps": "",
+    "page": "https://hovglobal.com/single-community-ar/?term_id=209&community=sama-al-wareef",
+    "dsite": "https://hovglobal.com/",
+    "maps": "https://maps.app.goo.gl/NQ1iXTJBz9Q924ZW8?g_st=iwb",
     "sales": "",
     "tier": "basic",
     "phoneLevel": "dev",
@@ -19365,6 +19374,19 @@
       "sourceRowBasis": "1-based visible table row, including header when present; sourceRowIndex0 retains extraction index.",
       "sourceType": "bank_approved_inventory",
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://hovglobal.com/single-community-ar/?term_id=209&community=sama-al-wareef",
+      "checkedAt": "2026-10-17T08:32:18Z",
+      "basis": "Exact developer project detail lists available and per-model remaining offers; no guaranteed remaining count copied."
+    },
+    "fieldEvidence": {
+      "maps": {
+        "source": "https://hovglobal.com/single-community-ar/?term_id=209&community=sama-al-wareef",
+        "checkedAt": "2026-10-17T08:32:18Z",
+        "scope": "developer_published_project_link"
+      }
     }
   },
   {
@@ -28857,17 +28879,20 @@
     "type": "فلل",
     "img": "",
     "desc": "",
-    "phones": [],
+    "phones": [
+      "920001769"
+    ],
     "wa": "",
     "contactUrl": "",
-    "page": "",
-    "dsite": "",
-    "maps": "",
+    "page": "https://hovglobal.com/single-community-ar/?term_id=202&community=sama-al-fursan-2",
+    "dsite": "https://hovglobal.com/",
+    "maps": "https://maps.app.goo.gl/ZcewfmXvEgQLae2JA",
     "sales": "",
     "tier": "basic",
     "nb": "الفرسان",
     "sectors": [
-      "شرق"
+      "شرق",
+      "شمال"
     ],
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%85%D8%A7%20%D8%A7%D9%84%D9%81%D8%B1%D8%B3%D8%A7%D9%86%202%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
     "bankApproval": {
@@ -28891,6 +28916,24 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://hovglobal.com/single-community-ar/?term_id=202&community=sama-al-fursan-2",
+      "checkedAt": "2026-10-17T08:32:18Z",
+      "basis": "Exact developer project detail lists available and per-model remaining offers; no guaranteed remaining count copied."
+    },
+    "fieldEvidence": {
+      "maps": {
+        "source": "https://hovglobal.com/single-community-ar/?term_id=202&community=sama-al-fursan-2",
+        "checkedAt": "2026-10-17T08:32:18Z",
+        "scope": "developer_published_project_link"
+      },
+      "sectors": {
+        "source": "https://hovglobal.com/single-community-ar/?term_id=202&community=sama-al-fursan-2",
+        "checkedAt": "2026-10-17T08:32:18Z",
+        "basis": "Explicit northeast Riyadh."
+      }
     }
   },
   {
