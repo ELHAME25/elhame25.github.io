@@ -184,7 +184,8 @@
         });
       });
       var bootHash = /^#b([0-9A-Za-z]+)$/.exec(location.hash || '');
-      if (bootHash && D.branchByCode[bootHash[1]]) selectBranch(bootHash[1], true);
+      if (cityFromHash() && cities().some(function (c) { return sameCity(c, cityFromHash()) && !D.branches.some(function (b) { return sameCity(b.city, c); }); })) selectCity(cityFromHash(), true);
+      else if (bootHash && D.branchByCode[bootHash[1]]) selectBranch(bootHash[1], true);
       else renderStart();
       renderFooter();
     }).catch(function (e) {
@@ -242,7 +243,7 @@
       }, function () { button.disabled = false; button.textContent = 'استخدم موقعي — أقرب فرع'; toast('تعذّر تحديد موقعك. يمكنك اختيار الفرع يدويًا.'); }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 });
     });
     var selectedCode = '';
-    function list() {
+    function list(chosenCode) {
       var raw = qb.value.trim(), q = norm(raw), city = qc.value, cityQuery = !!q && D.branches.some(function (b) { return sameCity(b.city, raw); });
       qb.disabled = false;
       if (!city && !q) { selectedCode = ''; go.disabled = true; document.getElementById('branch-list').innerHTML = ''; return; }
@@ -253,11 +254,13 @@
         return (b.codeStatus !== 'local_internal_reference' && String(b.c).indexOf(raw) >= 0) || norm(b.n).indexOf(q) >= 0 || sameCity(b.city, raw) || norm(b.city).indexOf(q) >= 0 || (b.nb && norm(b.nb).indexOf(q) >= 0);
       });
       var exact = D.branchByCode[raw];
-      selectedCode = exact && exact.codeStatus !== 'local_internal_reference' && (!city || sameCity(exact.city, city)) ? exact.c : '';
+      selectedCode = typeof chosenCode === 'string' && items.some(function (b) { return b.c === chosenCode; }) ? chosenCode : (exact && exact.codeStatus !== 'local_internal_reference' && (!city || sameCity(exact.city, city)) ? exact.c : '');
       var shown = items.slice(0, 80);
       document.getElementById('branch-list').innerHTML = shown.map(function (b) {
         return '<button class="branch-item' + (selectedCode === b.c ? ' selected' : '') + '" type="button" role="listitem" aria-pressed="' + (selectedCode === b.c) + '" data-code="' + esc(b.c) + '"><span class="code num">' + (b.codeStatus === 'local_internal_reference' ? 'مرجع داخلي' : esc(b.c)) + '</span><span class="bn">' + esc(b.n) + '</span><span class="bc">' + esc(b.city) + (sectorCity(b.city) && b.sec ? ' · ' + esc(b.sec) : '') + '</span></button>';
       }).join('') + (!shown.length ? '<p class="list-note">لا يوجد فرع مطابق</p>' : '');
+      var browseCity = city || cities().filter(function (c) { return q && sameCity(c, raw); })[0];
+      if (browseCity && !D.branches.some(function (b) { return sameCity(b.city, browseCity); })) document.getElementById('branch-list').innerHTML += '<button class="btn" type="button" data-browse-city="' + esc(browseCity) + '">تصفح فرص ' + esc(browseCity) + ' بدون اختيار فرع</button>';
       go.disabled = !selectedCode;
     }
     qb.addEventListener('input', list);
@@ -267,8 +270,9 @@
     qe.addEventListener('input', function () { S.employee = qe.value.trim(); var g = document.getElementById('greet'); if (g) { g.textContent = employeeGreeting(S.employee); g.hidden = !S.employee; } });
     var greeting = document.getElementById('greet'); greeting.textContent = employeeGreeting(S.employee); greeting.hidden = !S.employee;
     document.getElementById('branch-list').addEventListener('click', function (e) {
+      var cityButton = e.target.closest('[data-browse-city]'); if (cityButton) { selectCity(cityButton.dataset.browseCity); return; }
       var b = e.target.closest('[data-code]'); if (!b) return;
-      selectedCode = b.dataset.code; qb.value = selectedCode; list(); go.focus();
+      selectedCode = b.dataset.code; var selected = D.branchByCode[selectedCode]; qb.value = selected && selected.codeStatus === 'local_internal_reference' ? selected.n : selectedCode; list(selectedCode); go.focus();
     });
     list();
     if (location.hash) { try { history.replaceState(null, '', location.pathname + location.search); } catch (e) { /* ignore */ } }
@@ -286,6 +290,19 @@
     var c = compute(); S.tab = PRIMARY_SECTIONS.filter(function (k) { return k !== 'nearby' && c[k].items.length; })[0] || 'opps';
     renderBranch(c);
     if (!fromBoot) window.scrollTo(0, 0);
+  }
+  // City browsing is not an invented bank branch and never widens to a province.
+  function selectCity(city, fromBoot) {
+    var canonical = cities().filter(function (c) { return sameCity(c, city); })[0];
+    if (!canonical || D.branches.some(function (b) { return sameCity(b.city, canonical); })) return;
+    S = fresh(); S.branch = { c: '', n: 'تصفح المدينة بدون فرع', city: canonical, cityOnly: true, sec: '', lat: null, lon: null }; S.scope = 'city';
+    try { localStorage.removeItem('rog.branch'); location.hash = 'city=' + encodeURIComponent(canonical); } catch (e) { /* ignore */ }
+    var c = compute(); S.tab = PRIMARY_SECTIONS.filter(function (k) { return c[k].items.length; })[0] || 'opps';
+    renderBranch(c); if (!fromBoot) window.scrollTo(0, 0);
+  }
+  function cityFromHash() {
+    if ((location.hash || '').indexOf('#city=') !== 0) return '';
+    try { return decodeURIComponent(location.hash.slice(6)); } catch (e) { return ''; }
   }
   function sectorCity(city) { return ['الرياض', 'جدة'].some(function (x) { return sameCity(x, city); }); }
   function soleBranch() { return (D.branchCount[cityKey(S.branch.city)] || 0) <= 1; }
@@ -1880,6 +1897,7 @@
   });
   window.addEventListener('hashchange', function () {
     var m = /^#b([0-9A-Za-z]+)$/.exec(location.hash || '');
+    if (cityFromHash() && (!S.branch || !S.branch.cityOnly || !sameCity(S.branch.city, cityFromHash()))) { selectCity(cityFromHash()); return; }
     if (m && D.branchByCode && D.branchByCode[m[1]] && (!S.branch || S.branch.c !== m[1])) selectBranch(m[1]);
     else if (!location.hash && S.branch) renderStart();
   });

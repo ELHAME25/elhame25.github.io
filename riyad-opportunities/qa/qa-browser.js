@@ -74,6 +74,49 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
  await page.fill('#q-sec','');await page.click('[data-tab="projects"]');assert.equal(await page.locator('.vcard').count(),12);await page.locator('.vcard [data-detail]').first().click();await page.waitForSelector('#detail[open]');assert(await page.locator('#detail').innerText().then(x=>x.includes('موثق وفق المصدر')));assert(!await page.locator('#detail').innerText().then(x=>x.includes('INTERNAL-QA-ONLY')));await page.keyboard.press('Escape');
  await page.click('[data-tab="nhc"]');const fursan=page.locator('.vcard').filter({has:page.locator('h3',{hasText:'الفرسان'})});await fursan.locator('[data-anchor="destination-projects"]').click();await page.waitForSelector('#detail[open] #destination-projects .vcard');await page.locator('#destination-projects .vcard [data-detail]').first().click();await page.waitForSelector('#detail[open] .back-results');assert((await page.locator('#detail .back-results').innerText()).includes('العودة إلى الوجهة'));await page.locator('#detail .back-results').click();await page.waitForSelector('#detail[open] #destination-projects');await page.keyboard.press('Escape');assert.equal(await page.locator('#detail[open]').count(),0);
  checks.push({fixturesOnlyInMemory:true,initial12:true,more24:true,modalEscape:true,browserBackForward:true,filtersAndScrollPreserved:true,internalProjectCodeHidden:true,nhcExactProjectAndNestedBack:true});await context.close();
+ // Actual entry events for internal centers and data-only cities, on desktop and narrow mobile.
+ const entryCityNames=['أحد رفيدة','الروضة','بقعاء','بيش'];
+ const entrySource=fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
+ const entryHeroMatch=entrySource.match(/var GENERATED_CITY_IDENTITIES = (\{[\s\S]*?\});/);
+ assert(entryHeroMatch,'Generated city identity map is required for city-only browsing');
+ const entryCityHeroes=JSON.parse(entryHeroMatch[1]);
+ for(const width of [1440,390,320]){
+  const entryContext=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});
+  const entryPage=await entryContext.newPage();entryPage.on('pageerror',e=>pageErrors.push(e.message));
+  for(const code of ['397','197']){
+   const center=branchData.find(b=>b.c===code);assert(center&&center.codeStatus==='local_internal_reference');
+   await entryPage.goto(origin);await entryPage.waitForSelector('#q-branch');
+   await entryPage.fill('#q-branch',center.n);await entryPage.locator('[data-code="'+code+'"]').click();
+   assert.equal(await entryPage.locator('#q-branch').inputValue(),center.n);
+   assert(await entryPage.locator('#go-branch').isEnabled());await fit(entryPage,'Internal center selection '+code+' '+width);
+   await entryPage.click('#go-branch');await entryPage.waitForSelector('.stat');
+   assert((await entryPage.locator('.hero-branch').innerText()).includes('مرجع داخلي '+code));
+   assert.equal((await entryPage.evaluate(()=>window.__rogQA())).branch,code);
+   await entryPage.reload();await entryPage.waitForSelector('.stat');assert.equal((await entryPage.evaluate(()=>window.__rogQA())).branch,code);
+   checks.push({internalCenterNameSelection:code,width,entryEnabled:true,reloadHash:true});
+  }
+  for(const city of entryCityNames){
+   await entryPage.goto(origin);await entryPage.waitForSelector('#q-city');await entryPage.selectOption('#q-city',city);
+   assert.equal(await entryPage.locator('.branch-item').count(),0,'Do not invent branch rows for '+city);
+   const cityButton=entryPage.locator('[data-browse-city="'+city+'"]');assert(await cityButton.isVisible());
+   await fit(entryPage,'City browse button '+city+' '+width);await cityButton.click();await entryPage.waitForSelector('.stat');
+   assert.equal(await entryPage.locator('.hero-branch').innerText(),'تصفح المدينة بدون فرع');
+   assert.equal(await entryPage.locator('.city-hero').getAttribute('aria-label'),city);
+   const qa=await entryPage.evaluate(()=>window.__rogQA());assert.equal(qa.branch,'');assert.equal(qa.scope,'city');
+   assert(['offices','cars','companies','projects','opps','nhc'].some(k=>qa.sections[k].length>0));
+   const cityHero=entryPage.locator('.city-hero img');await cityHero.evaluate(i=>i.decode());
+   assert(entryCityHeroes[city]&&entryCityHeroes[city].src&&!entryCityHeroes[city].src.includes('city-neutral'));
+   assert.equal(await cityHero.getAttribute('src'),entryCityHeroes[city].src);assert(await cityHero.evaluate(i=>i.complete&&i.naturalWidth>0));
+   await fit(entryPage,'City only results '+city+' '+width);await capture(entryPage,'city-only-'+entryCityNames.indexOf(city)+'-'+width+'.png');
+   const route=entryPage.url();assert(route.includes('#city='));await entryPage.reload();await entryPage.waitForSelector('.stat');
+   assert.equal(await entryPage.locator('.hero-branch').innerText(),'تصفح المدينة بدون فرع');
+   await entryPage.click('[data-act="change"]');await entryPage.waitForSelector('#q-branch');
+   await entryPage.fill('#q-branch',city);assert(await entryPage.locator('[data-browse-city="'+city+'"]').isVisible());
+   await entryPage.goto(route);await entryPage.waitForSelector('.stat');assert.equal((await entryPage.evaluate(()=>window.__rogQA())).scope,'city');
+   checks.push({cityOnlyEntry:city,width,noInventedCode:true,ownCityHeroLoaded:true,mobileControlsFit:true,initialAndReturnRoute:true});
+  }
+  await entryContext.close();
+ }
  // All city-specific real-data heroes, with no cross-city substitution.
  const expectedCityHeroes={
  'الرياض':'assets/images/city-riyadh.webp','بريدة':'assets/images/city-buraidah-illustrative.webp',
