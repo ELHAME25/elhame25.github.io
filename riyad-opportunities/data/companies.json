@@ -3091,14 +3091,60 @@
       "0530703222"
     ],
     "wa": "",
-    "site": "",
-    "maps": "",
+    "site": "https://nwahel.sa/",
+    "maps": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D9%87+%D9%86%D9%88%D8%A7%D9%87%D9%84+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%87%E2%80%AD/@24.4625179,39.6551492,933m/data=!3m2!1e3!4b1!4m6!3m5!1s0x15bd95e65d8afecf:0x1415e824ece90459!8m2!3d24.462513!4d39.6577295!16s%2Fg%2F11sgxqjqsp?authuser=0&entry=ttu",
     "contact": "",
     "id": "cp-eddeb91b11",
     "lat": 24.46121,
     "lon": 39.65952,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%86%D9%88%D8%A7%D9%87%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20nb%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%86%D9%88%D8%A7%D9%87%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20nb%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+    "fieldVerification": {
+      "reusedOfficeEvidence": {
+        "sourceRecordId": "entity-66da99c79421",
+        "ledger": "MAP_AUDIT_LEDGER_2026-10-10.json",
+        "sourceCheckedAt": "2026-10-10",
+        "reconciledAt": "2026-10-17T08:59:00Z",
+        "fields": [
+          "maps",
+          "site"
+        ],
+        "evidence": {
+          "id": "entity-66da99c79421",
+          "category": "offices",
+          "name": "نواهل",
+          "city": "المدينة",
+          "locality": "الخالدية",
+          "status": "verified_exact_official",
+          "current_map": "Maps opened",
+          "checked_at": "2026-10-10",
+          "map_check": {
+            "opened": true,
+            "status": "verified_exact_official",
+            "notes": "Maps and nwahel.sa same name/address/phone 0530703222."
+          },
+          "field_checks": {
+            "phone": {
+              "status": "partially_source_checked",
+              "notes": "Maps and nwahel.sa same name/address/phone 0530703222."
+            },
+            "whatsapp": {
+              "status": "not_independently_checked_or_not_present",
+              "notes": "Maps and nwahel.sa same name/address/phone 0530703222."
+            },
+            "website": {
+              "status": "source_checked_or_noted"
+            }
+          },
+          "source_urls": [
+            "https://nwahel.sa/",
+            "Maps opened"
+          ],
+          "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+        },
+        "scope": "Exact entity name, same city and existing phone. No external recheck and no project location inferred."
+      }
+    }
   },
   {
     "n": "شركة علامات العقارية",
@@ -3109,14 +3155,60 @@
       "0544447445"
     ],
     "wa": "",
-    "site": "",
-    "maps": "",
+    "site": "https://alamat.sa/",
+    "maps": "https://www.google.com/maps/?cid=16124762063103036112",
     "contact": "",
     "id": "cp-a81a190815",
     "lat": 24.46121,
     "lon": 39.65952,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B9%D9%84%D8%A7%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20nb%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B9%D9%84%D8%A7%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20nb%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+    "fieldVerification": {
+      "reusedOfficeEvidence": {
+        "sourceRecordId": "phase5-office-483d36251674",
+        "ledger": "MAP_AUDIT_LEDGER_2026-10-10.json",
+        "sourceCheckedAt": "2026-10-10",
+        "reconciledAt": "2026-10-17T08:59:00Z",
+        "fields": [
+          "maps",
+          "site"
+        ],
+        "evidence": {
+          "id": "phase5-office-483d36251674",
+          "category": "offices",
+          "name": "شركة علامات العقارية",
+          "city": "المدينة المنورة",
+          "locality": "الخالدية",
+          "status": "verified_maps_card_official_site_phone",
+          "current_map": "https://www.google.com/maps/?cid=16124762063103036112",
+          "checked_at": "2026-10-10",
+          "map_check": {
+            "opened": true,
+            "status": "verified_maps_card_official_site_phone",
+            "notes": "Maps exact name, Khalidiyah/Medina, plus FM29+Q32. Official website confirms address and phones 0544447445, 920015487, 0148672174. No WA."
+          },
+          "field_checks": {
+            "phone": {
+              "status": "officially_verified",
+              "notes": "Maps exact name, Khalidiyah/Medina, plus FM29+Q32. Official website confirms address and phones 0544447445, 920015487, 0148672174. No WA."
+            },
+            "whatsapp": {
+              "status": "not_present_or_not_separately_verified"
+            },
+            "website": {
+              "status": "official_address_verified"
+            }
+          },
+          "source_urls": [
+            "https://alamat.sa/",
+            "https://alamat.sa/home/تواصل-معنا/",
+            "https://x.com/AlamatAqar"
+          ],
+          "evidence_note": "Maps exact name, Khalidiyah/Medina, plus FM29+Q32. Official website confirms address and phones 0544447445, 920015487, 0148672174. No WA."
+        },
+        "scope": "Exact entity name, same city and existing phone. No external recheck and no project location inferred."
+      }
+    }
   },
   {
     "n": "آفاق المدينة للعقار",
@@ -3128,10 +3220,55 @@
     ],
     "wa": "",
     "site": "",
-    "maps": "",
+    "maps": "https://www.google.com/maps/?cid=11900506792965067280",
     "contact": "",
     "id": "cp-a6326b4ad7",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A2%D9%81%D8%A7%D9%82%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A2%D9%81%D8%A7%D9%82%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+    "fieldVerification": {
+      "reusedOfficeEvidence": {
+        "sourceRecordId": "entity-947efe20e1ce",
+        "ledger": "MAP_AUDIT_LEDGER_2026-10-10.json",
+        "sourceCheckedAt": "2026-10-10",
+        "reconciledAt": "2026-10-17T08:59:00Z",
+        "fields": [
+          "maps"
+        ],
+        "evidence": {
+          "id": "entity-947efe20e1ce",
+          "category": "offices",
+          "name": "مؤسسة آفاق المدينة للعقار",
+          "city": "المدينة المنورة",
+          "locality": "الجامعة",
+          "status": "verified_maps_card_name_address_phone_wa",
+          "current_map": "https://www.google.com/maps/?cid=11900506792965067280",
+          "checked_at": "2026-10-10",
+          "map_check": {
+            "opened": true,
+            "status": "verified_maps_card_name_address_phone_wa",
+            "notes": "Maps card matches name, Al-Jami'a, Dar Al-Salam Rd, phone +966553314228 and wa.me target; no website shown."
+          },
+          "field_checks": {
+            "phone": {
+              "status": "independently_supported",
+              "notes": "Maps card matches name, Al-Jami'a, Dar Al-Salam Rd, phone +966553314228 and wa.me target; no website shown."
+            },
+            "whatsapp": {
+              "status": "seen_in_maps_card_or_official_site",
+              "notes": "Maps card matches name, Al-Jami'a, Dar Al-Salam Rd, phone +966553314228 and wa.me target; no website shown."
+            },
+            "website": {
+              "status": "official_or_secondary_checked_or_absent",
+              "notes": "Maps card matches name, Al-Jami'a, Dar Al-Salam Rd, phone +966553314228 and wa.me target; no website shown."
+            }
+          },
+          "source_urls": [
+            "https://www.aljazeeramaps.com/listing/آفاق-المدينة-للعقار"
+          ],
+          "evidence_note": "Maps card matches name, Al-Jami'a, Dar Al-Salam Rd, phone +966553314228 and wa.me target; no website shown."
+        },
+        "scope": "Exact entity name, same city and existing phone. No external recheck and no project location inferred."
+      }
+    }
   },
   {
     "n": "بصمة آراء للخدمات العقارية",
@@ -3161,10 +3298,53 @@
     ],
     "wa": "",
     "site": "",
-    "maps": "",
+    "maps": "https://www.google.com/maps/?cid=4983598368357350440",
     "contact": "",
     "id": "cp-477f5d9d9e",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%84%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%84%D9%8A%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+    "fieldVerification": {
+      "reusedOfficeEvidence": {
+        "sourceRecordId": "entity-c03de6d5c825",
+        "ledger": "MAP_AUDIT_LEDGER_2026-10-10.json",
+        "sourceCheckedAt": "2026-10-10",
+        "reconciledAt": "2026-10-17T08:59:00Z",
+        "fields": [
+          "maps"
+        ],
+        "evidence": {
+          "id": "entity-c03de6d5c825",
+          "category": "offices",
+          "name": "الرحيلي للعقار",
+          "city": "المدينة المنورة",
+          "locality": "القصواء",
+          "status": "verified_maps_card_location_match",
+          "current_map": "https://www.google.com/maps/?cid=4983598368357350440",
+          "checked_at": "2026-10-10",
+          "map_check": {
+            "opened": true,
+            "status": "verified_maps_card_location_match",
+            "notes": "Maps card name/address/Al-Qaswa match; phone 0502399378 appears on Maps only; Plus Code CHJW+94. Website/WA absent."
+          },
+          "field_checks": {
+            "phone": {
+              "status": "maps_card_only",
+              "notes": "Maps card name/address/Al-Qaswa match; phone 0502399378 appears on Maps only; Plus Code CHJW+94. Website/WA absent."
+            },
+            "whatsapp": {
+              "status": "not_present_or_not_independently_verified"
+            },
+            "website": {
+              "status": "not_present_or_not_independently_verified"
+            }
+          },
+          "source_urls": [
+            "https://www.google.com/maps/?cid=4983598368357350440"
+          ],
+          "evidence_note": "Maps card name/address/Al-Qaswa match; phone 0502399378 appears on Maps only; Plus Code CHJW+94. Website/WA absent."
+        },
+        "scope": "Exact entity name, same city and existing phone. No external recheck and no project location inferred."
+      }
+    }
   },
   {
     "n": "عقارية إنماء",
@@ -3176,10 +3356,54 @@
     ],
     "wa": "",
     "site": "",
-    "maps": "",
+    "maps": "https://www.google.com/maps/?cid=15284852672824062300",
     "contact": "",
     "id": "cp-885c2e84b2",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A5%D9%86%D9%85%D8%A7%D8%A1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A5%D9%86%D9%85%D8%A7%D8%A1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+    "fieldVerification": {
+      "reusedOfficeEvidence": {
+        "sourceRecordId": "entity-aedb2f4e1585",
+        "ledger": "MAP_AUDIT_LEDGER_2026-10-10.json",
+        "sourceCheckedAt": "2026-10-10",
+        "reconciledAt": "2026-10-17T08:59:00Z",
+        "fields": [
+          "maps"
+        ],
+        "evidence": {
+          "id": "entity-aedb2f4e1585",
+          "category": "offices",
+          "name": "عقارية إنماء",
+          "city": "المدينة المنورة",
+          "locality": "البدراني",
+          "status": "verified_maps_card_location_match",
+          "current_map": "https://www.google.com/maps/?cid=15284852672824062300",
+          "checked_at": "2026-10-10",
+          "map_check": {
+            "opened": true,
+            "status": "verified_maps_card_location_match",
+            "notes": "Maps card name/address/Al-Badrani match; phone 0560980011 also appears on a licensed Aqaar listing. Website/WA absent."
+          },
+          "field_checks": {
+            "phone": {
+              "status": "maps_and_independent_source",
+              "notes": "Maps card name/address/Al-Badrani match; phone 0560980011 also appears on a licensed Aqaar listing. Website/WA absent."
+            },
+            "whatsapp": {
+              "status": "not_present_or_not_independently_verified"
+            },
+            "website": {
+              "status": "not_present_or_not_independently_verified"
+            }
+          },
+          "source_urls": [
+            "https://www.google.com/maps/?cid=15284852672824062300",
+            "https://sa.aqar.fm/شقق-للإيجار/المدينة-المنورة/حي-مذينب/شارع-بهاء-الدين-حي-وادي-مذينب-مدينة-المدينة-المنورة-منطقة-المدينة-المنورة-6860460"
+          ],
+          "evidence_note": "Maps card name/address/Al-Badrani match; phone 0560980011 also appears on a licensed Aqaar listing. Website/WA absent."
+        },
+        "scope": "Exact entity name, same city and existing phone. No external recheck and no project location inferred."
+      }
+    }
   },
   {
     "n": "دار يوسف العقارية",
@@ -3190,11 +3414,56 @@
       "0562149606"
     ],
     "wa": "",
-    "site": "",
+    "site": "https://daryusuf.com/",
     "maps": "",
     "contact": "",
     "id": "cp-cb75d26637",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%A7%D8%B1%20%D9%8A%D9%88%D8%B3%D9%81%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%A7%D8%B1%20%D9%8A%D9%88%D8%B3%D9%81%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+    "fieldVerification": {
+      "reusedOfficeEvidence": {
+        "sourceRecordId": "entity-87a5a9b08ec8",
+        "ledger": "MAP_AUDIT_LEDGER_2026-10-10.json",
+        "sourceCheckedAt": "2026-10-10",
+        "reconciledAt": "2026-10-17T08:59:00Z",
+        "fields": [
+          "site"
+        ],
+        "evidence": {
+          "id": "entity-87a5a9b08ec8",
+          "category": "offices",
+          "name": "دار يوسف",
+          "city": "المدينة",
+          "locality": "الوبرة/BizHub",
+          "status": "unresolved_neighborhood",
+          "current_map": "https://www.google.com/maps/?cid=12829955940220930392",
+          "checked_at": "2026-10-10",
+          "map_check": {
+            "opened": true,
+            "status": "unresolved_neighborhood",
+            "notes": "Map/site match name and BizHub; official phone/WA 0562149606; detailed neighborhood uncertain."
+          },
+          "field_checks": {
+            "phone": {
+              "status": "partially_source_checked",
+              "notes": "Map/site match name and BizHub; official phone/WA 0562149606; detailed neighborhood uncertain."
+            },
+            "whatsapp": {
+              "status": "not_independently_checked_or_not_present",
+              "notes": "Map/site match name and BizHub; official phone/WA 0562149606; detailed neighborhood uncertain."
+            },
+            "website": {
+              "status": "source_checked_or_noted"
+            }
+          },
+          "source_urls": [
+            "https://daryusuf.com/contact/",
+            "https://www.google.com/maps/?cid=12829955940220930392"
+          ],
+          "evidence_note": "Opened externally by primary/research agent; source-level distinctions and unresolved limits recorded."
+        },
+        "scope": "Exact entity name, same city and existing phone. No external recheck and no project location inferred."
+      }
+    }
   },
   {
     "n": "صكوك الحجاز للخدمات العقارية",
@@ -6161,5 +6430,54 @@
       }
     },
     "cityBasis": "verified_project_service_coverage_and_explicit_office_cities"
+  },
+  {
+    "id": "cp-qassim-alsowyan",
+    "n": "شركة الصويان للاستثمار والتطوير العقاري",
+    "city": "عنيزة",
+    "coverageCities": [
+      "عنيزة"
+    ],
+    "kind": "استثمار وتطوير عقاري",
+    "scope": "عنيزة",
+    "site": "https://alsowyan.sa/",
+    "phones": [
+      "0500500361"
+    ],
+    "verifiedPhones": [
+      "0500500361"
+    ],
+    "wa": "",
+    "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B5%D9%88%D9%8A%D8%A7%D9%86%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A&query_place_id=ChIJAUd1S8ztgRUR1Y-dUNEe8yc",
+    "placeId": "ChIJAUd1S8ztgRUR1Y-dUNEe8yc",
+    "lat": 26.0931291,
+    "lon": 43.9864611,
+    "loc": "pt",
+    "sectors": [],
+    "commercialAuditStatus": "verified_developer_official_site_maps_identity",
+    "commercialEvidence": [
+      "https://alsowyan.sa/",
+      "https://maps.firecrawl.dev/search?q=%D8%B4%D8%B1%D9%83%D8%A7%D8%AA+%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1+%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B9%D9%86%D9%8A%D8%B2%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9"
+    ],
+    "fieldVerification": {
+      "website": {
+        "source": "https://alsowyan.sa/",
+        "status": "official_name_city_activity_match",
+        "checkedAt": "2026-10-17T08:56:54Z"
+      },
+      "phone": {
+        "number": "0500500361",
+        "source": "https://maps.firecrawl.dev/search?q=%D8%B4%D8%B1%D9%83%D8%A7%D8%AA+%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1+%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B9%D9%86%D9%8A%D8%B2%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+        "status": "published_maps_contact",
+        "callTested": false,
+        "checkedAt": "2026-10-17T08:56:35Z"
+      },
+      "officeMap": {
+        "source": "https://maps.firecrawl.dev/search?q=%D8%B4%D8%B1%D9%83%D8%A7%D8%AA+%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1+%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%B9%D9%86%D9%8A%D8%B2%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+        "status": "exact_company_name_city_website_match",
+        "checkedAt": "2026-10-17T08:56:35Z"
+      }
+    },
+    "commercialAuditNote": "Developer directory only. Published portfolio includes land subdivision projects; sold projects and unfinished schemes were not added as available housing units."
   }
 ]
