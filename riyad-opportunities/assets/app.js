@@ -24,7 +24,7 @@
   var SECTORS = ['شرق', 'شمال', 'جنوب', 'غرب', 'وسط'];
   var PRIMARY_SECTIONS = ['opps', 'projects', 'nhc', 'companies', 'offices', 'cars'];
   var SECTIONS = ['projects', 'opps', 'nhc', 'selfbuild', 'companies', 'offices', 'cars', 'dealers', 'nearby'];
-  var LABEL = { opps: 'المشاريع والفرص الجاهزة للبيع', selfbuild: 'البناء الذاتي', projects: 'المشاريع المعتمدة لدى البنك', nhc: 'وجهات NHC', companies: 'شركات الاستثمار والتطوير العقاري', offices: 'مكاتب العقار', cars: 'معارض السيارات', dealers: 'وكالات السيارات الرسمية', nearby: 'فرص قريبة من الفرع' };
+  var LABEL = { opps: 'المشاريع والفرص المتاحة للبيع', selfbuild: 'البناء الذاتي', projects: 'المشاريع المعتمدة لدى البنك', nhc: 'وجهات NHC', companies: 'شركات الاستثمار والتطوير العقاري', offices: 'مكاتب العقار', cars: 'معارض السيارات', dealers: 'وكالات السيارات الرسمية', nearby: 'فرص قريبة من الفرع' };
   var SHORT = { opps: 'فرص حالية', selfbuild: 'البناء الذاتي', projects: 'المشاريع', nhc: 'وجهات NHC', companies: 'شركات الوساطة والاستثمار العقاري', offices: 'المكاتب', cars: 'المعارض', dealers: 'الوكالات الرسمية', nearby: 'قريبة' };
   var NOUN = { opps: 'فرص عقارية حالية', selfbuild: 'مخططات للبناء الذاتي', projects: 'مشاريع معتمدة', nhc: 'وجهات NHC', companies: 'شركات تسويق أو تطوير', offices: 'مكاتب عقار', cars: 'معارض سيارات', dealers: 'وكالات سيارات رسمية', nearby: 'فرص' };
   var SEARCH_PH = { opps: 'ابحث باسم المشروع أو المطور', selfbuild: 'ابحث عن مخطط', projects: 'ابحث باسم المشروع أو المطور أو الحي', nhc: 'ابحث عن وجهة', companies: 'ابحث عن شركة', offices: 'ابحث باسم المكتب أو الحي', cars: 'ابحث باسم المعرض أو الحي', dealers: 'ابحث باسم الوكالة أو المدينة', nearby: 'ابحث في الفرص القريبة' };

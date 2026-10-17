@@ -12,6 +12,13 @@ for(const b of D.branches){A.selectBranch(b.c,true);const c=A.compute();if(!['ا
 const uma=D.branches.filter(b=>b.city==='عنيزة');for(const b of uma){A.selectBranch(b.c,true);const c=A.compute();if(!c.opps.items.some(x=>x.o.id==='op-central-salam-unaizah')||c.companies.items.length<4)failures.push({branch:b.c,reason:'unaizah_proven_additions_missing'});}
 const sihat=D.branches.find(b=>b.city==='سيهات');A.selectBranch(sihat.c,true);const si=A.compute().projects.items.map(x=>x.o.id);for(const id of ['P076','P115','P126','P128'])if(!si.includes(id))failures.push({id,reason:'physical_city_project_missing'});
 const sold=D.projects.find(x=>x.id==='P303');if(A.displayEligible('projects',sold))failures.push({id:'P303',reason:'sold_out_visible'});
+// Market inventory may be ready or off-plan; it is never evidence of bank approval.
+A.selectBranch('243',true);A.setScope('city');const marketIds=A.compute().opps.items.map(x=>x.o.id);
+for(const num of [24,26,29,30,31,32,33,34,35]){const id='op-riyadh-enas-'+num;if(!marketIds.includes(id))failures.push({id,reason:'available_market_project_missing'});const item=D.opportunities?D.opportunities.find(x=>x.id===id):null;}
+const marketRaw=JSON.parse(fs.readFileSync(path.join(root,'data/opportunities.json'),'utf8'));
+for(const num of [34,35]){const x=marketRaw.find(x=>x.id==='op-riyadh-enas-'+num);if(!x||x.construction.status!=='off_plan'||x.bankApproval)failures.push({id:'op-riyadh-enas-'+num,reason:'off_plan_market_separation_failed'});}
+for(const num of [20,21,22,23])if(marketRaw.some(x=>x.id==='op-riyadh-enas-'+num))failures.push({reason:'sold_enas_added',num});
+if(!src.includes("المشاريع والفرص المتاحة للبيع"))failures.push({reason:'market_label_incorrectly_ready_only'});
 const stable=x=>Array.isArray(x)?x.map(stable):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(k=>[k,stable(x[k])])):x;
 const digest=require('crypto').createHash('sha256').update(JSON.stringify(stable(D.projects.map(x=>[x.id,x.bankApproval||null])))).digest('hex');if(digest!=='268a1f741de3bda5cf2d2ef7ad791902707df3483a7f41b7e6c6226f2cb95b13')failures.push({reason:'bank_source_approval_changed',digest});
 const b624=D.branches.find(b=>b.c==='624');if(b624.lat!==null||b624.lon!==null||b624.officialMapStatus!=='held')failures.push({reason:'624_uncertain_pin_not_held'});
