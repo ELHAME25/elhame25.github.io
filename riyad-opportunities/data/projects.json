@@ -3804,15 +3804,24 @@
       "sourceAuthority": "User-confirmed bank project inventory, clarified 2026-10-16T08:47:37Z"
     },
     "availability": {
-      "status": "interest_only",
-      "source": "https://thabatre.sa/madd-residents-2/",
-      "checkedAt": "2026-10-16T09:54:00Z",
-      "reason": "interest_registration_only_observed",
-      "basis": "The developer project page presents models and an interest-registration link, but no explicit current sale-open status or available unit. Model totals and zero-valued animated counters are not remaining inventory. Keep outside active-sale views; no completion claim.",
-      "verificationMethod": "official_public_project_page",
-      "remainingUnitCount": null,
-      "liveTransactionTested": false
-    }
+      "status": "sold_out",
+      "source": "https://thabatre.sa/",
+      "checkedAt": "2026-10-17T09:39:39Z",
+      "sourceStatus": "تم البيع",
+      "basis": "Current developer homepage explicitly labels the card linked to this exact project sold. Retained source data and bank approval unchanged; newer sellout supersedes older NHC availability."
+    },
+    "availabilityHistory": [
+      {
+        "status": "interest_only",
+        "source": "https://thabatre.sa/madd-residents-2/",
+        "checkedAt": "2026-10-16T09:54:00Z",
+        "reason": "interest_registration_only_observed",
+        "basis": "The developer project page presents models and an interest-registration link, but no explicit current sale-open status or available unit. Model totals and zero-valued animated counters are not remaining inventory. Keep outside active-sale views; no completion claim.",
+        "verificationMethod": "official_public_project_page",
+        "remainingUnitCount": null,
+        "liveTransactionTested": false
+      }
+    ]
   },
   {
     "id": "P082",
@@ -5768,11 +5777,11 @@
     "tier": "full",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%AF+%D9%82%D9%85%D8%B1%D8%A9+%D8%B5%D9%81%D9%88%D9%89+%D8%B4%D8%B1%D9%83%D8%A9+%D8%AB%D8%A8%D8%A7%D8%AA+%D8%A7%D9%84%D9%85%D8%B3%D9%83%D9%86",
     "availability": {
-      "status": "available",
-      "source": "https://www.nhc.sa/real-estate-development/projects/47097/",
-      "checkedAt": "2026-10-16T07:19:44.798623+00:00",
-      "sourceStatus": "متاح",
-      "basis": "Official NHC project page with matching project name, developer and city."
+      "status": "sold_out",
+      "source": "https://thabatre.sa/",
+      "checkedAt": "2026-10-17T09:39:39Z",
+      "sourceStatus": "تم البيع",
+      "basis": "Current developer homepage explicitly labels the card linked to this exact project sold. Retained source data and bank approval unchanged; newer sellout supersedes older NHC availability."
     },
     "totalProjectUnits": 537,
     "projectDetailsSource": {
@@ -5855,7 +5864,16 @@
       "alternativeReportedProjectAreaSqm": 230000,
       "alternativeAcquisition": "public_search_index_rendering",
       "resolution": "Hide normalized area until authoritative dimensions are reconciled; preserve both source values."
-    }
+    },
+    "availabilityHistory": [
+      {
+        "status": "available",
+        "source": "https://www.nhc.sa/real-estate-development/projects/47097/",
+        "checkedAt": "2026-10-16T07:19:44.798623+00:00",
+        "sourceStatus": "متاح",
+        "basis": "Official NHC project page with matching project name, developer and city."
+      }
+    ]
   },
   {
     "id": "P120",
@@ -24365,6 +24383,14 @@
       },
       "basis": "Visually verified exact project name, developer and city after correcting extraction OCR and preserving phase letters/numbers.",
       "verificationScope": "Source inventory membership; not a live bank financing decision or a sale availability statement."
+    },
+    "availabilityHistory": [],
+    "availability": {
+      "status": "sold_out",
+      "source": "https://thabatre.sa/",
+      "checkedAt": "2026-10-17T09:39:39Z",
+      "sourceStatus": "تم البيع",
+      "basis": "Current developer homepage explicitly labels the card linked to this exact project sold. Retained source data and bank approval unchanged; newer sellout supersedes older NHC availability."
     }
   },
   {

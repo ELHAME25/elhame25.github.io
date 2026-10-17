@@ -1,0 +1,106 @@
+{
+  "companyUpdates": [
+    {
+      "id": "cp-3bc50231f7",
+      "site": "https://aqtardev.com/",
+      "corporatePhoneSource": "https://aqtardev.com/",
+      "coverage": [
+        "بريدة",
+        "الرياض"
+      ]
+    },
+    {
+      "id": "cp-8ece8e6ede",
+      "site": "https://tamkean.sa/",
+      "corporatePhoneSource": "https://tamkean.sa/",
+      "coverage": [
+        "الدمام",
+        "الخبر"
+      ]
+    },
+    {
+      "id": "cp-c566adf828",
+      "site": "https://thabatre.sa/",
+      "corporatePhoneSource": "https://thabatre.sa/english/contact-us-eng/",
+      "coverage": [
+        "الخبر",
+        "الرياض",
+        "جدة"
+      ]
+    }
+  ],
+  "soldOutRecords": [
+    {
+      "id": "P081",
+      "name": "مد",
+      "oldAvailability": {
+        "status": "interest_only",
+        "source": "https://thabatre.sa/madd-residents-2/",
+        "checkedAt": "2026-10-16T09:54:00Z",
+        "reason": "interest_registration_only_observed",
+        "basis": "The developer project page presents models and an interest-registration link, but no explicit current sale-open status or available unit. Model totals and zero-valued animated counters are not remaining inventory. Keep outside active-sale views; no completion claim.",
+        "verificationMethod": "official_public_project_page",
+        "remainingUnitCount": null,
+        "liveTransactionTested": false
+      },
+      "newAvailability": {
+        "status": "sold_out",
+        "source": "https://thabatre.sa/",
+        "checkedAt": "2026-10-17T09:39:39Z",
+        "sourceStatus": "تم البيع",
+        "basis": "Current developer homepage explicitly labels the card linked to this exact project sold. Retained source data and bank approval unchanged; newer sellout supersedes older NHC availability."
+      }
+    },
+    {
+      "id": "P119",
+      "name": "مد قمرة",
+      "oldAvailability": {
+        "status": "available",
+        "source": "https://www.nhc.sa/real-estate-development/projects/47097/",
+        "checkedAt": "2026-10-16T07:19:44.798623+00:00",
+        "sourceStatus": "متاح",
+        "basis": "Official NHC project page with matching project name, developer and city."
+      },
+      "newAvailability": {
+        "status": "sold_out",
+        "source": "https://thabatre.sa/",
+        "checkedAt": "2026-10-17T09:39:39Z",
+        "sourceStatus": "تم البيع",
+        "basis": "Current developer homepage explicitly labels the card linked to this exact project sold. Retained source data and bank approval unchanged; newer sellout supersedes older NHC availability."
+      }
+    },
+    {
+      "id": "P460",
+      "name": "المهندية",
+      "oldAvailability": null,
+      "newAvailability": {
+        "status": "sold_out",
+        "source": "https://thabatre.sa/",
+        "checkedAt": "2026-10-17T09:39:39Z",
+        "sourceStatus": "تم البيع",
+        "basis": "Current developer homepage explicitly labels the card linked to this exact project sold. Retained source data and bank approval unchanged; newer sellout supersedes older NHC availability."
+      }
+    },
+    {
+      "id": "op-nhc-47097",
+      "name": "مد قمرة",
+      "oldAvailability": {
+        "status": "available",
+        "source": "https://www.nhc.sa/real-estate-development/projects/47097/",
+        "checkedAt": "2026-10-16T07:19:44.798623+00:00",
+        "sourceStatus": "متاح",
+        "basis": "Official NHC project page with matching project name, developer and city."
+      },
+      "newAvailability": {
+        "status": "sold_out",
+        "source": "https://thabatre.sa/",
+        "checkedAt": "2026-10-17T09:39:39Z",
+        "sourceStatus": "تم البيع",
+        "basis": "Current developer homepage explicitly labels the card linked to this exact project sold. Retained source data and bank approval unchanged; newer sellout supersedes older NHC availability."
+      }
+    }
+  ],
+  "retainedUnresolvedIdentity": "P053 سهب versus مد لازورد not merged or asserted renamed.",
+  "date": "2026-10-17T09:40:27Z",
+  "bankApprovalUnchanged": true
+}

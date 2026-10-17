@@ -1163,7 +1163,7 @@
     ],
     "wa": "",
     "site": "https://aqtardev.com/",
-    "maps": "",
+    "maps": "https://maps.app.goo.gl/pJ1Y9x8yQxe6hubU8",
     "id": "cp-3bc50231f7",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%A7%D9%82%D8%B7%D8%A7%D8%B1%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
     "verifiedPhones": [
@@ -1224,8 +1224,47 @@
           "note": "Do not replace Buraydah project/service city with Riyadh HQ or old directory Al Murooj address."
         }
       },
-      "allFieldsVerified": false
-    }
+      "allFieldsVerified": false,
+      "website": {
+        "source": "https://aqtardev.com/",
+        "checkedAt": "2026-10-17T09:39:39Z",
+        "status": "official_name_activity_existing_phone_match"
+      },
+      "officeMap": {
+        "source": "https://aqtardev.com/",
+        "checkedAt": "2026-10-17T09:39:39Z",
+        "status": "official_buraidah_branch_link_published",
+        "basis": "Explicit Buraidah Al Rehab branch; not Riyadh headquarters link. Coordinates not inferred."
+      }
+    },
+    "coverageCities": [
+      "بريدة",
+      "الرياض"
+    ],
+    "phoneEvidence": {
+      "920011058": {
+        "source": "https://aqtardev.com/",
+        "checkedAt": "2026-10-17T09:40:27Z",
+        "scope": "developer_general_not_project_direct",
+        "number": "920011058",
+        "callTested": false
+      }
+    },
+    "commercialEvidence": [
+      "https://aqtardev.com/"
+    ],
+    "commercialAuditStatus": "verified_sales_role",
+    "cityCoverageEvidence": [
+      {
+        "cities": [
+          "بريدة",
+          "الرياض"
+        ],
+        "source": "https://aqtardev.com/",
+        "checkedAt": "2026-10-17T09:39:39Z",
+        "basis": "Explicit named branch/office or separately named project cities. No province-wide pooling."
+      }
+    ]
   },
   {
     "n": "شركة تمكين للاستثمار والتطوير العقاري",
@@ -1245,7 +1284,8 @@
     "id": "cp-8ece8e6ede",
     "coverageCities": [
       "الدمام",
-      "الرياض"
+      "الرياض",
+      "الخبر"
     ],
     "coverageSource": "https://tamkean.sa/about/",
     "coverageBasis": "صفحة الشركة الرسمية تقول صراحة إن مشاريع تمكين المتاحة حاليًا في الدمام والرياض، بينما سجل الشركة في قاعدة الشركات يظهر بالدمام فقط.",
@@ -1253,7 +1293,38 @@
       "https://tamkean.sa/about/",
       "https://tamkean.sa/projects/"
     ],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AA%D9%85%D9%83%D9%8A%D9%86%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AA%D9%85%D9%83%D9%8A%D9%86%20%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+    "phoneEvidence": {
+      "920000140": {
+        "source": "https://tamkean.sa/",
+        "checkedAt": "2026-10-17T09:40:27Z",
+        "scope": "developer_general_not_project_direct",
+        "number": "920000140",
+        "callTested": false
+      }
+    },
+    "fieldVerification": {
+      "website": {
+        "source": "https://tamkean.sa/",
+        "checkedAt": "2026-10-17T09:39:39Z",
+        "status": "official_name_activity_existing_phone_match"
+      }
+    },
+    "commercialEvidence": [
+      "https://tamkean.sa/"
+    ],
+    "commercialAuditStatus": "verified_sales_role",
+    "cityCoverageEvidence": [
+      {
+        "cities": [
+          "الدمام",
+          "الخبر"
+        ],
+        "source": "https://tamkean.sa/",
+        "checkedAt": "2026-10-17T09:39:39Z",
+        "basis": "Explicit named branch/office or separately named project cities. No province-wide pooling."
+      }
+    ]
   },
   {
     "n": "شركة ثبات المسكن العقارية",
@@ -1272,7 +1343,8 @@
     "id": "cp-c566adf828",
     "coverageCities": [
       "الخبر",
-      "جدة"
+      "جدة",
+      "الرياض"
     ],
     "coverageSource": "https://thabatre.sa/madd-sadaeym/",
     "coverageBasis": "الموقع الرسمي للشركة يذكر مد سدايم في ضاحية سدايم شمال جدة ويحتفظ بصفحة المشروع ونموذج تسجيل الاهتمام. كما يذكر خبر الشركة إطلاقه في 2024، دون إعلان رسمي عن بيعه بالكامل؛ وبحسب قاعدة الاستبعاد المعتمدة لا يُستبعد بمجرد مرور تاريخ الإطلاق.",
@@ -1280,7 +1352,40 @@
       "https://thabatre.sa/madd-sadaeym/",
       "https://thabatre.sa/new-4/"
     ],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AB%D8%A8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D9%83%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%AB%D8%A8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B3%D9%83%D9%86%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+    "phoneEvidence": {
+      "920001304": {
+        "source": "https://thabatre.sa/english/contact-us-eng/",
+        "checkedAt": "2026-10-17T09:40:27Z",
+        "scope": "developer_general_not_project_direct",
+        "number": "920001304",
+        "callTested": false
+      }
+    },
+    "fieldVerification": {
+      "website": {
+        "source": "https://thabatre.sa/",
+        "checkedAt": "2026-10-17T09:39:39Z",
+        "status": "official_name_activity_existing_phone_match"
+      }
+    },
+    "commercialEvidence": [
+      "https://thabatre.sa/",
+      "https://thabatre.sa/english/contact-us-eng/"
+    ],
+    "commercialAuditStatus": "verified_sales_role",
+    "cityCoverageEvidence": [
+      {
+        "cities": [
+          "الخبر",
+          "الرياض",
+          "جدة"
+        ],
+        "source": "https://thabatre.sa/",
+        "checkedAt": "2026-10-17T09:39:39Z",
+        "basis": "Explicit named branch/office or separately named project cities. No province-wide pooling."
+      }
+    ]
   },
   {
     "n": "شركة دار واعمار",

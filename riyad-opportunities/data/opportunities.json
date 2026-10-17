@@ -13123,11 +13123,11 @@
     "pageEvidence": "https://www.nhc.sa/real-estate-development/projects/47097/",
     "booking": "https://sakani.sa/app/offplan-projects/1123",
     "availability": {
-      "status": "available",
-      "source": "https://www.nhc.sa/real-estate-development/projects/47097/",
-      "checkedAt": "2026-10-16T07:19:44.798623+00:00",
-      "sourceStatus": "متاح",
-      "basis": "Official NHC project page with matching project name, developer and city."
+      "status": "sold_out",
+      "source": "https://thabatre.sa/",
+      "checkedAt": "2026-10-17T09:39:39Z",
+      "sourceStatus": "تم البيع",
+      "basis": "Current developer homepage explicitly labels the card linked to this exact project sold. Retained source data and bank approval unchanged; newer sellout supersedes older NHC availability."
     },
     "totalProjectUnits": 537,
     "projectAreaSqm": null,
@@ -13167,7 +13167,16 @@
       "alternativeReportedProjectAreaSqm": 230000,
       "alternativeAcquisition": "public_search_index_rendering",
       "resolution": "Hide normalized area until authoritative dimensions are reconciled; preserve both source values."
-    }
+    },
+    "availabilityHistory": [
+      {
+        "status": "available",
+        "source": "https://www.nhc.sa/real-estate-development/projects/47097/",
+        "checkedAt": "2026-10-16T07:19:44.798623+00:00",
+        "sourceStatus": "متاح",
+        "basis": "Official NHC project page with matching project name, developer and city."
+      }
+    ]
   },
   {
     "id": "op-nhc-47666",
