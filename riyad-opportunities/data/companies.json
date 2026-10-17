@@ -3329,7 +3329,7 @@
     ],
     "wa": "",
     "site": "https://falek.sa/",
-    "maps": "",
+    "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%81%D8%A7%D9%84%D9%83%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9&query_place_id=ChIJR_DAlVVZfxURyjtewL7im8c",
     "contact": "",
     "id": "cp-73bddb5bdd",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%81%D8%A7%D9%84%D9%83%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
@@ -3347,12 +3347,23 @@
         "checkedAt": "2026-10-17T07:06:00Z",
         "status": "official_website_matched_existing_name_phone_city",
         "value": "https://falek.sa/"
+      },
+      "officeMap": {
+        "status": "structured_maps_provider_matched_official_name_phone_city_website",
+        "source": "https://maps.firecrawl.dev/search?q=%D8%B4%D8%B1%D9%83%D8%A9+%D9%81%D8%A7%D9%84%D9%83+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9+%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9+%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+        "checkedAt": "2026-10-17T08:02:17Z",
+        "placeId": "ChIJR_DAlVVZfxURyjtewL7im8c",
+        "scope": "company_office_only_not_project_location",
+        "provider": "firecrawl-maps"
       }
     },
     "phoneContacts": [
       "المبيعات",
       "العلاقات العامة"
-    ]
+    ],
+    "placeId": "ChIJR_DAlVVZfxURyjtewL7im8c",
+    "lat": 26.3435462,
+    "lon": 44.0054567
   },
   {
     "n": "شركة دار دليل العقارية",
@@ -3457,14 +3468,32 @@
     "kind": "تسويق ووساطة",
     "scope": "التطوير وتسويق الأراضي",
     "phones": [
-      "0503182216"
+      "0503182216",
+      "0551771131"
     ],
     "wa": "",
-    "site": "",
+    "site": "https://araqah-alshamal.sa/",
     "maps": "",
     "contact": "",
     "id": "cp-a55b8be408",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B9%D8%B1%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B9%D8%B1%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%20%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+    "phoneContacts": [
+      "التسويق والمبيعات",
+      "التسويق والمبيعات"
+    ],
+    "verifiedPhones": [
+      "0503182216",
+      "0551771131"
+    ],
+    "commercialAuditStatus": "verified_sales_role",
+    "commercialEvidence": [
+      "https://araqah-alshamal.sa/contact-us"
+    ],
+    "websiteEvidence": {
+      "source": "https://araqah-alshamal.sa/contact-us",
+      "checkedAt": "2026-10-17T07:54:00Z",
+      "basis": "Exact existing sales phone,name and Buraidah address match. Old .com domain not preferred over current .sa."
+    }
   },
   {
     "n": "وجف العقارية",
@@ -4115,12 +4144,36 @@
       "رقم الشركة"
     ],
     "wa": "",
-    "site": "",
+    "site": "https://alrajhiunited.com/",
     "maps": "",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D8%AA%D8%AD%D8%A7%D8%AF%20%D8%A7%D9%84%D8%B1%D8%A7%D8%AC%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20Saudi%20Arabia",
     "sectors": [],
     "phoneSource": "مراكز المبيعات 2026.pdf، ص40",
-    "phoneAudit": "رقم التواصل الوارد في تقرير المركز."
+    "phoneAudit": "رقم التواصل الوارد في تقرير المركز.",
+    "coverageCities": [
+      "بريدة",
+      "الرياض"
+    ],
+    "cityRole": "documented_project_service_coverage",
+    "commercialAuditStatus": "verified_developer",
+    "commercialEvidence": [
+      "https://alrajhiunited.com/ar-housing-projects/05-2/"
+    ],
+    "cityCoverageEvidence": [
+      {
+        "city": "بريدة",
+        "source": "https://alrajhiunited.com/ar-housing-projects/05-2/",
+        "checkedAt": "2026-10-17T07:54:00Z",
+        "basis": "Exact Bساتين development; not a corporate office pin."
+      },
+      {
+        "city": "الرياض",
+        "source": "https://alrajhiunited.com/ar-housing-projects/05-2/",
+        "checkedAt": "2026-10-17T07:54:00Z",
+        "basis": "Published Riyadh corporate contact address."
+      }
+    ],
+    "phoneEvidenceNote": "Original report contact preserved; this website pass did not independently match the phone."
   },
   {
     "id": "cp-center-buraidah-mughna",
