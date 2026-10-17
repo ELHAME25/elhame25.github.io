@@ -1584,6 +1584,11 @@
     if (o && o.id === 'P519' && /(^|\.)rakez\.sa$/i.test(host)) return '';
     return o && o.dsite || '';
   }
+  function projectSiteLabel(o) {
+    if (o.siteRole === 'marketer' || (o.marketer && !o.dev)) return 'موقع المسوّق';
+    if (o.marketer || unclearDeveloperRole(o)) return 'موقع الجهة';
+    return 'موقع المطور';
+  }
   function roomText(value) {
     var text = String(value || '').trim();
     if (/غرف\s+فأكثر$/.test(text)) return text;
@@ -1614,6 +1619,9 @@
       'غير شامل الضريبة': ['السعر', 'غير شامل الضريبة'], 'شامل الضريبة': ['السعر', 'شامل الضريبة']
     };
     var basis = Object.prototype.hasOwnProperty.call(bases, o.priceBasis) ? bases[o.priceBasis] : ['السعر', ''];
+    if (/^unit_specific/.test(String(o.priceBasis || '')) && /^[0-9]{1,6}$/.test(String(o.priceUnitNumber || ''))) {
+      basis = [basis[0], basis[1].replace('للوحدة الموضحة', 'للوحدة ' + o.priceUnitNumber)];
+    }
     return { value: price, prefix: basis[0], suffix: basis[1] };
   }
   function priceText(o) {
@@ -1795,7 +1803,7 @@
       if (o.page) links += '<a class="btn primary" target="_blank" rel="noopener" href="' + esc(o.page) + '">' + ICON.web + 'صفحة المشروع</a>';
       if (o.areaSource) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.areaSource) + '">' + ICON.web + 'مصدر المساحة</a>';
       var devSite = developerSite(o);
-      if (devSite && devSite !== o.page) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(devSite) + '">' + ICON.companies + (unclearDeveloperRole(o) ? 'موقع الجهة' : 'موقع المطور') + '</a>';
+      if (devSite && devSite !== o.page) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(devSite) + '">' + ICON.companies + projectSiteLabel(o) + '</a>';
       if (o.sales) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.sales) + '">' + ICON.map + 'مركز المبيعات</a>';
       if (o.contactUrl) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.contactUrl) + '">' + ICON.phone + 'التواصل</a>';
     }
