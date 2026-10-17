@@ -1,0 +1,11 @@
+{
+  "companyId": "cp-da8cabf976",
+  "change": "Preserve existing supplied business contacts in display alongside the sourced general corporate number.",
+  "existingNamedContactsPreserved": 2,
+  "generalCorporateContactsAdded": 1,
+  "contactValuesIncludedInAudit": false,
+  "sourceType": "existing_user_supplied_business_directory_reference_in_record",
+  "reason": "Correct unintended contact-view whitelist narrowing. No new named person or personal number is introduced by this change.",
+  "test": "Unmodified multiple-number card/detail regression;50/50 UI behavior assertions passed.",
+  "date": "2026-10-17T09:13:00Z"
+}

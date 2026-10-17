@@ -59,6 +59,8 @@
       }
     },
     "verifiedPhones": [
+      "0555048581",
+      "0592431071",
       "920011719"
     ],
     "fieldVerification": {
@@ -78,6 +80,13 @@
         ],
         "reconciledAt": "2026-10-17T09:04:00Z",
         "scope": "Corporate contact only, not verification of every named employee number"
+      },
+      "retainedNamedContacts": {
+        "status": "preserved_existing_user_supplied_business_contacts",
+        "contactCount": 2,
+        "sourceType": "existing_business_directory_reference_already_in_record",
+        "reconciledAt": "2026-10-17T09:13:00Z",
+        "basis": "General corporate contact addition must not hide existing supplied contacts. No new independent verification claimed; no contact values duplicated in this evidence object."
       }
     }
   },

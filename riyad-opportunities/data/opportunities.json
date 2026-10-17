@@ -21361,5 +21361,103 @@
       "checkedAt": "2026-10-17T07:56:00Z",
       "basis": "Exact coordinates published in developer/marketer project map link."
     }
+  },
+  {
+    "id": "op-qassim-lavir-villa-buraidah",
+    "n": "لافير فيلا",
+    "city": "بريدة",
+    "nb": "الرحاب",
+    "dev": "نماء العقارية",
+    "marketer": "دار دليل العقارية",
+    "marketerCompanyId": "cp-2f33668381",
+    "type": "فلل",
+    "phones": [
+      "0503277973"
+    ],
+    "phoneContacts": [
+      "دار دليل العقارية — التسويق"
+    ],
+    "phoneLevel": "marketer",
+    "dsite": "https://dardalil.info/",
+    "page": "https://dardalil.info/ar/project/63",
+    "siteRole": "marketer",
+    "maps": "https://maps.app.goo.gl/Pe1g7J9rstNJKPQw5",
+    "lat": 26.4424726,
+    "lon": 43.889944,
+    "loc": "pt",
+    "sectors": [],
+    "img": "",
+    "price": 1190000,
+    "priceBasis": "unit_specific",
+    "priceUnitNumber": "4",
+    "status": "متاح للبيع",
+    "availability": {
+      "status": "available",
+      "source": "https://dardalil.info/ar/project/63",
+      "checkedAt": "2026-10-17T09:09:00Z",
+      "basis": "Exact unit table distinguishes sold rows from active book-now sale offers; units4,6,9,10 observed offered at1190000 SAR. No completed booking or guaranteed remaining total."
+    },
+    "fieldEvidence": {
+      "price": {
+        "source": "https://dardalil.info/ar/project/63",
+        "checkedAt": "2026-10-17T09:09:00Z",
+        "scope": "specific_available_villa_4_offer_not_project_minimum"
+      },
+      "maps": {
+        "source": "https://dardalil.info/ar/project/63",
+        "checkedAt": "2026-10-17T09:09:00Z",
+        "scope": "developer_marketer_published_exact_project_place_link"
+      },
+      "nb": {
+        "source": "https://dardalil.info/ar/project/63",
+        "checkedAt": "2026-10-17T09:09:00Z",
+        "scope": "exact_project_neighborhood"
+      }
+    },
+    "coordinateEvidence": {
+      "source": "https://dardalil.info/ar/project/63",
+      "checkedAt": "2026-10-17T09:09:58Z",
+      "basis": "Published Maps link resolves to named Lavir Villa place, !3d26.4424726!4d43.889944. Alternate project map query agrees; not viewport center."
+    },
+    "totalProjectUnits": 25,
+    "availableUnitExamples": [
+      {
+        "unitNumber": "4",
+        "priceSar": 1190000,
+        "publishedAreaSqm": 388.2,
+        "areaScope": "published_total_villa_area_not_separately_land_or_building",
+        "source": "https://dardalil.info/ar/project/63",
+        "checkedAt": "2026-10-17T09:09:00Z"
+      },
+      {
+        "unitNumber": "6",
+        "priceSar": 1190000,
+        "publishedAreaSqm": 388.2,
+        "areaScope": "published_total_villa_area_not_separately_land_or_building",
+        "source": "https://dardalil.info/ar/project/63",
+        "checkedAt": "2026-10-17T09:09:00Z"
+      },
+      {
+        "unitNumber": "9",
+        "priceSar": 1190000,
+        "publishedAreaSqm": 388.2,
+        "areaScope": "published_total_villa_area_not_separately_land_or_building",
+        "source": "https://dardalil.info/ar/project/63",
+        "checkedAt": "2026-10-17T09:09:00Z"
+      },
+      {
+        "unitNumber": "10",
+        "priceSar": 1190000,
+        "publishedAreaSqm": 388.2,
+        "areaScope": "published_total_villa_area_not_separately_land_or_building",
+        "source": "https://dardalil.info/ar/project/63",
+        "checkedAt": "2026-10-17T09:09:00Z"
+      }
+    ],
+    "remainingInventory": {
+      "count": null,
+      "reason": "Only first10of25rows reviewed; no total remaining count inferred."
+    },
+    "sourceType": "official_marketer_project_unit_table"
   }
 ]
