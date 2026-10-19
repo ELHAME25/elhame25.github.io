@@ -3157,8 +3157,15 @@
     "officialMapStatus": "held",
     "distanceScope": "city",
     "operatingStatus": "unknown",
-    "locationReview": "user_source_identity_confirmed_no_current_pin_or_operating_status",
+    "locationReview": "owner_accepted_identity_and_sector_no_invented_coordinates",
     "locationReviewSource": "فروع الرياض .pdf، الصفحتان 19 و20؛ تصنيف غرب الرياض بتوجيه المستخدم بتاريخ 2026-10-16",
-    "coordinateSource": null
+    "coordinateSource": null,
+    "auditReviewPolicy": "owner_supplied_do_not_research",
+    "ownerAcceptance": {
+      "accepted": true,
+      "source": "تعليمات خالد الماطر",
+      "scope": "الاسم والفرع وتصنيف غرب الرياض معتمدة من صاحب البيانات؛ لا إعادة تحقق خارجي ضمن العمل الحالي",
+      "independentlyVerified": false
+    }
   }
 ]

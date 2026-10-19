@@ -1,6 +1,7 @@
 const fs=require('fs'),path=require('path'),assert=require('assert');
 const root=path.resolve(process.argv[2]||path.join(__dirname,'..'));
 const baseline=JSON.parse(fs.readFileSync(path.join(__dirname,'retained-data-baseline.json'),'utf8'));
+const reviewedImages=JSON.parse(fs.readFileSync(path.join(__dirname,'reviewed-image-replacements-20261017.json'),'utf8'));
 const audit=JSON.parse(fs.readFileSync(path.join(root,'MAP_AUDIT_LEDGER_2026-10-10.json'),'utf8'));
 const auditById=new Map(audit.entries.map(x=>[x.id,x]));
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'CAR_CORRECTION_APPLICATION_MANIFEST_212_R1_SAFE_PREVIEW_2026-10-11.json'),'utf8'));
@@ -17,6 +18,9 @@ assert.equal(approvedExclusions.size,210,'approved exclusion count changed');
 const dealers=JSON.parse(fs.readFileSync(path.join(root,'data/dealers.json'),'utf8'));
 const dealerById=new Map(dealers.map(x=>[x.id,x]));
 const dealerMigrations=new Map([['phase6-cars-56fc1e0cbe2502','official-dealer-mbabgi-qunfudhah'],['pdf-smalltown-026','official-dealer-mbabgi-qunfudhah']]);
+const removedAds=JSON.parse(fs.readFileSync(path.join(__dirname,'removed-individual-ads-20261017.json'),'utf8'));
+const removedAdIds=new Set(['op-0cad70aeac','op-baqaa-rimal-127br-29','op-eskan-muhayil-6853750']);
+assert.deepEqual(new Set(removedAds.records.map(x=>x.id)),removedAdIds,'Only explicitly reviewed individual ads may be archived');
 let retained=0,phones=0;
 for(const [kind,rows] of Object.entries(baseline.records)){
  const current=JSON.parse(fs.readFileSync(path.join(root,'data',kind+'.json'),'utf8'));
@@ -25,6 +29,11 @@ for(const [kind,rows] of Object.entries(baseline.records)){
  for(const prior of rows){
   const now=byId.get(prior.id);
   if(!now){
+   if(kind==='opportunities'&&removedAdIds.has(prior.id)){
+    const archived=removedAds.records.find(x=>x.id===prior.id);assert(archived&&removedAds.userInstructionMessage,'Deletion requires recorded instruction and original record');
+    for(const phone of prior.phones||[])assert((archived.phones||[]).includes(phone),'Archived advertisement must retain original phones');
+    assert.equal(archived.img||'',prior.img||'','Archived advertisement must retain original image');retained++;continue;
+   }
    const entry=auditById.get(prior.id),archive=entry?.archivedRecord;
    const finalDecision=finalDecisions.get(prior.id);
    const finalProposed=finalDecision?.proposed_change||finalDecision?.proposed_changes||finalDecision?.proposedChange||finalDecision?.proposed||{};
@@ -75,6 +84,11 @@ for(const [kind,rows] of Object.entries(baseline.records)){
    assert.equal(now.imageDisplayStatus,'held_wrong_project_provenance');assert.equal(now.imageType,'رسم عقاري توضيحي، وليس صورة المشروع');assert.equal(now.imagePlaceholder,'assets/images/real-estate-illustrative-apartments.svg');
    assert.equal(decodeURIComponent(now.imageSource),source);assert.equal(decodeURIComponent(now.imageSourceUrl),source);
    assert(Array.isArray(now.imageProvenanceHistory)&&now.imageProvenanceHistory.some(h=>h.url===prior.img&&decodeURIComponent(h.source||'')===source&&h.status==='held_from_display'&&h.sourceProjectName==='مجمع محيط البركة السكني التجاري'&&h.sourceProjectLocation==='غرب بلدة الجش بمحافظة القطيف'&&h.checkedAt&&!isNaN(Date.parse(h.checkedAt))&&String(h.reason||'').trim()),'P029 missing exact retained wrong-project provenance');
+  }
+  else if(reviewedImages[prior.id]) {
+   const approved=reviewedImages[prior.id];
+   assert.equal(prior.img,approved.previousImage);assert.equal(now.img,approved.image);assert.equal(now.imageSource,approved.source);
+   assert.equal(require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root,now.img))).digest('hex'),approved.sha256);
   }
   else assert.equal(now.img||'',prior.img,prior.id+' changed a deferred image');
  }

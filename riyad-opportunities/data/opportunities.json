@@ -9,7 +9,7 @@
     "units": "346 وحدة (إجمالي المشروع)",
     "status": "متاح للحجز",
     "phones": [],
-    "img": "",
+    "img": "assets/images/projects/verified-sama-wurood.png",
     "maps": "",
     "price": 747400,
     "page": "https://www.nhc.sa/ar/real-estate-development/projects/47490/",
@@ -55,7 +55,23 @@
       }
     },
     "priceBasis": "starting_price_sar",
-    "priceSource": "https://www.nhc.sa/ar/real-estate-development/projects/47490/"
+    "priceSource": "https://www.nhc.sa/ar/real-estate-development/projects/47490/",
+    "developerWebsiteEvidence": {
+      "source": "https://maya.sa.com/",
+      "companyId": "cp-catalog-maya",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506532+00:00"
+    },
+    "dsite": "https://maya.sa.com/",
+    "imageSourceUrl": "https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-01/351x562_0.png",
+    "imageType": "صورة رسمية لمشروع سما الورود من NHC",
+    "imageReuseEvidence": {
+      "sourceRecord": "P013",
+      "canonicalProjectId": "nhc:47490",
+      "basis": "Same canonical project, matching city and developer; existing working image reused without external re-search.",
+      "checkedAt": "2026-10-17T21:07:29.401191+00:00"
+    },
+    "imageSource": "https://www.nhc.sa/real-estate-development/projects/47490/"
   },
   {
     "id": "op-c4e61f63eb",
@@ -67,7 +83,7 @@
     "units": "260 وحدة (إجمالي المشروع)",
     "status": "متاح للحجز",
     "phones": [],
-    "img": "https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-02/351x562px%20copy.png",
+    "img": "assets/images/projects/verified-jayda-nhc.png",
     "maps": "https://www.google.com/maps/place/%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%AC%D9%8A%D8%AF%D8%A7%20%D9%80%20%D9%88%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D9%88%D8%B1%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1/@25.2844029,49.5927532",
     "price": 625033,
     "page": "https://www.nhc.sa/ar/real-estate-development/projects/47491",
@@ -112,7 +128,20 @@
       }
     },
     "priceBasis": "starting_price_sar",
-    "priceSource": "https://www.nhc.sa/ar/real-estate-development/projects/47491"
+    "priceSource": "https://www.nhc.sa/ar/real-estate-development/projects/47491",
+    "imageSource": "https://www.nhc.sa/ar/real-estate-development/projects/47491",
+    "imageSourceUrl": "https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-01/%D9%85%D9%82%D8%A7%D8%B3%20%D8%A7%D9%84%D8%AC%D9%88%D8%A7%D9%84.png",
+    "imageType": "تصور معماري رسمي للمشروع",
+    "sourceHistory": [
+      {
+        "field": "img",
+        "previous": "https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-02/351x562px%20copy.png",
+        "replacement": "assets/images/projects/verified-jayda-nhc.png",
+        "reason": "Previous image returned HTTP404; replacement is first hero on exact NHC project page, visually inspected",
+        "source": "https://www.nhc.sa/ar/real-estate-development/projects/47491",
+        "checkedAt": "2026-10-17T20:08:42.093383+00:00"
+      }
+    ]
   },
   {
     "id": "op-aa8f2b3bd7",
@@ -420,7 +449,14 @@
     "lat": 25.31593,
     "lon": 49.51834,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%86%D8%B3%D8%A7%D8%AC%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D9%87%D9%81%D9%88%D9%81%20-%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%A8%D8%AF%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%86%D8%B3%D8%A7%D8%AC%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1%20%D8%A7%D9%84%D9%87%D9%81%D9%88%D9%81%20-%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%A8%D8%AF%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1",
+    "developerWebsiteEvidence": {
+      "source": "https://retal.com.sa",
+      "companyId": "cp-9aadba3f11",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506549+00:00"
+    },
+    "dsite": "https://retal.com.sa"
   },
   {
     "id": "op-d548ada844",
@@ -438,7 +474,14 @@
     "lat": 21.42893,
     "lon": 40.47781,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%A7%D9%86%D9%8A%D8%A9%20%D8%AF%D9%8A%D8%A7%D9%86%D8%A7%20%D8%A7%D9%84%D8%AD%D9%88%D9%8A%D8%A9%20-%20%D9%88%D8%AC%D9%87%D8%A9%20%D8%AF%D9%8A%D8%A7%D9%86%D8%A7%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%A7%D9%86%D9%8A%D8%A9%20%D8%AF%D9%8A%D8%A7%D9%86%D8%A7%20%D8%A7%D9%84%D8%AD%D9%88%D9%8A%D8%A9%20-%20%D9%88%D8%AC%D9%87%D8%A9%20%D8%AF%D9%8A%D8%A7%D9%86%D8%A7%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+    "developerWebsiteEvidence": {
+      "source": "https://www.nhc.sa",
+      "companyId": "report-nhc-sales-riyadh",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506552+00:00"
+    },
+    "dsite": "https://www.nhc.sa"
   },
   {
     "id": "op-bedc991b18",
@@ -477,7 +520,7 @@
     "city": "حائل",
     "nb": "النقرة",
     "type": "فلل سكنية",
-    "units": "10 فلل",
+    "units": "10 فلل (إجمالي المشروع)",
     "status": "متاح",
     "phones": [
       "920031975"
@@ -488,9 +531,41 @@
     "lat": 27.47661,
     "lon": 41.66247,
     "loc": "nb",
-    "page": "https://sa.aqar.fm/المشاريع-العقارية/شركة-متمم-للمقاولات-141/النقرة-551/6464547",
-    "pageSource": "https://sa.aqar.fm/المشاريع-العقارية/شركة-متمم-للمقاولات-141/النقرة-551/6464547",
-    "pageEvidence": "https://sa.aqar.fm/المشاريع-العقارية/شركة-متمم-للمقاولات-141/النقرة-551/6464547"
+    "page": "https://sa.aqar.fm/en/projects/%D8%B4%D8%B1%D9%83%D8%A9-%D9%85%D8%AA%D9%85%D9%85-%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA-141/%D8%A7%D9%84%D9%86%D9%82%D8%B1%D8%A9-551",
+    "pageSource": "https://sa.aqar.fm/en/projects/%D8%B4%D8%B1%D9%83%D8%A9-%D9%85%D8%AA%D9%85%D9%85-%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA-141/%D8%A7%D9%84%D9%86%D9%82%D8%B1%D8%A9-551",
+    "pageEvidence": "https://sa.aqar.fm/en/projects/%D8%B4%D8%B1%D9%83%D8%A9-%D9%85%D8%AA%D9%85%D9%85-%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA-141/%D8%A7%D9%84%D9%86%D9%82%D8%B1%D8%A9-551",
+    "sourceHistory": [
+      {
+        "field": "page",
+        "previous": "https://sa.aqar.fm/المشاريع-العقارية/شركة-متمم-للمقاولات-141/النقرة-551/6464547",
+        "replacement": "https://sa.aqar.fm/en/projects/%D8%B4%D8%B1%D9%83%D8%A9-%D9%85%D8%AA%D9%85%D9%85-%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA-141/%D8%A7%D9%84%D9%86%D9%82%D8%B1%D8%A9-551",
+        "checkedAt": "2026-10-17T20:41:55.852977+00:00",
+        "reason": "Use developer project-level listing of ten villas, not its nested individual-unit link; exact name and developer match"
+      }
+    ],
+    "totalProjectUnits": 10,
+    "availability": {
+      "status": "available",
+      "source": "https://sa.aqar.fm/en/projects/%D8%B4%D8%B1%D9%83%D8%A9-%D9%85%D8%AA%D9%85%D9%85-%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA-141/%D8%A7%D9%84%D9%86%D9%82%D8%B1%D8%A9-551",
+      "checkedAt": "2026-10-17T20:41:55.852977+00:00",
+      "sourceStatus": "Available Ready",
+      "acquisition": "public_search_index_rendering",
+      "reportedCrawlRecency": "last week",
+      "basis": "Exact developer project listing reports available, ready and ten-villa project. Total units are not asserted remaining inventory.",
+      "bookingAttempted": false
+    },
+    "construction": {
+      "status": "ready",
+      "source": "https://sa.aqar.fm/en/projects/%D8%B4%D8%B1%D9%83%D8%A9-%D9%85%D8%AA%D9%85%D9%85-%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA-141/%D8%A7%D9%84%D9%86%D9%82%D8%B1%D8%A9-551",
+      "checkedAt": "2026-10-17T20:41:55.852977+00:00"
+    },
+    "fieldEvidence": {
+      "units": {
+        "source": "https://sa.aqar.fm/en/projects/%D8%B4%D8%B1%D9%83%D8%A9-%D9%85%D8%AA%D9%85%D9%85-%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA-141/%D8%A7%D9%84%D9%86%D9%82%D8%B1%D8%A9-551",
+        "checkedAt": "2026-10-17T20:41:55.852977+00:00",
+        "scope": "total_project_units_not_remaining_inventory"
+      }
+    }
   },
   {
     "id": "op-40f125b23d",
@@ -502,7 +577,7 @@
     "units": "609 وحدة (إجمالي المشروع)",
     "status": "حجز الوحدات",
     "phones": [],
-    "img": "",
+    "img": "assets/images/projects/verified-durrat-sadan.jpg",
     "maps": "",
     "sectors": [
       "جنوب"
@@ -537,7 +612,23 @@
         "checkedAt": "2026-10-16T07:18:52.406263+00:00",
         "scope": "total_project_units_not_remaining_inventory"
       }
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://teladco.sa/",
+      "companyId": "cp-catalog-telad",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506555+00:00"
+    },
+    "dsite": "https://teladco.sa/",
+    "imageSourceUrl": "https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2024-04/%D8%AF%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D8%AF%D9%86_W1512xH858.jpg",
+    "imageType": "صورة المشروع المنشورة رسميًا",
+    "imageReuseEvidence": {
+      "sourceRecord": "P281",
+      "canonicalProjectId": "nhc:47290",
+      "basis": "Same canonical project, matching city and developer; existing working image reused without external re-search.",
+      "checkedAt": "2026-10-17T21:07:29.401218+00:00"
+    },
+    "imageSource": "https://www.nhc.sa/ar/real-estate-development/projects/47290"
   },
   {
     "id": "op-fa16a2f12a",
@@ -566,7 +657,7 @@
     "city": "جدة",
     "nb": "جنوب جدة / مجتمع السدن",
     "type": "وحدات سكنية",
-    "units": "967 وحدة",
+    "units": "967 وحدة (إجمالي المشروع)",
     "status": "حجز الوحدات",
     "phones": [],
     "img": "https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-01/web%20project%20thumb_temp%20sadan_AL-DAR%20mobile.png",
@@ -577,7 +668,44 @@
     "page": "https://nhc.sa/ar/real-estate-development/projects/47355/",
     "pageSource": "صفحة NHC الرسمية تؤكد المشروع في جدة؛ الوجهة موثقة كنطاق جنوب جدة.",
     "pageEvidence": "https://nhc.sa/ar/real-estate-development/projects/47355/",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AF%D9%86%20%D8%AC%D9%86%D9%88%D8%A8%20%D8%AC%D8%AF%D8%A9%20%2F%20%D9%85%D8%AC%D8%AA%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AF%D9%86%20%D8%AC%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AF%D9%86%20%D8%AC%D9%86%D9%88%D8%A8%20%D8%AC%D8%AF%D8%A9%20%2F%20%D9%85%D8%AC%D8%AA%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AF%D9%86%20%D8%AC%D8%AF%D8%A9",
+    "developerWebsiteEvidence": {
+      "source": "https://www.nhc.sa",
+      "companyId": "report-nhc-sales-riyadh",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506557+00:00"
+    },
+    "dsite": "https://www.nhc.sa",
+    "fieldEvidence": {
+      "totalProjectUnits": {
+        "source": "https://www.nhc.sa/ar/real-estate-development/projects/47355",
+        "checkedAt": "2026-10-17T21:28:59.638226+00:00",
+        "scope": "total_named_development_units_not_remaining_inventory"
+      },
+      "projectAreaSqm": {
+        "source": "https://www.nhc.sa/ar/real-estate-development/projects/47355",
+        "checkedAt": "2026-10-17T21:28:59.638226+00:00",
+        "scope": "total_named_development_land_area_not_unit_area"
+      }
+    },
+    "availability": {
+      "status": "available",
+      "source": "https://www.nhc.sa/ar/real-estate-development/projects/47355",
+      "checkedAt": "2026-10-17T21:28:59.638226+00:00",
+      "sourceStatus": "متاح",
+      "basis": "Official NHC exact named development page explicitly labels project status available; no stock count or reservation tested.",
+      "bookingAttempted": false
+    },
+    "totalProjectUnits": 967,
+    "projectAreaSqm": 592105,
+    "canonicalProjectId": "nhc:47355",
+    "availabilityIdentityEvidence": {
+      "source": "https://www.nhc.sa/ar/real-estate-development/projects/47355",
+      "checkedAt": "2026-10-17T21:28:59.638226+00:00",
+      "sourceName": "مشروع السدن",
+      "catalogName": "مشروع السدن",
+      "basis": "Same retained NHC47355 project URL, Jeddah city and NHC developer; community/project prefix variant, not cross-phase transfer."
+    }
   },
   {
     "id": "op-84c3053ad6",
@@ -598,7 +726,14 @@
     "lat": 21.79955,
     "lon": 39.10102,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%AC%D8%A7%D8%AF%D8%A9%20%D8%B5%D9%81%D8%A7%2085%20%D8%A7%D9%84%D8%B5%D9%88%D8%A7%D8%B1%D9%8A%20%2F%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%AC%D8%AF%D8%A9%20%D8%AC%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%AC%D8%A7%D8%AF%D8%A9%20%D8%B5%D9%81%D8%A7%2085%20%D8%A7%D9%84%D8%B5%D9%88%D8%A7%D8%B1%D9%8A%20%2F%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%AC%D8%AF%D8%A9%20%D8%AC%D8%AF%D8%A9",
+    "developerWebsiteEvidence": {
+      "source": "https://safainv.sa",
+      "companyId": "cp-ee28fb1fee",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506559+00:00"
+    },
+    "dsite": "https://safainv.sa"
   },
   {
     "id": "op-bf307dc814",
@@ -739,7 +874,14 @@
     "lat": 26.37666,
     "lon": 50.03972,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%88%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%B1%D8%B4%D8%A7%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%20%2F%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%88%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%B1%D8%B4%D8%A7%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%20%2F%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+    "developerWebsiteEvidence": {
+      "source": "https://www.nhc.sa",
+      "companyId": "report-nhc-sales-riyadh",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506560+00:00"
+    },
+    "dsite": "https://www.nhc.sa"
   },
   {
     "id": "op-eadff43203",
@@ -780,7 +922,14 @@
       "officialCity": "الخبر",
       "basis": "Exact full name أراسي كوارترز, NHC, Khobar and project47617. Same proved official identity as P050, but no bank approval is copied to this opportunity.",
       "bankApprovalTransferred": false
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://www.nhc.sa",
+      "companyId": "report-nhc-sales-riyadh",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506562+00:00"
+    },
+    "dsite": "https://www.nhc.sa"
   },
   {
     "id": "op-07bb291d20",
@@ -834,7 +983,14 @@
     "phones": [],
     "img": "",
     "maps": "",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A5%D9%8A%D9%88%D8%A7%D9%86%20%D8%AB%D8%B1%D9%88%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%20%2F%20%D8%AD%D9%8A%20%D8%AB%D8%B1%D9%88%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A5%D9%8A%D9%88%D8%A7%D9%86%20%D8%AB%D8%B1%D9%88%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%20%2F%20%D8%AD%D9%8A%20%D8%AB%D8%B1%D9%88%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+    "developerWebsiteEvidence": {
+      "source": "https://retal.com.sa",
+      "companyId": "cp-9aadba3f11",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506564+00:00"
+    },
+    "dsite": "https://retal.com.sa"
   },
   {
     "id": "op-1a41c2312e",
@@ -898,7 +1054,14 @@
     "phones": [],
     "img": "",
     "maps": "",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%201%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%201%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+    "developerWebsiteEvidence": {
+      "source": "https://manazel.sa",
+      "companyId": "cp-ac3f039a0e",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506566+00:00"
+    },
+    "dsite": "https://manazel.sa"
   },
   {
     "id": "op-c88f814722",
@@ -912,7 +1075,14 @@
     "phones": [],
     "img": "",
     "maps": "",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%202%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%202%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+    "developerWebsiteEvidence": {
+      "source": "https://manazel.sa",
+      "companyId": "cp-ac3f039a0e",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506567+00:00"
+    },
+    "dsite": "https://manazel.sa"
   },
   {
     "id": "op-bd44cf509c",
@@ -926,7 +1096,14 @@
     "phones": [],
     "img": "",
     "maps": "",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D9%88%D8%AA%20%D8%AA%D9%84%D8%A7%D9%84%20-%20%D8%A7%D9%84%D9%85%D9%83%D9%8A%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D9%83%D9%8A%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D9%88%D8%AA%20%D8%AA%D9%84%D8%A7%D9%84%20-%20%D8%A7%D9%84%D9%85%D9%83%D9%8A%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D9%83%D9%8A%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+    "developerWebsiteEvidence": {
+      "source": "https://tilalre.com",
+      "companyId": "cp-0fff260550",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506569+00:00"
+    },
+    "dsite": "https://tilalre.com"
   },
   {
     "id": "op-077bc3526a",
@@ -1469,18 +1646,203 @@
     "city": "بريدة",
     "nb": "الريان",
     "type": "شقق",
-    "units": "",
+    "units": "38 وحدة (إجمالي المشروع)",
     "status": "متاح للبيع",
     "phones": [
       "920015171"
     ],
-    "img": "",
-    "maps": "",
+    "img": "assets/images/projects/verified-majalat73.jpg",
+    "maps": "https://maps.app.goo.gl/oWoLLzmoq1YG6LLr7",
     "price": 470000,
     "lat": 26.39668,
     "lon": 43.90841,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%85%D8%AC%D8%A7%D9%84%D8%A7%D8%AA%2073%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%85%D8%AC%D8%A7%D9%84%D8%A7%D8%AA%2073%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+    "availability": {
+      "status": "available",
+      "source": "https://almjalat.com/real-estate/almjalat-73/",
+      "checkedAt": "2026-10-17T16:04:54.142157+00:00",
+      "basis": "Exact project published unit table; currently available rows, not generic enquiry button"
+    },
+    "availableUnitExamples": [
+      {
+        "unit": "2",
+        "floor": "الأول",
+        "areaSqm": 174.59,
+        "priceSar": 569000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "3",
+        "floor": "الاول",
+        "areaSqm": 174.59,
+        "priceSar": 560000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "4",
+        "floor": "الأول",
+        "areaSqm": 172.3,
+        "priceSar": 555000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "6",
+        "floor": "الأول",
+        "areaSqm": 177.89,
+        "priceSar": 569000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "10",
+        "floor": "الثاني",
+        "areaSqm": 174.589,
+        "priceSar": 569000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "11",
+        "floor": "الثاني",
+        "areaSqm": 174.59,
+        "priceSar": 560000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "12",
+        "floor": "الثاني",
+        "areaSqm": 172.3,
+        "priceSar": 555000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "13",
+        "floor": "الثاني",
+        "areaSqm": 172.3,
+        "priceSar": 555000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "16",
+        "floor": "الثاني",
+        "areaSqm": 178.56,
+        "priceSar": 869000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "27",
+        "floor": "الرابع",
+        "areaSqm": 175.442,
+        "priceSar": 560000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "30",
+        "floor": "الرابع",
+        "areaSqm": 177.109,
+        "priceSar": null,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "31",
+        "floor": "الرابع",
+        "areaSqm": 178.79,
+        "priceSar": null,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "33",
+        "floor": "ملحق علوي",
+        "areaSqm": 182.46,
+        "priceSar": 470000,
+        "bedrooms": 1,
+        "status": "متوفر"
+      },
+      {
+        "unit": "34",
+        "floor": "ملحق علوي",
+        "areaSqm": 233.03,
+        "priceSar": 600000,
+        "bedrooms": 1,
+        "status": "متوفر"
+      },
+      {
+        "unit": "35",
+        "floor": "ملحق علوي",
+        "areaSqm": 217.22,
+        "priceSar": 560000,
+        "bedrooms": 1,
+        "status": "متوفر"
+      },
+      {
+        "unit": "36",
+        "floor": "ملحق علوي",
+        "areaSqm": 241.98,
+        "priceSar": 620000,
+        "bedrooms": 1,
+        "status": "متوفر"
+      },
+      {
+        "unit": "37",
+        "floor": "ملحق علوي",
+        "areaSqm": 230.78,
+        "priceSar": 599000,
+        "bedrooms": 1,
+        "status": "متوفر"
+      }
+    ],
+    "canonicalProjectId": "majalat-73-buraidah",
+    "dsite": "https://almjalat.com/",
+    "fieldEvidence": {
+      "page": {
+        "source": "https://almjalat.com/real-estate/almjalat-73/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "maps": {
+        "source": "https://almjalat.com/real-estate/almjalat-73/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "price": {
+        "source": "https://almjalat.com/real-estate/almjalat-73/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "rooms": {
+        "source": "https://almjalat.com/real-estate/almjalat-73/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "units": {
+        "source": "https://almjalat.com/real-estate/almjalat-73/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "img": {
+        "source": "https://almjalat.com/real-estate/almjalat-73/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      }
+    },
+    "imageSource": "https://almjalat.com/wp-content/uploads/2024/09/%D9%86%D8%B3%D8%AE%D8%A9-%D9%85%D9%86-003-copy-6-1536x768.jpg",
+    "imageType": "تصميم معماري رسمي من المطور",
+    "inventoryObservation": {
+      "available": 17,
+      "sold": 21,
+      "source": "https://almjalat.com/real-estate/almjalat-73/",
+      "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+    },
+    "page": "https://almjalat.com/real-estate/almjalat-73/",
+    "priceBasis": "starting_from",
+    "priceSource": "https://almjalat.com/real-estate/almjalat-73/",
+    "rooms": "1–3",
+    "totalProjectUnits": 38
   },
   {
     "id": "op-b6995209f0",
@@ -1489,20 +1851,85 @@
     "city": "بريدة",
     "nb": "بريدة",
     "type": "شقق، شقق بسطح",
-    "units": "",
+    "units": "18 وحدة (إجمالي المشروع)",
     "status": "متاح للبيع",
     "phones": [
       "920015171"
     ],
-    "img": "",
-    "maps": "",
+    "img": "assets/images/projects/verified-majalat74.jpg",
+    "maps": "https://maps.app.goo.gl/VW5UhnwtGbkQ6Mkp6",
     "price": 699000,
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%85%D8%AC%D8%A7%D9%84%D8%A7%D8%AA%2074%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%85%D8%AC%D8%A7%D9%84%D8%A7%D8%AA%2074%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+    "availability": {
+      "status": "available",
+      "source": "https://almjalat.com/real-estate/almjalat-76/",
+      "checkedAt": "2026-10-17T16:04:54.142157+00:00",
+      "basis": "Exact project published unit table; currently available rows, not generic enquiry button"
+    },
+    "availableUnitExamples": [
+      {
+        "unit": "17",
+        "floor": "الخامس",
+        "areaSqm": 267.45,
+        "priceSar": 699000,
+        "bedrooms": 2,
+        "status": "متوفر"
+      },
+      {
+        "unit": "18",
+        "floor": "الخامس",
+        "areaSqm": 267.445,
+        "priceSar": 699000,
+        "bedrooms": 2,
+        "status": "متوفر"
+      }
+    ],
+    "canonicalProjectId": "majalat-74-buraidah",
+    "dsite": "https://almjalat.com/",
+    "fieldEvidence": {
+      "page": {
+        "source": "https://almjalat.com/real-estate/almjalat-76/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "maps": {
+        "source": "https://almjalat.com/real-estate/almjalat-76/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "price": {
+        "source": "https://almjalat.com/real-estate/almjalat-76/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "rooms": {
+        "source": "https://almjalat.com/real-estate/almjalat-76/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "units": {
+        "source": "https://almjalat.com/real-estate/almjalat-76/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "img": {
+        "source": "https://almjalat.com/real-estate/almjalat-76/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      }
+    },
+    "imageSource": "https://almjalat.com/wp-content/uploads/2024/09/%D9%86%D8%B3%D8%AE%D8%A9-%D9%85%D9%86-007-copy-5-scaled.jpg",
+    "imageType": "تصميم معماري رسمي من المطور",
+    "inventoryObservation": {
+      "available": 2,
+      "sold": 16,
+      "source": "https://almjalat.com/real-estate/almjalat-76/",
+      "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+    },
+    "page": "https://almjalat.com/real-estate/almjalat-76/",
+    "priceBasis": "starting_from",
+    "priceSource": "https://almjalat.com/real-estate/almjalat-76/",
+    "rooms": "2",
+    "totalProjectUnits": 18
   },
   {
     "id": "op-f7e8e9db00",
     "n": "رحيب",
-    "dev": "شركة الغنام العقارية",
+    "dev": "",
     "city": "بريدة",
     "nb": "الريان",
     "type": "فلل، دوبلكسات",
@@ -1517,12 +1944,33 @@
     "lat": 26.39668,
     "lon": 43.90841,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B1%D8%AD%D9%8A%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B1%D8%AD%D9%8A%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+    "availability": {
+      "status": "available",
+      "source": "https://algnam.sa/6666-2/",
+      "checkedAt": "2026-10-17T16:25:21.154707+00:00",
+      "basis": "Exact named Buraidah project card marked available; percentage sold is not a remaining unit count"
+    },
+    "developerVerified": false,
+    "dsite": "https://algnam.sa/",
+    "marketer": "شركة الغنام العقارية",
+    "marketerCompanyId": "cp-47ae680056",
+    "page": "https://algnam.sa/6666-2/",
+    "pageSource": "صفحة مشاريع الغنام؛ المدينة والاسم متطابقان، مع فصل دور المسوّق عن المطور.",
+    "siteRole": "marketer",
+    "sourceHistory": [
+      {
+        "field": "dev",
+        "old": "شركة الغنام العقارية",
+        "reason": "Stored company markets project; ownership/developer role not established by this listing",
+        "source": "https://algnam.sa/6666-2/"
+      }
+    ]
   },
   {
     "id": "op-52a9e665a0",
     "n": "سمايا",
-    "dev": "شركة الغنام العقارية",
+    "dev": "",
     "city": "بريدة",
     "nb": "المريدسية",
     "type": "فلل",
@@ -1534,7 +1982,67 @@
     "img": "",
     "maps": "",
     "price": 1800000,
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%85%D8%A7%D9%8A%D8%A7%20%D8%A7%D9%84%D9%85%D8%B1%D9%8A%D8%AF%D8%B3%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%85%D8%A7%D9%8A%D8%A7%20%D8%A7%D9%84%D9%85%D8%B1%D9%8A%D8%AF%D8%B3%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+    "advertisedPricesSource": "https://algnam.sa/%d9%85%d8%b4%d8%b1%d9%88%d8%b9-%d8%b3%d9%85%d8%a7%d9%8a%d8%a7/",
+    "advertisedUnitModels": [
+      {
+        "unit": "1",
+        "priceSar": 2700000,
+        "landAreaSqm": 1149
+      },
+      {
+        "unit": "2",
+        "priceSar": 1800000,
+        "landAreaSqm": 570
+      },
+      {
+        "unit": "3",
+        "priceSar": 1800000,
+        "landAreaSqm": 561
+      },
+      {
+        "unit": "4",
+        "priceSar": 1800000,
+        "landAreaSqm": 1000
+      }
+    ],
+    "availability": {
+      "status": "available",
+      "source": "https://algnam.sa/6666-2/",
+      "checkedAt": "2026-10-17T16:25:21.154707+00:00",
+      "basis": "Exact named Buraidah project card marked available; percentage sold is not a remaining unit count"
+    },
+    "desc": "مشروع سمايا في حي المريدسية ببريدة، يتكون من أربع فلل سكنية بتشطيبات حجرية ونظام تحكم ذكي.",
+    "developerVerified": false,
+    "dsite": "https://algnam.sa/",
+    "fieldEvidence": {
+      "nb": {
+        "source": "https://algnam.sa/%d9%85%d8%b4%d8%b1%d9%88%d8%b9-%d8%b3%d9%85%d8%a7%d9%8a%d8%a7/",
+        "checkedAt": "2026-10-17T16:25:21.154707+00:00"
+      },
+      "type": {
+        "source": "https://algnam.sa/%d9%85%d8%b4%d8%b1%d9%88%d8%b9-%d8%b3%d9%85%d8%a7%d9%8a%d8%a7/",
+        "checkedAt": "2026-10-17T16:25:21.154707+00:00"
+      },
+      "desc": {
+        "source": "https://algnam.sa/%d9%85%d8%b4%d8%b1%d9%88%d8%b9-%d8%b3%d9%85%d8%a7%d9%8a%d8%a7/",
+        "checkedAt": "2026-10-17T16:25:21.154707+00:00"
+      }
+    },
+    "marketer": "شركة الغنام العقارية",
+    "marketerCompanyId": "cp-47ae680056",
+    "page": "https://algnam.sa/%d9%85%d8%b4%d8%b1%d9%88%d8%b9-%d8%b3%d9%85%d8%a7%d9%8a%d8%a7/",
+    "pageSource": "صفحة مشاريع الغنام؛ المدينة والاسم متطابقان، مع فصل دور المسوّق عن المطور.",
+    "siteRole": "marketer",
+    "sourceHistory": [
+      {
+        "field": "dev",
+        "old": "شركة الغنام العقارية",
+        "reason": "Stored company markets project; ownership/developer role not established by this listing",
+        "source": "https://algnam.sa/6666-2/"
+      }
+    ],
+    "totalProjectUnits": 4
   },
   {
     "id": "op-103c11b035",
@@ -1722,7 +2230,14 @@
     "lat": 26.39668,
     "lon": 43.90841,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B5%D9%81%D8%A7%2086%20-%20%D8%A5%D9%84%D9%8A%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B5%D9%81%D8%A7%2086%20-%20%D8%A5%D9%84%D9%8A%D8%AA%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+    "developerWebsiteEvidence": {
+      "source": "https://safainv.sa",
+      "companyId": "cp-ee28fb1fee",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506571+00:00"
+    },
+    "dsite": "https://safainv.sa"
   },
   {
     "id": "op-643f167f1b",
@@ -2253,7 +2768,7 @@
     ],
     "img": "https://rakez.sa/wp-content/uploads/2026/04/1-1-1.webp",
     "maps": "",
-    "page": "https://rakez.sa/ar/project/59216/",
+    "page": "https://sadeenliving.com/projects/sadeen-living-12",
     "dsite": "https://rakez.sa/ar/",
     "desc": "شقق من 2 إلى 6 غرف في حي أبحر الجنوبية بجدة بمساحات 120–597 م².",
     "wa": "https://wa.me/966920014659",
@@ -2263,7 +2778,23 @@
     "lat": 21.73524,
     "lon": 39.13064,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D8%B3%D8%AF%D9%8A%D9%86%20%D9%84%D9%81%D9%8A%D9%86%D9%82%2012%20%D8%A3%D8%A8%D8%AD%D8%B1%20%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8%D9%8A%D8%A9%20%D8%AC%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D8%B3%D8%AF%D9%8A%D9%86%20%D9%84%D9%81%D9%8A%D9%86%D9%82%2012%20%D8%A3%D8%A8%D8%AD%D8%B1%20%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8%D9%8A%D8%A9%20%D8%AC%D8%AF%D8%A9",
+    "projectPageCheck": {
+      "url": "https://rakez.sa/ar/project/59216/",
+      "httpStatus": 404,
+      "checkedAt": "2026-10-17T20:21:38.761553+00:00",
+      "fallbackUrl": "https://rakez.sa/ar/",
+      "fallbackHttpStatus": 200,
+      "scope": "Automated HTTP response, not proof of sale status or permanent project removal. Original page retained for later recheck."
+    },
+    "fieldEvidence": {
+      "page": {
+        "source": "https://sadeenliving.com/projects/sadeen-living-12",
+        "checkedAt": "2026-10-18T12:39:03.512984+00:00",
+        "basis": "Exact official replacement verified for missing previous project page. Page-only correction; no stock inference.",
+        "sourceType": "official_developer_project"
+      }
+    }
   },
   {
     "id": "op-db2b9c7835",
@@ -2279,7 +2810,7 @@
     ],
     "img": "https://rakez.sa/wp-content/uploads/2026/03/DJI_20260127133059_0064_D-Edit-1010x1024.webp",
     "maps": "",
-    "page": "https://rakez.sa/ar/project/56693/",
+    "page": "https://rakez.sa/ar/lp/%d8%b4%d9%82%d9%82-%d9%85%d9%86%d8%a7%d8%b3%d9%83-%d8%a7%d9%84%d9%85%d9%84%d8%a8%d9%89-%d8%a7%d9%84%d8%a8%d9%88%d8%a7%d8%af%d9%8a-%d8%ac%d8%af%d8%a9-2/",
     "dsite": "https://rakez.sa/ar/",
     "desc": "شقق بغرفتين في حي البوادي بجدة بمساحات 128–138 م².",
     "wa": "https://wa.me/966920014659",
@@ -2291,7 +2822,23 @@
     "lat": 21.59877,
     "lon": 39.16599,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D9%85%D9%86%D8%A7%D8%B3%D9%83%20%D8%A7%D9%84%D9%85%D9%84%D8%A8%D9%89%20%D8%A7%D9%84%D8%A8%D9%88%D8%A7%D8%AF%D9%8A%20%D8%AC%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D9%85%D9%86%D8%A7%D8%B3%D9%83%20%D8%A7%D9%84%D9%85%D9%84%D8%A8%D9%89%20%D8%A7%D9%84%D8%A8%D9%88%D8%A7%D8%AF%D9%8A%20%D8%AC%D8%AF%D8%A9",
+    "projectPageCheck": {
+      "url": "https://rakez.sa/ar/project/56693/",
+      "httpStatus": 404,
+      "checkedAt": "2026-10-17T20:21:38.761571+00:00",
+      "fallbackUrl": "https://rakez.sa/ar/",
+      "fallbackHttpStatus": 200,
+      "scope": "Automated HTTP response, not proof of sale status or permanent project removal. Original page retained for later recheck."
+    },
+    "fieldEvidence": {
+      "page": {
+        "source": "https://rakez.sa/ar/lp/%d8%b4%d9%82%d9%82-%d9%85%d9%86%d8%a7%d8%b3%d9%83-%d8%a7%d9%84%d9%85%d9%84%d8%a8%d9%89-%d8%a7%d9%84%d8%a8%d9%88%d8%a7%d8%af%d9%8a-%d8%ac%d8%af%d8%a9-2/",
+        "checkedAt": "2026-10-18T12:39:03.512984+00:00",
+        "basis": "Exact official replacement verified for missing previous project page. Page-only correction; no stock inference.",
+        "sourceType": "official_marketer_project_landing"
+      }
+    }
   },
   {
     "id": "op-8bbd0d34a5",
@@ -2307,7 +2854,7 @@
     ],
     "img": "https://rakez.sa/wp-content/uploads/2026/02/Artboard-93-scaled.webp",
     "maps": "",
-    "page": "https://rakez.sa/ar/project/50441/",
+    "page": "https://darco.com.sa/projects/660darco-prime-660",
     "dsite": "https://rakez.sa/ar/",
     "desc": "شقق بغرفة إلى غرفتين في حي الشاطئ بجدة.",
     "wa": "https://wa.me/966920014659",
@@ -2319,7 +2866,23 @@
     "lat": 21.59961,
     "lon": 39.11357,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D8%AF%D8%A7%D8%B1%D9%83%D9%88%20%D8%A8%D8%B1%D8%A7%D9%8A%D9%85%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B7%D8%A6%20%D8%AC%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D8%AF%D8%A7%D8%B1%D9%83%D9%88%20%D8%A8%D8%B1%D8%A7%D9%8A%D9%85%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B7%D8%A6%20%D8%AC%D8%AF%D8%A9",
+    "projectPageCheck": {
+      "url": "https://rakez.sa/ar/project/50441/",
+      "httpStatus": 404,
+      "checkedAt": "2026-10-17T20:21:38.761574+00:00",
+      "fallbackUrl": "https://rakez.sa/ar/",
+      "fallbackHttpStatus": 200,
+      "scope": "Automated HTTP response, not proof of sale status or permanent project removal. Original page retained for later recheck."
+    },
+    "fieldEvidence": {
+      "page": {
+        "source": "https://darco.com.sa/projects/660darco-prime-660",
+        "checkedAt": "2026-10-18T12:39:03.512984+00:00",
+        "basis": "Exact official replacement verified for missing previous project page. Page-only correction; no stock inference.",
+        "sourceType": "official_developer_project"
+      }
+    }
   },
   {
     "id": "op-92fd7ad3e4",
@@ -2480,7 +3043,7 @@
     ],
     "img": "https://rakez.sa/wp-content/uploads/2025/04/WhatsApp-Image-2025-02-11-at-5.38.11-PM-scaled.webp",
     "maps": "",
-    "page": "https://rakez.sa/ar/project/18690/",
+    "page": "",
     "dsite": "https://rakez.sa/ar/",
     "desc": "شقق من 4 إلى 6 غرف في حي الواحة بجدة بمساحات 120–250 م².",
     "wa": "https://wa.me/966920014659",
@@ -2492,7 +3055,41 @@
     "lat": 21.55626,
     "lon": 39.24465,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D8%B9%D8%B7%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B3%D9%86%D8%AF%D8%B3%20%D8%A7%D9%84%D9%88%D8%A7%D8%AD%D8%A9%20%D8%AC%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D8%B9%D8%B7%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B3%D9%86%D8%AF%D8%B3%20%D8%A7%D9%84%D9%88%D8%A7%D8%AD%D8%A9%20%D8%AC%D8%AF%D8%A9",
+    "projectPageCheck": {
+      "url": "https://rakez.sa/ar/project/18690/",
+      "httpStatus": 404,
+      "checkedAt": "2026-10-17T20:21:38.761580+00:00",
+      "fallbackUrl": "https://rakez.sa/ar/",
+      "fallbackHttpStatus": 200,
+      "scope": "Automated HTTP response, not proof of sale status or permanent project removal. Original page retained for later recheck."
+    },
+    "sourceHistory": [
+      {
+        "field": "page",
+        "previous": "https://rakez.sa/ar/project/18690/",
+        "reason": "Confirmed branded404 page; removed broken action URL while retaining original source and existing official company website. No unrelated replacement.",
+        "checkedAt": "2026-10-18"
+      }
+    ],
+    "fieldEvidence": {
+      "page": {
+        "sources": [
+          "https://rakez.sa/ar/project/18690/"
+        ],
+        "checkedAt": "2026-10-18T14:06:30.844392+00:00",
+        "basis": "Existing saved live branded404 confirmed earlier today. Exact replacement research did not establish a working project-specific primary link. For AR270 the corresponding English exact project49963 also returned404 in fresh HTTP test14:00UTC. Clear broken project action only; original URL retained in sourceHistory, all names/phones/prices/bank approvals preserved. This does not mean soldout or absent.",
+        "scope": "factual_identity_and_total_project_size_not_current_inventory"
+      },
+      "sourceHistory": {
+        "sources": [
+          "https://rakez.sa/ar/project/18690/"
+        ],
+        "checkedAt": "2026-10-18T14:06:30.844392+00:00",
+        "basis": "Existing saved live branded404 confirmed earlier today. Exact replacement research did not establish a working project-specific primary link. For AR270 the corresponding English exact project49963 also returned404 in fresh HTTP test14:00UTC. Clear broken project action only; original URL retained in sourceHistory, all names/phones/prices/bank approvals preserved. This does not mean soldout or absent.",
+        "scope": "factual_identity_and_total_project_size_not_current_inventory"
+      }
+    }
   },
   {
     "id": "op-8f45656ba8",
@@ -2571,7 +3168,7 @@
     ],
     "img": "https://rakez.sa/wp-content/uploads/2026/06/1.webp",
     "maps": "",
-    "page": "https://rakez.sa/ar/project/62517/",
+    "page": "https://rega.gov.sa/rega-services/platforms/wafi-off-plan-sales-and-lease/تفاصيل-المشروع/?id=15cc3b19-36ca-4f2c-bb0c-face405d9ada",
     "dsite": "https://rakez.sa/ar/",
     "desc": "شقق من غرفتين إلى ثلاث غرف في حي البندرية بالخبر بمساحات 106–171 م².",
     "wa": "https://wa.me/966920014659",
@@ -2580,7 +3177,26 @@
     "lat": 26.30927,
     "lon": 50.21401,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D8%B3%D9%83%D8%A7%D9%8A%D8%A7%20(%D8%B2%D8%A7%D9%8A%D8%A7)%20%D8%A7%D9%84%D8%A8%D9%86%D8%AF%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D8%B3%D9%83%D8%A7%D9%8A%D8%A7%20(%D8%B2%D8%A7%D9%8A%D8%A7)%20%D8%A7%D9%84%D8%A8%D9%86%D8%AF%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+    "projectPageCheck": {
+      "url": "https://rakez.sa/ar/project/62517/",
+      "httpStatus": 404,
+      "checkedAt": "2026-10-17T20:21:38.761584+00:00",
+      "fallbackUrl": "https://rakez.sa/ar/",
+      "fallbackHttpStatus": 200,
+      "scope": "Automated HTTP response, not proof of sale status or permanent project removal. Original page retained for later recheck."
+    },
+    "fieldEvidence": {
+      "page": {
+        "sources": [
+          "https://rega.gov.sa/rega-services/platforms/wafi-off-plan-sales-and-lease/تفاصيل-المشروع/?id=15cc3b19-36ca-4f2c-bb0c-face405d9ada",
+          "https://rakez.sa/ar/مدينة/البندرية/"
+        ],
+        "checkedAt": "2026-10-18T14:06:30.844384+00:00",
+        "basis": "Live official regulator detail HTTP200 names مشروع سكايا السكني, زايا developer and الخبر/البندرية, matching marketed Skaya(Zaya) exact identity and neighbourhood. Exact official information page replaces404 marketer URL, not a booking link. Type conflict remains: regulator displays attached villa whereas marketer describes apartments; preserve original type and record discrepancy, no inventory/price/contact/bank approval changes.",
+        "scope": "factual_identity_and_total_project_size_not_current_inventory"
+      }
+    }
   },
   {
     "id": "op-e777502aee",
@@ -4546,7 +5162,7 @@
     ],
     "img": "",
     "maps": "",
-    "page": "https://rakez.sa/ar/project/69132/",
+    "page": "https://rakez.sa/ar/project/71810/",
     "dsite": "https://rakez.sa/ar/",
     "wa": "https://wa.me/966920014659",
     "price": 1130000,
@@ -4562,6 +5178,40 @@
       "مشعل السيف",
       "عامر النماء",
       "رقم الشركة على Google Maps"
+    ],
+    "projectPageCheck": {
+      "url": "https://rakez.sa/ar/project/71810/",
+      "checkedAt": "2026-10-18T07:41:21Z",
+      "browserRendered": true,
+      "scope": "Exact project title and advertised unit cards rendered in browser; prior URL 69132 returns404.",
+      "previous": {
+        "url": "https://rakez.sa/ar/project/69132/",
+        "httpStatus": 404,
+        "checkedAt": "2026-10-17T20:21:38.761623+00:00",
+        "fallbackUrl": "https://rakez.sa/ar/",
+        "fallbackHttpStatus": 200,
+        "scope": "Automated HTTP response, not proof of sale status or permanent project removal. Original page retained for later recheck."
+      }
+    },
+    "rooms": "2-3",
+    "area": "192 - 251 م²",
+    "availability": {
+      "status": "available",
+      "source": "https://rakez.sa/ar/project/71810/",
+      "checkedAt": "2026-10-18T07:41:21Z",
+      "sourceStatus": "B02 وB03 متاحة؛ B01 محجوزة",
+      "sourceType": "official_marketer_project_page",
+      "basis": "Exact project name and district, price1130000 unchanged; named B02/B03 cards explicitly available. No whole-project remaining inventory inferred.",
+      "bookingAttempted": false
+    },
+    "sourceHistory": [
+      {
+        "field": "page",
+        "previous": "https://rakez.sa/ar/project/69132/",
+        "new": "https://rakez.sa/ar/project/71810/",
+        "checkedAt": "2026-10-18T07:41:21Z",
+        "reason": "Replacement URL linked from official homepage with exact project name and Al Narjis district, confirmed by live rendered project page."
+      }
     ]
   },
   {
@@ -5455,7 +6105,7 @@
     ],
     "img": "",
     "maps": "",
-    "page": "https://rakez.sa/ar/project/63106/",
+    "page": "https://rega.gov.sa/rega-services/platforms/wafi-off-plan-sales-and-lease/تفاصيل-المشروع/?id=ddd95979-c1e5-4e91-847e-a5e2e4db0b11",
     "dsite": "https://rakez.sa/ar/",
     "wa": "https://wa.me/966920014659",
     "sectors": [
@@ -5470,7 +6120,34 @@
       "مشعل السيف",
       "عامر النماء",
       "رقم الشركة على Google Maps"
-    ]
+    ],
+    "projectPageCheck": {
+      "url": "https://rakez.sa/ar/project/63106/",
+      "httpStatus": 404,
+      "checkedAt": "2026-10-17T20:21:38.761639+00:00",
+      "fallbackUrl": "https://rakez.sa/ar/",
+      "fallbackHttpStatus": 200,
+      "scope": "Automated HTTP response, not proof of sale status or permanent project removal. Original page retained for later recheck."
+    },
+    "totalProjectUnits": 44,
+    "fieldEvidence": {
+      "page": {
+        "sources": [
+          "https://rega.gov.sa/rega-services/platforms/wafi-off-plan-sales-and-lease/تفاصيل-المشروع/?id=ddd95979-c1e5-4e91-847e-a5e2e4db0b11"
+        ],
+        "checkedAt": "2026-10-18T14:06:30.844321+00:00",
+        "basis": "Live official REGA detail returned HTTP200 on18Oct2026 and matches exact Sky Prestige title, Rakeen developer, Riyadh/Sahafa and44 total apartments. Replaces confirmed404 marketer page with exact official information page; not a booking page. Suspended developer subdomain and ambiguous marketer landing were rejected. No current inventory inference, no bank approval or contact change.",
+        "scope": "factual_identity_and_total_project_size_not_current_inventory"
+      },
+      "totalProjectUnits": {
+        "sources": [
+          "https://rega.gov.sa/rega-services/platforms/wafi-off-plan-sales-and-lease/تفاصيل-المشروع/?id=ddd95979-c1e5-4e91-847e-a5e2e4db0b11"
+        ],
+        "checkedAt": "2026-10-18T14:06:30.844321+00:00",
+        "basis": "Live official REGA detail returned HTTP200 on18Oct2026 and matches exact Sky Prestige title, Rakeen developer, Riyadh/Sahafa and44 total apartments. Replaces confirmed404 marketer page with exact official information page; not a booking page. Suspended developer subdomain and ambiguous marketer landing were rejected. No current inventory inference, no bank approval or contact change.",
+        "scope": "factual_identity_and_total_project_size_not_current_inventory"
+      }
+    }
   },
   {
     "id": "op-74c358905b",
@@ -6119,7 +6796,7 @@
     "dsite": "https://rakez.sa/ar/",
     "wa": "https://wa.me/966920014659",
     "sectors": [
-      "وسط"
+      "شرق"
     ],
     "lat": 24.66702,
     "lon": 46.76568,
@@ -6130,7 +6807,22 @@
       "مشعل السيف",
       "عامر النماء",
       "رقم الشركة على Google Maps"
-    ]
+    ],
+    "fieldEvidence": {
+      "sectors": {
+        "source": "https://rakez.sa/ar/project/59474/",
+        "checkedAt": "2026-10-18T07:40:31Z",
+        "value": [
+          "شرق"
+        ],
+        "basis": "Exact marketer project page explicitly identifies Al Safa, East Riyadh. Not inferred from company location."
+      },
+      "inventoryConflict": {
+        "source": "https://rakez.sa/ar/project/59474/",
+        "checkedAt": "2026-10-18T07:40:31Z",
+        "basis": "Project badge says available, but eight visible unit cards show seven reserved and one sold. No available-unit count, sold_out or fully_reserved claim inferred; original status retained."
+      }
+    }
   },
   {
     "id": "op-2fba998544",
@@ -6814,7 +7506,7 @@
     ],
     "img": "",
     "maps": "",
-    "page": "https://rakez.sa/ar/project/49971/",
+    "page": "",
     "dsite": "https://rakez.sa/ar/",
     "wa": "https://wa.me/966920014659",
     "price": 949000,
@@ -6830,7 +7522,41 @@
       "مشعل السيف",
       "عامر النماء",
       "رقم الشركة على Google Maps"
-    ]
+    ],
+    "projectPageCheck": {
+      "url": "https://rakez.sa/ar/project/49971/",
+      "httpStatus": 404,
+      "checkedAt": "2026-10-17T20:21:38.761664+00:00",
+      "fallbackUrl": "https://rakez.sa/ar/",
+      "fallbackHttpStatus": 200,
+      "scope": "Automated HTTP response, not proof of sale status or permanent project removal. Original page retained for later recheck."
+    },
+    "sourceHistory": [
+      {
+        "field": "page",
+        "previous": "https://rakez.sa/ar/project/49971/",
+        "reason": "Confirmed branded404 page; removed broken action URL while retaining original source and existing official company website. No unrelated replacement.",
+        "checkedAt": "2026-10-18"
+      }
+    ],
+    "fieldEvidence": {
+      "page": {
+        "sources": [
+          "https://rakez.sa/ar/project/49971/"
+        ],
+        "checkedAt": "2026-10-18T14:06:30.844399+00:00",
+        "basis": "Existing saved live branded404 confirmed earlier today. Exact replacement research did not establish a working project-specific primary link. For AR270 the corresponding English exact project49963 also returned404 in fresh HTTP test14:00UTC. Clear broken project action only; original URL retained in sourceHistory, all names/phones/prices/bank approvals preserved. This does not mean soldout or absent.",
+        "scope": "factual_identity_and_total_project_size_not_current_inventory"
+      },
+      "sourceHistory": {
+        "sources": [
+          "https://rakez.sa/ar/project/49971/"
+        ],
+        "checkedAt": "2026-10-18T14:06:30.844399+00:00",
+        "basis": "Existing saved live branded404 confirmed earlier today. Exact replacement research did not establish a working project-specific primary link. For AR270 the corresponding English exact project49963 also returned404 in fresh HTTP test14:00UTC. Clear broken project action only; original URL retained in sourceHistory, all names/phones/prices/bank approvals preserved. This does not mean soldout or absent.",
+        "scope": "factual_identity_and_total_project_size_not_current_inventory"
+      }
+    }
   },
   {
     "id": "op-13cb693f8e",
@@ -6894,7 +7620,7 @@
     ],
     "img": "",
     "maps": "",
-    "page": "https://rakez.sa/ar/project/38455/",
+    "page": "https://jadah.sa/portfolio/%EF%BA%9F%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%EF%BA%8E%D8%AF%D8%A9-45-%D8%A5%D8%B4%D8%A8%D9%8A%D9%84%D9%8A%D9%80%D9%80%D9%80%D8%A7/",
     "dsite": "https://rakez.sa/ar/",
     "wa": "https://wa.me/966920014659",
     "price": 600000,
@@ -6905,7 +7631,23 @@
       "مشعل السيف",
       "عامر النماء",
       "رقم الشركة على Google Maps"
-    ]
+    ],
+    "projectPageCheck": {
+      "url": "https://rakez.sa/ar/project/38455/",
+      "httpStatus": 404,
+      "checkedAt": "2026-10-17T20:21:38.761666+00:00",
+      "fallbackUrl": "https://rakez.sa/ar/",
+      "fallbackHttpStatus": 200,
+      "scope": "Automated HTTP response, not proof of sale status or permanent project removal. Original page retained for later recheck."
+    },
+    "fieldEvidence": {
+      "page": {
+        "source": "https://jadah.sa/portfolio/%EF%BA%9F%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%EF%BA%8E%D8%AF%D8%A9-45-%D8%A5%D8%B4%D8%A8%D9%8A%D9%84%D9%8A%D9%80%D9%80%D9%80%D8%A7/",
+        "checkedAt": "2026-10-18T12:39:03.512984+00:00",
+        "basis": "Exact official replacement verified for missing previous project page. Page-only correction; no stock inference.",
+        "sourceType": "official_developer_project"
+      }
+    }
   },
   {
     "id": "op-70f07c2af6",
@@ -7436,41 +8178,6 @@
     "marketer": "راكز العقارية",
     "contactLabel": "جهة التواصل",
     "marketerSource": "https://rakez.sa/ar/project/44849/"
-  },
-  {
-    "id": "op-0cad70aeac",
-    "n": "فيلا الملقا",
-    "dev": "راكز العقارية",
-    "city": "الرياض",
-    "nb": "الملقا",
-    "type": "فلل",
-    "units": "",
-    "status": "متاح",
-    "phones": [
-      "920014659",
-      "0555791498",
-      "0558979160",
-      "0507082221"
-    ],
-    "img": "",
-    "maps": "",
-    "page": "https://rakez.sa/ar/project/44433/",
-    "dsite": "https://rakez.sa/ar/",
-    "wa": "https://wa.me/966920014659",
-    "price": 12000000,
-    "sectors": [
-      "شمال"
-    ],
-    "lat": 24.79897,
-    "lon": 46.59756,
-    "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%81%D9%8A%D9%84%D8%A7%20%D8%A7%D9%84%D9%85%D9%84%D9%82%D8%A7%20%D8%A7%D9%84%D9%85%D9%84%D9%82%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
-    "phoneContacts": [
-      "رقم الشركة",
-      "مشعل السيف",
-      "عامر النماء",
-      "رقم الشركة على Google Maps"
-    ]
   },
   {
     "id": "op-494444575f",
@@ -10303,8 +11010,34 @@
     "page": "https://www.mountainviewksa.com/projects/one-mountain-view",
     "dsite": "https://www.mountainviewksa.com",
     "desc": "مشروع فلل قرب طريق الثمامة شمال شرق الرياض على مساحة 230 ألف م² ويضم 504 فلل بخمسة نماذج.",
-    "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%88%D9%8E%D9%86%20%D9%85%D8%A7%D9%88%D9%86%D8%AA%D9%86%20%DA%A4%D9%8A%D9%88%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "sectors": [
+      "شرق",
+      "شمال"
+    ],
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%88%D9%8E%D9%86%20%D9%85%D8%A7%D9%88%D9%86%D8%AA%D9%86%20%DA%A4%D9%8A%D9%88%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "contactUrl": "https://www.mountainviewksa.com/contact-us?projectname=one-mountain-view&utm_source=general",
+    "fieldEvidence": {
+      "sectors": {
+        "source": "https://www.mountainviewksa.com/projects/one-mountain-view",
+        "checkedAt": "2026-10-18T06:27:35Z",
+        "basis": "Developer explicitly places this project northeast Riyadh, near Thumamah Road. Both adjoining sectors only; no global sector policy change."
+      },
+      "maps": {
+        "source": "https://www.mountainviewksa.com/projects/one-mountain-view",
+        "checkedAt": "2026-10-18T06:27:35Z",
+        "status": "not_applied_shared_coordinate_link",
+        "basis": "Same map link shown on distinct Hayat project; no project-identity guarantee inferred."
+      }
+    },
+    "salesEnquiry": {
+      "status": "registration_open",
+      "source": "https://www.mountainviewksa.com/projects/one-mountain-view",
+      "checkedAt": "2026-10-18T06:27:35Z",
+      "sourceStatus": "سجل اهتماماتك؛ projectname=one-mountain-view",
+      "basis": "Exact project registration link, no available-stock claim",
+      "sourceType": "official_developer_project_page",
+      "verificationScope": "Published sales enquiry/registration channel only, not inventory availability or unavailability."
+    }
   },
   {
     "id": "op-a1c384bef6",
@@ -10510,11 +11243,25 @@
       "8003030888"
     ],
     "img": "",
-    "maps": "",
+    "maps": "https://maps.app.goo.gl/7Jucj95h5jfj1Bfs7",
     "page": "https://retal.com.sa/properties/%d8%b1%d8%aa%d8%a7%d9%84-%d9%87%d8%a7%d9%8a%d8%aa%d8%b3/",
     "dsite": "https://retal.com.sa",
-    "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B1%D8%AA%D8%A7%D9%84%20%D9%87%D8%A7%D9%8A%D8%AA%D8%B3%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "sectors": [
+      "شمال"
+    ],
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B1%D8%AA%D8%A7%D9%84%20%D9%87%D8%A7%D9%8A%D8%AA%D8%B3%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "fieldEvidence": {
+      "sectors": {
+        "source": "https://retal.com.sa/properties/%d8%b1%d8%aa%d8%a7%d9%84-%d9%87%d8%a7%d9%8a%d8%aa%d8%b3/",
+        "checkedAt": "2026-10-18T06:26:00Z",
+        "basis": "Official project description explicitly says north Riyadh; not inferred from company HQ."
+      },
+      "maps": {
+        "source": "https://retal.com.sa/properties/%d8%b1%d8%aa%d8%a7%d9%84-%d9%87%d8%a7%d9%8a%d8%aa%d8%b3/",
+        "checkedAt": "2026-10-18T06:26:00Z",
+        "basis": "Published project location link; distinct from corporate office directions in footer. Google place card not independently inspected."
+      }
+    }
   },
   {
     "id": "op-805a970bf9",
@@ -10529,11 +11276,25 @@
       "8003030888"
     ],
     "img": "",
-    "maps": "",
+    "maps": "https://maps.app.goo.gl/jCpf3HCp9h38yGYg8",
     "page": "https://retal.com.sa/properties/%d8%a3%d9%8a%d8%a7%d9%84%d8%a7-%d9%87%d9%8a%d9%84%d8%b2/",
     "dsite": "https://retal.com.sa",
-    "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D9%8A%D8%A7%D9%84%D8%A7%20%D9%87%D9%8A%D9%84%D8%B2%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "sectors": [
+      "شمال"
+    ],
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D9%8A%D8%A7%D9%84%D8%A7%20%D9%87%D9%8A%D9%84%D8%B2%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "fieldEvidence": {
+      "sectors": {
+        "source": "https://retal.com.sa/properties/%d8%a3%d9%8a%d8%a7%d9%84%d8%a7-%d9%87%d9%8a%d9%84%d8%b2/",
+        "checkedAt": "2026-10-18T06:26:00Z",
+        "basis": "Official project description explicitly says north Riyadh; not inferred from company HQ."
+      },
+      "maps": {
+        "source": "https://retal.com.sa/properties/%d8%a3%d9%8a%d8%a7%d9%84%d8%a7-%d9%87%d9%8a%d9%84%d8%b2/",
+        "checkedAt": "2026-10-18T06:26:00Z",
+        "basis": "Published project location link; distinct from corporate office directions in footer. Google place card not independently inspected."
+      }
+    }
   },
   {
     "id": "op-7a6a28d966",
@@ -10695,7 +11456,17 @@
     "desc": "مجمع سكني شمال الرياض على طريق الملك خالد يضم تاون هاوس وفللاً بمساحات 400-970 م².",
     "rooms": "3-4 غرف",
     "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%84%D8%A7%D9%88%D9%86%D8%AF%D8%A7%20%D9%81%D9%8A%D9%84%D9%8A%D8%AC%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%84%D8%A7%D9%88%D9%86%D8%AF%D8%A7%20%D9%81%D9%8A%D9%84%D9%8A%D8%AC%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "salesEnquiry": {
+      "status": "registration_open",
+      "source": "https://alsoliman.com.sa/ar/project/لاوندا-فيليج",
+      "checkedAt": "2026-10-18T06:36:47Z",
+      "sourceStatus": "سجل اهتمامك",
+      "basis": "Exact Lawnda Village page publishes unit models and an interest form. Source read through web retrieval; browser page timed out. No submitted form or live inventory count.",
+      "sourceType": "official_developer_project_page",
+      "bookingAttempted": false,
+      "verificationScope": "Published sales enquiry/registration channel only, not inventory availability or unavailability."
+    }
   },
   {
     "id": "op-217e5b4f7d",
@@ -10732,7 +11503,17 @@
     "page": "https://alsoliman.com.sa/ar/product/أريس-كمباوند",
     "dsite": "https://alsoliman.com.sa",
     "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%B1%D9%8A%D8%B3%20%D9%83%D9%85%D8%A8%D8%A7%D9%88%D9%86%D8%AF%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%B1%D9%8A%D8%B3%20%D9%83%D9%85%D8%A8%D8%A7%D9%88%D9%86%D8%AF%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "availability": {
+      "status": "available",
+      "source": "https://alsoliman.com.sa/ar/product/أريس-كمباوند",
+      "checkedAt": "2026-10-18T06:36:47Z",
+      "sourceStatus": "وحدات محددة موسومة للبيع",
+      "basis": "Exact Aress Compound page renders named units marked for sale and links its AressCompound132 sales page. No portfolio-wide or remaining-stock count inferred.",
+      "sourceType": "official_developer_project_page",
+      "bookingAttempted": false
+    },
+    "contactUrl": "https://alsoliman.com.sa/ar/selling/project/AressCompound132"
   },
   {
     "id": "op-3daaa48dc7",
@@ -11610,18 +12391,67 @@
   {
     "id": "op-f6b536da3d",
     "n": "تلال قمرة",
-    "dev": "الشركة الوطنية للإسكان",
+    "dev": "شركة تلال العقارية",
     "city": "صفوى",
     "nb": "قمرة",
-    "type": "",
+    "type": "فلل",
     "units": "",
-    "status": "متاح",
+    "status": "مباع بالكامل",
     "phones": [],
     "img": "https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2023-07/Mobile%20size_8.jpg",
     "maps": "",
-    "page": "https://www.nhc.sa/ar/real-estate-development/projects/47100",
-    "dsite": "https://www.nhc.sa",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%AA%D9%84%D8%A7%D9%84%20%D9%82%D9%85%D8%B1%D8%A9%20%D9%82%D9%85%D8%B1%D8%A9%20%D8%B5%D9%81%D9%88%D9%89"
+    "page": "https://tilalre.com/ar/qamra/",
+    "dsite": "https://tilalre.com/",
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%AA%D9%84%D8%A7%D9%84%20%D9%82%D9%85%D8%B1%D8%A9%20%D9%82%D9%85%D8%B1%D8%A9%20%D8%B5%D9%81%D9%88%D9%89",
+    "availability": {
+      "status": "sold_out",
+      "source": "https://tilalre.com/ar/qamra/",
+      "checkedAt": "2026-10-17T18:17:00Z",
+      "sourceStatus": "مُباع",
+      "basis": "Exact direct developer project listing marks Qamra sold. Prioritize developer inventory label over conflicting NHC general available label. No record deletion.",
+      "conflictingSource": {
+        "source": "https://www.nhc.sa/ar/real-estate-development/projects/47100",
+        "observedStatus": "متاح",
+        "checkedAt": "2026-10-17T18:17:00Z"
+      },
+      "resolution": "direct_developer_listing_preferred"
+    },
+    "canonicalProjectId": "tilal-qamra-safwa",
+    "fieldEvidence": {
+      "city": {
+        "source": "https://www.nhc.sa/ar/real-estate-development/projects/47100",
+        "checkedAt": "2026-10-17T18:17:00Z",
+        "basis": "Exact NHC project page explicitly identifies Safwa and Tilal as developer"
+      },
+      "type": {
+        "source": "https://tilalre.com/ar/qamra/",
+        "checkedAt": "2026-10-17T18:17:00Z",
+        "basis": "Exact developer project page states villas"
+      }
+    },
+    "sourceHistory": [
+      {
+        "field": "type",
+        "previousValue": "",
+        "value": "فلل",
+        "source": "https://tilalre.com/ar/qamra/",
+        "checkedAt": "2026-10-17T18:17:00Z"
+      },
+      {
+        "field": "dev",
+        "previousValue": "الشركة الوطنية للإسكان",
+        "value": "شركة تلال العقارية",
+        "source": "https://www.nhc.sa/ar/real-estate-development/projects/47100",
+        "checkedAt": "2026-10-17T18:17:00Z"
+      },
+      {
+        "field": "status",
+        "previousValue": "متاح",
+        "value": "مباع بالكامل",
+        "source": "https://tilalre.com/ar/qamra/",
+        "checkedAt": "2026-10-17T18:17:00Z"
+      }
+    ]
   },
   {
     "id": "op-b6a5d916fd",
@@ -11948,7 +12778,7 @@
     ],
     "img": "",
     "maps": "",
-    "page": "https://www.alhabibinv.com/projects/details/53/",
+    "page": "https://www.alhabibinv.com/projects/details/53/%D8%A7%D8%B5%D8%A7%D9%84%D8%A9-%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3-%D8%A7%D9%84%D9%86%D9%87%D8%B6%D8%A9-3/ar",
     "dsite": "https://www.alhabibinv.com",
     "sectors": [
       "شرق"
@@ -11956,7 +12786,23 @@
     "lat": 24.76052,
     "lon": 46.81598,
     "loc": "nb",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D8%B5%D8%A7%D9%84%D8%A9%20%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3%20-%20%D8%A7%D9%84%D9%86%D9%87%D8%B6%D8%A9%203%20%D8%A7%D9%84%D9%86%D9%87%D8%B6%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D8%B5%D8%A7%D9%84%D8%A9%20%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3%20-%20%D8%A7%D9%84%D9%86%D9%87%D8%B6%D8%A9%203%20%D8%A7%D9%84%D9%86%D9%87%D8%B6%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "projectPageCheck": {
+      "url": "https://www.alhabibinv.com/projects/details/53/",
+      "httpStatus": 404,
+      "checkedAt": "2026-10-17T20:21:38.761751+00:00",
+      "fallbackUrl": "https://www.alhabibinv.com",
+      "fallbackHttpStatus": 200,
+      "scope": "Automated HTTP response, not proof of sale status or permanent project removal. Original page retained for later recheck."
+    },
+    "fieldEvidence": {
+      "page": {
+        "source": "https://www.alhabibinv.com/projects/details/53/%D8%A7%D8%B5%D8%A7%D9%84%D8%A9-%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3-%D8%A7%D9%84%D9%86%D9%87%D8%B6%D8%A9-3/ar",
+        "checkedAt": "2026-10-18T12:39:03.512984+00:00",
+        "basis": "Exact official replacement verified for missing previous project page. Page-only correction; no stock inference.",
+        "sourceType": "official_developer_project"
+      }
+    }
   },
   {
     "id": "op-41e8ef082f",
@@ -11974,15 +12820,24 @@
     "maps": "",
     "page": "https://www.mobtakeron.com.sa/%d8%b1%d9%8a%d8%a7%d8%b6-%d8%b3%d9%86%d8%aa%d8%b1%d8%a7%d9%84/",
     "dsite": "https://www.mobtakeron.com.sa",
-    "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%B3%D9%86%D8%AA%D8%B1%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "sectors": [
+      "وسط"
+    ],
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%B3%D9%86%D8%AA%D8%B1%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "fieldEvidence": {
+      "sectors": {
+        "source": "https://www.mobtakeron.com.sa/%d8%b1%d9%8a%d8%a7%d8%b6-%d8%b3%d9%86%d8%aa%d8%b1%d8%a7%d9%84/",
+        "checkedAt": "2026-10-18T06:30:14Z",
+        "basis": "Developer explicitly locates Riyadh Central in central Riyadh on King Faisal Road."
+      }
+    }
   },
   {
     "id": "op-7e17e5f159",
     "n": "ميم ريزيدنس نورث",
     "dev": "شركة مجموعة مبتكرون المتحدة للتطوير و الاستثمار",
     "city": "الرياض",
-    "nb": "",
+    "nb": "الصحافة",
     "type": "",
     "units": "",
     "status": "",
@@ -11993,15 +12848,41 @@
     "maps": "",
     "page": "https://www.mobtakeron.com.sa/%d9%85%d9%8a%d9%85-%d8%b1%d9%8a%d8%b2%d9%8a%d8%af%d9%86%d8%b3-%d9%86%d9%88%d8%b1%d8%ab/",
     "dsite": "https://www.mobtakeron.com.sa",
-    "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%8A%D9%85%20%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3%20%D9%86%D9%88%D8%B1%D8%AB%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "sectors": [
+      "شمال"
+    ],
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%8A%D9%85%20%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3%20%D9%86%D9%88%D8%B1%D8%AB%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "totalProjectUnits": 28,
+    "projectLandAreaSqm": 900,
+    "fieldEvidence": {
+      "nb": {
+        "source": "https://www.mobtakeron.com.sa/%d9%85%d9%8a%d9%85-%d8%b1%d9%8a%d8%b2%d9%8a%d8%af%d9%86%d8%b3-%d9%86%d9%88%d8%b1%d8%ab/",
+        "checkedAt": "2026-10-18T06:28:55Z",
+        "basis": "Developer specifies AlSahafah on KingFahd/AnasBinMalik corridor."
+      },
+      "sectors": {
+        "source": "https://www.mobtakeron.com.sa/%d9%85%d9%8a%d9%85-%d8%b1%d9%8a%d8%b2%d9%8a%d8%af%d9%86%d8%b3-%d9%86%d9%88%d8%b1%d8%ab/",
+        "checkedAt": "2026-10-18T06:28:55Z",
+        "basis": "Explicit AlSahafah neighborhood mapped to existing north-Riyadh neighborhood classification; no distance threshold or policy change."
+      },
+      "totalProjectUnits": {
+        "source": "https://www.mobtakeron.com.sa/%d9%85%d9%8a%d9%85-%d8%b1%d9%8a%d8%b2%d9%8a%d8%af%d9%86%d8%b3-%d9%86%d9%88%d8%b1%d8%ab/",
+        "checkedAt": "2026-10-18T06:28:55Z",
+        "scope": "total_project_units_not_remaining_stock"
+      },
+      "projectLandAreaSqm": {
+        "source": "https://www.mobtakeron.com.sa/%d9%85%d9%8a%d9%85-%d8%b1%d9%8a%d8%b2%d9%8a%d8%af%d9%86%d8%b3-%d9%86%d9%88%d8%b1%d8%ab/",
+        "checkedAt": "2026-10-18T06:28:55Z",
+        "scope": "whole_project_land_not_unit_area"
+      }
+    }
   },
   {
     "id": "op-1ff533b54e",
     "n": "ذا كيرفز ريزيدنس",
     "dev": "شركة مجموعة مبتكرون المتحدة للتطوير و الاستثمار",
     "city": "الرياض",
-    "nb": "",
+    "nb": "المحمدية",
     "type": "",
     "units": "",
     "status": "",
@@ -12012,8 +12893,17 @@
     "maps": "",
     "page": "https://www.mobtakeron.com.sa/%d8%b0%d8%a7-%d9%83%d9%8a%d8%b1%d9%81%d8%b2-%d8%b1%d9%8a%d8%b2%d9%8a%d8%af%d9%86%d8%b3/",
     "dsite": "https://www.mobtakeron.com.sa",
-    "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B0%D8%A7%20%D9%83%D9%8A%D8%B1%D9%81%D8%B2%20%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "sectors": [
+      "غرب"
+    ],
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B0%D8%A7%20%D9%83%D9%8A%D8%B1%D9%81%D8%B2%20%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "fieldEvidence": {
+      "sectors": {
+        "source": "https://www.mobtakeron.com.sa/%d8%b0%d8%a7-%d9%83%d9%8a%d8%b1%d9%81%d8%b2-%d8%b1%d9%8a%d8%b2%d9%8a%d8%af%d9%86%d8%b3/",
+        "checkedAt": "2026-10-18T06:30:14Z",
+        "basis": "Developer names AlMohammadiyah district. Uses owner-confirmed existing west-sector classification for AlMohammadiyah; no new policy or distance rule."
+      }
+    }
   },
   {
     "id": "op-85f2f1a8fc",
@@ -12031,42 +12921,89 @@
     "maps": "",
     "page": "https://www.mobtakeron.com.sa/%d9%85%d9%8a%d9%85-%d8%b1%d9%8a%d8%b2%d9%8a%d8%af%d9%86%d8%b3-%d8%a7%d9%84%d8%b6%d8%a8%d8%a7%d8%a8/",
     "dsite": "https://www.mobtakeron.com.sa",
-    "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%8A%D9%85%20%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3%20%D8%A7%D9%84%D8%B6%D8%A8%D8%A7%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "sectors": [
+      "وسط"
+    ],
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%8A%D9%85%20%D8%B1%D9%8A%D8%B2%D9%8A%D8%AF%D9%86%D8%B3%20%D8%A7%D9%84%D8%B6%D8%A8%D8%A7%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "fieldEvidence": {
+      "sectors": {
+        "source": "https://www.mobtakeron.com.sa/%d9%85%d9%8a%d9%85-%d8%b1%d9%8a%d8%b2%d9%8a%d8%af%d9%86%d8%b3-%d8%a7%d9%84%d8%b6%d8%a8%d8%a7%d8%a8/",
+        "checkedAt": "2026-10-18T06:30:14Z",
+        "basis": "Developer explicitly locates Meem Dabab in central Riyadh on Dabab Street."
+      }
+    }
   },
   {
     "id": "op-edd9dd0ca9",
     "n": "ميم هايتس",
     "dev": "شركة مجموعة مبتكرون المتحدة للتطوير و الاستثمار",
     "city": "الرياض",
-    "nb": "",
+    "nb": "الملقا",
     "type": "",
     "units": "",
     "status": "",
     "phones": [],
     "img": "",
-    "maps": "",
+    "maps": "https://maps.app.goo.gl/ZKSFbdjegwnapSUe8",
     "page": "https://www.meemheights.com/ar",
     "dsite": "https://www.mobtakeron.com.sa",
-    "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%8A%D9%85%20%D9%87%D8%A7%D9%8A%D8%AA%D8%B3%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "sectors": [
+      "شمال"
+    ],
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%8A%D9%85%20%D9%87%D8%A7%D9%8A%D8%AA%D8%B3%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "fieldEvidence": {
+      "nb": {
+        "source": "https://www.meemheights.com/ar",
+        "checkedAt": "2026-10-18T06:32:11Z",
+        "basis": "Explicit project address, not sales-gallery address."
+      },
+      "sectors": {
+        "source": "https://www.meemheights.com/ar",
+        "checkedAt": "2026-10-18T06:32:11Z",
+        "basis": "Official named district mapped to existing portal district classification; Malqa north, Murabba central."
+      },
+      "maps": {
+        "source": "https://www.meemheights.com/ar",
+        "checkedAt": "2026-10-18T06:32:11Z",
+        "basis": "Project directions link from named project location section; separate sales office links not substituted; Google place card not independently inspected."
+      }
+    }
   },
   {
     "id": "op-ade50945c3",
     "n": "ذا سنترينا",
     "dev": "شركة مجموعة مبتكرون المتحدة للتطوير و الاستثمار",
     "city": "الرياض",
-    "nb": "",
+    "nb": "المربع",
     "type": "",
     "units": "",
     "status": "",
     "phones": [],
     "img": "",
-    "maps": "",
+    "maps": "https://maps.app.goo.gl/K1njgt9YKP6DLrvJA",
     "page": "https://www.thecentrina.sa/",
     "dsite": "https://www.mobtakeron.com.sa",
-    "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B0%D8%A7%20%D8%B3%D9%86%D8%AA%D8%B1%D9%8A%D9%86%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "sectors": [
+      "وسط"
+    ],
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B0%D8%A7%20%D8%B3%D9%86%D8%AA%D8%B1%D9%8A%D9%86%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+    "fieldEvidence": {
+      "nb": {
+        "source": "https://www.thecentrina.sa/",
+        "checkedAt": "2026-10-18T06:32:11Z",
+        "basis": "Explicit project address, not sales-gallery address."
+      },
+      "sectors": {
+        "source": "https://www.thecentrina.sa/",
+        "checkedAt": "2026-10-18T06:32:11Z",
+        "basis": "Official named district mapped to existing portal district classification; Malqa north, Murabba central."
+      },
+      "maps": {
+        "source": "https://www.thecentrina.sa/",
+        "checkedAt": "2026-10-18T06:32:11Z",
+        "basis": "Project directions link from named project location section; separate sales office links not substituted; Google place card not independently inspected."
+      }
+    }
   },
   {
     "id": "op-17ab7cb78f",
@@ -12125,9 +13062,9 @@
     "id": "op-91e5f4f92d",
     "n": "أبراج سمو",
     "dev": "سمو العقارية",
-    "city": "الرياض",
+    "city": "جدة",
     "nb": "",
-    "type": "",
+    "type": "سكني وتجاري",
     "units": "",
     "status": "",
     "phones": [
@@ -12138,15 +13075,32 @@
     "page": "https://sumou.com.sa/sumou-tower/",
     "dsite": "https://sumou.com.sa",
     "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%A8%D8%B1%D8%A7%D8%AC%20%D8%B3%D9%85%D9%88%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%A8%D8%B1%D8%A7%D8%AC%20%D8%B3%D9%85%D9%88%20%D8%AC%D8%AF%D8%A9",
+    "fieldEvidence": {
+      "city": {
+        "source": "https://sumou.com.sa/sumou-tower/",
+        "checkedAt": "2026-10-18T06:21:40Z",
+        "value": "جدة",
+        "basis": "Explicit project location in developer project page, not headquarters location."
+      }
+    },
+    "salesEnquiry": {
+      "status": "registration_open",
+      "source": "https://sumou.com.sa/sumou-tower/",
+      "checkedAt": "2026-10-18T06:21:40Z",
+      "sourceStatus": "سجل اهتمامك بالمشروع",
+      "basis": "Exact named official developer page includes project-specific enquiry form; no current inventory count or ready-unit status inferred.",
+      "sourceType": "official_developer_project_page",
+      "verificationScope": "Published sales enquiry/registration channel only, not inventory availability or unavailability."
+    }
   },
   {
     "id": "op-1a4e7f0c1b",
     "n": "ضاحية سمو",
     "dev": "سمو العقارية",
-    "city": "الرياض",
+    "city": "مكة المكرمة",
     "nb": "",
-    "type": "",
+    "type": "متعدد الاستخدام",
     "units": "",
     "status": "",
     "phones": [
@@ -12157,15 +13111,37 @@
     "page": "https://sumou.com.sa/dahiat-sumou/",
     "dsite": "https://sumou.com.sa",
     "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%B3%D9%85%D9%88%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9%20%D8%B3%D9%85%D9%88%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
+    "fieldEvidence": {
+      "city": {
+        "source": "https://sumou.com.sa/dahiat-sumou/",
+        "checkedAt": "2026-10-18T06:23:59Z",
+        "value": "مكة المكرمة",
+        "basis": "Developer project location explicitly names Makkah, not Riyadh headquarters."
+      },
+      "classification": {
+        "source": "https://sumou.com.sa/dahiat-sumou/",
+        "checkedAt": "2026-10-18T06:23:59Z",
+        "value": "صندوق عقاري؛ تطوير شامل متعدد الاستخدام"
+      }
+    },
+    "salesEnquiry": {
+      "status": "registration_open",
+      "source": "https://sumou.com.sa/dahiat-sumou/",
+      "checkedAt": "2026-10-18T06:23:59Z",
+      "sourceStatus": "سجل اهتمامك بالمشروع",
+      "basis": "Developer labels this a real estate fund/mixed-use development in Makkah with enquiry form. No unit sales, stock or completion claim inferred.",
+      "sourceType": "official_developer_project_page",
+      "verificationScope": "Published sales enquiry/registration channel only, not inventory availability or unavailability."
+    }
   },
   {
     "id": "op-67d424762c",
     "n": "أجوان",
     "dev": "سمو العقارية",
-    "city": "الرياض",
+    "city": "الخبر",
     "nb": "",
-    "type": "",
+    "type": "سكني وتجاري",
     "units": "",
     "status": "",
     "phones": [
@@ -12176,7 +13152,24 @@
     "page": "https://sumou.com.sa/ajwan/",
     "dsite": "https://sumou.com.sa",
     "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%AC%D9%88%D8%A7%D9%86%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%AC%D9%88%D8%A7%D9%86%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+    "fieldEvidence": {
+      "city": {
+        "source": "https://sumou.com.sa/ajwan/",
+        "checkedAt": "2026-10-18T06:21:40Z",
+        "value": "الخبر",
+        "basis": "Explicit project location in developer project page, not headquarters location."
+      }
+    },
+    "salesEnquiry": {
+      "status": "registration_open",
+      "source": "https://sumou.com.sa/ajwan/",
+      "checkedAt": "2026-10-18T06:21:40Z",
+      "sourceStatus": "سجل اهتمامك بالمشروع",
+      "basis": "Exact named official developer page includes project-specific enquiry form; no current inventory count or ready-unit status inferred.",
+      "sourceType": "official_developer_project_page",
+      "verificationScope": "Published sales enquiry/registration channel only, not inventory availability or unavailability."
+    }
   },
   {
     "id": "op-fec7a04ed4",
@@ -12184,7 +13177,7 @@
     "dev": "سمو العقارية",
     "city": "جدة",
     "nb": "",
-    "type": "",
+    "type": "متعدد الاستخدام",
     "units": "",
     "status": "",
     "phones": [
@@ -12195,7 +13188,24 @@
     "page": "https://sumou.com.sa/murooj-jeddah/",
     "dsite": "https://sumou.com.sa",
     "sectors": [],
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B1%D9%88%D8%AC%20%D8%AC%D8%AF%D8%A9%20%D8%AC%D8%AF%D8%A9"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B1%D9%88%D8%AC%20%D8%AC%D8%AF%D8%A9%20%D8%AC%D8%AF%D8%A9",
+    "fieldEvidence": {
+      "city": {
+        "source": "https://sumou.com.sa/murooj-jeddah/",
+        "checkedAt": "2026-10-18T06:21:40Z",
+        "value": "جدة",
+        "basis": "Explicit project location in developer project page, not headquarters location."
+      }
+    },
+    "salesEnquiry": {
+      "status": "registration_open",
+      "source": "https://sumou.com.sa/murooj-jeddah/",
+      "checkedAt": "2026-10-18T06:21:40Z",
+      "sourceStatus": "سجل اهتمامك بالمشروع",
+      "basis": "Exact named official developer page includes project-specific enquiry form; no current inventory count or ready-unit status inferred.",
+      "sourceType": "official_developer_project_page",
+      "verificationScope": "Published sales enquiry/registration channel only, not inventory availability or unavailability."
+    }
   },
   {
     "id": "op-888709bfba",
@@ -13915,18 +14925,18 @@
     "city": "أبها",
     "nb": "",
     "type": "شقق سكنية",
-    "units": "40 شقة",
+    "units": "40 شقة (إجمالي المشروع)",
     "status": "قيد التنفيذ",
     "phones": [
       "0550811151"
     ],
     "img": "assets/images/projects/verified-karden25-source-image.png",
     "maps": "https://www.google.com/maps?q=18.2738305,42.6494783",
-    "price": 406000,
+    "price": null,
     "page": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
     "dsite": "https://www.karden-ksa.com/",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=18.2738305%2C42.6494783",
-    "pageSource": "الموقع الرسمي: المشروع قيد التنفيذ، 40 شقة، يبدأ السعر من 406,000 ريال، ويتضمن نموذج استفسار وحجز.",
+    "pageSource": "الموقع الرسمي: قيد التنفيذ، 40 شقة، ويذكر حجم استثمار تقديري يبدأ من 406000 ريال؛ ليس سعر بيع موثقًا للشقة.",
     "pageEvidence": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
     "construction": {
       "status": "under_construction",
@@ -13960,6 +14970,13 @@
         },
         "changedAt": "2026-10-17T14:51:00Z",
         "reason": "Dedicated developer project map resolves to explicit numeric query point, not viewport coordinates."
+      },
+      {
+        "field": "price",
+        "value": 406000,
+        "reason": "Retained under investmentEstimateSar because exact official label is estimated investment, not apartment selling price.",
+        "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+        "checkedAt": "2026-10-17T21:36:36.889274+00:00"
       }
     ],
     "lat": 18.2738305,
@@ -13994,34 +15011,28 @@
         "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
         "checkedAt": "2026-10-17T14:49:00Z",
         "scope": "official_project_map_pin"
+      },
+      "investmentEstimateSar": {
+        "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+        "checkedAt": "2026-10-17T21:36:36.889274+00:00",
+        "scope": "published_estimated_investment_not_a_sale_price"
+      },
+      "rooms": {
+        "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+        "checkedAt": "2026-10-17T21:36:36.889274+00:00",
+        "scope": "3bedrooms_within_6total_rooms_in_published_apartment_model"
+      },
+      "totalProjectUnits": {
+        "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+        "checkedAt": "2026-10-17T21:36:36.889274+00:00",
+        "scope": "total_project_units_not_remaining_inventory"
       }
-    }
-  },
-  {
-    "id": "op-baqaa-rimal-127br-29",
-    "n": "أرض سكنية - مخطط الرمال",
-    "dev": "",
-    "city": "بقعاء",
-    "nb": "الرمال",
-    "type": "أرض سكنية",
-    "units": "312.61 م²",
-    "status": "متاح للبيع",
-    "phones": [
-      "0555155763"
-    ],
-    "phoneContacts": [
-      "فهد عياد"
-    ],
-    "phoneSource": "https://haraj.com.sa/11183126949/ارض_فرصة_للبيع_3_شوارع_بمخطط_الرمال/",
-    "img": "",
-    "maps": "https://maps.google.com/?q=27.933561185501,42.395585012881",
-    "price": 35000,
-    "lat": 27.933561185501,
-    "lon": 42.395585012881,
-    "loc": "exact",
-    "page": "https://haraj.com.sa/11183126949/ارض_فرصة_للبيع_3_شوارع_بمخطط_الرمال/",
-    "pageSource": "https://haraj.com.sa/11183126949/ارض_فرصة_للبيع_3_شوارع_بمخطط_الرمال/",
-    "pageEvidence": "https://haraj.com.sa/11183126949/ارض_فرصة_للبيع_3_شوارع_بمخطط_الرمال/"
+    },
+    "investmentEstimateSar": 406000,
+    "investmentEstimateBasis": "starting_estimated_investment_not_unit_sale_price",
+    "totalProjectUnits": 40,
+    "rooms": "3 غرف نوم",
+    "totalRooms": 6
   },
   {
     "id": "op-center-riyadh-yaqut-a",
@@ -14094,7 +15105,14 @@
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D9%8A%D9%86%2066%20%D8%A7%D9%84%D8%B1%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20Saudi%20Arabia",
     "mapReview": "رابط بحث باسم المشروع والحي من التقرير؛ ليس دبوسًا دقيقًا.",
     "pageSource": "مراكز المبيعات 2026.pdf، ص4",
-    "pageEvidence": "مراكز المبيعات 2026.pdf، ص4"
+    "pageEvidence": "مراكز المبيعات 2026.pdf، ص4",
+    "developerWebsiteEvidence": {
+      "source": "https://asasmakeen.com/",
+      "companyId": "cp-center-riyadh-asas-makeen",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506574+00:00"
+    },
+    "dsite": "https://asasmakeen.com/"
   },
   {
     "id": "op-center-riyadh-makeen-80",
@@ -14115,7 +15133,14 @@
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D9%8A%D9%86%2080%20%D8%A7%D9%84%D8%B1%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20Saudi%20Arabia",
     "mapReview": "رابط بحث باسم المشروع والحي من التقرير؛ ليس دبوسًا دقيقًا.",
     "pageSource": "مراكز المبيعات 2026.pdf، ص4",
-    "pageEvidence": "مراكز المبيعات 2026.pdf، ص4"
+    "pageEvidence": "مراكز المبيعات 2026.pdf، ص4",
+    "developerWebsiteEvidence": {
+      "source": "https://asasmakeen.com/",
+      "companyId": "cp-center-riyadh-asas-makeen",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506576+00:00"
+    },
+    "dsite": "https://asasmakeen.com/"
   },
   {
     "id": "op-center-riyadh-makeen-68",
@@ -14142,7 +15167,14 @@
       "source": "https://asasmakeen.com/en/u/pu/3/48/luxury-al-rayan-apartments",
       "checkedAt": "2026-10-16T20:33:00Z",
       "basis": "Official project/developer text explicitly describes construction underway; sale availability is separate."
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://asasmakeen.com/",
+      "companyId": "cp-center-riyadh-asas-makeen",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506578+00:00"
+    },
+    "dsite": "https://asasmakeen.com/"
   },
   {
     "id": "op-center-riyadh-makeen-71",
@@ -14163,7 +15195,14 @@
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%83%D9%8A%D9%86%2071%20%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%A8%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20Saudi%20Arabia",
     "mapReview": "رابط بحث باسم المشروع والحي من التقرير؛ ليس دبوسًا دقيقًا.",
     "pageSource": "مراكز المبيعات 2026.pdf، ص6",
-    "pageEvidence": "مراكز المبيعات 2026.pdf، ص6"
+    "pageEvidence": "مراكز المبيعات 2026.pdf، ص6",
+    "developerWebsiteEvidence": {
+      "source": "https://asasmakeen.com/",
+      "companyId": "cp-center-riyadh-asas-makeen",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506580+00:00"
+    },
+    "dsite": "https://asasmakeen.com/"
   },
   {
     "id": "op-center-riyadh-refah-57",
@@ -14392,12 +15431,198 @@
     "phoneContacts": [
       "رقم الشركة — مجالات"
     ],
-    "img": "",
-    "maps": "",
+    "img": "assets/images/projects/verified-majalat73.jpg",
+    "maps": "https://maps.app.goo.gl/oWoLLzmoq1YG6LLr7",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%AC%D8%A7%D9%84%D8%A7%D8%AA%2073%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20Saudi%20Arabia",
     "mapReview": "رابط بحث باسم المشروع والحي من التقرير؛ ليس دبوسًا دقيقًا.",
     "pageSource": "مراكز المبيعات 2026.pdf، ص40",
-    "pageEvidence": "مراكز المبيعات 2026.pdf، ص40"
+    "pageEvidence": "مراكز المبيعات 2026.pdf، ص40",
+    "availability": {
+      "status": "available",
+      "source": "https://almjalat.com/real-estate/almjalat-73/",
+      "checkedAt": "2026-10-17T16:04:54.142157+00:00",
+      "basis": "Exact project published unit table; currently available rows, not generic enquiry button"
+    },
+    "availableUnitExamples": [
+      {
+        "unit": "2",
+        "floor": "الأول",
+        "areaSqm": 174.59,
+        "priceSar": 569000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "3",
+        "floor": "الاول",
+        "areaSqm": 174.59,
+        "priceSar": 560000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "4",
+        "floor": "الأول",
+        "areaSqm": 172.3,
+        "priceSar": 555000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "6",
+        "floor": "الأول",
+        "areaSqm": 177.89,
+        "priceSar": 569000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "10",
+        "floor": "الثاني",
+        "areaSqm": 174.589,
+        "priceSar": 569000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "11",
+        "floor": "الثاني",
+        "areaSqm": 174.59,
+        "priceSar": 560000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "12",
+        "floor": "الثاني",
+        "areaSqm": 172.3,
+        "priceSar": 555000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "13",
+        "floor": "الثاني",
+        "areaSqm": 172.3,
+        "priceSar": 555000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "16",
+        "floor": "الثاني",
+        "areaSqm": 178.56,
+        "priceSar": 869000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "27",
+        "floor": "الرابع",
+        "areaSqm": 175.442,
+        "priceSar": 560000,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "30",
+        "floor": "الرابع",
+        "areaSqm": 177.109,
+        "priceSar": null,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "31",
+        "floor": "الرابع",
+        "areaSqm": 178.79,
+        "priceSar": null,
+        "bedrooms": 3,
+        "status": "متوفر"
+      },
+      {
+        "unit": "33",
+        "floor": "ملحق علوي",
+        "areaSqm": 182.46,
+        "priceSar": 470000,
+        "bedrooms": 1,
+        "status": "متوفر"
+      },
+      {
+        "unit": "34",
+        "floor": "ملحق علوي",
+        "areaSqm": 233.03,
+        "priceSar": 600000,
+        "bedrooms": 1,
+        "status": "متوفر"
+      },
+      {
+        "unit": "35",
+        "floor": "ملحق علوي",
+        "areaSqm": 217.22,
+        "priceSar": 560000,
+        "bedrooms": 1,
+        "status": "متوفر"
+      },
+      {
+        "unit": "36",
+        "floor": "ملحق علوي",
+        "areaSqm": 241.98,
+        "priceSar": 620000,
+        "bedrooms": 1,
+        "status": "متوفر"
+      },
+      {
+        "unit": "37",
+        "floor": "ملحق علوي",
+        "areaSqm": 230.78,
+        "priceSar": 599000,
+        "bedrooms": 1,
+        "status": "متوفر"
+      }
+    ],
+    "canonicalProjectId": "majalat-73-buraidah",
+    "dsite": "https://almjalat.com/",
+    "fieldEvidence": {
+      "page": {
+        "source": "https://almjalat.com/real-estate/almjalat-73/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "maps": {
+        "source": "https://almjalat.com/real-estate/almjalat-73/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "price": {
+        "source": "https://almjalat.com/real-estate/almjalat-73/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "rooms": {
+        "source": "https://almjalat.com/real-estate/almjalat-73/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "units": {
+        "source": "https://almjalat.com/real-estate/almjalat-73/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "img": {
+        "source": "https://almjalat.com/real-estate/almjalat-73/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      }
+    },
+    "imageSource": "https://almjalat.com/wp-content/uploads/2024/09/%D9%86%D8%B3%D8%AE%D8%A9-%D9%85%D9%86-003-copy-6-1536x768.jpg",
+    "imageType": "تصميم معماري رسمي من المطور",
+    "inventoryObservation": {
+      "available": 17,
+      "sold": 21,
+      "source": "https://almjalat.com/real-estate/almjalat-73/",
+      "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+    },
+    "page": "https://almjalat.com/real-estate/almjalat-73/",
+    "priceBasis": "starting_from",
+    "priceSource": "https://almjalat.com/real-estate/almjalat-73/",
+    "rooms": "1–3",
+    "totalProjectUnits": 38,
+    "units": "38 وحدة (إجمالي المشروع)"
   },
   {
     "id": "op-center-buraidah-majalat-74",
@@ -14414,17 +15639,83 @@
     "phoneContacts": [
       "رقم الشركة — مجالات"
     ],
-    "img": "",
-    "maps": "",
+    "img": "assets/images/projects/verified-majalat74.jpg",
+    "maps": "https://maps.app.goo.gl/VW5UhnwtGbkQ6Mkp6",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%AC%D8%A7%D9%84%D8%A7%D8%AA%2074%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20Saudi%20Arabia",
     "mapReview": "رابط بحث باسم المشروع والمدينة من التقرير؛ ليس دبوسًا دقيقًا.",
     "pageSource": "مراكز المبيعات 2026.pdf، ص40",
-    "pageEvidence": "مراكز المبيعات 2026.pdf، ص40"
+    "pageEvidence": "مراكز المبيعات 2026.pdf، ص40",
+    "availability": {
+      "status": "available",
+      "source": "https://almjalat.com/real-estate/almjalat-76/",
+      "checkedAt": "2026-10-17T16:04:54.142157+00:00",
+      "basis": "Exact project published unit table; currently available rows, not generic enquiry button"
+    },
+    "availableUnitExamples": [
+      {
+        "unit": "17",
+        "floor": "الخامس",
+        "areaSqm": 267.45,
+        "priceSar": 699000,
+        "bedrooms": 2,
+        "status": "متوفر"
+      },
+      {
+        "unit": "18",
+        "floor": "الخامس",
+        "areaSqm": 267.445,
+        "priceSar": 699000,
+        "bedrooms": 2,
+        "status": "متوفر"
+      }
+    ],
+    "canonicalProjectId": "majalat-74-buraidah",
+    "dsite": "https://almjalat.com/",
+    "fieldEvidence": {
+      "page": {
+        "source": "https://almjalat.com/real-estate/almjalat-76/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "maps": {
+        "source": "https://almjalat.com/real-estate/almjalat-76/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "price": {
+        "source": "https://almjalat.com/real-estate/almjalat-76/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "rooms": {
+        "source": "https://almjalat.com/real-estate/almjalat-76/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "units": {
+        "source": "https://almjalat.com/real-estate/almjalat-76/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      },
+      "img": {
+        "source": "https://almjalat.com/real-estate/almjalat-76/",
+        "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+      }
+    },
+    "imageSource": "https://almjalat.com/wp-content/uploads/2024/09/%D9%86%D8%B3%D8%AE%D8%A9-%D9%85%D9%86-007-copy-5-scaled.jpg",
+    "imageType": "تصميم معماري رسمي من المطور",
+    "inventoryObservation": {
+      "available": 2,
+      "sold": 16,
+      "source": "https://almjalat.com/real-estate/almjalat-76/",
+      "checkedAt": "2026-10-17T16:04:54.142157+00:00"
+    },
+    "page": "https://almjalat.com/real-estate/almjalat-76/",
+    "priceBasis": "starting_from",
+    "priceSource": "https://almjalat.com/real-estate/almjalat-76/",
+    "rooms": "2",
+    "totalProjectUnits": 18,
+    "units": "18 وحدة (إجمالي المشروع)"
   },
   {
     "id": "op-center-buraidah-samaya",
     "n": "سمايا",
-    "dev": "شركة الغنام العقارية",
+    "dev": "",
     "city": "بريدة",
     "nb": "المريدسية",
     "type": "فلل",
@@ -14440,8 +15731,67 @@
     "maps": "",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%85%D8%A7%D9%8A%D8%A7%20%D8%A7%D9%84%D9%85%D8%B1%D9%8A%D8%AF%D8%B3%D9%8A%D8%A9%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20Saudi%20Arabia",
     "mapReview": "رابط بحث باسم المشروع والحي من التقرير؛ ليس دبوسًا دقيقًا.",
-    "pageSource": "مراكز المبيعات 2026.pdf، ص40",
-    "pageEvidence": "مراكز المبيعات 2026.pdf، ص40"
+    "pageSource": "صفحة مشاريع الغنام؛ المدينة والاسم متطابقان، مع فصل دور المسوّق عن المطور.",
+    "pageEvidence": "مراكز المبيعات 2026.pdf، ص40",
+    "advertisedPricesSource": "https://algnam.sa/%d9%85%d8%b4%d8%b1%d9%88%d8%b9-%d8%b3%d9%85%d8%a7%d9%8a%d8%a7/",
+    "advertisedUnitModels": [
+      {
+        "unit": "1",
+        "priceSar": 2700000,
+        "landAreaSqm": 1149
+      },
+      {
+        "unit": "2",
+        "priceSar": 1800000,
+        "landAreaSqm": 570
+      },
+      {
+        "unit": "3",
+        "priceSar": 1800000,
+        "landAreaSqm": 561
+      },
+      {
+        "unit": "4",
+        "priceSar": 1800000,
+        "landAreaSqm": 1000
+      }
+    ],
+    "availability": {
+      "status": "available",
+      "source": "https://algnam.sa/6666-2/",
+      "checkedAt": "2026-10-17T16:25:21.154707+00:00",
+      "basis": "Exact named Buraidah project card marked available; percentage sold is not a remaining unit count"
+    },
+    "desc": "مشروع سمايا في حي المريدسية ببريدة، يتكون من أربع فلل سكنية بتشطيبات حجرية ونظام تحكم ذكي.",
+    "developerVerified": false,
+    "dsite": "https://algnam.sa/",
+    "fieldEvidence": {
+      "nb": {
+        "source": "https://algnam.sa/%d9%85%d8%b4%d8%b1%d9%88%d8%b9-%d8%b3%d9%85%d8%a7%d9%8a%d8%a7/",
+        "checkedAt": "2026-10-17T16:25:21.154707+00:00"
+      },
+      "type": {
+        "source": "https://algnam.sa/%d9%85%d8%b4%d8%b1%d9%88%d8%b9-%d8%b3%d9%85%d8%a7%d9%8a%d8%a7/",
+        "checkedAt": "2026-10-17T16:25:21.154707+00:00"
+      },
+      "desc": {
+        "source": "https://algnam.sa/%d9%85%d8%b4%d8%b1%d9%88%d8%b9-%d8%b3%d9%85%d8%a7%d9%8a%d8%a7/",
+        "checkedAt": "2026-10-17T16:25:21.154707+00:00"
+      }
+    },
+    "marketer": "شركة الغنام العقارية",
+    "marketerCompanyId": "cp-47ae680056",
+    "page": "https://algnam.sa/%d9%85%d8%b4%d8%b1%d9%88%d8%b9-%d8%b3%d9%85%d8%a7%d9%8a%d8%a7/",
+    "siteRole": "marketer",
+    "sourceHistory": [
+      {
+        "field": "dev",
+        "old": "شركة الغنام العقارية",
+        "reason": "Stored company markets project; ownership/developer role not established by this listing",
+        "source": "https://algnam.sa/6666-2/"
+      }
+    ],
+    "totalProjectUnits": 4
   },
   {
     "id": "op-center-buraidah-hazm-deluxe",
@@ -14642,7 +15992,14 @@
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B5%D9%81%D8%A7%2086%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D9%86%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9%20Saudi%20Arabia",
     "mapReview": "رابط بحث باسم المشروع والحي من التقرير؛ ليس دبوسًا دقيقًا.",
     "pageSource": "مراكز المبيعات 2026.pdf، ص41",
-    "pageEvidence": "مراكز المبيعات 2026.pdf، ص41"
+    "pageEvidence": "مراكز المبيعات 2026.pdf، ص41",
+    "developerWebsiteEvidence": {
+      "source": "https://safainv.sa",
+      "companyId": "cp-ee28fb1fee",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506581+00:00"
+    },
+    "dsite": "https://safainv.sa"
   },
   {
     "id": "op-center-jeddah-jeddah-heights",
@@ -14663,7 +16020,14 @@
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B1%D9%83%D8%B2%20%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20%D8%AC%D8%AF%D8%A9%20%D9%87%D8%A7%D9%8A%D8%AA%D8%B3%20%D8%A3%D9%85%20%D8%AD%D8%A8%D9%84%D9%8A%D9%86%20%D8%AC%D8%AF%D8%A9%20Saudi%20Arabia",
     "mapReview": "رابط بحث باسم مركز المبيعات والحي من التقرير؛ ليس دبوسًا دقيقًا.",
     "pageSource": "مراكز المبيعات 2026.pdf، ص55",
-    "pageEvidence": "مراكز المبيعات 2026.pdf، ص55"
+    "pageEvidence": "مراكز المبيعات 2026.pdf، ص55",
+    "developerWebsiteEvidence": {
+      "source": "https://www.nhc.sa",
+      "companyId": "report-nhc-sales-riyadh",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506583+00:00"
+    },
+    "dsite": "https://www.nhc.sa"
   },
   {
     "id": "op-center-riyadh-aljamee-40",
@@ -14814,7 +16178,14 @@
         "checkedAt": "2026-10-16T07:42:00Z",
         "scope": "developer_general_not_project_direct"
       }
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://www.nhc.sa",
+      "companyId": "report-nhc-sales-riyadh",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506585+00:00"
+    },
+    "dsite": "https://www.nhc.sa"
   },
   {
     "id": "op-nhc-discovery-47529",
@@ -14888,7 +16259,14 @@
         "checkedAt": "2026-10-16T07:42:00Z",
         "scope": "developer_general_not_project_direct"
       }
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://darwaemaar.com",
+      "companyId": "cp-1046304230",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506587+00:00"
+    },
+    "dsite": "https://darwaemaar.com"
   },
   {
     "id": "op-nhc-discovery-47475",
@@ -15119,7 +16497,14 @@
         "checkedAt": "2026-10-16T07:42:00Z",
         "scope": "developer_general_not_project_direct"
       }
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://thabatre.sa",
+      "companyId": "cp-c566adf828",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506588+00:00"
+    },
+    "dsite": "https://thabatre.sa"
   },
   {
     "id": "op-nhc-discovery-334",
@@ -15193,7 +16578,14 @@
         "checkedAt": "2026-10-16T07:42:00Z",
         "scope": "developer_general_not_project_direct"
       }
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://ladun.sa/",
+      "companyId": "cp-coverage-ladun-jazan",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506590+00:00"
+    },
+    "dsite": "https://ladun.sa/"
   },
   {
     "id": "op-almajdiah-discovery-248",
@@ -15370,7 +16762,14 @@
     ],
     "phoneLabels": {
       "+966920011719": "رقم المطور العام"
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://almajdiah.com",
+      "companyId": "cp-da8cabf976",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506592+00:00"
+    },
+    "dsite": "https://almajdiah.com"
   },
   {
     "id": "op-almajdiah-discovery-234",
@@ -15548,7 +16947,14 @@
     ],
     "phoneLabels": {
       "+966920011719": "رقم المطور العام"
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://almajdiah.com",
+      "companyId": "cp-da8cabf976",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506594+00:00"
+    },
+    "dsite": "https://almajdiah.com"
   },
   {
     "id": "op-almajdiah-discovery-203",
@@ -15725,7 +17131,14 @@
     ],
     "phoneLabels": {
       "+966920011719": "رقم المطور العام"
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://almajdiah.com",
+      "companyId": "cp-da8cabf976",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506596+00:00"
+    },
+    "dsite": "https://almajdiah.com"
   },
   {
     "id": "op-almajdiah-discovery-207",
@@ -15889,7 +17302,14 @@
     ],
     "phoneLabels": {
       "+966920011719": "رقم المطور العام"
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://almajdiah.com",
+      "companyId": "cp-da8cabf976",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506598+00:00"
+    },
+    "dsite": "https://almajdiah.com"
   },
   {
     "id": "op-almajdiah-discovery-197",
@@ -16061,7 +17481,14 @@
     ],
     "phoneLabels": {
       "+966920011719": "رقم المطور العام"
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://almajdiah.com",
+      "companyId": "cp-da8cabf976",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506600+00:00"
+    },
+    "dsite": "https://almajdiah.com"
   },
   {
     "id": "op-almajdiah-discovery-210",
@@ -16238,7 +17665,14 @@
     ],
     "phoneLabels": {
       "+966920011719": "رقم المطور العام"
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://almajdiah.com",
+      "companyId": "cp-da8cabf976",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506602+00:00"
+    },
+    "dsite": "https://almajdiah.com"
   },
   {
     "id": "op-almajdiah-discovery-218",
@@ -16415,7 +17849,14 @@
     ],
     "phoneLabels": {
       "+966920011719": "رقم المطور العام"
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://almajdiah.com",
+      "companyId": "cp-da8cabf976",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506604+00:00"
+    },
+    "dsite": "https://almajdiah.com"
   },
   {
     "id": "op-almajdiah-discovery-180",
@@ -16574,7 +18015,14 @@
     ],
     "phoneLabels": {
       "+966920011719": "رقم المطور العام"
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://almajdiah.com",
+      "companyId": "cp-da8cabf976",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506605+00:00"
+    },
+    "dsite": "https://almajdiah.com"
   },
   {
     "id": "op-almajdiah-discovery-190",
@@ -16751,7 +18199,14 @@
     ],
     "phoneLabels": {
       "+966920011719": "رقم المطور العام"
-    }
+    },
+    "developerWebsiteEvidence": {
+      "source": "https://almajdiah.com",
+      "companyId": "cp-da8cabf976",
+      "basis": "Reused stored corporate website after exact normalized developer identity match; not a project-specific availability assertion",
+      "reconciledAt": "2026-10-17T16:11:17.506607+00:00"
+    },
+    "dsite": "https://almajdiah.com"
   },
   {
     "n": "فيلورا",
@@ -22863,112 +24318,6 @@
       "checkedAt": "2026-10-17T14:24:00Z",
       "status": "official_source_visually_reviewed",
       "role": "marketer_project_exterior_photo"
-    }
-  },
-  {
-    "id": "op-eskan-muhayil-6853750",
-    "n": "شقة الحيلة الغربي — إسكان سلمان",
-    "city": "محايل عسير",
-    "nb": "الحيلة الغربي",
-    "dev": "",
-    "marketer": "شركة إسكان سلمان العقارية",
-    "marketerCompanyId": "cp-eskan-salman-national",
-    "siteRole": "marketer",
-    "type": "شقة",
-    "phones": [
-      "0500040060"
-    ],
-    "phoneContacts": [
-      "رقم الشركة العام — سجل إيجار"
-    ],
-    "phoneLevel": "company",
-    "page": "https://sa.aqar.fm/شقق-للبيع/محايل/حي-الحيلة-الغربي/حي-الحيلة-الغربي-مدينة-محائل-منطقة-عسير-6853750",
-    "dsite": "https://sa.aqar.fm/user/2511387",
-    "maps": "https://www.google.com/maps?q=18.496677,42.054332",
-    "img": "assets/images/projects/verified-muhayil-eskan-20282.webp",
-    "sectors": [],
-    "price": 480000,
-    "priceBasis": "unit_specific",
-    "priceSource": "https://sa.aqar.fm/شقق-للبيع/محايل/حي-الحيلة-الغربي/حي-الحيلة-الغربي-مدينة-محائل-منطقة-عسير-6853750",
-    "area": "192.06 م²",
-    "rooms": 3,
-    "availability": {
-      "status": "available",
-      "source": "https://sa.aqar.fm/شقق-للبيع/محايل/حي-الحيلة-الغربي/حي-الحيلة-الغربي-مدينة-محائل-منطقة-عسير-6853750",
-      "checkedAt": "2026-10-17T14:26:00Z",
-      "basis": "Active for-sale listing with price and named company advertiser, updated two days ago according to page. Not reservation-tested or bank approval."
-    },
-    "fieldEvidence": {
-      "price": {
-        "source": "https://sa.aqar.fm/شقق-للبيع/محايل/حي-الحيلة-الغربي/حي-الحيلة-الغربي-مدينة-محائل-منطقة-عسير-6853750",
-        "checkedAt": "2026-10-17T14:26:00Z",
-        "scope": "specific_advertised_apartment_price"
-      },
-      "area": {
-        "source": "https://sa.aqar.fm/شقق-للبيع/محايل/حي-الحيلة-الغربي/حي-الحيلة-الغربي-مدينة-محائل-منطقة-عسير-6853750",
-        "checkedAt": "2026-10-17T14:26:00Z",
-        "scope": "advertised_apartment_area_not_land_share"
-      },
-      "rooms": {
-        "source": "https://sa.aqar.fm/شقق-للبيع/محايل/حي-الحيلة-الغربي/حي-الحيلة-الغربي-مدينة-محائل-منطقة-عسير-6853750",
-        "checkedAt": "2026-10-17T14:26:00Z",
-        "scope": "two_bedrooms_plus_one_master_in_written_description"
-      },
-      "lat": {
-        "source": "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D9%85%D8%AD%D8%A7%D9%8A%D9%84/%D8%AD%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A/%D8%AD%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D9%85%D8%AD%D8%A7%D8%A6%D9%84-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%B9%D8%B3%D9%8A%D8%B1-6853750",
-        "checkedAt": "2026-10-17T14:39:00Z",
-        "scope": "published_exact_listing_pin"
-      },
-      "lon": {
-        "source": "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D9%85%D8%AD%D8%A7%D9%8A%D9%84/%D8%AD%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A/%D8%AD%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D9%85%D8%AD%D8%A7%D8%A6%D9%84-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%B9%D8%B3%D9%8A%D8%B1-6853750",
-        "checkedAt": "2026-10-17T14:39:00Z",
-        "scope": "published_exact_listing_pin"
-      },
-      "maps": {
-        "source": "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D9%85%D8%AD%D8%A7%D9%8A%D9%84/%D8%AD%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A/%D8%AD%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D9%85%D8%AD%D8%A7%D8%A6%D9%84-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%B9%D8%B3%D9%8A%D8%B1-6853750",
-        "checkedAt": "2026-10-17T14:39:00Z",
-        "scope": "published_exact_listing_pin"
-      }
-    },
-    "publishedAdvertisementLicense": "7201114019",
-    "publishedBrokerLicense": "1200019203",
-    "licenseRegistryVerified": false,
-    "detailDiscrepancies": [
-      {
-        "field": "bedrooms",
-        "source": "https://sa.aqar.fm/شقق-للبيع/محايل/حي-الحيلة-الغربي/حي-الحيلة-الغربي-مدينة-محائل-منطقة-عسير-6853750",
-        "finding": "Structured6 includes overallrooms; description explicitlytwo bedrooms plusmaster. Show3 bedrooms, not6."
-      },
-      {
-        "field": "area",
-        "source": "https://sa.aqar.fm/شقق-للبيع/محايل/حي-الحيلة-الغربي/حي-الحيلة-الغربي-مدينة-محائل-منطقة-عسير-6853750",
-        "finding": "Advertised192.06 differsfrom116.52 landshare and107.62 commonarea; keeparea definitionsseparate."
-      }
-    ],
-    "mapAudit": {
-      "status": "published_listing_pin",
-      "source": "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D9%85%D8%AD%D8%A7%D9%8A%D9%84/%D8%AD%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A/%D8%AD%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D9%85%D8%AD%D8%A7%D8%A6%D9%84-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%B9%D8%B3%D9%8A%D8%B1-6853750",
-      "checkedAt": "2026-10-17T14:39:00Z",
-      "basis": "Main listing JSON-LD GeoCoordinates beside exact property address; not related-listing markers or company headquarters. Physical/deed match not independently surveyed.",
-      "sourceResponseSha256": "40410e00a37d05898f3fc4a32d987579f912254d02795f6ef8b155ca26f83917"
-    },
-    "imageSource": "https://sa.aqar.fm/شقق-للبيع/محايل/حي-الحيلة-الغربي/حي-الحيلة-الغربي-مدينة-محائل-منطقة-عسير-6853750",
-    "imageEvidence": {
-      "source": "https://sa.aqar.fm/شقق-للبيع/محايل/حي-الحيلة-الغربي/حي-الحيلة-الغربي-مدينة-محائل-منطقة-عسير-6853750",
-      "imageURL": "https://images.aqar.fm/webp/750x0/props/025113872_1788336980444.jpg",
-      "checkedAt": "2026-10-17T14:28:00Z",
-      "status": "named_advertiser_unit_photo_visually_reviewed",
-      "matchingAdvertiserReference": "20282"
-    },
-    "lat": 18.496677,
-    "lon": 42.054332,
-    "loc": "project",
-    "locationAudit": {
-      "status": "published_listing_pin",
-      "source": "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D9%85%D8%AD%D8%A7%D9%8A%D9%84/%D8%AD%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A/%D8%AD%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D9%85%D8%AD%D8%A7%D8%A6%D9%84-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%B9%D8%B3%D9%8A%D8%B1-6853750",
-      "checkedAt": "2026-10-17T14:39:00Z",
-      "basis": "Main listing JSON-LD GeoCoordinates beside exact property address; not related-listing markers or company headquarters. Physical/deed match not independently surveyed.",
-      "sourceResponseSha256": "40410e00a37d05898f3fc4a32d987579f912254d02795f6ef8b155ca26f83917"
     }
   }
 ]

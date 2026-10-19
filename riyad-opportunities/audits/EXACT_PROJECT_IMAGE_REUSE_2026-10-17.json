@@ -1,0 +1,59 @@
+{
+  "changes": [
+    {
+      "targetFile": "projects",
+      "target": "P155",
+      "sourceFile": "opportunities",
+      "source": "op-f6b536da3d",
+      "name": "بيوت تلال قمرة",
+      "city": "صفوى",
+      "image": "https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2023-07/Mobile%20size_8.jpg",
+      "imageSource": null
+    },
+    {
+      "targetFile": "opportunities",
+      "target": "op-6cf8280cf2",
+      "sourceFile": "projects",
+      "source": "P013",
+      "name": "سما الورود",
+      "city": "الأحساء",
+      "image": "https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2025-01/351x562_0.png",
+      "imageSource": "https://www.nhc.sa/real-estate-development/projects/47490/"
+    },
+    {
+      "targetFile": "opportunities",
+      "target": "op-40f125b23d",
+      "sourceFile": "projects",
+      "source": "P281",
+      "name": "درة السدن",
+      "city": "جدة",
+      "image": "https://ruh-s3.bluvalt.com/api-nhc.sa/s3fs-public/2024-04/%D8%AF%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D8%AF%D9%86_W1512xH858.jpg",
+      "imageSource": null
+    }
+  ],
+  "notApplied": "Fana image URL returned503 in saved check; not propagated.",
+  "externalResearchRequests": 0,
+  "localCopies": {
+    "P155": {
+      "previousImage": "",
+      "image": "assets/images/projects/verified-tilal-qamra.jpg",
+      "source": "https://tilalre.com/ar/qamra/",
+      "sha256": "547e66d45c50ffe7653320bad6ae0cc2794ed7ca67e2088e38c0c782b66bccf7",
+      "basis": "Exact canonical-project match to retained source record; existing official image downloaded and pixels inspected. Not completion-state evidence."
+    },
+    "op-6cf8280cf2": {
+      "previousImage": "",
+      "image": "assets/images/projects/verified-sama-wurood.png",
+      "source": "https://www.nhc.sa/real-estate-development/projects/47490/",
+      "sha256": "499cb4649fd32e164081d722a800682fb10e991b76686de1765cdcee7575d8ad",
+      "basis": "Exact canonical-project match to retained source record; existing official image downloaded and pixels inspected. Not completion-state evidence."
+    },
+    "op-40f125b23d": {
+      "previousImage": "",
+      "image": "assets/images/projects/verified-durrat-sadan.jpg",
+      "source": "https://www.nhc.sa/ar/real-estate-development/projects/47290",
+      "sha256": "ec9da92d0b148bdebbb62f7e89072a81c3d7519473ee20389b8c840e5360f45f",
+      "basis": "Exact canonical-project match to retained source record; existing official image downloaded and pixels inspected. Not completion-state evidence."
+    }
+  }
+}

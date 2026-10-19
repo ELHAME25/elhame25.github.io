@@ -905,7 +905,7 @@
     "الظهران": {"src": "assets/images/cities/dhahran-pexels.webp", "position": "20% 50%", "fit": "contain", "real": true, "displayPermission": "pexels_license"},
     "الجبيل": {"src": "assets/images/cities/jubail-pexels.webp", "position": "65% 55%", "real": true, "displayPermission": "pexels_license"},
     "ينبع": {"src": "assets/images/cities/yanbu-pexels.webp", "position": "20% 50%", "fit": "contain", "real": true, "displayPermission": "pexels_license"},
-    'بريدة': { src: 'assets/images/city-buraidah-illustrative.webp', position: '32% 50%', real: false, displayPermission: 'generated_illustration' },
+    'بريدة': { src: 'assets/images/cities/buraidah-tower-real.webp', position: '20% 50%', fit: 'contain', real: true, displayPermission: 'CC_BY_SA_4_0_linked_credit', creditAnchor: 'buraidah-water-tower' },
     'الرياض': { src: 'assets/images/city-riyadh.webp', position: '50% 50%', real: false, displayPermission: 'generated_illustration' },
     'أبها': Object.assign({}, CITY_IMAGE_ARCHIVE['أبها'], { displayPermission: 'CC0' }),
     'مكة المكرمة': Object.assign({}, CITY_IMAGE_ARCHIVE['مكة المكرمة'], { displayPermission: 'CC0' }),
@@ -913,66 +913,16 @@
   };
   // BEGIN GENERATED CITY IDENTITIES
   var GENERATED_CITY_IDENTITIES = {
-  "عنيزة": {
-    "src": "assets/images/cities/generated/central-unaizah.webp",
-    "position": "50% 58%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "الخرج": {
-    "src": "assets/images/cities/generated/central-kharj.webp",
-    "position": "50% 62%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "الدرعية": {
-    "src": "assets/images/cities/generated/central-diriyah.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "البكيرية": {
-    "src": "assets/images/cities/generated/central-bukayriyah.webp",
-    "position": "50% 54%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "الدوادمي": {
-    "src": "assets/images/cities/generated/central-dawadmi.webp",
-    "position": "50% 54%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "الغاط": {
-    "src": "assets/images/cities/generated/central-ghat.webp",
-    "position": "50% 54%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "المجمعة": {
-    "src": "assets/images/cities/generated/central-majmaah.webp",
-    "position": "50% 54%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "المذنب": {
-    "src": "assets/images/cities/generated/central-midhnab.webp",
-    "position": "50% 60%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "الدلم": {
-    "src": "assets/images/cities/generated/central-dilam.webp",
-    "position": "50% 58%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "الرس": {
-    "src": "assets/images/cities/generated/central-rass.webp",
-    "position": "50% 58%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
+  "عنيزة": {"src": "assets/images/cities/unaizah-ringroad.webp", "position": "50% 50%", "fit": "cover", "real": true, "displayPermission": "CC BY-SA 4.0_linked_credit", "creditAnchor": "verified-unaizah-ringroad"},
+  "الخرج": {"src": "assets/images/cities/kharj.webp", "position": "50% 50%", "fit": "cover", "real": true, "displayPermission": "CC BY-SA 4.0_linked_credit", "creditAnchor": "verified-kharj"},
+  "الدرعية": {"src":"assets/images/cities/diriyah-real-cc0.jpg","position":"50% 30%","real":true,"displayPermission":"CC0"},
+  "البكيرية": {"src": "assets/images/cities/bukayriyah-rajhi-palace-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC BY-SA 4.0_linked_credit", "creditAnchor": "verified-bukayriyah-rajhi-palace"},
+  "الدوادمي": {"src": "assets/images/cities/dawadmi-palace-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA4_0_linked_credit", "creditAnchor": "verified-continuation-dawadmi-palace-real"},
+  "الغاط": {"src": "assets/images/cities/ghat-mosque-real.jpg", "position": "50% 55%", "fit": "cover", "real": true, "displayPermission": "CC_BY_2_0_linked_credit", "creditAnchor": "verified-ghat-mosque-real"},
+  "المجمعة": {"src": "assets/images/cities/majmaah-menikh-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA4_0_linked_credit", "creditAnchor": "verified-continuation-majmaah-menikh-real"},
+  "المذنب": {"src": "assets/images/cities/spa-city-2551563.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY_SA_4_0_linked_credit", "creditAnchor": "verified-spa-2551563"},
+  "الدلم": {"src": "assets/images/cities/dilam-gate-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA4_0_linked_credit", "creditAnchor": "verified-continuation-dilam-gate-real"},
+  "الرس": {"src": "assets/images/cities/rass-shinana-real.jpg", "position": "50% 48%", "fit": "cover", "real": true, "displayPermission": "CC_BY_2_0_linked_credit", "creditAnchor": "verified-rass-shinana"},
   "الارطاوية": {
     "src": "assets/images/cities/generated/central-artawiyah.webp",
     "position": "50% 58%",
@@ -985,168 +935,43 @@
     "real": false,
     "displayPermission": "generated_illustration"
   },
-  "المزاحمية": {
-    "src": "assets/images/cities/generated/central-muzahmiyya.webp",
-    "position": "50% 64%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "القويعية": {
-    "src": "assets/images/cities/generated/central-quwayiyah.webp",
-    "position": "50% 54%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "وادي الدواسر": {
-    "src": "assets/images/cities/generated/central-wadi-dawasir.webp",
-    "position": "50% 54%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "السليل": {
-    "src": "assets/images/cities/generated/central-sulayyil.webp",
-    "position": "50% 64%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "الزلفي": {
-    "src": "assets/images/cities/generated/central-zulfi.webp",
-    "position": "50% 62%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
+  "المزاحمية": {"src": "assets/images/cities/muzahimiyah-tower-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY2_0_linked_credit", "creditAnchor": "verified-continuation-muzahimiyah-tower-real"},
+  "القويعية": {"src": "assets/images/cities/quwayiyah-musher-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA4_0_linked_credit", "creditAnchor": "verified-continuation-quwayiyah-musher-real"},
+  "وادي الدواسر": {"src": "assets/images/cities/wadi-dawasir-palace-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA4_0_linked_credit", "creditAnchor": "verified-continuation-wadi-dawasir-palace-real"},
+  "السليل": {"src": "assets/images/cities/sulayyil-park-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC0", "creditAnchor": "verified-continuation-sulayyil-park-real"},
+  "الزلفي": {"src": "assets/images/cities/zulfi-landmark-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA4_0_linked_credit", "creditAnchor": "verified-continuation-zulfi-landmark-real"},
   "حوطة سدير": {
     "src": "assets/images/cities/generated/central-hawtat-sudair.webp",
     "position": "50% 60%",
     "real": false,
     "displayPermission": "generated_illustration"
   },
-  "ضرما": {
-    "src": "assets/images/cities/generated/central-dhurma.webp",
-    "position": "50% 58%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "شقراء": {
-    "src": "assets/images/cities/generated/central-shaqra.webp",
-    "position": "50% 63%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "ليلى": {
-    "src": "assets/images/cities/generated/central-layla.webp",
-    "position": "50% 62%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "تبوك": {
-    "src": "assets/images/cities/generated/north-east-tabuk-v2.webp",
-    "position": "50% 70%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "حائل": {
-    "src": "assets/images/cities/generated/north-east-hail.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "سكاكا": {
-    "src": "assets/images/cities/generated/north-east-sakaka.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "دومة الجندل": {
-    "src": "assets/images/cities/generated/north-east-dumat-al-jandal.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "خيبر": {
-    "src": "assets/images/cities/generated/north-east-khaybar.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "الدمام": {
-    "src": "assets/images/cities/generated/north-east-dammam.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "الأحساء": {
-    "src": "assets/images/cities/generated/north-east-al-ahsa.webp",
-    "position": "50% 65%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "حقل": {
-    "src": "assets/images/cities/generated/north-east-haql.webp",
-    "position": "50% 32%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "ضباء": {
-    "src": "assets/images/cities/generated/north-east-duba.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "الوجه": {
-    "src": "assets/images/cities/generated/north-east-al-wajh.webp",
-    "position": "50% 35%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "أملج": {
-    "src": "assets/images/cities/generated/north-east-umluj.webp",
-    "position": "50% 46%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "سيهات": {
-    "src": "assets/images/cities/generated/north-east-saihat.webp",
-    "position": "50% 40%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "رأس تنورة": {
-    "src": "assets/images/cities/generated/north-east-ras-tanura.webp",
-    "position": "50% 35%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "الخفجي": {
-    "src": "assets/images/cities/generated/north-east-khafji.webp",
-    "position": "50% 35%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "القطيف": {
-    "src": "assets/images/cities/generated/north-east-qatif.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "عرعر": {
-    "src": "assets/images/cities/generated/north-east-arar.webp",
-    "position": "50% 60%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
+  "ضرما": {"src": "assets/images/cities/dhurma-heritage-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA4_0_linked_credit", "creditAnchor": "verified-continuation-dhurma-heritage-real"},
+  "شقراء": {"src": "assets/images/cities/shaqra-gate-real.jpg", "position": "50% 55%", "fit": "cover", "real": true, "displayPermission": "CC_BY_2_0_linked_credit", "creditAnchor": "verified-shaqra-gate-real"},
+  "ليلى": {"src": "assets/images/cities/city-real-15133211720.jpg", "position": "50% 55%", "fit": "cover", "real": true, "displayPermission": "CC BY-SA 2.0_linked_credit", "creditAnchor": "verified-city-real-15133211720"},
+  "تبوك": {"src": "assets/images/cities/tabuk.webp", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC BY-SA 4.0_linked_credit", "creditAnchor": "verified-tabuk"},
+  "حائل": {"src": "assets/images/cities/hail.webp", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC BY 3.0_linked_credit", "creditAnchor": "verified-hail"},
+  "سكاكا": {"src": "assets/images/cities/sakaka-zabal-real.jpg", "position": "50% 35%", "fit": "cover", "real": true, "displayPermission": "CC_BY_2_0_linked_credit", "creditAnchor": "verified-sakaka-zabal"},
+  "دومة الجندل": {"src": "assets/images/cities/city-real-50224823941.jpg", "position": "20% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY_2_0_linked_credit", "creditAnchor": "verified-city-real-50224823941"},
+  "خيبر": {"src": "assets/images/cities/khaybar-qamus-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA4_0_linked_credit", "creditAnchor": "verified-continuation-khaybar-qamus-real"},
+  "الدمام": {"src": "assets/images/cities/dammam.webp", "position": "50% 50%", "fit": "cover", "real": true, "displayPermission": "CC BY 3.0 PL_linked_credit", "creditAnchor": "verified-dammam"},
+  "الأحساء": {"src": "assets/images/cities/ahsa-hofuf.webp", "position": "50% 50%", "fit": "cover", "real": true, "displayPermission": "CC BY-SA 4.0_linked_credit", "creditAnchor": "verified-ahsa-hofuf"},
+  "حقل": {"src": "assets/images/cities/city-real-9625493833.jpg", "position": "50% 55%", "fit": "cover", "real": true, "displayPermission": "CC BY 2.0_linked_credit", "creditAnchor": "verified-city-real-9625493833"},
+  "ضباء": {"src": "assets/images/cities/spa-city-2369525.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY_SA_4_0_linked_credit", "creditAnchor": "verified-spa-2369525"},
+  "الوجه": {"src": "assets/images/cities/city-real-51278992304.jpg", "position": "50% 55%", "fit": "cover", "real": true, "displayPermission": "CC BY 2.0_linked_credit", "creditAnchor": "verified-city-real-51278992304"},
+  "أملج": {"src": "assets/images/cities/spa-city-2507676.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY_SA_4_0_linked_credit", "creditAnchor": "verified-spa-2507676"},
+  "سيهات": {"src": "assets/images/cities/saihat-corniche-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA4_0_linked_credit", "creditAnchor": "verified-continuation-saihat-corniche-real"},
+  "رأس تنورة": {"src": "assets/images/cities/city-real-9123857748.jpg", "position": "50% 55%", "fit": "cover", "real": true, "displayPermission": "CC BY-SA 2.0_linked_credit", "creditAnchor": "verified-city-real-9123857748"},
+  "الخفجي": {"src": "assets/images/cities/khafji-mall-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA3_0_linked_credit", "creditAnchor": "verified-continuation-khafji-mall-real"},
+  "القطيف": {"src": "assets/images/cities/spa-city-2573318.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY_SA_4_0_linked_credit", "creditAnchor": "verified-spa-2573318"},
+  "عرعر": {"src": "assets/images/cities/arar-water-tower-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY_2_0_linked_credit", "creditAnchor": "verified-arar-water-tower"},
   "المبرز": {
     "src": "assets/images/cities/generated/north-east-al-mubarraz.webp",
     "position": "50% 50%",
     "real": false,
     "displayPermission": "generated_illustration"
   },
-  "العلا": {
-    "src": "assets/images/cities/generated/north-east-alula.webp",
-    "position": "50% 23%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
+  "العلا": {"src": "assets/images/cities/city-real-49712771757.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "Public Domain Work_linked_credit", "creditAnchor": "verified-alula-elephant-rock"},
   "الهفوف": {
     "src": "assets/images/cities/generated/north-east-hofuf.webp",
     "position": "50% 65%",
@@ -1165,12 +990,7 @@
     "real": false,
     "displayPermission": "generated_illustration"
   },
-  "حفر الباطن": {
-    "src": "assets/images/cities/generated/north-east-hafar-al-batin.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
+  "حفر الباطن": {"src": "assets/images/cities/hafar-landmark-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA4_0_linked_credit", "creditAnchor": "verified-continuation-hafar-landmark-real"},
   "الرقعي": {
     "src": "assets/images/cities/generated/north-east-al-raqai.webp",
     "position": "50% 50%",
@@ -1189,18 +1009,8 @@
     "real": false,
     "displayPermission": "generated_illustration"
   },
-  "صفوى": {
-    "src": "assets/images/cities/generated/north-east-safwa.webp",
-    "position": "50% 65%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "القريات": {
-    "src": "assets/images/cities/generated/north-east-qurayyat.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
+  "صفوى": {"src": "assets/images/cities/safwa-coast-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA4_0_linked_credit", "creditAnchor": "verified-continuation-safwa-coast-real"},
+  "القريات": {"src": "assets/images/cities/qurayyat-kaf-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA4_0_linked_credit", "creditAnchor": "verified-continuation-qurayyat-kaf-real"},
   "قرية العليا": {
     "src": "assets/images/cities/generated/north-east-qaryat-al-ulya-v2.webp",
     "position": "50% 50%",
@@ -1225,48 +1035,11 @@
     "real": false,
     "displayPermission": "generated_illustration"
   },
-  "الخبر": {
-    "src": "assets/images/cities/generated/north-east-khobar-wide.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "الظهران": {
-    "src": "assets/images/cities/generated/north-east-dhahran-wide.webp",
-    "position": "50% 64%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "الطائف": {
-    "src": "assets/images/cities/generated/south-west-taif-illustrative.webp",
-    "position": "50% 55%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "نجران": {
-    "src": "assets/images/cities/generated/south-west-najran-illustrative.webp",
-    "position": "50% 60%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "جازان": {
-    "src": "assets/images/cities/generated/south-west-jazan-illustrative.webp",
-    "position": "50% 40%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "أبو عريش": {
-    "src": "assets/images/cities/generated/south-west-abu-arish-illustrative.webp",
-    "position": "50% 60%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "النماص": {
-    "src": "assets/images/cities/generated/south-west-namas-illustrative.webp",
-    "position": "50% 65%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
+  "الطائف": {"src": "assets/images/cities/taif.webp", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC BY-SA 4.0_linked_credit", "creditAnchor": "verified-taif"},
+  "نجران": {"src": "assets/images/cities/najran.webp", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC BY 2.0_linked_credit", "creditAnchor": "verified-najran"},
+  "جازان": {"src": "assets/images/cities/jazan.webp", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC BY-SA 4.0_linked_credit", "creditAnchor": "verified-jazan"},
+  "أبو عريش": {"src": "assets/images/cities/spa-city-2382886.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY_SA_4_0_linked_credit", "creditAnchor": "verified-spa-2382886"},
+  "النماص": {"src": "assets/images/cities/city-real-50922230847.jpg", "position": "20% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY_2_0_linked_credit", "creditAnchor": "verified-city-real-50922230847"},
   "القنفذة": {
     "src": "assets/images/cities/generated/south-west-qunfudhah-illustrative.webp",
     "position": "50% 50%",
@@ -1274,29 +1047,21 @@
     "displayPermission": "generated_illustration"
   },
   "بدر": {
-    "src": "assets/images/cities/generated/south-west-badr-illustrative.webp",
-    "position": "50% 85%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "بلجرشي": {
-    "src": "assets/images/cities/generated/south-west-baljurashi-illustrative.webp",
-    "position": "50% 85%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
+    "src": "assets/images/cities/badr-arish-real.jpg",
+    "position": "50% 50%",
+    "real": true,
+    "displayPermission": "cc_by_2_linked_credit",
+    "creditAnchor": "verified-badr-arish",
+    "fit": "contain"
+},
+  "بلجرشي": {"src": "assets/images/cities/spa-city-2287739.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY_SA_4_0_linked_credit", "creditAnchor": "verified-spa-2287739"},
   "أحد المسارحة": {
     "src": "assets/images/cities/generated/south-west-ahad-masarihah-illustrative.webp",
     "position": "50% 40%",
     "real": false,
     "displayPermission": "generated_illustration"
   },
-  "خميس مشيط": {
-    "src": "assets/images/cities/generated/south-west-khamis-mushait-illustrative.webp",
-    "position": "50% 39%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
+  "خميس مشيط": {"src": "assets/images/cities/spa-city-2324906.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY_SA_4_0_linked_credit", "creditAnchor": "verified-spa-2324906"},
   "صامطة": {
     "src": "assets/images/cities/generated/south-west-samtah-illustrative.webp",
     "position": "50% 50%",
@@ -1309,24 +1074,14 @@
     "real": false,
     "displayPermission": "generated_illustration"
   },
-  "بيشة": {
-    "src": "assets/images/cities/generated/south-west-bisha-illustrative.webp",
-    "position": "50% 36%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
+  "بيشة": {"src": "assets/images/cities/bisha-dam-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY-SA4_0_linked_credit", "creditAnchor": "verified-continuation-bisha-dam-real"},
   "تربة": {
     "src": "assets/images/cities/generated/south-west-turbah-illustrative.webp",
     "position": "50% 65%",
     "real": false,
     "displayPermission": "generated_illustration"
   },
-  "رابغ": {
-    "src": "assets/images/cities/generated/south-west-rabigh-illustrative.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
+  "رابغ": {"src": "assets/images/cities/rabigh-streetscape-real.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY3_0_linked_credit", "creditAnchor": "verified-continuation-rabigh-streetscape-real"},
   "سبت العلاية": {
     "src": "assets/images/cities/generated/south-west-sabt-alalaya-illustrative.webp",
     "position": "50% 50%",
@@ -1351,22 +1106,15 @@
     "real": false,
     "displayPermission": "generated_illustration"
   },
-  "بيش": {
-    "src": "assets/images/cities/generated/south-west-baysh-illustrative.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  },
-  "ينبع": {
-    "src": "assets/images/cities/generated/south-west-yanbu-illustrative.webp",
-    "position": "50% 50%",
-    "real": false,
-    "displayPermission": "generated_illustration"
-  }
+  "بيش": {"src": "assets/images/cities/spa-city-2310374.jpg", "position": "50% 50%", "fit": "contain", "real": true, "displayPermission": "CC_BY_SA_4_0_linked_credit", "creditAnchor": "verified-spa-2310374"},
 };
   Object.keys(GENERATED_CITY_IDENTITIES).forEach(function (city) { CITY_HERO_ASSETS[city] = GENERATED_CITY_IDENTITIES[city]; });
   // END GENERATED CITY IDENTITIES
   function cityHeroMedia(hero) {
+    if (hero.creditAnchor) {
+      var photo = Object.assign({}, hero); delete photo.creditAnchor;
+      return '<a class="city-photo-credit" href="assets/images/cities/credits.html#' + esc(hero.creditAnchor) + '" aria-label="حقوق الصورة ومصدرها" title="حقوق الصورة ومصدرها">' + cityHeroMedia(photo) + '</a>';
+    }
     if (hero.viewBox) return '<svg class="city-photo" viewBox="' + esc(hero.viewBox) + '" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><image href="' + esc(hero.src) + '" width="710" height="1536" onload="this.dataset.loaded=1"></image></svg>';
     return '<img src="' + esc(hero.src) + '" alt="" decoding="async" style="object-fit:' + (hero.fit || 'cover') + ';object-position:' + hero.position + '" onerror="if(!this.dataset.fallback){this.dataset.fallback=1;this.src=\'' + CITY_HERO_FALLBACK + '\'}else{this.hidden=true}">';
   }
@@ -1411,7 +1159,7 @@
     var selfbuildLink = hasSelfbuild(b.city) ? '<div class="secondary-discovery"><button class="btn selfbuild-link" data-tab="selfbuild" aria-controls="content" aria-pressed="' + (S.tab === 'selfbuild') + '">' + ICON.selfbuild + 'البناء الذاتي</button></div>' : '';
     var headingSector = S.tab !== 'companies' && S.tab !== 'selfbuild' && S.scope !== 'city' && sectorCity(b.city) ? (activeSector() || b.sec || '') : '';
     var hero = CITY_HERO_ASSETS[b.city] || { src: CITY_HERO_FALLBACK, position: '50% 50%', real: false };
-    app.innerHTML = '<div class="results-shell wrap"><section class="city-hero" aria-label="' + esc(b.city) + '">' + cityHeroMedia(hero) + '<div class="city-hero-copy"><p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : 'مرحبًا بك') + '</p><div class="hero-branch">' + ICON.map + '<span>' + esc(b.n) + (b.cityOnly ? '' : ' · ' + (b.codeStatus === 'local_internal_reference' ? 'مرجع داخلي ' : '') + esc(b.c)) + '</span></div></div></section>' +
+    app.innerHTML = '<div class="results-shell wrap"><section class="city-hero' + (hero.creditAnchor ? ' has-photo-credit' : '') + '" aria-label="' + esc(b.city) + '">' + cityHeroMedia(hero) + '<div class="city-hero-copy"><p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : 'مرحبًا بك') + '</p><div class="hero-branch">' + ICON.map + '<span>' + esc(b.n) + (b.cityOnly ? '' : ' · ' + (b.codeStatus === 'local_internal_reference' ? 'مرجع داخلي ' : '') + esc(b.c)) + '</span></div></div></section>' +
       '<div class="page-title"><h1>فرص ' + esc([headingSector, b.city].filter(Boolean).join(' ')) + '</h1><button class="btn change-branch" data-act="change">' + ICON.swap + 'تغيير الفرع</button></div>' +
       '<div class="discovery-controls">' + scopeOptions() + '<div class="search">' + ICON.search + '<input id="q-sec" class="input" type="search" placeholder="' + esc(SEARCH_PH[S.tab]) + '" value="' + esc(S.q[S.tab] || '') + '" aria-label="' + esc(SEARCH_PH[S.tab]) + '"></div></div>' +
       '<div class="stats" role="group" aria-label="الفئات الرئيسية">' + stats + '</div>' + selfbuildLink + '<main class="content" id="content" aria-live="polite"></main></div>';
@@ -1522,9 +1270,9 @@
   var PROPERTY_ILLUSTRATIONS = [GENERIC_PROPERTY_IMAGE, 'assets/images/modern-villa-illustrative.webp', GENERIC_PROPERTY_IMAGE, 'assets/images/modern-villa-illustrative.webp'];
   function imageFallback(kind, o) {
     var type = String(o && o.type || '');
-    if (/شقق|استديو/i.test(type)) return PROPERTY_ILLUSTRATIONS[0];
-    if (/تاون|دوبلكس|متصل/i.test(type)) return PROPERTY_ILLUSTRATIONS[1];
-    if (/فلل|فيلا/i.test(type)) return PROPERTY_ILLUSTRATIONS[3];
+    if (/شقق|استديو/i.test(type)) return 'assets/images/modern-apartments-simple-illustrative.png';
+    if (/تاون|دوبلكس|متصل/i.test(type)) return 'assets/images/modern-villa-simple-illustrative.png';
+    if (/فلل|فيلا/i.test(type)) return 'assets/images/modern-villa-simple-illustrative.png';
     return GENERIC_PROPERTY_IMAGE;
   }
   function ph(title, sub, kind, o) {
@@ -1583,6 +1331,13 @@
     var host = String(o && o.dsite || '').replace(/^https?:\/\//i, '').split('/')[0];
     if (o && o.id === 'P519' && /(^|\.)rakez\.sa$/i.test(host)) return '';
     return o && o.dsite || '';
+  }
+  // Suppress only an exact, reviewed HTTP404 link when a working corporate alternative exists.
+  // Keep the source URL in data; temporary blocks (403/429/timeouts) are not treated as missing pages.
+  function projectPage(o) {
+    var check = o && o.projectPageCheck;
+    if (check && check.url === o.page && check.httpStatus === 404 && check.fallbackHttpStatus === 200 && check.fallbackUrl === o.dsite && validEvidence({source:check.url,checkedAt:check.checkedAt})) return '';
+    return o && o.page || '';
   }
   function projectSiteLabel(o) {
     if (o.siteRole === 'marketer' || (o.marketer && !o.dev)) return 'موقع المسوّق';
@@ -1649,7 +1404,7 @@
   }
   function actions(id, o, cls) {
     var ph = (o.phones || [])[0] || '', wa = o.wa || '';
-    var map = o.maps || o.sales || o.mapsQ, site = o.web || o.page || o.site || o.dsite || o.url || o.contactUrl, h = '';
+    var map = o.maps || o.sales || o.mapsQ, site = o.web || projectPage(o) || o.site || o.dsite || o.url || o.contactUrl, h = '';
     if (map) {
       var mapHost = ''; try { mapHost = new URL(map, window.location.href).hostname.toLowerCase(); } catch (e) { /* validated separately */ }
       var mapIsGoogle = mapHost.indexOf('google.') >= 0 || mapHost === 'maps.app.goo.gl' || mapHost === 'goo.gl';
@@ -1800,10 +1555,11 @@
       if (o.url) links += '<a class="btn primary" target="_blank" rel="noopener" href="' + esc(o.url) + '">' + ICON.web + 'صفحة الوجهة في NHC</a>';
     } else if (k === 'projects' || k === 'opps') {
       rows = [[unclearDeveloperRole(o) ? 'الجهة المرتبطة' : 'المطور', o.dev], ['المسوّق', o.marketer], ['الموقع', o.nb], ['المدينة', o.city], ['نوع الوحدات', o.type], ['الغرف', verifiedField(o, 'rooms')], ['عدد الوحدات', verifiedField(o, 'units')], ['المساحة', verifiedField(o, 'area')], ['تفصيل المساحة', verifiedField(o, 'area') ? o.areaNote : ''], ['حالة الإنشاء', constructionLabel(o)], ['حالة العرض', validEvidence(o.availability) && o.availability.status === 'available' ? 'متاح للبيع وفق المصدر الموثق' : ''], ['رقم التواصل', o.phoneLevel === 'dev' && o.phones && o.phones[0] ? (unclearDeveloperRole(o) ? 'رقم الجهة' : 'رقم المطور') : '']];
-      if (o.page) links += '<a class="btn primary" target="_blank" rel="noopener" href="' + esc(o.page) + '">' + ICON.web + 'صفحة المشروع</a>';
+      var projectPageUrl = projectPage(o);
+      if (projectPageUrl) links += '<a class="btn primary" target="_blank" rel="noopener" href="' + esc(projectPageUrl) + '">' + ICON.web + 'صفحة المشروع</a>';
       if (o.areaSource) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.areaSource) + '">' + ICON.web + 'مصدر المساحة</a>';
       var devSite = developerSite(o);
-      if (devSite && devSite !== o.page) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(devSite) + '">' + ICON.companies + projectSiteLabel(o) + '</a>';
+      if (devSite && devSite !== projectPageUrl) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(devSite) + '">' + ICON.companies + projectSiteLabel(o) + '</a>';
       if (o.sales) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.sales) + '">' + ICON.map + 'مركز المبيعات</a>';
       if (o.contactUrl) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.contactUrl) + '">' + ICON.phone + 'التواصل</a>';
     }
@@ -1843,12 +1599,12 @@
   }
   function shareItem(id, context) {
     var it = REG[id]; if (!it) return; var o = it.o;
-    var text = [o.n, o.dev, [o.nb, o.city].filter(Boolean).join('، '), priceText(o), currentPhone(id, context), o.maps || o.url || o.page || o.web || o.site || ''].filter(Boolean).join('\n');
+    var text = [o.n, o.dev, [o.nb, o.city].filter(Boolean).join('، '), priceText(o), currentPhone(id, context), o.maps || o.url || projectPage(o) || o.web || o.site || developerSite(o) || ''].filter(Boolean).join('\n');
     if (navigator.share) navigator.share({ title: o.n, text: text }).catch(function () { /* cancelled */ }); else copy(text, 'نُسخت بيانات البطاقة');
   }
   function vcard(id, context) {
     var it = REG[id]; if (!it) return; var o = it.o, ph = currentPhone(id, context);
-    var v = ['BEGIN:VCARD', 'VERSION:3.0', 'FN:' + o.n, 'ORG:' + (o.dev || o.n), 'TEL;TYPE=WORK,VOICE:' + ph, (o.web || o.page || o.site) ? 'URL:' + (o.web || o.page || o.site) : '', 'NOTE:' + (o.city || ''), 'END:VCARD'].filter(Boolean).join('\r\n');
+    var v = ['BEGIN:VCARD', 'VERSION:3.0', 'FN:' + o.n, 'ORG:' + (o.dev || o.n), 'TEL;TYPE=WORK,VOICE:' + ph, (o.web || projectPage(o) || o.site || developerSite(o)) ? 'URL:' + (o.web || projectPage(o) || o.site || developerSite(o)) : '', 'NOTE:' + (o.city || ''), 'END:VCARD'].filter(Boolean).join('\r\n');
     try { var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([v], { type: 'text/vcard;charset=utf-8' })); a.download = (o.n || 'contact') + '.vcf'; document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500); }
     catch (e) { copy(ph, 'نُسخ الرقم'); }
   }

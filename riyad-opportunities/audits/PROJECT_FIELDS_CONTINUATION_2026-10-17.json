@@ -1,0 +1,166 @@
+{
+  "changes": [
+    {
+      "id": "P003",
+      "source": "https://sadeem.jadan.sa/",
+      "checkedAt": "2026-10-17T21:10:23.372766+00:00",
+      "savedSourceSha256": "1d2dd00dfb33a9c451390b4ef322ce9c4c99e314b17d521f355e22d0c6ddf5b8",
+      "changes": {
+        "dsite": {
+          "old": "",
+          "new": "https://innovest.com.sa/"
+        },
+        "fieldEvidence": {
+          "old": null,
+          "new": {
+            "totalProjectUnits": {
+              "source": "https://sadeem.jadan.sa/",
+              "checkedAt": "2026-10-17T21:10:23.372766+00:00",
+              "scope": "total_project_units_not_remaining_inventory"
+            }
+          }
+        },
+        "developerWebsiteEvidence": {
+          "old": null,
+          "new": {
+            "source": "https://sadeem.jadan.sa/",
+            "checkedAt": "2026-10-17T21:10:23.372766+00:00",
+            "basis": "Official exact-project footer names شركة الاستثمارات المبتكرة العقارية انوفست and links عن انوفست to this corporate URL. Existing920035351 phone agrees."
+          }
+        },
+        "totalProjectUnits": {
+          "old": null,
+          "new": 491
+        },
+        "units": {
+          "old": null,
+          "new": "491 وحدة (إجمالي المشروع)"
+        },
+        "availability": {
+          "old": null,
+          "new": {
+            "status": "available",
+            "source": "https://sadeem.jadan.sa/",
+            "checkedAt": "2026-10-17T21:10:23.372766+00:00",
+            "sourceStatus": "احجز الآن مع نماذج سكنية وأسعار معلنة",
+            "basis": "Official exact-project sales page advertises three priced residential models and project-specific booking calls to action. Advertised offering only; no live stock count or reservation tested.",
+            "bookingAttempted": false,
+            "sourceType": "official_developer_project_page"
+          }
+        }
+      }
+    },
+    {
+      "id": "P074",
+      "source": "https://arweqah.com.sa/project/arweqah-residences/",
+      "checkedAt": "2026-10-17T21:10:22.326675+00:00",
+      "savedSourceSha256": "a7239d9cb3d45838e01b7920eb4f172c1e92f6da998a3b3157224ac4343cc43a",
+      "changes": {
+        "img": {
+          "old": "https://arweqah.com.sa/wp-content/uploads/2026/01/banner-parkview.webp",
+          "new": "assets/images/projects/verified-arweqah-residences.webp"
+        },
+        "imageSourceUrl": {
+          "old": "https://arweqah.com.sa/",
+          "new": "https://arweqah.com.sa/wp-content/uploads/2025/09/arwqah-residences-featured.webp"
+        },
+        "imageType": {
+          "old": "صورة من أعمال المطور للاستخدام البصري",
+          "new": "صورة المشروع من صفحة المطور الرسمية"
+        },
+        "imageSource": {
+          "old": "المصدر الرسمي للمطور: https://arweqah.com.sa/",
+          "new": "https://arweqah.com.sa/project/arweqah-residences/"
+        },
+        "fieldEvidence": {
+          "old": null,
+          "new": {
+            "projectAreaSqm": {
+              "source": "https://arweqah.com.sa/project/arweqah-residences/",
+              "checkedAt": "2026-10-17T21:10:22.326675+00:00",
+              "scope": "total_project_land_area_not_unit_area"
+            },
+            "totalProjectUnits": {
+              "source": "https://arweqah.com.sa/project/arweqah-residences/",
+              "checkedAt": "2026-10-17T21:10:22.326675+00:00",
+              "scope": "total_project_units_not_remaining_inventory"
+            }
+          }
+        },
+        "totalProjectUnits": {
+          "old": null,
+          "new": 26
+        },
+        "units": {
+          "old": null,
+          "new": "26 وحدة (إجمالي المشروع)"
+        },
+        "projectAreaSqm": {
+          "old": null,
+          "new": 1900
+        }
+      }
+    },
+    {
+      "id": "P123",
+      "source": "https://jinanfadak.sa/projects/jenan-alqateef",
+      "checkedAt": "2026-10-17T21:10:27.580832+00:00",
+      "savedSourceSha256": "7d1bea498e29fc6c8e0eed4ca1e485ffe3481c92fe74f3734fece1d37ffd7833",
+      "changes": {
+        "fieldEvidence": {
+          "old": null,
+          "new": {
+            "totalProjectUnits": {
+              "source": "https://jinanfadak.sa/projects/jenan-alqateef",
+              "checkedAt": "2026-10-17T21:10:27.580832+00:00",
+              "scope": "total_project_units_not_remaining_inventory"
+            }
+          }
+        },
+        "totalProjectUnits": {
+          "old": null,
+          "new": 165
+        },
+        "units": {
+          "old": null,
+          "new": "143 وحدة سكنية و22 معرضًا (إجمالي المشروع)"
+        },
+        "totalResidentialUnits": {
+          "old": null,
+          "new": 143
+        },
+        "totalCommercialUnits": {
+          "old": null,
+          "new": 22
+        }
+      }
+    }
+  ],
+  "held": [
+    {
+      "id": "P089",
+      "reason": "Source403; not retried through alternate route."
+    },
+    {
+      "id": "P148",
+      "reason": "Page now describes دانية وديانا; no unsupported transfer of bank approval or availability to original دانية الحوية."
+    },
+    {
+      "ids": [
+        "P125",
+        "P130",
+        "P131"
+      ],
+      "reason": "General parent project page does not establish phase8/9 stock."
+    },
+    {
+      "ids": [
+        "P142",
+        "P143"
+      ],
+      "reason": "Project designs visible; no explicit current stock established."
+    }
+  ],
+  "bankApprovalChanged": false,
+  "existingPhonesChanged": false
+}

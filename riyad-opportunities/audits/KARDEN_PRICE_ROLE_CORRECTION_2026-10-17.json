@@ -1,0 +1,205 @@
+{
+  "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+  "checkedAt": "2026-10-17T21:36:36.889274+00:00",
+  "savedSourceSha256": "8ee54b98168aacda306119622b434f5ee49afac1a520d9fdd82656fe47f7bca4",
+  "changes": [
+    {
+      "id": "P-karden25-abha",
+      "file": "projects",
+      "changes": {
+        "rooms": {
+          "old": "6 غرف",
+          "new": "3 غرف نوم"
+        },
+        "units": {
+          "old": "40 شقة",
+          "new": "40 شقة (إجمالي المشروع)"
+        },
+        "price": {
+          "old": 406000,
+          "new": null
+        },
+        "investmentEstimateSar": {
+          "old": null,
+          "new": 406000
+        },
+        "investmentEstimateBasis": {
+          "old": null,
+          "new": "starting_estimated_investment_not_unit_sale_price"
+        },
+        "totalProjectUnits": {
+          "old": null,
+          "new": 40
+        },
+        "totalRooms": {
+          "old": null,
+          "new": 6
+        },
+        "fieldEvidence": {
+          "old": null,
+          "new": {
+            "investmentEstimateSar": {
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T21:36:36.889274+00:00",
+              "scope": "published_estimated_investment_not_a_sale_price"
+            },
+            "rooms": {
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T21:36:36.889274+00:00",
+              "scope": "3bedrooms_within_6total_rooms_in_published_apartment_model"
+            },
+            "totalProjectUnits": {
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T21:36:36.889274+00:00",
+              "scope": "total_project_units_not_remaining_inventory"
+            }
+          }
+        },
+        "sourceHistory": {
+          "old": null,
+          "new": [
+            {
+              "field": "price",
+              "value": 406000,
+              "reason": "Retained under investmentEstimateSar because exact official label is estimated investment, not apartment selling price.",
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T21:36:36.889274+00:00"
+            }
+          ]
+        },
+        "pageSource": {
+          "old": null,
+          "new": "الموقع الرسمي: قيد التنفيذ، 40 شقة، ويذكر حجم استثمار تقديري يبدأ من 406000 ريال؛ ليس سعر بيع موثقًا للشقة."
+        }
+      }
+    },
+    {
+      "id": "op-karden25-abha",
+      "file": "opportunities",
+      "changes": {
+        "units": {
+          "old": "40 شقة",
+          "new": "40 شقة (إجمالي المشروع)"
+        },
+        "price": {
+          "old": 406000,
+          "new": null
+        },
+        "pageSource": {
+          "old": "الموقع الرسمي: المشروع قيد التنفيذ، 40 شقة، يبدأ السعر من 406,000 ريال، ويتضمن نموذج استفسار وحجز.",
+          "new": "الموقع الرسمي: قيد التنفيذ، 40 شقة، ويذكر حجم استثمار تقديري يبدأ من 406000 ريال؛ ليس سعر بيع موثقًا للشقة."
+        },
+        "sourceHistory": {
+          "old": [
+            {
+              "field": "location",
+              "value": {
+                "lat": null,
+                "lon": null,
+                "loc": null,
+                "maps": "https://www.google.com/maps/search/?api=1&query=18.2738305%2C42.6494783"
+              },
+              "changedAt": "2026-10-17T14:51:00Z",
+              "reason": "Dedicated developer project map resolves to explicit numeric query point, not viewport coordinates."
+            }
+          ],
+          "new": [
+            {
+              "field": "location",
+              "value": {
+                "lat": null,
+                "lon": null,
+                "loc": null,
+                "maps": "https://www.google.com/maps/search/?api=1&query=18.2738305%2C42.6494783"
+              },
+              "changedAt": "2026-10-17T14:51:00Z",
+              "reason": "Dedicated developer project map resolves to explicit numeric query point, not viewport coordinates."
+            },
+            {
+              "field": "price",
+              "value": 406000,
+              "reason": "Retained under investmentEstimateSar because exact official label is estimated investment, not apartment selling price.",
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T21:36:36.889274+00:00"
+            }
+          ]
+        },
+        "fieldEvidence": {
+          "old": {
+            "lat": {
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T14:49:00Z",
+              "scope": "official_project_map_pin"
+            },
+            "lon": {
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T14:49:00Z",
+              "scope": "official_project_map_pin"
+            },
+            "maps": {
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T14:49:00Z",
+              "scope": "official_project_map_pin"
+            }
+          },
+          "new": {
+            "lat": {
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T14:49:00Z",
+              "scope": "official_project_map_pin"
+            },
+            "lon": {
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T14:49:00Z",
+              "scope": "official_project_map_pin"
+            },
+            "maps": {
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T14:49:00Z",
+              "scope": "official_project_map_pin"
+            },
+            "investmentEstimateSar": {
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T21:36:36.889274+00:00",
+              "scope": "published_estimated_investment_not_a_sale_price"
+            },
+            "rooms": {
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T21:36:36.889274+00:00",
+              "scope": "3bedrooms_within_6total_rooms_in_published_apartment_model"
+            },
+            "totalProjectUnits": {
+              "source": "https://www.karden-ksa.com/projects/%D9%83%D8%A7%D8%B1%D8%AF%D9%86-25",
+              "checkedAt": "2026-10-17T21:36:36.889274+00:00",
+              "scope": "total_project_units_not_remaining_inventory"
+            }
+          }
+        },
+        "investmentEstimateSar": {
+          "old": null,
+          "new": 406000
+        },
+        "investmentEstimateBasis": {
+          "old": null,
+          "new": "starting_estimated_investment_not_unit_sale_price"
+        },
+        "totalProjectUnits": {
+          "old": null,
+          "new": 40
+        },
+        "rooms": {
+          "old": null,
+          "new": "3 غرف نوم"
+        },
+        "totalRooms": {
+          "old": null,
+          "new": 6
+        }
+      }
+    }
+  ],
+  "originalAmountPreserved": true,
+  "phonesUnchanged": true,
+  "mapUnchanged": true,
+  "availabilityNotInferred": true
+}

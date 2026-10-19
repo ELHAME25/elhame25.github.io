@@ -81,3 +81,10 @@ dialog.detail{padding:0;border:0;border-radius:17px;width:min(760px,calc(100vw -
 
 /* Arabic scoped count reads right-to-left without changing numeric cards. */
 .stat .num.nhc-stat-count{direction:rtl;unicode-bidi:isolate;}
+
+/* Linked photo credits: no caption or visible source button; preserve hero dimensions. */
+.city-hero.has-photo-credit>.city-photo-credit{position:absolute;inset:0;display:block;z-index:0}
+.city-photo-credit>img,.city-photo-credit>.city-photo{position:absolute;inset:0;width:100%;height:100%}
+.city-hero.has-photo-credit:after{z-index:1;pointer-events:none}
+.city-hero.has-photo-credit>.city-hero-copy{position:relative;z-index:2;pointer-events:none}
+.city-photo-credit:focus-visible{outline:3px solid #fff;outline-offset:-5px}
