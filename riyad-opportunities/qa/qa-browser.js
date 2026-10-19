@@ -118,19 +118,13 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
   await entryContext.close();
  }
  // All city-specific real-data heroes, with no cross-city substitution.
- const expectedCityHeroes={
- 'الرياض':'assets/images/city-riyadh.webp','بريدة':'assets/images/city-buraidah-illustrative.webp',
- 'الباحة':'assets/images/cities/al-baha-cc0.webp','الخبر':'assets/images/cities/khobar-pexels.webp',
- 'جدة':'assets/images/cities/jeddah-pexels-night.webp','الظهران':'assets/images/cities/dhahran-pexels.webp',
- 'الجبيل':'assets/images/cities/jubail-pexels.webp','ينبع':'assets/images/cities/yanbu-pexels.webp'
- };
  const appSource=fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
- // These established CC0/PD paths remain the app's reviewed city sources.
  const archived=appSource.match(/var CITY_IMAGE_ARCHIVE = (\{[\s\S]*?\});/);assert(archived);
- const archiveRows=JSON.parse(archived[1]);expectedCityHeroes['أبها']=archiveRows['أبها'].src;expectedCityHeroes['مكة المكرمة']=archiveRows['مكة المكرمة'].src;
- expectedCityHeroes['المدينة المنورة']='assets/images/cities/madinah-panorama.webp';
- const generatedCities=JSON.parse(fs.readFileSync(path.join(root,'assets/images/cities/generated-identities.json'),'utf8')).assets;
- for(const x of generatedCities)expectedCityHeroes[x.city]=x.file;
+ const archiveRows=JSON.parse(archived[1]);
+ const activeHeroMatch=appSource.match(/var CITY_HERO_ASSETS = (\{[\s\S]*?\});/);assert(activeHeroMatch);
+ const activeHeroes=require('vm').runInNewContext('('+activeHeroMatch[1]+')',{CITY_IMAGE_ARCHIVE:archiveRows});
+ Object.assign(activeHeroes,entryCityHeroes);
+ const expectedCityHeroes=Object.fromEntries(Object.entries(activeHeroes).map(([city,asset])=>[city,asset.src]));
  const displayedCities=[...new Set(branchData.map(x=>x.city))];
  for(const city of displayedCities)assert(expectedCityHeroes[city],'Missing own-city image: '+city);
  for(const width of [1440,390]){
