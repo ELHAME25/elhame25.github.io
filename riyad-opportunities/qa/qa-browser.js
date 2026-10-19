@@ -156,7 +156,7 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
  // Fault injection: official photos and both bundled property images unavailable.
  const imageFaultContext=await browser.newContext({viewport:{width:390,height:844}});const imageFaultPage=await imageFaultContext.newPage();
  imageFaultPage.on('pageerror',e=>pageErrors.push(e.message));
- await imageFaultPage.route('**/*',route=>{const req=route.request(),u=req.url();return req.resourceType()==='image'&&(u.includes('/modern-apartments-illustrative.webp')||u.includes('/modern-villa-illustrative.webp')||!u.startsWith(origin))?route.abort():route.continue();});
+ await imageFaultPage.route('**/*',route=>{const req=route.request(),u=req.url();return req.resourceType()==='image'&&(u.includes('/assets/images/projects/')||/\/modern-(?:apartments|villa)(?:-simple)?-illustrative\.(?:webp|png)/.test(u)||!u.startsWith(origin))?route.abort():route.continue();});
  await imageFaultPage.goto(origin+'/#b243');await imageFaultPage.waitForSelector('.stat');await imageFaultPage.click('[data-tab="opps"]');await imageFaultPage.locator('#content img[data-generic="1"]').evaluateAll(nodes=>nodes.forEach(i=>i.loading='eager'));
  await imageFaultPage.waitForFunction(()=>{const list=[...document.querySelectorAll('#content img[data-generic="1"]')];return list.length>0&&list.every(i=>i.src.startsWith('data:image/webp;base64,')&&i.complete&&i.naturalWidth>0);});
  assert.equal(await imageFaultPage.locator('.image-caption:visible,.decorative-caption:visible').count(),0);
