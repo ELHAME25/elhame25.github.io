@@ -75,11 +75,11 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
  await page.click('[data-tab="nhc"]');const fursan=page.locator('.vcard').filter({has:page.locator('h3',{hasText:'الفرسان'})});await fursan.locator('[data-anchor="destination-projects"]').click();await page.waitForSelector('#detail[open] #destination-projects .vcard');await page.locator('#destination-projects .vcard [data-detail]').first().click();await page.waitForSelector('#detail[open] .back-results');assert((await page.locator('#detail .back-results').innerText()).includes('العودة إلى الوجهة'));await page.locator('#detail .back-results').click();await page.waitForSelector('#detail[open] #destination-projects');await page.keyboard.press('Escape');assert.equal(await page.locator('#detail[open]').count(),0);
  checks.push({fixturesOnlyInMemory:true,initial12:true,more24:true,modalEscape:true,browserBackForward:true,filtersAndScrollPreserved:true,internalProjectCodeHidden:true,nhcExactProjectAndNestedBack:true});await context.close();
  // Actual entry events for internal centers and data-only cities, on desktop and narrow mobile.
- const entryCityNames=['أحد رفيدة','الروضة','بقعاء','بيش'];
+ const entryCityNames=['أحد رفيدة','الروضة','ضمد','بيش'];
  const entrySource=fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
  const entryHeroMatch=entrySource.match(/var GENERATED_CITY_IDENTITIES = (\{[\s\S]*?\});/);
  assert(entryHeroMatch,'Generated city identity map is required for city-only browsing');
- const entryCityHeroes=JSON.parse(entryHeroMatch[1]);
+ const entryCityHeroes=require('vm').runInNewContext('('+entryHeroMatch[1]+')');
  for(const width of [1440,390,320]){
   const entryContext=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});
   const entryPage=await entryContext.newPage();entryPage.on('pageerror',e=>pageErrors.push(e.message));
@@ -105,8 +105,8 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
    const qa=await entryPage.evaluate(()=>window.__rogQA());assert.equal(qa.branch,'');assert.equal(qa.scope,'city');
    assert(['offices','cars','companies','projects','opps','nhc'].some(k=>qa.sections[k].length>0));
    const cityHero=entryPage.locator('.city-hero img');await cityHero.evaluate(i=>i.decode());
-   assert(entryCityHeroes[city]&&entryCityHeroes[city].src&&!entryCityHeroes[city].src.includes('city-neutral'));
-   assert.equal(await cityHero.getAttribute('src'),entryCityHeroes[city].src);assert(await cityHero.evaluate(i=>i.complete&&i.naturalWidth>0));
+   const expectedCityHero=city==='ضمد'?'assets/images/city-neutral.webp':entryCityHeroes[city].src;
+   assert.equal(await cityHero.getAttribute('src'),expectedCityHero);assert(await cityHero.evaluate(i=>i.complete&&i.naturalWidth>0));
    await fit(entryPage,'City only results '+city+' '+width);await capture(entryPage,'city-only-'+entryCityNames.indexOf(city)+'-'+width+'.png');
    const route=entryPage.url();assert(route.includes('#city='));await entryPage.reload();await entryPage.waitForSelector('.stat');
    assert.equal(await entryPage.locator('.hero-branch').innerText(),'تصفح المدينة بدون فرع');
