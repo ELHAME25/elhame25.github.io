@@ -13,3 +13,5 @@
 - Public “تعرّف على إلهامي” page describes purpose only. Feature clicks require sign-in; creating sessions, viewing private pages and opening rooms have guards. Database RLS remains the actual cloud authorization boundary.
 - Font: IBM Plex Sans Arabic Regular (unmodified original, SIL OFL 1.1) is used temporarily. It is NOT Thmanyah. The official Thmanyah license allows design/web products but prohibits independently accessible hosted font files. Exact Thmanyah web embedding remains unresolved; do not claim it is active. Source: https://font.thmanyah.com/licenses
 - Terms and privacy body text retained for user review. No new claims of zero operator access or automatic AI summaries.
+
+Approved hero 2026-10-24: assets/elhami-reflection-v1.webp. Individual note, pencil, small black coffee; central R; three small men in dialogue around a lightbulb. Exact wording: نقرأ فتتّسع رؤيتنا، ونتحاور فيتعمّق فهمنا، ونكتب ليبقى الأثر. Used in welcome and signed-in dashboard. No auth behavior changed.
