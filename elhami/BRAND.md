@@ -29,3 +29,7 @@ Approved wordmark spelling: إلهامــي (extension between meem and ya). Up
 Hero v5: differentiated ages/face shapes and grooming; older central man in shemagh, casual left speaker with softer gaze, right note-holder in plain thobe and glasses. Inspected enlarged face crop before deployment. Other identity, quote and auth behavior unchanged.
 
 Hero v6 correction: local eye repair, older central face and preserved right note-holder. Quote is exact Arabic SVG text with self-contained licensed font, embedded inside artwork. Rejected v5 not published.
+
+Hero v6 correction: local eye repair, older central face and preserved right note-holder. Quote is exact Arabic SVG text with self-contained licensed font, embedded inside artwork. Rejected v5 not published.
+
+Hero v7: removed flawed painted eye/skin patches; retained clean original skin and eyelids, adjusted iris pixels by localized displacement only, no new generation. Exact SVG quote unchanged.
