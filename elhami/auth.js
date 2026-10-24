@@ -67,7 +67,7 @@ function account(){
   session=null;document.body.classList.remove('signed-in');window.dispatchEvent(new Event('elhami-account'));localStorage.removeItem('elhami-auth-session');q('#modal').close();document.body.classList.add('auth-screen');profile.textContent='تسجيل الدخول';form('login');
  };
 }
-function terms(){modal('شروط الاستخدام','<p>إلهامي مساحة للقراءة والتأمل والنقاش المعرفي. يُمنع تناول الدين والسياسة والجنس، والإساءة أو انتهاك حقوق الآخرين.</p><p>لا تُرفع إلا مواد لديك حق استخدامها. لا تمثل الملاحظات والمناقشات توصيات مالية شخصية أو تشخيصًا طبيًا.</p><p>قد تفقد البيانات المحفوظة محليًا عند مسح بيانات المتصفح.</p>');}
+function terms(){modal('شروط الاستخدام','<p>إلهامــي مساحة للقراءة والتأمل والحوار المعرفي والثقافي.</p><p>الآراء والمعلومات التي يطرحها المشاركون تعبّر عن أصحابها، ولا تعبّر بالضرورة عن وجهة نظر إدارة إلهامــي.</p><p>يتحمّل كل مشارك مسؤولية ما يطرحه، مع الالتزام باحترام الآخرين وحقوقهم وحقوق المؤلفين.</p><p>حفاظًا على طابع إلهامــي المعرفي والثقافي، تُستثنى من موضوعات الحوار القضايا الدينية والسياسية والجنسية.</p>');}
 function privacy(){window.elhamiPrivacy();}
 q('#login-tab').onclick=()=>form('login');q('#signup-tab').onclick=()=>form('signup');
 q('#explore').onclick=()=>{document.body.classList.remove('auth-screen');document.body.classList.add('browse-mode');page(session?'home':'about');};
