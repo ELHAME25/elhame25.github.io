@@ -33,3 +33,13 @@ Hero v6 correction: local eye repair, older central face and preserved right not
 Hero v6 correction: local eye repair, older central face and preserved right note-holder. Quote is exact Arabic SVG text with self-contained licensed font, embedded inside artwork. Rejected v5 not published.
 
 Hero v7: removed flawed painted eye/skin patches; retained clean original skin and eyelids, adjusted iris pixels by localized displacement only, no new generation. Exact SVG quote unchanged.
+
+Hero v6 correction: local eye repair, older central face and preserved right note-holder. Quote is exact Arabic SVG text with self-contained licensed font, embedded inside artwork. Rejected v5 not published.
+
+Hero v6 correction: local eye repair, older central face and preserved right note-holder. Quote is exact Arabic SVG text with self-contained licensed font, embedded inside artwork. Rejected v5 not published.
+
+Hero v6 correction: local eye repair, older central face and preserved right note-holder. Quote is exact Arabic SVG text with self-contained licensed font, embedded inside artwork. Rejected v5 not published.
+
+Hero v6 correction: local eye repair, older central face and preserved right note-holder. Quote is exact Arabic SVG text with self-contained licensed font, embedded inside artwork. Rejected v5 not published.
+
+Hero v8: adjusted both complete head angles and central head height to align mutual eye contact. Original right note-holder and exact SVG quote retained. No generative edit used for this revision.
