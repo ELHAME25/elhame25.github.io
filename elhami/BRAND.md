@@ -19,3 +19,5 @@ Approved hero 2026-10-24: assets/elhami-reflection-v1.webp. Individual note, pen
 2026-10-24 revision: v2 image has one Saudi man in shemagh; quote restored inside artwork per final user request. No table/books added to compact group. Verified device sessions persist in localStorage and remain server-validated; email alone never grants access.
 
 UI review: explore label is تعرّف على الموقع. Readex Pro variable font from google/fonts, embedded with OFL license; NOT Thmanyah. Final v3: left speaker casual shirt unchanged, center listener white thobe without headwear, right listener white thobe and red-white shemagh. Both look toward left speaker. Quote is embedded in note paper; reviewed visually.
+
+Final clarified v4 arrangement: left discussion leader keeps casual shirt; center man wears white thobe and shemagh, eyes toward leader; right man holds paper, white thobe, no shemagh. Only headwear and note-holder corrected.
