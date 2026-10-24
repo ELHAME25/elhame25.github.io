@@ -15,3 +15,7 @@
 - Terms and privacy body text retained for user review. No new claims of zero operator access or automatic AI summaries.
 
 Approved hero 2026-10-24: assets/elhami-reflection-v1.webp. Individual note, pencil, small black coffee; central R; three small men in dialogue around a lightbulb. Exact wording: نقرأ فتتّسع رؤيتنا، ونتحاور فيتعمّق فهمنا، ونكتب ليبقى الأثر. Used in welcome and signed-in dashboard. No auth behavior changed.
+
+2026-10-24 revision: v2 image has one Saudi man in shemagh; quote restored inside artwork per final user request. No table/books added to compact group. Verified device sessions persist in localStorage and remain server-validated; email alone never grants access.
+
+UI review: explore label is تعرّف على الموقع. Readex Pro variable font from google/fonts, embedded with OFL license; NOT Thmanyah. Final v3: left speaker casual shirt unchanged, center listener white thobe without headwear, right listener white thobe and red-white shemagh. Both look toward left speaker. Quote is embedded in note paper; reviewed visually.
