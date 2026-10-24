@@ -57,7 +57,8 @@ async function resume(stored){
  await signIn(stored);
 }
 function account(){
- modal('حسابك',`<p>${esc(session.user.user_metadata?.name||'عضو إلهامي')}</p><p dir="ltr">${esc(session.user.email)}</p><p class="muted">تُحفظ لقاءاتك ومراجعاتك ومراجعك في حسابك. صورتك الشخصية محفوظة في هذا المتصفح فقط.</p><button class="secondary" id="edit-avatar">الصورة الشخصية</button> <button class="secondary" id="logout">تسجيل الخروج</button>`);
+ modal('حسابك',`<p>${esc(session.user.user_metadata?.name||'عضو إلهامي')}</p><p dir="ltr">${esc(session.user.email)}</p><p class="muted">اربط مساحتك الخاصة لحفظ المحتوى مشفّرًا في Google Drive. صورتك الشخصية محفوظة في هذا المتصفح فقط.</p><button class="secondary" id="account-storage">إدارة التخزين</button> <button class="secondary" id="edit-avatar">الصورة الشخصية</button> <button class="secondary" id="logout">تسجيل الخروج</button>`);
+ q('#account-storage').onclick=()=>window.elhamiCloud.show();
  q('#edit-avatar').onclick=()=>window.elhamiProfile?.open();
  q('#logout').onclick=async()=>{
   try{await window.elhamiCloud.deactivate();}catch(e){toast(e.message);return;}
@@ -67,7 +68,7 @@ function account(){
  };
 }
 function terms(){modal('شروط الاستخدام','<p>إلهامي مساحة للقراءة والتأمل والنقاش المعرفي. يُمنع تناول الدين والسياسة والجنس، والإساءة أو انتهاك حقوق الآخرين.</p><p>لا تُرفع إلا مواد لديك حق استخدامها. لا تمثل الملاحظات والمناقشات توصيات مالية شخصية أو تشخيصًا طبيًا.</p><p>قد تفقد البيانات المحفوظة محليًا عند مسح بيانات المتصفح.</p>');}
-function privacy(){modal('سياسة الخصوصية','<p>يُستخدم الاسم والإيميل لإنشاء حساب وإرسال رابط دخول عبر مزود الحسابات والبريد. لا نطلب جوالًا أو كلمة مرور بريدك.</p><p>عند تسجيل الدخول، تُحفظ اللقاءات والمراجعات والمراجع التي تختار حفظها في حسابك لدى Supabase. يستطيع مالك الخدمة إدارتها. عند التصفح دون حساب تبقى البيانات في هذا المتصفح. لا يُسجَّل الصوت ولا يُرسل أثناء اختبار الميكروفون. قد تحتفظ جهة الاستضافة بسجلات الوصول التقنية.</p><p>يحفظ هذا الجهاز جلسة دخولك لتعود إلى حسابك دون طلب رابط كل مرة؛ يمكنك إنهاؤها من تسجيل الخروج. لا توجد رسائل تسويقية مفعّلة. يمكنك تنزيل بياناتك أو مسح محتوى مساحتك من «الخصوصية وإدارة البيانات». تُحدَّث هذه السياسة قبل تفعيل الخدمات الإضافية.</p>');}
+function privacy(){window.elhamiPrivacy();}
 q('#login-tab').onclick=()=>form('login');q('#signup-tab').onclick=()=>form('signup');
 q('#explore').onclick=()=>{document.body.classList.remove('auth-screen');document.body.classList.add('browse-mode');page(session?'home':'about');};
 form('login');
