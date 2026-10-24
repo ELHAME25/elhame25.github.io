@@ -11,3 +11,5 @@ header>a>img{mix-blend-mode:multiply}
 .brand-figure{position:relative;container-type:inline-size;margin:0;width:100%}.welcome-copy .brand-figure{margin-top:22px}.welcome-copy .brand-figure .brand-art{margin-top:0}.paper-quote{position:absolute;left:8.2%;top:55.5%;width:16.5%;transform:rotate(-14deg);transform-origin:top left;color:#294759;font-size:1.12cqw;line-height:1.65;text-align:right;font-weight:400}.paper-quote span{display:block;white-space:nowrap}@media(max-width:760px){.welcome-copy .brand-figure{margin-top:12px}}
 
 @font-face{font-family:"Readex Pro";src:url("assets/readex-pro-variable.ttf") format("truetype");font-style:normal;font-weight:160 700;font-display:swap}body{font-family:"Readex Pro",Arial,sans-serif;font-weight:350}.welcome-copy h1{font-size:32px!important;letter-spacing:0;font-weight:400}.auth-card h2{font-size:21px!important}.auth-tabs button{font-size:14px}.paper-quote{font-size:1.02cqw;line-height:1.8;font-weight:350}@media(max-width:760px){.welcome-copy h1{font-size:27px!important}}
+
+header>a>img[src*="logo-extended"]{mix-blend-mode:normal}header{background:var(--paper)}
