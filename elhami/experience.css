@@ -13,3 +13,6 @@ header>a>img{mix-blend-mode:multiply}
 @font-face{font-family:"Readex Pro";src:url("assets/readex-pro-variable.ttf") format("truetype");font-style:normal;font-weight:160 700;font-display:swap}body{font-family:"Readex Pro",Arial,sans-serif;font-weight:350}.welcome-copy h1{font-size:32px!important;letter-spacing:0;font-weight:400}.auth-card h2{font-size:21px!important}.auth-tabs button{font-size:14px}.paper-quote{font-size:1.02cqw;line-height:1.8;font-weight:350}@media(max-width:760px){.welcome-copy h1{font-size:27px!important}}
 
 header>a>img[src*="logo-extended"]{mix-blend-mode:normal}header{background:var(--paper)}
+
+/* Unified warm ivory canvas and artwork. */
+:root{--paper:#f6f2e9}body{background:radial-gradient(ellipse at 85% 5%,#c9bea51c,transparent 60%),var(--paper)}header{background:transparent}.brand-art{mix-blend-mode:multiply}.auth-card{background:#faf7f0!important;border-color:#d9d0bd!important}header>a>img[src*="logo-extended"]{mix-blend-mode:darken}
