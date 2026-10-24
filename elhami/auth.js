@@ -17,10 +17,20 @@ function state(message){const el=q('#auth-error');if(el)el.textContent=message;}
 function form(m){
  mode=m;pending=null;clearInterval(interval);
  q('#login-tab').classList.toggle('selected',m==='login');q('#signup-tab').classList.toggle('selected',m==='signup');
- q('#auth-content').innerHTML=`<h2>${m==='signup'?'ابدأ حسابك':'سعيدون بعودتك'}</h2><p class="muted">${m==='signup'?'اسمك وإيميلك، ثم رابط واحد للدخول.':'أدخل إيميلك ليصلك رابط الدخول.'}</p><form id="auth-form">${m==='signup'?'<label for="signup-name">الاسم</label><input id="signup-name" autocomplete="name" required minlength="2" maxlength="60">':''}<label for="auth-email">الإيميل</label><input id="auth-email" type="email" autocomplete="email" required maxlength="254" dir="ltr" placeholder="name@example.com">${m==='signup'?'<label class="check"><input id="auth-agree" type="checkbox" required> أوافق على شروط الاستخدام، واطّلعت على سياسة الخصوصية</label>':''}<button class="primary" id="send-link">إرسال رابط الدخول</button><p class="error" role="status" id="auth-error"></p></form><div class="auth-links"><button class="text-btn" id="terms-link">شروط الاستخدام</button> · <button class="text-btn" id="privacy-link">سياسة الخصوصية</button></div>`;
+ q('#auth-content').innerHTML=`<h2>${m==='signup'?'ابدأ حسابك':'سعيدون بعودتك'}</h2><p class="muted">${m==='signup'?'اسمك وإيميلك، ثم رسالة لتأكيد حسابك.':'أدخل إيميلك للدخول.'}</p><form id="auth-form">${m==='signup'?'<label for="signup-name">الاسم</label><input id="signup-name" autocomplete="name" required minlength="2" maxlength="60">':''}<label for="auth-email">الإيميل</label><input id="auth-email" type="email" autocomplete="email" required maxlength="254" dir="ltr" placeholder="name@example.com">${m==='signup'?'<label class="check"><input id="auth-agree" type="checkbox" required> أوافق على شروط الاستخدام، واطّلعت على سياسة الخصوصية</label>':''}<button class="primary" id="send-link">${m==='signup'?'إرسال رابط التأكيد':'دخول'}</button><p class="error" role="status" id="auth-error"></p><button type="button" class="text-btn" id="verify-device" hidden>تأكيد الدخول على هذا الجهاز</button></form><div class="auth-links"><button class="text-btn" id="terms-link">شروط الاستخدام</button> · <button class="text-btn" id="privacy-link">سياسة الخصوصية</button></div>`;
  q('#terms-link').onclick=terms;q('#privacy-link').onclick=privacy;
+ if(m==='login')try{q('#auth-email').value=localStorage.getItem('elhami-remembered-email')||'';}catch{}
+ q('#verify-device').onclick=async()=>{if(pending?.mode==='login'&&q('#auth-form').reportValidity()){pending.email=q('#auth-email').value.trim();await send();}};
  q('#auth-form').onsubmit=async e=>{e.preventDefault();if(!ready()||cfg.emailLinkReady===false){state('خدمة الدخول بالبريد غير متاحة حاليًا.');return;}
- pending={email:q('#auth-email').value.trim(),name:m==='signup'?q('#signup-name').value.trim():'',mode:m};await send();};
+ pending={email:q('#auth-email').value.trim(),name:m==='signup'?q('#signup-name').value.trim():'',mode:m};
+ if(m==='login'){
+  let stored;try{stored=JSON.parse(localStorage.getItem('elhami-auth-session'));}catch{}
+  if(stored?.access_token&&stored.user?.email?.toLowerCase()===pending.email.toLowerCase()){
+   try{await resume(stored);return;}catch{}
+  }
+  state('هذا الجهاز غير معتمد أو انتهت جلسة دخوله. أكّد الدخول مرة واحدة لحماية حسابك.');q('#verify-device').hidden=false;return;
+ }
+ await send();};
 }
 async function send(){
  const button=q('#send-link')||q('#resend-link');if(button)button.disabled=true;
@@ -28,7 +38,7 @@ async function send(){
  catch(e){state(e.message);}finally{if(button?.isConnected)button.disabled=false;}
 }
 function sent(){
- q('#auth-content').innerHTML=`<h2>تحقّق من إيميلك</h2><p>أرسلنا رابط الدخول إلى<br><b dir="ltr">${esc(pending.email)}</b></p><p class="muted">اضغط الرابط في الرسالة لتفتح حسابك في إلهامي. إذا لم تجدها، تحقّق من البريد غير المرغوب فيه.</p><p class="error" role="status" id="auth-error"></p><button class="text-btn" id="resend-link" disabled></button><br><button class="text-btn" id="change-email">تعديل الإيميل</button>`;
+ q('#auth-content').innerHTML=`<h2>تحقّق من إيميلك</h2><p>أرسلنا ${pending.mode==='signup'?'رابط التأكيد':'رابط الدخول'} إلى<br><b dir="ltr">${esc(pending.email)}</b></p><p class="muted">اضغط الرابط في الرسالة لتفتح حسابك في إلهامي. إذا لم تجدها، تحقّق من البريد غير المرغوب فيه.</p><p class="error" role="status" id="auth-error"></p><button class="text-btn" id="resend-link" disabled></button><br><button class="text-btn" id="change-email">تعديل الإيميل</button>`;
  cooldown=60;const tick=()=>{const b=q('#resend-link');if(!b){clearInterval(interval);return;}b.disabled=cooldown>0;b.textContent=cooldown>0?'إعادة الإرسال بعد '+cooldown+' ثانية':'إعادة إرسال الرابط';cooldown--;if(cooldown<0)clearInterval(interval);};
  clearInterval(interval);tick();interval=setInterval(tick,1000);q('#resend-link').onclick=send;q('#change-email').onclick=()=>form(mode);
 }
@@ -36,7 +46,7 @@ async function signIn(data){
  // The user endpoint validates the token; no URL claim or email alone grants access.
  const user=await call('user',null,data.access_token);
  const verified={...data,user};await window.elhamiCloud.activate(cfg,verified);
- session=verified;localStorage.setItem('elhami-auth-session',JSON.stringify(verified));render();profile.textContent=db.name;window.dispatchEvent(new Event('elhami-account'));clearInterval(interval);document.body.classList.add('signed-in');document.body.classList.remove('auth-screen','browse-mode');page('home');
+ session=verified;localStorage.setItem('elhami-auth-session',JSON.stringify(verified));localStorage.setItem('elhami-remembered-email',user.email||'');render();profile.textContent=db.name;window.dispatchEvent(new Event('elhami-account'));clearInterval(interval);document.body.classList.add('signed-in');document.body.classList.remove('auth-screen','browse-mode');page('home');
 }
 async function resume(stored){
  if(!stored?.access_token)return;
