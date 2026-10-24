@@ -25,3 +25,7 @@ Final clarified v4 arrangement: left discussion leader keeps casual shirt; cente
 Login copy: أدخل إيميلك للدخول / دخول. Signup copy: رسالة لتأكيد حسابك / إرسال رابط التأكيد. Remember validated email locally. Login itself sends no email; a fresh/untrusted device offers explicit separate verification. Never grant account access from an email string alone.
 
 Approved wordmark spelling: إلهامــي (extension between meem and ya). Updated asset assets/logo-extended-v2.webp uses page ivory rather than white rectangle and retains R symbol.
+
+Hero v5: differentiated ages/face shapes and grooming; older central man in shemagh, casual left speaker with softer gaze, right note-holder in plain thobe and glasses. Inspected enlarged face crop before deployment. Other identity, quote and auth behavior unchanged.
+
+Hero v6 correction: local eye repair, older central face and preserved right note-holder. Quote is exact Arabic SVG text with self-contained licensed font, embedded inside artwork. Rejected v5 not published.
