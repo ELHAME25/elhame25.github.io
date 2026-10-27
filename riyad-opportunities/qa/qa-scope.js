@@ -21,7 +21,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  if(kind==='companies') expected=city;
  else if(kind==='offices'&&sectorCity&&b.sec)expected=city.filter(x=>(x.o.sectors||[x.o.sec]).includes(b.sec));
  else if((kind==='projects'||kind==='opps')&&sectorCity&&b.sec&&A.state().scope!=='city')expected=city.filter(x=>(x.o.sectors||(x.o.sec?[x.o.sec]:[])).includes(b.sec));
- else if(kind==='nhc'&&sectorCity&&b.sec&&A.state().scope!=='city')expected=city.filter(x=>(x.o.serviceSectors||x.o.sectors||(x.o.sec?[x.o.sec]:[])).includes(b.sec));
+ else if(kind==='nhc'&&sectorCity&&b.sec&&A.state().scope!=='city')expected=city.filter(x=>(x.o.sectors||(x.o.sec?[x.o.sec]:[])).includes(b.sec));
  else if(kind==='cars'&&sectorCity&&b.sec&&!A.sameCity(b.city,'الرياض'))expected=city.filter(x=>(x.o.sectors||[x.o.sec]).includes(b.sec)); // Riyadh city query retains the same selected showroom group; baseline comparison separately locks all car scopes.
  const foreign=vis.filter(x=>!A.sameCity(x.o.city,b.city)&&!(kind==='companies'&&(x.cityOnly||x.explicitCityCoverage||(x.o.coverageCities||[]).some(c=>A.sameCity(c,b.city)))));
  const invalid=kind==='offices'&&applies?vis.filter(x=>x.rankD==null||x.rankD>15):[];

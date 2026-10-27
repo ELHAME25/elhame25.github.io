@@ -162,7 +162,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
   // NHC destinations stay separate from project rows and follow the selected sector.
   A.selectBranch('243', true); A.state().scope = 'branch'; A.state().tab = 'nhc';
-  const expectedNHC = sec => d.nhc.filter(o => o.city === 'الرياض' && (!sec || (o.serviceSectors || o.sectors || [o.sec]).includes(sec)));
+  const expectedNHC = sec => d.nhc.filter(o => o.city === 'الرياض' && (!sec || (o.sectors || [o.sec]).includes(sec)));
   const expectedProjectCount = sec => d.projects.filter(o => o.city === 'الرياض' && (!sec || (o.sectors || [o.sec]).includes(sec))).length;
   const eastBranchDestinations = A.itemsFor('nhc', '', 'branch');
   A.state().scope = 'sector'; A.state().explore = 'شرق';
@@ -175,7 +175,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   A.state().explore = 'شرق'; A.state().tab = 'nhc'; A.renderBranch();
   assert('NHC destinations are separate from projects, sector-specific, and city view retains all destinations',
     eastBranchDestinations.length === expectedNHC('شرق').length && eastDestinations.length === expectedNHC('شرق').length &&
-    eastDestinations.every(x => (x.o.serviceSectors || x.o.sectors || [x.o.sec]).includes('شرق')) &&
+    eastDestinations.every(x => (x.o.sectors || [x.o.sec]).includes('شرق')) &&
     northDestinations.length === expectedNHC('شمال').length && allDestinations.length === expectedNHC('').length &&
     eastProjectRowsForCount.length === expectedProjectCount('شرق') && allRiyadhProjectRowsForCount.length === expectedProjectCount('') &&
     els.app.innerHTML.includes('وجهات NHC') && els.app.innerHTML.includes('data-tab="nhc"'));
