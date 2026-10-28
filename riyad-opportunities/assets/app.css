@@ -98,3 +98,14 @@ dialog.detail{padding:0;border:0;border-radius:17px;width:min(760px,calc(100vw -
 
 /* Approved full-width city panoramas retain mobile focal points without blurred margins. */
 @media(max-width:760px){.city-hero img{object-position:var(--city-mobile-position)!important}}
+
+/* On the narrowest phones, keep landmarks unobstructed and reuse the same labels below the photo. */
+@media(max-width:360px){
+ .city-hero{height:auto;padding-top:128px}
+ .city-hero>img,.city-hero>.city-photo,.city-hero>.city-portrait-photo,.city-hero.has-photo-credit>.city-photo-credit{top:0;bottom:auto;height:128px}
+ .city-hero:after{top:0;bottom:auto;height:128px;background:none}
+ .city-hero>.city-hero-copy{height:auto;min-height:82px;padding:12px 14px;color:var(--ink);background:#f5f8fb;border:1px solid var(--line);border-top:0;border-radius:0 0 10px 10px}
+ .city-hero .greet{margin:0 0 7px}
+ .city-hero .hero-branch{max-width:100%;color:var(--ink-2);background:#fff;border-color:var(--line);backdrop-filter:none}
+ .city-hero .hero-branch svg{flex-shrink:0}
+}
