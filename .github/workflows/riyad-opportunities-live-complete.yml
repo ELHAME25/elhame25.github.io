@@ -4,6 +4,9 @@ on:
     branches: ['qa/live-complete-20261028']
     paths: ['riyad-opportunities/qa/qa-live-complete.js', '.github/workflows/riyad-opportunities-live-complete.yml']
   workflow_dispatch:
+concurrency:
+  group: live-directory-full-qa
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
