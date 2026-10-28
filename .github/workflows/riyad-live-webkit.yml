@@ -1,0 +1,26 @@
+name: Published directory WebKit compatibility
+on:
+  push:
+    branches: ['qa/live-webkit-20261028']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  webkit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          npm install --prefix "$RUNNER_TEMP/webkit-browser" --no-save playwright@1.55.0
+          "$RUNNER_TEMP/webkit-browser/node_modules/.bin/playwright" install --with-deps webkit
+      - run: NODE_PATH="$RUNNER_TEMP/webkit-browser/node_modules" node riyad-opportunities/qa/qa-live-webkit.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: published-webkit-${{ github.sha }}
+          path: riyad-opportunities/qa-webkit-artifacts/
+          retention-days: 14
