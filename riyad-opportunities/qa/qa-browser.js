@@ -135,7 +135,7 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
  for(const width of [1440,390]){
   const cx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});const cp=await cx.newPage();cp.on('pageerror',e=>pageErrors.push(e.message));
   for(const city of displayedCities){
-   const b=branchData.find(x=>x.city===city),coverageCity=coverageAliases[city]||city,asset=expectedCityHeroes[coverageCity];
+   const b=branchData.find(x=>x.city===city),coverageCity=coverageAliases[city]||city,asset=expectedCityHeroes[coverageCity]||(city==='ضرما'?expectedCityHeroes['ضرما']:null);assert(asset,'Missing canonical/locality hero '+city);
    await cp.goto(origin+'/#b'+b.c);await cp.waitForSelector('.stat');
    const hero=cp.locator('.city-hero img');await hero.waitFor();await hero.evaluate(i=>i.decode());assert.equal(await hero.getAttribute('src'),asset);assert(await hero.evaluate(i=>i.complete&&i.naturalWidth>0));
    assert.equal(await cp.locator('.city-hero').getAttribute('aria-label'),coverageCity);if(coverageCity!==city)assert((await cp.locator('.hero-branch').innerText()).includes(b.n));await fit(cp,'City '+city+' '+width);await cp.locator('.city-hero').screenshot({path:path.join(artifacts,'city-hero-'+b.c+'-'+width+'.png')});checks.push({city,width,exactCityHero:true,realData:true});
