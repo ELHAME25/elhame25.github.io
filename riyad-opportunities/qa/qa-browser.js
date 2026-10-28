@@ -154,12 +154,13 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
  const expectedCityHeroes=Object.fromEntries(Object.entries(activeHeroes).map(([city,asset])=>[city,asset.src]));
  const displayedCities=[...new Set(branchData.map(x=>x.city))];
  for(const city of displayedCities)assert(expectedCityHeroes[city],'Missing own-city image: '+city);
- for(const width of [1440,390]){
+ for(const width of [1440,390,320]){
   const cx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});const cp=await cx.newPage();cp.on('pageerror',e=>pageErrors.push(e.message));
   for(const city of displayedCities){
    const b=branchData.find(x=>x.city===city),coverageCity=coverageAliases[city]||city,asset=expectedCityHeroes[coverageCity]||(city==='ضرما'?expectedCityHeroes['ضرما']:null);assert(asset,'Missing canonical/locality hero '+city);
    await cp.goto(origin+'/#b'+b.c);await cp.waitForSelector('.stat');
    const hero=cp.locator('.city-hero img');await hero.waitFor();await hero.evaluate(i=>i.decode());assert.equal(await hero.getAttribute('src'),asset);assert(await hero.evaluate(i=>i.complete&&i.naturalWidth>0));
+   const heroBox=await cp.locator('.city-hero').boundingBox();assert.equal(heroBox.height,width===1440?260:128,'Responsive city panorama height');const expectedHero=activeHeroes[coverageCity]||activeHeroes[city];assert.equal(await hero.evaluate(i=>getComputedStyle(i).objectFit),expectedHero.fit||'cover');if(expectedHero.fit!=='contain')assert.equal(await cp.locator('.city-portrait-photo').count(),0,'Full-width panorama must not retain blurred portrait margins');
    assert.equal(await cp.locator('.city-hero').getAttribute('aria-label'),coverageCity);if(coverageCity!==city)assert((await cp.locator('.hero-branch').innerText()).includes(b.n));await fit(cp,'City '+city+' '+width);await cp.locator('.city-hero').screenshot({path:path.join(artifacts,'city-hero-'+b.c+'-'+width+'.png')});checks.push({city,width,exactCityHero:true,realData:true});
   }
   await cp.goto(origin);await cp.waitForSelector('#q-city');await cp.selectOption('#q-city','جازان');
@@ -171,11 +172,11 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
   await cx.close();
  }
  // Candidate visual and scope regressions use actual production records only.
- for(const width of [1440,390]){
+ for(const width of [1440,390,320]){
   const cx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'}),cp=await cx.newPage();cp.on('pageerror',e=>pageErrors.push(e.message));
   for(const city of ['خميس مشيط','الوجه','الخبر','بريدة']){
    const b=branchData.find(x=>x.city===city);assert(b,'Photo review branch '+city);await cp.goto(origin+'/#b'+b.c);await cp.waitForSelector('.stat');await capture(cp,'city-photo-'+b.c+'-'+width+'.png');await fit(cp,'City hero '+b.c+' '+width);
-   assert.equal(await cp.locator('a[href=""],a[href="#"]:not([data-act="home"])').count(),0);if(['الخبر','بريدة'].includes(city)){assert.equal(await cp.locator('.city-portrait-photo').count(),1);assert(await cp.locator('.city-portrait-photo').evaluate(async n=>{const bg=getComputedStyle(n,':before').backgroundImage,src=bg.match(/^url\([\"']?(.*?)[\"']?\)$/)?.[1];if(!src)return false;const im=new Image();im.src=src;try{await im.decode();return im.naturalWidth>0&&im.src===n.querySelector('img').src;}catch{return false;}}),'Same-photo backdrop must actually decode, not just contain a CSS url');}await cp.locator('a[data-act="home"]').click();await cp.waitForSelector('#q-branch');
+   assert.equal(await cp.locator('a[href=""],a[href="#"]:not([data-act="home"])').count(),0);if(activeHeroes[city].fit==='contain'){assert.equal(await cp.locator('.city-portrait-photo').count(),1);assert(await cp.locator('.city-portrait-photo').evaluate(async n=>{const bg=getComputedStyle(n,':before').backgroundImage,src=bg.match(/^url\([\"']?(.*?)[\"']?\)$/)?.[1];if(!src)return false;const im=new Image();im.src=src;try{await im.decode();return im.naturalWidth>0&&im.src===n.querySelector('img').src;}catch{return false;}}),'Same-photo backdrop must actually decode, not just contain a CSS url');}await cp.locator('a[data-act="home"]').click();await cp.waitForSelector('#q-branch');
   }
   await cp.goto(origin+'/#b311');await cp.waitForSelector('.stat');assert((await cp.locator('.hero-branch').innerText()).includes('الثقبة'));assert((await cp.locator('.page-title').innerText()).includes('الخبر'));assert((await cp.evaluate(()=>window.__rogQA())).sections.projects.length>0);await capture(cp,'thuqbah-khobar-'+width+'.png');
   for(const city of ['الظهران','القطيف','أم الحمام']){const b=branchData.find(x=>x.city===city);await cp.goto(origin+'/#b'+b.c);await cp.waitForSelector('.stat');await cp.click('[data-tab="nhc"]');const q=await cp.evaluate(()=>window.__rogQA());assert(q.nhcScope.fallback&&q.sections.nhc.length>0);await fit(cp,'Nearby '+b.c+' '+width);await capture(cp,'nearby-'+b.c+'-'+width+'.png');}

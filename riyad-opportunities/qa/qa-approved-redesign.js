@@ -6,7 +6,7 @@ const generatedCityManifest=JSON.parse(fs.readFileSync(path.join(root,'assets/im
 function validGeneratedCity(city,asset){
  if(asset.displayPermission!=='generated_illustration')return false;
  const fixed={'الرياض':'assets/images/city-riyadh.webp','بريدة':'assets/images/city-buraidah-illustrative.webp'};
- if(fixed[city])return asset.src===fixed[city];
+ if(fixed[city]&&asset.src===fixed[city])return true;
  const row=generatedCityManifest.find(x=>x.city===city&&x.file===asset.src);
  return !!row&&row.generated===true&&row.documentary===false&&row.pixelsInspected===true&&row.identitySources.length>0&&require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root,row.file))).digest('hex')===row.sha256;
 }
@@ -14,7 +14,8 @@ function validGeneratedCity(city,asset){
 function validLinkedCredit(city, asset) {
  const records=JSON.parse(fs.readFileSync(path.join(root,'assets/images/cities/attribution.json'),'utf8')).images;
  const entry=records.find(x=>x.city===city&&asset.src.endsWith('/'+x.file)&&x.creditAnchor===asset.creditAnchor);
- if(!asset.real||!asset.creditAnchor||!entry||!entry.author||!entry.source_page||!entry.license_url||!entry.modification)return false;
+ if(!asset.creditAnchor||!entry||!entry.author||!entry.source_page||!entry.license_url||!entry.modification)return false;
+ if(!asset.real&&(!validGeneratedCity(city,asset)||entry.generated!==true||entry.documentary!==false))return false;
  const credits=fs.readFileSync(path.join(root,'assets/images/cities/credits.html'),'utf8');
  return credits.includes('id="'+asset.creditAnchor+'"')&&credits.includes(entry.source_page)&&credits.includes(entry.license_url)&&require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root,asset.src))).digest('hex')===entry.sha256;
 }
