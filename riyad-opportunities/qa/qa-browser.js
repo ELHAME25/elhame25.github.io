@@ -55,8 +55,8 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
   assert.equal(await page.locator('[data-tab="nhc"] .num').innerText(),expectedEastNHC+' من '+expectedCityNHC);assert((await page.locator('[data-tab="nhc"] .num').getAttribute('aria-label')).includes('في الرياض'));await fit(page,'Category counts '+viewport.width);
   const boxes=await page.locator('.stat').evaluateAll(a=>a.map(n=>{const r=n.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height};}));assert.equal(new Set(boxes.map(x=>Math.round(x.y))).size,2);assert.equal(new Set(boxes.map(x=>Math.round(x.x))).size,3);
   await page.click('[data-tab="nhc"]');let qa=await page.evaluate(()=>window.__rogQA());assert.equal(qa.sections.nhc.length,expectedEastNHC);assert.equal(await page.locator('.nhc-count-summary').innerText(),expectedEastNHC+' من '+expectedCityNHC+' في الرياض');await page.click('[data-nhc-view="city"]');qa=await page.evaluate(()=>window.__rogQA());assert.equal(qa.sections.nhc.length,expectedCityNHC);assert.equal(await page.locator('.nhc-count-summary').innerText(),expectedCityNHC+' من '+expectedCityNHC+' في الرياض');await fit(page,'NHC '+viewport.width);
-  await page.click('[data-nhc-view="local"]');qa=await page.evaluate(()=>window.__rogQA());assert.equal(qa.sections.nhc.length,expectedEastNHC);
-  await page.click('[data-nhc-view="nearby"]');qa=await page.evaluate(()=>window.__rogQA());assert(qa.sections.nhc.length>0 && qa.sections.nhc.length<=2);assert(qa.nhcScope.nearby.every(x=>x.distanceKm!=null));assert(await page.locator('.scope-note').isVisible());await fit(page,'NHC nearby '+viewport.width);
+  await page.click('[data-nhc-view="local"]');qa=await page.evaluate(()=>window.__rogQA());assert.equal(qa.sections.nhc.length,expectedEastNHC);await capture(page,'nhc-own-sector-'+viewport.width+'.png');
+  await page.click('[data-nhc-view="nearby"]');qa=await page.evaluate(()=>window.__rogQA());assert(qa.sections.nhc.length>0 && qa.sections.nhc.length<=2);assert(qa.nhcScope.nearby.every(x=>x.distanceKm!=null));assert(await page.locator('.scope-note').isVisible());await fit(page,'NHC nearby '+viewport.width);await capture(page,'nhc-nearby-'+viewport.width+'.png');
   await page.selectOption('#scope-select','sector:وسط');qa=await page.evaluate(()=>window.__rogQA());assert(qa.nhcScope.fallback);assert.equal(qa.sections.nhc.length,1);assert((await page.locator('.scope-note').innerText()).includes('خارج النطاق'));await capture(page,'nhc-center-fallback-'+viewport.width+'.png');await fit(page,'NHC fallback '+viewport.width);
   await page.click('[data-nhc-view="city"]');
   assert(await page.locator('[data-nhc-view="local"]').isVisible());assert(await page.locator('[data-nhc-view="city"]').isVisible());await page.locator('[data-anchor="destination-contacts"]').first().click();await page.waitForSelector('#detail[open] #destination-contacts');await fit(page,'NHC contacts '+viewport.width);await page.keyboard.press('Escape');
@@ -121,7 +121,8 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
   }
   await entryContext.close();
  }
- // All city-specific heroes; Thuqbah explicitly belongs to Khobar coverage.
+ // Canonical coverage labels from documented locality/spelling aliases; preserve branch identity.
+ const coverageAliases={الثقبة:"الخبر",الثغبة:"الخبر",المبرز:"الأحساء",الهفوف:"الأحساء",ضرما:"ضرماء",الأفلاج:"ليلى","سبت العلايا":"سبت العلاية"};
  const appSource=fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
  const archived=appSource.match(/var CITY_IMAGE_ARCHIVE = (\{[\s\S]*?\});/);assert(archived);
  const archiveRows=JSON.parse(archived[1]);
@@ -134,7 +135,7 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
  for(const width of [1440,390]){
   const cx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});const cp=await cx.newPage();cp.on('pageerror',e=>pageErrors.push(e.message));
   for(const city of displayedCities){
-   const b=branchData.find(x=>x.city===city),coverageCity=['الثقبة','الثغبة'].includes(city)?'الخبر':city,asset=expectedCityHeroes[coverageCity];
+   const b=branchData.find(x=>x.city===city),coverageCity=coverageAliases[city]||city,asset=expectedCityHeroes[coverageCity];
    await cp.goto(origin+'/#b'+b.c);await cp.waitForSelector('.stat');
    const hero=cp.locator('.city-hero img');await hero.waitFor();await hero.evaluate(i=>i.decode());assert.equal(await hero.getAttribute('src'),asset);assert(await hero.evaluate(i=>i.complete&&i.naturalWidth>0));
    assert.equal(await cp.locator('.city-hero').getAttribute('aria-label'),coverageCity);if(coverageCity!==city)assert((await cp.locator('.hero-branch').innerText()).includes(b.n));await fit(cp,'City '+city+' '+width);await cp.locator('.city-hero').screenshot({path:path.join(artifacts,'city-hero-'+b.c+'-'+width+'.png')});checks.push({city,width,exactCityHero:true,realData:true});
@@ -156,7 +157,7 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
   }
   await cp.goto(origin+'/#b311');await cp.waitForSelector('.stat');assert((await cp.locator('.hero-branch').innerText()).includes('الثقبة'));assert((await cp.locator('.page-title').innerText()).includes('الخبر'));assert((await cp.evaluate(()=>window.__rogQA())).sections.projects.length>0);await capture(cp,'thuqbah-khobar-'+width+'.png');
   for(const city of ['الظهران','القطيف','أم الحمام']){const b=branchData.find(x=>x.city===city);await cp.goto(origin+'/#b'+b.c);await cp.waitForSelector('.stat');await cp.click('[data-tab="nhc"]');const q=await cp.evaluate(()=>window.__rogQA());assert(q.nhcScope.fallback&&q.sections.nhc.length>0);await fit(cp,'Nearby '+b.c+' '+width);await capture(cp,'nearby-'+b.c+'-'+width+'.png');}
-  await cp.goto(origin+'/#b243');await cp.waitForSelector('.stat');await cp.click('[data-tab="projects"]');await cp.selectOption('#scope-select','unassigned');assert((await cp.evaluate(()=>window.__rogQA())).sections.projects.length>0);await cp.fill('#q-sec','__no_matching_record__');await cp.selectOption('#scope-select','branch');assert.equal(await cp.locator('#q-sec').inputValue(),'');assert.equal((await cp.evaluate(()=>window.__rogQA())).scope,'branch');await cx.close();
+  await cp.goto(origin+'/#b243');await cp.waitForSelector('.stat');await cp.click('[data-tab="projects"]');await cp.selectOption('#scope-select','unassigned');assert((await cp.evaluate(()=>window.__rogQA())).sections.projects.length>0);await capture(cp,'unassigned-city-'+width+'.png');await fit(cp,'Unassigned '+width);await cp.fill('#q-sec','__no_matching_record__');await cp.selectOption('#scope-select','branch');assert.equal(await cp.locator('#q-sec').inputValue(),'');assert.equal((await cp.evaluate(()=>window.__rogQA())).scope,'branch');await cx.close();
  }
  // Missing source authority is a pending catalog, never an advertised zero.
  const pendingContext=await browser.newContext({viewport:{width:390,height:844}});const pendingPage=await pendingContext.newPage();pendingPage.on('pageerror',e=>pageErrors.push(e.message));
