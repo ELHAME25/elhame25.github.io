@@ -29,7 +29,7 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
    await pg.evaluate(h=>{location.hash=h;},invalid);await pg.waitForSelector('#q-branch');
    assert.equal(await pg.locator('[data-tab]').count(),0,'Invalid route retained old branch');
    await pg.goBack();await pg.waitForSelector('[data-tab]');assert.equal(new URL(pg.url()).hash,'#b302');
-   await pg.goForward();await pg.waitForSelector('#q-branch');assert.equal(new URL(pg.url()).hash,invalid);
+   await pg.goForward();await pg.waitForSelector('#q-branch');assert.equal(new URL(pg.url()).hash,'','Invalid route normalizes to the entry URL');
    await pg.goBack();await pg.waitForSelector('[data-tab]');
   }
   await pg.locator('[data-detail]').first().click();await pg.waitForSelector('#detail[open]');
