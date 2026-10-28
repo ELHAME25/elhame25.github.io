@@ -10,3 +10,5 @@ Run from the project directory:
     SEMANTIC_BROWSER=webkit node qa/semantic/browser-semantic-contract.js . /tmp/semantic-webkit.json
 
 Playwright browsers must already be installed. Browser failures include screenshots beside the output report.
+
+Automatic GPS is tested without selecting a city. The city dropdown filters manual branch selection only; it is not a GPS prerequisite. Place fixtures validate nearest-branch selection, not automatic municipal boundary detection.

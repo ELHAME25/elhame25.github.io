@@ -229,33 +229,27 @@
       '<div class="field"><label for="q-emp">اسم الموظف <small>(اختياري)</small></label><input id="q-emp" class="input" type="text" autocomplete="name" placeholder="اسم الموظف" value="' + esc(S.employee) + '"></div>' +
       '<p id="greet" class="greet start-greet" role="status" aria-live="polite" hidden></p>' +
       '<div class="field"><label for="q-branch">رمز الفرع أو اسمه</label><input id="q-branch" class="input" type="search" autocomplete="off" placeholder="مثال: 243 أو القادسية"></div>' +
-      '<div class="field"><label for="q-city">المدينة <small>(مطلوبة لاستخدام الموقع)</small></label><select id="q-city" class="select"><option value="">كل المدن</option>' +
+      '<div class="field"><label for="q-city">المدينة</label><select id="q-city" class="select"><option value="">كل المدن</option>' +
       cities().map(function (x) { return '<option>' + esc(x) + '</option>'; }).join('') + '</select></div>' +
       '<div class="branch-list" id="branch-list" role="list"></div>' +
       '<button id="go-branch" class="btn primary go-branch" type="button" disabled>دخول <span aria-hidden="true">←</span></button>' +
-      '<button id="use-location" class="btn geo-btn">' + ICON.nearby + 'استخدم موقعي — أقرب فرع في المدينة المحددة</button>' +
+      '<button id="use-location" class="btn geo-btn">' + ICON.nearby + 'استخدم موقعي — أقرب فرع</button>' +
       '<p id="geo-status" class="list-note" role="status" aria-live="polite" hidden></p></div></div></section>';
     var qb = document.getElementById('q-branch'), qc = document.getElementById('q-city'), qe = document.getElementById('q-emp'), go = document.getElementById('go-branch');
     document.getElementById('use-location').addEventListener('click', function (e) {
-      var button = e.currentTarget, chosenCity = qc.value, status = document.getElementById('geo-status');
+      var button = e.currentTarget, status = document.getElementById('geo-status');
       function explain(message) { status.textContent = message; status.hidden = false; }
-      function reset() { button.disabled = false; button.textContent = 'استخدم موقعي — أقرب فرع في المدينة المحددة'; }
-      // A closest bank branch is not evidence that the user's position belongs to its municipality.
-      // Use an explicitly confirmed city; never silently import another city's inventory.
-      if (!chosenCity) { explain('اختر المدينة أولًا؛ سيُستخدم موقعك لترتيب الفروع داخل المدينة التي تحددها، وليس لاستنتاج مدينتك من أقرب فرع.'); qc.focus(); return; }
-      if (!D.branches.some(function (b) { return sameCity(b.city, chosenCity) && b.lat != null && b.lon != null; })) {
-        explain('لا يوجد فرع بإحداثيات مسجلة داخل المدينة المحددة. يمكنك تصفح فرص المدينة أو اختيار الفرع يدويًا.'); return;
-      }
+      function reset() { button.disabled = false; button.textContent = 'استخدم موقعي — أقرب فرع'; }
+      if (button.disabled) return;
       if (!navigator.geolocation) { explain('خدمة تحديد الموقع غير متاحة في هذا المتصفح. اختر الفرع يدويًا.'); return; }
-      button.disabled = true; button.textContent = 'جارٍ تحديد أقرب فرع داخل ' + chosenCity + '…';
-      explain('سيقتصر اختيار الفرع على ' + chosenCity + ' التي حددتها. لن تُرسل إحداثياتك إلى خدمة خرائط خارجية.');
+      button.disabled = true; button.textContent = 'جارٍ تحديد الموقع…';
+      status.hidden = true;
       navigator.geolocation.getCurrentPosition(function (pos) {
         if (!button.isConnected) return;
-        if (qc.value !== chosenCity) { reset(); explain('تغيّرت المدينة أثناء تحديد الموقع. اضغط استخدام موقعي مجددًا للمدينة الجديدة.'); return; }
-        var origin = { lat: pos.coords.latitude, lon: pos.coords.longitude, cityConfirmed: chosenCity, accuracyMeters: typeof pos.coords.accuracy === 'number' && isFinite(pos.coords.accuracy) && pos.coords.accuracy >= 0 ? pos.coords.accuracy : null }, nearest = nearestBranch(origin, chosenCity);
-        if (!nearest) { reset(); explain('تعذّر العثور على فرع بإحداثيات مسجلة داخل المدينة المحددة. اختر الفرع يدويًا.'); return; }
+        var origin = { lat: pos.coords.latitude, lon: pos.coords.longitude, accuracyMeters: typeof pos.coords.accuracy === 'number' && isFinite(pos.coords.accuracy) && pos.coords.accuracy >= 0 ? pos.coords.accuracy : null }, nearest = nearestBranch(origin);
+        if (!nearest) { reset(); explain('تعذّر العثور على فرع بإحداثيات مؤكدة. يمكنك اختيار الفرع يدويًا.'); return; }
         selectBranch(nearest.c, false, origin);
-      }, function () { if (!button.isConnected) return; reset(); explain('تعذّر تحديد موقعك. يمكنك اختيار الفرع يدويًا داخل المدينة المحددة.'); }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 });
+      }, function () { if (!button.isConnected) return; reset(); explain('تعذّر تحديد موقعك. يمكنك اختيار الفرع يدويًا.'); }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 0 });
     });
     var selectedCode = '';
     function list(chosenCode) {
@@ -361,9 +355,10 @@
     if (key === 'محمد الحبيب' || key === 'محمد عبدالعزيز الحبيب') return 'محمد الحبيب';
     return key;
   }
-  function nearestBranch(origin, confirmedCity) {
-    if (!confirmedCity) return null;
-    var candidates = D.branches.filter(function (b) { return sameCity(b.city, confirmedCity); }).map(function (b) { return { b: b, d: km(origin.lat, origin.lon, b.lat, b.lon) }; })
+  function nearestBranch(origin) {
+    // GPS chooses the nearest recorded branch, independently of the manual city filter.
+    // A branch location is not a claim of the user's municipal boundary or neighborhood.
+    var candidates = D.branches.map(function (b) { return { b: b, d: km(origin.lat, origin.lon, b.lat, b.lon) }; })
       .filter(function (x) { return x.d != null; }).sort(function (a, b) { return a.d - b.d; });
     return candidates.length ? candidates[0].b : null;
   }
@@ -1679,7 +1674,6 @@
     var hero = CITY_HERO_ASSETS[b.city] || CITY_HERO_ASSETS[S.branch.city] || { src: CITY_HERO_FALLBACK, position: '50% 50%', real: false };
     app.innerHTML = '<div class="results-shell wrap"><section class="city-hero' + (hero.creditAnchor ? ' has-photo-credit' : '') + (hero.displayPermission === 'user_selected_copyrighted_source' ? ' selected-source-hero' : '') + '" aria-label="' + esc(b.city) + '">' + cityHeroMedia(hero) + '<div class="city-hero-copy">' + (hero.displayPermission === 'user_selected_copyrighted_source' ? '<p class="selected-source-credit"><a href="' + esc(hero.src) + '" target="_blank" rel="noopener">الصورة كاملة</a></p>' : '') + '<p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : 'مرحبًا بك') + '</p><div class="hero-branch">' + ICON.map + '<span>' + esc(b.n) + (b.cityOnly ? '' : ' · ' + (b.codeStatus === 'local_internal_reference' ? 'مرجع داخلي ' : '') + esc(b.c)) + '</span></div></div></section>' +
       '<div class="page-title"><h1>فرص ' + esc([headingSector, b.city].filter(Boolean).join(' ')) + '</h1><button class="btn change-branch" data-act="change">' + ICON.swap + 'تغيير الفرع</button></div>' +
-      (S.origin && S.origin.cityConfirmed ? '<p class="scope-note geo-context">المدينة المختارة: ' + esc(cityLabel(S.origin.cityConfirmed)) + '. اختير أقرب فرع داخلها بحسب الموقع المقدر، وليس حدّ المدينة. ' + (S.origin.accuracyMeters != null ? 'دقة الموقع المبلغ عنها نحو ' + fmt(Math.ceil(S.origin.accuracyMeters)) + ' متر؛ قد يختلف ترتيب الفروع مع خطأ الموقع. ' : 'دقة الموقع غير متاحة. ') + 'نطاق النتائج هو نطاق الفرع المختار، وليس إثباتًا لنطاق موقعك؛ تبقى المدن ومواقع السجلات مستقلة.</p>' : '') +
       '<div class="discovery-controls">' + scopeOptions() + '<div class="search">' + ICON.search + '<input id="q-sec" class="input" type="search" placeholder="' + esc(SEARCH_PH[S.tab]) + '" value="' + esc(S.q[S.tab] || '') + '" aria-label="' + esc(SEARCH_PH[S.tab]) + '"></div></div>' +
       '<div class="stats" role="group" aria-label="الفئات الرئيسية">' + stats + '</div>' + selfbuildLink + '<main class="content" id="content" aria-live="polite"></main></div>';
     var scope = document.getElementById('scope-select');
