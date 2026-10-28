@@ -1207,7 +1207,7 @@
       if (S.tab === 'cars' && sameCity(b.city, 'الرياض')) { S.carArea = value; S.scope = 'branch'; S.explore = ''; }
       else if (value.indexOf('sector:') === 0) { S.scope = 'sector'; S.explore = value.slice(7); S.carArea = ''; }
       else { S.scope = value; S.explore = ''; S.carArea = ''; }
-      S.nhcView = 'local'; S.limit[S.tab] = CFG.pageSize; renderBranch();
+      S.nhcView = 'local'; S.q[S.tab] = ''; S.limit[S.tab] = CFG.pageSize; renderBranch();
     });
     var qi = document.getElementById('q-sec');
     if (qi) qi.addEventListener('input', function () { S.q[S.tab] = qi.value; S.limit[S.tab] = CFG.pageSize; renderSection(); });
