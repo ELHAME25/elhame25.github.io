@@ -1,0 +1,26 @@
+name: Natural city panorama preview
+on:
+  push:
+    branches: ['qa/panorama-preview-20261028']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          npm install --prefix "$RUNNER_TEMP/panorama-browser" --no-save playwright@1.55.0
+          "$RUNNER_TEMP/panorama-browser/node_modules/.bin/playwright" install --with-deps chromium
+      - run: NODE_PATH="$RUNNER_TEMP/panorama-browser/node_modules" node riyad-opportunities/qa/qa-panorama-preview.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: natural-city-panorama-preview-${{ github.sha }}
+          path: riyad-opportunities/qa-panorama-artifacts/
+          retention-days: 14
