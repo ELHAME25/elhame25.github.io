@@ -222,6 +222,7 @@
   // User-supplied Riyad Bank facade. Source JPEG stays unchanged; viewBox excludes phone UI.
   var ENTRY_TOWER_ASSET = 'assets/images/entry-riyad-bank.jpeg';
   function renderStart() {
+    entryClickGuard = null; // A fresh entry journey must not inherit the previous click sequence.
     S = fresh();
     app.innerHTML = '<section class="start"><div class="entry-shell wrap"><div class="entry-visual has-tower">' + (ENTRY_TOWER_ASSET ? '<svg class="entry-tower-photo" viewBox="0 307 710 945" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><image href="' + esc(ENTRY_TOWER_ASSET) + '" x="0" y="0" width="710" height="1536" onload="this.dataset.loaded=1"></image></svg>' : '') + '<div class="entry-copy"><h1>فرص أقرب.<br>إنجاز أكبر.</h1><p>ابدأ من فرعك.</p></div></div><div class="start-card">' +
       '<div class="entry-form-heading"><h2>اختر مدينتك وفرعك</h2></div>' +
