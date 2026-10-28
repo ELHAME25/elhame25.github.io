@@ -1980,6 +1980,10 @@
       if (panel && !panel.open) return;
       if (img.getAttribute('data-bound') === '1') return;
       img.setAttribute('data-bound', '1');
+      img.addEventListener('load', function () {
+        var media = img.parentElement;
+        if (img.classList.contains('official-image') && img.naturalWidth > 0 && media && media.classList && media.classList.contains('d-media')) media.classList.add('has-official-photo');
+      });
       img.addEventListener('error', function () {
         if (img.dataset && img.dataset.generic === '1') {
           // Try the other bundled illustration once, then a small embedded illustration.
@@ -2000,7 +2004,10 @@
           return;
         }
         var media = img.parentElement;
-        if (img.classList.contains('official-image')) img.remove();
+        if (img.classList.contains('official-image')) {
+          if (media && media.classList && media.classList.contains('d-media')) media.classList.remove('has-official-photo');
+          img.remove();
+        }
         var caption = media && media.querySelector('.image-caption'); if (caption) caption.hidden = false;
       });
       img.src = img.getAttribute('data-src');

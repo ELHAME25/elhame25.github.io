@@ -109,3 +109,10 @@ dialog.detail{padding:0;border:0;border-radius:17px;width:min(760px,calc(100vw -
  .city-hero .hero-branch{max-width:100%;color:var(--ink-2);background:#fff;border-color:var(--line);backdrop-filter:none}
  .city-hero .hero-branch svg{flex-shrink:0}
 }
+
+/* Detail sources stay at their intrinsic size or smaller; never enlarge a thumbnail or crop a diagram. */
+.d-media.has-official-photo{height:auto;min-height:0;aspect-ratio:auto}
+.d-media.has-official-photo>img[data-generic="1"]{display:none}
+.d-media.has-official-photo>.official-image{position:relative;inset:auto;display:block;width:auto;max-width:100%;height:auto;max-height:none;object-fit:contain;margin:0 auto}
+
+.d-media.has-official-photo>.close-x{display:none} /* The sticky return button remains available without covering source-image content. */
