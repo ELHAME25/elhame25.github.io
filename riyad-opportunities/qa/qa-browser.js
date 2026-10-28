@@ -121,7 +121,7 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
   }
   await entryContext.close();
  }
- // All city-specific real-data heroes, with no cross-city substitution.
+ // All city-specific heroes; Thuqbah explicitly belongs to Khobar coverage.
  const appSource=fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
  const archived=appSource.match(/var CITY_IMAGE_ARCHIVE = (\{[\s\S]*?\});/);assert(archived);
  const archiveRows=JSON.parse(archived[1]);
@@ -134,10 +134,10 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
  for(const width of [1440,390]){
   const cx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});const cp=await cx.newPage();cp.on('pageerror',e=>pageErrors.push(e.message));
   for(const city of displayedCities){
-   const b=branchData.find(x=>x.city===city),asset=expectedCityHeroes[city];
+   const b=branchData.find(x=>x.city===city),coverageCity=['الثقبة','الثغبة'].includes(city)?'الخبر':city,asset=expectedCityHeroes[coverageCity];
    await cp.goto(origin+'/#b'+b.c);await cp.waitForSelector('.stat');
    const hero=cp.locator('.city-hero img');await hero.waitFor();await hero.evaluate(i=>i.decode());assert.equal(await hero.getAttribute('src'),asset);assert(await hero.evaluate(i=>i.complete&&i.naturalWidth>0));
-   await fit(cp,'City '+city+' '+width);await cp.locator('.city-hero').screenshot({path:path.join(artifacts,'city-hero-'+b.c+'-'+width+'.png')});checks.push({city,width,exactCityHero:true,realData:true});
+   assert.equal(await cp.locator('.city-hero').getAttribute('aria-label'),coverageCity);if(coverageCity!==city)assert((await cp.locator('.hero-branch').innerText()).includes(b.n));await fit(cp,'City '+city+' '+width);await cp.locator('.city-hero').screenshot({path:path.join(artifacts,'city-hero-'+b.c+'-'+width+'.png')});checks.push({city,width,exactCityHero:true,realData:true});
   }
   await cp.goto(origin);await cp.waitForSelector('#q-city');await cp.selectOption('#q-city','جازان');
   assert.equal(await cp.locator('.branch-item').filter({hasText:'مركز مبيعات جازان'}).count(),1);
