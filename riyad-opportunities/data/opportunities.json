@@ -8447,7 +8447,15 @@
     },
     "marketer": "راكز العقارية",
     "contactLabel": "جهة التواصل",
-    "marketerSource": "https://rakez.sa/ar/project/40498/"
+    "marketerSource": "https://rakez.sa/ar/project/40498/",
+    "projectPageCheck": {
+      "url": "https://rakez.sa/ar/project/40498/",
+      "httpStatus": 404,
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "fallbackUrl": "https://rakez.sa/ar/",
+      "fallbackHttpStatus": 200,
+      "scope": "Exact project page currently returns 404; use verified company website fallback, not a replacement project. Preserve record; no sale-status inference."
+    }
   },
   {
     "id": "op-75ec561074",
@@ -14409,16 +14417,17 @@
     ],
     "img": "https://nuzul-saas-production.s3.us-east-2.amazonaws.com/tenants/5560/t-projects/301520/hero/62cc9a3d-8e03-4140-8133-fab6c4d1f9ea_1080.webp",
     "maps": "",
-    "page": "https://www.senanrealestate.sa/projects/301520",
+    "page": "https://senanrealestate.sa/projects/apartments-abha.html",
     "pageSource": "صفحة العرض تقول متاح، والسعر يبدأ من 620,000؛ جدول الوحدات يظهر شقة متاحة. الموقع يذكر رخصة فال للشركة لكن رقم رخصة الإعلان غير موجود في الصفحة.; الصفحة المصدرية تعرض حالة «متاح». لا توجد إحداثيات دبوس مؤكدة؛ لا تحسب مسافة.",
     "pageEvidence": "https://www.senanrealestate.sa/projects/301520",
     "price": 620000,
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D9%81%D8%A7%D8%AE%D8%B1%D8%A9%20%D8%A8%D9%85%D9%88%D9%82%D8%B9%20%D9%85%D9%85%D9%8A%D8%B2%20%D8%A8%D8%A3%D8%A8%D9%87%D8%A7%20%D9%88%D8%B3%D8%B7%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A3%D8%A8%D9%87%D8%A7",
     "availability": {
       "status": "available",
-      "source": "https://www.senanrealestate.sa/projects",
-      "checkedAt": "2026-10-17T14:20:00Z",
-      "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      "source": "https://senanrealestate.sa/projects/apartments-abha.html",
+      "sourceStatus": "متاح",
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
     },
     "marketer": "سنان العقارية",
     "siteRole": "marketer",
@@ -14432,7 +14441,19 @@
         "changedAt": "2026-10-17T14:22:00Z"
       }
     ],
-    "developerVerified": false
+    "developerVerified": false,
+    "linkAudit": {
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "previousPage": "https://www.senanrealestate.sa/projects/301520",
+      "previousAvailability": {
+        "status": "available",
+        "source": "https://www.senanrealestate.sa/projects",
+        "checkedAt": "2026-10-17T14:20:00Z",
+        "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      },
+      "replacementHttpStatus": 200,
+      "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching company phone 0509177382. For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+    }
   },
   {
     "id": "op-senan-301522",
@@ -14448,16 +14469,17 @@
     ],
     "img": "https://nuzul-saas-production.s3.us-east-2.amazonaws.com/tenants/5560/t-projects/301522/hero/235f2a9f-6ad7-49a6-9e55-f5ed4b0b8e10_1080.webp",
     "maps": "",
-    "page": "https://www.senanrealestate.sa/projects/301522",
+    "page": "https://senanrealestate.sa/projects/ghaim-house.html",
     "pageSource": "حالة الصفحة والوحدة متاحة والسعر يبدأ من 480,000. لم يظهر دبوس أو رقم رخصة إعلان للعقار.; الصفحة المصدرية تعرض حالة «متاح». لا توجد إحداثيات دبوس مؤكدة؛ لا تحسب مسافة.",
     "pageEvidence": "https://www.senanrealestate.sa/projects/301522",
     "price": 480000,
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%BA%D9%8A%D9%85%20%D9%87%D8%A7%D9%88%D8%B3%20%D9%88%D8%AD%D8%AF%D8%A7%D8%AA%20%D8%B3%D9%83%D9%86%D9%8A%D8%A9%20%D9%81%D8%A7%D8%AE%D8%B1%D8%A9%20%D8%A8%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%84%D8%A9%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%A8%D9%8A%20%D8%A3%D8%A8%D9%87%D8%A7",
     "availability": {
       "status": "available",
-      "source": "https://www.senanrealestate.sa/projects",
-      "checkedAt": "2026-10-17T14:20:00Z",
-      "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      "source": "https://senanrealestate.sa/projects/ghaim-house.html",
+      "sourceStatus": "متاح",
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
     },
     "marketer": "سنان العقارية",
     "siteRole": "marketer",
@@ -14471,7 +14493,19 @@
         "changedAt": "2026-10-17T14:22:00Z"
       }
     ],
-    "developerVerified": false
+    "developerVerified": false,
+    "linkAudit": {
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "previousPage": "https://www.senanrealestate.sa/projects/301522",
+      "previousAvailability": {
+        "status": "available",
+        "source": "https://www.senanrealestate.sa/projects",
+        "checkedAt": "2026-10-17T14:20:00Z",
+        "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      },
+      "replacementHttpStatus": 200,
+      "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching company phone 0509177382. For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+    }
   },
   {
     "id": "op-senan-301380",
@@ -14487,16 +14521,17 @@
     ],
     "img": "https://nuzul-saas-production.s3.us-east-2.amazonaws.com/tenants/5560/t-projects/301380/hero/e1e59aa3-9370-45b4-952f-8c4f83babc62_1080.webp",
     "maps": "",
-    "page": "https://www.senanrealestate.sa/projects/301380",
+    "page": "https://senanrealestate.sa/projects/apartments-shifa.html",
     "pageSource": "الصفحة تظهر متاح ووحدة متاحة؛ يبدأ السعر الظاهر 570,000. وصف المشروع نفسه يذكر أسعارًا 530/570 ألف، ومتوافق مع المعروض الأعلى.; الصفحة المصدرية تعرض حالة «متاح». لا توجد إحداثيات دبوس مؤكدة؛ لا تحسب مسافة.",
     "pageEvidence": "https://www.senanrealestate.sa/projects/301380",
     "price": 570000,
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D9%81%D8%A7%D8%AE%D8%B1%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B4%D9%81%D8%A7%D8%A1%20%D8%AE%D9%85%D9%8A%D8%B3%20%D9%85%D8%B4%D9%8A%D8%B7",
     "availability": {
       "status": "available",
-      "source": "https://www.senanrealestate.sa/projects",
-      "checkedAt": "2026-10-17T14:20:00Z",
-      "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      "source": "https://senanrealestate.sa/projects/apartments-shifa.html",
+      "sourceStatus": "متاح",
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
     },
     "marketer": "سنان العقارية",
     "siteRole": "marketer",
@@ -14510,7 +14545,19 @@
         "changedAt": "2026-10-17T14:22:00Z"
       }
     ],
-    "developerVerified": false
+    "developerVerified": false,
+    "linkAudit": {
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "previousPage": "https://www.senanrealestate.sa/projects/301380",
+      "previousAvailability": {
+        "status": "available",
+        "source": "https://www.senanrealestate.sa/projects",
+        "checkedAt": "2026-10-17T14:20:00Z",
+        "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      },
+      "replacementHttpStatus": 200,
+      "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching company phone 0509177382. For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+    }
   },
   {
     "id": "op-senan-301512",
@@ -14520,22 +14567,23 @@
     "nb": "مخطط الموسى",
     "type": "تاون هاوس",
     "units": "تاون هاوس معروض متاح",
-    "status": "متاح",
+    "status": "حجز مسبق",
     "phones": [
       "0509177382"
     ],
     "img": "https://nuzul-saas-production.s3.us-east-2.amazonaws.com/tenants/5560/t-projects/301512/hero/b3c09b79-f326-49d0-bc1c-6773717c547e_1080.webp",
     "maps": "",
-    "page": "https://www.senanrealestate.sa/projects/301512",
+    "page": "https://senanrealestate.sa/projects/upper-mousa.html",
     "pageSource": "الصفحة تظهر متاح ووحدة تاون هاوس متاحة بسعر 780,000؛ وصف الصفحة يذكر أيضًا شقة أرضية بسعر 580,000، فلا تستخدم 780,000 كأنه يشمل كل الوحدات.; الصفحة المصدرية تعرض حالة «متاح». لا توجد إحداثيات دبوس مؤكدة؛ لا تحسب مسافة.",
     "pageEvidence": "https://www.senanrealestate.sa/projects/301512",
     "price": 780000,
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%B1%D9%88%D8%A7%D9%81%20%D8%B9%D9%84%D9%88%D9%8A%D8%A9%20%D9%88%D8%B4%D9%82%D9%82%20%D8%A3%D8%B1%D8%B6%D9%8A%D8%A9%20%D8%A8%D8%AE%D9%85%D9%8A%D8%B3%20%D9%85%D8%B4%D9%8A%D8%B7%20%D9%85%D8%AE%D8%B7%D8%B7%20%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%89%20%D8%AE%D9%85%D9%8A%D8%B3%20%D9%85%D8%B4%D9%8A%D8%B7",
     "availability": {
-      "status": "available",
-      "source": "https://www.senanrealestate.sa/projects",
-      "checkedAt": "2026-10-17T14:20:00Z",
-      "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      "status": "prebooking",
+      "source": "https://senanrealestate.sa/projects/upper-mousa.html",
+      "sourceStatus": "حجز مسبق",
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
     },
     "marketer": "سنان العقارية",
     "siteRole": "marketer",
@@ -14549,7 +14597,19 @@
         "changedAt": "2026-10-17T14:22:00Z"
       }
     ],
-    "developerVerified": false
+    "developerVerified": false,
+    "linkAudit": {
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "previousPage": "https://www.senanrealestate.sa/projects/301512",
+      "previousAvailability": {
+        "status": "available",
+        "source": "https://www.senanrealestate.sa/projects",
+        "checkedAt": "2026-10-17T14:20:00Z",
+        "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      },
+      "replacementHttpStatus": 200,
+      "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching company phone 0509177382. For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+    }
   },
   {
     "id": "op-senan-301371",
@@ -14569,7 +14629,16 @@
     "pageSource": "الموقع يعرض المشروع والوحدة بحالة متاحة، بداية السعر 490,000. لا دبوس جغرافي مؤكد.; الصفحة المصدرية تعرض حالة «متاح». لا توجد إحداثيات دبوس مؤكدة؛ لا تحسب مسافة.",
     "pageEvidence": "https://www.senanrealestate.sa/projects/301371",
     "price": 490000,
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D9%81%D8%A7%D8%AE%D8%B1%D8%A9%20%D8%A8%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9%20%D8%A8%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D9%8A%D9%81%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D9%8A%D9%81%20%D8%AE%D9%85%D9%8A%D8%B3%20%D9%85%D8%B4%D9%8A%D8%B7"
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82%20%D9%81%D8%A7%D8%AE%D8%B1%D8%A9%20%D8%A8%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9%20%D8%A8%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D9%8A%D9%81%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D9%8A%D9%81%20%D8%AE%D9%85%D9%8A%D8%B3%20%D9%85%D8%B4%D9%8A%D8%B7",
+    "dsite": "https://www.senanrealestate.sa/",
+    "projectPageCheck": {
+      "url": "https://www.senanrealestate.sa/projects/301371",
+      "httpStatus": 404,
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "fallbackUrl": "https://www.senanrealestate.sa/",
+      "fallbackHttpStatus": 200,
+      "scope": "Exact project page currently returns 404; use verified company website fallback, not a replacement project. Preserve record; no sale-status inference."
+    }
   },
   {
     "id": "op-nhc-47097",
@@ -14815,7 +14884,7 @@
     ],
     "img": "https://nuzul-saas-production.s3.us-east-2.amazonaws.com/tenants/5560/t-projects/301381/hero/176f0ddc-af5c-4d07-86ad-e1399ecd2db0_1080.webp",
     "maps": "",
-    "page": "https://www.senanrealestate.sa/projects/301381",
+    "page": "https://senanrealestate.sa/projects/apartments-siyari.html",
     "dsite": "https://www.senanrealestate.sa/",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82+%D9%81%D9%8A+%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%84%D8%A9+%D9%85%D8%AE%D8%B7%D8%B7+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D9%8A+3+%D8%AD%D9%8A+%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%A8%D9%8A+%D8%A3%D8%A8%D9%87%D8%A7",
     "pageSource": "صفحة العرض الرسمية لسنان تعرض حالة متاح، سعرًا يبدأ من 550,000 ريال، ووحدة متاحة.",
@@ -14823,9 +14892,10 @@
     "price": 550000,
     "availability": {
       "status": "available",
-      "source": "https://www.senanrealestate.sa/projects",
-      "checkedAt": "2026-10-17T14:20:00Z",
-      "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      "source": "https://senanrealestate.sa/projects/apartments-siyari.html",
+      "sourceStatus": "متاح",
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
     },
     "marketer": "سنان العقارية",
     "siteRole": "marketer",
@@ -14838,7 +14908,19 @@
         "changedAt": "2026-10-17T14:22:00Z"
       }
     ],
-    "developerVerified": false
+    "developerVerified": false,
+    "linkAudit": {
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "previousPage": "https://www.senanrealestate.sa/projects/301381",
+      "previousAvailability": {
+        "status": "available",
+        "source": "https://www.senanrealestate.sa/projects",
+        "checkedAt": "2026-10-17T14:20:00Z",
+        "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      },
+      "replacementHttpStatus": 200,
+      "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching company phone 0509177382. For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+    }
   },
   {
     "id": "op-senan-301513",
@@ -14848,23 +14930,24 @@
     "nb": "المدينة العسكرية",
     "type": "تاون هاوس",
     "units": "4 وحدات",
-    "status": "متاح",
+    "status": "قريباً",
     "phones": [
       "0509177382"
     ],
     "img": "https://nuzul-saas-production.s3.us-east-2.amazonaws.com/tenants/5560/t-projects/301513/hero/709d4edb-af48-45ab-b782-4e49adbab199_1080.webp",
     "maps": "",
-    "page": "https://www.senanrealestate.sa/projects/301513",
+    "page": "https://senanrealestate.sa/projects/upper-rufaidah.html",
     "dsite": "https://www.senanrealestate.sa/",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%B1%D9%88%D8%A7%D9%81+%D8%A3%D8%B1%D8%B6%D9%8A%D8%A9+%D9%88%D8%B9%D9%84%D9%88%D9%8A%D8%A9+%D8%A8%D8%A3%D8%AD%D8%AF+%D8%B1%D9%81%D9%8A%D8%AF%D8%A9+%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9+%D8%A7%D9%84%D8%B9%D8%B3%D9%83%D8%B1%D9%8A%D8%A9",
     "pageSource": "صفحة العرض الرسمية لسنان تعرض موقع أحد رفيدة وحالة متاح و4 وحدات بسعر يبدأ من 690,000 ريال.",
     "pageEvidence": "https://www.senanrealestate.sa/projects/301513",
     "price": 690000,
     "availability": {
-      "status": "available",
-      "source": "https://www.senanrealestate.sa/projects",
-      "checkedAt": "2026-10-17T14:20:00Z",
-      "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      "status": "coming_soon",
+      "source": "https://senanrealestate.sa/projects/upper-rufaidah.html",
+      "sourceStatus": "قريباً",
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
     },
     "marketer": "سنان العقارية",
     "siteRole": "marketer",
@@ -14877,7 +14960,19 @@
         "changedAt": "2026-10-17T14:22:00Z"
       }
     ],
-    "developerVerified": false
+    "developerVerified": false,
+    "linkAudit": {
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "previousPage": "https://www.senanrealestate.sa/projects/301513",
+      "previousAvailability": {
+        "status": "available",
+        "source": "https://www.senanrealestate.sa/projects",
+        "checkedAt": "2026-10-17T14:20:00Z",
+        "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      },
+      "replacementHttpStatus": 200,
+      "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching company phone 0509177382. For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+    }
   },
   {
     "id": "op-senan-301515",
@@ -14893,7 +14988,7 @@
     ],
     "img": "https://nuzul-saas-production.s3.us-east-2.amazonaws.com/tenants/5560/t-projects/301515/hero/b71a4ead-ab61-4e44-85c7-1881ae4a9b3d_1080.webp",
     "maps": "",
-    "page": "https://www.senanrealestate.sa/projects/301515",
+    "page": "https://senanrealestate.sa/projects/apartments-rufaidah.html",
     "dsite": "https://www.senanrealestate.sa/",
     "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%82%D9%82+%D8%B3%D9%83%D9%86%D9%8A%D8%A9+%D9%81%D8%A7%D8%AE%D8%B1%D8%A9+%D9%81%D9%8A+%D8%A3%D8%AD%D8%AF+%D8%B1%D9%81%D9%8A%D8%AF%D8%A9+%D9%88%D8%B3%D8%B7+%D8%A7%D9%84%D8%A8%D9%84%D8%AF",
     "pageSource": "صفحة العرض الرسمية لسنان تعرض موقع أحد رفيدة وحالة متاح و6 شقق، والسعر يبدأ من 550,000 ريال.",
@@ -14901,9 +14996,10 @@
     "price": 550000,
     "availability": {
       "status": "available",
-      "source": "https://www.senanrealestate.sa/projects",
-      "checkedAt": "2026-10-17T14:20:00Z",
-      "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      "source": "https://senanrealestate.sa/projects/apartments-rufaidah.html",
+      "sourceStatus": "متاح",
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
     },
     "marketer": "سنان العقارية",
     "siteRole": "marketer",
@@ -14916,7 +15012,19 @@
         "changedAt": "2026-10-17T14:22:00Z"
       }
     ],
-    "developerVerified": false
+    "developerVerified": false,
+    "linkAudit": {
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "previousPage": "https://www.senanrealestate.sa/projects/301515",
+      "previousAvailability": {
+        "status": "available",
+        "source": "https://www.senanrealestate.sa/projects",
+        "checkedAt": "2026-10-17T14:20:00Z",
+        "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+      },
+      "replacementHttpStatus": 200,
+      "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching company phone 0509177382. For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+    }
   },
   {
     "id": "op-karden25-abha",
@@ -24163,7 +24271,7 @@
     "phoneContacts": [
       "التسويق — سنان العقارية"
     ],
-    "page": "https://www.senanrealestate.sa/projects/301379",
+    "page": "https://senanrealestate.sa/projects/villas-al-mahala.html",
     "dsite": "https://www.senanrealestate.sa/",
     "img": "assets/images/projects/verified-senan301379-source-image.webp",
     "maps": "",
@@ -24174,9 +24282,10 @@
     "rooms": 5,
     "availability": {
       "status": "available",
-      "source": "https://www.senanrealestate.sa/projects/301379",
-      "checkedAt": "2026-10-17T14:22:00Z",
-      "basis": "Explicit available priced unit row; independent of generic enquiry form. No remaining-stock total assumed."
+      "source": "https://senanrealestate.sa/projects/villas-al-mahala.html",
+      "sourceStatus": "متاح",
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
     },
     "fieldEvidence": {
       "price": {
@@ -24228,7 +24337,20 @@
       "checkedAt": "2026-10-17T14:24:00Z",
       "status": "official_source_visually_reviewed",
       "role": "marketer_project_exterior_photo"
-    }
+    },
+    "linkAudit": {
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "previousPage": "https://www.senanrealestate.sa/projects/301379",
+      "previousAvailability": {
+        "status": "available",
+        "source": "https://www.senanrealestate.sa/projects/301379",
+        "checkedAt": "2026-10-17T14:22:00Z",
+        "basis": "Explicit available priced unit row; independent of generic enquiry form. No remaining-stock total assumed."
+      },
+      "replacementHttpStatus": 200,
+      "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching company phone 0509177382. For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+    },
+    "status": "متاح"
   },
   {
     "id": "op-senan-301521",
@@ -24246,7 +24368,7 @@
     "phoneContacts": [
       "التسويق — سنان العقارية"
     ],
-    "page": "https://www.senanrealestate.sa/projects/301521",
+    "page": "https://senanrealestate.sa/projects/upper-rooms-raqi.html",
     "dsite": "https://www.senanrealestate.sa/",
     "img": "assets/images/projects/verified-senan301521-source-image.webp",
     "maps": "",
@@ -24256,10 +24378,11 @@
     "priceSource": "https://www.senanrealestate.sa/projects/301521",
     "rooms": 4,
     "availability": {
-      "status": "available",
-      "source": "https://www.senanrealestate.sa/projects/301521",
-      "checkedAt": "2026-10-17T14:22:00Z",
-      "basis": "Explicit available priced unit row; independent of generic enquiry form. No remaining-stock total assumed."
+      "status": "prebooking",
+      "source": "https://senanrealestate.sa/projects/upper-rooms-raqi.html",
+      "sourceStatus": "حجز مسبق",
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
     },
     "fieldEvidence": {
       "price": {
@@ -24318,6 +24441,19 @@
       "checkedAt": "2026-10-17T14:24:00Z",
       "status": "official_source_visually_reviewed",
       "role": "marketer_project_exterior_photo"
-    }
+    },
+    "linkAudit": {
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "previousPage": "https://www.senanrealestate.sa/projects/301521",
+      "previousAvailability": {
+        "status": "available",
+        "source": "https://www.senanrealestate.sa/projects/301521",
+        "checkedAt": "2026-10-17T14:22:00Z",
+        "basis": "Explicit available priced unit row; independent of generic enquiry form. No remaining-stock total assumed."
+      },
+      "replacementHttpStatus": 200,
+      "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching company phone 0509177382. For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+    },
+    "status": "حجز مسبق"
   }
 ]

@@ -10527,8 +10527,8 @@
     "phones": [],
     "wa": "",
     "contactUrl": "",
-    "page": "https://almadaralwaed.com/wp-content/uploads/2025/06/0530864667-شقق-شاطئ-ثروة.pdf",
-    "dsite": "https://almadaralwaed.com/",
+    "page": "https://sakani.sa/app/offplan-projects/1290",
+    "dsite": "",
     "maps": "https://www.google.com/maps/search/?api=1&query=26.3979293,50.2240262",
     "sales": "",
     "tier": "basic",
@@ -10699,7 +10699,14 @@
     },
     "lat": 26.3979293,
     "lon": 50.2240262,
-    "loc": "project"
+    "loc": "project",
+    "linkAudit": {
+      "checkedAt": "2026-10-27T20:40:54.135327+00:00",
+      "source": "https://sakani.sa/mainIntermediaryApi/v4/projects/1290?include=amenities%2Cprojects_amenities%2Cdeveloper%2Cproject_unit_types",
+      "basis": "Live Sakani API identifies id1290, code02-04-0072, شاطئ ثروة, شركة المدار الواعد للتطوير والاستثمار العقاري, الدمام and exact stored coordinates. Former developer domain now independently serves unrelated Indonesian gambling/spam content; original brochure path HTTP404. Remove only active former developer URL, preserve historical evidence; no company closure inferred.",
+      "historicalDomain": "almadaralwaed.com",
+      "historicalDomainStatus": "unrelated_content_do_not_link"
+    }
   },
   {
     "id": "P092",
@@ -37528,8 +37535,8 @@
     "phones": [],
     "wa": "",
     "contactUrl": "",
-    "page": "https://www.lamerre.sa/projects/Lamer-Serin",
-    "dsite": "https://www.lamerre.sa/",
+    "page": "https://cdn.aqar.fm/projects/049607301_1766064862320.pdf",
+    "dsite": "",
     "maps": "https://www.google.com/maps/search/?api=1&query=21.7506944,39.1479443",
     "sales": "",
     "tier": "basic",
@@ -37708,7 +37715,25 @@
     },
     "lat": 21.7506944,
     "lon": 39.1479443,
-    "loc": "project"
+    "loc": "project",
+    "projectPageCheck": {
+      "url": "https://cdn.aqar.fm/projects/049607301_1766064862320.pdf",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-27T21:15:08.334499+00:00",
+      "sourceType": "developer_project_brochure",
+      "scope": "Developer-branded Lamer Serin brochure hosted by Aqar, matching project/company/Obhur Jeddah/phone920032632, license821. Project description only; not current availability evidence.",
+      "previousUrl": "https://www.lamerre.sa/projects/Lamer-Serin",
+      "previousHttpStatus": 402,
+      "previousRenderedResult": "DEPLOYMENT_DISABLED"
+    },
+    "linkAudit": {
+      "checkedAt": "2026-10-27T21:15:08.334499+00:00",
+      "previousPage": "https://www.lamerre.sa/projects/Lamer-Serin",
+      "previousDsite": "https://www.lamerre.sa/",
+      "httpStatus": 402,
+      "basis": "Developer domain and project endpoint return402; root explicitly DEPLOYMENT_DISABLED. Replaced active project action with matching developer brochure, suppressed disabled corporate site; no business closure inferred.",
+      "brochureSha256": "742dd3184d834d30af902d1e52eb6dec9e8e25625a9e3413b538c1ac71453c1f"
+    }
   },
   {
     "id": "P317",
@@ -70051,9 +70076,9 @@
     "phones": [],
     "wa": "",
     "contactUrl": "",
-    "page": "https://www.alsknaldaym.com/projects/view/41",
+    "page": "https://www.alsknaldaym.com/projects/view/42",
     "dsite": "https://www.alsknaldaym.com/",
-    "maps": "",
+    "maps": "https://maps.app.goo.gl/tv6YrxThAWRCH1UF9",
     "sales": "",
     "tier": "basic",
     "nb": "طيبة",
@@ -70108,7 +70133,16 @@
         "checkedAt": "2026-10-18T12:46:11.653395+00:00",
         "basis": "Exact developer model page explicitly identifies parent project26,independent floors/apartments,RiyadhTaibah.18 count,156m² and425–460k apply only firstfloor model, not whole project; no current inventory inferred from registration form."
       }
-    }
+    },
+    "lat": 24.5531808,
+    "lon": 46.8158761,
+    "locationAudit": {
+      "status": "publisher_project_pin",
+      "checkedAt": "2026-10-27T20:38:03.956915+00:00",
+      "source": "https://www.alsknaldaym.com/",
+      "note": "Official homepage live project card and map dataset identify مشروع السكن 26 in Riyadh/Taibah and link page 42 plus publisher map. Old page 41 returned HTTP404 title Not Found twice. New page42 HTTP200 title/h1 match. Coordinates are publisher-provided, not independently Google-place verified."
+    },
+    "loc": "project"
   },
   {
     "id": "P610",

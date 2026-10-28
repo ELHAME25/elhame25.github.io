@@ -1,0 +1,476 @@
+{
+  "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+  "patches": [
+    {
+      "file": "opportunities.json",
+      "id": "op-a69531296c",
+      "fields": {
+        "projectPageCheck": {
+          "old": null,
+          "new": {
+            "url": "https://rakez.sa/ar/project/40498/",
+            "httpStatus": 404,
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "fallbackUrl": "https://rakez.sa/ar/",
+            "fallbackHttpStatus": 200,
+            "scope": "Exact project page currently returns 404; use verified company website fallback, not a replacement project. Preserve record; no sale-status inference."
+          }
+        }
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-senan-301520",
+      "fields": {
+        "linkAudit": {
+          "old": null,
+          "new": {
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "previousPage": "https://www.senanrealestate.sa/projects/301520",
+            "previousAvailability": {
+              "status": "available",
+              "source": "https://www.senanrealestate.sa/projects",
+              "checkedAt": "2026-10-17T14:20:00Z",
+              "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+            },
+            "replacementHttpStatus": 200,
+            "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching publicly listed company phone (number omitted from this audit). For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+          }
+        },
+        "page": {
+          "old": "https://www.senanrealestate.sa/projects/301520",
+          "new": "https://senanrealestate.sa/projects/apartments-abha.html"
+        },
+        "availability": {
+          "old": {
+            "status": "available",
+            "source": "https://www.senanrealestate.sa/projects",
+            "checkedAt": "2026-10-17T14:20:00Z",
+            "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+          },
+          "new": {
+            "status": "available",
+            "source": "https://senanrealestate.sa/projects/apartments-abha.html",
+            "sourceStatus": "متاح",
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
+          }
+        }
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-senan-301522",
+      "fields": {
+        "linkAudit": {
+          "old": null,
+          "new": {
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "previousPage": "https://www.senanrealestate.sa/projects/301522",
+            "previousAvailability": {
+              "status": "available",
+              "source": "https://www.senanrealestate.sa/projects",
+              "checkedAt": "2026-10-17T14:20:00Z",
+              "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+            },
+            "replacementHttpStatus": 200,
+            "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching publicly listed company phone (number omitted from this audit). For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+          }
+        },
+        "page": {
+          "old": "https://www.senanrealestate.sa/projects/301522",
+          "new": "https://senanrealestate.sa/projects/ghaim-house.html"
+        },
+        "availability": {
+          "old": {
+            "status": "available",
+            "source": "https://www.senanrealestate.sa/projects",
+            "checkedAt": "2026-10-17T14:20:00Z",
+            "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+          },
+          "new": {
+            "status": "available",
+            "source": "https://senanrealestate.sa/projects/ghaim-house.html",
+            "sourceStatus": "متاح",
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
+          }
+        }
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-senan-301380",
+      "fields": {
+        "linkAudit": {
+          "old": null,
+          "new": {
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "previousPage": "https://www.senanrealestate.sa/projects/301380",
+            "previousAvailability": {
+              "status": "available",
+              "source": "https://www.senanrealestate.sa/projects",
+              "checkedAt": "2026-10-17T14:20:00Z",
+              "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+            },
+            "replacementHttpStatus": 200,
+            "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching publicly listed company phone (number omitted from this audit). For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+          }
+        },
+        "page": {
+          "old": "https://www.senanrealestate.sa/projects/301380",
+          "new": "https://senanrealestate.sa/projects/apartments-shifa.html"
+        },
+        "availability": {
+          "old": {
+            "status": "available",
+            "source": "https://www.senanrealestate.sa/projects",
+            "checkedAt": "2026-10-17T14:20:00Z",
+            "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+          },
+          "new": {
+            "status": "available",
+            "source": "https://senanrealestate.sa/projects/apartments-shifa.html",
+            "sourceStatus": "متاح",
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
+          }
+        }
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-senan-301512",
+      "fields": {
+        "linkAudit": {
+          "old": null,
+          "new": {
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "previousPage": "https://www.senanrealestate.sa/projects/301512",
+            "previousAvailability": {
+              "status": "available",
+              "source": "https://www.senanrealestate.sa/projects",
+              "checkedAt": "2026-10-17T14:20:00Z",
+              "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+            },
+            "replacementHttpStatus": 200,
+            "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching publicly listed company phone (number omitted from this audit). For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+          }
+        },
+        "page": {
+          "old": "https://www.senanrealestate.sa/projects/301512",
+          "new": "https://senanrealestate.sa/projects/upper-mousa.html"
+        },
+        "status": {
+          "old": "متاح",
+          "new": "حجز مسبق"
+        },
+        "availability": {
+          "old": {
+            "status": "available",
+            "source": "https://www.senanrealestate.sa/projects",
+            "checkedAt": "2026-10-17T14:20:00Z",
+            "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+          },
+          "new": {
+            "status": "prebooking",
+            "source": "https://senanrealestate.sa/projects/upper-mousa.html",
+            "sourceStatus": "حجز مسبق",
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
+          }
+        }
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-senan-301371",
+      "fields": {
+        "projectPageCheck": {
+          "old": null,
+          "new": {
+            "url": "https://www.senanrealestate.sa/projects/301371",
+            "httpStatus": 404,
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "fallbackUrl": "https://www.senanrealestate.sa/",
+            "fallbackHttpStatus": 200,
+            "scope": "Exact project page currently returns 404; use verified company website fallback, not a replacement project. Preserve record; no sale-status inference."
+          }
+        },
+        "dsite": {
+          "old": null,
+          "new": "https://www.senanrealestate.sa/"
+        }
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-senan-301381",
+      "fields": {
+        "linkAudit": {
+          "old": null,
+          "new": {
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "previousPage": "https://www.senanrealestate.sa/projects/301381",
+            "previousAvailability": {
+              "status": "available",
+              "source": "https://www.senanrealestate.sa/projects",
+              "checkedAt": "2026-10-17T14:20:00Z",
+              "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+            },
+            "replacementHttpStatus": 200,
+            "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching publicly listed company phone (number omitted from this audit). For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+          }
+        },
+        "page": {
+          "old": "https://www.senanrealestate.sa/projects/301381",
+          "new": "https://senanrealestate.sa/projects/apartments-siyari.html"
+        },
+        "availability": {
+          "old": {
+            "status": "available",
+            "source": "https://www.senanrealestate.sa/projects",
+            "checkedAt": "2026-10-17T14:20:00Z",
+            "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+          },
+          "new": {
+            "status": "available",
+            "source": "https://senanrealestate.sa/projects/apartments-siyari.html",
+            "sourceStatus": "متاح",
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
+          }
+        }
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-senan-301513",
+      "fields": {
+        "linkAudit": {
+          "old": null,
+          "new": {
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "previousPage": "https://www.senanrealestate.sa/projects/301513",
+            "previousAvailability": {
+              "status": "available",
+              "source": "https://www.senanrealestate.sa/projects",
+              "checkedAt": "2026-10-17T14:20:00Z",
+              "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+            },
+            "replacementHttpStatus": 200,
+            "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching publicly listed company phone (number omitted from this audit). For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+          }
+        },
+        "page": {
+          "old": "https://www.senanrealestate.sa/projects/301513",
+          "new": "https://senanrealestate.sa/projects/upper-rufaidah.html"
+        },
+        "status": {
+          "old": "متاح",
+          "new": "قريباً"
+        },
+        "availability": {
+          "old": {
+            "status": "available",
+            "source": "https://www.senanrealestate.sa/projects",
+            "checkedAt": "2026-10-17T14:20:00Z",
+            "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+          },
+          "new": {
+            "status": "coming_soon",
+            "source": "https://senanrealestate.sa/projects/upper-rufaidah.html",
+            "sourceStatus": "قريباً",
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
+          }
+        }
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-senan-301515",
+      "fields": {
+        "linkAudit": {
+          "old": null,
+          "new": {
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "previousPage": "https://www.senanrealestate.sa/projects/301515",
+            "previousAvailability": {
+              "status": "available",
+              "source": "https://www.senanrealestate.sa/projects",
+              "checkedAt": "2026-10-17T14:20:00Z",
+              "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+            },
+            "replacementHttpStatus": 200,
+            "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching publicly listed company phone (number omitted from this audit). For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+          }
+        },
+        "page": {
+          "old": "https://www.senanrealestate.sa/projects/301515",
+          "new": "https://senanrealestate.sa/projects/apartments-rufaidah.html"
+        },
+        "availability": {
+          "old": {
+            "status": "available",
+            "source": "https://www.senanrealestate.sa/projects",
+            "checkedAt": "2026-10-17T14:20:00Z",
+            "basis": "Exact project ID card in official directory explicitly says available. Total portfolio counters are not remaining units."
+          },
+          "new": {
+            "status": "available",
+            "source": "https://senanrealestate.sa/projects/apartments-rufaidah.html",
+            "sourceStatus": "متاح",
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
+          }
+        }
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-senan-301379",
+      "fields": {
+        "linkAudit": {
+          "old": null,
+          "new": {
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "previousPage": "https://www.senanrealestate.sa/projects/301379",
+            "previousAvailability": {
+              "status": "available",
+              "source": "https://www.senanrealestate.sa/projects/301379",
+              "checkedAt": "2026-10-17T14:22:00Z",
+              "basis": "Explicit available priced unit row; independent of generic enquiry form. No remaining-stock total assumed."
+            },
+            "replacementHttpStatus": 200,
+            "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching publicly listed company phone (number omitted from this audit). For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+          }
+        },
+        "page": {
+          "old": "https://www.senanrealestate.sa/projects/301379",
+          "new": "https://senanrealestate.sa/projects/villas-al-mahala.html"
+        },
+        "status": {
+          "old": null,
+          "new": "متاح"
+        },
+        "availability": {
+          "old": {
+            "status": "available",
+            "source": "https://www.senanrealestate.sa/projects/301379",
+            "checkedAt": "2026-10-17T14:22:00Z",
+            "basis": "Explicit available priced unit row; independent of generic enquiry form. No remaining-stock total assumed."
+          },
+          "new": {
+            "status": "available",
+            "source": "https://senanrealestate.sa/projects/villas-al-mahala.html",
+            "sourceStatus": "متاح",
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
+          }
+        }
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-senan-301521",
+      "fields": {
+        "linkAudit": {
+          "old": null,
+          "new": {
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "previousPage": "https://www.senanrealestate.sa/projects/301521",
+            "previousAvailability": {
+              "status": "available",
+              "source": "https://www.senanrealestate.sa/projects/301521",
+              "checkedAt": "2026-10-17T14:22:00Z",
+              "basis": "Explicit available priced unit row; independent of generic enquiry form. No remaining-stock total assumed."
+            },
+            "replacementHttpStatus": 200,
+            "basis": "Official homepage links exact project title/city/neighborhood; current detail page identity and matching publicly listed company phone (number omitted from this audit). For 301521 historical detailDiscrepancies header الراقي matches current حي الراقي; do not erase unresolved old neighborhood discrepancy."
+          }
+        },
+        "page": {
+          "old": "https://www.senanrealestate.sa/projects/301521",
+          "new": "https://senanrealestate.sa/projects/upper-rooms-raqi.html"
+        },
+        "status": {
+          "old": null,
+          "new": "حجز مسبق"
+        },
+        "availability": {
+          "old": {
+            "status": "available",
+            "source": "https://www.senanrealestate.sa/projects/301521",
+            "checkedAt": "2026-10-17T14:22:00Z",
+            "basis": "Explicit available priced unit row; independent of generic enquiry form. No remaining-stock total assumed."
+          },
+          "new": {
+            "status": "prebooking",
+            "source": "https://senanrealestate.sa/projects/upper-rooms-raqi.html",
+            "sourceStatus": "حجز مسبق",
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "basis": "Current official matching project detail page explicitly states this project status; no remaining-unit quantity or current unit price inferred."
+          }
+        }
+      }
+    },
+    {
+      "file": "offices.json",
+      "id": "phase5-google-office-b8cb615e8795",
+      "fields": {
+        "web": {
+          "old": "https://snapchat.com/t/XFHFI3aW",
+          "new": ""
+        },
+        "linkAudit": {
+          "old": null,
+          "new": {
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "previousWeb": "https://snapchat.com/t/XFHFI3aW",
+            "httpStatus": 404,
+            "scope": "Exact website action unavailable in two checks; suppress only this link. Business, phone, and map records preserved. No verified replacement."
+          }
+        }
+      }
+    },
+    {
+      "file": "offices.json",
+      "id": "office-maps-9110a832398f",
+      "fields": {
+        "web": {
+          "old": "https://alnasser.carrd.co/",
+          "new": ""
+        },
+        "linkAudit": {
+          "old": null,
+          "new": {
+            "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+            "previousWeb": "https://alnasser.carrd.co/",
+            "httpStatus": 404,
+            "scope": "Exact website action unavailable in two checks; suppress only this link. Business, phone, and map records preserved. No verified replacement."
+          }
+        }
+      }
+    },
+    {
+      "file": "cars.json",
+      "id": "phase6-cars-6bcebe2d50264a",
+      "fields": {
+        "web": {
+          "old": "https://shopping-center-12817.business.site",
+          "new": ""
+        },
+        "linkAudit": {
+          "old": null,
+          "new": {
+            "previousWeb": "https://shopping-center-12817.business.site",
+            "httpStatus": 404,
+            "checkedAt": "2026-10-27T20:56:19.089506+00:00",
+            "scope": "Exact website returns Google404 in two independent requests. No verified replacement. Business record and contact/map data preserved."
+          }
+        }
+      }
+    }
+  ]
+}

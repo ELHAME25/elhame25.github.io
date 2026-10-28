@@ -88,3 +88,8 @@ dialog.detail{padding:0;border:0;border-radius:17px;width:min(760px,calc(100vw -
 .city-hero.has-photo-credit:after{z-index:1;pointer-events:none}
 .city-hero.has-photo-credit>.city-hero-copy{position:relative;z-index:2;pointer-events:none}
 .city-photo-credit:focus-visible{outline:3px solid #fff;outline-offset:-5px}
+
+/* Keep the original portrait fully visible; the same cached photo softly fills the frame. */
+.city-photo-credit.portrait-photo{overflow:hidden;background:#173842}
+.city-photo-credit.portrait-photo:before{content:"";position:absolute;inset:-5px;background-image:var(--portrait-photo);background-position:center;background-size:cover;opacity:.24;filter:blur(3px)}
+.city-photo-credit.portrait-photo>img{position:absolute;z-index:1}

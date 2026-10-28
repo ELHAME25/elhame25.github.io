@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-27",
+  "scope": [
+    "الوجه",
+    "الخفجي",
+    "بلجرشي",
+    "المذنب",
+    "بيشة",
+    "بيش"
+  ],
+  "implemented": [
+    {
+      "city": "الوجه",
+      "asset": "assets/images/cities/al-wajh-corniche-real.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Al_Wajh_Beach.jpg",
+      "license": "CC BY-SA 4.0",
+      "pixelsInspected": true,
+      "sourceIdentity": "Urban landscaped corniche in Al Wajh",
+      "metadata": "audits/city-photo-al-wajh-20261027.json"
+    }
+  ],
+  "notReplaced": [
+    {
+      "city": "الخفجي",
+      "reason": "Inspected licensed Al-Khafji Mall source; it is already the current image, no independently verified superior cityscape found.",
+      "source": "https://commons.wikimedia.org/wiki/File:Al-Khafji_Mall.jpg"
+    },
+    {
+      "city": "بلجرشي",
+      "reason": "Licensed 2021 old-town candidate depicts decayed interior, rejected; official SPA search only existing rock landmark.",
+      "source": "https://commons.wikimedia.org/wiki/File:Baljurashi_old_town,_Baha_Region,_Saudi_Arabia_(2).jpg"
+    },
+    {
+      "city": "المذنب",
+      "reason": "Official SPA search returned three oasis/dune photographs, not a verified urban alternative."
+    },
+    {
+      "city": "بيشة",
+      "reason": "SPA search no results; Commons identifies historic 1968 fortress and existing dam but no verified superior modern city alternative."
+    },
+    {
+      "city": "بيش",
+      "reason": "SPA search returned same dam; no superior city alternative verified."
+    }
+  ],
+  "limits": "Bounded licensed-source review, not a statement that no suitable photographs exist. No arbitrary or fabricated city imagery substituted. Main implementation owns app mapping and final browser verification."
+}

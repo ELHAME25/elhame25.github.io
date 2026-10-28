@@ -3589,7 +3589,7 @@
     "phones": [
       "0568575365"
     ],
-    "web": "https://t.snapchat.com/Vh5OJLNe",
+    "web": "",
     "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%AD%D9%84%D9%85+%D8%A7%D9%84%D9%85%D9%86%D8%B2%D9%84+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%E2%80%AD/@25.3341799,49.5732885,17z/data=!3m1!4b1!4m6!3m5!1s0x3e3791e581db5d6d:0xa874273f1864f277!8m2!3d25.3341799!4d49.5732885!16s%2Fg%2F11x1p0n3qh?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
     "lat": 25.3341799,
     "lon": 49.5732885,
@@ -3661,6 +3661,12 @@
         "value": "https://t.snapchat.com/Vh5OJLNe",
         "source": null
       }
+    },
+    "linkAudit": {
+      "previousWeb": "https://t.snapchat.com/Vh5OJLNe",
+      "httpStatus": 404,
+      "checkedAt": "2026-10-27T21:12:38.594722+00:00",
+      "scope": "Two independent requests return404 and official Snapchat body explicitly says Sorry, This content was not found. No matching replacement verified; only exact broken website action suppressed, office/maps/phones preserved."
     }
   },
   {
@@ -4147,11 +4153,17 @@
     "phones": [
       "0540400404"
     ],
-    "web": "https://snapchat.com/t/XFHFI3aW",
+    "web": "",
     "maps": "https://www.google.com/maps/search/?api=1&query=%D8%B5%D9%82%D8%B1%20%D8%B7%D9%8A%D8%A8%D9%87%20%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9&query_place_id=ChIJDXgDSsSXvRURSTPHWyLJDjo",
     "lat": null,
     "lon": null,
-    "sec": ""
+    "sec": "",
+    "linkAudit": {
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "previousWeb": "https://snapchat.com/t/XFHFI3aW",
+      "httpStatus": 404,
+      "scope": "Exact website action unavailable in two checks; suppress only this link. Business, phone, and map records preserved. No verified replacement."
+    }
   },
   {
     "id": "phase5-google-office-e38a5d1a378b",
@@ -7435,12 +7447,18 @@
     "phones": [
       "0163352099"
     ],
-    "web": "https://alnasser.carrd.co/",
+    "web": "",
     "maps": "https://www.google.com/maps/search/?api=1&query=26.1363121,43.6621594&query_place_id=ChIJHy8bD5wighURnPgTCdnhvQY",
     "lat": 26.13631,
     "lon": 43.66216,
     "sec": "",
-    "loc": "pt"
+    "loc": "pt",
+    "linkAudit": {
+      "checkedAt": "2026-10-27T20:55:12.509143+00:00",
+      "previousWeb": "https://alnasser.carrd.co/",
+      "httpStatus": 404,
+      "scope": "Exact website action unavailable in two checks; suppress only this link. Business, phone, and map records preserved. No verified replacement."
+    }
   },
   {
     "id": "office-maps-6dcf7361ac8f",

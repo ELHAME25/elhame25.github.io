@@ -1,0 +1,43 @@
+[
+  {
+    "id": "P609",
+    "file": "projects.json",
+    "old": {
+      "page": "https://www.alsknaldaym.com/projects/view/41",
+      "maps": "",
+      "lat": null,
+      "lon": null
+    },
+    "new": {
+      "page": "https://www.alsknaldaym.com/projects/view/42",
+      "maps": "https://maps.app.goo.gl/tv6YrxThAWRCH1UF9",
+      "lat": 24.5531808,
+      "lon": 46.8158761
+    },
+    "evidence": {
+      "source": "https://www.alsknaldaym.com/",
+      "currentPage": "https://www.alsknaldaym.com/projects/view/42",
+      "checkedAt": "2026-10-27T20:38:03.956915+00:00",
+      "basis": "Official homepage live project card and map dataset identify مشروع السكن 26 in Riyadh/Taibah and link page 42 plus publisher map. Old page 41 returned HTTP404 title Not Found twice. New page42 HTTP200 title/h1 match. Coordinates are publisher-provided, not independently Google-place verified."
+    }
+  },
+  {
+    "id": "P091",
+    "file": "projects.json",
+    "old": {
+      "page": "https://almadaralwaed.com/wp-content/uploads/2025/06/0530864667-شقق-شاطئ-ثروة.pdf",
+      "dsite": "https://almadaralwaed.com/"
+    },
+    "new": {
+      "page": "https://sakani.sa/app/offplan-projects/1290",
+      "dsite": ""
+    },
+    "evidence": {
+      "checkedAt": "2026-10-27T20:40:54.135327+00:00",
+      "source": "https://sakani.sa/mainIntermediaryApi/v4/projects/1290?include=amenities%2Cprojects_amenities%2Cdeveloper%2Cproject_unit_types",
+      "basis": "Live Sakani API identifies id1290, code02-04-0072, شاطئ ثروة, شركة المدار الواعد للتطوير والاستثمار العقاري, الدمام and exact stored coordinates. Former developer domain now independently serves unrelated Indonesian gambling/spam content; original brochure path HTTP404. Remove only active former developer URL, preserve historical evidence; no company closure inferred.",
+      "oldDomainTitle": "Gane Den Services Hiburan Digital Pilihan Terbaik GACOR200",
+      "rawSha256": "19fdebf87163e58644989e88851403b2db44c18b8b351fe9dce12aa9ac4e36c0"
+    }
+  }
+]

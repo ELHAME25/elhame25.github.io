@@ -1,0 +1,69 @@
+{
+  "scope": "All 83 city hero mappings, pixel inspection using contact sheets; current main 8d73398 base. Local only, not external accuracy verification of every source.",
+  "real": 59,
+  "illustrations": 24,
+  "missingAssets": 0,
+  "smallPortraitContain": [
+    "الخبر",
+    "الظهران",
+    "ينبع",
+    "بريدة",
+    "المجمعة",
+    "السليل",
+    "ضباء",
+    "القطيف",
+    "عرعر",
+    "حفر الباطن",
+    "صفوى"
+  ],
+  "weakCitySubject": [
+    "خميس مشيط",
+    "الوجه",
+    "الخفجي",
+    "بلجرشي",
+    "المذنب",
+    "بيشة",
+    "بيش"
+  ],
+  "notes": [
+    "Weak subject is visual suitability, not proof of wrong city.",
+    "Do not replace real images with fabricated locations.",
+    "Khamis old panorama candidate rejected because old/cloud-heavy and low aesthetic.",
+    "All local active refs checked: 152 unique paths, no missing.",
+    "External links handled in separate comprehensive link inventory.",
+    "Khamis and Wajh replacements mapped with linked licensed provenance. Remaining weak subjects not silently substituted. Main implementation added portrait backdrop; rendered visual QA tracked separately."
+  ],
+  "applied": [
+    {
+      "city": "خميس مشيط",
+      "asset": "assets/images/cities/khamis-mushait-walk-real.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Khamis_Mushayt_Field_walk.jpg",
+      "rights": "CC BY-SA 3.0, Aiman titi, dated 2011-01-14. Original unchanged; original palace retained.",
+      "imageContent": "Urban walk/plaza and road, palms and shops. Archival city photograph; no current condition claim.",
+      "mapping": "Main implementation owner maps cover centered; rendered QA pending."
+    },
+    {
+      "city": "الوجه",
+      "asset": "assets/images/cities/al-wajh-corniche-real.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Al_Wajh_Beach.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Al_Wajh_Beach.jpg",
+      "author": "Yasser Bakhsh",
+      "capturedAt": "2019-01-23",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "creditAnchor": "verified-al-wajh-corniche",
+      "verifiedPixels": true,
+      "width": 1600,
+      "height": 1045,
+      "sha256": "1358ec273df3f4684dae1ca493fe493ea664bf9e0eca2f0fadde7ef0a1e7e48f",
+      "changes": "Resize to1600px and WebP conversion, no fabricated content",
+      "rationale": "Urban landscaped corniche and sea replace isolated wooden window close-up."
+    }
+  ],
+  "heldNotProduction": [
+    {
+      "source": "https://www.discoveraseer.com/en/destinations/khamis-mushait",
+      "reason": "License unspecified: not permitted through existing rights guard, not included."
+    }
+  ]
+}

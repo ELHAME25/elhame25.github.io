@@ -1,6 +1,6 @@
 # Image notices
 
-These notices accompany the distributed image files. The city photographs are licensed separately from the application. Active city imagery includes the CC0 Abha/Makkah photos, public-domain Madinah panorama, and generated decorative Riyadh/Buraydah city illustrations. The user-supplied Riyad Bank facade is used only on the entry screen. All CC BY/CC BY-SA photographs below remain archived, not displayed; other cities use a neutral illustration pending cleared replacements. Attribution, source links, modification notices and the original licenses are retained below and in [the standalone notices page](assets/images/cities/credits.html). The employee interface has no photo-source button or captions.
+These notices accompany the distributed image files. Active city imagery includes source-attributed real photographs and generated decorative city illustrations, selected by the CITY_HERO_ASSETS mapping in assets/app.js. Archived files are retained and are not automatically displayed. Image-specific rights, source links, modification notices and license information are retained below and in [the standalone notices page](assets/images/cities/credits.html); an unspecified license is not an open-license claim. The user-supplied Riyad Bank facade is used only on the entry screen. The employee interface links attributed city images to their source notices.
 
 The bank logo is the existing original Riyad Bank logo. No generic building is represented as Riyad Bank headquarters. The entry photograph was supplied by the user for this requested bank-facade background. The original JPEG is distributed unchanged; its phone interface and black margins are excluded only by the SVG display viewBox. No bank signage or building pixels were generated or retouched.
 
@@ -166,3 +166,24 @@ The Buraydah city banner is an AI-generated decorative interpretation inspired b
 ## Complete city identity illustrations — 2026-10-16
 
 The generated city identity assets listed in `assets/images/cities/generated-identities.json` are new decorative illustrations, not documentary photographs or exact property representations. Source links identify the locality/landmark used as conceptual reference; they do not claim those sites supplied these generated images. Original generation provenance and visual crop checks are retained. No on-image or employee-facing caption is added. Existing approved Riyadh and Buraydah assets remain unchanged.
+
+
+## خميس مشيط — تحديث 2026-10-27
+
+Khamis Mushayt Field walk — Aiman titi. Photographed 2011-01-14.
+
+Source: https://commons.wikimedia.org/wiki/File:Khamis_Mushayt_Field_walk.jpg
+
+License: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/).
+
+Distributed original JPEG: [khamis-mushait-walk-real.jpg](assets/images/cities/khamis-mushait-walk-real.jpg). Original pixels unchanged; CSS display crop varies by viewport. The archival city image is not represented as a current view. The previous Shahr palace image and attribution remain preserved.
+
+## الوجه — تحديث 2026-10-27
+
+Al Wajh Beach — Yasser Bakhsh. Photographed 2019-01-23.
+
+Source: https://commons.wikimedia.org/wiki/File:Al_Wajh_Beach.jpg
+
+License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).
+
+Distributed derivative: [al-wajh-corniche-real.webp](assets/images/cities/al-wajh-corniche-real.webp). Resized to 1600 pixels wide and converted to WebP; CSS display crop varies by viewport. This derivative retains CC BY-SA 4.0. The archival urban corniche photograph is not represented as a current view. Previous window image and attribution remain preserved.

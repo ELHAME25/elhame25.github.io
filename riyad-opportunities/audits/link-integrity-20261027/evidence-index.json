@@ -1,0 +1,21 @@
+{
+  "auditDate": "2026-10-27",
+  "scope": "1467 distinct active main/detail website URLs attempted. HTTP 200 proves response only, not project identity, business legitimacy, availability, or exact map correctness.",
+  "results": {
+    "http200": 1206,
+    "http404": 15,
+    "otherUnverified": 246
+  },
+  "files": {
+    "final-audit-summary.json": "Exact status counts, exclusions and scope limits",
+    "applied-link-patch-manifest.json": "14-record guarded data patch manifest, previous and replacement values",
+    "confirmed-link-patches.json": "Separate P091/P609 exact-source replacements applied by main",
+    "senan-confirmed-link-patches.json": "9 exact project URL replacements, official source links and current status evidence",
+    "additional-confirmed-404.json": "Additional exact broken actions and conservative fallback/suppression evidence",
+    "unresolved-links.json": "246 non-200/non-404 outcomes, retained for recheck; not asserted dead"
+  },
+  "evidenceRetention": "Concise extracted source evidence and URLs only. No raw HTML, personal contact lists, or bulk network-response bodies included. Historical compromised-domain URLs appear as evidence, not recommended destinations.",
+  "preservation": "No business/project deletion. Exact broken website actions only suppressed; historic evidence retained. Qadisiyyah records preserved.",
+  "identityVerification": "Identity verified individually only for documented replacement sources. Do not infer identity from the 1206 HTTP200 count.",
+  "mapLimit": "928 text-search map actions not verified pins; 502 stored coordinate pairs checked for discrepancy, not independent ground truth."
+}
