@@ -1729,10 +1729,12 @@
     if (e.key === 'Enter' || e.key === ' ') { if (e.key === ' ') e.preventDefault(); openDetail(+e.target.dataset.detail); }
   });
   window.addEventListener('hashchange', function () {
-    var m = /^#b([0-9A-Za-z]+)$/.exec(location.hash || '');
-    if (cityFromHash() && (!S.branch || !S.branch.cityOnly || !sameCity(S.branch.city, cityFromHash()))) { selectCity(cityFromHash()); return; }
-    if (m && D.branchByCode && D.branchByCode[m[1]] && (!S.branch || S.branch.c !== m[1])) selectBranch(m[1]);
-    else if (!location.hash && S.branch) renderStart();
+    var m = /^#b([0-9A-Za-z]+)$/.exec(location.hash || ''), city = cityFromHash();
+    var validCity = city && D.branches && cities().some(function (c) { return sameCity(c, city); }) && !D.branches.some(function (b) { return sameCity(b.city, city); });
+    if (validCity) { if (!S.branch || !S.branch.cityOnly || !sameCity(S.branch.city, city)) selectCity(city); return; }
+    if (m && D.branchByCode && D.branchByCode[m[1]]) { if (!S.branch || S.branch.c !== m[1]) selectBranch(m[1]); return; }
+    // Never leave a previous branch beneath an unknown or malformed route.
+    if (S.branch || location.hash) renderStart();
   });
 
   boot();

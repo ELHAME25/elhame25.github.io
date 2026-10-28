@@ -73,3 +73,30 @@ jobs:
       - name: Verify the published GitHub Pages site
         run: node riyad-opportunities/qa/qa-live-site.js
 
+
+  webkit-candidate:
+    if: github.ref != 'refs/heads/main' && !contains(github.event.head_commit.message, '[live-smoke-only]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install WebKit compatibility runtime
+        run: |
+          npm install --prefix "$RUNNER_TEMP/webkit-browser" --no-save playwright@1.55.0
+          "$RUNNER_TEMP/webkit-browser/node_modules/.bin/playwright" install --with-deps webkit
+      - name: Exercise final candidate with WebKit (not a physical iPhone)
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory riyad-opportunities > "$RUNNER_TEMP/webkit-local-server.log" 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          for i in $(seq 1 20); do curl -fsSo /dev/null http://127.0.0.1:8765/index.html && break || sleep 0.2; done
+          QA_BASE_URL=http://127.0.0.1:8765/ NODE_PATH="$RUNNER_TEMP/webkit-browser/node_modules" node riyad-opportunities/qa/qa-live-webkit.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: candidate-webkit-${{ github.sha }}
+          path: riyad-opportunities/qa-webkit-artifacts/
+          retention-days: 14

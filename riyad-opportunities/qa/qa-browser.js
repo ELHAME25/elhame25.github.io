@@ -25,6 +25,17 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
   assert.equal(await pg.locator('[data-tab][aria-pressed="true"]').getAttribute('data-tab'),expectedTab,'Entry double-click changed category at '+w);
   assert.equal(await pg.locator('#detail[open]').count(),0,'Entry double-click opened unrelated detail');
   await pg.click('[data-tab="cars"]');assert.equal(await pg.locator('[data-tab][aria-pressed="true"]').getAttribute('data-tab'),'cars','Immediate deliberate navigation remains usable');
+  for (const invalid of ['#bBAD','#city=__unknown_city__','#city=%E0%A4%A']) {
+   await pg.evaluate(h=>{location.hash=h;},invalid);await pg.waitForSelector('#q-branch');
+   assert.equal(await pg.locator('[data-tab]').count(),0,'Invalid route retained old branch');
+   await pg.goBack();await pg.waitForSelector('[data-tab]');assert.equal(new URL(pg.url()).hash,'#b302');
+   await pg.goForward();await pg.waitForSelector('#q-branch');assert.equal(new URL(pg.url()).hash,invalid);
+   await pg.goBack();await pg.waitForSelector('[data-tab]');
+  }
+  await pg.locator('[data-detail]').first().click();await pg.waitForSelector('#detail[open]');
+  await pg.goBack();await pg.waitForSelector('#detail[open]',{state:'hidden'});
+  await pg.goForward();await pg.waitForSelector('#detail[open]');
+  await pg.keyboard.press('Escape');await pg.waitForSelector('#detail[open]',{state:'hidden'});
   await ctx.close();
  }
  async function capture(page,name){
