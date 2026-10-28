@@ -153,7 +153,7 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
   const cx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'}),cp=await cx.newPage();cp.on('pageerror',e=>pageErrors.push(e.message));
   for(const city of ['خميس مشيط','الوجه','الخبر','بريدة']){
    const b=branchData.find(x=>x.city===city);assert(b,'Photo review branch '+city);await cp.goto(origin+'/#b'+b.c);await cp.waitForSelector('.stat');await capture(cp,'city-photo-'+b.c+'-'+width+'.png');await fit(cp,'City hero '+b.c+' '+width);
-   assert.equal(await cp.locator('a[href=""],a[href="#"]').count(),0);
+   assert.equal(await cp.locator('a[href=""],a[href="#"]:not([data-act="home"])').count(),0);if(['الخبر','بريدة'].includes(city)){assert.equal(await cp.locator('.city-portrait-photo').count(),1);assert((await cp.locator('.city-portrait-photo').evaluate(n=>getComputedStyle(n,':before').backgroundImage)).includes('url('));}await cp.locator('a[data-act="home"]').click();await cp.waitForSelector('#q-branch');
   }
   await cp.goto(origin+'/#b311');await cp.waitForSelector('.stat');assert((await cp.locator('.hero-branch').innerText()).includes('الثقبة'));assert((await cp.locator('.page-title').innerText()).includes('الخبر'));assert((await cp.evaluate(()=>window.__rogQA())).sections.projects.length>0);await capture(cp,'thuqbah-khobar-'+width+'.png');
   for(const city of ['الظهران','القطيف','أم الحمام']){const b=branchData.find(x=>x.city===city);await cp.goto(origin+'/#b'+b.c);await cp.waitForSelector('.stat');await cp.click('[data-tab="nhc"]');const q=await cp.evaluate(()=>window.__rogQA());assert(q.nhcScope.fallback&&q.sections.nhc.length>0);await fit(cp,'Nearby '+b.c+' '+width);await capture(cp,'nearby-'+b.c+'-'+width+'.png');}

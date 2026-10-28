@@ -1149,10 +1149,11 @@
   function cityHeroMedia(hero) {
     if (hero.creditAnchor) {
       var photo = Object.assign({}, hero); delete photo.creditAnchor;
-      return '<a class="city-photo-credit' + (hero.fit === 'contain' ? ' portrait-photo' : '') + '"' + (hero.fit === 'contain' ? ' style="--portrait-photo:url(&quot;' + esc(hero.src) + '&quot;)"' : '') + ' href="assets/images/cities/credits.html#' + esc(hero.creditAnchor) + '" aria-label="حقوق الصورة ومصدرها" title="حقوق الصورة ومصدرها">' + cityHeroMedia(photo) + '</a>';
+      return '<a class="city-photo-credit" href="assets/images/cities/credits.html#' + esc(hero.creditAnchor) + '" aria-label="حقوق الصورة ومصدرها" title="حقوق الصورة ومصدرها">' + cityHeroMedia(photo) + '</a>';
     }
     if (hero.viewBox) return '<svg class="city-photo" viewBox="' + esc(hero.viewBox) + '" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><image href="' + esc(hero.src) + '" width="710" height="1536" onload="this.dataset.loaded=1"></image></svg>';
-    return '<img src="' + esc(hero.src) + '" alt="" decoding="async" style="object-fit:' + (hero.fit || 'cover') + ';object-position:' + hero.position + '" onerror="if(!this.dataset.fallback){this.dataset.fallback=1;this.src=\'' + CITY_HERO_FALLBACK + '\'}else{this.hidden=true}">';
+    var portrait = hero.fit === 'contain';
+    return (portrait ? '<span class="city-portrait-photo" style="--portrait-photo:url(&quot;' + esc(hero.src) + '&quot;)" aria-hidden="true">' : '') + '<img src="' + esc(hero.src) + '" alt="" decoding="async" style="object-fit:' + (hero.fit || 'cover') + ';object-position:' + hero.position + '" onerror="if(!this.dataset.fallback){this.dataset.fallback=1;this.src=\'' + CITY_HERO_FALLBACK + '\'}else{this.hidden=true}">' + (portrait ? '</span>' : '');
   }
   var CITY_HERO_FALLBACK = 'assets/images/city-neutral.webp';
   function scopeOptions() {
