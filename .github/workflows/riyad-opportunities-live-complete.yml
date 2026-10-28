@@ -1,0 +1,38 @@
+name: Complete deployed directory browser QA
+on:
+  push:
+    branches: ['qa/live-complete-20261028']
+    paths: ['riyad-opportunities/qa/qa-live-complete.js', '.github/workflows/riyad-opportunities-live-complete.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        width: [1440, 390, 320]
+        shard: [0, 1, 2]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser
+        run: |
+          npm install --prefix "$RUNNER_TEMP/live-browser" --no-save playwright@1.55.0
+          "$RUNNER_TEMP/live-browser/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Test actual deployed site without fixtures or interception
+        env:
+          QA_WIDTH: ${{ matrix.width }}
+          QA_SHARD: ${{ matrix.shard }}
+        run: NODE_PATH="$RUNNER_TEMP/live-browser/node_modules" node riyad-opportunities/qa/qa-live-complete.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-${{ matrix.width }}-${{ matrix.shard }}-${{ github.sha }}
+          path: riyad-opportunities/qa-live-artifacts/
+          retention-days: 14
