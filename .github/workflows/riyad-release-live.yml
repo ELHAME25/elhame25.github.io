@@ -1,0 +1,34 @@
+name: Published release browser verification
+on:
+  push:
+    branches: ['qa/release-live-20261028']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  published:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        engine: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser
+        run: |
+          npm install --prefix "$RUNNER_TEMP/live-browser" --no-save playwright@1.55.0
+          "$RUNNER_TEMP/live-browser/node_modules/.bin/playwright" install --with-deps ${{ matrix.engine }}
+      - name: Verify actual published release without source or data substitution
+        env:
+          QA_ENGINE: ${{ matrix.engine }}
+        run: NODE_PATH="$RUNNER_TEMP/live-browser/node_modules" node riyad-opportunities/qa/qa-release-live.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: published-release-${{ matrix.engine }}-${{ github.sha }}
+          path: riyad-opportunities/qa-release-artifacts/
+          retention-days: 14
