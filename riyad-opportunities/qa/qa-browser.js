@@ -164,7 +164,7 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
    assert.equal(await cp.locator('.city-hero').getAttribute('aria-label'),coverageCity);if(coverageCity!==city)assert((await cp.locator('.hero-branch').innerText()).includes(b.n));await fit(cp,'City '+city+' '+width);await cp.locator('.city-hero').screenshot({path:path.join(artifacts,'city-hero-'+b.c+'-'+width+'.png')});checks.push({city,width,exactCityHero:true,realData:true});
    if(selectedSource){
     assert.equal(await hero.evaluate(i=>getComputedStyle(i).filter),'brightness(1.12)');
-    const credit=cp.locator('.selected-source-credit');assert(await credit.isVisible());assert((await credit.innerText()).includes('واس / أخبار24'));
+    const credit=cp.locator('.selected-source-credit');assert(await credit.isVisible());assert((await credit.innerText()).includes('الصورة كاملة'));assert(!(await credit.innerText()).includes('واس'));
     const original=credit.locator('a');assert.equal(await original.getAttribute('href'),asset);assert((await original.boundingBox()).height>=44);
     const originalTabPromise=cp.waitForEvent('popup');await original.click();const originalTab=await originalTabPromise;await originalTab.waitForLoadState('domcontentloaded');assert.equal(originalTab.url(),origin+'/'+asset);
     await originalTab.locator('img').evaluate(i=>i.decode());const originalMetrics=await originalTab.locator('img').evaluate(i=>({width:i.naturalWidth,height:i.naturalHeight,filter:getComputedStyle(i).filter}));assert.deepEqual(originalMetrics,{width:1600,height:1482,filter:'none'});
