@@ -254,13 +254,12 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 
 
-  // Riyadh sector routing must use both valid city showroom groups in Central,
+  // Riyadh sectors choose one primary hub with the other explicitly available below,
   // and must preserve NHC's city-wide visibility and a sector-local distance anchor.
   A.selectBranch('243', true);
-  A.state().scope = 'sector'; A.state().explore = 'وسط'; A.state().carArea = 'all'; A.state().tab = 'cars';
+  A.state().scope = 'sector'; A.state().explore = 'وسط'; A.state().carArea = ''; A.state().tab = 'cars';
   const centerCars = A.itemsFor('cars', 'وسط', 'sector');
-  const centerHasBothGroups = centerCars.length > 0 && centerCars[0].o.zone === 'shifa' &&
-    centerCars.some(x => x.o.zone === 'qadisiyah') && centerCars.every(x => x.o.zone === 'shifa' || x.o.zone === 'qadisiyah');
+  const centerPrimaryShifa = centerCars.length > 0 && centerCars.every(x => x.o.zone === 'shifa');
   A.state().explore = 'غرب';
   const westCars = A.itemsFor('cars', 'غرب', 'sector');
   const westMapped = westCars.length > 0 && westCars.every(x => x.o.zone === 'shifa');
@@ -286,13 +285,19 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const nhcCenter = A.itemsFor('nhc', 'وسط', 'sector').map(x => x.o.id).sort().join('|');
   A.state().tab = 'nhc'; A.state().scope = 'sector'; A.state().explore = 'شرق'; A.renderBranch();
   const nhcDualCards = els.app.innerHTML.includes('value="sector:شرق" selected') && els.app.innerHTML.includes('value="city"') && A.compute().nhc.items.length === expectedNHC('شرق').length && A.compute().nhc.total === expectedNHC('').length;
-  assert('Riyadh central shows Shifa first and both validated showroom groups', centerHasBothGroups);
+  assert('Riyadh central defaults to Shifa, not a hidden combined or empty view', centerPrimaryShifa);
   assert('Riyadh west routes showrooms to Shifa and north to Qadisiyah', westMapped && northMapped);
   assert('Riyadh East and North are independently selected and filtered', eastOnlyActive && northOnlyActive && eastSectorOnly && northSectorOnly && eastProjects.length > 0 && northProjects.length > 0);
   assert('Riyadh NHC has sector and whole-city dropdown options with every destination accessible', nhcCity.split('|').length === expectedNHC('').length && nhcCenter.split('|').filter(Boolean).length === expectedNHC('وسط').length && nhcDualCards);
-  A.state().scope = 'sector'; A.state().explore = 'وسط'; A.state().carArea = 'all'; A.state().tab = 'cars'; A.renderBranch();
-  const centralControls = els.app.innerHTML.includes('value="combined" selected') && els.app.innerHTML.includes('value="qadisiyah"') && els.app.innerHTML.includes('value="shifa"') && !els.app.innerHTML.includes('value="all" selected');
-  assert('central showroom controls show both groups active and All Riyadh inactive', centralControls);
+  A.state().scope = 'sector'; A.state().explore = 'وسط'; A.state().carArea = ''; A.state().tab = 'cars'; A.renderBranch();
+  const centralControls = els.app.innerHTML.includes('value="shifa" selected') && els.app.innerHTML.includes('value="qadisiyah"') && els.app.innerHTML.includes('value="all"') && els.content.innerHTML.includes('data-car-area="qadisiyah"');
+  assert('central showroom controls default Shifa and offer Qadisiyyah below the results', centralControls);
+  A.state().carArea = 'all'; A.state().limit.cars = 1000; A.renderBranch();
+  const allRiyadhCars = A.itemsFor('cars', '', 'city');
+  const allRiyadhIds = allRiyadhCars.map(x => x.o.id).sort().join('|');
+  const allDisplayedIds = A.itemsFor('cars', 'وسط', 'sector').map(x => x.o.id).sort().join('|');
+  assert('explicit All Riyadh preserves every eligible city record and distinct labeled groups', allRiyadhIds === allDisplayedIds && centerCars.every(x => allRiyadhCars.some(y => y.o.id === x.o.id)) && els.content.innerHTML.includes('data-car-zone="shifa"') && els.content.innerHTML.includes('data-car-zone="qadisiyah"'));
+
 
 
   // Small-city showrooms remain city-level; large regional cities use the selected branch radius.

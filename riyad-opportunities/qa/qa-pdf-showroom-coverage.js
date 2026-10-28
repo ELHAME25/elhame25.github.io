@@ -42,7 +42,7 @@ const tests={
  'unlocated PDF records use search links rather than guessed coordinates':newRoots.filter(x=>x.lat==null&&x.lon==null).every(x=>x.maps===''&&x.mapsQ&&x.mapReview)&&newRoots.filter(x=>x.lat!=null||x.lon!=null).every(x=>Number.isFinite(x.lat)&&Number.isFinite(x.lon)&&x.maps),
  'PDF sourced company and brand showrooms are explicitly retained':newRoots.every(x=>x.pdfShowroomVerified===true),
  'review-required source conflicts remain flagged':JSON.stringify(actualReviewRequiredIds)===JSON.stringify(reviewRequiredIds),
- 'Riyadh Shifa and Qadisiyah group inventory remains intact':shifa.length===15&&qadi.length===33
+ 'Riyadh Shifa and Qadisiyah group inventory remains intact':shifa.length===20&&shifa.filter(o=>o.showroomReview?.status!=='market_aggregate').length===18&&qadi.length===33
 };
 const failed=Object.entries(tests).filter(([,v])=>!v).map(([k])=>k);
 console.log(JSON.stringify({suite:'PDF showroom overlap and source integrity',counts:{total:cars.length,pdfClones:pdfClones.length,newRoots:newRoots.length,newClones:newClones.length,sharedAbhaKhamis:shared.length,shifa:shifa.length,qadisiyah:qadi.length},tests,passed:Object.values(tests).filter(Boolean).length,total:Object.keys(tests).length,failed},null,2));

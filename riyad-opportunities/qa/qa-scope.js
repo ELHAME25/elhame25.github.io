@@ -22,18 +22,26 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  else if(kind==='offices'&&sectorCity&&b.sec)expected=city.filter(x=>(x.o.sectors||[x.o.sec]).includes(b.sec));
  else if((kind==='projects'||kind==='opps')&&sectorCity&&b.sec&&A.state().scope!=='city')expected=city.filter(x=>(x.o.sectors||(x.o.sec?[x.o.sec]:[])).includes(b.sec));
  else if(kind==='nhc'&&sectorCity&&b.sec&&A.state().scope!=='city')expected=city.filter(x=>(x.o.sectors||(x.o.sec?[x.o.sec]:[])).includes(b.sec));
- else if(kind==='cars'&&sectorCity&&b.sec&&!A.sameCity(b.city,'الرياض'))expected=city.filter(x=>(x.o.sectors||[x.o.sec]).includes(b.sec)); // Riyadh city query retains the same selected showroom group; baseline comparison separately locks all car scopes.
+ else if(kind==='cars'&&A.sameCity(b.city,'الرياض')){
+   // Independent user policy: north/east first Qadisiyyah; south/west/center first Shifa.
+   // City inventory must remain the full eligible union, not inherit the selected hub.
+   const allCity=D.cars.filter(o=>A.sameCity(o.city,'الرياض')&&o.authorizedDealer!==true&&String(o.activityReviewStatus||'').trim().toUpperCase()!=='REVIEW_REQUIRED'&&(!o.regionalListingOf||A.sameCity(o.originCity||o.city,b.city))).map(o=>({o}));
+   const zone=/شرق|شمال/.test(b.sec||'')?'qadisiyah':/غرب|جنوب|وسط/.test(b.sec||'')?'shifa':null;
+   expected=A.state().scope==='city'||!zone?allCity:allCity.filter(x=>x.o.zone===zone);
+   if(ids(city)!==ids(allCity))result.failures.push({code,kind,error:'explicit city inventory lost eligible showroom IDs',visible:city.length,expected:allCity.length});
+ }
+ else if(kind==='cars'&&sectorCity&&b.sec)expected=city.filter(x=>(x.o.sectors||[x.o.sec]).includes(b.sec));
  const foreign=vis.filter(x=>!A.sameCity(x.o.city,b.city)&&!(kind==='companies'&&(x.cityOnly||x.explicitCityCoverage||(x.o.coverageCities||[]).some(c=>A.sameCity(c,b.city)))));
  const invalid=kind==='offices'&&applies?vis.filter(x=>x.rankD==null||x.rankD>15):[];
  if(ids(vis)===ids(expected)&&!foreign.length&&!invalid.length)result.scopePassed++;else result.failures.push({code,kind,visible:vis.length,expected:expected.length,foreign:foreign.length,invalid:invalid.length});
  }
 
- const b242=D.branchByCode['242'];result.checks.push({check:'242 غرب الرياض',ok:b242.sec==='غرب'});
+ const b242=D.branchByCode['242'];result.checks.push({check:'242 المحمدية شمال الرياض بحسب نطاق العرض الموثق',ok:b242.sec==='شمال'});
  const b243=D.branchByCode['243'];A.selectBranch('243',true);const near=A.itemsFor('projects',''),city=A.itemsFor('projects','','city'),expected=city.filter(x=>(x.o.sectors||(x.o.sec?[x.o.sec]:[])).includes('شرق'));A.state().tab='projects';A.renderBranch();result.checks.push({check:'243 يعرض قطاع الشرق كاملاً بلا استبعاد المشاريع البعيدة أو مجهولة الموقع',ok:near.map(x=>x.o.id).sort().join('|')===expected.map(x=>x.o.id).sort().join('|')&&near.some(x=>x.rankD==null)&&near.some(x=>x.rankD>15)&&!A.radiusApplies('projects','branch')&&!els.app.innerHTML.includes('id="radius"'),near:near.length,city:city.length});
  A.state().tab='offices';A.state().scope='radius';A.renderBranch();result.checks.push({check:'اختيارات 5/10/15/20 كم متاحة للمكاتب فقط',ok:A.radiusApplies('offices','radius')&&[5,10,15,20].every(x=>els.content.innerHTML.includes('أقرب '+x+' كم'))});
  result.checks.push({check:'واجهة النتائج لا تعرض رسالة إحداثيات مزعجة',ok:!els.content.innerHTML.includes('إحداثيات الفرع غير متاحة')&&!els.content.innerHTML.includes('لم أتمكن من الحصول على إحداثيات الفرع')});
  result.checks.push({check:'قائمة المدن تشمل جميع مدن الفروع والفئات وتطابق البيانات الوصفية',ok:A.sameCity('الأحساء','الهفوف')&&A.sameCity('الأحساء','المبرز')&&A.sameCity('سبت العلايا','سبت العلاية')&&new Set(D.branches.map(b=>A.cities().find(c=>A.sameCity(c,b.city))||b.city)).size===D.meta.branchCityChoiceCount&&A.cities().length===D.meta.cityChoiceCount&&A.cities().some(c=>A.sameCity(c,'أحد رفيدة')),count:A.cities().length});
- const nearest=A.nearestBranch({lat:b243.lat,lon:b243.lon});result.checks.push({check:'أقرب فرع 243',ok:nearest&&nearest.c==='243'});
+ const nearest=A.nearestBranch({lat:b243.lat,lon:b243.lon},'الرياض');result.checks.push({check:'أقرب فرع 243',ok:nearest&&nearest.c==='243'});
  const rakez=A.itemsFor('companies','').find(x=>x.o.n.includes('راكز'));result.checks.push({check:'راكز تحفظ القطاعات الخمسة',ok:!!rakez&&rakez.o.sectors.length===5});
  const companies=[['cp-ee28fb1fee','بريدة'],['cp-8ece8e6ede','الرياض'],['cp-c55e51e166','الدمام'],['cp-ebb24055cf','جدة'],['cp-df5fe89eac','صفوى'],['cp-fb2d83ba98','الدمام'],['cp-1b41c1ed02','مكة المكرمة'],['cp-c566adf828','جدة'],['cp-d0bacbed29','بريدة'],['cp-0912454315','مكة المكرمة'],['cp-4737529953','خميس مشيط']];
  const cv=companies.map(([id,city])=>{const b=D.branches.find(x=>A.sameCity(x.city,city));if(!b)return {id,city,ok:false};A.selectBranch(b.c,true);A.setScope('city');return {id,city,ok:A.itemsFor('companies','','city').filter(x=>x.o.id===id).length===1}});result.checks.push({check:'تغطية الشركات الجديدة تظهر مرة واحدة بالمدينة',ok:cv.every(x=>x.ok),coverage:cv});

@@ -14,7 +14,7 @@ const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  const Q=window.__cityQA,D=Q.data();assert(Q&&D.cityCount,'app data did not initialize');
  const choices=Q.cities();
  assert.strictEqual(choices.length,D.meta.cityChoiceCount,'city metadata must match actual choices');
- assert.strictEqual(choices.length,80,'Thuqbah shares Khobar city choice without deleting branch or source records');
+ assert.strictEqual(choices.length,81,'Thuqbah shares Khobar while verified Jubeilah remains a distinct inventory city');
  assert(choices.some(c=>Q.sameCity(c,'أحد رفيدة')),'Ahad Rufaydah missing from city choices');
  assert(!choices.some(c=>Q.sameCity(c,'بقعاء')),'Baqaa must not be invented from the removed individual advertisement');
  assert(!choices.some(c=>Q.sameCity(c,'الجموم')),'Jumum must not be derived from removed individual-ad coverage');

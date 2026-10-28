@@ -1,0 +1,76 @@
+{
+  "basis": "Frozen official-destination source metadata; physical sector and representative SALES-CENTER pins, not parcel bounds, service coverage, or drive-time. Approval required before changing oracle.",
+  "destinations": [
+    {
+      "name": "الربى",
+      "lat": 24.7640516,
+      "lon": 46.8900099,
+      "physicalSectors": [
+        "شرق"
+      ],
+      "source": "https://www.nhc.sa/real-estate-development/suburbs/47607/13/"
+    },
+    {
+      "name": "الفرسان",
+      "lat": 24.9434375,
+      "lon": 46.8193125,
+      "physicalSectors": [
+        "شرق"
+      ],
+      "serviceSectors": [
+        "شرق",
+        "شمال"
+      ],
+      "source": "https://www.nhc.sa/real-estate-development/suburbs/46879/13/"
+    },
+    {
+      "name": "خزام",
+      "lat": 24.9371875,
+      "lon": 46.6303125,
+      "physicalSectors": [
+        "شمال"
+      ],
+      "serviceSectors": [
+        "شرق",
+        "شمال"
+      ],
+      "source": "https://www.nhc.sa/real-estate-development/suburbs/310/13/"
+    },
+    {
+      "name": "المشرقية",
+      "lat": 24.8182315,
+      "lon": 46.8549613,
+      "physicalSectors": [
+        "شرق"
+      ],
+      "source": "https://www.nhc.sa/ar/register-interest/almashriqiyah/"
+    },
+    {
+      "name": "الأصالة",
+      "lat": 24.4844156,
+      "lon": 46.7167217,
+      "physicalSectors": [
+        "جنوب",
+        "غرب"
+      ],
+      "source": "https://www.nhc.sa/real-estate-development/communities/12592/"
+    }
+  ],
+  "expectedPhysicalLocalNames": {
+    "شرق": [
+      "الربى",
+      "الفرسان",
+      "المشرقية"
+    ],
+    "شمال": [
+      "خزام"
+    ],
+    "جنوب": [
+      "الأصالة"
+    ],
+    "غرب": [
+      "الأصالة"
+    ],
+    "وسط": []
+  }
+}

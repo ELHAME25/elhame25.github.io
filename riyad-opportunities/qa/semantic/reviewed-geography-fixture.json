@@ -1,0 +1,1893 @@
+{
+  "basis": "Fixed reviewed geography expectations; source identities were separately reviewed. This test does not claim public external sources are currently reachable.",
+  "geographicFields": [
+    "city",
+    "nb",
+    "sec",
+    "sectors",
+    "lat",
+    "lon",
+    "maps",
+    "mapsQ",
+    "loc",
+    "governorate",
+    "geographicReview",
+    "geographicEntityType",
+    "verifiedLocations",
+    "geographicIdentitySources",
+    "locationVerificationStatus"
+  ],
+  "files": {
+    "branches.json": {
+      "rowCount": 249,
+      "protectedOrderedRowsSha256": "f9a9f0676a6e33a90f043625c630c3c9e130948ec7b7382830c7d416f6feff4b"
+    },
+    "projects.json": {
+      "rowCount": 648,
+      "protectedOrderedRowsSha256": "f683dbea0c8ff16fe7a878ee3b63da3d46133edd0699b6cafec99565b279b7eb"
+    },
+    "opportunities.json": {
+      "rowCount": 485,
+      "protectedOrderedRowsSha256": "0b146d29af02040007a8585e9bc44891b51101e4c3511711901223968e06840a"
+    },
+    "offices.json": {
+      "rowCount": 1524,
+      "protectedOrderedRowsSha256": "e2b14f4396af0912a9cdb8890e0f8f18b3773e0ff1c4b75c1ecb60e2f6559fdf"
+    }
+  },
+  "records": [
+    {
+      "file": "projects.json",
+      "id": "P044",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الفرسان",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P046",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الفرسان",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P277",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الأصالة - عريض",
+        "sectors": [
+          "جنوب",
+          "غرب"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P382",
+      "expected": {
+        "city": "الرياض",
+        "nb": "العارض",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P383",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الملك فيصل",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P385",
+      "expected": {
+        "city": "الرياض",
+        "nb": "المحمدية",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P386",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الشرق",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P394",
+      "expected": {
+        "city": "الرياض",
+        "nb": "المحمدية",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P395",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الغدير",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P396",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الملقا",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P397",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النرجس",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P398",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النرجس",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P399",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الريان",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P403",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الفرسان",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P405",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الملقا",
+        "sectors": [
+          "شمال"
+        ],
+        "loc": "project",
+        "maps": "https://www.google.com/maps/place/اوربان+فيلا/data=!4m6!3m5!1s0x3e2ee7dfed4f7705:0x4f4431549e5ce03e!8m2!3d24.7941691!4d46.5896297!16s%2Fg%2F11t4yjpdc6",
+        "lat": 24.7941691,
+        "lon": 46.5896297
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P406",
+      "expected": {
+        "city": "الرياض",
+        "nb": "أم الحمام الغربي",
+        "sectors": [
+          "غرب"
+        ],
+        "loc": "project",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJzVhzABwdLz4Rcy9WO28vZNQ",
+        "lat": 24.6822807,
+        "lon": 46.6461238
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P407",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النرجس",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P415",
+      "expected": {
+        "city": "الرياض",
+        "nb": "إشبيلية",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P416",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الأندلس",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P420",
+      "expected": {
+        "city": "الرياض",
+        "nb": "المرجان",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P427",
+      "expected": {
+        "city": "الرياض",
+        "nb": "جرير",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P428",
+      "expected": {
+        "city": "الرياض",
+        "nb": "السلام",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P429",
+      "expected": {
+        "city": "الرياض",
+        "nb": "المعيزيلة",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P430",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الصحافة",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P431",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الصحافة",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P432",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الياسمين والنرجس — نموذج متعدد المواقع",
+        "sectors": [
+          "شمال"
+        ],
+        "geographicEntityType": "villa_model",
+        "maps": "",
+        "loc": "",
+        "mapsQ": "",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P433",
+      "expected": {
+        "city": "الرياض",
+        "nb": "المروج",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P435",
+      "expected": {
+        "city": "الرياض",
+        "nb": "عرقة",
+        "sectors": [
+          "غرب"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P436",
+      "expected": {
+        "city": "الرياض",
+        "nb": "عرقة",
+        "sectors": [
+          "غرب"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P439",
+      "expected": {
+        "city": "الرياض",
+        "nb": "بدر",
+        "sectors": [
+          "جنوب"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P440",
+      "expected": {
+        "city": "الرياض",
+        "nb": "هجرة لبن",
+        "sectors": [
+          "غرب"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P441",
+      "expected": {
+        "city": "الرياض",
+        "nb": "المونسية",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P442",
+      "expected": {
+        "city": "الرياض",
+        "nb": "طويق",
+        "sectors": [
+          "غرب"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P444",
+      "expected": {
+        "city": "الرياض",
+        "nb": "اليرموك",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P454",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الصحافة",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P455",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الصحافة",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P456",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الصحافة",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P457",
+      "expected": {
+        "city": "الرياض",
+        "nb": "المونسية",
+        "sectors": [
+          "شرق"
+        ],
+        "loc": "project",
+        "lat": 24.8302347,
+        "lon": 46.7559225
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P458",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الجنادرية - مخطط المعالي",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P465",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الجنادرية",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P468",
+      "expected": {
+        "city": "الرياض",
+        "nb": "المربع",
+        "sectors": [
+          "وسط"
+        ],
+        "loc": "project",
+        "lat": 24.6533055,
+        "lon": 46.7030145
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P475",
+      "expected": {
+        "city": "الرياض",
+        "nb": "اليرموك",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P478",
+      "expected": {
+        "city": "الرياض",
+        "nb": "طويق - الغروب",
+        "sectors": [
+          "غرب"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P479",
+      "expected": {
+        "city": "الرياض",
+        "nb": "طويق",
+        "sectors": [
+          "غرب"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P480",
+      "expected": {
+        "city": "الرياض",
+        "nb": "المونسية",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P481",
+      "expected": {
+        "city": "الرياض",
+        "nb": "طويق",
+        "sectors": [
+          "غرب"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P482",
+      "expected": {
+        "city": "الرياض",
+        "nb": "المونسية",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P487",
+      "expected": {
+        "city": "الرياض",
+        "nb": "",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P488",
+      "expected": {
+        "city": "الرياض",
+        "nb": "",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P512",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الرمال",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P513",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الرمال",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P515",
+      "expected": {
+        "city": "الجبيلة",
+        "nb": "الجبيلة",
+        "sectors": [],
+        "governorate": "الدرعية",
+        "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%86%D8%A7%D8%A1+%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%84%D8%A9+%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D8%B1%D9%88%D9%82%D8%A9+%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1+%D9%88+%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1+%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%84%D8%A9",
+        "loc": "project",
+        "lat": 24.9151875,
+        "lon": 46.4251875
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P517",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الجنادرية",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P523",
+      "expected": {
+        "city": "الرياض",
+        "nb": "مدينة المستقبل",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P527",
+      "expected": {
+        "city": "الرياض",
+        "nb": "السليمانية",
+        "sectors": [
+          "وسط"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P550",
+      "expected": {
+        "city": "الرياض",
+        "nb": "سدرة",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P556",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الصفا",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P563",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الرفيعة",
+        "sectors": [
+          "غرب"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P564",
+      "expected": {
+        "city": "الرياض",
+        "nb": "ضاحية الفرسان",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P566",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الصحافة",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P567",
+      "expected": {
+        "city": "الدرعية",
+        "nb": "",
+        "sectors": [],
+        "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%87%D9%8A%D9%84%D8%B2+%D8%B4%D8%B1%D9%83%D8%A9+%D8%AC%D8%AF%D9%88%D9%89+%D8%A7%D9%84%D8%A8%D8%B3%D8%A7%D8%AA%D9%8A%D9%86+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9"
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P569",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النرجس",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P576",
+      "expected": {
+        "city": "الدرعية",
+        "nb": "جاكس",
+        "sectors": [],
+        "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%AC%D9%8A+%D8%A7%D9%83%D8%B3+%D9%87%D9%88%D9%85%D8%B2+1+%D8%B4%D8%B1%D9%83%D8%A9+%D8%AA%D8%AC%D9%85%D8%B9%D8%A7%D8%AA+%D9%84%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9",
+        "loc": "project",
+        "maps": "https://www.google.com/maps/place/RDDC4619%D8%8C+4619+%D9%85%D8%AD%D9%85%D8%AF+%D8%A7%D8%A8%D9%86+%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%D8%8C+8144%D8%8C+%D8%AD%D9%8A+%D8%B8%D9%87%D8%B1%D8%A9+%D8%A7%D9%84%D8%B9%D9%88%D8%AF%D8%A9+%D8%B4%D8%B1%D9%82,+Diriyah+13734%E2%80%AD/@24.747302,46.5355099,304m/data=!3m1!1e3!4m6!3m5!1s0x3e2ee0eb338bcd37:0xe98d76ccabe847b3!8m2!3d24.7481788!4d46.5357294!16s%2Fg%2F11vprlf93f!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 24.7481788,
+        "lon": 46.5357294
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P577",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الرمال",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P579",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النخيل",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P581",
+      "expected": {
+        "city": "الرياض",
+        "nb": "المحمدية والنموذجية — علامة متعددة المواقع",
+        "sectors": [
+          "شمال",
+          "وسط"
+        ],
+        "geographicEntityType": "multi_location_series",
+        "maps": "",
+        "loc": "",
+        "mapsQ": "",
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P586",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النخيل",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P589",
+      "expected": {
+        "city": "الرياض",
+        "nb": "قرطبة",
+        "sectors": [
+          "شرق"
+        ],
+        "loc": "project",
+        "maps": "https://www.google.com/maps/place/Vega+Residences+By+First+Projects/data=!4m6!3m5!1s0x3e2efd00269c02d9:0x1f3bc36152b7d208!8m2!3d24.8247868!4d46.7366044!16s%2Fg%2F11wv81h02c",
+        "lat": 24.8247868,
+        "lon": 46.7366044
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P596",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الصفا",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P606",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النرجس",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P607",
+      "expected": {
+        "city": "الرياض",
+        "nb": "عكاظ",
+        "sectors": [
+          "جنوب"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P609",
+      "expected": {
+        "city": "الرياض",
+        "nb": "طيبة",
+        "sectors": [
+          "جنوب"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P615",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النخيل",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P620",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الربيع",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P621",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الملك سلمان",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P622",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الياسمين",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P624",
+      "expected": {
+        "city": "الرياض",
+        "nb": "ديراب",
+        "sectors": [
+          "جنوب"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P626",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الغصون",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P627",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النهضة",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P628",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الفاروق",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P630",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النخيل",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P631",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الرمال",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P632",
+      "expected": {
+        "city": "الدرعية",
+        "nb": "",
+        "sectors": [],
+        "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%B1%D9%8A%D8%AA%D8%B2+%D9%83%D8%A7%D8%B1%D9%84%D8%AA%D9%88%D9%86+%D8%B1%D9%8A%D8%B2%D8%AF%D9%86%D8%B3%D8%B2+%D8%B3%D9%8A%D8%AC%D9%86%D8%AA%D8%B4%D8%B1+%D8%B4%D8%B1%D9%83%D8%A9+%D8%A8%D9%88%D8%A7%D8%A8%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9"
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P633",
+      "expected": {
+        "city": "الدرعية",
+        "nb": "",
+        "sectors": [],
+        "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B1%D8%A7%D9%81%D9%84%D8%B2+%D8%B1%D9%8A%D8%B2%D8%AF%D9%86%D8%B3+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9+%D8%B4%D8%B1%D9%83%D8%A9+%D8%A8%D9%88%D8%A7%D8%A8%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9"
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P634",
+      "expected": {
+        "city": "الدرعية",
+        "nb": "وادي صفار",
+        "sectors": [],
+        "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B0%D8%A7+%D8%A3%D9%88%D8%A8%D9%8A%D8%B1%D9%88%D9%8A+%D8%B1%D9%8A%D8%B2%D8%AF%D9%86%D8%B3+%D8%B4%D8%B1%D9%83%D8%A9+%D8%A8%D9%88%D8%A7%D8%A8%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9"
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P635",
+      "expected": {
+        "city": "الدرعية",
+        "nb": "",
+        "sectors": [],
+        "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%83%D9%88%D8%B1%D9%8A%D9%86%D8%AB%D9%8A%D8%A7+%D8%B1%D9%8A%D8%B2%D8%AF%D9%86%D8%B3+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9+%D8%B4%D8%B1%D9%83%D8%A9+%D8%A8%D9%88%D8%A7%D8%A8%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9"
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P636",
+      "expected": {
+        "city": "الدرعية",
+        "nb": "",
+        "sectors": [],
+        "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%86%D8%A7%D8%B2%D9%84+%D8%A7%D9%84%D8%AD%D8%AF%D8%A7%D9%88%D9%8A+%D8%B4%D8%B1%D9%83%D8%A9+%D8%A8%D9%88%D8%A7%D8%A8%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9"
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P637",
+      "expected": {
+        "city": "الدرعية",
+        "nb": "وادي صفار",
+        "sectors": [],
+        "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%A3%D9%85%D8%A7%D9%86+%D8%B3%D9%85%D8%B1+%D8%B1%D9%8A%D8%B2%D8%AF%D9%86%D8%B3+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9+%D8%B4%D8%B1%D9%83%D8%A9+%D8%A8%D9%88%D8%A7%D8%A8%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9"
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P638",
+      "expected": {
+        "city": "الدرعية",
+        "nb": "وادي صفار",
+        "sectors": [],
+        "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D8%B4%D9%8A%D8%AF%D9%8A+%D8%B1%D9%8A%D8%B2%D8%AF%D9%86%D8%B3+%D8%B4%D8%B1%D9%83%D8%A9+%D8%A8%D9%88%D8%A7%D8%A8%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9"
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P640",
+      "expected": {
+        "city": "الرياض",
+        "nb": "تنال الرمال",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-e7bb2ba7af",
+      "expected": {
+        "city": "الرياض",
+        "nb": "إشبيلية",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-50729e461e",
+      "expected": {
+        "city": "الرياض",
+        "nb": "إشبيلية",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-d23c723eef",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الصفا",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-44dea0f520",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الخزامى",
+        "sectors": [
+          "غرب"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-fcb45ad40d",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النرجس",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-3daaa48dc7",
+      "expected": {
+        "city": "الرياض",
+        "nb": "العارض",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-628ed8792e",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الحمراء",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-b98410aeb2",
+      "expected": {
+        "city": "الدرعية",
+        "nb": "وادي صفار",
+        "sectors": [],
+        "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%81%D8%A7%D9%8A%D9%86%D8%A7+%D8%B1%D9%8A%D8%B2%D8%AF%D9%86%D8%B3+%D9%88%D8%A7%D8%AF%D9%8A+%D8%B5%D9%81%D8%A7%D8%B1+%D9%88%D8%A7%D8%AF%D9%8A+%D8%B5%D9%81%D8%A7%D8%B1+%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9"
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-888709bfba",
+      "expected": {
+        "city": "الرياض",
+        "nb": "شرق الرياض",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-center-riyadh-makeen-66",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الرمال",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-center-riyadh-makeen-80",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الرمال",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-center-riyadh-makeen-68",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الريان",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-center-riyadh-makeen-71",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الروابي",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-center-riyadh-aljamee-40",
+      "expected": {
+        "city": "الرياض",
+        "nb": "مخطط تنال، الرمال",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-center-riyadh-aljamee-50",
+      "expected": {
+        "city": "الرياض",
+        "nb": "مخطط سماء نجد، الرمال",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-center-riyadh-aljamee-45",
+      "expected": {
+        "city": "الرياض",
+        "nb": "مخطط سماء نجد، الرمال",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-almajdiah-discovery-248",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الازدهار",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-almajdiah-discovery-234",
+      "expected": {
+        "city": "الرياض",
+        "nb": "حطين",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-almajdiah-discovery-203",
+      "expected": {
+        "city": "الرياض",
+        "nb": "السليمانية",
+        "sectors": [
+          "وسط"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-almajdiah-discovery-207",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الفاروق",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-almajdiah-discovery-210",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النخيل",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-almajdiah-discovery-218",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الرفيعة",
+        "sectors": [
+          "غرب"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-almajdiah-discovery-180",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النرجس",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-almajdiah-discovery-190",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النرجس",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-17ab7cb78f",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الملك فهد",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-4ed2299723",
+      "expected": {
+        "city": "الرياض",
+        "nb": "المحمدية",
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "offices.json",
+      "id": "phase5-google-office-f7169839e11d",
+      "expected": {
+        "city": "الرياض",
+        "nb": "النسيم الشرقي",
+        "sec": "شرق",
+        "loc": "office",
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B9%D8%A7%D9%84%D9%85+%D8%A7%D9%84%D8%A3%D9%85%D9%86%D9%8A%D8%A7%D8%AA+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.7471689,46.8440042,820m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e2faa154e3c489f:0x85dec249e4f30d12!8m2!3d24.7471689!4d46.8440042!16s%2Fg%2F11hdgx8cqb!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 24.7471689,
+        "lon": 46.8440042
+      }
+    },
+    {
+      "file": "offices.json",
+      "id": "phase5-google-office-597bfd1cf554",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الخليج",
+        "sec": "شرق",
+        "loc": "office",
+        "maps": "https://www.google.com/maps/place/%D8%AF%D8%B1%D8%A9+%D8%A7%D9%84%D8%A8%D8%B1%D9%83%D8%A7%D8%AA+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.7809586,46.8208225,820m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e2f000b8b4267f9:0x2c1566a8962af548!8m2!3d24.7809586!4d46.8208225!16s%2Fg%2F11f3zr5q7y!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 24.7809586,
+        "lon": 46.8208225
+      }
+    },
+    {
+      "file": "offices.json",
+      "id": "phase5-google-office-5ae20d45b5c6",
+      "expected": {
+        "city": "الرياض",
+        "nb": "المصيف",
+        "sec": "شمال",
+        "loc": "office",
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%84%D9%88%D8%A7%D9%85%D8%B9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.7616544,46.6742076,820m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e2efd52fb8fad8f:0xd26639bfda484860!8m2!3d24.7616544!4d46.6742076!16s%2Fg%2F11tp4dz5kp!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 24.7616544,
+        "lon": 46.6742076
+      }
+    },
+    {
+      "file": "offices.json",
+      "id": "phase5-google-office-5f2c88b2ddfd",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الدار البيضاء",
+        "sec": "جنوب",
+        "loc": "office",
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%84%D8%AA%D9%82%D9%89+%D8%A7%D9%84%D8%B4%D8%B1%D9%82+%D8%A7%D9%84%D8%A7%D9%88%D8%B3%D8%B7+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.5656747,46.7675282,821m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e2f093429ece9e1:0x37c09c07fbb4934b!8m2!3d24.5656747!4d46.7675282!16s%2Fg%2F11l2k6x29c!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 24.5656747,
+        "lon": 46.7675282
+      }
+    },
+    {
+      "file": "offices.json",
+      "id": "phase5-google-office-23c526045757",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الشرق",
+        "sec": "شرق",
+        "loc": "office",
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%88%D8%A7%D8%AC%D9%87%D8%A9+%D8%A7%D9%84%D8%AE%D9%8A%D8%B1+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.871375,46.8631542,819m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e2e55eb3ab03587:0xb8afcfc541cd8719!8m2!3d24.871375!4d46.8631542!16s%2Fg%2F11fqzg_mxb!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 24.871375,
+        "lon": 46.8631542
+      }
+    },
+    {
+      "file": "offices.json",
+      "id": "phase5-google-office-f26cd7c8b2bd",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الأندلس",
+        "sec": "شرق",
+        "loc": "office",
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D8%B9%D9%88%D8%A7%D8%AF+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.7420014,46.7874473,820m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e2f00fe089189e7:0xbfc5608848f9540d!8m2!3d24.7420014!4d46.7874473!16s%2Fg%2F11c5brkwhp!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 24.7420014,
+        "lon": 46.7874473
+      }
+    },
+    {
+      "file": "offices.json",
+      "id": "phase5-google-office-5ed012338eac",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الخليج",
+        "sec": "شرق",
+        "loc": "office",
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%8A%D9%88%D8%B3%D9%81+%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85+%D8%A7%D9%84%D8%AC%D9%86%D8%AF%D9%84+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.7825861,46.8000377,820m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e2f01653eebd329:0x3f72bec8d2de4bf!8m2!3d24.7825861!4d46.8000377!16s%2Fg%2F11x6s5nxtd!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 24.7825861,
+        "lon": 46.8000377
+      }
+    },
+    {
+      "file": "offices.json",
+      "id": "phase5-google-office-146ab753a6f1",
+      "expected": {
+        "city": "الرياض",
+        "nb": "منفوحة الجديدة",
+        "sec": "وسط",
+        "loc": "office",
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%85%D8%AF%D9%89+%D8%A7%D9%84%D8%B4%D8%B1%D9%82+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.6118765,46.7196393,821m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e2f050ba32b1b7f:0x4cae2b08d594b0e1!8m2!3d24.6118765!4d46.7196393!16s%2Fg%2F11rsch_lsf!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 24.6118765,
+        "lon": 46.7196393
+      }
+    },
+    {
+      "file": "offices.json",
+      "id": "entity-30e6808c384f",
+      "expected": {
+        "city": "الرياض",
+        "nb": "عريض",
+        "sec": "جنوب",
+        "loc": "office",
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%A7%D9%84%D9%86%D8%A7%D8%B5%D8%B9+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA+%D8%AD%D9%8A+%D8%B9%D8%B1%D9%8A%D8%B6+-+%D9%85%D8%AE%D8%B7%D8%B7%D8%A7%D8%AA+%D8%B9%D8%B1%D9%8A%D8%B6%E2%80%AD/@24.4526636,46.7447908,822m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e2f05534ac6ea6f:0x8659776ce1ecf280!8m2!3d24.4526636!4d46.7447908!16s%2Fg%2F11rgd5zhz6!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 24.4526636,
+        "lon": 46.7447908
+      }
+    },
+    {
+      "file": "offices.json",
+      "id": "phase5-google-office-a168e131dcfe",
+      "expected": {
+        "city": "الرياض",
+        "nb": "اليرموك",
+        "sec": "شرق",
+        "loc": "office",
+        "maps": "https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9+%D8%A7%D9%84%D8%B4%D8%B1%D9%82+%D9%84%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%E2%80%AD/@24.8038773,46.782128,820m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3e2efe4a2ea2ba45:0x5e243c838c2eca8a!8m2!3d24.8038773!4d46.782128!16s%2Fg%2F11gbf77_ct!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        "lat": 24.8038773,
+        "lon": 46.782128
+      }
+    },
+    {
+      "file": "branches.json",
+      "id": "242",
+      "expected": {
+        "sec": "شمال"
+      }
+    },
+    {
+      "file": "branches.json",
+      "id": "245",
+      "expected": {
+        "sec": "شمال"
+      }
+    },
+    {
+      "file": "branches.json",
+      "id": "258",
+      "expected": {
+        "sec": "شمال"
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P422",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P496",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P522",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P573",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P588",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-bdbadfcca1",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-0a45957caf",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-98b9dc4679",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-35ccd4c6d3",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-7e5bf1194e",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-60b8be8855",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-98933e57dd",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-9a1b2afbfc",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-74d92f6952",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-ec3e8f97e1",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-4b25bb1cae",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-692b8fbfab",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-76d161b0fd",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-2fba998544",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-b3268c9b8a",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-702556dba0",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-e4faaab8ee",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-70f07c2af6",
+      "expected": {
+        "sectors": [
+          "غرب"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-1c83f5ae7f",
+      "expected": {
+        "sectors": [
+          "غرب"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-972efae72e",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-39775bf4c9",
+      "expected": {
+        "sectors": [
+          "جنوب"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-37ac78807e",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-1bfd22e562",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-12e497d431",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-fa53daaf93",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-d328624406",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-5a881e942e",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-161278013f",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-7440d7945c",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-d800df010f",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-a043da207c",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-793f2228e5",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-294370289a",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-1ff533b54e",
+      "expected": {
+        "sectors": [
+          "شمال"
+        ]
+      }
+    },
+    {
+      "file": "opportunities.json",
+      "id": "op-riyadh-current-ethmar34",
+      "expected": {
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P501",
+      "expected": {
+        "city": "الرياض",
+        "nb": "قرطبة",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P543",
+      "expected": {
+        "city": "الرياض",
+        "nb": "الفرسان",
+        "sectors": [
+          "شرق"
+        ]
+      }
+    },
+    {
+      "file": "projects.json",
+      "id": "P473",
+      "expected": {
+        "city": "الرياض",
+        "nb": "إشبيلية",
+        "sectors": [
+          "شرق"
+        ],
+        "loc": "project",
+        "maps": "https://goo.gl/maps/rMuwCQG2avHKSm2S9",
+        "lat": 24.7949459,
+        "lon": 46.800266
+      }
+    }
+  ]
+}

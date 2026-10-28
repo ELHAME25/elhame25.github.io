@@ -1,0 +1,54 @@
+{
+  "basis": "Verified multi-location entity oracle; no independent approval for child locations.",
+  "records": [
+    {
+      "id": "P432",
+      "type": "villa_model",
+      "sectors": [
+        "شمال"
+      ],
+      "locations": [
+        {
+          "nb": "النرجس",
+          "sectors": [
+            "شمال"
+          ],
+          "source": "https://view.sa/projects/tone-villa-narjis"
+        },
+        {
+          "nb": "الياسمين",
+          "sectors": [
+            "شمال"
+          ],
+          "source": "https://view.sa/projects/tone-villa-yasmin/"
+        }
+      ],
+      "bankApprovalSha256": "511e30573d3a97effbd52f87b08ccdee5433ae26785910d245023bb5e5c44ba5"
+    },
+    {
+      "id": "P581",
+      "type": "multi_location_series",
+      "sectors": [
+        "شمال",
+        "وسط"
+      ],
+      "locations": [
+        {
+          "nb": "المحمدية",
+          "sectors": [
+            "شمال"
+          ],
+          "sourceContains": "anId=87158"
+        },
+        {
+          "nb": "النموذجية",
+          "sectors": [
+            "وسط"
+          ],
+          "sourceContains": "anId=90576"
+        }
+      ],
+      "bankApprovalSha256": "dfc2c5d0a4d4bf7f13165794f9203e4a701913870a4878c150c9b06f0e571be5"
+    }
+  ]
+}

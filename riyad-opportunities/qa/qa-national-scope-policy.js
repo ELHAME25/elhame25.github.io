@@ -83,17 +83,29 @@ function assertNearFirst(rows,label){let last=-Infinity,unknown=false;for(const 
   let showroomSectorSwitches=0;
   for(const [branchSector,selected,first,label] of [
     ['جنوب','شرق','qadisiyah','القادسية'], ['جنوب','شمال','qadisiyah','القادسية'],
-    ['شرق','غرب','shifa','الشفا'], ['شرق','وسط','shifa','القادسية والشفا']
+    ['شرق','غرب','shifa','الشفا'], ['شرق','وسط','shifa','الشفا']
   ]){
     const b=riyadhBranches.find(x=>x.sec===branchSector);assert(b,'missing Riyadh '+branchSector+' branch');
     A.choose(b.c);A.state().tab='cars';A.state().scope='sector';A.state().explore=selected;A.renderBranch();
     const html=env.els.app.innerHTML,other=first==='qadisiyah'?'shifa':'qadisiyah';
     assert(html.indexOf('value="'+first+'"')<html.indexOf('value="'+other+'"'),'showroom order follows original branch, not '+selected);
     assert(env.els.content.innerHTML.includes('معرضًا في '+label),'showroom subtitle does not follow '+selected);
+    assert(A.itemsFor('cars',selected,'sector').every(x=>x.o.zone===first),'default primary group contains another hub');
+    assert(env.els.content.innerHTML.includes('data-car-area="'+other+'"'),'alternate hub is missing below selected-group results');
     assert.equal(A.state().branch.sec,branchSector,'sector browsing mutated branch metadata');showroomSectorSwitches++;
   }
-  // If supplied, compare exact car result IDs/order with a read-only pre-change app.
+  // Old-baseline equivalence is meaningful only for unaffected cities. Riyadh now follows
+  // the explicit primary/alternate policy above, not its previous exclusive hub behavior.
   let carComparisons=0;const baseline=process.env.NATIONAL_POLICY_BASELINE_APP;
-  if(baseline){const old=boot(baseline);await new Promise(r=>setTimeout(r,350));const B=old.window.__policy;for(const b of D.branches){A.choose(b.c);B.choose(b.c);for(const scope of ['branch','city'])for(const radius of [5,20]){for(const q of [A,B]){q.state().scope=scope;q.state().radius=radius;}assert.deepEqual(Array.from(A.itemsFor('cars','',''+scope),x=>x.o.id),Array.from(B.itemsFor('cars','',''+scope),x=>x.o.id),'car behavior changed at '+b.c+'/'+scope+'/'+radius);carComparisons++;}if(A.sameCity(b.city,'الرياض'))for(const sec of ['شرق','شمال','جنوب','غرب','وسط'])for(const q of [A,B]){q.state().scope='sector';q.state().explore=sec;if(q===B){assert.deepEqual(Array.from(A.itemsFor('cars',sec,'sector'),x=>x.o.id),Array.from(B.itemsFor('cars',sec,'sector'),x=>x.o.id),'Riyadh sector car behavior changed '+b.c+'/'+sec);carComparisons++;}}}}
+  if(baseline){
+    const old=boot(baseline);await new Promise(r=>setTimeout(r,350));const B=old.window.__policy;
+    for(const b of D.branches.filter(b=>!A.sameCity(b.city,'الرياض'))){
+      A.choose(b.c);B.choose(b.c);
+      for(const scope of ['branch','city'])for(const radius of [5,20]){
+        for(const q of [A,B]){q.state().scope=scope;q.state().radius=radius;}
+        assert.deepEqual(Array.from(A.itemsFor('cars','',scope),x=>x.o.id),Array.from(B.itemsFor('cars','',scope),x=>x.o.id),'unaffected city car behavior changed at '+b.c+'/'+scope+'/'+radius);carComparisons++;
+      }
+    }
+  }
   console.log(JSON.stringify({suite:'National category scope policy',ok:true,...totals,carComparisons,companyDirectoryOnly:true,projectSeparationCases,showroomSectorSwitches},null,2));
 })().catch(error=>{console.error(error.stack||error);process.exitCode=1;});

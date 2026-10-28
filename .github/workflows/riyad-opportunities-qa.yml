@@ -100,3 +100,33 @@ jobs:
           name: candidate-webkit-${{ github.sha }}
           path: riyad-opportunities/qa-webkit-artifacts/
           retention-days: 14
+
+  geographic-semantics:
+    if: github.ref != 'refs/heads/main' && !contains(github.event.head_commit.message, '[live-smoke-only]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        engine: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install independent browser test runtime
+        run: |
+          npm install --prefix "$RUNNER_TEMP/semantic-browser" --no-save playwright@1.55.0
+          "$RUNNER_TEMP/semantic-browser/node_modules/.bin/playwright" install --with-deps ${{ matrix.engine }}
+      - name: Check independent geographic and showroom contracts
+        run: |
+          mkdir -p riyad-opportunities/semantic-artifacts
+          node riyad-opportunities/qa/semantic/geography-data-contract.js riyad-opportunities riyad-opportunities/semantic-artifacts/geography-${{ matrix.engine }}.json
+          node riyad-opportunities/qa/semantic/semantic-contract.js riyad-opportunities riyad-opportunities/semantic-artifacts/offline-${{ matrix.engine }}.json
+          SEMANTIC_BROWSER=${{ matrix.engine }} NODE_PATH="$RUNNER_TEMP/semantic-browser/node_modules" node riyad-opportunities/qa/semantic/browser-semantic-contract.js riyad-opportunities riyad-opportunities/semantic-artifacts/browser-${{ matrix.engine }}.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: geographic-semantics-${{ matrix.engine }}-${{ github.sha }}
+          path: riyad-opportunities/semantic-artifacts/
+          retention-days: 14
