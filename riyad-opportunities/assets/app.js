@@ -268,17 +268,30 @@
     qb.addEventListener('input', list);
     qc.addEventListener('change', list);
     qb.addEventListener('keydown', function (e) { if (e.key === 'Enter' && selectedCode) selectBranch(selectedCode); });
-    go.addEventListener('click', function () { if (selectedCode) selectBranch(selectedCode); });
+    go.addEventListener('click', function (e) { if (selectedCode) { armEntryClickGuard(e); selectBranch(selectedCode); } });
     qe.addEventListener('input', function () { S.employee = qe.value.trim(); var g = document.getElementById('greet'); if (g) { g.textContent = employeeGreeting(S.employee); g.hidden = !S.employee; } });
     var greeting = document.getElementById('greet'); greeting.textContent = employeeGreeting(S.employee); greeting.hidden = !S.employee;
     document.getElementById('branch-list').addEventListener('click', function (e) {
-      var cityButton = e.target.closest('[data-browse-city]'); if (cityButton) { selectCity(cityButton.dataset.browseCity); return; }
+      var cityButton = e.target.closest('[data-browse-city]'); if (cityButton) { armEntryClickGuard(e); selectCity(cityButton.dataset.browseCity); return; }
       var b = e.target.closest('[data-code]'); if (!b) return;
       selectedCode = b.dataset.code; var selected = D.branchByCode[selectedCode]; qb.value = selected && selected.codeStatus === 'local_internal_reference' ? selected.n : selectedCode; list(selectedCode); go.focus();
     });
     list();
     if (location.hash) { try { history.replaceState(null, '', location.pathname + location.search); } catch (e) { /* ignore */ } }
   }
+
+  // A double-click on entry must not hit a category exposed by the first click.
+  // Restrict this guard to the same screen point; fast clicks elsewhere and keyboard input remain usable.
+  var entryClickGuard = null;
+  function armEntryClickGuard(e) {
+    if (e && e.detail > 0 && Number.isFinite(e.clientX) && Number.isFinite(e.clientY)) entryClickGuard = { x: e.clientX, y: e.clientY, until: Date.now() + 600 };
+  }
+  document.addEventListener('click', function (e) {
+    if (!entryClickGuard || Date.now() > entryClickGuard.until) { entryClickGuard = null; return; }
+    if (e.detail > 0 && Math.abs(e.clientX - entryClickGuard.x) <= 6 && Math.abs(e.clientY - entryClickGuard.y) <= 6) {
+      e.preventDefault(); e.stopImmediatePropagation();
+    }
+  }, true);
 
   /* ---------------- branch & state ---------------- */
   // الفرع هو نقطة ترتيب النتائج. لا يُسقط حدّ مسافة ثابت الفرص البعيدة أو التي ينقصها دبوس.
@@ -766,7 +779,7 @@
   function displayEligible(kind, o, entry) {
     if ((o.availability || {}).status === 'sold_out' || /مباع بالكامل|تم بيع كامل/.test(String(o.status || ''))) return false;
     if (kind === 'projects') return !bankApprovalPending() && approvalIdentityVerified(o) && !!(o.bankApproval && o.bankApproval.status === 'verified' && o.bankApproval.sourceType === 'bank_approved_inventory' && String(o.bankApproval.code || '').trim() && validEvidence(o.bankApproval));
-    if (kind === 'opps') return !nonSaleState(o) && (!!(entry && entry.hasLegacyMarketSource) || LEGACY_MARKET_IDS.has(o.id) || !!(o.availability && o.availability.status === 'available' && validEvidence(o.availability)));
+    if (kind === 'opps') return (o.availability || {}).status !== 'unverified' && !nonSaleState(o) && (!!(entry && entry.hasLegacyMarketSource) || LEGACY_MARKET_IDS.has(o.id) || !!(o.availability && o.availability.status === 'available' && validEvidence(o.availability)));
     return true;
   }
   function canonicalProjectItems(candidates) {
@@ -1380,10 +1393,12 @@
   }
   // Suppress only an exact, reviewed HTTP404 link when a working corporate alternative exists.
   // Keep the source URL in data; temporary blocks (403/429/timeouts) are not treated as missing pages.
-  function projectPage(o) {
+  function reviewedUnavailableUrl(o, url) {
     var check = o && o.projectPageCheck;
-    if (check && check.url === o.page && check.httpStatus === 404 && check.fallbackHttpStatus === 200 && check.fallbackUrl === o.dsite && validEvidence({source:check.url,checkedAt:check.checkedAt})) return '';
-    return o && o.page || '';
+    return !!(url && check && check.url === url && check.httpStatus === 404 && check.fallbackHttpStatus === 200 && check.fallbackUrl === o.dsite && validEvidence({source:check.url,checkedAt:check.checkedAt}));
+  }
+  function projectPage(o) {
+    return reviewedUnavailableUrl(o, o && o.page) ? '' : o && o.page || '';
   }
   function projectSiteLabel(o) {
     if (o.siteRole === 'marketer' || (o.marketer && !o.dev)) return 'موقع المسوّق';
@@ -1458,7 +1473,7 @@
   function actions(id, o, cls) {
     var ph = (o.phones || [])[0] || '', wa = o.wa || '';
     var map = o.maps || o.sales || o.mapsQ, site = o.web || projectPage(o) || o.site || o.dsite || o.url || o.contactUrl, h = '';
-    if (map) {
+    if (map && !reviewedUnavailableUrl(o, map)) {
       var mapHost = ''; try { mapHost = new URL(map, window.location.href).hostname.toLowerCase(); } catch (e) { /* validated separately */ }
       var mapIsGoogle = mapHost.indexOf('google.') >= 0 || mapHost === 'maps.app.goo.gl' || mapHost === 'goo.gl';
       var mapLabel = mapHost.indexOf('waze.com') >= 0 ? 'Waze' : mapHost.indexOf('yango.com') >= 0 ? 'Yango Maps' : mapIsGoogle ? (map.indexOf('/maps/search') >= 0 || /[?&]query=/.test(map) ? 'بحث في Google Maps' : 'Google Maps') : 'الخريطة';
@@ -1466,7 +1481,7 @@
     }
     if (ph) h += '<a class="' + cls + '" title="اتصال" aria-label="اتصال" data-call="' + id + '" href="' + esc(telHref(ph)) + '">' + ICON.phone + (cls === 'btn' ? 'اتصال' : '') + '</a>';
     if (wa && waMatchesPhone(o)) h += '<a class="' + cls + ' wa" title="واتساب" aria-label="واتساب" data-wa="' + id + '" target="_blank" rel="noopener" href="' + esc(wa) + '">' + ICON.wa + (cls === 'btn' ? 'واتساب' : '') + '</a>';
-    if (site) h += '<a class="' + cls + '" title="الموقع" aria-label="الموقع الإلكتروني" target="_blank" rel="noopener" href="' + esc(site) + '">' + ICON.web + (cls === 'btn' ? 'الموقع' : '') + '</a>';
+    if (site && !reviewedUnavailableUrl(o, site)) h += '<a class="' + cls + '" title="الموقع" aria-label="الموقع الإلكتروني" target="_blank" rel="noopener" href="' + esc(site) + '">' + ICON.web + (cls === 'btn' ? 'الموقع' : '') + '</a>';
     if (CFG.enableVcard && ph) h += '<button class="' + cls + '" title="حفظ جهة اتصال" aria-label="حفظ جهة اتصال" data-vcard="' + id + '">' + ICON.card + (cls === 'btn' ? 'حفظ' : '') + '</button>';
     h += '<button class="' + cls + '" title="مشاركة" aria-label="مشاركة" data-share="' + id + '">' + ICON.share + (cls === 'btn' ? 'مشاركة' : '') + '</button>';
     return h;
@@ -1610,20 +1625,20 @@
       rows = [[unclearDeveloperRole(o) ? 'الجهة المرتبطة' : 'المطور', o.dev], ['المسوّق', o.marketer], ['الموقع', o.nb], ['المدينة', o.city], ['نوع الوحدات', o.type], ['الغرف', verifiedField(o, 'rooms')], ['عدد الوحدات', verifiedField(o, 'units')], ['المساحة', verifiedField(o, 'area')], ['تفصيل المساحة', verifiedField(o, 'area') ? o.areaNote : ''], ['حالة الإنشاء', constructionLabel(o)], ['حالة العرض', validEvidence(o.availability) && o.availability.status === 'available' ? 'متاح للبيع وفق المصدر الموثق' : ''], ['رقم التواصل', o.phoneLevel === 'dev' && o.phones && o.phones[0] ? (unclearDeveloperRole(o) ? 'رقم الجهة' : 'رقم المطور') : '']];
       var projectPageUrl = projectPage(o);
       if (projectPageUrl) links += '<a class="btn primary" target="_blank" rel="noopener" href="' + esc(projectPageUrl) + '">' + ICON.web + 'صفحة المشروع</a>';
-      if (o.areaSource) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.areaSource) + '">' + ICON.web + 'مصدر المساحة</a>';
+      if (o.areaSource) links += evidenceLink(o.areaSource, 'مصدر المساحة', o);
       var devSite = developerSite(o);
       if (devSite && devSite !== projectPageUrl) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(devSite) + '">' + ICON.companies + projectSiteLabel(o) + '</a>';
-      if (o.sales) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.sales) + '">' + ICON.map + 'مركز المبيعات</a>';
-      if (o.contactUrl) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(o.contactUrl) + '">' + ICON.phone + 'التواصل</a>';
+      if (o.sales) links += evidenceLink(o.sales, mapActionLabel(o.sales) === 'بحث في الخرائط' ? 'بحث عن مركز المبيعات' : 'مركز المبيعات', o);
+      if (o.contactUrl) links += evidenceLink(o.contactUrl, 'التواصل', o);
     }
     if (k === 'selfbuild') rows = [['المدينة', o.city], ['الموقع', o.loc]];
     if (k === 'companies' || k === 'offices' || k === 'cars') {
       rows = [['المدينة', o.city], ['الموقع', o.nb], ['النشاط', o.kind], ['المسؤول', o.contact]];
-      (o.salesCenters || []).forEach(function (center) { if (center.maps) links += '<a class="btn" target="_blank" rel="noopener" href="' + esc(center.maps) + '">مركز مبيعات الشركة</a>'; });
+      (o.salesCenters || []).forEach(function (center) { if (center.maps) links += evidenceLink(center.maps, mapActionLabel(center.maps) === 'بحث في الخرائط' ? 'بحث عن مركز مبيعات الشركة' : 'مركز مبيعات الشركة', o); });
     }
-    if ((k === 'projects' || k === 'opps') && displayEligible('projects', o)) { rows.push(['اعتماد البنك', 'موثق وفق المصدر'], ['تاريخ التحقق', o.bankApproval.checkedAt]); links += evidenceLink(o.bankApproval.source, 'مصدر اعتماد البنك'); }
-    if ((k === 'opps' || k === 'projects') && o.availability && o.availability.status === 'available' && validEvidence(o.availability)) { rows.push(['تاريخ التحقق من الإتاحة', o.availability.checkedAt]); links += evidenceLink(o.availability.source, 'مصدر الإتاحة للبيع'); }
-    if (o.destinationName && (o.destinationSource || validEvidence(o.destinationEvidence))) { rows.push(['الوجهة', o.destinationName]); links += evidenceLink(o.destinationSource || o.destinationEvidence.source, 'مصدر الارتباط بالوجهة'); }
+    if ((k === 'projects' || k === 'opps') && displayEligible('projects', o)) { rows.push(['اعتماد البنك', 'موثق وفق المصدر'], ['تاريخ التحقق', o.bankApproval.checkedAt]); links += evidenceLink(o.bankApproval.source, 'مصدر اعتماد البنك', o); }
+    if ((k === 'opps' || k === 'projects') && o.availability && o.availability.status === 'available' && validEvidence(o.availability)) { rows.push(['تاريخ التحقق من الإتاحة', o.availability.checkedAt]); links += evidenceLink(o.availability.source, 'مصدر الإتاحة للبيع', o); }
+    if (o.destinationName && (o.destinationSource || validEvidence(o.destinationEvidence))) { rows.push(['الوجهة', o.destinationName]); links += evidenceLink(o.destinationSource || o.destinationEvidence.source, 'مصدر الارتباط بالوجهة', o); }
     rows = (rows || []).filter(function (r) { return r[1]; });
     dlg.innerHTML = '<div class="d-top"><button class="btn back-results" data-close>← ' + backLabel + '</button></div>' +       '<div class="d-body"><h2>' + esc(o.n) + '</h2><button class="btn" data-close>العودة إلى القائمة</button>' + (k === 'projects' || k === 'opps' ? priceLine(o) : '') +
       phoneLine(o.phones, id, o.phoneContacts) + '<div class="d-acts primary-contact-actions">' + actions(id, o, 'btn') + '</div>' +
@@ -1662,7 +1677,7 @@
     catch (e) { copy(ph, 'نُسخ الرقم'); }
   }
   var detailReturn = null, detailRecord = null;
-  function evidenceLink(source, label) { return /^https?:\/\//i.test(String(source || '')) ? '<a class="btn" target="_blank" rel="noopener" href="' + esc(source) + '">' + esc(label) + '</a>' : ''; }
+  function evidenceLink(source, label, o) { if (reviewedUnavailableUrl(o, source)) return '<span class="d-note">' + esc(label) + ': رابط المصدر غير متاح حاليًا</span>'; return /^https?:\/\//i.test(String(source || '')) ? '<a class="btn" target="_blank" rel="noopener" href="' + esc(source) + '">' + esc(label) + '</a>' : ''; }
   function closeDlg(fromHistory) {
     var d = document.getElementById('detail');
     if (!fromHistory && history.state && history.state.rogDetail && history.state.parentRecord != null) { history.back(); return; }

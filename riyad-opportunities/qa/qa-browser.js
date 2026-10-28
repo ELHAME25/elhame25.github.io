@@ -16,6 +16,17 @@ const selfbuildBranch=branchData.find(b=>b.city==='حائل');assert(selfbuildBr
 const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));if(file===root)file=path.join(root,'index.html');if(!file.startsWith(root+path.sep)){res.writeHead(403).end();return;}fs.readFile(file,(e,b)=>{if(e){res.writeHead(404).end();return;}res.setHeader('Content-Type',mime[path.extname(file)]||'application/octet-stream');res.end(b);});});
 (async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin='http://127.0.0.1:'+server.address().port;
  browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});let pageErrors=[],checks=[],imageChecks=[],mobileChecks=[];
+ // Actual input regression for the live-discovered entry double-click click-through.
+ for (const w of [1165,1440,390,320]) {
+  const ctx=await browser.newContext({viewport:{width:w,height:w===1165?747:900}}), pg=await ctx.newPage();
+  await pg.goto(origin);await pg.waitForSelector('#q-branch');await pg.fill('#q-branch','302');await pg.click('#go-branch');
+  const expectedTab=await pg.locator('[data-tab][aria-pressed="true"]').getAttribute('data-tab');
+  await pg.click('[data-act="change"]');await pg.fill('#q-branch','302');await pg.locator('#go-branch').dblclick();
+  assert.equal(await pg.locator('[data-tab][aria-pressed="true"]').getAttribute('data-tab'),expectedTab,'Entry double-click changed category at '+w);
+  assert.equal(await pg.locator('#detail[open]').count(),0,'Entry double-click opened unrelated detail');
+  await pg.click('[data-tab="cars"]');assert.equal(await pg.locator('[data-tab][aria-pressed="true"]').getAttribute('data-tab'),'cars','Immediate deliberate navigation remains usable');
+  await ctx.close();
+ }
  async function capture(page,name){
   await page.evaluate(()=>document.fonts.ready);
   await page.waitForFunction(()=>[...document.querySelectorAll('svg image')].every(i=>i.dataset.loaded==='1'),null,{timeout:15000});

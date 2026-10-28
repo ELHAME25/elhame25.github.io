@@ -26,3 +26,5 @@ node "$(dirname -- "$0")/qa-recovered-coverage.js" "$ROOT"
 node "$(dirname -- "$0")/qa-entry-regression.js" "$ROOT"
 
 node "$(dirname -- "$0")/qa-scope-recovery-20261027.js" "$ROOT"
+
+node "$(dirname -- "$0")/qa-live-findings-20261028.js"

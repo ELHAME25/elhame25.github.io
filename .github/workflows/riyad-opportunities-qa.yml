@@ -3,6 +3,7 @@ name: Riyad Opportunities QA
 on:
   push:
     branches:
+      - qa/candidate-live-findings-20261028
       - fix/complete-directory-scope-20261027
       - codex/audit-repair-20261009-0851
       - codex/fix-independent-sector-selection-20261009
