@@ -995,12 +995,13 @@
     "creditAnchor": "verified-wide-yanbu-20261028"
   },
   "بريدة": {
-    "src": "assets/images/cities/buraidah-tower-real.webp",
-    "position": "20% 50%",
-    "fit": "contain",
+    "src": "assets/images/cities/buraidah-selected-spa.webp",
+    "position": "50% 55%",
+    "mobilePosition": "50% 55%",
+    "fit": "cover",
     "real": true,
-    "displayPermission": "CC_BY_SA_4_0_linked_credit",
-    "creditAnchor": "buraidah-water-tower"
+    "displayPermission": "user_selected_copyrighted_source",
+    "creditAnchor": "buraidah-selected-spa-20261028"
   },
   "الرياض": {
     "src": "assets/images/city-riyadh.webp",
@@ -1647,7 +1648,7 @@
     var selfbuildLink = hasSelfbuild(b.city) ? '<div class="secondary-discovery"><button class="btn selfbuild-link" data-tab="selfbuild" aria-controls="content" aria-pressed="' + (S.tab === 'selfbuild') + '">' + ICON.selfbuild + 'البناء الذاتي</button></div>' : '';
     var headingSector = S.tab !== 'companies' && S.tab !== 'selfbuild' && S.scope !== 'city' && S.scope !== 'unassigned' && sectorCity(b.city) ? (activeSector() || b.sec || '') : '';
     var hero = CITY_HERO_ASSETS[b.city] || CITY_HERO_ASSETS[S.branch.city] || { src: CITY_HERO_FALLBACK, position: '50% 50%', real: false };
-    app.innerHTML = '<div class="results-shell wrap"><section class="city-hero' + (hero.creditAnchor ? ' has-photo-credit' : '') + '" aria-label="' + esc(b.city) + '">' + cityHeroMedia(hero) + '<div class="city-hero-copy"><p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : 'مرحبًا بك') + '</p><div class="hero-branch">' + ICON.map + '<span>' + esc(b.n) + (b.cityOnly ? '' : ' · ' + (b.codeStatus === 'local_internal_reference' ? 'مرجع داخلي ' : '') + esc(b.c)) + '</span></div></div></section>' +
+    app.innerHTML = '<div class="results-shell wrap"><section class="city-hero' + (hero.creditAnchor ? ' has-photo-credit' : '') + (hero.displayPermission === 'user_selected_copyrighted_source' ? ' selected-source-hero' : '') + '" aria-label="' + esc(b.city) + '">' + cityHeroMedia(hero) + '<div class="city-hero-copy">' + (hero.displayPermission === 'user_selected_copyrighted_source' ? '<p class="selected-source-credit">الصورة: واس / أخبار24 · <a href="' + esc(hero.src) + '" target="_blank" rel="noopener">الصورة كاملة</a></p>' : '') + '<p class="greet">' + (S.employee ? esc(employeeGreeting(S.employee)) : 'مرحبًا بك') + '</p><div class="hero-branch">' + ICON.map + '<span>' + esc(b.n) + (b.cityOnly ? '' : ' · ' + (b.codeStatus === 'local_internal_reference' ? 'مرجع داخلي ' : '') + esc(b.c)) + '</span></div></div></section>' +
       '<div class="page-title"><h1>فرص ' + esc([headingSector, b.city].filter(Boolean).join(' ')) + '</h1><button class="btn change-branch" data-act="change">' + ICON.swap + 'تغيير الفرع</button></div>' +
       '<div class="discovery-controls">' + scopeOptions() + '<div class="search">' + ICON.search + '<input id="q-sec" class="input" type="search" placeholder="' + esc(SEARCH_PH[S.tab]) + '" value="' + esc(S.q[S.tab] || '') + '" aria-label="' + esc(SEARCH_PH[S.tab]) + '"></div></div>' +
       '<div class="stats" role="group" aria-label="الفئات الرئيسية">' + stats + '</div>' + selfbuildLink + '<main class="content" id="content" aria-live="polite"></main></div>';

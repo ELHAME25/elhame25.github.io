@@ -116,3 +116,15 @@ dialog.detail{padding:0;border:0;border-radius:17px;width:min(760px,calc(100vw -
 .d-media.has-official-photo>.official-image{position:relative;inset:auto;display:block;width:auto;max-width:100%;height:auto;max-height:none;object-fit:contain;margin:0 auto}
 
 .d-media.has-official-photo>.close-x{display:none} /* The sticky return button remains available without covering source-image content. */
+
+/* Exact user-selected Buraidah original: display-only light, no pixel rewriting. */
+.city-hero.selected-source-hero{height:auto;padding-top:400px}
+.selected-source-hero>.city-photo-credit{top:0;bottom:auto;height:400px}
+.selected-source-hero>.city-photo-credit>img{height:100%;filter:brightness(1.12)}
+.selected-source-hero:after{background:none;pointer-events:none}
+.selected-source-hero .city-hero-copy{position:relative;inset:auto;min-height:96px;padding:12px 18px;background:#f5f8fb;border-top:1px solid var(--line);color:var(--navy);text-shadow:none}
+.selected-source-hero .greet{color:var(--navy)}
+.selected-source-hero .hero-branch{max-width:100%;color:var(--ink-2);background:#fff;border-color:var(--line);backdrop-filter:none}
+.selected-source-credit{margin:0 0 5px;font-size:.75rem;color:var(--ink-2);line-height:1.6}
+.selected-source-credit a{color:var(--navy);text-decoration:underline;display:inline-block;padding:12px 3px;min-height:44px}
+@media(max-width:700px){.city-hero.selected-source-hero{padding-top:148px}.selected-source-hero>.city-photo-credit{height:148px}.selected-source-hero .city-hero-copy{padding:10px 14px}}
