@@ -1,0 +1,49 @@
+name: Complete candidate directory browser QA
+on:
+  push:
+    branches: ['qa/candidate-complete-20261028']
+    paths: ['riyad-opportunities/**', '.github/workflows/riyad-opportunities-candidate-complete.yml']
+  workflow_dispatch:
+concurrency:
+  group: candidate-directory-full-qa
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        width: [1440, 390, 320]
+        shard: [0, 1, 2]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser
+        run: |
+          npm install --prefix "$RUNNER_TEMP/candidate-browser" --no-save playwright@1.55.0
+          "$RUNNER_TEMP/candidate-browser/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Test actual candidate from local server without fixtures or interception
+        env:
+          QA_MODE: candidate
+          QA_BASE_URL: http://127.0.0.1:8765/
+          QA_CANDIDATE_SHA: 255fa7691e3609eb9605d36773a31af89ef2ed56
+          QA_WIDTH: ${{ matrix.width }}
+          QA_SHARD: ${{ matrix.shard }}
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory riyad-opportunities > "$RUNNER_TEMP/candidate-server.log" 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          for i in $(seq 1 20); do curl -fsSo /dev/null http://127.0.0.1:8765/index.html && break || sleep 0.2; done
+          NODE_PATH="$RUNNER_TEMP/candidate-browser/node_modules" node riyad-opportunities/qa/qa-complete-matrix.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: candidate-${{ matrix.width }}-${{ matrix.shard }}-${{ github.sha }}
+          path: riyad-opportunities/qa-candidate-artifacts/
+          retention-days: 14
