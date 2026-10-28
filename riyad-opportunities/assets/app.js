@@ -1097,7 +1097,7 @@
     "real": false,
     "displayPermission": "generated_illustration"
   },
-  "خميس مشيط": {"src": "assets/images/cities/khamis-mushait-walk-real.jpg", "position": "50% 50%", "fit": "cover", "real": true, "displayPermission": "CC_BY_SA_3_0_linked_credit", "creditAnchor": "verified-khamis-walk"},
+  "خميس مشيط": {"src": "assets/images/cities/khamis-mushait-walk-real.jpg", "position": "50% 25%", "fit": "cover", "real": true, "displayPermission": "CC_BY_SA_3_0_linked_credit", "creditAnchor": "verified-khamis-walk"},
   "صامطة": {
     "src": "assets/images/cities/generated/south-west-samtah-illustrative.webp",
     "position": "50% 50%",
@@ -1152,7 +1152,7 @@
       return '<a class="city-photo-credit" href="assets/images/cities/credits.html#' + esc(hero.creditAnchor) + '" aria-label="حقوق الصورة ومصدرها" title="حقوق الصورة ومصدرها">' + cityHeroMedia(photo) + '</a>';
     }
     if (hero.viewBox) return '<svg class="city-photo" viewBox="' + esc(hero.viewBox) + '" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><image href="' + esc(hero.src) + '" width="710" height="1536" onload="this.dataset.loaded=1"></image></svg>';
-    var portrait = hero.fit === 'contain', portraitSrc = portrait ? new URL(hero.src, location.href).href : '';
+    var portrait = hero.fit === 'contain', portraitSrc = portrait && location.href ? new URL(hero.src, location.href).href : hero.src;
     return (portrait ? '<span class="city-portrait-photo" style="--portrait-photo:url(&quot;' + esc(portraitSrc) + '&quot;)" aria-hidden="true">' : '') + '<img src="' + esc(hero.src) + '" alt="" decoding="async" style="object-fit:' + (hero.fit || 'cover') + ';object-position:' + hero.position + '" onerror="if(!this.dataset.fallback){this.dataset.fallback=1;this.src=\'' + CITY_HERO_FALLBACK + '\'}else{this.hidden=true}">' + (portrait ? '</span>' : '');
   }
   var CITY_HERO_FALLBACK = 'assets/images/city-neutral.webp';
