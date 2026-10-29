@@ -417,6 +417,25 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   A.selectBranch('176', true); A.state().tab = 'projects'; A.renderBranch();
   assert('Synthetic missing Jeddah pin retains full-city fallback without fabricated radius', A.state().scope === 'city' && !els.content.innerHTML.includes('id="radius"'));
   Object.assign(d.branchByCode['176'], savedJeddahPin);
+  for (const code of ['222','233','256','176','188']) {
+    A.selectBranch(code,true);
+    for (const tab of ['projects','opps','offices']) {
+      fireDocument('click',target({'data-tab':tab}));
+      assert('Pinned sectorless branch '+code+' new '+tab+' tab defaults nearby',A.state().scope==='branch' && els.content.innerHTML.includes('id="radius"'));
+    }
+    fireDocument('click',target({'data-scope':'city'}));
+    fireDocument('click',target({'data-tab':'projects'}));
+    assert('Pinned sectorless branch '+code+' preserves nearby projects view',A.state().scope==='branch');
+    fireDocument('click',target({'data-tab':'offices'}));
+    assert('Pinned sectorless branch '+code+' preserves deliberate city offices view',A.state().scope==='city');
+  }
+  for (const code of ['252','307','624']) {
+    A.selectBranch(code,true);
+    for (const tab of ['projects','opps','offices']) {
+      fireDocument('click',target({'data-tab':tab}));
+      assert('Missing-pin branch '+code+' new '+tab+' tab retains city fallback',A.state().scope==='city' && !els.content.innerHTML.includes('id="radius"'));
+    }
+  }
   A.selectBranch('307', true); const rasTanuraDefaultScope = A.state().scope; A.state().tab = 'offices'; A.renderBranch();
   assert('Ras Tanura missing pin still opens full city offices without invented radius', rasTanuraDefaultScope === 'city' && !els.app.innerHTML.includes('data-scope="branch"') && !els.content.innerHTML.includes('id="radius"') && A.itemsFor('offices','','branch').map(x=>x.o.id).sort().join('|') === A.itemsFor('offices','','city').map(x=>x.o.id).sort().join('|'));
 

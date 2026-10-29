@@ -2270,7 +2270,7 @@
     if (t.hasAttribute('data-tab')) {
       S.views[S.tab] = { scope: S.scope, explore: S.explore, carArea: S.carArea, nhcView: S.nhcView };
       S.tab = t.dataset.tab;
-      var view = S.views[S.tab] || { scope: km(S.branch.lat, S.branch.lon, S.branch.lat, S.branch.lon) == null || (sectorCity(S.branch.city) && !S.branch.sec) ? 'city' : 'branch', explore: '', carArea: '' };
+      var view = S.views[S.tab] || { scope: km(S.branch.lat, S.branch.lon, S.branch.lat, S.branch.lon) == null ? 'city' : 'branch', explore: '', carArea: '' };
       S.scope = view.scope; S.explore = view.explore; S.carArea = view.carArea; S.nhcView = view.nhcView || 'local';
       renderBranch(); return;
     }

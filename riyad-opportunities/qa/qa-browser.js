@@ -73,7 +73,25 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
   await capture(page,'entry-'+viewport.width+'.png');
   await page.fill('#q-emp','خالد');await page.fill('#q-branch','243');assert(await page.locator('#go-branch').isEnabled());await page.click('#go-branch');await page.waitForSelector('.stat');assert.equal(await page.locator('.stat').count(),6);assert.equal(await page.locator('body').getByText('إعداد: خالد الماطر',{exact:true}).count(),1);assert.equal(await page.locator('#site-foot').getByText('إعداد: خالد الماطر',{exact:true}).count(),1);
   assert.equal(await page.locator('.selfbuild-link').count(),0,'Riyadh has no self-build category');await page.goto(origin+'/#b'+selfbuildBranch.c);await page.waitForSelector('.stat');await page.click('.selfbuild-link');assert.equal(await page.locator('#content h2').innerText(),'البناء الذاتي');assert.equal(await page.locator('.stat').count(),6);assert(await page.locator('#scope-select').isDisabled());await fit(page,'Self-build '+viewport.width);await capture(page,'selfbuild-'+viewport.width+'.png');await page.fill('#q-sec','__no_matching_record__');assert(await page.locator('.selfbuild-link').isVisible());assert.equal(await page.locator('.empty h3').innerText(),'لا نتائج مطابقة');await page.goto(origin+'/#b243');await page.waitForSelector('.stat');assert.equal(await page.locator('.selfbuild-link').count(),0);await page.click('[data-tab="opps"]');
-  assert.equal(await page.locator('[data-explore],[data-scope]').count(),0);assert.equal(await page.locator('#scope-select option[value="unassigned"]').count(),0);assert(await page.locator('#scope-select').isVisible());
+  // The single full-scope CTA is intentional; legacy parallel sector/scope controls are not.
+  assert.equal(await page.locator('[data-explore]').count(),0,'No duplicate sector controls');
+  assert.equal(await page.locator('[data-scope]').count(),1,'Exactly one full-scope CTA in nearby results');
+  const fullScopeCTA=page.locator('#content > .more-row > button[data-scope="city"]');
+  assert.equal(await fullScopeCTA.count(),1);assert(await fullScopeCTA.isVisible());
+  assert((await fullScopeCTA.innerText()).startsWith('كامل النطاق — الرياض'));
+  assert.equal(await page.locator('#scope-select option[value="unassigned"]').count(),0);assert(await page.locator('#scope-select').isVisible());
+  assert.equal(await page.locator('#scope-select').inputValue(),'branch');
+  const beforeFullScope=await page.evaluate(()=>window.__rogQA());
+  await fullScopeCTA.click();
+  const afterFullScope=await page.evaluate(()=>window.__rogQA());
+  assert.equal(afterFullScope.scope,'city');assert.equal(await page.locator('#scope-select').inputValue(),'city');
+  assert.equal(await page.locator('[data-explore],[data-scope]').count(),0,'Full-city view must not retain the nearby-only CTA');
+  assert(afterFullScope.sections.opps.length>beforeFullScope.sections.opps.length,'Expand must expose additional city opportunities');
+  assert(beforeFullScope.sections.opps.every(id=>afterFullScope.sections.opps.includes(id)),'Expanding scope must retain every nearby opportunity');
+  assert.equal(new Set(afterFullScope.sections.opps).size,afterFullScope.sections.opps.length,'No duplicated city opportunity IDs');
+  await page.selectOption('#scope-select','branch');
+  assert.deepEqual((await page.evaluate(()=>window.__rogQA())).sections.opps,beforeFullScope.sections.opps,'Return restores exact nearby list and order');
+  assert.equal(await page.locator('[data-scope]').count(),1);
   assert.equal(await page.locator('[data-tab="nhc"] .num').innerText(),expectedEastNHC+' من '+expectedCityNHC);assert((await page.locator('[data-tab="nhc"] .num').getAttribute('aria-label')).includes('وجهات معروضة من أصل'));await fit(page,'Category counts '+viewport.width);
   const boxes=await page.locator('.stat').evaluateAll(a=>a.map(n=>{const r=n.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height};}));assert.equal(new Set(boxes.map(x=>Math.round(x.y))).size,2);assert.equal(new Set(boxes.map(x=>Math.round(x.x))).size,3);
   await page.click('[data-tab="nhc"]');let qa=await page.evaluate(()=>window.__rogQA());assert.equal(qa.sections.nhc.length,expectedEastNHC);assert.equal(await page.locator('.nhc-count-summary').innerText(),expectedEastNHC+' من '+expectedCityNHC+' في الرياض');await page.click('[data-nhc-view="city"]');qa=await page.evaluate(()=>window.__rogQA());assert.equal(qa.sections.nhc.length,expectedCityNHC);assert.equal(await page.locator('.nhc-count-summary').innerText(),expectedCityNHC+' من '+expectedCityNHC+' في الرياض');await fit(page,'NHC '+viewport.width);
