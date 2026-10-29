@@ -164,11 +164,8 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
    assert.equal(await cp.locator('.city-hero').getAttribute('aria-label'),coverageCity);if(coverageCity!==city)assert((await cp.locator('.hero-branch').innerText()).includes(b.n));await fit(cp,'City '+city+' '+width);await cp.locator('.city-hero').screenshot({path:path.join(artifacts,'city-hero-'+b.c+'-'+width+'.png')});checks.push({city,width,exactCityHero:true,realData:true});
    if(selectedSource){
     assert.equal(await hero.evaluate(i=>getComputedStyle(i).filter),'brightness(1.12)');
-    const credit=cp.locator('.selected-source-credit');assert(await credit.isVisible());assert((await credit.innerText()).includes('الصورة كاملة'));assert(!(await credit.innerText()).includes('واس'));
-    const original=credit.locator('a');assert.equal(await original.getAttribute('href'),asset);assert((await original.boundingBox()).height>=44);
-    const originalTabPromise=cp.waitForEvent('popup');await original.click();const originalTab=await originalTabPromise;await originalTab.waitForLoadState('domcontentloaded');assert.equal(originalTab.url(),origin+'/'+asset);
-    await originalTab.locator('img').evaluate(i=>i.decode());const originalMetrics=await originalTab.locator('img').evaluate(i=>({width:i.naturalWidth,height:i.naturalHeight,filter:getComputedStyle(i).filter}));assert.deepEqual(originalMetrics,{width:1600,height:1482,filter:'none'});
-    if(width===320)await originalTab.screenshot({path:path.join(artifacts,'buraidah-full-original-unfiltered.png'),fullPage:true});await originalTab.close();
+    assert.equal(await cp.locator('.selected-source-credit').count(),0,'Removed full-photo overlay must not return');
+    assert.deepEqual(await hero.evaluate(i=>({width:i.naturalWidth,height:i.naturalHeight})),{width:1600,height:1482},'Approved original image dimensions preserved');
     await cp.locator('.city-photo-credit').click({position:{x:25,y:25}});await cp.waitForURL('**/credits.html#buraidah-selected-spa-20261028');assert((await cp.locator('#buraidah-selected-spa-20261028').innerText()).includes('جميع الحقوق محفوظة'));
     const source=cp.locator('#buraidah-selected-spa-20261028 a').filter({hasText:'المصدر المنشور'});const sourceURL=await source.getAttribute('href');const sourceTabPromise=cp.waitForEvent('popup');await source.click();const sourceTab=await sourceTabPromise;await sourceTab.waitForLoadState('domcontentloaded').catch(()=>{});assert(decodeURI(sourceTab.url()).startsWith(sourceURL),'Source link opens the intended publisher URL');await sourceTab.close();await cp.goBack();await cp.waitForSelector('.selected-source-hero');await cp.locator('.city-hero img').evaluate(i=>i.decode());
 

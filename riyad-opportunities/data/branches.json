@@ -16,8 +16,24 @@
     },
     "officialMapStatus": "reviewed",
     "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
-    "neighborhoodBasis": "مرجع بنك الرياض الرسمي يحدد فرع المنسك، أبها، بحي المنسك وشارع أبو هريرة.",
-    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05"
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "المنسك",
+          "city": "ابها",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع المنسك (2)",
+          "sourceStreet": "أبو هريرة",
+          "sourceRowID": "5095"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "161"
+    }
   },
   {
     "c": "500",
@@ -60,8 +76,39 @@
     "sec": "",
     "lat": 25.381358,
     "lon": 49.590013,
-    "nb": "التعاون",
-    "officialMapStatus": "reviewed"
+    "nb": "الفاضلية",
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_district_column_composite_branch_identity_street_and_exact_locator_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "304",
+      "previousNeighborhood": "التعاون",
+      "reviewReason": "Only table row3768 matches Hofuf branch name and Ali Ibn Abi Talib street. Conflicting row3026 names Dhahran Street; fresh locator identifies that different branch as code340/id1670, so reject row3026 for304.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "sourceRowID": "3768",
+          "sourceName": "فرع الهفوف",
+          "sourceCity": "الهفوف",
+          "sourceStreet": "علي أبي طالب",
+          "nb": "الفاضلية"
+        },
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "1638",
+          "codeTitle": "304. Al Hofuf",
+          "name": "فرع الهفوف الرئيسي",
+          "city": "الاحساء",
+          "address": "شارع علي بن أبي طالب , الاحساء , الاحساء",
+          "addressEN": "Ali Ibn Abi Talib St. , AL-AHSSA , AL-AHSSA",
+          "lat": 25.381358,
+          "lon": 49.590013,
+          "phone": "013-586-1960"
+        }
+      ]
+    }
   },
   {
     "c": "305",
@@ -74,7 +121,23 @@
     "nb": "الحزم",
     "officialMapStatus": "reviewed",
     "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
-    "neighborhoodBasis": "الدليل الرسمي لبنك الرياض يربط رمز الفرع 305 (فرع المبرز) بحي الحزم، شارع الملك عبدالعزيز؛ استبدل حي البستان المتعارض. هذا لا يثبت الدبوس."
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الحزم",
+          "city": "المبرز",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع المبرز",
+          "sourceStreet": "الملك عبدالعزيز",
+          "sourceRowID": "3160"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "305"
+    }
   },
   {
     "c": "317",
@@ -179,8 +242,39 @@
     "sec": "",
     "lat": 22.30155809,
     "lon": 46.73116343,
-    "nb": "العزيزي",
-    "officialMapStatus": "reviewed"
+    "nb": "العزيزية",
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_district_column_composite_branch_identity_street_and_exact_locator_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "215",
+      "previousNeighborhood": "العزيزي",
+      "reviewReason": "Table explicit district plus exact branch identity, street and locator pin; source city الافلاج is parent label, physical city ليلى is preserved.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "sourceRowID": "2114",
+          "sourceName": "فرع الافلاج",
+          "sourceCity": "الافلاج",
+          "sourceStreet": "الملك عبد العزيز",
+          "nb": "العزيزية"
+        },
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "1589",
+          "codeTitle": "215. Al-Aflaj",
+          "name": "فرع الأفلاج",
+          "city": "الأفلاج",
+          "address": "طريق الملك عبد العزيز , الأفلاج , الأفلاج",
+          "addressEN": "King Abdulaziz Rd , AL-AFLAJ , AL-AFLAJ",
+          "lat": 22.30155809,
+          "lon": 46.73116343,
+          "phone": "011-682-1800"
+        }
+      ]
+    }
   },
   {
     "c": "514",
@@ -199,8 +293,24 @@
     },
     "officialMapStatus": "reviewed",
     "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
-    "neighborhoodBasis": "مرجع بنك الرياض الرسمي يسجل فرع الباحة في حي الحاوية، طريق الملك فهد.",
-    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05"
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الحاوية",
+          "city": "الباحة",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع الباحة 3 فئات صغيرة",
+          "sourceStreet": "الملك فهد",
+          "sourceRowID": "5534"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "514"
+    }
   },
   {
     "c": "620",
@@ -286,8 +396,31 @@
     "sec": "",
     "lat": 27.146821,
     "lon": 49.567073,
-    "nb": "سدير",
-    "officialMapStatus": "reviewed"
+    "nb": "الفناتير",
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_exact_name_city_and_physical_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "354",
+      "previousNeighborhood": "سدير",
+      "reviewReason": "Official English address explicitly says Al Fanateer District; live-expanded Arabic address and exact local pin match.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "8813",
+          "codeTitle": "354. Al Fanateer",
+          "name": "فرع الفناتير",
+          "city": "الجبيل",
+          "address": "شارع الظهران - الفناتير , الجبيل , الجبيل",
+          "addressEN": "Dharan Rd - Al Fanateer District , AL-JUBAIL , AL-JUBAIL",
+          "lat": 27.146821,
+          "lon": 49.567073,
+          "phone": "013-363-0989"
+        }
+      ]
+    }
   },
   {
     "c": "301",
@@ -362,7 +495,25 @@
       "reason": "لا يُستخدم كإحداثي نشط بعد اعتماد نقطة الدليل الرسمي برمز الفرع."
     },
     "officialMapStatus": "reviewed",
-    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05"
+    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_in_address_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "البحر",
+          "city": "الخبر",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "حي البحر",
+          "sourceAddress": "الخبر حي البحر طريق الكورنيش , الخبر",
+          "sourceLocationID": "1665"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "332"
+    }
   },
   {
     "c": "335",
@@ -382,7 +533,39 @@
     "sec": "",
     "lat": 26.3626,
     "lon": 50.197096,
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "nb": "الراكة الشمالية",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_district_column_composite_branch_identity_street_and_exact_locator_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "349",
+      "previousNeighborhood": null,
+      "reviewReason": "Explicit table district الراكة الشمالية with matching code, branch name, city and Khalid Ibn Al-Walid street; exact locator/local physical pin.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "sourceRowID": "3149",
+          "sourceName": "فرع الراكه",
+          "sourceCity": "الخبر",
+          "sourceStreet": "خالد بن الوليد",
+          "nb": "الراكة الشمالية"
+        },
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "1678",
+          "codeTitle": "349. Al Rakah",
+          "name": "فرع الراكة",
+          "city": "الخبر",
+          "address": "شارع خالد ابن الوليد , الخبر , الخبر",
+          "addressEN": "Khaled Ibn Al Walid St. , AL-KHOBAR , AL-KHOBAR",
+          "lat": 26.3626,
+          "lon": 50.197096,
+          "phone": "013-810-0226"
+        }
+      ]
+    }
   },
   {
     "c": "356",
@@ -392,8 +575,31 @@
     "sec": "",
     "lat": 26.1883482,
     "lon": 50.1875068,
-    "nb": "البحيره",
-    "officialMapStatus": "reviewed"
+    "nb": "الخزامى",
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_exact_name_city_and_physical_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "356",
+      "previousNeighborhood": "البحيره",
+      "reviewReason": "Live-expanded official address explicitly حي الخزامى with exact local pin.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "8761",
+          "codeTitle": "356. Al Khozama",
+          "name": "فرع الخزامى",
+          "city": "الخبر",
+          "address": "حي الخزامى - طريق الملك خالد , الخبر , الخبر",
+          "addressEN": "Al Khuzama Dist. King Khalid Road , AL-KHOBAR , AL-KHOBAR",
+          "lat": 26.1883482,
+          "lon": 50.1875068,
+          "phone": "013-898-0335 <br/> 013-898-0446"
+        }
+      ]
+    }
   },
   {
     "c": "359",
@@ -576,7 +782,25 @@
       "reason": "لا يُستخدم كإحداثي نشط بعد اعتماد نقطة الدليل الرسمي برمز الفرع."
     },
     "officialMapStatus": "reviewed",
-    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05"
+    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_in_address_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "بدر",
+          "city": "الدمام",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "حي بدر الدمام",
+          "sourceAddress": "الدمام حي بدر طريق الملك سعود بن عبدالعزيز , الدمام",
+          "sourceLocationID": "1672"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "343"
+    }
   },
   {
     "c": "344",
@@ -600,7 +824,25 @@
     "nb": "المريكبات",
     "officialMapStatus": "reviewed",
     "serviceAudience": "business_services_only",
-    "serviceAudienceSource": "Riyad_Bank_Branches_By_City.xlsx — المراجعة، 2026-10-05"
+    "serviceAudienceSource": "Riyad_Bank_Branches_By_City.xlsx — المراجعة، 2026-10-05",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "المريكبات",
+          "city": "الدمام",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع المركبات",
+          "sourceStreet": "محمد بن فهد",
+          "sourceRowID": "3139"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "346"
+    }
   },
   {
     "c": "347",
@@ -611,7 +853,25 @@
     "lat": 26.407382,
     "lon": 50.060494,
     "nb": "الفيصلية",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الفيصليه",
+          "city": "الدمام",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع الفيصلية",
+          "sourceStreet": "الملك فهد",
+          "sourceRowID": "3762"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "347"
+    }
   },
   {
     "c": "348",
@@ -672,8 +932,39 @@
     "sec": "",
     "lat": 24.49989199,
     "lon": 44.38102786,
-    "nb": "الفيصلي",
-    "officialMapStatus": "reviewed"
+    "nb": "الفيصلية",
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_district_column_composite_branch_identity_street_and_exact_locator_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "605",
+      "previousNeighborhood": "الفيصلي",
+      "reviewReason": "Truncated local label corrected only after explicit official table district, matching code/name/city/street and exact official physical pin.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "sourceRowID": "6899",
+          "sourceName": "فرع الدوادمي",
+          "sourceCity": "الدوادمي",
+          "sourceStreet": "الملك عبدالعزيز",
+          "nb": "الفيصليه"
+        },
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "1712",
+          "codeTitle": "605. Al-Dawadmi",
+          "name": "فرع الدوادمي",
+          "city": "الدوادمي",
+          "address": "طريق الملك عبد العزيز , الدوادمي , الدوادمي",
+          "addressEN": "King Abdulaziz Rd , AL-DAWADMI , AL-DAWADMI",
+          "lat": 24.49989199,
+          "lon": 44.38102786,
+          "phone": "011-642-1413"
+        }
+      ]
+    }
   },
   {
     "c": "607",
@@ -705,7 +996,25 @@
     "lat": 24.8173125,
     "lon": 46.6450625,
     "nb": "الياسمين",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_in_address_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الياسمين",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "فرع الياسمين",
+          "sourceAddress": "الرياض ، حي الياسمين على طريق الملك عبدالعزيز , الرياض , الرياض",
+          "sourceLocationID": "1579"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "201"
+    }
   },
   {
     "c": "202",
@@ -813,7 +1122,25 @@
     "lat": 24.787097,
     "lon": 46.75722,
     "nb": "الحمراء",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_in_address_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الحمراء",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "فرع الحمراء",
+          "sourceAddress": "حي الحمراء – طريق الإمام عبدالله بن سعود بن عبد العزيز , الرياض , الرياض",
+          "sourceLocationID": "5261"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "214"
+    }
   },
   {
     "c": "216",
@@ -881,7 +1208,25 @@
     "lat": 24.762354,
     "lon": 46.641639,
     "nb": "العقيق",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_in_address_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "العقيق",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "مركز الملك عبدالله المالي - كافد",
+          "sourceAddress": "مدينة الملك عبدالله المالية  , حي العقيق , الرياض",
+          "sourceLocationID": "8918565"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "225"
+    }
   },
   {
     "c": "226",
@@ -892,7 +1237,25 @@
     "lat": 24.5886409,
     "lon": 46.77775446,
     "nb": "العزيزية",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "العزيزية",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع العزيزية",
+          "sourceStreet": "طريق العزيزية",
+          "sourceRowID": "2983"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "226"
+    }
   },
   {
     "c": "228",
@@ -903,7 +1266,25 @@
     "lat": 24.56328,
     "lon": 46.68332,
     "nb": "الشفا",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الشفا",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع الشفا",
+          "sourceStreet": "ديراب",
+          "sourceRowID": "2951"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "228"
+    }
   },
   {
     "c": "229",
@@ -914,7 +1295,34 @@
     "lat": 24.8481812,
     "lon": 46.8024029,
     "nb": "الرمال",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الرمال",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع الرمال 3",
+          "sourceStreet": "وادي الساحل",
+          "sourceRowID": "2049"
+        },
+        {
+          "nb": "الرمال",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "فرع الرمال",
+          "sourceAddress": "حي الرمال طريق وادي الساحل , الرياض",
+          "sourceLocationID": "7974486"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "229"
+    }
   },
   {
     "c": "230",
@@ -967,7 +1375,25 @@
     "lat": 24.733652,
     "lon": 46.67883,
     "nb": "الورود",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الورود",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع الورود",
+          "sourceStreet": "الملك عبدالله",
+          "sourceRowID": "2417"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "234"
+    }
   },
   {
     "c": "235",
@@ -978,7 +1404,25 @@
     "lat": 24.76696,
     "lon": 46.7095,
     "nb": "النزهة",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "النزهة",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع النزهة",
+          "sourceStreet": "طريق الامام سعود",
+          "sourceRowID": "2570"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "235"
+    }
   },
   {
     "c": "236",
@@ -1000,7 +1444,25 @@
     "lat": 24.81332,
     "lon": 46.755581,
     "nb": "المونسية",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_in_address_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "المونسية",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "فرع المونسية",
+          "sourceAddress": "طريق الشيخ حسن بن حسين بن علي - حي المونسية , الرياض , الرياض",
+          "sourceLocationID": "24993"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "237"
+    }
   },
   {
     "c": "238",
@@ -1111,7 +1573,25 @@
     "lat": 24.79224,
     "lon": 46.63094,
     "nb": "العقيق",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "العقيق",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع العقيق",
+          "sourceStreet": "الملك قهد",
+          "sourceRowID": "2966"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "246"
+    }
   },
   {
     "c": "247",
@@ -1144,7 +1624,25 @@
     "lat": 24.80433333,
     "lon": 46.69394444,
     "nb": "الندى",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_in_address_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الندى",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "فرع الندى",
+          "sourceAddress": "حي الندى - طريق عثمان بن عفان , الرياض , الرياض",
+          "sourceLocationID": "8854"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "250"
+    }
   },
   {
     "c": "251",
@@ -1155,7 +1653,25 @@
     "lat": 24.553507,
     "lon": 46.560681,
     "nb": "نمار",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_in_address_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "نمار",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "نمار",
+          "sourceAddress": "حي نمار طريق نجم الدين الايوبي , الرياض , الرياض",
+          "sourceLocationID": "8759"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "251"
+    }
   },
   {
     "c": "256",
@@ -1184,7 +1700,25 @@
     "lat": 24.54828045,
     "lon": 46.68619603,
     "nb": "المروة",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "المروة",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع المروه",
+          "sourceStreet": "الخليل بن أحمد",
+          "sourceRowID": "2953"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "257"
+    }
   },
   {
     "c": "258",
@@ -1231,7 +1765,34 @@
     "lat": 24.79021917,
     "lon": 46.6575185,
     "nb": "الربيع",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الربيع",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع الربيع",
+          "sourceStreet": "الملك عبدالعزيز",
+          "sourceRowID": "2178"
+        },
+        {
+          "nb": "الربيع",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع الربيع",
+          "sourceStreet": "الملك عبدالعزيز",
+          "sourceRowID": "2960"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "260"
+    }
   },
   {
     "c": "261",
@@ -1253,7 +1814,25 @@
     "lat": 24.566904,
     "lon": 46.653342,
     "nb": "شبرا",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "شبرا",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع الدائري الجنوبي",
+          "sourceStreet": "الدائري الجنوبي",
+          "sourceRowID": "2118"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "262"
+    }
   },
   {
     "c": "264",
@@ -1263,8 +1842,39 @@
     "sec": "جنوب",
     "lat": 24.600548,
     "lon": 46.749626,
-    "nb": "المنصورة",
-    "officialMapStatus": "reviewed"
+    "nb": "العزيزية",
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_district_column_composite_branch_identity_street_and_exact_locator_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "264",
+      "previousNeighborhood": "العزيزية",
+      "reviewReason": "Table explicitly assigns العزيزية despite branch display name المنصورة. Live-expanded locator confirms same name, city, South Ring Road, phone0112138887 and exact physical pin.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "sourceRowID": "2858",
+          "sourceName": "فرع المنصورة",
+          "sourceCity": "الرياض",
+          "sourceStreet": "الدائري الجنوبي",
+          "nb": "العزيزية"
+        },
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "1623",
+          "codeTitle": "264. Al-Mansorah District",
+          "name": "فرع المنصورة",
+          "city": "الرياض",
+          "address": "طريق الدائري الجنوبي , الرياض , الرياض",
+          "addressEN": "Southern Ring Rd , Al-RIYADH , Al-RIYADH",
+          "lat": 24.600548,
+          "lon": 46.749626,
+          "phone": "011-213-8887"
+        }
+      ]
+    }
   },
   {
     "c": "265",
@@ -1275,7 +1885,25 @@
     "lat": 24.6918865,
     "lon": 46.7663443,
     "nb": "الربوة",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الربوة",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع الربوه",
+          "sourceStreet": "عثمان بن عفان",
+          "sourceRowID": "2482"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "265"
+    }
   },
   {
     "c": "267",
@@ -1286,7 +1914,34 @@
     "lat": 24.79975709,
     "lon": 46.73670166,
     "nb": "قرطبة",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "قرطبة",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع قرطبة",
+          "sourceStreet": "الدائري الشمالي",
+          "sourceRowID": "2172"
+        },
+        {
+          "nb": "قرطبة",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع قرطبه",
+          "sourceStreet": "الدائري الشمالي",
+          "sourceRowID": "2961"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "267"
+    }
   },
   {
     "c": "268",
@@ -1297,7 +1952,25 @@
     "lat": 24.61987,
     "lon": 46.67924,
     "nb": "البديعة",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "البديعة",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع البديعة",
+          "sourceStreet": "الشيخ عبدالعزيز بن باز",
+          "sourceRowID": "2864"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "268"
+    }
   },
   {
     "c": "270",
@@ -1308,7 +1981,25 @@
     "lat": 24.78064,
     "lon": 46.82862,
     "nb": "النهضة",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "النهضة",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع النهضه",
+          "sourceStreet": "بندر بن عبدالعزيز",
+          "sourceRowID": "2962"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "270"
+    }
   },
   {
     "c": "271",
@@ -1330,7 +2021,34 @@
     "lat": 24.8577382,
     "lon": 46.6462897,
     "nb": "النرجس",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "النرجس",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع النرجس 285 (2)",
+          "sourceStreet": "أبو بكر الصديق",
+          "sourceRowID": "2045"
+        },
+        {
+          "nb": "النرجس",
+          "city": "الرياض",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "فرع النرجس",
+          "sourceAddress": "حي النرجس طريق أبو بكر الصديق , الرياض",
+          "sourceLocationID": "7935114"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "285"
+    }
   },
   {
     "c": "286",
@@ -1450,9 +2168,32 @@
     "sec": "",
     "lat": 21.277948,
     "lon": 40.441409,
-    "nb": "الجال",
+    "nb": "البيعة",
     "officialMapStatus": "reviewed",
-    "branchType": "sales-center"
+    "branchType": "sales-center",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_exact_name_city_and_physical_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "793",
+      "previousNeighborhood": "الجال",
+      "reviewReason": "Live-expanded official address explicitly حي البيعة with exact local pin. Exact source EN code includes space before dot.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "7295418",
+          "codeTitle": "793 .TAIF SALES HUB",
+          "name": "793 مركز مبيعات الطائف",
+          "city": "الطائف",
+          "address": "مدينة الطائف – حي البيعة – شارع الخمسين , الطائف",
+          "addressEN": "TAIF CITY ALBAYAH Dist. ALKHAMSEEN STREET , AL-TAIF",
+          "lat": 21.277948,
+          "lon": 40.441409,
+          "phone": "NA"
+        }
+      ]
+    }
   },
   {
     "c": "337",
@@ -1549,7 +2290,25 @@
       "reason": "لا يُستخدم كإحداثي نشط بعد اعتماد نقطة الدليل الرسمي برمز الفرع."
     },
     "officialMapStatus": "reviewed",
-    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05"
+    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_in_address_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الرضا",
+          "city": "القطيف",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "فرع تاروت",
+          "sourceAddress": "القطيف ، حي الرضا على طريق احد , القطيف",
+          "sourceLocationID": "6921839"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "326"
+    }
   },
   {
     "c": "345",
@@ -1701,8 +2460,39 @@
     "sec": "",
     "lat": 24.42175,
     "lon": 39.52699,
-    "nb": "العزيزي",
-    "officialMapStatus": "reviewed"
+    "nb": "العزيزية",
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_district_column_composite_branch_identity_street_and_exact_locator_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "168",
+      "previousNeighborhood": "العزيزي",
+      "reviewReason": "Truncated local label corrected only after explicit official table district, matching code/name/city/street and exact official physical pin.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "sourceRowID": "1104",
+          "sourceName": "فرع العزيزية",
+          "sourceCity": "المدينة المنورة",
+          "sourceStreet": "العزيزية",
+          "nb": "العزيزية"
+        },
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "1560",
+          "codeTitle": "168. Al Aziziah Branch - Al Madinah",
+          "name": "فرع العزيزية",
+          "city": "المدينة المنورة",
+          "address": "شارع سليم بن عمرو - شارع العزيزية , المدينة المنورة , المدينة المنورة",
+          "addressEN": "Salim Ibn Amr - Al-Aziziah St , AL-MADINAH AL-MUNAWWARAH , AL-MADINAH AL-MUNAWWARAH",
+          "lat": 24.42175,
+          "lon": 39.52699,
+          "phone": "014-840-0284"
+        }
+      ]
+    }
   },
   {
     "c": "603",
@@ -1914,6 +2704,24 @@
         "address": "طريق النهضة , بريدة , بريدة"
       },
       "resolution": "unresolved_do_not_use_either_candidate_for_distances"
+    },
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الريان",
+          "city": "بريدة",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع الريان",
+          "sourceStreet": "طريق النهضة",
+          "sourceRowID": "6001"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "624"
     }
   },
   {
@@ -1925,7 +2733,25 @@
     "lat": 25.9303381976021,
     "lon": 49.6627386285661,
     "nb": "المدينه",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "المدينة",
+          "city": "بقيق",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع بقيق",
+          "sourceStreet": "شارع 36",
+          "sourceRowID": "7510"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "309"
+    }
   },
   {
     "c": "319",
@@ -1945,7 +2771,39 @@
     "sec": "",
     "lat": 19.86301,
     "lon": 41.56289,
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "nb": "مخطط العريسة الشمالي",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_district_column_composite_branch_identity_street_and_exact_locator_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "515",
+      "previousNeighborhood": null,
+      "reviewReason": "Explicit table district مخطط العريسة الشمالي with matching code, branch name, city and King Saud street; exact locator/local physical pin.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "sourceRowID": "5195",
+          "sourceName": "فرع بلجرشي",
+          "sourceCity": "بلجرشي",
+          "sourceStreet": "الملك سعود",
+          "nb": "مخطط العريسة الشمالي"
+        },
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "1700",
+          "codeTitle": "515. Baljorashy",
+          "name": "فرع بلجرشي ",
+          "city": "بلجرشي",
+          "address": "طريق الملك سعود , بلجرشي , بلجرشي",
+          "addressEN": "King Saud Rd , BALJURASHI , BALJURASHI",
+          "lat": 19.86301,
+          "lon": 41.56289,
+          "phone": "017-722-1010"
+        }
+      ]
+    }
   },
   {
     "c": "503",
@@ -2057,7 +2915,25 @@
     },
     "officialMapStatus": "reviewed",
     "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05",
-    "coordinateVerification": "official_number_coordinate_specific_google_bank_place_corroborated"
+    "coordinateVerification": "official_number_coordinate_specific_google_bank_place_corroborated",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_in_address_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الحمراء",
+          "city": "تبوك",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "مدينة الملك عبدالعزيز العسكرية",
+          "sourceAddress": "حي الحمراء طريق الامام تركي بن عبدالله , تبوك",
+          "sourceLocationID": "1864"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "416"
+    }
   },
   {
     "c": "421",
@@ -2128,8 +3004,24 @@
     "officialMapStatus": "reviewed",
     "branchType": "sales-center",
     "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
-    "neighborhoodBasis": "مرجع بنك الرياض الرسمي يحدد مركز مبيعات جازان في حي الروضة، طريق الملك فهد.",
-    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05"
+    "neighborhoodBasis": "official_locator_explicit_district_in_address_exact_branch_code",
+    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الروضة",
+          "city": "جازان",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "711.مركز مبيعات جازان",
+          "sourceAddress": "حي الروضة طريق الملك فهد , جازان",
+          "sourceLocationID": "8802558"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "711"
+    }
   },
   {
     "c": "101",
@@ -2352,7 +3244,25 @@
     "lat": 21.579013,
     "lon": 39.21871,
     "nb": "الصفا",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الصفا",
+          "city": "جدة",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع طيبه",
+          "sourceStreet": "أم القرى",
+          "sourceRowID": "1752"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "153"
+    }
   },
   {
     "c": "157",
@@ -2372,7 +3282,25 @@
       "replacedOn": "2026-10-07"
     },
     "coordinateSource": "دليل بنك الرياض المعتمد: مطابقة الإحداثيات برمز الفرع 157 (2026-10-05)",
-    "coordinateVerification": "official_locator_code_match"
+    "coordinateVerification": "official_locator_code_match",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الروضة",
+          "city": "جدة",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع التحلية",
+          "sourceStreet": "الملك عبد العزيز",
+          "sourceRowID": "1150"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "157"
+    }
   },
   {
     "c": "165",
@@ -2405,7 +3333,25 @@
     "lat": 21.57611,
     "lon": 39.14695,
     "nb": "السلامة",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "السلامة",
+          "city": "جدة",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع صاري",
+          "sourceStreet": "شارع صاري",
+          "sourceRowID": "1694"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "170"
+    }
   },
   {
     "c": "172",
@@ -2431,14 +3377,23 @@
     "city": "جدة",
     "cityRaw": "جدة",
     "sec": "",
-    "lat": null,
-    "lon": null,
+    "lat": 21.55758,
+    "lon": 39.20362,
     "nb": "",
-    "officialMapStatus": "held",
-    "distanceScope": "city",
-    "locationReview": "no_confirmed_pin_full_city_scope",
-    "locationReviewSource": "Riyad_Bank_Branches_By_City.xlsx — المراجعة، 2026-10-05",
-    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%81%D8%B1%D8%B9%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9%20%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%AC%D8%AF%D8%A9%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9"
+    "officialMapStatus": "reviewed",
+    "locationReview": "official_exact_code_pin_verified",
+    "locationReviewSource": "https://www.riyadbank.com/ar/branches-atms",
+    "mapsQ": "https://www.google.com/maps/search/?api=1&query=%D9%81%D8%B1%D8%B9%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9%20%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%AC%D8%AF%D8%A9%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%D9%8A%D8%A9",
+    "coordinateReview": {
+      "previousStatus": "held",
+      "previousReview": "no_confirmed_pin_full_city_scope",
+      "checkedAt": "2026-10-28T22:11:00Z",
+      "source": "https://www.riyadbank.com/ar/branches-atms",
+      "officialLocatorId": "1563",
+      "officialBranchCode": "176",
+      "resolution": "exact_branch_code_name_and_city_match"
+    },
+    "coordinateSource": "https://www.riyadbank.com/ar/branches-atms"
   },
   {
     "c": "180",
@@ -2460,7 +3415,34 @@
     "lat": 21.69548,
     "lon": 39.11831,
     "nb": "المحمدية",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "المحمدية",
+          "city": "جدة",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع المحمديه",
+          "sourceStreet": "الامام البخاري",
+          "sourceRowID": "1356"
+        },
+        {
+          "nb": "المحمدية",
+          "city": "جدة",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع المحمديه",
+          "sourceStreet": "الامام البخاري",
+          "sourceRowID": "1020"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "183"
+    }
   },
   {
     "c": "184",
@@ -2482,7 +3464,25 @@
     "lat": 21.61728,
     "lon": 39.13849,
     "nb": "النهضة",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "النهضة",
+          "city": "جدة",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع الأمير سلطان",
+          "sourceStreet": "الأمير سلطان",
+          "sourceRowID": "1753"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "185"
+    }
   },
   {
     "c": "186",
@@ -2493,7 +3493,25 @@
     "lat": 21.60687,
     "lon": 39.12428,
     "nb": "الزهراء",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الزهراء",
+          "city": "جدة",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع طريق حراء",
+          "sourceStreet": "شارع حراء",
+          "sourceRowID": "1754"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "186"
+    }
   },
   {
     "c": "188",
@@ -2574,7 +3592,25 @@
     "lat": 27.49733,
     "lon": 41.69875,
     "nb": "البحيره",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "البحيرة",
+          "city": "حائل",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع البحيرة",
+          "sourceStreet": "الملك سعود",
+          "sourceRowID": "6160"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "622"
+    }
   },
   {
     "c": "612",
@@ -2605,8 +3641,45 @@
     "sec": "",
     "lat": 28.4159173,
     "lon": 45.96994231,
-    "nb": "الخالدي",
-    "officialMapStatus": "reviewed"
+    "nb": "الخالدية",
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_district_column_exact_locator_pin_with_official_bilingual_branch_alias_resolution",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "621",
+      "previousNeighborhood": "الخالدي",
+      "reviewReason": "Official PDF directly pairs code621, English King Faisal ST and Arabic فرع الخالدية with device3769, resolving name discrepancy in district table. Same current branch code/city/KingAbdelAziz street and exact local pin. Explicit district proof comes from neighborhood column, not branch name.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "sourceRowID": "3769",
+          "sourceName": "فرع شارع الملك فيصل",
+          "sourceCity": "حفر الباطن",
+          "sourceStreet": "الملك عبدالعزيز",
+          "nb": "الخالدية"
+        },
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "sourceLocationID": "1725",
+          "sourceName": "فرع الخالدية",
+          "sourceCity": "حفر الباطن",
+          "sourceAddress": "طريق الملك عبد العزيز , حفر الباطن , حفر الباطن",
+          "featureLat": 28.4159173,
+          "featureLon": 45.96994231
+        },
+        {
+          "source": "https://www.riyadbank.com/documents/20121/4468324/V4%2B4.pdf",
+          "page": 1,
+          "sourceRowBranchCode": "621",
+          "sourceNameEN": "King Faisal ST",
+          "sourceNameAR": "فرع الخالدية",
+          "deviceID": "3769",
+          "evidenceMethod": "downloaded official PDF rendered with pdftoppm and visually inspected"
+        }
+      ]
+    }
   },
   {
     "c": "406",
@@ -2728,8 +3801,39 @@
     "sec": "",
     "lat": 25.70491,
     "lon": 39.28935,
-    "nb": "الفيصلي",
-    "officialMapStatus": "reviewed"
+    "nb": "الفيصلية",
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_district_column_composite_branch_identity_street_and_exact_locator_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "415",
+      "previousNeighborhood": "الفيصلي",
+      "reviewReason": "Truncated local label corrected only after explicit official table district, matching code/name/city/street and exact official physical pin.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "sourceRowID": "4170",
+          "sourceName": "فرع خيبر",
+          "sourceCity": "خيبر",
+          "sourceStreet": "الملك عبدالله",
+          "nb": "الفيصلية"
+        },
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "1686",
+          "codeTitle": "415. Khaybar",
+          "name": "فرع خيبر",
+          "city": "خيبر",
+          "address": "طريق الملك عبد الله , خيبر , خيبر",
+          "addressEN": "King Abdullah Rd , KHAYBAR , KHAYBAR",
+          "lat": 25.70491,
+          "lon": 39.28935,
+          "phone": "014-882-1430"
+        }
+      ]
+    }
   },
   {
     "c": "403",
@@ -2739,8 +3843,39 @@
     "sec": "",
     "lat": 29.79921,
     "lon": 39.86045,
-    "nb": "العزيزي",
-    "officialMapStatus": "reviewed"
+    "nb": "العزيزية",
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_district_column_composite_branch_identity_street_and_exact_locator_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "403",
+      "previousNeighborhood": "العزيزي",
+      "reviewReason": "Truncated local label corrected only after explicit official table district, matching code/name/city/street and exact official physical pin.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "sourceRowID": "4417",
+          "sourceName": "فرع دومة الجندل",
+          "sourceCity": "دومة الجندل",
+          "sourceStreet": "الملك عبدالعزيز",
+          "nb": "العزيزية"
+        },
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "1853",
+          "codeTitle": "403. Dowmat Al-Jaundal",
+          "name": "فرع دومة الجندل",
+          "city": "دومة الجندل",
+          "address": "طريق الملك عبد العزيز , دومة الجندل , دومة الجندل",
+          "addressEN": "King Abdulaziz Rd , DAWMAT AL JANDAL , DAWMAT AL JANDAL",
+          "lat": 29.79921,
+          "lon": 39.86045,
+          "phone": "014-622-3959"
+        }
+      ]
+    }
   },
   {
     "c": "128",
@@ -2794,7 +3929,25 @@
     "lat": 19.55982,
     "lon": 41.9576,
     "nb": "الخالدية",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الخالدية",
+          "city": "سبت العلايا",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع سبت العلايا",
+          "sourceStreet": "الملك خالد",
+          "sourceRowID": "5509"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "509"
+    }
   },
   {
     "c": "408",
@@ -2900,7 +4053,25 @@
     "lat": 24.60245,
     "lon": 46.12678,
     "nb": "العنقري",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "العنقري",
+          "city": "ضرما",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع ضرماء",
+          "sourceStreet": "الملك عبد العزيز",
+          "sourceRowID": "2319"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "219"
+    }
   },
   {
     "c": "411",
@@ -2921,8 +4092,39 @@
     "sec": "",
     "lat": 30.967667,
     "lon": 41.014969,
-    "nb": "المساعدي",
-    "officialMapStatus": "reviewed"
+    "nb": "المساعدية",
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_district_column_composite_branch_identity_street_and_exact_locator_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "402",
+      "previousNeighborhood": "المساعدي",
+      "reviewReason": "Truncated local label corrected only after explicit official table district, matching code/name/city/street and exact official physical pin.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "sourceRowID": "4415",
+          "sourceName": "فرع عرعر",
+          "sourceCity": "عرعر",
+          "sourceStreet": "الملك عبدالعزيز",
+          "nb": "المساعدية"
+        },
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "1852",
+          "codeTitle": "402. Arar Branch",
+          "name": "فرع عرعر",
+          "city": "عرعر",
+          "address": "طريق الملك عبد العزيز , عرعر , عرعر",
+          "addressEN": "King Abdulaziz Rd , ARAR , ARAR",
+          "lat": 30.967667,
+          "lon": 41.014969,
+          "phone": "014-664-3912"
+        }
+      ]
+    }
   },
   {
     "c": "616",
@@ -2941,7 +4143,25 @@
     },
     "officialMapStatus": "reviewed",
     "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05",
-    "coordinateVerification": "official_number_city_district_google_bank_pin_corroborated_address_conflict"
+    "coordinateVerification": "official_number_city_district_google_bank_pin_corroborated_address_conflict",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "الريان",
+          "city": "عنيزه",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع الجابريه",
+          "sourceStreet": "شارع الريان",
+          "sourceRowID": "6460"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "616"
+    }
   },
   {
     "c": "617",
@@ -2974,7 +4194,25 @@
     "lat": 18.54543,
     "lon": 42.04635,
     "nb": "البلد",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "البلد",
+          "city": "محايل عسير",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع محايل عسير",
+          "sourceStreet": "الملك عبدالعزيز",
+          "sourceRowID": "5293"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "525"
+    }
   },
   {
     "c": "104",
@@ -3024,7 +4262,7 @@
     "sec": "",
     "lat": 21.401293,
     "lon": 39.707523,
-    "nb": "الحمراء وام الجود",
+    "nb": "الزايدي",
     "candidateCoordinates": {
       "lat": 21.401293,
       "lon": 39.707523,
@@ -3032,7 +4270,30 @@
       "reason": "لا يُستخدم كإحداثي نشط بعد اعتماد نقطة الدليل الرسمي برمز الفرع."
     },
     "officialMapStatus": "reviewed",
-    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05"
+    "coordinateSource": "مطابق برمز الفرع من دليل بنك الرياض المعتمد بتاريخ 2026-10-05",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_exact_name_city_and_physical_pin",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "status": "verified_explicit_district",
+      "branchCode": "130",
+      "previousNeighborhood": "الحمراء وام الجود",
+      "reviewReason": "Live-expanded official address explicitly حي الزايدي with exact local pin.",
+      "sources": [
+        {
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "id": "1540",
+          "codeTitle": "130. Al-Zaydi",
+          "name": "الزايدي",
+          "city": "مكة المكرمة",
+          "address": "مكة المكرمة حي الزايدي طريق الأمير نايف بن عبدالعزيز , مكة المكرمة",
+          "addressEN": "Makkah, Al-Zaydi, Prince Naif bin Abdulaziz Road , MAKKAH AL-MUKARRAMAH",
+          "lat": 21.401293,
+          "lon": 39.707523,
+          "phone": "8001242225"
+        }
+      ]
+    }
   },
   {
     "c": "178",
@@ -3043,7 +4304,25 @@
     "lat": 21.350122,
     "lon": 39.904446,
     "nb": "العوالي",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "العوالي",
+          "city": "مكة المكرمة",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع حي العوالي",
+          "sourceStreet": "ابراهيم الجفالي",
+          "sourceRowID": "1883"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "178"
+    }
   },
   {
     "c": "179",
@@ -3087,7 +4366,25 @@
     "lat": 17.489317,
     "lon": 44.133369,
     "nb": "ابا السعود",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+    "neighborhoodBasis": "official_table_explicit_neighborhood_column_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "أبا السعود",
+          "city": "نجران",
+          "source": "https://www.riyadbank.com/ar/riyad-bank-atms-withdraw-5-10-100-",
+          "basis": "official_table_explicit_neighborhood_column_exact_branch_code",
+          "sourceName": "فرع نجران",
+          "sourceStreet": "عبد العزيز",
+          "sourceRowID": "5193"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "508"
+    }
   },
   {
     "c": "511",
@@ -3109,7 +4406,25 @@
     "lat": 17.5607116,
     "lon": 44.3130541,
     "nb": "العريسه",
-    "officialMapStatus": "reviewed"
+    "officialMapStatus": "reviewed",
+    "neighborhoodSource": "https://www.riyadbank.com/ar/branches-atms",
+    "neighborhoodBasis": "official_locator_explicit_district_in_address_exact_branch_code",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "العريسة",
+          "city": "نجران",
+          "source": "https://www.riyadbank.com/ar/branches-atms",
+          "basis": "official_locator_explicit_district_in_address_exact_branch_code",
+          "sourceName": "فرع العريسة",
+          "sourceAddress": "حي العريسة - طريق الملك عبدالعزيز , نجران , نجران",
+          "sourceLocationID": "8760"
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "526"
+    }
   },
   {
     "c": "516",
@@ -3165,7 +4480,26 @@
     "lat": 24.817485,
     "lon": 46.818009,
     "nb": "القادسية",
-    "branchType": "sales-center"
+    "branchType": "sales-center",
+    "neighborhoodSource": "https://maps.yango.com/ar-sa/org/riyad_bank_sales_hub/59594690233/",
+    "neighborhoodBasis": "map_provider_explicit_business_address_and_exact_feature_point_matches_existing_branch_within_0_2m",
+    "neighborhoodVerifiedAt": "2026-10-28",
+    "neighborhoodEvidence": {
+      "sources": [
+        {
+          "nb": "القادسية",
+          "city": "الرياض",
+          "source": "https://maps.yango.com/ar-sa/org/riyad_bank_sales_hub/59594690233/",
+          "basis": "map_provider_explicit_business_address_and_exact_feature_point_matches_existing_branch_within_0_2m",
+          "sourceName": "مركز مبيعات بنك الرياض",
+          "sourceAddress": "الرياض, حي القادسية, وادى السهل, RFJC7210",
+          "featureLat": 24.817486,
+          "featureLon": 46.818009
+        }
+      ],
+      "status": "verified_explicit_district",
+      "branchCode": "243"
+    }
   },
   {
     "c": "197",

@@ -123,6 +123,7 @@ jobs:
           mkdir -p riyad-opportunities/semantic-artifacts
           node riyad-opportunities/qa/semantic/geography-data-contract.js riyad-opportunities riyad-opportunities/semantic-artifacts/geography-${{ matrix.engine }}.json
           node riyad-opportunities/qa/semantic/semantic-contract.js riyad-opportunities riyad-opportunities/semantic-artifacts/offline-${{ matrix.engine }}.json
+          node riyad-opportunities/qa/semantic/national-nearby-contract.js riyad-opportunities riyad-opportunities/semantic-artifacts/national-${{ matrix.engine }}.json
           SEMANTIC_BROWSER=${{ matrix.engine }} NODE_PATH="$RUNNER_TEMP/semantic-browser/node_modules" node riyad-opportunities/qa/semantic/browser-semantic-contract.js riyad-opportunities riyad-opportunities/semantic-artifacts/browser-${{ matrix.engine }}.json
       - uses: actions/upload-artifact@v4
         if: always()

@@ -15,7 +15,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  const districtProject=A.card('projects',{n:'اختبار حي',city:'سيهات',nb:'حي قرطبة',dev:'',type:'شقق'},null,false,false,{});
  const planProject=A.card('projects',{n:'اختبار مخطط',city:'المدينة المنورة',nb:'مخطط المكيمن',dev:'',type:'شقق'},null,false,false,{});
  const destinationProject=A.card('projects',{n:'اختبار وجهة',city:'المدينة المنورة',nb:'وجهة الغروب، الدعيثة',dev:'',type:'شقق'},null,false,false,{});
- A.selectBranch('222'); A.state().tab='projects'; A.state().radius=5; A.renderBranch(); const zeroRadiusContent=els.content.innerHTML; const zeroRadiusItems=A.itemsFor('projects','','branch');
+ A.selectBranch('222'); A.state().tab='projects'; A.state().scope='branch'; A.state().radius=5; A.renderBranch(); const zeroRadiusContent=els.content.innerHTML; const zeroRadiusItems=A.itemsFor('projects','','branch');
  const missing=A.data().branches.find(b=>(b.lat==null||b.lon==null)&&!A.data().meta.sectorCities.includes(b.city)); A.selectBranch(missing.c); A.state().tab='offices'; A.renderBranch(); const missingPinPage=els.app.innerHTML;
  A.selectBranch('243'); const defaultCars=A.itemsFor('cars').length; A.state().tab='cars'; A.renderBranch(); const carsMarkup=els.app.innerHTML, carsContent=els.content.innerHTML; A.state().carArea='shifa'; const westCars=A.itemsFor('cars').length; A.state().carArea='qadisiyah'; const qadisiyahCars=A.itemsFor('cars').length; A.state().scope='city'; A.state().carArea='all'; const cityCars=A.itemsFor('cars','','city').length; A.state().scope='branch'; A.state().carArea='qadisiyah'; A.state().tab='cars'; A.renderBranch(); const noDistanceControl=!els.app.innerHTML.includes('id="radius"'); A.state().tab='nhc'; A.renderBranch(); const nhc=A.itemsFor('nhc'), nearestNHC=nhc.length?nhc[0]:null;
  // Independent inventory counts: hub membership comes from reviewed data, not the UI selector.
@@ -32,7 +32,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
   noUnverifiedPrice:!project.includes('السعر: غير معلن')&&!project.includes('تبدأ من')&&A.verifiedField({price:500000},'price')===''&&A.verifiedField({price:500000,priceSource:'https://example.org/projects/one'},'price')===500000,
   roomsRequireEvidence:!project.includes('4 غرف')&&!roomsUpper.includes('3 غرف فأكثر')&&A.verifiedField({rooms:4},'rooms')===''&&A.verifiedField({rooms:4,roomsSource:'https://example.org/projects/one'},'rooms')===4,
   searchAlwaysVisible:page.includes('id="q-sec"'),
-  projectSectorHasNoRadiusEmptyState:zeroRadiusItems.length>0&&!zeroRadiusContent.includes('data-radius=')&&!zeroRadiusContent.includes('لا توجد مشاريع ضمن'),
+  projectNearbyEmptyKeepsFullScopeAccess:zeroRadiusItems.length===0&&zeroRadiusContent.includes('data-scope="city"')&&zeroRadiusContent.includes('كامل النطاق')&&zeroRadiusContent.includes('لا توجد نتائج في هذا المحيط'),
   missingBranchPinClearCityFallback:!!missing&&!missingPinPage.includes('نطاق الفرع')&&!missingPinPage.includes('id="radius"')&&!missingPinPage.includes('إحداثيات الفرع غير متاحة'),
   noInternalReviewLabel:!fs.readFileSync(path.join(root,'assets/app.js'),'utf8').includes('الوظيفة التجارية قيد التحقق'),
   mobileTagline:css.includes('@media(max-width:460px)')&&css.includes('.tagline{font-size:.56rem;white-space:nowrap}'),

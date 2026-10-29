@@ -21,7 +21,7 @@ function assertNearFirst(rows,label){let last=-Infinity,unknown=false;for(const 
 (async()=>{
   const env=boot(path.join(root,'assets/app.js'));await new Promise(r=>setTimeout(r,350));
   const A=env.window.__policy,D=A.data();assert(D.branches.length,'app not initialized');
-  const totals={branches:0,companyScopes:0,projectScopes:0,officeRadii:0,missingOfficePins:0};
+  const totals={branches:0,companyScopes:0,projectScopes:0,officeRadii:0,missingOfficePins:0,fullCityRetentionCases:0,externalScopeCases:0};
   for(const b of D.branches){
     A.choose(b.c);totals.branches++;
     const companyCity=ids(A.itemsFor('companies','','city'));
@@ -31,21 +31,30 @@ function assertNearFirst(rows,label){let last=-Infinity,unknown=false;for(const 
       assert.equal(A.radiusApplies('companies','branch'),false);totals.companyScopes++;
     }
     A.choose(b.c);
-    for(const kind of ['projects','opps']){
-      const city=A.itemsFor(kind,'','city'),isSector=D.meta.sectorCities.some(c=>A.sameCity(c,b.city));
-      const expected=isSector&&b.sec&&A.state().scope!=='city'?city.filter(x=>(x.o.sectors||(x.o.sec?[x.o.sec]:[])).includes(b.sec)):city;
-      for(const radius of [5,20]){A.state().radius=radius;const actual=A.itemsFor(kind);assert.deepEqual(ids(actual),ids(expected),`${b.c}/${kind}: branch is not complete sector/city`);assertNearFirst(actual,`${b.c}/${kind}`);totals.projectScopes++;}
-      assert.equal(A.radiusApplies(kind,'branch'),false);
-      if(isSector)for(const sec of ['شرق','شمال','جنوب','غرب','وسط']){A.state().scope='sector';A.state().explore=sec;const expectedSector=city.filter(x=>(x.o.sectors||(x.o.sec?[x.o.sec]:[])).includes(sec));const actual=A.itemsFor(kind,sec,'sector');assert.deepEqual(ids(actual),ids(expectedSector),`${b.c}/${kind}/${sec}: not a complete sector`);assertNearFirst(actual,`${b.c}/${kind}/${sec}`);totals.projectScopes++;}
+    const isSector=D.meta.sectorCities.some(c=>A.sameCity(c,b.city));
+    const neighborhood=v=>String(v||'').replace(/^حي\s+/,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').replace(/\s+/g,' ').trim();
+    const ownNeighborhood=o=>/^https?:\/\//.test(String(b.neighborhoodSource||''))&&o.locationVerificationStatus!=='location_unverified'&&!!neighborhood(b.nb)&&neighborhood(o.nb)===neighborhood(b.nb);
+    const distance=o=>{if(!['project','pt','office'].includes(o.loc)||o.locationVerificationStatus==='location_unverified'||['multi_location_series','villa_model'].includes(o.geographicEntityType)||![b.lat,b.lon,o.lat,o.lon].every(Number.isFinite))return null;const rad=Math.PI/180,dp=(o.lat-b.lat)*rad,dl=(o.lon-b.lon)*rad;return 12742*Math.asin(Math.sqrt(Math.sin(dp/2)**2+Math.cos(b.lat*rad)*Math.cos(o.lat*rad)*Math.sin(dl/2)**2));};
+    const sameHood=o=>ownNeighborhood(o)||(/^https?:\/\//.test(String(b.neighborhoodSource||''))&&(o.verifiedLocations||[]).some(site=>A.sameCity(site.city,b.city)&&neighborhood(site.nb)===neighborhood(b.nb)&&!!neighborhood(b.nb)&&site.sources?.length));
+    for(const kind of ['projects','opps','offices']){
+      const city=A.itemsFor(kind,'','city');
+      const retained=(D[kind]||[]).filter(o=>A.sameCity(o.city,b.city)&&(!o.regionalListingOf||A.sameCity(o.originCity||o.city,b.city))&&(kind!=='offices'||o.activityReviewStatus!=='closed_permanently'));
+      assert.deepEqual(ids(city),retained.map(o=>o.id||o.n).sort(),`${b.c}/${kind}: full-city raw IDs must remain accessible`);totals.fullCityRetentionCases++;
+      const externalExpected=(D[kind]||[]).filter(o=>!A.sameCity(o.city,b.city)&&(!o.regionalListingOf||A.sameCity(o.originCity||o.city,b.city))&&(kind!=='offices'||o.activityReviewStatus!=='closed_permanently')&&distance(o)!=null);
+      const external=A.itemsFor(kind,'','external');assert.deepEqual(ids(external),externalExpected.map(o=>o.id||o.n).sort(),`${b.c}/${kind}: external physically located inventory`);
+      assertNearFirst(external,`${b.c}/${kind}/external`);for(const row of external)assert(Math.abs(row.d-distance(row.o))<1e-7,'External distance must be straight-line from actual branch, not hand-picked support city or route mixture');totals.externalScopeCases++;
+
+      for(const radius of [5,20]){
+        A.state().radius=radius;A.state().scope='branch';
+        const expected=isSector&&[b.lat,b.lon].every(Number.isFinite)?city.filter(x=>sameHood(x.o)||(distance(x.o)!=null&&distance(x.o)<=radius)):city;
+        const actual=A.itemsFor(kind,'','branch');assert.deepEqual(ids(actual),ids(expected),`${b.c}/${kind}: neighborhood or physical-radius membership`);
+        for(const row of actual){const expectedDistance=distance(row.o);assert.equal(row.d==null,expectedDistance==null,`${b.c}/${kind}/${row.o.id}: approximate location must not gain distance`);if(expectedDistance!=null)assert(Math.abs(row.d-expectedDistance)<1e-7,'Branch straight-line distance');}
+        totals[kind==='offices'?'officeRadii':'projectScopes']++;
+      }
+      if(isSector)for(const sec of ['شرق','شمال','جنوب','غرب','وسط']){A.state().scope='sector';A.state().explore=sec;const expectedSector=city.filter(x=>(x.o.sectors||(x.o.sec?[x.o.sec]:[])).includes(sec));const actual=A.itemsFor(kind,sec,'sector');assert.deepEqual(ids(actual),ids(expectedSector),`${b.c}/${kind}/${sec}: not a complete sector`);totals.projectScopes++;}
       A.choose(b.c);
     }
-    const cityOffices=A.itemsFor('offices','','city'), isSector=D.meta.sectorCities.some(c=>A.sameCity(c,b.city));
-    const defaultOffices=isSector&&b.sec?cityOffices.filter(x=>(x.o.sectors||[x.o.sec]).includes(b.sec)):cityOffices;
-    assert.deepEqual(ids(A.itemsFor('offices','','branch')),ids(defaultOffices),`${b.c}: default offices not full sector/city`);assert.equal(A.radiusApplies('offices','branch'),false);
-    if(isSector&&b.lat!=null&&b.lon!=null){
-      for(const radius of [5,10,15,20]){A.state().radius=radius;A.state().scope='radius';const expected=defaultOffices.filter(x=>x.rankD!=null&&x.rankD<=radius);const actual=A.itemsFor('offices','','radius');assert.deepEqual(ids(actual),ids(expected),`${b.c}: optional office distance ${radius}`);assertNearFirst(actual,`${b.c}/offices`);totals.officeRadii++;}
-    }else{assert.equal(A.radiusApplies('offices','radius'),false);totals.missingOfficePins++;}
-    if(isSector){A.state().scope='sector';A.state().explore='غرب';assert.deepEqual(ids(A.itemsFor('offices','غرب','sector')),ids(cityOffices.filter(x=>(x.o.sectors||[x.o.sec]).includes('غرب'))),`${b.c}: office selected sector not respected`);}
+
   }
   // A representative company appears from every Riyadh branch, without needing a matching sector/project.
   const riyadhBranches=D.branches.filter(b=>A.sameCity(b.city,'الرياض'));

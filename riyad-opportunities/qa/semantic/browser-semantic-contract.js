@@ -48,6 +48,42 @@ async function openBranch(base,code){await page.goto(base+'#b'+code,{waitUntil:'
   await page.click('[data-tab="cars"]');await allIds();await page.locator('.car-alternative').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(path.dirname(out),'semantic-'+engine+'-'+width+'-alternate-cars.png'),fullPage:false});
   await ctx.close();
  }
+ // National rule audit in a real browser, independent of application QA hooks.
+ const nationalContext=await browser.newContext({viewport:{width:390,height:844}});
+ await nationalContext.route('**/*',r=>r.request().url().startsWith(base)?r.continue():r.abort());
+ page=await nationalContext.newPage();page.setDefaultTimeout(10000);page.on('pageerror',e=>report.pageErrors.push(e.message));
+ const nationalBranches=JSON.parse(fs.readFileSync(path.join(root,'data/branches.json')));
+ const knownRows=new Map(['projects','opportunities','offices'].flatMap(f=>JSON.parse(fs.readFileSync(path.join(root,'data/'+f+'.json')))).map(o=>[o.id,o]));
+ const cityKey=s=>{let k=String(s||'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').replace(/\s+/g,' ').trim();if(['الثقبه','الثغبه'].includes(k))return 'الخبر';if(['الهفوف','المبرز','الاحساء'].includes(k))return 'الاحساء';if(['ضرما','ضرماء'].includes(k))return 'ضرماء';if(['الافلاج','ليلي'].includes(k))return 'ليلي';if(['سبت العلايا','سبت العلايه'].includes(k))return 'سبت العلايه';return k;};
+ for(const branch of nationalBranches) await check('national branch '+branch.c+' own-city default and valid scope controls',async()=>{
+  await page.goto(base+'#b'+branch.c,{waitUntil:'domcontentloaded'});await page.waitForFunction(code=>document.querySelector('.hero-branch')?.textContent.includes(code),branch.c);
+  for(const tab of ['projects','opps','offices']){
+   await page.click('[data-tab="'+tab+'"]');const options=await page.locator('#scope-select option').evaluateAll(ns=>ns.map(n=>n.value));
+   const sectorCity=['الرياض','جدة'].includes(branch.city),point=Number.isFinite(branch.lat)&&Number.isFinite(branch.lon);
+   assert(options.includes('city'));assert.equal(options.includes('branch'),sectorCity&&point);assert.equal(options.includes('external'),point);
+   if(!sectorCity)assert(!options.some(v=>v.startsWith('sector:')),'Small city must remain one scope');
+   assert.equal(await page.locator('#scope-select').inputValue(),sectorCity&&point?'branch':'city','Initial scope must be nearby for physically pinned Riyadh/Jeddah branches, otherwise own city; no sector label prerequisite');
+   const ids=await page.locator('#content [data-record-id]').evaluateAll(ns=>ns.map(n=>n.dataset.recordId));
+   for(const id of ids){const row=knownRows.get(id);assert(row,'Unknown record '+id);assert.equal(cityKey(row.city),cityKey(branch.city),'Default physical city leaked '+id);if(row.loc==='nb')assert.equal(await page.locator('[data-record-id="'+id+'"] .branch-distance').count(),0,'District centroid must not display numeric branch distance');}
+  }
+ });
+ for(const tab of ['projects','offices'])await check('Riyadh center202 '+tab+' nearby-first then complete city, no overflow',async()=>{
+  await page.goto(base+'#b202',{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.querySelector('.hero-branch')?.textContent.includes('202'));
+  await page.click('[data-tab="'+tab+'"]');assert.equal(await page.locator('#scope-select').inputValue(),'branch');
+  const initial=await page.locator('#content [data-record-id]').evaluateAll(ns=>ns.map(n=>n.dataset.recordId));
+  const dims=await page.evaluate(()=>({w:innerWidth,scroll:document.documentElement.scrollWidth}));assert(dims.scroll<=dims.w+1,'Center mobile overflow '+JSON.stringify(dims));
+  await page.screenshot({path:path.join(path.dirname(out),'semantic-'+engine+'-center202-'+tab+'-nearby-390.png'),fullPage:true});
+  await page.selectOption('#scope-select','city');while(await page.locator('[data-more="'+tab+'"]').count())await page.locator('[data-more="'+tab+'"]').click();
+  const expanded=await page.locator('#content [data-record-id]').evaluateAll(ns=>ns.map(n=>n.dataset.recordId));assert.equal(expanded.length,new Set(expanded).size,'Duplicate full-city IDs');for(const id of initial)assert(expanded.includes(id),'Full city lost nearby record '+id);
+  await page.screenshot({path:path.join(path.dirname(out),'semantic-'+engine+'-center202-'+tab+'-city-390.png'),fullPage:false});
+ });
+ for(const [code,expected] of [['238',['P627','P429','P428','P416']],['299',['P428','P627','P416']],['243',['P415','P473','P475','P590','P625','P577','P444','P429']]])await check('fixed independently calculated project neighborhood membership '+code,async()=>{
+  await page.goto(base+'#b'+code,{waitUntil:'domcontentloaded'});await page.waitForSelector('.hero-branch');await page.click('[data-tab="projects"]');await page.selectOption('#scope-select','branch');while(await page.locator('[data-more="projects"]').count())await page.locator('[data-more="projects"]').click();const ids=await page.locator('#content [data-record-id]').evaluateAll(ns=>ns.map(n=>n.dataset.recordId));assert.deepEqual(ids.slice().sort(),expected.slice().sort());await page.selectOption('#scope-select','city');assert(await page.locator('#content [data-record-id]').count()>0);await page.selectOption('#scope-select','external');const foreign=await page.locator('#content [data-record-id]').evaluateAll(ns=>ns.map(n=>n.dataset.recordId));for(const id of foreign){const row=knownRows.get(id);assert(row&&row.city!=='الرياض');assert(await page.locator('[data-record-id="'+id+'"] .branch-distance').count());}
+ });
+ await check('Buraidah approved photo retained without full-photo overlay; NHC partner project correctly typed',async()=>{
+  await page.goto(base+'#b273',{waitUntil:'domcontentloaded'});await page.waitForSelector('.hero-branch');assert.equal(await page.locator('.selected-source-credit').count(),0);assert.equal(await page.locator('.selected-source-hero img').getAttribute('src'),'assets/images/cities/buraidah-selected-spa.webp');await page.click('[data-tab="nhc"]');const card=page.locator('[data-record-id="أزيان بريدة"]');await card.waitFor({state:'visible'});assert((await card.innerText()).includes('مشروع بالشراكة مع NHC'));assert(!(await card.innerText()).includes('185'));await card.locator('[data-detail]').first().click();await page.waitForSelector('#detail[open]');assert.equal(await page.locator('#destination-projects').count(),0,'Partner project cannot masquerade as a master with child projects');await page.keyboard.press('Escape');await page.screenshot({path:path.join(path.dirname(out),'semantic-'+engine+'-buraidah-partner-390.png'),fullPage:true});
+ });
+ await nationalContext.close();
  report.sourceShaAfter=sha();report.sourceHashesAfter=sourceHashes();report.sourceStable=JSON.stringify(report.sourceHashesBefore)===JSON.stringify(report.sourceHashesAfter);report.ok=!report.failures.length&&!report.pageErrors.length&&report.sourceStable;report.total=report.checks.length;report.passed=report.checks.filter(x=>x.ok).length;
  await browser.close();await new Promise(r=>server.close(r));fs.writeFileSync(out,JSON.stringify(report,null,2));console.log(JSON.stringify({ok:report.ok,total:report.total,passed:report.passed,sourceStable:report.sourceStable,failures:report.failures,pageErrors:report.pageErrors},null,2));if(!report.ok)process.exitCode=1;
 })().catch(async e=>{report.fatal=e.stack;report.ok=false;fs.writeFileSync(out,JSON.stringify(report,null,2));console.error(e.stack);await browser?.close();server.close();process.exitCode=1});

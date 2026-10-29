@@ -123,7 +123,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   }
   assert('5/10/15/20 km controls update explicitly selected optional-distance scope', radiusResults.every(Boolean));
   fireDocument('click', target({ 'data-scope': 'city' }));
-  assert('all-city scope is explicit and applied', A.state().scope === 'city' && els.app.innerHTML.includes('كل ' + A.state().branch.city));
+  assert('all-city scope is explicit and applied', A.state().scope === 'city' && els.app.innerHTML.includes('كامل النطاق — ' + A.state().branch.city));
 
   // A branch shows its whole project sector, including far and unlocated records.
   A.selectBranch('243'); A.state().tab = 'projects'; A.state().radius = 5; A.state().scope = 'branch'; A.renderBranch();
@@ -132,10 +132,11 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const expectedEast = cityProjectCount.filter(x => (x.o.sectors || (x.o.sec ? [x.o.sec] : [])).includes('شرق'));
   A.state().radius = 20;
   const projectCount20 = A.itemsFor('projects', '', 'branch');
-  assert('projects show the complete branch sector independently of radius',
-    projectCount5.length > 0 && projectCount5.map(x=>x.o.id).sort().join('|') === expectedEast.map(x=>x.o.id).sort().join('|') &&
-    projectCount5.map(x=>x.o.id).sort().join('|') === projectCount20.map(x=>x.o.id).sort().join('|') &&
-    projectCount5.some(x=>x.rankD == null) && projectCount5.some(x=>x.rankD > 5) && !els.content.innerHTML.includes('id="radius"'));
+  assert('projects initially show physical nearby sites and expanding radius preserves the first group',
+    projectCount5.some(x=>x.o.id==='P473') && projectCount5.every(x=>x.o.nb==='القادسية'||(x.d!=null&&x.d<=5)) &&
+    projectCount5.every(x=>projectCount20.some(y=>y.o.id===x.o.id)) && projectCount20.length>projectCount5.length &&
+    els.content.innerHTML.includes('id="radius"') && els.content.innerHTML.includes('data-scope="city"'));
+
 
   // The search control and live filtering are exercised independently for each populated section.
   const searchable = ['projects', 'opps', 'nhc', 'companies', 'offices', 'cars'];
@@ -155,10 +156,10 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const approximateCount = counterRows.filter(x => x.rankD != null && x.o.loc === 'nb').length;
   const exactCount = counterRows.length - unknownCount - approximateCount;
   const cityUnknownCount = A.itemsFor('projects', '', 'city').filter(x => x.rankD == null).length;
-  const branchCounter = counterRows.length > 0 && exactCount > 0 && unknownCount > 0 &&
-    (A.bankApprovalPending() ? els.content.innerHTML.includes('بانتظار قائمة المشاريع المعتمدة') && els.app.innerHTML.includes('>—</b>') : els.content.innerHTML.includes(A.compute().projects.items.length + ' مشاريع معتمدة في شرق الرياض'));
+  const branchCounter = counterRows.length > 0 && exactCount > 0 && approximateCount === 0 &&
+    (A.bankApprovalPending() ? els.content.innerHTML.includes('بانتظار قائمة المشاريع المعتمدة') && els.app.innerHTML.includes('>—</b>') : els.content.innerHTML.includes(A.compute().projects.items.length + ' مشاريع معتمدة في محيط الفرع · 5 كم'));
   els['q-sec'].value = '__qa_no_such_record__'; els['q-sec'].dispatch('input');
-  assert('Riyadh project count includes the whole sector and search updates its total', branchCounter && cityUnknownCount >= unknownCount && (A.bankApprovalPending() ? !els.content.innerHTML.includes('0 مشاريع') && els.content.innerHTML.includes('بانتظار قائمة المشاريع المعتمدة') : els.content.innerHTML.includes('0 مشاريع معتمدة في شرق الرياض')) && !els.content.innerHTML.includes('ضمن نطاق الفرع') && (els.content.innerHTML.includes('لا نتائج مطابقة') || (A.compute().projects.items.length === 0 && (els.content.innerHTML.includes('لا توجد فرص متاحة موثقة') || (A.bankApprovalPending() && els.content.innerHTML.includes('بانتظار قائمة المشاريع المعتمدة'))))));
+  assert('Riyadh nearby project count and live search stay truthful without invented centroid distances', branchCounter && cityUnknownCount > 0 && (A.bankApprovalPending() ? els.content.innerHTML.includes('بانتظار قائمة المشاريع المعتمدة') : els.content.innerHTML.includes('0 مشاريع معتمدة في محيط الفرع · 5 كم')) && (els.content.innerHTML.includes('لا نتائج مطابقة') || A.bankApprovalPending()));
 
   // NHC destinations stay separate from project rows and follow the selected sector.
   A.selectBranch('243', true); A.state().scope = 'branch'; A.state().tab = 'nhc';
@@ -178,7 +179,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     eastDestinations.every(x => (x.o.sectors || [x.o.sec]).includes('شرق')) &&
     northDestinations.length === expectedNHC('شمال').length && allDestinations.length === expectedNHC('').length &&
     eastProjectRowsForCount.length === expectedProjectCount('شرق') && allRiyadhProjectRowsForCount.length === expectedProjectCount('') &&
-    els.app.innerHTML.includes('وجهات NHC') && els.app.innerHTML.includes('data-tab="nhc"'));
+    els.app.innerHTML.includes('وجهات ومشاريع NHC') && els.app.innerHTML.includes('data-tab="nhc"'));
   // Open details from the card's delegated click, close with its close control, and open by Enter.
   A.state().q = {}; A.state().scope = 'city'; A.state().tab = 'nhc'; A.renderBranch();
   const detailIdMatch = els.content.innerHTML.match(/data-detail="(\d+)"/);
@@ -267,14 +268,14 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   const northCars = A.itemsFor('cars', 'شمال', 'sector');
   const northMapped = northCars.length > 0 && northCars.every(x => x.o.zone === 'qadisiyah');
   A.state().explore = 'شرق'; A.state().scope = 'sector'; A.state().tab = 'projects'; A.renderBranch();
-  const eastOnlyActive = els.app.innerHTML.includes('value="branch" selected>شرق الرياض') && els.app.innerHTML.includes('value="sector:شمال">');
+  const eastOnlyActive = els.app.innerHTML.includes('value="sector:شرق" selected>شرق الرياض') && els.app.innerHTML.includes('value="sector:شمال">');
   const eastProjects = A.itemsFor('projects', 'شرق', 'sector');
   const eastSectorOnly = eastProjects.every(x => {
     const sectors = x.o.sectors && x.o.sectors.length ? x.o.sectors : (x.o.sec ? [x.o.sec] : []);
     return sectors.includes('شرق');
   });
   A.state().explore = 'شمال'; A.renderBranch();
-  const northOnlyActive = els.app.innerHTML.includes('value="sector:شمال" selected') && els.app.innerHTML.includes('value="branch">شرق الرياض');
+  const northOnlyActive = els.app.innerHTML.includes('value="sector:شمال" selected') && els.app.innerHTML.includes('value="sector:شرق">شرق الرياض');
   const northProjects = A.itemsFor('projects', 'شمال', 'sector');
   const northSectorOnly = northProjects.every(x => {
     const sectors = x.o.sectors && x.o.sectors.length ? x.o.sectors : (x.o.sec ? [x.o.sec] : []);
@@ -409,7 +410,13 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   if (areemDetailId) A.openDetail(areemDetailId);
   assert('Areem area preserves the primary NHC statement and exposes its internal official-source discrepancy', !!areem && areem.area.includes('89,905.67') && areem.areaNote.includes('105,827') && areemDetailId && els.detail.innerHTML.includes('تفصيل المساحة') && els.detail.innerHTML.includes('مصدر المساحة') && els.detail.innerHTML.includes('231,637.22'));
   A.selectBranch('176', true);
-  assert('Jeddah branch without a verified pin opens city data without fake zero-distance scope', A.state().scope === 'city' && !els.content.innerHTML.includes('id="radius"') && !els.app.innerHTML.includes('إحداثيات موثوقة لهذا الفرع'));
+  A.state().tab = 'projects'; A.renderBranch();
+  assert('Jeddah 176 verified official pin enables genuine branch proximity', A.state().scope === 'branch' && A.state().branch.lat === 21.55758 && A.state().branch.lon === 39.20362 && els.content.innerHTML.includes('id="radius"'));
+  const savedJeddahPin = { lat: d.branchByCode['176'].lat, lon: d.branchByCode['176'].lon };
+  d.branchByCode['176'].lat = null; d.branchByCode['176'].lon = null;
+  A.selectBranch('176', true); A.state().tab = 'projects'; A.renderBranch();
+  assert('Synthetic missing Jeddah pin retains full-city fallback without fabricated radius', A.state().scope === 'city' && !els.content.innerHTML.includes('id="radius"'));
+  Object.assign(d.branchByCode['176'], savedJeddahPin);
   A.selectBranch('307', true); const rasTanuraDefaultScope = A.state().scope; A.state().tab = 'offices'; A.renderBranch();
   assert('Ras Tanura missing pin still opens full city offices without invented radius', rasTanuraDefaultScope === 'city' && !els.app.innerHTML.includes('data-scope="branch"') && !els.content.innerHTML.includes('id="radius"') && A.itemsFor('offices','','branch').map(x=>x.o.id).sort().join('|') === A.itemsFor('offices','','city').map(x=>x.o.id).sort().join('|'));
 
