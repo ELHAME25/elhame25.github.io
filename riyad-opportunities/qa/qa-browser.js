@@ -62,6 +62,28 @@ const server=http.createServer((req,res)=>{let file=path.resolve(root,'.'+decode
    fs.writeFileSync(path.join(artifacts,name+'.json'),JSON.stringify(measurements,null,2));await page.screenshot({path:path.join(artifacts,name+'.png'),fullPage:true});throw error;
   }
  }
+ // Entry spacing contract: real mobile sizes, no hidden content or tower distortion.
+ for(const viewport of [{width:390,height:844},{width:393,height:852},{width:390,height:740},{width:390,height:700},{width:375,height:667},{width:320,height:568},{width:1440,height:1000}]){
+  const context=await browser.newContext({viewport,reducedMotion:'reduce'}),page=await context.newPage();page.on('pageerror',e=>pageErrors.push(e.message));
+  await page.goto(origin);await page.waitForSelector('#q-branch');await page.evaluate(()=>document.fonts.ready);await page.waitForSelector('.entry-tower-photo image[data-loaded="1"]',{state:'attached'});
+  const geometry=await page.evaluate(()=>{
+   const box=n=>{const r=n.getBoundingClientRect(),s=getComputedStyle(n);return {x:r.x,y:r.y,width:r.width,height:r.height,bottom:r.bottom,display:s.display,visibility:s.visibility,opacity:s.opacity,fontSize:s.fontSize,overflowX:s.overflowX,overflowY:s.overflowY,clipped:n.scrollWidth>n.clientWidth+1||n.scrollHeight>n.clientHeight+1};};
+   return {viewport:{width:innerWidth,height:innerHeight},scrollHeight:document.documentElement.scrollHeight,clientHeight:document.documentElement.clientHeight,scrollWidth:document.documentElement.scrollWidth,rootOverflow:[getComputedStyle(document.documentElement).overflowY,getComputedStyle(document.body).overflowY],containers:Object.fromEntries(['.start','.entry-shell','.start-card','#site-foot','.entry-visual'].map(sel=>[sel,box(document.querySelector(sel))])),controls:Object.fromEntries(['#q-emp','#q-branch','#q-city','#go-branch','#use-location'].map(sel=>[sel,document.querySelector(sel)?box(document.querySelector(sel)):null])),text:[...document.querySelectorAll('.entry-copy h1,.entry-copy p,.entry-form-heading h2,.field label,.footer-credit,.footer-updated')].map(n=>({text:n.textContent.trim(),...box(n)})),tower:{viewBox:document.querySelector('.entry-tower-photo').getAttribute('viewBox'),preserveAspectRatio:document.querySelector('.entry-tower-photo').getAttribute('preserveAspectRatio'),href:document.querySelector('.entry-tower-photo image').getAttribute('href')}};
+  });
+  assert((await page.locator('.footer-updated').innerText()).includes(JSON.parse(fs.readFileSync(path.join(root,'data/meta.json'),'utf8')).built),'Footer must show exact data build date');
+  const name='entry-fit-'+viewport.width+'x'+viewport.height;
+  fs.writeFileSync(path.join(artifacts,name+'.json'),JSON.stringify(geometry,null,2));await capture(page,name+'-full.png');await page.screenshot({path:path.join(artifacts,name+'-viewport.png'),fullPage:false});
+  assert(geometry.scrollWidth<=viewport.width+1,name+' horizontal overflow');
+  assert(!geometry.rootOverflow.some(v=>v==='hidden'||v==='clip'),name+' natural page scrolling must remain enabled');
+  for(const sel of ['.start','.entry-shell','.start-card'])assert(!['hidden','clip'].includes(geometry.containers[sel].overflowY),name+' must not clip '+sel);
+  for(const [sel,b] of Object.entries(geometry.controls)){assert(b,name+' missing '+sel);assert(b.width>=44&&b.height>=44,name+' inaccessible target '+sel);assert(b.visibility!=='hidden'&&b.display!=='none',name+' hidden '+sel);assert(!b.clipped,name+' clipped '+sel);}
+  assert(geometry.text.every(t=>t.display!=='none'&&t.visibility!=='hidden'&&!t.clipped&&t.height>0),name+' text missing/clipped');
+  assert.equal(geometry.tower.viewBox,'0 307 710 945');assert.equal(geometry.tower.preserveAspectRatio,'xMidYMid slice');assert.equal(geometry.tower.href,'assets/images/entry-riyad-bank.jpeg');
+  if(viewport.width<=460){assert.equal(geometry.containers['.entry-visual'].height,246,name+' approved tower frame height unchanged');for(const sel of ['#q-emp','#q-branch','#q-city'])assert.equal(geometry.controls[sel].height,54,name+' input dimensions preserved');}
+  if((viewport.width===390&&viewport.height===844)||(viewport.width===393&&viewport.height===852)){assert(geometry.scrollHeight<=viewport.height+1,name+' common phone entry must fit one screen');assert(geometry.containers['#site-foot'].bottom<=viewport.height+1,name+' footer not in first screen');}
+  if(viewport.height<800){assert(geometry.scrollHeight>viewport.height,name+' small phone must naturally scroll, not clip');await page.locator('#site-foot').scrollIntoViewIfNeeded();assert(await page.locator('.footer-updated').isVisible());}
+  checks.push({entryFit:name,geometry,allContentPreserved:true,towerFrameUnchanged:true});await context.close();
+ }
  for(const viewport of [{width:1440,height:1000},{width:390,height:844},{width:320,height:800}]){
   const context=await browser.newContext({viewport,reducedMotion:'reduce'});const page=await context.newPage();page.on('pageerror',e=>pageErrors.push(e.message));
   await page.goto(origin,{waitUntil:'domcontentloaded'});await page.waitForSelector('#q-branch');await fit(page,'Entry '+viewport.width);
