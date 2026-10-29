@@ -28,13 +28,13 @@ module.exports=async function entryViewportContract(browser,origin,root,artifact
   for(const [sel,b] of Object.entries(geometry.controls)){assert(b,name+' missing '+sel);assert(b.width>=44&&b.height>=44,name+' inaccessible target '+sel);assert(b.visibility!=='hidden'&&b.display!=='none',name+' hidden '+sel);assert(!b.clipped,name+' clipped '+sel);}
   assert(geometry.text.every(t=>t.display!=='none'&&t.visibility!=='hidden'&&!t.paintClipped&&!t.horizontalPaintOverflow&&!t.overlappingControls.length&&t.height>0),name+' text missing/clipped');
   assert.equal(geometry.tower.viewBox,'0 307 710 945');assert.equal(geometry.tower.preserveAspectRatio,'xMidYMid slice');assert.equal(geometry.tower.href,'assets/images/entry-riyad-bank.jpeg');
-  if(viewport.width<=460){const tower=geometry.containers['.entry-visual'];assert(tower.height>=125.5&&tower.height<=246.5,name+' proportional tower outside readable bounds');assert(Math.abs(tower.width/tower.height-(viewport.width-24)/246)<0.02,name+' tower frame crop/aspect distorted');for(const sel of ['#q-emp','#q-branch','#q-city'])assert.equal(geometry.controls[sel].height,54,name+' input dimensions preserved');}
-  const mustFit=(viewport.width===390&&viewport.height>=700)||(viewport.width===393&&viewport.height===852)||(viewport.width===375&&viewport.height===667)||viewport.width===1440;
+  if(viewport.width<=460){const tower=geometry.containers['.entry-visual'];assert.equal(tower.height,246,name+' original full-height tower restored');assert.equal(tower.width,viewport.width-24,name+' original full-width tower restored');assert(Math.abs(tower.x-12)<1,name+' tower must align with original form edges');const form=geometry.containers['.start-card'];assert(Math.abs(tower.x-form.x)<1&&Math.abs(tower.width-form.width)<1&&Math.abs(tower.bottom-form.y)<1,name+' original full-width photo must remain connected to form');for(const sel of ['#q-emp','#q-branch','#q-city'])assert.equal(geometry.controls[sel].height,54,name+' input dimensions preserved');}
+  const mustFit=viewport.width===1440; // User restored original full-width photo; mobile natural scrolling is intentional.
   const visibleHeight=Math.min(viewport.height,geometry.visualViewport?.height||viewport.height);
   if(mustFit){assert(geometry.scrollHeight<=visibleHeight+1,name+' actual short phone entry must fit one unobscured screen');assert(geometry.containers['#site-foot'].bottom<=visibleHeight+1,name+' footer not in first screen');for(const [sel,b] of Object.entries(geometry.controls))assert(b.y>=0&&b.bottom<=visibleHeight+1,name+' control outside visible screen '+sel);}
   else if(geometry.scrollHeight>visibleHeight+1){await page.locator('#site-foot').scrollIntoViewIfNeeded();assert(await page.locator('.footer-updated').isVisible());}
 
-  checks.push({entryFit:name,geometry,allContentPreserved:true,towerProportionsPreserved:true,mustFit});await context.close();
+  checks.push({entryFit:name,geometry,allContentPreserved:true,originalFullWidthTowerRestored:true,mustFit});await context.close();
  }
  return checks;
 };
