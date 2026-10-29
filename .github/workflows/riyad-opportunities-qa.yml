@@ -35,7 +35,9 @@ jobs:
           node-version: '22'
       - name: Run full site QA
         working-directory: riyad-opportunities
-        run: sh qa/run.sh
+        run: |
+          sh qa/run.sh
+          node qa/qa-live-site.js --self-test
 
   browser:
     if: github.ref != 'refs/heads/main' && !contains(github.event.head_commit.message, '[live-smoke-only]')
