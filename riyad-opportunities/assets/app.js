@@ -1673,11 +1673,11 @@
   var CITY_HERO_FALLBACK = 'assets/images/city-neutral.webp';
   function scopeOptions() {
     var b = Object.assign({}, S.branch, { city: cityLabel(S.branch.city) }), k = S.tab, sc = sectorCity(b.city), options = [], selected = 'city';
+    var directions = sc ? (SECTORS.indexOf(b.sec) >= 0 ? [b.sec] : []).concat(SECTORS.filter(function (sec) { return sec !== b.sec; })) : [];
     if (branchNearbyKind(k)) {
-      if (sc && !b.cityOnly && km(b.lat, b.lon, b.lat, b.lon) != null) options.push(['branch', 'حول الفرع']);
-      options.push(['city', sc ? 'كامل النطاق — ' + b.city : b.city]);
-      if (sc) SECTORS.forEach(function (sec) { options.push(['sector:' + sec, sec + ' ' + b.city]); });
-      if (km(b.lat, b.lon, b.lat, b.lon) != null) options.push(['external', 'خيارات خارج المدينة']);
+      if (sc && !b.cityOnly && km(b.lat, b.lon, b.lat, b.lon) != null) options.push(['branch', 'نطاق الفرع']);
+      directions.forEach(function (sec) { options.push(['sector:' + sec, sec + ' ' + b.city]); });
+      options.push(['city', sc ? 'كامل ' + b.city : b.city]);
       selected = S.scope === 'sector' ? 'sector:' + S.explore : S.scope === 'radius' ? 'branch' : S.scope;
       if (!options.some(function (o) { return o[0] === selected; })) selected = 'city';
     } else if (k === 'cars' && sameCity(b.city, 'الرياض')) {
@@ -1688,22 +1688,26 @@
       });
       selected = currentCarArea(sector, S.scope);
     } else if (k === 'companies' || k === 'selfbuild' || !sc) {
-      options.push(['city', sc ? 'كل ' + b.city : b.city]);
+      options.push(['city', sc ? 'كامل ' + b.city : b.city]);
     } else {
-      if (sc && b.sec) options.push(['branch', k === 'nhc' ? 'وجهات نطاق الفرع' : b.sec + ' ' + b.city]);
+      if (sc && b.sec) options.push(['branch', 'نطاق الفرع']);
       if (!sc && hasBranchCoverage(k)) options.push(['branch', 'نطاق الفرع الموثق']);
-      if (sc) SECTORS.forEach(function (sec) { if (sec !== b.sec || k === 'nhc') options.push(['sector:' + sec, sec + ' ' + b.city]); });
-      options.push(['city', 'كل ' + b.city]);
+      directions.forEach(function (sec) { options.push(['sector:' + sec, sec + ' ' + b.city]); });
+      options.push(['city', 'كامل ' + b.city]);
       if (k === 'offices' && b.lat != null && b.lon != null && !isTabuk()) options.push(['radius', 'حسب المسافة (اختياري)']);
       selected = S.scope === 'sector' ? 'sector:' + S.explore : S.scope;
-      if (sc && k !== 'nhc' && selected === 'sector:' + b.sec) selected = 'branch';
       if (!options.some(function (o) { return o[0] === selected; })) selected = 'city';
     }
     return '<label class="scope-field" for="scope-select"><span>' + (k === 'cars' && sameCity(b.city, 'الرياض') ? 'نطاق المعارض' : 'نطاق العرض') + '</span><select class="select" id="scope-select"' + (options.length === 1 ? ' disabled' : '') + '>' + options.map(function (o) { return '<option value="' + esc(o[0]) + '"' + (o[0] === selected ? ' selected' : '') + '>' + esc(o[1]) + '</option>'; }).join('') + '</select></label>';
   }
   function hasSelfbuild(city) { return (D.selfbuild || []).some(function (o) { return sameCity(o.city, city); }); }
   function renderBranch(pre) {
-    if (!sectorCity(S.branch.city) && S.scope !== 'external') { S.scope = 'city'; S.explore = ''; pre = null; }
+    // The retired external-city picker must not survive an old per-category view.
+    if (S.scope === 'external') {
+      S.scope = branchNearbyKind(S.tab) && sectorCity(S.branch.city) && !S.branch.cityOnly && km(S.branch.lat, S.branch.lon, S.branch.lat, S.branch.lon) != null ? 'branch' : 'city';
+      S.explore = ''; pre = null;
+    }
+    if (!sectorCity(S.branch.city)) { S.scope = 'city'; S.explore = ''; pre = null; }
     if ((PRIMARY_SECTIONS.indexOf(S.tab) < 0 && S.tab !== 'selfbuild') || (S.tab === 'selfbuild' && !hasSelfbuild(S.branch.city))) S.tab = 'opps';
     if (S.tab === 'selfbuild') { S.scope = 'city'; S.explore = ''; }
     var b = Object.assign({}, S.branch, { city: cityLabel(S.branch.city) }), c = pre || compute();

@@ -43,7 +43,7 @@ const fetch = async u => {
 };
 let src = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');
   src = src.replace('  boot();', `  window.__behavior = {
-    selectBranch, renderBranch, renderStart, renderSection, bankApprovalPending, compute, itemsFor, rawItems,
+    selectBranch, renderBranch, renderStart, renderSection, bankApprovalPending, compute, itemsFor, rawItems, scopeOptions,
     emptyState, card, openDetail, closeDlg, sameCity, cities, data: () => D, state: () => S
   }; boot();`);
 vm.runInNewContext(src, {
@@ -123,7 +123,7 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   }
   assert('5/10/15/20 km controls update explicitly selected optional-distance scope', radiusResults.every(Boolean));
   fireDocument('click', target({ 'data-scope': 'city' }));
-  assert('all-city scope is explicit and applied', A.state().scope === 'city' && els.app.innerHTML.includes('كامل النطاق — ' + A.state().branch.city));
+  assert('all-city scope is explicit and applied', A.state().scope === 'city' && els.app.innerHTML.includes('كامل ' + A.state().branch.city));
 
   // A branch shows its whole project sector, including far and unlocated records.
   A.selectBranch('243'); A.state().tab = 'projects'; A.state().radius = 5; A.state().scope = 'branch'; A.renderBranch();
@@ -439,6 +439,34 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   A.selectBranch('307', true); const rasTanuraDefaultScope = A.state().scope; A.state().tab = 'offices'; A.renderBranch();
   assert('Ras Tanura missing pin still opens full city offices without invented radius', rasTanuraDefaultScope === 'city' && !els.app.innerHTML.includes('data-scope="branch"') && !els.content.innerHTML.includes('id="radius"') && A.itemsFor('offices','','branch').map(x=>x.o.id).sort().join('|') === A.itemsFor('offices','','city').map(x=>x.o.id).sort().join('|'));
 
+  for (const code of ['243','176','273','307']) {
+    for (const tab of ['projects','opps','offices','companies','cars','nhc']) {
+      A.selectBranch(code,true); A.state().tab=tab; A.state().scope='external'; A.state().explore='شرق'; A.renderBranch();
+      const expected=['projects','opps','offices'].includes(tab)&&['الرياض','جدة'].includes(A.state().branch.city)&&Number.isFinite(A.state().branch.lat)&&Number.isFinite(A.state().branch.lon)?'branch':'city';
+      assert('Retired external view resets '+code+'/'+tab,A.state().scope===expected&&A.state().explore===''&&!els.app.innerHTML.includes('value="external"')&&!els.app.innerHTML.includes('data-scope="external"')&&!els.app.innerHTML.includes('خيارات خارج المدينة'));
+    }
+    A.selectBranch(code,true); A.state().views.offices={scope:'external',explore:'شرق',carArea:''};
+    fireDocument('click',target({'data-tab':'offices'}));
+    assert('Saved retired offices view cannot return '+code,A.state().scope!=='external'&&!els.app.innerHTML.includes('value="external"'));
+  }
+  let optionOrderCases=0,optionOrderFailures=[];
+  for(const b of d.branches)for(const tab of ['projects','opps','offices','nhc','cars','companies','selfbuild']){
+    A.state().branch=b;A.state().tab=tab;A.state().scope='city';A.state().explore='';A.state().carArea='';
+    const html=A.scopeOptions(),options=Array.from(html.matchAll(/<option value="([^"]+)"[^>]*>([^<]+)<\/option>/g),m=>({value:m[1],label:m[2]}));
+    const metro=['الرياض','جدة'].includes(b.city),point=Number.isFinite(b.lat)&&Number.isFinite(b.lon),directions=(['شرق','شمال','جنوب','غرب','وسط'].includes(b.sec)?[b.sec]:[]).concat(['شرق','شمال','جنوب','غرب','وسط'].filter(x=>x!==b.sec));
+    let expected;
+    if(['projects','opps','offices'].includes(tab))expected=metro?[...(point?['branch']:[]),...directions.map(x=>'sector:'+x),'city']:['city'];
+    else if(tab==='cars'&&b.city==='الرياض')expected=['qadisiyah','shifa','all'];
+    else if(tab==='companies'||tab==='selfbuild'||!metro)expected=['city'];
+    else expected=[...(b.sec?['branch']:[]),...directions.map(x=>'sector:'+x),'city'];
+    const actual=options.map(o=>o.value);let correct=(tab==='cars'&&b.city==='الرياض')?actual.at(-1)==='all'&&actual.slice(0,2).sort().join('|')==='qadisiyah|shifa':actual.join('|')===expected.join('|');
+    correct=correct&&new Set(options.map(o=>o.label)).size===options.length&&!actual.includes('external');
+    if(metro&&!(tab==='cars'&&b.city==='الرياض'))correct=correct&&options.at(-1).label==='كامل '+b.city;
+    if(actual[0]==='branch')correct=correct&&options[0].label==='نطاق الفرع';
+    if(!correct)optionOrderFailures.push({branch:b.c,tab,actual,expected});optionOrderCases++;
+  }
+  assert('All '+optionOrderCases+' branch/category options use exact order, unique labels, whole city last and no outside city',optionOrderFailures.length===0);
+  if(optionOrderFailures.length)console.error(JSON.stringify({optionOrderFailures}));
   const failed = Object.entries(tests).filter(([, ok]) => !ok).map(([name]) => name);
   console.log(JSON.stringify({ suite: 'VM UI behavior regression', tests, passed: Object.values(tests).filter(Boolean).length, total: Object.keys(tests).length, failed }, null, 2));
   if (failed.length) process.exitCode = 1;

@@ -60,11 +60,28 @@ async function openBranch(base,code){await page.goto(base+'#b'+code,{waitUntil:'
   for(const tab of ['projects','opps','offices']){
    await page.click('[data-tab="'+tab+'"]');const options=await page.locator('#scope-select option').evaluateAll(ns=>ns.map(n=>n.value));
    const sectorCity=['الرياض','جدة'].includes(branch.city),point=Number.isFinite(branch.lat)&&Number.isFinite(branch.lon);
-   assert(options.includes('city'));assert.equal(options.includes('branch'),sectorCity&&point);assert.equal(options.includes('external'),point);
+   const directions=(['شرق','شمال','جنوب','غرب','وسط'].includes(branch.sec)?[branch.sec]:[]).concat(['شرق','شمال','جنوب','غرب','وسط'].filter(s=>s!==branch.sec));
+   const expectedOptions=sectorCity?[...(point?['branch']:[]),...directions.map(s=>'sector:'+s),'city']:['city'];
+   assert.deepEqual(options,expectedOptions,'Exact branch/own-sector/other-sectors/whole-city order for '+branch.c+'/'+tab);
+   const labels=await page.locator('#scope-select option').allTextContents();assert.equal(new Set(labels).size,labels.length,'No repeated labels');assert.equal(labels[labels.length-1],sectorCity?'كامل '+branch.city:await page.locator('.city-hero').getAttribute('aria-label'));if(sectorCity&&point)assert.equal(labels[0],'نطاق الفرع');
+   assert(options.includes('city'));assert.equal(options.includes('branch'),sectorCity&&point);assert(!options.includes('external'),'Retired outside-city option must be absent nationwide');assert.equal(await page.locator('[data-scope="external"],[data-explore="external"]').count(),0,'No alternate outside-city controls');
    if(!sectorCity)assert(!options.some(v=>v.startsWith('sector:')),'Small city must remain one scope');
    assert.equal(await page.locator('#scope-select').inputValue(),sectorCity&&point?'branch':'city','Initial scope must be nearby for physically pinned Riyadh/Jeddah branches, otherwise own city; no sector label prerequisite');
    const ids=await page.locator('#content [data-record-id]').evaluateAll(ns=>ns.map(n=>n.dataset.recordId));
    for(const id of ids){const row=knownRows.get(id);assert(row,'Unknown record '+id);assert.equal(cityKey(row.city),cityKey(branch.city),'Default physical city leaked '+id);if(row.loc==='nb')assert.equal(await page.locator('[data-record-id="'+id+'"] .branch-distance').count(),0,'District centroid must not display numeric branch distance');}
+  }
+  // Removal applies to every category, not just the three nearby-first lists.
+  for(const tab of ['nhc','cars','companies','selfbuild']){
+   const control=page.locator('[data-tab="'+tab+'"]');if(!await control.count())continue;
+   await control.click();
+   assert.equal(await page.locator('#scope-select option[value="external"],[data-scope="external"],[data-explore="external"]').count(),0,'Outside-city choice reappeared in '+tab+' at branch '+branch.c);
+   assert.notEqual(await page.locator('#scope-select').inputValue(),'external','Retired scope must not remain selected');
+   const actual=await page.locator('#scope-select option').evaluateAll(ns=>ns.map(n=>n.value));
+   const metro=['الرياض','جدة'].includes(branch.city),directions=(['شرق','شمال','جنوب','غرب','وسط'].includes(branch.sec)?[branch.sec]:[]).concat(['شرق','شمال','جنوب','غرب','وسط'].filter(s=>s!==branch.sec));
+   if(tab==='companies'||tab==='selfbuild'||!metro)assert.deepEqual(actual,['city']);
+   else if(tab==='cars'&&branch.city==='الرياض'){assert.equal(actual.at(-1),'all');assert.deepEqual(actual.slice(0,2).sort(),['qadisiyah','shifa']);}
+   else {assert.deepEqual(actual,[...(branch.sec?['branch']:[]),...directions.map(s=>'sector:'+s),'city']);assert.equal((await page.locator('#scope-select option').allTextContents()).at(-1),'كامل '+branch.city);}
+
   }
  });
  for(const tab of ['projects','offices'])await check('Riyadh center202 '+tab+' nearby-first then complete city, no overflow',async()=>{
@@ -78,7 +95,7 @@ async function openBranch(base,code){await page.goto(base+'#b'+code,{waitUntil:'
   await page.screenshot({path:path.join(path.dirname(out),'semantic-'+engine+'-center202-'+tab+'-city-390.png'),fullPage:false});
  });
  for(const [code,expected] of [['238',['P627','P429','P428','P416']],['299',['P428','P627','P416']],['243',['P415','P473','P475','P590','P625','P577','P444','P429']]])await check('fixed independently calculated project neighborhood membership '+code,async()=>{
-  await page.goto(base+'#b'+code,{waitUntil:'domcontentloaded'});await page.waitForSelector('.hero-branch');await page.click('[data-tab="projects"]');await page.selectOption('#scope-select','branch');while(await page.locator('[data-more="projects"]').count())await page.locator('[data-more="projects"]').click();const ids=await page.locator('#content [data-record-id]').evaluateAll(ns=>ns.map(n=>n.dataset.recordId));assert.deepEqual(ids.slice().sort(),expected.slice().sort());await page.selectOption('#scope-select','city');assert(await page.locator('#content [data-record-id]').count()>0);await page.selectOption('#scope-select','external');const foreign=await page.locator('#content [data-record-id]').evaluateAll(ns=>ns.map(n=>n.dataset.recordId));for(const id of foreign){const row=knownRows.get(id);assert(row&&row.city!=='الرياض');assert(await page.locator('[data-record-id="'+id+'"] .branch-distance').count());}
+  await page.goto(base+'#b'+code,{waitUntil:'domcontentloaded'});await page.waitForSelector('.hero-branch');await page.click('[data-tab="projects"]');await page.selectOption('#scope-select','branch');while(await page.locator('[data-more="projects"]').count())await page.locator('[data-more="projects"]').click();const ids=await page.locator('#content [data-record-id]').evaluateAll(ns=>ns.map(n=>n.dataset.recordId));assert.deepEqual(ids.slice().sort(),expected.slice().sort());await page.selectOption('#scope-select','city');assert(await page.locator('#content [data-record-id]').count()>0);assert.equal(await page.locator('#scope-select option[value="external"]').count(),0,'Full-city access does not reintroduce outside-city choice');await page.selectOption('#scope-select','branch');while(await page.locator('[data-more="projects"]').count())await page.locator('[data-more="projects"]').click();assert.deepEqual((await page.locator('#content [data-record-id]').evaluateAll(ns=>ns.map(n=>n.dataset.recordId))).slice().sort(),expected.slice().sort(),'Returning restores exact nearby inventory');
  });
  await check('Buraidah approved photo retained without full-photo overlay; NHC partner project correctly typed',async()=>{
   await page.goto(base+'#b273',{waitUntil:'domcontentloaded'});await page.waitForSelector('.hero-branch');assert.equal(await page.locator('.selected-source-credit').count(),0);assert.equal(await page.locator('.selected-source-hero img').getAttribute('src'),'assets/images/cities/buraidah-selected-spa.webp');await page.click('[data-tab="nhc"]');const card=page.locator('[data-record-id="أزيان بريدة"]');await card.waitFor({state:'visible'});assert((await card.innerText()).includes('مشروع بالشراكة مع NHC'));assert(!(await card.innerText()).includes('185'));await card.locator('[data-detail]').first().click();await page.waitForSelector('#detail[open]');assert.equal(await page.locator('#destination-projects').count(),0,'Partner project cannot masquerade as a master with child projects');await page.keyboard.press('Escape');await page.screenshot({path:path.join(path.dirname(out),'semantic-'+engine+'-buraidah-partner-390.png'),fullPage:true});
