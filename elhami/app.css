@@ -3,3 +3,6 @@
 .floating svg{width:65px;height:75px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}@media(max-width:700px){.floating svg{width:45px;height:55px}.site-header .quiet{font-size:12px;padding:6px 10px}.presentation-text{font-size:18px}}
 
 body.embedded .account-link{display:none}
+
+/* Exact approved two-layer brand treatment from the existing live header. */
+.site-header>a.brand-logo{position:relative;display:block;line-height:0}.site-header>a.brand-logo>img:not(.brand-wordmark-color){clip-path:inset(0 0 0 63%);filter:saturate(.55)}.site-header>a.brand-logo>img.brand-wordmark-color{position:absolute;inset:0;clip-path:inset(0 37% 0 0);filter:url(#wordmark-muted-blue);mix-blend-mode:darken}
