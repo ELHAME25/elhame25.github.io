@@ -1,0 +1,31 @@
+/* Public introduction only. Existing email verification, private storage and handlers remain authoritative. */
+(()=>{'use strict';
+const welcome=document.querySelector('#welcome');
+if(!welcome)return;
+const hero='assets/elhami-approved-hero-v4.png';
+const artAlt='إلهامي: حرف R الأزرق يمتد نحو شخصين يتحاوران حول كتب ومذكرات، وخيوط تربط التفكير بالأفكار ونموّها. نقرأ فتتسع رؤيتنا، ونتحاور فيتعمق فهمنا، ونكتب ليبقى الأثر.';
+document.querySelectorAll('.brand-art').forEach(img=>{img.src=hero;img.alt=artAlt;img.removeAttribute('style');});
+const icons={idea:'<path d="M9 18h6m-6 3h6M8 14a7 7 0 1 1 8 0c-1 1-1 2-1 3H9c0-1 0-2-1-3Z"/>',reading:'<path d="M12 5v15M3 4c4-1 7 0 9 2 2-2 5-3 9-2v15c-4-1-7 0-9 2-2-2-5-3-9-2Z"/>',projects:'<rect x="3" y="4" width="7" height="7" rx="2"/><rect x="14" y="4" width="7" height="7" rx="2"/><rect x="3" y="15" width="7" height="7" rx="2"/><path d="M17 14v8m-4-4h8"/>',group:'<path d="M5 16a4 4 0 0 0 4 4h7l4 2v-6a7 7 0 0 0-1-4M3 3h12a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3Z"/>'};
+const paths=[['idea','ما الذي يدور في بالك؟','فكرة، موقف، أو سؤال يستحق أن تتوقف عنده.','رتّب فكرتك'],['reading','مرافق القراءة','اقرأ بنفسك، ثم فكّك المعنى ودوّن أسئلتك.','افتح كتابك'],['projects','مشاريع معرفية','أفكار بمصادرها، تكتشفها من خلال مواقف واختيارات.','اكتشف مشروعًا'],['group','المجلس','محور يجمعكم، وآراء لها أصحابها، وحصيلة تحتفظون بها.','جهّز نقاشًا']];
+const landing=document.createElement('div');landing.id='elhami-landing';
+landing.innerHTML=`<section class="lh-hero" aria-labelledby="lh-title"><div class="lh-copy"><span class="lh-eyebrow">إلهامي · حوار يبقى أثره</span><h1 id="lh-title">رفيقك لتوسيع<br><span>المدارك.</span></h1><p>ابدأ بما يشغلك. اكتشف معنى، رتّب فكرة، واحتفظ بما يستحق أن يبقى.</p><a class="lh-start" href="#lh-paths">اختر بدايتك <span aria-hidden="true">↓</span></a></div><figure class="lh-art"><img src="${hero}" width="1672" height="941" fetchpriority="high" alt="${artAlt}"></figure></section><section id="lh-paths" class="lh-paths" aria-labelledby="lh-paths-title"><div class="lh-section-head"><div><span class="lh-eyebrow">أربع بدايات، ومساحتك واحدة</span><h2 id="lh-paths-title">من أين تحب أن تبدأ؟</h2></div><a class="lh-resume" href="experience-v2.html?v=release4&path=world">عالمي ومسوداتي <span aria-hidden="true">←</span></a></div><div class="lh-path-grid">${paths.map(([key,title,desc,cta],i)=>`<a class="lh-path" data-elhami-path="${key}" href="experience-v2.html?v=release4&path=${key}"><span class="lh-path-top"><svg viewBox="0 0 24 24" aria-hidden="true">${icons[key]}</svg><span>0${i+1}</span></span><h3>${title}</h3><p>${desc}</p><span class="lh-path-cta">${cta} <span aria-hidden="true">←</span></span></a>`).join('')}</div><p class="lh-preview-note">يمكنك تجربة المسارات دون تسجيل. محتوى التجربة يُحفظ على هذا الجهاز؛ وللحفظ الخاص استخدم حسابك. الحوار الذكي واللقاء عن بُعد غير مفعّلين بعد.</p></section><section class="lh-keeps" aria-labelledby="lh-keeps-title"><div><span class="lh-eyebrow">ما يبقى معك</span><h2 id="lh-keeps-title">الفكرة لا تنتهي<br>بانتهاء الجلسة.</h2><p>عد إلى ما كتبته، راجع ما تغيّر، وابنِ عليه. القراءة والجهد منك؛ وإلهامي يساعدك على ترتيب الأثر.</p></div><div class="lh-output-list"><article><span>01</span><div><h3>مسودة تتطور</h3><p>كلماتك وأفكارك، قابلة للتعديل والعودة إلى إصداراتها.</p></div></article><article><span>02</span><div><h3>معرفة مترابطة</h3><p>ملاحظة، مصدر، وسؤال مفتوح؛ تحفظ بينها روابط ذات معنى.</p></div></article><article><span>03</span><div><h3>حصيلة تشاركها</h3><p>اختر ما تريد إخراجه من تجربتك، دون مشاركة بقية مساحتك.</p></div></article></div></section><div class="lh-bottom"><span>مساحة للفهم والتفكير والإنتاجية والسلام الداخلي.</span><span class="lh-bottom-actions"><button class="text-btn" type="button" id="lh-privacy">الخصوصية</button><button class="text-btn" type="button" data-lh-login>الدخول إلى مساحتي ←</button></span></div>`;
+welcome.prepend(landing);
+const headerActions=document.createElement('div');headerActions.className='lh-header-actions';headerActions.innerHTML='<a href="#lh-paths">اكتشف إلهامي</a><button type="button" data-lh-login>تسجيل الدخول</button>';document.querySelector('body>header').append(headerActions);
+function showAuth(mode='login'){
+ document.body.classList.add('lh-auth-open');
+ window.elhamiAccess?.prompt(mode);
+ requestAnimationFrame(()=>document.querySelector('#auth-email')?.focus({preventScroll:true}));
+}
+function showLanding(){document.body.classList.remove('lh-auth-open','browse-mode');document.body.classList.add('auth-screen');}
+headerActions.querySelector('a')?.addEventListener('click',showLanding);
+document.querySelector('body>header>a')?.addEventListener('click',()=>{if(!window.elhamiAccess?.authenticated){showLanding();window.scrollTo(0,0);}});
+document.querySelector('#lh-privacy')?.addEventListener('click',()=>window.elhamiPrivacy?.());
+const originalPrompt=window.elhamiAccess?.prompt;
+if(originalPrompt)window.elhamiAccess.prompt=function(){document.body.classList.add('lh-auth-open');return originalPrompt.apply(this,arguments);};
+document.querySelectorAll('[data-lh-login]').forEach(b=>b.addEventListener('click',()=>showAuth()));
+const back=document.createElement('button');back.type='button';back.className='text-btn lh-auth-back';back.textContent='→ العودة إلى إلهامي';back.onclick=()=>{document.body.classList.remove('lh-auth-open','browse-mode');document.body.classList.add('auth-screen');window.scrollTo({top:0,behavior:'smooth'});};document.querySelector('.auth-card')?.prepend(back);
+const explore=document.querySelector('#explore');if(explore){explore.addEventListener('click',()=>{document.body.classList.remove('lh-auth-open','browse-mode');document.body.classList.add('auth-screen');window.scrollTo(0,0);});}
+// Show verification failures rather than hiding the existing auth form behind the introduction.
+const authContent=document.querySelector('#auth-content');if(authContent)new MutationObserver(()=>{const error=document.querySelector('#auth-error');if(error?.textContent.trim())document.body.classList.add('lh-auth-open');}).observe(authContent,{childList:true,subtree:true,characterData:true});
+window.addEventListener('elhami-account',()=>{if(window.elhamiAccess?.authenticated)document.body.classList.remove('lh-auth-open');});
+})();

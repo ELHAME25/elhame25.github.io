@@ -1,0 +1,51 @@
+/* Scoped public landing; authentication and the private app keep their original DOM. */
+:root{--lh-ink:#294759;--lh-blue:#5c8198;--lh-paper:#f6f2e9;--lh-line:#dcdcd2}
+body.auth-screen>header{height:84px!important;padding:14px max(5vw,20px)!important;max-width:1440px;margin:auto}
+body.auth-screen>header>a>img{width:138px!important}
+.lh-header-actions{display:none;align-items:center;gap:25px;font-size:13px}
+body.auth-screen .lh-header-actions{display:flex}
+.lh-header-actions>a{text-decoration:none;color:var(--lh-blue)}
+.lh-header-actions>button{background:transparent;border:1px solid #9dafb8;border-radius:6px;padding:9px 18px;color:var(--lh-ink)}
+body.auth-screen #welcome>.welcome-wrap{display:none!important}
+body.auth-screen.lh-auth-open #welcome>.welcome-wrap{display:block!important;max-width:520px!important;margin:24px auto 60px!important;padding:0 20px!important}
+body.auth-screen.lh-auth-open .welcome-copy{display:none!important}
+.lh-auth-open #elhami-landing{display:none}
+.lh-auth-back{margin:0 0 14px!important;font-size:13px!important}
+#elhami-landing{max-width:1440px;margin:0 auto;padding:0 max(5vw,20px) 40px;color:var(--lh-ink)}
+.lh-hero{display:grid;grid-template-columns:minmax(250px,.8fr) minmax(0,1.65fr);gap:20px;align-items:center;padding:22px 0 28px;min-height:390px}
+.lh-copy{position:relative;z-index:1}
+.lh-eyebrow{font-size:12px;letter-spacing:.02em;color:#6e8897;display:block;margin-bottom:12px}
+.lh-copy h1{font-size:clamp(30px,3.9vw,52px)!important;font-weight:400!important;line-height:1.55;margin:0 0 16px!important;color:var(--lh-ink)!important}
+.lh-copy h1 span{color:var(--lh-blue)}
+.lh-copy p{font-size:16px;line-height:2.1;max-width:325px;margin:0 0 22px;color:#617783}
+.lh-start{display:inline-flex;gap:28px;align-items:center;background:var(--lh-ink);color:#fffaf0;text-decoration:none;border-radius:6px;padding:12px 22px;font-size:14px}
+.lh-art{margin:0;width:100%;min-width:0}
+.lh-art img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain;mix-blend-mode:multiply}
+.lh-paths{scroll-margin-top:24px;border-top:1px solid var(--lh-line);padding-top:25px}
+.lh-section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:22px}
+.lh-section-head .lh-eyebrow{margin-bottom:3px}
+.lh-section-head h2,.lh-keeps h2{font-size:24px;font-weight:400;line-height:1.7;margin:0}
+.lh-resume{font-size:12px;text-decoration:none;white-space:nowrap;color:var(--lh-blue);padding-bottom:5px}
+.lh-path-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.lh-path{display:flex;flex-direction:column;padding:23px 20px 18px;background:#fbf9f3;border:1px solid var(--lh-line);border-radius:9px;text-decoration:none;color:var(--lh-ink);transition:transform .18s,border-color .18s,background .18s}
+.lh-path:hover{transform:translateY(-3px);border-color:#8ba4b2;background:#fffdf7}
+.lh-path-top{display:flex;align-items:center;justify-content:space-between;color:#8399a5;font-size:11px;margin-bottom:21px}
+.lh-path-top svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.lh-path h3{font-size:17px;font-weight:400;line-height:1.8;margin:0 0 9px}
+.lh-path p{font-size:12px;line-height:2;color:#657b85;margin:0 0 20px;flex:1}
+.lh-path-cta{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #e6e6de;padding-top:13px;font-size:12px;color:#53768a}
+.lh-preview-note{font-size:11px;color:#6c7f88;line-height:1.9;margin:16px 0 0;max-width:950px}
+.lh-keeps{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;padding:65px 0 40px;margin-top:40px;border-top:1px solid var(--lh-line)}
+.lh-keeps>div>p{color:#617783;font-size:14px;line-height:2.1;max-width:365px;margin-top:16px}
+.lh-output-list article{display:flex;gap:22px;border-bottom:1px solid var(--lh-line);padding:16px 0}
+.lh-output-list article:first-child{padding-top:0}
+.lh-output-list article>span{font-size:11px;color:#91a2a8;padding-top:5px}
+.lh-output-list h3{font-size:17px;font-weight:400;margin:0 0 5px}
+.lh-output-list p{font-size:12px;line-height:2;color:#657b85;margin:0}
+.lh-bottom{display:flex;justify-content:space-between;gap:16px;align-items:center;border-top:1px solid var(--lh-line);padding-top:20px;font-size:11px;color:#71838a}
+.lh-bottom .text-btn{font-size:12px}
+@media(max-width:1000px){.lh-hero{grid-template-columns:1fr 1.3fr;min-height:330px}.lh-copy h1{font-size:34px!important}.lh-copy p{font-size:14px}.lh-path-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lh-path p{max-width:270px}.lh-keeps{gap:40px}}
+@media(max-width:600px){body.auth-screen>header{height:67px!important;padding:12px 20px!important;flex-wrap:nowrap!important}body.auth-screen>header>a>img{width:110px!important}.lh-header-actions{gap:12px;font-size:11px}.lh-header-actions>a{display:none}.lh-header-actions>button{font-size:11px;padding:8px 12px}#elhami-landing{padding:0 20px 24px}.lh-hero{display:flex;flex-direction:column;gap:4px;min-height:0;padding:15px 0 23px;align-items:stretch}.lh-copy h1{font-size:29px!important;margin-bottom:8px!important;line-height:1.5}.lh-copy h1 br{display:none}.lh-copy h1 span:before{content:' '}.lh-eyebrow{font-size:10px;margin-bottom:8px}.lh-copy p{font-size:13px;line-height:1.9;max-width:350px;margin-bottom:12px}.lh-start{font-size:12px;padding:9px 15px;gap:24px}.lh-art{margin-top:7px}.lh-paths{padding-top:19px}.lh-section-head{align-items:start;margin-bottom:15px;gap:8px}.lh-section-head h2{font-size:19px}.lh-resume{font-size:10px;white-space:normal;text-align:left;max-width:83px;padding-top:7px}.lh-path-grid{gap:10px}.lh-path{padding:15px 12px 12px}.lh-path-top{margin-bottom:11px}.lh-path-top svg{width:22px;height:22px}.lh-path h3{font-size:14px;margin-bottom:5px}.lh-path p{font-size:11px;line-height:1.9;margin-bottom:13px}.lh-path-cta{font-size:10px;padding-top:9px}.lh-preview-note{font-size:10px}.lh-keeps{grid-template-columns:1fr;gap:22px;padding:30px 0 25px;margin-top:30px}.lh-keeps h2{font-size:23px}.lh-keeps h2 br{display:none}.lh-keeps>div>p{font-size:12px;margin-top:10px;margin-bottom:0}.lh-output-list h3{font-size:15px}.lh-bottom{align-items:start;flex-direction:column;gap:4px}.lh-bottom .text-btn{padding:4px 0}.lh-auth-open .lh-header-actions{display:none}}
+@media(prefers-reduced-motion:reduce){.lh-path{transition:none}.lh-path:hover{transform:none}}
+
+.lh-bottom-actions{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
