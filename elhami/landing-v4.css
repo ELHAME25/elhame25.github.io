@@ -16,14 +16,14 @@ body.auth-screen .auth-links{justify-content:center;flex-wrap:wrap}
 body.auth-screen.lh-about-open #welcome>.welcome-wrap{display:none!important}
 body.auth-screen.lh-about-open #elhami-landing{display:block}
 #elhami-landing h1{font-size:28px;font-weight:400;line-height:1.6;margin:0 0 12px;text-align:center}
-.lh-about-intro{font-size:15px;line-height:2;color:#617783;margin:0 auto 26px;max-width:570px}
+
 .lh-about-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
 .lh-about-grid article{padding:20px 15px;border:1px solid #deded4;border-radius:9px;background:#fbf9f3}
-.lh-about-grid h2{font-size:17px;font-weight:400;line-height:1.8;margin:0 0 8px;text-align:center}
-.lh-about-grid p{font-size:12px;line-height:1.9;color:#657b85;margin:0}
-.lh-about-keeps{font-size:13px;line-height:2;color:#617783;margin:24px auto 8px;max-width:620px}
-.lh-about-status{font-size:11px;line-height:1.9;color:#77878d;margin:0 auto 22px;max-width:560px}
-.lh-about-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.lh-about-grid h2{font-size:17px;font-weight:400;line-height:1.8;margin:0;text-align:center}
+
+
+
+.lh-about-actions{margin-top:24px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
 .lh-about-actions button{font-size:13px;padding:10px 20px!important}
 #lh-about-back{font-size:12px;margin:16px auto 0;display:block}
-@media(max-width:760px){body.auth-screen>header{height:64px!important;padding:12px 5vw!important}body.auth-screen>header>a>img{width:118px!important}body.auth-screen #welcome>.welcome-wrap{grid-template-columns:1fr!important;gap:16px!important;padding:0 5vw!important;margin:0 auto 24px!important;max-width:540px!important}body.auth-screen .welcome-copy h1{font-size:19px!important;margin:0 0 6px!important}body.auth-screen .welcome-copy .brand-art{max-width:430px;margin:0 auto!important}body.auth-screen .auth-card{padding:19px 22px!important}body.auth-screen .auth-tabs{margin-bottom:13px!important;gap:24px!important}body.auth-screen .auth-tabs button{padding:8px 0!important;font-size:13px!important}body.auth-screen .auth-card h2{font-size:19px!important;margin-bottom:7px}body.auth-screen .auth-card .muted{font-size:12px!important;margin-bottom:10px}body.auth-screen .auth-card label{margin-top:8px}body.auth-screen .auth-card .primary{margin-top:16px!important;padding:10px!important}body.auth-screen .auth-card #explore{margin-top:13px!important;padding:6px 10px}#elhami-landing{margin:12px auto 30px;padding:0 5vw}#elhami-landing h1{font-size:25px}.lh-about-intro{font-size:13px;margin-bottom:18px}.lh-about-grid{gap:10px}.lh-about-grid article{padding:16px 12px}.lh-about-grid h2{font-size:14px;margin-bottom:7px}.lh-about-grid p{font-size:11px}.lh-about-keeps{font-size:12px;margin-top:18px}.lh-about-status{font-size:10px}}
+@media(max-width:760px){body.auth-screen>header{height:64px!important;padding:12px 5vw!important}body.auth-screen>header>a>img{width:118px!important}body.auth-screen #welcome>.welcome-wrap{grid-template-columns:1fr!important;gap:16px!important;padding:0 5vw!important;margin:0 auto 24px!important;max-width:540px!important}body.auth-screen .welcome-copy h1{font-size:19px!important;margin:0 0 6px!important}body.auth-screen .welcome-copy .brand-art{max-width:430px;margin:0 auto!important}body.auth-screen .auth-card{padding:19px 22px!important}body.auth-screen .auth-tabs{margin-bottom:13px!important;gap:24px!important}body.auth-screen .auth-tabs button{padding:8px 0!important;font-size:13px!important}body.auth-screen .auth-card h2{font-size:19px!important;margin-bottom:7px}body.auth-screen .auth-card .muted{font-size:12px!important;margin-bottom:10px}body.auth-screen .auth-card label{margin-top:8px}body.auth-screen .auth-card .primary{margin-top:16px!important;padding:10px!important}body.auth-screen .auth-card #explore{margin-top:13px!important;padding:6px 10px}#elhami-landing{margin:12px auto 30px;padding:0 5vw}#elhami-landing h1{font-size:25px}.lh-about-grid{gap:10px}.lh-about-grid article{padding:16px 12px}.lh-about-grid h2{font-size:14px;margin-bottom:7px}}
