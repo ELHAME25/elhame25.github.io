@@ -1,0 +1,17 @@
+/* Trusted top-level adapter. Auth bearer tokens never cross the iframe bridge. */
+(()=>{'use strict';const supported=new Set(['status','create','list','get','invite','revoke','respond','add','close','harvest']);const inviteKey='elhami-pending-meeting-invite';let cfg;
+function pending(){try{const v=JSON.parse(sessionStorage.getItem(inviteKey));return v&&/^[a-f0-9]{64}$/.test(v.token)&&v.savedAt>Date.now()-172800000?v.token:null;}catch{return null;}}
+try{const h=new URLSearchParams(location.hash.slice(1)),value=h.get('meeting-invite');if(value&&/^[a-f0-9]{64}$/.test(value)){sessionStorage.setItem(inviteKey,JSON.stringify({token:value,savedAt:Date.now()}));h.delete('meeting-invite');history.replaceState(null,'',location.pathname+location.search+(h.toString()?'#'+h.toString():''));}}catch{/* Invalid links don't change auth callback handling. */}
+async function config(){if(!cfg){const r=await fetch('auth-config.json',{cache:'no-store'});if(!r.ok)throw Error('تعذّر تحميل إعدادات الاتصال.');cfg=await r.json();}return cfg;}
+function guard(owner){if(!owner||window.elhamiAccess?.userId!==owner||window.elhamiCloud?.ownerId!==owner)throw Error('تغيّر الحساب. أعد فتح اللقاء.');}
+function message(status){return status===401?'انتهت جلسة الدخول. أكّد دخولك من حسابك.':status===403?'لا تملك صلاحية هذا اللقاء.':status===404?'خدمة اللقاءات المشتركة لم تُفعّل بعد.':status===409?'تغيّر اللقاء منذ آخر عرض. حدّثه قبل متابعة التعديل.':status===429?'وصلت إلى حد المحاولات. انتظر قليلًا ثم أعد المحاولة.':status===400?'تحقّق من البيانات وحالة اللقاء ثم أعد المحاولة.':'تعذّر الاتصال باللقاء. حاول مجددًا.';}
+async function call(method,args={}){if(!supported.has(method)||!args||typeof args!=='object'||Array.isArray(args))throw Error('طلب لقاء غير صالح.');const owner=window.elhamiAccess?.userId;
+ if(method==='status'&&!owner)return {available:false,reason:'سجّل الدخول لاستخدام اللقاءات المشتركة.',pendingInvite:!!pending()};guard(owner);
+ const payload={...args};if(method==='respond'&&payload.action==='request'){payload.token=payload.token||pending();if(!/^[a-f0-9]{64}$/.test(payload.token||''))throw Error('افتح رابط الدعوة الصحيح أولًا.');}
+ try{const c=await config();guard(owner);const token=await window.elhamiCloud.getToken();guard(owner);const r=await fetch(c.url.replace(/\/$/,'')+'/rest/v1/rpc/elhami_group',{method:'POST',headers:{apikey:c.publishableKey,Authorization:'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify({p_operation:method,p_payload:payload})});guard(owner);const result=await r.json().catch(()=>null);guard(owner);if(!r.ok){const e=Error(message(r.status));e.status=r.status;throw e;}if(!result||typeof result!=='object')throw Error('استجابة اللقاء غير مكتملة.');if(result.error)throw Error(result.error==='rate_limited'?'انتظر عشر دقائق قبل محاولة دعوة أخرى.':result.error==='already_member'?'أنت عضو في هذا اللقاء بالفعل.':'رابط الدعوة غير صالح أو انتهت صلاحيته أو سبق استخدامه.');
+ if(method==='status')return {...result,pendingInvite:!!pending()};
+ if(method==='invite'){const url=new URL('index.html',location.href);url.hash='meeting-invite='+result.token;const {token:unused,...rest}=result;return {...rest,url:url.href};}
+ if(method==='respond'&&payload.action==='request'&&result.pending)try{sessionStorage.removeItem(inviteKey);}catch{}
+ return result;
+ }catch(e){if(method==='status')return {available:false,reason:e.message,pendingInvite:!!pending()};throw e;}}
+window.ElhamiGroupServer={call};})();
