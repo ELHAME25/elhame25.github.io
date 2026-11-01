@@ -1,0 +1,303 @@
+body{margin:0;font-family:Arial,Tahoma,sans-serif}button,input,select{font:inherit}
+
+:root{
+  --red:#c91432;
+  --red-dark:#9f1028;
+  --gold:#e8ad2e;
+  --ink:#2b2422;
+  --muted:#746b67;
+  --cream:#f5f1eb;
+  --sand:#ebe3da;
+  --line:#e4ddd5;
+  --white:#fff;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Tahoma,"Segoe UI",Arial,sans-serif}
+button,input,select{font:inherit}
+button{cursor:pointer}
+svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.shell{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+
+.topbar{height:78px;background:rgba(255,255,255,.94);border-bottom:1px solid var(--line);position:relative;z-index:5}
+.topbar-inner{height:100%;display:flex;align-items:center;gap:20px}
+.bank-logo{width:148px;height:auto;display:block}
+.tool-title{border-right:1px solid var(--line);padding-right:20px;font-weight:700;font-size:14px}
+.internal-label{margin-right:auto;background:#f5e8eb;color:var(--red-dark);border-radius:99px;padding:7px 12px;font-size:11px;font-weight:700}
+
+.hero{min-height:370px;display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:52px;padding-block:38px;position:relative}
+.hero:before{content:none}
+.hero h1{font-size:49px;line-height:1.25;letter-spacing:-2.2px;margin:0 0 14px;font-weight:500}
+.hero h1 b{color:var(--red);font-weight:800}
+.hero-copy p{color:var(--muted);font-size:16px;line-height:1.9;max-width:470px;margin:0 0 25px}
+.hero-copy a{display:inline-flex;align-items:center;gap:8px;color:#fff;background:var(--ink);text-decoration:none;border-radius:13px;padding:13px 18px;font-weight:700;font-size:13px}
+.hero-copy a svg{width:16px;transform:rotate(180deg)}
+.hero-actions{display:flex;align-items:center;gap:13px}
+.hero-actions>span{color:#847973;font-size:10px;border-right:1px solid #d9d0c8;padding-right:13px}
+.hero-cards{height:270px;display:flex;align-items:center;justify-content:center;gap:24px;position:relative}
+.hero-product{position:relative;width:300px}
+.hero-product>span{display:block;font-size:11px;color:var(--muted);font-weight:700;text-align:center;margin-bottom:7px}
+.hero-product .official-card{width:100%;height:auto;aspect-ratio:1.58}
+.tamkeen-product,.travel-product{transform:none}
+
+.page-tabs{display:flex;gap:7px;background:#e9e2da;padding:6px;border-radius:16px;margin-bottom:22px;position:relative;z-index:4}
+.page-tabs button{flex:1;border:0;background:transparent;color:#746b67;border-radius:11px;padding:13px;display:flex;align-items:center;justify-content:center;gap:8px;font-size:11px;font-weight:700}
+.page-tabs button.active{background:#fff;color:var(--ink);box-shadow:0 5px 18px rgba(43,36,34,.09)}
+.page-tabs svg{width:17px;height:17px}
+
+.official-card{position:relative;aspect-ratio:1.58;overflow:hidden;border:0;background:transparent;filter:drop-shadow(0 16px 18px rgba(38,28,25,.16))}
+.official-card img{position:absolute;display:block;max-width:none}
+.tamkeen-crop{aspect-ratio:1.18}
+.tamkeen-crop img{width:121.5%;height:auto;right:-12.1%;top:-23.2%}
+.travel-crop img{width:100%;height:auto;right:0;top:-19%}
+.travel-signature-card{aspect-ratio:1.57}
+.travel-signature-card img{width:100%;height:100%;inset:0;object-fit:contain}
+.flat-card{aspect-ratio:1.58}
+.flat-card img{width:100%;height:100%;inset:0;object-fit:contain}
+
+.calculator-section{background:#fff;padding:38px 0 56px;border-block:1px solid var(--line)}
+.section-title{margin-bottom:25px}
+.section-title>span{display:flex;align-items:center;gap:7px;color:var(--red);font-size:11px;font-weight:800}
+.section-title h2{font-size:30px;margin:8px 0 0;letter-spacing:-.8px}
+.calculator-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(360px,.75fr);gap:22px;align-items:stretch}
+.calculator-grid.travel-flow{grid-template-columns:1fr}
+.calculator-grid.travel-flow{gap:14px}
+.travel-flow .form-panel{order:1}
+.travel-flow .travel-partners{order:2;margin:0}
+.travel-flow .result-panel{order:3}
+.form-panel,.result-panel{border:1px solid var(--line);border-radius:24px}
+.form-panel{padding:27px;background:#fff}
+.family-tabs{display:flex;background:var(--cream);padding:5px;border-radius:14px;margin-bottom:18px}
+.family-tabs button{border:0;background:transparent;color:var(--muted);font-weight:700;flex:1;padding:12px;border-radius:10px}
+.family-tabs button.active{background:var(--ink);color:#fff;box-shadow:0 6px 15px rgba(43,36,34,.14)}
+.card-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.card-options.two{grid-template-columns:repeat(2,1fr)}
+.card-options>button{position:relative;background:#f8f5f0;border:1px solid transparent;border-radius:16px;padding:7px 9px 10px;color:var(--ink);transition:.2s}
+.card-options>button:hover{transform:translateY(-2px)}
+.card-options>button.selected{background:#fff;border-color:#d9cfc6;box-shadow:0 9px 24px rgba(43,36,34,.09)}
+.card-options .official-card{width:100%;filter:none}
+.card-options.two .official-card{aspect-ratio:1.58}
+.card-options.two .travel-signature-card img{width:100%;height:100%;inset:0;object-fit:cover}
+.card-options>button>span{display:block;font-weight:700;font-size:11px;margin-top:4px}
+.card-options>button>i{position:absolute;top:9px;left:9px;width:22px;height:22px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center}
+.card-options>button>i svg{width:13px;height:13px}
+.earn-rate{display:grid;grid-template-columns:auto repeat(3,1fr);align-items:stretch;gap:7px;margin-top:13px}
+.earn-rate.travel-rate{grid-template-columns:auto repeat(4,1fr)}
+.earn-rate>span{display:flex;align-items:center;color:#776c67;font-size:9px;font-weight:700;padding:0 5px}
+.earn-rate>div{display:flex;align-items:center;justify-content:center;gap:5px;min-height:39px;background:#f7f3ee;border-radius:10px;padding:7px 8px;text-align:center}
+.earn-rate b{color:var(--red);font-size:15px}
+.earn-rate small{color:#504743;font-size:9px;font-weight:700;line-height:1.4}
+.form-divider{height:1px;background:var(--line);margin:18px 0 20px}
+.form-panel h3{font-size:16px;margin:0 0 15px}
+.inputs{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
+.money-field>span{display:block;font-size:11px;font-weight:700;color:#5f5551;margin-bottom:7px}
+.money-field>div{display:flex;align-items:center;height:50px;border:1px solid var(--line);background:#fbfaf8;border-radius:12px;padding:0 13px;transition:.2s}
+.money-field>div:focus-within{background:#fff;border-color:var(--red);box-shadow:0 0 0 3px rgba(201,20,50,.07)}
+.money-field input{border:0;outline:0;background:transparent;width:100%;direction:ltr;text-align:right;color:var(--ink);font-size:17px;font-weight:800}
+.money-field small{font-size:10px;color:#8b817c;white-space:nowrap}
+.money-field em{display:block;font-style:normal;color:#978d88;font-size:9px;margin-top:5px}
+.welcome{width:100%;border:1px solid var(--line);background:#fbfaf8;border-radius:14px;margin-top:17px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;color:var(--ink)}
+.welcome>span{display:flex;align-items:center;gap:8px;font-size:11px}
+.welcome>span svg{color:var(--red)}
+.welcome-copy{display:block;text-align:right}
+.welcome-copy b{display:block}
+.welcome-copy small{display:block;color:#5f5550;font-size:10px;font-weight:600;margin-top:4px}
+.welcome-copy em{display:inline-block;font-style:normal;color:var(--red-dark);background:#f5e8eb;border-radius:99px;padding:2px 6px;margin-right:4px;font-size:8px;font-weight:700}
+.welcome>i{width:38px;height:22px;border-radius:20px;background:#c9c0bb;position:relative}
+.welcome>i:after{content:"";position:absolute;width:16px;height:16px;background:#fff;border-radius:50%;top:3px;left:3px;box-shadow:0 1px 4px #0003;transition:.2s}
+.welcome.on>i{background:var(--red)}
+.welcome.on>i:after{left:19px}
+.exclusion-note{display:flex;align-items:flex-start;gap:6px;color:#887d78;font-size:9px;line-height:1.8;margin:12px 2px 0}
+.exclusion-note svg{width:14px;height:14px;flex:0 0 auto;margin-top:1px}
+.exceptions{margin-top:13px;background:#f6f1eb;border-radius:12px;padding:10px 12px;color:#655a55}
+.exceptions summary{cursor:pointer;font-size:11px;font-weight:800}
+.exceptions>div{display:grid;gap:7px;padding-top:10px}
+.exceptions b{width:100%;font-size:11px;font-weight:800;color:#4f4541;margin-bottom:3px}
+.exceptions span{background:#fff;border:1px solid var(--line);border-radius:99px;padding:6px 9px;color:#625752;font-size:10px;font-weight:600}
+.exception-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.exception-row span{display:flex;align-items:center;justify-content:center;text-align:center;white-space:nowrap}
+.exception-wide{display:block;width:max-content;max-width:100%;margin-inline:auto;text-align:center}
+
+.result-panel{padding:24px;background:var(--ink);color:#fff;overflow:hidden;position:relative}
+.result-panel:before{content:"";position:absolute;width:280px;height:280px;border:1px solid rgba(255,255,255,.07);border-radius:50%;left:-160px;top:-80px;box-shadow:0 0 0 38px rgba(255,255,255,.025),0 0 0 76px rgba(255,255,255,.018)}
+.result-panel>*{position:relative}
+.result-card-head{display:flex;align-items:center;gap:13px}
+.result-card-head .official-card{width:112px;flex:0 0 auto;filter:drop-shadow(0 8px 9px rgba(0,0,0,.3))}
+.result-card-head small{color:#c4b8b2;font-size:9px}
+.result-card-head h3{font-size:13px;margin:4px 0 0}
+.result-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:rgba(255,255,255,.07);padding:4px;border-radius:12px;margin:22px 0 18px}
+.result-tabs.two{grid-template-columns:repeat(2,1fr)}
+.result-tabs button{border:0;background:transparent;color:#c9bdb8;border-radius:9px;padding:10px 5px;font-size:9px;font-weight:700}
+.result-tabs button.active{background:#fff;color:var(--ink)}
+.partner{display:block;margin:-4px 0 15px}
+.partner span{display:block;color:#c4b8b2;font-size:9px;margin-bottom:6px}
+.partner select{width:100%;height:42px;border:1px solid rgba(255,255,255,.14);background:#382f2c;color:#fff;border-radius:10px;padding:0 10px;outline:0;font-size:10px}
+.partner-box{margin:20px 0 15px}
+.partner-kinds{display:grid;grid-template-columns:1fr 1fr;background:rgba(255,255,255,.07);border-radius:11px;padding:4px;margin-bottom:11px}
+.partner-kinds button{border:0;background:transparent;color:#bfb2ad;border-radius:8px;padding:9px;font-size:9px;font-weight:700}
+.partner-kinds button.active{background:#fff;color:var(--ink)}
+.partner-box .partner{margin:0}
+.primary-result{text-align:center;padding:16px 0 20px;border-bottom:1px solid rgba(255,255,255,.11)}
+.primary-result span{display:block;color:#eee7e3;font-size:12px;font-weight:700}
+.primary-result strong{display:inline-block;font-size:38px;letter-spacing:-1px;margin:8px 5px 0}
+.primary-result small{color:#f2c75e;font-size:10px}
+.points-breakdown{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin-top:15px}
+.points-breakdown>div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:11px;padding:9px}
+.points-breakdown span{display:block;color:#ded4cf;font-size:10px;font-weight:700}
+.points-breakdown b{display:block;font-size:15px;margin-top:5px}
+.benefit-results{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:16px 0}
+.benefit-results>div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:11px 8px}
+.benefit-results span,.benefit-results small{display:block;color:#ded4cf;font-size:10px;font-weight:600}
+.benefit-results b{display:block;color:#fff;font-size:15px;margin:6px 0 4px}
+.benefits-label{display:block;color:#eee7e3;font-size:10px;font-weight:700;margin-top:14px}
+.travel-system{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:16px 0 9px}
+.travel-system>div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:11px 8px}
+.travel-system b{display:block;color:#f2c75e;font-size:11px;margin-bottom:5px}
+.travel-system span{display:block;color:#c7bbb5;font-size:8px;line-height:1.6}
+.partner-result{display:grid;grid-template-columns:1fr auto;align-items:center;background:rgba(232,173,46,.1);border:1px solid rgba(232,173,46,.2);border-radius:12px;padding:10px 11px;margin-bottom:9px}
+.partner-result span{font-size:9px;color:#e6d9cb}
+.partner-result b{font-size:17px;color:#fff}
+.partner-result small{font-size:8px;color:#c7bbb5}
+.travel-partners{margin-top:22px;border:1px solid var(--line);border-radius:22px;background:#fbfaf8;padding:24px}
+.travel-partners.top{margin:0 0 22px}
+.partners-heading{border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:17px}
+.partners-heading h3{font-size:18px;margin:0}
+.partner-groups{display:grid;grid-template-columns:1.7fr .7fr;gap:22px}
+.partner-groups section+section{border-right:1px solid var(--line);padding-right:22px}
+.partner-groups h4{font-size:11px;margin:0 0 11px;color:#655a55}
+.partner-grid{display:grid;gap:8px}
+.partner-grid.air{grid-template-columns:repeat(4,1fr)}
+.partner-grid.hotels{grid-template-columns:1fr}
+.partner-grid button{position:relative;min-height:48px;text-align:center;border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px;color:var(--ink)}
+.partner-grid button.selected{border-color:var(--red);box-shadow:0 0 0 2px rgba(201,20,50,.08)}
+.partner-grid button.selected:after{content:"✓";position:absolute;top:8px;left:8px;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;background:var(--red);color:#fff;font-size:9px}
+.partner-grid span{display:block;font-size:9px;font-weight:700}
+.selected-partner-result{display:grid;grid-template-columns:1fr auto;align-items:center;background:var(--ink);color:#fff;border-radius:15px;padding:14px 16px;margin-top:18px}
+.selected-partner-result span{font-size:10px;color:#d7cbc5}
+.selected-partner-result strong{font-size:25px}
+.selected-partner-result small{font-size:8px;color:#f1c55c}
+.travel-final-result{display:flex;align-items:baseline;justify-content:center;gap:8px;background:rgba(232,173,46,.1);border:1px solid rgba(232,173,46,.2);border-radius:13px;padding:14px;margin-top:15px;text-align:center}
+.travel-final-result span{font-size:11px;font-weight:700;color:#eee7e3}.travel-final-result strong{font-size:27px}.travel-final-result small{font-size:10px;font-weight:700;color:#f1c55c}
+.breakdown{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:16px 0}
+.breakdown>div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:11px;padding:10px 7px}
+.breakdown span{display:block;color:#bfb2ad;font-size:8px}
+.breakdown b{display:block;font-size:12px;margin-top:5px}
+.result-caption{min-height:42px;background:rgba(232,173,46,.1);border:1px solid rgba(232,173,46,.18);color:#e6d9cb;border-radius:12px;padding:11px;margin:0;font-size:9px;line-height:1.8}
+
+.fees{padding:34px 0 48px}
+.fee-policy{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;background:#fff7e8;border:1px solid #efd9a8;border-radius:15px;padding:13px 16px;margin:-7px 0 14px;color:#5b4930;text-align:center}
+.fee-policy .policy-title svg{width:22px;height:22px;color:#b37700;background:#f8dfaa;border-radius:50%;padding:4px}
+.fee-policy b{font-size:15px;font-weight:800}
+.fee-policy span{display:block;color:#5b4b36;font-size:12px;font-weight:700;line-height:1.7;text-align:center!important;text-align-last:center}
+.welcome-policy{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;background:#f7edf0;border:1px solid #ead2d8;border-radius:15px;padding:12px 16px;margin-bottom:18px;color:#5f303a;text-align:center}
+.welcome-policy .policy-title svg{width:19px;height:19px;color:var(--red)}
+.welcome-policy span{display:block;width:100%;font-size:12px;font-weight:700;line-height:1.7;text-align:center!important;text-align-last:center}
+.welcome-policy b{color:var(--red-dark);font-weight:800}
+.policy-title{display:flex;align-items:center;justify-content:center;gap:8px;text-align:center}
+.terms-subtitle{font-size:18px;font-weight:800;margin:0 2px 11px}
+.terms-subtitle.travel-title{margin-top:20px}
+.fee-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.fee-grid article{background:#fff;border:1px solid var(--line);border-radius:19px;padding:20px}
+.fee-grid article.classic{background:#eee8e2}
+.fee-grid h3{font-size:15px;margin:0 0 6px}
+.fee-grid p{font-size:9px;color:var(--muted);min-height:31px;margin:0 0 15px;line-height:1.7}
+.fee-grid article>div{border-top:1px solid var(--line);padding:10px 0 0;margin-top:10px}
+.fee-grid b{font-size:14px;display:block}
+.fee-grid small{color:var(--muted);font-size:8px}
+.tag{display:inline-block;background:#dfd6ce;color:#625752;border-radius:99px;padding:5px 8px;font-size:8px;font-weight:700;margin-bottom:10px}
+.fee-note{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:9px;margin:14px 2px 0}
+.fee-note svg{width:15px}
+.travel-terms{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:13px}
+.travel-terms article{display:grid;grid-template-columns:150px 1fr;align-items:center;gap:15px;background:#fff;border:1px solid var(--line);border-radius:19px;padding:15px}
+.travel-terms .official-card{width:150px;filter:none}
+.travel-terms h3{font-size:14px;margin:0 0 11px}
+.travel-terms p{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);margin:0;padding:8px 0 0}
+.travel-terms p+p{margin-top:8px}
+.travel-terms b{font-size:12px}.travel-terms span{font-size:8px;color:var(--muted)}
+.terms-table{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.terms-head,.terms-row{display:grid;grid-template-columns:1.3fr repeat(4,1fr);align-items:center}
+.terms-head{background:var(--ink);color:#fff}
+.terms-head span{padding:14px 12px;font-size:10px;font-weight:800}
+.terms-row{border-top:1px solid var(--line);min-height:61px}
+.terms-row:first-of-type{border-top:0}
+.terms-row>span{padding:12px;font-size:11px;font-weight:800}
+.terms-row>b{padding:12px;font-size:12px;font-weight:800;border-right:1px solid var(--line)}
+.terms-row:nth-child(even){background:#fbf9f6}
+.travel-terms-simple{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.travel-terms-simple article{display:grid;grid-template-columns:135px 1fr;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px}
+.travel-terms-simple .official-card{width:135px;filter:none}
+.travel-terms-simple h4{font-size:15px;margin:0 0 10px}
+.travel-terms-simple p{display:flex;justify-content:space-between;align-items:center;gap:8px;border-top:1px solid var(--line);margin:0;padding-top:8px}
+.travel-terms-simple p+p{margin-top:8px}
+.travel-terms-simple span{font-size:11px;color:#5f5550;font-weight:700}
+.travel-terms-simple b{font-size:14px;white-space:nowrap}
+.disclaimer{display:flex;align-items:center;justify-content:center;gap:8px;color:#746964;padding-block:16px 20px;text-align:center}
+.disclaimer svg{width:15px;height:15px;flex:0 0 auto;color:#9a8e87}
+.disclaimer p{margin:0;font-size:9px;font-weight:600;line-height:1.7}
+
+footer{border-top:1px solid var(--line);background:#fff}
+footer .shell{min-height:92px;display:flex;align-items:center;gap:18px;color:var(--muted)}
+footer .bank-logo{width:115px}
+footer span{font-size:9px;border-right:1px solid var(--line);padding-right:18px}
+footer small{margin-right:auto;font-size:9px}
+
+@media(max-width:920px){
+  .hero{grid-template-columns:1fr;gap:20px}
+  .hero-copy{text-align:center}
+  .hero-copy p{margin-inline:auto}
+  .hero-cards{height:250px;width:min(650px,100%);margin:auto}
+  .calculator-grid{grid-template-columns:1fr}
+  .fee-grid{grid-template-columns:repeat(2,1fr)}
+  .partner-groups{grid-template-columns:1fr}.partner-groups section+section{border-right:0;border-top:1px solid var(--line);padding-right:0;padding-top:18px}
+  .partner-grid.hotels{grid-template-columns:repeat(3,1fr)}
+  .travel-terms{grid-template-columns:1fr}
+  .travel-terms-simple{grid-template-columns:1fr}
+}
+
+@media(max-width:620px){
+  .shell{width:min(100% - 24px,1180px)}
+  .topbar{height:66px}.bank-logo{width:120px}.tool-title{display:none}
+  .hero{min-height:auto;padding-block:28px}
+  .hero h1{font-size:38px;letter-spacing:-1.5px}
+  .hero-copy p{font-size:13px}
+  .hero-cards{height:145px;display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center}
+  .hero-product{width:100%;height:126px;display:flex;align-items:center;justify-content:center}
+  .hero-product .official-card{height:auto;aspect-ratio:1.58;flex:0 0 auto;filter:drop-shadow(0 10px 10px rgba(38,28,25,.16))}
+  .hero-product .travel-crop{width:100%}
+  .hero-product>span{display:none}
+  .calculator-section{padding-block:34px}.fees{padding-block:22px 36px}
+  .section-title h2{font-size:24px}
+  .form-panel,.result-panel{padding:17px;border-radius:19px}
+  .card-options{gap:6px}
+  .card-options>button{padding:5px 5px 8px}
+  .card-options>button>span{font-size:9px}
+  .card-options>button>i{width:18px;height:18px;top:6px;left:6px}
+  .earn-rate{grid-template-columns:repeat(3,1fr);gap:5px}
+  .earn-rate.travel-rate{grid-template-columns:repeat(4,1fr)}
+  .earn-rate>span{grid-column:1/-1;padding:0 2px;font-size:8px}
+  .earn-rate>div{display:block;min-height:48px;padding:7px 4px}
+  .earn-rate b,.earn-rate small{display:block}
+  .earn-rate b{font-size:14px;margin-bottom:3px}
+  .earn-rate small{font-size:8px}
+  .inputs{grid-template-columns:1fr}
+  .fee-grid{grid-template-columns:1fr 1fr;gap:8px}
+  .fee-grid article{padding:15px}
+  footer .shell{flex-wrap:wrap;padding:20px 0}
+  footer small{width:100%;margin:0}
+  .travel-partners{padding:16px}.partners-heading{display:block}.partners-heading small{display:block;margin-top:6px}
+  .partner-grid.air{grid-template-columns:repeat(2,1fr)}.partner-grid.hotels{grid-template-columns:1fr}
+  .travel-terms article{grid-template-columns:105px 1fr}.travel-terms .official-card{width:105px}
+  .travel-terms-simple article{grid-template-columns:105px 1fr;padding:11px}.travel-terms-simple .official-card{width:105px}
+  .travel-terms-simple span{font-size:10px}
+  .disclaimer{align-items:center;padding-block:14px 18px}.disclaimer p{font-size:9px;text-align:center}
+  .terms-head{display:none}
+  .terms-row{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:12px;min-height:0}
+  .terms-row>span{grid-column:1/-1;padding:0 2px 8px;font-size:15px;font-weight:800;color:var(--red)}
+  .terms-row>b{border:0;background:#f7f3ee;border-radius:10px;padding:11px;font-size:15px;font-weight:800}
+  .terms-row>b:before{display:block;color:#5f5550;font-size:10px;font-weight:700;line-height:1.5;margin-bottom:5px}
+  .terms-row>b:nth-of-type(1):before{content:"الرسوم شاملة الضريبة"}
+  .terms-row>b:nth-of-type(2):before{content:"شرط الإنفاق خلال 90 يوما"}
+  .terms-row>b:nth-of-type(3):before{content:"الاسترداد الإضافي"}
+  .terms-row>b:nth-of-type(4):before{content:"الحد الأدنى للحجز النقدي"}
+}
