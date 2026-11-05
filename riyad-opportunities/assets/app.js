@@ -259,7 +259,7 @@
       var items = D.branches.filter(function (b) {
         if (city && !sameCity(b.city, city)) return false;
         if (!q) return true;
-        return (b.codeStatus !== 'local_internal_reference' && String(b.c).indexOf(raw) >= 0) || norm(b.n).indexOf(q) >= 0;
+        return (b.codeStatus !== 'local_internal_reference' && String(b.c).indexOf(raw) >= 0) || [b.n, b.city, b.cityRaw, b.nb].some(function (value) { return norm(value).indexOf(q) >= 0; });
       });
       var exact = D.branchByCode[raw];
       selectedCode = typeof chosenCode === 'string' && items.some(function (b) { return b.c === chosenCode; }) ? chosenCode : (exact && exact.codeStatus !== 'local_internal_reference' && (!city || sameCity(exact.city, city)) ? exact.c : '');
