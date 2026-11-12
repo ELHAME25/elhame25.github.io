@@ -30,3 +30,5 @@
 .duration-years{margin-top:16px}.keyboard-bar{position:fixed;right:12px;z-index:50;background:white;border:1px solid var(--line);box-shadow:0 3px 16px #24164a25;border-radius:8px}.keyboard-bar button{background:var(--purple);color:white;border-radius:7px;padding:9px 24px;font:inherit;font-weight:700}
 
 .quick-result{display:none!important}.app-shell{padding-bottom:24px}dialog .keyboard-bar{position:fixed;z-index:100}
+
+.client-grid{align-items:end}.client-grid>label>input,.client-grid>label>select{height:48px;min-height:48px}.client-grid #rateProduct:empty{display:none}.report-controls{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);display:grid;gap:16px}.report-controls .second-adjust{margin:0}.report-controls input{height:48px}.phase-rates{display:none}.retirement-fields>label:has(#pension){grid-column:1/-1;text-align:center;align-items:center}.retirement-fields #pension{width:100%;justify-content:center;text-align:center}@media(max-width:700px){.client-grid:has(#rateField[hidden])>label:has(#sector),.client-grid:has(#rate[hidden])>label:has(#sector){width:calc((100% - 13px)/2)}.report-controls{gap:14px}}
