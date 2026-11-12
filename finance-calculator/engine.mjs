@@ -195,7 +195,7 @@ export function calculate(x) {
  if(retired&&!alreadyRetired&&x.pension==null&&(!x.hire||x.hire<=x.birth||x.hire>x.today||x.hire>retireDate||!x.basic)) throw Error('أدخل الراتب الأساسي وتاريخ التعيين لحساب مرحلة التقاعد.');
  const {service,pension}=estimatePension(x);
  if(retired&&pension<=0) throw Error('أدخل راتبًا تقاعديًا صالحًا.');
- const afterRate=cap(pension,x.support);
+ const afterCap=cap(pension,x.support),afterRate=x.afterDeduction??afterCap;if(afterRate<0||afterRate>afterCap)throw Error('استقطاع ما بعد التقاعد يتجاوز السقف '+afterCap+'%.');
  const credit=x.credit*.05;
  const external=m=>activeDebt(x.debts,m);
  const personal=x.personalMonths ? (x.personal??Math.max(0,x.income*(alreadyRetired?.25:.3333)-Math.max(...Array.from({length:x.personalMonths},(_,i)=>external(i+1)))-credit)):0;
@@ -240,7 +240,7 @@ export function calculate(x) {
  const financedProperty=x.property?Math.min(net,x.property*propertyRatio(x)):null;
  const required=x.property?Math.max(0,x.property-financedProperty-packageAmount):null;
  const personalNet=x.personal==null&&x.personalMonths&&x.personalMargin!=null?personal*x.personalMonths/(1+x.personalMargin/100*x.personalMonths/12):null;
- const result={rows,total,net,personalNet,monthlySupport:x.support==='monthly'?monthlySupport(x.income):0,profit:total-net,months,work,retired,retireDate,pension,service,beforeRate,second,afterRate,personal,credit,packageAmount,required,financedProperty,customerGap:required,draws:construction?.draws??[]};
+ const result={rows,total,net,personalNet,monthlySupport:x.support==='monthly'?monthlySupport(x.income):0,profit:total-net,months,work,retired,retireDate,pension,service,beforeRate,second,afterRate,afterCap,personal,credit,packageAmount,required,financedProperty,customerGap:required,draws:construction?.draws??[]};
  let bounded=result;
  if(x.type==='lien'&&x.property&&result.net>result.financedProperty){
   bounded=sizeFixed(result,{...x,fixedMethod:'amount',fixedRequest:result.financedProperty});

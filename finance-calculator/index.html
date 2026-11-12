@@ -19,7 +19,7 @@
 <label>تاريخ الميلاد الهجري<input id="birth" class="hijri-input" maxlength="10" type="text" inputmode="numeric" dir="ltr" autocomplete="off" aria-describedby="birthError"><span id="birthError" class="field-error" role="alert" hidden></span></label>
 <label>جهة العمل<select id="sector"><option value="civil">حكومي</option><option value="military">عسكري</option><option value="retired">متقاعد</option><option value="privateA">قطاع خاص · فئة A</option><option value="privateB">قطاع خاص · فئة B</option><option value="privateC">قطاع خاص · فئة C</option><option value="corporation">الشركات الكبرى / شبه الحكومي</option><option value="bank">موظف بنك</option><option value="unapproved">موظف غير معتمد</option></select></label>
 <label id="rateField"><span class="rate-heading"><span id="rateTitle">النسبة السنوية % <small id="rateProduct"></small></span><span class="rate-mode"><input id="manualRate" type="checkbox">تعديل النسبة يدويًا</span></span><input id="rate" type="number" min="0" step=".01" inputmode="decimal" autocomplete="off"></label>
-<label id="rankField" class="full" hidden>الرتبة الحالية<select id="rank"></select></label>
+<label id="personalTermField">مدة التمويل بالأشهر<input id="personalTerm" type="number" min="1" max="60" step="1" value="60" inputmode="numeric"></label><label id="rankField" class="full" hidden>الرتبة الحالية<select id="rank"></select></label>
 <label id="pilotField" class="checkbox full" hidden><input id="pilot" type="checkbox">ضابط طيار</label>
 </div>
 </section>
@@ -39,7 +39,7 @@
 <label>نوع الدعم<select id="support"><option value="monthly">دعم شهري</option><option value="package">باقة الدفعة المقدمة</option><option value="none">غير مدعوم</option></select></label>
 </div>
 <label class="toggle-line" id="packageField" hidden><span>سبق استلام باقة الدفعة المقدمة</span><input id="packageReceived" type="checkbox" role="switch"></label>
-<details class="duration-controls"><summary id="durationSummary">المدة</summary><div class="segmented"><button type="button" data-duration="maximum" aria-pressed="true">المدة القصوى</button><button type="button" data-duration="manual" aria-pressed="false">تعديل المدة</button></div><div class="config-grid duration-grid"><label id="workMonthsField">على رأس العمل بالأشهر<output id="workMonths">—</output></label><label id="afterMonthsField">بعد التقاعد بالأشهر<input id="afterMonths" type="number" min="0" step="1" inputmode="numeric" disabled></label><label>إجمالي المدة بالأشهر<input id="term" type="number" min="1" max="360" step="1" inputmode="numeric" readonly></label></div></details>
+<label class="duration-years">مدة التمويل<select id="termYears"><option value="">المدة القصوى</option></select></label><label>إجمالي المدة بالأشهر<input id="term" type="number" min="1" max="360" step="1" inputmode="numeric"></label><details class="duration-controls"><summary id="durationSummary">المدة</summary><div class="segmented"><button type="button" data-duration="maximum" aria-pressed="true">المدة القصوى</button><button type="button" data-duration="manual" aria-pressed="false">تعديل المدة</button></div><div class="config-grid duration-grid"><label id="workMonthsField">على رأس العمل بالأشهر<output id="workMonths">—</output></label><label id="afterMonthsField">بعد التقاعد بالأشهر<input id="afterMonths" type="number" min="0" step="1" inputmode="numeric" disabled></label></div></details>
 <div class="retirement-fields config-grid" id="retirementFields" hidden><label>الراتب الأساسي<input id="basic" type="number" min=".01" step=".01" inputmode="decimal"></label><label>تاريخ التعيين الهجري<input id="hire" class="hijri-input" maxlength="10" inputmode="numeric" type="text" dir="ltr"></label><label>الراتب المتوقع بعد التقاعد<output id="pension">—</output></label></div>
 <div id="offplanFields" class="config-grid subfields" hidden><label>مدة بناء المشروع بالأشهر<input id="buildMonths" type="number" min="0" max="359" inputmode="numeric"></label><label>القسط الشهري خلال الإنشاء<output>400 ريال</output></label><label>قسط الدفعة المقدمة خلال الإنشاء<input id="downInstallment" type="number" min="0" step=".01" inputmode="decimal"></label></div>
 </section>
@@ -49,8 +49,8 @@
 <section class="panel adjust-panel" id="adjustPanel" hidden>
 <div class="segmented" id="methodControls"><button data-method="max" type="button" aria-pressed="true">الحد الأعلى</button><button data-method="payment" type="button" aria-pressed="false">حسب القسط</button><button data-method="amount" type="button" aria-pressed="false">حسب المبلغ</button></div>
 <label id="requestField" hidden><span id="requestLabel"></span><input id="request" type="number" min=".01" step=".01" inputmode="decimal"></label>
-<details class="second-adjust" id="secondAdjust" open hidden><summary>تعديل استقطاع الفترة الثانية</summary><output id="firstRate" hidden>—</output><div><label>تعديل استقطاع الفترة الثانية %<input id="secondRate" type="number" min="0" max="65" step=".01" inputmode="decimal"></label></div><button type="button" id="resetSecond" class="text-button">الحد الأعلى</button></details>
-</section>
+<details class="second-adjust" id="secondAdjust" open hidden><summary>تعديل استقطاع باقي الفترات قبل التقاعد</summary><output id="firstRate" hidden>—</output><div><label>تعديل استقطاع باقي الفترات قبل التقاعد %<input id="secondRate" type="number" min="0" max="65" step=".01" inputmode="decimal"></label></div><button type="button" id="resetSecond" class="text-button">الحد الأعلى</button></details>
+<label id="afterAdjust" hidden>إجمالي الأقساط الشهرية بعد التقاعد %<input id="afterRate" type="number" min="0" max="65" step=".01" inputmode="decimal"></label></section>
 </div>
 </div>
 <div class="validation" id="message" role="status" hidden></div>
@@ -61,4 +61,4 @@
 </main><div id="quickResult" class="quick-result" hidden><div><span id="quickLabel">التمويل</span><strong id="quickAmount"></strong></div><div><span>المدة</span><strong id="quickMonths"></strong></div><button id="viewResult" type="button">عرض الحسبة <span>←</span></button></div><dialog id="sharingDialog"><div class="panel-heading"><h2>مشاركة الملف</h2><button type="button" id="closeSharing" class="text-button">إغلاق</button></div><label>الملاحظات<textarea id="notes" rows="5" maxlength="4000"></textarea></label><div class="result-actions"><a id="openPdf" hidden target="_blank" rel="noopener">فتح PDF</a><button type="button" id="sharePdf" class="secondary-button" hidden>مشاركة التقرير</button><button type="button" class="primary-button" id="download">تنزيل PDF<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg></button></div></dialog>
 <footer class="site-footer">إعداد خالد الماطر</footer>
 <script type="module" src="app.mjs"></script>
-</body></html>
+<div id="keyboardBar" class="keyboard-bar" hidden><button id="keyboardDone" type="button">تم ✓</button></div></body></html>
