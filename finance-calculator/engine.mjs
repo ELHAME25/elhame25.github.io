@@ -27,12 +27,11 @@ export function monthsBetween(start,end) {
  const span=(b[0]-a[0])*12+b[1]-a[1];
  return span-(addMonths(start,span)>end?1:0);
 }
-// مصفوفة الدعم 5، الأعمدة A:C. معاملات الشرائح من معادلات الصفوف 3 و1003 إلى 7003.
+// جدول المستخدم: التقريب إلى شريحة الألف التالية مؤقتًا، و10,000 فأعلى = 416.
 export function monthlySupport(income) {
- if(income>10000)return 416;
- const bands=[[9000,673,.074],[8000,757,.084],[7000,850,.093],[6000,955,.105],[5000,1073,.118],[4000,1206,.133],[3000,1350,.144]];
- const [start,amount,slope]=bands.find(([start])=>income>=start)??bands.at(-1);
- return amount-Math.max(0,income-start)*slope;
+ if(income>=10000)return 416;
+ const band=Math.max(3000,Math.ceil(income/1000)*1000);
+ return {3000:1350,4000:1206,5000:1073,6000:955,7000:850,8000:757,9000:673,10000:416}[band];
 }
 const arabicDigits='٠١٢٣٤٥٦٧٨٩';
 export function hijriDate(value,years=0) {
@@ -152,7 +151,7 @@ function constructionSchedule(x,capacity,work,months) {
  }
  return result;
 }
-const propertyRatio=x=>x.type==='lien'&&x.repayment==='flex'?.85:.90;
+const propertyRatio=x=>x.type==='lien'?.80:.90;
 function sizeFixed(result,x){
  if(!x.fixedMethod||x.fixedMethod==='max')return result;
  if(!(x.fixedRequest>0))throw Error(x.fixedMethod==='amount'?'أدخل مبلغ التمويل المطلوب.':'أدخل القسط المطلوب.');
@@ -255,10 +254,24 @@ export function calculate(x) {
  const required=x.property?Math.max(0,x.property-financedProperty-packageAmount):null;
  const personalNet=x.personal==null&&x.personalMonths&&x.personalMargin!=null?personal*x.personalMonths/(1+x.personalMargin/100*x.personalMonths/12):null;
  const result={rows,total,net,personalNet,monthlySupport:x.support==='monthly'?monthlySupport(x.income):0,profit:total-net,months,work,retired,retireDate,pension,service,beforeRate,second,afterRate,afterCap,personal,credit,packageAmount,required,financedProperty,customerGap:required,draws:construction?.draws??[]};
+ if((x.extraDownPayment||0)>0&&!x.property)throw Error('أدخل سعر العقار لاحتساب الدفعة الإضافية.');
  let bounded=result;
- if(x.type==='lien'&&x.property&&result.net>result.financedProperty){
-  bounded=sizeFixed(result,{...x,fixedMethod:'amount',fixedRequest:result.financedProperty});
-  delete bounded.maximum;
+ if(x.property){
+  if(!Number.isFinite(x.property)||x.property<0)throw Error('أدخل سعر عقار صحيحًا.');
+  const extra=x.extraDownPayment||0;
+  if(!Number.isFinite(extra)||extra<0)throw Error('أدخل دفعة إضافية صحيحة.');
+  const target=Math.min(x.property*propertyRatio(x),x.property-packageAmount)-extra;
+  if(target<=0)throw Error('الدفعات المقدمة تغطي سعر العقار؛ لا يوجد مبلغ تمويل مطلوب.');
+  if(result.net>target){
+   bounded=sizeFixed(result,{...x,fixedMethod:'amount',fixedRequest:target});
+   bounded.maximum=result.net;
+  }
  }
- return fixed?sizeFixed(bounded,x):bounded;
+ const sized=fixed?sizeFixed(bounded,x):bounded;
+ if(!x.property)return sized;
+ const initialDownPayment=Math.round(x.property*(1-propertyRatio(x))*100)/100;
+ return {...sized,propertyValue:x.property,propertyRatio:propertyRatio(x),initialDownPayment,
+  clientInitialDownPayment:Math.max(0,initialDownPayment-packageAmount),extraDownPayment:x.extraDownPayment||0,
+  financedProperty:sized.net,customerGap:Math.max(0,x.property-sized.net-packageAmount-(x.extraDownPayment||0)),
+  required:Math.max(0,x.property-sized.net-packageAmount)};
 }

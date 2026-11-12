@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="ar" dir="rtl" data-release="20261112T202538">
+<html lang="ar" dir="rtl" data-release="20261112T204749">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>حاسبة التمويل</title>
-<link rel="stylesheet" href="style.css?v=5a786e7fd6ca4856">
+<link rel="stylesheet" href="style.css?v=ba8c7557772b1102">
 <link rel="apple-touch-icon" sizes="180x180" href="icon-180.png?v=riyad1">
 <link rel="icon" type="image/svg+xml" href="icon.svg?v=riyad1">
 <link rel="manifest" href="manifest.webmanifest">
@@ -15,8 +15,8 @@
 <body>
 <header class="topbar"><div class="topbar-inner"><a class="wordmark" href="./">حاسبة التمويل<span class="brand-line"></span></a></div></header>
 <main class="app-shell">
-<section class="panel identity-panel" id="identityPanel"><div class="client-toolbar"><h1>بيانات الحسبة</h1><button type="button" id="newClient" class="new-client"><span>＋</span> عميل جديد</button></div><div class="identity-grid"><label>مسؤول المبيعات<input id="advisor" value="خالد الماطر" maxlength="100"></label><label>رقم الجوال<input id="phone" type="tel" maxlength="30" inputmode="numeric" data-number="integer" dir="ltr" lang="en"></label><label>اسم العميل<input id="clientName" maxlength="100"></label></div></section>
-<nav class="product-nav" aria-label="التمويل"><button type="button" data-product="personal" aria-pressed="true">الشخصي</button><button type="button" data-product="fixed" aria-pressed="false">العقاري الثابت</button><button type="button" data-product="flex" aria-pressed="false">العقاري المرن</button><button type="button" data-product="manual" aria-pressed="false">تقرير دفعات</button></nav>
+<section class="panel identity-panel" id="identityPanel"><div class="client-toolbar"><h1>بيانات الحسبة</h1><button type="button" id="newClient" class="new-client"><span>＋</span> عميل جديد</button></div><div class="identity-grid"><label>مسؤول المبيعات<input id="advisor" value="خالد الماطر" maxlength="100"></label><label>رقم الجوال<input id="phone" type="tel" maxlength="30" inputmode="numeric" data-number="integer" dir="ltr" lang="en"></label><label>اسم العميل<input id="clientName" maxlength="100"></label></div>
+<button type="button" id="startCalculation" class="primary-button start-calculation">اذهب للاحتساب ←</button></section><section id="calculationPage" hidden><div class="calculation-toolbar"><button type="button" id="editIdentity" class="text-button">تعديل بيانات الحسبة</button></div><nav class="product-nav" aria-label="التمويل"><button type="button" data-product="personal" aria-pressed="true">الشخصي</button><button type="button" data-product="fixed" aria-pressed="false">العقاري الثابت</button><button type="button" data-product="flex" aria-pressed="false">العقاري المرن</button><button type="button" data-product="manual" aria-pressed="false">تقرير دفعات</button></nav>
 <div class="calculator-grid"><div class="entry-column">
 <section class="panel client-panel">
 <div class="panel-heading"><h1>بيانات العميل</h1></div>
@@ -46,7 +46,8 @@
 </div>
 <label class="toggle-line" id="packageField" hidden><span>سبق استلام باقة الدفعة المقدمة</span><input id="packageReceived" type="checkbox" role="switch"></label>
 <div class="config-grid duration-inputs"><label class="duration-years">مدة التمويل<select id="termYears"><option value="">المدة القصوى</option></select></label><label>المدة بالأشهر<input id="term" type="text" min="1" max="360" inputmode="numeric" data-number="integer" dir="ltr" lang="en" autocomplete="off"></label></div><p id="durationSummary" class="duration-breakdown" hidden></p>
-<label class="property-value">قيمة العقار / سعر الوحدة (اختياري)<input id="propertyValue" type="text" inputmode="decimal" data-number="decimal" dir="ltr" lang="en" autocomplete="off"></label>
+<label class="property-value"><span>سعر العقار / الوحدة <small>〔اختياري〕</small></span><input id="propertyValue" type="text" inputmode="decimal" data-number="decimal" dir="ltr" lang="en" autocomplete="off"></label>
+<label class="extra-down-payment"><span>دفعة مقدمة إضافية من العميل <small>〔اختياري〕</small></span><input id="extraDownPayment" type="text" inputmode="decimal" data-number="decimal" dir="ltr" lang="en" autocomplete="off"></label><p id="propertyHint" class="property-hint"></p>
 <div class="retirement-fields config-grid" id="retirementFields" hidden><label>الراتب الأساسي<input id="basic" type="text" min=".01" step=".01" inputmode="decimal" data-number="decimal" dir="ltr" lang="en" autocomplete="off"></label><label>تاريخ التعيين الهجري<input id="hire" class="hijri-input" maxlength="10" inputmode="numeric" type="text" dir="ltr" lang="en"></label><label>الراتب المتوقع بعد التقاعد<output id="pension">—</output></label></div>
 <div id="offplanFields" class="subfields" hidden><label class="toggle-line"><span>قسط ميسر خلال فترة الإنشاء (اختياري)</span><input id="useConstruction" type="checkbox" role="switch"></label><div id="constructionFields" class="config-grid" hidden><label>فترة الإنشاء بالأشهر<input id="buildMonths" type="text" inputmode="numeric" data-number="integer" dir="ltr" lang="en" autocomplete="off"></label><label>القسط الميسر خلال فترة الإنشاء<input id="constructionPayment" type="text" inputmode="decimal" data-number="decimal" dir="ltr" lang="en" autocomplete="off" placeholder="مثال: 400 أو 500"></label></div></div>
 </section>
@@ -71,7 +72,7 @@
 <div id="report" aria-live="polite"></div><p id="settlementHint" class="settlement-hint" role="status" hidden></p><div class="report-toolbar"><button type="button" id="prepareShare" class="report-share-button">مشاركة الملف / تنزيل<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m-4 4 4-4 4 4M5 12v8h14v-8"/></svg></button></div>
 
 </section>
-</main><div id="quickResult" class="quick-result" hidden><div><span id="quickLabel">التمويل</span><strong id="quickAmount"></strong></div><div><span>المدة</span><strong id="quickMonths"></strong></div><button id="viewResult" type="button">عرض الحسبة <span>←</span></button></div><dialog id="sharingDialog"><div class="panel-heading"><h2>مشاركة الملف</h2><button type="button" id="closeSharing" class="text-button">إغلاق</button></div><label>الملاحظات<textarea id="notes" rows="5" maxlength="4000"></textarea></label><div class="result-actions"><a id="openPdf" hidden target="_blank" rel="noopener">فتح PDF</a><button type="button" id="sharePdf" class="secondary-button" hidden>مشاركة التقرير</button><button type="button" class="primary-button" id="download">تنزيل PDF<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg></button></div></dialog>
+</section></main><div id="quickResult" class="quick-result" hidden><div><span id="quickLabel">التمويل</span><strong id="quickAmount"></strong></div><div><span>المدة</span><strong id="quickMonths"></strong></div><button id="viewResult" type="button">عرض الحسبة <span>←</span></button></div><dialog id="sharingDialog"><div class="panel-heading"><h2>مشاركة الملف</h2><button type="button" id="closeSharing" class="text-button">إغلاق</button></div><label>الملاحظات<textarea id="notes" rows="5" maxlength="4000"></textarea></label><div class="result-actions"><a id="openPdf" hidden target="_blank" rel="noopener">فتح PDF</a><button type="button" id="sharePdf" class="secondary-button" hidden>مشاركة التقرير</button><button type="button" class="primary-button" id="download">تنزيل PDF<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg></button></div></dialog>
 <footer class="site-footer">إعداد خالد الماطر</footer>
-<script type="module" src="app.mjs?v=7fb0e9b0e6286866"></script>
+<script type="module" src="app.mjs?v=25ee5f2eb391a7e1"></script>
 <div id="keyboardBar" class="keyboard-bar" hidden><button id="keyboardDone" type="button">تم ✓</button></div></body></html>

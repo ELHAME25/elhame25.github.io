@@ -38,3 +38,45 @@
 /* Compact duration and stable method entry, including narrow touch screens. */
 #methodPanel{grid-column:1}.duration-inputs,.property-value{margin-top:16px}.duration-breakdown{font-size:.78rem;color:var(--muted);margin-top:8px}.property-value{gap:6px}#constructionFields{margin-top:10px}
 @media(max-width:950px){.calculator-grid{grid-template-columns:minmax(0,1fr)}.calculator-grid>.entry-column>.panel{grid-column:1/-1;grid-row:auto;min-width:0}.client-panel{order:0}.mortgage-config{order:1}.commitments-panel{order:2}#methodPanel{order:3}#adjustPanel{order:4}.manual-panel{order:5}}
+
+/* Align every card and field at narrow widths; keep native iOS inputs at 16px. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+.start-calculation{margin:22px auto 0;justify-content:center;min-width:200px}
+.calculation-toolbar{display:flex;justify-content:flex-start;margin:0 0 8px}
+.identity-panel{max-width:900px;margin-inline:auto}
+.config-grid{align-items:end}
+.duration-years{margin-top:0}
+.duration-inputs select{font-size:16px}
+label{line-height:1.6}
+select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10px 28px}
+.client-grid>label>input,.client-grid>label>select,input,select{height:46px;min-height:46px}
+@media(max-width:950px){
+ .calculator-grid{display:flex;flex-direction:column;gap:0}
+ .entry-column{display:contents}
+ .calculator-grid .panel{width:100%;min-width:0;align-self:stretch}
+}
+@media(max-width:700px){
+ :root{font-size:14px}
+ .app-shell{padding-inline:12px}
+ .panel{padding:15px;margin-bottom:12px}
+ .identity-grid{grid-template-columns:1fr}
+ .identity-grid>label:last-child{grid-column:auto}
+ .config-grid,.client-grid{gap:12px;align-items:end}
+ .config-grid>label,.client-grid>label{font-size:12px}
+ .config-grid:has(#support){grid-template-columns:1fr}
+ .duration-inputs{grid-template-columns:1fr 1fr}
+ .property-tabs{grid-template-columns:1fr 1fr;gap:7px}
+ .property-tabs button{font-size:12px;min-height:40px}
+ .toggle-line{font-size:12px;gap:12px}
+ .toggle-line span{flex:1}
+ .toggle-line input{flex-shrink:0}
+ .product-nav button{font-size:11px}
+ .phase-card-top strong{font-size:15px}
+ .resultMetrics dt{font-size:11px}
+ .resultMetrics dd{font-size:12px}
+}
+
+.extra-down-payment{margin-top:12px}label small{font-size:10px;font-weight:400;display:inline;color:var(--muted)}
+.property-hint{font-size:11px;color:var(--teal);margin-top:9px}
+.phase-card h4{font-size:12px}.phase-card h4 small{display:block;color:var(--muted);font-size:10px;font-weight:400}
+.payment-lines{margin-top:10px}.payment-lines>div{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 0;font-size:12px}.payment-lines strong{font-size:15px}.payment-lines .actual-payment{border-top:1px solid var(--line);color:var(--teal)}
