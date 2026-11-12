@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl" data-release="20261112T130124">
+<html lang="ar" dir="rtl" data-release="20261112T163000">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
@@ -50,7 +50,7 @@
 <div id="offplanFields" class="config-grid subfields" hidden><label>مدة بناء المشروع بالأشهر<input id="buildMonths" type="number" min="0" max="359" inputmode="numeric"></label><label>القسط الشهري خلال الإنشاء<output>400 ريال</output></label><label>قسط الدفعة المقدمة خلال الإنشاء<input id="downInstallment" type="number" min="0" step=".01" inputmode="decimal"></label></div>
 </section>
 <section class="panel manual-panel" id="manualPanel" hidden>
-<div class="panel-heading"><h1>تقرير الدفعات</h1><button type="button" class="text-button" id="addManual">إضافة دفعة</button></div><label class="manual-client-name">اسم العميل<input id="manualClientName" maxlength="100"></label><div class="segmented draw-modes"><button type="button" data-draw-mode="approval" aria-pressed="true">دفعات الموافقة</button><button type="button" data-draw-mode="manual" aria-pressed="false">إدخال الدفعات يدويًا</button></div><label id="approvalField">مبلغ الموافقة<input id="approvalAmount" type="number" min=".01" step=".01" inputmode="decimal"></label><div id="manualRows" hidden></div><div class="manual-share-actions"><button type="button" id="manualShare" class="primary-button" disabled>مشاركة الملف / تنزيل</button></div>
+<div class="panel-heading"><h1>تقرير الدفعات</h1><button type="button" class="text-button" id="addManual">إضافة دفعة</button></div><label class="manual-client-name">اسم العميل<input id="manualClientName" maxlength="100"></label><div class="segmented draw-modes"><button type="button" data-draw-mode="approval" aria-pressed="true">دفعات الموافقة</button><button type="button" data-draw-mode="manual" aria-pressed="false">إدخال الدفعات يدويًا</button></div><label id="approvalField">مبلغ الموافقة<input id="approvalAmount" type="number" min=".01" step=".01" inputmode="decimal"></label><div id="manualTotals" class="config-grid" hidden><label>إجمالي مبلغ التمويل<input id="manualTotalAmount" type="number" min="0" step=".01" inputmode="decimal"></label><label>إجمالي الأرباح<input id="manualTotalProfit" type="number" min="0" step=".01" inputmode="decimal"></label></div><div id="manualRows" hidden></div><div class="manual-share-actions"><button type="button" id="manualShare" class="primary-button" disabled>مشاركة الملف / تنزيل</button></div>
 </section>
 <section class="panel adjust-panel" id="adjustPanel" hidden>
 <div class="segmented" id="methodControls"><button data-method="max" type="button" aria-pressed="true">الحد الأعلى</button><button data-method="payment" type="button" aria-pressed="false">حسب القسط</button><button data-method="amount" type="button" aria-pressed="false">حسب المبلغ</button></div>
@@ -70,5 +70,5 @@
 </section>
 </main><div id="quickResult" class="quick-result" hidden><div><span id="quickLabel">التمويل</span><strong id="quickAmount"></strong></div><div><span>المدة</span><strong id="quickMonths"></strong></div><button id="viewResult" type="button">عرض الحسبة <span>←</span></button></div><dialog id="sharingDialog"><div class="panel-heading"><h2>مشاركة الملف</h2><button type="button" id="closeSharing" class="text-button">إغلاق</button></div><label>الملاحظات<textarea id="notes" rows="5" maxlength="4000"></textarea></label><div class="result-actions"><a id="openPdf" hidden target="_blank" rel="noopener">فتح PDF</a><button type="button" id="sharePdf" class="secondary-button" hidden>مشاركة التقرير</button><button type="button" class="primary-button" id="download">تنزيل PDF<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg></button></div></dialog>
 <footer class="site-footer">إعداد خالد الماطر</footer>
-<script type="module" src="app.mjs?v=ca3cc46a9b5059c6"></script>
+<script type="module" src="app.mjs?v=dbc464898b78cf99"></script>
 <div id="keyboardBar" class="keyboard-bar" hidden><button id="keyboardDone" type="button">تم ✓</button></div></body></html>
