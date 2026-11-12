@@ -124,3 +124,10 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 @media(max-width:700px){.repayment-table th,.repayment-table td{font-size:10px;padding:8px 4px}.repayment-table .payment-cell{font-size:11px}.repayment-summary dt,.repayment-summary dd{font-size:11px}.repayment-table th:first-child,.repayment-table td:first-child{width:30%}.report-toolbar{flex-wrap:wrap}.report-toolbar .new-client{width:100%;max-width:360px}}
 
 #mortgageConfig>.config-grid:has(>#supportKindField[hidden]){grid-template-columns:1fr}
+
+/* One compact repayment list: label, payment, duration; support is the final row. */
+.repayment-list th,.repayment-list td{font-size:12px;padding:10px 8px}
+.repayment-list td:first-child{width:52%;font-weight:400}
+.repayment-list td:nth-child(2){width:30%;white-space:nowrap}
+.repayment-list td:last-child{width:18%;white-space:nowrap;text-align:center;color:var(--muted)}
+@media(max-width:600px){.repayment-list td{font-size:11px;padding:9px 5px}.repayment-list .amount{font-size:12px}.repayment-list .currency{font-size:9px;margin-inline-start:3px}.repayment-list td:last-child{font-size:10px}}

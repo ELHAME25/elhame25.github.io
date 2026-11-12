@@ -2,7 +2,7 @@ import {installUpdates} from './updates.mjs?v=ff090ffd035b3327';
 import {personalRate,mortgageRate,financingDeductions} from './pricing.mjs?v=9415f061b3b300cc';
 import {stages,approvalDraws} from './draws.mjs?v=d697f464270110f1';
 import {ranks,validateBirth,hijriDate,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=fe806beee24e6198';
-import {prepareReport,downloadReport,shareReport,invalidateReport} from './pdf.mjs?v=450babce3da82131';
+import {prepareReport,downloadReport,shareReport,invalidateReport} from './pdf.mjs?v=7917c833a84cdada';
 const $=id=>document.getElementById(id), num=id=>Number($(id).value)||0;
 const fmt=n=>Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
 function normalizeNumericValue(value,integer=false,precision=null){
@@ -40,15 +40,14 @@ function periods(rows,isPersonal=false,monthly=0){
  if(isPersonal)return `<h3 class="report-section-title">القسط</h3><dl class="installment-metrics">${metric('القسط الشهري',money(rows[0].personal))}</dl><div class="personal-payment installment-export">${money(rows[0].personal)}</div>`;
  const bands=[];
  for(const row of rows){const last=bands.at(-1);if(state.product==='fixed'&&last&&row.label!=='خلال الإنشاء'&&last.label!=='خلال الإنشاء'&&(last.phase===3)===(row.phase===3)&&Math.abs(last.payment-row.payment)<.005&&last.end+1===row.start){last.end=row.end;}else bands.push({...row});}
- const labels=r=>r.label==='خلال الإنشاء'?'الإنشاء':state.product==='fixed'?(r.phase===3?'بعد التقاعد':'إلى التقاعد'):r.phase===1?'الأولى · مع الشخصي':r.phase===2?'الثانية · إلى التقاعد':'الثالثة · بعد التقاعد';
- const actual=r=>{const parts=monthly&&r.start<=240&&r.end>240?[{amount:Math.max(0,r.payment-monthly),months:241-r.start},{amount:r.payment,months:r.end-240}]:[{amount:Math.max(0,r.payment-(r.start<=240?monthly:0))}];return parts.map(v=>`<span class="actual-part">${money(v.amount)}${v.months?`<small> · ${v.months} شهر</small>`:''}</span>`).join('\n');};
+ const labels=r=>r.label==='خلال الإنشاء'?'القسط الميسر خلال الإنشاء':state.product==='fixed'?(r.phase===3?'قسط العقاري بعد التقاعد':'قسط العقاري إلى التقاعد'):r.phase===1?'قسط العقاري مع الشخصي':r.phase===2?'قسط العقاري إلى التقاعد':'قسط العقاري بعد التقاعد';
+ const line=(label,amount,months)=>`<tr><td>${label}</td><td class="payment-cell">${money(amount)}</td><td class="duration-cell">${months?months+' شهر':'—'}</td></tr>`;
  const personalRows=rows.filter(r=>r.personal>0),first=personalRows[0];
- let summary='';
- if(first){const length=personalRows.reduce((sum,r)=>sum+r.end-r.start+1,0);summary+=metric('قسط الشخصي ('+length+' شهر)',money(first.personal))+metric('الإجمالي مع الشخصي',money(first.payment+first.personal));}
- if(monthly)summary+=metric('الدعم الشهري ('+Math.min(240,rows.at(-1).end)+' شهر)',money(monthly));
- if(first&&monthly)summary+=metric('الإجمالي الفعلي مع الشخصي',money(first.personal+Math.max(0,first.payment-monthly)));
- if(rows.some(r=>r.obligations>0))summary+=metric('الالتزامات الشهرية',money(rows[0].obligations));
- return `<h3 class="report-section-title">الأقساط</h3><table class="schedule desktop-schedule repayment-table"><thead><tr><th>الفترة</th><th>قسط العقاري</th><th>المدة (شهر)</th>${monthly?'<th>بعد الدعم</th>':''}</tr></thead><tbody>${bands.map(r=>`<tr><td><span class="period-name">${labels(r)}</span></td><td class="payment-cell">${money(r.payment)}</td><td>${r.end-r.start+1}</td>${monthly?`<td class="payment-cell">${actual(r)}</td>`:''}</tr>`).join('')}</tbody></table>${summary?`<dl class="repayment-summary">${summary}</dl>`:''}`;
+ let lines=first?line('قسط الشخصي',first.personal,personalRows.reduce((sum,r)=>sum+r.end-r.start+1,0)):'';
+ lines+=bands.map(r=>line(labels(r),r.payment,r.end-r.start+1)).join('');
+ if(rows.some(r=>r.obligations>0))lines+=line('الالتزامات الشهرية',rows[0].obligations,null);
+ if(monthly)lines+=line('الدعم الشهري',monthly,Math.min(240,rows.at(-1).end));
+ return `<h3 class="report-section-title">الأقساط</h3><table class="schedule desktop-schedule repayment-table repayment-list"><tbody>${lines}</tbody></table>`;
 }
 
 function stageTable(r){const payments=(d,row)=>{const values=d.installments.filter(p=>p.month>=row.start&&p.month<=row.end).map(p=>p.payment);if(!values.length)return '—';const lo=Math.min(...values),hi=Math.max(...values);return money(hi)+(hi-lo>.01?`<small> – ${fmt(lo)}</small>`:'');};return `<h3 class="report-section-title">دفعات البناء الذاتي</h3><div class="construction-cards">${stages.map((s,i)=>`<article class="construction-card"><div class="phase-card-top"><h4>الدفعة ${s[0]} · ${s[1]}%</h4><strong>${money(r.draws[i].amount)}</strong></div><div class="draw-payments">${r.rows.map((row,j)=>`<div><span>قسط الفترة ${ordinals[j]||j+1}</span><b>${payments(r.draws[i],row)}</b></div>`).join('')}</div><details><summary>مرحلة البناء</summary><p>${s[2]}</p><p>${s[3]}</p></details></article>`).join('')}</div><div class="table-scroll"><table class="schedule constructionTable"><thead><tr><th>الدفعة</th><th>النسبة</th><th>مبلغ الدفعة</th>${r.rows.map((row,j)=>`<th>قسط الفترة ${ordinals[j]||j+1}</th>`).join('')}</tr></thead><tbody>${stages.map((s,i)=>`<tr><td>${s[0]}</td><td>${s[1]}%</td><td>${money(r.draws[i].amount)}</td>${r.rows.map(row=>`<td>${payments(r.draws[i],row)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;}
