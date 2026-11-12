@@ -4,14 +4,12 @@ export const ranks = {
  'ملازم / ملازم أول':[44,42], 'نقيب':[48,46], 'رائد':[50,48], 'مقدم':[52,50], 'عقيد':[54,52], 'عميد':[56,54], 'لواء':[58,56]
 };
 const retirementBySector={civil:60,privateA:60,privateB:60,privateC:60,bank:60,corporation:60,unapproved:60};
-function retirementAgeFor(x,projection=false){
+function retirementAgeFor(x){
  if(x.sector==='retired')return null;
  if(x.sector==='military'){
   if(!ranks[x.rank])throw Error('اختر الرتبة العسكرية الحالية.');
-  const base=ranks[x.rank][x.pilot?1:0];
-  // البلاد Operation!D37:G59: العمود الرابع للعقاري وتوقع المعاش.
-  const extended=['وكيل رقيب','رقيب / رقيب أول','ملازم / ملازم أول','نقيب','رائد','مقدم'].includes(x.rank);
-  return base+(projection&&extended?2:0);
+  // سياسة الرياض المعتمدة من المستخدم: سن الرتبة دون تمديد، للمدة والمعاش.
+  return ranks[x.rank][x.pilot?1:0];
  }
  if(!(x.sector in retirementBySector))throw Error('اختر جهة العمل.');
  return retirementBySector[x.sector];
@@ -79,7 +77,7 @@ function personalMonthsAvailable(x,retirementAge){
  return Math.max(0,Math.min(personalTermBySector[x.sector]??60,months-2));
 }
 export function estimatePension(x){
- const retirementAge=retirementAgeFor(x,true);
+ const retirementAge=retirementAgeFor(x);
  const military=x.sector==='military';
  const alreadyRetired=retirementAge===null;
  const workLeft=alreadyRetired?0:Math.max(0,monthsBetween(x.today,ageDates(x,retirementAge)));
@@ -172,7 +170,7 @@ function sizeFixed(result,x){
 }
 export function mortgageWindow(x){
  validateBirth(x);
- const retirementAge=retirementAgeFor(x,true);
+ const retirementAge=retirementAgeFor(x);
  const alreadyRetired=retirementAge===null;
  const retireDate=alreadyRetired?null:ageDates(x,retirementAge);
  const age=ageYears(x.birth,x.today);
