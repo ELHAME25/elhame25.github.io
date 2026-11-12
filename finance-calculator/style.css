@@ -111,3 +111,16 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 .down-payment-breakdown output{font-size:16px;justify-content:center;text-align:center}
 .installment-metrics>div:not(:first-child) dd{font-weight:700}
 .reportIdentity{margin-top:14px;padding-top:12px;gap:24px}
+
+/* Approved compact repayment schedule: one row per real period. */
+.mortgage-rate-field{grid-column:1/-1}.rate-heading{align-items:center}.rate-heading #rateTitle{font-size:12px}
+#supportStatusField{align-self:end}.repayment-table{display:table!important;table-layout:fixed;margin-top:0}
+.repayment-table th,.repayment-table td{font-size:12px;padding:9px 8px;text-align:center;line-height:1.6;vertical-align:middle}
+.repayment-table th:first-child,.repayment-table td:first-child{text-align:right;width:31%}
+.repayment-table td .currency{display:none}.actual-part{display:block;white-space:nowrap}.actual-part small{display:block;font-weight:400;color:var(--muted);font-size:10px}
+.repayment-summary{border:1px solid var(--line);margin-top:9px}.repayment-summary>div{display:grid;grid-template-columns:1.2fr 1fr;border-bottom:1px solid var(--line)}
+.repayment-summary>div:last-child{border-bottom:0}.repayment-summary dt,.repayment-summary dd{padding:7px 10px;font-size:12px}.repayment-summary dd{font-weight:700;text-align:center;border-inline-start:1px solid var(--line)}
+.report-toolbar{gap:10px}.report-toolbar .new-client{font-size:12px;min-height:42px;box-shadow:none;border:1px solid var(--line)}
+@media(max-width:700px){.repayment-table th,.repayment-table td{font-size:10px;padding:8px 4px}.repayment-table .payment-cell{font-size:11px}.repayment-summary dt,.repayment-summary dd{font-size:11px}.repayment-table th:first-child,.repayment-table td:first-child{width:30%}.report-toolbar{flex-wrap:wrap}.report-toolbar .new-client{width:100%;max-width:360px}}
+
+#mortgageConfig>.config-grid:has(>#supportKindField[hidden]){grid-template-columns:1fr}

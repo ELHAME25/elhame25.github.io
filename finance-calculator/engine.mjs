@@ -152,6 +152,19 @@ function constructionSchedule(x,capacity,work,months) {
  return result;
 }
 const propertyRatio=x=>x.type==='lien'?.80:.90;
+export function propertyFunding(x){
+ const packageAmount=x.support==='package'&&!x.packageReceived&&x.income>0?(x.income<10000?150000:100000):0;
+ const propertyValue=Number(x.property)||0,extraDownPayment=Number(x.extraDownPayment)||0;
+ if(propertyValue<0||!Number.isFinite(propertyValue))throw Error('أدخل قيمة عقار صحيحة.');
+ if(extraDownPayment<0||!Number.isFinite(extraDownPayment))throw Error('أدخل دفعة إضافية صحيحة.');
+ const ratio=propertyRatio(x);
+ if(!propertyValue)return {packageAmount,propertyValue:0,propertyRatio:ratio,initialDownPayment:null,clientInitialDownPayment:null,clientDownPayment:null,extraDownPayment:0,requestedFinancing:null};
+ const initialDownPayment=Math.round(propertyValue*(1-ratio)*100)/100;
+ const clientInitialDownPayment=Math.max(0,initialDownPayment-packageAmount);
+ const clientDownPayment=clientInitialDownPayment+extraDownPayment;
+ return {packageAmount,propertyValue,propertyRatio:ratio,initialDownPayment,clientInitialDownPayment,clientDownPayment,extraDownPayment,requestedFinancing:propertyValue-packageAmount-clientDownPayment};
+}
+
 function sizeFixed(result,x){
  if(!x.fixedMethod||x.fixedMethod==='max')return result;
  if(!(x.fixedRequest>0))throw Error(x.fixedMethod==='amount'?'أدخل مبلغ التمويل المطلوب.':'أدخل القسط المطلوب.');
@@ -249,37 +262,20 @@ export function calculate(x) {
  }
  const total=rows.reduce((sum,r)=>sum+r.payment*(r.end-r.start+1),0);
  const net=construction?construction.draws.reduce((sum,d)=>sum+d.amount,0):total/(1+x.margin/100*months/12);
- const packageAmount=x.support==='package'&&!x.packageReceived?100000:0;
+ const funding=propertyFunding(x),packageAmount=funding.packageAmount;
  const financedProperty=x.property?Math.min(net,x.property*propertyRatio(x)):null;
  const required=x.property?Math.max(0,x.property-financedProperty-packageAmount):null;
  const personalNet=x.personal==null&&x.personalMonths&&x.personalMargin!=null?personal*x.personalMonths/(1+x.personalMargin/100*x.personalMonths/12):null;
  const result={rows,total,net,personalNet,monthlySupport:x.support==='monthly'?monthlySupport(x.income):0,profit:total-net,months,work,retired,retireDate,pension,service,beforeRate,second,afterRate,afterCap,personal,credit,packageAmount,required,financedProperty,customerGap:required,draws:construction?.draws??[]};
- const extra=x.extraDownPayment||0;
- if(!Number.isFinite(extra)||extra<0)throw Error('أدخل دفعة إضافية صحيحة.');
- const priceEstimated=!x.property;
- if(priceEstimated){
-  const chosen=fixed?sizeFixed(result,x):result;
-  const chosenMethod=fixed&&x.fixedMethod&&x.fixedMethod!=='max';
-  const basis=chosen.net+(chosenMethod?extra:0);
-  x={...x,property:Math.max(basis/propertyRatio(x),basis+packageAmount)};
+ if(!funding.propertyValue){
+  if((x.extraDownPayment||0)>0)throw Error('أدخل سعر العقار لاحتساب الدفعة الإضافية.');
+  return {...(fixed?sizeFixed(result,x):result),...funding,priceEstimated:false};
  }
- let bounded=result;
- if(x.property){
-  if(!Number.isFinite(x.property)||x.property<0)throw Error('أدخل سعر عقار صحيحًا.');
-  const extra=x.extraDownPayment||0;
-  if(!Number.isFinite(extra)||extra<0)throw Error('أدخل دفعة إضافية صحيحة.');
-  const target=Math.min(x.property*propertyRatio(x),x.property-packageAmount)-extra;
-  if(target<=0)throw Error('الدفعات المقدمة تغطي سعر العقار؛ لا يوجد مبلغ تمويل مطلوب.');
-  if(result.net>target+.005){
-   bounded=sizeFixed(result,{...x,fixedMethod:'amount',fixedRequest:target});
-   bounded.maximum=result.net;
-  }
- }
+ const target=funding.requestedFinancing;
+ if(target<=0)throw Error('الدعم والدفعات تغطي قيمة العقار؛ لا يوجد مبلغ تمويل مطلوب.');
+ if(target>result.net+.005)throw Error('التمويل المطلوب '+target.toLocaleString('en-US',{maximumFractionDigits:2})+' ريال يتجاوز الحد الأعلى المتاح '+result.net.toLocaleString('en-US',{maximumFractionDigits:2})+' ريال.');
+ const bounded=sizeFixed(result,{...x,fixedMethod:'amount',fixedRequest:target});
  const sized=fixed?sizeFixed(bounded,x):bounded;
- if(!x.property)return sized;
- const initialDownPayment=Math.round(x.property*(1-propertyRatio(x))*100)/100;
- return {...sized,propertyValue:x.property,priceEstimated,clientDownPayment:Math.max(0,x.property-sized.net-packageAmount),propertyRatio:propertyRatio(x),initialDownPayment,
-  clientInitialDownPayment:Math.max(0,initialDownPayment-packageAmount),extraDownPayment:x.extraDownPayment||0,
-  financedProperty:sized.net,customerGap:Math.max(0,x.property-sized.net-packageAmount-(x.extraDownPayment||0)),
-  required:Math.max(0,x.property-sized.net-packageAmount)};
+ if(sized.net<target-.005)throw Error('التمويل المختار أقل من المبلغ المطلوب للعقار بعد الدعم والدفعات المقدمة.');
+ return {...sized,...funding,priceEstimated:false,financedProperty:sized.net,customerGap:funding.clientDownPayment,required:funding.clientDownPayment};
 }
