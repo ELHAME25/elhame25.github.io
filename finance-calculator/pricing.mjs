@@ -1,4 +1,4 @@
-// مرجع المستخدم: IMG_3462.jpeg (الشخصي)، IMG_3461.png (العقاري).
+// مرجع المستخدم: IMG_3462.jpeg (الشخصي)، IMG_3473.jpeg (العقاري، مرجع أكتوبر الأحدث).
 // التحديث في هذا الملف فقط؛ لا تتغير النسب بحسب التاريخ أو اتصال خارجي.
 export const pricingReference={
  personal:{
@@ -15,7 +15,7 @@ export const pricingReference={
   nonSalaryBanker:[[8000,6.74,7.14,null],[10000,6.40,6.80,null],[20000,6.26,6.66,null],[40000,5.99,6.39,null]]
  },
  // العمود الأول Flat Rate؛ موحد للأنواع وفق تعليمات المستخدم.
- mortgage:{months:[60,120,180,240,300,360],supported:[3.88,4.08,4.37,4.71,5.05,5.35],unsupported:[5.00,5.10,5.20,5.50,5.90,6.30],lienUnsupported:[5.60,5.85,6.10,6.35,6.85,7.10]}
+ mortgage:{months:[60,120,180,240,300,360],supported:[4.05,4.25,4.57,4.90,5.25,5.56],unsupported:[5.30,5.40,5.50,5.80,6.20,6.60],lienUnsupported:[5.90,6.15,6.40,6.65,7.15,7.40]}
 };
 export const personalClasses={privateA:{minimum:5000,months:60},privateB:{minimum:8000,months:48},privateC:{minimum:10000,months:36},unapproved:{minimum:0,months:12}};
 export function validatePersonalClass(sector,income){const rule=personalClasses[sector];if(rule&&income<rule.minimum)throw Error('الراتب أقل من الحد الأدنى لفئة '+sector.slice(-1)+': '+rule.minimum.toLocaleString('en-US')+' ريال.');}
