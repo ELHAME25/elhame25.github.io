@@ -151,3 +151,11 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 .report-controls .rate-error{grid-column:2;grid-row:2;align-self:center;max-width:240px}
 .report-controls .rate-error[data-field="afterRate"]{grid-row:3}
 .report-controls:has(.rate-error:not([hidden])) #resetSecond{grid-row:4;grid-column:1}
+
+/* The personal installment is the final, taller row of the quote table. */
+.personal-installment-row{min-height:54px!important;background:#f0f6f7}
+.resultMetrics .personal-installment-row dt{font-size:14px;font-weight:700;display:flex;align-items:center;padding:12px 10px}
+.resultMetrics .personal-installment-row dd{font-size:16px;padding:12px 10px;align-content:center}
+.reportDisclaimer{display:none}
+.reportColumns:has(.personal-installment-row) .periods-block{margin:0;padding:0}
+@media(max-width:600px){.resultMetrics .personal-installment-row dt{font-size:12px}.resultMetrics .personal-installment-row dd{font-size:14px}}
