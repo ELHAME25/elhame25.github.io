@@ -254,7 +254,15 @@ export function calculate(x) {
  const required=x.property?Math.max(0,x.property-financedProperty-packageAmount):null;
  const personalNet=x.personal==null&&x.personalMonths&&x.personalMargin!=null?personal*x.personalMonths/(1+x.personalMargin/100*x.personalMonths/12):null;
  const result={rows,total,net,personalNet,monthlySupport:x.support==='monthly'?monthlySupport(x.income):0,profit:total-net,months,work,retired,retireDate,pension,service,beforeRate,second,afterRate,afterCap,personal,credit,packageAmount,required,financedProperty,customerGap:required,draws:construction?.draws??[]};
- if((x.extraDownPayment||0)>0&&!x.property)throw Error('أدخل سعر العقار لاحتساب الدفعة الإضافية.');
+ const extra=x.extraDownPayment||0;
+ if(!Number.isFinite(extra)||extra<0)throw Error('أدخل دفعة إضافية صحيحة.');
+ const priceEstimated=!x.property;
+ if(priceEstimated){
+  const chosen=fixed?sizeFixed(result,x):result;
+  const chosenMethod=fixed&&x.fixedMethod&&x.fixedMethod!=='max';
+  const basis=chosen.net+(chosenMethod?extra:0);
+  x={...x,property:Math.max(basis/propertyRatio(x),basis+packageAmount)};
+ }
  let bounded=result;
  if(x.property){
   if(!Number.isFinite(x.property)||x.property<0)throw Error('أدخل سعر عقار صحيحًا.');
@@ -262,7 +270,7 @@ export function calculate(x) {
   if(!Number.isFinite(extra)||extra<0)throw Error('أدخل دفعة إضافية صحيحة.');
   const target=Math.min(x.property*propertyRatio(x),x.property-packageAmount)-extra;
   if(target<=0)throw Error('الدفعات المقدمة تغطي سعر العقار؛ لا يوجد مبلغ تمويل مطلوب.');
-  if(result.net>target){
+  if(result.net>target+.005){
    bounded=sizeFixed(result,{...x,fixedMethod:'amount',fixedRequest:target});
    bounded.maximum=result.net;
   }
@@ -270,7 +278,7 @@ export function calculate(x) {
  const sized=fixed?sizeFixed(bounded,x):bounded;
  if(!x.property)return sized;
  const initialDownPayment=Math.round(x.property*(1-propertyRatio(x))*100)/100;
- return {...sized,propertyValue:x.property,propertyRatio:propertyRatio(x),initialDownPayment,
+ return {...sized,propertyValue:x.property,priceEstimated,clientDownPayment:Math.max(0,x.property-sized.net-packageAmount),propertyRatio:propertyRatio(x),initialDownPayment,
   clientInitialDownPayment:Math.max(0,initialDownPayment-packageAmount),extraDownPayment:x.extraDownPayment||0,
   financedProperty:sized.net,customerGap:Math.max(0,x.property-sized.net-packageAmount-(x.extraDownPayment||0)),
   required:Math.max(0,x.property-sized.net-packageAmount)};

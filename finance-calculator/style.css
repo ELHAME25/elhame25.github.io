@@ -80,3 +80,8 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 .property-hint{font-size:11px;color:var(--teal);margin-top:9px}
 .phase-card h4{font-size:12px}.phase-card h4 small{display:block;color:var(--muted);font-size:10px;font-weight:400}
 .payment-lines{margin-top:10px}.payment-lines>div{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 0;font-size:12px}.payment-lines strong{font-size:15px}.payment-lines .actual-payment{border-top:1px solid var(--line);color:var(--teal)}
+
+/* Put the installment schedule directly below the compact quote details. */
+.reportColumns{grid-template-columns:minmax(0,1fr);gap:16px}
+.resultMetrics>div{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
+.periods-output>.report-section-title{margin-top:0}
