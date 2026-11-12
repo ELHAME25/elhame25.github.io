@@ -27,4 +27,6 @@
 
 .settlement-hint{margin:18px 0 0;padding:12px 15px;border:1px solid #d9e6ea;border-radius:8px;color:#58546e;background:#f6f9fa;font-size:.85rem;line-height:1.9;text-align:center}
 
-.duration-years{margin-top:16px}.keyboard-bar{position:fixed;right:12px;z-index:50;background:white;border:1px solid var(--line);box-shadow:0 3px 16px #24164a25;border-radius:8px}.keyboard-bar button{background:var(--purple);color:white;border-radius:7px;padding:9px 24px;font:inherit;font-weight:700}@media(pointer:fine){.keyboard-bar{display:none}}
+.duration-years{margin-top:16px}.keyboard-bar{position:fixed;right:12px;z-index:50;background:white;border:1px solid var(--line);box-shadow:0 3px 16px #24164a25;border-radius:8px}.keyboard-bar button{background:var(--purple);color:white;border-radius:7px;padding:9px 24px;font:inherit;font-weight:700}
+
+.quick-result{display:none!important}.app-shell{padding-bottom:24px}dialog .keyboard-bar{position:fixed;z-index:100}
