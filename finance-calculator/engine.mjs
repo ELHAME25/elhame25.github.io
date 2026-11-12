@@ -203,7 +203,9 @@ export function calculate(x) {
  const personal=x.personalMonths ? (x.personal??Math.max(0,x.income*(alreadyRetired?.25:.3333)-Math.max(...Array.from({length:x.personalMonths},(_,i)=>external(i+1)))-credit)):0;
  if(x.personal==null&&x.personalMonths>personalMonthsAvailable(x,retirementAgeFor(x))) throw Error('مدة الشخصي الجديد تتجاوز المدة المتاحة حسب جهة العمل والعمر.');
  if(x.personalMonths&&personal<=0) throw Error('سقف الشخصي مستنفد أو قسط الشخصي غير صالح.');
- if(x.type==='offplan'&&x.buildMonths>=months) throw Error('مدة الإنشاء يجب أن تكون أقل من مدة التمويل.');
+ const grace=x.type==='offplan'?(x.buildMonths||0):0;const gracePayment=x.constructionPayment??400;
+ if(!Number.isInteger(grace)||grace<0||grace>=months)throw Error('فترة الإنشاء يجب أن تكون عدد أشهر صحيحًا وأقل من مدة التمويل.');
+ if(grace&&(!Number.isFinite(gracePayment)||gracePayment<0))throw Error('أدخل قسطًا ميسرًا صحيحًا.');
  if(x.type==='self'&&(Math.abs(x.draws.reduce((s,d)=>s+d.share,0)-100)>1e-8||!x.draws.length||x.draws[0].month!==1||x.draws.some((d,i)=>d.month>months||(i>0&&d.month<x.draws[i-1].month)))) throw Error('دفعات البناء تبدأ في الشهر 1، وتترتب داخل المدة، ويكون مجموعها 100%.');
  const rows=[], capacity=[];
  for(let month=1;month<=months;month++){
@@ -213,10 +215,10 @@ export function calculate(x) {
    const rate=isRetired?afterRate:fixed?second:phase===1?beforeRate:second;
    const p=hasPersonal?personal:0, obligations=external(month)+credit;
    const available=(isRetired?pension:x.income)*rate/100-p-obligations;
-   const building=x.type==='offplan'&&month<=x.buildMonths;
+   const building=x.type==='offplan'&&month<=grace;
    const draw=x.type==='self'?x.draws.filter(d=>d.month<=month).reduce((sum,d)=>sum+d.share,0):100;
-   const installment=building?x.constructionPayment:available;
-   if(available<-.005||building&&installment+x.downInstallment>available+.005) throw Error('القسط والالتزامات تتجاوز سقف الاستقطاع في الشهر '+month+'.');
+   const installment=building?gracePayment:available;
+   if(available<-.005||building&&installment>available+.005) throw Error('القسط والالتزامات تتجاوز سقف الاستقطاع في الشهر '+month+'.');
    const label=building?'خلال الإنشاء':phase===1?'الفترة الأولى':phase===2?(fixed?'قبل التقاعد':'الفترة الثانية'):'بعد التقاعد';
    capacity.push({month,label,rate,p,obligations,draw,phase,available:Math.max(0,available),installment});
  }
@@ -228,6 +230,16 @@ export function calculate(x) {
    for(const r of band){r.available=payment;r.installment=payment;}
   };
   fix(0,work);fix(work,months);
+ }
+ // Same fixed off-plan rule in both sources: Operation!DR178/DR181.
+ // Discount all installments by the full term Flat Rate factor, then subtract
+ // construction installments from principal. Reconcile that deduction by reducing
+ // the regular working installments; the construction payment stays unchanged.
+ if(fixed&&grace){
+  const regular=capacity.filter(r=>r.month>grace&&r.month<=work);
+  const band=regular.length?regular:capacity.filter(r=>r.month>grace);
+  const reduction=grace*gracePayment*(1+x.margin/100*months/12)/band.length;
+  for(const r of band){if(r.installment<reduction-.005)throw Error('القسط الميسر وفترة الإنشاء لا يتركان مبلغ تمويل متاحًا.');r.installment=Math.max(0,r.installment-reduction);}
  }
  const construction=x.type==='self'?constructionSchedule(x,capacity,work,months):null;
  for(const {month,label,rate,p,obligations,draw,phase,installment} of capacity){
