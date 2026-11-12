@@ -1,7 +1,8 @@
-import {personalRate,mortgageRate,financingDeductions} from './pricing.mjs';
-import {stages,approvalDraws} from './draws.mjs';
-import {ranks,validateBirth,hijriDate,calculatePersonal,calculate,mortgageWindow,estimatePension} from './engine.mjs';
-import {prepareReport,downloadReport,shareReport,invalidateReport} from './pdf.mjs';
+import {installUpdates} from './updates.mjs?v=ff090ffd035b3327';
+import {personalRate,mortgageRate,financingDeductions} from './pricing.mjs?v=9415f061b3b300cc';
+import {stages,approvalDraws} from './draws.mjs?v=d697f464270110f1';
+import {ranks,validateBirth,hijriDate,calculatePersonal,calculate,mortgageWindow,estimatePension} from './engine.mjs?v=72e0a5205c4ded15';
+import {prepareReport,downloadReport,shareReport,invalidateReport} from './pdf.mjs?v=a8de45750cf6dba7';
 const $=id=>document.getElementById(id), num=id=>Number($(id).value)||0;
 const fmt=n=>Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
 function durationYears(months){const years=Math.floor(months/12),rest=months%12;const parts=[];if(years)parts.push(years===1?'سنة واحدة':years===2?'سنتان':years+' '+(years<=10?'سنوات':'سنة'));if(rest)parts.push(rest===1?'شهر واحد':rest===2?'شهران':rest+' '+(rest<=10?'أشهر':'شهرًا'));return parts.join(' و')||'0 شهر';}
@@ -65,3 +66,20 @@ function positionKeyboardBar(){const v=window.visualViewport;$('keyboardBar').st
 function finishKeyboard(){keyboardInput?.blur();if(document.activeElement?.matches(keyboardSelector))document.activeElement.blur();keyboardInput=null;$('keyboardBar').hidden=true;}
 $('keyboardDone').onpointerdown=e=>e.preventDefault();$('keyboardDone').onpointerup=finishKeyboard;$('keyboardDone').onclick=finishKeyboard;$('keyboardDone').ontouchend=e=>{e.preventDefault();finishKeyboard();};
 if(window.visualViewport){window.visualViewport.addEventListener('resize',positionKeyboardBar);window.visualViewport.addEventListener('scroll',positionKeyboardBar);}
+
+function captureUpdateDraft(){
+ const fields=[...document.querySelectorAll('input[id],select[id],textarea[id]')].map(e=>({id:e.id,value:e.value,checked:e.checked}));
+ const rows=id=>[...$(id).children].map(row=>[...row.querySelectorAll('input')].map(e=>e.value));
+ const {quote,reportInView,...settings}=state;
+ return {fields,debts:rows('debts'),draws:rows('manualRows'),settings,scroll:window.scrollY};
+}
+function restoreUpdateDraft(draft){
+ if(!draft||!Array.isArray(draft.fields)||!draft.settings)return;
+ $('debts').replaceChildren();for(const values of (draft.debts||[]).slice(0,5)){addDebt();[...$('debts').children].at(-1).querySelectorAll('input').forEach((e,i)=>e.value=values[i]??'');}
+ $('manualRows').replaceChildren();for(const values of draft.draws||[]){addManual();[...$('manualRows').children].at(-1).querySelectorAll('input').forEach((e,i)=>e.value=values[i]??'');}
+ Object.assign(state,draft.settings,{quote:null});
+ for(const f of draft.fields){const e=$(f.id);if(e){e.value=f.value;if(e.type==='checkbox'||e.type==='radio')e.checked=!!f.checked;}}
+ for(const [selector,key,value] of [['[data-product]','product',state.product],['[data-property]','property',state.property],['[data-method]','method',state.methods[state.product]||'max'],['[data-duration]','duration',state.durationMode],['[data-draw-mode]','drawMode',state.manualMode],['[data-personal-kind]','personalKind',state.personalKind]])document.querySelectorAll(selector).forEach(b=>b.setAttribute('aria-pressed',b.dataset[key]===value));
+ update();window.requestAnimationFrame(()=>window.scrollTo({top:draft.scroll||0}));
+}
+if(typeof window.addEventListener==='function')installUpdates({capture:captureUpdateDraft,restore:restoreUpdateDraft});

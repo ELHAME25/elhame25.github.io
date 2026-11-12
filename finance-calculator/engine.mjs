@@ -1,4 +1,4 @@
-import {personalClasses,validatePersonalClass,financingDeductions} from './pricing.mjs';
+import {personalClasses,validatePersonalClass,financingDeductions} from './pricing.mjs?v=9415f061b3b300cc';
 export const ranks = {
  'جندي / جندي أول':[44,44], 'عريف':[46,46], 'وكيل رقيب':[48,48], 'رقيب / رقيب أول':[50,50], 'رئيس رقباء':[52,52],
  'ملازم / ملازم أول':[44,42], 'نقيب':[48,46], 'رائد':[50,48], 'مقدم':[52,50], 'عقيد':[54,52], 'عميد':[56,54], 'لواء':[58,56]
