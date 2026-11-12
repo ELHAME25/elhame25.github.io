@@ -49,8 +49,12 @@
 <section class="panel adjust-panel" id="adjustPanel" hidden>
 <div class="segmented" id="methodControls"><button data-method="max" type="button" aria-pressed="true">الحد الأعلى</button><button data-method="payment" type="button" aria-pressed="false">حسب القسط</button><button data-method="amount" type="button" aria-pressed="false">حسب المبلغ</button></div>
 <label id="requestField" hidden><span id="requestLabel"></span><input id="request" type="number" min=".01" step=".01" inputmode="decimal"></label>
-<div id="reportControls" class="report-controls"><details class="second-adjust" id="secondAdjust" open hidden><summary>تعديل استقطاع الفترة الثانية</summary><output id="firstRate" hidden>—</output><div><label>استقطاع الفترة الثانية قبل التقاعد %<input id="secondRate" type="number" min="0" max="65" step=".01" inputmode="decimal"></label></div><button type="button" id="resetSecond" class="text-button">الحد الأعلى</button></details>
-<label id="afterAdjust" hidden>استقطاع ما بعد التقاعد %<input id="afterRate" type="number" min="0" max="65" step=".01" inputmode="decimal"></label></div></section>
+<div id="reportControls" class="report-controls">
+<h3 class="report-section-title">تفاصيل الاستقطاعات خلال فترة التمويل</h3>
+<output id="firstRate" hidden>—</output>
+<div id="secondAdjust" hidden><output id="secondRateValue">—</output><details class="second-adjust"><summary>تعديل استقطاع الفترة الثانية</summary><label>استقطاع الفترة الثانية إلى سن التقاعد %<input id="secondRate" type="number" min="0" max="65" step=".01" inputmode="decimal"></label></details></div>
+<div id="afterAdjust" hidden><output id="afterRateValue">—</output><details class="second-adjust"><summary>تعديل استقطاع الفترة الثالثة</summary><label>استقطاع الفترة الثالثة بعد التقاعد %<input id="afterRate" type="number" min="0" max="65" step=".01" inputmode="decimal"></label></details></div>
+<button type="button" id="resetSecond" class="text-button">الحد الأعلى</button></div></section>
 </div>
 </div>
 <div class="validation" id="message" role="status" hidden></div>
