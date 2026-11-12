@@ -104,3 +104,10 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 .deduction-input b{position:absolute;right:12px;top:10px;color:var(--teal);font-size:14px}
 #resetSecond{grid-column:1/-1;justify-self:end;padding:3px 0;font-size:11px}
 @media(max-width:700px){.installment-metrics dt{font-size:11px}.installment-metrics dd{font-size:12px}.report-controls{grid-template-columns:1fr}}
+
+/* Keep the reset action immediately below its percentage fields. */
+#resetSecond{justify-self:stretch;text-align:center;border:1px solid #cde4e2;background:#edf7f6;border-radius:6px;padding:10px 14px;font-size:12px;margin-top:0}
+.down-payment-breakdown{margin-top:14px;align-items:end}
+.down-payment-breakdown output{font-size:16px;justify-content:center;text-align:center}
+.installment-metrics>div:not(:first-child) dd{font-weight:700}
+.reportIdentity{margin-top:14px;padding-top:12px;gap:24px}
