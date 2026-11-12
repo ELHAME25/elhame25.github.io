@@ -131,3 +131,23 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 .repayment-list td:nth-child(2){width:30%;white-space:nowrap}
 .repayment-list td:last-child{width:18%;white-space:nowrap;text-align:center;color:var(--muted)}
 @media(max-width:600px){.repayment-list td{font-size:11px;padding:9px 5px}.repayment-list .amount{font-size:12px}.repayment-list .currency{font-size:9px;margin-inline-start:3px}.repayment-list td:last-child{font-size:10px}}
+
+/* Quote and payment columns share the same amount/duration boundaries. */
+.product-title{display:none}
+.resultMetrics>div{grid-template-columns:52% 48%}
+.repayment-list td:first-child{width:52%}.repayment-list td:nth-child(2){width:30%;white-space:normal}.repayment-list td:last-child{width:18%}
+.repayment-list .period-total{background:#f0f6f7}.repayment-list .period-total td{font-weight:700}
+.ratio-chip{display:inline-block;font-size:10px;color:#008d8c;margin-inline-start:5px;direction:ltr;unicode-bidi:isolate}
+.resultMetrics dt,.resultMetrics dd,.repayment-list td{font-size:12px;line-height:1.5}
+.report-controls{grid-template-columns:repeat(2,minmax(0,240px));gap:10px;justify-content:start;align-items:end}
+.report-controls h3{font-size:12px}.report-controls label{font-size:11px}.report-controls input{height:38px!important;min-height:38px!important}
+#resetSecond{grid-column:auto;width:100%;max-width:240px;min-height:38px;padding:8px;font-size:11px}
+.rate-error{grid-column:1/-1;margin:0;padding:8px;font-size:11px}
+.lien-rule{font-size:12px;color:var(--teal);padding:8px 0}
+@media(max-width:600px){.report-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.repayment-list td,.resultMetrics dt{font-size:10px}.repayment-list .amount,.resultMetrics dd{font-size:11px}.ratio-chip{font-size:9px}.repayment-list td:last-child{font-size:9px}}
+
+#secondAdjust{grid-column:1;grid-row:2}#afterAdjust{grid-column:1;grid-row:3}
+#resetSecond{grid-column:2;grid-row:2}
+.report-controls .rate-error{grid-column:2;grid-row:2;align-self:center;max-width:240px}
+.report-controls .rate-error[data-field="afterRate"]{grid-row:3}
+.report-controls:has(.rate-error:not([hidden])) #resetSecond{grid-row:4;grid-column:1}

@@ -152,15 +152,17 @@ function constructionSchedule(x,capacity,work,months) {
  return result;
 }
 const propertyRatio=x=>x.type==='lien'?.80:.90;
-export function propertyFunding(x){
- const packageAmount=x.support==='package'&&!x.packageReceived&&x.income>0?(x.income<10000?150000:100000):0;
- const propertyValue=Number(x.property)||0,extraDownPayment=Number(x.extraDownPayment)||0;
+export function propertyFunding(x,capacity=Infinity){
+ const packageAmount=x.type!=='lien'&&x.support==='package'&&!x.packageReceived&&x.income>0?(x.income<10000?150000:100000):0;
+ const propertyValue=Number(x.property)||0,extraDownPayment=x.type==='lien'?0:Number(x.extraDownPayment)||0;
  if(propertyValue<0||!Number.isFinite(propertyValue))throw Error('أدخل قيمة عقار صحيحة.');
  if(extraDownPayment<0||!Number.isFinite(extraDownPayment))throw Error('أدخل دفعة إضافية صحيحة.');
  const ratio=propertyRatio(x);
  if(!propertyValue)return {packageAmount,propertyValue:0,propertyRatio:ratio,initialDownPayment:null,clientInitialDownPayment:null,clientDownPayment:null,extraDownPayment:0,requestedFinancing:null};
  const initialDownPayment=Math.round(propertyValue*(1-ratio)*100)/100;
- const clientInitialDownPayment=Math.max(0,initialDownPayment-packageAmount);
+ const statutoryContribution=Math.max(0,initialDownPayment-packageAmount);
+ const bankLimit=Math.min(Math.max(0,capacity),propertyValue-packageAmount-statutoryContribution);
+ const clientInitialDownPayment=propertyValue-packageAmount-bankLimit;
  const clientDownPayment=clientInitialDownPayment+extraDownPayment;
  return {packageAmount,propertyValue,propertyRatio:ratio,initialDownPayment,clientInitialDownPayment,clientDownPayment,extraDownPayment,requestedFinancing:propertyValue-packageAmount-clientDownPayment};
 }
@@ -262,7 +264,7 @@ export function calculate(x) {
  }
  const total=rows.reduce((sum,r)=>sum+r.payment*(r.end-r.start+1),0);
  const net=construction?construction.draws.reduce((sum,d)=>sum+d.amount,0):total/(1+x.margin/100*months/12);
- const funding=propertyFunding(x),packageAmount=funding.packageAmount;
+ const funding=propertyFunding(x,net),packageAmount=funding.packageAmount;
  const financedProperty=x.property?Math.min(net,x.property*propertyRatio(x)):null;
  const required=x.property?Math.max(0,x.property-financedProperty-packageAmount):null;
  const personalNet=x.personal==null&&x.personalMonths&&x.personalMargin!=null?personal*x.personalMonths/(1+x.personalMargin/100*x.personalMonths/12):null;
@@ -273,9 +275,8 @@ export function calculate(x) {
  }
  const target=funding.requestedFinancing;
  if(target<=0)throw Error('الدعم والدفعات تغطي قيمة العقار؛ لا يوجد مبلغ تمويل مطلوب.');
- if(target>result.net+.005)throw Error('التمويل المطلوب '+target.toLocaleString('en-US',{maximumFractionDigits:2})+' ريال يتجاوز الحد الأعلى المتاح '+result.net.toLocaleString('en-US',{maximumFractionDigits:2})+' ريال.');
  const bounded=sizeFixed(result,{...x,fixedMethod:'amount',fixedRequest:target});
  const sized=fixed?sizeFixed(bounded,x):bounded;
- if(sized.net<target-.005)throw Error('التمويل المختار أقل من المبلغ المطلوب للعقار بعد الدعم والدفعات المقدمة.');
- return {...sized,...funding,priceEstimated:false,financedProperty:sized.net,customerGap:funding.clientDownPayment,required:funding.clientDownPayment};
+ const clientDownPayment=funding.propertyValue-packageAmount-sized.net;
+ return {...sized,...funding,borrowingCapacity:result.net,clientDownPayment,priceEstimated:false,financedProperty:sized.net,customerGap:clientDownPayment,required:clientDownPayment};
 }
