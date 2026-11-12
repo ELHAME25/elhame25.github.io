@@ -3,6 +3,7 @@ export const ranks = {
  'جندي / جندي أول':[44,44], 'عريف':[46,46], 'وكيل رقيب':[48,48], 'رقيب / رقيب أول':[50,50], 'رئيس رقباء':[52,52],
  'ملازم / ملازم أول':[44,42], 'نقيب':[48,46], 'رائد':[50,48], 'مقدم':[52,50], 'عقيد':[54,52], 'عميد':[56,54], 'لواء':[58,56]
 };
+// المدني: سن 60؛ تحقق مستقل من إكسل الرياض بتاريخ 2026-11-12.
 const retirementBySector={civil:60,privateA:60,privateB:60,privateC:60,bank:60,corporation:60,unapproved:60};
 function retirementAgeFor(x){
  if(x.sector==='retired')return null;
@@ -76,6 +77,9 @@ function personalMonthsAvailable(x,retirementAge){
  const months=x.birthHijri?Math.floor((ceiling-age-Math.round(age*11/355*100)/100)*12+1e-9):monthsBetween(x.today,ageDates(x,ceiling));
  return Math.max(0,Math.min(personalTermBySector[x.sector]??60,months-2));
 }
+// الرياض Operation: AU76=ROUNDUP(AN46*12,0)، AV75=ROUNDDOWN(AT77*12,0)-5،
+// AU78=AU76+AV75؛ AT80=الأساسي*AU78/480 للمدني و/420 للعسكري.
+// شهر الخدمة المتوقع للمعاش مستقل عن المدة المختارة للتمويل.
 export function estimatePension(x){
  const retirementAge=retirementAgeFor(x);
  const military=x.sector==='military';
