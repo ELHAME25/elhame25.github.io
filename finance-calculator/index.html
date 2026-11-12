@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="ar" dir="rtl" data-release="20261112T205903">
+<html lang="ar" dir="rtl" data-release="20261112T210753">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>حاسبة التمويل</title>
-<link rel="stylesheet" href="style.css?v=5f27ac9059d09139">
+<link rel="stylesheet" href="style.css?v=1a0db19535ea6c8d">
 <link rel="apple-touch-icon" sizes="180x180" href="icon-180.png?v=riyad1">
 <link rel="icon" type="image/svg+xml" href="icon.svg?v=riyad1">
 <link rel="manifest" href="manifest.webmanifest">
@@ -16,7 +16,7 @@
 <header class="topbar"><div class="topbar-inner"><a class="wordmark" href="./">حاسبة التمويل<span class="brand-line"></span></a></div></header>
 <main class="app-shell">
 <section class="panel identity-panel" id="identityPanel"><div class="client-toolbar"><h1>بيانات الحسبة</h1><button type="button" id="newClient" class="new-client"><span>＋</span> عميل جديد</button></div><div class="identity-grid"><label>مسؤول المبيعات<input id="advisor" value="خالد الماطر" maxlength="100"></label><label>رقم الجوال<input id="phone" type="tel" maxlength="30" inputmode="numeric" data-number="integer" dir="ltr" lang="en"></label><label>اسم العميل<input id="clientName" maxlength="100"></label></div>
-<button type="button" id="startCalculation" class="primary-button start-calculation">اذهب للاحتساب ←</button></section><section id="calculationPage" hidden><div class="calculation-toolbar"><button type="button" id="editIdentity" class="text-button">تعديل بيانات الحسبة</button></div><nav class="product-nav" aria-label="التمويل"><button type="button" data-product="personal" aria-pressed="true">الشخصي</button><button type="button" data-product="fixed" aria-pressed="false">العقاري الثابت</button><button type="button" data-product="flex" aria-pressed="false">العقاري المرن</button><button type="button" data-product="manual" aria-pressed="false">تقرير دفعات</button></nav>
+<button type="button" id="startCalculation" disabled class="primary-button start-calculation">اذهب للاحتساب ←</button></section><section id="calculationPage" hidden><nav class="product-nav" aria-label="التمويل"><button type="button" data-product="personal" aria-pressed="true">الشخصي</button><button type="button" data-product="fixed" aria-pressed="false">العقاري الثابت</button><button type="button" data-product="flex" aria-pressed="false">العقاري المرن</button><button type="button" data-product="manual" aria-pressed="false">تقرير دفعات</button></nav>
 <div class="calculator-grid"><div class="entry-column">
 <section class="panel client-panel">
 <div class="panel-heading"><h1>بيانات العميل</h1></div>
@@ -60,10 +60,10 @@
 </section>
 <section class="panel adjust-panel" id="adjustPanel" hidden>
 <div id="reportControls" class="report-controls">
-<h3 class="report-section-title">تفاصيل الاستقطاعات خلال فترة التمويل</h3>
+<h3 class="report-section-title">تعديل نسبة الاستقطاع</h3>
 <output id="firstRate" hidden>—</output>
-<div id="secondAdjust" hidden><output id="secondRateValue">—</output><details class="second-adjust"><summary id="secondTitle">تعديل استقطاع الفترة الثانية</summary><label><span id="secondLabel">استقطاع الفترة الثانية إلى سن التقاعد %</span><input id="secondRate" type="text" inputmode="decimal" dir="ltr" lang="en" autocomplete="off" data-percentage></label></details></div>
-<div id="afterAdjust" hidden><output id="afterRateValue">—</output><details class="second-adjust"><summary id="afterTitle">تعديل استقطاع الفترة الثالثة</summary><label><span id="afterLabel">استقطاع الفترة الثالثة بعد التقاعد %</span><input id="afterRate" type="text" inputmode="decimal" dir="ltr" lang="en" autocomplete="off" data-percentage></label></details></div>
+<div id="secondAdjust" hidden><label><span id="secondTitle">تعديل نسبة استقطاع الفترة الثانية</span><span class="deduction-input"><input id="secondRate" type="text" inputmode="decimal" dir="ltr" lang="en" autocomplete="off" data-percentage aria-describedby="secondLabel"><b>%</b></span></label><span id="secondLabel" hidden></span><output id="secondRateValue" hidden></output></div>
+<div id="afterAdjust" hidden><label><span id="afterTitle">تعديل نسبة استقطاع الفترة الثالثة</span><span class="deduction-input"><input id="afterRate" type="text" inputmode="decimal" dir="ltr" lang="en" autocomplete="off" data-percentage aria-describedby="afterLabel"><b>%</b></span></label><span id="afterLabel" hidden></span><output id="afterRateValue" hidden></output></div>
 <button type="button" id="resetSecond" class="text-button">الحد الأعلى</button></div></section>
 </div>
 </div>
@@ -74,5 +74,5 @@
 </section>
 </section></main><div id="quickResult" class="quick-result" hidden><div><span id="quickLabel">التمويل</span><strong id="quickAmount"></strong></div><div><span>المدة</span><strong id="quickMonths"></strong></div><button id="viewResult" type="button">عرض الحسبة <span>←</span></button></div><dialog id="sharingDialog"><div class="panel-heading"><h2>مشاركة الملف</h2><button type="button" id="closeSharing" class="text-button">إغلاق</button></div><label>الملاحظات<textarea id="notes" rows="5" maxlength="4000"></textarea></label><div class="result-actions"><a id="openPdf" hidden target="_blank" rel="noopener">فتح PDF</a><button type="button" id="sharePdf" class="secondary-button" hidden>مشاركة التقرير</button><button type="button" class="primary-button" id="download">تنزيل PDF<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg></button></div></dialog>
 <footer class="site-footer">إعداد خالد الماطر</footer>
-<script type="module" src="app.mjs?v=73ef0b92caef51f5"></script>
+<script type="module" src="app.mjs?v=af27889af9fdf12c"></script>
 <div id="keyboardBar" class="keyboard-bar" hidden><button id="keyboardDone" type="button">تم ✓</button></div></body></html>

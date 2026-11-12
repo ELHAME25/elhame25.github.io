@@ -85,3 +85,22 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 .reportColumns{grid-template-columns:minmax(0,1fr);gap:16px}
 .resultMetrics>div{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
 .periods-output>.report-section-title{margin-top:0}
+
+/* One consistent label/value table for installments on every screen. */
+.installment-export{display:none!important}
+.installment-tables{display:grid;gap:10px}
+.installment-metrics{border:1px solid var(--line);margin:0}
+.installment-metrics>div{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);border-bottom:1px solid var(--line);min-height:37px}
+.installment-metrics>div:last-child{border-bottom:0}
+.installment-metrics dt{padding:9px 10px;font-size:.82rem;color:#6b657e;border-inline-end:1px solid var(--line)}
+.installment-metrics dd{padding:9px 10px;font-size:.9rem;text-align:center;font-weight:700;align-self:center}
+.installment-metrics small{display:block;font-size:10px;font-weight:400;color:var(--muted);margin-top:3px}
+.installment-metrics>div:first-child{background:#f5f8fa}
+.report-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px;padding-top:16px}
+.report-controls h3{grid-column:1/-1;font-size:12px}
+.report-controls label{font-size:11px;gap:8px}
+.deduction-input{position:relative;display:block}
+.deduction-input input{padding-inline:12px 32px;height:44px!important;min-height:44px;text-align:center}
+.deduction-input b{position:absolute;right:12px;top:10px;color:var(--teal);font-size:14px}
+#resetSecond{grid-column:1/-1;justify-self:end;padding:3px 0;font-size:11px}
+@media(max-width:700px){.installment-metrics dt{font-size:11px}.installment-metrics dd{font-size:12px}.report-controls{grid-template-columns:1fr}}
