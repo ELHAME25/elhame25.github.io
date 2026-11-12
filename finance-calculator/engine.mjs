@@ -185,7 +185,7 @@ export function mortgageWindow(x){
 export function calculate(x) {
  const fixed=x.repayment==='fixed';
  const beforeRate=cap(x.income,x.support);
- const second=fixed?beforeRate:x.second??beforeRate;
+ const second=x.second??beforeRate;
  if(second<0||second>beforeRate) throw Error('نسبة الفترة الثانية يجب أن تكون بين صفر والسقف '+beforeRate+'%.');
  const {retirementAge,alreadyRetired,retireDate,workLeft,maxMonths}=mortgageWindow(x);
  if(x.term!=null&&(!Number.isInteger(x.term)||x.term<1||x.term>maxMonths))throw Error('المدة القصوى المتاحة '+maxMonths+' شهرًا؛ لا يمكن تجاوز حد العمر.');
@@ -208,7 +208,7 @@ export function calculate(x) {
    const isRetired=month>work;
    const hasPersonal=month<=x.personalMonths&&personal>0;
    const phase=isRetired?3:hasPersonal?1:2;
-   const rate=phase===1?beforeRate:phase===2?second:afterRate;
+   const rate=isRetired?afterRate:fixed?second:phase===1?beforeRate:second;
    const p=hasPersonal?personal:0, obligations=external(month)+credit;
    const available=(isRetired?pension:x.income)*rate/100-p-obligations;
    const building=x.type==='offplan'&&month<=x.buildMonths;
