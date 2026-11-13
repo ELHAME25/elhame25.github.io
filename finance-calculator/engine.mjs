@@ -1,4 +1,4 @@
-import {personalClasses,validatePersonalClass,financingDeductions} from './pricing.mjs?v=9415f061b3b300cc';
+import {personalClasses,validatePersonalClass,financingDeductions} from './pricing.mjs?v=8a9f08c809b2e58b';
 export const ranks = {
  'جندي / جندي أول':[44,44], 'عريف':[46,46], 'وكيل رقيب':[48,48], 'رقيب / رقيب أول':[50,50], 'رئيس رقباء':[52,52],
  'ملازم / ملازم أول':[44,42], 'نقيب':[48,46], 'رائد':[50,48], 'مقدم':[52,50], 'عقيد':[54,52], 'عميد':[56,54], 'لواء':[58,56]
@@ -186,6 +186,34 @@ function sizeFixed(result,x){
  return {...result,rows,net,total,profit:total-net,maximum:result.net,draws,financedProperty,
   customerGap:x.property?Math.max(0,x.property-financedProperty-result.packageAmount):null};
 }
+// Property sizing must preserve the maximum mortgage installment during personal finance.
+function sizeFlexible(result,x,target){
+ if(target>result.net+.005)throw Error('مبلغ التمويل يتجاوز الحد المتاح.');
+ const locked=r=>r.personal>0||r.label==='خلال الإنشاء';
+ const lockedTotal=result.rows.filter(locked).reduce((sum,r)=>sum+r.payment*(r.end-r.start+1),0);
+ const factor=x.type==='self'?x.draws.reduce((sum,d)=>sum+d.share/100*(1+x.margin/100*(result.months-d.month+1)/12),0):1+x.margin/100*result.months/12;
+ const targetTotal=target*factor,variableTotal=result.total-lockedTotal;
+ if(Math.abs(target-result.net)<.005&&variableTotal<.005)return result;
+ if(targetTotal<=lockedTotal+.005||variableTotal<.005)throw Error('مبلغ التمويل لا يغطي أقساط فترة الشخصي عند سقف الاستقطاع.');
+ const scale=Math.max(0,(targetTotal-lockedTotal)/variableTotal);
+ const rows=result.rows.map(r=>locked(r)?{...r}:{...r,payment:r.payment*scale});
+ let draws=result.draws;
+ if(x.type==='self'){
+  const budgets=x.draws.map(d=>({remaining:target*d.share/100*(1+x.margin/100*(result.months-d.month+1)/12),installments:[]}));
+  for(let month=1;month<=result.months;month++){
+   const payment=rows.find(r=>r.start<=month&&r.end>=month).payment;
+   const active=budgets.map((b,i)=>({b,i})).filter(({b,i})=>x.draws[i].month<=month&&b.remaining>1e-8);
+   const available=active.reduce((sum,{b})=>sum+b.remaining,0);
+   if(payment>available+.01)throw Error('مبلغ الدفعات المصروفة لا يغطي أقساط فترة الشخصي عند سقف الاستقطاع.');
+   for(const {b} of active){const paid=Math.min(b.remaining,payment*b.remaining/(available||1));b.remaining-=paid;b.installments.push({month,payment:paid});}
+  }
+  if(budgets.some(b=>Math.abs(b.remaining)>.02))throw Error('تعذر مطابقة دفعات البناء مع أقساط التمويل.');
+  draws=result.draws.map((d,i)=>{const amount=target*d.share/100,factor=1+x.margin/100*(result.months-d.month+1)/12;const before=budgets[i].installments.filter(p=>p.month<=result.work).reduce((s,p)=>s+p.payment,0)/factor;return {...d,amount,before,after:amount-before,installments:budgets[i].installments};});
+ }
+ const total=rows.reduce((sum,r)=>sum+r.payment*(r.end-r.start+1),0);
+ const effective=phase=>{const band=rows.filter(r=>r.phase===phase&&r.label!=='خلال الإنشاء');const income=phase===3?result.pension:x.income;return band.length&&income>0?Math.round(Math.max(...band.map(r=>(r.payment+r.personal+r.obligations)/income*100))*100)/100:null;};
+ return {...result,rows,draws,net:target,total,profit:total-target,second:effective(2)??result.second,afterRate:effective(3)??result.afterRate,maximum:result.net};
+}
 export function mortgageWindow(x){
  validateBirth(x);
  const retirementAge=retirementAgeFor(x);
@@ -202,7 +230,8 @@ export function calculate(x) {
  const fixed=x.repayment==='fixed';
  const beforeRate=cap(x.income,x.support);
  const second=x.second??beforeRate;
- if(second<0||second>beforeRate) throw Error('نسبة الفترة الثانية يجب أن تكون بين صفر والسقف '+beforeRate+'%.');
+ if(!Number.isFinite(second)||second<=0)throw Error('أدخل نسبة استقطاع صالحة للفترة الثانية.');
+ if(second>beforeRate)throw Error('نسبة الفترة الثانية تتجاوز السقف '+beforeRate+'%.');
  const {retirementAge,alreadyRetired,retireDate,workLeft,maxMonths}=mortgageWindow(x);
  if(x.term!=null&&(!Number.isInteger(x.term)||x.term<1||x.term>maxMonths))throw Error('المدة القصوى المتاحة '+maxMonths+' شهرًا؛ لا يمكن تجاوز حد العمر.');
  const months=x.term??maxMonths;
@@ -211,7 +240,7 @@ export function calculate(x) {
  if(retired&&!alreadyRetired&&x.pension==null&&(!x.hire||x.hire<=x.birth||x.hire>x.today||x.hire>retireDate||!x.basic)) throw Error('أدخل الراتب الأساسي وتاريخ التعيين لحساب مرحلة التقاعد.');
  const {service,pension}=estimatePension(x);
  if(retired&&pension<=0) throw Error('أدخل راتبًا تقاعديًا صالحًا.');
- const afterCap=cap(pension,x.support),afterRate=x.afterDeduction??afterCap;if(afterRate<0||afterRate>afterCap)throw Error('استقطاع ما بعد التقاعد يتجاوز السقف '+afterCap+'%.');
+ const afterCap=cap(pension,x.support),afterRate=x.afterDeduction??afterCap;if(!Number.isFinite(afterRate)||afterRate<=0)throw Error('أدخل نسبة استقطاع صالحة لما بعد التقاعد.');if(afterRate>afterCap)throw Error('استقطاع ما بعد التقاعد يتجاوز السقف '+afterCap+'%.');
  const credit=x.credit*.05;
  const external=m=>activeDebt(x.debts,m);
  const personal=x.personalMonths ? (x.personal??Math.max(0,x.income*(alreadyRetired?.25:.3333)-Math.max(...Array.from({length:x.personalMonths},(_,i)=>external(i+1)))-credit)):0;
@@ -275,7 +304,7 @@ export function calculate(x) {
  }
  const target=funding.requestedFinancing;
  if(target<=0)throw Error('الدعم والدفعات تغطي قيمة العقار؛ لا يوجد مبلغ تمويل مطلوب.');
- const bounded=sizeFixed(result,{...x,fixedMethod:'amount',fixedRequest:target});
+ const bounded=fixed?sizeFixed(result,{...x,fixedMethod:'amount',fixedRequest:target}):sizeFlexible(result,x,target);
  const sized=fixed?sizeFixed(bounded,x):bounded;
  const clientDownPayment=funding.propertyValue-packageAmount-sized.net;
  return {...sized,...funding,borrowingCapacity:result.net,clientDownPayment,priceEstimated:false,financedProperty:sized.net,customerGap:clientDownPayment,required:clientDownPayment};
