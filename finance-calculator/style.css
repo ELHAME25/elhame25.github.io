@@ -159,3 +159,9 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 .reportDisclaimer{display:none}
 .reportColumns:has(.personal-installment-row) .periods-block{margin:0;padding:0}
 @media(max-width:600px){.resultMetrics .personal-installment-row dt{font-size:12px}.resultMetrics .personal-installment-row dd{font-size:14px}}
+
+/* Keep employer and support aligned while the dependent rate is still empty. */
+@media(max-width:700px){.client-grid:has(#supportStatusField:not([hidden]))>label:has(#sector){grid-column:auto!important;width:100%!important;justify-self:stretch;text-align:right}.client-grid:has(#supportStatusField:not([hidden]))>#supportStatusField{grid-column:auto;width:100%;justify-self:stretch}.client-grid:has(#supportStatusField:not([hidden])) #sector{text-align:right;text-align-last:right}}
+.funding-explanation{display:grid;gap:4px;background:#f6f9fa;border-inline-start:3px solid #9ac8c5;padding:9px 10px;margin:10px 0;font-size:11px;line-height:1.7;color:#696578}
+.funding-explanation b{font-weight:600;color:#302153}.period-total .ratio-chip{white-space:nowrap}
+#rate::placeholder{font-size:11px;font-weight:400}
