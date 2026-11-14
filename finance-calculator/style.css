@@ -219,3 +219,19 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
  .client-grid:has(#supportStatusField:not([hidden]))>#rateField{grid-column:span 5}
  #supportStatus{padding-inline:6px 20px}
 }
+
+/* All monetary outputs share a centered visual axis. */
+.resultMetrics dd{display:flex;align-items:center;justify-content:center;gap:4px;text-align:center}
+.schedule td.payment-cell,.schedule td.duration-cell,.schedule td:has(>.amount){text-align:center}
+.mortgage-config output{justify-content:center;text-align:center}
+.down-payment-breakdown>label{text-align:center}
+.down-payment-breakdown:has(>#packageBreakdownField[hidden]){grid-template-columns:minmax(0,1fr);justify-items:center}
+.down-payment-breakdown:has(>#packageBreakdownField[hidden])>label:not([hidden]){width:calc((100% - 14px)/2);max-width:320px;min-width:140px;justify-self:center}
+.report-controls:has(#secondAdjust[hidden]) #afterAdjust{grid-column:1;grid-row:2}
+.report-controls:has(#secondAdjust:not([hidden])):has(#afterAdjust:not([hidden])){grid-template-columns:repeat(3,minmax(0,240px));justify-content:center;gap:10px}
+.report-controls:has(#secondAdjust:not([hidden])):has(#afterAdjust:not([hidden])) #secondAdjust{grid-column:1;grid-row:2}
+.report-controls:has(#secondAdjust:not([hidden])):has(#afterAdjust:not([hidden])) #afterAdjust{grid-column:3;grid-row:2}
+.report-controls:has(#secondAdjust:not([hidden])):has(#afterAdjust:not([hidden])) #resetSecond{grid-column:2;grid-row:2;min-height:38px;height:38px;font-size:10px;line-height:1.4;padding:4px 6px}
+.report-controls:has(#secondAdjust:not([hidden])):has(#afterAdjust:not([hidden])) .rate-error{grid-column:1/-1;grid-row:3;max-width:none}
+.site-footer{font-size:14px;font-weight:600;color:#61566f;margin-top:-12px;padding-top:4px}
+@media(max-width:600px){.report-controls:has(#secondAdjust:not([hidden])):has(#afterAdjust:not([hidden])){grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.site-footer{font-size:13px}}
