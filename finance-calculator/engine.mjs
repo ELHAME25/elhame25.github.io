@@ -212,6 +212,9 @@ function sizeFlexible(result,x,target){
  }
  const scheduledTotal=rows.reduce((sum,r)=>sum+r.payment*(r.end-r.start+1),0);
  const financed=smallLoan?scheduledTotal/factor:target;
+ return finalizeFlexible(result,x,rows,financed);
+}
+function finalizeFlexible(result,x,rows,financed){
  let draws=result.draws;
  if(x.type==='self'){
   const budgets=x.draws.map(d=>({remaining:financed*d.share/100*(1+x.margin/100*(result.months-d.month+1)/12),installments:[]}));
@@ -228,6 +231,22 @@ function sizeFlexible(result,x,target){
  const total=rows.reduce((sum,r)=>sum+r.payment*(r.end-r.start+1),0);
  const effective=phase=>{const band=rows.filter(r=>r.phase===phase&&r.label!=='خلال الإنشاء');const income=phase===3?result.pension:x.income;return band.length&&income>0?Math.round(Math.max(...band.map(r=>(r.payment+r.personal+r.obligations)/income*100))*100)/100:null;};
  return {...result,rows,draws,net:financed,total,profit:total-financed,second:effective(2)??result.second,afterRate:effective(3)??result.afterRate,maximum:result.net};
+}
+function flexibleRequest(result,x){
+ if(!x.flexMethod||x.flexMethod==='max')return result;
+ const request=x.flexRequest;
+ if(!(request>0))throw Error(x.flexMethod==='amount'?'أدخل مبلغ التمويل المطلوب.':'أدخل القسط العقاري المطلوب للفترة الثانية.');
+ const adjustable=r=>r.phase===2&&r.label!=='خلال الإنشاء';
+ const band=result.rows.filter(adjustable);
+ if(!band.length)throw Error('لا توجد فترة ثانية قبل التقاعد لتعديل القسط أو المبلغ.');
+ const variableTotal=band.reduce((sum,r)=>sum+r.payment*(r.end-r.start+1),0),lockedTotal=result.total-variableTotal;
+ const factor=x.type==='self'?x.draws.reduce((sum,d)=>sum+d.share/100*(1+x.margin/100*(result.months-d.month+1)/12),0):1+x.margin/100*result.months/12;
+ const scale=x.flexMethod==='amount'?(request*factor-lockedTotal)/variableTotal:request/band[0].payment;
+ if(!Number.isFinite(scale)||scale<=0)throw Error('المبلغ المطلوب أقل من الأقساط الثابتة للفترة الأولى وما بعد التقاعد.');
+ if(scale>1+1e-10)throw Error('القيمة المطلوبة تتجاوز الحد المتاح للفترة الثانية.');
+ const rows=result.rows.map(r=>adjustable(r)?{...r,payment:r.payment*scale}:{...r});
+ const total=lockedTotal+variableTotal*scale;
+ return finalizeFlexible(result,x,rows,x.flexMethod==='amount'?request:total/factor);
 }
 export function mortgageWindow(x){
  validateBirth(x);
@@ -315,12 +334,12 @@ export function calculate(x) {
  const result={rows,total,net,personalNet,monthlySupport:x.support==='monthly'?monthlySupport(x.income):0,profit:total-net,months,work,retired,retireDate,pension,service,beforeRate,second,afterRate,afterCap,personal,credit,packageAmount,required,financedProperty,customerGap:required,draws:construction?.draws??[]};
  if(!funding.propertyValue){
   if((x.extraDownPayment||0)>0)throw Error('أدخل سعر العقار لاحتساب الدفعة الإضافية.');
-  return {...(fixed?sizeFixed(result,x):result),...funding,priceEstimated:false};
+  return {...(fixed?sizeFixed(result,x):flexibleRequest(result,x)),...funding,priceEstimated:false};
  }
  const target=funding.requestedFinancing;
  if(target<=0)throw Error('الدعم والدفعات تغطي قيمة العقار، لا يوجد مبلغ تمويل مطلوب.');
  const bounded=fixed?sizeFixed(result,{...x,fixedMethod:'amount',fixedRequest:target}):sizeFlexible(result,x,target);
- const sized=fixed?sizeFixed(bounded,x):bounded;
+ const sized=fixed?sizeFixed(bounded,x):flexibleRequest(bounded,x);
  const clientDownPayment=funding.propertyValue-packageAmount-sized.net;
- return {...sized,...funding,borrowingCapacity:result.net,clientDownPayment,priceEstimated:false,financedProperty:sized.net,customerGap:clientDownPayment,required:clientDownPayment};
+ return {...sized,...funding,borrowingCapacity:result.net,clientInitialDownPayment:Math.max(0,clientDownPayment-funding.extraDownPayment),clientDownPayment,priceEstimated:false,financedProperty:sized.net,customerGap:clientDownPayment,required:clientDownPayment};
 }

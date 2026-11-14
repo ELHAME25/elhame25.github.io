@@ -176,3 +176,46 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 .site-footer{padding-top:8px;padding-bottom:20px;margin-top:-8px}
 .rate-heading{align-items:start;min-height:42px}
 @media(max-width:700px){.client-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.client-grid>#rateField{max-width:none}.rate-heading{min-height:48px}}
+
+/* Annual rate and its optional manual toggle share one compact line. */
+.rate-field{display:flex;flex-direction:column;gap:6px;min-width:0;font-size:12px;font-weight:700;color:#58546e}
+.rate-entry{display:flex;align-items:center;gap:9px;direction:rtl}
+.rate-entry>.input-control,.rate-entry>input{flex:1;min-width:0}
+.rate-entry input:not([type=checkbox]){text-align:center}
+.rate-entry>.rate-mode{display:flex;flex-direction:row;align-items:center;gap:5px;font-size:10px;font-weight:400;line-height:1.6;color:#7b788e;max-width:100px;flex:0 0 88px}
+.rate-entry .rate-mode input{width:14px;min-height:14px;flex:0 0 14px;padding:0}
+.client-grid:has(#supportStatusField:not([hidden])){grid-template-columns:repeat(6,minmax(0,1fr))}
+.client-grid:has(#supportStatusField:not([hidden]))>label{grid-column:span 2!important}
+.client-grid:has(#supportStatusField:not([hidden]))>#rateField{grid-column:span 4;width:100%;max-width:360px}
+#rateTitle{font-size:12px;min-height:19px;text-align:right}
+.input-control{position:relative;display:block;min-width:0;width:100%}
+.input-control>input{padding-left:29px}
+.input-control:has(>input[hidden]){display:none!important}
+.clear-field{position:absolute;left:3px;top:50%;transform:translateY(-50%);width:25px;height:30px;min-height:30px;display:grid;place-items:center;padding:0;background:transparent;color:#9b95a8;font-size:18px;line-height:1;border-radius:4px;font-weight:400}
+.clear-field:hover,.clear-field:focus-visible{color:#008d8c;background:#eef6f6}
+.input-control:has(>.hijri-input)>input{padding-left:10px;padding-right:29px}
+.input-control:has(>.hijri-input)>.clear-field{left:auto;right:3px}
+.calculation-actions{display:flex;justify-content:flex-start;margin:0 0 8px}
+.calculation-actions .new-client{position:static;background:#eef7f6;border:1px solid #c9e4e0;color:#087f78;box-shadow:none;border-radius:6px;min-height:35px;font-size:12px;padding:6px 13px}
+.calculation-actions .new-client span{display:inline;margin-inline-end:4px}
+.calculation-actions+.product-nav{margin-top:8px}
+.site-footer{font-size:12px;color:#746c84;font-weight:500}
+@media(max-width:700px){
+ .client-grid:has(#supportStatusField:not([hidden]))>label:has(#salary),.client-grid:has(#supportStatusField:not([hidden]))>label:has(#birth){grid-column:span 3!important}
+ .client-grid:has(#supportStatusField:not([hidden]))>label:has(#sector){grid-column:1/-1!important}
+ .client-grid:has(#supportStatusField:not([hidden]))>#rateField{max-width:none}
+ .rate-entry{gap:5px}.rate-entry>.rate-mode{flex-basis:82px;font-size:9px}
+ .site-footer{font-size:11px}
+}
+
+.client-grid:has(#supportStatusField:not([hidden]))>#rankField,.client-grid:has(#supportStatusField:not([hidden]))>#pilotField{grid-column:1/-1!important}
+.input-control>textarea{padding-left:29px}
+
+.request-reset{background:#edf7f6;color:#008d8c;border:1px solid #cde4e2;border-radius:6px;font-size:11px;min-height:36px;padding:7px 12px;margin-top:10px}
+@media(max-width:700px){
+ .client-grid:has(#supportStatusField:not([hidden])){grid-template-columns:repeat(8,minmax(0,1fr));column-gap:8px}
+ .client-grid:has(#supportStatusField:not([hidden]))>label:has(#salary),.client-grid:has(#supportStatusField:not([hidden]))>label:has(#birth){grid-column:span 4!important}
+ .client-grid:has(#supportStatusField:not([hidden]))>#supportStatusField{grid-column:span 3!important}
+ .client-grid:has(#supportStatusField:not([hidden]))>#rateField{grid-column:span 5}
+ #supportStatus{padding-inline:6px 20px}
+}
