@@ -2,7 +2,7 @@ import {installUpdates} from './updates.mjs?v=ff090ffd035b3327';
 import {personalRate,mortgageRate,financingDeductions,personalClasses} from './pricing.mjs?v=410bbb63609e638a';
 import {stages,approvalDraws} from './draws.mjs?v=d697f464270110f1';
 import {ranks,validateBirth,hijriDate,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=3e63a8ab887baac3';
-import {prepareReport,downloadReport,shareReport,invalidateReport} from './pdf.mjs?v=f20c77e37089d190';
+import {prepareReport,downloadReport,shareReport,invalidateReport} from './pdf.mjs?v=a06d01d97b287786';
 const $=id=>document.getElementById(id), num=id=>readAmount($(id).value);
 const fmt=n=>Number(n).toLocaleString('en-US',{maximumFractionDigits:0});
 function normalizeNumericValue(value,integer=false,precision=null){

@@ -28,13 +28,19 @@ function drawPages(report){
  const note=report.querySelector('.reportNotes p')||report.querySelector('.reportNotes');if(note){font(14);const lines=wrap(note.textContent,width-margin*2-24);const h=lines.length*19+35;if(!onePage&&y+h>height-55){save();fresh();y=35;}ctx.fillStyle='#eff7f8';ctx.fillRect(margin,y,width-margin*2,h);font(12,true);write('الملاحظات',width-margin-12,y+17);font(14);lines.forEach((l,i)=>write(l,width-margin-12,y+39+i*19));y+=h+12;}
  const identity=[...report.querySelectorAll('.reportIdentity>div')].map(d=>d.querySelector('dt').textContent+'  '+d.querySelector('dd').textContent).join('     ');const identityY=onePage?y+16:Math.min(height-22,Math.max(y+10,height-30));font(11,true);write(identity,width/2,identityY,'center');usedHeight=Math.max(height,identityY+22);save();return pages;
 }
-function pdfBlob(pages){
+function reportTitle(report){
+ const heading=report.querySelector('.reportHead h2')?.textContent||'';
+ const name=heading.replace(/^حسبة العميل\s*(?:\/\s*ـة)?\s*[:：]?\s*/u,'').replace(/[\\/:*?"<>|\u0000-\u001f]/g,' ').replace(/\s+/g,' ').trim();
+ return 'حسبة العميل'+(name?' '+name:'');
+}
+function pdfText(text){return '<FEFF'+text.split('').map(c=>c.charCodeAt(0).toString(16).padStart(4,'0')).join('')+'>';}
+function pdfBlob(pages,title){
  const parts=[], offsets=[0];
  let length=0;
  const append=value=>{const bytes=typeof value==='string'?encoder.encode(value):value;parts.push(bytes);length+=bytes.length;};
  const object=(id,body)=>{offsets[id]=length;append(id+' 0 obj\n');body();append('\nendobj\n');};
  append('%PDF-1.4\n');
- object(1,()=>append('<< /Type /Catalog /Pages 2 0 R >>'));
+ object(1,()=>append('<< /Type /Catalog /Pages 2 0 R /ViewerPreferences << /DisplayDocTitle true >> >>'));
  object(2,()=>append('<< /Type /Pages /Count '+pages.length+' /Kids ['+pages.map((_,i)=>(3+i*3)+' 0 R').join(' ')+'] >>'));
  pages.forEach((jpeg,i)=>{
   const page=3+i*3, stream=page+1, img=page+2;
@@ -43,23 +49,26 @@ function pdfBlob(pages){
   object(stream,()=>append(`<< /Length ${commands.length} >>\nstream\n${commands}endstream`));
   object(img,()=>{append(`<< /Type /XObject /Subtype /Image /Width ${width*scale} /Height ${height*scale} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${jpeg.length} >>\nstream\n`);append(jpeg);append('\nendstream');});
  });
+ const info=3+pages.length*3;
+ object(info,()=>append('<< /Title '+pdfText(title)+' >>'));
  const xref=length;
  append('xref\n0 '+offsets.length+'\n0000000000 65535 f \n');
  for(const offset of offsets.slice(1))append(String(offset).padStart(10,'0')+' 00000 n \n');
- append(`trailer\n<< /Size ${offsets.length} /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF\n`);
+ append(`trailer\n<< /Size ${offsets.length} /Root 1 0 R /Info ${info} 0 R >>\nstartxref\n${xref}\n%%EOF\n`);
  return new Blob(parts,{type:'application/pdf'});
 }
 
 export function invalidateReport(){
  if(prepared)URL.revokeObjectURL(prepared.url);prepared=null;
- const open=document.getElementById('openPdf');open.removeAttribute('href');open.hidden=true;
+ const open=document.getElementById('openPdf');open.removeAttribute('href');open.removeAttribute('download');open.hidden=true;document.title='حاسبة التمويل';
  document.getElementById('download').disabled=true;document.getElementById('sharePdf').disabled=true;
 }
 export function prepareReport(report){
  if(prepared)URL.revokeObjectURL(prepared.url);
- const blob=pdfBlob(drawPages(report));const title=(report.querySelector('.reportHead h2')?.textContent||'تقرير التمويل').replace(/[\\/:*?"<>|]/g,'-');
+ const title=reportTitle(report),blob=pdfBlob(drawPages(report),title);
+ document.title=title;
  prepared={blob,title,url:URL.createObjectURL(blob)};
- const open=document.getElementById('openPdf');open.href=prepared.url;open.hidden=false;
+ const open=document.getElementById('openPdf');open.href=prepared.url;open.download=title+'.pdf';open.title=title;open.hidden=false;
  const file=new File([blob],title+'.pdf',{type:'application/pdf'});
  document.getElementById('download').disabled=false;document.getElementById('sharePdf').disabled=false;
  document.getElementById('sharePdf').hidden=!(navigator.canShare&&navigator.canShare({files:[file]}));
@@ -70,5 +79,5 @@ export function downloadReport(report){
 }
 export async function shareReport(report){
  if(!prepared)return;
- try{await navigator.share({files:[new File([prepared.blob],prepared.title+'.pdf',{type:'application/pdf'})]});}catch(e){if(e.name!=='AbortError')document.getElementById('openPdf').click();}
+ try{await navigator.share({title:prepared.title,files:[new File([prepared.blob],prepared.title+'.pdf',{type:'application/pdf'})]});}catch(e){if(e.name!=='AbortError')downloadReport(report);}
 }
