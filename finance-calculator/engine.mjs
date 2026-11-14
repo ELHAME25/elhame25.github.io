@@ -1,9 +1,9 @@
-import {personalClasses,validatePersonalClass,financingDeductions} from './pricing.mjs?v=8a9f08c809b2e58b';
+import {personalClasses,validatePersonalClass,financingDeductions} from './pricing.mjs?v=410bbb63609e638a';
 export const ranks = {
  'جندي / جندي أول':[44,44], 'عريف':[46,46], 'وكيل رقيب':[48,48], 'رقيب / رقيب أول':[50,50], 'رئيس رقباء':[52,52],
  'ملازم / ملازم أول':[44,42], 'نقيب':[48,46], 'رائد':[50,48], 'مقدم':[52,50], 'عقيد':[54,52], 'عميد':[56,54], 'لواء':[58,56]
 };
-// المدني: سن 60؛ تحقق مستقل من إكسل الرياض بتاريخ 2026-11-12.
+// المدني: سن 60، تحقق مستقل من إكسل الرياض بتاريخ 2026-11-12.
 const retirementBySector={civil:60,privateA:60,privateB:60,privateC:60,bank:60,corporation:60,unapproved:60};
 function retirementAgeFor(x){
  if(x.sector==='retired')return null;
@@ -40,7 +40,7 @@ export function hijriDate(value,years=0) {
  const [d,m,y]=input.split(/[/-]/).map(Number);
  const leap=year=>(11*year+14)%30<11;
  const last=year=>m===12?(leap(year)?30:29):m%2?30:29;
- if(y>=1700)throw Error('التاريخ الميلادي غير مقبول؛ أدخل التاريخ الهجري.');
+ if(y>=1700)throw Error('التاريخ الميلادي غير مقبول، أدخل التاريخ الهجري.');
  if(m<1||m>12||d<1||d>last(y)||y<1250||y>1600)throw Error('أدخل تاريخًا هجريًا صالحًا.');
  const year=y+years;
  // التحويل الحسابي من ورقة Operation، مساري AT32 وAN32.
@@ -77,7 +77,7 @@ function personalMonthsAvailable(x,retirementAge){
  return Math.max(0,Math.min(personalTermBySector[x.sector]??60,months-2));
 }
 // الرياض Operation: AU76=ROUNDUP(AN46*12,0)، AV75=ROUNDDOWN(AT77*12,0)-5،
-// AU78=AU76+AV75؛ AT80=الأساسي*AU78/480 للمدني و/420 للعسكري.
+// AU78=AU76+AV75، AT80=الأساسي*AU78/480 للمدني و/420 للعسكري.
 // شهر الخدمة المتوقع للمعاش مستقل عن المدة المختارة للتمويل.
 export function estimatePension(x){
  const retirementAge=retirementAgeFor(x);
@@ -105,7 +105,7 @@ export function calculatePersonal(x) {
  const payment=x.method==='amount'?x.request*factor/months:x.method==='payment'?x.request:ceiling;
  if(x.method!=='max'&&!(x.request>0)) throw Error('أدخل القيمة المطلوبة.');
  if(payment<0)throw Error('أدخل قيمة صحيحة.');
- if(payment>ceiling+.005) throw Error('القسط المطلوب يتجاوز الحد المتاح '+ceiling.toFixed(2)+' ريال.');
+ if(payment>ceiling+.005) throw Error('القسط المطلوب يتجاوز الحد المتاح '+ceiling.toLocaleString('en-US',{maximumFractionDigits:0})+' ريال.');
  const total=payment*months,net=total/factor;
  if(x.personalKind&&x.personalKind!=='new'&&financingDeductions(net,'personal',x.settlement??0).netCash<0)throw Error('صافي مبلغ التمويل أقل من المديونية.');
  return {rate,credit,months,work:retired?0:months,retired:retired?months:0,personal:payment,net,total,profit:total-net,
@@ -194,12 +194,27 @@ function sizeFlexible(result,x,target){
  const factor=x.type==='self'?x.draws.reduce((sum,d)=>sum+d.share/100*(1+x.margin/100*(result.months-d.month+1)/12),0):1+x.margin/100*result.months/12;
  const targetTotal=target*factor,variableTotal=result.total-lockedTotal;
  if(Math.abs(target-result.net)<.005&&variableTotal<.005)return result;
- if(targetTotal<=lockedTotal+.005||variableTotal<.005)throw Error('مبلغ التمويل لا يغطي أقساط فترة الشخصي عند سقف الاستقطاع.');
- const scale=Math.max(0,(targetTotal-lockedTotal)/variableTotal);
- const rows=result.rows.map(r=>locked(r)?{...r}:{...r,payment:r.payment*scale});
+ // A small loan cannot consume the maximum first-period budget. Keep construction
+ // installments, scale the mortgage schedule to the requested principal instead.
+ const smallLoan=targetTotal<=lockedTotal+.005||variableTotal<.005;
+ const constructionTotal=result.rows.filter(r=>r.label==='خلال الإنشاء').reduce((sum,r)=>sum+r.payment*(r.end-r.start+1),0);
+ if(smallLoan&&targetTotal<constructionTotal-.005)throw Error('القسط الميسر خلال الإنشاء يتجاوز إجمالي أقساط التمويل المطلوب.');
+ let rows;
+ if(smallLoan){
+  const policyPayment=r=>Math.max(0,(r.phase===3?result.pension*result.afterCap:x.income*result.beforeRate)/100-r.personal-r.obligations);
+  const sumAt=payment=>constructionTotal+result.rows.filter(r=>r.label!=='خلال الإنشاء').reduce((sum,r)=>sum+Math.min(policyPayment(r),payment)*(r.end-r.start+1),0);
+  let lo=0,hi=Math.max(...result.rows.map(policyPayment));
+  for(let i=0;i<64;i++){const mid=(lo+hi)/2;if(sumAt(mid)<targetTotal)lo=mid;else hi=mid;}
+  rows=result.rows.map(r=>r.label==='خلال الإنشاء'?{...r}:{...r,payment:Math.min(r.payment,hi)});
+ }else{
+  const scale=Math.max(0,(targetTotal-lockedTotal)/variableTotal);
+  rows=result.rows.map(r=>locked(r)?{...r}:{...r,payment:r.payment*scale});
+ }
+ const scheduledTotal=rows.reduce((sum,r)=>sum+r.payment*(r.end-r.start+1),0);
+ const financed=smallLoan?scheduledTotal/factor:target;
  let draws=result.draws;
  if(x.type==='self'){
-  const budgets=x.draws.map(d=>({remaining:target*d.share/100*(1+x.margin/100*(result.months-d.month+1)/12),installments:[]}));
+  const budgets=x.draws.map(d=>({remaining:financed*d.share/100*(1+x.margin/100*(result.months-d.month+1)/12),installments:[]}));
   for(let month=1;month<=result.months;month++){
    const payment=rows.find(r=>r.start<=month&&r.end>=month).payment;
    const active=budgets.map((b,i)=>({b,i})).filter(({b,i})=>x.draws[i].month<=month&&b.remaining>1e-8);
@@ -208,11 +223,11 @@ function sizeFlexible(result,x,target){
    for(const {b} of active){const paid=Math.min(b.remaining,payment*b.remaining/(available||1));b.remaining-=paid;b.installments.push({month,payment:paid});}
   }
   if(budgets.some(b=>Math.abs(b.remaining)>.02))throw Error('تعذر مطابقة دفعات البناء مع أقساط التمويل.');
-  draws=result.draws.map((d,i)=>{const amount=target*d.share/100,factor=1+x.margin/100*(result.months-d.month+1)/12;const before=budgets[i].installments.filter(p=>p.month<=result.work).reduce((s,p)=>s+p.payment,0)/factor;return {...d,amount,before,after:amount-before,installments:budgets[i].installments};});
+  draws=result.draws.map((d,i)=>{const amount=financed*d.share/100,factor=1+x.margin/100*(result.months-d.month+1)/12;const before=budgets[i].installments.filter(p=>p.month<=result.work).reduce((s,p)=>s+p.payment,0)/factor;return {...d,amount,before,after:amount-before,installments:budgets[i].installments};});
  }
  const total=rows.reduce((sum,r)=>sum+r.payment*(r.end-r.start+1),0);
  const effective=phase=>{const band=rows.filter(r=>r.phase===phase&&r.label!=='خلال الإنشاء');const income=phase===3?result.pension:x.income;return band.length&&income>0?Math.round(Math.max(...band.map(r=>(r.payment+r.personal+r.obligations)/income*100))*100)/100:null;};
- return {...result,rows,draws,net:target,total,profit:total-target,second:effective(2)??result.second,afterRate:effective(3)??result.afterRate,maximum:result.net};
+ return {...result,rows,draws,net:financed,total,profit:total-financed,second:effective(2)??result.second,afterRate:effective(3)??result.afterRate,maximum:result.net};
 }
 export function mortgageWindow(x){
  validateBirth(x);
@@ -233,7 +248,7 @@ export function calculate(x) {
  if(!Number.isFinite(second)||second<=0)throw Error('أدخل نسبة استقطاع صالحة للفترة الثانية.');
  if(second>beforeRate)throw Error('نسبة الفترة الثانية تتجاوز السقف '+beforeRate+'%.');
  const {retirementAge,alreadyRetired,retireDate,workLeft,maxMonths}=mortgageWindow(x);
- if(x.term!=null&&(!Number.isInteger(x.term)||x.term<1||x.term>maxMonths))throw Error('المدة القصوى المتاحة '+maxMonths+' شهرًا؛ لا يمكن تجاوز حد العمر.');
+ if(x.term!=null&&(!Number.isInteger(x.term)||x.term<1||x.term>maxMonths))throw Error('المدة القصوى المتاحة '+maxMonths+' شهرًا، لا يمكن تجاوز حد العمر.');
  const months=x.term??maxMonths;
  if(!months||!x.income) throw Error('أدخل دخلاً ومدة متاحة للتمويل.');
  const work=Math.min(months,workLeft), retired=months-work;
@@ -303,7 +318,7 @@ export function calculate(x) {
   return {...(fixed?sizeFixed(result,x):result),...funding,priceEstimated:false};
  }
  const target=funding.requestedFinancing;
- if(target<=0)throw Error('الدعم والدفعات تغطي قيمة العقار؛ لا يوجد مبلغ تمويل مطلوب.');
+ if(target<=0)throw Error('الدعم والدفعات تغطي قيمة العقار، لا يوجد مبلغ تمويل مطلوب.');
  const bounded=fixed?sizeFixed(result,{...x,fixedMethod:'amount',fixedRequest:target}):sizeFlexible(result,x,target);
  const sized=fixed?sizeFixed(bounded,x):bounded;
  const clientDownPayment=funding.propertyValue-packageAmount-sized.net;

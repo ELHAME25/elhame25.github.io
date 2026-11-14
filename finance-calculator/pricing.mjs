@@ -18,7 +18,7 @@ export const pricingReference={
  mortgage:{months:[60,120,180,240,300,360],supported:[4.05,4.25,4.57,4.90,5.25,5.56],unsupported:[5.30,5.40,5.50,5.80,6.20,6.60],lienUnsupported:[5.90,6.15,6.40,6.65,7.15,7.40]}
 };
 export const personalClasses={privateA:{minimum:5000,months:60},privateB:{minimum:8000,months:48},privateC:{minimum:10000,months:36},unapproved:{minimum:0,months:12}};
-export function validatePersonalClass(sector,income){const rule=personalClasses[sector];if(rule&&income<rule.minimum)throw Error('الراتب أقل من الحد الأدنى لفئة '+sector.slice(-1)+': '+rule.minimum.toLocaleString('en-US')+' ريال.');}
+export function validatePersonalClass(sector,income){const rule=personalClasses[sector];if(rule&&income<rule.minimum)throw Error('الحد الأدنى للراتب لفئة '+sector.slice(-1)+' هو '+rule.minimum.toLocaleString('en-US')+' ريال.');}
 export function personalRate(sector,income,product='new'){
  validatePersonalClass(sector,income);
  const col={new:1,refinance:2,buyout:3}[product];
