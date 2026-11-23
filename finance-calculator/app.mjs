@@ -18,7 +18,11 @@ function readAmount(value){return Number(normalizeNumericValue(value))||0;}
 function normalizePercentage(value){return normalizeNumericValue(value,false,2);}
 function normalizeSalary(input){
  const value=input.value;
- const clean=text=>normalizeNumericValue(text.replace(/،/g,'.'),false,2);
+ const clean=text=>{
+  let digits=text.replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/[۰-۹]/g,d=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(d));
+  if(/^\d{1,3}([,٬]\d{3})+([.٫]\d*)?$/.test(digits))digits=digits.replace(/[,٬]/g,'');
+  return normalizeNumericValue(digits.replace(/[٬،﹐，]/g,'.').replace(/[．﹒]/g,'.'),false,2);
+ };
  const normalized=clean(value);
  if(normalized===value)return;
  const start=input.selectionStart,end=input.selectionEnd;
@@ -33,6 +37,13 @@ function formatSalary(input){
  const [whole,fraction]=input.value.split('.');
  input.value=whole.replace(/\B(?=(\d{3})+(?!\d))/g,',')+(fraction===undefined||fraction===''?'':'.'+fraction);
 }
+document.addEventListener('beforeinput',event=>{
+ const input=event.target;
+ if(!['salary','basic'].includes(input.id)||!event.cancelable||!/^insert/.test(event.inputType)||!/^[,،٫٬﹐，．﹒.]$/.test(event.data||''))return;
+ event.preventDefault();
+ input.setRangeText('.',input.selectionStart,input.selectionEnd,'end');
+ input.dispatchEvent(new Event('input',{bubbles:true}));
+});
 document.addEventListener('focusin',event=>{
  if(['salary','basic'].includes(event.target.id))normalizeSalary(event.target);
 });
