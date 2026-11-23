@@ -52,11 +52,46 @@ export function hijriDate(value,years=0) {
  const month=monthPart+2-12*shift, gregorianYear=100*(century-49)+yearPart+shift;
  return new Date(Date.UTC(gregorianYear,month-1,day)).toISOString().slice(0,10);
 }
+const ummAlQura=new Intl.DateTimeFormat('en-US',{
+ calendar:'islamic-umalqura',numberingSystem:'latn',timeZone:'UTC',
+ year:'numeric',month:'numeric',day:'numeric',
+});
+const dayMs=86400000;
+function ummAlQuraParts(time){
+ const parts=ummAlQura.formatToParts(time);
+ return ['year','month','day'].map(type=>Number(parts.find(part=>part.type===type).value));
+}
+export function gregorianToHijri(value){
+ const match=/^(\d{2})-(\d{2})-(\d{4})$/.exec(value);
+ if(!match)throw Error('اكتب التاريخ الميلادي باليوم / الشهر / السنة.');
+ const [,day,month,year]=match;
+ const gregorian=year+'-'+month+'-'+day;
+ const time=Date.parse(gregorian);
+ if(!Number.isFinite(time)||new Date(time).toISOString().slice(0,10)!==gregorian)throw Error('أدخل تاريخًا ميلاديًا صالحًا.');
+ const [hYear,hMonth,hDay]=ummAlQuraParts(time);
+ if(hYear<1300||hYear>1525)throw Error('التاريخ خارج نطاق تحويل تقويم أم القرى.');
+ const hijri=[hDay,hMonth,hYear].map(part=>String(part).padStart(2,'0')).join('-');
+ return {gregorian,hijri};
+}
+function convertedBirthAnniversary(x,years){
+ const [day,month,year]=x.birthHijri.split('-').map(Number);
+ const target=(year+years)*10000+month*100+day;
+ const birthDay=Date.parse(x.birth)/dayMs;
+ let earliest=birthDay+354*years-2,latest=birthDay+355*years+2;
+ // Select the last available day when the anniversary month is shorter.
+ while(latest-earliest>1){
+  const middle=Math.floor((earliest+latest)/2);
+  const [y,m,d]=ummAlQuraParts(middle*dayMs);
+  if(y*10000+m*100+d<=target)earliest=middle;
+  else latest=middle;
+ }
+ return new Date(earliest*dayMs).toISOString().slice(0,10);
+}
 export function validateBirth(x){
  if(!x.birth||x.birth>=x.today)throw Error('أدخل تاريخ ميلاد هجريًا صحيحًا.');
  if(x.birthHijri){
-  if(hijriDate(x.birthHijri,18)>x.today)throw Error('العمر يجب أن يكون 18 سنة هجريًا فأعلى.');
-  if(hijriDate(x.birthHijri,75)<x.today)throw Error('العمر يتجاوز الحد الأعلى 75 سنة هجريًا.');
+  if(ageDates(x,18)>x.today)throw Error('العمر يجب أن يكون 18 سنة هجريًا فأعلى.');
+  if(ageDates(x,75)<x.today)throw Error('العمر يتجاوز الحد الأعلى 75 سنة هجريًا.');
  }
  return x.birth;
 }
@@ -66,6 +101,7 @@ function ageYears(start,end){
  return (Date.parse(end)-Date.parse(start))/86400000/average;
 }
 function ageDates(x,years){
+ if(x.birthConverted)return convertedBirthAnniversary(x,years);
  return x.birthHijri?hijriDate(x.birthHijri,years):addMonths(x.birth,years*12);
 }
 const personalTermBySector=Object.fromEntries(Object.entries(personalClasses).map(([key,value])=>[key,value.months]));

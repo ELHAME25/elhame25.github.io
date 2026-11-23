@@ -25,7 +25,25 @@ function drawPages(report){
  if(!onePage&&y+12+tableHeight>height-55){save();fresh();y=35;}font(12,true);write('دفعات البناء الذاتي',width-margin,y);y=table(draw,margin,y+12,width-margin*2)+15;}
 
  const disclaimer=report.querySelector('.reportDisclaimer');if(disclaimer){font(9);for(const paragraph of disclaimer.querySelectorAll('p')){const lines=wrap('* '+paragraph.textContent,width-margin*2);if(!onePage&&y+lines.length*13>height-40){save();fresh();y=35;}lines.forEach((line,i)=>write(line,width-margin,y+i*13));y+=lines.length*13+4;}y+=8;}
- const note=report.querySelector('.reportNotes p')||report.querySelector('.reportNotes');if(note){font(14);const lines=wrap(note.textContent,width-margin*2-24);const h=lines.length*19+35;if(!onePage&&y+h>height-55){save();fresh();y=35;}ctx.fillStyle='#eff7f8';ctx.fillRect(margin,y,width-margin*2,h);font(12,true);write('الملاحظات',width-margin-12,y+17);font(14);lines.forEach((l,i)=>write(l,width-margin-12,y+39+i*19));y+=h+12;}
+ const note=report.querySelector('.reportNotes p');
+ if(note){
+  font(14);
+  const lines=wrap(note.textContent,width-margin*2-24);
+  const pageBottom=(onePage?2200:height)-55;
+  const linesPerPage=Math.floor((pageBottom-35-40)/19);
+  for(let start=0;start<lines.length;start+=linesPerPage){
+   const section=lines.slice(start,start+linesPerPage);
+   const h=section.length*19+40;
+   if(y+h>pageBottom){
+    usedHeight=Math.max(height,y);
+    save();fresh();y=35;
+   }
+   ctx.fillStyle='#eff7f8';ctx.fillRect(margin,y,width-margin*2,h);
+   font(12,true);write('الملاحظات',width-margin-12,y+17);
+   font(14);section.forEach((line,i)=>write(line,width-margin-12,y+39+i*19));
+   y+=h+12;
+  }
+ }
  const identity=[...report.querySelectorAll('.reportIdentity>div')].map(d=>d.querySelector('dt').textContent+'  '+d.querySelector('dd').textContent).join('     ');const identityY=onePage?y+16:Math.min(height-22,Math.max(y+10,height-30));font(11,true);write(identity,width/2,identityY,'center');usedHeight=Math.max(height,identityY+22);save();return pages;
 }
 function reportTitle(report){

@@ -185,7 +185,7 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 .rate-entry>.rate-mode{display:flex;flex-direction:row;align-items:center;gap:5px;font-size:10px;font-weight:400;line-height:1.6;color:#7b788e;max-width:100px;flex:0 0 88px}
 .rate-entry .rate-mode input{width:14px;min-height:14px;flex:0 0 14px;padding:0}
 .client-grid:has(#supportStatusField:not([hidden])){grid-template-columns:repeat(6,minmax(0,1fr))}
-.client-grid:has(#supportStatusField:not([hidden]))>label{grid-column:span 2!important}
+.client-grid:has(#supportStatusField:not([hidden]))>:is(label,.birth-field){grid-column:span 2!important}
 .client-grid:has(#supportStatusField:not([hidden]))>#rateField{grid-column:span 4;width:100%;max-width:360px}
 #rateTitle{font-size:12px;min-height:19px;text-align:right}
 .input-control{position:relative;display:block;min-width:0;width:100%}
@@ -201,7 +201,7 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 .calculation-actions+.product-nav{margin-top:8px}
 .site-footer{font-size:12px;color:#746c84;font-weight:500}
 @media(max-width:700px){
- .client-grid:has(#supportStatusField:not([hidden]))>label:has(#salary),.client-grid:has(#supportStatusField:not([hidden]))>label:has(#birth){grid-column:span 3!important}
+ .client-grid:has(#supportStatusField:not([hidden]))>label:has(#salary),.client-grid:has(#supportStatusField:not([hidden]))>.birth-field{grid-column:span 3!important}
  .client-grid:has(#supportStatusField:not([hidden]))>label:has(#sector){grid-column:1/-1!important}
  .client-grid:has(#supportStatusField:not([hidden]))>#rateField{max-width:none}
  .rate-entry{gap:5px}.rate-entry>.rate-mode{flex-basis:82px;font-size:9px}
@@ -214,7 +214,7 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 .request-reset{background:#edf7f6;color:#008d8c;border:1px solid #cde4e2;border-radius:6px;font-size:11px;min-height:36px;padding:7px 12px;margin-top:10px}
 @media(max-width:700px){
  .client-grid:has(#supportStatusField:not([hidden])){grid-template-columns:repeat(8,minmax(0,1fr));column-gap:8px}
- .client-grid:has(#supportStatusField:not([hidden]))>label:has(#salary),.client-grid:has(#supportStatusField:not([hidden]))>label:has(#birth){grid-column:span 4!important}
+ .client-grid:has(#supportStatusField:not([hidden]))>label:has(#salary),.client-grid:has(#supportStatusField:not([hidden]))>.birth-field{grid-column:span 4!important}
  .client-grid:has(#supportStatusField:not([hidden]))>#supportStatusField{grid-column:span 3!important}
  .client-grid:has(#supportStatusField:not([hidden]))>#rateField{grid-column:span 5}
  #supportStatus{padding-inline:6px 20px}
@@ -252,3 +252,16 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 @media(max-width:700px){.client-grid:has(#supportStatusField:not([hidden]))>#supportStatusField{grid-column:span 3}.choice-buttons button{font-size:10px;padding-inline:5px}}
 
 @media(max-width:700px){.support-switch{font-size:10px;gap:5px;padding-inline:6px;white-space:nowrap}.switch-track{width:30px;flex-basis:30px}.support-switch[aria-checked=true] .switch-track:after{transform:translateX(-10px)}}
+
+
+.birth-field,.birth-field #birthConversion{display:grid;gap:6px;min-width:0}
+.birth-heading{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1px 6px}
+.birth-heading .text-button{font-size:10px;line-height:1.35;padding:3px 0}
+.birth-field #birthConversion{margin-top:2px;padding-top:8px;border-top:1px solid var(--line)}
+.funding-explanation>div,.first-down-payment-total{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.funding-explanation dd,.first-down-payment-total dd{direction:ltr;unicode-bidi:isolate;text-align:left;white-space:nowrap;font-weight:700;color:var(--purple)}
+.first-down-payment-total{margin-top:12px;padding:9px 10px;border-top:1px solid var(--line);font-weight:700;font-size:.83rem}
+.sharing-notes{padding:0;border:0;min-width:0;margin:0}
+.sharing-notes legend{margin-bottom:6px;font-size:.82rem;font-weight:700;color:#58546e}
+#noteRows{display:grid;gap:7px}
+.sharing-notes .text-button{margin-top:5px}
