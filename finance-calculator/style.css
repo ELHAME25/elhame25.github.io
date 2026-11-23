@@ -261,3 +261,6 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 .sharing-notes legend{margin-bottom:6px;font-size:.82rem;font-weight:700;color:#58546e}
 #noteRows{display:grid;gap:7px}
 .sharing-notes .text-button{margin-top:5px}
+
+#birth::placeholder{direction:rtl;text-align:right;color:#aaa6b3;font-size:14px;font-weight:400}
+label .birth-hint{display:block;font-size:10px;line-height:1.5;font-weight:400;color:#71918f;margin-top:-1px}

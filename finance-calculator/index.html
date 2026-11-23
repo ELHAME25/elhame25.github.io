@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="ar" dir="rtl" data-release="20261123T220100">
+<html lang="ar" dir="rtl" data-release="20261123T221500">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>حاسبة التمويل</title>
-<link rel="stylesheet" href="style.css?v=85d70f7331374a24">
+<link rel="stylesheet" href="style.css?v=94347d1bb0604d43">
 <link rel="apple-touch-icon" sizes="180x180" href="icon-180.png?v=riyad1">
 <link rel="icon" type="image/svg+xml" href="icon.svg?v=riyad1">
 <link rel="manifest" href="manifest.webmanifest">
@@ -22,7 +22,7 @@
 <div class="panel-heading"><h1>بيانات العميل</h1></div>
 <div class="segmented personal-products" id="personalProductOptions"><button type="button" data-personal-kind="new" aria-pressed="false">شخصي جديد<small class="product-rate" hidden></small></button><button type="button" data-personal-kind="buyout" aria-pressed="false">شراء مديونية<small class="product-rate" hidden></small></button><button type="button" data-personal-kind="refinance" aria-pressed="false">إعادة تمويل<small class="product-rate" hidden></small></button></div><div class="client-grid">
 <label><span id="salaryLabel">الراتب</span><input id="salary" aria-labelledby="salaryLabel" type="text" min=".01" step=".01" inputmode="decimal" data-number="decimal" dir="ltr" lang="en" autocomplete="off"></label>
-<label>تاريخ الميلاد<input id="birth" class="hijri-input" placeholder="DD-MM-YYYY" maxlength="10" type="text" inputmode="numeric" dir="ltr" autocomplete="off" aria-describedby="birthError" lang="en"><span id="birthError" class="field-error" role="alert" hidden></span></label>
+<label>تاريخ الميلاد<input id="birth" class="hijri-input" placeholder="يوم - شهر - سنة" maxlength="10" type="text" inputmode="numeric" dir="ltr" autocomplete="off" aria-describedby="birthHint birthError" lang="en"><small id="birthHint" class="birth-hint">الميلادي يتحوّل تلقائيًا إلى هجري</small><span id="birthError" class="field-error" role="alert" hidden></span></label>
 <label>جهة العمل<select id="sector"><option value="civil">حكومي</option><option value="military">عسكري</option><option value="retired">متقاعد</option><option value="privateA">قطاع خاص · فئة A</option><option value="privateB">قطاع خاص · فئة B</option><option value="privateC">قطاع خاص · فئة C</option><option value="corporation">الشركات الكبرى / شبه الحكومي</option><option value="bank">موظف بنك</option><option value="unapproved">موظف غير معتمد</option></select></label>
 <label id="personalTermField">مدة التمويل بالأشهر<input id="personalTerm" type="text" min="1" max="60" step="1" value="60" inputmode="numeric" data-number="integer" dir="ltr" lang="en" autocomplete="off"></label><div id="supportStatusField" class="choice-field" hidden><span>الدعم</span><select id="supportStatus" hidden><option value="supported">مدعوم</option><option value="none" selected>غير مدعوم</option></select><button id="supportToggle" type="button" class="support-switch" role="switch" aria-checked="false" aria-label="مدعوم"><span id="supportStatusText">غير مدعوم</span><span class="switch-track" aria-hidden="true"></span></button></div><div id="rateField" class="rate-field"><span id="rateTitle">النسبة السنوية % <small id="rateProduct"></small></span><div class="rate-entry"><input id="rate" aria-labelledby="rateTitle" type="text" min="0" step=".01" inputmode="decimal" data-number="decimal" dir="ltr" lang="en" autocomplete="off"><label class="rate-mode"><input id="manualRate" type="checkbox"><span>تعديل النسبة يدويًا</span></label></div></div>
 <label id="rankField" class="full" hidden>الرتبة الحالية<select id="rank"></select></label>
