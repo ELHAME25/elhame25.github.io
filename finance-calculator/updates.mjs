@@ -7,23 +7,26 @@ export function installUpdates({capture,restore},env=globalThis){
  async function check(){
   if(checking||moving||doc.visibilityState==='hidden'||!current)return;
   checking=true;
+  const controller=new AbortController();
+  const timeout=env.setTimeout(()=>controller.abort(),8000);
   try{
    const url=new URL('./release.json',win.location.href);url.searchParams.set('_',Date.now());
-   const response=await env.fetch(url,{cache:'no-store'});
+   const response=await env.fetch(url,{cache:'no-store',signal:controller.signal});
    if(!response.ok)return;
    const next=await response.json();
    if(!/^[a-zA-Z0-9._-]{1,80}$/.test(next.version)||next.version===current)return;
    const data=capture();
    env.sessionStorage.setItem(key,JSON.stringify({savedAt:Date.now(),data}));
    moving=true;
-   const target=new URL(win.location.href);target.searchParams.set('_release',next.version);
+   const target=new URL(win.location.href);target.searchParams.set('_release',next.version);target.searchParams.set('_refresh',Date.now());
    win.location.replace(target.href);
-  }catch{}finally{checking=false;}
+  }catch{}finally{env.clearTimeout(timeout);checking=false;}
  }
  doc.addEventListener('visibilitychange',check);
  win.addEventListener('pageshow',check);
  win.addEventListener('focus',check);
- env.setInterval(check,60000);
+ win.addEventListener('online',check);
+ env.setInterval(check,15000);
  check();
  return {check};
 }

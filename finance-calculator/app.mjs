@@ -1,4 +1,4 @@
-import {installUpdates} from './updates.mjs?v=ff090ffd035b3327';
+import {installUpdates} from './updates.mjs?v=16a7c3809144b03d';
 import {personalRate,mortgageRate,financingDeductions,personalClasses} from './pricing.mjs?v=410bbb63609e638a';
 import {stages,approvalDraws} from './draws.mjs?v=d697f464270110f1';
 import {ranks,validateBirth,hijriDate,gregorianToHijri,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=5c25600828625ee2';
@@ -16,27 +16,31 @@ function normalizeNumericValue(value,integer=false,precision=null){
 }
 function readAmount(value){return Number(normalizeNumericValue(value))||0;}
 function normalizePercentage(value){return normalizeNumericValue(value,false,2);}
-function normalizeSalary(input,event){
- let value=input.value;
- const position=input.selectionStart;
- const typedSeparator=event?.inputType==='insertText'&&position>0&&/[,،٫]/.test(value[position-1]);
- if(typedSeparator){
-  value=value.slice(0,position-1)+'.'+value.slice(position);
- }else if(event?.inputType==='insertFromPaste'&&/^[0-9٠-٩۰-۹]+,[0-9٠-٩۰-۹]{1,2}$/.test(value)){
-  value=value.replace(',','.');
+function normalizeSalary(input){
+ const value=input.value;
+ const clean=text=>normalizeNumericValue(text.replace(/،/g,'.'),false,2);
+ const normalized=clean(value);
+ if(normalized===value)return;
+ const start=input.selectionStart,end=input.selectionEnd;
+ input.value=normalized;
+ if(typeof start==='number'&&typeof end==='number'){
+  input.setSelectionRange(Math.min(clean(value.slice(0,start)).length,normalized.length),Math.min(clean(value.slice(0,end)).length,normalized.length));
  }
- value=value.replace(/،/g,'.');
- const [whole,fraction]=normalizeNumericValue(value.replace(/,/g,''),false,2).split('.');
- const formatted=whole.replace(/\B(?=(\d{3})+(?!\d))/g,',')+(fraction===undefined?'':'.'+fraction);
- if(input.value===formatted)return;
- const count=value.slice(0,position).replace(/[,٬]/g,'').length;
- input.value=formatted;
- let cursor=0,seen=0;
- while(cursor<formatted.length&&seen<count){if(formatted[cursor]!==',')seen++;cursor++;}
- input.setSelectionRange(cursor,cursor);
 }
-function normalizeNumericField(input,event){
- if(['salary','basic'].includes(input.id))return normalizeSalary(input,event);
+function formatSalary(input){
+ normalizeSalary(input);
+ if(!input.value)return;
+ const [whole,fraction]=input.value.split('.');
+ input.value=whole.replace(/\B(?=(\d{3})+(?!\d))/g,',')+(fraction===undefined||fraction===''?'':'.'+fraction);
+}
+document.addEventListener('focusin',event=>{
+ if(['salary','basic'].includes(event.target.id))normalizeSalary(event.target);
+});
+document.addEventListener('focusout',event=>{
+ if(['salary','basic'].includes(event.target.id))formatSalary(event.target);
+});
+function normalizeNumericField(input){
+ if(['salary','basic'].includes(input.id))return normalizeSalary(input);
  const mode=input.dataset?.number;const percentage=input.hasAttribute?.('data-percentage');if(!mode&&!percentage)return;
  const monetary=mode==='decimal'&&!percentage&&input.id!=='rate';
  const clean=value=>{const normalized=percentage?normalizePercentage(value):normalizeNumericValue(monetary?String(value).replace(/,/g,''):value,mode==='integer');return monetary&&normalized!==''&&Number.isFinite(Number(normalized))?Math.round(Number(normalized)).toLocaleString('en-US'):normalized;};
@@ -261,7 +265,7 @@ function resetNotes(values=[]){
 }
 $('addNote').onclick=()=>{const input=addNote();refreshClearButtons();input.focus();};
 resetNotes();
-document.addEventListener('input',e=>{normalizeNumericField(e.target,e);if(e.target.id==='phone'&&!e.target.value.startsWith('0'))e.target.value='0'+e.target.value;syncSupportSelection(e.target);if(e.target.matches('.hijri-input'))formatDateInput(e);
+document.addEventListener('input',e=>{normalizeNumericField(e.target);if(e.target.id==='phone'&&!e.target.value.startsWith('0'))e.target.value='0'+e.target.value;syncSupportSelection(e.target);if(e.target.matches('.hijri-input'))formatDateInput(e);
  if(e.target.id==='birth'){
   state.convertedBirth=null;
   convertBirth();
