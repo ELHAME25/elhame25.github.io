@@ -19,37 +19,21 @@ function normalizePercentage(value){return normalizeNumericValue(value,false,2);
 function normalizeSalary(input){
  const value=input.value;
  const clean=text=>{
-  let digits=text.replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/[۰-۹]/g,d=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(d));
-  if(/^\d{1,3}([,٬]\d{3})+([.٫]\d*)?$/.test(digits))digits=digits.replace(/[,٬]/g,'');
-  return normalizeNumericValue(digits.replace(/[٬،﹐，]/g,'.').replace(/[．﹒]/g,'.'),false,2);
+  const normalized=normalizeNumericValue(text.replace(/,/g,'').replace(/،/g,'.'));
+  return normalized===''?'':Math.floor(Number(normalized)||0).toLocaleString('en-US');
  };
- const normalized=clean(value);
- if(normalized===value)return;
+ const formatted=clean(value);
+ if(formatted===value)return;
  const start=input.selectionStart,end=input.selectionEnd;
- input.value=normalized;
- if(typeof start==='number'&&typeof end==='number'){
-  input.setSelectionRange(Math.min(clean(value.slice(0,start)).length,normalized.length),Math.min(clean(value.slice(0,end)).length,normalized.length));
- }
+ input.value=formatted;
+ const caret=position=>{
+  const count=normalizeNumericValue(value.slice(0,position),true).length;
+  let seen=0;
+  for(let i=0;i<formatted.length;i++)if(/\d/.test(formatted[i])&&++seen===count)return i+1;
+  return count?formatted.length:0;
+ };
+ if(typeof start==='number'&&typeof end==='number')input.setSelectionRange(caret(start),caret(end));
 }
-function formatSalary(input){
- normalizeSalary(input);
- if(!input.value)return;
- const [whole,fraction]=input.value.split('.');
- input.value=whole.replace(/\B(?=(\d{3})+(?!\d))/g,',')+(fraction===undefined||fraction===''?'':'.'+fraction);
-}
-document.addEventListener('beforeinput',event=>{
- const input=event.target;
- if(!['salary','basic'].includes(input.id)||!event.cancelable||!/^insert/.test(event.inputType)||!/^[,،٫٬﹐，．﹒.]$/.test(event.data||''))return;
- event.preventDefault();
- input.setRangeText('.',input.selectionStart,input.selectionEnd,'end');
- input.dispatchEvent(new Event('input',{bubbles:true}));
-});
-document.addEventListener('focusin',event=>{
- if(['salary','basic'].includes(event.target.id))normalizeSalary(event.target);
-});
-document.addEventListener('focusout',event=>{
- if(['salary','basic'].includes(event.target.id))formatSalary(event.target);
-});
 function normalizeNumericField(input){
  if(['salary','basic'].includes(input.id))return normalizeSalary(input);
  const mode=input.dataset?.number;const percentage=input.hasAttribute?.('data-percentage');if(!mode&&!percentage)return;
