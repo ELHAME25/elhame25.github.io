@@ -264,3 +264,9 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 
 #birth::placeholder{direction:rtl;text-align:right;color:#aaa6b3;font-size:14px;font-weight:400}
 label .birth-hint{display:block;font-size:10px;line-height:1.5;font-weight:400;color:#71918f;margin-top:-1px}
+
+
+.client-grid{column-gap:18px;row-gap:32px;padding-bottom:20px}
+.client-grid>label:has(#birth){position:relative}
+.client-grid>label>.birth-hint{position:absolute;top:100%;inset-inline:0;margin-top:4px;line-height:16px}
+@media(max-width:700px){.client-grid{column-gap:12px;row-gap:32px}}
