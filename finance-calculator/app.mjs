@@ -17,7 +17,7 @@ function normalizeNumericValue(value,integer=false,precision=null){
 function readAmount(value){return Number(normalizeNumericValue(value))||0;}
 function normalizePercentage(value){return normalizeNumericValue(value,false,2);}
 function normalizeSalary(input){
- const [whole,fraction]=normalizeNumericValue(input.value,false,2).split('.');
+ const [whole,fraction]=normalizeNumericValue(input.value.replace(/,/g,''),false,2).split('.');
  const formatted=whole.replace(/\B(?=(\d{3})+(?!\d))/g,',')+(fraction===undefined?'':'.'+fraction);
  if(input.value===formatted)return;
  const count=input.value.slice(0,input.selectionStart).replace(/[,٬]/g,'').length;
