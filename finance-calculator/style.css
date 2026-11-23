@@ -270,3 +270,5 @@ label .birth-hint{display:block;font-size:10px;line-height:1.5;font-weight:400;c
 .client-grid>label:has(#birth){position:relative}
 .client-grid>label>.birth-hint{position:absolute;top:100%;inset-inline:0;margin-top:4px;line-height:16px}
 @media(max-width:700px){.client-grid{column-gap:12px;row-gap:32px}}
+
+.site-footer .update-app{display:block;margin:8px auto 0;font-size:11px;font-weight:400;padding:4px 8px}

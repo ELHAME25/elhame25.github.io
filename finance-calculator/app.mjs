@@ -1,4 +1,4 @@
-import {installUpdates} from './updates.mjs?v=16a7c3809144b03d';
+import {installUpdates} from './updates.mjs?v=50e6fde898dca20e';
 import {personalRate,mortgageRate,financingDeductions,personalClasses} from './pricing.mjs?v=410bbb63609e638a';
 import {stages,approvalDraws} from './draws.mjs?v=d697f464270110f1';
 import {ranks,validateBirth,hijriDate,gregorianToHijri,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=5c25600828625ee2';

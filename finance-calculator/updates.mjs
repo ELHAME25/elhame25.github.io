@@ -4,6 +4,20 @@ export function installUpdates({capture,restore},env=globalThis){
  const key='finance-update-draft-v1',current=doc.documentElement.dataset.release;
  let checking=false,moving=false;
  try{const raw=env.sessionStorage.getItem(key);if(raw){env.sessionStorage.removeItem(key);const draft=JSON.parse(raw);if(Date.now()-draft.savedAt<30*60*1000)restore(draft.data);}}catch{}
+ function reload(version){
+  const data=capture();
+  env.sessionStorage.setItem(key,JSON.stringify({savedAt:Date.now(),data}));
+  const target=new URL(win.location.href);
+  target.searchParams.set('_release',version);
+  target.searchParams.set('_refresh',Date.now());
+  moving=true;
+  win.location.replace(target.href);
+ }
+ const refreshButton=doc.getElementById?.('updateApp');
+ if(refreshButton)refreshButton.onclick=()=>{
+  try{reload(current);}
+  catch{refreshButton.textContent='تعذّر التحديث، حاول مجددًا';}
+ };
  async function check(){
   if(checking||moving||doc.visibilityState==='hidden'||!current)return;
   checking=true;
@@ -15,11 +29,7 @@ export function installUpdates({capture,restore},env=globalThis){
    if(!response.ok)return;
    const next=await response.json();
    if(!/^[a-zA-Z0-9._-]{1,80}$/.test(next.version)||next.version===current)return;
-   const data=capture();
-   env.sessionStorage.setItem(key,JSON.stringify({savedAt:Date.now(),data}));
-   moving=true;
-   const target=new URL(win.location.href);target.searchParams.set('_release',next.version);target.searchParams.set('_refresh',Date.now());
-   win.location.replace(target.href);
+   reload(next.version);
   }catch{}finally{env.clearTimeout(timeout);checking=false;}
  }
  doc.addEventListener('visibilitychange',check);
