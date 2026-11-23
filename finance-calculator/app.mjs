@@ -16,18 +16,27 @@ function normalizeNumericValue(value,integer=false,precision=null){
 }
 function readAmount(value){return Number(normalizeNumericValue(value))||0;}
 function normalizePercentage(value){return normalizeNumericValue(value,false,2);}
-function normalizeSalary(input){
- const [whole,fraction]=normalizeNumericValue(input.value.replace(/,/g,''),false,2).split('.');
+function normalizeSalary(input,event){
+ let value=input.value;
+ const position=input.selectionStart;
+ const typedSeparator=event?.inputType==='insertText'&&position>0&&/[,،٫]/.test(value[position-1]);
+ if(typedSeparator){
+  value=value.slice(0,position-1)+'.'+value.slice(position);
+ }else if(event?.inputType==='insertFromPaste'&&/^[0-9٠-٩۰-۹]+,[0-9٠-٩۰-۹]{1,2}$/.test(value)){
+  value=value.replace(',','.');
+ }
+ value=value.replace(/،/g,'.');
+ const [whole,fraction]=normalizeNumericValue(value.replace(/,/g,''),false,2).split('.');
  const formatted=whole.replace(/\B(?=(\d{3})+(?!\d))/g,',')+(fraction===undefined?'':'.'+fraction);
  if(input.value===formatted)return;
- const count=input.value.slice(0,input.selectionStart).replace(/[,٬]/g,'').length;
+ const count=value.slice(0,position).replace(/[,٬]/g,'').length;
  input.value=formatted;
  let cursor=0,seen=0;
  while(cursor<formatted.length&&seen<count){if(formatted[cursor]!==',')seen++;cursor++;}
  input.setSelectionRange(cursor,cursor);
 }
-function normalizeNumericField(input){
- if(['salary','basic'].includes(input.id))return normalizeSalary(input);
+function normalizeNumericField(input,event){
+ if(['salary','basic'].includes(input.id))return normalizeSalary(input,event);
  const mode=input.dataset?.number;const percentage=input.hasAttribute?.('data-percentage');if(!mode&&!percentage)return;
  const monetary=mode==='decimal'&&!percentage&&input.id!=='rate';
  const clean=value=>{const normalized=percentage?normalizePercentage(value):normalizeNumericValue(monetary?String(value).replace(/,/g,''):value,mode==='integer');return monetary&&normalized!==''&&Number.isFinite(Number(normalized))?Math.round(Number(normalized)).toLocaleString('en-US'):normalized;};
@@ -252,7 +261,7 @@ function resetNotes(values=[]){
 }
 $('addNote').onclick=()=>{const input=addNote();refreshClearButtons();input.focus();};
 resetNotes();
-document.addEventListener('input',e=>{normalizeNumericField(e.target);if(e.target.id==='phone'&&!e.target.value.startsWith('0'))e.target.value='0'+e.target.value;syncSupportSelection(e.target);if(e.target.matches('.hijri-input'))formatDateInput(e);
+document.addEventListener('input',e=>{normalizeNumericField(e.target,e);if(e.target.id==='phone'&&!e.target.value.startsWith('0'))e.target.value='0'+e.target.value;syncSupportSelection(e.target);if(e.target.matches('.hijri-input'))formatDateInput(e);
  if(e.target.id==='birth'){
   state.convertedBirth=null;
   convertBirth();
