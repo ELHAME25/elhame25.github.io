@@ -1,7 +1,7 @@
 import {installUpdates} from './updates.mjs?v=50e6fde898dca20e';
-import {personalRate,mortgageRate,financingDeductions,personalClasses} from './pricing.mjs?v=410bbb63609e638a';
+import {personalRate,mortgageRate,financingDeductions,personalClasses} from './pricing.mjs?v=b50cf3248c03479f';
 import {stages,approvalDraws} from './draws.mjs?v=d697f464270110f1';
-import {ranks,validateBirth,hijriDate,gregorianToHijri,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=7cd1d9ae99e43deb';
+import {ranks,validateBirth,hijriDate,gregorianToHijri,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=ab3908b75ea2e207';
 import {prepareReport,downloadReport,shareReport,invalidateReport} from './pdf.mjs?v=363b6f9765f71814';
 const $=id=>document.getElementById(id), num=id=>readAmount($(id).value);
 const fmt=n=>Number(n).toLocaleString('en-US',{maximumFractionDigits:0});
@@ -112,7 +112,7 @@ function refreshChoiceRates(){document.querySelectorAll('[data-personal-kind]').
 function updateFundingPreview(mortgage){
  $('firstDownPaymentTotal').hidden=true;$('downPaymentBreakdown').hidden=true;$('extraDownPaymentField').hidden=true;$('fundingExplanation').hidden=true;$('lienRule').hidden=!mortgage||state.property!=='lien';
  $('propertyValueLabel').textContent=state.property==='lien'?'القيمة السوقية للعقار':state.property==='land'?'سعر الأرض':'سعر العقار / الوحدة';
- $('clientDownPaymentLabel').textContent='الدفعة المقدمة من العميل (إلزامية)';
+ $('clientDownPaymentLabel').textContent='الدفعة المقدمة من العميل';
  if(!mortgage||state.property==='self'||!$('supportStatus').value||($('supportStatus').value==='supported'&&!['monthly','package'].includes($('support').value)))return;
  const funding=propertyFunding({type:state.property,secondProperty:state.secondProperty,resident:state.resident,property:num('propertyValue'),income:num('salary'),support:supportChoice(),packageReceived:false,extraDownPayment:state.property!=='lien'&&num('propertyValue')>0?num('extraDownPayment'):0});
  if(!funding.propertyValue||state.property==='lien')return;
@@ -122,11 +122,11 @@ function updateFundingPreview(mortgage){
  renderFunding(funding);
 }
 function renderFunding(funding){
- $('clientDownPaymentValue').textContent=fundingAmount(funding.clientInitialDownPayment);
+ $('clientDownPaymentValue').textContent=fundingAmount(funding.clientDownPayment);
  $('firstDownPaymentValue').textContent=fundingAmount(funding.packageAmount+funding.clientDownPayment);
  $('firstDownPaymentTotal').hidden=false;
  const explain=funding.borrowingCapacity!==undefined&&funding.clientInitialDownPayment>=.005;
- $('fundingExplanation').hidden=!explain;
+ $('fundingExplanation').hidden=true;
  if(!explain)return;
  const lines=[
   ['حد تمويل العميل',funding.borrowingCapacity],
@@ -170,6 +170,7 @@ function renderCalculation(){$('rateError').hidden=true;const chooseMethod=(['fi
 if(manual){$('manualShare').disabled=true;renderManual();$('manualShare').disabled=$('resultPanel').hidden;return;}
 const classMaximum=personalClasses[$('sector').value]?.months??60;if(state.personalTerm>classMaximum){state.personalTerm=classMaximum;$('personalTerm').value=String(classMaximum);}$('personalTerm').max=classMaximum;
 let x;$('birthError').hidden=true;$('birth').removeAttribute('aria-invalid');try{x=base();if(x.birth)validateBirth(x);}catch(e){$('birthError').textContent=e.message;$('birthError').hidden=false;$('birth').setAttribute('aria-invalid','true');$('term').value='';$('durationSummary').hidden=true;$('pension').textContent='—';$('personalCommitment').hidden=true;state.quote=null;return;}
+if(mortgage&&x.sector==='unapproved'&&x.income>0&&x.income<15000){state.quote=null;showError('الحد الأدنى للراتب للتمويل العقاري لجهة غير معتمدة هو 15,000 ريال.');return;}
 let personalPricingError='';if(x.income>0&&state.rateModes.personal==='auto'){try{state.rates.personal=String(personalRate(x.sector,x.income,state.personalKind));}catch(e){state.rates.personal='';personalPricingError=e.message;}}state.quote=null;if(x.income>0&&x.birth&&state.rates.personal!==''){try{state.quote=personal(x)}catch{}}
 $('existingFields').hidden=!$('existingPersonal').checked;$('personalCommitment').hidden=!mortgage||!state.quote||$('existingPersonal').checked;if(state.quote){$('personalCommitmentAmount').textContent=fmt(state.quote.personal)+' ريال';$('personalCommitmentTerm').textContent=state.quote.months+' شهر';}
 if(mortgage&&x.birth){try{const w=mortgageWindow({...x,resident:state.resident,after:$('retirement').value==='after'});const post=$('sector').value==='retired'||$('retirement').value==='after';const total=state.durationMode==='maximum'||state.term===null?w.maxMonths:Math.min(Math.max(1,state.term),w.maxMonths);const work=Math.min(w.workLeft,total);$('term').max=w.maxMonths;$('term').readOnly=false;if(document.activeElement!==$('term')||num('term')>total)$('term').value=total;$('durationSummary').hidden=!post||!work||work===total;$('durationSummary').textContent='على رأس العمل: '+work+' شهر · بعد التقاعد: '+(total-work)+' شهر';$('termYears').value=state.durationMode==='maximum'?'':total%12===0?String(total):'custom';for(const option of $('termYears').options)if(option.value)option.disabled=option.value==='custom'||Number(option.value)>w.maxMonths;if(num('basic')&&$('hire').value){try{$('pension').textContent=fmt(estimatePension({...x,basic:num('basic'),hire:hireDate()}).pension)+' ريال'}catch{$('pension').textContent='—'}}else $('pension').textContent='—';}catch(e){showError(e.message);return;}}
@@ -184,6 +185,7 @@ document.querySelectorAll('[data-product]').forEach(b=>b.onclick=()=>selectProdu
 $('addDebt').onclick=addDebt;document.querySelectorAll('[data-duration]').forEach(b=>b.onclick=()=>{state.durationMode=b.dataset.duration;state.term=null;state.afterMonths=null;document.querySelectorAll('[data-duration]').forEach(v=>v.setAttribute('aria-pressed',v===b));update()});$('resetSecond').onclick=()=>{state.methods[state.product]='max';state.requests[state.product]='';$('request').value='';document.querySelectorAll('[data-method]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.method==='max'));state.second=null;state.afterDeduction=null;state.fixedBefore=null;state.fixedAfter=null;update()};
 $('resetRequest').onclick=()=>$('resetSecond').onclick();
 function syncChoiceButtons(){
+ if(state.resident||state.secondProperty){if($('supportStatus').value==='supported'){$('supportStatus').value='none';syncSupportSelection($('supportStatus'));}}
  const self=state.property==='self';
  if(self&&$('supportStatus').value==='supported')$('support').value='monthly';
  $('propertyValueField').hidden=self;
@@ -191,7 +193,7 @@ function syncChoiceButtons(){
  for(const key of ['secondProperty','resident'])$(key+'Toggle').setAttribute('aria-checked',String(!!state[key]));
  const supported=$('supportStatus').value==='supported';
  $('supportToggle').setAttribute('aria-checked',String(supported));
- $('supportStatusText').textContent=supported?'مدعوم':'غير مدعوم';
+ $('supportStatusText').textContent='مدعوم';
  document.querySelectorAll('[data-choice-target]').forEach(button=>{
   button.hidden=button.dataset.choiceTarget==='support'&&button.dataset.choiceValue==='package'&&self;
   button.setAttribute('aria-pressed',String($(button.dataset.choiceTarget).value===button.dataset.choiceValue));
@@ -202,6 +204,7 @@ for(const key of ['secondProperty','resident'])$(key+'Toggle').onclick=()=>{
  state.secondProperty=false;
  state.resident=false;
  state[key]=enabled;
+ if(enabled){$('supportStatus').value='none';syncSupportSelection($('supportStatus'));}
  update();
 };
 $('supportToggle').onclick=()=>{
@@ -215,7 +218,7 @@ document.querySelectorAll('[data-choice-target]').forEach(button=>button.onclick
  update();
 });
 function syncSupportSelection(target){
- if(target.id==='supportStatus'){$('support').value=target.value==='none'?'':state.property==='self'?'monthly':state.supportKind||'monthly';state.rates.mortgage=state.rateModes.mortgage==='manual'?state.manualRates.mortgage:'';$('rate').value=state.rates.mortgage;}
+ if(target.id==='supportStatus'){if(target.value==='supported'){state.resident=false;state.secondProperty=false;}$('support').value=target.value==='none'?'':state.property==='self'?'monthly':state.supportKind||'monthly';state.rates.mortgage=state.rateModes.mortgage==='manual'?state.manualRates.mortgage:'';$('rate').value=state.rates.mortgage;}
  if(target.id==='support'&&['monthly','package'].includes(target.value))state.supportKind=target.value;
 }
 function formatDateInput(event){
@@ -302,7 +305,7 @@ for(const id of ['prepareShare','manualShare'])$(id).onclick=openSharing;$('clos
 $('sharingDialog').addEventListener('close',()=>{$('keyboardBar').hidden=true;});
 
 $('viewResult').onclick=()=>$('resultPanel').scrollIntoView({behavior:'smooth',block:'start'});
-$('newClient').onclick=()=>{for(const id of ['manualTotalAmount','manualTotalProfit','settlement','approvalAmount','manualClientName','clientName','salary','birth','rate','basic','hire','credit','existingPayment','existingMonths','buildMonths','constructionPayment','propertyValue','extraDownPayment','advisor','request','secondRate','afterRate'])$(id).value='';resetNotes();state.convertedBirth=null;state.convertedHire=null;convertDate('hire');$('phone').value='0';$('personalTerm').value='60';$('termYears').value='';$('rank').value=Object.keys(ranks)[0];$('existingPersonal').checked=false;$('hasCards').checked=false;$('includePersonal').checked=true;$('useConstruction').checked=false;$('sector').value='civil';$('retirement').value='before';$('support').value='monthly';$('supportStatus').value='none';$('pilot').checked=false;$('debts').replaceChildren();$('manualRows').replaceChildren();for(let i=0;i<4;i++)addManual();Object.assign(state,{supportKind:'monthly',methodReady:{},lastSecondRate:null,lastAfterRate:null,rates:{personal:'',mortgage:''},methods:{personal:'max',fixed:'max',flex:'max'},requests:{personal:'',fixed:'',flex:''},afterDeduction:null,second:null,fixedBefore:null,fixedAfter:null,term:null,afterMonths:null,durationMode:'maximum',quote:null,property:'ready',secondProperty:false,resident:false,manualMode:'approval',personalTerm:60,personalKind:null,rateModes:{personal:'auto',mortgage:'auto'},manualRates:{personal:'',mortgage:''},settlements:{buyout:'',refinance:''}});document.querySelectorAll('[data-property]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.property==='ready'));document.querySelectorAll('[data-duration]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.duration==='maximum'));document.querySelectorAll('[data-personal-kind]').forEach(b=>b.setAttribute('aria-pressed',false));document.querySelectorAll('[data-draw-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.drawMode==='approval'));selectProduct('personal');$('sharingDialog').close();window.scrollTo({top:0,behavior:'smooth'});};
+$('newClient').onclick=()=>{for(const id of ['manualTotalAmount','manualTotalProfit','settlement','approvalAmount','manualClientName','clientName','salary','birth','rate','basic','hire','credit','existingPayment','existingMonths','buildMonths','constructionPayment','propertyValue','extraDownPayment','advisor','request','secondRate','afterRate'])$(id).value='';resetNotes();$('extraDownPaymentField').open=false;state.convertedBirth=null;state.convertedHire=null;convertDate('hire');$('phone').value='0';$('personalTerm').value='60';$('termYears').value='';$('rank').value=Object.keys(ranks)[0];$('existingPersonal').checked=false;$('hasCards').checked=false;$('includePersonal').checked=true;$('useConstruction').checked=false;$('sector').value='civil';$('retirement').value='before';$('support').value='monthly';$('supportStatus').value='none';$('pilot').checked=false;$('debts').replaceChildren();$('manualRows').replaceChildren();for(let i=0;i<4;i++)addManual();Object.assign(state,{supportKind:'monthly',methodReady:{},lastSecondRate:null,lastAfterRate:null,rates:{personal:'',mortgage:''},methods:{personal:'max',fixed:'max',flex:'max'},requests:{personal:'',fixed:'',flex:''},afterDeduction:null,second:null,fixedBefore:null,fixedAfter:null,term:null,afterMonths:null,durationMode:'maximum',quote:null,property:'ready',secondProperty:false,resident:false,manualMode:'approval',personalTerm:60,personalKind:null,rateModes:{personal:'auto',mortgage:'auto'},manualRates:{personal:'',mortgage:''},settlements:{buyout:'',refinance:''}});document.querySelectorAll('[data-property]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.property==='ready'));document.querySelectorAll('[data-duration]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.duration==='maximum'));document.querySelectorAll('[data-personal-kind]').forEach(b=>b.setAttribute('aria-pressed',false));document.querySelectorAll('[data-draw-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.drawMode==='approval'));selectProduct('personal');$('sharingDialog').close();window.scrollTo({top:0,behavior:'smooth'});};
 
 document.querySelectorAll('[data-draw-mode]').forEach(b=>b.onclick=()=>{state.manualMode=b.dataset.drawMode;document.querySelectorAll('[data-draw-mode]').forEach(v=>v.setAttribute('aria-pressed',v===b));update();});
 

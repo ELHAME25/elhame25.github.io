@@ -281,3 +281,14 @@ label .birth-hint{display:block;font-size:10px;line-height:1.5;font-weight:400;c
 .property-tabs{display:flex;flex-wrap:wrap;gap:7px}
 .property-tabs button{flex:1 1 calc(33.333% - 7px);min-height:40px}
 @media(max-width:700px){.property-tabs button{flex-basis:calc(50% - 7px)}}
+
+/* Compact, mutually exclusive mortgage choices. */
+.client-grid:has(#supportStatusField:not([hidden]))>#supportStatusField{grid-column:1/-1!important;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-width:580px;width:100%;align-items:end}
+#supportStatusField>span{grid-column:1/-1}
+#supportStatusField .purchase-options{display:contents;margin:0}
+#supportStatusField .purchase-options[hidden]{display:none}
+#supportStatusField .support-switch{width:100%;min-height:38px}
+.extra-down-payment{font-size:12px;color:var(--teal)}
+.extra-down-payment summary{cursor:pointer;padding:8px 0;font-weight:700;width:fit-content}
+.extra-down-payment label{max-width:320px;margin-top:4px}
+@media(max-width:700px){.client-grid:has(#supportStatusField:not([hidden]))>#supportStatusField{gap:6px;max-width:none}#supportStatusField .support-switch{font-size:11px;padding-inline:7px}.extra-down-payment{font-size:11px}}
