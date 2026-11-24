@@ -189,7 +189,7 @@ function constructionSchedule(x,capacity,work,months) {
 }
 const propertyRatio=x=>{
  if(x.type==='lien')return .80;
- return ['ready','offplan'].includes(x.type)&&(x.secondProperty||x.resident)?.70:.90;
+ return ['ready','offplan'].includes(x.type)&&(x.thirtyPercent||x.secondProperty||x.resident)?.70:.90;
 };
 export function propertyFunding(x,capacity=Infinity){
  const packageAmount=x.type!=='lien'&&x.support==='package'&&!x.packageReceived&&x.income>0?(x.income<10000?150000:100000):0;
