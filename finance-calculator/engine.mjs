@@ -301,6 +301,11 @@ export function mortgageWindow(x){
  const maxMonths=Math.min(x.resident?240:360,Math.max(0,toMaximumAge),(alreadyRetired||x.after)?360:workLeft);
  return {retirementAge,alreadyRetired,retireDate,workLeft,maxMonths};
 }
+const mortgageMinimumMessage='الحد الأدنى لمبلغ التمويل العقاري هو 200,000 ريال.';
+function validateMortgageMinimum(result){
+ if(Math.round(result.net*100)<20000000)throw Error(mortgageMinimumMessage);
+ return result;
+}
 export function calculate(x) {
  const fixed=x.repayment==='fixed';
  const beforeRate=cap(x.income,x.support);
@@ -375,12 +380,12 @@ export function calculate(x) {
  const result={rows,total,net,personalNet,monthlySupport:x.support==='monthly'?monthlySupport(x.income):0,profit:total-net,months,work,retired,retireDate,pension,service,beforeRate,second,afterRate,afterCap,personal,credit,packageAmount,required,financedProperty,customerGap:required,draws:construction?.draws??[]};
  if(!funding.propertyValue){
   if((x.extraDownPayment||0)>0)throw Error('أدخل سعر العقار لاحتساب الدفعة الإضافية.');
-  return {...(fixed?sizeFixed(result,x):flexibleRequest(result,x)),...funding,priceEstimated:false};
+  return validateMortgageMinimum({...(fixed?sizeFixed(result,x):flexibleRequest(result,x)),...funding,priceEstimated:false});
  }
  const target=funding.requestedFinancing;
- if(target<=0)throw Error('الدعم والدفعات تغطي قيمة العقار، لا يوجد مبلغ تمويل مطلوب.');
+ if(target<=0)throw Error(mortgageMinimumMessage);
  const bounded=fixed?sizeFixed(result,{...x,fixedMethod:'amount',fixedRequest:target}):sizeFlexible(result,x,target);
  const sized=fixed?sizeFixed(bounded,x):flexibleRequest(bounded,x);
  const clientDownPayment=funding.propertyValue-packageAmount-sized.net;
- return {...sized,...funding,borrowingCapacity:result.net,clientInitialDownPayment:Math.max(0,clientDownPayment-funding.extraDownPayment),clientDownPayment,priceEstimated:false,financedProperty:sized.net,customerGap:clientDownPayment,required:clientDownPayment};
+ return validateMortgageMinimum({...sized,...funding,borrowingCapacity:result.net,clientInitialDownPayment:Math.max(0,clientDownPayment-funding.extraDownPayment),clientDownPayment,priceEstimated:false,financedProperty:sized.net,customerGap:clientDownPayment,required:clientDownPayment});
 }

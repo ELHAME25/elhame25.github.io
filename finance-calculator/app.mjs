@@ -1,7 +1,7 @@
 import {installUpdates} from './updates.mjs?v=50e6fde898dca20e';
 import {personalRate,mortgageRate,financingDeductions,personalClasses} from './pricing.mjs?v=b50cf3248c03479f';
 import {stages,approvalDraws} from './draws.mjs?v=d697f464270110f1';
-import {ranks,validateBirth,hijriDate,gregorianToHijri,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=ab3908b75ea2e207';
+import {ranks,validateBirth,hijriDate,gregorianToHijri,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=273418a9cfaa8d7a';
 import {prepareReport,downloadReport,shareReport,invalidateReport} from './pdf.mjs?v=363b6f9765f71814';
 const $=id=>document.getElementById(id), num=id=>readAmount($(id).value);
 const fmt=n=>Number(n).toLocaleString('en-US',{maximumFractionDigits:0});
@@ -93,7 +93,6 @@ function render(r,isPersonal){const title=isPersonal?{new:'التمويل الش
   if(r.propertyValue&&!['lien','self'].includes(state.property)){
    if(r.clientInitialDownPayment>=.005)metrics+=metric('الدفعة الإلزامية من العميل',fundingAmount(r.clientInitialDownPayment));
    if(r.extraDownPayment>=.005)metrics+=metric('الدفعة الإضافية الاختيارية',fundingAmount(r.extraDownPayment));
-   if(r.clientDownPayment>=.005)metrics+=metric('الدفعة المقدمة من العميل',fundingAmount(r.clientDownPayment));
   }
  }
  metrics+=metric('مدة التمويل',durationYears(r.months))+metric('نسبة هامش الربح السنوي',(isPersonal?state.rates.personal:state.rates.mortgage)+'%')+metric('إجمالي التمويل',money(r.total))+metric('إجمالي الربح',money(r.profit));
