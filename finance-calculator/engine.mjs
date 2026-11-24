@@ -296,7 +296,7 @@ export function mortgageWindow(x){
  const adjustedAge=x.birthHijri?age+Math.round(age*11/355*100)/100:age;
  const workLeft=alreadyRetired?0:Math.max(0,x.birthHijri?Math.floor((retirementAge-adjustedAge)*12+1e-9)-2:monthsBetween(x.today,retireDate));
  const toMaximumAge=x.birthHijri?Math.floor((75-adjustedAge)/365.2425*354.367*12):monthsBetween(x.today,ageDates(x,75));
- const maxMonths=Math.min(360,Math.max(0,toMaximumAge),(alreadyRetired||x.after)?360:workLeft);
+ const maxMonths=Math.min(x.resident?240:360,Math.max(0,toMaximumAge),(alreadyRetired||x.after)?360:workLeft);
  return {retirementAge,alreadyRetired,retireDate,workLeft,maxMonths};
 }
 export function calculate(x) {
