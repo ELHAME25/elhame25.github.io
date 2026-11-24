@@ -288,6 +288,7 @@ function flexibleRequest(result,x){
  return finalizeFlexible(result,x,rows,x.flexMethod==='amount'?request:total/factor);
 }
 export function mortgageWindow(x){
+ if(x.sector==='unapproved'&&x.income>0&&x.income<15000)throw Error('الحد الأدنى للراتب للتمويل العقاري لجهة غير معتمدة هو 15,000 ريال.');
  validateBirth(x);
  const retirementAge=retirementAgeFor(x);
  const alreadyRetired=retirementAge===null;
