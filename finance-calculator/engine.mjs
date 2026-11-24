@@ -187,7 +187,10 @@ function constructionSchedule(x,capacity,work,months) {
  }
  return result;
 }
-const propertyRatio=x=>x.type==='lien'?.80:.90;
+const propertyRatio=x=>{
+ if(x.type==='lien')return .80;
+ return ['ready','offplan'].includes(x.type)&&(x.secondProperty||x.resident)?.70:.90;
+};
 export function propertyFunding(x,capacity=Infinity){
  const packageAmount=x.type!=='lien'&&x.support==='package'&&!x.packageReceived&&x.income>0?(x.income<10000?150000:100000):0;
  const propertyValue=Number(x.property)||0,extraDownPayment=x.type==='lien'?0:Number(x.extraDownPayment)||0;
