@@ -35,7 +35,7 @@ export function mortgageRate(months,support,property='ready'){
 const cents=n=>Math.round((n+Number.EPSILON)*100)/100;
 export function financingDeductions(principal,product='personal',balance=0){
  if(!Number.isFinite(principal)||principal<0||!Number.isFinite(balance)||balance<0)throw Error('أدخل مبلغًا صحيحًا للمديونية.');
- const fee=cents(Math.min(principal*.005,product==='personal'?2500:5000));
+ const fee=cents(Math.min(principal*(product==='personal'?.005:.01),product==='personal'?2500:5000));
  const vat=cents(fee*.15),charges=cents(fee+vat),afterFees=product==='personal'?cents(principal-charges):principal;
  return {fee,vat,charges,afterFees,feesPaidSeparately:product!=='personal',balance,netCash:cents(afterFees-balance)};
 }
