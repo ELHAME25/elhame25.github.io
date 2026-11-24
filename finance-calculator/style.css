@@ -171,7 +171,7 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 .client-grid>#rateField{max-width:300px}
 .client-grid>label:has(#sector){width:100%!important;grid-column:auto!important;justify-self:stretch;text-align:right}
 .client-grid #sector{text-align:right;text-align-last:right}
-#birth::placeholder{font-size:13px;font-weight:400;color:#aaa6b5}
+:is(#birth,#hire)::placeholder{font-size:13px;font-weight:400;color:#aaa6b5}
 #birth{text-align:left}
 .site-footer{padding-top:8px;padding-bottom:20px;margin-top:-8px}
 .rate-heading{align-items:start;min-height:42px}
@@ -262,13 +262,15 @@ select{font-weight:400;overflow:hidden;text-overflow:ellipsis;padding-inline:10p
 #noteRows{display:grid;gap:7px}
 .sharing-notes .text-button{margin-top:5px}
 
-#birth::placeholder{direction:rtl;text-align:right;color:#aaa6b3;font-size:14px;font-weight:400}
+:is(#birth,#hire)::placeholder{direction:rtl;text-align:right;color:#aaa6b3;font-size:14px;font-weight:400}
 label .birth-hint{display:block;font-size:10px;line-height:1.5;font-weight:400;color:#71918f;margin-top:-1px}
 
 
 .client-grid{column-gap:18px;row-gap:32px;padding-bottom:20px}
-.client-grid>label:has(#birth){position:relative}
-.client-grid>label>.birth-hint{position:absolute;top:100%;inset-inline:0;margin-top:4px;line-height:16px}
+:is(.client-grid,.retirement-fields)>label:has(.hijri-input){position:relative}
+:is(.client-grid,.retirement-fields)>label>.birth-hint{position:absolute;top:100%;inset-inline:0;margin-top:4px;line-height:16px}
 @media(max-width:700px){.client-grid{column-gap:12px;row-gap:32px}}
 
 .site-footer .update-app{display:block;margin:8px auto 0;font-size:11px;font-weight:400;padding:4px 8px}
+
+.retirement-fields{row-gap:32px}
