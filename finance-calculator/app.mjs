@@ -1,7 +1,7 @@
 import {installUpdates} from './updates.mjs?v=50e6fde898dca20e';
-import {personalRate,mortgageRate,financingDeductions,personalClasses} from './pricing.mjs?v=abba4c035cd929bb';
+import {personalRate,mortgageRate,financingDeductions,personalClasses} from './pricing.mjs?v=ce461351bc42797a';
 import {stages,approvalDraws} from './draws.mjs?v=d697f464270110f1';
-import {ranks,validateBirth,hijriDate,gregorianToHijri,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=91381108c16c4b7e';
+import {ranks,validateBirth,hijriDate,gregorianToHijri,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=3dacfc869a1ef35a';
 import {prepareReport,downloadReport,shareReport,invalidateReport} from './pdf.mjs?v=363b6f9765f71814';
 const $=id=>document.getElementById(id), num=id=>readAmount($(id).value);
 const fmt=n=>Number(n).toLocaleString('en-US',{maximumFractionDigits:0});
@@ -45,7 +45,7 @@ function normalizeNumericField(input){
 }
 function durationYears(months){const years=Math.floor(months/12),rest=months%12;const parts=[];if(years)parts.push(years===1?'سنة واحدة':years===2?'سنتان':years+' '+(years<=10?'سنوات':'سنة'));if(rest)parts.push(rest===1?'شهر واحد':rest===2?'شهران':rest+' '+(rest<=10?'أشهر':'شهرًا'));return parts.join(' و')||'0 شهر';}
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const supportChoice=()=>$('supportStatus').value==='none'?'none':state.property==='self'?'monthly':$('support').value;
+const supportChoice=()=>state.property==='land'||$('supportStatus').value==='none'?'none':state.property==='self'?'monthly':$('support').value;
 const fundingAmount=n=>Number(n).toLocaleString('en-US',{maximumFractionDigits:2})+' ريال';
 const money=n=>`<span class="amount" dir="ltr">${fmt(n)}</span> <span class="currency">ريال</span>`;
 const state={supportKind:'monthly',product:'personal',property:'ready',secondProperty:false,resident:false,rates:{personal:'',mortgage:''},methods:{personal:'max',fixed:'max',flex:'max'},requests:{personal:'',fixed:'',flex:''},afterDeduction:null,second:null,fixedBefore:null,fixedAfter:null,term:null,afterMonths:null,durationMode:'maximum',quote:null,manualMode:'approval',personalTerm:60,personalKind:null,rateModes:{personal:'auto',mortgage:'auto'},manualRates:{personal:'',mortgage:''},settlements:{buyout:'',refinance:''}};
@@ -186,7 +186,8 @@ document.querySelectorAll('[data-product]').forEach(b=>b.onclick=()=>selectProdu
 $('addDebt').onclick=addDebt;document.querySelectorAll('[data-duration]').forEach(b=>b.onclick=()=>{state.durationMode=b.dataset.duration;state.term=null;state.afterMonths=null;document.querySelectorAll('[data-duration]').forEach(v=>v.setAttribute('aria-pressed',v===b));update()});$('resetSecond').onclick=()=>{state.methods[state.product]='max';state.requests[state.product]='';$('request').value='';document.querySelectorAll('[data-method]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.method==='max'));state.second=null;state.afterDeduction=null;state.fixedBefore=null;state.fixedAfter=null;update()};
 $('resetRequest').onclick=()=>$('resetSecond').onclick();
 function syncChoiceButtons(){
- if(state.resident||state.secondProperty){if($('supportStatus').value==='supported'){$('supportStatus').value='none';syncSupportSelection($('supportStatus'));}}
+ if(state.property==='land'||state.resident||state.secondProperty){if($('supportStatus').value==='supported'){$('supportStatus').value='none';syncSupportSelection($('supportStatus'));}}
+ $('supportToggle').disabled=state.property==='land';
  const self=state.property==='self';
  if(self&&$('supportStatus').value==='supported')$('support').value='monthly';
  $('propertyValueField').hidden=self;
@@ -209,6 +210,7 @@ for(const key of ['secondProperty','resident'])$(key+'Toggle').onclick=()=>{
  update();
 };
 $('supportToggle').onclick=()=>{
+ if(state.property==='land')return;
  $('supportStatus').value=$('supportStatus').value==='supported'?'none':'supported';
  syncSupportSelection($('supportStatus'));update();
 };

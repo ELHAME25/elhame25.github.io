@@ -1,4 +1,4 @@
-import {personalClasses,validatePersonalClass,financingDeductions} from './pricing.mjs?v=abba4c035cd929bb';
+import {personalClasses,validatePersonalClass,financingDeductions} from './pricing.mjs?v=ce461351bc42797a';
 export const ranks = {
  'جندي / جندي أول':[44,44], 'عريف':[46,46], 'وكيل رقيب':[48,48], 'رقيب / رقيب أول':[50,50], 'رئيس رقباء':[52,52],
  'ملازم / ملازم أول':[44,42], 'نقيب':[48,46], 'رائد':[50,48], 'مقدم':[52,50], 'عقيد':[54,52], 'عميد':[56,54], 'لواء':[58,56]
@@ -193,7 +193,7 @@ const propertyRatio=x=>{
  return ['ready','offplan'].includes(x.type)&&(x.thirtyPercent||x.secondProperty||x.resident)?.70:.90;
 };
 export function propertyFunding(x,capacity=Infinity){
- const packageAmount=x.type!=='lien'&&x.support==='package'&&!x.packageReceived&&x.income>0?(x.income<10000?150000:100000):0;
+ const packageAmount=!['lien','land'].includes(x.type)&&x.support==='package'&&!x.packageReceived&&x.income>0?(x.income<10000?150000:100000):0;
  const propertyValue=Number(x.property)||0,extraDownPayment=x.type==='lien'?0:Number(x.extraDownPayment)||0;
  if(propertyValue<0||!Number.isFinite(propertyValue))throw Error('أدخل قيمة عقار صحيحة.');
  if(extraDownPayment<0||!Number.isFinite(extraDownPayment))throw Error('أدخل دفعة إضافية صحيحة.');
@@ -307,6 +307,7 @@ function validateMortgageMinimum(result){
  return result;
 }
 export function calculate(x) {
+ if(x.type==='land')x={...x,support:'none'};
  const fixed=x.repayment==='fixed';
  const beforeRate=cap(x.income,x.support);
  const second=x.second??beforeRate;
