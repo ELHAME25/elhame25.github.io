@@ -110,7 +110,9 @@ function render(r,isPersonal){const title=isPersonal?{new:'التمويل الش
 function refreshChoiceRates(){document.querySelectorAll('[data-personal-kind]').forEach(button=>{const rate=button.querySelector('.product-rate');let value='';if(button.dataset.personalKind===state.personalKind&&num('salary')>0){try{value=state.rateModes.personal==='manual'?state.rates.personal:String(personalRate($('sector').value,num('salary'),state.personalKind));}catch{}}rate.textContent=value===''?'':value+'%';rate.hidden=value==='';});}
 
 function updateFundingPreview(mortgage){
- $('firstDownPaymentTotal').hidden=true;$('downPaymentBreakdown').hidden=true;$('extraDownPaymentField').hidden=true;$('fundingExplanation').hidden=true;$('lienRule').hidden=!mortgage||state.property!=='lien';
+ $('firstDownPaymentTotal').hidden=true;$('downPaymentBreakdown').hidden=true;$('extraDownPaymentField').hidden=true;$('fundingExplanation').hidden=true;const hint=$('propertyFundingHint');
+ hint.hidden=!mortgage||state.property==='self'||!(state.property==='lien'||state.property==='land'||state.secondProperty||state.resident||$('supportStatus').value==='supported');
+ if(!hint.hidden){const ratio=propertyFunding({type:state.property,secondProperty:state.secondProperty,resident:state.resident}).propertyRatio;hint.innerHTML=state.property==='lien'?'التمويل حتى <bdi dir="ltr">80%</bdi> من سعر العقار':'الدفعة الأولى <bdi dir="ltr">'+Math.round((1-ratio)*100)+'%</bdi> · التمويل حتى <bdi dir="ltr">'+Math.round(ratio*100)+'%</bdi>';}
  $('propertyValueLabel').textContent=state.property==='lien'?'القيمة السوقية للعقار':state.property==='land'?'سعر الأرض':'سعر العقار / الوحدة';
  $('clientDownPaymentLabel').textContent='الدفعة المقدمة من العميل';
  if(!mortgage||state.property==='self'||!$('supportStatus').value||($('supportStatus').value==='supported'&&!['monthly','package'].includes($('support').value)))return;
