@@ -189,6 +189,7 @@ function constructionSchedule(x,capacity,work,months) {
 }
 const propertyRatio=x=>{
  if(x.type==='lien')return .80;
+ if(x.type==='land')return .70;
  return ['ready','offplan'].includes(x.type)&&(x.thirtyPercent||x.secondProperty||x.resident)?.70:.90;
 };
 export function propertyFunding(x,capacity=Infinity){

@@ -1,7 +1,7 @@
 import {installUpdates} from './updates.mjs?v=50e6fde898dca20e';
 import {personalRate,mortgageRate,financingDeductions,personalClasses} from './pricing.mjs?v=410bbb63609e638a';
 import {stages,approvalDraws} from './draws.mjs?v=d697f464270110f1';
-import {ranks,validateBirth,hijriDate,gregorianToHijri,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=060cedddc93d1f8f';
+import {ranks,validateBirth,hijriDate,gregorianToHijri,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=7cd1d9ae99e43deb';
 import {prepareReport,downloadReport,shareReport,invalidateReport} from './pdf.mjs?v=363b6f9765f71814';
 const $=id=>document.getElementById(id), num=id=>readAmount($(id).value);
 const fmt=n=>Number(n).toLocaleString('en-US',{maximumFractionDigits:0});
@@ -86,7 +86,7 @@ function periods(rows,isPersonal=false,monthly=0,quote={}){
 function stageTable(r){const payments=(d,row)=>{const values=d.installments.filter(p=>p.month>=row.start&&p.month<=row.end).map(p=>p.payment);if(!values.length)return '—';const lo=Math.min(...values),hi=Math.max(...values);return money(hi)+(hi-lo>.01?`<small> – ${fmt(lo)}</small>`:'');};return `<h3 class="report-section-title">دفعات البناء الذاتي</h3><div class="construction-cards">${stages.map((s,i)=>`<article class="construction-card"><div class="phase-card-top"><h4>الدفعة ${s[0]} · ${s[1]}%</h4><strong>${money(r.draws[i].amount)}</strong></div><div class="draw-payments">${r.rows.map((row,j)=>`<div><span>قسط الفترة ${ordinals[j]||j+1}</span><b>${payments(r.draws[i],row)}</b></div>`).join('')}</div><details><summary>مرحلة البناء</summary><p>${s[2]}</p><p>${s[3]}</p></details></article>`).join('')}</div><div class="table-scroll"><table class="schedule constructionTable"><thead><tr><th>الدفعة</th><th>النسبة</th><th>مبلغ الدفعة</th>${r.rows.map((row,j)=>`<th>قسط الفترة ${ordinals[j]||j+1}</th>`).join('')}</tr></thead><tbody>${stages.map((s,i)=>`<tr><td>${s[0]}</td><td>${s[1]}%</td><td>${money(r.draws[i].amount)}</td>${r.rows.map(row=>`<td>${payments(r.draws[i],row)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;}
 
 function render(r,isPersonal){const title=isPersonal?{new:'التمويل الشخصي',buyout:'شراء مديونية',refinance:'إعادة تمويل'}[state.personalKind]:'تمويل عقاري';const atMax=isPersonal?state.methods.personal==='max':state.product==='flex'?(state.methods.flex||'max')==='max'&&(state.second===null||state.second===r.beforeRate)&&(state.afterDeduction===null||state.afterDeduction===r.afterCap):state.methods.fixed==='max'&&state.fixedBefore===null&&state.fixedAfter===null;let metrics='';
- if(!isPersonal&&r.propertyValue&&state.property!=='self')metrics+=metric(state.property==='lien'?'القيمة السوقية للعقار':'سعر العقار / الوحدة',money(r.propertyValue));
+ if(!isPersonal&&r.propertyValue&&state.property!=='self')metrics+=metric(state.property==='lien'?'القيمة السوقية للعقار':state.property==='land'?'سعر الأرض':'سعر العقار / الوحدة',money(r.propertyValue));
  metrics+=metric(atMax&&(state.property==='self'||!r.propertyValue||r.priceEstimated)?'الحد الأعلى للتمويل':'مبلغ التمويل',money(r.net));
  if(!isPersonal){
   if(r.packageAmount&&state.property!=='lien')metrics+=metric('دعم الدفعة المقدمة',fundingAmount(r.packageAmount));
@@ -111,7 +111,7 @@ function refreshChoiceRates(){document.querySelectorAll('[data-personal-kind]').
 
 function updateFundingPreview(mortgage){
  $('firstDownPaymentTotal').hidden=true;$('downPaymentBreakdown').hidden=true;$('extraDownPaymentField').hidden=true;$('fundingExplanation').hidden=true;$('lienRule').hidden=!mortgage||state.property!=='lien';
- $('propertyValueLabel').textContent=state.property==='lien'?'القيمة السوقية للعقار':'سعر العقار / الوحدة';
+ $('propertyValueLabel').textContent=state.property==='lien'?'القيمة السوقية للعقار':state.property==='land'?'سعر الأرض':'سعر العقار / الوحدة';
  $('clientDownPaymentLabel').textContent='الدفعة المقدمة من العميل (إلزامية)';
  if(!mortgage||state.property==='self'||!$('supportStatus').value||($('supportStatus').value==='supported'&&!['monthly','package'].includes($('support').value)))return;
  const funding=propertyFunding({type:state.property,secondProperty:state.secondProperty,resident:state.resident,property:num('propertyValue'),income:num('salary'),support:supportChoice(),packageReceived:false,extraDownPayment:state.property!=='lien'&&num('propertyValue')>0?num('extraDownPayment'):0});
@@ -130,7 +130,7 @@ function renderFunding(funding){
  if(!explain)return;
  const lines=[
   ['حد تمويل العميل',funding.borrowingCapacity],
-  ['سقف تمويل الوحدة ('+Math.round(funding.propertyRatio*100)+'%)',funding.propertyValue*funding.propertyRatio],
+  [(state.property==='land'?'سقف تمويل الأرض (':'سقف تمويل الوحدة (')+Math.round(funding.propertyRatio*100)+'%)',funding.propertyValue*funding.propertyRatio],
   ['الدفعة الأولى الأساسية',funding.initialDownPayment],
   ...(funding.packageAmount?[['دعم الدفعة المقدمة',funding.packageAmount]]:[]),
   ['الدفعة الإلزامية على العميل',funding.clientInitialDownPayment],
@@ -187,7 +187,7 @@ function syncChoiceButtons(){
  const self=state.property==='self';
  if(self&&$('supportStatus').value==='supported')$('support').value='monthly';
  $('propertyValueField').hidden=self;
- $('purchaseOptions').hidden=!['ready','offplan'].includes(state.property);
+ $('purchaseOptions').hidden=!['ready','offplan','land'].includes(state.property);
  for(const key of ['secondProperty','resident'])$(key+'Toggle').setAttribute('aria-checked',String(!!state[key]));
  const supported=$('supportStatus').value==='supported';
  $('supportToggle').setAttribute('aria-checked',String(supported));
