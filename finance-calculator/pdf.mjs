@@ -86,8 +86,6 @@ export function invalidateReport(){
 }
 export function prepareReport(report){
  report=localizedReport(report,document.getElementById('reportEnglish')?.getAttribute('aria-checked')==='true'?'en':'ar');
- const preview=document.getElementById('sharePreview');
- if(preview&&document.getElementById('sharingDialog')?.open)preview.replaceChildren(report.cloneNode(true));
  if(prepared)URL.revokeObjectURL(prepared.url);
  const title=reportTitle(report),blob=pdfBlob(drawPages(report),title);
  document.title=title;
