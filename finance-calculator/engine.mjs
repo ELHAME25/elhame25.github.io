@@ -291,13 +291,15 @@ function flexibleRequest(result,x){
 export function mortgageWindow(x){
  if(x.sector==='unapproved'&&x.income>0&&x.income<15000)throw Error('الحد الأدنى للراتب للتمويل العقاري لجهة غير معتمدة هو 15,000 ريال.');
  validateBirth(x);
+ if(x.resident&&ageDates(x,28)>x.today)throw Error('الحد الأدنى لعمر المقيم عند التقديم هو 28 سنة.');
  const retirementAge=retirementAgeFor(x);
  const alreadyRetired=retirementAge===null;
  const retireDate=alreadyRetired?null:ageDates(x,retirementAge);
  const age=ageYears(x.birth,x.today);
  const adjustedAge=x.birthHijri?age+Math.round(age*11/355*100)/100:age;
  const workLeft=alreadyRetired?0:Math.max(0,x.birthHijri?Math.floor((retirementAge-adjustedAge)*12+1e-9)-2:monthsBetween(x.today,retireDate));
- const toMaximumAge=x.birthHijri?Math.floor((75-adjustedAge)/365.2425*354.367*12):monthsBetween(x.today,ageDates(x,75));
+ const toMaximumAge=x.resident?monthsBetween(x.today,ageDates(x,55)):x.birthHijri?Math.floor((75-adjustedAge)/365.2425*354.367*12):monthsBetween(x.today,ageDates(x,75));
+ if(x.resident&&toMaximumAge<1)throw Error('يجب ألا يتجاوز عمر المقيم 55 سنة عند سداد آخر قسط؛ لا توجد مدة تمويل متاحة.');
  const maxMonths=Math.min(x.resident?240:360,Math.max(0,toMaximumAge),(alreadyRetired||x.after)?360:workLeft);
  return {retirementAge,alreadyRetired,retireDate,workLeft,maxMonths};
 }
@@ -314,7 +316,7 @@ export function calculate(x) {
  if(!Number.isFinite(second)||second<=0)throw Error('أدخل نسبة استقطاع صالحة للفترة الثانية.');
  if(second>beforeRate)throw Error('نسبة الفترة الثانية تتجاوز السقف '+beforeRate+'%.');
  const {retirementAge,alreadyRetired,retireDate,workLeft,maxMonths}=mortgageWindow(x);
- if(x.term!=null&&(!Number.isInteger(x.term)||x.term<1||x.term>maxMonths))throw Error('المدة القصوى المتاحة '+maxMonths+' شهرًا، لا يمكن تجاوز حد العمر.');
+ if(x.term!=null&&(!Number.isInteger(x.term)||x.term<1||x.term>maxMonths))throw Error(x.resident?'المدة القصوى للمقيم هي '+maxMonths+' شهرًا، ويجب ألا يتجاوز العمر 55 سنة عند آخر قسط.':'المدة القصوى المتاحة '+maxMonths+' شهرًا، لا يمكن تجاوز حد العمر.');
  const months=x.term??maxMonths;
  if(!months||!x.income) throw Error('أدخل دخلاً ومدة متاحة للتمويل.');
  const work=Math.min(months,workLeft), retired=months-work;
