@@ -1,30 +1,32 @@
+import {localizedReport} from './report-language.mjs?v=ab5fdce2ec632c9e';
 const encoder=new TextEncoder();
 const width=842,height=595,margin=26,scale=2;
 let prepared=null;
 function drawPages(report){
+ const en=report.lang==='en',align=en?'left':'right',edgeX=en?margin:width-margin,t=(ar,english)=>en?english:ar;
  const onePage=!!report.querySelector('.periods-block');
  const pages=[];let canvas,ctx,usedHeight=height;
- const fresh=()=>{canvas=document.createElement('canvas');canvas.width=width*scale;canvas.height=(onePage?2200:height)*scale;ctx=canvas.getContext('2d');ctx.scale(scale,scale);ctx.fillStyle='#fff';ctx.fillRect(0,0,width,height);ctx.direction='rtl';ctx.textBaseline='middle';ctx.fillStyle='#230871';ctx.fillRect(margin,12,width-margin*2,3);};
+ const fresh=()=>{canvas=document.createElement('canvas');canvas.width=width*scale;canvas.height=(onePage?2200:height)*scale;ctx=canvas.getContext('2d');ctx.scale(scale,scale);ctx.fillStyle='#fff';ctx.fillRect(0,0,width,height);ctx.direction=en?'ltr':'rtl';ctx.textBaseline='middle';ctx.fillStyle='#230871';ctx.fillRect(margin,12,width-margin*2,3);};
  const save=()=>{let image=canvas;if(onePage){image=document.createElement('canvas');image.width=width*scale;image.height=height*scale;const out=image.getContext('2d');out.fillStyle='#fff';out.fillRect(0,0,image.width,image.height);const fit=Math.min(1,height/usedHeight),renderedWidth=width*scale*fit;out.drawImage(canvas,0,0,width*scale,usedHeight*scale,(image.width-renderedWidth)/2,0,renderedWidth,usedHeight*scale*fit);}pages.push(Uint8Array.from(atob(image.toDataURL('image/jpeg',.95).split(',')[1]),c=>c.charCodeAt(0)));};
  const font=(size=11,bold=false)=>{ctx.font=(bold?'bold ':'')+size+'px Arabic,Arial,sans-serif';};
- const write=(text,x,y,align='right',color='#302153')=>{ctx.textAlign=align;ctx.fillStyle=color;ctx.fillText(text,x,y);};
+ const write=(text,x,y,align= en?'left':'right',color='#302153')=>{ctx.textAlign=align;ctx.fillStyle=color;ctx.fillText(text,x,y);};
  const wrap=(text,w)=>{const out=[];for(const paragraph of text.split('\n')){let line='';for(const word of paragraph.split(/\s+/)){if(line&&ctx.measureText(line+' '+word).width>w){out.push(line);line=word;}else line+=(line?' ':'')+word;}out.push(line);}return out;};
- const cell=(text,x,y,w,h,bg='',size=10,bold=false,align='right')=>{if(bg){ctx.fillStyle=bg;ctx.fillRect(x,y,w,h);}ctx.strokeStyle='#dfe1e8';ctx.strokeRect(x,y,w,h);font(size,bold);const lines=wrap(text,w-12);lines.forEach((l,i)=>write(l,align==='center'?x+w/2:x+w-6,y+(h-lines.length*13)/2+7+i*13,align));};
- const table=(el,x,y,w)=>{if(!el)return y;const rows=[...el.querySelectorAll('tr')],hasHeader=!!el.querySelector('thead');let yy=y;for(let j=0;j<rows.length;j++){const cells=[...rows[j].children];const weights=el.matches('.repayment-list')?[.52,.30,.18]:el.matches('.constructionRules')&&cells.length===4?[.12,.12,.48,.28]:el.matches('.desktop-schedule')&&!report.querySelector('.draw-report-columns')&&cells.length>2?[.28,...Array(cells.length-1).fill(.72/(cells.length-1))]:cells.map(()=>1/cells.length);const widths=weights.map(v=>v*w);font(9);const vals=cells.map(c=>(c.querySelector('.period-name')?.textContent||c.textContent.trim()).replace(/ريال/g,''));const h=Math.max(j===0&&hasHeader?30:25,...vals.map((v,i)=>wrap(v,widths[i]-12).length*13+10));let edge=x+w;cells.forEach((c,i)=>{edge-=widths[i];cell(vals[i],edge,yy,widths[i],h,j===0&&hasHeader||rows[j].classList.contains('period-total')?'#eff5f7':'',9,c.classList.contains('payment-cell'),c.classList.contains('payment-cell')||c.classList.contains('duration-cell')||!!c.querySelector('.amount')||/^[\d,.%\s]+$/.test(vals[i])?'center':'right');});yy+=h;}return yy;};
+ const cell=(text,x,y,w,h,bg='',size=10,bold=false,align=en?'left':'right')=>{if(bg){ctx.fillStyle=bg;ctx.fillRect(x,y,w,h);}ctx.strokeStyle='#dfe1e8';ctx.strokeRect(x,y,w,h);font(size,bold);const lines=wrap(text,w-12);lines.forEach((l,i)=>write(l,align==='center'?x+w/2:align==='left'?x+6:x+w-6,y+(h-lines.length*13)/2+7+i*13,align));};
+ const table=(el,x,y,w)=>{if(!el)return y;const rows=[...el.querySelectorAll('tr')],hasHeader=!!el.querySelector('thead');let yy=y;for(let j=0;j<rows.length;j++){const cells=[...rows[j].children];const weights=el.matches('.repayment-list')?[.52,.30,.18]:el.matches('.constructionRules')&&cells.length===4?[.12,.12,.48,.28]:el.matches('.desktop-schedule')&&!report.querySelector('.draw-report-columns')&&cells.length>2?[.28,...Array(cells.length-1).fill(.72/(cells.length-1))]:cells.map(()=>1/cells.length);const widths=weights.map(v=>v*w);font(9);const vals=cells.map(c=>(c.querySelector('.period-name')?.textContent||c.textContent.trim()).replace(/ريال/g,''));const h=Math.max(j===0&&hasHeader?30:25,...vals.map((v,i)=>wrap(v,widths[i]-12).length*13+10));let edge=en?x:x+w;cells.forEach((c,i)=>{if(!en)edge-=widths[i];cell(vals[i],edge,yy,widths[i],h,j===0&&hasHeader||rows[j].classList.contains('period-total')?'#eff5f7':'',9,c.classList.contains('payment-cell'),c.classList.contains('payment-cell')||c.classList.contains('duration-cell')||!!c.querySelector('.amount')||/^[\d,.%\s]+$/.test(vals[i])?'center':align);if(en)edge+=widths[i];});yy+=h;}return yy;};
  fresh();font(16,true);write(report.querySelector('.reportHead h2')?.textContent||'حسبة العميل / ـة :' ,width/2,34,'center','#008d8c');font(9);write(onePage?'':report.querySelector('.product-title')?.textContent||'',width/2,53,'center','#857b96');
- const metrics=[...report.querySelectorAll('.resultMetrics>div')];const stacked=!!report.querySelector('.periods-block');const x=stacked?margin:width/2+12,w=stacked?width-margin*2:width/2-margin-12;let rightY=72;
+ const metrics=[...report.querySelectorAll('.resultMetrics>div')];const stacked=!!report.querySelector('.periods-block');const x=stacked||en?margin:width/2+12,w=stacked?width-margin*2:width/2-margin-12;let rightY=72;
  const metricHeight=Math.min(23,Math.max(18,455/Math.max(1,metrics.length)));
- for(let i=0;i<metrics.length;i++){if(!onePage&&rightY+metricHeight>height-55){save();fresh();rightY=35;}const label=metrics[i].querySelector('dt').textContent,value=metrics[i].querySelector('dd').textContent,paymentRow=metrics[i].classList.contains('personal-installment-row'),rowHeight=paymentRow?36:metricHeight;cell(label,x+w*.48,rightY,w*.52,rowHeight,paymentRow?'#eff5f7':'',paymentRow?12:9,paymentRow);cell(value,x,rightY,w*.48,rowHeight,paymentRow?'#eff5f7':i===0?'#e9f4f5':'',paymentRow?13:9,paymentRow,'center');rightY+=rowHeight;}
+ for(let i=0;i<metrics.length;i++){if(!onePage&&rightY+metricHeight>height-55){save();fresh();rightY=35;}font(9);const label=metrics[i].querySelector('dt').textContent,value=metrics[i].querySelector('dd').textContent,paymentRow=metrics[i].classList.contains('personal-installment-row'),rowHeight=en?Math.max(paymentRow?36:metricHeight,wrap(label,w*.52-12).length*13+10):paymentRow?36:metricHeight;cell(label,en?x:x+w*.48,rightY,w*.52,rowHeight,paymentRow?'#eff5f7':'',paymentRow?12:9,paymentRow);cell(value,en?x+w*.52:x,rightY,w*.48,rowHeight,paymentRow?'#eff5f7':i===0?'#e9f4f5':'',paymentRow?13:9,paymentRow,'center');rightY+=rowHeight;}
  const manual=!!report.querySelector('.draw-report-columns');
- let leftY=manual?72:table(report.querySelector('.desktop-schedule'),margin,stacked?rightY+14:72,w);if(manual){font(12,true);write('آلية صرف الدفعات حسب سياسة البنك',margin+w,81);leftY=table(report.querySelector('.constructionRules'),margin,96,w);font(12,true);write('دفعات العميل',x+w,rightY+15);rightY=table(report.querySelector('.desktop-schedule'),x,rightY+28,w);}for(const extra of report.querySelectorAll('table'))if(!extra.matches('.desktop-schedule,.constructionTable,.constructionRules,.phase-rates'))leftY=table(extra,margin,leftY+15,w);
+ let leftY=manual?72:table(report.querySelector('.desktop-schedule'),!stacked&&en?width/2+12:margin,stacked?rightY+14:72,w);if(manual){font(12,true);write(t('آلية صرف الدفعات حسب سياسة البنك','Drawdown release schedule under bank policy'),en?width/2+12:margin+w,81);leftY=table(report.querySelector('.constructionRules'),en?width/2+12:margin,96,w);font(12,true);write(t('دفعات العميل','Client drawdowns'),en?x:x+w,rightY+15);rightY=table(report.querySelector('.desktop-schedule'),x,rightY+28,w);}for(const extra of report.querySelectorAll('table'))if(!extra.matches('.desktop-schedule,.constructionTable,.constructionRules,.phase-rates'))leftY=table(extra,margin,leftY+15,w);
  const supportRows=[...report.querySelectorAll('.repayment-summary>div')];
  for(const row of supportRows){const yy=leftY+6;cell(row.querySelector('dt').textContent,margin+w*.4,yy,w*.6,21,'',9);cell(row.querySelector('dd').textContent,margin,yy,w*.4,21,'',9,true,'center');leftY=yy+21;}
  let y=Math.max(rightY,leftY)+16;
  const draw=report.querySelector('.constructionTable,.constructionRules');if(draw&&!manual){
  const rows=[...draw.querySelectorAll('tr')];let tableHeight=0;font(9);for(let j=0;j<rows.length;j++){const cells=[...rows[j].children],cw=(width-margin*2)/cells.length;tableHeight+=Math.max(j===0?30:25,...cells.map(c=>wrap(c.textContent.trim().replace(/ريال/g,''),cw-12).length*13+10));}
- if(!onePage&&y+12+tableHeight>height-55){save();fresh();y=35;}font(12,true);write('دفعات البناء الذاتي',width-margin,y);y=table(draw,margin,y+12,width-margin*2)+15;}
+ if(!onePage&&y+12+tableHeight>height-55){save();fresh();y=35;}font(12,true);write(t('دفعات البناء الذاتي','Self-build drawdowns'),edgeX,y);y=table(draw,margin,y+12,width-margin*2)+15;}
 
- const disclaimer=report.querySelector('.reportDisclaimer');if(disclaimer){font(9);for(const paragraph of disclaimer.querySelectorAll('p')){const lines=wrap('* '+paragraph.textContent,width-margin*2);if(!onePage&&y+lines.length*13>height-40){save();fresh();y=35;}lines.forEach((line,i)=>write(line,width-margin,y+i*13));y+=lines.length*13+4;}y+=8;}
+ const disclaimer=report.querySelector('.reportDisclaimer');if(disclaimer){font(9);for(const paragraph of disclaimer.querySelectorAll('p')){const lines=wrap('* '+paragraph.textContent,width-margin*2);if(!onePage&&y+lines.length*13>height-40){save();fresh();y=35;}lines.forEach((line,i)=>write(line,edgeX,y+i*13));y+=lines.length*13+4;}y+=8;}
  const note=report.querySelector('.reportNotes p');
  if(note){
   font(14);
@@ -39,17 +41,18 @@ function drawPages(report){
     save();fresh();y=35;
    }
    ctx.fillStyle='#eff7f8';ctx.fillRect(margin,y,width-margin*2,h);
-   font(12,true);write('الملاحظات',width-margin-12,y+17);
-   font(14);section.forEach((line,i)=>write(line,width-margin-12,y+39+i*19));
+   font(12,true);write(t('الملاحظات','Notes'),en?margin+12:width-margin-12,y+17);
+   font(14);section.forEach((line,i)=>write(line,en?margin+12:width-margin-12,y+39+i*19));
    y+=h+12;
   }
  }
  const identity=[...report.querySelectorAll('.reportIdentity>div')].map(d=>d.querySelector('dt').textContent+'  '+d.querySelector('dd').textContent).join('     ');const identityY=onePage?y+16:Math.min(height-22,Math.max(y+10,height-30));font(11,true);write(identity,width/2,identityY,'center');usedHeight=Math.max(height,identityY+22);save();return pages;
 }
 function reportTitle(report){
+ const en=report.lang==='en';
  const heading=report.querySelector('.reportHead h2')?.textContent||'';
- const name=heading.replace(/^حسبة العميل\s*(?:\/\s*ـة)?\s*[:：]?\s*/u,'').replace(/[\\/:*?"<>|\u0000-\u001f]/g,' ').replace(/\s+/g,' ').trim();
- return 'حسبة العميل'+(name?' '+name:'');
+ const name=heading.replace(/^Client Financing Summary:\s*/u,'').replace(/^حسبة العميل\s*(?:\/\s*ـة)?\s*[:：]?\s*/u,'').replace(/[\\/:*?"<>|\u0000-\u001f]/g,' ').replace(/\s+/g,' ').trim();
+ return (en?'Client Financing Summary':'حسبة العميل')+(name?' '+name:'');
 }
 function pdfText(text){return '<FEFF'+text.split('').map(c=>c.charCodeAt(0).toString(16).padStart(4,'0')).join('')+'>';}
 function pdfBlob(pages,title){
@@ -82,6 +85,9 @@ export function invalidateReport(){
  document.getElementById('download').disabled=true;document.getElementById('sharePdf').disabled=true;
 }
 export function prepareReport(report){
+ report=localizedReport(report,document.getElementById('reportEnglish')?.getAttribute('aria-checked')==='true'?'en':'ar');
+ const preview=document.getElementById('sharePreview');
+ if(preview&&document.getElementById('sharingDialog')?.open)preview.replaceChildren(report.cloneNode(true));
  if(prepared)URL.revokeObjectURL(prepared.url);
  const title=reportTitle(report),blob=pdfBlob(drawPages(report),title);
  document.title=title;
