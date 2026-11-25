@@ -311,6 +311,7 @@ function validateMortgageMinimum(result){
 export function calculate(x) {
  if(x.type==='land')x={...x,support:'none'};
  const fixed=x.repayment==='fixed';
+ if(!fixed&&(Number(x.personalMonths>0)+x.debts.filter(d=>d.amount>0&&d.months>0).length)>1)throw Error('التمويل العقاري المرن يسمح بالتزام واحد فقط.');
  const beforeRate=cap(x.income,x.support);
  const second=x.second??beforeRate;
  if(!Number.isFinite(second)||second<=0)throw Error('أدخل نسبة استقطاع صالحة للفترة الثانية.');
