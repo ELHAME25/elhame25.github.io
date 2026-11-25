@@ -175,7 +175,7 @@ function refreshClearButtons(){
     input.value='';input.focus();input.dispatchEvent(new Event('input',{bubbles:true}));};host.append(button);
   }
   host.querySelector('.clear-field').setAttribute('aria-label',(input.closest('.note-row')?'حذف ':'مسح ')+name);
-  host.querySelector('.clear-field').hidden=input.hidden||input.readOnly||input.disabled||input.value===''||input.id==='phone'&&input.value==='0';
+  host.querySelector('.clear-field').hidden=input.hidden||input.readOnly||input.disabled||input.value===''&&!input.closest('.note-row')||input.id==='phone'&&input.value==='0';
  });
  document.querySelectorAll('[data-method="max"]').forEach(button=>button.hidden=state.product!=='personal');
  $('resetRequest').hidden=!(['fixed','flex'].includes(state.product)&&state.methods[state.product]!=='max'&&$('resultPanel').hidden);
