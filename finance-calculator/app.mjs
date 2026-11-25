@@ -84,7 +84,7 @@ function periods(rows,isPersonal=false,monthly=0,quote={}){
  if(isPersonal)return '';
  const bands=[];
  for(const row of rows){const last=bands.at(-1);if(state.product==='fixed'&&last&&row.label!=='خلال الإنشاء'&&last.label!=='خلال الإنشاء'&&(last.phase===3)===(row.phase===3)&&Math.abs(last.payment-row.payment)<.005&&last.end+1===row.start){last.end=row.end;}else bands.push({...row});}
- const labels=r=>r.label==='خلال الإنشاء'?'القسط الميسر خلال الإنشاء':state.product==='fixed'?(r.phase===3?'قسط العقاري بعد التقاعد':'قسط العقاري إلى التقاعد'):r.phase===1?'قسط العقاري خلال فترة الشخصي':r.phase===2?'قسط العقاري إلى التقاعد':'قسط العقاري بعد التقاعد';
+ const labels=r=>r.label==='خلال الإنشاء'?'القسط الميسر خلال الإنشاء':state.resident&&(state.product==='fixed'||r.phase!==1)?'القسط العقاري حتى نهاية التمويل':state.product==='fixed'?(r.phase===3?'قسط العقاري بعد التقاعد':'قسط العقاري إلى التقاعد'):r.phase===1?'قسط العقاري خلال فترة الشخصي':r.phase===2?'قسط العقاري إلى التقاعد':'قسط العقاري بعد التقاعد';
  const line=(label,amount,months,percent=null,total=false)=>`<tr${total?' class="period-total"':''}><td>${label}${percent!==null?` <small class="ratio-chip">${Number(percent.toFixed(2))}%</small>`:''}</td><td class="payment-cell">${money(amount,label==='الدعم الشهري')}</td><td class="duration-cell">${months?months+' شهر':'—'}</td></tr>`;
  const personalRows=rows.filter(r=>r.personal>0),first=personalRows[0];
  const personalLength=personalRows.reduce((sum,r)=>sum+r.end-r.start+1,0);
