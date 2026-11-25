@@ -134,7 +134,8 @@ export function calculatePersonal(x) {
  const retired=retirementAge===null;
  const months=Math.min(x.term,personalMonthsAvailable(x,retirementAge));
  if(!months) throw Error('لا توجد مدة متاحة للتمويل الشخصي.');
- const rate=retired?25:33.33, credit=x.credit*.05;
+ // Card limits are accounted for separately by the mortgage calculation.
+ const rate=retired?25:33.33, credit=0;
  const obligations=Math.max(...Array.from({length:months},(_,i)=>activeDebt(x.debts,i+1)))+credit;
  const ceiling=Math.max(0,x.income*rate/100-obligations);
  const factor=1+x.margin/100*months/12;
