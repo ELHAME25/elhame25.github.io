@@ -108,7 +108,7 @@ function render(r,isPersonal){const title=isPersonal?{new:'التمويل الش
   }
  }
  metrics+=metric('مدة التمويل',durationYears(r.months))+metric('نسبة هامش الربح السنوي',(isPersonal?state.rates.personal:state.rates.mortgage)+'%')+metric('إجمالي التمويل',money(r.total))+metric('إجمالي الربح',money(r.profit));
- const firstRow=r.rows[0],actualRate=isPersonal?r.personal/num('salary')*100:(firstRow.payment+firstRow.personal+firstRow.obligations)/(firstRow.phase===3?r.pension:num('salary'))*100;
+ const firstRow=r.rows[0],actualRate=isPersonal?r.personal/num('salary')*100:(state.product==='fixed'?firstRow.payment:firstRow.payment+firstRow.personal+firstRow.obligations)/(firstRow.phase===3?r.pension:num('salary'))*100;
  metrics+=metric('نسبة الاستقطاع',Number(actualRate.toFixed(2))+'%');
  const settlement=isPersonal&&state.personalKind!=='new'?num('settlement'):0;
  const cash=financingDeductions(r.net,isPersonal?'personal':'mortgage',settlement);
