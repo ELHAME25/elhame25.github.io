@@ -16,7 +16,7 @@ function retirementAgeFor(x){
  return retirementBySector[x.sector];
 }
 const activeDebt=(debts,month)=>debts.reduce((total,d)=>total+(month>=(d.start??1)&&month<=d.months?d.amount:0),0);
-const cap = (income,support) => support==='monthly'||income>15000 ? 65 : 55;
+const cap = (income,support) => support==='monthly'||income>=15000 ? 65 : 55;
 export function addMonths(date,months) {
  const [y,m,d]=date.split('-').map(Number);
  const last=new Date(Date.UTC(y,m+months,0)).getUTCDate();

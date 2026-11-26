@@ -1,7 +1,7 @@
 import {installUpdates} from './updates.mjs?v=50e6fde898dca20e';
 import {personalRate,mortgageRate,financingDeductions,personalClasses} from './pricing.mjs?v=55beafea17d198d4';
 import {stages,approvalDraws} from './draws.mjs?v=d697f464270110f1';
-import {ranks,validateBirth,hijriDate,gregorianToHijri,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=1c2462a2200a8a65';
+import {ranks,validateBirth,hijriDate,gregorianToHijri,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=0b0ed707bc493807';
 import {prepareReport,downloadReport,shareReport,invalidateReport} from './pdf.mjs?v=f4099a0b39016818';
 const $=id=>document.getElementById(id), num=id=>readAmount($(id).value);
 const fmt=n=>Number(n).toLocaleString('en-US',{maximumFractionDigits:0});
