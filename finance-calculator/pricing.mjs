@@ -27,7 +27,14 @@ export function personalRate(sector,income,product='new'){
  if(!row||row[col]===null)throw Error('لا توجد نسبة مطابقة في المرجع لهذه الحالة.');
  return row[col];
 }
-export function mortgageRate(months,support,property='ready'){
+// Resident Flat rates supplied by the user in IMG_3670.jpeg; maximum 240 months.
+export const residentMortgageRates={months:[60,120,180,240],ready:[5.55,5.99,6.30,6.70],offplan:[5.05,5.49,5.80,6.20]};
+export function mortgageRate(months,support,property='ready',resident=false){
+ if(resident&&['ready','offplan'].includes(property)){
+  const minimum=property==='ready'?24:1;
+  if(!Number.isInteger(months)||months<minimum||months>240)throw Error('مدة تمويل المقيم '+(property==='ready'?'للشراء الجاهز من 24':'للبيع على الخارطة من 1')+' إلى 240 شهرًا، مع مراعاة الحد الأعلى للعمر.');
+  return residentMortgageRates[property][residentMortgageRates.months.findIndex(max=>months<=max)];
+ }
  const table=pricingReference.mortgage;
  if(!Number.isInteger(months)||months<1||months>360)throw Error('أدخل مدة عقاري بين 1 و360 شهرًا.');
  return table[property!=='land'&&(support==='monthly'||support==='package')?'supported':property==='lien'?'lienUnsupported':'unsupported'][table.months.findIndex(max=>months<=max)];

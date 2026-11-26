@@ -1,4 +1,4 @@
-import {personalClasses,validatePersonalClass,financingDeductions} from './pricing.mjs?v=ce461351bc42797a';
+import {personalClasses,validatePersonalClass,financingDeductions} from './pricing.mjs?v=55beafea17d198d4';
 export const ranks = {
  'جندي / جندي أول':[44,44], 'عريف':[46,46], 'وكيل رقيب':[48,48], 'رقيب / رقيب أول':[50,50], 'رئيس رقباء':[52,52],
  'ملازم / ملازم أول':[44,42], 'نقيب':[48,46], 'رائد':[50,48], 'مقدم':[52,50], 'عقيد':[54,52], 'عميد':[56,54], 'لواء':[58,56]
@@ -320,6 +320,7 @@ export function calculate(x) {
  const {retirementAge,alreadyRetired,retireDate,workLeft,maxMonths}=mortgageWindow(x);
  if(x.term!=null&&(!Number.isInteger(x.term)||x.term<1||x.term>maxMonths))throw Error(x.resident?'المدة القصوى للمقيم هي '+maxMonths+' شهرًا، ويجب ألا يتجاوز العمر 55 سنة عند آخر قسط.':'المدة القصوى المتاحة '+maxMonths+' شهرًا، لا يمكن تجاوز حد العمر.');
  const months=x.term??maxMonths;
+ if(x.resident&&x.type==='ready'&&months<24)throw Error('الحد الأدنى لمدة تمويل المقيم للشراء الجاهز هو 24 شهرًا.');
  if(!months||!x.income) throw Error('أدخل دخلاً ومدة متاحة للتمويل.');
  const work=Math.min(months,workLeft), retired=months-work;
  if(retired&&!alreadyRetired&&x.pension==null&&(!x.hire||x.hire<=x.birth||x.hire>x.today||x.hire>retireDate||!x.basic)) throw Error('أدخل الراتب الأساسي وتاريخ التعيين لحساب مرحلة التقاعد.');
