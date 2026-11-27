@@ -295,3 +295,16 @@ label .birth-hint{display:block;font-size:10px;line-height:1.5;font-weight:400;c
 @media(max-width:700px){.client-grid:has(#supportStatusField:not([hidden]))>#supportStatusField{grid-column:1/-1!important;gap:6px;max-width:none}.client-grid:has(#supportStatusField:not([hidden]))>#rateField{grid-column:1/-1}#supportStatusField .support-switch{font-size:11px;padding-inline:7px}.extra-down-payment{font-size:11px}}
 
 .sharing-language{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;margin-bottom:12px;border-bottom:1px solid var(--line);font-size:.82rem;font-weight:700}.sharing-language .support-switch{width:auto;min-width:110px;direction:ltr;justify-content:space-between}.sharing-language .switch-track{direction:rtl}#sharingDialog{max-height:calc(100dvh - 28px);overflow-y:auto}
+
+/* Shared type scale across financing reports and the sharing form. */
+#report :is(.resultMetrics dt,.schedule th,.schedule td,.phase-details,.draw-payments){font-size:.8125rem;line-height:1.5}
+#report :is(.resultMetrics dd,.schedule .payment-cell,.schedule td>.amount,.phase-card-top strong){font-size:.9375rem;font-weight:700;line-height:1.5}
+#report .schedule td .amount{display:inline-block;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+#report .ratio-chip{font-size:.75rem}
+.sharing-notes legend{font-size:.875rem}
+.sharing-notes .note-row input{font-size:1rem}
+@media(max-width:600px){
+ #report :is(.resultMetrics dt,.schedule th,.schedule td){font-size:.75rem}
+ #report :is(.resultMetrics dd,.schedule .payment-cell,.schedule td>.amount){font-size:.875rem}
+ #report .schedule .payment-cell{white-space:normal;overflow-wrap:anywhere}
+}

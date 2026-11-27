@@ -12,15 +12,25 @@ function drawPages(report){
  const write=(text,x,y,align= en?'left':'right',color='#302153')=>{ctx.textAlign=align;ctx.fillStyle=color;ctx.fillText(text,x,y);};
  const wrap=(text,w)=>{const out=[];for(const paragraph of text.split('\n')){let line='';for(const word of paragraph.split(/\s+/)){if(line&&ctx.measureText(line+' '+word).width>w){out.push(line);line=word;}else line+=(line?' ':'')+word;}out.push(line);}return out;};
  const cell=(text,x,y,w,h,bg='',size=10,bold=false,align=en?'left':'right')=>{if(bg){ctx.fillStyle=bg;ctx.fillRect(x,y,w,h);}ctx.strokeStyle='#dfe1e8';ctx.strokeRect(x,y,w,h);font(size,bold);const lines=wrap(text,w-12);lines.forEach((l,i)=>write(l,align==='center'?x+w/2:align==='left'?x+6:x+w-6,y+(h-lines.length*13)/2+7+i*13,align));};
- const table=(el,x,y,w)=>{if(!el)return y;const rows=[...el.querySelectorAll('tr')],hasHeader=!!el.querySelector('thead');let yy=y;for(let j=0;j<rows.length;j++){const cells=[...rows[j].children];const weights=el.matches('.repayment-list')?[.52,.30,.18]:el.matches('.constructionRules')&&cells.length===4?[.12,.12,.48,.28]:el.matches('.desktop-schedule')&&!report.querySelector('.draw-report-columns')&&cells.length>2?[.28,...Array(cells.length-1).fill(.72/(cells.length-1))]:cells.map(()=>1/cells.length);const widths=weights.map(v=>v*w);font(9);const vals=cells.map(c=>(c.querySelector('.period-name')?.textContent||c.textContent.trim()).replace(/ريال/g,''));const h=Math.max(j===0&&hasHeader?30:25,...vals.map((v,i)=>wrap(v,widths[i]-12).length*13+10));let edge=en?x:x+w;cells.forEach((c,i)=>{if(!en)edge-=widths[i];cell(vals[i],edge,yy,widths[i],h,j===0&&hasHeader||rows[j].classList.contains('period-total')?'#eff5f7':'',9,c.classList.contains('payment-cell'),c.classList.contains('payment-cell')||c.classList.contains('duration-cell')||!!c.querySelector('.amount')||/^[\d,.%\s]+$/.test(vals[i])?'center':align);if(en)edge+=widths[i];});yy+=h;}return yy;};
+ const labelSize=10,valueSize=11;
+ const lineCount=(text,w,size,bold=false)=>{font(size,bold);return wrap(text,w-12).length;};
+ const table=(el,x,y,w)=>{if(!el)return y;const rows=[...el.querySelectorAll('tr')],hasHeader=!!el.querySelector('thead');let yy=y;for(let j=0;j<rows.length;j++){const cells=[...rows[j].children];const weights=el.matches('.repayment-list')?[.52,.30,.18]:el.matches('.constructionRules')&&cells.length===4?[.12,.12,.48,.28]:el.matches('.desktop-schedule')&&!report.querySelector('.draw-report-columns')&&cells.length>2?[.28,...Array(cells.length-1).fill(.72/(cells.length-1))]:cells.map(()=>1/cells.length);const widths=weights.map(v=>v*w);font(9);const vals=cells.map(c=>(c.querySelector('.period-name')?.textContent||c.textContent.trim()).replace(/ريال/g,''));const numeric=cells.map((c,i)=>c.tagName==="TD"&&(!!c.querySelector(".amount")||c.classList.contains("payment-cell")||/^[\d,.%\s]+$/.test(vals[i])));const h=Math.max(j===0&&hasHeader?30:25,...vals.map((v,i)=>lineCount(v,widths[i],numeric[i]?valueSize:labelSize,numeric[i])*13+10));let edge=en?x:x+w;cells.forEach((c,i)=>{if(!en)edge-=widths[i];cell(vals[i],edge,yy,widths[i],h,j===0&&hasHeader||rows[j].classList.contains('period-total')?'#eff5f7':'',numeric[i]?valueSize:labelSize,numeric[i],c.classList.contains('payment-cell')||c.classList.contains('duration-cell')||!!c.querySelector('.amount')||/^[\d,.%\s]+$/.test(vals[i])?'center':align);if(en)edge+=widths[i];});yy+=h;}return yy;};
  fresh();font(16,true);write(report.querySelector('.reportHead h2')?.textContent||'حسبة العميل / ـة :' ,width/2,34,'center','#008d8c');font(9);write(onePage?'':report.querySelector('.product-title')?.textContent||'',width/2,53,'center','#857b96');
  const metrics=[...report.querySelectorAll('.resultMetrics>div')];const stacked=!!report.querySelector('.periods-block');const x=stacked||en?margin:width/2+12,w=stacked?width-margin*2:width/2-margin-12;let rightY=72;
  const metricHeight=Math.min(23,Math.max(18,455/Math.max(1,metrics.length)));
- for(let i=0;i<metrics.length;i++){if(!onePage&&rightY+metricHeight>height-55){save();fresh();rightY=35;}font(9);const label=metrics[i].querySelector('dt').textContent,value=metrics[i].querySelector('dd').textContent,paymentRow=metrics[i].classList.contains('personal-installment-row'),rowHeight=en?Math.max(paymentRow?36:metricHeight,wrap(label,w*.52-12).length*13+10):paymentRow?36:metricHeight;cell(label,en?x:x+w*.48,rightY,w*.52,rowHeight,paymentRow?'#eff5f7':'',paymentRow?12:9,paymentRow);cell(value,en?x+w*.52:x,rightY,w*.48,rowHeight,paymentRow?'#eff5f7':i===0?'#e9f4f5':'',paymentRow?13:9,paymentRow,'center');rightY+=rowHeight;}
+ for(let i=0;i<metrics.length;i++){
+  const label=metrics[i].querySelector('dt').textContent,value=metrics[i].querySelector('dd').textContent;
+  const paymentRow=metrics[i].classList.contains('personal-installment-row');
+  const rowHeight=Math.max(paymentRow?36:metricHeight,lineCount(label,w*.52,labelSize,paymentRow)*13+10,lineCount(value,w*.48,valueSize,true)*13+10);
+  if(!onePage&&rightY+rowHeight>height-55){save();fresh();rightY=35;}
+  cell(label,en?x:x+w*.48,rightY,w*.52,rowHeight,paymentRow?'#eff5f7':'',labelSize,paymentRow);
+  cell(value,en?x+w*.52:x,rightY,w*.48,rowHeight,paymentRow?'#eff5f7':i===0?'#e9f4f5':'',valueSize,true,'center');
+  rightY+=rowHeight;
+ }
  const manual=!!report.querySelector('.draw-report-columns');
  let leftY=manual?72:table(report.querySelector('.desktop-schedule'),!stacked&&en?width/2+12:margin,stacked?rightY+14:72,w);if(manual){font(12,true);write(t('آلية صرف الدفعات حسب سياسة البنك','Drawdown release schedule under bank policy'),en?width/2+12:margin+w,81);leftY=table(report.querySelector('.constructionRules'),en?width/2+12:margin,96,w);font(12,true);write(t('دفعات العميل','Client drawdowns'),en?x:x+w,rightY+15);rightY=table(report.querySelector('.desktop-schedule'),x,rightY+28,w);}for(const extra of report.querySelectorAll('table'))if(!extra.matches('.desktop-schedule,.constructionTable,.constructionRules,.phase-rates'))leftY=table(extra,margin,leftY+15,w);
  const supportRows=[...report.querySelectorAll('.repayment-summary>div')];
- for(const row of supportRows){const yy=leftY+6;cell(row.querySelector('dt').textContent,margin+w*.4,yy,w*.6,21,'',9);cell(row.querySelector('dd').textContent,margin,yy,w*.4,21,'',9,true,'center');leftY=yy+21;}
+ for(const row of supportRows){const yy=leftY+6;cell(row.querySelector('dt').textContent,margin+w*.4,yy,w*.6,21,'',9);cell(row.querySelector('dd').textContent,margin,yy,w*.4,21,'',valueSize,true,'center');leftY=yy+21;}
  let y=Math.max(rightY,leftY)+16;
  const draw=report.querySelector('.constructionTable,.constructionRules');if(draw&&!manual){
  const rows=[...draw.querySelectorAll('tr')];let tableHeight=0;font(9);for(let j=0;j<rows.length;j++){const cells=[...rows[j].children],cw=(width-margin*2)/cells.length;tableHeight+=Math.max(j===0?30:25,...cells.map(c=>wrap(c.textContent.trim().replace(/ريال/g,''),cw-12).length*13+10));}
@@ -30,7 +40,7 @@ function drawPages(report){
  for(const block of report.querySelectorAll('.reportRequirements,.reportNotes')){
   const body=block.querySelector('p')?.textContent.trim();
   if(!body)continue;
-  font(14);
+  font(11);
   const lines=wrap(body,width-margin*2-24);
   const pageBottom=(onePage?2200:height)-55;
   const linesPerPage=Math.floor((pageBottom-35-40)/19);
@@ -42,8 +52,8 @@ function drawPages(report){
     save();fresh();y=35;
    }
    ctx.fillStyle='#eff7f8';ctx.fillRect(margin,y,width-margin*2,h);
-   font(12,true);write(block.querySelector('h3').textContent,en?margin+12:width-margin-12,y+17);
-   font(14);section.forEach((line,i)=>write(line,en?margin+12:width-margin-12,y+39+i*19));
+   font(13,true);write(block.querySelector('h3').textContent,en?margin+12:width-margin-12,y+17);
+   font(11);section.forEach((line,i)=>write(line,en?margin+12:width-margin-12,y+39+i*19));
    y+=h+12;
   }
  }
