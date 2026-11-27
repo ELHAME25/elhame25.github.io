@@ -1,5 +1,9 @@
 // Fixed report translations. User-entered names and notes are never translated.
 const phrases={
+'المتطلبات:':'Required documents:',
+'إثبات مديونية وعدم ممانعة من البنك الحالي':'Debt statement and no-objection letter from the current bank',
+'كشف حساب 3 أشهر':'Bank statements for the last 3 months',
+'تعريف راتب':'Salary certificate',
 'المعلومات الواردة أعلاه هي معلومات مبدئية وقدمت للعميل بناءً على طلبه والمعلومات المقدمة منه.':'The figures above are indicative and were prepared at the client’s request using the information provided by the client.',
 'التفاصيل والمبالغ النهائية للتمويل الفعلي يتم تحديدها عند استيفاء كامل المستندات المطلوبة وبعد التحقق من السجل الائتماني للعميل.':'Final financing terms and amounts are subject to receipt of all required documents and verification of the client’s credit history.',
 'القسط العقاري حتى نهاية التمويل':'Mortgage installment until the end of the financing term',
@@ -84,7 +88,7 @@ export function localizedReport(report,language='ar'){
  if(language!=='en')return copy;
  const heading=copy.querySelector('.reportHead h2');
  if(heading)heading.textContent=heading.textContent.replace(/^حسبة العميل\s*(?:\/\s*ـة)?\s*[:：]?\s*/u,'Client Financing Summary: ');
- const visit=element=>{for(const node of element.childNodes){if(node.nodeType===3)node.textContent=translateReportText(node.textContent);else if(node.nodeType===1&&!node.matches('.reportHead h2,.reportNotes p,.reportIdentity dd'))visit(node);}};
+ const visit=element=>{for(const node of element.childNodes){if(node.nodeType===3)node.textContent=translateReportText(node.textContent);else if(node.nodeType===1&&!node.matches('.reportHead h2,.reportNotes p:not(.buyout-requirements),.reportIdentity dd'))visit(node);}};
  visit(copy);
  return copy;
 }
