@@ -2,7 +2,7 @@ import {installUpdates} from './updates.mjs?v=50e6fde898dca20e';
 import {personalRate,mortgageRate,financingDeductions,personalClasses} from './pricing.mjs?v=55beafea17d198d4';
 import {stages,approvalDraws} from './draws.mjs?v=d697f464270110f1';
 import {ranks,validateBirth,hijriDate,gregorianToHijri,calculatePersonal,calculate,mortgageWindow,estimatePension,propertyFunding} from './engine.mjs?v=0b0ed707bc493807';
-import {prepareReport,downloadReport,shareReport,invalidateReport} from './pdf.mjs?v=3b27e9a2f23f6259';
+import {prepareReport,downloadReport,shareReport,invalidateReport} from './pdf.mjs?v=d31a1b68f5a60b7a';
 const $=id=>document.getElementById(id), num=id=>readAmount($(id).value);
 const fmt=n=>Number(n).toLocaleString('en-US',{maximumFractionDigits:0});
 function normalizeNumericValue(value,integer=false,precision=null){
@@ -76,9 +76,9 @@ function base(){
 function personal(x,maximum=false){if(!state.personalKind)throw Error('اختر نوع التمويل الشخصي.');return calculatePersonal({...x,personalKind:state.personalKind,settlement:state.personalKind==='new'?0:num('settlement'),term:maximum?60:state.personalTerm,margin:Number(state.rates.personal),method:maximum?'max':state.methods.personal,request:readAmount(state.requests.personal)});}
 const metric=(label,value)=>`<div><dt>${label}</dt><dd>${value}</dd></div>`;
 function identity(debtBuyout=false){
- const requirements=debtBuyout?'<p class="buyout-requirements">المتطلبات:\n• إثبات مديونية وعدم ممانعة من البنك الحالي\n• كشف حساب 3 أشهر\n• تعريف راتب</p>':'';
+ const requirements=debtBuyout?'<section class="reportRequirements" hidden><h3>المتطلبات</h3><p>• إثبات مديونية وعدم ممانعة من البنك الحالي\n• كشف حساب 3 أشهر\n• تعريف راتب</p></section>':'';
  const notes=[...$('noteRows').querySelectorAll('input')].map(input=>input.value.trim()).filter(Boolean).join('\n');
- return `<div class="reportDisclaimer"><p>المعلومات الواردة أعلاه هي معلومات مبدئية وقدمت للعميل بناءً على طلبه والمعلومات المقدمة منه.</p><p>التفاصيل والمبالغ النهائية للتمويل الفعلي يتم تحديدها عند استيفاء كامل المستندات المطلوبة وبعد التحقق من السجل الائتماني للعميل.</p></div>${requirements||notes?`<section class="reportNotes"><h3>الملاحظات</h3>${requirements}${notes?`<p>${esc(notes)}</p>`:''}</section>`:''}<dl class="reportIdentity">${$('advisor').value?metric('مسؤول المبيعات',esc($('advisor').value)):''}${$('phone').value.length>1?metric('رقم الجوال',esc($('phone').value)):''}</dl>`;}
+ return `<div class="reportDisclaimer"><p>المعلومات الواردة أعلاه هي معلومات مبدئية وقدمت للعميل بناءً على طلبه والمعلومات المقدمة منه.</p><p>التفاصيل والمبالغ النهائية للتمويل الفعلي يتم تحديدها عند استيفاء كامل المستندات المطلوبة وبعد التحقق من السجل الائتماني للعميل.</p></div>${requirements}${notes?`<section class="reportNotes"><h3>الملاحظات</h3><p>${esc(notes)}</p></section>`: ''}<dl class="reportIdentity">${$('advisor').value?metric('مسؤول المبيعات',esc($('advisor').value)):''}${$('phone').value.length>1?metric('رقم الجوال',esc($('phone').value)):''}</dl>`;}
 
 const ordinals=['الأولى','الثانية','الثالثة','الرابعة','الخامسة','السادسة','السابعة','الثامنة'];
 function periods(rows,isPersonal=false,monthly=0,quote={}){

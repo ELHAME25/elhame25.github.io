@@ -1,4 +1,4 @@
-import {localizedReport} from './report-language.mjs?v=5aafb3e5cd00a960';
+import {localizedReport} from './report-language.mjs?v=ce2cfc4165a2e1a4';
 const encoder=new TextEncoder();
 const width=842,height=595,margin=26,scale=2;
 let prepared=null;
@@ -27,10 +27,11 @@ function drawPages(report){
  if(!onePage&&y+12+tableHeight>height-55){save();fresh();y=35;}font(12,true);write(t('دفعات البناء الذاتي','Self-build drawdowns'),edgeX,y);y=table(draw,margin,y+12,width-margin*2)+15;}
 
  const disclaimer=report.querySelector('.reportDisclaimer');if(disclaimer){font(9);for(const paragraph of disclaimer.querySelectorAll('p')){const lines=wrap('* '+paragraph.textContent,width-margin*2);if(!onePage&&y+lines.length*13>height-40){save();fresh();y=35;}lines.forEach((line,i)=>write(line,edgeX,y+i*13));y+=lines.length*13+4;}y+=8;}
- const notes=[...report.querySelectorAll('.reportNotes p')].map(p=>p.textContent).join('\n\n');
- if(notes){
+ for(const block of report.querySelectorAll('.reportRequirements,.reportNotes')){
+  const body=block.querySelector('p')?.textContent.trim();
+  if(!body)continue;
   font(14);
-  const lines=wrap(notes,width-margin*2-24);
+  const lines=wrap(body,width-margin*2-24);
   const pageBottom=(onePage?2200:height)-55;
   const linesPerPage=Math.floor((pageBottom-35-40)/19);
   for(let start=0;start<lines.length;start+=linesPerPage){
@@ -41,7 +42,7 @@ function drawPages(report){
     save();fresh();y=35;
    }
    ctx.fillStyle='#eff7f8';ctx.fillRect(margin,y,width-margin*2,h);
-   font(12,true);write(t('الملاحظات','Notes'),en?margin+12:width-margin-12,y+17);
+   font(12,true);write(block.querySelector('h3').textContent,en?margin+12:width-margin-12,y+17);
    font(14);section.forEach((line,i)=>write(line,en?margin+12:width-margin-12,y+39+i*19));
    y+=h+12;
   }
